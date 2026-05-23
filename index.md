@@ -3,10 +3,8 @@ layout: default
 title: Home
 ---
 
-{% assign posts = site.posts %}
-
-{% if posts.size > 0 %}
-{% assign featured = posts.first %}
+{% if paginator.posts.size > 0 %}
+{% assign featured = paginator.posts.first %}
 <div class="hero-featured reveal">
   <a href="{{ featured.url | relative_url }}">
     <div class="hero-img-wrap">
@@ -31,7 +29,7 @@ title: Home
 <h2 class="section-title">Latest Articles</h2>
 
 <div class="post-grid">
-  {% for post in posts offset:1 limit:10 %}
+  {% for post in paginator.posts offset:1 %}
   <article class="post-card reveal" style="transition-delay: var(--card-delay, 0s)">
     <a href="{{ post.url | relative_url }}">
       <div class="card-img-wrap">
@@ -54,7 +52,35 @@ title: Home
   {% endfor %}
 </div>
 
-{% if posts.size == 0 %}
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">&larr; Previous</a>
+  {% else %}
+  <span class="disabled">&larr; Previous</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <span class="active">{{ page }}</span>
+    {% elsif page == 1 %}
+    <a href="{{ '/' | relative_url }}">1</a>
+    {% else %}
+    <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path | relative_url }}" class="next">Next &rarr;</a>
+  {% else %}
+  <span class="disabled">Next &rarr;</span>
+  {% endif %}
+
+  <span class="page-info">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+</div>
+{% endif %}
+
+{% if paginator.posts.size == 0 %}
 <div class="page-content reveal">
   <h1>Welcome to PulseTrends</h1>
   <p>Your daily source for trending insights across AI, technology, politics, finance, weather, and business. Articles are generated fresh every day — check back soon for the latest content!</p>
