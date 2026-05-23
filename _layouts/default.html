@@ -6,6 +6,9 @@
   <title>{% if page.title and page.title != 'Home' %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="theme-color" content="#0a0a0a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   {% seo %}
@@ -17,12 +20,15 @@
 <body>
 
 <div id="globe-container"></div>
+<div class="grain-overlay"></div>
+
+<div class="scroll-progress"></div>
 
 <div class="content-overlay">
 
-<div class="topbar">
+<div class="topbar" id="topbar">
   <div class="container">
-    <div class="topbar-left"><span>Trending</span> — Crypto · Stocks · AI · Tech · Gaming · Mobile · Sports · Entertainment · Health · Science · Politics · Business · World</div>
+    <div class="topbar-left"><span class="pulse-dot"></span> Trending Now — Crypto · Stocks · AI · Tech · Gaming · Mobile · Sports · Entertainment · Health · Science · Politics · Business · World</div>
     <div class="topbar-right">
       <a href="{{ '/about/' | relative_url }}">About</a>
       <a href="{{ '/contact/' | relative_url }}">Contact</a>
@@ -30,134 +36,154 @@
   </div>
 </div>
 
-<header>
+<header id="header">
   <div class="container">
     <div class="logo">
-      <a href="{{ '/' | relative_url }}">Pulse<span>Trends</span></a>
+      <a href="{{ '/' | relative_url }}"><span class="logo-icon">◈</span> Pulse<span>Trends</span></a>
       <span class="tagline">Daily Trending Insights</span>
     </div>
     <nav class="nav-links">
-      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/' | relative_url }}" class="nav-active">Home</a>
       <a href="{{ '/about/' | relative_url }}">About</a>
       <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
       <a href="{{ '/contact/' | relative_url }}">Contact</a>
     </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
+<nav class="mobile-nav" id="mobileNav">
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/about/' | relative_url }}">About</a>
+  <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+  <a href="{{ '/contact/' | relative_url }}">Contact</a>
+</nav>
+
 <div class="container site-wrap">
-  <main class="main-content">
+  <main class="main-content" id="main-content">
     {% if page.date %}
-    <article class="article-page">
+    <article class="article-page reveal">
       {% if page.image %}
-      <img src="{{ page.image }}" alt="{{ page.title }}" class="featured-img" loading="lazy">
-      {% endif %}
-      <h1>{{ page.title }}</h1>
-      <div class="article-meta">
-        <span>{{ page.date | date: "%B %d, %Y" }}</span>
-        {% if page.tags.size > 0 %}
-         · <span>{{ page.tags | join: ", " }}</span>
-        {% endif %}
+      <div class="article-img-wrap">
+        <img src="{{ page.image }}" alt="{{ page.title }}" class="featured-img" loading="lazy">
+        <div class="img-overlay"></div>
       </div>
-      {{ content }}
+      {% endif %}
+      <div class="article-header">
+        <div class="article-meta-top">
+          {% if page.tags.size > 0 %}
+          <span class="cat-tag">{{ page.tags.first }}</span>
+          {% endif %}
+          <span class="meta-date">{{ page.date | date: "%B %d, %Y" }}</span>
+        </div>
+        <h1>{{ page.title }}</h1>
+      </div>
+      <div class="article-body">
+        {{ content }}
+      </div>
     </article>
     {% else %}
     {{ content }}
     {% endif %}
   </main>
   <aside class="sidebar">
-    {% if page.title == 'Home' %}
-    <div class="sidebar-widget">
-      <h3>Categories</h3>
-      <div class="sidebar-cat">
-        <a href="{{ '/' | relative_url }}">Artificial Intelligence</a>
-        <a href="{{ '/' | relative_url }}">Technology</a>
-        <a href="{{ '/' | relative_url }}">Politics</a>
-        <a href="{{ '/' | relative_url }}">Finance & Money</a>
-        <a href="{{ '/' | relative_url }}">Cryptocurrency</a>
-        <a href="{{ '/' | relative_url }}">Stocks & Markets</a>
-        <a href="{{ '/' | relative_url }}">AI & Tech</a>
-        <a href="{{ '/' | relative_url }}">Gaming</a>
-        <a href="{{ '/' | relative_url }}">Mobile & Android</a>
-        <a href="{{ '/' | relative_url }}">AI & Tech</a>
-        <a href="{{ '/' | relative_url }}">Sports</a>
-        <a href="{{ '/' | relative_url }}">Entertainment</a>
-        <a href="{{ '/' | relative_url }}">Health & Fitness</a>
-        <a href="{{ '/' | relative_url }}">Science & Space</a>
-        <a href="{{ '/' | relative_url }}">Politics</a>
-        <a href="{{ '/' | relative_url }}">Business</a>
-        <a href="{{ '/' | relative_url }}">Weather & Climate</a>
-        <a href="{{ '/' | relative_url }}">World News</a>
+    <div class="sidebar-inner">
+      {% if page.title == 'Home' %}
+      <div class="sidebar-widget reveal">
+        <h3><span class="widget-icon">◆</span> Categories</h3>
+        <div class="sidebar-cat">
+          <a href="{{ '/' | relative_url }}"><span>AI</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Technology</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Politics</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Finance & Money</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Cryptocurrency</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Stocks & Markets</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Gaming</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Mobile & Android</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Sports</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Entertainment</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Health & Fitness</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Science & Space</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Business</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Weather & Climate</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>World News</span><span class="cat-count">↗</span></a>
+        </div>
       </div>
-    </div>
-    <div class="sidebar-widget">
-      <h3>About PulseTrends</h3>
-      <p>Your daily source for trending insights across AI, technology, politics, finance, weather, and business — curated and published fresh every day.</p>
-    </div>
-    <div class="sidebar-widget">
-      <h3>Latest Posts</h3>
-      <ul>
-        {% for post in site.posts limit:6 %}
-        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% else %}
-    <div class="sidebar-widget">
-      <h3>Categories</h3>
-      <div class="sidebar-cat">
-        <a href="{{ '/' | relative_url }}">Artificial Intelligence</a>
-        <a href="{{ '/' | relative_url }}">Technology</a>
-        <a href="{{ '/' | relative_url }}">Politics</a>
-        <a href="{{ '/' | relative_url }}">Finance & Money</a>
+      <div class="sidebar-widget reveal">
+        <h3><span class="widget-icon">●</span> About</h3>
+        <p>Your daily source for trending insights across AI, technology, politics, finance, weather, and business — curated and published fresh every day.</p>
       </div>
+      <div class="sidebar-widget reveal">
+        <h3><span class="widget-icon">◉</span> Latest Posts</h3>
+        <ul class="sidebar-posts">
+          {% for post in site.posts limit:6 %}
+          <li><a href="{{ post.url | relative_url }}"><span class="post-dot"></span>{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% else %}
+      <div class="sidebar-widget reveal">
+        <h3><span class="widget-icon">◆</span> Categories</h3>
+        <div class="sidebar-cat">
+          <a href="{{ '/' | relative_url }}"><span>AI</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Technology</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Politics</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Finance & Money</span><span class="cat-count">↗</span></a>
+        </div>
+      </div>
+      <div class="sidebar-widget reveal">
+        <h3><span class="widget-icon">◉</span> Recent Posts</h3>
+        <ul class="sidebar-posts">
+          {% for post in site.posts limit:5 %}
+          <li><a href="{{ post.url | relative_url }}"><span class="post-dot"></span>{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
     </div>
-    <div class="sidebar-widget">
-      <h3>Recent Posts</h3>
-      <ul>
-        {% for post in site.posts limit:5 %}
-        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
   </aside>
 </div>
 
 <footer>
   <div class="container">
-    <div>
-      <h4>PulseTrends</h4>
-      <p>Your daily source for trending insights across gaming, mobile tech, crypto, stocks, AI, sports, entertainment, health, science, business, politics, weather, and world news. Fresh content published every day from hundreds of global sources.</p>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">◈ Pulse<span>Trends</span></div>
+        <p>Your daily source for trending insights across gaming, mobile tech, crypto, stocks, AI, sports, entertainment, health, science, business, politics, weather, and world news. Fresh content published every day from hundreds of global sources.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about/' | relative_url }}">About Us</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+        <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+      </div>
+      <div class="footer-links">
+        <h4>Categories</h4>
+        <a href="{{ '/' | relative_url }}">Gaming</a>
+        <a href="{{ '/' | relative_url }}">Mobile</a>
+        <a href="{{ '/' | relative_url }}">AI & Tech</a>
+        <a href="{{ '/' | relative_url }}">Crypto</a>
+        <a href="{{ '/' | relative_url }}">Stocks</a>
+        <a href="{{ '/' | relative_url }}">Sports</a>
+        <a href="{{ '/' | relative_url }}">Entertainment</a>
+        <a href="{{ '/' | relative_url }}">Health</a>
+        <a href="{{ '/' | relative_url }}">Science</a>
+        <a href="{{ '/' | relative_url }}">Business</a>
+        <a href="{{ '/' | relative_url }}">Politics</a>
+        <a href="{{ '/' | relative_url }}">World</a>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
+        <a href="{{ '/terms/' | relative_url }}">Terms of Service</a>
+      </div>
     </div>
-    <div>
-      <h4>Quick Links</h4>
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/about/' | relative_url }}">About Us</a>
-      <a href="{{ '/contact/' | relative_url }}">Contact</a>
-    </div>
-    <div>
-      <h4>Categories</h4>
-      <a href="{{ '/' | relative_url }}">Gaming</a>
-      <a href="{{ '/' | relative_url }}">Mobile</a>
-      <a href="{{ '/' | relative_url }}">AI & Tech</a>
-      <a href="{{ '/' | relative_url }}">Crypto</a>
-      <a href="{{ '/' | relative_url }}">Stocks</a>
-      <a href="{{ '/' | relative_url }}">Sports</a>
-      <a href="{{ '/' | relative_url }}">Entertainment</a>
-      <a href="{{ '/' | relative_url }}">Health</a>
-      <a href="{{ '/' | relative_url }}">Science</a>
-      <a href="{{ '/' | relative_url }}">Business</a>
-      <a href="{{ '/' | relative_url }}">Politics</a>
-      <a href="{{ '/' | relative_url }}">World</a>
-    </div>
-    <div>
-      <h4>Legal</h4>
-      <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
-      <a href="{{ '/terms/' | relative_url }}">Terms of Service</a>
-    </div>
-    <div class="copyright">
+    <div class="footer-bottom">
       <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+      <p class="footer-made">Made with ◈ for insight</p>
     </div>
   </div>
 </footer>
@@ -165,5 +191,6 @@
 </div>
 
 <script src="{{ '/assets/js/globe.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>
