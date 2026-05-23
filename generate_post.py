@@ -122,7 +122,6 @@ RSS_FEEDS = [
     "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
     "https://www.moneycontrol.com/rss/marketreports.xml",
 ]
-]
 
 OPENROUTER_MODELS = [
     "microsoft/phi-3-mini-128k-instruct",
