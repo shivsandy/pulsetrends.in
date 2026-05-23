@@ -363,12 +363,12 @@ def build_post(content, topic, keywords, image_url, existing_titles):
     kw_tags = ", ".join(keywords[:5]) if keywords else topic["title"].lower().replace(" ", ", ")
     tag_list = re.sub(r'[^\w,\s]', '', kw_tags).strip().lower()
 
+    image_line = f'image: "{image_url}"\n' if image_url else ""
     frontmatter = f"""---
 title: "{title}"
 date: {date.strftime('%Y-%m-%d %H:%M:%S')}
 excerpt: "{excerpt}"
-image: "{image_url}"
-tags: [{tag_list}]
+{image_line}tags: [{tag_list}]
 categories: [{tag_list}]
 ---
 
@@ -477,10 +477,15 @@ def main():
 
     log.info(f"Article generated: {len(article)} characters")
 
-    image_query = topic["title"]
+    image_keywords = keywords[:3] if keywords else topic["title"].split()[:5]
+    image_query = " ".join(image_keywords)
     image_url = fetch_image(image_query, api_keys.get("unsplash", ""))
-    if not image_url and keywords:
-        image_url = fetch_image(" ".join(keywords[:3]), api_keys.get("unsplash", ""))
+    if not image_url:
+        fallback_queries = ["business", "technology", "finance", "office", "success"]
+        for q in fallback_queries:
+            image_url = fetch_image(q, api_keys.get("unsplash", ""))
+            if image_url:
+                break
 
     post_file = build_post(article, topic, keywords, image_url, existing_titles)
     if not post_file:
