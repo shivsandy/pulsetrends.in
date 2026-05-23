@@ -309,6 +309,7 @@ Return only the article content in markdown format with no additional commentary
 
 def fetch_image(query, api_key):
     if not api_key:
+        log.warning("No Unsplash API key")
         return ""
     try:
         resp = requests.get(
@@ -318,13 +319,14 @@ def fetch_image(query, api_key):
             timeout=15,
         )
         if resp.status_code != 200:
+            log.warning(f"Unsplash HTTP {resp.status_code}: {resp.text[:100]}")
             return ""
         data = resp.json()
         if data.get("results"):
             img = data["results"][0]
             url = img["urls"]["regular"]
-            credit = f"Photo by {img['user']['name']} on Unsplash"
             return f"{url}?w=1200"
+        log.warning(f"Unsplash: no results for '{query[:50]}'")
         return ""
     except Exception as e:
         log.warning(f"Unsplash failed: {e}")
@@ -353,7 +355,9 @@ def build_post(content, topic, keywords, image_url, existing_titles):
     filename = f"{date.strftime('%Y-%m-%d')}-{slug}.md"
     filepath = POSTS_DIR / filename
 
-    excerpt = re.sub(r'[#*`>\[\]]+', '', content[:200]).replace("\n", " ").strip()
+    excerpt = content[:300].replace("\n", " ").strip()
+    excerpt = re.sub(r'^#+\s*', '', excerpt)
+    excerpt = re.sub(r'\s+', ' ', excerpt).strip()
     excerpt = excerpt[:150] + "..." if len(excerpt) > 150 else excerpt
 
     kw_tags = ", ".join(keywords[:5]) if keywords else topic["title"].lower().replace(" ", ", ")
