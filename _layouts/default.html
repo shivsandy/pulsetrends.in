@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.title and page.title != 'Home' %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
+  <meta name="theme-color" content="#2563eb">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
-
   {% seo %}
-
   {% if site.google_adsense_id %}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.google_adsense_id }}" crossorigin="anonymous"></script>
   {% endif %}
@@ -18,7 +19,7 @@
 <body>
   <header>
     <div class="container">
-      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+      <a href="{{ '/' | relative_url }}" class="site-title">Pulse<span>Trends</span></a>
       <nav>
         <a href="{{ '/' | relative_url }}">Home</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
@@ -28,40 +29,30 @@
     </div>
   </header>
 
-  <main class="container">
-    {% if site.google_adsense_id %}
-    <div class="ad-top">
-      <ins class="adsbygoogle"
-           style="display:block; text-align:center;"
-           data-ad-layout="in-article"
-           data-ad-format="fluid"
-           data-ad-client="{{ site.google_adsense_id }}"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    </div>
-    {% endif %}
-
+  <main>
     {{ content }}
-
-    {% if site.google_adsense_id and page.layout == 'default' and page.title != 'Home' %}
-    <div class="ad-bottom" style="margin-top: 30px;">
-      <ins class="adsbygoogle"
-           style="display:block; text-align:center;"
-           data-ad-layout="in-article"
-           data-ad-format="fluid"
-           data-ad-client="{{ site.google_adsense_id }}"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    </div>
-    {% endif %}
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
-      <p>
-        <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
-        <a href="{{ '/terms/' | relative_url }}">Terms</a>
+      <div>
+        <h4>PulseTrends</h4>
+        <p>Your daily source for trending insights across AI, technology, politics, finance, weather, and more. We deliver expert analysis on the topics that matter.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about/' | relative_url }}">About Us</a>
         <a href="{{ '/contact/' | relative_url }}">Contact</a>
-      </p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
+        <a href="{{ '/terms/' | relative_url }}">Terms of Service</a>
+      </div>
+      <div class="copyright">
+        <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 </body>

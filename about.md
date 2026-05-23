@@ -4,23 +4,34 @@ title: About Us
 permalink: /about/
 ---
 
-# About Us
+<div class="page-content">
+  <h1>About PulseTrends</h1>
 
-**{{ site.title }}** is your trusted source for trending insights across finance, technology, business, health, and lifestyle topics. Our team of expert writers and researchers scours the latest trends to bring you actionable information and in-depth guides.
+  <p><strong>PulseTrends</strong> is your daily source for trending insights across the topics that shape our world. We cover AI breakthroughs, tech innovations, political developments, financial markets, weather events, and business trends — all delivered fresh every day.</p>
 
-## Our Mission
+  <h2>What We Cover</h2>
 
-We believe in empowering our readers with knowledge. Every article is crafted to provide practical value — whether you're looking to make smarter financial decisions, stay ahead of tech trends, or improve your daily life.
+  <ul>
+    <li><strong>Artificial Intelligence</strong> — Latest breakthroughs, tools, and industry impacts</li>
+    <li><strong>Technology</strong> — Gadgets, software, cybersecurity, cloud computing, and more</li>
+    <li><strong>Politics</strong> — Policy changes, elections, geopolitical developments</li>
+    <li><strong>Weather & Climate</strong> — Extreme weather, climate science, environmental news</li>
+    <li><strong>Finance & Money</strong> — Investing, crypto, markets, personal finance</li>
+    <li><strong>Business</strong> — Startups, entrepreneurship, industry analysis</li>
+  </ul>
 
-## Our Team
+  <h2>Our Mission</h2>
 
-Our editorial team has diverse backgrounds in finance, software engineering, digital marketing, and content creation. We are passionate about delivering accurate, up-to-date, and well-researched content.
+  <p>We believe in empowering readers with timely, accurate, and actionable information. Every article is crafted to provide practical value — helping you stay informed in a fast-changing world.</p>
 
-## Editorial Standards
+  <h2>Our Standards</h2>
 
-- **Accuracy:** We verify facts and cite reputable sources.
-- **Timeliness:** We cover trending topics as they emerge.
-- **Clarity:** We explain complex topics in plain language.
-- **Comprehensiveness:** We provide complete, actionable information.
+  <ul>
+    <li><strong>Accuracy</strong> — We verify facts and cite reputable sources</li>
+    <li><strong>Timeliness</strong> — We cover trending topics as they emerge</li>
+    <li><strong>Clarity</strong> — We explain complex topics in plain language</li>
+    <li><strong>Comprehensiveness</strong> — We provide complete, insightful analysis</li>
+  </ul>
 
-For inquiries, please [contact us](/contact/).
+  <p>For inquiries, <a href="{{ '/contact/' | relative_url }}">contact us</a>.</p>
+</div>

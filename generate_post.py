@@ -30,17 +30,42 @@ HIGH_CPC_KEYWORDS = [
     "lead generation", "small business", "startup", "health insurance",
     "weight loss", "fitness", "DUI", "bankruptcy", "personal injury",
     "online course", "certification", "remote work", "real estate",
+    "artificial intelligence", "machine learning", "ChatGPT", "LLM", "robotics",
+    "election", "president", "congress", "senate", "supreme court",
+    "weather", "hurricane", "climate change", "tornado", "flood",
+    "stock market", "forex", "trading", "dividend", "retirement",
+    "GDP", "inflation", "recession", "interest rate", "federal reserve",
+    "Bitcoin", "Ethereum", "blockchain", "NFT", "DeFi",
+    "iPhone", "Android", "Windows", "gaming", "electric vehicle",
+    "solar", "renewable energy", "nuclear", "space", "NASA",
+    "earthquake", "tsunami", "drought", "wildfire", "storm",
+    "NASDAQ", "S&P 500", "Dow Jones", "IPO", "earnings",
 ]
 
 RSS_FEEDS = [
     "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en",
     "https://feeds.bbci.co.uk/news/technology/rss.xml",
     "https://feeds.bbci.co.uk/news/business/rss.xml",
+    "https://feeds.bbci.co.uk/news/politics/rss.xml",
+    "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
     "https://www.reddit.com/r/finance/hot/.rss",
     "https://www.reddit.com/r/technology/hot/.rss",
+    "https://www.reddit.com/r/artificial/hot/.rss",
+    "https://www.reddit.com/r/politics/hot/.rss",
+    "https://www.reddit.com/r/weather/hot/.rss",
     "https://www.reddit.com/r/startups/hot/.rss",
     "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Climate.xml",
+    "https://feeds.npr.org/1014/rss.xml",
+    "https://feeds.npr.org/1001/rss.xml",
+    "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+    "https://www.cnbc.com/id/10001147/device/rss/rss.html",
+    "https://www.newsweek.com/rss",
+    "https://rss.weather.com/weather/rss/news",
 ]
 
 OPENROUTER_MODELS = [
@@ -48,6 +73,8 @@ OPENROUTER_MODELS = [
     "meta-llama/llama-3-8b-instruct",
     "google/gemma-2-9b-it",
     "microsoft/phi-3-mini-128k-instruct",
+    "deepseek/deepseek-chat",
+    "cohere/command-r",
 ]
 
 NVIDIA_MODEL = "meta/llama-3.1-70b-instruct"
@@ -116,25 +143,26 @@ def fetch_trends_google():
 def fetch_trends_newsapi(api_key):
     if not api_key:
         return []
-    try:
-        resp = requests.get(
-            "https://newsapi.org/v2/top-headlines",
-            params={"country": "us", "pageSize": 20, "apiKey": api_key},
-            timeout=15,
-        )
-        if resp.status_code != 200:
-            return []
-        data = resp.json()
-        results = []
-        for article in data.get("articles", []):
-            title = article.get("title", "")
-            desc = article.get("description", "")
-            text = f"{title} {desc}"
-            results.append({"title": title, "text": text, "source": "newsapi", "link": article.get("url", "")})
-        return results
-    except Exception as e:
-        log.warning(f"NewsAPI failed: {e}")
-        return []
+    results = []
+    topics = ["AI", "politics", "weather", "stock market", "technology", "climate"]
+    for topic in topics:
+        try:
+            resp = requests.get(
+                "https://newsapi.org/v2/everything",
+                params={"q": topic, "pageSize": 5, "language": "en", "sortBy": "popularity", "apiKey": api_key},
+                timeout=15,
+            )
+            if resp.status_code == 200:
+                data = resp.json()
+                for article in data.get("articles", []):
+                    title = article.get("title", "")
+                    desc = article.get("description", "") or ""
+                    text = f"{title} {desc}"
+                    results.append({"title": title, "text": text, "source": f"newsapi/{topic}", "link": article.get("url", "")})
+        except Exception as e:
+            log.warning(f"NewsAPI {topic} failed: {e}")
+            continue
+    return results
 
 
 def score_topic(topic):
@@ -213,14 +241,14 @@ def call_openrouter(api_key, prompt, model=None):
             {"role": "user", "content": prompt},
         ],
         "temperature": 0.8,
-        "max_tokens": 4096,
+        "max_tokens": 8192,
         "top_p": 0.95,
     }
     resp = requests.post(
         "https://openrouter.ai/api/v1/chat/completions",
         headers=headers,
         json=data,
-        timeout=180,
+        timeout=300,
     )
     if resp.status_code != 200:
         raise Exception(f"OpenRouter error {resp.status_code}: {resp.text[:200]}")
@@ -239,14 +267,14 @@ def call_nvidia(api_key, prompt):
             {"role": "user", "content": prompt},
         ],
         "temperature": 0.8,
-        "max_tokens": 4096,
+        "max_tokens": 8192,
         "top_p": 0.95,
     }
     resp = requests.post(
         "https://integrate.api.nvidia.com/v1/chat/completions",
         headers=headers,
         json=data,
-        timeout=180,
+        timeout=300,
     )
     if resp.status_code != 200:
         raise Exception(f"NVIDIA error {resp.status_code}: {resp.text[:200]}")
