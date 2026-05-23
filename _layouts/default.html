@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title and page.title != 'Home' %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="theme-color" content="#2563eb">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#1a1a2e">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   {% seo %}
@@ -17,43 +14,121 @@
   {% endif %}
 </head>
 <body>
-  <header>
-    <div class="container">
-      <a href="{{ '/' | relative_url }}" class="site-title">Pulse<span>Trends</span></a>
-      <nav>
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <a href="{{ '/contact/' | relative_url }}">Contact</a>
-        <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left"><span>Trending</span> — AI · Tech · Finance · Politics · Weather · India</div>
+    <div class="topbar-right">
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="container">
+    <div class="logo">
+      <a href="{{ '/' | relative_url }}">Pulse<span>Trends</span></a>
+      <span class="tagline">Daily Trending Insights</span>
+    </div>
+    <nav class="nav-links">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container site-wrap">
+  <main class="main-content">
+    {% if page.date %}
+    <article class="article-page">
+      {{ content }}
+    </article>
+    {% else %}
     {{ content }}
+    {% endif %}
   </main>
-
-  <footer>
-    <div class="container">
-      <div>
-        <h4>PulseTrends</h4>
-        <p>Your daily source for trending insights across AI, technology, politics, finance, weather, and more. We deliver expert analysis on the topics that matter.</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/about/' | relative_url }}">About Us</a>
-        <a href="{{ '/contact/' | relative_url }}">Contact</a>
-      </div>
-      <div>
-        <h4>Legal</h4>
-        <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
-        <a href="{{ '/terms/' | relative_url }}">Terms of Service</a>
-      </div>
-      <div class="copyright">
-        <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+  <aside class="sidebar">
+    {% if page.title == 'Home' %}
+    <div class="sidebar-widget">
+      <h3>Categories</h3>
+      <div class="sidebar-cat">
+        <a href="{{ '/' | relative_url }}">Artificial Intelligence</a>
+        <a href="{{ '/' | relative_url }}">Technology</a>
+        <a href="{{ '/' | relative_url }}">Politics</a>
+        <a href="{{ '/' | relative_url }}">Finance & Money</a>
+        <a href="{{ '/' | relative_url }}">Weather & Climate</a>
+        <a href="{{ '/' | relative_url }}">Business</a>
+        <a href="{{ '/' | relative_url }}">India News</a>
+        <a href="{{ '/' | relative_url }}">World News</a>
       </div>
     </div>
-  </footer>
+    <div class="sidebar-widget">
+      <h3>About PulseTrends</h3>
+      <p>Your daily source for trending insights across AI, technology, politics, finance, weather, and business — curated and published fresh every day.</p>
+    </div>
+    <div class="sidebar-widget">
+      <h3>Latest Posts</h3>
+      <ul>
+        {% for post in site.posts limit:6 %}
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% else %}
+    <div class="sidebar-widget">
+      <h3>Categories</h3>
+      <div class="sidebar-cat">
+        <a href="{{ '/' | relative_url }}">Artificial Intelligence</a>
+        <a href="{{ '/' | relative_url }}">Technology</a>
+        <a href="{{ '/' | relative_url }}">Politics</a>
+        <a href="{{ '/' | relative_url }}">Finance & Money</a>
+      </div>
+    </div>
+    <div class="sidebar-widget">
+      <h3>Recent Posts</h3>
+      <ul>
+        {% for post in site.posts limit:5 %}
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </aside>
+</div>
+
+<footer>
+  <div class="container">
+    <div>
+      <h4>PulseTrends</h4>
+      <p>Your daily source for trending insights across AI, technology, politics, finance, weather, and more. We deliver expert analysis on the topics that matter, curated fresh every day from global and Indian news sources.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about/' | relative_url }}">About Us</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    </div>
+    <div>
+      <h4>Categories</h4>
+      <a href="{{ '/' | relative_url }}">AI</a>
+      <a href="{{ '/' | relative_url }}">Technology</a>
+      <a href="{{ '/' | relative_url }}">Finance</a>
+      <a href="{{ '/' | relative_url }}">Politics</a>
+      <a href="{{ '/' | relative_url }}">Weather</a>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
+      <a href="{{ '/terms/' | relative_url }}">Terms of Service</a>
+    </div>
+    <div class="copyright">
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

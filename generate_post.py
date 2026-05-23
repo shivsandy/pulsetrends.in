@@ -95,15 +95,14 @@ RSS_FEEDS = [
 ]
 
 OPENROUTER_MODELS = [
-    "mistralai/mistral-7b-instruct",
-    "meta-llama/llama-3-8b-instruct",
-    "google/gemma-2-9b-it",
     "microsoft/phi-3-mini-128k-instruct",
-    "deepseek/deepseek-chat",
-    "cohere/command-r",
+    "meta-llama/llama-3-8b-instruct",
+    "mistralai/mistral-7b-instruct",
+    "google/gemma-2-9b-it",
+    "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
 ]
 
-NVIDIA_MODEL = "meta/llama-3.1-70b-instruct"
+NVIDIA_MODEL = "meta/llama-3.1-8b-instruct"
 
 AD_SLOT_MARKER_START = "<!-- AD_TOP -->"
 AD_SLOT_MARKER_MID = "<!-- AD_MID -->"
