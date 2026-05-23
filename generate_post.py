@@ -23,77 +23,27 @@ REPO_DIR = Path(__file__).resolve().parent
 POSTS_DIR = REPO_DIR / "_posts"
 POSTS_DIR.mkdir(exist_ok=True)
 
-HIGH_CPC_KEYWORDS = [
-    "insurance", "loan", "credit", "mortgage", "investing", "crypto",
-    "refinance", "banking", "tax", "debt", "AI", "cybersecurity",
-    "cloud computing", "VPN", "hosting", "SaaS", "SEO", "marketing",
-    "lead generation", "small business", "startup", "health insurance",
-    "weight loss", "fitness", "DUI", "bankruptcy", "personal injury",
-    "online course", "certification", "remote work", "real estate",
-    "artificial intelligence", "machine learning", "ChatGPT", "LLM", "robotics",
-    "election", "president", "congress", "senate", "supreme court",
-    "weather", "hurricane", "climate change", "tornado", "flood",
-    "stock market", "forex", "trading", "dividend", "retirement",
-    "GDP", "inflation", "recession", "interest rate", "federal reserve",
-    "Bitcoin", "Ethereum", "blockchain", "NFT", "DeFi",
-    "iPhone", "Android", "Windows", "gaming", "electric vehicle",
-    "Samsung Galaxy", "Google Pixel", "OnePlus", "iPhone 16", "iPhone 17",
-    "iOS update", "iOS 19", "Android 15", "Android 16",
-    "smartphone", "foldable phone", "phone review", "5G phone",
-    "iPad", "MacBook", "Apple Watch", "Samsung Watch",
-    "tablet", "laptop", "processor", "Qualcomm", "Apple Silicon",
-    "M4 chip", "Snapdragon", "solar", "renewable energy", "nuclear", "space", "NASA",
-    "earthquake", "tsunami", "drought", "wildfire", "storm",
-    "NASDAQ", "S&P 500", "Dow Jones", "IPO", "earnings",
-    # Crypto
-    "Bitcoin price", "Ethereum price", "Solana", "Ripple", "XRP",
-    "cryptocurrency", "altcoin", "mining", "staking", "Web3",
-    "Dogecoin", "Cardano", "Polygon", "Chainlink", "Litecoin",
-    "crypto regulation", "SEC crypto", "Bitcoin ETF", "crypto market",
-    "Binance", "Coinbase", "crypto wallet", "DeFi", "yield farming",
-    "stocks", "crypto", "market", "trading", "investor",
-    # Stocks
-    "stock market today", "Nifty 50", "Sensex", "BSE", "NSE",
-    "share market", "Indian stocks", "mutual funds", "SIP",
-    "stock analysis", "tech stocks", "bank stocks", "FII", "DII",
-    "options trading", "futures trading", "intraday", "swing trading",
-    "value investing", "growth stocks", "REITs", "stock split",
-    "NVDA", "AAPL", "TSLA", "AMZN", "MSFT", "GOOGL",
-    # Sports
-    "NFL", "NBA", "soccer", "cricket", "tennis", "F1", "UFC",
-    "Olympics", "World Cup", "Super Bowl", "Champions League",
-    "baseball", "hockey", "golf", "boxing", "wrestling",
-    "football", "basketball", "Premier League", "IPL",
-    # Entertainment
-    "movies", "music", "TV shows", "streaming", "Netflix",
-    "Hollywood", "Bollywood", "celebrity", "Oscars", "Grammy",
-    "gaming", "video games", "PlayStation", "Xbox", "Nintendo",
-    "PS5", "Xbox Series X", "Nintendo Switch", "PC gaming",
-    "game review", "game release", "GTA", "Fortnite", "Call of Duty",
-    "Minecraft", "Elden Ring", "game trailer", "gaming laptop",
-    "gaming PC", "graphics card", "RTX", "Steam", "Epic Games",
-    "anime", "comics", "Marvel", "DC", "Disney",
-    "Spotify", "YouTube", "TikTok", "Instagram",
-    # Health
-    "COVID", "vaccine", "cancer", "diabetes", "heart disease",
-    "mental health", "fitness", "nutrition", "yoga", "meditation",
-    "sleep", "diet", "weight loss", "supplements",
-    "pandemic", "medicine", "surgery", "therapy",
-    # Science
-    "NASA", "space", "Mars", "moon", "telescope", "quantum",
-    "physics", "biology", "chemistry", "genetics", "evolution",
-    "climate science", "ocean", "archaeology", "paleontology",
-    "nuclear fusion", "particle physics", "dark matter",
-    # World News
-    "Ukraine", "Russia", "China", "Middle East", "Europe",
-    "Asia", "Africa", "diplomacy", "sanctions", "military",
-    "border", "refugee", "treaty", "NATO", "UN",
-    "earthquake", "tsunami", "wildfire", "flood", "hurricane",
-    "drought", "heatwave", "blizzard", "tornado", "volcano",
+CATEGORIES = [
+    {"id": "crypto", "name": "Cryptocurrency", "image": "cryptocurrency blockchain", "kw": ["Bitcoin", "Ethereum", "crypto", "blockchain", "Solana", "Ripple", "XRP", "altcoin", "DeFi", "Web3", "Dogecoin", "Cardano", "Binance", "Coinbase", "crypto market", "Bitcoin ETF", "SEC crypto", "NFT", "mining", "staking", "yield farming"]},
+    {"id": "stocks", "name": "Stocks & Markets", "image": "stock market trading finance", "kw": ["stock market", "NASDAQ", "S&P 500", "Dow Jones", "IPO", "earnings", "stocks", "trading", "investor", "Nifty 50", "Sensex", "share market", "mutual funds", "options trading", "NVDA", "AAPL", "TSLA", "stock analysis", "tech stocks", "growth stocks", "REITs", "stock split"]},
+    {"id": "ai", "name": "Artificial Intelligence", "image": "artificial intelligence AI technology", "kw": ["AI", "artificial intelligence", "machine learning", "ChatGPT", "LLM", "robotics", "neural network", "deep learning", "OpenAI", "GPT", "AI model", "AI tool", "AI chatbot", "generative AI", "AI news"]},
+    {"id": "tech", "name": "Technology", "image": "technology tech digital innovation", "kw": ["technology", "tech", "cybersecurity", "cloud computing", "VPN", "SaaS", "startup", "software", "hardware", "processor", "Qualcomm", "Apple Silicon", "M4 chip", "Snapdragon", "laptop", "computer", "5G", "WiFi", "USB", "app", "operating system", "Windows", "macOS"]},
+    {"id": "gaming", "name": "Gaming", "image": "video gaming esports controller", "kw": ["gaming", "video games", "PlayStation", "PS5", "Xbox", "Nintendo", "Switch", "PC gaming", "game review", "game release", "GTA", "Fortnite", "Call of Duty", "Minecraft", "Steam", "Epic Games", "RTX", "graphics card", "esports", "game trailer", "gaming laptop"]},
+    {"id": "mobile", "name": "Mobile & Smartphones", "image": "smartphone mobile phone technology", "kw": ["iPhone", "Android", "smartphone", "Samsung Galaxy", "Google Pixel", "OnePlus", "iPhone 16", "iPhone 17", "iOS 19", "Android 15", "Android 16", "foldable phone", "phone review", "5G phone", "iPad", "Apple Watch", "Samsung Watch", "tablet", "mobile", "Xiaomi", "Nothing Phone"]},
+    {"id": "sports", "name": "Sports", "image": "sports athletic competition game", "kw": ["NFL", "NBA", "soccer", "cricket", "tennis", "F1", "UFC", "Olympics", "World Cup", "Super Bowl", "Champions League", "baseball", "hockey", "golf", "boxing", "football", "basketball", "Premier League", "IPL", "T20", "Grand Slam"]},
+    {"id": "entertainment", "name": "Entertainment", "image": "entertainment movies music show", "kw": ["movies", "music", "TV shows", "streaming", "Netflix", "Hollywood", "Bollywood", "celebrity", "Oscars", "Grammy", "anime", "comics", "Marvel", "DC", "Disney", "Spotify", "YouTube", "TikTok", "Instagram", "film", "cinema", "album", "concert"]},
+    {"id": "health", "name": "Health & Fitness", "image": "health fitness medical wellness", "kw": ["health", "fitness", "medical", "COVID", "vaccine", "cancer", "diabetes", "heart disease", "mental health", "nutrition", "yoga", "meditation", "sleep", "diet", "weight loss", "supplements", "pandemic", "medicine", "surgery", "therapy"]},
+    {"id": "science", "name": "Science & Space", "image": "science space research laboratory", "kw": ["NASA", "space", "Mars", "moon", "telescope", "quantum", "physics", "biology", "chemistry", "genetics", "evolution", "climate science", "ocean", "archaeology", "paleontology", "nuclear fusion", "particle physics", "dark matter", "solar", "renewable energy"]},
+    {"id": "business", "name": "Business", "image": "business corporate office entrepreneur", "kw": ["business", "startup", "entrepreneur", "small business", "real estate", "marketing", "SEO", "lead generation", "remote work", "ecommerce", "retail", "merger", "acquisition", "CEO", "IPO", "GDP", "inflation", "recession", "interest rate", "federal reserve"]},
+    {"id": "politics", "name": "Politics", "image": "politics government capitol building", "kw": ["politics", "election", "president", "congress", "senate", "supreme court", "Ukraine", "Russia", "China", "Middle East", "Europe", "diplomacy", "sanctions", "military", "NATO", "UN", "border", "refugee", "treaty", "geopolitics"]},
+    {"id": "world", "name": "World News", "image": "world global news international", "kw": ["world news", "breaking news", "international", "global", "Asia", "Africa", "Europe", "Middle East", "Americas", "earthquake", "tsunami", "wildfire", "flood", "hurricane", "drought", "heatwave", "blizzard", "tornado", "volcano", "climate change"]},
+    {"id": "finance", "name": "Finance & Money", "image": "finance money banking economy", "kw": ["finance", "money", "banking", "loan", "credit", "mortgage", "refinance", "tax", "debt", "insurance", "investing", "retirement", "forex", "dividend", "GDP", "inflation", "recession", "interest rate", "federal reserve", "economy"]},
+    {"id": "weather", "name": "Weather & Climate", "image": "weather climate sky storm nature", "kw": ["weather", "climate", "hurricane", "tornado", "flood", "drought", "heatwave", "blizzard", "storm", "temperature", "forecast", "climate change", "global warming", "rain", "snow", "earthquake", "tsunami", "wildfire"]},
 ]
 
+HIGH_CPC_KEYWORDS = [kw for cat in CATEGORIES for kw in cat["kw"]]
+
 RSS_FEEDS = [
-    # ── Google News (global + topic-specific) ──
     "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en",
     "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en",
     "https://news.google.com/rss?hl=en-GB&gl=GB&ceid=GB:en",
@@ -108,8 +58,6 @@ RSS_FEEDS = [
     "https://news.google.com/rss/search?q=health+fitness+medical&hl=en-US&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=science+space+research&hl=en-US&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=gaming+esports&hl=en-US&gl=US&ceid=US:en",
-
-    # ── BBC ──
     "https://feeds.bbci.co.uk/news/rss.xml",
     "https://feeds.bbci.co.uk/news/technology/rss.xml",
     "https://feeds.bbci.co.uk/news/business/rss.xml",
@@ -119,8 +67,6 @@ RSS_FEEDS = [
     "https://feeds.bbci.co.uk/news/entertainment_arts/rss.xml",
     "https://feeds.bbci.co.uk/sport/rss.xml",
     "https://feeds.bbci.co.uk/news/health/rss.xml",
-
-    # ── New York Times ──
     "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
@@ -130,16 +76,12 @@ RSS_FEEDS = [
     "https://rss.nytimes.com/services/xml/rss/nyt/Sports.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Health.xml",
-
-    # ── Reuters ──
     "https://www.reutersagency.com/feed/",
     "https://www.reutersagency.com/feed/?best-topics=business-finance",
     "https://www.reutersagency.com/feed/?best-topics=tech",
     "https://www.reutersagency.com/feed/?best-topics=politics",
     "https://www.reutersagency.com/feed/?best-topics=health",
     "https://www.reutersagency.com/feed/?best-topics=lifestyle",
-
-    # ── Associated Press ──
     "https://rsshub.app/apnews/topics/apf-topnews",
     "https://rsshub.app/apnews/topics/technology",
     "https://rsshub.app/apnews/topics/business",
@@ -148,26 +90,18 @@ RSS_FEEDS = [
     "https://rsshub.app/apnews/topics/health",
     "https://rsshub.app/apnews/topics/sports",
     "https://rsshub.app/apnews/topics/entertainment",
-
-    # ── NPR ──
     "https://feeds.npr.org/1001/rss.xml",
     "https://feeds.npr.org/1014/rss.xml",
     "https://feeds.npr.org/1003/rss.xml",
     "https://feeds.npr.org/1007/rss.xml",
     "https://feeds.npr.org/1008/rss.xml",
     "https://feeds.npr.org/1019/rss.xml",
-
-    # ── CNBC ──
     "https://www.cnbc.com/id/100003114/device/rss/rss.html",
     "https://www.cnbc.com/id/10001147/device/rss/rss.html",
     "https://www.cnbc.com/id/100727362/device/rss/rss.html",
-
-    # ── Bloomberg ──
     "https://feeds.bloomberg.com/markets/news.rss",
     "https://feeds.bloomberg.com/technology/news.rss",
     "https://feeds.bloomberg.com/politics/news.rss",
-
-    # ── The Guardian ──
     "https://www.theguardian.com/world/rss",
     "https://www.theguardian.com/technology/rss",
     "https://www.theguardian.com/business/rss",
@@ -175,19 +109,13 @@ RSS_FEEDS = [
     "https://www.theguardian.com/sport/rss",
     "https://www.theguardian.com/culture/rss",
     "https://www.theguardian.com/science/rss",
-
-    # ── Newsweek / Independent / Telegraph ──
     "https://www.newsweek.com/rss",
     "https://www.independent.co.uk/news/world/rss",
     "https://www.telegraph.co.uk/rss",
     "https://www.huffpost.com/section/front-page/feed",
-
-    # ── Weather ──
     "https://rss.weather.com/weather/rss/news",
     "https://feeds.a.dj.com/rss/RSSWeather.xml",
     "https://www.accuweather.com/rss/news.rss",
-
-    # ── Crypto ──
     "https://cointelegraph.com/rss",
     "https://coindesk.com/feed",
     "https://cryptonews.com/rss.xml",
@@ -200,8 +128,6 @@ RSS_FEEDS = [
     "https://www.reddit.com/r/altcoin/hot/.rss",
     "https://www.reddit.com/r/ethereum/hot/.rss",
     "https://www.reddit.com/r/defi/hot/.rss",
-
-    # ── Stocks & Markets ──
     "https://finance.yahoo.com/news/rss/index",
     "https://www.marketwatch.com/rss/news",
     "https://www.investing.com/rss/news.rss",
@@ -212,8 +138,6 @@ RSS_FEEDS = [
     "https://www.reddit.com/r/stocks/hot/.rss",
     "https://www.reddit.com/r/investing/hot/.rss",
     "https://www.reddit.com/r/wallstreetbets/hot/.rss",
-
-    # ── India ──
     "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
     "https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms",
     "https://www.ndtv.com/rss/all",
@@ -226,8 +150,6 @@ RSS_FEEDS = [
     "https://www.livemint.com/rss/latest",
     "https://www.moneycontrol.com/rss/marketreports.xml",
     "https://www.reddit.com/r/india/hot/.rss",
-
-    # ── Tech ──
     "https://www.wired.com/feed/rss",
     "https://www.theverge.com/rss/index.xml",
     "https://arstechnica.com/feed/",
@@ -239,8 +161,6 @@ RSS_FEEDS = [
     "https://www.reddit.com/r/artificial/hot/.rss",
     "https://www.reddit.com/r/MachineLearning/hot/.rss",
     "https://www.reddit.com/r/Futurology/hot/.rss",
-
-    # ── Science & Space ──
     "https://www.nasa.gov/rss/dyn/breaking_news.rss",
     "https://www.space.com/feed",
     "https://www.nature.com/nature.rss",
@@ -248,8 +168,6 @@ RSS_FEEDS = [
     "https://www.newscientist.com/feed/home",
     "https://www.reddit.com/r/science/hot/.rss",
     "https://www.reddit.com/r/space/hot/.rss",
-
-    # ── Sports ──
     "https://www.espn.com/espn/rss/news",
     "https://www.skysports.com/rss/12040",
     "https://www.skysports.com/rss/12041",
@@ -259,8 +177,6 @@ RSS_FEEDS = [
     "https://www.reddit.com/r/nba/hot/.rss",
     "https://www.reddit.com/r/soccer/hot/.rss",
     "https://www.reddit.com/r/Cricket/hot/.rss",
-
-    # ── Entertainment ──
     "https://variety.com/feed/",
     "https://www.hollywoodreporter.com/feed/",
     "https://www.billboard.com/articles/rss",
@@ -273,8 +189,6 @@ RSS_FEEDS = [
     "https://www.reddit.com/r/esports/hot/.rss",
     "https://www.reddit.com/r/GameDeals/hot/.rss",
     "https://www.reddit.com/r/truegaming/hot/.rss",
-
-    # ── Gaming ──
     "https://www.ign.com/rss/articles/feed",
     "https://www.gamespot.com/feeds/news/",
     "https://www.pcgamer.com/rss/",
@@ -292,8 +206,6 @@ RSS_FEEDS = [
     "https://www.reddit.com/r/XboxSeriesX/hot/.rss",
     "https://www.reddit.com/r/NintendoSwitch/hot/.rss",
     "https://www.reddit.com/r/pcgaming/hot/.rss",
-
-    # ── Mobile / Android / iOS ──
     "https://www.androidauthority.com/feed/",
     "https://www.androidcentral.com/feed",
     "https://9to5google.com/feed/",
@@ -307,8 +219,6 @@ RSS_FEEDS = [
     "https://www.reddit.com/r/samsung/hot/.rss",
     "https://www.reddit.com/r/oneplus/hot/.rss",
     "https://www.reddit.com/r/apple/hot/.rss",
-
-    # ── Health ──
     "https://www.webmd.com/rss/all.xml",
     "https://www.medicalnewstoday.com/feed",
     "https://www.healthline.com/rss/all",
@@ -316,8 +226,6 @@ RSS_FEEDS = [
     "https://www.who.int/rss-feeds/news-english.xml",
     "https://www.reddit.com/r/health/hot/.rss",
     "https://www.reddit.com/r/Fitness/hot/.rss",
-
-    # ── Business & Startups ──
     "https://www.inc.com/rss/",
     "https://www.forbes.com/entrepreneurs/feed/",
     "https://www.businessinsider.com/rss",
@@ -327,27 +235,17 @@ RSS_FEEDS = [
     "https://www.reddit.com/r/business/hot/.rss",
     "https://www.reddit.com/r/finance/hot/.rss",
     "https://www.reddit.com/r/Economics/hot/.rss",
-
-    # ── Politics ──
     "https://www.reddit.com/r/politics/hot/.rss",
     "https://www.reddit.com/r/worldnews/hot/.rss",
     "https://www.reddit.com/r/geopolitics/hot/.rss",
-
-    # ── Europe ──
     "https://www.dw.com/en/top-stories/rss",
     "https://www.euronews.com/rss",
     "https://www.france24.com/en/rss",
-
-    # ── Asia Pacific ──
     "https://www.scmp.com/rss/this_just_in/feed.xml",
     "https://www.straitstimes.com/news/asia/rss.xml",
     "https://www.japantimes.co.jp/feed/",
-
-    # ── Middle East / Africa ──
     "https://www.aljazeera.com/xml/rss/all.xml",
     "https://www.africanews.com/feed/",
-
-    # ── Weather ──
     "https://www.reddit.com/r/weather/hot/.rss",
     "https://www.reddit.com/r/climate/hot/.rss",
     "https://www.reddit.com/r/ClimateCrisis/hot/.rss",
@@ -364,10 +262,24 @@ OPENROUTER_MODELS = [
 
 NVIDIA_MODEL = "meta/llama-3.1-8b-instruct"
 
-AD_SLOT_MARKER_START = "<!-- AD_TOP -->"
-AD_SLOT_MARKER_MID = "<!-- AD_MID -->"
-AD_SLOT_MARKER_END = "<!-- AD_BOTTOM -->"
-
+BRAND_ENTITIES = [
+    "Apple", "Samsung", "Google", "Microsoft", "Amazon", "Meta", "Netflix",
+    "Tesla", "NVIDIA", "AMD", "Intel", "Qualcomm", "TSMC", "Sony", "Nintendo",
+    "Microsoft", "Disney", "Warner Bros", "Spotify", "Uber", "Airbnb",
+    "Twitter", "X", "Instagram", "TikTok", "YouTube", "Reddit", "LinkedIn",
+    "OpenAI", "Anthropic", "Stability AI", "Midjourney",
+    "iPhone", "iPad", "MacBook", "Apple Watch", "AirPods",
+    "Galaxy", "Pixel", "OnePlus", "Nothing", "Xiaomi", "Oppo", "Vivo",
+    "PlayStation", "PS5", "PS4", "Xbox", "Nintendo Switch", "Steam Deck",
+    "Bitcoin", "Ethereum", "Solana", "Cardano", "Ripple", "XRP", "Dogecoin",
+    "ChatGPT", "GPT-4", "Gemini", "Claude", "Copilot", "LLaMA", "Mistral",
+    "NASA", "SpaceX", "Boeing", "Lockheed Martin",
+    "FDA", "CDC", "WHO", "UN", "NATO", "IMF", "World Bank", "SEC", "FCC",
+    "Windows", "macOS", "iOS", "Android", "Linux", "Ubuntu",
+    "Fortnite", "Minecraft", "GTA", "Call of Duty", "Elden Ring",
+    "Ferrari", "Red Bull", "Mercedes", "McLaren", "Aston Martin",
+    "UFC", "NBA", "NFL", "MLB", "NHL", "FIFA", "IPL",
+]
 
 def load_env_api_keys():
     keys = {}
@@ -382,7 +294,6 @@ def load_env_api_keys():
     keys["newsapi"] = os.environ.get("NEWSAPI_KEY", "")
     return keys
 
-
 def fetch_trends_rss():
     topics = []
     for url in RSS_FEEDS:
@@ -391,7 +302,6 @@ def fetch_trends_rss():
             if resp.status_code != 200:
                 continue
             root = ElementTree.fromstring(resp.content)
-            ns = {"atom": "http://www.w3.org/2005/Atom"} if not root.tag.startswith("rss") else {}
             for item in root.iter("item"):
                 title = item.findtext("title", "")
                 desc = item.findtext("description", "")
@@ -404,10 +314,9 @@ def fetch_trends_rss():
                     link_el = entry.find("{http://www.w3.org/2005/Atom}link")
                     link = link_el.attrib.get("href", "") if link_el is not None else ""
                     topics.append({"title": title, "text": title, "source": url, "link": link})
-        except Exception as e:
-            log.warning(f"RSS failed for {url}: {e}")
+        except Exception:
+            pass
     return topics
-
 
 def fetch_trends_google():
     results = []
@@ -419,11 +328,9 @@ def fetch_trends_google():
             if not trending.empty:
                 for title in trending[0].head(8).tolist():
                     results.append({"title": title, "text": title, "source": f"google_trends_{geo}", "link": ""})
-        except Exception as e:
-            log.warning(f"Google Trends ({geo}) failed: {e}")
+        except Exception:
             continue
     return results
-
 
 def fetch_trends_newsapi(api_key):
     if not api_key:
@@ -448,48 +355,49 @@ def fetch_trends_newsapi(api_key):
                     desc = article.get("description", "") or ""
                     text = f"{title} {desc}"
                     results.append({"title": title, "text": text, "source": f"newsapi/{topic}", "link": article.get("url", "")})
-        except Exception as e:
-            log.warning(f"NewsAPI {topic} failed: {e}")
+        except Exception:
             continue
     return results
 
+def match_category(title_lower):
+    """Determine which category a title belongs to based on keyword matching."""
+    best_cat = None
+    best_score = 0
+    for cat in CATEGORIES:
+        score = 0
+        for kw in cat["kw"]:
+            if kw.lower() in title_lower:
+                score += 1
+        if score > best_score:
+            best_score = score
+            best_cat = cat["id"]
+    return best_cat
 
-def score_topic(topic):
-    title_lower = topic["title"].lower()
-    full_text = topic["text"].lower()
-    score = 0
-    matched = []
-    for kw in HIGH_CPC_KEYWORDS:
-        if kw.lower() in title_lower:
-            score += 20
-            matched.append(kw)
-        elif kw.lower() in full_text:
-            score += 5
-            matched.append(kw)
-    words = full_text.split()
-    if len(words) > 10:
-        score += 5
-    if any(c.isdigit() for c in full_text):
-        score += 3
-    return score, matched
-
-
-def pick_best_topic(candidates):
-    scored = []
-    for c in candidates:
-        s, matched = score_topic(c)
-        if s > 0:
-            scored.append((s, c, matched))
-    scored.sort(key=lambda x: x[0], reverse=True)
-    if scored:
-        best = scored[0]
-        log.info(f"Best topic: {best[1]['title']} (score={best[0]}, keywords={best[2]})")
-        return best[1], best[2]
-    if candidates:
-        log.info(f"No high-CPC match, using first topic: {candidates[0]['title']}")
-        return candidates[0], []
-    return None, []
-
+def extract_entity(title):
+    """Extract the most specific entity/term from a title for image search."""
+    t = title
+    # Look for known brand entities first
+    for brand in BRAND_ENTITIES:
+        if brand.lower() in t.lower():
+            # Extract the full phrase containing the brand
+            idx = t.lower().find(brand.lower())
+            start = max(0, idx - 10)
+            end = min(len(t), idx + len(brand) + 25)
+            phrase = t[start:end].strip().rstrip(",:;.!?-'\"")
+            return phrase[:60]
+    # Look for capitalized multi-word phrases (proper nouns)
+    matches = re.findall(r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)', t)
+    if matches:
+        return matches[0][:60]
+    # Look for uppercase acronyms
+    acronyms = re.findall(r'\b[A-Z]{2,5}\b', t)
+    if acronyms:
+        return " ".join(acronyms[:2])
+    # Fall back to first 4 meaningful words
+    words = [w for w in t.split() if len(w) > 3][:4]
+    if words:
+        return " ".join(words)
+    return t[:40]
 
 def get_existing_titles():
     titles = set()
@@ -503,7 +411,6 @@ def get_existing_titles():
             pass
     return titles
 
-
 def is_duplicate(title, existing):
     t = title.lower().strip()
     if t in existing:
@@ -514,7 +421,6 @@ def is_duplicate(title, existing):
         if t_clean == e_clean:
             return True
     return False
-
 
 def call_openrouter(api_key, prompt, model=None):
     if not model:
@@ -543,7 +449,6 @@ def call_openrouter(api_key, prompt, model=None):
         raise Exception(f"OpenRouter error {resp.status_code}: {resp.text[:200]}")
     return resp.json()["choices"][0]["message"]["content"]
 
-
 def call_nvidia(api_key, prompt):
     headers = {
         "Authorization": f"Bearer {api_key}",
@@ -569,19 +474,14 @@ def call_nvidia(api_key, prompt):
         raise Exception(f"NVIDIA error {resp.status_code}: {resp.text[:200]}")
     return resp.json()["choices"][0]["message"]["content"]
 
-
-def generate_article(topic, keywords, api_keys):
-    kw_str = ", ".join(keywords[:5]) if keywords else topic["title"]
+def generate_article(title, category_name, api_keys):
     prompt = f"""Write a comprehensive, well-researched article about the following topic.
 
-Topic: {topic['title']}
-Source reference: {topic.get('link', '')}
-
-CRITICAL: Write strictly about the TOPIC above, not about the keywords.
-Naturally include these keywords where relevant: {kw_str}
+Topic: {title}
+Category: {category_name}
 
 Requirements:
-- Write at least 1200 words
+- Write at least 1000 words
 - Use a natural, engaging, professional tone
 - Vary sentence length and structure
 - Include specific examples, data points, or statistics where relevant
@@ -623,10 +523,8 @@ Return only the article content in markdown format with no additional commentary
 
     raise Exception(f"All LLM APIs failed: {'; '.join(errors)}")
 
-
 def fetch_image(query, api_key, used_urls=None):
     if not api_key:
-        log.warning("No Unsplash API key")
         return ""
     if used_urls is None:
         used_urls = set()
@@ -639,7 +537,6 @@ def fetch_image(query, api_key, used_urls=None):
             timeout=15,
         )
         if resp.status_code != 200:
-            log.warning(f"Unsplash HTTP {resp.status_code}: {resp.text[:100]}")
             return ""
         data = resp.json()
         if data.get("results"):
@@ -651,12 +548,9 @@ def fetch_image(query, api_key, used_urls=None):
             fallback = data["results"][0]
             url = fallback["urls"]["regular"]
             return f"{url}?w=1200"
-        log.warning(f"Unsplash: no results for '{query[:50]}'")
         return ""
-    except Exception as e:
-        log.warning(f"Unsplash failed: {e}")
+    except Exception:
         return ""
-
 
 def slugify(title):
     s = title.lower().strip()
@@ -665,9 +559,8 @@ def slugify(title):
     s = s[:80].strip('-')
     return s
 
-
-def build_post(content, topic, keywords, image_url, existing_titles):
-    title = topic["title"]
+def build_post(content, article_title, category_id, image_url, existing_titles):
+    title = article_title
     if len(title) > 100:
         title = title[:97] + "..."
 
@@ -685,16 +578,13 @@ def build_post(content, topic, keywords, image_url, existing_titles):
     excerpt = re.sub(r'\s+', ' ', excerpt).strip()
     excerpt = excerpt[:150] + "..." if len(excerpt) > 150 else excerpt
 
-    kw_tags = ", ".join(keywords[:5]) if keywords else topic["title"].lower().replace(" ", ", ")
-    tag_list = re.sub(r'[^\w,\s]', '', kw_tags).strip().lower()
-
     image_line = f'image: "{image_url}"\n' if image_url else ""
     frontmatter = f"""---
 title: "{title}"
 date: {date.strftime('%Y-%m-%d %H:%M:%S')}
 excerpt: "{excerpt}"
-{image_line}tags: [{tag_list}]
-categories: [{tag_list}]
+{image_line}tags: [{category_id}]
+categories: [{category_id}]
 ---
 
 """
@@ -702,15 +592,12 @@ categories: [{tag_list}]
     content_clean = re.sub(r'^```markdown\s*', '', content)
     content_clean = re.sub(r'^```\s*$', '', content_clean, flags=re.MULTILINE)
     content_clean = re.sub(r'^---.*?---\s*', '', content_clean, flags=re.DOTALL)
-    # Remove the first h1 heading since we render title from front matter
-    content_clean = re.sub(r'^#\s+.+?\n=+\s*\n*', '', content_clean, count=1)
     content_clean = re.sub(r'^#\s+.+?\n', '', content_clean, count=1)
 
     final_content = frontmatter + content_clean.strip()
     filepath.write_text(final_content, encoding="utf-8")
     log.info(f"Post saved: {filepath.name}")
     return filepath
-
 
 def git_commit_push(filepath):
     try:
@@ -723,10 +610,7 @@ def git_commit_push(filepath):
         if r.returncode != 0:
             log.error(f"git add failed: {r.stderr.decode()}")
             return False
-        r = subprocess.run(
-            ["git", "diff", "--cached", "--quiet"],
-            cwd=repo_dir, capture_output=True,
-        )
+        r = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=repo_dir, capture_output=True)
         if r.returncode == 0:
             log.info("No changes to commit")
             return True
@@ -734,10 +618,7 @@ def git_commit_push(filepath):
             msg = f"Auto: {filepath.name.replace('.md', '').replace('-', ' ')[11:]}"
         else:
             msg = "Auto: daily batch articles"
-        r = subprocess.run(
-            ["git", "commit", "-m", msg],
-            cwd=repo_dir, capture_output=True,
-        )
+        r = subprocess.run(["git", "commit", "-m", msg], cwd=repo_dir, capture_output=True)
         if r.returncode != 0:
             log.error(f"git commit failed: {r.stderr.decode()}")
             return False
@@ -754,7 +635,7 @@ def git_commit_push(filepath):
 
 def main():
     log.info("=" * 50)
-    log.info("Starting daily content generation (5 articles)")
+    log.info("Starting daily content generation (1 per category)")
     log.info("=" * 50)
 
     api_keys = load_env_api_keys()
@@ -763,7 +644,6 @@ def main():
 
     log.info("Fetching trends...")
     all_candidates = []
-
     trends_rss = fetch_trends_rss()
     log.info(f"RSS feeds returned: {len(trends_rss)} items")
     all_candidates.extend(trends_rss)
@@ -776,9 +656,7 @@ def main():
     log.info(f"NewsAPI returned: {len(trends_news)} items")
     all_candidates.extend(trends_news)
 
-    if not all_candidates:
-        log.error("No trends found from any source")
-        sys.exit(1)
+    log.info(f"Total candidates: {len(all_candidates)}")
 
     used_images = set()
     for old_post in POSTS_DIR.glob("*.md"):
@@ -793,69 +671,95 @@ def main():
     existing_titles = get_existing_titles()
     log.info(f"Existing posts: {len(existing_titles)}")
 
-    used_topics = set()
+    # Assign each candidate to a category
+    cat_candidates = {cat["id"]: [] for cat in CATEGORIES}
+    for c in all_candidates:
+        cid = match_category(c["title"].lower())
+        if cid and cid in cat_candidates:
+            cat_candidates[cid].append(c)
+
+    # Score candidates within each category
+    cat_picks = {}
+    for cat in CATEGORIES:
+        cid = cat["id"]
+        picks = cat_candidates.get(cid, [])
+        if not picks:
+            log.info(f"No trending candidates for {cat['name']}")
+            continue
+        scored = []
+        for c in picks:
+            score = 0
+            for kw in cat["kw"]:
+                if kw.lower() in c["title"].lower():
+                    score += 10
+            if c.get("link"):
+                score += 3
+            if len(c["title"]) > 20:
+                score += 2
+            scored.append((score, c))
+        scored.sort(key=lambda x: x[0], reverse=True)
+        best = scored[0][1]
+        cat_picks[cid] = best
+        log.info(f"Selected for {cat['name']}: {best['title'][:60]} (score={scored[0][0]})")
+
     articles_generated = 0
-    max_articles = 5
-    attempts = 0
-    max_attempts = 30
+    max_articles = 12  # cap to avoid rate limits
 
-    while articles_generated < max_articles and attempts < max_attempts:
-        attempts += 1
-        available = [c for c in all_candidates if c["title"] not in used_topics]
-        if not available:
-            log.info("No more unique topics available")
+    for cat in CATEGORIES:
+        if articles_generated >= max_articles:
+            log.info(f"Reached max articles ({max_articles}), stopping")
             break
 
-        topic, keywords = pick_best_topic(available)
-        if not topic:
-            log.info("No suitable topic found, stopping")
-            break
-
-        if is_duplicate(topic["title"], existing_titles):
-            log.info(f"Duplicate topic: {topic['title']}")
-            used_topics.add(topic["title"])
+        cid = cat["id"]
+        candidate = cat_picks.get(cid)
+        if not candidate:
+            log.info(f"Skipping {cat['name']} - no candidate")
             continue
 
-        log.info(f"Generating article {articles_generated + 1}/{max_articles}: {topic['title']}")
+        title = candidate["title"]
+        if is_duplicate(title, existing_titles):
+            log.info(f"Duplicate: {title[:50]}")
+            continue
+
+        log.info(f"[{articles_generated + 1}/{max_articles}] Generating {cat['name']}: {title[:60]}")
+
+        article = None
         try:
-            article = generate_article(topic, keywords, api_keys)
+            article = generate_article(title, cat["name"], api_keys)
         except Exception as e:
-            log.error(f"Article generation failed: {e}")
-            used_topics.add(topic["title"])
+            log.error(f"Generation failed for {cat['name']}: {e}")
             continue
 
-        log.info(f"Article generated: {len(article)} characters")
-        used_topics.add(topic["title"])
+        log.info(f"Article done: {len(article)} chars")
 
-        image_keywords = keywords[:3] if keywords else topic["title"].split()[:5]
+        # ─── Image matching: use entity from title, then category fallback ───
+        entity = extract_entity(title)
         image_queries = [
-            " ".join(image_keywords),
-            topic["title"],
+            entity if entity else None,
+            title.split(":")[0].strip() if ":" in title else None,
+            cat["image"],
         ]
+        image_queries = [q for q in image_queries if q]
+
         image_url = ""
         for q in image_queries:
             image_url = fetch_image(q, api_keys.get("unsplash", ""), used_images)
             if image_url:
+                log.info(f"Image found for query: '{q[:40]}'")
                 break
 
         if not image_url:
-            fallback_pool = [
-                "business", "technology", "finance", "office", "success",
-                "nature", "city", "global", "digital", "future",
-                "data", "network", "innovation", "growth", "strategy",
-            ]
-            random.shuffle(fallback_pool)
-            for q in fallback_pool[:5]:
-                image_url = fetch_image(q, api_keys.get("unsplash", ""), used_images)
-                if image_url:
-                    break
+            fallback = fetch_image(cat["image"], api_keys.get("unsplash", ""), used_images)
+            if fallback:
+                image_url = fallback
 
-        post_file = build_post(article, topic, keywords, image_url, existing_titles)
+        post_file = build_post(article, title, cid, image_url, existing_titles)
         if post_file:
             articles_generated += 1
-            log.info(f"Article saved: {post_file.name}")
+            existing_titles.add(title.lower().strip())
+            log.info(f"Saved: {post_file.name}")
 
-    log.info(f"Total articles generated this run: {articles_generated}")
+    log.info(f"Total articles generated: {articles_generated}")
 
     if articles_generated == 0:
         log.error("No articles were generated")
@@ -867,7 +771,6 @@ def main():
     else:
         log.error("Articles saved locally but git push failed")
         sys.exit(1)
-
 
 if __name__ == "__main__":
     main()
