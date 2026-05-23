@@ -54,44 +54,157 @@ HIGH_CPC_KEYWORDS = [
     "options trading", "futures trading", "intraday", "swing trading",
     "value investing", "growth stocks", "REITs", "stock split",
     "NVDA", "AAPL", "TSLA", "AMZN", "MSFT", "GOOGL",
+    # Sports
+    "NFL", "NBA", "soccer", "cricket", "tennis", "F1", "UFC",
+    "Olympics", "World Cup", "Super Bowl", "Champions League",
+    "baseball", "hockey", "golf", "boxing", "wrestling",
+    "football", "basketball", "Premier League", "IPL",
+    # Entertainment
+    "movies", "music", "TV shows", "streaming", "Netflix",
+    "Hollywood", "Bollywood", "celebrity", "Oscars", "Grammy",
+    "gaming", "video games", "PlayStation", "Xbox", "Nintendo",
+    "anime", "comics", "Marvel", "DC", "Disney",
+    "Spotify", "YouTube", "TikTok", "Instagram",
+    # Health
+    "COVID", "vaccine", "cancer", "diabetes", "heart disease",
+    "mental health", "fitness", "nutrition", "yoga", "meditation",
+    "sleep", "diet", "weight loss", "supplements",
+    "pandemic", "medicine", "surgery", "therapy",
+    # Science
+    "NASA", "space", "Mars", "moon", "telescope", "quantum",
+    "physics", "biology", "chemistry", "genetics", "evolution",
+    "climate science", "ocean", "archaeology", "paleontology",
+    "nuclear fusion", "particle physics", "dark matter",
+    # World News
+    "Ukraine", "Russia", "China", "Middle East", "Europe",
+    "Asia", "Africa", "diplomacy", "sanctions", "military",
+    "border", "refugee", "treaty", "NATO", "UN",
+    "earthquake", "tsunami", "wildfire", "flood", "hurricane",
+    "drought", "heatwave", "blizzard", "tornado", "volcano",
 ]
 
 RSS_FEEDS = [
-    # Global
+    # ── Google News (global + topic-specific) ──
     "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en",
-    "https://feeds.bbci.co.uk/news/technology/rss.xml",
-    "https://feeds.bbci.co.uk/news/business/rss.xml",
-    "https://feeds.bbci.co.uk/news/politics/rss.xml",
-    "https://feeds.bbci.co.uk/news/world/rss.xml",
-    "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
-    # Google News (topic-specific)
+    "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en",
+    "https://news.google.com/rss?hl=en-GB&gl=GB&ceid=GB:en",
     "https://news.google.com/rss/search?q=cryptocurrency+Bitcoin&hl=en-US&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=stock+market+investing&hl=en-US&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=artificial+intelligence+tech&hl=en-US&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=politics+election&hl=en-US&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=weather+climate&hl=en-US&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=business+finance&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=sports+football+cricket&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=entertainment+movies+music&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=health+fitness+medical&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=science+space+research&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=gaming+esports&hl=en-US&gl=US&ceid=US:en",
+
+    # ── BBC ──
+    "https://feeds.bbci.co.uk/news/rss.xml",
+    "https://feeds.bbci.co.uk/news/technology/rss.xml",
+    "https://feeds.bbci.co.uk/news/business/rss.xml",
+    "https://feeds.bbci.co.uk/news/politics/rss.xml",
+    "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+    "https://feeds.bbci.co.uk/news/entertainment_arts/rss.xml",
+    "https://feeds.bbci.co.uk/sport/rss.xml",
+    "https://feeds.bbci.co.uk/news/health/rss.xml",
+
+    # ── New York Times ──
+    "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Climate.xml",
-    "https://feeds.npr.org/1014/rss.xml",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Sports.xml",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Health.xml",
+
+    # ── Reuters ──
+    "https://www.reutersagency.com/feed/",
+    "https://www.reutersagency.com/feed/?best-topics=business-finance",
+    "https://www.reutersagency.com/feed/?best-topics=tech",
+    "https://www.reutersagency.com/feed/?best-topics=politics",
+    "https://www.reutersagency.com/feed/?best-topics=health",
+    "https://www.reutersagency.com/feed/?best-topics=lifestyle",
+
+    # ── Associated Press ──
+    "https://rsshub.app/apnews/topics/apf-topnews",
+    "https://rsshub.app/apnews/topics/technology",
+    "https://rsshub.app/apnews/topics/business",
+    "https://rsshub.app/apnews/topics/politics",
+    "https://rsshub.app/apnews/topics/science",
+    "https://rsshub.app/apnews/topics/health",
+    "https://rsshub.app/apnews/topics/sports",
+    "https://rsshub.app/apnews/topics/entertainment",
+
+    # ── NPR ──
     "https://feeds.npr.org/1001/rss.xml",
+    "https://feeds.npr.org/1014/rss.xml",
+    "https://feeds.npr.org/1003/rss.xml",
+    "https://feeds.npr.org/1007/rss.xml",
+    "https://feeds.npr.org/1008/rss.xml",
+    "https://feeds.npr.org/1019/rss.xml",
+
+    # ── CNBC ──
     "https://www.cnbc.com/id/100003114/device/rss/rss.html",
     "https://www.cnbc.com/id/10001147/device/rss/rss.html",
+    "https://www.cnbc.com/id/100727362/device/rss/rss.html",
+
+    # ── Bloomberg ──
+    "https://feeds.bloomberg.com/markets/news.rss",
+    "https://feeds.bloomberg.com/technology/news.rss",
+    "https://feeds.bloomberg.com/politics/news.rss",
+
+    # ── The Guardian ──
+    "https://www.theguardian.com/world/rss",
+    "https://www.theguardian.com/technology/rss",
+    "https://www.theguardian.com/business/rss",
+    "https://www.theguardian.com/politics/rss",
+    "https://www.theguardian.com/sport/rss",
+    "https://www.theguardian.com/culture/rss",
+    "https://www.theguardian.com/science/rss",
+
+    # ── Newsweek / Independent / Telegraph ──
     "https://www.newsweek.com/rss",
+    "https://www.independent.co.uk/news/world/rss",
+    "https://www.telegraph.co.uk/rss",
+    "https://www.huffpost.com/section/front-page/feed",
+
+    # ── Weather ──
     "https://rss.weather.com/weather/rss/news",
-    # Reddit
-    "https://www.reddit.com/r/finance/hot/.rss",
-    "https://www.reddit.com/r/technology/hot/.rss",
-    "https://www.reddit.com/r/artificial/hot/.rss",
-    "https://www.reddit.com/r/politics/hot/.rss",
-    "https://www.reddit.com/r/weather/hot/.rss",
-    "https://www.reddit.com/r/startups/hot/.rss",
-    "https://www.reddit.com/r/worldnews/hot/.rss",
-    # India
-    "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en",
+    "https://feeds.a.dj.com/rss/RSSWeather.xml",
+    "https://www.accuweather.com/rss/news.rss",
+
+    # ── Crypto ──
+    "https://cointelegraph.com/rss",
+    "https://coindesk.com/feed",
+    "https://cryptonews.com/rss.xml",
+    "https://cryptopotato.com/feed/",
+    "https://www.newsbtc.com/feed/",
+    "https://u.today/rss",
+    "https://cryptobriefing.com/feed/",
+    "https://www.reddit.com/r/CryptoCurrency/hot/.rss",
+    "https://www.reddit.com/r/bitcoin/hot/.rss",
+    "https://www.reddit.com/r/altcoin/hot/.rss",
+    "https://www.reddit.com/r/ethereum/hot/.rss",
+    "https://www.reddit.com/r/defi/hot/.rss",
+
+    # ── Stocks & Markets ──
+    "https://finance.yahoo.com/news/rss/index",
+    "https://www.marketwatch.com/rss/news",
+    "https://www.investing.com/rss/news.rss",
+    "https://www.investing.com/rss/market_overview.rss",
+    "https://seekingalpha.com/feed.xml",
+    "https://www.fool.com/feed/",
+    "https://www.barrons.com/feed/rss",
+    "https://www.reddit.com/r/stocks/hot/.rss",
+    "https://www.reddit.com/r/investing/hot/.rss",
+    "https://www.reddit.com/r/wallstreetbets/hot/.rss",
+
+    # ── India ──
     "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
     "https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms",
     "https://www.ndtv.com/rss/all",
@@ -100,33 +213,100 @@ RSS_FEEDS = [
     "https://indianexpress.com/feed/",
     "https://www.business-standard.com/rss/latest.rss",
     "https://economictimes.indiatimes.com/rssfeedstopstories.cms",
-    "https://www.livemint.com/rss/latest",
-    # Europe
-    "https://www.theguardian.com/world/rss",
-    "https://www.theguardian.com/technology/rss",
-    "https://www.theguardian.com/business/rss",
-    "https://www.theguardian.com/politics/rss",
-    "https://www.dw.com/en/top-stories/rss",
-    # Asia Pacific
-    "https://www.scmp.com/rss/this_just_in/feed.xml",
-    "https://www.japantimes.co.jp/feed/",
-    # Middle East / Africa
-    "https://www.aljazeera.com/xml/rss/all.xml",
-    # Crypto
-    "https://cointelegraph.com/rss",
-    "https://coindesk.com/feed",
-    "https://cryptonews.com/rss.xml",
-    "https://www.reddit.com/r/CryptoCurrency/hot/.rss",
-    "https://www.reddit.com/r/bitcoin/hot/.rss",
-    "https://www.reddit.com/r/altcoin/hot/.rss",
-    # Stocks
-    "https://finance.yahoo.com/news/rss/index",
-    "https://www.marketwatch.com/rss/news",
-    "https://www.investing.com/rss/news.rss",
-    "https://www.reddit.com/r/stocks/hot/.rss",
-    "https://www.reddit.com/r/investing/hot/.rss",
     "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
+    "https://www.livemint.com/rss/latest",
     "https://www.moneycontrol.com/rss/marketreports.xml",
+    "https://www.reddit.com/r/india/hot/.rss",
+
+    # ── Tech ──
+    "https://www.wired.com/feed/rss",
+    "https://www.theverge.com/rss/index.xml",
+    "https://arstechnica.com/feed/",
+    "https://techcrunch.com/feed/",
+    "https://www.engadget.com/rss.xml",
+    "https://www.zdnet.com/news/rss.xml",
+    "https://www.cnet.com/rss/news/",
+    "https://www.reddit.com/r/technology/hot/.rss",
+    "https://www.reddit.com/r/artificial/hot/.rss",
+    "https://www.reddit.com/r/MachineLearning/hot/.rss",
+    "https://www.reddit.com/r/Futurology/hot/.rss",
+
+    # ── Science & Space ──
+    "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+    "https://www.space.com/feed",
+    "https://www.nature.com/nature.rss",
+    "https://www.scientificamerican.com/feed/",
+    "https://www.newscientist.com/feed/home",
+    "https://www.reddit.com/r/science/hot/.rss",
+    "https://www.reddit.com/r/space/hot/.rss",
+
+    # ── Sports ──
+    "https://www.espn.com/espn/rss/news",
+    "https://www.skysports.com/rss/12040",
+    "https://www.skysports.com/rss/12041",
+    "https://sports.yahoo.com/rss",
+    "https://www.reddit.com/r/sports/hot/.rss",
+    "https://www.reddit.com/r/nfl/hot/.rss",
+    "https://www.reddit.com/r/nba/hot/.rss",
+    "https://www.reddit.com/r/soccer/hot/.rss",
+    "https://www.reddit.com/r/Cricket/hot/.rss",
+
+    # ── Entertainment ──
+    "https://variety.com/feed/",
+    "https://www.hollywoodreporter.com/feed/",
+    "https://www.billboard.com/articles/rss",
+    "https://www.rollingstone.com/feed/",
+    "https://pitchfork.com/feed/feed-news/rss",
+    "https://www.reddit.com/r/movies/hot/.rss",
+    "https://www.reddit.com/r/television/hot/.rss",
+    "https://www.reddit.com/r/Music/hot/.rss",
+    "https://www.reddit.com/r/gaming/hot/.rss",
+    "https://www.reddit.com/r/esports/hot/.rss",
+
+    # ── Health ──
+    "https://www.webmd.com/rss/all.xml",
+    "https://www.medicalnewstoday.com/feed",
+    "https://www.healthline.com/rss/all",
+    "https://www.cdc.gov/rss/health.xml",
+    "https://www.who.int/rss-feeds/news-english.xml",
+    "https://www.reddit.com/r/health/hot/.rss",
+    "https://www.reddit.com/r/Fitness/hot/.rss",
+
+    # ── Business & Startups ──
+    "https://www.inc.com/rss/",
+    "https://www.forbes.com/entrepreneurs/feed/",
+    "https://www.businessinsider.com/rss",
+    "https://hbr.org/feed/latest",
+    "https://www.reddit.com/r/startups/hot/.rss",
+    "https://www.reddit.com/r/Entrepreneur/hot/.rss",
+    "https://www.reddit.com/r/business/hot/.rss",
+    "https://www.reddit.com/r/finance/hot/.rss",
+    "https://www.reddit.com/r/Economics/hot/.rss",
+
+    # ── Politics ──
+    "https://www.reddit.com/r/politics/hot/.rss",
+    "https://www.reddit.com/r/worldnews/hot/.rss",
+    "https://www.reddit.com/r/geopolitics/hot/.rss",
+
+    # ── Europe ──
+    "https://www.dw.com/en/top-stories/rss",
+    "https://www.euronews.com/rss",
+    "https://www.france24.com/en/rss",
+
+    # ── Asia Pacific ──
+    "https://www.scmp.com/rss/this_just_in/feed.xml",
+    "https://www.straitstimes.com/news/asia/rss.xml",
+    "https://www.japantimes.co.jp/feed/",
+
+    # ── Middle East / Africa ──
+    "https://www.aljazeera.com/xml/rss/all.xml",
+    "https://www.africanews.com/feed/",
+
+    # ── Weather ──
+    "https://www.reddit.com/r/weather/hot/.rss",
+    "https://www.reddit.com/r/climate/hot/.rss",
+    "https://www.reddit.com/r/ClimateCrisis/hot/.rss",
+    "https://www.reddit.com/r/tropicalweather/hot/.rss",
 ]
 
 OPENROUTER_MODELS = [
@@ -204,7 +384,10 @@ def fetch_trends_newsapi(api_key):
     if not api_key:
         return []
     results = []
-    topics = ["AI", "politics", "weather", "stock market", "technology", "climate", "cryptocurrency", "Bitcoin", "stocks"]
+    topics = ["AI", "politics", "weather", "stock market", "technology", "climate",
+               "cryptocurrency", "Bitcoin", "stocks", "sports", "entertainment",
+               "movies", "music", "health", "fitness", "science", "space",
+               "gaming", "business", "startup", "IPO", "cricket", "soccer"]
     for topic in topics:
         try:
             resp = requests.get(

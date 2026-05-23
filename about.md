@@ -12,14 +12,17 @@ permalink: /about/
   <h2>What We Cover</h2>
 
   <ul>
-    <li><strong>Artificial Intelligence</strong> — Latest breakthroughs, tools, and industry impacts</li>
-    <li><strong>Technology</strong> — Gadgets, software, cybersecurity, cloud computing, and more</li>
-    <li><strong>Politics</strong> — Policy changes, elections, geopolitical developments</li>
-    <li><strong>Weather & Climate</strong> — Extreme weather, climate science, environmental news</li>
-    <li><strong>Finance & Money</strong> — Investing, crypto, markets, personal finance</li>
     <li><strong>Cryptocurrency</strong> — Bitcoin, Ethereum, DeFi, blockchain, Web3, altcoins</li>
-    <li><strong>Stocks & Markets</strong> — Stock analysis, IPOs, NASDAQ, trading strategies, global markets</li>
-    <li><strong>Business</strong> — Startups, entrepreneurship, industry analysis</li>
+    <li><strong>Stocks & Markets</strong> — Stock analysis, IPOs, NASDAQ, trading, global markets</li>
+    <li><strong>Artificial Intelligence</strong> — Latest breakthroughs, tools, and industry impacts</li>
+    <li><strong>Technology</strong> — Gadgets, software, cybersecurity, cloud computing, gaming</li>
+    <li><strong>Sports</strong> — Football, cricket, NBA, NFL, F1, tennis, Olympics, e-sports</li>
+    <li><strong>Entertainment</strong> — Movies, music, TV shows, streaming, celebrities, gaming</li>
+    <li><strong>Health & Fitness</strong> — Medical breakthroughs, fitness, nutrition, mental health</li>
+    <li><strong>Science & Space</strong> — NASA, space exploration, physics, biology, climate science</li>
+    <li><strong>Politics</strong> — Policy changes, elections, geopolitical developments</li>
+    <li><strong>Business</strong> — Startups, entrepreneurship, industry analysis, economy</li>
+    <li><strong>Weather & Climate</strong> — Extreme weather, climate science, environmental news</li>
     <li><strong>World News</strong> — Global events and trending stories from every region</li>
   </ul>
     <li><strong>Business</strong> — Startups, entrepreneurship, industry analysis</li>
