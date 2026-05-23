@@ -43,18 +43,13 @@ HIGH_CPC_KEYWORDS = [
 ]
 
 RSS_FEEDS = [
+    # Global
     "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en",
     "https://feeds.bbci.co.uk/news/technology/rss.xml",
     "https://feeds.bbci.co.uk/news/business/rss.xml",
     "https://feeds.bbci.co.uk/news/politics/rss.xml",
     "https://feeds.bbci.co.uk/news/world/rss.xml",
     "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
-    "https://www.reddit.com/r/finance/hot/.rss",
-    "https://www.reddit.com/r/technology/hot/.rss",
-    "https://www.reddit.com/r/artificial/hot/.rss",
-    "https://www.reddit.com/r/politics/hot/.rss",
-    "https://www.reddit.com/r/weather/hot/.rss",
-    "https://www.reddit.com/r/startups/hot/.rss",
     "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
@@ -66,6 +61,37 @@ RSS_FEEDS = [
     "https://www.cnbc.com/id/10001147/device/rss/rss.html",
     "https://www.newsweek.com/rss",
     "https://rss.weather.com/weather/rss/news",
+    # Reddit
+    "https://www.reddit.com/r/finance/hot/.rss",
+    "https://www.reddit.com/r/technology/hot/.rss",
+    "https://www.reddit.com/r/artificial/hot/.rss",
+    "https://www.reddit.com/r/politics/hot/.rss",
+    "https://www.reddit.com/r/weather/hot/.rss",
+    "https://www.reddit.com/r/startups/hot/.rss",
+    "https://www.reddit.com/r/worldnews/hot/.rss",
+    "https://www.reddit.com/r/india/hot/.rss",
+    # India
+    "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en",
+    "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+    "https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms",
+    "https://www.ndtv.com/rss/all",
+    "https://www.thehindu.com/news/national/feeder/default.rss",
+    "https://www.hindustantimes.com/feeds/rss/top-news/rssfeed.xml",
+    "https://indianexpress.com/feed/",
+    "https://www.business-standard.com/rss/latest.rss",
+    "https://economictimes.indiatimes.com/rssfeedstopstories.cms",
+    "https://www.livemint.com/rss/latest",
+    # Europe
+    "https://www.theguardian.com/world/rss",
+    "https://www.theguardian.com/technology/rss",
+    "https://www.theguardian.com/business/rss",
+    "https://www.theguardian.com/politics/rss",
+    "https://www.dw.com/en/top-stories/rss",
+    # Asia Pacific
+    "https://www.scmp.com/rss/this_just_in/feed.xml",
+    "https://www.japantimes.co.jp/feed/",
+    # Middle East / Africa
+    "https://www.aljazeera.com/xml/rss/all.xml",
 ]
 
 OPENROUTER_MODELS = [
@@ -125,19 +151,19 @@ def fetch_trends_rss():
 
 
 def fetch_trends_google():
-    try:
-        from pytrends.request import TrendReq
-        pytrends = TrendReq(hl="en-US", tz=300, timeout=10)
-        trending = pytrends.trending_searches(pn="united_states")
-        if trending.empty:
-            return []
-        results = []
-        for title in trending[0].head(10).tolist():
-            results.append({"title": title, "text": title, "source": "google_trends", "link": ""})
-        return results
-    except Exception as e:
-        log.warning(f"Google Trends failed: {e}")
-        return []
+    results = []
+    for geo in ["united_states", "india"]:
+        try:
+            from pytrends.request import TrendReq
+            pytrends = TrendReq(hl="en-US", tz=300, timeout=10)
+            trending = pytrends.trending_searches(pn=geo)
+            if not trending.empty:
+                for title in trending[0].head(8).tolist():
+                    results.append({"title": title, "text": title, "source": f"google_trends_{geo}", "link": ""})
+        except Exception as e:
+            log.warning(f"Google Trends ({geo}) failed: {e}")
+            continue
+    return results
 
 
 def fetch_trends_newsapi(api_key):
@@ -161,6 +187,24 @@ def fetch_trends_newsapi(api_key):
                     results.append({"title": title, "text": text, "source": f"newsapi/{topic}", "link": article.get("url", "")})
         except Exception as e:
             log.warning(f"NewsAPI {topic} failed: {e}")
+            continue
+    india_topics = ["India news", "Indian economy", "Bollywood", "Indian politics"]
+    for topic in india_topics:
+        try:
+            resp = requests.get(
+                "https://newsapi.org/v2/everything",
+                params={"q": topic, "pageSize": 3, "language": "en", "sortBy": "popularity", "apiKey": api_key},
+                timeout=15,
+            )
+            if resp.status_code == 200:
+                data = resp.json()
+                for article in data.get("articles", []):
+                    title = article.get("title", "")
+                    desc = article.get("description", "") or ""
+                    text = f"{title} {desc}"
+                    results.append({"title": title, "text": text, "source": f"newsapi/india", "link": article.get("url", "")})
+        except Exception as e:
+            log.warning(f"NewsAPI India topic '{topic}' failed: {e}")
             continue
     return results
 
