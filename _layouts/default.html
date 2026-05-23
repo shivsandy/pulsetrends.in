@@ -5,25 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title and page.title != 'Home' %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}, {% endif %}{{ site.keywords | default: 'trending news, daily insights, AI, crypto, stocks, tech, gaming, sports, entertainment, health, science, business, politics, world news' }}">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <meta name="theme-color" content="#0a0a0a">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="author" content="{{ site.title }}">
+
+  <!-- Security -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="en_US">
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  {% else %}
+  <meta property="og:image" content="{{ '/assets/images/og-default.jpg' | absolute_url }}">
+  {% endif %}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@pulsetrends">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | absolute_url }}">
   {% seo %}
   {% if site.google_adsense_id %}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.google_adsense_id }}" crossorigin="anonymous"></script>
   {% endif %}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Article Schema -->
+  {% if page.date %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title | escape }}",
+    "description": "{{ page.excerpt | strip_html | truncate: 160 | escape }}",
+    "image": "{% if page.image %}{{ page.image }}{% else %}{{ '/assets/images/og-default.jpg' | absolute_url }}{% endif %}",
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}",
+    "author": {
+      "@type": "Organization",
+      "name": "{{ site.title }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.title }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ '/assets/images/logo.png' | absolute_url }}"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url }}"
+    },
+    "wordCount": "{{ content | strip_html | number_of_words }}"
+  }
+  </script>
+  {% endif %}
+
+  <!-- Site Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "description": "{{ site.description }}",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{ site.url }}/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  {% if page.date %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/"},
+      {"@type": "ListItem", "position": 2, "name": "{{ page.title | escape }}", "item": "{{ page.url | absolute_url }}"}
+    ]
+  }
+  </script>
+  {% endif %}
 </head>
 <body>
 
-<div id="globe-container"></div>
-
 <div class="scroll-progress"></div>
-
-<div class="content-overlay">
 
 <div class="topbar" id="topbar">
   <div class="container">
@@ -38,22 +122,22 @@
 <header id="header">
   <div class="container">
     <div class="logo">
-      <a href="{{ '/' | relative_url }}"><span class="logo-icon">◈</span> Pulse<span>Trends</span></a>
+      <a href="{{ '/' | relative_url }}" aria-label="{{ site.title }} Home"><span class="logo-icon" aria-hidden="true">◈</span> Pulse<span>Trends</span></a>
       <span class="tagline">Daily Trending Insights</span>
     </div>
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Main navigation">
       <a href="{{ '/' | relative_url }}" class="nav-active">Home</a>
       <a href="{{ '/about/' | relative_url }}">About</a>
       <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
       <a href="{{ '/contact/' | relative_url }}">Contact</a>
     </nav>
-    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
-<nav class="mobile-nav" id="mobileNav">
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
   <a href="{{ '/' | relative_url }}">Home</a>
   <a href="{{ '/about/' | relative_url }}">About</a>
   <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
@@ -63,10 +147,10 @@
 <div class="container site-wrap">
   <main class="main-content" id="main-content">
     {% if page.date %}
-    <article class="article-page reveal">
+    <article class="article-page reveal" itemscope itemtype="https://schema.org/Article">
       {% if page.image %}
       <div class="article-img-wrap">
-        <img src="{{ page.image }}" alt="{{ page.title }}" class="featured-img" loading="lazy">
+        <img src="{{ page.image }}" alt="{{ page.title | escape }}" class="featured-img" loading="lazy" itemprop="image">
         <div class="img-overlay"></div>
       </div>
       {% endif %}
@@ -75,68 +159,70 @@
           {% if page.tags.size > 0 %}
           <span class="cat-tag">{{ page.tags.first }}</span>
           {% endif %}
-          <span class="meta-date">{{ page.date | date: "%B %d, %Y" }}</span>
+          <span class="meta-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time></span>
         </div>
-        <h1>{{ page.title }}</h1>
+        <h1 itemprop="headline">{{ page.title }}</h1>
       </div>
-      <div class="article-body">
+      <div class="article-body" itemprop="articleBody">
         {{ content }}
       </div>
+      <meta itemprop="author" content="{{ site.title }}">
+      <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
     </article>
     {% else %}
     {{ content }}
     {% endif %}
   </main>
-  <aside class="sidebar">
+  <aside class="sidebar" aria-label="Sidebar">
     <div class="sidebar-inner">
       {% if page.title == 'Home' %}
       <div class="sidebar-widget reveal">
-        <h3><span class="widget-icon">◆</span> Categories</h3>
+        <h3><span class="widget-icon" aria-hidden="true">◆</span> Categories</h3>
         <div class="sidebar-cat">
-          <a href="{{ '/' | relative_url }}"><span>AI</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Technology</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Politics</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Finance & Money</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Cryptocurrency</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Stocks & Markets</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Gaming</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Mobile & Android</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Sports</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Entertainment</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Health & Fitness</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Science & Space</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Business</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Weather & Climate</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>World News</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>AI</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Technology</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Politics</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Finance & Money</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Cryptocurrency</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Stocks & Markets</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Gaming</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Mobile & Android</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Sports</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Entertainment</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Health & Fitness</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Science & Space</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Business</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Weather & Climate</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>World News</span><span class="cat-count" aria-hidden="true">↗</span></a>
         </div>
       </div>
       <div class="sidebar-widget reveal">
-        <h3><span class="widget-icon">●</span> About</h3>
+        <h3><span class="widget-icon" aria-hidden="true">●</span> About</h3>
         <p>Your daily source for trending insights across AI, technology, politics, finance, weather, and business — curated and published fresh every day.</p>
       </div>
       <div class="sidebar-widget reveal">
-        <h3><span class="widget-icon">◉</span> Latest Posts</h3>
+        <h3><span class="widget-icon" aria-hidden="true">◉</span> Latest Posts</h3>
         <ul class="sidebar-posts">
           {% for post in site.posts limit:6 %}
-          <li><a href="{{ post.url | relative_url }}"><span class="post-dot"></span>{{ post.title }}</a></li>
+          <li><a href="{{ post.url | relative_url }}"><span class="post-dot" aria-hidden="true"></span>{{ post.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
       {% else %}
       <div class="sidebar-widget reveal">
-        <h3><span class="widget-icon">◆</span> Categories</h3>
+        <h3><span class="widget-icon" aria-hidden="true">◆</span> Categories</h3>
         <div class="sidebar-cat">
-          <a href="{{ '/' | relative_url }}"><span>AI</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Technology</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Politics</span><span class="cat-count">↗</span></a>
-          <a href="{{ '/' | relative_url }}"><span>Finance & Money</span><span class="cat-count">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>AI</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Technology</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Politics</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"><span>Finance & Money</span><span class="cat-count" aria-hidden="true">↗</span></a>
         </div>
       </div>
       <div class="sidebar-widget reveal">
-        <h3><span class="widget-icon">◉</span> Recent Posts</h3>
+        <h3><span class="widget-icon" aria-hidden="true">◉</span> Recent Posts</h3>
         <ul class="sidebar-posts">
           {% for post in site.posts limit:5 %}
-          <li><a href="{{ post.url | relative_url }}"><span class="post-dot"></span>{{ post.title }}</a></li>
+          <li><a href="{{ post.url | relative_url }}"><span class="post-dot" aria-hidden="true"></span>{{ post.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
@@ -149,7 +235,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="footer-logo">◈ Pulse<span>Trends</span></div>
+        <div class="footer-logo" aria-label="{{ site.title }}">◈ Pulse<span>Trends</span></div>
         <p>Your daily source for trending insights across gaming, mobile tech, crypto, stocks, AI, sports, entertainment, health, science, business, politics, weather, and world news. Fresh content published every day from hundreds of global sources.</p>
       </div>
       <div class="footer-links">
@@ -176,8 +262,8 @@
       </div>
       <div class="footer-links">
         <h4>Legal</h4>
-        <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
-        <a href="{{ '/terms/' | relative_url }}">Terms of Service</a>
+        <a href="{{ '/privacy/' | relative_url }}" rel="noopener">Privacy Policy</a>
+        <a href="{{ '/terms/' | relative_url }}" rel="noopener">Terms of Service</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -187,9 +273,6 @@
   </div>
 </footer>
 
-</div>
-
-<script src="{{ '/assets/js/globe.js' | relative_url }}"></script>
-<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
 </body>
 </html>
