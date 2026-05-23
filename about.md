@@ -12,6 +12,8 @@ permalink: /about/
   <h2>What We Cover</h2>
 
   <ul>
+    <li><strong>Gaming</strong> — PlayStation, Xbox, Nintendo, PC gaming, game reviews, e-sports</li>
+    <li><strong>Mobile & Tech</strong> — iPhone, Android, Samsung Galaxy, Google Pixel, iOS/Android updates, smartphones</li>
     <li><strong>Cryptocurrency</strong> — Bitcoin, Ethereum, DeFi, blockchain, Web3, altcoins</li>
     <li><strong>Stocks & Markets</strong> — Stock analysis, IPOs, NASDAQ, trading, global markets</li>
     <li><strong>Artificial Intelligence</strong> — Latest breakthroughs, tools, and industry impacts</li>

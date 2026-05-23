@@ -37,7 +37,12 @@ HIGH_CPC_KEYWORDS = [
     "GDP", "inflation", "recession", "interest rate", "federal reserve",
     "Bitcoin", "Ethereum", "blockchain", "NFT", "DeFi",
     "iPhone", "Android", "Windows", "gaming", "electric vehicle",
-    "solar", "renewable energy", "nuclear", "space", "NASA",
+    "Samsung Galaxy", "Google Pixel", "OnePlus", "iPhone 16", "iPhone 17",
+    "iOS update", "iOS 19", "Android 15", "Android 16",
+    "smartphone", "foldable phone", "phone review", "5G phone",
+    "iPad", "MacBook", "Apple Watch", "Samsung Watch",
+    "tablet", "laptop", "processor", "Qualcomm", "Apple Silicon",
+    "M4 chip", "Snapdragon", "solar", "renewable energy", "nuclear", "space", "NASA",
     "earthquake", "tsunami", "drought", "wildfire", "storm",
     "NASDAQ", "S&P 500", "Dow Jones", "IPO", "earnings",
     # Crypto
@@ -63,6 +68,10 @@ HIGH_CPC_KEYWORDS = [
     "movies", "music", "TV shows", "streaming", "Netflix",
     "Hollywood", "Bollywood", "celebrity", "Oscars", "Grammy",
     "gaming", "video games", "PlayStation", "Xbox", "Nintendo",
+    "PS5", "Xbox Series X", "Nintendo Switch", "PC gaming",
+    "game review", "game release", "GTA", "Fortnite", "Call of Duty",
+    "Minecraft", "Elden Ring", "game trailer", "gaming laptop",
+    "gaming PC", "graphics card", "RTX", "Steam", "Epic Games",
     "anime", "comics", "Marvel", "DC", "Disney",
     "Spotify", "YouTube", "TikTok", "Instagram",
     # Health
@@ -262,6 +271,42 @@ RSS_FEEDS = [
     "https://www.reddit.com/r/Music/hot/.rss",
     "https://www.reddit.com/r/gaming/hot/.rss",
     "https://www.reddit.com/r/esports/hot/.rss",
+    "https://www.reddit.com/r/GameDeals/hot/.rss",
+    "https://www.reddit.com/r/truegaming/hot/.rss",
+
+    # ── Gaming ──
+    "https://www.ign.com/rss/articles/feed",
+    "https://www.gamespot.com/feeds/news/",
+    "https://www.pcgamer.com/rss/",
+    "https://kotaku.com/rss",
+    "https://www.eurogamer.net/feed",
+    "https://www.videogameschronicle.com/feed/",
+    "https://www.gamerevolution.com/feed",
+    "https://www.destructoid.com/feed/",
+    "https://www.nintendolife.com/feed/",
+    "https://www.pushsquare.com/feed/",
+    "https://www.gematsu.com/feed/",
+    "https://www.rockpapershotgun.com/feed",
+    "https://www.polygon.com/rss/index.xml",
+    "https://www.reddit.com/r/PS5/hot/.rss",
+    "https://www.reddit.com/r/XboxSeriesX/hot/.rss",
+    "https://www.reddit.com/r/NintendoSwitch/hot/.rss",
+    "https://www.reddit.com/r/pcgaming/hot/.rss",
+
+    # ── Mobile / Android / iOS ──
+    "https://www.androidauthority.com/feed/",
+    "https://www.androidcentral.com/feed",
+    "https://9to5google.com/feed/",
+    "https://9to5mac.com/feed/",
+    "https://www.gsmarena.com/rss-news-reviews.php",
+    "https://www.phonearena.com/rss",
+    "https://www.xda-developers.com/feed/",
+    "https://www.reddit.com/r/Android/hot/.rss",
+    "https://www.reddit.com/r/iphone/hot/.rss",
+    "https://www.reddit.com/r/GooglePixel/hot/.rss",
+    "https://www.reddit.com/r/samsung/hot/.rss",
+    "https://www.reddit.com/r/oneplus/hot/.rss",
+    "https://www.reddit.com/r/apple/hot/.rss",
 
     # ── Health ──
     "https://www.webmd.com/rss/all.xml",
@@ -387,7 +432,8 @@ def fetch_trends_newsapi(api_key):
     topics = ["AI", "politics", "weather", "stock market", "technology", "climate",
                "cryptocurrency", "Bitcoin", "stocks", "sports", "entertainment",
                "movies", "music", "health", "fitness", "science", "space",
-               "gaming", "business", "startup", "IPO", "cricket", "soccer"]
+               "gaming", "business", "startup", "IPO", "cricket", "soccer",
+               "iPhone", "Android", "smartphone", "video games", "PlayStation"]
     for topic in topics:
         try:
             resp = requests.get(
