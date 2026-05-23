@@ -40,6 +40,19 @@ HIGH_CPC_KEYWORDS = [
     "solar", "renewable energy", "nuclear", "space", "NASA",
     "earthquake", "tsunami", "drought", "wildfire", "storm",
     "NASDAQ", "S&P 500", "Dow Jones", "IPO", "earnings",
+    # Crypto
+    "Bitcoin price", "Ethereum price", "Solana", "Ripple", "XRP",
+    "cryptocurrency", "altcoin", "mining", "staking", "Web3",
+    "Dogecoin", "Cardano", "Polygon", "Chainlink", "Litecoin",
+    "crypto regulation", "SEC crypto", "Bitcoin ETF", "crypto market",
+    "Binance", "Coinbase", "crypto wallet", "DeFi", "yield farming",
+    # Stocks
+    "stock market today", "Nifty 50", "Sensex", "BSE", "NSE",
+    "share market", "Indian stocks", "mutual funds", "SIP",
+    "stock analysis", "tech stocks", "bank stocks", "FII", "DII",
+    "options trading", "futures trading", "intraday", "swing trading",
+    "value investing", "growth stocks", "REITs", "stock split",
+    "NVDA", "AAPL", "TSLA", "AMZN", "MSFT", "GOOGL",
 ]
 
 RSS_FEEDS = [
@@ -92,6 +105,23 @@ RSS_FEEDS = [
     "https://www.japantimes.co.jp/feed/",
     # Middle East / Africa
     "https://www.aljazeera.com/xml/rss/all.xml",
+    # Crypto
+    "https://cointelegraph.com/rss",
+    "https://coindesk.com/feed",
+    "https://cryptonews.com/rss.xml",
+    "https://www.reddit.com/r/CryptoCurrency/hot/.rss",
+    "https://www.reddit.com/r/bitcoin/hot/.rss",
+    "https://www.reddit.com/r/altcoin/hot/.rss",
+    # Stocks
+    "https://finance.yahoo.com/news/rss/index",
+    "https://www.marketwatch.com/rss/news",
+    "https://www.investing.com/rss/news.rss",
+    "https://www.reddit.com/r/stocks/hot/.rss",
+    "https://www.reddit.com/r/investing/hot/.rss",
+    "https://www.reddit.com/r/IndianStockMarket/hot/.rss",
+    "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
+    "https://www.moneycontrol.com/rss/marketreports.xml",
+]
 ]
 
 OPENROUTER_MODELS = [
@@ -169,7 +199,7 @@ def fetch_trends_newsapi(api_key):
     if not api_key:
         return []
     results = []
-    topics = ["AI", "politics", "weather", "stock market", "technology", "climate"]
+    topics = ["AI", "politics", "weather", "stock market", "technology", "climate", "cryptocurrency", "Bitcoin", "stocks"]
     for topic in topics:
         try:
             resp = requests.get(
@@ -187,7 +217,7 @@ def fetch_trends_newsapi(api_key):
         except Exception as e:
             log.warning(f"NewsAPI {topic} failed: {e}")
             continue
-    india_topics = ["India news", "Indian economy", "Bollywood", "Indian politics"]
+    india_topics = ["India news", "Indian economy", "Bollywood", "Indian politics", "Indian stock market", "cryptocurrency India"]
     for topic in india_topics:
         try:
             resp = requests.get(

@@ -17,6 +17,8 @@ permalink: /about/
     <li><strong>Politics</strong> — Policy changes, elections, geopolitical developments</li>
     <li><strong>Weather & Climate</strong> — Extreme weather, climate science, environmental news</li>
     <li><strong>Finance & Money</strong> — Investing, crypto, markets, personal finance</li>
+    <li><strong>Cryptocurrency</strong> — Bitcoin, Ethereum, DeFi, blockchain, Web3, altcoins</li>
+    <li><strong>Stocks & Markets</strong> — Stock analysis, IPOs, Nifty/Sensex, NASDAQ, trading strategies</li>
     <li><strong>Business</strong> — Startups, entrepreneurship, industry analysis</li>
   </ul>
 
