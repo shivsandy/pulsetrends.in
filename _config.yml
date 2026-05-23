@@ -1,0 +1,31 @@
+title: "Trending Insights"
+tagline: "Daily insights on trending topics"
+description: "Expert analysis and guides on finance, technology, business, and more."
+url: "https://pulsetrends.in"
+baseurl: ""
+locale: "en_US"
+
+markdown: kramdown
+permalink: /:title/
+
+google_adsense_id: "" # Add your ca-pub-XXXXXXXXXXXXXX here after AdSense approval
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+      author: "Editorial Team"
+      comments: false
+
+exclude:
+  - generate_post.py
+  - requirements.txt
+  - SETUP.md
+  - .github/
+  - venv/
