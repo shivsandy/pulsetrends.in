@@ -730,8 +730,12 @@ def git_commit_push(filepath):
         if r.returncode == 0:
             log.info("No changes to commit")
             return True
+        if filepath:
+            msg = f"Auto: {filepath.name.replace('.md', '').replace('-', ' ')[11:]}"
+        else:
+            msg = "Auto: daily batch articles"
         r = subprocess.run(
-            ["git", "commit", "-m", f"Auto: {filepath.name.replace('.md', '').replace('-', ' ')[11:]}"],
+            ["git", "commit", "-m", msg],
             cwd=repo_dir, capture_output=True,
         )
         if r.returncode != 0:
@@ -750,7 +754,7 @@ def git_commit_push(filepath):
 
 def main():
     log.info("=" * 50)
-    log.info("Starting daily content generation")
+    log.info("Starting daily content generation (5 articles)")
     log.info("=" * 50)
 
     api_keys = load_env_api_keys()
@@ -776,35 +780,6 @@ def main():
         log.error("No trends found from any source")
         sys.exit(1)
 
-    topic, keywords = pick_best_topic(all_candidates)
-    if not topic:
-        log.error("No suitable topic found")
-        sys.exit(1)
-
-    existing_titles = get_existing_titles()
-    log.info(f"Existing posts: {len(existing_titles)}")
-
-    if is_duplicate(topic["title"], existing_titles):
-        log.info(f"Topic already covered: {topic['title']}")
-        candidates_no_dup = [c for c in all_candidates if not is_duplicate(c["title"], existing_titles)]
-        if candidates_no_dup:
-            topic, keywords = pick_best_topic(candidates_no_dup)
-            if not topic:
-                log.error("No non-duplicate topic found")
-                sys.exit(1)
-        else:
-            log.error("All topics already covered")
-            sys.exit(0)
-
-    log.info(f"Generating article for: {topic['title']}")
-    try:
-        article = generate_article(topic, keywords, api_keys)
-    except Exception as e:
-        log.error(f"Article generation failed: {e}")
-        sys.exit(1)
-
-    log.info(f"Article generated: {len(article)} characters")
-
     used_images = set()
     for old_post in POSTS_DIR.glob("*.md"):
         try:
@@ -815,38 +790,82 @@ def main():
         except Exception:
             pass
 
-    image_keywords = keywords[:3] if keywords else topic["title"].split()[:5]
-    image_queries = [
-        " ".join(image_keywords),
-        topic["title"],
-    ]
-    image_url = ""
-    for q in image_queries:
-        image_url = fetch_image(q, api_keys.get("unsplash", ""), used_images)
-        if image_url:
+    existing_titles = get_existing_titles()
+    log.info(f"Existing posts: {len(existing_titles)}")
+
+    used_topics = set()
+    articles_generated = 0
+    max_articles = 5
+    attempts = 0
+    max_attempts = 30
+
+    while articles_generated < max_articles and attempts < max_attempts:
+        attempts += 1
+        available = [c for c in all_candidates if c["title"] not in used_topics]
+        if not available:
+            log.info("No more unique topics available")
             break
 
-    if not image_url:
-        fallback_pool = [
-            "business", "technology", "finance", "office", "success",
-            "nature", "city", "global", "digital", "future",
-            "data", "network", "innovation", "growth", "strategy",
+        topic, keywords = pick_best_topic(available)
+        if not topic:
+            log.info("No suitable topic found, stopping")
+            break
+
+        if is_duplicate(topic["title"], existing_titles):
+            log.info(f"Duplicate topic: {topic['title']}")
+            used_topics.add(topic["title"])
+            continue
+
+        log.info(f"Generating article {articles_generated + 1}/{max_articles}: {topic['title']}")
+        try:
+            article = generate_article(topic, keywords, api_keys)
+        except Exception as e:
+            log.error(f"Article generation failed: {e}")
+            used_topics.add(topic["title"])
+            continue
+
+        log.info(f"Article generated: {len(article)} characters")
+        used_topics.add(topic["title"])
+
+        image_keywords = keywords[:3] if keywords else topic["title"].split()[:5]
+        image_queries = [
+            " ".join(image_keywords),
+            topic["title"],
         ]
-        random.shuffle(fallback_pool)
-        for q in fallback_pool[:5]:
+        image_url = ""
+        for q in image_queries:
             image_url = fetch_image(q, api_keys.get("unsplash", ""), used_images)
             if image_url:
                 break
 
-    post_file = build_post(article, topic, keywords, image_url, existing_titles)
-    if not post_file:
+        if not image_url:
+            fallback_pool = [
+                "business", "technology", "finance", "office", "success",
+                "nature", "city", "global", "digital", "future",
+                "data", "network", "innovation", "growth", "strategy",
+            ]
+            random.shuffle(fallback_pool)
+            for q in fallback_pool[:5]:
+                image_url = fetch_image(q, api_keys.get("unsplash", ""), used_images)
+                if image_url:
+                    break
+
+        post_file = build_post(article, topic, keywords, image_url, existing_titles)
+        if post_file:
+            articles_generated += 1
+            log.info(f"Article saved: {post_file.name}")
+
+    log.info(f"Total articles generated this run: {articles_generated}")
+
+    if articles_generated == 0:
+        log.error("No articles were generated")
         sys.exit(0)
 
-    success = git_commit_push(post_file)
+    success = git_commit_push(None)
     if success:
-        log.info("Done! Article published successfully.")
+        log.info(f"Done! {articles_generated} articles published successfully.")
     else:
-        log.error("Article saved locally but git push failed")
+        log.error("Articles saved locally but git push failed")
         sys.exit(1)
 
 
