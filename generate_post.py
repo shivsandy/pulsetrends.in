@@ -137,18 +137,22 @@ def fetch_trends_newsapi(api_key):
         return []
 
 
-def score_topic(text):
-    text_lower = text.lower()
+def score_topic(topic):
+    title_lower = topic["title"].lower()
+    full_text = topic["text"].lower()
     score = 0
     matched = []
     for kw in HIGH_CPC_KEYWORDS:
-        if kw.lower() in text_lower:
-            score += 10
+        if kw.lower() in title_lower:
+            score += 20
             matched.append(kw)
-    words = text_lower.split()
+        elif kw.lower() in full_text:
+            score += 5
+            matched.append(kw)
+    words = full_text.split()
     if len(words) > 10:
         score += 5
-    if any(c.isdigit() for c in text):
+    if any(c.isdigit() for c in full_text):
         score += 3
     return score, matched
 
@@ -156,7 +160,7 @@ def score_topic(text):
 def pick_best_topic(candidates):
     scored = []
     for c in candidates:
-        s, matched = score_topic(c["text"])
+        s, matched = score_topic(c)
         if s > 0:
             scored.append((s, c, matched))
     scored.sort(key=lambda x: x[0], reverse=True)
@@ -254,8 +258,10 @@ def generate_article(topic, keywords, api_keys):
     prompt = f"""Write a comprehensive, well-researched article about the following topic.
 
 Topic: {topic['title']}
-Target keywords: {kw_str}
 Source reference: {topic.get('link', '')}
+
+CRITICAL: Write strictly about the TOPIC above, not about the keywords.
+Naturally include these keywords where relevant: {kw_str}
 
 Requirements:
 - Write at least 1200 words
@@ -264,7 +270,6 @@ Requirements:
 - Include specific examples, data points, or statistics where relevant
 - Structure with clear H2 and H3 subheadings
 - Include a FAQ section with at least 4 questions and answers at the end
-- Naturally incorporate the target keywords throughout the article
 - Write in markdown format
 - Start with a compelling introduction paragraph
 - End with a conclusion paragraph
@@ -348,7 +353,7 @@ def build_post(content, topic, keywords, image_url, existing_titles):
     filename = f"{date.strftime('%Y-%m-%d')}-{slug}.md"
     filepath = POSTS_DIR / filename
 
-    excerpt = content[:200].replace("\n", " ").strip()
+    excerpt = re.sub(r'[#*`>\[\]]+', '', content[:200]).replace("\n", " ").strip()
     excerpt = excerpt[:150] + "..." if len(excerpt) > 150 else excerpt
 
     kw_tags = ", ".join(keywords[:5]) if keywords else topic["title"].lower().replace(" ", ", ")
@@ -468,8 +473,10 @@ def main():
 
     log.info(f"Article generated: {len(article)} characters")
 
-    image_query = " ".join(keywords[:3]) if keywords else topic["title"]
+    image_query = topic["title"]
     image_url = fetch_image(image_query, api_keys.get("unsplash", ""))
+    if not image_url and keywords:
+        image_url = fetch_image(" ".join(keywords[:3]), api_keys.get("unsplash", ""))
 
     post_file = build_post(article, topic, keywords, image_url, existing_titles)
     if not post_file:
