@@ -448,6 +448,9 @@ categories: [{tag_list}]
     content_clean = re.sub(r'^```markdown\s*', '', content)
     content_clean = re.sub(r'^```\s*$', '', content_clean, flags=re.MULTILINE)
     content_clean = re.sub(r'^---.*?---\s*', '', content_clean, flags=re.DOTALL)
+    # Remove the first h1 heading since we render title from front matter
+    content_clean = re.sub(r'^#\s+.+?\n=+\s*\n*', '', content_clean, count=1)
+    content_clean = re.sub(r'^#\s+.+?\n', '', content_clean, count=1)
 
     final_content = frontmatter + content_clean.strip()
     filepath.write_text(final_content, encoding="utf-8")
