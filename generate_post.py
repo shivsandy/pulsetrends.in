@@ -46,6 +46,7 @@ HIGH_CPC_KEYWORDS = [
     "Dogecoin", "Cardano", "Polygon", "Chainlink", "Litecoin",
     "crypto regulation", "SEC crypto", "Bitcoin ETF", "crypto market",
     "Binance", "Coinbase", "crypto wallet", "DeFi", "yield farming",
+    "stocks", "crypto", "market", "trading", "investor",
     # Stocks
     "stock market today", "Nifty 50", "Sensex", "BSE", "NSE",
     "share market", "Indian stocks", "mutual funds", "SIP",
@@ -63,6 +64,13 @@ RSS_FEEDS = [
     "https://feeds.bbci.co.uk/news/politics/rss.xml",
     "https://feeds.bbci.co.uk/news/world/rss.xml",
     "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+    # Google News (topic-specific)
+    "https://news.google.com/rss/search?q=cryptocurrency+Bitcoin&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=stock+market+investing&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=artificial+intelligence+tech&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=politics+election&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=weather+climate&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=business+finance&hl=en-US&gl=US&ceid=US:en",
     "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
@@ -82,7 +90,6 @@ RSS_FEEDS = [
     "https://www.reddit.com/r/weather/hot/.rss",
     "https://www.reddit.com/r/startups/hot/.rss",
     "https://www.reddit.com/r/worldnews/hot/.rss",
-    "https://www.reddit.com/r/india/hot/.rss",
     # India
     "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en",
     "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
@@ -118,7 +125,6 @@ RSS_FEEDS = [
     "https://www.investing.com/rss/news.rss",
     "https://www.reddit.com/r/stocks/hot/.rss",
     "https://www.reddit.com/r/investing/hot/.rss",
-    "https://www.reddit.com/r/IndianStockMarket/hot/.rss",
     "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
     "https://www.moneycontrol.com/rss/marketreports.xml",
 ]
@@ -180,7 +186,7 @@ def fetch_trends_rss():
 
 def fetch_trends_google():
     results = []
-    for geo in ["united_states", "india"]:
+    for geo in ["united_states"]:
         try:
             from pytrends.request import TrendReq
             pytrends = TrendReq(hl="en-US", tz=300, timeout=10)
@@ -215,24 +221,6 @@ def fetch_trends_newsapi(api_key):
                     results.append({"title": title, "text": text, "source": f"newsapi/{topic}", "link": article.get("url", "")})
         except Exception as e:
             log.warning(f"NewsAPI {topic} failed: {e}")
-            continue
-    india_topics = ["India news", "Indian economy", "Bollywood", "Indian politics", "Indian stock market", "cryptocurrency India"]
-    for topic in india_topics:
-        try:
-            resp = requests.get(
-                "https://newsapi.org/v2/everything",
-                params={"q": topic, "pageSize": 3, "language": "en", "sortBy": "popularity", "apiKey": api_key},
-                timeout=15,
-            )
-            if resp.status_code == 200:
-                data = resp.json()
-                for article in data.get("articles", []):
-                    title = article.get("title", "")
-                    desc = article.get("description", "") or ""
-                    text = f"{title} {desc}"
-                    results.append({"title": title, "text": text, "source": f"newsapi/india", "link": article.get("url", "")})
-        except Exception as e:
-            log.warning(f"NewsAPI India topic '{topic}' failed: {e}")
             continue
     return results
 

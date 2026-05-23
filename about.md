@@ -7,7 +7,7 @@ permalink: /about/
 <div class="page-content">
   <h1>About PulseTrends</h1>
 
-  <p><strong>PulseTrends</strong> is your daily source for trending insights across the topics that shape our world. We cover AI breakthroughs, tech innovations, political developments, financial markets, weather events, and business trends — all delivered fresh every day.</p>
+  <p><strong>PulseTrends</strong> is your daily source for trending insights from around the world. We cover AI breakthroughs, tech innovations, political developments, financial markets, cryptocurrency, stocks, weather events, and business trends — all delivered fresh every day.</p>
 
   <h2>What We Cover</h2>
 
@@ -18,7 +18,10 @@ permalink: /about/
     <li><strong>Weather & Climate</strong> — Extreme weather, climate science, environmental news</li>
     <li><strong>Finance & Money</strong> — Investing, crypto, markets, personal finance</li>
     <li><strong>Cryptocurrency</strong> — Bitcoin, Ethereum, DeFi, blockchain, Web3, altcoins</li>
-    <li><strong>Stocks & Markets</strong> — Stock analysis, IPOs, Nifty/Sensex, NASDAQ, trading strategies</li>
+    <li><strong>Stocks & Markets</strong> — Stock analysis, IPOs, NASDAQ, trading strategies, global markets</li>
+    <li><strong>Business</strong> — Startups, entrepreneurship, industry analysis</li>
+    <li><strong>World News</strong> — Global events and trending stories from every region</li>
+  </ul>
     <li><strong>Business</strong> — Startups, entrepreneurship, industry analysis</li>
   </ul>
 
