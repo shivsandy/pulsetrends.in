@@ -11,12 +11,8 @@ permalink: /:title/
 google_adsense_id: ""
 
 plugins:
-  - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
-
-paginate: 12
-paginate_path: "/page:num/"
 
 defaults:
   - scope:
