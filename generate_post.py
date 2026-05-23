@@ -395,14 +395,17 @@ Return only the article content in markdown format with no additional commentary
     raise Exception(f"All LLM APIs failed: {'; '.join(errors)}")
 
 
-def fetch_image(query, api_key):
+def fetch_image(query, api_key, used_urls=None):
     if not api_key:
         log.warning("No Unsplash API key")
         return ""
+    if used_urls is None:
+        used_urls = set()
     try:
+        page = random.randint(1, 10)
         resp = requests.get(
             "https://api.unsplash.com/search/photos",
-            params={"query": query, "per_page": 1, "orientation": "landscape"},
+            params={"query": query, "per_page": 5, "page": page, "orientation": "landscape"},
             headers={"Authorization": f"Client-ID {api_key}"},
             timeout=15,
         )
@@ -411,8 +414,13 @@ def fetch_image(query, api_key):
             return ""
         data = resp.json()
         if data.get("results"):
-            img = data["results"][0]
-            url = img["urls"]["regular"]
+            for img in data["results"]:
+                url = img["urls"]["regular"]
+                if url not in used_urls:
+                    used_urls.add(url)
+                    return f"{url}?w=1200"
+            fallback = data["results"][0]
+            url = fallback["urls"]["regular"]
             return f"{url}?w=1200"
         log.warning(f"Unsplash: no results for '{query[:50]}'")
         return ""
@@ -568,13 +576,36 @@ def main():
 
     log.info(f"Article generated: {len(article)} characters")
 
+    used_images = set()
+    for old_post in POSTS_DIR.glob("*.md"):
+        try:
+            content = old_post.read_text(encoding="utf-8")
+            m = re.search(r'image:\s*"(.+?)"', content)
+            if m:
+                used_images.add(m.group(1))
+        except Exception:
+            pass
+
     image_keywords = keywords[:3] if keywords else topic["title"].split()[:5]
-    image_query = " ".join(image_keywords)
-    image_url = fetch_image(image_query, api_keys.get("unsplash", ""))
+    image_queries = [
+        " ".join(image_keywords),
+        topic["title"],
+    ]
+    image_url = ""
+    for q in image_queries:
+        image_url = fetch_image(q, api_keys.get("unsplash", ""), used_images)
+        if image_url:
+            break
+
     if not image_url:
-        fallback_queries = ["business", "technology", "finance", "office", "success"]
-        for q in fallback_queries:
-            image_url = fetch_image(q, api_keys.get("unsplash", ""))
+        fallback_pool = [
+            "business", "technology", "finance", "office", "success",
+            "nature", "city", "global", "digital", "future",
+            "data", "network", "innovation", "growth", "strategy",
+        ]
+        random.shuffle(fallback_pool)
+        for q in fallback_pool[:5]:
+            image_url = fetch_image(q, api_keys.get("unsplash", ""), used_images)
             if image_url:
                 break
 
