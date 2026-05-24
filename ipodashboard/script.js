@@ -30,21 +30,28 @@
     return "status-upcoming";
   }
 
-  function ipoTypeClass(type) {
-    const t = (type || "").toLowerCase();
-    if (t === "mainboard") return "ipo-type-mainboard";
-    if (t === "sme") return "ipo-type-sme";
-    if (t === "fpo") return "ipo-type-fpo";
-    return "ipo-type-mainboard";
+  function getCountry(ipo) {
+    const exchange = (ipo.exchange || "").toUpperCase();
+    if (exchange === "NSE" || exchange === "BSE") return "India";
+    const country = ipo.country || "";
+    if (country === "India" || country === "USA") return country;
+    if (["NYSE", "NASDAQ", "NYSE AMERICAN"].includes(exchange)) return "USA";
+    return "Global";
   }
 
-  function gmpClass(val) {
-    if (!val || val === "\u2014") return "gmp-none";
-    const cleaned = val.replace(/[^0-9.\-]/g, "");
-    if (!cleaned) return "gmp-none";
-    const num = parseFloat(cleaned);
-    if (isNaN(num)) return "gmp-none";
-    return num >= 0 ? "gmp-positive" : "gmp-negative";
+  function countryClass(country) {
+    const c = (country || "").toLowerCase();
+    if (c === "india") return "country-india";
+    if (c === "usa") return "country-usa";
+    return "country-global";
+  }
+
+  function matchesFilter(ipo, filter) {
+    if (filter === "all") return true;
+    if (filter === "open" || filter === "upcoming") {
+      return (ipo.status || "").toLowerCase() === filter;
+    }
+    return getCountry(ipo).toLowerCase() === filter.toLowerCase();
   }
 
   function parseSubscription(subStr) {
@@ -54,15 +61,15 @@
   }
 
   function render() {
-    let filtered = ipos;
-
-    if (currentFilter !== "all") {
-      filtered = filtered.filter((ipo) => (ipo.status || "upcoming").toLowerCase() === currentFilter);
-    }
+    let filtered = ipos.filter((ipo) => matchesFilter(ipo, currentFilter));
 
     if (searchTerm) {
       const term = searchTerm.toLowerCase();
-      filtered = filtered.filter((ipo) => (ipo.company_name || "").toLowerCase().includes(term));
+      filtered = filtered.filter(
+        (ipo) =>
+          (ipo.company_name || "").toLowerCase().includes(term) ||
+          (ipo.symbol || "").toLowerCase().includes(term)
+      );
     }
 
     if (sortKey) {
@@ -70,16 +77,13 @@
         let va = (a[sortKey] || "").toString().toLowerCase();
         let vb = (b[sortKey] || "").toString().toLowerCase();
 
-        if (sortKey === "lot_size") {
-          va = parseFloat(va) || 0;
-          vb = parseFloat(vb) || 0;
-        } else if (sortKey === "gmp") {
-          va = parseFloat(va.replace(/[^0-9.\-]/g, "")) || 0;
-          vb = parseFloat(vb.replace(/[^0-9.\-]/g, "")) || 0;
+        if (sortKey === "issue_size") {
+          va = parseFloat(va.replace(/[^0-9.]/g, "")) || 0;
+          vb = parseFloat(vb.replace(/[^0-9.]/g, "")) || 0;
         } else if (sortKey === "subscription") {
           va = parseSubscription(a.subscription);
           vb = parseSubscription(b.subscription);
-        } else if (sortKey === "open_date" || sortKey === "close_date" || sortKey === "listing_date") {
+        } else if (sortKey === "listing_date") {
           va = va || "9999-99-99";
           vb = vb || "9999-99-99";
         }
@@ -93,25 +97,24 @@
     ipoCountEl.textContent = `Showing ${filtered.length} of ${ipos.length} IPOs`;
 
     if (filtered.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="10" style="text-align:center; padding:40px;color:var(--text-muted);">No IPOs found</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="8" style="text-align:center;padding:40px;color:var(--text-muted);">No IPOs found</td></tr>`;
       return;
     }
 
     tbody.innerHTML = filtered
       .map((ipo) => {
         const s = (ipo.status || "upcoming").toLowerCase();
+        const country = getCountry(ipo);
         return `<tr>
+          <td class="symbol-cell">${escHtml(ipo.symbol || "\u2014")}</td>
           <td>
             <span class="company-name">${escHtml(ipo.company_name || "\u2014")}</span>
-            <span class="ipo-type-badge ${ipoTypeClass(ipo.ipo_type)}">${escHtml(ipo.ipo_type || "mainboard")}</span>
+            <span class="country-badge ${countryClass(country)}">${escHtml(country)}</span>
           </td>
+          <td><span class="exchange-badge">${escHtml(ipo.exchange || "\u2014")}</span></td>
           <td>${escHtml(ipo.price_band || "\u2014")}</td>
-          <td>${formatDate(ipo.open_date)}</td>
-          <td>${formatDate(ipo.close_date)}</td>
           <td>${formatDate(ipo.listing_date)}</td>
-          <td>${escHtml(ipo.lot_size || "\u2014")}</td>
           <td>${escHtml(ipo.issue_size || "\u2014")}</td>
-          <td class="${gmpClass(ipo.gmp)}">${escHtml(ipo.gmp || "\u2014")}</td>
           <td class="subscription-value">${escHtml(ipo.subscription || "\u2014")}</td>
           <td><span class="status-badge ${statusClass(s)}">${escHtml(s)}</span></td>
         </tr>`;

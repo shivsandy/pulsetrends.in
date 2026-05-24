@@ -7,18 +7,18 @@
 }
 
 :root {
-  --bg: #0f172a;
-  --bg-card: #1e293b;
-  --bg-hover: #334155;
-  --text: #f1f5f9;
-  --text-muted: #94a3b8;
-  --border: #334155;
-  --accent: #3b82f6;
-  --accent-hover: #2563eb;
+  --bg: #0a0a0a;
+  --bg-card: #181818;
+  --bg-hover: #222;
+  --text: #e2e2e2;
+  --text-muted: #6b6b78;
+  --border: #333;
+  --accent: #e01a4f;
+  --accent-hover: #a4172f;
   --green: #22c55e;
   --green-bg: rgba(34, 197, 94, 0.12);
-  --blue: #3b82f6;
-  --blue-bg: rgba(59, 130, 246, 0.12);
+  --blue: #e01a4f;
+  --blue-bg: rgba(224, 26, 79, 0.12);
   --amber: #f59e0b;
   --amber-bg: rgba(245, 158, 11, 0.12);
   --purple: #a855f7;
@@ -29,7 +29,7 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
@@ -59,9 +59,7 @@ h1 {
   letter-spacing: -0.02em;
 }
 
-.badge-india {
-  background: var(--accent);
-  color: white;
+.badge {
   font-size: 11px;
   font-weight: 600;
   padding: 2px 10px;
@@ -70,8 +68,18 @@ h1 {
   letter-spacing: 0.05em;
 }
 
+.badge-global {
+  background: var(--purple-bg);
+  color: var(--purple);
+}
+
+.badge-india {
+  background: var(--blue-bg);
+  color: var(--blue);
+}
+
 .subtitle {
-  color: var(--text-muted);
+  color: var(--text-light, var(--text-muted));
   font-size: 14px;
   margin-bottom: 8px;
 }
@@ -227,12 +235,30 @@ tbody td {
   white-space: nowrap;
 }
 
+.symbol-cell {
+  font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--accent);
+}
+
 .company-name {
   font-weight: 600;
   color: var(--text);
 }
 
-.ipo-type-badge {
+.exchange-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 100px;
+  letter-spacing: 0.03em;
+  background: var(--gray-bg);
+  color: var(--gray);
+}
+
+.country-badge {
   display: inline-block;
   font-size: 10px;
   font-weight: 600;
@@ -243,17 +269,17 @@ tbody td {
   letter-spacing: 0.04em;
 }
 
-.ipo-type-mainboard {
-  background: var(--blue-bg);
-  color: var(--blue);
+.country-india {
+  background: rgba(255, 153, 51, 0.15);
+  color: #ff9933;
 }
 
-.ipo-type-sme {
-  background: var(--amber-bg);
-  color: var(--amber);
+.country-usa {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
 }
 
-.ipo-type-fpo {
+.country-global {
   background: var(--purple-bg);
   color: var(--purple);
 }
@@ -292,20 +318,6 @@ tbody td {
   color: var(--gray);
 }
 
-.gmp-positive {
-  color: var(--green);
-  font-weight: 600;
-}
-
-.gmp-negative {
-  color: var(--red);
-  font-weight: 600;
-}
-
-.gmp-none {
-  color: var(--text-muted);
-}
-
 .subscription-value {
   font-weight: 500;
 }
@@ -335,11 +347,7 @@ tbody td {
     padding: 16px 8px;
   }
   thead th:nth-child(6),
-  tbody td:nth-child(6),
-  thead th:nth-child(7),
-  tbody td:nth-child(7),
-  thead th:nth-child(9),
-  tbody td:nth-child(9) {
+  tbody td:nth-child(6) {
     display: none;
   }
 }

@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IPO Dashboard - PulseTrends</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/ipodashboard/style.css">
 </head>
 <body>
@@ -11,22 +14,23 @@
     <header>
       <div class="header-top">
         <h1>IPO Dashboard</h1>
-        <span class="badge badge-india">India</span>
+        <span class="badge badge-global">Global</span>
       </div>
-      <p class="subtitle">Upcoming, Open & Recently Listed IPOs</p>
+      <p class="subtitle">Upcoming & Open IPOs across India, USA & Global Markets</p>
       <div class="last-updated" id="lastUpdated"></div>
     </header>
 
     <div class="controls">
       <div class="search-wrapper">
-        <input type="text" id="searchInput" placeholder="Search by company name..." autocomplete="off">
+        <input type="text" id="searchInput" placeholder="Search by company or symbol..." autocomplete="off">
       </div>
       <div class="filters" id="filterButtons">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+        <button class="filter-btn" data-filter="India">India</button>
+        <button class="filter-btn" data-filter="USA">USA</button>
+        <button class="filter-btn" data-filter="global">Global</button>
         <button class="filter-btn" data-filter="open">Open</button>
-        <button class="filter-btn" data-filter="subscribed">Subscribed</button>
-        <button class="filter-btn" data-filter="listed">Listed</button>
+        <button class="filter-btn" data-filter="upcoming">Upcoming</button>
       </div>
     </div>
 
@@ -34,14 +38,12 @@
       <table id="ipoTable">
         <thead>
           <tr>
+            <th data-sort="symbol" class="sortable">Symbol <span class="sort-icon"></span></th>
             <th data-sort="company_name" class="sortable">Company <span class="sort-icon"></span></th>
-            <th data-sort="price_band" class="sortable">Price Band <span class="sort-icon"></span></th>
-            <th data-sort="open_date" class="sortable">Open <span class="sort-icon"></span></th>
-            <th data-sort="close_date" class="sortable">Close <span class="sort-icon"></span></th>
-            <th data-sort="listing_date" class="sortable">Listing <span class="sort-icon"></span></th>
-            <th data-sort="lot_size" class="sortable">Lot <span class="sort-icon"></span></th>
+            <th data-sort="exchange" class="sortable">Exchange <span class="sort-icon"></span></th>
+            <th data-sort="price_band" class="sortable">Price <span class="sort-icon"></span></th>
+            <th data-sort="listing_date" class="sortable">Listing Date <span class="sort-icon"></span></th>
             <th data-sort="issue_size" class="sortable">Issue Size <span class="sort-icon"></span></th>
-            <th data-sort="gmp" class="sortable">GMP <span class="sort-icon"></span></th>
             <th data-sort="subscription" class="sortable">Subscription <span class="sort-icon"></span></th>
             <th data-sort="status" class="sortable">Status <span class="sort-icon"></span></th>
           </tr>

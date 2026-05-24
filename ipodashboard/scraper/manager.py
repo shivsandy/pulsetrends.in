@@ -1,11 +1,14 @@
 import json
 import os
 from datetime import datetime, timezone
-from typing import Dict, List
+from typing import Dict, List, Optional, Tuple
 
 from .base import IPO
 from .screener import ScreenerScraper
 from .fivepaisa import FivePaisaScraper
+from .finnhub import FinnhubScraper
+from .iposcoop import IpoScoopScraper
+from .renaissance import RenaissanceScraper
 from .nse import NSEScraper
 from .groww import GrowwScraper
 
@@ -35,7 +38,14 @@ def _find_matching_key(raw_name: str, ipo: IPO, seen: Dict[str, IPO], name_mappi
     key = _normalise_name(raw_name)
     if key in seen:
         return key
+
     cleaned = raw_name.strip().lower().rstrip(".").strip()
+
+    if ipo.symbol:
+        for existing_key, existing_ipo in seen.items():
+            if existing_ipo.symbol and existing_ipo.symbol.upper() == ipo.symbol.upper():
+                return existing_key
+
     for existing_key, existing_ipo in seen.items():
         existing_raw = name_mapping.get(existing_key, "").lower().rstrip(".").strip()
         if existing_raw == cleaned:
@@ -43,6 +53,7 @@ def _find_matching_key(raw_name: str, ipo: IPO, seen: Dict[str, IPO], name_mappi
         if _dates_match(ipo, existing_ipo):
             if cleaned in existing_raw or existing_raw in cleaned:
                 return existing_key
+
     return key
 
 
@@ -58,6 +69,7 @@ def merge_ipos(all_ipos: List[IPO]) -> List[dict]:
 
         if key in seen:
             existing = seen[key]
+            existing.symbol = existing.symbol or ipo.symbol
             existing.price_band = existing.price_band or ipo.price_band
             existing.open_date = existing.open_date or ipo.open_date
             existing.close_date = existing.close_date or ipo.close_date
@@ -70,6 +82,8 @@ def merge_ipos(all_ipos: List[IPO]) -> List[dict]:
                 existing.exchange = ipo.exchange
             if ipo.ipo_type and ipo.ipo_type != "mainboard":
                 existing.ipo_type = ipo.ipo_type
+            if ipo.country and ipo.country != "India":
+                existing.country = ipo.country
             existing_status_priority = STATUS_PRIORITY.get(existing.status, 0)
             new_status_priority = STATUS_PRIORITY.get(ipo.status, 0)
             if new_status_priority > existing_status_priority:
@@ -82,6 +96,7 @@ def merge_ipos(all_ipos: List[IPO]) -> List[dict]:
     for key, ipo in seen.items():
         d = {
             "company_name": name_mapping.get(key, ipo.company_name),
+            "symbol": ipo.symbol,
             "price_band": ipo.price_band,
             "open_date": ipo.open_date,
             "close_date": ipo.close_date,
@@ -93,10 +108,11 @@ def merge_ipos(all_ipos: List[IPO]) -> List[dict]:
             "status": ipo.status,
             "exchange": ipo.exchange,
             "ipo_type": ipo.ipo_type,
+            "country": ipo.country,
         }
         result.append(d)
 
-    result.sort(key=lambda x: ((x.get("open_date") or "9999"), (x.get("company_name") or "")))
+    result.sort(key=lambda x: ((x.get("listing_date") or x.get("open_date") or "9999"), (x.get("company_name") or "")))
     return result
 
 
@@ -106,6 +122,9 @@ def run():
     scrapers = [
         ScreenerScraper(),
         FivePaisaScraper(),
+        FinnhubScraper(),
+        IpoScoopScraper(),
+        RenaissanceScraper(),
         NSEScraper(),
         GrowwScraper(),
     ]
