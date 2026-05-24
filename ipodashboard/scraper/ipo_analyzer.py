@@ -172,8 +172,7 @@ def _call_openrouter(api_key: str, model: str, prompt: str) -> Optional[str]:
         json=data,
         timeout=120,
     )
-    if resp.status_code != 200:
-        raise Exception(f"OpenRouter {resp.status_code}: {resp.text[:200]}")
+    resp.raise_for_status()
     return resp.json()["choices"][0]["message"]["content"]
 
 
@@ -187,8 +186,7 @@ def _call_google(api_key: str, model: str, prompt: str) -> Optional[str]:
         },
         timeout=120,
     )
-    if resp.status_code != 200:
-        raise Exception(f"Google {resp.status_code}: {resp.text[:200]}")
+    resp.raise_for_status()
     data = resp.json()
     candidates = data.get("candidates", [])
     if not candidates:
@@ -252,36 +250,40 @@ def generate_analysis(ipo: dict, api_keys: List[dict], google_keys: List[dict], 
                 status_code = None
                 if hasattr(e, "status_code"):
                     status_code = e.status_code
+                elif hasattr(e, "response"):
+                    status_code = e.response.status_code
                 _record_failure("google", key_index, model, status_code)
                 print(f"[IPO Analyzer] Fail GA key{key_index} model={model}: {e}")
                 continue
 
     for entry in api_keys:
         key_index = entry["index"]
-        healthy = _healthy_models("google", key_index, GOOGLE_FREE_MODELS)
+        healthy = _healthy_models("openrouter", key_index, models)
         if not healthy:
             continue
 
         for model in healthy:
             try:
-                print(f"[IPO Analyzer] GA key{key_index} model={model} -> {ipo.get('company_name', '')}")
+                print(f"[IPO Analyzer] OR key{key_index} model={model} -> {ipo.get('company_name', '')}")
                 start = time.time()
-                raw = _call_google(entry["key"], model, prompt)
+                raw = _call_openrouter(entry["key"], model, prompt)
                 latency = time.time() - start
                 parsed = _parse_analysis_response(raw)
                 if parsed:
-                    _record_success("google", key_index, model, latency)
-                    print(f"[IPO Analyzer] OK GA key{key_index} model={model} ({latency:.1f}s)")
+                    _record_success("openrouter", key_index, model, latency)
+                    print(f"[IPO Analyzer] OK OR key{key_index} model={model} ({latency:.1f}s)")
                     return parsed
                 else:
                     print(f"[IPO Analyzer] Bad JSON from {model}, trying next")
-                    _record_failure("google", key_index, model)
+                    _record_failure("openrouter", key_index, model)
             except Exception as e:
                 status_code = None
                 if hasattr(e, "status_code"):
                     status_code = e.status_code
-                _record_failure("google", key_index, model, status_code)
-                print(f"[IPO Analyzer] Fail GA key{key_index} model={model}: {e}")
+                elif hasattr(e, "response"):
+                    status_code = e.response.status_code
+                _record_failure("openrouter", key_index, model, status_code)
+                print(f"[IPO Analyzer] Fail OR key{key_index} model={model}: {e}")
                 continue
 
     print(f"[IPO Analyzer] All models exhausted for {ipo.get('company_name', '')}")

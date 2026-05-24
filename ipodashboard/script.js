@@ -159,7 +159,7 @@
     const verdictEl = document.getElementById("modalVerdict");
 
     if (!data) {
-      var msg = '<div class="modal-loading">Analysis pending for this IPO</div>';
+      let msg = '<div class="modal-loading">Analysis pending for this IPO</div>';
       aboutEl.innerHTML = msg;
       ipoDetailsEl.innerHTML = "";
       finEl.innerHTML = "";
@@ -175,7 +175,7 @@
     aboutEl.innerHTML = escHtml(data.about || "No information available.");
     ipoDetailsEl.innerHTML = escHtml(data.ipo_details || "Not available.");
 
-    var finText = data.financial_summary || "";
+    let finText = data.financial_summary || "";
     if (data.financial_trend) {
       finText = finText + '<div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border);font-style:italic;">' + escHtml(data.financial_trend) + "</div>";
     }
@@ -187,8 +187,8 @@
 
     if (data.risks && data.risks.length) {
       riskEl.innerHTML = data.risks.map(function(r) {
-        var indicator = r.indicator || "🟡";
-        var dotClass = "green";
+        let indicator = r.indicator || "🟡";
+        let dotClass = "green";
         if (indicator === "🟡") dotClass = "amber";
         else if (indicator === "🔴") dotClass = "red";
         return '<div class="risk-item"><span class="risk-indicator ' + dotClass + '">' + indicator + '</span><span>' + escHtml(r.text || r) + "</span></div>";
@@ -198,17 +198,17 @@
     }
 
     if (data.scores) {
-      var scoreKeys = [
+      let scoreKeys = [
         { key: "financial_health", label: "Financial Health" },
         { key: "growth_potential", label: "Growth Potential" },
         { key: "risk", label: "Risk" },
         { key: "attractiveness", label: "IPO Attractiveness" },
       ];
-      var scoreColors = ["#22c55e", "#3b82f6", "#f59e0b", "#a855f7"];
+      let scoreColors = ["#22c55e", "#3b82f6", "#f59e0b", "#a855f7"];
       scoresEl.innerHTML = scoreKeys.map(function(sk, i) {
-        var val = data.scores[sk.key];
+        let val = data.scores[sk.key];
         if (typeof val !== "number") val = parseInt(val, 10) || 0;
-        var capped = Math.min(Math.max(val, 0), 100);
+        let capped = Math.min(Math.max(val, 0), 100);
         return '<div class="score-bar-wrap"><div class="score-bar-label"><span>' + sk.label + '</span><span>' + capped + "/100</span></div><div class=\"score-bar-track\"><div class=\"score-bar-fill\" style=\"width:" + capped + "%;background:" + scoreColors[i] + "\"></div></div></div>";
       }).join("");
     } else {
@@ -217,13 +217,13 @@
 
     aiEl.innerHTML = escHtml(data.ai_analysis || "No analysis available.");
 
-    var verdictHtml = "";
+    let verdictHtml = "";
     if (data.verdict) {
-      var v = data.verdict.toLowerCase();
-      var badgeClass = "verdict-neutral";
+      let v = data.verdict.toLowerCase();
+      let badgeClass = "verdict-neutral";
       if (v.indexOf("subscribe") !== -1) badgeClass = "verdict-subscribe";
       else if (v.indexOf("avoid") !== -1) badgeClass = "verdict-avoid";
-      var badgeText = badgeClass === "verdict-subscribe" ? "Subscribe" : badgeClass === "verdict-avoid" ? "Avoid" : "Neutral";
+      let badgeText = badgeClass === "verdict-subscribe" ? "Subscribe" : badgeClass === "verdict-avoid" ? "Avoid" : "Neutral";
       verdictHtml = '<span class="verdict-badge ' + badgeClass + '">' + badgeText + '</span><div>' + escHtml(data.verdict) + "</div>";
     }
     verdictHtml += '<div class="verdict-note">Note: This analysis is AI-generated based on model knowledge and should not be considered financial advice. Always do your own research.</div>';

@@ -3,131 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IPO Dashboard - PulseTrends</title>
+  <title>IPOs - PulseTrends</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/ipodashboard/style.css">
 </head>
 <body>
+
+<header id="header">
   <div class="container">
-    <header>
-      <div class="header-top">
-        <h1>IPO Dashboard</h1>
-        <span class="badge badge-global">Global</span>
-      </div>
-      <p class="subtitle">Upcoming & Open IPOs across India, USA & Global Markets</p>
-      <div class="last-updated" id="lastUpdated"></div>
-    </header>
-
-    <div class="controls">
-      <div class="search-wrapper">
-        <input type="text" id="searchInput" placeholder="Search by company or symbol..." autocomplete="off">
-      </div>
-      <div class="filters" id="filterButtons">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="India">India</button>
-        <button class="filter-btn" data-filter="USA">USA</button>
-        <button class="filter-btn" data-filter="global">Global</button>
-        <button class="filter-btn" data-filter="open">Open</button>
-        <button class="filter-btn" data-filter="upcoming">Upcoming</button>
-      </div>
+    <div class="logo">
+      <a href="/" aria-label="PulseTrends Home"><span class="logo-icon" aria-hidden="true">◈</span> Pulse<span>Trends</span></a>
+      <span class="tagline">Daily Trending Insights</span>
     </div>
-
-    <div class="table-wrapper">
-      <table id="ipoTable">
-        <thead>
-          <tr>
-            <th data-sort="symbol" class="sortable">Symbol <span class="sort-icon"></span></th>
-            <th data-sort="company_name" class="sortable">Company <span class="sort-icon"></span></th>
-            <th data-sort="exchange" class="sortable">Exchange <span class="sort-icon"></span></th>
-            <th data-sort="price_band" class="sortable">Price <span class="sort-icon"></span></th>
-            <th data-sort="listing_date" class="sortable">Listing Date <span class="sort-icon"></span></th>
-            <th data-sort="issue_size" class="sortable">Issue Size <span class="sort-icon"></span></th>
-            <th data-sort="subscription" class="sortable">Subscription <span class="sort-icon"></span></th>
-            <th data-sort="status" class="sortable">Status <span class="sort-icon"></span></th>
-          </tr>
-        </thead>
-        <tbody id="ipoBody"></tbody>
-      </table>
-    </div>
-
-    <div class="status-bar">
-      <span id="ipoCount">Loading...</span>
-    </div>
-  </div>
-
-  <div id="ipoModal" class="modal-overlay hidden">
-    <div class="modal-backdrop"></div>
-    <div class="modal-wrap">
-      <div class="modal-header">
-        <div>
-          <h2 id="modalTitle"></h2>
-          <span class="modal-symbol" id="modalSymbol"></span>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <div class="nav-dropdown">
+        <a href="#" class="dropdown-trigger">Categories ▾</a>
+        <div class="dropdown-menu">
+          <a href="/crypto/" data-category="crypto"><span class="dd-dot" style="color:#f7931a">◆</span> Cryptocurrency</a>
+          <a href="/stocks/" data-category="stocks"><span class="dd-dot" style="color:#00b894">◆</span> Stocks & Markets</a>
+          <a href="/ipos/"><span class="dd-dot" style="color:#e17055">◆</span> IPOs & Listings</a>
+          <a href="/ai/" data-category="ai"><span class="dd-dot" style="color:#6c5ce7">◆</span> Artificial Intelligence</a>
+          <a href="/tech/" data-category="tech"><span class="dd-dot" style="color:#0984e3">◆</span> Technology</a>
+          <a href="/gaming/" data-category="gaming"><span class="dd-dot" style="color:#e17055">◆</span> Gaming</a>
+          <a href="/mobile/" data-category="mobile"><span class="dd-dot" style="color:#00cec9">◆</span> Mobile & Smartphones</a>
+          <a href="/phones/" data-category="phones"><span class="dd-dot" style="color:#e17055">◆</span> Upcoming Phones</a>
+          <a href="/sports/" data-category="sports"><span class="dd-dot" style="color:#fd79a8">◆</span> Sports</a>
+          <a href="/entertainment/" data-category="entertainment"><span class="dd-dot" style="color:#fd79a8">◆</span> Entertainment</a>
+          <a href="/health/" data-category="health"><span class="dd-dot" style="color:#00b894">◆</span> Health & Fitness</a>
+          <a href="/science/" data-category="science"><span class="dd-dot" style="color:#74b9ff">◆</span> Science & Space</a>
+          <a href="/business/" data-category="business"><span class="dd-dot" style="color:#fdcb6e">◆</span> Business</a>
+          <a href="/politics/" data-category="politics"><span class="dd-dot" style="color:#d63031">◆</span> Politics</a>
+          <a href="/world/" data-category="world"><span class="dd-dot" style="color:#636e72">◆</span> World News</a>
+          <a href="/weather/" data-category="weather"><span class="dd-dot" style="color:#74b9ff">◆</span> Weather & Climate</a>
         </div>
-        <button class="modal-close" id="modalClose">&times;</button>
       </div>
-      <div class="modal-body" id="modalBody">
-        <section class="detail-card" data-section="about">
-          <div class="detail-card-head">
-            <h3>About</h3>
-            <span class="card-toggle"></span>
-          </div>
-          <div class="detail-card-body" id="modalAbout"></div>
-        </section>
-        <section class="detail-card" data-section="ipo_details">
-          <div class="detail-card-head">
-            <h3>IPO Details</h3>
-            <span class="card-toggle"></span>
-          </div>
-          <div class="detail-card-body" id="modalIpoDetails"></div>
-        </section>
-        <section class="detail-card" data-section="financials">
-          <div class="detail-card-head">
-            <h3>Financial Summary</h3>
-            <span class="card-toggle"></span>
-          </div>
-          <div class="detail-card-body" id="modalFinancials"></div>
-        </section>
-        <section class="detail-card" data-section="strengths">
-          <div class="detail-card-head">
-            <h3>Strengths</h3>
-            <span class="card-toggle"></span>
-          </div>
-          <div class="detail-card-body" id="modalStrengths"></div>
-        </section>
-        <section class="detail-card" data-section="risks">
-          <div class="detail-card-head">
-            <h3>Risks</h3>
-            <span class="card-toggle"></span>
-          </div>
-          <div class="detail-card-body" id="modalRisks"></div>
-        </section>
-        <section class="detail-card" data-section="scores">
-          <div class="detail-card-head">
-            <h3>AI Scores</h3>
-            <span class="card-toggle"></span>
-          </div>
-          <div class="detail-card-body" id="modalScores"></div>
-        </section>
-        <section class="detail-card" data-section="ai_analysis">
-          <div class="detail-card-head">
-            <h3>AI Analysis</h3>
-            <span class="card-toggle"></span>
-          </div>
-          <div class="detail-card-body" id="modalAiAnalysis"></div>
-        </section>
-        <section class="detail-card" data-section="verdict">
-          <div class="detail-card-head">
-            <h3>Verdict</h3>
-            <span class="card-toggle"></span>
-          </div>
-          <div class="detail-card-body" id="modalVerdict"></div>
-        </section>
-      </div>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/search/">Search</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="mobile-panel" id="mobilePanel">
+  <div class="mobile-panel-header">
+    <span class="mobile-panel-title">Categories</span>
+    <button class="mobile-panel-close" id="panelClose">✕</button>
+  </div>
+  <div class="mobile-panel-body">
+    <a href="/ai/" data-category="ai">AI ↗</a>
+    <a href="/tech/" data-category="tech">Technology ↗</a>
+    <a href="/politics/" data-category="politics">Politics ↗</a>
+    <a href="/finance/" data-category="finance">Finance & Money ↗</a>
+    <a href="/crypto/" data-category="crypto">Cryptocurrency ↗</a>
+    <a href="/stocks/" data-category="stocks">Stocks & Markets ↗</a>
+    <a href="/gaming/" data-category="gaming">Gaming ↗</a>
+    <a href="/mobile/" data-category="mobile">Mobile & Android ↗</a>
+    <a href="/phones/" data-category="phones">Upcoming Phones ↗</a>
+    <a href="/sports/" data-category="sports">Sports ↗</a>
+    <a href="/entertainment/" data-category="entertainment">Entertainment ↗</a>
+    <a href="/health/" data-category="health">Health & Fitness ↗</a>
+    <a href="/science/" data-category="science">Science & Space ↗</a>
+    <a href="/business/" data-category="business">Business ↗</a>
+    <a href="/weather/" data-category="weather">Weather & Climate ↗</a>
+    <a href="/ipos/">IPOs & Listings ↗</a>
+  </div>
+</div>
+
+<div class="ipo-container">
+  <p class="subtitle">Upcoming & Open IPOs across India, USA & Global Markets</p>
+  <div class="last-updated" id="lastUpdated"></div>
+
+  <div class="controls">
+    <div class="search-wrapper">
+      <input type="text" id="searchInput" placeholder="Search by company or symbol..." autocomplete="off">
+    </div>
+    <div class="filters" id="filterButtons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="India">India</button>
+      <button class="filter-btn" data-filter="USA">USA</button>
+      <button class="filter-btn" data-filter="global">Global</button>
+      <button class="filter-btn" data-filter="open">Open</button>
+      <button class="filter-btn" data-filter="upcoming">Upcoming</button>
     </div>
   </div>
 
-  <script src="/ipodashboard/script.js"></script>
+  <div class="table-wrapper">
+    <table id="ipoTable">
+      <thead>
+        <tr>
+          <th data-sort="symbol" class="sortable">Symbol <span class="sort-icon"></span></th>
+          <th data-sort="company_name" class="sortable">Company <span class="sort-icon"></span></th>
+          <th data-sort="exchange" class="sortable">Exchange <span class="sort-icon"></span></th>
+          <th data-sort="price_band" class="sortable">Price <span class="sort-icon"></span></th>
+          <th data-sort="listing_date" class="sortable">Listing Date <span class="sort-icon"></span></th>
+          <th data-sort="issue_size" class="sortable">Issue Size <span class="sort-icon"></span></th>
+          <th data-sort="subscription" class="sortable">Subscription <span class="sort-icon"></span></th>
+          <th data-sort="status" class="sortable">Status <span class="sort-icon"></span></th>
+        </tr>
+      </thead>
+      <tbody id="ipoBody"></tbody>
+    </table>
+  </div>
+
+  <div class="status-bar">
+    <span id="ipoCount">Loading...</span>
+  </div>
+</div>
+
+<div id="ipoModal" class="modal-overlay hidden">
+  <div class="modal-backdrop"></div>
+  <div class="modal-wrap">
+    <div class="modal-header">
+      <div>
+        <h2 id="modalTitle"></h2>
+        <span class="modal-symbol" id="modalSymbol"></span>
+      </div>
+      <button class="modal-close" id="modalClose">&times;</button>
+    </div>
+    <div class="modal-body" id="modalBody">
+      <section class="detail-card" data-section="about">
+        <div class="detail-card-head">
+          <h3>About</h3>
+          <span class="card-toggle"></span>
+        </div>
+        <div class="detail-card-body" id="modalAbout"></div>
+      </section>
+      <section class="detail-card" data-section="ipo_details">
+        <div class="detail-card-head">
+          <h3>IPO Details</h3>
+          <span class="card-toggle"></span>
+        </div>
+        <div class="detail-card-body" id="modalIpoDetails"></div>
+      </section>
+      <section class="detail-card" data-section="financials">
+        <div class="detail-card-head">
+          <h3>Financial Summary</h3>
+          <span class="card-toggle"></span>
+        </div>
+        <div class="detail-card-body" id="modalFinancials"></div>
+      </section>
+      <section class="detail-card" data-section="strengths">
+        <div class="detail-card-head">
+          <h3>Strengths</h3>
+          <span class="card-toggle"></span>
+        </div>
+        <div class="detail-card-body" id="modalStrengths"></div>
+      </section>
+      <section class="detail-card" data-section="risks">
+        <div class="detail-card-head">
+          <h3>Risks</h3>
+          <span class="card-toggle"></span>
+        </div>
+        <div class="detail-card-body" id="modalRisks"></div>
+      </section>
+      <section class="detail-card" data-section="scores">
+        <div class="detail-card-head">
+          <h3>AI Scores</h3>
+          <span class="card-toggle"></span>
+        </div>
+        <div class="detail-card-body" id="modalScores"></div>
+      </section>
+      <section class="detail-card" data-section="ai_analysis">
+        <div class="detail-card-head">
+          <h3>AI Analysis</h3>
+          <span class="card-toggle"></span>
+        </div>
+        <div class="detail-card-body" id="modalAiAnalysis"></div>
+      </section>
+      <section class="detail-card" data-section="verdict">
+        <div class="detail-card-head">
+          <h3>Verdict</h3>
+          <span class="card-toggle"></span>
+        </div>
+        <div class="detail-card-body" id="modalVerdict"></div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script src="/assets/js/main.js" defer></script>
+<script src="/ipodashboard/script.js"></script>
 </body>
 </html>

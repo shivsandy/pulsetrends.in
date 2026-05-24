@@ -1,0 +1,48 @@
+name: IPO Data Generator
+
+on:
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ipo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests==2.32.3 beautifulsoup4==4.12.3 lxml==5.3.0
+
+      - name: Run IPO scraper
+        env:
+          FINNHUB_API_KEY_1: ${{ secrets.FINNHUB_API_KEY_1 }}
+          FINNHUB_API_KEY_2: ${{ secrets.FINNHUB_API_KEY_2 }}
+          FINNHUB_API_KEY_3: ${{ secrets.FINNHUB_API_KEY_3 }}
+          FINNHUB_API_KEY_4: ${{ secrets.FINNHUB_API_KEY_4 }}
+          FINNHUB_API_KEY_5: ${{ secrets.FINNHUB_API_KEY_5 }}
+          IPO_AI_API_KEY_1: ${{ secrets.IPO_AI_API_KEY_1 }}
+          IPO_AI_API_KEY_2: ${{ secrets.IPO_AI_API_KEY_2 }}
+          IPO_AI_API_KEY_3: ${{ secrets.IPO_AI_API_KEY_3 }}
+          IPO_AI_API_KEY_4: ${{ secrets.IPO_AI_API_KEY_4 }}
+          GOOGLE_AI_API_KEY_1: ${{ secrets.GOOGLE_AI_API_KEY_1 }}
+          GOOGLE_AI_API_KEY_2: ${{ secrets.GOOGLE_AI_API_KEY_2 }}
+        run: python -m scraper.manager
+        working-directory: ${{ github.workspace }}/ipodashboard
+
+      - name: Commit IPO data
+        run: |
+          git config user.name "PulseTrends Bot"
+          git config user.email "noreply@example.com"
+          git add ipodashboard/data/
+          git diff --cached --quiet || git commit -m "Auto: update IPO data"
+          git push
