@@ -65,23 +65,30 @@ header .container { display: flex; justify-content: space-between; align-items: 
 
 /* ─── Ticker ─── */
 .w-ticker {
+  display: flex; align-items: center;
   background: var(--bg-card); border-bottom: 1px solid var(--border);
-  overflow: hidden; height: 36px; line-height: 36px;
-  white-space: nowrap; position: relative; z-index: 90;
+  overflow: hidden; height: 36px; position: relative; z-index: 90;
+}
+.w-ticker .ticker-label {
+  flex-shrink: 0; position: relative; z-index: 10;
+  background: var(--primary); color: #fff;
+  padding: 0 20px; white-space: nowrap;
+  font-size: 0.7em; font-weight: 700; text-transform: uppercase;
+  height: 36px; line-height: 36px;
+}
+.w-ticker .ticker-track {
+  flex: 1; overflow: hidden; position: relative;
 }
 .w-ticker .ticker-inner {
-  display: inline-block; animation: ticker-scroll 40s linear infinite;
+  display: flex; white-space: nowrap; width: max-content;
+  animation: ticker-scroll 40s linear infinite;
+  margin-left: 15px;
 }
 .w-ticker .ticker-inner a {
   display: inline-block; color: var(--text-light); text-decoration: none;
-  font-size: 0.8em; margin-right: 40px;
+  font-size: 0.8em; margin-right: 40px; line-height: 36px;
 }
 .w-ticker .ticker-inner a:hover { color: var(--primary); }
-.w-ticker .ticker-label {
-  display: inline-block; background: var(--primary); color: #fff;
-  padding: 0 12px; font-size: 0.7em; font-weight: 700; text-transform: uppercase;
-  margin-right: 16px; height: 36px; line-height: 36px; float: left;
-}
 @keyframes ticker-scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
