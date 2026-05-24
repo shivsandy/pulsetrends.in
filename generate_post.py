@@ -5,6 +5,7 @@ import re
 import random
 import logging
 import hashlib
+import time
 from datetime import datetime, timedelta
 from pathlib import Path
 from xml.etree import ElementTree
@@ -260,15 +261,102 @@ RSS_FEEDS = [
     "https://www.marketwatch.com/rss/ipo",
 ]
 
-OPENROUTER_MODELS = [
-    "microsoft/phi-3-mini-128k-instruct",
-    "meta-llama/llama-3-8b-instruct",
-    "mistralai/mistral-7b-instruct",
-    "google/gemma-2-9b-it",
-    "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+OPENROUTER_FREE_MODELS = [
+    "deepseek/deepseek-chat:free",
+    "meta-llama/llama-3.3-70b-instruct:free",
+    "mistralai/mistral-small-3.1-24b-instruct:free",
+    "google/gemma-3-27b-it:free",
+    "qwen/qwen3-32b:free",
+    "deepseek/deepseek-r1:free",
+    "microsoft/phi-4:free",
 ]
 
-NVIDIA_MODEL = "meta/llama-3.1-8b-instruct"
+NVIDIA_FREE_MODELS = [
+    "meta/llama-3.1-8b-instruct",
+    "meta/llama-3.3-70b-instruct",
+    "mistralai/mistral-7b-instruct-v0.3",
+    "google/gemma-2-27b-it",
+    "nvidia/nemotron-4-340b-instruct",
+    "qwen/qwen2-72b-instruct",
+]
+
+# ─── Model Health Registry ───
+
+_model_health = {}  # "provider:model" -> dict of health stats
+
+def _health_key(provider, model):
+    return f"{provider}:{model}"
+
+def record_success(provider, model, latency):
+    key = _health_key(provider, model)
+    h = _model_health.get(key)
+    if not h:
+        h = {"success": 0, "failures": 0, "consecutive": 0, "latency": 0.0, "cooldown": 0.0}
+        _model_health[key] = h
+    h["success"] += 1
+    h["consecutive"] = 0
+    h["latency"] = (h["latency"] * (h["success"] - 1) + latency) / max(h["success"], 1)
+    h["last_used"] = time.time()
+
+def record_failure(provider, model, status_code=None):
+    key = _health_key(provider, model)
+    h = _model_health.get(key)
+    if not h:
+        h = {"success": 0, "failures": 0, "consecutive": 0, "latency": 0.0, "cooldown": 0.0}
+        _model_health[key] = h
+    h["failures"] += 1
+    h["consecutive"] += 1
+    now = time.time()
+    if status_code == 429:
+        h["cooldown"] = now + random.randint(300, 600)
+    elif status_code and 500 <= status_code < 600:
+        h["cooldown"] = now + random.randint(180, 360)
+    else:
+        h["cooldown"] = now + random.randint(120, 300)
+
+def get_healthy_models(provider, model_list):
+    now = time.time()
+    healthy = []
+    for model in model_list:
+        key = _health_key(provider, model)
+        h = _model_health.get(key)
+        if h and h["cooldown"] > now:
+            continue
+        score = 1.0
+        if h:
+            total = h["success"] + h["failures"]
+            if total > 0:
+                score -= (h["failures"] / total) * 0.5
+            score -= h["consecutive"] * 0.2
+        healthy.append((max(score, 0.1), model))
+    random.shuffle(healthy)
+    healthy.sort(key=lambda x: x[0], reverse=True)
+    return [m for _, m in healthy]
+
+def discover_nvidia_models():
+    try:
+        resp = requests.get("https://integrate.api.nvidia.com/v1/models", timeout=10)
+        if resp.status_code == 200:
+            available = set()
+            for m in resp.json().get("data", []):
+                mid = m.get("id", "")
+                for known in NVIDIA_FREE_MODELS:
+                    if known in mid or mid.split("/")[-1] in known:
+                        available.add(mid)
+            if available:
+                log.info(f"NVIDIA auto-discovered {len(available)} free models: {available}")
+                return sorted(available)
+    except Exception:
+        pass
+    log.info(f"NVIDIA using default model list ({len(NVIDIA_FREE_MODELS)} models)")
+    return list(NVIDIA_FREE_MODELS)
+
+# ─── LLM Exception ───
+
+class LlmError(Exception):
+    def __init__(self, message, status_code=None):
+        self.status_code = status_code
+        super().__init__(message)
 
 BRAND_ENTITIES = [
     "Apple", "Samsung", "Google", "Microsoft", "Amazon", "Meta", "Netflix",
@@ -289,15 +377,16 @@ BRAND_ENTITIES = [
     "UFC", "NBA", "NFL", "MLB", "NHL", "FIFA", "IPL",
 ]
 
-def load_env_api_keys():
-    keys = {}
+def load_api_keys():
+    keys = {"openrouter": [], "nvidia": [], "unsplash": "", "newsapi": ""}
     for i in range(1, 5):
         val = os.environ.get(f"OPENROUTER_API_KEY_{i}")
         if val:
-            keys[f"openrouter_{i}"] = val
-    nv = os.environ.get("NVIDIA_API_KEY_1")
-    if nv:
-        keys["nvidia_1"] = nv
+            keys["openrouter"].append({"key": val, "index": i, "cooldown": 0.0})
+    for i in range(1, 3):
+        val = os.environ.get(f"NVIDIA_API_KEY_{i}")
+        if val:
+            keys["nvidia"].append({"key": val, "index": i, "cooldown": 0.0})
     keys["unsplash"] = os.environ.get("UNSPLASH_ACCESS_KEY", "")
     keys["newsapi"] = os.environ.get("NEWSAPI_KEY", "")
     return keys
@@ -430,9 +519,7 @@ def is_duplicate(title, existing):
             return True
     return False
 
-def call_openrouter(api_key, prompt, model=None):
-    if not model:
-        model = random.choice(OPENROUTER_MODELS)
+def call_openrouter(api_key, model, prompt):
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
@@ -447,23 +534,27 @@ def call_openrouter(api_key, prompt, model=None):
         "max_tokens": 8192,
         "top_p": 0.95,
     }
+    start = time.time()
     resp = requests.post(
         "https://openrouter.ai/api/v1/chat/completions",
         headers=headers,
         json=data,
         timeout=300,
     )
+    latency = time.time() - start
     if resp.status_code != 200:
-        raise Exception(f"OpenRouter error {resp.status_code}: {resp.text[:200]}")
-    return resp.json()["choices"][0]["message"]["content"]
+        raise LlmError(f"OpenRouter {resp.status_code}: {resp.text[:200]}", resp.status_code)
+    content = resp.json()["choices"][0]["message"]["content"]
+    return content, latency
 
-def call_nvidia(api_key, prompt):
+
+def call_nvidia(api_key, model, prompt):
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
     }
     data = {
-        "model": NVIDIA_MODEL,
+        "model": model,
         "messages": [
             {"role": "system", "content": "You are a professional content writer. Write well-researched, engaging articles in natural English."},
             {"role": "user", "content": prompt},
@@ -472,17 +563,20 @@ def call_nvidia(api_key, prompt):
         "max_tokens": 8192,
         "top_p": 0.95,
     }
+    start = time.time()
     resp = requests.post(
         "https://integrate.api.nvidia.com/v1/chat/completions",
         headers=headers,
         json=data,
         timeout=300,
     )
+    latency = time.time() - start
     if resp.status_code != 200:
-        raise Exception(f"NVIDIA error {resp.status_code}: {resp.text[:200]}")
-    return resp.json()["choices"][0]["message"]["content"]
+        raise LlmError(f"NVIDIA {resp.status_code}: {resp.text[:200]}", resp.status_code)
+    content = resp.json()["choices"][0]["message"]["content"]
+    return content, latency
 
-def generate_article(title, category_name, api_keys):
+def build_prompt(title, category_name):
     prompt = f"""Write a comprehensive, well-researched article about the following topic.
 
 Topic: {title}
@@ -510,34 +604,75 @@ Return only the article content in markdown format with no additional commentary
 - Provide a brief analysis of the company's business model, financials, and growth prospects
 - Summarize key risks and strengths for potential investors
 """
+    return prompt
+
+
+def get_llm_combos(api_keys, nvidia_models):
+    """Build a shuffled list of (provider, model, key_obj) healthy combos."""
+    now = time.time()
+    combos = []
+
+    for key_obj in api_keys["openrouter"]:
+        if key_obj["cooldown"] > now:
+            continue
+        for model in get_healthy_models("openrouter", OPENROUTER_FREE_MODELS):
+            combos.append(("openrouter", model, key_obj))
+
+    for key_obj in api_keys["nvidia"]:
+        if key_obj["cooldown"] > now:
+            continue
+        for model in get_healthy_models("nvidia", nvidia_models):
+            combos.append(("nvidia", model, key_obj))
+
+    random.shuffle(combos)
+    return combos
+
+
+def generate_article(title, category_name, api_keys, nvidia_models=None):
+    if nvidia_models is None:
+        nvidia_models = list(NVIDIA_FREE_MODELS)
+
+    prompt = build_prompt(title, category_name)
+    combos = get_llm_combos(api_keys, nvidia_models)
+
+    if not combos:
+        raise Exception("No healthy LLM combos available (all models/keys may be cooled down)")
 
     errors = []
-    for i in range(1, 5):
-        key = api_keys.get(f"openrouter_{i}")
-        if not key:
-            continue
+    for provider, model, key_obj in combos:
         try:
-            log.info(f"Trying OpenRouter key {i}...")
-            content = call_openrouter(key, prompt)
-            if len(content) > 500:
-                return content
-            errors.append(f"OpenRouter key {i}: content too short ({len(content)} chars)")
-        except Exception as e:
-            errors.append(f"OpenRouter key {i}: {e}")
-            continue
+            log.info(f"[{provider}] model={model} key={key_obj['index']}")
+            if provider == "openrouter":
+                content, latency = call_openrouter(key_obj["key"], model, prompt)
+            else:
+                content, latency = call_nvidia(key_obj["key"], model, prompt)
 
-    nv_key = api_keys.get("nvidia_1")
-    if nv_key:
-        try:
-            log.info("Trying NVIDIA...")
-            content = call_nvidia(nv_key, prompt)
-            if len(content) > 500:
-                return content
-            errors.append(f"NVIDIA: content too short ({len(content)} chars)")
-        except Exception as e:
-            errors.append(f"NVIDIA: {e}")
+            if len(content) <= 500:
+                msg = f"content too short ({len(content)} chars)"
+                errors.append(f"{provider}/{model} key {key_obj['index']}: {msg}")
+                record_failure(provider, model)
+                continue
 
-    raise Exception(f"All LLM APIs failed: {'; '.join(errors)}")
+            record_success(provider, model, latency)
+            log.info(f"[{provider}] model={model} key={key_obj['index']} OK ({latency:.1f}s, {len(content)} chars)")
+            return content
+
+        except LlmError as e:
+            errors.append(f"{provider}/{model} key {key_obj['index']}: HTTP {e.status_code}")
+            record_failure(provider, model, e.status_code)
+            if e.status_code == 429:
+                key_obj["cooldown"] = time.time() + random.randint(300, 600)
+                log.warning(f"[{provider}] key {key_obj['index']} rate limited, cooling down 5-10m")
+        except requests.Timeout:
+            errors.append(f"{provider}/{model} key {key_obj['index']}: timeout")
+            record_failure(provider, model)
+            key_obj["cooldown"] = time.time() + random.randint(120, 300)
+            log.warning(f"[{provider}] key {key_obj['index']} timeout, cooling down 2-5m")
+        except Exception as e:
+            errors.append(f"{provider}/{model} key {key_obj['index']}: {e}")
+            record_failure(provider, model)
+
+    raise Exception(f"All LLM combos exhausted ({len(combos)} tried): {'; '.join(errors)}")
 
 def fetch_image(query, api_key, used_urls=None):
     if not api_key:
@@ -654,9 +789,11 @@ def main():
     log.info("Starting daily content generation (1 per category)")
     log.info("=" * 50)
 
-    api_keys = load_env_api_keys()
-    key_count = sum(1 for k in api_keys if k.startswith("openrouter") or k.startswith("nvidia"))
-    log.info(f"LLM API keys loaded: {key_count}")
+    api_keys = load_api_keys()
+    key_count = len(api_keys["openrouter"]) + len(api_keys["nvidia"])
+    log.info(f"LLM API keys loaded: {key_count} (OpenRouter: {len(api_keys['openrouter'])}, NVIDIA: {len(api_keys['nvidia'])})")
+
+    nvidia_models = discover_nvidia_models()
 
     log.info("Fetching trends...")
     all_candidates = []
@@ -741,7 +878,7 @@ def main():
 
         article = None
         try:
-            article = generate_article(title, cat["name"], api_keys)
+            article = generate_article(title, cat["name"], api_keys, nvidia_models)
         except Exception as e:
             log.error(f"Generation failed for {cat['name']}: {e}")
             continue
