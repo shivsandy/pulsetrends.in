@@ -130,6 +130,20 @@ header .container { display: flex; justify-content: space-between; align-items: 
 .sidebar { min-width: 0; }
 .sidebar-inner { position: sticky; top: 90px; }
 
+/* ─── Filter Bar ─── */
+.filter-bar {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--bg-card); border: 1px solid var(--primary);
+  border-radius: var(--radius); padding: 10px 16px;
+  margin-bottom: 20px; font-size: 0.85em; color: var(--text);
+}
+.filter-bar .filter-clear {
+  background: none; border: 1px solid var(--border); color: var(--text-light);
+  border-radius: 4px; padding: 4px 10px; cursor: pointer;
+  font-size: 0.8em; margin-left: auto;
+}
+.filter-bar .filter-clear:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+
 /* ─── Section Title ─── */
 .section-title {
   font-size: 1.4em;
@@ -182,6 +196,7 @@ header .container { display: flex; justify-content: space-between; align-items: 
   border-radius: var(--radius);
   overflow: hidden;
   transition: transform 0.15s;
+  content-visibility: auto;
 }
 .post-card:hover { transform: translateY(-1px); border-color: rgba(231,76,60,0.2); }
 .post-card a { text-decoration: none; color: inherit; display: flex; flex-direction: column; }

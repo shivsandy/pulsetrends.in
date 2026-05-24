@@ -75,6 +75,22 @@
     }
   });
 
+  // Category filtering via data-category links
+  document.querySelectorAll('[data-category]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var cat = this.getAttribute('data-category');
+      if (typeof window.filterByCategory === 'function') {
+        window.filterByCategory(cat);
+      }
+      if (mobileNav && mobileNav.classList.contains('open')) {
+        mobileNav.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+      if (dropdown) dropdown.classList.remove('nav-dropdown-open');
+    });
+  });
+
   // Category tag colors
   var tagColors = {
     crypto: '#f59e0b', bitcoin: '#f59e0b', stock: '#10b981',

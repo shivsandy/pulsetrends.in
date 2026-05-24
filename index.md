@@ -30,9 +30,14 @@ title: Home
 
 <h2 class="section-title">Latest Articles</h2>
 
+<div id="filterBar" class="filter-bar" style="display:none">
+  <span>Showing: <strong class="filter-cat-name"></strong></span>
+  <button id="clearFilter" class="filter-clear">✕ Clear</button>
+</div>
+
 <div class="post-grid" id="postGrid">
   {% for post in posts offset:1 %}
-  <article class="post-card" data-page="{{ forloop.index0 | divided_by: 5 | plus: 1 }}">
+  <article class="post-card" data-page="{{ forloop.index0 | divided_by: 4 | plus: 1 }}">
     <a href="{{ post.url | relative_url }}">
       <div class="card-img-wrap">
         {% if post.image %}
@@ -65,22 +70,37 @@ title: Home
 
 <script>
 document.addEventListener('DOMContentLoaded', function(){
-  var cards = document.querySelectorAll('#postGrid .post-card');
-  var perPage = 5;
-  var totalPages = Math.ceil(cards.length / perPage) || 1;
-
-  function getRange(p) {
-    var start = (p - 1) * perPage;
-    return [start, start + perPage];
-  }
+  var grid = document.getElementById('postGrid');
+  var cards = Array.from(grid.querySelectorAll('.post-card'));
+  var perPage = 4;
+  var activeCategory = null;
+  var currentPage = 1;
 
   function showPage(p) {
     currentPage = p;
-    var range = getRange(p);
-    cards.forEach(function(c, i) {
-      c.style.display = (i >= range[0] && i < range[1]) ? '' : 'none';
+    var idx = 0;
+    cards.forEach(function(c) {
+      if (c.dataset.matchCategory === '1') {
+        var pageIdx = Math.floor(idx / perPage);
+        c.style.display = (pageIdx + 1 === p) ? '' : 'none';
+        idx++;
+      } else {
+        c.style.display = 'none';
+      }
     });
     renderPagination();
+  }
+
+  function applyFilter() {
+    var matchCount = 0;
+    cards.forEach(function(c) {
+      var tag = c.querySelector('.cat-tag');
+      var match = !activeCategory || (tag && tag.textContent.trim().toLowerCase() === activeCategory);
+      c.dataset.matchCategory = match ? '1' : '0';
+      if (match) matchCount++;
+    });
+    totalPages = Math.ceil(matchCount / perPage) || 1;
+    showPage(1);
   }
 
   function renderPagination() {
@@ -115,6 +135,44 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 
-  showPage(1);
+  var totalPages = 1;
+
+  window.filterByCategory = function(cat) {
+    var filterBar = document.getElementById('filterBar');
+    if (cat === activeCategory) {
+      activeCategory = null;
+      if (filterBar) filterBar.style.display = 'none';
+    } else {
+      activeCategory = cat;
+      if (filterBar) {
+        filterBar.style.display = 'flex';
+        filterBar.querySelector('.filter-cat-name').textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
+      }
+    }
+    var url = new URL(window.location);
+    if (activeCategory) {
+      url.searchParams.set('category', activeCategory);
+    } else {
+      url.searchParams.delete('category');
+    }
+    history.pushState({}, '', url);
+    applyFilter();
+  };
+
+  document.getElementById('clearFilter').addEventListener('click', function() {
+    window.filterByCategory(activeCategory);
+  });
+
+  var params = new URLSearchParams(window.location.search);
+  var catFromUrl = params.get('category');
+  if (catFromUrl) {
+    activeCategory = catFromUrl.toLowerCase();
+    var fb = document.getElementById('filterBar');
+    if (fb) {
+      fb.style.display = 'flex';
+      fb.querySelector('.filter-cat-name').textContent = activeCategory.charAt(0).toUpperCase() + activeCategory.slice(1);
+    }
+  }
+  applyFilter();
 });
 </script>
