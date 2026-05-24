@@ -57,6 +57,56 @@
     </div>
   </div>
 
+  <div id="ipoModal" class="modal-overlay hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-wrap">
+      <div class="modal-header">
+        <div>
+          <h2 id="modalTitle"></h2>
+          <span class="modal-symbol" id="modalSymbol"></span>
+        </div>
+        <button class="modal-close" id="modalClose">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <section class="detail-card" data-section="about">
+          <div class="detail-card-head">
+            <h3>About</h3>
+            <span class="card-toggle"></span>
+          </div>
+          <div class="detail-card-body" id="modalAbout"></div>
+        </section>
+        <section class="detail-card" data-section="financials">
+          <div class="detail-card-head">
+            <h3>Financials</h3>
+            <span class="card-toggle"></span>
+          </div>
+          <div class="detail-card-body" id="modalFinancials"></div>
+        </section>
+        <section class="detail-card" data-section="strengths">
+          <div class="detail-card-head">
+            <h3>Strengths</h3>
+            <span class="card-toggle"></span>
+          </div>
+          <div class="detail-card-body" id="modalStrengths"></div>
+        </section>
+        <section class="detail-card" data-section="risks">
+          <div class="detail-card-head">
+            <h3>Risks</h3>
+            <span class="card-toggle"></span>
+          </div>
+          <div class="detail-card-body" id="modalRisks"></div>
+        </section>
+        <section class="detail-card" data-section="ai_analysis">
+          <div class="detail-card-head">
+            <h3>AI Analysis</h3>
+            <span class="card-toggle"></span>
+          </div>
+          <div class="detail-card-body" id="modalAiAnalysis"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+
   <script src="/ipodashboard/script.js"></script>
 </body>
 </html>

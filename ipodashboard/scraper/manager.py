@@ -13,6 +13,7 @@ from .nse import NSEScraper
 from .groww import GrowwScraper
 from .zerodha import ZerodhaScraper
 from .nasdaqapi import NasdaqApiScraper
+from .ipo_analyzer import analyze as analyze_ipos
 
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
@@ -190,6 +191,9 @@ def run():
         json.dump(output, f, indent=2, ensure_ascii=False)
 
     print(f"[Manager] Saved {len(balanced)} IPOs to {DATA_FILE}")
+
+    analyze_ipos(balanced)
+
     return output
 
 

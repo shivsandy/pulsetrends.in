@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-24T23:42:34.994365+05:30",
-  "total": 79,
+  "last_updated": "2026-05-25T00:06:43.026075+05:30",
+  "total": 80,
   "ipos": [
     {
       "company_name": "Rare Earths Americas, Inc.",
@@ -877,7 +877,7 @@
       "issue_size": "₹146 Cr (M.Cap)",
       "gmp": "",
       "subscription": "",
-      "status": "upcoming",
+      "status": "open",
       "exchange": "BSE",
       "ipo_type": "sme",
       "country": "India"
@@ -1253,6 +1253,22 @@
     {
       "company_name": "Hero Motors",
       "symbol": "HEROMOTO",
+      "price_band": "₹-",
+      "open_date": "",
+      "close_date": "",
+      "listing_date": "–",
+      "lot_size": "",
+      "issue_size": "",
+      "gmp": "",
+      "subscription": "",
+      "status": "upcoming",
+      "exchange": "NSE",
+      "ipo_type": "mainboard",
+      "country": "India"
+    },
+    {
+      "company_name": "Hindustan Coca-Cola Beverages",
+      "symbol": "HCCB",
       "price_band": "₹-",
       "open_date": "",
       "close_date": "",

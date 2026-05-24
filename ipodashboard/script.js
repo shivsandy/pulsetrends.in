@@ -1,5 +1,6 @@
 (function () {
   let ipos = [];
+  let analysis = {};
   let currentFilter = "all";
   let searchTerm = "";
   let sortKey = null;
@@ -10,6 +11,11 @@
   const filterButtons = document.querySelectorAll(".filter-btn");
   const lastUpdatedEl = document.getElementById("lastUpdated");
   const ipoCountEl = document.getElementById("ipoCount");
+
+  const modal = document.getElementById("ipoModal");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalSymbol = document.getElementById("modalSymbol");
+  const modalClose = document.getElementById("modalClose");
 
   function formatDate(dateStr) {
     if (!dateStr) return "\u2014";
@@ -102,10 +108,10 @@
     }
 
     tbody.innerHTML = filtered
-      .map((ipo) => {
+      .map((ipo, i) => {
         const s = (ipo.status || "upcoming").toLowerCase();
         const country = getCountry(ipo);
-        return `<tr>
+        return `<tr data-index="${i}">
           <td class="symbol-cell">${escHtml(ipo.symbol || "\u2014")}</td>
           <td>
             <span class="company-name">${escHtml(ipo.company_name || "\u2014")}</span>
@@ -128,6 +134,80 @@
     return div.innerHTML;
   }
 
+  function analysisKey(ipo) {
+    const sym = (ipo.symbol || "").toUpperCase().trim();
+    const country = (ipo.country || "Global").trim();
+    if (sym) return sym + "-" + country;
+    const name = (ipo.company_name || "").toLowerCase().trim().replace(/\s+/g, "-").slice(0, 20);
+    return name + "-" + country;
+  }
+
+  function openModal(ipo) {
+    const key = analysisKey(ipo);
+    const data = analysis[key] || null;
+
+    modalTitle.textContent = ipo.company_name || "Unknown";
+    modalSymbol.textContent = (ipo.symbol || "\u2014") + " \u00B7 " + (ipo.exchange || "") + " \u00B7 " + (ipo.country || "Global");
+
+    const aboutEl = document.getElementById("modalAbout");
+    const finEl = document.getElementById("modalFinancials");
+    const strEl = document.getElementById("modalStrengths");
+    const riskEl = document.getElementById("modalRisks");
+    const aiEl = document.getElementById("modalAiAnalysis");
+
+    if (!data) {
+      const msg = '<div class="modal-loading">Analysis pending for this IPO</div>';
+      aboutEl.innerHTML = msg;
+      finEl.innerHTML = "";
+      strEl.innerHTML = "";
+      riskEl.innerHTML = "";
+      aiEl.innerHTML = "";
+      showModal();
+      return;
+    }
+
+    aboutEl.innerHTML = escHtml(data.about || "No information available.");
+    finEl.innerHTML = escHtml(data.financials || "Financial data not available.");
+
+    strEl.innerHTML = (data.strengths && data.strengths.length)
+      ? "<ul>" + data.strengths.map(function(s) { return "<li>" + escHtml(s) + "</li>"; }).join("") + "</ul>"
+      : "Not available.";
+
+    riskEl.innerHTML = (data.risks && data.risks.length)
+      ? "<ul>" + data.risks.map(function(r) { return "<li>" + escHtml(r) + "</li>"; }).join("") + "</ul>"
+      : "Not available.";
+
+    aiEl.innerHTML = escHtml(data.ai_analysis || "No analysis available.");
+
+    document.querySelectorAll(".detail-card").forEach(function(card) {
+      card.classList.remove("collapsed");
+    });
+
+    showModal();
+  }
+
+  function showModal() {
+    modal.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    modal.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+
+  modalClose.addEventListener("click", closeModal);
+  modal.querySelector(".modal-backdrop").addEventListener("click", closeModal);
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") closeModal();
+  });
+
+  document.querySelectorAll(".detail-card-head").forEach(function(head) {
+    head.addEventListener("click", function() {
+      this.parentElement.classList.toggle("collapsed");
+    });
+  });
+
   function handleSort(e) {
     const th = e.target.closest("th.sortable");
     if (!th) return;
@@ -149,6 +229,19 @@
     th.addEventListener("click", handleSort);
   });
 
+  tbody.addEventListener("click", (e) => {
+    const tr = e.target.closest("tr[data-index]");
+    if (!tr) return;
+    const idx = parseInt(tr.dataset.index, 10);
+    const filtered = ipos.filter((ipo) => matchesFilter(ipo, currentFilter)).filter((ipo) => {
+      if (!searchTerm) return true;
+      const term = searchTerm.toLowerCase();
+      return (ipo.company_name || "").toLowerCase().includes(term) || (ipo.symbol || "").toLowerCase().includes(term);
+    });
+    const ipo = filtered[idx];
+    if (ipo) openModal(ipo);
+  });
+
   searchInput.addEventListener("input", (e) => {
     searchTerm = e.target.value;
     render();
@@ -165,11 +258,14 @@
 
   async function load() {
     try {
-      const resp = await fetch("/ipodashboard/data/ipos.json?_=" + Date.now());
-      const data = await resp.json();
-      ipos = data.ipos || [];
-      if (data.last_updated) {
-        const d = new Date(data.last_updated);
+      const [ipoResp, analysisResp] = await Promise.all([
+        fetch("/ipodashboard/data/ipos.json?_=" + Date.now()),
+        fetch("/ipodashboard/data/ipo_analysis.json?_=" + Date.now()),
+      ]);
+      const ipoData = await ipoResp.json();
+      ipos = ipoData.ipos || [];
+      if (ipoData.last_updated) {
+        const d = new Date(ipoData.last_updated);
         lastUpdatedEl.textContent = `Last updated: ${d.toLocaleDateString("en-IN", {
           day: "numeric",
           month: "short",
@@ -177,6 +273,9 @@
           hour: "2-digit",
           minute: "2-digit",
         })} IST`;
+      }
+      if (analysisResp.ok) {
+        analysis = await analysisResp.json();
       }
     } catch (err) {
       lastUpdatedEl.textContent = "Could not load IPO data. Ensure the scraper has run.";
