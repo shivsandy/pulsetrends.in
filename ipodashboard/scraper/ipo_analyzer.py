@@ -228,35 +228,35 @@ def generate_analysis(ipo: dict, api_keys: List[dict], google_keys: List[dict], 
         status=ipo.get("status", "upcoming"),
     )
 
-    for entry in api_keys:
+    for entry in google_keys:
         key_index = entry["index"]
-        healthy = _healthy_models("openrouter", key_index, models)
+        healthy = _healthy_models("google", key_index, GOOGLE_FREE_MODELS)
         if not healthy:
             continue
 
         for model in healthy:
             try:
-                print(f"[IPO Analyzer] OR key{key_index} model={model} -> {ipo.get('company_name', '')}")
+                print(f"[IPO Analyzer] GA key{key_index} model={model} -> {ipo.get('company_name', '')}")
                 start = time.time()
-                raw = _call_openrouter(entry["key"], model, prompt)
+                raw = _call_google(entry["key"], model, prompt)
                 latency = time.time() - start
                 parsed = _parse_analysis_response(raw)
                 if parsed:
-                    _record_success("openrouter", key_index, model, latency)
-                    print(f"[IPO Analyzer] OK OR key{key_index} model={model} ({latency:.1f}s)")
+                    _record_success("google", key_index, model, latency)
+                    print(f"[IPO Analyzer] OK GA key{key_index} model={model} ({latency:.1f}s)")
                     return parsed
                 else:
                     print(f"[IPO Analyzer] Bad JSON from {model}, trying next")
-                    _record_failure("openrouter", key_index, model)
+                    _record_failure("google", key_index, model)
             except Exception as e:
                 status_code = None
                 if hasattr(e, "status_code"):
                     status_code = e.status_code
-                _record_failure("openrouter", key_index, model, status_code)
-                print(f"[IPO Analyzer] Fail OR key{key_index} model={model}: {e}")
+                _record_failure("google", key_index, model, status_code)
+                print(f"[IPO Analyzer] Fail GA key{key_index} model={model}: {e}")
                 continue
 
-    for entry in google_keys:
+    for entry in api_keys:
         key_index = entry["index"]
         healthy = _healthy_models("google", key_index, GOOGLE_FREE_MODELS)
         if not healthy:
