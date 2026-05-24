@@ -1,6 +1,6 @@
 import re
 from datetime import datetime
-from typing import List, Optional, Tuple
+from typing import List, Optional
 
 import requests
 from bs4 import BeautifulSoup

@@ -36,6 +36,10 @@ jobs:
           FINNHUB_API_KEY_3: ${{ secrets.FINNHUB_API_KEY_3 }}
           FINNHUB_API_KEY_4: ${{ secrets.FINNHUB_API_KEY_4 }}
           FINNHUB_API_KEY_5: ${{ secrets.FINNHUB_API_KEY_5 }}
+          IPO_AI_API_KEY_1: ${{ secrets.IPO_AI_API_KEY_1 }}
+          IPO_AI_API_KEY_2: ${{ secrets.IPO_AI_API_KEY_2 }}
+          IPO_AI_API_KEY_3: ${{ secrets.IPO_AI_API_KEY_3 }}
+          IPO_AI_API_KEY_4: ${{ secrets.IPO_AI_API_KEY_4 }}
         run: python -m scraper.manager
         working-directory: ${{ github.workspace }}/ipodashboard
 

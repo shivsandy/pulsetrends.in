@@ -11,8 +11,6 @@ from .base import IPO, BaseScraper, get_country
 
 FINNHUB_BASE = "https://finnhub.io/api/v1"
 
-_key_health = {}
-
 def _pick_key(api_keys):
     now = time.time()
     healthy = []

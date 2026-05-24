@@ -1,5 +1,6 @@
 import json
 import re
+from datetime import datetime
 from typing import List, Optional
 
 import requests
@@ -121,7 +122,6 @@ class GrowwScraper(BaseScraper):
         date_str = date_str.strip()
         for fmt in ["%Y-%m-%d", "%d-%m-%Y", "%d/%m/%Y", "%Y-%m-%dT%H:%M:%S"]:
             try:
-                from datetime import datetime
                 return datetime.strptime(date_str[:10], fmt).strftime("%Y-%m-%d")
             except ValueError:
                 continue
