@@ -256,6 +256,8 @@ RSS_FEEDS = [
     "https://www.moneycontrol.com/rss/iponews.xml",
     "https://economictimes.indiatimes.com/markets/ipos/rssfeeds",
     "https://www.chittorgarh.com/rss/ipo.rss",
+    "https://www.nasdaq.com/feed/rssoutbound?category=IPOs",
+    "https://www.marketwatch.com/rss/ipo",
 ]
 
 OPENROUTER_MODELS = [
