@@ -40,6 +40,8 @@ jobs:
           IPO_AI_API_KEY_2: ${{ secrets.IPO_AI_API_KEY_2 }}
           IPO_AI_API_KEY_3: ${{ secrets.IPO_AI_API_KEY_3 }}
           IPO_AI_API_KEY_4: ${{ secrets.IPO_AI_API_KEY_4 }}
+          GOOGLE_AI_API_KEY_1: ${{ secrets.GOOGLE_AI_API_KEY_1 }}
+          GOOGLE_AI_API_KEY_2: ${{ secrets.GOOGLE_AI_API_KEY_2 }}
         run: python -m scraper.manager
         working-directory: ${{ github.workspace }}/ipodashboard
 
