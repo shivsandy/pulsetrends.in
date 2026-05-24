@@ -559,7 +559,7 @@ def slugify(title):
     s = s[:80].strip('-')
     return s
 
-def build_post(content, article_title, category_id, image_url, existing_titles):
+def build_post(content, article_title, category_id, image_url, existing_titles, article_index=0):
     title = article_title
     if len(title) > 100:
         title = title[:97] + "..."
@@ -569,7 +569,7 @@ def build_post(content, article_title, category_id, image_url, existing_titles):
         return None
 
     slug = slugify(title)
-    date = datetime.utcnow()
+    date = datetime.utcnow() + timedelta(minutes=article_index * 15)
     filename = f"{date.strftime('%Y-%m-%d')}-{slug}.md"
     filepath = POSTS_DIR / filename
 
@@ -753,7 +753,7 @@ def main():
             if fallback:
                 image_url = fallback
 
-        post_file = build_post(article, title, cid, image_url, existing_titles)
+        post_file = build_post(article, title, cid, image_url, existing_titles, articles_generated)
         if post_file:
             articles_generated += 1
             existing_titles.add(title.lower().strip())

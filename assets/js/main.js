@@ -4,7 +4,6 @@
   var ticking = false;
   var progressBar = document.querySelector('.scroll-progress');
   var header = document.getElementById('header');
-  var globeContainer = document.getElementById('globe-container');
 
   function onScroll() {
     if (!ticking) {
@@ -25,11 +24,6 @@
           } else {
             header.classList.remove('scrolled');
           }
-        }
-
-        // Globe parallax
-        if (globeContainer) {
-          globeContainer.style.transform = 'translateY(' + (scrollY * -0.08) + 'px)';
         }
 
         ticking = false;
@@ -91,6 +85,42 @@
   var postCards = document.querySelectorAll('.post-card');
   postCards.forEach(function(card, i) {
     card.style.setProperty('--card-delay', (i * 0.08) + 's');
+  });
+
+  // ─── Desktop Nav Dropdown (click toggle for touch) ───
+  var dropdown = document.querySelector('.nav-dropdown');
+  var dropdownTrigger = document.querySelector('.dropdown-trigger');
+  if (dropdown && dropdownTrigger) {
+    dropdownTrigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      dropdown.classList.toggle('nav-dropdown-open');
+    });
+    document.addEventListener('click', function(e) {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('nav-dropdown-open');
+      }
+    });
+  }
+
+  // ─── Mobile Categories Submenu ───
+  var mCatToggle = document.querySelector('.mobile-cat-toggle');
+  var mCatList = document.querySelector('.mobile-cat-list');
+  if (mCatToggle && mCatList) {
+    mCatToggle.addEventListener('click', function() {
+      mCatList.classList.toggle('open');
+      this.querySelector('.mcat-arrow').textContent = mCatList.classList.contains('open') ? '▾' : '▸';
+    });
+  }
+
+  // ─── Sidebar Categories Toggle ───
+  document.querySelectorAll('.cat-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var widget = this.closest('.sidebar-widget');
+      var catList = widget ? widget.querySelector('.sidebar-cat') : null;
+      if (!catList) return;
+      catList.classList.toggle('collapsed');
+      this.textContent = catList.classList.contains('collapsed') ? '+' : '−';
+    });
   });
 
   // ─── Dynamic active nav link ───

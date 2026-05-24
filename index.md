@@ -64,58 +64,59 @@ title: Home
 {% endif %}
 
 <script>
-(function(){
-  var perPage = 12;
+document.addEventListener('DOMContentLoaded', function(){
   var cards = document.querySelectorAll('#postGrid .post-card');
-  var totalPages = Math.ceil(cards.length / perPage) || 1;
+  var firstPage = 7, restPages = 6;
+  var totalPages = cards.length <= firstPage ? 1 : 1 + Math.ceil((cards.length - firstPage) / restPages);
   var currentPage = 1;
+
+  function getRange(p) {
+    if (p === 1) return [0, firstPage];
+    var start = firstPage + (p - 2) * restPages;
+    return [start, start + restPages];
+  }
 
   function showPage(p) {
     currentPage = p;
+    var range = getRange(p);
     cards.forEach(function(c, i) {
-      var pageNum = Math.floor(i / perPage) + 1;
-      c.style.display = pageNum === p ? '' : 'none';
+      c.style.display = (i >= range[0] && i < range[1]) ? '' : 'none';
     });
     renderPagination();
   }
 
   function renderPagination() {
     var el = document.getElementById('pagination');
-    if (!el || totalPages <= 1) { if (el) el.innerHTML = ''; return; }
+    if (!el) return;
+    if (totalPages <= 1) { el.innerHTML = ''; return; }
+
     var html = '';
-
     if (currentPage > 1) {
-      html += '<a href="#" data-page="' + (currentPage - 1) + '" class="prev">&larr; Previous</a>';
+      html += '<a href="#" data-page="' + (currentPage - 1) + '" class="prev" aria-label="Previous page">&lsaquo;</a>';
     } else {
-      html += '<span class="disabled">&larr; Previous</span>';
+      html += '<span class="disabled" aria-hidden="true">&lsaquo;</span>';
     }
-
     for (var i = 1; i <= totalPages; i++) {
-      if (i === currentPage) {
-        html += '<span class="active">' + i + '</span>';
-      } else {
-        html += '<a href="#" data-page="' + i + '">' + i + '</a>';
-      }
+      html += i === currentPage ? '<span class="active">' + i + '</span>' : '<a href="#" data-page="' + i + '">' + i + '</a>';
     }
-
     if (currentPage < totalPages) {
-      html += '<a href="#" data-page="' + (currentPage + 1) + '" class="next">Next &rarr;</a>';
+      html += '<a href="#" data-page="' + (currentPage + 1) + '" class="next" aria-label="Next page">&rsaquo;</a>';
     } else {
-      html += '<span class="disabled">Next &rarr;</span>';
+      html += '<span class="disabled" aria-hidden="true">&rsaquo;</span>';
     }
-
-    html += '<span class="page-info">Page ' + currentPage + ' of ' + totalPages + '</span>';
+    html += '<span class="page-info">' + currentPage + ' / ' + totalPages + '</span>';
     el.innerHTML = html;
 
     el.querySelectorAll('a[data-page]').forEach(function(a) {
       a.addEventListener('click', function(e) {
         e.preventDefault();
         showPage(parseInt(this.getAttribute('data-page')));
-        window.scrollTo({ top: document.getElementById('postGrid').offsetTop - 100, behavior: 'smooth' });
+        var top = document.getElementById('postGrid');
+        if (top) top.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
   }
 
   showPage(1);
-})();
+});
 </script>
