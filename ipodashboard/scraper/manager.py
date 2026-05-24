@@ -11,6 +11,8 @@ from .iposcoop import IpoScoopScraper
 from .renaissance import RenaissanceScraper
 from .nse import NSEScraper
 from .groww import GrowwScraper
+from .zerodha import ZerodhaScraper
+from .nasdaqapi import NasdaqApiScraper
 
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
@@ -116,6 +118,41 @@ def merge_ipos(all_ipos: List[IPO]) -> List[dict]:
     return result
 
 
+def _sort_key(x: dict) -> Tuple:
+    date = x.get("listing_date") or x.get("open_date") or x.get("close_date") or "9999"
+    return (date, x.get("company_name") or "")
+
+
+def _balance_ipos(ipos: List[dict]) -> List[dict]:
+    india = [x for x in ipos if x.get("country") == "India"]
+    global_ = [x for x in ipos if x.get("country") != "India"]
+
+    india_upcoming = sorted(
+        [x for x in india if x.get("status") == "upcoming"],
+        key=lambda x: x.get("open_date") or x.get("close_date") or "9999",
+    )[:15]
+    india_other = [x for x in india if x.get("status") != "upcoming"]
+
+    global_upcoming = sorted(
+        [x for x in global_ if x.get("status") == "upcoming"],
+        key=lambda x: x.get("open_date") or x.get("listing_date") or x.get("close_date") or "9999",
+    )[:15]
+    global_other = sorted(
+        [x for x in global_ if x.get("status") != "upcoming"],
+        key=lambda x: x.get("listing_date") or x.get("open_date") or "9999",
+        reverse=True,
+    )
+    remaining = 50 - len(global_upcoming)
+    if remaining > 0:
+        global_other = global_other[:remaining]
+    else:
+        global_other = []
+
+    result = india_upcoming + india_other + global_upcoming + global_other
+    result.sort(key=_sort_key)
+    return result
+
+
 def run():
     os.makedirs(DATA_DIR, exist_ok=True)
 
@@ -127,6 +164,8 @@ def run():
         RenaissanceScraper(),
         NSEScraper(),
         GrowwScraper(),
+        ZerodhaScraper(),
+        NasdaqApiScraper(),
     ]
 
     all_ipos: List[IPO] = []
@@ -140,16 +179,17 @@ def run():
             print(f"[Manager] {scraper.source_name} scraper failed: {e}")
 
     merged = merge_ipos(all_ipos)
+    balanced = _balance_ipos(merged)
     output = {
         "last_updated": datetime.now(timezone.utc).astimezone().isoformat(),
-        "total": len(merged),
-        "ipos": merged,
+        "total": len(balanced),
+        "ipos": balanced,
     }
 
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
-    print(f"[Manager] Saved {len(merged)} IPOs to {DATA_FILE}")
+    print(f"[Manager] Saved {len(balanced)} IPOs to {DATA_FILE}")
     return output
 
 
