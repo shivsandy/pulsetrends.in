@@ -1,47 +1,19 @@
 (function() {
   'use strict';
 
-  // Suppress TradingView warnings globally
-  window.addEventListener('message', function(e) {
-    if (e.data && e.data.type === 'notification') {
-      // Suppress TradingView notifications
-      e.stopImmediatePropagation();
-    }
-  }, true);
-
-  // Hide any TradingView popups that appear
-  function hideTradingViewPopups() {
-    var notifClass = document.querySelectorAll('[class*="notification"], [class*="warning"], [class*="popup"]');
-    notifClass.forEach(function(el) {
-      if (el.style) el.style.display = 'none';
-    });
-  }
-
-  // Run on load and periodically
-  hideTradingViewPopups();
-  setInterval(hideTradingViewPopups, 500);
-
-  var ticking = false;
   var header = document.getElementById('header');
 
-  function onScroll() {
+  // Header shrink on scroll (throttled)
+  var ticking = false;
+  window.addEventListener('scroll', function() {
     if (!ticking) {
       requestAnimationFrame(function() {
-        var scrollY = window.scrollY;
-        if (header) {
-          if (scrollY > 50) {
-            header.classList.add('scrolled');
-          } else {
-            header.classList.remove('scrolled');
-          }
-        }
+        header && header.classList.toggle('scrolled', window.scrollY > 50);
         ticking = false;
       });
       ticking = true;
     }
-  }
-
-  window.addEventListener('scroll', onScroll, { passive: true });
+  }, { passive: true });
 
   // Mobile Menu
   var menuToggle = document.getElementById('menuToggle');
@@ -58,37 +30,6 @@
       });
     });
   }
-
-  // Scroll Reveal
-  var revealElements = document.querySelectorAll('.reveal');
-  if (revealElements.length > 0 && 'IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.05, rootMargin: '50px 0px' });
-    revealElements.forEach(function(el) {
-      observer.observe(el);
-    });
-  } else {
-    revealElements.forEach(function(el) {
-      el.classList.add('visible');
-    });
-  }
-
-  // Smooth anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
-    a.addEventListener('click', function(e) {
-      var target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'auto' });
-      }
-    });
-  });
 
   // Desktop Nav Dropdown
   var dropdown = document.querySelector('.nav-dropdown');
@@ -121,11 +62,11 @@
       var catList = widget ? widget.querySelector('.sidebar-cat') : null;
       if (!catList) return;
       catList.classList.toggle('collapsed');
-      this.textContent = catList.classList.contains('collapsed') ? '+' : '−';
+      this.textContent = catList.classList.contains('collapsed') ? '+' : '\u2212';
     });
   });
 
-  // Dynamic active nav link
+  // Active nav link
   var currentPath = window.location.pathname;
   document.querySelectorAll('.nav-links a, .mobile-nav a').forEach(function(a) {
     var href = a.getAttribute('href');
@@ -134,28 +75,16 @@
     }
   });
 
-  // Category color coding
-  var tags = document.querySelectorAll('.cat-tag');
+  // Category tag colors
   var tagColors = {
-    crypto: '#f59e0b',
-    bitcoin: '#f59e0b',
-    stock: '#10b981',
-    ai: '#8b5cf6',
-    tech: '#3b82f6',
-    gaming: '#ec4899',
-    mobile: '#06b6d4',
-    sport: '#ef4444',
-    health: '#10b981',
-    science: '#3b82f6',
-    space: '#8b5cf6',
-    business: '#f59e0b',
-    politics: '#ef4444',
-    world: '#6b7280',
-    entertainment: '#ec4899',
-    weather: '#3b82f6',
-    finance: '#f59e0b',
+    crypto: '#f59e0b', bitcoin: '#f59e0b', stock: '#10b981',
+    ai: '#8b5cf6', tech: '#3b82f6', gaming: '#ec4899',
+    mobile: '#06b6d4', sport: '#ef4444', health: '#10b981',
+    science: '#3b82f6', space: '#8b5cf6', business: '#f59e0b',
+    politics: '#ef4444', world: '#6b7280', entertainment: '#ec4899',
+    weather: '#3b82f6', finance: '#f59e0b',
   };
-  tags.forEach(function(tag) {
+  document.querySelectorAll('.cat-tag').forEach(function(tag) {
     var text = tag.textContent.trim().toLowerCase();
     for (var key in tagColors) {
       if (text.indexOf(key) !== -1) {
