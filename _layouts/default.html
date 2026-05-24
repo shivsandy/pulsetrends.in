@@ -29,7 +29,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | absolute_url }}">
@@ -66,19 +66,6 @@
 </head>
 <body>
 
-<div class="scroll-progress"></div>
-
-<div class="topbar" id="topbar">
-  <div class="container">
-    <div class="topbar-left"><span class="pulse-dot"></span> Trending Now — Crypto · Stocks · AI · Tech · Gaming · Mobile · Sports · Entertainment · Health · Science · Politics · Business · World</div>
-    <div class="topbar-right">
-      <a href="{{ '/markets/' | relative_url }}">Markets</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a href="{{ '/contact/' | relative_url }}">Contact</a>
-    </div>
-  </div>
-</div>
-
 <header id="header">
   <div class="container">
     <div class="logo">
@@ -92,7 +79,6 @@
         <div class="dropdown-menu">
           <a href="{{ '/' | relative_url }}"><span class="dd-dot" style="color:#f7931a">◆</span> Cryptocurrency</a>
           <a href="{{ '/' | relative_url }}"><span class="dd-dot" style="color:#00b894">◆</span> Stocks & Markets</a>
-          <a href="{{ '/markets/' | relative_url }}"><span class="dd-dot" style="color:#00b894">◆</span> Live Markets</a>
           <a href="{{ '/' | relative_url }}"><span class="dd-dot" style="color:#6c5ce7">◆</span> Artificial Intelligence</a>
           <a href="{{ '/' | relative_url }}"><span class="dd-dot" style="color:#0984e3">◆</span> Technology</a>
           <a href="{{ '/' | relative_url }}"><span class="dd-dot" style="color:#e17055">◆</span> Gaming</a>
@@ -107,7 +93,6 @@
           <a href="{{ '/' | relative_url }}"><span class="dd-dot" style="color:#74b9ff">◆</span> Weather & Climate</a>
         </div>
       </div>
-      <a href="{{ '/markets/' | relative_url }}">Markets</a>
       <a href="{{ '/about/' | relative_url }}">About</a>
       <a href="{{ '/contact/' | relative_url }}">Contact</a>
     </nav>
@@ -119,13 +104,11 @@
 
 <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
   <a href="{{ '/' | relative_url }}">Home</a>
-  <a href="{{ '/markets/' | relative_url }}">Live Markets</a>
   <div class="mobile-cat-group">
     <button class="mobile-cat-toggle" aria-label="Toggle categories">Categories <span class="mcat-arrow">▸</span></button>
     <div class="mobile-cat-list">
       <a href="{{ '/' | relative_url }}"><span class="dd-dot" style="color:#f7931a">◆</span> Cryptocurrency</a>
       <a href="{{ '/' | relative_url }}"><span class="dd-dot" style="color:#00b894">◆</span> Stocks & Markets</a>
-       <a href="{{ '/markets/' | relative_url }}"><span class="dd-dot" style="color:#00b894">◆</span> Live Markets</a>
       <a href="{{ '/' | relative_url }}"><span class="dd-dot" style="color:#6c5ce7">◆</span> Artificial Intelligence</a>
       <a href="{{ '/' | relative_url }}"><span class="dd-dot" style="color:#0984e3">◆</span> Technology</a>
       <a href="{{ '/' | relative_url }}"><span class="dd-dot" style="color:#e17055">◆</span> Gaming</a>
@@ -148,7 +131,7 @@
 <div class="container site-wrap">
   <main class="main-content" id="main-content">
     {% if page.date %}
-    <article class="article-page reveal" itemscope itemtype="https://schema.org/Article">
+    <article class="article-page" itemscope itemtype="https://schema.org/Article">
       {% if page.image %}
       <div class="article-img-wrap">
         <img src="{{ page.image }}" alt="{{ page.title | escape }}" class="featured-img" loading="lazy" itemprop="image">
@@ -177,7 +160,7 @@
   <aside class="sidebar" aria-label="Sidebar">
     <div class="sidebar-inner">
       {% if page.title == 'Home' %}
-      <div class="sidebar-widget reveal">
+      <div class="sidebar-widget">
         <h3><button class="cat-toggle" aria-label="Toggle categories">+</button> <span class="widget-icon" aria-hidden="true">◆</span> Categories</h3>
         <div class="sidebar-cat collapsed">
           <a href="{{ '/' | relative_url }}"><span>AI</span><span class="cat-count" aria-hidden="true">↗</span></a>
@@ -198,7 +181,7 @@
         </div>
       </div>
       {% else %}
-      <div class="sidebar-widget reveal">
+      <div class="sidebar-widget">
         <h3><button class="cat-toggle" aria-label="Toggle categories">+</button> <span class="widget-icon" aria-hidden="true">◆</span> Categories</h3>
         <div class="sidebar-cat collapsed">
           <a href="{{ '/' | relative_url }}"><span>AI</span><span class="cat-count" aria-hidden="true">↗</span></a>
@@ -208,11 +191,6 @@
         </div>
       </div>
       {% endif %}
-      <div class="sidebar-widget reveal">
-        <h3><span class="widget-icon" aria-hidden="true">◉</span> Live Stock Markets</h3>
-        <p>Real-time stock indices from India, US, UK, Japan, Germany, and more — powered by TradingView.</p>
-        <a href="{{ '/markets/' | relative_url }}" class="sidebar-cta">View All Markets →</a>
-      </div>
     </div>
   </aside>
 </div>
@@ -227,7 +205,6 @@
       <div class="footer-links">
         <h4>Quick Links</h4>
         <a href="{{ '/' | relative_url }}">Home</a>
-  <a href="{{ '/markets/' | relative_url }}">Live Markets</a>
         <a href="{{ '/about/' | relative_url }}">About Us</a>
         <a href="{{ '/contact/' | relative_url }}">Contact</a>
         <a href="{{ '/privacy/' | relative_url }}">Privacy</a>

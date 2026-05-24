@@ -7,7 +7,7 @@ title: Home
 
 {% if posts.size > 0 %}
 {% assign featured = posts.first %}
-<div class="hero-featured reveal">
+<div class="hero-featured">
   <a href="{{ featured.url | relative_url }}">
     <div class="hero-img-wrap">
       {% if featured.image %}
@@ -32,7 +32,7 @@ title: Home
 
 <div class="post-grid" id="postGrid">
   {% for post in posts offset:1 %}
-  <article class="post-card reveal" data-page="{{ forloop.index0 | divided_by: 5 | plus: 1 }}">
+  <article class="post-card" data-page="{{ forloop.index0 | divided_by: 5 | plus: 1 }}">
     <a href="{{ post.url | relative_url }}">
       <div class="card-img-wrap">
         {% if post.image %}
@@ -57,7 +57,7 @@ title: Home
 <div class="pagination" id="pagination"></div>
 
 {% if posts.size == 0 %}
-<div class="page-content reveal">
+<div class="page-content">
   <h1>Welcome to PulseTrends</h1>
   <p>Your daily source for trending insights across AI, technology, politics, finance, weather, and business. Articles are generated fresh every day — check back soon for the latest content!</p>
 </div>
