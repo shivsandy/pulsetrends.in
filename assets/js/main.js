@@ -75,19 +75,19 @@
     }
   });
 
-  // Category filtering via data-category links
+  // Category filtering via data-category links (only intercept on homepage)
   document.querySelectorAll('[data-category]').forEach(function(link) {
     link.addEventListener('click', function(e) {
-      e.preventDefault();
       var cat = this.getAttribute('data-category');
       if (typeof window.filterByCategory === 'function') {
+        e.preventDefault();
         window.filterByCategory(cat);
+        if (mobileNav && mobileNav.classList.contains('open')) {
+          mobileNav.classList.remove('open');
+          document.body.style.overflow = '';
+        }
+        if (dropdown) dropdown.classList.remove('nav-dropdown-open');
       }
-      if (mobileNav && mobileNav.classList.contains('open')) {
-        mobileNav.classList.remove('open');
-        document.body.style.overflow = '';
-      }
-      if (dropdown) dropdown.classList.remove('nav-dropdown-open');
     });
   });
 

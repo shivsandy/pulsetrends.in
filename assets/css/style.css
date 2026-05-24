@@ -308,6 +308,47 @@ footer {
 .pagination .disabled { opacity: 0.4; pointer-events: none; }
 .pagination .page-info { background: none; border: none; color: var(--text-muted); min-width: auto; }
 
+/* ─── Breadcrumbs ─── */
+.breadcrumbs { padding: 16px 32px 0; font-size: 0.8em; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.breadcrumbs a { color: var(--text-muted); text-decoration: none; }
+.breadcrumbs a:hover { color: var(--primary); }
+.breadcrumbs .sep { color: var(--text-muted); font-size: 0.8em; }
+.breadcrumbs .current { color: var(--text-light); }
+
+/* ─── Read Time & Share ─── */
+.article-footer-meta {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 32px 24px; border-top: 1px solid var(--border); margin-top: 8px;
+}
+.read-time { color: var(--text-muted); font-size: 0.85em; }
+.share-buttons { display: flex; align-items: center; gap: 8px; }
+.share-buttons span { color: var(--text-muted); font-size: 0.8em; }
+.share-buttons a {
+  display: inline-block; padding: 4px 12px; border-radius: 4px;
+  font-size: 0.75em; font-weight: 500; text-decoration: none;
+  color: #fff; background: var(--bg-surface); border: 1px solid var(--border);
+}
+.share-buttons a:hover { background: var(--primary); border-color: var(--primary); }
+
+/* ─── Related Posts ─── */
+.related-posts { padding: 0 32px 32px; }
+.related-posts h2 { font-size: 1.1em; font-weight: 700; margin-bottom: 16px; color: #fff; }
+.related-posts .post-grid { margin-bottom: 0; }
+
+/* ─── Search Link ─── */
+.search-link { font-size: 1.1em !important; text-decoration: none; line-height: 1; }
+
+/* ─── Search Page ─── */
+.search-box { position: relative; margin-bottom: 8px; }
+.search-input {
+  width: 100%; padding: 14px 16px 14px 44px; border-radius: var(--radius);
+  background: var(--bg-surface); border: 1px solid var(--border); color: var(--text);
+  font-size: 1em; font-family: var(--font); outline: none;
+}
+.search-input:focus { border-color: var(--primary); }
+.search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 1em; opacity: 0.5; }
+.search-empty { color: var(--text-muted); font-size: 0.9em; text-align: center; padding: 40px 0; }
+
 /* ─── Nav Dropdown ─── */
 .nav-dropdown { position: relative; }
 .dropdown-trigger { cursor: pointer; }

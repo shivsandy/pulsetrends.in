@@ -1,11 +1,11 @@
-title: "PulseTrends"
+title: "PulseTrends — AI, Crypto, Stocks & Daily Trending News"
 tagline: "Trending Insights, Delivered Daily"
-description: "Expert analysis on AI, technology, politics, finance, weather, and business — curated and published daily."
+description: "Expert analysis on AI, technology, cryptocurrency, politics, finance, weather, and business — curated and published daily."
 url: "https://pulsetrends.in"
 baseurl: ""
 locale: "en_US"
 timezone: "Asia/Kolkata"
-keywords: "trending news, daily insights, AI news, cryptocurrency, stock market, technology, gaming, mobile, sports, entertainment, health, science, business, politics, world news"
+keywords: "trending news, daily insights, AI news, cryptocurrency, bitcoin, stock market, technology, gaming, mobile, sports, entertainment, health, science, business, politics, world news, finance"
 
 markdown: kramdown
 permalink: /:title/
@@ -24,10 +24,16 @@ defaults:
       layout: "default"
       author: "PulseTrends Editorial Team"
       comments: false
+  - scope:
+      path: "categories"
+    values:
+      layout: "category"
 
 exclude:
   - generate_post.py
+  - cleanup_posts.py
   - requirements.txt
   - SETUP.md
   - .github/
   - venv/
+

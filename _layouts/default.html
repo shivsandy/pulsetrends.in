@@ -22,7 +22,7 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   {% else %}
-  <meta property="og:image" content="{{ '/assets/images/og-default.jpg' | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/images/og-default.svg' | absolute_url }}">
   {% endif %}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@pulsetrends">
@@ -49,11 +49,46 @@
     "datePublished": "{{ page.date | date_to_xmlschema }}",
     "dateModified": "{{ page.date | date_to_xmlschema }}",
     "author": { "@type": "Organization", "name": "{{ site.title }}" },
-    "publisher": { "@type": "Organization", "name": "{{ site.title }}", "logo": { "@type": "ImageObject", "url": "{{ '/assets/images/logo.png' | absolute_url }}" } },
+    "publisher": { "@type": "Organization", "name": "{{ site.title }}", "logo": { "@type": "ImageObject", "url": "{{ '/assets/images/logo.svg' | absolute_url }}" } },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" },
-    "wordCount": "{{ content | strip_html | number_of_words }}"
+    "wordCount": "{{ content | strip_html | number_of_words }}",
+    "articleSection": "{{ page.tags.first | escape }}"
   }
   </script>
+
+  {% if page.date %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {% assign faq_sections = content | split: '<h2' %}
+    {% assign faq_found = false %}
+    {% for section in faq_sections %}
+      {% if section contains 'FAQ' or section contains 'faq' %}
+        {% assign faq_found = true %}
+        {% assign questions = section | split: '<h3' %}
+        {% for q in questions offset:1 %}
+          {% assign q_parts = q | split: '</h3>' %}
+          {% assign q_text = q_parts[0] | strip_html | strip | escape %}
+          {% assign a_text = q_parts[1] | strip_html | strip | escape | truncate: 300 %}
+          {% if q_text != '' and a_text != '' %}
+          {
+            "@type": "Question",
+            "name": "{{ q_text }}",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "{{ a_text }}"
+            }
+          }{% unless forloop.last %},{% endunless %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
   {% endif %}
   <script type="application/ld+json">
   { "@context": "https://schema.org", "@type": "WebSite", "name": "{{ site.title }}", "url": "{{ site.url }}", "description": "{{ site.description }}", "potentialAction": { "@type": "SearchAction", "target": "{{ site.url }}/search?q={search_term_string}", "query-input": "required name=search_term_string" } }
@@ -77,24 +112,25 @@
       <div class="nav-dropdown">
         <a href="#" class="dropdown-trigger">Categories ▾</a>
         <div class="dropdown-menu">
-          <a href="{{ '/' | relative_url }}" data-category="crypto"><span class="dd-dot" style="color:#f7931a">◆</span> Cryptocurrency</a>
-          <a href="{{ '/' | relative_url }}" data-category="stocks"><span class="dd-dot" style="color:#00b894">◆</span> Stocks & Markets</a>
-          <a href="{{ '/' | relative_url }}" data-category="ai"><span class="dd-dot" style="color:#6c5ce7">◆</span> Artificial Intelligence</a>
-          <a href="{{ '/' | relative_url }}" data-category="tech"><span class="dd-dot" style="color:#0984e3">◆</span> Technology</a>
-          <a href="{{ '/' | relative_url }}" data-category="gaming"><span class="dd-dot" style="color:#e17055">◆</span> Gaming</a>
-          <a href="{{ '/' | relative_url }}" data-category="mobile"><span class="dd-dot" style="color:#00cec9">◆</span> Mobile & Smartphones</a>
-          <a href="{{ '/' | relative_url }}" data-category="sports"><span class="dd-dot" style="color:#fd79a8">◆</span> Sports</a>
-          <a href="{{ '/' | relative_url }}" data-category="entertainment"><span class="dd-dot" style="color:#fd79a8">◆</span> Entertainment</a>
-          <a href="{{ '/' | relative_url }}" data-category="health"><span class="dd-dot" style="color:#00b894">◆</span> Health & Fitness</a>
-          <a href="{{ '/' | relative_url }}" data-category="science"><span class="dd-dot" style="color:#74b9ff">◆</span> Science & Space</a>
-          <a href="{{ '/' | relative_url }}" data-category="business"><span class="dd-dot" style="color:#fdcb6e">◆</span> Business</a>
-          <a href="{{ '/' | relative_url }}" data-category="politics"><span class="dd-dot" style="color:#d63031">◆</span> Politics</a>
-          <a href="{{ '/' | relative_url }}" data-category="world"><span class="dd-dot" style="color:#636e72">◆</span> World News</a>
-          <a href="{{ '/' | relative_url }}" data-category="weather"><span class="dd-dot" style="color:#74b9ff">◆</span> Weather & Climate</a>
+          <a href="{{ '/crypto/' | relative_url }}" data-category="crypto"><span class="dd-dot" style="color:#f7931a">◆</span> Cryptocurrency</a>
+          <a href="{{ '/stocks/' | relative_url }}" data-category="stocks"><span class="dd-dot" style="color:#00b894">◆</span> Stocks & Markets</a>
+          <a href="{{ '/ai/' | relative_url }}" data-category="ai"><span class="dd-dot" style="color:#6c5ce7">◆</span> Artificial Intelligence</a>
+          <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span class="dd-dot" style="color:#0984e3">◆</span> Technology</a>
+          <a href="{{ '/gaming/' | relative_url }}" data-category="gaming"><span class="dd-dot" style="color:#e17055">◆</span> Gaming</a>
+          <a href="{{ '/mobile/' | relative_url }}" data-category="mobile"><span class="dd-dot" style="color:#00cec9">◆</span> Mobile & Smartphones</a>
+          <a href="{{ '/sports/' | relative_url }}" data-category="sports"><span class="dd-dot" style="color:#fd79a8">◆</span> Sports</a>
+          <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment"><span class="dd-dot" style="color:#fd79a8">◆</span> Entertainment</a>
+          <a href="{{ '/health/' | relative_url }}" data-category="health"><span class="dd-dot" style="color:#00b894">◆</span> Health & Fitness</a>
+          <a href="{{ '/science/' | relative_url }}" data-category="science"><span class="dd-dot" style="color:#74b9ff">◆</span> Science & Space</a>
+          <a href="{{ '/business/' | relative_url }}" data-category="business"><span class="dd-dot" style="color:#fdcb6e">◆</span> Business</a>
+          <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span class="dd-dot" style="color:#d63031">◆</span> Politics</a>
+          <a href="{{ '/world/' | relative_url }}" data-category="world"><span class="dd-dot" style="color:#636e72">◆</span> World News</a>
+          <a href="{{ '/weather/' | relative_url }}" data-category="weather"><span class="dd-dot" style="color:#74b9ff">◆</span> Weather & Climate</a>
         </div>
       </div>
       <a href="{{ '/about/' | relative_url }}">About</a>
       <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      <a href="{{ '/search/' | relative_url }}" class="search-link" aria-label="Search">🔍</a>
     </nav>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -107,23 +143,24 @@
   <div class="mobile-cat-group">
     <button class="mobile-cat-toggle" aria-label="Toggle categories">Categories <span class="mcat-arrow">▸</span></button>
     <div class="mobile-cat-list">
-      <a href="{{ '/' | relative_url }}" data-category="crypto"><span class="dd-dot" style="color:#f7931a">◆</span> Cryptocurrency</a>
-      <a href="{{ '/' | relative_url }}" data-category="stocks"><span class="dd-dot" style="color:#00b894">◆</span> Stocks & Markets</a>
-      <a href="{{ '/' | relative_url }}" data-category="ai"><span class="dd-dot" style="color:#6c5ce7">◆</span> Artificial Intelligence</a>
-      <a href="{{ '/' | relative_url }}" data-category="tech"><span class="dd-dot" style="color:#0984e3">◆</span> Technology</a>
-      <a href="{{ '/' | relative_url }}" data-category="gaming"><span class="dd-dot" style="color:#e17055">◆</span> Gaming</a>
-      <a href="{{ '/' | relative_url }}" data-category="mobile"><span class="dd-dot" style="color:#00cec9">◆</span> Mobile & Smartphones</a>
-      <a href="{{ '/' | relative_url }}" data-category="sports"><span class="dd-dot" style="color:#fd79a8">◆</span> Sports</a>
-      <a href="{{ '/' | relative_url }}" data-category="entertainment"><span class="dd-dot" style="color:#fd79a8">◆</span> Entertainment</a>
-      <a href="{{ '/' | relative_url }}" data-category="health"><span class="dd-dot" style="color:#00b894">◆</span> Health & Fitness</a>
-      <a href="{{ '/' | relative_url }}" data-category="science"><span class="dd-dot" style="color:#74b9ff">◆</span> Science & Space</a>
-      <a href="{{ '/' | relative_url }}" data-category="business"><span class="dd-dot" style="color:#fdcb6e">◆</span> Business</a>
-      <a href="{{ '/' | relative_url }}" data-category="politics"><span class="dd-dot" style="color:#d63031">◆</span> Politics</a>
-      <a href="{{ '/' | relative_url }}" data-category="world"><span class="dd-dot" style="color:#636e72">◆</span> World News</a>
-      <a href="{{ '/' | relative_url }}" data-category="weather"><span class="dd-dot" style="color:#74b9ff">◆</span> Weather & Climate</a>
+      <a href="{{ '/crypto/' | relative_url }}" data-category="crypto"><span class="dd-dot" style="color:#f7931a">◆</span> Cryptocurrency</a>
+      <a href="{{ '/stocks/' | relative_url }}" data-category="stocks"><span class="dd-dot" style="color:#00b894">◆</span> Stocks & Markets</a>
+      <a href="{{ '/ai/' | relative_url }}" data-category="ai"><span class="dd-dot" style="color:#6c5ce7">◆</span> Artificial Intelligence</a>
+      <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span class="dd-dot" style="color:#0984e3">◆</span> Technology</a>
+      <a href="{{ '/gaming/' | relative_url }}" data-category="gaming"><span class="dd-dot" style="color:#e17055">◆</span> Gaming</a>
+      <a href="{{ '/mobile/' | relative_url }}" data-category="mobile"><span class="dd-dot" style="color:#00cec9">◆</span> Mobile & Smartphones</a>
+      <a href="{{ '/sports/' | relative_url }}" data-category="sports"><span class="dd-dot" style="color:#fd79a8">◆</span> Sports</a>
+      <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment"><span class="dd-dot" style="color:#fd79a8">◆</span> Entertainment</a>
+      <a href="{{ '/health/' | relative_url }}" data-category="health"><span class="dd-dot" style="color:#00b894">◆</span> Health & Fitness</a>
+      <a href="{{ '/science/' | relative_url }}" data-category="science"><span class="dd-dot" style="color:#74b9ff">◆</span> Science & Space</a>
+      <a href="{{ '/business/' | relative_url }}" data-category="business"><span class="dd-dot" style="color:#fdcb6e">◆</span> Business</a>
+      <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span class="dd-dot" style="color:#d63031">◆</span> Politics</a>
+      <a href="{{ '/world/' | relative_url }}" data-category="world"><span class="dd-dot" style="color:#636e72">◆</span> World News</a>
+      <a href="{{ '/weather/' | relative_url }}" data-category="weather"><span class="dd-dot" style="color:#74b9ff">◆</span> Weather & Climate</a>
     </div>
   </div>
   <a href="{{ '/about/' | relative_url }}">About</a>
+  <a href="{{ '/search/' | relative_url }}">Search</a>
   <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
   <a href="{{ '/contact/' | relative_url }}">Contact</a>
 </nav>
@@ -132,6 +169,32 @@
   <main class="main-content" id="main-content">
     {% if page.date %}
     <article class="article-page" itemscope itemtype="https://schema.org/Article">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <span class="sep">/</span>
+        {% if page.tags.size > 0 %}
+        {% assign cat_id = page.tags.first %}
+        {% case cat_id %}
+          {% when 'crypto' %}<a href="{{ '/crypto/' | relative_url }}">Cryptocurrency</a>
+          {% when 'stocks' %}<a href="{{ '/stocks/' | relative_url }}">Stocks & Markets</a>
+          {% when 'ai' %}<a href="{{ '/ai/' | relative_url }}">AI</a>
+          {% when 'tech' %}<a href="{{ '/tech/' | relative_url }}">Technology</a>
+          {% when 'gaming' %}<a href="{{ '/gaming/' | relative_url }}">Gaming</a>
+          {% when 'mobile' %}<a href="{{ '/mobile/' | relative_url }}">Mobile</a>
+          {% when 'sports' %}<a href="{{ '/sports/' | relative_url }}">Sports</a>
+          {% when 'entertainment' %}<a href="{{ '/entertainment/' | relative_url }}">Entertainment</a>
+          {% when 'health' %}<a href="{{ '/health/' | relative_url }}">Health</a>
+          {% when 'science' %}<a href="{{ '/science/' | relative_url }}">Science</a>
+          {% when 'business' %}<a href="{{ '/business/' | relative_url }}">Business</a>
+          {% when 'politics' %}<a href="{{ '/politics/' | relative_url }}">Politics</a>
+          {% when 'world' %}<a href="{{ '/world/' | relative_url }}">World News</a>
+          {% when 'finance' %}<a href="{{ '/finance/' | relative_url }}">Finance</a>
+          {% when 'weather' %}<a href="{{ '/weather/' | relative_url }}">Weather</a>
+        {% endcase %}
+        <span class="sep">/</span>
+        {% endif %}
+        <span class="current">{{ page.title | truncate: 40 }}</span>
+      </nav>
       {% if page.image %}
       <div class="article-img-wrap">
         <img src="{{ page.image }}" alt="{{ page.title | escape }}" class="featured-img" loading="lazy" itemprop="image">
@@ -152,6 +215,49 @@
       </div>
       <meta itemprop="author" content="{{ site.title }}">
       <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}">
+
+      {% assign read_time = content | strip_html | number_of_words | divided_by: 200 | plus: 1 %}
+      <div class="article-footer-meta">
+        <span class="read-time">📖 {{ read_time }} min read</span>
+        <div class="share-buttons">
+          <span>Share:</span>
+          <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url }}" target="_blank" rel="noopener" aria-label="Share on Twitter">Twitter</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" rel="noopener" aria-label="Share on Facebook">Facebook</a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | url_encode }}" target="_blank" rel="noopener" aria-label="Share on LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+
+      {% if page.tags.size > 0 %}
+      {% assign cat_id = page.tags.first %}
+      {% assign same_cat = site.posts | where_exp: "p", "p.tags contains cat_id" %}
+      {% assign related = same_cat | where_exp: "p", "p.url != page.url" | slice: 0, 3 %}
+      {% if related.size > 0 %}
+      <div class="related-posts">
+        <h2>Related Articles</h2>
+        <div class="post-grid">
+          {% for post in related %}
+          <article class="post-card">
+            <a href="{{ post.url | relative_url }}">
+              <div class="card-img-wrap">
+                {% if post.image %}
+                <img src="{{ post.image }}" alt="{{ post.title }}" class="post-card-img" loading="lazy">
+                {% else %}
+                <div class="post-card-img" style="background: linear-gradient(135deg, #16213e, #e74c3c);"></div>
+                {% endif %}
+              </div>
+              <div class="post-card-body">
+                <span class="cat-tag">{{ cat_id }}</span>
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+                <span class="meta">{{ post.date | date: "%B %d, %Y" }}</span>
+              </div>
+            </a>
+          </article>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      {% endif %}
     </article>
     {% else %}
     {{ content }}
@@ -163,31 +269,31 @@
       <div class="sidebar-widget">
         <h3><button class="cat-toggle" aria-label="Toggle categories">+</button> <span class="widget-icon" aria-hidden="true">◆</span> Categories</h3>
         <div class="sidebar-cat collapsed">
-          <a href="{{ '/' | relative_url }}" data-category="ai"><span>AI</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="tech"><span>Technology</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="politics"><span>Politics</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="finance"><span>Finance & Money</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="crypto"><span>Cryptocurrency</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="stocks"><span>Stocks & Markets</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="gaming"><span>Gaming</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="mobile"><span>Mobile & Android</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="sports"><span>Sports</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="entertainment"><span>Entertainment</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="health"><span>Health & Fitness</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="science"><span>Science & Space</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="business"><span>Business</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="weather"><span>Weather & Climate</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="world"><span>World News</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/ai/' | relative_url }}" data-category="ai"><span>AI</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span>Technology</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span>Politics</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/finance/' | relative_url }}" data-category="finance"><span>Finance & Money</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/crypto/' | relative_url }}" data-category="crypto"><span>Cryptocurrency</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/stocks/' | relative_url }}" data-category="stocks"><span>Stocks & Markets</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/gaming/' | relative_url }}" data-category="gaming"><span>Gaming</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/mobile/' | relative_url }}" data-category="mobile"><span>Mobile & Android</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/sports/' | relative_url }}" data-category="sports"><span>Sports</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment"><span>Entertainment</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/health/' | relative_url }}" data-category="health"><span>Health & Fitness</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/science/' | relative_url }}" data-category="science"><span>Science & Space</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/business/' | relative_url }}" data-category="business"><span>Business</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/weather/' | relative_url }}" data-category="weather"><span>Weather & Climate</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/world/' | relative_url }}" data-category="world"><span>World News</span><span class="cat-count" aria-hidden="true">↗</span></a>
         </div>
       </div>
       {% else %}
       <div class="sidebar-widget">
         <h3><button class="cat-toggle" aria-label="Toggle categories">+</button> <span class="widget-icon" aria-hidden="true">◆</span> Categories</h3>
         <div class="sidebar-cat collapsed">
-          <a href="{{ '/' | relative_url }}" data-category="ai"><span>AI</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="tech"><span>Technology</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="politics"><span>Politics</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/' | relative_url }}" data-category="finance"><span>Finance & Money</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/ai/' | relative_url }}" data-category="ai"><span>AI</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span>Technology</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span>Politics</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/finance/' | relative_url }}" data-category="finance"><span>Finance & Money</span><span class="cat-count" aria-hidden="true">↗</span></a>
         </div>
       </div>
       {% endif %}
@@ -211,18 +317,18 @@
       </div>
       <div class="footer-links">
         <h4>Categories</h4>
-        <a href="{{ '/' | relative_url }}" data-category="gaming">Gaming</a>
-        <a href="{{ '/' | relative_url }}" data-category="mobile">Mobile</a>
-        <a href="{{ '/' | relative_url }}" data-category="ai">AI & Tech</a>
-        <a href="{{ '/' | relative_url }}" data-category="crypto">Crypto</a>
-        <a href="{{ '/' | relative_url }}" data-category="stocks">Stocks</a>
-        <a href="{{ '/' | relative_url }}" data-category="sports">Sports</a>
-        <a href="{{ '/' | relative_url }}" data-category="entertainment">Entertainment</a>
-        <a href="{{ '/' | relative_url }}" data-category="health">Health</a>
-        <a href="{{ '/' | relative_url }}" data-category="science">Science</a>
-        <a href="{{ '/' | relative_url }}" data-category="business">Business</a>
-        <a href="{{ '/' | relative_url }}" data-category="politics">Politics</a>
-        <a href="{{ '/' | relative_url }}" data-category="world">World</a>
+        <a href="{{ '/gaming/' | relative_url }}" data-category="gaming">Gaming</a>
+        <a href="{{ '/mobile/' | relative_url }}" data-category="mobile">Mobile</a>
+        <a href="{{ '/ai/' | relative_url }}" data-category="ai">AI & Tech</a>
+        <a href="{{ '/crypto/' | relative_url }}" data-category="crypto">Crypto</a>
+        <a href="{{ '/stocks/' | relative_url }}" data-category="stocks">Stocks</a>
+        <a href="{{ '/sports/' | relative_url }}" data-category="sports">Sports</a>
+        <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment">Entertainment</a>
+        <a href="{{ '/health/' | relative_url }}" data-category="health">Health</a>
+        <a href="{{ '/science/' | relative_url }}" data-category="science">Science</a>
+        <a href="{{ '/business/' | relative_url }}" data-category="business">Business</a>
+        <a href="{{ '/politics/' | relative_url }}" data-category="politics">Politics</a>
+        <a href="{{ '/world/' | relative_url }}" data-category="world">World</a>
       </div>
       <div class="footer-links">
         <h4>Legal</h4>
