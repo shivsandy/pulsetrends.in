@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPO Dashboard - PulseTrends</title>
+  <link rel="stylesheet" href="/ipodashboard/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <h1>IPO Dashboard</h1>
+        <span class="badge badge-india">India</span>
+      </div>
+      <p class="subtitle">Upcoming, Open & Recently Listed IPOs</p>
+      <div class="last-updated" id="lastUpdated"></div>
+    </header>
+
+    <div class="controls">
+      <div class="search-wrapper">
+        <input type="text" id="searchInput" placeholder="Search by company name..." autocomplete="off">
+      </div>
+      <div class="filters" id="filterButtons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+        <button class="filter-btn" data-filter="open">Open</button>
+        <button class="filter-btn" data-filter="subscribed">Subscribed</button>
+        <button class="filter-btn" data-filter="listed">Listed</button>
+      </div>
+    </div>
+
+    <div class="table-wrapper">
+      <table id="ipoTable">
+        <thead>
+          <tr>
+            <th data-sort="company_name" class="sortable">Company <span class="sort-icon"></span></th>
+            <th data-sort="price_band" class="sortable">Price Band <span class="sort-icon"></span></th>
+            <th data-sort="open_date" class="sortable">Open <span class="sort-icon"></span></th>
+            <th data-sort="close_date" class="sortable">Close <span class="sort-icon"></span></th>
+            <th data-sort="listing_date" class="sortable">Listing <span class="sort-icon"></span></th>
+            <th data-sort="lot_size" class="sortable">Lot <span class="sort-icon"></span></th>
+            <th data-sort="issue_size" class="sortable">Issue Size <span class="sort-icon"></span></th>
+            <th data-sort="gmp" class="sortable">GMP <span class="sort-icon"></span></th>
+            <th data-sort="subscription" class="sortable">Subscription <span class="sort-icon"></span></th>
+            <th data-sort="status" class="sortable">Status <span class="sort-icon"></span></th>
+          </tr>
+        </thead>
+        <tbody id="ipoBody"></tbody>
+      </table>
+    </div>
+
+    <div class="status-bar">
+      <span id="ipoCount">Loading...</span>
+    </div>
+  </div>
+
+  <script src="/ipodashboard/script.js"></script>
+</body>
+</html>

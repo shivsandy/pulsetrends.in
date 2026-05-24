@@ -25,6 +25,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Install IPO scraper dependencies
+        run: |
+          pip install requests==2.32.3 beautifulsoup4==4.12.3
+
+      - name: Run IPO scraper
+        run: python -m scraper.manager
+        working-directory: ${{ github.workspace }}/ipodashboard
+
       - name: Clean up posts older than 90 days
         run: python cleanup_posts.py
 
