@@ -88,6 +88,8 @@
       if (typeof window.filterByCategory === 'function') {
         e.preventDefault();
         window.filterByCategory(cat);
+        var target = document.getElementById('latestSection');
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         if (mobileCats && isMenuOpen) {
           mobileCats.classList.remove('open');
           isMenuOpen = false;

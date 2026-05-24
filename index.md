@@ -105,7 +105,7 @@ title: Home
 </div>
 {% endif %}
 
-<h2 class="section-title">Latest Articles</h2>
+<h2 class="section-title" id="latestSection" style="scroll-margin-top:70px">Latest Articles</h2>
 
 <div id="filterBar" class="filter-bar" style="display:none">
   <span>Showing: <strong class="filter-cat-name"></strong></span>
