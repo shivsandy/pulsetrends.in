@@ -138,6 +138,15 @@
       <span></span><span></span><span></span>
     </button>
   </div>
+  <div class="mobile-categories" id="mobileCats">
+    <a href="{{ '/world/' | relative_url }}" data-category="world"><span class="dd-dot" style="color:#636e72">◆</span> World</a>
+    <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span class="dd-dot" style="color:#d63031">◆</span> Politics</a>
+    <a href="{{ '/business/' | relative_url }}" data-category="business"><span class="dd-dot" style="color:#fdcb6e">◆</span> Business</a>
+    <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span class="dd-dot" style="color:#0984e3">◆</span> Technology</a>
+    <a href="{{ '/sports/' | relative_url }}" data-category="sports"><span class="dd-dot" style="color:#fd79a8">◆</span> Sports</a>
+    <a href="{{ '/weather/' | relative_url }}" data-category="weather"><span class="dd-dot" style="color:#74b9ff">◆</span> Weather</a>
+    <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment"><span class="dd-dot" style="color:#fd79a8">◆</span> Entertainment</a>
+  </div>
 </header>
 
 {% assign ticker_posts = site.posts | slice: 0, 6 %}
@@ -161,16 +170,6 @@
       <a href="{{ '/search/' | relative_url }}">Search</a>
     </div>
   </div>
-</div>
-
-<div class="mobile-categories" id="mobileCats">
-  <a href="{{ '/world/' | relative_url }}" data-category="world"><span class="dd-dot" style="color:#636e72">◆</span> World</a>
-  <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span class="dd-dot" style="color:#d63031">◆</span> Politics</a>
-  <a href="{{ '/business/' | relative_url }}" data-category="business"><span class="dd-dot" style="color:#fdcb6e">◆</span> Business</a>
-  <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span class="dd-dot" style="color:#0984e3">◆</span> Technology</a>
-  <a href="{{ '/sports/' | relative_url }}" data-category="sports"><span class="dd-dot" style="color:#fd79a8">◆</span> Sports</a>
-  <a href="{{ '/weather/' | relative_url }}" data-category="weather"><span class="dd-dot" style="color:#74b9ff">◆</span> Weather</a>
-  <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment"><span class="dd-dot" style="color:#fd79a8">◆</span> Entertainment</a>
 </div>
 
 <div class="container site-wrap">
