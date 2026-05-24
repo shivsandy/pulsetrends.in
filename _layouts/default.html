@@ -139,6 +139,28 @@
   </div>
 </header>
 
+{% assign ticker_posts = site.posts | slice: 0, 12 %}
+<div class="w-ticker">
+  <span class="ticker-label">Trending</span>
+  <div class="ticker-inner">
+    {% for post in ticker_posts %}<a href="{{ post.url | relative_url }}">{{ post.title | truncate: 60 }}</a>{% endfor %}
+    {% for post in ticker_posts %}<a href="{{ post.url | relative_url }}">{{ post.title | truncate: 60 }}</a>{% endfor %}
+  </div>
+</div>
+
+<div class="w-secondary-header" id="secHeader">
+  <div class="container">
+    <a href="{{ '/' | relative_url }}" class="sec-logo">◈ Pulse<span>Trends</span></a>
+    <div class="sec-trend">
+      {% assign top_post = site.posts.first %}
+      <a href="{{ top_post.url | relative_url }}">🔥 {{ top_post.title | truncate: 60 }}</a>
+    </div>
+    <div class="sec-actions">
+      <a href="{{ '/search/' | relative_url }}">Search</a>
+    </div>
+  </div>
+</div>
+
 <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
   <a href="{{ '/' | relative_url }}">Home</a>
   <div class="mobile-cat-group">
@@ -243,7 +265,7 @@
                 {% if post.image %}
                 <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ post.title }}" class="post-card-img" loading="lazy" decoding="async">
                 {% else %}
-                <div class="post-card-img" style="background: linear-gradient(135deg, #16213e, #e74c3c);"></div>
+                <div class="post-card-img" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
                 {% endif %}
               </div>
               <div class="post-card-body">

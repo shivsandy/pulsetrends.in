@@ -3,12 +3,27 @@
 
   var header = document.getElementById('header');
 
-  // Header shrink on scroll (throttled)
+  var secHeader = document.getElementById('secHeader');
+  var lastScrollY = 0;
+
+  // Header shrink + secondary header on scroll (throttled)
   var ticking = false;
   window.addEventListener('scroll', function() {
     if (!ticking) {
       requestAnimationFrame(function() {
-        header && header.classList.toggle('scrolled', window.scrollY > 50);
+        var scrollY = window.scrollY;
+        header && header.classList.toggle('scrolled', scrollY > 50);
+        if (secHeader) {
+          if (scrollY > 450 && scrollY > lastScrollY) {
+            secHeader.classList.remove('is-visible');
+          } else if (scrollY > 100) {
+            secHeader.classList.add('is-visible');
+          } else {
+            secHeader.classList.remove('is-visible');
+          }
+          header && header.classList.toggle('sec-active', secHeader.classList.contains('is-visible'));
+        }
+        lastScrollY = scrollY;
         ticking = false;
       });
       ticking = true;

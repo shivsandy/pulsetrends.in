@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function(){
       if (p.image) {
         html += '<div class="card-img-wrap"><img src="' + p.image + '" alt="' + p.title + '" class="post-card-img" loading="lazy"></div>';
       } else {
-        html += '<div class="card-img-wrap"><div class="post-card-img" style="background:linear-gradient(135deg,#16213e,#e74c3c)"></div></div>';
+        html += '<div class="card-img-wrap"><div class="post-card-img" style="background:linear-gradient(135deg,#16213e,#e01a4f)"></div></div>';
       }
       html += '<div class="post-card-body"><span class="cat-tag">' + p.category + '</span><h3>' + p.title + '</h3><p>' + p.excerpt + '</p><span class="meta">' + p.date + '</span></div></a></article>';
     });
