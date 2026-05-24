@@ -255,6 +255,7 @@ RSS_FEEDS = [
     "https://www.reddit.com/r/tropicalweather/hot/.rss",
     "https://www.moneycontrol.com/rss/iponews.xml",
     "https://economictimes.indiatimes.com/markets/ipos/rssfeeds",
+    "https://www.chittorgarh.com/rss/ipo.rss",
 ]
 
 OPENROUTER_MODELS = [
@@ -344,7 +345,7 @@ def fetch_trends_newsapi(api_key):
     topics = ["AI", "politics", "weather", "stock market", "technology", "climate",
                "cryptocurrency", "Bitcoin", "stocks", "sports", "entertainment",
                "movies", "music", "health", "fitness", "science", "space",
-               "gaming", "business", "startup", "IPO", "cricket", "soccer",
+                "gaming", "business", "startup", "IPO", "Indian IPO", "cricket", "soccer",
                 "iPhone", "Android", "smartphone", "upcoming phone", "phone launch", "video games", "PlayStation"]
     for topic in topics:
         try:
