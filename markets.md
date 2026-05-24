@@ -31,11 +31,33 @@ description: "Live stock market charts and indices for India, US, UK, Japan, Ger
     { name: 'Brazil', flag: '🇧🇷', ticker: 'BMFBOVESPA:BVSP', label: 'IBOVESPA' },
   ];
 
+  function createWidget(containerId, ticker) {
+    new TradingView.widget({
+      container_id: containerId,
+      autosize: true,
+      symbol: ticker,
+      interval: 'D',
+      timezone: 'Etc/UTC',
+      theme: 'dark',
+      style: '1',
+      locale: 'en',
+      toolbar_bg: '#070708',
+      enable_publishing: false,
+      hide_top_toolbar: true,
+      hide_side_toolbar: false,
+      allow_symbol_change: false,
+      save_image: false,
+      width: '100%',
+      height: 320,
+      studies: ['RSI@tv-basicstudies'],
+    });
+  }
+
   function initCharts() {
     var grid = document.getElementById('allCharts');
     if (!grid) return;
 
-    countries.forEach(function(c) {
+    countries.forEach(function(c, idx) {
       var wrapper = document.createElement('div');
       wrapper.className = 'market-chart-card';
 
@@ -46,28 +68,24 @@ description: "Live stock market charts and indices for India, US, UK, Japan, Ger
       var container = document.createElement('div');
       container.className = 'tradingview-container';
       container.id = 'tv_' + c.ticker.replace(/[^a-zA-Z0-9]/g, '_');
+      container.dataset.ticker = c.ticker;
       wrapper.appendChild(container);
       grid.appendChild(wrapper);
 
-      new TradingView.widget({
-        container_id: container.id,
-        autosize: true,
-        symbol: c.ticker,
-        interval: 'D',
-        timezone: 'Etc/UTC',
-        theme: 'dark',
-        style: '1',
-        locale: 'en',
-        toolbar_bg: '#070708',
-        enable_publishing: false,
-        hide_top_toolbar: true,
-        hide_side_toolbar: false,
-        allow_symbol_change: false,
-        save_image: false,
-        width: '100%',
-        height: 320,
-        studies: ['RSI@tv-basicstudies'],
-      });
+      // Lazy load: only create widget when scrolled into view
+      if ('IntersectionObserver' in window && idx > 1) {
+        var obs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              createWidget(entry.target.id, entry.target.dataset.ticker);
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { rootMargin: '200px' });
+        obs.observe(container);
+      } else {
+        createWidget(container.id, c.ticker);
+      }
     });
   }
 

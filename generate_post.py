@@ -544,10 +544,10 @@ def fetch_image(query, api_key, used_urls=None):
                 url = img["urls"]["regular"]
                 if url not in used_urls:
                     used_urls.add(url)
-                    return f"{url}?w=1200"
+                    return f"{url}?w=800"
             fallback = data["results"][0]
             url = fallback["urls"]["regular"]
-            return f"{url}?w=1200"
+            return f"{url}?w=800"
         return ""
     except Exception:
         return ""
