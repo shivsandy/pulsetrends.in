@@ -29,20 +29,35 @@
     }
   }, { passive: true });
 
-  // Mobile Categories Dropdown
+  // Mobile Categories Panel (right-slide)
   var menuToggle = document.getElementById('menuToggle');
-  var mobileCats = document.getElementById('mobileCats');
+  var mobilePanel = document.getElementById('mobilePanel');
+  var mobileOverlay = document.getElementById('mobileOverlay');
+  var panelClose = document.getElementById('panelClose');
   var isMenuOpen = false;
-  if (menuToggle && mobileCats) {
+
+  function closePanel() {
+    mobilePanel.classList.remove('open');
+    mobileOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+    isMenuOpen = false;
+  }
+
+  function openPanel() {
+    mobilePanel.classList.add('open');
+    mobileOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    isMenuOpen = true;
+  }
+
+  if (menuToggle && mobilePanel) {
     menuToggle.addEventListener('click', function() {
-      isMenuOpen = !isMenuOpen;
-      mobileCats.classList.toggle('open', isMenuOpen);
+      if (isMenuOpen) { closePanel(); } else { openPanel(); }
     });
-    mobileCats.querySelectorAll('a').forEach(function(a) {
-      a.addEventListener('click', function() {
-        mobileCats.classList.remove('open');
-        isMenuOpen = false;
-      });
+    if (panelClose) panelClose.addEventListener('click', closePanel);
+    if (mobileOverlay) mobileOverlay.addEventListener('click', closePanel);
+    mobilePanel.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', closePanel);
     });
   }
 
@@ -74,7 +89,7 @@
 
   // Active nav link
   var currentPath = window.location.pathname;
-  document.querySelectorAll('.nav-links a, .mobile-categories a').forEach(function(a) {
+  document.querySelectorAll('.nav-links a, .mobile-panel-body a').forEach(function(a) {
     var href = a.getAttribute('href');
     if (href === currentPath || (href !== '/' && currentPath.startsWith(href))) {
       a.classList.add('nav-active');
@@ -90,10 +105,7 @@
         window.filterByCategory(cat);
         var target = document.getElementById('latestSection');
         if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        if (mobileCats && isMenuOpen) {
-          mobileCats.classList.remove('open');
-          isMenuOpen = false;
-        }
+        if (isMenuOpen) { closePanel(); }
         if (dropdown) dropdown.classList.remove('nav-dropdown-open');
       }
     });

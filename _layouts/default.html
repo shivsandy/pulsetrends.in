@@ -138,16 +138,32 @@
       <span></span><span></span><span></span>
     </button>
   </div>
-  <div class="mobile-categories" id="mobileCats">
-    <a href="{{ '/world/' | relative_url }}" data-category="world"><span class="dd-dot" style="color:#636e72">◆</span> World</a>
-    <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span class="dd-dot" style="color:#d63031">◆</span> Politics</a>
-    <a href="{{ '/business/' | relative_url }}" data-category="business"><span class="dd-dot" style="color:#fdcb6e">◆</span> Business</a>
-    <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span class="dd-dot" style="color:#0984e3">◆</span> Technology</a>
-    <a href="{{ '/sports/' | relative_url }}" data-category="sports"><span class="dd-dot" style="color:#fd79a8">◆</span> Sports</a>
-    <a href="{{ '/weather/' | relative_url }}" data-category="weather"><span class="dd-dot" style="color:#74b9ff">◆</span> Weather</a>
-    <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment"><span class="dd-dot" style="color:#fd79a8">◆</span> Entertainment</a>
-  </div>
 </header>
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="mobile-panel" id="mobilePanel">
+  <div class="mobile-panel-header">
+    <span class="mobile-panel-title">Categories</span>
+    <button class="mobile-panel-close" id="panelClose">✕</button>
+  </div>
+  <div class="mobile-panel-body">
+    <a href="{{ '/ai/' | relative_url }}" data-category="ai">AI ↗</a>
+    <a href="{{ '/tech/' | relative_url }}" data-category="tech">Technology ↗</a>
+    <a href="{{ '/politics/' | relative_url }}" data-category="politics">Politics ↗</a>
+    <a href="{{ '/finance/' | relative_url }}" data-category="finance">Finance & Money ↗</a>
+    <a href="{{ '/crypto/' | relative_url }}" data-category="crypto">Cryptocurrency ↗</a>
+    <a href="{{ '/stocks/' | relative_url }}" data-category="stocks">Stocks & Markets ↗</a>
+    <a href="{{ '/gaming/' | relative_url }}" data-category="gaming">Gaming ↗</a>
+    <a href="{{ '/mobile/' | relative_url }}" data-category="mobile">Mobile & Android ↗</a>
+    <a href="{{ '/phones/' | relative_url }}" data-category="phones">Upcoming Phones ↗</a>
+    <a href="{{ '/sports/' | relative_url }}" data-category="sports">Sports ↗</a>
+    <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment">Entertainment ↗</a>
+    <a href="{{ '/health/' | relative_url }}" data-category="health">Health & Fitness ↗</a>
+    <a href="{{ '/science/' | relative_url }}" data-category="science">Science & Space ↗</a>
+    <a href="{{ '/business/' | relative_url }}" data-category="business">Business ↗</a>
+    <a href="{{ '/weather/' | relative_url }}" data-category="weather">Weather & Climate ↗</a>
+  </div>
+</div>
 
 {% assign ticker_posts = site.posts | slice: 0, 6 %}
 <div class="w-ticker">
