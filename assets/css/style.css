@@ -141,31 +141,32 @@ header .container { display: flex; justify-content: space-between; align-items: 
   border-radius: 2px;
 }
 
-.mobile-nav {
+.mobile-categories {
   display: none;
-  position: fixed;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(10,10,10,0.99);
-  z-index: 99;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
   opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s;
+  background: #111;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
-.mobile-nav.open { opacity: 1; pointer-events: all; }
-.mobile-nav a { color: var(--text); text-decoration: none; font-size: 1.1em; font-weight: 500; }
-.mobile-cat-group { width: 100%; text-align: center; }
-.mobile-cat-toggle {
-  background: none; border: none; color: var(--text);
-  font-size: 1.1em; font-weight: 500; cursor: pointer;
-  display: inline-flex; align-items: center; gap: 6px;
+.mobile-categories.open {
+  max-height: 500px;
+  opacity: 1;
 }
-.mobile-cat-list { display: none; flex-direction: column; align-items: center; gap: 12px; padding: 16px 0 0; }
-.mobile-cat-list.open { display: flex; }
-.mobile-cat-list a { font-size: 0.9em; color: var(--text-light); }
+.mobile-categories a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.95em;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.mobile-categories a:active { background: rgba(255,255,255,0.05); color: #fff; }
+.mobile-categories a:last-child { border-bottom: none; }
 
 /* ─── Container ─── */
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
@@ -533,6 +534,7 @@ footer {
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .menu-toggle { display: flex; }
+  .mobile-categories { display: block; }
   .post-grid { grid-template-columns: 1fr; }
   .display-card.large.primary .dc-img-wrap { min-height: 160px; }
   .display-card.large.primary .dc-img { min-height: 160px; }

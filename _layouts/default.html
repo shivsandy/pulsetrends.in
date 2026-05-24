@@ -163,33 +163,15 @@
   </div>
 </div>
 
-<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-  <a href="{{ '/' | relative_url }}">Home</a>
-  <div class="mobile-cat-group">
-    <button class="mobile-cat-toggle" aria-label="Toggle categories">Categories <span class="mcat-arrow">▸</span></button>
-    <div class="mobile-cat-list">
-      <a href="{{ '/crypto/' | relative_url }}" data-category="crypto"><span class="dd-dot" style="color:#f7931a">◆</span> Cryptocurrency</a>
-      <a href="{{ '/stocks/' | relative_url }}" data-category="stocks"><span class="dd-dot" style="color:#00b894">◆</span> Stocks & Markets</a>
-      <a href="{{ '/ai/' | relative_url }}" data-category="ai"><span class="dd-dot" style="color:#6c5ce7">◆</span> Artificial Intelligence</a>
-      <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span class="dd-dot" style="color:#0984e3">◆</span> Technology</a>
-      <a href="{{ '/gaming/' | relative_url }}" data-category="gaming"><span class="dd-dot" style="color:#e17055">◆</span> Gaming</a>
-      <a href="{{ '/mobile/' | relative_url }}" data-category="mobile"><span class="dd-dot" style="color:#00cec9">◆</span> Mobile & Smartphones</a>
-      <a href="{{ '/phones/' | relative_url }}" data-category="phones"><span class="dd-dot" style="color:#e17055">◆</span> Upcoming Phones</a>
-      <a href="{{ '/sports/' | relative_url }}" data-category="sports"><span class="dd-dot" style="color:#fd79a8">◆</span> Sports</a>
-      <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment"><span class="dd-dot" style="color:#fd79a8">◆</span> Entertainment</a>
-      <a href="{{ '/health/' | relative_url }}" data-category="health"><span class="dd-dot" style="color:#00b894">◆</span> Health & Fitness</a>
-      <a href="{{ '/science/' | relative_url }}" data-category="science"><span class="dd-dot" style="color:#74b9ff">◆</span> Science & Space</a>
-      <a href="{{ '/business/' | relative_url }}" data-category="business"><span class="dd-dot" style="color:#fdcb6e">◆</span> Business</a>
-      <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span class="dd-dot" style="color:#d63031">◆</span> Politics</a>
-      <a href="{{ '/world/' | relative_url }}" data-category="world"><span class="dd-dot" style="color:#636e72">◆</span> World News</a>
-      <a href="{{ '/weather/' | relative_url }}" data-category="weather"><span class="dd-dot" style="color:#74b9ff">◆</span> Weather & Climate</a>
-    </div>
-  </div>
-  <a href="{{ '/about/' | relative_url }}">About</a>
-  <a href="{{ '/search/' | relative_url }}">Search</a>
-  <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
-  <a href="{{ '/contact/' | relative_url }}">Contact</a>
-</nav>
+<div class="mobile-categories" id="mobileCats">
+  <a href="{{ '/world/' | relative_url }}" data-category="world"><span class="dd-dot" style="color:#636e72">◆</span> World</a>
+  <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span class="dd-dot" style="color:#d63031">◆</span> Politics</a>
+  <a href="{{ '/business/' | relative_url }}" data-category="business"><span class="dd-dot" style="color:#fdcb6e">◆</span> Business</a>
+  <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span class="dd-dot" style="color:#0984e3">◆</span> Technology</a>
+  <a href="{{ '/sports/' | relative_url }}" data-category="sports"><span class="dd-dot" style="color:#fd79a8">◆</span> Sports</a>
+  <a href="{{ '/weather/' | relative_url }}" data-category="weather"><span class="dd-dot" style="color:#74b9ff">◆</span> Weather</a>
+  <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment"><span class="dd-dot" style="color:#fd79a8">◆</span> Entertainment</a>
+</div>
 
 <div class="container site-wrap">
   <main class="main-content" id="main-content">

@@ -29,18 +29,19 @@
     }
   }, { passive: true });
 
-  // Mobile Menu
+  // Mobile Categories Dropdown
   var menuToggle = document.getElementById('menuToggle');
-  var mobileNav = document.getElementById('mobileNav');
-  if (menuToggle && mobileNav) {
+  var mobileCats = document.getElementById('mobileCats');
+  var isMenuOpen = false;
+  if (menuToggle && mobileCats) {
     menuToggle.addEventListener('click', function() {
-      mobileNav.classList.toggle('open');
-      document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+      isMenuOpen = !isMenuOpen;
+      mobileCats.classList.toggle('open', isMenuOpen);
     });
-    mobileNav.querySelectorAll('a').forEach(function(a) {
+    mobileCats.querySelectorAll('a').forEach(function(a) {
       a.addEventListener('click', function() {
-        mobileNav.classList.remove('open');
-        document.body.style.overflow = '';
+        mobileCats.classList.remove('open');
+        isMenuOpen = false;
       });
     });
   }
@@ -60,15 +61,6 @@
     });
   }
 
-  // Mobile Categories Submenu
-  var mCatToggle = document.querySelector('.mobile-cat-toggle');
-  var mCatList = document.querySelector('.mobile-cat-list');
-  if (mCatToggle && mCatList) {
-    mCatToggle.addEventListener('click', function() {
-      mCatList.classList.toggle('open');
-    });
-  }
-
   // Sidebar Categories Toggle
   document.querySelectorAll('.cat-toggle').forEach(function(btn) {
     btn.addEventListener('click', function() {
@@ -82,7 +74,7 @@
 
   // Active nav link
   var currentPath = window.location.pathname;
-  document.querySelectorAll('.nav-links a, .mobile-nav a').forEach(function(a) {
+  document.querySelectorAll('.nav-links a, .mobile-categories a').forEach(function(a) {
     var href = a.getAttribute('href');
     if (href === currentPath || (href !== '/' && currentPath.startsWith(href))) {
       a.classList.add('nav-active');
@@ -96,9 +88,9 @@
       if (typeof window.filterByCategory === 'function') {
         e.preventDefault();
         window.filterByCategory(cat);
-        if (mobileNav && mobileNav.classList.contains('open')) {
-          mobileNav.classList.remove('open');
-          document.body.style.overflow = '';
+        if (mobileCats && isMenuOpen) {
+          mobileCats.classList.remove('open');
+          isMenuOpen = false;
         }
         if (dropdown) dropdown.classList.remove('nav-dropdown-open');
       }
