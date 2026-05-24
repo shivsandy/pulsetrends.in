@@ -25,6 +25,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Clean up posts older than 90 days
+        run: python cleanup_posts.py
+
       - name: Generate and publish article
         env:
           OPENROUTER_API_KEY_1: ${{ secrets.OPENROUTER_API_KEY_1 }}
