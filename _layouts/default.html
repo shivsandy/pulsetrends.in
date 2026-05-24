@@ -139,12 +139,11 @@
   </div>
 </header>
 
-{% assign ticker_posts = site.posts | slice: 0, 12 %}
+{% assign ticker_posts = site.posts | slice: 0, 6 %}
 <div class="w-ticker">
   <span class="ticker-label">Trending</span>
   <div class="ticker-inner">
-    {% for post in ticker_posts %}<a href="{{ post.url | relative_url }}">{{ post.title | truncate: 60 }}</a>{% endfor %}
-    {% for post in ticker_posts %}<a href="{{ post.url | relative_url }}">{{ post.title | truncate: 60 }}</a>{% endfor %}
+    {% for post in ticker_posts %}<a href="{{ post.url | relative_url }}">{{ post.title | truncate: 50 }}</a>{% endfor %}{% for post in ticker_posts %}<a href="{{ post.url | relative_url }}">{{ post.title | truncate: 50 }}</a>{% endfor %}
   </div>
 </div>
 

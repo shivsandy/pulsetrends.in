@@ -4,24 +4,23 @@
   var header = document.getElementById('header');
 
   var secHeader = document.getElementById('secHeader');
-  var lastScrollY = 0;
+  var lastScrollY = 0, wasScrolled = false, wasSecVisible = false;
 
-  // Header shrink + secondary header on scroll (throttled)
+  // Header + secondary header on scroll (rAF-throttled, state-cached)
   var ticking = false;
   window.addEventListener('scroll', function() {
     if (!ticking) {
       requestAnimationFrame(function() {
         var scrollY = window.scrollY;
-        header && header.classList.toggle('scrolled', scrollY > 50);
+        var nowScrolled = scrollY > 50;
+        if (nowScrolled !== wasScrolled) { header && header.classList.toggle('scrolled', nowScrolled); wasScrolled = nowScrolled; }
         if (secHeader) {
-          if (scrollY > 450 && scrollY > lastScrollY) {
-            secHeader.classList.remove('is-visible');
-          } else if (scrollY > 100) {
-            secHeader.classList.add('is-visible');
-          } else {
-            secHeader.classList.remove('is-visible');
+          var nowSecVisible = scrollY > 100 && !(scrollY > 450 && scrollY > lastScrollY);
+          if (nowSecVisible !== wasSecVisible) {
+            secHeader.classList.toggle('is-visible', nowSecVisible);
+            header && header.classList.toggle('sec-active', nowSecVisible);
+            wasSecVisible = nowSecVisible;
           }
-          header && header.classList.toggle('sec-active', secHeader.classList.contains('is-visible'));
         }
         lastScrollY = scrollY;
         ticking = false;

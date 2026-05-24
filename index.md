@@ -112,7 +112,8 @@ title: Home
 
 <div class="post-grid" id="postGrid">
   {% for post in posts offset:4 %}
-  <article class="post-card" data-page="{{ forloop.index0 | divided_by: 4 | plus: 1 }}">
+  {% assign page_num = forloop.index0 | divided_by: 4 | plus: 1 %}
+  <article class="post-card" data-page="{{ page_num }}"{% if page_num > 1 %} style="display:none"{% endif %}>
     <a href="{{ post.url | relative_url }}">
       <div class="card-img-wrap">
         {% if post.image %}
