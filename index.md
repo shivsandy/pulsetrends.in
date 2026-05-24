@@ -31,42 +31,44 @@ title: Home
     </a>
   </div>
 
-  <div class="display-card large secondary">
-    <a href="{{ secondary1.url | relative_url }}">
-      <div class="dc-img-wrap">
-        {% if secondary1.image %}
-        <img src="{{ secondary1.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ secondary1.title }}" class="dc-img" loading="lazy" decoding="async">
-        {% else %}
-        <div class="dc-img" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
-        {% endif %}
-      </div>
-      <div class="dc-content">
-        {% if secondary1.tags.size > 0 %}
-        <span class="cat-tag">{{ secondary1.tags.first }}</span>
-        {% endif %}
-        <h3>{{ secondary1.title }}</h3>
-        <span class="meta">{{ secondary1.date | date: "%B %d, %Y" }}</span>
-      </div>
-    </a>
-  </div>
+  <div class="right-stack">
+    <div class="display-card large secondary">
+      <a href="{{ secondary1.url | relative_url }}">
+        <div class="dc-img-wrap">
+          {% if secondary1.image %}
+          <img src="{{ secondary1.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ secondary1.title }}" class="dc-img" loading="lazy" decoding="async">
+          {% else %}
+          <div class="dc-img" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
+          {% endif %}
+        </div>
+        <div class="dc-content">
+          {% if secondary1.tags.size > 0 %}
+          <span class="cat-tag">{{ secondary1.tags.first }}</span>
+          {% endif %}
+          <h3>{{ secondary1.title }}</h3>
+          <span class="meta">{{ secondary1.date | date: "%B %d, %Y" }}</span>
+        </div>
+      </a>
+    </div>
 
-  <div class="display-card large secondary">
-    <a href="{{ secondary2.url | relative_url }}">
-      <div class="dc-img-wrap">
-        {% if secondary2.image %}
-        <img src="{{ secondary2.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ secondary2.title }}" class="dc-img" loading="lazy" decoding="async">
-        {% else %}
-        <div class="dc-img" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
-        {% endif %}
-      </div>
-      <div class="dc-content">
-        {% if secondary2.tags.size > 0 %}
-        <span class="cat-tag">{{ secondary2.tags.first }}</span>
-        {% endif %}
-        <h3>{{ secondary2.title }}</h3>
-        <span class="meta">{{ secondary2.date | date: "%B %d, %Y" }}</span>
-      </div>
-    </a>
+    <div class="display-card large secondary">
+      <a href="{{ secondary2.url | relative_url }}">
+        <div class="dc-img-wrap">
+          {% if secondary2.image %}
+          <img src="{{ secondary2.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ secondary2.title }}" class="dc-img" loading="lazy" decoding="async">
+          {% else %}
+          <div class="dc-img" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
+          {% endif %}
+        </div>
+        <div class="dc-content">
+          {% if secondary2.tags.size > 0 %}
+          <span class="cat-tag">{{ secondary2.tags.first }}</span>
+          {% endif %}
+          <h3>{{ secondary2.title }}</h3>
+          <span class="meta">{{ secondary2.date | date: "%B %d, %Y" }}</span>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 
