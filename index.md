@@ -136,6 +136,7 @@ title: Home
 
 <div class="pagination" id="pagination"></div>
 
+{% endif %}
 {% if posts.size == 0 %}
 <div class="page-content">
   <h1>Welcome to PulseTrends</h1>
