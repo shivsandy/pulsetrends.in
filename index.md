@@ -66,14 +66,12 @@ title: Home
 <script>
 document.addEventListener('DOMContentLoaded', function(){
   var cards = document.querySelectorAll('#postGrid .post-card');
-  var firstPage = 7, restPages = 6;
-  var totalPages = cards.length <= firstPage ? 1 : 1 + Math.ceil((cards.length - firstPage) / restPages);
-  var currentPage = 1;
+  var perPage = 5;
+  var totalPages = Math.ceil(cards.length / perPage) || 1;
 
   function getRange(p) {
-    if (p === 1) return [0, firstPage];
-    var start = firstPage + (p - 2) * restPages;
-    return [start, start + restPages];
+    var start = (p - 1) * perPage;
+    return [start, start + perPage];
   }
 
   function showPage(p) {
