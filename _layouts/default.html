@@ -68,20 +68,6 @@
 
 <div class="scroll-progress"></div>
 
-{% if site.posts.size > 0 %}
-<div class="ticker-wrap">
-  <div class="ticker-label">Trending</div>
-  <div class="ticker-track">
-    {% for post in site.posts limit:15 %}
-    <a href="{{ post.url | relative_url }}" class="ticker-item">{{ post.title | strip_html | truncate: 60 }}</a>
-    {% endfor %}
-    {% for post in site.posts limit:15 %}
-    <a href="{{ post.url | relative_url }}" class="ticker-item">{{ post.title | strip_html | truncate: 60 }}</a>
-    {% endfor %}
-  </div>
-</div>
-{% endif %}
-
 <div class="topbar" id="topbar">
   <div class="container">
     <div class="topbar-left"><span class="pulse-dot"></span> Trending Now — Crypto · Stocks · AI · Tech · Gaming · Mobile · Sports · Entertainment · Health · Science · Politics · Business · World</div>
@@ -192,8 +178,8 @@
     <div class="sidebar-inner">
       {% if page.title == 'Home' %}
       <div class="sidebar-widget reveal">
-        <h3><button class="cat-toggle" aria-label="Toggle categories">−</button> <span class="widget-icon" aria-hidden="true">◆</span> Categories</h3>
-        <div class="sidebar-cat">
+        <h3><button class="cat-toggle" aria-label="Toggle categories">+</button> <span class="widget-icon" aria-hidden="true">◆</span> Categories</h3>
+        <div class="sidebar-cat collapsed">
           <a href="{{ '/' | relative_url }}"><span>AI</span><span class="cat-count" aria-hidden="true">↗</span></a>
           <a href="{{ '/' | relative_url }}"><span>Technology</span><span class="cat-count" aria-hidden="true">↗</span></a>
           <a href="{{ '/' | relative_url }}"><span>Politics</span><span class="cat-count" aria-hidden="true">↗</span></a>
@@ -213,8 +199,8 @@
       </div>
       {% else %}
       <div class="sidebar-widget reveal">
-        <h3><button class="cat-toggle" aria-label="Toggle categories">−</button> <span class="widget-icon" aria-hidden="true">◆</span> Categories</h3>
-        <div class="sidebar-cat">
+        <h3><button class="cat-toggle" aria-label="Toggle categories">+</button> <span class="widget-icon" aria-hidden="true">◆</span> Categories</h3>
+        <div class="sidebar-cat collapsed">
           <a href="{{ '/' | relative_url }}"><span>AI</span><span class="cat-count" aria-hidden="true">↗</span></a>
           <a href="{{ '/' | relative_url }}"><span>Technology</span><span class="cat-count" aria-hidden="true">↗</span></a>
           <a href="{{ '/' | relative_url }}"><span>Politics</span><span class="cat-count" aria-hidden="true">↗</span></a>
@@ -222,6 +208,11 @@
         </div>
       </div>
       {% endif %}
+      <div class="sidebar-widget reveal">
+        <h3><span class="widget-icon" aria-hidden="true">◉</span> Live Stock Markets</h3>
+        <p>Real-time stock indices from India, US, UK, Japan, Germany, and more — powered by TradingView.</p>
+        <a href="{{ '/markets/' | relative_url }}" class="sidebar-cta">View All Markets →</a>
+      </div>
     </div>
   </aside>
 </div>
