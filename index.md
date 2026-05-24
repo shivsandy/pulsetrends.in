@@ -32,7 +32,7 @@ title: Home
 
 <div class="post-grid" id="postGrid">
   {% for post in posts offset:1 %}
-  <article class="post-card reveal" data-page="{{ forloop.index0 | divided_by: 12 | plus: 1 }}">
+  <article class="post-card reveal" data-page="{{ forloop.index0 | divided_by: 5 | plus: 1 }}">
     <a href="{{ post.url | relative_url }}">
       <div class="card-img-wrap">
         {% if post.image %}
