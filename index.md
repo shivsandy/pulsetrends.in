@@ -105,6 +105,39 @@ title: Home
 </div>
 {% endif %}
 
+{% assign ipo_posts = site.posts | where_exp: "p", "p.tags contains 'ipos'" %}
+{% if ipo_posts.size > 0 %}
+<div class="trending-section">
+  <div class="trending-header">
+    <h2>Upcoming IPOs</h2>
+    <a href="{{ '/ipos/' | relative_url }}" class="see-more">All IPOs →</a>
+  </div>
+  <div class="trending-scroll">
+    {% for post in ipo_posts %}
+    <div class="trending-card">
+      <a href="{{ post.url | relative_url }}">
+        <div class="tc-img-wrap">
+          {% if post.image %}
+          <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ post.title }}" class="tc-img" loading="lazy" decoding="async">
+          {% else %}
+          <div class="tc-img" style="background: linear-gradient(135deg, #1a2e1a, #e01a4f);"></div>
+          {% endif %}
+          <div class="tc-img-overlay"></div>
+        </div>
+        <div class="tc-content">
+          {% if post.tags.size > 0 %}
+          <span class="cat-tag">{{ post.tags.first }}</span>
+          {% endif %}
+          <h3>{{ post.title }}</h3>
+          <span class="meta">{{ post.date | date: "%B %d" }}</span>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
 <h2 class="section-title" id="latestSection" style="scroll-margin-top:70px">Latest Articles</h2>
 
 <div id="filterBar" class="filter-bar" style="display:none">

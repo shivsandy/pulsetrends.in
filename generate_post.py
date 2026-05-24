@@ -40,6 +40,7 @@ CATEGORIES = [
     {"id": "world", "name": "World News", "image": "world global news international", "kw": ["world news", "breaking news", "international", "global", "Asia", "Africa", "Europe", "Middle East", "Americas", "earthquake", "tsunami", "wildfire", "flood", "hurricane", "drought", "heatwave", "blizzard", "tornado", "volcano", "climate change"]},
     {"id": "finance", "name": "Finance & Money", "image": "finance money banking economy", "kw": ["finance", "money", "banking", "loan", "credit", "mortgage", "refinance", "tax", "debt", "insurance", "investing", "retirement", "forex", "dividend", "GDP", "inflation", "recession", "interest rate", "federal reserve", "economy"]},
     {"id": "weather", "name": "Weather & Climate", "image": "weather climate sky storm nature", "kw": ["weather", "climate", "hurricane", "tornado", "flood", "drought", "heatwave", "blizzard", "storm", "temperature", "forecast", "climate change", "global warming", "rain", "snow", "earthquake", "tsunami", "wildfire"]},
+    {"id": "ipos", "name": "IPOs & Listings", "image": "initial public offering stock market IPO", "kw": ["IPO", "initial public offering", "listing date", "stock debut", "IPO date", "IPO price", "IPO subscription", "SEBI IPO", "IPO allotment", "listing gain", "IPO platform", "Zerodha IPO", "Groww IPO", "Angel One IPO", "Upstox IPO", "NSE IPO", "BSE IPO", "public issue", "IPO news", "IPO analysis", "IPO review"]},
 ]
 
 HIGH_CPC_KEYWORDS = [kw for cat in CATEGORIES for kw in cat["kw"]]
@@ -252,6 +253,8 @@ RSS_FEEDS = [
     "https://www.reddit.com/r/climate/hot/.rss",
     "https://www.reddit.com/r/ClimateCrisis/hot/.rss",
     "https://www.reddit.com/r/tropicalweather/hot/.rss",
+    "https://www.moneycontrol.com/rss/iponews.xml",
+    "https://economictimes.indiatimes.com/markets/ipos/rssfeeds",
 ]
 
 OPENROUTER_MODELS = [
@@ -497,6 +500,14 @@ Requirements:
 
 Return only the article content in markdown format with no additional commentary."""
 
+    if category_name == "IPOs & Listings":
+        prompt += """
+- Include the IPO opening date, closing date, and price band
+- Mention which brokerage platforms this stock is available on for subscription
+- Provide a brief analysis of the company's business model, financials, and growth prospects
+- Summarize key risks and strengths for potential investors
+"""
+
     errors = []
     for i in range(1, 5):
         key = api_keys.get(f"openrouter_{i}")
@@ -705,7 +716,7 @@ def main():
         log.info(f"Selected for {cat['name']}: {best['title'][:60]} (score={scored[0][0]})")
 
     articles_generated = 0
-    max_articles = 12  # cap to avoid rate limits
+    max_articles = 13  # cap to avoid rate limits
 
     for cat in CATEGORIES:
         if articles_generated >= max_articles:

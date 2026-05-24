@@ -118,7 +118,7 @@
     mobile: '#06b6d4', sport: '#ef4444', health: '#10b981',
     science: '#3b82f6', space: '#8b5cf6', business: '#f59e0b',
     politics: '#ef4444', world: '#6b7280', entertainment: '#ec4899',
-    weather: '#3b82f6', finance: '#f59e0b', phones: '#e17055',
+    weather: '#3b82f6', finance: '#f59e0b', phones: '#e17055', ipos: '#e17055',
   };
   document.querySelectorAll('.cat-tag').forEach(function(tag) {
     var text = tag.textContent.trim().toLowerCase();
