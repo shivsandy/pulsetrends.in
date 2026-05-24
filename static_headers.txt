@@ -1,0 +1,17 @@
+# PulseTrends Security Headers
+#
+# These headers should be applied via Cloudflare Transform Rule or Cloudflare Worker.
+# GitHub Pages does not natively support custom response headers.
+#
+# Cloudflare Dashboard → Rules → Transform Rules → Modify Response Headers
+# Or deploy as a Cloudflare Worker.
+#
+# Recommended CSP:
+#   Content-Security-Policy: default-src 'self'; script-src 'self'; img-src 'self' https://images.unsplash.com https://*.unsplash.com data:; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-src 'none'; base-uri 'self'
+#
+# Additional security headers:
+#   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+#   X-Content-Type-Options: nosniff
+#   X-Frame-Options: DENY
+#   Referrer-Policy: strict-origin-when-cross-origin
+#   Permissions-Policy: camera=(), microphone=(), geolocation=()
