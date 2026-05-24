@@ -29,7 +29,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | absolute_url }}">
@@ -130,7 +131,7 @@
       </div>
       <a href="{{ '/about/' | relative_url }}">About</a>
       <a href="{{ '/contact/' | relative_url }}">Contact</a>
-      <a href="{{ '/search/' | relative_url }}" class="search-link" aria-label="Search">🔍</a>
+      <a href="{{ '/search/' | relative_url }}">Search</a>
     </nav>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -197,7 +198,7 @@
       </nav>
       {% if page.image %}
       <div class="article-img-wrap">
-        <img src="{{ page.image }}" alt="{{ page.title | escape }}" class="featured-img" loading="lazy" itemprop="image">
+        <img src="{{ page.image }}" alt="{{ page.title | escape }}" class="featured-img" loading="eager" fetchpriority="high" itemprop="image">
         <div class="img-overlay"></div>
       </div>
       {% endif %}
@@ -240,7 +241,7 @@
             <a href="{{ post.url | relative_url }}">
               <div class="card-img-wrap">
                 {% if post.image %}
-                <img src="{{ post.image }}" alt="{{ post.title }}" class="post-card-img" loading="lazy">
+                <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ post.title }}" class="post-card-img" loading="lazy" decoding="async">
                 {% else %}
                 <div class="post-card-img" style="background: linear-gradient(135deg, #16213e, #e74c3c);"></div>
                 {% endif %}

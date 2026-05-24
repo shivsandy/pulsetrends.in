@@ -159,6 +159,8 @@ header .container { display: flex; justify-content: space-between; align-items: 
   margin-bottom: 40px;
   background: var(--bg-card);
   border: 1px solid var(--border);
+  content-visibility: auto;
+  contain: layout style;
 }
 .hero-featured a { text-decoration: none; color: inherit; display: grid; grid-template-columns: 1fr 1fr; min-height: 300px; }
 .hero-featured .hero-img-wrap { position: relative; overflow: hidden; }
@@ -197,6 +199,7 @@ header .container { display: flex; justify-content: space-between; align-items: 
   overflow: hidden;
   transition: transform 0.15s;
   content-visibility: auto;
+  contain: layout style;
 }
 .post-card:hover { transform: translateY(-1px); border-color: rgba(231,76,60,0.2); }
 .post-card a { text-decoration: none; color: inherit; display: flex; flex-direction: column; }
@@ -226,6 +229,8 @@ article.article-page {
   border-radius: var(--radius);
   overflow: hidden;
   margin-bottom: 40px;
+  content-visibility: auto;
+  contain: layout style;
 }
 .article-img-wrap { position: relative; width: 100%; max-height: 380px; overflow: hidden; }
 .article-img-wrap img.featured-img { width: 100%; max-height: 380px; object-fit: cover; display: block; }
@@ -251,6 +256,8 @@ article.article-page {
   border-radius: var(--radius);
   padding: 20px;
   margin-bottom: 20px;
+  content-visibility: auto;
+  contain: layout style;
 }
 .sidebar-widget h3 { font-size: 0.9em; font-weight: 600; margin-bottom: 14px; color: #fff; display: flex; align-items: center; gap: 8px; }
 .widget-icon { color: var(--primary); }
@@ -285,6 +292,8 @@ footer {
   border-top: 1px solid var(--border);
   padding: 48px 0 0;
   margin-top: 60px;
+  content-visibility: auto;
+  contain: layout style;
 }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1.5fr 1fr; gap: 40px; padding-bottom: 40px; }
 .footer-logo { font-size: 1.2em; font-weight: 700; color: #fff; margin-bottom: 12px; }
@@ -334,9 +343,6 @@ footer {
 .related-posts { padding: 0 32px 32px; }
 .related-posts h2 { font-size: 1.1em; font-weight: 700; margin-bottom: 16px; color: #fff; }
 .related-posts .post-grid { margin-bottom: 0; }
-
-/* ─── Search Link ─── */
-.search-link { font-size: 1.1em !important; text-decoration: none; line-height: 1; }
 
 /* ─── Search Page ─── */
 .search-box { position: relative; margin-bottom: 8px; }

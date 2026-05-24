@@ -17,7 +17,7 @@ layout: default
     <a href="{{ post.url | relative_url }}">
       <div class="card-img-wrap">
         {% if post.image %}
-        <img src="{{ post.image }}" alt="{{ post.title }}" class="post-card-img" loading="lazy">
+        <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ post.title }}" class="post-card-img" loading="lazy" decoding="async">
         {% else %}
         <div class="post-card-img" style="background: linear-gradient(135deg, #16213e, #e74c3c);"></div>
         {% endif %}

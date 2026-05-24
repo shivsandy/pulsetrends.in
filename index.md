@@ -11,7 +11,7 @@ title: Home
   <a href="{{ featured.url | relative_url }}">
     <div class="hero-img-wrap">
       {% if featured.image %}
-      <img src="{{ featured.image }}" alt="{{ featured.title }}" class="hero-featured-img" loading="lazy">
+      <img src="{{ featured.image }}" alt="{{ featured.title }}" class="hero-featured-img" loading="eager" fetchpriority="high">
       {% else %}
       <div class="hero-featured-img" style="background: linear-gradient(135deg, #1a1a2e, #e74c3c);"></div>
       {% endif %}
@@ -41,7 +41,7 @@ title: Home
     <a href="{{ post.url | relative_url }}">
       <div class="card-img-wrap">
         {% if post.image %}
-        <img src="{{ post.image }}" alt="{{ post.title }}" class="post-card-img" loading="lazy">
+        <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ post.title }}" class="post-card-img" loading="lazy" decoding="async">
         {% else %}
         <div class="post-card-img" style="background: linear-gradient(135deg, #16213e, #e74c3c);"></div>
         {% endif %}
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function(){
         e.preventDefault();
         showPage(parseInt(this.getAttribute('data-page')));
         var top = document.getElementById('postGrid');
-        if (top) top.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (top) top.scrollIntoView({ block: 'start' });
       });
     });
   }
