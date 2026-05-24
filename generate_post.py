@@ -30,6 +30,7 @@ CATEGORIES = [
     {"id": "tech", "name": "Technology", "image": "technology tech digital innovation", "kw": ["technology", "tech", "cybersecurity", "cloud computing", "VPN", "SaaS", "startup", "software", "hardware", "processor", "Qualcomm", "Apple Silicon", "M4 chip", "Snapdragon", "laptop", "computer", "5G", "WiFi", "USB", "app", "operating system", "Windows", "macOS"]},
     {"id": "gaming", "name": "Gaming", "image": "video gaming esports controller", "kw": ["gaming", "video games", "PlayStation", "PS5", "Xbox", "Nintendo", "Switch", "PC gaming", "game review", "game release", "GTA", "Fortnite", "Call of Duty", "Minecraft", "Steam", "Epic Games", "RTX", "graphics card", "esports", "game trailer", "gaming laptop"]},
     {"id": "mobile", "name": "Mobile & Smartphones", "image": "smartphone mobile phone technology", "kw": ["iPhone", "Android", "smartphone", "Samsung Galaxy", "Google Pixel", "OnePlus", "iPhone 16", "iPhone 17", "iOS 19", "Android 15", "Android 16", "foldable phone", "phone review", "5G phone", "iPad", "Apple Watch", "Samsung Watch", "tablet", "mobile", "Xiaomi", "Nothing Phone"]},
+    {"id": "phones", "name": "Upcoming Phones", "image": "upcoming smartphone phone launch", "kw": ["upcoming phone", "phone launch", "phone specs", "phone leak", "phone rumor", "smartphone release", "Galaxy S", "Galaxy Z", "iPhone 17", "Pixel 10", "OnePlus 13", "Nothing Phone 3", "Xiaomi", "Oppo Find", "Vivo X", "foldable phone", "phone camera", "phone battery", "flagship phone", "budget phone", "phone benchmark", "phone design", "phone display", "chipset", "Snapdragon", "Dimensity", "A19", "phone price"]},
     {"id": "sports", "name": "Sports", "image": "sports athletic competition game", "kw": ["NFL", "NBA", "soccer", "cricket", "tennis", "F1", "UFC", "Olympics", "World Cup", "Super Bowl", "Champions League", "baseball", "hockey", "golf", "boxing", "football", "basketball", "Premier League", "IPL", "T20", "Grand Slam"]},
     {"id": "entertainment", "name": "Entertainment", "image": "entertainment movies music show", "kw": ["movies", "music", "TV shows", "streaming", "Netflix", "Hollywood", "Bollywood", "celebrity", "Oscars", "Grammy", "anime", "comics", "Marvel", "DC", "Disney", "Spotify", "YouTube", "TikTok", "Instagram", "film", "cinema", "album", "concert"]},
     {"id": "health", "name": "Health & Fitness", "image": "health fitness medical wellness", "kw": ["health", "fitness", "medical", "COVID", "vaccine", "cancer", "diabetes", "heart disease", "mental health", "nutrition", "yoga", "meditation", "sleep", "diet", "weight loss", "supplements", "pandemic", "medicine", "surgery", "therapy"]},
@@ -219,6 +220,7 @@ RSS_FEEDS = [
     "https://www.reddit.com/r/samsung/hot/.rss",
     "https://www.reddit.com/r/oneplus/hot/.rss",
     "https://www.reddit.com/r/apple/hot/.rss",
+    "https://www.androidpolice.com/rss/",
     "https://www.webmd.com/rss/all.xml",
     "https://www.medicalnewstoday.com/feed",
     "https://www.healthline.com/rss/all",
@@ -340,7 +342,7 @@ def fetch_trends_newsapi(api_key):
                "cryptocurrency", "Bitcoin", "stocks", "sports", "entertainment",
                "movies", "music", "health", "fitness", "science", "space",
                "gaming", "business", "startup", "IPO", "cricket", "soccer",
-               "iPhone", "Android", "smartphone", "video games", "PlayStation"]
+                "iPhone", "Android", "smartphone", "upcoming phone", "phone launch", "video games", "PlayStation"]
     for topic in topics:
         try:
             resp = requests.get(
