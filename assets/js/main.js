@@ -42,6 +42,9 @@
     mobilePanel.querySelectorAll('a').forEach(function(a) {
       a.addEventListener('click', closePanel);
     });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && isMenuOpen) closePanel();
+    });
   }
 
   // ─── Dropdown Navigation ───

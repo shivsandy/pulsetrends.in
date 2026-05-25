@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+description: "PulseTrends — AI, Crypto, Stocks & Daily Trending News. Expert analysis on technology, cryptocurrency, politics, finance, weather, and business."
 ---
 
 {% assign posts = site.posts %}
@@ -25,7 +26,7 @@ title: Home
       <a href="{{ post.url | relative_url }}">
         <div class="left-card-img">
           {% if post.image %}
-          <img src="{{ post.image | replace: 'w=1200', 'w=200' | replace: 'w=800', 'w=200' }}&auto=format&q=50" alt="{{ post.title }}" loading="lazy" decoding="async">
+          <img src="{{ post.image | replace: 'w=1200', 'w=200' | replace: 'w=800', 'w=200' }}&auto=format&q=50" alt="{{ post.title }}" width="200" height="200" loading="lazy" decoding="async">
           {% else %}
           <div class="img-fallback"><span class="fallback-icon">&#9670;</span></div>
           {% endif %}
@@ -50,7 +51,7 @@ title: Home
     <article class="hero-card">
       <a href="{{ hero_post.url | relative_url }}">
         {% if hero_post.image %}
-        <img src="{{ hero_post.image }}&auto=format&q=75" alt="{{ hero_post.title }}" class="hero-card-img" loading="eager" fetchpriority="high">
+        <img src="{{ hero_post.image }}&auto=format&q=75" alt="{{ hero_post.title }}" class="hero-card-img" width="1200" height="675" loading="eager" fetchpriority="high" itemprop="image">
         {% endif %}
         <div class="section-card-body">
           {% if hero_post.tags.size > 0 %}<span class="cat-tag">{{ hero_post.tags.first }}</span>{% endif %}
@@ -72,7 +73,7 @@ title: Home
           <a href="{{ post.url | relative_url }}">
             <div class="section-card-img">
               {% if post.image %}
-              <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" loading="lazy" decoding="async">
+              <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" width="400" height="250" loading="lazy" decoding="async">
               {% else %}
               <div class="img-fallback"><span class="fallback-icon">&#9670;</span></div>
               {% endif %}
@@ -100,7 +101,7 @@ title: Home
           <a href="{{ post.url | relative_url }}">
             <div class="section-card-img">
               {% if post.image %}
-              <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" loading="lazy" decoding="async">
+              <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" width="400" height="250" loading="lazy" decoding="async">
               {% else %}
               <div class="img-fallback"><span class="fallback-icon">&#9670;</span></div>
               {% endif %}
@@ -127,7 +128,7 @@ title: Home
           <a href="{{ post.url | relative_url }}">
             <div class="section-card-img">
               {% if post.image %}
-              <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" loading="lazy" decoding="async">
+              <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" width="400" height="250" loading="lazy" decoding="async">
               {% else %}
               <div class="img-fallback"><span class="fallback-icon">&#9670;</span></div>
               {% endif %}
@@ -154,7 +155,7 @@ title: Home
           <a href="{{ post.url | relative_url }}">
             <div class="section-card-img">
               {% if post.image %}
-              <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" loading="lazy" decoding="async">
+              <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" width="400" height="250" loading="lazy" decoding="async">
               {% else %}
               <div class="img-fallback"><span class="fallback-icon">&#9670;</span></div>
               {% endif %}
@@ -181,7 +182,7 @@ title: Home
           <a href="{{ post.url | relative_url }}">
             <div class="section-card-img">
               {% if post.image %}
-              <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" loading="lazy" decoding="async">
+              <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" width="400" height="250" loading="lazy" decoding="async">
               {% else %}
               <div class="img-fallback"><span class="fallback-icon">&#9670;</span></div>
               {% endif %}
@@ -204,6 +205,7 @@ title: Home
   <aside class="home-col-right">
     <div class="ipo-section-title">IPO Stocks Watchlist</div>
     <div class="ipo-stock-list" id="ipoStockList"></div>
+    <a href="/ipodashboard/" class="ipo-view-more" title="View complete IPO dashboard" aria-label="View full IPO dashboard">View More &rarr;</a>
   </aside>
 
 </div>
