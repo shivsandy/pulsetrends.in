@@ -3,33 +3,17 @@
 
   var header = document.getElementById('header');
 
-  var secHeader = document.getElementById('secHeader');
-  var lastScrollY = 0, wasScrolled = false, wasSecVisible = false;
-
-  // Header + secondary header on scroll (rAF-throttled, state-cached)
   var ticking = false;
   window.addEventListener('scroll', function() {
     if (!ticking) {
       requestAnimationFrame(function() {
-        var scrollY = window.scrollY;
-        var nowScrolled = scrollY > 50;
-        if (nowScrolled !== wasScrolled) { header && header.classList.toggle('scrolled', nowScrolled); wasScrolled = nowScrolled; }
-        if (secHeader) {
-          var nowSecVisible = scrollY > 100 && !(scrollY > 450 && scrollY > lastScrollY);
-          if (nowSecVisible !== wasSecVisible) {
-            secHeader.classList.toggle('is-visible', nowSecVisible);
-            header && header.classList.toggle('sec-active', nowSecVisible);
-            wasSecVisible = nowSecVisible;
-          }
-        }
-        lastScrollY = scrollY;
+        header && header.classList.toggle('scrolled', window.scrollY > 50);
         ticking = false;
       });
       ticking = true;
     }
   }, { passive: true });
 
-  // Mobile Categories Panel (right-slide)
   var menuToggle = document.getElementById('menuToggle');
   var mobilePanel = document.getElementById('mobilePanel');
   var mobileOverlay = document.getElementById('mobileOverlay');
@@ -61,7 +45,6 @@
     });
   }
 
-  // Desktop Nav Dropdown
   var dropdown = document.querySelector('.nav-dropdown');
   var dropdownTrigger = document.querySelector('.dropdown-trigger');
   if (dropdown && dropdownTrigger) {
@@ -76,18 +59,6 @@
     });
   }
 
-  // Sidebar Categories Toggle
-  document.querySelectorAll('.cat-toggle').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var widget = this.closest('.sidebar-widget');
-      var catList = widget ? widget.querySelector('.sidebar-cat') : null;
-      if (!catList) return;
-      catList.classList.toggle('collapsed');
-      this.textContent = catList.classList.contains('collapsed') ? '+' : '\u2212';
-    });
-  });
-
-  // Active nav link
   var currentPath = window.location.pathname;
   document.querySelectorAll('.nav-links a, .mobile-panel-body a').forEach(function(a) {
     var href = a.getAttribute('href');
@@ -96,7 +67,6 @@
     }
   });
 
-  // Category filtering via data-category links (only intercept on homepage)
   document.querySelectorAll('[data-category]').forEach(function(link) {
     link.addEventListener('click', function(e) {
       var cat = this.getAttribute('data-category');
@@ -111,7 +81,6 @@
     });
   });
 
-  // Category tag colors
   var tagColors = {
     crypto: '#f59e0b', bitcoin: '#f59e0b', stock: '#10b981',
     ai: '#8b5cf6', tech: '#3b82f6', gaming: '#ec4899',
@@ -130,4 +99,112 @@
     }
   });
 
+  var grid = document.getElementById('postGrid');
+  if (!grid) return;
+
+  var cards = Array.from(grid.querySelectorAll('.post-card'));
+  var perPage = 4;
+  var activeCategory = null;
+  var currentPage = 1;
+  var totalPages = 1;
+
+  function showPage(p) {
+    currentPage = p;
+    var idx = 0;
+    cards.forEach(function(c) {
+      if (c.dataset.matchCategory === '1') {
+        var pageIdx = Math.floor(idx / perPage);
+        c.style.display = (pageIdx + 1 === p) ? '' : 'none';
+        idx++;
+      } else {
+        c.style.display = 'none';
+      }
+    });
+    renderPagination();
+  }
+
+  function applyFilter() {
+    var matchCount = 0;
+    cards.forEach(function(c) {
+      var tag = c.querySelector('.cat-tag');
+      var match = !activeCategory || (tag && tag.textContent.trim().toLowerCase() === activeCategory);
+      c.dataset.matchCategory = match ? '1' : '0';
+      if (match) matchCount++;
+    });
+    totalPages = Math.ceil(matchCount / perPage) || 1;
+    showPage(1);
+  }
+
+  function renderPagination() {
+    var el = document.getElementById('pagination');
+    if (!el) return;
+    if (totalPages <= 1) { el.innerHTML = ''; return; }
+
+    var html = '';
+    if (currentPage > 1) {
+      html += '<a href="#" data-page="' + (currentPage - 1) + '" class="prev" aria-label="Previous page">&lsaquo;</a>';
+    } else {
+      html += '<span class="disabled" aria-hidden="true">&lsaquo;</span>';
+    }
+    for (var i = 1; i <= totalPages; i++) {
+      html += i === currentPage ? '<span class="active">' + i + '</span>' : '<a href="#" data-page="' + i + '">' + i + '</a>';
+    }
+    if (currentPage < totalPages) {
+      html += '<a href="#" data-page="' + (currentPage + 1) + '" class="next" aria-label="Next page">&rsaquo;</a>';
+    } else {
+      html += '<span class="disabled" aria-hidden="true">&rsaquo;</span>';
+    }
+    html += '<span class="page-info">' + currentPage + ' / ' + totalPages + '</span>';
+    el.innerHTML = html;
+
+    el.querySelectorAll('a[data-page]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        showPage(parseInt(this.getAttribute('data-page')));
+        var top = document.getElementById('postGrid');
+        if (top) top.scrollIntoView({ block: 'start' });
+      });
+    });
+  }
+
+  window.filterByCategory = function(cat) {
+    var filterBar = document.getElementById('filterBar');
+    if (cat === activeCategory) {
+      activeCategory = null;
+      if (filterBar) filterBar.style.display = 'none';
+    } else {
+      activeCategory = cat;
+      if (filterBar) {
+        filterBar.style.display = 'flex';
+        filterBar.querySelector('.filter-cat-name').textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
+      }
+    }
+    var url = new URL(window.location);
+    if (activeCategory) {
+      url.searchParams.set('category', activeCategory);
+    } else {
+      url.searchParams.delete('category');
+    }
+    history.pushState({}, '', url);
+    applyFilter();
+  };
+
+  var clearBtn = document.getElementById('clearFilter');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function() {
+      window.filterByCategory(activeCategory);
+    });
+  }
+
+  var params = new URLSearchParams(window.location.search);
+  var catFromUrl = params.get('category');
+  if (catFromUrl) {
+    activeCategory = catFromUrl.toLowerCase();
+    var fb = document.getElementById('filterBar');
+    if (fb) {
+      fb.style.display = 'flex';
+      fb.querySelector('.filter-cat-name').textContent = activeCategory.charAt(0).toUpperCase() + activeCategory.slice(1);
+    }
+  }
+  applyFilter();
 })();
