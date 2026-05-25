@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title and page.title != 'Home' %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
+  <title>{% if page.title and page.title != 'Home' %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} â€” {{ site.tagline }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}, {% endif %}{{ site.keywords | default: 'trending news, daily insights, AI, crypto, stocks, tech, gaming, sports, entertainment, health, science, business, politics, world news' }}">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
@@ -36,7 +36,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="preconnect" href="https://images.unsplash.com">
-  <style>:root{--primary:#e01a4f;--primary-dark:#a4172f;--bg:#0a0a0a;--bg-card:#181818;--bg-surface:#1a1a1e;--text:#e2e2e2;--text-light:#a0a0aa;--text-muted:#6b6b78;--border:#333;--radius:6px;--font:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;--shadow:0 2px 8px rgba(0,0,0,0.3)}*{margin:0;padding:0;box-sizing:border-box}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}a{color:inherit;text-decoration:none}html{scroll-behavior:auto}body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}::selection{background:var(--primary);color:#fff}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:#333;border-radius:3px}header{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px solid var(--border);padding:8px 0;will-change:transform}header.scrolled{box-shadow:0 2px 8px rgba(0,0,0,0.4)}header .container{display:flex;justify-content:space-between;align-items:center}.logo a{text-decoration:none;font-size:1.4em;font-weight:700;color:#fff;display:flex;align-items:center;gap:6px}.logo-icon{color:var(--primary)}.logo span{color:var(--primary)}.nav-links{display:flex;align-items:center;gap:24px}.nav-links a{font-size:0.8em;font-weight:500;padding:4px 0;position:relative;color:var(--text-light);transition:color 0.2s}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--primary);transition:width 0.2s ease}.nav-links a:hover{color:#fff}.nav-links a:hover::after{width:100%}.nav-links a.nav-active{color:var(--primary)}.nav-links a.nav-active::after{width:100%}.menu-toggle{display:none;flex-direction:column;gap:4px;background:none;border:none;cursor:pointer;padding:6px;z-index:200}.menu-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:0.2s}.site-wrap{max-width:1200px;margin:0 auto;padding:28px 20px}.main-content{min-width:0}</style>
+  <style>:root{--primary:#e01a4f;--primary-dark:#a4172f;--bg:#050505;--bg-card:rgba(255,255,255,0.03);--bg-surface:#1a1a1e;--text:#e2e2e2;--text-light:#a0a0aa;--text-muted:#6b6b78;--border:rgba(255,255,255,0.06);--radius:16px;--font:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;--shadow:0 10px 30px rgba(0,0,0,0.45)}*{margin:0;padding:0;box-sizing:border-box}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}a{color:inherit;text-decoration:none}html{scroll-behavior:auto}body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}::selection{background:var(--primary);color:#fff}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:#333;border-radius:3px}header{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px solid var(--border);padding:8px 0;will-change:transform}header.scrolled{box-shadow:0 2px 8px rgba(0,0,0,0.4)}header .container{display:flex;justify-content:space-between;align-items:center}.logo a{text-decoration:none;font-size:1.4em;font-weight:700;color:#fff;display:flex;align-items:center;gap:6px}.logo-icon{color:var(--primary)}.logo span{color:var(--primary)}.nav-links{display:flex;align-items:center;gap:24px}.nav-links a{font-size:0.8em;font-weight:500;padding:4px 0;position:relative;color:var(--text-light);transition:color 0.2s}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--primary);transition:width 0.2s ease}.nav-links a:hover{color:#fff}.nav-links a:hover::after{width:100%}.nav-links a.nav-active{color:var(--primary)}.nav-links a.nav-active::after{width:100%}.menu-toggle{display:none;flex-direction:column;gap:4px;background:none;border:none;cursor:pointer;padding:6px;z-index:200}.menu-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:0.2s}.site-wrap{max-width:1800px;margin:0 auto;padding:28px 20px}.main-content{min-width:0}</style>
   <link rel="preload" as="style" href="{{ '/assets/css/style.css' | relative_url }}" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"></noscript>
   <link rel="canonical" href="{{ page.url | absolute_url }}">
@@ -129,30 +129,30 @@
 <header id="header">
   <div class="container">
     <div class="logo">
-      <a href="{{ '/' | relative_url }}" aria-label="{{ site.title }} Home"><span class="logo-icon" aria-hidden="true">◈</span> Pulse<span>Trends</span></a>
+      <a href="{{ '/' | relative_url }}" aria-label="{{ site.title }} Home"><span class="logo-icon" aria-hidden="true">â—ˆ</span> Pulse<span>Trends</span></a>
       <span class="tagline">Daily Trending Insights</span>
     </div>
     <nav class="nav-links" aria-label="Main navigation">
       <a href="{{ '/' | relative_url }}">Home</a>
       <div class="nav-dropdown">
-        <a href="#" class="dropdown-trigger">Categories ▾</a>
+        <a href="#" class="dropdown-trigger">Categories â–¾</a>
         <div class="dropdown-menu">
-          <a href="{{ '/crypto/' | relative_url }}" data-category="crypto"><span class="dd-dot" data-category="crypto">◆</span> Cryptocurrency</a>
-          <a href="{{ '/stocks/' | relative_url }}" data-category="stocks"><span class="dd-dot" data-category="stocks">◆</span> Stocks & Markets</a>
-          <a href="{{ '/ipos/' | relative_url }}" data-category="ipos"><span class="dd-dot" data-category="ipos">◆</span> IPOs & Listings</a>
-          <a href="{{ '/ai/' | relative_url }}" data-category="ai"><span class="dd-dot" data-category="ai">◆</span> Artificial Intelligence</a>
-          <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span class="dd-dot" data-category="tech">◆</span> Technology</a>
-          <a href="{{ '/gaming/' | relative_url }}" data-category="gaming"><span class="dd-dot" data-category="gaming">◆</span> Gaming</a>
-          <a href="{{ '/mobile/' | relative_url }}" data-category="mobile"><span class="dd-dot" data-category="mobile">◆</span> Mobile & Smartphones</a>
-          <a href="{{ '/phones/' | relative_url }}" data-category="phones"><span class="dd-dot" data-category="phones">◆</span> Upcoming Phones</a>
-          <a href="{{ '/sports/' | relative_url }}" data-category="sports"><span class="dd-dot" data-category="sports">◆</span> Sports</a>
-          <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment"><span class="dd-dot" data-category="entertainment">◆</span> Entertainment</a>
-          <a href="{{ '/health/' | relative_url }}" data-category="health"><span class="dd-dot" data-category="health">◆</span> Health & Fitness</a>
-          <a href="{{ '/science/' | relative_url }}" data-category="science"><span class="dd-dot" data-category="science">◆</span> Science & Space</a>
-          <a href="{{ '/business/' | relative_url }}" data-category="business"><span class="dd-dot" data-category="business">◆</span> Business</a>
-          <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span class="dd-dot" data-category="politics">◆</span> Politics</a>
-          <a href="{{ '/world/' | relative_url }}" data-category="world"><span class="dd-dot" data-category="world">◆</span> World News</a>
-          <a href="{{ '/weather/' | relative_url }}" data-category="weather"><span class="dd-dot" data-category="weather">◆</span> Weather & Climate</a>
+          <a href="{{ '/crypto/' | relative_url }}" data-category="crypto"><span class="dd-dot" data-category="crypto">â—†</span> Cryptocurrency</a>
+          <a href="{{ '/stocks/' | relative_url }}" data-category="stocks"><span class="dd-dot" data-category="stocks">â—†</span> Stocks & Markets</a>
+          <a href="{{ '/ipos/' | relative_url }}" data-category="ipos"><span class="dd-dot" data-category="ipos">â—†</span> IPOs & Listings</a>
+          <a href="{{ '/ai/' | relative_url }}" data-category="ai"><span class="dd-dot" data-category="ai">â—†</span> Artificial Intelligence</a>
+          <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span class="dd-dot" data-category="tech">â—†</span> Technology</a>
+          <a href="{{ '/gaming/' | relative_url }}" data-category="gaming"><span class="dd-dot" data-category="gaming">â—†</span> Gaming</a>
+          <a href="{{ '/mobile/' | relative_url }}" data-category="mobile"><span class="dd-dot" data-category="mobile">â—†</span> Mobile & Smartphones</a>
+          <a href="{{ '/phones/' | relative_url }}" data-category="phones"><span class="dd-dot" data-category="phones">â—†</span> Upcoming Phones</a>
+          <a href="{{ '/sports/' | relative_url }}" data-category="sports"><span class="dd-dot" data-category="sports">â—†</span> Sports</a>
+          <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment"><span class="dd-dot" data-category="entertainment">â—†</span> Entertainment</a>
+          <a href="{{ '/health/' | relative_url }}" data-category="health"><span class="dd-dot" data-category="health">â—†</span> Health & Fitness</a>
+          <a href="{{ '/science/' | relative_url }}" data-category="science"><span class="dd-dot" data-category="science">â—†</span> Science & Space</a>
+          <a href="{{ '/business/' | relative_url }}" data-category="business"><span class="dd-dot" data-category="business">â—†</span> Business</a>
+          <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span class="dd-dot" data-category="politics">â—†</span> Politics</a>
+          <a href="{{ '/world/' | relative_url }}" data-category="world"><span class="dd-dot" data-category="world">â—†</span> World News</a>
+          <a href="{{ '/weather/' | relative_url }}" data-category="weather"><span class="dd-dot" data-category="weather">â—†</span> Weather & Climate</a>
         </div>
       </div>
       <a href="{{ '/about/' | relative_url }}">About</a>
@@ -169,25 +169,25 @@
 <div class="mobile-panel" id="mobilePanel">
   <div class="mobile-panel-header">
     <span class="mobile-panel-title">Categories</span>
-    <button class="mobile-panel-close" id="panelClose">✕</button>
+    <button class="mobile-panel-close" id="panelClose">âœ•</button>
   </div>
   <div class="mobile-panel-body">
-    <a href="{{ '/ai/' | relative_url }}" data-category="ai">AI ↗</a>
-    <a href="{{ '/tech/' | relative_url }}" data-category="tech">Technology ↗</a>
-    <a href="{{ '/politics/' | relative_url }}" data-category="politics">Politics ↗</a>
-    <a href="{{ '/finance/' | relative_url }}" data-category="finance">Finance & Money ↗</a>
-    <a href="{{ '/crypto/' | relative_url }}" data-category="crypto">Cryptocurrency ↗</a>
-    <a href="{{ '/stocks/' | relative_url }}" data-category="stocks">Stocks & Markets ↗</a>
-    <a href="{{ '/gaming/' | relative_url }}" data-category="gaming">Gaming ↗</a>
-    <a href="{{ '/mobile/' | relative_url }}" data-category="mobile">Mobile & Android ↗</a>
-    <a href="{{ '/phones/' | relative_url }}" data-category="phones">Upcoming Phones ↗</a>
-    <a href="{{ '/sports/' | relative_url }}" data-category="sports">Sports ↗</a>
-    <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment">Entertainment ↗</a>
-    <a href="{{ '/health/' | relative_url }}" data-category="health">Health & Fitness ↗</a>
-    <a href="{{ '/science/' | relative_url }}" data-category="science">Science & Space ↗</a>
-    <a href="{{ '/business/' | relative_url }}" data-category="business">Business ↗</a>
-    <a href="{{ '/weather/' | relative_url }}" data-category="weather">Weather & Climate ↗</a>
-    <a href="{{ '/ipos/' | relative_url }}">IPOs & Listings ↗</a>
+    <a href="{{ '/ai/' | relative_url }}" data-category="ai">AI â†—</a>
+    <a href="{{ '/tech/' | relative_url }}" data-category="tech">Technology â†—</a>
+    <a href="{{ '/politics/' | relative_url }}" data-category="politics">Politics â†—</a>
+    <a href="{{ '/finance/' | relative_url }}" data-category="finance">Finance & Money â†—</a>
+    <a href="{{ '/crypto/' | relative_url }}" data-category="crypto">Cryptocurrency â†—</a>
+    <a href="{{ '/stocks/' | relative_url }}" data-category="stocks">Stocks & Markets â†—</a>
+    <a href="{{ '/gaming/' | relative_url }}" data-category="gaming">Gaming â†—</a>
+    <a href="{{ '/mobile/' | relative_url }}" data-category="mobile">Mobile & Android â†—</a>
+    <a href="{{ '/phones/' | relative_url }}" data-category="phones">Upcoming Phones â†—</a>
+    <a href="{{ '/sports/' | relative_url }}" data-category="sports">Sports â†—</a>
+    <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment">Entertainment â†—</a>
+    <a href="{{ '/health/' | relative_url }}" data-category="health">Health & Fitness â†—</a>
+    <a href="{{ '/science/' | relative_url }}" data-category="science">Science & Space â†—</a>
+    <a href="{{ '/business/' | relative_url }}" data-category="business">Business â†—</a>
+    <a href="{{ '/weather/' | relative_url }}" data-category="weather">Weather & Climate â†—</a>
+    <a href="{{ '/ipos/' | relative_url }}">IPOs & Listings â†—</a>
   </div>
 </div>
 
@@ -257,7 +257,7 @@
 
       {% assign read_time = content | strip_html | number_of_words | divided_by: 200 | plus: 1 %}
       <div class="article-footer-meta">
-        <span class="read-time">📖 {{ read_time }} min read</span>
+        <span class="read-time">ðŸ“– {{ read_time }} min read</span>
         <div class="share-buttons">
           <span>Share:</span>
           <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url }}" target="_blank" rel="noopener" aria-label="Share on Twitter">Twitter</a>
@@ -306,14 +306,14 @@
   <aside class="sidebar" aria-label="Sidebar">
     <div class="sidebar-inner">
       <div class="sidebar-widget">
-        <h3><button class="cat-toggle" aria-label="Toggle categories">+</button> <span class="widget-icon" aria-hidden="true">◆</span> Categories</h3>
+        <h3><button class="cat-toggle" aria-label="Toggle categories">+</button> <span class="widget-icon" aria-hidden="true">â—†</span> Categories</h3>
         <div class="sidebar-cat collapsed">
-          <a href="{{ '/ai/' | relative_url }}" data-category="ai"><span>AI</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span>Technology</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/phones/' | relative_url }}" data-category="phones"><span>Upcoming Phones</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span>Politics</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/finance/' | relative_url }}" data-category="finance"><span>Finance & Money</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/ipos/' | relative_url }}"><span>IPOs & Listings</span><span class="cat-count" aria-hidden="true">↗</span></a>
+          <a href="{{ '/ai/' | relative_url }}" data-category="ai"><span>AI</span><span class="cat-count" aria-hidden="true">â†—</span></a>
+          <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span>Technology</span><span class="cat-count" aria-hidden="true">â†—</span></a>
+          <a href="{{ '/phones/' | relative_url }}" data-category="phones"><span>Upcoming Phones</span><span class="cat-count" aria-hidden="true">â†—</span></a>
+          <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span>Politics</span><span class="cat-count" aria-hidden="true">â†—</span></a>
+          <a href="{{ '/finance/' | relative_url }}" data-category="finance"><span>Finance & Money</span><span class="cat-count" aria-hidden="true">â†—</span></a>
+          <a href="{{ '/ipos/' | relative_url }}"><span>IPOs & Listings</span><span class="cat-count" aria-hidden="true">â†—</span></a>
         </div>
       </div>
     </div>
@@ -325,7 +325,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="footer-logo" aria-label="{{ site.title }}">◈ Pulse<span>Trends</span></div>
+        <div class="footer-logo" aria-label="{{ site.title }}">â—ˆ Pulse<span>Trends</span></div>
         <p>Your daily source for trending insights across gaming, mobile tech, crypto, stocks, AI, sports, entertainment, health, science, business, politics, weather, and world news. Fresh content published every day from hundreds of global sources.</p>
       </div>
       <div class="footer-links">
@@ -360,7 +360,7 @@
     </div>
     <div class="footer-bottom">
       <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
-      <p class="footer-made">Made with ◈ for insight</p>
+      <p class="footer-made">Made with â—ˆ for insight</p>
     </div>
   </div>
 </footer>
