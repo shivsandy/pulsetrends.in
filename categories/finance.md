@@ -1,5 +1,9 @@
 ---
-title: Finance & Money
+layout: category
+title: Finance
 category_id: finance
-permalink: /finance/
+pagination:
+  enabled: true
+  category: finance
+  permalink: '/finance/page/:num/'
 ---

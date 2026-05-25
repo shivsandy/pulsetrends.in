@@ -1,7 +1,9 @@
 ---
-layout: redirect
+layout: category
 title: IPOs & Listings
 category_id: ipos
-permalink: /ipos/
-redirect_to: /ipodashboard/
+pagination:
+  enabled: true
+  category: ipos
+  permalink: '/ipos/page/:num/'
 ---

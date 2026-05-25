@@ -1,5 +1,9 @@
 ---
-title: Artificial Intelligence
+layout: category
+title: AI
 category_id: ai
-permalink: /ai/
+pagination:
+  enabled: true
+  category: ai
+  permalink: '/ai/page/:num/'
 ---

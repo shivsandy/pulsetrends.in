@@ -1,5 +1,9 @@
 ---
+layout: category
 title: Gaming
 category_id: gaming
-permalink: /gaming/
+pagination:
+  enabled: true
+  category: gaming
+  permalink: '/gaming/page/:num/'
 ---

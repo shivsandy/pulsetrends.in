@@ -1,5 +1,9 @@
 ---
-title: Mobile & Smartphones
+layout: category
+title: Mobile
 category_id: mobile
-permalink: /mobile/
+pagination:
+  enabled: true
+  category: mobile
+  permalink: '/mobile/page/:num/'
 ---

@@ -1,5 +1,9 @@
 ---
-title: Science & Space
+layout: category
+title: Science
 category_id: science
-permalink: /science/
+pagination:
+  enabled: true
+  category: science
+  permalink: '/science/page/:num/'
 ---

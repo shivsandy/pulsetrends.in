@@ -1,5 +1,9 @@
 ---
-title: Health & Fitness
+layout: category
+title: Health
 category_id: health
-permalink: /health/
+pagination:
+  enabled: true
+  category: health
+  permalink: '/health/page/:num/'
 ---

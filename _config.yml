@@ -17,6 +17,16 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-paginate-v2
+
+# Pagination v2
+pagination:
+  enabled: true
+  per_page: 8
+  permalink: '/page/:num/'
+  sort_field: 'date'
+  sort_reverse: true
+  title: ":title - page :num"
 
 defaults:
   - scope:

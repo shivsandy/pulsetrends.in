@@ -38,3 +38,26 @@ jobs:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
         run: python generate_post.py
+
+      - name: Commit new posts
+        run: |
+          git config user.name "PulseTrends Bot"
+          git config user.email "noreply@example.com"
+          git add _posts/ categories/*.md
+          git diff --cached --quiet || git commit -m "Auto: new articles $(date +%F)"
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages

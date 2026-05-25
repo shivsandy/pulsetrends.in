@@ -2,17 +2,16 @@
 layout: default
 ---
 
-{% assign category_id = page.category_id %}
 {% assign display_name = page.title %}
-{% assign cat_posts = site.posts | where_exp: "p", "p.tags contains category_id" %}
 
+{% if paginator.posts.size > 0 %}
 <div class="page-content">
   <h1>{{ display_name }}</h1>
   <p>Latest articles in {{ display_name }}.</p>
 </div>
 
-<div class="section-grid" id="categoryGrid">
-  {% for post in cat_posts %}
+<div class="section-grid">
+  {% for post in paginator.posts %}
   <article class="section-card">
     <a href="{{ post.url | relative_url }}">
       <div class="section-card-img">
@@ -31,12 +30,32 @@ layout: default
   </article>
   {% endfor %}
 </div>
-{% if cat_posts.size > 8 %}
-<div class="pagination" id="categoryPagination"></div>
+
+{% if paginator.total_pages > 1 %}
+<nav class="pagination category-pagination" aria-label="Category pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-btn" rel="prev">&lsaquo; Prev</a>
+  {% else %}
+  <span class="pagination-btn disabled">&lsaquo; Prev</span>
+  {% endif %}
+  {% for trail in paginator.page_trail %}
+    <a href="{{ trail.path | relative_url }}" class="pagination-btn{% if trail.num == paginator.page %} active{% endif %}"{% if trail.num == paginator.page %} aria-current="page"{% endif %}>{{ trail.num }}</a>
+  {% endfor %}
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-btn" rel="next">Next &rsaquo;</a>
+  {% else %}
+  <span class="pagination-btn disabled">Next &rsaquo;</span>
+  {% endif %}
+</nav>
 {% endif %}
 
-{% if cat_posts.size == 0 %}
+{% if paginator.next_page %}
+<link rel="prefetch" href="{{ paginator.next_page_path | relative_url }}">
+{% endif %}
+
+{% else %}
 <div class="page-content">
+  <h1>{{ display_name }}</h1>
   <p>No articles in this category yet. Check back soon!</p>
 </div>
 {% endif %}

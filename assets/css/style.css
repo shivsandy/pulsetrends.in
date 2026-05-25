@@ -304,6 +304,10 @@ header .container { display: flex; justify-content: space-between; align-items: 
   color: #fff;
   border-color: var(--primary);
 }
+.pagination-btn.disabled {
+  opacity: 0.3; pointer-events: none; cursor: default;
+}
+.category-pagination { margin-top: 32px; }
 
 /* ─── Right Column: IPO Cards ─── */
 .home-col-right {
