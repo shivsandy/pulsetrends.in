@@ -234,7 +234,33 @@
 <div class="container site-wrap">
   <main class="main-content" id="main-content">
     {% if page.date %}
-    <article class="article-page" itemscope itemtype="https://schema.org/Article">
+    <div class="home-three-col">
+
+      <aside class="home-col-left">
+        {% assign left_posts = site.posts | slice: 0, 10 %}
+        {% for post in left_posts %}
+        <article class="left-card">
+          <a href="{{ post.url | relative_url }}">
+            <div class="left-card-img">
+              {% if post.image %}
+              <img src="{{ post.image | replace: 'w=1200', 'w=200' | replace: 'w=800', 'w=200' }}&auto=format&q=50" alt="{{ post.title }}" width="200" height="200" loading="lazy" decoding="async">
+              {% else %}
+              <div class="img-fallback"><span class="fallback-icon"></span></div>
+              {% endif %}
+            </div>
+            <div class="left-card-body">
+              {% if post.tags.size > 0 %}<span class="cat-tag">{{ post.tags.first }}</span>{% endif %}
+              <h3>{{ post.title | truncate: 50 }}</h3>
+              <span class="excerpt">{{ post.excerpt | strip_html | truncatewords: 12 }}</span>
+              <span class="meta">{{ post.date | date: "%b %d, %Y" }}</span>
+            </div>
+          </a>
+        </article>
+        {% endfor %}
+      </aside>
+
+      <main class="home-col-center">
+        <article class="article-page" itemscope itemtype="https://schema.org/Article">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
         <a href="{{ '/' | relative_url }}">Home</a>
         <span class="sep">/</span>
@@ -303,21 +329,20 @@
       {% if related.size > 0 %}
       <div class="related-posts">
         <h2>Related Articles</h2>
-        <div class="post-grid">
+        <div class="section-grid">
           {% for post in related %}
-          <article class="post-card">
+          <article class="section-card">
             <a href="{{ post.url | relative_url }}">
-              <div class="card-img-wrap">
+              <div class="section-card-img">
                 {% if post.image %}
-                <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" class="post-card-img" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px">
+                <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" loading="lazy" decoding="async">
                 {% else %}
-                <div class="post-card-img" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
+                <div class="img-fallback"><span class="fallback-icon"></span></div>
                 {% endif %}
               </div>
-              <div class="post-card-body">
+              <div class="section-card-body">
                 <span class="cat-tag">{{ cat_id }}</span>
                 <h3>{{ post.title }}</h3>
-                <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
                 <span class="meta">{{ post.date | date: "%B %d, %Y" }}</span>
               </div>
             </a>
@@ -328,11 +353,20 @@
       {% endif %}
       {% endif %}
     </article>
+      </main>
+
+      <aside class="home-col-right">
+        <div class="ipo-section-title">IPO Stocks Watchlist</div>
+        <div class="ipo-stock-list" id="ipoStockList"></div>
+        <a href="/ipodashboard/" class="ipo-view-more" title="View complete IPO dashboard" aria-label="View full IPO dashboard">View More &rarr;</a>
+      </aside>
+
+    </div>
     {% else %}
     {{ content }}
     {% endif %}
   </main>
-  {% unless page.title == 'Home' %}
+  {% unless page.date or page.title == 'Home' %}
   <aside class="sidebar" aria-label="Sidebar">
     <div class="sidebar-inner">
       <div class="sidebar-widget">

@@ -362,8 +362,8 @@ article.article-page {
   background: var(--bg-card); border: 1px solid var(--border);
   border-radius: var(--radius); overflow: hidden; margin-bottom: 40px;
 }
-.article-img-wrap { position: relative; width: 100%; max-height: 380px; overflow: hidden; aspect-ratio: 16/9; }
-.article-img-wrap img.featured-img { width: 100%; max-height: 380px; object-fit: cover; display: block; position: absolute; inset: 0; }
+.article-img-wrap { width: 100%; max-height: 380px; overflow: hidden; }
+.article-img-wrap img.featured-img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
 .article-header { padding: 0 28px; margin-top: -40px; position: relative; z-index: 2; background: var(--bg-card); }
 .article-meta-top { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; padding-top: 24px; }
 .article-meta-top .cat-tag { display: inline-block; background: var(--primary); color: #fff; padding: 5px 12px; border-radius: 3px; font-size: 0.7em; font-weight: 600; text-transform: uppercase; }
@@ -422,7 +422,7 @@ footer { background: var(--bg-surface); border-top: 1px solid var(--border); pad
 /* ─── Related Posts ─── */
 .related-posts { padding: 0 28px 28px; }
 .related-posts h2 { font-size: 1.1em; font-weight: 700; margin-bottom: 16px; color: #fff; }
-.related-posts .post-grid { margin-bottom: 0; }
+.related-posts .section-grid { grid-template-columns: repeat(3, 1fr); }
 
 /* ─── Mobile Panel ─── */
 .mobile-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 150; opacity: 0; pointer-events: none; transition: opacity 0.2s; }
