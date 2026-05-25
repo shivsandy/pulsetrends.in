@@ -21,7 +21,6 @@ FALLBACK_FREE_MODELS = [
 GOOGLE_FREE_MODELS = [
     "gemini-2.5-flash",
     "gemini-2.0-flash",
-    "gemini-1.5-flash",
 ]
 
 _model_health: Dict[str, dict] = {}
@@ -250,7 +249,7 @@ def generate_analysis(ipo: dict, api_keys: List[dict], google_keys: List[dict], 
                 status_code = None
                 if hasattr(e, "status_code"):
                     status_code = e.status_code
-                elif hasattr(e, "response"):
+                elif hasattr(e, "response") and e.response is not None:
                     status_code = e.response.status_code
                 _record_failure("google", key_index, model, status_code)
                 print(f"[IPO Analyzer] Fail GA key{key_index} model={model}: {e}")
@@ -280,7 +279,7 @@ def generate_analysis(ipo: dict, api_keys: List[dict], google_keys: List[dict], 
                 status_code = None
                 if hasattr(e, "status_code"):
                     status_code = e.status_code
-                elif hasattr(e, "response"):
+                elif hasattr(e, "response") and e.response is not None:
                     status_code = e.response.status_code
                 _record_failure("openrouter", key_index, model, status_code)
                 print(f"[IPO Analyzer] Fail OR key{key_index} model={model}: {e}")
