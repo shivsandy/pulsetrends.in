@@ -339,18 +339,18 @@ def analyze(ipos: List[dict]):
     models = discover_free_models(api_keys) if api_keys else FALLBACK_FREE_MODELS
     cache = load_cache()
 
-    upcoming = [x for x in ipos if x.get("status") == "upcoming"]
+    all_ipos = [x for x in ipos]
     to_analyze = []
-    for ipo in upcoming:
+    for ipo in all_ipos:
         key = _analysis_key(ipo)
         if key not in cache:
             to_analyze.append(ipo)
 
     if not to_analyze:
-        print(f"[IPO Analyzer] All {len(upcoming)} upcoming IPOs already analyzed, nothing to do")
+        print(f"[IPO Analyzer] All {len(all_ipos)} IPOs already analyzed, nothing to do")
         return
 
-    print(f"[IPO Analyzer] {len(to_analyze)}/{len(upcoming)} upcoming IPOs need analysis ({len(cache)} cached)")
+    print(f"[IPO Analyzer] {len(to_analyze)}/{len(all_ipos)} IPOs need analysis ({len(cache)} cached)")
 
     for idx, ipo in enumerate(to_analyze):
         print(f"[IPO Analyzer] [{idx + 1}/{len(to_analyze)}] {ipo.get('company_name', '')}")
