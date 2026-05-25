@@ -2,8 +2,9 @@
 layout: category
 title: Sports
 category_id: sports
+permalink: /sports/
 pagination:
   enabled: true
-  category: sports
+  tag: sports
   permalink: '/sports/page/:num/'
 ---

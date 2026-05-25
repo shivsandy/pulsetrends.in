@@ -2,8 +2,9 @@
 layout: category
 title: IPOs & Listings
 category_id: ipos
+permalink: /ipos/
 pagination:
   enabled: true
-  category: ipos
+  tag: ipos
   permalink: '/ipos/page/:num/'
 ---

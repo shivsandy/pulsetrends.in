@@ -2,8 +2,9 @@
 layout: category
 title: Finance
 category_id: finance
+permalink: /finance/
 pagination:
   enabled: true
-  category: finance
+  tag: finance
   permalink: '/finance/page/:num/'
 ---

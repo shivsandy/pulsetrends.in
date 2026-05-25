@@ -2,8 +2,9 @@
 layout: category
 title: Weather & Climate
 category_id: weather
+permalink: /weather/
 pagination:
   enabled: true
-  category: weather
+  tag: weather
   permalink: '/weather/page/:num/'
 ---

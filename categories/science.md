@@ -2,8 +2,9 @@
 layout: category
 title: Science
 category_id: science
+permalink: /science/
 pagination:
   enabled: true
-  category: science
+  tag: science
   permalink: '/science/page/:num/'
 ---

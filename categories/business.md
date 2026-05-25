@@ -2,8 +2,9 @@
 layout: category
 title: Business
 category_id: business
+permalink: /business/
 pagination:
   enabled: true
-  category: business
+  tag: business
   permalink: '/business/page/:num/'
 ---

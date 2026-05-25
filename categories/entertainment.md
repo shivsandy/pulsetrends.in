@@ -2,8 +2,9 @@
 layout: category
 title: Entertainment
 category_id: entertainment
+permalink: /entertainment/
 pagination:
   enabled: true
-  category: entertainment
+  tag: entertainment
   permalink: '/entertainment/page/:num/'
 ---

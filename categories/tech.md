@@ -2,8 +2,9 @@
 layout: category
 title: Technology
 category_id: tech
+permalink: /tech/
 pagination:
   enabled: true
-  category: tech
+  tag: tech
   permalink: '/tech/page/:num/'
 ---

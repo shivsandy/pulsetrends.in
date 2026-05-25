@@ -2,8 +2,9 @@
 layout: category
 title: Stocks & Markets
 category_id: stocks
+permalink: /stocks/
 pagination:
   enabled: true
-  category: stocks
+  tag: stocks
   permalink: '/stocks/page/:num/'
 ---

@@ -2,8 +2,9 @@
 layout: category
 title: Mobile
 category_id: mobile
+permalink: /mobile/
 pagination:
   enabled: true
-  category: mobile
+  tag: mobile
   permalink: '/mobile/page/:num/'
 ---
