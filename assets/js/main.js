@@ -27,17 +27,15 @@
     document.body.style.overflow = '';
     isMenuOpen = false;
   }
-
   function openPanel() {
     mobilePanel.classList.add('open');
     mobileOverlay.classList.add('open');
     document.body.style.overflow = 'hidden';
     isMenuOpen = true;
   }
-
   if (menuToggle && mobilePanel) {
     menuToggle.addEventListener('click', function() {
-      if (isMenuOpen) { closePanel(); } else { openPanel(); }
+      isMenuOpen ? closePanel() : openPanel();
     });
     if (panelClose) panelClose.addEventListener('click', closePanel);
     if (mobileOverlay) mobileOverlay.addEventListener('click', closePanel);
@@ -90,12 +88,14 @@
   });
 
   // ─── Multi-Section Pagination ───
+  var sections = [];
+
   function initPagination(gridId, paginationId, perPage) {
     var grid = document.getElementById(gridId);
     var paginationEl = document.getElementById(paginationId);
     if (!grid || !paginationEl) return;
 
-    var cards = Array.from(grid.querySelectorAll('.section-card'));
+    var cards = Array.from(grid.querySelectorAll('.section-card, .left-card'));
     if (cards.length === 0) return;
 
     var currentPage = 1;
@@ -139,62 +139,73 @@
     }
 
     showPage(1);
+    sections.push({ grid: grid, paginationEl: paginationEl });
   }
 
-  // Initialize pagination for all sections
+  initPagination('leftGrid', 'leftPagination', 5);
   initPagination('latestGrid', 'latestPagination', 4);
   initPagination('techGrid', 'techPagination', 4);
   initPagination('marketsGrid', 'marketsPagination', 4);
-  initPagination('ipoGrid', 'ipoPagination', 4);
+  initPagination('ipoNewsGrid', 'ipoNewsPagination', 4);
 
-  // ─── IPO Dashboard Stats ───
-  function loadIPOStats() {
+  // ─── Scroll Reveal Pagination ───
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    sections.forEach(function(s) {
+      if (s.paginationEl && s.paginationEl.innerHTML.trim() !== '') {
+        observer.observe(s.paginationEl);
+      }
+    });
+  } else {
+    sections.forEach(function(s) {
+      if (s.paginationEl) s.paginationEl.classList.add('visible');
+    });
+  }
+
+  // ─── IPO Stock Cards (fetch JSON, show first 8) ───
+  function loadIPOStocks() {
+    var container = document.getElementById('ipoStockList');
+    if (!container) return;
+
     fetch('/ipodashboard/data/ipos.json')
       .then(function(res) { return res.json(); })
-      .catch(function(err) { console.error('Failed to load IPO data:', err); })
       .then(function(data) {
-        if (!data || !Array.isArray(data)) return;
-
-        var today = new Date();
-        today.setHours(0, 0, 0, 0);
-
-        var upcoming = 0, open = 0, closing = 0, listed = 0;
-
-        data.forEach(function(ipo) {
-          var status = (ipo.status || '').toLowerCase();
-          if (status === 'upcoming' || status === 'scheduled') upcoming++;
-          else if (status === 'open') open++;
-          else if (status === 'closing soon') closing++;
-          else if (status === 'listed') listed++;
-        });
-
-        document.getElementById('upcomingBadge') && (document.getElementById('upcomingBadge').textContent = upcoming);
-        document.getElementById('openBadge') && (document.getElementById('openBadge').textContent = open);
-        document.getElementById('closingBadge') && (document.getElementById('closingBadge').textContent = closing);
-        document.getElementById('listedBadge') && (document.getElementById('listedBadge').textContent = listed);
-
-        // Render IPO cards (top 5)
-        renderIPOCards(data.slice(0, 5));
+        var ipos = data.ipos || data;
+        if (!Array.isArray(ipos)) return;
+        var first8 = ipos.slice(0, 8);
+        container.innerHTML = first8.map(function(ipo) {
+          var name = ipo.company_name || ipo.company || 'Unknown';
+          var ticker = ipo.symbol || ipo.ticker || '';
+          var price = ipo.price_band || '';
+          var date = ipo.listing_date || '';
+          var status = (ipo.status || 'unknown').toLowerCase();
+          var statusClass = status === 'open' ? 'open' : status === 'listed' ? 'listed' : status === 'upcoming' || status === 'scheduled' ? 'upcoming' : 'closing';
+          return '<div class="ipo-stock-card">' +
+            '<div class="ipo-stock-name">' + name + '</div>' +
+            '<div class="ipo-stock-meta">' +
+            (ticker ? '<span class="ipo-stock-ticker">$' + ticker + '</span>' : '') +
+            '<span class="ipo-stock-dot">&#9679;</span>' +
+            '<span class="ipo-stock-status ' + statusClass + '">' + status + '</span>' +
+            '</div>' +
+            '<div class="ipo-stock-details">' +
+            (price ? '<span class="ipo-stock-price">' + price + '</span>' : '') +
+            (price && date ? '<span>|</span>' : '') +
+            (date ? '<span class="ipo-stock-date">' + date + '</span>' : '') +
+            '</div>' +
+            '</div>';
+        }).join('');
+      })
+      .catch(function() {
+        container.innerHTML = '<div style="padding:12px;font-size:0.75em;color:var(--text-muted);text-align:center;">IPO data unavailable</div>';
       });
   }
 
-  function renderIPOCards(ipos) {
-    var container = document.getElementById('ipoCardsContainer');
-    if (!container) return;
-
-    container.innerHTML = ipos.map(function(ipo) {
-      var logo = (ipo.company || ipo.ticker || '?').substring(0, 2).toUpperCase();
-      var status = (ipo.status || 'unknown').toLowerCase();
-      return '<div class="ipo-card">' +
-        '<div class="ipo-card-logo">' + logo + '</div>' +
-        '<div class="ipo-card-info">' +
-        '<div class="ipo-card-name">' + (ipo.company || ipo.ticker || 'Unknown') + '</div>' +
-        '<div class="ipo-card-status">' + (ipo.listing_date || '—') + '</div>' +
-        '</div>' +
-        '<span class="ipo-card-badge">' + status + '</span>' +
-        '</div>';
-    }).join('');
-  }
-
-  loadIPOStats();
+  loadIPOStocks();
 })();
