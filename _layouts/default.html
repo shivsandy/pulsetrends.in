@@ -299,9 +299,9 @@
     {{ content }}
     {% endif %}
   </main>
+  {% unless page.title == 'Home' %}
   <aside class="sidebar" aria-label="Sidebar">
     <div class="sidebar-inner">
-      {% unless page.title == 'Home' %}
       <div class="sidebar-widget">
         <h3><button class="cat-toggle" aria-label="Toggle categories">+</button> <span class="widget-icon" aria-hidden="true">◆</span> Categories</h3>
         <div class="sidebar-cat collapsed">
@@ -313,9 +313,9 @@
           <a href="{{ '/ipos/' | relative_url }}"><span>IPOs & Listings</span><span class="cat-count" aria-hidden="true">↗</span></a>
         </div>
       </div>
-      {% endunless %}
     </div>
   </aside>
+  {% endunless %}
 </div>
 
 <footer>
