@@ -5,7 +5,10 @@ title: Home
 
 {% assign posts = site.posts %}
 {% assign tech_posts = site.posts | where_exp: "p", "p.tags contains 'tech'" %}
-{% assign market_posts = site.posts | where_exp: "p", "p.tags contains 'stocks' or p.tags contains 'finance' or p.tags contains 'crypto'" %}
+{% assign stocks_posts = site.posts | where_exp: "p", "p.tags contains 'stocks'" %}
+{% assign finance_posts = site.posts | where_exp: "p", "p.tags contains 'finance'" %}
+{% assign crypto_posts = site.posts | where_exp: "p", "p.tags contains 'crypto'" %}
+{% assign market_posts = stocks_posts | concat: finance_posts | concat: crypto_posts %}
 {% assign ipo_posts = site.posts | where_exp: "p", "p.tags contains 'ipos'" %}
 
 <h1 class="sr-only">{{ site.title }}</h1>
