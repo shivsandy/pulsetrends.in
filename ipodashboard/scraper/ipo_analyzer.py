@@ -2,7 +2,9 @@ import json
 import os
 import random
 import re
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Dict, List, Optional
 
 import requests
@@ -169,7 +171,7 @@ def _call_openrouter(api_key: str, model: str, prompt: str) -> Optional[str]:
         "https://openrouter.ai/api/v1/chat/completions",
         headers=headers,
         json=data,
-        timeout=120,
+        timeout=30,
     )
     resp.raise_for_status()
     return resp.json()["choices"][0]["message"]["content"]
@@ -183,7 +185,7 @@ def _call_google(api_key: str, model: str, prompt: str) -> Optional[str]:
             "contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {"temperature": 0.3, "maxOutputTokens": 2048},
         },
-        timeout=120,
+        timeout=30,
     )
     resp.raise_for_status()
     data = resp.json()
@@ -351,14 +353,26 @@ def analyze(ipos: List[dict]):
 
     print(f"[IPO Analyzer] {len(to_analyze)}/{len(all_ipos)} IPOs need analysis ({len(cache)} cached)")
 
-    for idx, ipo in enumerate(to_analyze):
-        print(f"[IPO Analyzer] [{idx + 1}/{len(to_analyze)}] {ipo.get('company_name', '')}")
+    lock = threading.Lock()
+    done = [0]
+    def _process_ipo(ipo):
+        name = ipo.get("company_name", "")
         result = generate_analysis(ipo, api_keys, google_keys, models)
         if result:
             key = _analysis_key(ipo)
-            cache[key] = result
-            save_cache(cache)
-        else:
-            print(f"[IPO Analyzer] Failed to generate analysis for {ipo.get('company_name', '')}")
+            with lock:
+                cache[key] = result
+                save_cache(cache)
+                done[0] += 1
+                print(f"[IPO Analyzer] [{done[0]}/{len(to_analyze)}] OK {name}")
+            return
+        with lock:
+            done[0] += 1
+            print(f"[IPO Analyzer] [{done[0]}/{len(to_analyze)}] FAIL {name}")
+
+    with ThreadPoolExecutor(max_workers=5) as ex:
+        futures = [ex.submit(_process_ipo, ipo) for ipo in to_analyze]
+        for f in as_completed(futures):
+            pass
 
     print(f"[IPO Analyzer] Done. {len(cache)} total analyses cached")
