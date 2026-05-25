@@ -11,27 +11,29 @@ layout: default
   <p>Latest articles in {{ display_name }}.</p>
 </div>
 
-<div class="post-grid" id="categoryGrid">
+<div class="section-grid" id="categoryGrid">
   {% for post in cat_posts %}
-  <article class="post-card">
+  <article class="section-card">
     <a href="{{ post.url | relative_url }}">
-      <div class="card-img-wrap">
+      <div class="section-card-img">
         {% if post.image %}
-        <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ post.title }}" class="post-card-img" loading="lazy" decoding="async">
+        <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" width="400" height="250" loading="lazy" decoding="async">
         {% else %}
-        <div class="post-card-img" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
+        <div class="img-fallback"><span class="fallback-icon">&#9670;</span></div>
         {% endif %}
       </div>
-      <div class="post-card-body">
+      <div class="section-card-body">
         <span class="cat-tag">{{ display_name }}</span>
         <h3>{{ post.title }}</h3>
-        <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
-        <span class="meta">{{ post.date | date: "%B %d, %Y" }}</span>
+        <span class="meta">{{ post.date | date: "%b %d, %Y" }}</span>
       </div>
     </a>
   </article>
   {% endfor %}
 </div>
+{% if cat_posts.size > 8 %}
+<div class="pagination" id="categoryPagination"></div>
+{% endif %}
 
 {% if cat_posts.size == 0 %}
 <div class="page-content">

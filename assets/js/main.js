@@ -129,6 +129,7 @@
   }
 
   initPagination('latestGrid', 'latestPagination', 8);
+  initPagination('categoryGrid', 'categoryPagination', 8);
 
   // ─── IPO Stock Cards (fetch JSON, show first 8) ───
   function loadIPOStocks() {
