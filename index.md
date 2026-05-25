@@ -17,10 +17,9 @@ title: Home
 
 <div class="home-three-col">
 
-  <!-- LEFT COLUMN: 10 Square Cards (5 + 5 paginated) -->
+  <!-- LEFT COLUMN: 10 Compact Horizontal Cards -->
   <aside class="home-col-left">
     {% assign left_posts = posts | slice: 0, 10 %}
-    <div id="leftGrid">
     {% for post in left_posts %}
     <article class="left-card">
       <a href="{{ post.url | relative_url }}">
@@ -40,8 +39,6 @@ title: Home
       </a>
     </article>
     {% endfor %}
-    </div>
-    <div class="pagination" id="leftPagination"></div>
   </aside>
 
   <!-- CENTER COLUMN -->
@@ -50,14 +47,14 @@ title: Home
     <!-- HERO: Featured Article -->
     {% assign hero_post = posts.first %}
     {% if hero_post %}
-    <article class="section-card" style="grid-column: 1 / -1;">
+    <article class="hero-card">
       <a href="{{ hero_post.url | relative_url }}">
         {% if hero_post.image %}
-        <img src="{{ hero_post.image }}&auto=format&q=75" alt="{{ hero_post.title }}" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;" loading="eager" fetchpriority="high">
+        <img src="{{ hero_post.image }}&auto=format&q=75" alt="{{ hero_post.title }}" class="hero-card-img" loading="eager" fetchpriority="high">
         {% endif %}
         <div class="section-card-body">
           {% if hero_post.tags.size > 0 %}<span class="cat-tag">{{ hero_post.tags.first }}</span>{% endif %}
-          <h3 style="font-size:1.1em;">{{ hero_post.title }}</h3>
+          <h3 class="hero-title">{{ hero_post.title }}</h3>
           <span class="excerpt">{{ hero_post.excerpt | strip_html | truncatewords: 25 }}</span>
           <span class="meta">{{ hero_post.date | date: "%B %d, %Y" }}</span>
         </div>
@@ -124,7 +121,7 @@ title: Home
     {% if tech_posts.size > 0 %}
     <section class="content-section">
       <h2>Tech News</h2>
-      <div class="section-grid" id="techGrid">
+      <div class="section-grid">
         {% for post in tech_posts limit:8 %}
         <article class="section-card">
           <a href="{{ post.url | relative_url }}">
@@ -144,7 +141,6 @@ title: Home
         </article>
         {% endfor %}
       </div>
-      <div class="pagination" id="techPagination"></div>
     </section>
     {% endif %}
 
@@ -152,7 +148,7 @@ title: Home
     {% if market_posts.size > 0 %}
     <section class="content-section">
       <h2>Markets & Finance</h2>
-      <div class="section-grid" id="marketsGrid">
+      <div class="section-grid">
         {% for post in market_posts limit:8 %}
         <article class="section-card">
           <a href="{{ post.url | relative_url }}">
@@ -172,7 +168,6 @@ title: Home
         </article>
         {% endfor %}
       </div>
-      <div class="pagination" id="marketsPagination"></div>
     </section>
     {% endif %}
 
@@ -180,7 +175,7 @@ title: Home
     {% if ipo_posts.size > 0 %}
     <section class="content-section">
       <h2>IPO News</h2>
-      <div class="section-grid" id="ipoNewsGrid">
+      <div class="section-grid">
         {% for post in ipo_posts limit:8 %}
         <article class="section-card">
           <a href="{{ post.url | relative_url }}">
@@ -200,7 +195,6 @@ title: Home
         </article>
         {% endfor %}
       </div>
-      <div class="pagination" id="ipoNewsPagination"></div>
     </section>
     {% endif %}
 

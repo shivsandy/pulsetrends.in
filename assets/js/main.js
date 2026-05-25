@@ -87,15 +87,13 @@
     }
   });
 
-  // ─── Multi-Section Pagination ───
-  var sections = [];
-
+  // ─── Pagination (Latest section, button-based) ───
   function initPagination(gridId, paginationId, perPage) {
     var grid = document.getElementById(gridId);
     var paginationEl = document.getElementById(paginationId);
     if (!grid || !paginationEl) return;
 
-    var cards = Array.from(grid.querySelectorAll('.section-card, .left-card'));
+    var cards = Array.from(grid.querySelectorAll('.section-card'));
     if (cards.length === 0) return;
 
     var currentPage = 1;
@@ -104,34 +102,20 @@
     function showPage(p) {
       currentPage = p;
       cards.forEach(function(c, idx) {
-        var pageIdx = Math.floor(idx / perPage) + 1;
-        c.style.display = pageIdx === p ? '' : 'none';
+        c.style.display = Math.floor(idx / perPage) + 1 === p ? '' : 'none';
       });
       renderPagination();
     }
 
     function renderPagination() {
       if (totalPages <= 1) { paginationEl.innerHTML = ''; return; }
-
       var html = '';
-      if (currentPage > 1) {
-        html += '<a href="#" data-page="' + (currentPage - 1) + '" class="prev" rel="prev" aria-label="Previous page">&lsaquo; <span class="pg-label">Prev</span></a>';
-      } else {
-        html += '<span class="disabled" aria-hidden="true">&lsaquo; <span class="pg-label">Prev</span></span>';
-      }
       for (var i = 1; i <= totalPages; i++) {
-        html += i === currentPage ? '<span class="active">' + i + '</span>' : '<a href="#" data-page="' + i + '">' + i + '</a>';
-      }
-      if (currentPage < totalPages) {
-        html += '<a href="#" data-page="' + (currentPage + 1) + '" class="next" rel="next" aria-label="Next page"><span class="pg-label">Next</span> &rsaquo;</a>';
-      } else {
-        html += '<span class="disabled" aria-hidden="true"><span class="pg-label">Next</span> &rsaquo;</span>';
+        html += '<button class="pagination-btn' + (i === currentPage ? ' active' : '') + '" data-page="' + i + '">' + i + '</button>';
       }
       paginationEl.innerHTML = html;
-
-      paginationEl.querySelectorAll('a[data-page]').forEach(function(a) {
-        a.addEventListener('click', function(e) {
-          e.preventDefault();
+      paginationEl.querySelectorAll('.pagination-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
           showPage(parseInt(this.getAttribute('data-page')));
           grid.scrollIntoView({ block: 'start', behavior: 'smooth' });
         });
@@ -139,35 +123,9 @@
     }
 
     showPage(1);
-    sections.push({ grid: grid, paginationEl: paginationEl });
   }
 
-  initPagination('leftGrid', 'leftPagination', 5);
-  initPagination('latestGrid', 'latestPagination', 4);
-  initPagination('techGrid', 'techPagination', 4);
-  initPagination('marketsGrid', 'marketsPagination', 4);
-  initPagination('ipoNewsGrid', 'ipoNewsPagination', 4);
-
-  // ─── Scroll Reveal Pagination ───
-  if ('IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.3 });
-
-    sections.forEach(function(s) {
-      if (s.paginationEl && s.paginationEl.innerHTML.trim() !== '') {
-        observer.observe(s.paginationEl);
-      }
-    });
-  } else {
-    sections.forEach(function(s) {
-      if (s.paginationEl) s.paginationEl.classList.add('visible');
-    });
-  }
+  initPagination('latestGrid', 'latestPagination', 8);
 
   // ─── IPO Stock Cards (fetch JSON, show first 8) ───
   function loadIPOStocks() {
