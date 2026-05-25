@@ -116,17 +116,6 @@
     return arr;
   }
 
-  function renderIpoDetailsGrid(arr) {
-    if (!arr || arr.length === 0) {
-      return '<div class="section-pending">IPO details not available.</div>';
-    }
-    var html = '<div class="ipo-details-grid">';
-    for (var i = 0; i < arr.length; i++) {
-      html += '<div class="detail-item"><span class="detail-label">' + escHtml(arr[i].label) + '</span><span class="detail-value">' + escHtml(arr[i].value) + "</span></div>";
-    }
-    return html + "</div>";
-  }
-
   /* ─── Financial Metrics helpers ─── */
 
   function parseFinancialMetrics(text) {
@@ -137,26 +126,14 @@
       { key: "Profit", regex: /[Pp]rofit[:\s]*([^,;\.]+)/ },
       { key: "Debt", regex: /[Dd]ebt[:\s]*([^,;\.]+)/ },
       { key: "EPS", regex: /EPS[:\s]*([^,;\.]+)/ },
+      { key: "P/E", regex: /P\/?E[:\s]*([^,;\.]+)/ },
+      { key: "Growth", regex: /[Gg]rowth[:\s]*([^,;\.]+)/ },
     ];
     for (var i = 0; i < patterns.length; i++) {
       var match = text.match(patterns[i].regex);
       if (match) metrics[patterns[i].key] = match[1].trim();
     }
     return Object.keys(metrics).length > 0 ? metrics : null;
-  }
-
-  function renderFinancialMetrics(metrics, trend) {
-    var html = '<div class="fin-metrics-grid">';
-    for (var key in metrics) {
-      if (metrics.hasOwnProperty(key)) {
-        html += '<div class="fin-card"><span class="fin-card-label">' + escHtml(key) + '</span><span class="fin-card-value">' + escHtml(metrics[key]) + "</span></div>";
-      }
-    }
-    html += "</div>";
-    if (trend) {
-      html += '<div class="fin-trend">' + escHtml(trend) + "</div>";
-    }
-    return html;
   }
 
   /* ─── Risk helpers ─── */
@@ -188,17 +165,6 @@
     });
   }
 
-  function renderRisks(risks) {
-    return risks.map(function (r) {
-      var indicator = (typeof r === "object" && r.indicator) ? r.indicator : "\uD83D\uDFE1";
-      var dotClass = "amber";
-      if (indicator === "\uD83D\uDFE2") dotClass = "green";
-      else if (indicator === "\uD83D\uDD34") dotClass = "red";
-      var riskText = typeof r === "object" && r.text ? r.text : String(r);
-      return '<div class="risk-item"><span class="risk-indicator ' + dotClass + '">' + indicator + '</span><span>' + escHtml(riskText) + "</span></div>";
-    }).join("");
-  }
-
   /* ─── Score helpers ─── */
 
   function estimateScores(analysisText) {
@@ -222,24 +188,6 @@
       risk: Math.round(100 - (baseScore + Math.random() * 10 - 5)),
       attractiveness: Math.round(baseScore + Math.random() * 12 - 6)
     };
-  }
-
-  function renderScoreBars(scores) {
-    var keys = [
-      { key: "financial_health", label: "Financial Health" },
-      { key: "growth_potential", label: "Growth Potential" },
-      { key: "risk", label: "Risk" },
-      { key: "attractiveness", label: "IPO Attractiveness" },
-    ];
-    var colors = ["#22c55e", "#3b82f6", "#f59e0b", "#a855f7"];
-    var html = "";
-    for (var i = 0; i < keys.length; i++) {
-      var val = scores[keys[i].key];
-      if (typeof val !== "number") val = parseInt(val, 10) || 0;
-      var capped = Math.min(Math.max(Math.round(val), 0), 100);
-      html += '<div class="score-bar-wrap"><div class="score-bar-label"><span>' + keys[i].label + '</span><span>' + capped + '/100</span></div><div class="score-bar-track"><div class="score-bar-fill" style="width:' + capped + '%;background:' + colors[i] + '"></div></div></div>';
-    }
-    return html;
   }
 
   /* ─── Verdict helpers ─── */
@@ -275,28 +223,11 @@
 
   /* ─── Retry ─── */
 
-  function showSkeletons() {
-    var els = ["modalAbout", "modalIpoDetails", "modalFinancials", "modalStrengths", "modalRisks", "modalScores", "modalAiAnalysis", "modalVerdict"];
-    for (var i = 0; i < els.length; i++) {
-      var el = document.getElementById(els[i]);
-      if (!el) continue;
-      if (i === 1 || i === 2) {
-        el.innerHTML = skeletonCards(4);
-      } else if (i === 6) {
-        el.innerHTML = skeletonLines(4);
-      } else {
-        el.innerHTML = skeletonLines(3);
-      }
-    }
-  }
-
   async function retryAnalysis() {
-    var btn = document.getElementById("retryBtn");
-    if (btn) {
-      btn.disabled = true;
-      btn.innerHTML = '<span class="spinner"></span> Checking...';
+    var contentEl = document.getElementById("modalContent");
+    if (contentEl) {
+      contentEl.innerHTML = skeletonCards(4) + skeletonLines(5);
     }
-    showSkeletons();
     try {
       var resp = await fetch("/ipodashboard/data/ipo_analysis.json?_=" + Date.now());
       if (resp.ok) {
@@ -307,15 +238,172 @@
       openModal(currentIpo);
       return;
     }
-    if (btn) {
-      btn.disabled = false;
-      btn.innerHTML = "\u21BB Check Again";
-    }
-    var verdictEl = document.getElementById("modalVerdict");
-    if (verdictEl) {
-      verdictEl.innerHTML = '<div class="section-pending">Analysis still pending. The AI analysis is run periodically via GitHub Actions. Check back later or ensure the workflow has completed.</div><button class="retry-btn" id="retryBtn">\u21BB Check Again</button>';
+    if (contentEl) {
+      contentEl.innerHTML = '<div class="section-pending">Analysis still pending. The AI analysis is run periodically via GitHub Actions. Check back later or ensure the workflow has completed.</div><div style="text-align:center;margin-top:12px"><button class="retry-btn" id="retryBtn">\u21BB Check Again</button></div>';
       document.getElementById("retryBtn").addEventListener("click", retryAnalysis);
     }
+  }
+
+  /* ─── Profile Builder ─── */
+
+  function verdictIcon(badgeClass) {
+    if (badgeClass === "verdict-subscribe") return "\uD83D\uDFE2";
+    if (badgeClass === "verdict-avoid") return "\uD83D\uDD34";
+    if (badgeClass === "verdict-neutral") return "\uD83D\uDFE1";
+    return "\u23F3";
+  }
+
+  function buildProfileHtml(ipo, data) {
+    var html = "";
+    var hasData = !!data;
+
+    // ── 1. Company Overview ──
+    var aboutText = hasData && data.about ? data.about : null;
+    html += '<section class="profile-section">';
+    html += '<h3 class="section-title">Company Overview</h3>';
+    if (aboutText) {
+      html += '<p class="company-description">' + escHtml(aboutText) + '</p>';
+    } else {
+      html += '<div class="section-pending">Company information currently unavailable.</div>';
+    }
+    html += '</section>';
+
+    // ── 2. IPO Metrics Grid ──
+    var ipoArr = buildIpoDetailsArr(ipo);
+    var mktCap = null;
+    if (hasData && data.ipo_details) {
+      var m = data.ipo_details.match(/[Mm]arket\s*[Cc]ap[:\s]*([^,;\.]+)/);
+      if (m) mktCap = m[1].trim();
+    }
+    if (!mktCap && hasData && data.financial_summary) {
+      var m = data.financial_summary.match(/[Mm]arket\s*[Cc]ap[:\s]*([^,;\.]+)/);
+      if (m) mktCap = m[1].trim();
+    }
+
+    html += '<section class="profile-section">';
+    html += '<h3 class="section-title">IPO Details</h3>';
+    html += '<div class="metrics-grid">';
+    for (var i = 0; i < ipoArr.length; i++) {
+      html += '<div class="metric-card"><span class="metric-label">' + escHtml(ipoArr[i].label) + '</span><span class="metric-value">' + escHtml(ipoArr[i].value) + '</span></div>';
+    }
+    if (mktCap) {
+      html += '<div class="metric-card"><span class="metric-label">Market Cap</span><span class="metric-value">' + escHtml(mktCap) + '</span></div>';
+    }
+    html += '</div></section>';
+
+    // ── 3. Financial Snapshot ──
+    var finText = hasData ? (data.financial_summary || data.financials || "") : "";
+    var finMetrics = parseFinancialMetrics(finText);
+
+    html += '<section class="profile-section">';
+    html += '<h3 class="section-title">Financial Snapshot</h3>';
+    if (finMetrics) {
+      html += '<div class="metrics-grid">';
+      var ordered = ["Revenue", "Profit", "Debt", "EPS", "P/E", "Growth"];
+      for (var i = 0; i < ordered.length; i++) {
+        if (finMetrics[ordered[i]]) {
+          html += '<div class="metric-card"><span class="metric-label">' + ordered[i] + '</span><span class="metric-value">' + escHtml(finMetrics[ordered[i]]) + '</span></div>';
+        }
+      }
+      html += '</div>';
+      if (hasData && data.financial_trend) {
+        html += '<div style="margin-top:12px;font-style:italic;font-size:13px;color:var(--text-muted);line-height:1.6">' + escHtml(data.financial_trend) + '</div>';
+      }
+    } else if (hasData && finText) {
+      html += '<div style="line-height:1.8">' + escHtml(finText) + '</div>';
+      if (data.financial_trend) {
+        html += '<div style="margin-top:12px;font-style:italic;font-size:13px;color:var(--text-muted);line-height:1.6">' + escHtml(data.financial_trend) + '</div>';
+      }
+    } else {
+      html += '<div class="section-pending">Financial data not available.</div>';
+    }
+    html += '</section>';
+
+    // ── 4. Strengths ──
+    html += '<section class="profile-section">';
+    html += '<h3 class="section-title">Strengths</h3>';
+    if (hasData && data.strengths && Array.isArray(data.strengths) && data.strengths.length) {
+      html += '<ul class="bullet-list">';
+      for (var i = 0; i < data.strengths.length; i++) {
+        html += '<li>' + escHtml(typeof data.strengths[i] === "string" ? data.strengths[i] : String(data.strengths[i])) + '</li>';
+      }
+      html += '</ul>';
+    } else {
+      html += '<div class="section-pending">Strengths data not yet analyzed.</div>';
+    }
+    html += '</section>';
+
+    // ── 5. Risks ──
+    html += '<section class="profile-section">';
+    html += '<h3 class="section-title">Risks</h3>';
+    if (hasData && data.risks && data.risks.length > 0) {
+      var enrichedRisks = hasStructuredRisks(data.risks) ? data.risks : enrichRisksWithIndicators(data.risks);
+      html += '<div class="risk-list">';
+      for (var i = 0; i < enrichedRisks.length; i++) {
+        var r = enrichedRisks[i];
+        var indicator = (typeof r === "object" && r.indicator) ? r.indicator : "\uD83D\uDFE1";
+        var riskText = typeof r === "object" && r.text ? r.text : String(r);
+        html += '<div class="risk-item"><span class="risk-indicator">' + indicator + '</span><span>' + escHtml(riskText) + '</span></div>';
+      }
+      html += '</div>';
+    } else {
+      html += '<div class="section-pending">Risk assessment pending...</div>';
+    }
+    html += '</section>';
+
+    // ── 6. AI Scores ──
+    var scores = hasData ? (data.scores || estimateScores(data.ai_analysis)) : null;
+    html += '<section class="profile-section">';
+    html += '<h3 class="section-title">AI Scores</h3>';
+    if (scores) {
+      var scoreKeys = [
+        { key: "financial_health", label: "Financial Health", color: "#22c55e" },
+        { key: "growth_potential", label: "Growth Potential", color: "#3b82f6" },
+        { key: "risk", label: "Risk Score", color: "#f59e0b" },
+        { key: "attractiveness", label: "IPO Attractiveness", color: "#a855f7" },
+      ];
+      html += '<div class="scores-grid">';
+      for (var i = 0; i < scoreKeys.length; i++) {
+        var val = scores[scoreKeys[i].key];
+        if (typeof val !== "number") val = parseInt(val, 10) || 0;
+        var capped = Math.min(Math.max(Math.round(val), 0), 100);
+        html += '<div class="score-card"><div class="score-card-label">' + scoreKeys[i].label + '</div><div class="score-card-value">' + capped + '</div><div class="score-card-bar"><div class="score-card-fill" style="width:' + capped + '%;background:' + scoreKeys[i].color + '"></div></div></div>';
+      }
+      html += '</div>';
+    } else {
+      html += '<div class="section-pending">Scores not available.</div>';
+    }
+    html += '</section>';
+
+    // ── 7. AI Analysis ──
+    html += '<section class="profile-section">';
+    html += '<h3 class="section-title">AI Analysis</h3>';
+    if (hasData && data.ai_analysis) {
+      html += '<div class="analysis-text">' + escHtml(data.ai_analysis) + '</div>';
+    } else {
+      html += '<div class="section-pending">Analysis pending...</div>';
+    }
+    html += '</section>';
+
+    // ── 8. Final Verdict ──
+    var verdict = hasData ? extractVerdict(data.ai_analysis, data.verdict) : null;
+    var badgeClass = verdictBadgeClass(verdict);
+    var badgeText = verdictBadgeText(badgeClass);
+    var vIcon = verdictIcon(badgeClass);
+
+    html += '<section class="profile-section">';
+    html += '<div class="verdict-card ' + badgeClass + '">';
+    html += '<span class="verdict-icon">' + vIcon + '</span>';
+    html += '<div class="verdict-content">';
+    html += '<span class="verdict-label">' + badgeText + '</span>';
+    if (verdict) {
+      html += '<p class="verdict-description">' + escHtml(verdict) + '</p>';
+    }
+    html += '</div></div>';
+    html += '<div class="verdict-note">Note: This analysis is AI-generated based on model knowledge and should not be considered financial advice. Always do your own research.</div>';
+    html += '</section>';
+
+    return html;
   }
 
   /* ─── Modal ─── */
@@ -326,116 +414,27 @@
     var data = analysis[key] || null;
 
     modalTitle.textContent = ipo.company_name || "Unknown";
-    modalSymbol.textContent = (ipo.symbol || "\u2014") + " \u00B7 " + (ipo.exchange || "") + " \u00B7 " + (ipo.country || "Global");
+    document.getElementById("modalSymbol").textContent = ipo.symbol || "\u2014";
+    document.getElementById("modalExchange").textContent = ipo.exchange || "\u2014";
 
-    var aboutEl = document.getElementById("modalAbout");
-    var ipoDetailsEl = document.getElementById("modalIpoDetails");
-    var finEl = document.getElementById("modalFinancials");
-    var strEl = document.getElementById("modalStrengths");
-    var riskEl = document.getElementById("modalRisks");
-    var scoresEl = document.getElementById("modalScores");
-    var aiEl = document.getElementById("modalAiAnalysis");
-    var verdictEl = document.getElementById("modalVerdict");
+    var country = getCountry(ipo);
+    var countryBadge = document.getElementById("modalCountryBadge");
+    countryBadge.textContent = country;
+    countryBadge.className = "country-badge " + countryClass(country);
+
+    var statusBadge = document.getElementById("modalStatusBadge");
+    statusBadge.textContent = (ipo.status || "upcoming");
+    statusBadge.className = "status-badge " + statusClass(ipo.status);
+
+    var contentEl = document.getElementById("modalContent");
+    contentEl.innerHTML = buildProfileHtml(ipo, data);
 
     if (!data) {
-      // Show metadata-enriched fallback without permanent "Analyzing" spinner
-      aboutEl.innerHTML = '<div class="section-pending">Company overview currently unavailable. IPO analysis and available financial data are shown below.</div>';
-      ipoDetailsEl.innerHTML = renderIpoDetailsGrid(buildIpoDetailsArr(ipo));
-      finEl.innerHTML = '<div class="section-pending">Financial data is being analyzed. Check back after the next AI analysis run.</div>';
-      strEl.innerHTML = '<div class="section-pending">Strengths being evaluated...</div>';
-      riskEl.innerHTML = '<div class="section-pending">Risks being assessed...</div>';
-      scoresEl.innerHTML = '<div class="section-pending">AI scoring in progress...</div>';
-      aiEl.innerHTML = '<div class="section-pending">Detailed analysis pending...</div>';
-      verdictEl.innerHTML = '<span class="verdict-badge verdict-pending">Awaiting Analysis</span><div class="section-pending">AI analysis has not been generated yet. It runs periodically via GitHub Actions.</div><button class="retry-btn" id="retryBtn">\u21BB Check for Updates</button>';
-      // Defer retry binding so DOM is ready
       setTimeout(function () {
         var rb = document.getElementById("retryBtn");
         if (rb) rb.addEventListener("click", retryAnalysis);
       }, 0);
-      showModal();
-      return;
     }
-
-    // ===== ABOUT =====
-    aboutEl.innerHTML = data.about
-      ? escHtml(data.about)
-      : '<div class="section-pending">Company overview currently unavailable. IPO analysis and available financial data are shown below.</div>';
-
-    // ===== IPO DETAILS =====
-    if (data.ipo_details) {
-      // Try to parse AI details as structured text
-      var ipoDetailArr = buildIpoDetailsArr(ipo);
-      ipoDetailsEl.innerHTML = renderIpoDetailsGrid(ipoDetailArr);
-    } else {
-      ipoDetailsEl.innerHTML = renderIpoDetailsGrid(buildIpoDetailsArr(ipo));
-    }
-
-    // ===== FINANCIAL SUMMARY =====
-    var finText = data.financial_summary || data.financials || "";
-    var metrics = parseFinancialMetrics(finText);
-    if (metrics) {
-      finEl.innerHTML = renderFinancialMetrics(metrics, data.financial_trend || null);
-    } else if (finText) {
-      var fhtml = '<div style="line-height:1.8">' + escHtml(finText) + "</div>";
-      if (data.financial_trend) {
-        fhtml += '<div class="fin-trend">' + escHtml(data.financial_trend) + "</div>";
-      }
-      finEl.innerHTML = fhtml;
-    } else {
-      finEl.innerHTML = '<div class="section-pending">Financial data not available.</div>';
-    }
-
-    // ===== STRENGTHS =====
-    if (data.strengths && Array.isArray(data.strengths) && data.strengths.length) {
-      strEl.innerHTML = "<ul>" + data.strengths.map(function (s) {
-        return "<li>" + escHtml(typeof s === "string" ? s : String(s)) + "</li>";
-      }).join("") + "</ul>";
-    } else {
-      strEl.innerHTML = '<div class="section-pending">Strengths data not yet analyzed.</div>';
-    }
-
-    // ===== RISKS =====
-    var risks = data.risks || [];
-    if (risks.length > 0) {
-      var enrichedRisks = hasStructuredRisks(risks) ? risks : enrichRisksWithIndicators(risks);
-      riskEl.innerHTML = renderRisks(enrichedRisks);
-    } else {
-      riskEl.innerHTML = '<div class="section-pending">Risk assessment pending...</div>';
-    }
-
-    // ===== SCORES =====
-    var scores = data.scores;
-    if (!scores) {
-      scores = estimateScores(data.ai_analysis);
-    }
-    if (scores) {
-      scoresEl.innerHTML = renderScoreBars(scores);
-    } else {
-      scoresEl.innerHTML = '<div class="section-pending">Scores not available.</div>';
-    }
-
-    // ===== AI ANALYSIS =====
-    if (data.ai_analysis) {
-      aiEl.innerHTML = '<div class="ai-analysis-text">' + escHtml(data.ai_analysis) + "</div>";
-    } else {
-      aiEl.innerHTML = '<div class="section-pending">Analysis pending...</div>';
-    }
-
-    // ===== VERDICT =====
-    var verdict = extractVerdict(data.ai_analysis, data.verdict);
-    var badgeClass = verdictBadgeClass(verdict);
-    var badgeText = verdictBadgeText(badgeClass);
-
-    var vHtml = '<span class="verdict-badge ' + badgeClass + '">' + badgeText + "</span>";
-    if (verdict) {
-      vHtml += "<div>" + escHtml(verdict) + "</div>";
-    }
-    vHtml += '<div class="verdict-note">Note: This analysis is AI-generated based on model knowledge and should not be considered financial advice. Always do your own research.</div>';
-    verdictEl.innerHTML = vHtml;
-
-    document.querySelectorAll(".detail-card").forEach(function (card) {
-      card.classList.remove("collapsed");
-    });
 
     showModal();
   }
@@ -454,12 +453,6 @@
   modal.querySelector(".modal-backdrop").addEventListener("click", closeModal);
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") closeModal();
-  });
-
-  document.querySelectorAll(".detail-card-head").forEach(function (head) {
-    head.addEventListener("click", function () {
-      this.parentElement.classList.toggle("collapsed");
-    });
   });
 
   /* ─── Table ─── */
