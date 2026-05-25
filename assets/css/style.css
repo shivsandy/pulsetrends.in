@@ -111,24 +111,6 @@ header .container { display: flex; justify-content: space-between; align-items: 
   color: #ff4f88;
   transform: translateX(4px);
 }
-.dd-dot { font-size: 0.5em; }
-.dd-dot[data-category=crypto] { color: #f7931a; }
-.dd-dot[data-category=stocks] { color: #00b894; }
-.dd-dot[data-category=ipos] { color: #e17055; }
-.dd-dot[data-category=ai] { color: #6c5ce7; }
-.dd-dot[data-category=tech] { color: #0984e3; }
-.dd-dot[data-category=gaming] { color: #e17055; }
-.dd-dot[data-category=mobile] { color: #00cec9; }
-.dd-dot[data-category=phones] { color: #e17055; }
-.dd-dot[data-category=sports] { color: #fd79a8; }
-.dd-dot[data-category=entertainment] { color: #fd79a8; }
-.dd-dot[data-category=health] { color: #00b894; }
-.dd-dot[data-category=science] { color: #74b9ff; }
-.dd-dot[data-category=business] { color: #fdcb6e; }
-.dd-dot[data-category=politics] { color: #d63031; }
-.dd-dot[data-category=world] { color: #636e72; }
-.dd-dot[data-category=weather] { color: #74b9ff; }
-
 /* ─── Ticker ─── */
 .w-ticker {
   background: rgba(224, 26, 79, 0.08);
@@ -395,7 +377,6 @@ article.article-page {
   border-radius: var(--radius); padding: 20px; margin-bottom: 20px;
 }
 .sidebar-widget h3 { font-size: 0.9em; font-weight: 600; margin-bottom: 14px; color: #fff; display: flex; align-items: center; gap: 8px; }
-.widget-icon { color: var(--primary); }
 .cat-toggle { background: none; border: none; color: var(--text); font-size: 1em; cursor: pointer; width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center; }
 .sidebar-cat { overflow: hidden; transition: max-height 0.2s; max-height: 600px; }
 .sidebar-cat.collapsed { max-height: 0; }

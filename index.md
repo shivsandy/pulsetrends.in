@@ -28,7 +28,7 @@ description: "PulseTrends — AI, Crypto, Stocks & Daily Trending News. Expert a
           {% if post.image %}
           <img src="{{ post.image | replace: 'w=1200', 'w=200' | replace: 'w=800', 'w=200' }}&auto=format&q=50" alt="{{ post.title }}" width="200" height="200" loading="lazy" decoding="async">
           {% else %}
-          <div class="img-fallback"><span class="fallback-icon">&#9670;</span></div>
+          <div class="img-fallback"><span class="fallback-icon"></span></div>
           {% endif %}
         </div>
         <div class="left-card-body">
@@ -75,7 +75,7 @@ description: "PulseTrends — AI, Crypto, Stocks & Daily Trending News. Expert a
               {% if post.image %}
               <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" width="400" height="250" loading="lazy" decoding="async">
               {% else %}
-              <div class="img-fallback"><span class="fallback-icon">&#9670;</span></div>
+              <div class="img-fallback"><span class="fallback-icon"></span></div>
               {% endif %}
             </div>
             <div class="section-card-body">
@@ -103,7 +103,7 @@ description: "PulseTrends — AI, Crypto, Stocks & Daily Trending News. Expert a
               {% if post.image %}
               <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" width="400" height="250" loading="lazy" decoding="async">
               {% else %}
-              <div class="img-fallback"><span class="fallback-icon">&#9670;</span></div>
+              <div class="img-fallback"><span class="fallback-icon"></span></div>
               {% endif %}
             </div>
             <div class="section-card-body">
@@ -130,7 +130,7 @@ description: "PulseTrends — AI, Crypto, Stocks & Daily Trending News. Expert a
               {% if post.image %}
               <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" width="400" height="250" loading="lazy" decoding="async">
               {% else %}
-              <div class="img-fallback"><span class="fallback-icon">&#9670;</span></div>
+              <div class="img-fallback"><span class="fallback-icon"></span></div>
               {% endif %}
             </div>
             <div class="section-card-body">
@@ -157,7 +157,7 @@ description: "PulseTrends — AI, Crypto, Stocks & Daily Trending News. Expert a
               {% if post.image %}
               <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" width="400" height="250" loading="lazy" decoding="async">
               {% else %}
-              <div class="img-fallback"><span class="fallback-icon">&#9670;</span></div>
+              <div class="img-fallback"><span class="fallback-icon"></span></div>
               {% endif %}
             </div>
             <div class="section-card-body">
@@ -184,7 +184,7 @@ description: "PulseTrends — AI, Crypto, Stocks & Daily Trending News. Expert a
               {% if post.image %}
               <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" width="400" height="250" loading="lazy" decoding="async">
               {% else %}
-              <div class="img-fallback"><span class="fallback-icon">&#9670;</span></div>
+              <div class="img-fallback"><span class="fallback-icon"></span></div>
               {% endif %}
             </div>
             <div class="section-card-body">
