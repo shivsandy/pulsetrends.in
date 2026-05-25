@@ -27,8 +27,6 @@ permalink: /about/
     <li><strong>Weather & Climate</strong> — Extreme weather, climate science, environmental news</li>
     <li><strong>World News</strong> — Global events and trending stories from every region</li>
   </ul>
-    <li><strong>Business</strong> — Startups, entrepreneurship, industry analysis</li>
-  </ul>
 
   <h2>Our Mission</h2>
 

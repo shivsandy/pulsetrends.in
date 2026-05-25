@@ -11,7 +11,11 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="author" content="{{ site.title }}">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
   <meta name="format-detection" content="telephone=no">
+  <meta name="news_keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}, {% endif %}trending news, latest news, breaking news, daily insights">
+  <meta name="permissions-policy" content="camera=(), microphone=(), geolocation=()">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com https://fonts.googleapis.com https://secure.gravatar.com 'unsafe-inline' 'unsafe-eval'; img-src 'self' https://images.unsplash.com https://*.unsplash.com https://pagead2.googlesyndication.com data:; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com data:; frame-src 'self' https://pagead2.googlesyndication.com; connect-src 'self' https://api.nasdaq.com; base-uri 'self'">
 
   <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
@@ -34,6 +38,8 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | absolute_url }}">
+  <link rel="sitemap" type="application/xml" href="{{ '/news-sitemap.xml' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
   {% seo %}
   {% if site.google_adsense_id %}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.google_adsense_id }}" crossorigin="anonymous"></script>
@@ -43,17 +49,18 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "NewsArticle",
     "headline": "{{ page.title | escape }}",
     "description": "{{ page.excerpt | strip_html | truncate: 160 | escape }}",
     "image": "{% if page.image %}{{ page.image }}{% else %}{{ '/assets/images/og-default.jpg' | absolute_url }}{% endif %}",
     "datePublished": "{{ page.date | date_to_xmlschema }}",
-    "dateModified": "{{ page.date | date_to_xmlschema }}",
-    "author": { "@type": "Organization", "name": "{{ site.title }}" },
+    "dateModified": "{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}",
+    "author": { "@type": "Person", "name": "{{ page.author | default: site.title }}" },
     "publisher": { "@type": "Organization", "name": "{{ site.title }}", "logo": { "@type": "ImageObject", "url": "{{ '/assets/images/logo.svg' | absolute_url }}" } },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" },
     "wordCount": "{{ content | strip_html | number_of_words }}",
-    "articleSection": "{{ page.tags.first | escape }}"
+    "articleSection": "{{ page.tags.first | escape }}",
+    "dateline": "India"
   }
   </script>
 
@@ -96,9 +103,22 @@
   </script>
   {% if page.date %}
   <script type="application/ld+json">
-  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" }, { "@type": "ListItem", "position": 2, "name": "{{ page.title | escape }}", "item": "{{ page.url | absolute_url }}" } ] }
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" }{% assign bread_cat = page.tags.first %}{% if bread_cat %}, { "@type": "ListItem", "position": 2, "name": "{{ bread_cat | capitalize }}", "item": "{{ site.url }}/{{ bread_cat }}/" }, { "@type": "ListItem", "position": 3, "name": "{{ page.title | escape }}", "item": "{{ page.url | absolute_url }}" }{% else %}, { "@type": "ListItem", "position": 2, "name": "{{ page.title | escape }}", "item": "{{ page.url | absolute_url }}" }{% endif %} ] }
   </script>
   {% endif %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "logo": "{{ '/assets/images/logo.svg' | absolute_url }}",
+    "description": "{{ site.description }}",
+    "sameAs": ["https://twitter.com/pulsetrends"],
+    "contactPoint": { "@type": "ContactPoint", "email": "contact@pulsetrends.in", "contactType": "customer service" }
+  }
+  </script>
 </head>
 <body>
 
@@ -233,6 +253,7 @@
           {% if page.tags.size > 0 %}
           <span class="cat-tag">{{ page.tags.first }}</span>
           {% endif %}
+          <span class="meta-author">By {{ page.author | default: site.title }}</span>
           <span class="meta-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time></span>
         </div>
         <h1 itemprop="headline">{{ page.title }}</h1>

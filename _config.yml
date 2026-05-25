@@ -10,11 +10,13 @@ keywords: "trending news, daily insights, AI news, cryptocurrency, bitcoin, stoc
 markdown: kramdown
 permalink: /:title/
 
+# Set your Google AdSense publisher ID (ca-pub-xxxxxxxxxxxxxxxx) to enable ads
 google_adsense_id: ""
 
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
 
 defaults:
   - scope:

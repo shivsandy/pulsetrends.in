@@ -702,11 +702,11 @@ def fetch_image(query, api_key, used_urls=None):
                     continue
                 if url not in used_urls:
                     used_urls.add(url)
-                    return f"{url}?w=800"
+                    return f"{url}?w=1200"
             fallback = data["results"][0]
             url = fallback["urls"]["regular"]
             if url.startswith("https://images.unsplash.com/"):
-                return f"{url}?w=800"
+                return f"{url}?w=1200"
         return ""
     except Exception:
         return ""
@@ -758,6 +758,7 @@ def build_post(content, article_title, category_id, image_url, existing_titles, 
     frontmatter = f"""---
 title: "{title}"
 date: {date.strftime('%Y-%m-%d %H:%M:%S')}
+author: PulseTrends Editorial Team
 excerpt: "{excerpt}"
 {image_line}tags: [{category_id}]
 categories: [{category_id}]
