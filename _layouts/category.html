@@ -3,15 +3,24 @@ layout: default
 ---
 
 {% assign display_name = page.title %}
+{% assign category_id = page.category_id %}
 
-{% if paginator.posts.size > 0 %}
+{% if paginator %}
+  {% assign cat_posts = paginator.posts %}
+  {% assign total_pages = paginator.total_pages %}
+{% else %}
+  {% assign cat_posts = site.posts | where_exp: "p", "p.tags contains category_id" %}
+  {% assign total_pages = 1 %}
+{% endif %}
+
+{% if cat_posts.size > 0 %}
 <div class="page-content">
   <h1>{{ display_name }}</h1>
   <p>Latest articles in {{ display_name }}.</p>
 </div>
 
 <div class="section-grid">
-  {% for post in paginator.posts %}
+  {% for post in cat_posts %}
   <article class="section-card">
     <a href="{{ post.url | relative_url }}">
       <div class="section-card-img">
@@ -31,7 +40,7 @@ layout: default
   {% endfor %}
 </div>
 
-{% if paginator.total_pages > 1 %}
+{% if paginator and total_pages > 1 %}
 <nav class="pagination category-pagination" aria-label="Category pagination">
   {% if paginator.previous_page %}
   <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-btn" rel="prev">&lsaquo; Prev</a>
@@ -49,7 +58,7 @@ layout: default
 </nav>
 {% endif %}
 
-{% if paginator.next_page %}
+{% if paginator and paginator.next_page %}
 <link rel="prefetch" href="{{ paginator.next_page_path | relative_url }}">
 {% endif %}
 
