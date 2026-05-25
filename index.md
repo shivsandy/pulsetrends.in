@@ -15,15 +15,14 @@ title: Home
 <div class="home-three-col">
 
   <div class="home-col-left">
-    <div class="hero-card">
+    <article class="hero-card">
       <a href="{{ primary.url | relative_url }}">
         <div class="hero-img-wrap">
           {% if primary.image %}
-          <img src="{{ primary.image }}" alt="{{ primary.title }}" class="hero-img" loading="eager" fetchpriority="high">
+          <img src="{{ primary.image }}" alt="{{ primary.title }}" class="hero-img" width="1200" height="675" loading="eager" fetchpriority="high">
           {% else %}
-          <div class="hero-img" style="background: linear-gradient(135deg, #1a1a2e, #e01a4f);"></div>
+          <div class="hero-img-placeholder" style="background: linear-gradient(135deg, #1a1a2e, #e01a4f);"></div>
           {% endif %}
-          <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
           {% if primary.tags.size > 0 %}
@@ -34,7 +33,7 @@ title: Home
           <span class="hero-meta">{{ primary.date | date: "%B %d, %Y" }}</span>
         </div>
       </a>
-    </div>
+    </article>
   </div>
 
   <div class="home-col-center">
@@ -43,7 +42,7 @@ title: Home
         <a href="{{ secondary1.url | relative_url }}">
           <div class="side-img-wrap">
             {% if secondary1.image %}
-            <img src="{{ secondary1.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ secondary1.title }}" loading="lazy" decoding="async">
+            <img src="{{ secondary1.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ secondary1.title }}" width="400" height="267" loading="lazy" decoding="async">
             {% else %}
             <div class="side-img-placeholder" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
             {% endif %}
@@ -61,7 +60,7 @@ title: Home
         <a href="{{ secondary2.url | relative_url }}">
           <div class="side-img-wrap">
             {% if secondary2.image %}
-            <img src="{{ secondary2.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ secondary2.title }}" loading="lazy" decoding="async">
+            <img src="{{ secondary2.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ secondary2.title }}" width="400" height="267" loading="lazy" decoding="async">
             {% else %}
             <div class="side-img-placeholder" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
             {% endif %}
@@ -85,7 +84,7 @@ title: Home
         <a href="{{ post.url | relative_url }}">
           <div class="card-img-wrap">
             {% if post.image %}
-            <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ post.title }}" class="post-card-img" loading="lazy" decoding="async">
+            <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ post.title }}" class="post-card-img" width="400" height="267" loading="lazy" decoding="async">
             {% else %}
             <div class="post-card-img" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
             {% endif %}
