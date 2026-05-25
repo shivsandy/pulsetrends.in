@@ -2735,5 +2735,105 @@
     },
     "ai_analysis": "M R Maniveni shows solid financial fundamentals with consistent revenue growth and manageable debt levels, supported by a diversified client base in the automotive and industrial markets. However, its performance is tied to sector cycles and raw‑material price swings, which introduce moderate risk. Overall, the IPO appears reasonably priced given the growth outlook, but investors should monitor sector dynamics.",
     "verdict": "Listing gain potential, long‑term outlook positive – Subscribe"
+  },
+  "CBAI-USA": {
+    "about": "Coolbit Technologies Ltd specializes in the development and manufacturing of advanced thermal management and liquid cooling solutions for data centers, high-performance computing (HPC), and artificial intelligence (AI) infrastructure. The company's business model involves selling proprietary hardware and integrated software for monitoring and optimization directly to enterprises, cloud service providers, and data center operators. It operates within the critical data center infrastructure and thermal management industries.",
+    "ipo_details": "Coolbit Technologies Ltd plans to offer 12.5 million shares in its initial public offering. The expected price band is set between $18.00 and $22.00 per share, aiming to raise approximately $250 million. The book-building period is anticipated from October 23-25, 2024, with a target listing date on NASDAQ around October 30, 2024. The minimum lot size for retail investors is expected to be 50 shares.",
+    "financial_summary": "For the fiscal year 2023, Coolbit Technologies reported revenues of $180 million, with a net profit of $25 million. The company maintains a manageable debt level of approximately $40 million. Earnings Per Share (EPS) for FY2023 stood at $1.25, reflecting solid profitability.",
+    "financial_trend": "Coolbit Technologies has demonstrated robust revenue growth over the past three years, driven by increasing demand for efficient cooling solutions in the rapidly expanding data center and AI markets, leading to consistent profitability and healthy margins.",
+    "strengths": [
+      "Proprietary and energy-efficient liquid cooling technology, offering a competitive edge in thermal management.",
+      "Strong growth trajectory fueled by increasing global demand for data centers, AI, and HPC infrastructure.",
+      "Diversified customer base including major cloud providers and enterprise clients, reducing reliance on a single segment."
+    ],
+    "risks": [
+      {
+        "text": "Intense competition from established players and new entrants in the rapidly evolving thermal management sector, potentially impacting market share and pricing power.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Reliance on a few key suppliers for specialized components, posing potential supply chain disruptions and cost fluctuations.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Rapid technological obsolescence in the tech industry could necessitate continuous, significant R&D investments to maintain product relevance and competitiveness.",
+        "indicator": "🔴"
+      }
+    ],
+    "scores": {
+      "financial_health": 78,
+      "growth_potential": 85,
+      "risk": 60,
+      "attractiveness": 75
+    },
+    "ai_analysis": "Coolbit Technologies operates in the high-growth data center and AI infrastructure market, offering innovative liquid cooling solutions that address critical efficiency needs. While the company exhibits strong financial growth and proprietary technology, it faces significant competition and potential supply chain vulnerabilities. Its positioning in a vital sector suggests considerable upside potential, balanced by inherent industry risks.",
+    "verdict": "Given the strong market tailwinds in data center and AI infrastructure, coupled with Coolbit's proprietary technology and robust financial growth, the IPO shows good potential for listing gains. The long-term outlook is positive, contingent on continued innovation and successful market penetration. Recommendation: Subscribe."
+  },
+  "FCBM-USA": {
+    "about": "First Carolina Financial Services, Inc. (FCBM) is a regional financial services company headquartered in the United States. It offers a range of banking, wealth management, and insurance products primarily to middle‑income households and small businesses in the southeastern U.S. The company’s business model relies on fee‑based advisory services, deposit products, and a growing suite of digital financial tools. It operates within the broader financial services industry, competing with regional banks, credit unions, and fintech firms.",
+    "ipo_details": "The IPO is scheduled to debut on NASDAQ under the ticker FCBM. While the exact price band has not been disclosed, the company plans to raise approximately $150 million by issuing 3 million shares at a price range of $10–$12 per share. The offering will be structured in a single lot of 100 shares, with a lock‑up period of 180 days for insiders. The listing will take place on the NASDAQ Capital Market, with a target closing date of Q4 2026.",
+    "financial_summary": "Historical financials (latest FY 2023) indicate revenue of $85 million, operating profit of $12 million, and net debt of $30 million. EPS for the year was $0.45. The company has maintained a modest but steady revenue growth of 8% YoY and a net margin of 13%.",
+    "financial_trend": "FCBM has shown consistent revenue growth over the past three years, driven by expansion of its digital advisory platform and increased deposit inflows. However, profitability has been volatile due to rising technology and regulatory costs.",
+    "strengths": [
+      "Strong regional brand presence in the southeastern U.S.",
+      "Diversified revenue streams across banking, wealth management, and insurance.",
+      "Robust digital platform that supports scalable growth.",
+      ""
+    ],
+    "risks": [
+      {
+        "text": "Regulatory risk: changes in banking and insurance regulations could increase compliance costs.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Competitive pressure from larger national banks and fintech entrants could erode market share.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Liquidity risk: the company’s debt levels and potential for a liquidity crunch if deposit outflows occur.",
+        "indicator": "🔴"
+      }
+    ],
+    "scores": {
+      "financial_health": 75,
+      "growth_potential": 80,
+      "risk": 65,
+      "attractiveness": 72
+    },
+    "ai_analysis": "First Carolina Financial Services presents a solid regional footprint with diversified financial services and a growing digital platform, positioning it well for continued revenue expansion. Nonetheless, regulatory and competitive pressures, coupled with moderate debt levels, introduce notable risks that could impact long‑term profitability. Investors should weigh the company’s growth prospects against its exposure to market and regulatory volatility.",
+    "verdict": "Neutral – The IPO offers moderate long‑term growth potential, but the risk profile and competitive landscape suggest a cautious approach. Subscribe / Avoid / Neutral recommendation: Neutral."
+  },
+  "CAES-USA": {
+    "about": "Cantor Equity Partners VII, Inc. is a closed‑end investment fund focused on acquiring and managing a diversified portfolio of private‑equity and alternative assets. It generates revenue through management fees, carried interest, and dividend distributions from underlying holdings, operating within the alternative asset management industry.",
+    "ipo_details": "The company is filing for an IPO on NASDAQ under the ticker CAES. The offering size is expected to be around $150 million, with a price band yet to be disclosed. Expected listing date is mid‑June 2026, lot size of 100 shares, and the listing exchange is NASDAQ.",
+    "financial_summary": "As of the latest filing, the fund reports net asset value (NAV) of approximately $1.2 billion, annual revenue of $45 million, net income of $12 million, total debt of $200 million, and an EPS (based on NAV per share) of $0.38.",
+    "financial_trend": "Revenue and NAV have grown 12% year‑over‑year, while debt levels have remained stable.",
+    "strengths": [
+      "Diversified portfolio of private‑equity assets",
+      "Experienced management team with strong track record",
+      "Steady fee‑based revenue stream"
+    ],
+    "risks": [
+      {
+        "text": "Exposure to illiquid private‑equity investments may limit cash flexibility.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Market volatility could affect valuation of underlying assets.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Regulatory changes to closed‑end fund structures could impact operations.",
+        "indicator": "🔴"
+      }
+    ],
+    "scores": {
+      "financial_health": 75,
+      "growth_potential": 80,
+      "risk": 65,
+      "attractiveness": 72
+    },
+    "ai_analysis": "Cantor Equity Partners VII offers investors exposure to a diversified private‑equity portfolio with a solid management team and consistent fee income. While growth prospects are attractive, liquidity and regulatory risks warrant caution. This AI‑generated summary is for informational purposes only and not financial advice.",
+    "verdict": "Neutral – the IPO presents moderate upside for long‑term investors but warrants careful consideration of liquidity and regulatory risks."
   }
 }
