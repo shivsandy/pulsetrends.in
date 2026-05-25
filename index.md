@@ -76,10 +76,10 @@ title: Home
 
 {% assign trending = site.posts | slice: 3, 8 %}
 {% if trending.size > 0 %}
-<div class="trending-section">
-  <div class="trending-header">
-    <h2>Best Reads</h2>
-    <a href="{{ '/search/' | relative_url }}" class="see-more">See More →</a>
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">Best Reads</h2>
+    <a href="{{ '/search/' | relative_url }}" class="section-link">See More →</a>
   </div>
   <div class="trending-scroll">
     {% for post in trending %}
@@ -104,15 +104,67 @@ title: Home
     </div>
     {% endfor %}
   </div>
-</div>
+</section>
 {% endif %}
+
+<h2 class="section-title" id="latestSection" style="scroll-margin-top:70px">Latest Articles</h2>
+
+<div class="post-grid" id="postGrid">
+  {% for post in posts offset:4 limit:12 %}
+  <article class="post-card">
+    <a href="{{ post.url | relative_url }}">
+      <div class="card-img-wrap">
+        {% if post.image %}
+        <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ post.title }}" class="post-card-img" loading="lazy" decoding="async">
+        {% else %}
+        <div class="post-card-img" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
+        {% endif %}
+      </div>
+      <div class="post-card-body">
+        {% if post.tags.size > 0 %}
+        <span class="cat-tag">{{ post.tags.first }}</span>
+        {% endif %}
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+        <span class="meta">{{ post.date | date: "%B %d, %Y" }}</span>
+      </div>
+    </a>
+  </article>
+  {% endfor %}
+</div>
+
+<div class="pagination" id="pagination"></div>
+
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">Popular Categories</h2>
+  </div>
+  <div class="cat-pills">
+    <a href="{{ '/ai/' | relative_url }}" class="pill" data-category="ai">Artificial Intelligence</a>
+    <a href="{{ '/tech/' | relative_url }}" class="pill" data-category="tech">Technology</a>
+    <a href="{{ '/crypto/' | relative_url }}" class="pill" data-category="crypto">Cryptocurrency</a>
+    <a href="{{ '/stocks/' | relative_url }}" class="pill" data-category="stocks">Stocks &amp; Markets</a>
+    <a href="{{ '/gaming/' | relative_url }}" class="pill" data-category="gaming">Gaming</a>
+    <a href="{{ '/politics/' | relative_url }}" class="pill" data-category="politics">Politics</a>
+    <a href="{{ '/sports/' | relative_url }}" class="pill" data-category="sports">Sports</a>
+    <a href="{{ '/entertainment/' | relative_url }}" class="pill" data-category="entertainment">Entertainment</a>
+    <a href="{{ '/health/' | relative_url }}" class="pill" data-category="health">Health &amp; Fitness</a>
+    <a href="{{ '/science/' | relative_url }}" class="pill" data-category="science">Science &amp; Space</a>
+    <a href="{{ '/business/' | relative_url }}" class="pill" data-category="business">Business</a>
+    <a href="{{ '/world/' | relative_url }}" class="pill" data-category="world">World News</a>
+    <a href="{{ '/mobile/' | relative_url }}" class="pill" data-category="mobile">Mobile &amp; Smartphones</a>
+    <a href="{{ '/phones/' | relative_url }}" class="pill" data-category="phones">Upcoming Phones</a>
+    <a href="{{ '/ipos/' | relative_url }}" class="pill" data-category="ipos">IPOs &amp; Listings</a>
+    <a href="{{ '/weather/' | relative_url }}" class="pill" data-category="weather">Weather &amp; Climate</a>
+  </div>
+</section>
 
 {% assign ipo_posts = site.posts | where_exp: "p", "p.tags contains 'ipos'" %}
 {% if ipo_posts.size > 0 %}
-<div class="trending-section">
-  <div class="trending-header">
-    <h2>Upcoming IPOs</h2>
-    <a href="{{ '/ipos/' | relative_url }}" class="see-more">All IPOs →</a>
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">Upcoming IPOs</h2>
+    <a href="{{ '/ipos/' | relative_url }}" class="section-link">All IPOs →</a>
   </div>
   <div class="trending-scroll">
     {% for post in ipo_posts %}
@@ -137,42 +189,8 @@ title: Home
     </div>
     {% endfor %}
   </div>
-</div>
+</section>
 {% endif %}
-
-<h2 class="section-title" id="latestSection" style="scroll-margin-top:70px">Latest Articles</h2>
-
-<div id="filterBar" class="filter-bar" style="display:none">
-  <span>Showing: <strong class="filter-cat-name"></strong></span>
-  <button id="clearFilter" class="filter-clear">✕ Clear</button>
-</div>
-
-  <div class="post-grid" id="postGrid">
-  {% for post in posts offset:4 limit:12 %}
-  {% assign page_num = forloop.index0 | divided_by: 4 | plus: 1 %}
-  <article class="post-card" data-page="{{ page_num }}"{% if page_num > 1 %} style="display:none"{% endif %}>
-    <a href="{{ post.url | relative_url }}">
-      <div class="card-img-wrap">
-        {% if post.image %}
-        <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ post.title }}" class="post-card-img" loading="lazy" decoding="async">
-        {% else %}
-        <div class="post-card-img" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
-        {% endif %}
-      </div>
-      <div class="post-card-body">
-        {% if post.tags.size > 0 %}
-        <span class="cat-tag">{{ post.tags.first }}</span>
-        {% endif %}
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
-        <span class="meta">{{ post.date | date: "%B %d, %Y" }}</span>
-      </div>
-    </a>
-  </article>
-  {% endfor %}
-</div>
-
-<div class="pagination" id="pagination"></div>
 
 {% elsif posts.size == 0 %}
 <div class="page-content">

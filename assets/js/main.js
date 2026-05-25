@@ -67,20 +67,6 @@
     }
   });
 
-  document.querySelectorAll('[data-category]').forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      var cat = this.getAttribute('data-category');
-      if (typeof window.filterByCategory === 'function') {
-        e.preventDefault();
-        window.filterByCategory(cat);
-        var target = document.getElementById('latestSection');
-        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        if (isMenuOpen) { closePanel(); }
-        if (dropdown) dropdown.classList.remove('nav-dropdown-open');
-      }
-    });
-  });
-
   var tagColors = {
     crypto: '#f59e0b', bitcoin: '#f59e0b', stock: '#10b981',
     ai: '#8b5cf6', tech: '#3b82f6', gaming: '#ec4899',
@@ -104,35 +90,16 @@
 
   var cards = Array.from(grid.querySelectorAll('.post-card'));
   var perPage = 4;
-  var activeCategory = null;
   var currentPage = 1;
-  var totalPages = 1;
+  var totalPages = Math.ceil(cards.length / perPage) || 1;
 
   function showPage(p) {
     currentPage = p;
-    var idx = 0;
-    cards.forEach(function(c) {
-      if (c.dataset.matchCategory === '1') {
-        var pageIdx = Math.floor(idx / perPage);
-        c.style.display = (pageIdx + 1 === p) ? '' : 'none';
-        idx++;
-      } else {
-        c.style.display = 'none';
-      }
+    cards.forEach(function(c, idx) {
+      var pageIdx = Math.floor(idx / perPage) + 1;
+      c.style.display = pageIdx === p ? '' : 'none';
     });
     renderPagination();
-  }
-
-  function applyFilter() {
-    var matchCount = 0;
-    cards.forEach(function(c) {
-      var tag = c.querySelector('.cat-tag');
-      var match = !activeCategory || (tag && tag.textContent.trim().toLowerCase() === activeCategory);
-      c.dataset.matchCategory = match ? '1' : '0';
-      if (match) matchCount++;
-    });
-    totalPages = Math.ceil(matchCount / perPage) || 1;
-    showPage(1);
   }
 
   function renderPagination() {
@@ -167,44 +134,5 @@
     });
   }
 
-  window.filterByCategory = function(cat) {
-    var filterBar = document.getElementById('filterBar');
-    if (cat === activeCategory) {
-      activeCategory = null;
-      if (filterBar) filterBar.style.display = 'none';
-    } else {
-      activeCategory = cat;
-      if (filterBar) {
-        filterBar.style.display = 'flex';
-        filterBar.querySelector('.filter-cat-name').textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-      }
-    }
-    var url = new URL(window.location);
-    if (activeCategory) {
-      url.searchParams.set('category', activeCategory);
-    } else {
-      url.searchParams.delete('category');
-    }
-    history.pushState({}, '', url);
-    applyFilter();
-  };
-
-  var clearBtn = document.getElementById('clearFilter');
-  if (clearBtn) {
-    clearBtn.addEventListener('click', function() {
-      window.filterByCategory(activeCategory);
-    });
-  }
-
-  var params = new URLSearchParams(window.location.search);
-  var catFromUrl = params.get('category');
-  if (catFromUrl) {
-    activeCategory = catFromUrl.toLowerCase();
-    var fb = document.getElementById('filterBar');
-    if (fb) {
-      fb.style.display = 'flex';
-      fb.querySelector('.filter-cat-name').textContent = activeCategory.charAt(0).toUpperCase() + activeCategory.slice(1);
-    }
-  }
-  applyFilter();
+  showPage(1);
 })();

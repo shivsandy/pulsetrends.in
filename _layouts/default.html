@@ -301,30 +301,7 @@
   </main>
   <aside class="sidebar" aria-label="Sidebar">
     <div class="sidebar-inner">
-      {% if page.title == 'Home' %}
-      <div class="sidebar-widget">
-        <h3><button class="cat-toggle" aria-label="Toggle categories">+</button> <span class="widget-icon" aria-hidden="true">◆</span> Categories</h3>
-        <div class="sidebar-cat collapsed">
-          <a href="{{ '/ai/' | relative_url }}" data-category="ai"><span>AI</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span>Technology</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span>Politics</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/finance/' | relative_url }}" data-category="finance"><span>Finance & Money</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/crypto/' | relative_url }}" data-category="crypto"><span>Cryptocurrency</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/stocks/' | relative_url }}" data-category="stocks"><span>Stocks & Markets</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/ipos/' | relative_url }}"><span>IPOs & Listings</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/gaming/' | relative_url }}" data-category="gaming"><span>Gaming</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/mobile/' | relative_url }}" data-category="mobile"><span>Mobile & Android</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/phones/' | relative_url }}" data-category="phones"><span>Upcoming Phones</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/sports/' | relative_url }}" data-category="sports"><span>Sports</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment"><span>Entertainment</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/health/' | relative_url }}" data-category="health"><span>Health & Fitness</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/science/' | relative_url }}" data-category="science"><span>Science & Space</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/business/' | relative_url }}" data-category="business"><span>Business</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/weather/' | relative_url }}" data-category="weather"><span>Weather & Climate</span><span class="cat-count" aria-hidden="true">↗</span></a>
-          <a href="{{ '/world/' | relative_url }}" data-category="world"><span>World News</span><span class="cat-count" aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-      {% else %}
+      {% unless page.title == 'Home' %}
       <div class="sidebar-widget">
         <h3><button class="cat-toggle" aria-label="Toggle categories">+</button> <span class="widget-icon" aria-hidden="true">◆</span> Categories</h3>
         <div class="sidebar-cat collapsed">
@@ -336,7 +313,7 @@
           <a href="{{ '/ipos/' | relative_url }}"><span>IPOs & Listings</span><span class="cat-count" aria-hidden="true">↗</span></a>
         </div>
       </div>
-      {% endif %}
+      {% endunless %}
     </div>
   </aside>
 </div>

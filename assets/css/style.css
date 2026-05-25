@@ -42,10 +42,10 @@ header {
   z-index: 100;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
-  padding: 10px 0;
+  padding: 12px 0;
   will-change: transform;
 }
-header.scrolled { box-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+header.scrolled { box-shadow: 0 2px 8px rgba(0,0,0,0.4); }
 header .container { display: flex; justify-content: space-between; align-items: center; }
 
 .logo a {
@@ -67,18 +67,33 @@ header .container { display: flex; justify-content: space-between; align-items: 
   letter-spacing: 1px;
 }
 
+.nav-links { display: flex; align-items: center; gap: 28px; }
+.nav-links a {
+  font-size: 0.85em; font-weight: 500; padding: 6px 0;
+  position: relative; color: var(--text-light); transition: color 0.2s;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: 0; left: 0;
+  width: 0; height: 2px; background: var(--primary);
+  transition: width 0.2s ease;
+}
+.nav-links a:hover { color: #fff; }
+.nav-links a:hover::after { width: 100%; }
+.nav-links a.nav-active { color: var(--primary); }
+.nav-links a.nav-active::after { width: 100%; }
+
 /* ─── Ticker ─── */
 .w-ticker {
   display: flex; align-items: center;
   background: var(--bg-card); border-bottom: 1px solid var(--border);
-  overflow: hidden; height: 36px; position: relative; z-index: 90;
+  overflow: hidden; height: 32px; position: relative; z-index: 90;
 }
 .w-ticker .ticker-label {
   flex-shrink: 0; position: relative; z-index: 10;
   background: var(--primary); color: #fff;
-  padding: 0 20px; white-space: nowrap;
-  font-size: 0.7em; font-weight: 700; text-transform: uppercase;
-  height: 36px; line-height: 36px;
+  padding: 0 16px; white-space: nowrap;
+  font-size: 0.65em; font-weight: 700; text-transform: uppercase;
+  height: 32px; line-height: 32px;
 }
 .w-ticker .ticker-track {
   flex: 1; overflow: hidden; position: relative;
@@ -90,9 +105,10 @@ header .container { display: flex; justify-content: space-between; align-items: 
 }
 .w-ticker .ticker-inner a {
   display: inline-block; color: var(--text-light); text-decoration: none;
-  font-size: 0.8em; margin-right: 40px; line-height: 36px;
+  font-size: 0.8em; margin-right: 40px; line-height: 32px;
 }
 .w-ticker .ticker-inner a:hover { color: var(--primary); }
+.w-ticker:hover .ticker-inner { animation-play-state: paused; }
 @keyframes ticker-scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -114,25 +130,23 @@ header .container { display: flex; justify-content: space-between; align-items: 
 .sidebar { min-width: 0; }
 .sidebar-inner { position: sticky; top: 90px; }
 
-/* ─── Filter Bar ─── */
-.filter-bar {
-  display: flex; align-items: center; gap: 12px;
-  background: var(--bg-card); border: 1px solid var(--primary);
-  border-radius: var(--radius); padding: 10px 16px;
-  margin-bottom: 20px; font-size: 0.85em; color: var(--text);
+/* ─── Section System ─── */
+.section { margin-bottom: 40px; }
+.section-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 20px;
 }
-.filter-bar .filter-clear {
-  background: none; border: 1px solid var(--border); color: var(--text-light);
-  border-radius: 4px; padding: 4px 10px; cursor: pointer;
-  font-size: 0.8em; margin-left: auto;
+.section-header .section-title { margin-bottom: 0; }
+.section-link {
+  font-size: 0.75em; color: var(--primary); text-decoration: none; font-weight: 600;
 }
-.filter-bar .filter-clear:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+.section-link:hover { text-decoration: underline; }
 
 /* ─── Section Title ─── */
 .section-title {
   font-size: 1.4em;
   font-weight: 700;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   color: #fff;
 }
 
@@ -349,17 +363,37 @@ footer {
 .pagination .disabled { opacity: 0.4; pointer-events: none; }
 .pagination .page-info { background: none; border: none; color: var(--text-muted); min-width: auto; }
 
+/* ─── Category Pills ─── */
+.cat-pills {
+  display: flex; flex-wrap: wrap; gap: 10px;
+}
+.pill {
+  display: inline-flex; align-items: center;
+  padding: 8px 20px; border-radius: 50px;
+  font-size: 0.85em; font-weight: 500;
+  background: var(--bg-card); border: 1px solid var(--border);
+  color: var(--text-light); transition: all 0.2s ease;
+  cursor: pointer; text-decoration: none;
+}
+.pill:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.4); color: #fff; }
+.pill[data-category=ai]:hover { background: #6c5ce7; border-color: #6c5ce7; }
+.pill[data-category=tech]:hover { background: #0984e3; border-color: #0984e3; }
+.pill[data-category=crypto]:hover { background: #f7931a; border-color: #f7931a; }
+.pill[data-category=stocks]:hover { background: #00b894; border-color: #00b894; }
+.pill[data-category=gaming]:hover { background: #e17055; border-color: #e17055; }
+.pill[data-category=politics]:hover { background: #d63031; border-color: #d63031; }
+.pill[data-category=sports]:hover { background: #fd79a8; border-color: #fd79a8; }
+.pill[data-category=entertainment]:hover { background: #fd79a8; border-color: #fd79a8; }
+.pill[data-category=health]:hover { background: #00b894; border-color: #00b894; }
+.pill[data-category=science]:hover { background: #74b9ff; border-color: #74b9ff; }
+.pill[data-category=business]:hover { background: #fdcb6e; border-color: #fdcb6e; color: #1a1a1e; }
+.pill[data-category=world]:hover { background: #636e72; border-color: #636e72; }
+.pill[data-category=mobile]:hover { background: #00cec9; border-color: #00cec9; }
+.pill[data-category=phones]:hover { background: #e17055; border-color: #e17055; }
+.pill[data-category=ipos]:hover { background: #e17055; border-color: #e17055; }
+.pill[data-category=weather]:hover { background: #74b9ff; border-color: #74b9ff; }
+
 /* ─── Best Reads / Trending Horizontal Scroller ─── */
-.trending-section { margin-bottom: 36px; }
-.trending-header {
-  display: flex; justify-content: space-between; align-items: center;
-  margin-bottom: 16px;
-}
-.trending-header h2 { font-size: 1.2em; font-weight: 700; color: #fff; }
-.trending-header .see-more {
-  font-size: 0.75em; color: var(--primary); text-decoration: none; font-weight: 600;
-}
-.trending-header .see-more:hover { text-decoration: underline; }
 .trending-scroll {
   display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch; padding-bottom: 8px;
@@ -491,7 +525,12 @@ footer {
   .footer-grid { grid-template-columns: 1fr; gap: 16px; }
   .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
   .site-wrap { padding: 24px 16px; }
-  .sidebar-widget:first-child { display: none; }
+  .section { margin-bottom: 28px; }
+  .section-title { font-size: 1.2em; margin-bottom: 18px; }
+  .template-grid-tall { margin-bottom: 28px; gap: 12px; }
+  .cat-pills { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 4px; scrollbar-width: none; }
+  .cat-pills::-webkit-scrollbar { display: none; }
+  .pill { flex-shrink: 0; font-size: 0.8em; padding: 6px 16px; }
 }
 @media (max-width: 480px) {
   .logo a { font-size: 1.2em; }
