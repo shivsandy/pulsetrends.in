@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPOs - PulseTrends</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/ipodashboard/style.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="container">
+    <div class="logo">
+      <a href="/" aria-label="PulseTrends Home"><span class="logo-icon" aria-hidden="true"></span> Pulse<span>Trends</span></a>
+      <span class="tagline">Daily Trending Insights</span>
+    </div>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <div class="nav-dropdown">
+        <a href="#" class="dropdown-trigger">Categories </a>
+        <div class="dropdown-menu">
+          <a href="/crypto/" data-category="crypto">Cryptocurrency</a>
+          <a href="/stocks/" data-category="stocks">Stocks & Markets</a>
+          <a href="/ipos/">IPOs & Listings</a>
+          <a href="/ai/" data-category="ai">Artificial Intelligence</a>
+          <a href="/tech/" data-category="tech">Technology</a>
+          <a href="/gaming/" data-category="gaming">Gaming</a>
+          <a href="/mobile/" data-category="mobile">Mobile & Smartphones</a>
+          <a href="/phones/" data-category="phones">Upcoming Phones</a>
+          <a href="/sports/" data-category="sports">Sports</a>
+          <a href="/entertainment/" data-category="entertainment">Entertainment</a>
+          <a href="/health/" data-category="health">Health & Fitness</a>
+          <a href="/science/" data-category="science">Science & Space</a>
+          <a href="/business/" data-category="business">Business</a>
+          <a href="/politics/" data-category="politics">Politics</a>
+          <a href="/world/" data-category="world">World News</a>
+          <a href="/weather/" data-category="weather">Weather & Climate</a>
+        </div>
+      </div>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/search/">Search</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="mobile-panel" id="mobilePanel">
+  <div class="mobile-panel-header">
+    <span class="mobile-panel-title">Categories</span>
+    <button class="mobile-panel-close" id="panelClose">✕</button>
+  </div>
+  <div class="mobile-panel-body">
+    <a href="/ai/" data-category="ai">AI ↗</a>
+    <a href="/tech/" data-category="tech">Technology ↗</a>
+    <a href="/politics/" data-category="politics">Politics ↗</a>
+    <a href="/finance/" data-category="finance">Finance & Money ↗</a>
+    <a href="/crypto/" data-category="crypto">Cryptocurrency ↗</a>
+    <a href="/stocks/" data-category="stocks">Stocks & Markets ↗</a>
+    <a href="/gaming/" data-category="gaming">Gaming ↗</a>
+    <a href="/mobile/" data-category="mobile">Mobile & Android ↗</a>
+    <a href="/phones/" data-category="phones">Upcoming Phones ↗</a>
+    <a href="/sports/" data-category="sports">Sports ↗</a>
+    <a href="/entertainment/" data-category="entertainment">Entertainment ↗</a>
+    <a href="/health/" data-category="health">Health & Fitness ↗</a>
+    <a href="/science/" data-category="science">Science & Space ↗</a>
+    <a href="/business/" data-category="business">Business ↗</a>
+    <a href="/weather/" data-category="weather">Weather & Climate ↗</a>
+    <a href="/ipos/">IPOs & Listings ↗</a>
+  </div>
+</div>
+
+<div class="ipo-container">
+  <p class="subtitle">Upcoming & Open IPOs across India, USA & Global Markets</p>
+  <div class="last-updated" id="lastUpdated"></div>
+
+  <div class="controls">
+    <div class="search-wrapper">
+      <input type="text" id="searchInput" placeholder="Search by company or symbol..." autocomplete="off">
+    </div>
+    <div class="filters" id="filterButtons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="India">India</button>
+      <button class="filter-btn" data-filter="USA">USA</button>
+      <button class="filter-btn" data-filter="global">Global</button>
+      <button class="filter-btn" data-filter="open">Open</button>
+      <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+    </div>
+  </div>
+
+  <div class="table-wrapper">
+    <table id="ipoTable">
+      <thead>
+        <tr>
+          <th data-sort="symbol" class="sortable">Symbol <span class="sort-icon"></span></th>
+          <th data-sort="company_name" class="sortable">Company <span class="sort-icon"></span></th>
+          <th data-sort="exchange" class="sortable">Exchange <span class="sort-icon"></span></th>
+          <th data-sort="price_band" class="sortable">Price <span class="sort-icon"></span></th>
+          <th data-sort="listing_date" class="sortable">Listing Date <span class="sort-icon"></span></th>
+          <th data-sort="issue_size" class="sortable">Issue Size <span class="sort-icon"></span></th>
+          <th data-sort="subscription" class="sortable">Subscription <span class="sort-icon"></span></th>
+          <th data-sort="status" class="sortable">Status <span class="sort-icon"></span></th>
+        </tr>
+      </thead>
+      <tbody id="ipoBody"></tbody>
+    </table>
+  </div>
+
+  <div class="status-bar">
+    <span id="ipoCount">Loading...</span>
+  </div>
+</div>
+
+<div id="ipoModal" class="modal-overlay hidden">
+  <div class="modal-backdrop"></div>
+  <div class="modal-wrap modal-wrap-full">
+    <div class="modal-header">
+      <div class="modal-header-left">
+        <h2 id="modalTitle"></h2>
+        <div class="modal-meta" id="modalMeta">
+          <span class="modal-symbol" id="modalSymbol"></span>
+          <span class="exchange-badge" id="modalExchange"></span>
+          <span class="country-badge" id="modalCountryBadge"></span>
+          <span class="status-badge" id="modalStatusBadge"></span>
+        </div>
+      </div>
+      <button class="modal-close" id="modalClose">&times;</button>
+    </div>
+    <div class="modal-body" id="modalBody">
+      <div id="modalContent"></div>
+    </div>
+  </div>
+</div>
+
+<script src="/assets/js/main.js" defer></script>
+<script src="/ipodashboard/script.js"></script>
+</body>
+</html>
