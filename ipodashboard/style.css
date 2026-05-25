@@ -403,37 +403,40 @@ tbody td {
   content: "\2212";
 }
 
-/* ─── Accordion Body — smooth max-height animation ─── */
+/* ─── Accordion Body — smooth grid-template-rows animation ─── */
 .detail-card-body {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.35s ease;
+}
+.detail-card.collapsed .detail-card-body {
+  grid-template-rows: 0fr;
+}
+.detail-card-inner {
+  overflow: hidden;
   padding: 16px;
   font-size: 14px;
   line-height: 1.7;
   color: var(--text-light, var(--text-muted));
-  max-height: 5000px;
-  overflow: hidden;
-  transition: max-height 0.35s ease, padding 0.35s ease, opacity 0.3s ease;
-  opacity: 1;
   overflow-wrap: break-word;
   word-break: break-word;
   white-space: normal;
 }
-.detail-card.collapsed .detail-card-body {
-  max-height: 0;
+.detail-card.collapsed .detail-card-inner {
   padding-top: 0;
   padding-bottom: 0;
-  opacity: 0;
 }
 
-.detail-card-body ul {
+.detail-card-inner ul {
   list-style: none;
   padding: 0;
 }
-.detail-card-body li {
+.detail-card-inner li {
   position: relative;
   padding-left: 18px;
   margin-bottom: 10px;
 }
-.detail-card-body li::before {
+.detail-card-inner li::before {
   content: "\2022";
   position: absolute;
   left: 0;
@@ -718,7 +721,7 @@ tbody td {
   .detail-card-head h3 {
     font-size: 13px;
   }
-  .detail-card-body {
+  .detail-card-inner {
     padding: 12px;
     font-size: 13px;
   }
