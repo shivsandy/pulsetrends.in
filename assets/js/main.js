@@ -109,19 +109,18 @@
 
     var html = '';
     if (currentPage > 1) {
-      html += '<a href="#" data-page="' + (currentPage - 1) + '" class="prev" aria-label="Previous page">&lsaquo;</a>';
+      html += '<a href="?page=' + (currentPage - 1) + '" data-page="' + (currentPage - 1) + '" class="prev" rel="prev" aria-label="Previous page">&lsaquo; <span class="pg-label">Previous</span></a>';
     } else {
-      html += '<span class="disabled" aria-hidden="true">&lsaquo;</span>';
+      html += '<span class="disabled" aria-hidden="true">&lsaquo; <span class="pg-label">Previous</span></span>';
     }
     for (var i = 1; i <= totalPages; i++) {
-      html += i === currentPage ? '<span class="active">' + i + '</span>' : '<a href="#" data-page="' + i + '">' + i + '</a>';
+      html += i === currentPage ? '<span class="active">' + i + '</span>' : '<a href="?page=' + i + '" data-page="' + i + '">' + i + '</a>';
     }
     if (currentPage < totalPages) {
-      html += '<a href="#" data-page="' + (currentPage + 1) + '" class="next" aria-label="Next page">&rsaquo;</a>';
+      html += '<a href="?page=' + (currentPage + 1) + '" data-page="' + (currentPage + 1) + '" class="next" rel="next" aria-label="Next page"><span class="pg-label">Next</span> &rsaquo;</a>';
     } else {
-      html += '<span class="disabled" aria-hidden="true">&rsaquo;</span>';
+      html += '<span class="disabled" aria-hidden="true"><span class="pg-label">Next</span> &rsaquo;</span>';
     }
-    html += '<span class="page-info">' + currentPage + ' / ' + totalPages + '</span>';
     el.innerHTML = html;
 
     el.querySelectorAll('a[data-page]').forEach(function(a) {

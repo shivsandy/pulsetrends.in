@@ -42,7 +42,7 @@
   <link rel="sitemap" type="application/xml" href="{{ '/news-sitemap.xml' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
   {% seo %}
-  {% if page.title == 'Home' %}{% assign hero_post = site.posts.first %}{% if hero_post and hero_post.image %}<link rel="preload" as="image" href="{{ hero_post.image }}" fetchpriority="high">{% endif %}{% endif %}
+  {% if page.title == 'Home' %}{% assign hero_post = site.posts.first %}{% if hero_post and hero_post.image %}<link rel="preload" as="image" href="{{ hero_post.image }}&auto=format" fetchpriority="high">{% endif %}{% endif %}
   {% if site.google_adsense_id %}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.google_adsense_id }}" crossorigin="anonymous"></script>
   {% endif %}
@@ -233,7 +233,7 @@
       </nav>
       {% if page.image %}
       <div class="article-img-wrap">
-        <img src="{{ page.image }}" alt="{{ page.title | escape }}" class="featured-img" width="1200" height="675" loading="eager" fetchpriority="high" itemprop="image">
+        <img src="{{ page.image }}&auto=format" alt="{{ page.title | escape }}" class="featured-img" width="1200" height="675" loading="eager" fetchpriority="high" itemprop="image">
         <div class="img-overlay"></div>
       </div>
       {% endif %}
@@ -277,7 +277,7 @@
             <a href="{{ post.url | relative_url }}">
               <div class="card-img-wrap">
                 {% if post.image %}
-                <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ post.title }}" class="post-card-img" loading="lazy" decoding="async">
+                <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format" alt="{{ post.title }}" class="post-card-img" loading="lazy" decoding="async">
                 {% else %}
                 <div class="post-card-img" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
                 {% endif %}

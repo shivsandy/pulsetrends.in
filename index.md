@@ -19,7 +19,7 @@ title: Home
       <a href="{{ primary.url | relative_url }}">
         <div class="hero-img-wrap">
           {% if primary.image %}
-          <img src="{{ primary.image }}" alt="{{ primary.title }}" class="hero-img" width="1200" height="675" loading="eager" fetchpriority="high">
+          <img src="{{ primary.image }}&auto=format" alt="{{ primary.title }}" class="hero-img" width="1200" height="675" loading="eager" fetchpriority="high">
           {% else %}
           <div class="hero-img-placeholder" style="background: linear-gradient(135deg, #1a1a2e, #e01a4f);"></div>
           {% endif %}
@@ -42,7 +42,7 @@ title: Home
         <a href="{{ secondary1.url | relative_url }}">
           <div class="side-img-wrap">
             {% if secondary1.image %}
-            <img src="{{ secondary1.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ secondary1.title }}" width="400" height="267" loading="lazy" decoding="async">
+            <img src="{{ secondary1.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format" alt="{{ secondary1.title }}" width="400" height="267" loading="lazy" decoding="async">
             {% else %}
             <div class="side-img-placeholder" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
             {% endif %}
@@ -60,7 +60,7 @@ title: Home
         <a href="{{ secondary2.url | relative_url }}">
           <div class="side-img-wrap">
             {% if secondary2.image %}
-            <img src="{{ secondary2.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ secondary2.title }}" width="400" height="267" loading="lazy" decoding="async">
+            <img src="{{ secondary2.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format" alt="{{ secondary2.title }}" width="400" height="267" loading="lazy" decoding="async">
             {% else %}
             <div class="side-img-placeholder" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
             {% endif %}
@@ -79,12 +79,12 @@ title: Home
     <h2 class="section-title" id="latestSection" style="scroll-margin-top:70px">Latest Articles</h2>
 
     <div class="post-grid" id="postGrid">
-      {% for post in posts offset:4 limit:8 %}
+      {% for post in posts offset:4 limit:24 %}
       <article class="post-card">
         <a href="{{ post.url | relative_url }}">
           <div class="card-img-wrap">
             {% if post.image %}
-            <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}" alt="{{ post.title }}" class="post-card-img" width="400" height="267" loading="lazy" decoding="async">
+            <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format" alt="{{ post.title }}" class="post-card-img" width="400" height="267" loading="lazy" decoding="async">
             {% else %}
             <div class="post-card-img" style="background: linear-gradient(135deg, #16213e, #e01a4f);"></div>
             {% endif %}

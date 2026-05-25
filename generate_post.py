@@ -702,11 +702,11 @@ def fetch_image(query, api_key, used_urls=None):
                     continue
                 if url not in used_urls:
                     used_urls.add(url)
-                    return f"{url}?w=1200"
+                    return f"{url}?w=1200&auto=format"
             fallback = data["results"][0]
             url = fallback["urls"]["regular"]
             if url.startswith("https://images.unsplash.com/"):
-                return f"{url}?w=1200"
+                return f"{url}?w=1200&auto=format"
         return ""
     except Exception:
         return ""

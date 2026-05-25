@@ -208,7 +208,7 @@ header .container { display: flex; justify-content: space-between; align-items: 
 }
 
 /* ─── Post Grid ─── */
-.post-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px; }
+.post-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px; grid-auto-flow: dense; }
 .post-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -293,6 +293,8 @@ header .container { display: flex; justify-content: space-between; align-items: 
 .pagination .active { background: var(--primary); color: #fff; border-color: var(--primary); }
 .pagination .disabled { opacity: 0.4; pointer-events: none; }
 .pagination .page-info { background: none; border: none; color: var(--text-muted); min-width: auto; }
+.pagination .pg-label { display: inline; }
+@media (max-width: 480px) { .pagination .pg-label { display: none; } }
 
 /* ─── Article Page ─── */
 article.article-page {
