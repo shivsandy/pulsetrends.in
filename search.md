@@ -8,7 +8,9 @@ permalink: /search/
   <h1>Search Articles</h1>
   <div class="search-box">
     <input type="text" id="searchInput" placeholder="Search articles by title, category, or keyword..." class="search-input" autofocus>
-    <span class="search-icon">🔍</span>
+    <span class="search-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </span>
   </div>
   <div id="searchResults" class="post-grid" style="margin-top:24px"></div>
   <p id="searchEmpty" class="search-empty" style="display:none">No articles found. Try a different search term.</p>

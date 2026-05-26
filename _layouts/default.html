@@ -199,25 +199,25 @@
 <div class="mobile-panel" id="mobilePanel">
   <div class="mobile-panel-header">
     <span class="mobile-panel-title">Categories</span>
-    <button class="mobile-panel-close" id="panelClose">âœ•</button>
+    <button class="mobile-panel-close" id="panelClose">&times;</button>
   </div>
   <div class="mobile-panel-body">
-    <a href="{{ '/ai/' | relative_url }}" data-category="ai">AI â†—</a>
-    <a href="{{ '/tech/' | relative_url }}" data-category="tech">Technology â†—</a>
-    <a href="{{ '/politics/' | relative_url }}" data-category="politics">Politics â†—</a>
-    <a href="{{ '/finance/' | relative_url }}" data-category="finance">Finance & Money â†—</a>
-    <a href="{{ '/crypto/' | relative_url }}" data-category="crypto">Cryptocurrency â†—</a>
-    <a href="{{ '/stocks/' | relative_url }}" data-category="stocks">Stocks & Markets â†—</a>
-    <a href="{{ '/gaming/' | relative_url }}" data-category="gaming">Gaming â†—</a>
-    <a href="{{ '/mobile/' | relative_url }}" data-category="mobile">Mobile & Android â†—</a>
-    <a href="{{ '/phones/' | relative_url }}" data-category="phones">Upcoming Phones â†—</a>
-    <a href="{{ '/sports/' | relative_url }}" data-category="sports">Sports â†—</a>
-    <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment">Entertainment â†—</a>
-    <a href="{{ '/health/' | relative_url }}" data-category="health">Health & Fitness â†—</a>
-    <a href="{{ '/science/' | relative_url }}" data-category="science">Science & Space â†—</a>
-    <a href="{{ '/business/' | relative_url }}" data-category="business">Business â†—</a>
-    <a href="{{ '/weather/' | relative_url }}" data-category="weather">Weather & Climate â†—</a>
-    <a href="{{ '/ipos/' | relative_url }}">IPOs & Listings â†—</a>
+    <a href="{{ '/ai/' | relative_url }}" data-category="ai">AI &rarr;</a>
+    <a href="{{ '/tech/' | relative_url }}" data-category="tech">Technology &rarr;</a>
+    <a href="{{ '/politics/' | relative_url }}" data-category="politics">Politics &rarr;</a>
+    <a href="{{ '/finance/' | relative_url }}" data-category="finance">Finance & Money &rarr;</a>
+    <a href="{{ '/crypto/' | relative_url }}" data-category="crypto">Cryptocurrency &rarr;</a>
+    <a href="{{ '/stocks/' | relative_url }}" data-category="stocks">Stocks & Markets &rarr;</a>
+    <a href="{{ '/gaming/' | relative_url }}" data-category="gaming">Gaming &rarr;</a>
+    <a href="{{ '/mobile/' | relative_url }}" data-category="mobile">Mobile & Android &rarr;</a>
+    <a href="{{ '/phones/' | relative_url }}" data-category="phones">Upcoming Phones &rarr;</a>
+    <a href="{{ '/sports/' | relative_url }}" data-category="sports">Sports &rarr;</a>
+    <a href="{{ '/entertainment/' | relative_url }}" data-category="entertainment">Entertainment &rarr;</a>
+    <a href="{{ '/health/' | relative_url }}" data-category="health">Health & Fitness &rarr;</a>
+    <a href="{{ '/science/' | relative_url }}" data-category="science">Science & Space &rarr;</a>
+    <a href="{{ '/business/' | relative_url }}" data-category="business">Business &rarr;</a>
+    <a href="{{ '/weather/' | relative_url }}" data-category="weather">Weather & Climate &rarr;</a>
+    <a href="{{ '/ipos/' | relative_url }}">IPOs & Listings &rarr;</a>
   </div>
 </div>
 
@@ -300,7 +300,7 @@
           {% if page.tags.size > 0 %}
           <span class="cat-tag">{{ page.tags.first }}</span>
           {% endif %}
-          <span class="meta-author">By {{ page.author | default: site.title }}</span>
+
           <span class="meta-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time></span>
         </div>
         <h1 itemprop="headline">{{ page.title }}</h1>
@@ -313,7 +313,7 @@
 
       {% assign read_time = content | strip_html | number_of_words | divided_by: 200 | plus: 1 %}
       <div class="article-footer-meta">
-        <span class="read-time">ðŸ“– {{ read_time }} min read</span>
+        <span class="read-time">{{ read_time }} min read</span>
         <div class="share-buttons">
           <span>Share:</span>
           <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url }}" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter">Twitter</a>
@@ -372,12 +372,12 @@
       <div class="sidebar-widget">
         <h3><button class="cat-toggle" aria-label="Toggle categories">+</button> Categories</h3>
         <div class="sidebar-cat collapsed">
-          <a href="{{ '/ai/' | relative_url }}" data-category="ai"><span>AI</span><span class="cat-count" aria-hidden="true">â†—</span></a>
-          <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span>Technology</span><span class="cat-count" aria-hidden="true">â†—</span></a>
-          <a href="{{ '/phones/' | relative_url }}" data-category="phones"><span>Upcoming Phones</span><span class="cat-count" aria-hidden="true">â†—</span></a>
-          <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span>Politics</span><span class="cat-count" aria-hidden="true">â†—</span></a>
-          <a href="{{ '/finance/' | relative_url }}" data-category="finance"><span>Finance & Money</span><span class="cat-count" aria-hidden="true">â†—</span></a>
-          <a href="{{ '/ipos/' | relative_url }}"><span>IPOs & Listings</span><span class="cat-count" aria-hidden="true">â†—</span></a>
+          <a href="{{ '/ai/' | relative_url }}" data-category="ai"><span>AI</span><span class="cat-count" aria-hidden="true">&rarr;</span></a>
+          <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span>Technology</span><span class="cat-count" aria-hidden="true">&rarr;</span></a>
+          <a href="{{ '/phones/' | relative_url }}" data-category="phones"><span>Upcoming Phones</span><span class="cat-count" aria-hidden="true">&rarr;</span></a>
+          <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span>Politics</span><span class="cat-count" aria-hidden="true">&rarr;</span></a>
+          <a href="{{ '/finance/' | relative_url }}" data-category="finance"><span>Finance & Money</span><span class="cat-count" aria-hidden="true">&rarr;</span></a>
+          <a href="{{ '/ipos/' | relative_url }}"><span>IPOs & Listings</span><span class="cat-count" aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
     </div>
@@ -419,12 +419,13 @@
       <div class="footer-links">
         <h4>Legal</h4>
         <a href="{{ '/privacy/' | relative_url }}" rel="noopener">Privacy Policy</a>
+        <a href="{{ '/cookies/' | relative_url }}" rel="noopener">Cookie Policy</a>
         <a href="{{ '/terms/' | relative_url }}" rel="noopener">Terms of Service</a>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
-      <p class="footer-made">Made with  for insight</p>
+      <p class="footer-made">Made for insight</p>
     </div>
   </div>
 </footer>
