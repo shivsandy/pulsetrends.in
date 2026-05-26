@@ -130,6 +130,19 @@
 
   initPagination('latestGrid', 'latestPagination', 8);
 
+  // ─── IntersectionObserver: fade-in cards on scroll ───
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '100px 0px' });
+  document.querySelectorAll('.section-card, .left-card, .hero-card').forEach(function(el) {
+    observer.observe(el);
+  });
+
   // ─── IPO Stock Cards (fetch JSON, show first 8) ───
   function loadIPOStocks() {
     var container = document.getElementById('ipoStockList');
