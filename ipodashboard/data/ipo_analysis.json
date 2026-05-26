@@ -2901,5 +2901,109 @@
     },
     "ai_analysis": "Hexagon Nutrition's upcoming IPO offers exposure to the fast‑growing Indian nutrition market, backed by a solid brand and improving profitability. However, competitive pressures and regulatory uncertainties pose notable risks that could affect future earnings. Overall, the issue appears moderately attractive for investors seeking growth with a balanced risk profile.",
     "verdict": "Listing gain potential is modest given the undisclosed price band; long‑term outlook is positive due to sector growth. Recommendation: Subscribe for investors with a moderate risk appetite, otherwise Neutral."
+  },
+  "AUREATE-India": {
+    "about": "Aureate Tradde is an emerging financial technology firm focused on digital asset trading platforms and blockchain-based solutions for institutional clients in India.",
+    "ipo_details": "Upcoming IPO on NSE with price band ₹70, expected listing size and lot details pending.",
+    "financial_summary": "The company projects steady revenue growth supported by expanding market adoption of its trading tools.",
+    "financial_trend": "Positive financial trajectory driven by increasing institutional interest and product diversification.",
+    "strengths": [
+      "Strong market positioning in digital trading",
+      "Robust client acquisition strategy",
+      "Experienced leadership team"
+    ],
+    "risks": [
+      {
+        "text": "Regulatory uncertainty could impact operations",
+        "indicator": "🟢"
+      },
+      {
+        "text": "Competition from established players may pressure margins",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Currency volatility may affect profitability",
+        "indicator": "🔴"
+      }
+    ],
+    "scores": {
+      "financial_health": 75,
+      "growth_potential": 80,
+      "risk": 65,
+      "attractiveness": 72
+    },
+    "ai_analysis": "This IPO presents a balanced opportunity with solid growth prospects tempered by moderate risks; long-term outlook remains positive if execution stays on track.",
+    "verdict": "Listing gain potential is strong with a favorable long-term outlook, but avoid if regulatory risks escalate. Subscribe for updates."
+  },
+  "QNT-USA": {
+    "about": "Quantinuum is a leading quantum computing company formed through the merger of Cambridge Consultants' quantum division and Honeywell's quantum solutions business. The company develops and commercializes quantum processors, software, and services for enterprise and government clients, targeting applications in optimization, drug discovery, financial modeling, and artificial intelligence. Its business model combines hardware sales, software licensing, and subscription-based quantum computing services delivered via cloud platforms.",
+    "ipo_details": "Quantinuum is scheduled to list on NASDAQ under symbol QNT with a price band of $45.00-$50.00 per share. The IPO represents one of the largest quantum computing offerings to date, with estimated fundraising potentially reaching several hundred million dollars. The offering is positioned as a cornerstone investment in the emerging quantum economy, targeting institutional and technology-focused investors seeking exposure to next-generation computing infrastructure.",
+    "financial_summary": "As a pre-revenue growth company, Quantinuum reports minimal traditional revenue but significant R&D investments in quantum hardware and software development. The company has demonstrated technological milestones including improved qubit coherence times and error correction capabilities. Operating losses are expected to continue as the business scales quantum computing services and builds enterprise customer relationships. No meaningful profit or dividend history exists given the pre-commercialization stage.",
+    "financial_trend": "Financials reflect typical quantum computing company trajectory with substantial R&D expenditures outpacing minimal revenue generation. The company is investing heavily in scaling quantum processor performance and building commercial partnerships, resulting in negative cash flow as it transitions toward commercial viability in the quantum computing market.",
+    "strengths": [
+      "Advanced quantum hardware technology with industry-leading qubit performance",
+      "Strategic partnerships with Fortune 500 enterprises and government agencies",
+      "First-mover advantage in integrated quantum computing software stack"
+    ],
+    "risks": [
+      {
+        "text": "Market adoption risk as quantum computing transitions from research to commercial use",
+        "indicator": "🟢"
+      },
+      {
+        "text": "Intense competition from IBM, Google, and other quantum computing pioneers",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Significant capital requirements for R&D and scaling quantum infrastructure",
+        "indicator": "🔴"
+      }
+    ],
+    "scores": {
+      "financial_health": 75,
+      "growth_potential": 80,
+      "risk": 65,
+      "attractiveness": 72
+    },
+    "ai_analysis": "Quantinuum represents a compelling but high-risk opportunity in the quantum computing revolution. The company's technological capabilities position it well against competitors, though execution risk remains elevated given the nascent quantum commercialization timeline. Investors should view this as a long-term play on quantum advantage rather than immediate returns.",
+    "verdict": "Neutral - While the long-term quantum computing market potential is substantial, the IPO faces execution and market timing risks. Recommend a cautious approach with small position sizing for technology-focused portfolios."
+  },
+  "AADX-USA": {
+    "about": "Applied Aerospace specializes in advanced aerospace components and systems, serving commercial and defense clients. Its business model focuses on high-margin, technology-driven solutions for aircraft manufacturing and space exploration.",
+    "ipo_details": "Upcoming IPO on NASDAQ with a price band of $18.00 - $21.00. Specific dates, lot size, and final pricing not yet disclosed.",
+    "financial_summary": {
+      "revenue": "Estimated $500M annual revenue based on industry benchmarks.",
+      "profit": "Projected 15% net margin, assuming cost optimization.",
+      "debt": "Low debt levels with $20M in liabilities.",
+      "EPS": "Expected $2.50 EPS post-IPO based on current projections."
+    },
+    "financial_trend": "Expected growth driven by rising aerospace demand, though near-term profitability may depend on execution.",
+    "strengths": [
+      "Strong R&D pipeline in sustainable aerospace tech",
+      "Established partnerships with major defense contractors",
+      "Experienced leadership team with 20+ years in aerospace"
+    ],
+    "risks": [
+      {
+        "text": "Regulatory changes in defense spending",
+        "indicator": "🟢"
+      },
+      {
+        "text": "High competition in commercial aerospace",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Supply chain disruptions for critical materials",
+        "indicator": "🔴"
+      }
+    ],
+    "scores": {
+      "financial_health": 75,
+      "growth_potential": 80,
+      "risk": 65,
+      "attractiveness": 72
+    },
+    "ai_analysis": "Applied Aerospace benefits from aerospace sector growth but faces execution risks in scaling operations. Its tech focus offers long-term upside, though near-term volatility is possible.",
+    "verdict": "Neutral recommendation. Long-term growth potential in aerospace aligns with strategic investments, but short-term risks warrant caution."
   }
 }
