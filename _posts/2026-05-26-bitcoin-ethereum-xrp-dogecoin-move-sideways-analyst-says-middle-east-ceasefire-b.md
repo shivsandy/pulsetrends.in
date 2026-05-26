@@ -1,7 +1,7 @@
 ---
 title: "Bitcoin, Ethereum, XRP, Dogecoin Move Sideways: Analyst Says Middle East Ceasefire 'Best Trigger'..."
 date: 2026-05-26 09:04:50
-author: PulseTrends Editorial Team
+author: Ananya Patel
 excerpt: "Introduction to the Current State of Cryptocurrency Markets The world of cryptocurrency has been witnessing a significant surge in recent years, with ..."
 image: "https://images.unsplash.com/photo-1640161704729-cbe966a08476?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHwxfHxjcnlwdG9jdXJyZW5jeSUyMGJsb2NrY2hhaW58ZW58MHwwfHx8MTc3OTcyMTkwOHww&ixlib=rb-4.1.0&q=80&w=1080?w=1200&auto=format"
 tags: [crypto]

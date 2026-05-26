@@ -1,7 +1,7 @@
 ---
 title: "From US to Pakistan, fuel prices surged globally while India held the line - Asia News Network"
 date: 2026-05-25 15:59:13
-author: PulseTrends Editorial Team
+author: Ravi Sharma
 excerpt: "**Global Fuel Price Surge: Understanding the Trends and Factors** =========================================================== **Introduction** -------..."
 image: "https://images.unsplash.com/photo-1755514838233-56450c9db3bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHwzMXx8QXNpYSUyME5ld3MlMjBOZXR3b3JrfGVufDB8MHx8fDE3Nzk3MjIwNTN8MA&ixlib=rb-4.1.0&q=80&w=1080?w=1200&auto=format"
 tags: [world]

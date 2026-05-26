@@ -1,7 +1,7 @@
 ---
 title: "It’s time to reckon with the geopolitics of artificial intelligence - Atlantic Council"
 date: 2026-05-25 11:50:59
-author: PulseTrends Editorial Team
+author: Sarah Mitchell
 excerpt: "Reckoning with the Geopolitics of Artificial Intelligence In today's rapidly evolving digital landscape, Artificial Intelligence (AI) has emerged as a..."
 image: "https://images.unsplash.com/photo-1777572433530-ef987ea3f06c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHwyMXx8cG9saXRpY3MlMjBnb3Zlcm5tZW50JTIwY2FwaXRvbCUyMGJ1aWxkaW5nfGVufDB8MHx8fDE3Nzk3MDg5NTl8MA&ixlib=rb-4.1.0&q=80&w=1080?w=1200"
 tags: [politics]

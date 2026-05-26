@@ -1,7 +1,7 @@
 ---
 title: "Dubai Esports & Games Festival 2026 Highlights Gaming Skills and Career Opportunities - News and ..."
 date: 2026-05-26 09:38:10
-author: PulseTrends Editorial Team
+author: Sarah Mitchell
 excerpt: "Introduction to the Dubai Esports & Games Festival 2026 The Dubai Esports & Games Festival 2026 is set to be one of the most exciting and highly antic..."
 image: "https://images.unsplash.com/photo-1558008412-f42c059a9d02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHwxMXx8dmlkZW8lMjBnYW1pbmclMjBlc3BvcnRzJTIwY29udHJvbGxlcnxlbnwwfDB8fHwxNzc5Nzg2NDkwfDA&ixlib=rb-4.1.0&q=80&w=1080?w=1200&auto=format"
 tags: [gaming]

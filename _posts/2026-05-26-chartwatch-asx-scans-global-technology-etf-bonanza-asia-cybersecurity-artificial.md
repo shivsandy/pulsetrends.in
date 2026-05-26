@@ -1,7 +1,7 @@
 ---
 title: "ChartWatch ASX Scans: Global technology ETF bonanza! Asia, Cybersecurity, Artificial Intelligence..."
 date: 2026-05-26 09:22:24
-author: PulseTrends Editorial Team
+author: David Chen
 excerpt: "Introduction to the Global Technology ETF Bonanza The world of technology is experiencing an unprecedented boom, with innovations in artificial intell..."
 image: "https://images.unsplash.com/photo-1644165918597-f182dc5e43f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHw0MXx8cnRpZmljaWFsJTIwSW50ZWxsaWdlbmNlJTJDJTIwUm9ib3RpY3MlMjAlMjYlMjBBdXRvbXxlbnwwfDB8fHwxNzc5Nzg2NDQ0fDA&ixlib=rb-4.1.0&q=80&w=1080?w=1200&auto=format"
 tags: [tech]

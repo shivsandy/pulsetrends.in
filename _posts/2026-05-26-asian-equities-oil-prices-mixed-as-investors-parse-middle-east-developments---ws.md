@@ -1,7 +1,7 @@
 ---
 title: "Asian Equities, Oil Prices Mixed as Investors Parse Middle East Developments - WSJ"
 date: 2026-05-26 10:10:20
-author: PulseTrends Editorial Team
+author: Ravi Sharma
 excerpt: "Asian Equities and Oil Prices: Navigating Middle East Developments In the ever-evolving global economy, the interplay between Asian equities, oil pric..."
 image: "https://images.unsplash.com/photo-1632507127573-f4098f6f027f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHwxMXx8UHJpY2VzJTIwTWl4ZWQlMjBhcyUyMEludmVzdG9ycyUyMFBhcnNlJTIwTWlkfGVufDB8MHx8fDE3Nzk3ODY2MjB8MA&ixlib=rb-4.1.0&q=80&w=1080?w=1200&auto=format"
 tags: [world]

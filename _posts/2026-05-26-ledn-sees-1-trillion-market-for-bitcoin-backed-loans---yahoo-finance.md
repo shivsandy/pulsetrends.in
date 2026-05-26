@@ -1,7 +1,7 @@
 ---
 title: "Ledn Sees $1 Trillion Market for Bitcoin-Backed Loans - Yahoo Finance"
 date: 2026-05-26 10:26:27
-author: PulseTrends Editorial Team
+author: Ravi Sharma
 excerpt: "Introduction to Bitcoin-Backed Loans The world of cryptocurrency and digital assets has been expanding rapidly over the past decade, with Bitcoin bein..."
 image: "https://images.unsplash.com/photo-1568581357391-c71a1675ef93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHw2fHxmaW5hbmNlJTIwbW9uZXklMjBiYW5raW5nJTIwZWNvbm9teXxlbnwwfDB8fHwxNzc5Nzg2Njg3fDA&ixlib=rb-4.1.0&q=80&w=1080?w=1200&auto=format"
 tags: [finance]

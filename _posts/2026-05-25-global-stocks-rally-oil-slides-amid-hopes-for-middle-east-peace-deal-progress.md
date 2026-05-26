@@ -1,7 +1,7 @@
 ---
 title: "Global stocks rally, oil slides, amid hopes for Middle East peace deal progress - Investing.com"
 date: 2026-05-25 12:06:14
-author: PulseTrends Editorial Team
+author: Ananya Patel
 excerpt: "Global Stocks Rally Amid Progress in Middle East Peace Deal: A Comprehensive Analysis In a surprising turn of events, global stocks have witnessed a s..."
 image: "https://images.unsplash.com/photo-1608762431616-44f234e3b5d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHw0MXx8TWlkZGxlJTIwRWFzdHxlbnwwfDB8fHwxNzc5NzA4OTc0fDA&ixlib=rb-4.1.0&q=80&w=1080?w=1200"
 tags: [world]

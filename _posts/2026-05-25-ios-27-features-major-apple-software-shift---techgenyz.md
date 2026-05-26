@@ -1,7 +1,7 @@
 ---
 title: "iOS 27 Features: Major Apple Software Shift - Techgenyz"
 date: 2026-05-25 11:35:15
-author: PulseTrends Editorial Team
+author: David Chen
 excerpt: "iOS 27 Features: Major Apple Software Shift - Techgenyz Welcome to the future of mobile operating systems! Apple, the tech giant, has announced its la..."
 image: "https://images.unsplash.com/photo-1762340916350-ad5a3d620c16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHwzMXx8aU9TJTIwMjclMjBGZWF0dXJlc3xlbnwwfDB8fHwxNzc5NzA4OTE1fDA&ixlib=rb-4.1.0&q=80&w=1080?w=1200"
 tags: [tech]

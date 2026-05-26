@@ -1,7 +1,7 @@
 ---
 title: "OpTic Gaming Scoop the Call of Duty - Esports World Cup"
 date: 2026-05-25 15:27:33
-author: PulseTrends Editorial Team
+author: David Chen
 excerpt: "OpTic Gaming Scoop the Call of Duty - Esports World Cup The world of esports has witnessed another thrilling tournament with OpTic Gaming emerging vic..."
 image: "https://images.unsplash.com/photo-1647510082470-3c4c4287b800?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHw0MXx8U2Nvb3AlMjB0aGUlMjBDYWxsJTIwb2YlMjBEdXR5JTIwLSUyMEVzcG9ydHMlMjBXb3JsZCUyMEN1cHxlbnwwfDB8fHwxNzc5NzIxOTUzfDA&ixlib=rb-4.1.0&q=80&w=1080?w=1200&auto=format"
 tags: [gaming]
