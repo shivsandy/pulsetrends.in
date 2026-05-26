@@ -1,7 +1,7 @@
 ---
 title: "Texas elections live updates: John Cornyn and Trump-backed Ken Paxton face off in Senate primary ..."
 date: 2026-05-26 13:58:28
-author: Sarah Mitchell
+author: Michael Torres
 excerpt: "**Texas Elections Heat Up as John Cornyn and Ken Paxton Face Off in Senate Primary Runoff** The Lone Star State is once again taking center stage in t..."
 image: "https://images.unsplash.com/photo-1740382242951-5b6919e3fb8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHw0MXx8VGV4YXMlMjBlbGVjdGlvbnMlMjBsaXZlJTIwdXBkYXRlc3xlbnwwfDB8fHwxNzc5ODAzMDA3fDA&ixlib=rb-4.1.0&q=80&w=1080?w=1200&auto=format"
 tags: [politics]

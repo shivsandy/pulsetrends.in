@@ -1,7 +1,7 @@
 ---
 title: "Mortgage and refinance interest rates today, Monday, May 25, 2026: Will rates rise or fall this w..."
 date: 2026-05-25 12:21:25
-author: Ravi Sharma
+author: Arjun Mehta
 excerpt: "Mortgage and Refinance Interest Rates Today: Trends and Projections for the Week of May 25, 2026 The world of mortgage and refinance interest rates is..."
 image: "https://images.unsplash.com/photo-1631511258193-252ab3da6b8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHwyMXx8TW9ydGdhZ2UlMjByZWZpbmFuY2UlMjBpbnRlcmVzdCUyMHJhdGVzfGVufDB8MHx8fDE3Nzk3MDg5ODV8MA&ixlib=rb-4.1.0&q=80&w=1080?w=1200"
 tags: [finance]

@@ -1,7 +1,7 @@
 ---
 title: "Yardeni sees global stocks outperforming U.S. on hopes conflict is nearing end By Investing.com -..."
 date: 2026-05-26 14:14:32
-author: Sarah Mitchell
+author: Ravi Sharma
 excerpt: "Global Stocks Poised for Outperformance as Conflict Nears End As the world holds its breath, awaiting the outcome of ongoing global conflicts, a glimm..."
 image: "https://images.unsplash.com/photo-1753513290538-4ce2e3071fc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHwxNnx8d29ybGQlMjBnbG9iYWwlMjBuZXdzJTIwaW50ZXJuYXRpb25hbHxlbnwwfDB8fHwxNzc5ODAzMDcyfDA&ixlib=rb-4.1.0&q=80&w=1080?w=1200&auto=format"
 tags: [world]

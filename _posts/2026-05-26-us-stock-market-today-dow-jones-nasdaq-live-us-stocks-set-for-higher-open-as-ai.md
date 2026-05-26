@@ -1,7 +1,7 @@
 ---
 title: "US Stock Market Today | Dow Jones | Nasdaq Live: US stocks set for higher open as AI optimism out..."
 date: 2026-05-26 13:41:21
-author: Ravi Sharma
+author: Emily Watson
 excerpt: "US Stocks Poised for a Glimmer of Hope as AI Optimism Takes Center Stage The US stock market is set for a higher open today, as investors seem to be s..."
 image: "https://images.unsplash.com/photo-1716279083223-006db39251e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHwxNnx8U3RvY2slMjBNYXJrZXQlMjBUb2RheXxlbnwwfDB8fHwxNzc5ODAyODgxfDA&ixlib=rb-4.1.0&q=80&w=1080?w=1200&auto=format"
 tags: [stocks]

@@ -1,7 +1,7 @@
 ---
 title: "NASA is building a nuclear reactor for the Moon by 2030 — and testing the nuclear propulsion that..."
 date: 2026-05-25 15:44:06
-author: Ananya Patel
+author: Priya Singh
 excerpt: "NASA's Lunar Nuclear Ambitions: Paving the Way to Mars by 2040 In a bold leap for human space exploration, NASA is set to revive a decades-old dream b..."
 image: "https://images.unsplash.com/photo-1649605551190-b2d000522e3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHwxfHxOQVNBJTIwaXMlMjBidWlsZGluZyUyMGElMjBudWNsZWFyJTIwcmV8ZW58MHwwfHx8MTc3OTcyMjA0Nnww&ixlib=rb-4.1.0&q=80&w=1080?w=1200&auto=format"
 tags: [science]

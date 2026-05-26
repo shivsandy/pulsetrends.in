@@ -358,7 +358,7 @@ class LlmError(Exception):
         self.status_code = status_code
         super().__init__(message)
 
-AUTHOR_NAMES = ["Ravi Sharma", "Ananya Patel", "David Chen", "Sarah Mitchell"]
+AUTHOR_NAMES = ["Ravi Sharma", "Ananya Patel", "David Chen", "Sarah Mitchell", "Arjun Mehta", "Priya Singh", "Michael Torres", "Emily Watson"]
 
 BRAND_ENTITIES = [
     "Apple", "Samsung", "Google", "Microsoft", "Amazon", "Meta", "Netflix",

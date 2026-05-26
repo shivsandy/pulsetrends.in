@@ -1,7 +1,7 @@
 ---
 title: "Secular Trends in Minority-Owned Businesses and Small Business Finance - Chicago - Federal Reserv..."
 date: 2026-05-26 09:55:00
-author: Ananya Patel
+author: Priya Singh
 excerpt: "Secular Trends in Minority-Owned Businesses and Small Business Finance ====================================================== ### Introduction The lan..."
 image: "https://images.unsplash.com/photo-1616261167032-b16d2df8333b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHwxMXx8U2VjdWxhciUyMFRyZW5kcyUyMGluJTIwTWlub3JpdHktT3xlbnwwfDB8fHwxNzc5Nzg2NjAwfDA&ixlib=rb-4.1.0&q=80&w=1080?w=1200&auto=format"
 tags: [business]

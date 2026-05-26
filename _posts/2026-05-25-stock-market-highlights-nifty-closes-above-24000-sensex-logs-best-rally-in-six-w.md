@@ -1,7 +1,7 @@
 ---
 title: "Stock Market Highlights: Nifty Closes Above 24,000; Sensex Logs Best Rally In Six Weeks - NDTV Pr..."
 date: 2026-05-25 15:11:57
-author: Sarah Mitchell
+author: Emily Watson
 excerpt: "Stock Market Highlights: Nifty Closes Above 24,000; Sensex Logs Best Rally In Six Weeks The Indian stock market has been on a roll in recent weeks, wi..."
 image: "https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTkyMjF8MHwxfHNlYXJjaHwyNnx8U3RvY2slMjBNYXJrZXQlMjBIaWdobGlnaHRzfGVufDB8MHx8fDE3Nzk3MjE5MTd8MA&ixlib=rb-4.1.0&q=80&w=1080?w=1200&auto=format"
 tags: [stocks]
