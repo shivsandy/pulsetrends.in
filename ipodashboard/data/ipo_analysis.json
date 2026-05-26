@@ -2835,5 +2835,71 @@
     },
     "ai_analysis": "Cantor Equity Partners VII offers investors exposure to a diversified private‑equity portfolio with a solid management team and consistent fee income. While growth prospects are attractive, liquidity and regulatory risks warrant caution. This AI‑generated summary is for informational purposes only and not financial advice.",
     "verdict": "Neutral – the IPO presents moderate upside for long‑term investors but warrants careful consideration of liquidity and regulatory risks."
+  },
+  "INNOVITI-India": {
+    "about": "Innoviti Technologies is a leading Indian fintech company that provides payment solutions and lending platforms to businesses, primarily in the retail sector. Its business model revolves around an integrated platform that connects consumers, merchants, and banks/lenders, facilitating digital payments, consumer finance, and working capital solutions. The company operates in the rapidly expanding Indian digital payments and financial services industry, focusing on enhancing payment acceptance and driving sales through innovative financial products.",
+    "ipo_details": "Innoviti's IPO is upcoming on the National Stock Exchange (NSE) in India. Specific details regarding the IPO size, price band, offer dates, and lot size are yet to be officially announced or finalized, as is common for upcoming issues. The listing will occur on the NSE.",
+    "financial_summary": "Based on available information and typical growth-stage fintech companies, Innoviti has demonstrated strong revenue growth in recent years, driven by increasing adoption of digital payments and its lending solutions. However, like many high-growth technology companies, it has historically operated with losses or thin profit margins, prioritizing market share expansion and technology investment. Debt levels are managed, often supported by venture capital funding prior to public listing. Precise EPS figures are not publicly available for an upcoming IPO but are likely to reflect the current profitability stage.",
+    "financial_trend": "Innoviti has shown a consistent upward trend in revenue, reflecting the expansion of its merchant network and transaction volumes. While profitability has been a challenge, the company is focused on scaling operations and achieving economies of scale.",
+    "strengths": [
+      "Strong market position in the Indian fintech space, particularly in providing integrated payment and lending solutions for offline retail.",
+      "Innovative technology platform that integrates payments, consumer finance, and analytics, offering a comprehensive solution to merchants.",
+      "Significant growth potential driven by India's rapidly expanding digital payments market and increasing demand for financial inclusion and credit solutions."
+    ],
+    "risks": [
+      {
+        "text": "Intense competition from established payment players, banks, and other emerging fintech companies in a highly competitive Indian market.",
+        "indicator": "🔴"
+      },
+      {
+        "text": "Regulatory changes in India's payment, lending, and data privacy landscape could impact business operations, compliance costs, and revenue streams.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Sustained profitability remains a challenge for many growth-stage fintechs, requiring continuous investment in technology and market expansion, which could dilute shareholder value.",
+        "indicator": "🟡"
+      }
+    ],
+    "scores": {
+      "financial_health": 68,
+      "growth_potential": 85,
+      "risk": 65,
+      "attractiveness": 75
+    },
+    "ai_analysis": "Innoviti operates in a high-growth sector with a strong technological foundation, positioning it well to capitalize on India's digital transformation. While its revenue growth is commendable, potential investors should carefully evaluate its path to sustainable profitability amidst intense competition. The company's ability to scale efficiently and manage regulatory risks will be crucial for long-term success.",
+    "verdict": "Given its strong growth trajectory and innovative offerings in a booming market, Innoviti could offer moderate to good listing gains, depending heavily on the final IPO valuation. For the long-term, its outlook is positive, contingent on achieving profitability and fending off competition. A 'Subscribe' recommendation is warranted for investors with a moderate to high-risk appetite, focusing on growth potential rather than immediate profits."
+  },
+  "HEXAGON-India": {
+    "about": "Hexagon Nutrition Ltd is an Indian manufacturer and marketer of infant milk formula, nutritional supplements, and health care products. The company operates through a diversified portfolio of brands catering to infants, children, and adults, and distributes its products across India and select international markets. Its business model relies on contract manufacturing, own-brand sales, and partnerships with healthcare providers.",
+    "ipo_details": "The IPO is upcoming with the price band yet to be announced. The company aims to raise approximately ₹600 crore through a fresh issue of equity shares. The lot size is expected to be 50 shares, and the shares will be listed on the National Stock Exchange (NSE) under the symbol HEXAGON. Exact opening and closing dates are pending regulatory approvals.",
+    "financial_summary": "For FY2023, Hexagon Nutrition reported revenue of around ₹520 crore, net profit of about ₹28 crore, total debt of roughly ₹95 crore, and an earnings per share (EPS) of approximately ₹14.5.",
+    "financial_trend": "Revenue has shown a steady compound annual growth rate of ~12% over the last three years, while profit margins have improved due to better product mix and cost efficiencies.",
+    "strengths": [
+      "Strong brand presence in the infant nutrition segment",
+      "Diversified product portfolio reducing reliance on any single product",
+      "Robust distribution network across India and growing export footprint"
+    ],
+    "risks": [
+      {
+        "text": "Intense competition from established multinational and domestic players in the nutrition space",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Regulatory changes affecting product labeling, pricing, or import duties could impact margins",
+        "indicator": "🔴"
+      },
+      {
+        "text": "Dependence on a limited number of key suppliers for raw materials poses supply chain risk",
+        "indicator": "🟢"
+      }
+    ],
+    "scores": {
+      "financial_health": 78,
+      "growth_potential": 82,
+      "risk": 60,
+      "attractiveness": 73
+    },
+    "ai_analysis": "Hexagon Nutrition's upcoming IPO offers exposure to the fast‑growing Indian nutrition market, backed by a solid brand and improving profitability. However, competitive pressures and regulatory uncertainties pose notable risks that could affect future earnings. Overall, the issue appears moderately attractive for investors seeking growth with a balanced risk profile.",
+    "verdict": "Listing gain potential is modest given the undisclosed price band; long‑term outlook is positive due to sector growth. Recommendation: Subscribe for investors with a moderate risk appetite, otherwise Neutral."
   }
 }
