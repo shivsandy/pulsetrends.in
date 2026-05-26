@@ -53,18 +53,18 @@ jobs:
           git diff --cached --quiet || git commit -m "Auto: update IPO data"
           git push
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
+      - name: Install Ruby
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ruby ruby-bundler ruby-dev build-essential
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@c4e5b1316158f92e3d49443a9d58b31d25ac0f8f
-        with:
-          ruby-version: '3.2'
-          bundler-cache: true
+      - name: Install Jekyll dependencies
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
 
