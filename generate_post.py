@@ -387,7 +387,11 @@ def load_api_keys():
         val = os.environ.get(f"NVIDIA_API_KEY_{i}")
         if val:
             keys["nvidia"].append({"key": val, "index": i, "cooldown": 0.0})
-    keys["unsplash"] = os.environ.get("UNSPLASH_ACCESS_KEY", "")
+    keys["unsplash"] = []
+    for i in range(1, 4):
+        val = os.environ.get(f"UNSPLASH_ACCESS_KEY_{i}")
+        if val:
+            keys["unsplash"].append(val)
     keys["newsapi"] = os.environ.get("NEWSAPI_KEY", "")
     return keys
 
@@ -679,37 +683,38 @@ def generate_article(title, category_name, api_keys, nvidia_models=None):
 
     raise Exception(f"All LLM combos exhausted ({len(combos)} tried): {'; '.join(errors)}")
 
-def fetch_image(query, api_key, used_urls=None):
-    if not api_key:
+def fetch_image(query, api_keys, used_urls=None):
+    if not api_keys:
         return ""
     if used_urls is None:
         used_urls = set()
-    try:
-        page = random.randint(1, 10)
-        resp = requests.get(
-            "https://api.unsplash.com/search/photos",
-            params={"query": query, "per_page": 5, "page": page, "orientation": "landscape"},
-            headers={"Authorization": f"Client-ID {api_key}"},
-            timeout=15,
-        )
-        if resp.status_code != 200:
-            return ""
-        data = resp.json()
-        if data.get("results"):
-            for img in data["results"]:
-                url = img["urls"]["regular"]
-                if not url.startswith("https://images.unsplash.com/"):
-                    continue
-                if url not in used_urls:
-                    used_urls.add(url)
+    for api_key in api_keys:
+        try:
+            page = random.randint(1, 10)
+            resp = requests.get(
+                "https://api.unsplash.com/search/photos",
+                params={"query": query, "per_page": 5, "page": page, "orientation": "landscape"},
+                headers={"Authorization": f"Client-ID {api_key}"},
+                timeout=15,
+            )
+            if resp.status_code != 200:
+                continue
+            data = resp.json()
+            if data.get("results"):
+                for img in data["results"]:
+                    url = img["urls"]["regular"]
+                    if not url.startswith("https://images.unsplash.com/"):
+                        continue
+                    if url not in used_urls:
+                        used_urls.add(url)
+                        return f"{url}?w=1200&auto=format"
+                fallback = data["results"][0]
+                url = fallback["urls"]["regular"]
+                if url.startswith("https://images.unsplash.com/"):
                     return f"{url}?w=1200&auto=format"
-            fallback = data["results"][0]
-            url = fallback["urls"]["regular"]
-            if url.startswith("https://images.unsplash.com/"):
-                return f"{url}?w=1200&auto=format"
-        return ""
-    except Exception:
-        return ""
+        except Exception:
+            continue
+    return ""
 
 def sanitize_content(text):
     text = re.sub(r'<script[^>]*>.*?</script>', '', text, flags=re.DOTALL | re.IGNORECASE)
@@ -823,7 +828,7 @@ def main():
     if not api_keys["nvidia"]:
         log.warning("No NVIDIA API keys found! Set NVIDIA_API_KEY_1 in environment.")
     if not api_keys["unsplash"]:
-        log.warning("No Unsplash API key found! Set UNSPLASH_ACCESS_KEY in environment.")
+        log.warning("No Unsplash API keys found! Set UNSPLASH_ACCESS_KEY_1..3 in environment.")
     if not api_keys["newsapi"]:
         log.warning("No NewsAPI key found! Set NEWSAPI_KEY in environment.")
     log.info(f"LLM API keys loaded: {key_count} (OpenRouter: {len(api_keys['openrouter'])}, NVIDIA: {len(api_keys['nvidia'])})")
@@ -931,13 +936,13 @@ def main():
 
         image_url = ""
         for q in image_queries:
-            image_url = fetch_image(q, api_keys.get("unsplash", ""), used_images)
+            image_url = fetch_image(q, api_keys.get("unsplash", []), used_images)
             if image_url:
                 log.info(f"Image found for query: '{q[:40]}'")
                 break
 
         if not image_url:
-            fallback = fetch_image(cat["image"], api_keys.get("unsplash", ""), used_images)
+            fallback = fetch_image(cat["image"], api_keys.get("unsplash", []), used_images)
             if fallback:
                 image_url = fallback
 
