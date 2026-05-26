@@ -368,22 +368,6 @@
     {{ content }}
     {% endif %}
   </main>
-  {% unless page.date or page.title == 'Home' %}
-  <aside class="sidebar" aria-label="Sidebar">
-    <div class="sidebar-inner">
-      <div class="sidebar-widget">
-        <h3><button class="cat-toggle" aria-label="Toggle categories">+</button> Categories</h3>
-        <div class="sidebar-cat collapsed">
-          <a href="{{ '/ai/' | relative_url }}" data-category="ai"><span>AI</span><span class="cat-count" aria-hidden="true">&rarr;</span></a>
-          <a href="{{ '/tech/' | relative_url }}" data-category="tech"><span>Technology</span><span class="cat-count" aria-hidden="true">&rarr;</span></a>
-          <a href="{{ '/phones/' | relative_url }}" data-category="phones"><span>Upcoming Phones</span><span class="cat-count" aria-hidden="true">&rarr;</span></a>
-          <a href="{{ '/politics/' | relative_url }}" data-category="politics"><span>Politics</span><span class="cat-count" aria-hidden="true">&rarr;</span></a>
-          <a href="{{ '/finance/' | relative_url }}" data-category="finance"><span>Finance & Money</span><span class="cat-count" aria-hidden="true">&rarr;</span></a>
-          <a href="{{ '/ipos/' | relative_url }}"><span>IPOs & Listings</span><span class="cat-count" aria-hidden="true">&rarr;</span></a>
-        </div>
-      </div>
-    </div>
-  </aside>
   {% endunless %}
 </div>
 
