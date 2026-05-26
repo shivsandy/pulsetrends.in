@@ -243,7 +243,7 @@
           <a href="{{ post.url | relative_url }}">
             <div class="left-card-img">
               {% if post.image %}
-              <img src="{{ post.image | replace: 'w=1200', 'w=200' | replace: 'w=800', 'w=200' }}&auto=format&q=50" alt="{{ post.title }}" width="200" height="200" loading="lazy" decoding="async" fetchpriority="low">
+              <img src="{{ post.image | replace: 'w=1200', 'w=200' | replace: 'w=800', 'w=200' }}&auto=format&q=35" alt="{{ post.title }}" width="200" height="200" loading="lazy" decoding="async" fetchpriority="low">
               {% else %}
               <div class="img-fallback"><span class="fallback-icon"></span></div>
               {% endif %}
@@ -291,7 +291,7 @@
       </nav>
       {% if page.image %}
       <div class="article-img-wrap">
-        <img src="{{ page.image }}&auto=format&q=75" alt="{{ page.title | escape }}" class="featured-img" width="1200" height="675" loading="eager" fetchpriority="high" itemprop="image" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 900px">
+        <img src="{{ page.image }}&auto=format&q=60" alt="{{ page.title | escape }}" class="featured-img" width="1200" height="675" loading="eager" fetchpriority="high" itemprop="image" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 900px">
         <div class="img-overlay"></div>
       </div>
       {% endif %}
@@ -335,7 +335,7 @@
             <a href="{{ post.url | relative_url }}">
               <div class="section-card-img">
                 {% if post.image %}
-                <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=75" alt="{{ post.title }}" loading="lazy" decoding="async" fetchpriority="low">
+                <img src="{{ post.image | replace: 'w=1200', 'w=400' | replace: 'w=800', 'w=400' }}&auto=format&q=50" alt="{{ post.title }}" loading="lazy" decoding="async" fetchpriority="low">
                 {% else %}
                 <div class="img-fallback"><span class="fallback-icon"></span></div>
                 {% endif %}
