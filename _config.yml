@@ -34,7 +34,7 @@ defaults:
       type: "posts"
     values:
       layout: "default"
-      author: "PulseTrends Editorial Team"
+      author: "Ravi Sharma"
       comments: false
   - scope:
       path: "categories"

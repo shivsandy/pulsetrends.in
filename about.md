@@ -35,7 +35,6 @@ permalink: /about/
   <h2>Our Standards</h2>
 
   <ul>
-    <li><strong>Accuracy</strong> — We verify facts and cite reputable sources</li>
     <li><strong>Timeliness</strong> — We cover trending topics as they emerge</li>
     <li><strong>Clarity</strong> — We explain complex topics in plain language</li>
     <li><strong>Comprehensiveness</strong> — We provide complete, insightful analysis</li>

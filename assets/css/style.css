@@ -216,7 +216,7 @@ header .container { display: flex; justify-content: space-between; align-items: 
 .hero-card {
   margin-bottom: 32px; border-radius: var(--radius); overflow: hidden;
   background: var(--bg-card); border: 1px solid var(--border);
-  transition: all 0.3s;
+  transition: all 0.3s; will-change: opacity;
 }
 .hero-card:hover {
   border-color: rgba(255,255,255,0.15);
@@ -248,6 +248,7 @@ header .container { display: flex; justify-content: space-between; align-items: 
   border-radius: var(--radius); overflow: hidden;
   transition: background 0.25s, border-color 0.25s, transform 0.25s, box-shadow 0.3s;
   contain: content; content-visibility: auto; contain-intrinsic-size: 320px;
+  will-change: opacity;
 }
 .section-card:hover {
   border-color: rgba(255,255,255,0.15);
