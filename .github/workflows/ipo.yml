@@ -48,7 +48,7 @@ jobs:
           git push
 
       - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@4a9ddd6f338a97768b6008bf671dfbad383215f4
         with:
           ruby-version: '3.2'
           bundler-cache: true

@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup Ruby
-        uses: ruby/setup-ruby@500796375fbb7e3c2e31a67a95fa88b76b75a453
+        uses: ruby/setup-ruby@4a9ddd6f338a97768b6008bf671dfbad383215f4
         with:
           ruby-version: '3.2'
           bundler-cache: true
