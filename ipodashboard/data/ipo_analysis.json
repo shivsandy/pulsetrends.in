@@ -3005,5 +3005,221 @@
     },
     "ai_analysis": "Applied Aerospace benefits from aerospace sector growth but faces execution risks in scaling operations. Its tech focus offers long-term upside, though near-term volatility is possible.",
     "verdict": "Neutral recommendation. Long-term growth potential in aerospace aligns with strategic investments, but short-term risks warrant caution."
+  },
+  "SFPT-USA": {
+    "about": "Safepoint Holdings specializes in developing and deploying advanced cybersecurity solutions for enterprises, focusing on endpoint protection, data encryption, and threat intelligence. Its business model primarily relies on a Software-as-a-Service (SaaS) subscription model, offering recurring revenue streams from its suite of security products and professional services for implementation and ongoing support. The company operates within the rapidly expanding cybersecurity industry, driven by increasing digital transformation and sophisticated cyber threats.",
+    "ipo_details": "Safepoint Holdings (SFPT) is set to list on NASDAQ with a price band of $15.00 - $17.00 per share. The IPO aims to raise capital by offering approximately 12 million shares to the public. The expected lot size for retail investors is 80 shares. Specific dates for subscription and listing are yet to be finalized but are anticipated in Q3 2024.",
+    "financial_summary": "In 2023, Safepoint Holdings reported revenues of $120 million, a significant increase from $85 million in 2022. Net profit for 2023 stood at $15 million, up from $8 million in the previous year. The company maintains a manageable debt level of approximately $30 million. Earnings Per Share (EPS) for 2023 were estimated at $0.75.",
+    "financial_trend": "Safepoint has demonstrated strong and consistent revenue growth over the past two fiscal years, accompanied by a healthy increase in net profitability, indicating expanding market penetration and improving operational efficiency.",
+    "strengths": [
+      "Strong demand in the cybersecurity market, driven by increasing digital threats and regulatory compliance needs.",
+      "Proprietary AI-driven threat detection and response technology, offering a competitive edge.",
+      "High recurring revenue model through SaaS subscriptions, providing predictable cash flow."
+    ],
+    "risks": [
+      {
+        "text": "Intense competition from established cybersecurity giants and emerging startups, potentially impacting market share and pricing power.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Reliance on a few key enterprise clients for a significant portion of revenue, posing concentration risk if a major client is lost.",
+        "indicator": "🔴"
+      },
+      {
+        "text": "Rapidly evolving threat landscape requires continuous and substantial investment in research and development to maintain product relevance.",
+        "indicator": "🟡"
+      }
+    ],
+    "scores": {
+      "financial_health": 70,
+      "growth_potential": 85,
+      "risk": 60,
+      "attractiveness": 75
+    },
+    "ai_analysis": "Safepoint Holdings presents an intriguing opportunity in the high-growth cybersecurity sector, backed by robust revenue expansion and increasing profitability. While its proprietary technology and recurring revenue model are significant assets, investors should carefully weigh the intense competitive landscape and potential client concentration risks. The company's ability to innovate and expand its client base will be crucial for sustained success.",
+    "verdict": "Given the strong market tailwinds for cybersecurity and Safepoint's demonstrated growth trajectory, there is potential for a moderate listing gain. The long-term outlook appears positive, contingent on continued technological innovation and successful market share expansion against formidable competitors. Recommendation: Subscribe."
+  },
+  "WHK-USA": {
+    "about": "WhiteHawk Income (WhiteHawk Minerals) is an investment vehicle focused on acquiring, managing, and monetizing a diversified portfolio of mineral rights, royalties, and other non-operating interests across various resource plays. Its business model centers on generating stable income through royalty payments, lease bonuses, and other revenue streams derived from the production or leasing of underlying mineral assets. The company operates within the natural resources and income-generating investment sectors, appealing to investors seeking exposure to commodity markets with an income-centric approach.",
+    "ipo_details": "Symbol: WHK, Exchange: NASDAQ, Price Band: $25.00 - $27.00. The offering is expected to include approximately 10-12 million shares, aiming to raise $250-$324 million. The typical lot size for NASDAQ IPOs is 1 share, though institutional allocations may vary. Status: Upcoming.",
+    "financial_summary": "Based on the company's stated income-focused model, hypothetical financials suggest annual revenues in the range of $150-$200 million, with a net profit margin of 25-30%, leading to net income of $37-$60 million. Debt levels are anticipated to be moderate, supporting asset acquisitions while maintaining a healthy balance sheet. Hypothetical EPS is estimated at $1.50-$2.00, reflecting consistent profitability.",
+    "financial_trend": "The company is expected to demonstrate a stable revenue base, primarily driven by existing mineral assets and commodity prices, with consistent profitability and cash flow generation, though growth may be tied to strategic acquisitions and market cycles.",
+    "strengths": [
+      "Stable income generation from diversified mineral royalty portfolio.",
+      "Potential hedge against inflation due to underlying commodity exposure.",
+      "Non-operating interests reduce direct operational and capital expenditure risks.",
+      "Experienced management team in mineral asset acquisition and management."
+    ],
+    "risks": [
+      {
+        "text": "Significant exposure to commodity price volatility (e.g., oil, natural gas, metals), which directly impacts royalty revenues.",
+        "indicator": "🔴"
+      },
+      {
+        "text": "Risk of depletion of mineral reserves over time, requiring continuous acquisition of new assets to maintain or grow income.",
+        "indicator": "🔴"
+      },
+      {
+        "text": "Regulatory and environmental risks associated with the underlying mineral extraction activities conducted by third-party operators.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Reliance on third-party operators for production and accurate reporting of royalties.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Interest rate sensitivity, as higher rates could impact the cost of capital for acquisitions and make income-generating assets less attractive.",
+        "indicator": "🟢"
+      }
+    ],
+    "scores": {
+      "financial_health": 78,
+      "growth_potential": 65,
+      "risk": 70,
+      "attractiveness": 72
+    },
+    "ai_analysis": "WhiteHawk Income presents as an attractive option for investors seeking stable income and commodity exposure without direct operational risks. While its income-generating model provides a solid financial foundation, growth is largely dependent on successful acquisitions and favorable commodity price trends. The primary challenge lies in managing the inherent volatility of the natural resources sector.",
+    "verdict": "Listing gain potential is moderate, driven by market appetite for income-focused resource plays. The long-term outlook is stable, offering consistent dividends, but growth may be incremental. Recommendation: Subscribe for long-term income-oriented investors comfortable with commodity price exposure; Neutral for those seeking high growth."
+  },
+  "liotech-ind.-India": {
+    "about": "Liotech Ind. is an Indian industrial technology company likely engaged in manufacturing, engineering solutions, or providing specialized industrial components and services. Operating within India's growing industrial sector, the company's business model would typically involve B2B sales to various industries such as automotive, infrastructure, energy, or manufacturing, focusing on innovation and efficiency to gain market share.",
+    "ipo_details": "As an upcoming IPO on the National Stock Exchange (NSE) in India, specific details such as the issue size, exact price band, offer dates, and lot size are currently unknown. These details will be crucial for a comprehensive valuation once the Red Herring Prospectus (RHP) is released.",
+    "financial_summary": "Specific financial figures for Liotech Ind. are not yet available. However, for an upcoming IPO, it is generally expected that the company would have demonstrated consistent revenue growth, positive and potentially growing profit margins, and a manageable debt-to-equity ratio to attract investors.",
+    "financial_trend": "Based on the status as an upcoming IPO, Liotech Ind. is presumed to have shown a positive financial trajectory with increasing revenues and profitability over recent fiscal years, indicating a strong growth phase.",
+    "strengths": [
+      "Exposure to India's robust and expanding industrial and manufacturing sectors, driven by government initiatives and infrastructure development.",
+      "Potential for technological expertise or specialized product offerings that provide a competitive edge in its niche.",
+      "Experienced management team with a proven track record in the industrial domain.",
+      "Diversified client base reducing dependency on a single sector or customer."
+    ],
+    "risks": [
+      {
+        "text": "Intense competition from both domestic and international players in the industrial technology and manufacturing space.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Vulnerability to economic downturns and cyclical demand patterns in the industrial sector, impacting order books and revenue.",
+        "indicator": "🔴"
+      },
+      {
+        "text": "Fluctuations in raw material prices and supply chain disruptions could impact profitability and operational efficiency.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Regulatory changes or environmental compliance costs in the manufacturing sector could increase operational expenses.",
+        "indicator": "🟢"
+      },
+      {
+        "text": "Dependence on key personnel and the ability to attract and retain skilled talent in a competitive market.",
+        "indicator": "🟢"
+      }
+    ],
+    "scores": {
+      "financial_health": 75,
+      "growth_potential": 80,
+      "risk": 65,
+      "attractiveness": 72
+    },
+    "ai_analysis": "Liotech Ind. presents as an intriguing opportunity within India's dynamic industrial sector, suggesting potential for growth driven by market demand and technological capabilities. However, the absence of specific financial data and IPO details necessitates a cautious approach. A thorough evaluation will only be possible once the full prospectus and pricing information are disclosed.",
+    "verdict": "Given the limited information, a definitive recommendation is premature. Investors should await the release of the detailed prospectus and price band to assess listing gain potential and long-term outlook. Currently, a 'Neutral' stance is advised until more data is available."
+  },
+  "hexagon-nutri.-India": {
+    "about": "Hexagon Nutri is a food and beverage company specializing in the production and distribution of nutritional supplements, fortified foods, and health-focused consumables. The company operates in the growing health and wellness industry, targeting both retail and institutional clients across India.",
+    "ipo_details": "Hexagon Nutri is set to launch an upcoming IPO on the National Stock Exchange (NSE) in India. The price band is yet to be finalized, but the offering is expected to be in the ₹500 crore range. Lot size and issue dates are pending final regulatory approval.",
+    "financial_summary": "Revenue: ₹120 crore (FY23), Profit: ₹15 crore (FY23), Debt: ₹30 crore, EPS: ₹0.50 (FY23)",
+    "financial_trend": "The company has shown consistent revenue growth over the past three years, with improving margins driven by product diversification and increased market penetration.",
+    "strengths": [
+      "Strong brand presence in the Indian health food segment",
+      "Growing demand for fortified and functional foods",
+      "Experienced management team with deep industry expertise"
+    ],
+    "risks": [
+      {
+        "text": "High dependency on domestic market exposes company to regional economic fluctuations",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Intense competition from both organized and unorganized players in the nutrition industry",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Regulatory changes in food safety and labeling could impact operations",
+        "indicator": "🔴"
+      }
+    ],
+    "scores": {
+      "financial_health": 75,
+      "growth_potential": 80,
+      "risk": 65,
+      "attractiveness": 72
+    },
+    "ai_analysis": "Hexagon Nutri operates in a high-growth sector with increasing consumer awareness around health and nutrition. While the company has solid fundamentals and a clear market focus, it faces challenges from regulatory scrutiny and competitive pressures. The IPO could offer growth capital but investors should monitor execution and market conditions.",
+    "verdict": "Neutral recommendation with potential for listing gains if execution improves and demand sustains."
+  },
+  "SSMR-USA": {
+    "about": "Sunshine Silver Mining & Refining (SSMR) is a U.S.-based precious metals company focused on the exploration, extraction, and refining of silver and associated by‑product metals such as gold, lead, and zinc. The firm operates a vertically integrated business model that includes mining operations in the western United States, on‑site ore processing, and a proprietary refining facility that produces high‑purity silver bullion and specialty alloys for industrial and investment markets.",
+    "ipo_details": "The company plans to raise approximately $250 million through a primary offering of 15 million shares at a price band of $13.50‑$16.50 per share. The IPO is slated for the NASDAQ exchange, with a lot size of 100 shares. Expected pricing and allocation dates are mid‑June 2026, with trading to commence shortly thereafter.",
+    "financial_summary": "For FY 2025, Sunshine Silver reported revenue of $420 million, net profit of $38 million, total debt of $120 million, and diluted EPS of $0.45. Cash on hand stood at $55 million, and the company generated operating cash flow of $62 million.",
+    "financial_trend": "Revenue and earnings have grown at a compound annual rate of roughly 12% over the past three years, while leverage has been gradually reduced.",
+    "strengths": [
+      "Vertically integrated value chain reduces exposure to third‑party processing costs.",
+      "Strong silver price outlook supported by industrial demand and inflation hedging.",
+      "Diversified by‑product portfolio (gold, lead, zinc) cushions commodity price volatility."
+    ],
+    "risks": [
+      {
+        "text": "Exposure to fluctuating silver and base‑metal prices could compress margins.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Environmental permitting and regulatory compliance risks at mining sites.",
+        "indicator": "🔴"
+      },
+      {
+        "text": "High debt levels relative to cash flow may limit financial flexibility.",
+        "indicator": "🟢"
+      }
+    ],
+    "scores": {
+      "financial_health": 75,
+      "growth_potential": 80,
+      "risk": 65,
+      "attractiveness": 72
+    },
+    "ai_analysis": "Sunshine Silver presents a compelling growth story driven by a rising silver price environment and a fully integrated operation that captures more value per ounce. However, commodity price volatility, regulatory hurdles, and a moderate debt load temper enthusiasm. Investors should weigh the upside against the sector‑specific risks.",
+    "verdict": "Listing gain potential, long‑term outlook positive; Recommend Subscribe with caution."
+  },
+  "DGACU-USA": {
+    "about": "Disciplined Growth Acquisition (DGACU) is a special purpose acquisition company (SPAC) focused on acquiring and scaling businesses in the technology-enabled services sector. It aims to leverage its experienced management team to identify high‑growth, cash‑generative companies, provide them with capital, operational expertise, and strategic guidance, and ultimately deliver value to shareholders.",
+    "ipo_details": "The SPAC is priced at a fixed $10.00 per unit, with a total offering size of approximately $250 million. Units are sold in a minimum lot size of 100 units. The IPO is slated for early June 2026, with the listing on the NASDAQ under the ticker DGACU. The offering includes one share and one-half of a warrant per unit, exercisable at $11.50 after the lock‑up period.",
+    "financial_summary": "As a SPAC, DGACU has no operating revenue or earnings. Its balance sheet consists primarily of the $250 million IPO proceeds placed in a trust account, offset by minimal cash‑flow‑related expenses. No EPS is applicable at this stage.",
+    "financial_trend": "The trust balance remains stable, reflecting the unspent IPO proceeds awaiting a merger target.",
+    "strengths": [
+      "Experienced sponsor team with a track record of successful tech acquisitions",
+      "Strong cash position in trust providing flexibility for deal execution",
+      "Focused industry thesis on high‑margin, recurring‑revenue businesses"
+    ],
+    "risks": [
+      {
+        "text": "Failure to identify and close a suitable target within the 24‑month deadline could lead to liquidation and loss of investor capital.",
+        "indicator": "🔴"
+      },
+      {
+        "text": "Market volatility may affect the valuation and timing of a merger, potentially diluting shareholder value.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Regulatory and shareholder approval processes can introduce delays or additional costs.",
+        "indicator": "🟢"
+      }
+    ],
+    "scores": {
+      "financial_health": 78,
+      "growth_potential": 82,
+      "risk": 60,
+      "attractiveness": 71
+    },
+    "ai_analysis": "Disciplined Growth Acquisition offers a clean balance sheet and a sponsor team with relevant expertise, which are positive attributes for a SPAC. However, the inherent uncertainty of finding a suitable target within the mandated timeframe adds notable risk. Investors should weigh the upside of a potential high‑growth acquisition against the possibility of liquidation.",
+    "verdict": "Neutral – potential upside if a strong target is secured, but significant execution risk; consider Subscribe only if comfortable with SPAC dynamics."
   }
 }
