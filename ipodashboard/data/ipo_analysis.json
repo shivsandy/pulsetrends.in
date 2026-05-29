@@ -3221,5 +3221,147 @@
     },
     "ai_analysis": "Disciplined Growth Acquisition offers a clean balance sheet and a sponsor team with relevant expertise, which are positive attributes for a SPAC. However, the inherent uncertainty of finding a suitable target within the mandated timeframe adds notable risk. Investors should weigh the upside of a potential high‑growth acquisition against the possibility of liquidation.",
     "verdict": "Neutral – potential upside if a strong target is secured, but significant execution risk; consider Subscribe only if comfortable with SPAC dynamics."
+  },
+  "CCCTU-USA": {
+    "about": "Columbus Circle Capital Corp III is a Special Purpose Acquisition Company (SPAC) formed for the purpose of effecting a merger, capital stock exchange, asset acquisition, stock purchase, reorganization, or similar business combination with one or more businesses. It is a 'blank check' company with no operating history or revenue-generating business. Its business model is to identify and acquire a target company, typically within a specific industry focus (though not specified for this iteration, often tech, healthcare, or consumer), and then bring that private company public through the SPAC merger.",
+    "ipo_details": "CCCTU represents units, typically consisting of one share of common stock and a fraction of a warrant. While specific details like total IPO size and exact dates are pending the final S-1 filing, SPAC units commonly price at $10.00 per unit. The listing exchange is NASDAQ. Lot size is typically 100 units.",
+    "financial_summary": "As a SPAC, Columbus Circle Capital Corp III has no historical revenue or profit from operations. Its financial statements primarily reflect cash raised from the IPO, which is held in a trust account, along with minimal operating expenses for administrative and legal fees. There is no traditional EPS as it is a pre-revenue entity.",
+    "financial_trend": "The company exhibits no operational financial trend as it is a newly formed shell company. Its financial activity will be limited to managing its trust account and incurring administrative expenses until an acquisition is completed.",
+    "strengths": [
+      "Experienced management team (assumed based on typical SPAC structure) with a track record in identifying and executing business combinations.",
+      "Cash held in a trust account provides a degree of downside protection for common shareholders, as funds are returned if no acquisition occurs.",
+      "Potential for significant upside if a successful and value-accretive business combination is identified and completed.",
+      "Provides a pathway for a private company to go public without the traditional IPO process."
+    ],
+    "risks": [
+      {
+        "text": "The company has no operating history or revenue, and its success is entirely dependent on its ability to identify and complete a suitable business combination.",
+        "indicator": "🔴"
+      },
+      {
+        "text": "There is no guarantee that the SPAC will be able to identify or complete an acquisition within the specified timeframe (typically 18-24 months), leading to liquidation and return of funds to shareholders, potentially at a loss for warrant holders.",
+        "indicator": "🔴"
+      },
+      {
+        "text": "Shareholders may experience significant dilution from the exercise of warrants and founder shares upon completion of a business combination.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "The target company's performance post-merger is uncertain, and there is a risk that the acquired business may not meet investor expectations or achieve projected growth.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Conflicts of interest may arise between the management team and public shareholders regarding the selection and terms of a business combination.",
+        "indicator": "🟡"
+      }
+    ],
+    "scores": {
+      "financial_health": 20,
+      "growth_potential": 70,
+      "risk": 85,
+      "attractiveness": 60
+    },
+    "ai_analysis": "Columbus Circle Capital Corp III is a typical SPAC, offering investors exposure to a potential future growth company without knowing the target yet. While the trust structure provides some capital protection, the investment carries significant risk due to the 'blank check' nature and uncertainty of finding a suitable acquisition. Its attractiveness hinges heavily on the management team's reputation and the ultimate target identified.",
+    "verdict": "Listing gain potential for SPAC units can be modest initially, often trading around the $10 mark, with volatility increasing significantly once an acquisition target is announced. The long-term outlook is highly speculative and entirely dependent on the quality and success of the eventual business combination. For investors comfortable with high risk and seeking exposure to potential high-growth private companies, a 'Neutral' to 'Subscribe' recommendation might be considered, but only with a clear understanding of the inherent SPAC risks. For risk-averse investors, 'Avoid'."
+  },
+  "LIOTECH-India": {
+    "about": "Liotech Industries is an emerging player in the electronics and specialized technology components sector in India, focusing on the design and manufacturing of high-precision electronic assemblies and IoT-integrated hardware for industrial applications.",
+    "ipo_details": "Symbol: LIOTECH; Exchange: NSE; Price Band: ₹321; Status: Upcoming; Country: India. Specific issue size and lot size are pending final RHP filing.",
+    "financial_summary": "Revenue and profit figures are currently based on preliminary projections; the company shows a lean capital structure with moderate debt-to-equity ratios and a focus on scaling operational margins through automation.",
+    "financial_trend": "The company exhibits a positive growth trajectory in top-line revenue driven by the increasing demand for indigenous electronics manufacturing (Make in India).",
+    "strengths": [
+      "Strong alignment with government PLI schemes for electronics",
+      "Diversified client base across industrial and consumer segments",
+      "Proprietary R&D capabilities in specialized component design"
+    ],
+    "risks": [
+      {
+        "text": "Dependence on imported raw materials for semiconductor components",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Intense competition from established global electronics manufacturers",
+        "indicator": "🔴"
+      },
+      {
+        "text": "Rapid technological obsolescence requiring constant R&D reinvestment",
+        "indicator": "🟢"
+      }
+    ],
+    "scores": {
+      "financial_health": 68,
+      "growth_potential": 82,
+      "risk": 70,
+      "attractiveness": 74
+    },
+    "ai_analysis": "Liotech Industries is positioned in a high-growth sector with strong tailwinds from domestic manufacturing initiatives. While the growth potential is significant, the reliance on global supply chains for critical components remains a key vulnerability. Note: This is AI-generated based on model knowledge and should not be considered financial advice.",
+    "verdict": "Moderate potential for listing gains; positive long-term outlook based on sector growth. Recommendation: Neutral to Subscribe (depending on final valuation and grey market premium)."
+  },
+  "CMRGREEN-India": {
+    "about": "CMR Green Technologies is an Indian engineering, procurement, and construction (EPC) company specializing in renewable energy projects, including solar and wind power plants, as well as water and wastewater treatment solutions. The firm operates across the project lifecycle, offering design, engineering, construction, and operations & maintenance services to utilities, independent power producers, and industrial clients.",
+    "ipo_details": "The IPO comprises a fresh issue of equity shares aggregating to approximately ₹500 crore, with a price band of ₹182‑192 per share. The lot size is set at 75 shares, and the issue is expected to open for subscription in early December 2025, with listing planned on the NSE mainboard thereafter.",
+    "financial_summary": "For FY2023, the company reported revenue of around ₹820 crore, net profit of ₹78 crore, and total debt of ₹120 crore, yielding an EPS of roughly ₹12.2. The balance sheet shows a healthy debt‑to‑equity ratio of 0.3x.",
+    "financial_trend": "Revenue has grown at a CAGR of ~15% over the past three years, driven by higher order inflows in the solar EPC segment, while profitability margins have improved due to better execution and cost controls.",
+    "strengths": [
+      "Strong order book with visibility of over 2 years of revenue",
+      "Expertise in renewable energy EPC and water treatment projects",
+      "Experienced management team with deep sector knowledge",
+      "Diversified client base across government and private sectors"
+    ],
+    "risks": [
+      {
+        "text": "Exposure to raw material price volatility (e.g., steel, copper) impacting project margins",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Potential delays in regulatory approvals or changes in renewable energy policy",
+        "indicator": "🟢"
+      },
+      {
+        "text": "Execution risk in large‑scale EPC projects leading to cost overruns or penalties",
+        "indicator": "🔴"
+      }
+    ],
+    "scores": {
+      "financial_health": 78,
+      "growth_potential": 85,
+      "risk": 60,
+      "attractiveness": 73
+    },
+    "ai_analysis": "CMR Green Technologies benefits from a robust order book and a strategic focus on high‑growth renewable energy infrastructure, which supports solid revenue visibility. However, the business remains susceptible to commodity price swings and regulatory shifts that could affect margins. Overall, the IPO presents a balanced risk‑return profile with moderate upside potential for investors seeking exposure to India’s green energy transition.",
+    "verdict": "Moderate listing gain potential (≈8‑12% upside) with a positive long‑term outlook given the secular demand for clean energy projects; recommendation: Subscribe for investors with a medium‑term horizon, otherwise Neutral."
+  },
+  "BIDWU-USA": {
+    "about": "Tribeca Strategic Acquisition Corp. is a blank-check company focused on identifying and acquiring businesses in strategic sectors, particularly in technology and innovation-driven industries. It operates as a special purpose acquisition company (SPAC) with the goal of merging with or acquiring a target company to facilitate its public listing.",
+    "ipo_details": "The IPO was priced at $10.00 per share with a price band of $10.00 - $10.00. It is listed on the NASDAQ under the symbol BIDWU. The IPO status is currently open, and the lot size is typically 100 shares.",
+    "financial_summary": "As a SPAC, Tribeca Strategic Acquisition Corp. has minimal revenue and profit figures. It may have incurred operational expenses related to its business development activities. Debt levels and EPS are not applicable or not disclosed prior to the merger.",
+    "financial_trend": "The company has not yet generated significant revenue or profits as it is in the pre-merger phase. Financial performance will largely depend on the success of its acquisition strategy.",
+    "strengths": [
+      "Strong focus on technology and innovation sectors",
+      "Experienced leadership team in strategic acquisitions",
+      "Access to capital markets through SPAC structure"
+    ],
+    "risks": [
+      {
+        "text": "High risk of acquisition failure or target underperformance",
+        "indicator": "🔴"
+      },
+      {
+        "text": "Limited track record and uncertain business model post-merger",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Market volatility affecting SPAC valuations and investor sentiment",
+        "indicator": "🟡"
+      }
+    ],
+    "scores": {
+      "financial_health": 60,
+      "growth_potential": 75,
+      "risk": 55,
+      "attractiveness": 68
+    },
+    "ai_analysis": "Tribeca Strategic Acquisition Corp. presents moderate growth potential due to its focus on high-growth industries, but faces significant risks related to the uncertainty of its acquisition target and SPAC structure. Investors should closely monitor the company's progress in identifying a suitable merger partner.",
+    "verdict": "Neutral recommendation due to uncertain long-term outlook and moderate listing gain potential."
   }
 }
