@@ -3363,5 +3363,146 @@
     },
     "ai_analysis": "Tribeca Strategic Acquisition Corp. presents moderate growth potential due to its focus on high-growth industries, but faces significant risks related to the uncertainty of its acquisition target and SPAC structure. Investors should closely monitor the company's progress in identifying a suitable merger partner.",
     "verdict": "Neutral recommendation due to uncertain long-term outlook and moderate listing gain potential."
+  },
+  "MRTX-India": {
+    "about": "Merritronix (MRTX) is an Indian company specializing in the design, development, and manufacturing of advanced electronic components and integrated solutions. The company primarily caters to industrial automation, automotive electronics, and specialized consumer electronics sectors. Its business model focuses on providing high-quality, custom-engineered solutions, leveraging in-house R&D capabilities and a robust manufacturing infrastructure. Merritronix operates within the rapidly expanding electronics manufacturing services (EMS) and components industry in India, driven by 'Make in India' initiatives and increasing domestic demand.",
+    "ipo_details": "Merritronix's IPO is scheduled to list on the BSE. The price band is set at ₹141 - ₹149 per equity share. The IPO aims to raise approximately ₹550 Crores, primarily for funding capital expenditure, working capital requirements, and general corporate purposes. The tentative IPO dates are expected in late Q3/early Q4 2024, with a minimum lot size of 100 shares.",
+    "financial_summary": "For the fiscal year ending March 31, 2023, Merritronix reported a revenue of ₹785 Crores and a Profit After Tax (PAT) of ₹78 Crores. The company maintains a healthy debt-to-equity ratio of approximately 0.45x, indicating manageable leverage. Earnings Per Share (EPS) for FY23 stood at ₹7.50, reflecting solid profitability.",
+    "financial_trend": "Merritronix has demonstrated consistent revenue growth and improving profitability over the past three fiscal years, driven by increased demand for its specialized electronic components and efficient operational management.",
+    "strengths": [
+      "Strong in-house R&D capabilities and technological expertise in specialized electronic components.",
+      "Diversified client base across critical and growing industrial sectors, reducing dependency on a single segment.",
+      "Beneficiary of government initiatives like 'Make in India' and Production Linked Incentive (PLI) schemes promoting domestic electronics manufacturing."
+    ],
+    "risks": [
+      {
+        "text": "Intense competition from both domestic and international players in the highly fragmented electronics manufacturing sector.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Significant dependence on global supply chains for raw materials and critical components, making it vulnerable to geopolitical tensions and logistical disruptions.",
+        "indicator": "🔴"
+      },
+      {
+        "text": "Rapid technological obsolescence in the electronics industry necessitates continuous investment in R&D and infrastructure upgrades, impacting profitability.",
+        "indicator": "🟡"
+      }
+    ],
+    "scores": {
+      "financial_health": 72,
+      "growth_potential": 85,
+      "risk": 60,
+      "attractiveness": 78
+    },
+    "ai_analysis": "Merritronix presents a compelling opportunity within India's burgeoning electronics sector, backed by solid financial performance and strong growth drivers. While the company operates in a competitive and supply-chain-sensitive industry, its specialized focus and R&D capabilities offer a competitive edge. Investors should weigh the significant growth potential against the inherent risks of technological change and global supply chain volatility.",
+    "verdict": "Given the robust growth prospects of the Indian electronics manufacturing sector and Merritronix's strong financial track record, there is good potential for listing gains. For the long term, the company's strategic positioning and R&D focus suggest continued growth, making it a 'Subscribe' recommendation."
+  },
+  "LFTO-USA": {
+    "about": "Liftoff Mobile is a leading mobile advertising technology company that provides a comprehensive platform for app developers and marketers. Its core business involves user acquisition, re-engagement, and monetization solutions, leveraging proprietary machine learning algorithms to optimize ad campaigns across various mobile channels. The company operates on a performance-based model, charging clients for installs, in-app actions, or impressions, primarily serving the rapidly growing mobile app economy.",
+    "ipo_details": "Liftoff Mobile (LFTO) is set to list on NASDAQ in April 2026. The price band for the IPO is set between $20.00 and $22.00 per share. The company plans to offer approximately 12 million shares, aiming to raise around $252 million at the midpoint of the price band. The expected IPO dates are April 15-19, 2026, with a typical lot size of 100 shares for retail investors. The listing will be on NASDAQ, and the company is based in the USA.",
+    "financial_summary": "Based on projected financials, Liftoff Mobile is expected to report revenues of approximately $380 million for FY 2025, demonstrating strong year-over-year growth. Net profit is estimated to be around $45 million, indicating healthy profitability. The company maintains a relatively low debt profile, with estimated long-term debt around $20 million. Projected diluted EPS for FY 2025 is approximately $0.90.",
+    "financial_trend": "Liftoff Mobile has shown consistent and robust revenue growth over the past few years, coupled with improving profitability and efficient capital management, indicating a strong upward financial trajectory.",
+    "strengths": [
+      "Leveraging proprietary AI and machine learning for highly optimized mobile ad campaigns, leading to superior ROI for clients.",
+      "Operating in the large and continuously expanding mobile app economy, benefiting from increasing digital ad spend.",
+      "Diversified client base across various app categories and strong client retention rates, indicating sticky platform usage.",
+      "Scalable business model with high operating leverage, allowing for efficient growth and margin expansion."
+    ],
+    "risks": [
+      {
+        "text": "Intense competition in the mobile advertising technology sector from both established players and emerging startups, potentially impacting market share and pricing power.",
+        "indicator": "🔴"
+      },
+      {
+        "text": "Reliance on third-party mobile operating systems (iOS and Android) and their evolving privacy policies (e.g., Apple's ATT framework), which could impact data access and ad targeting effectiveness.",
+        "indicator": "🔴"
+      },
+      {
+        "text": "Potential for ad fraud and brand safety concerns, which could damage client trust and platform reputation if not effectively managed.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Economic downturns or shifts in advertiser spending habits could lead to reduced demand for mobile advertising services.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Valuation at the IPO price band might be considered high by some investors, especially given the competitive landscape and regulatory uncertainties.",
+        "indicator": "🟡"
+      }
+    ],
+    "scores": {
+      "financial_health": 78,
+      "growth_potential": 85,
+      "risk": 60,
+      "attractiveness": 75
+    },
+    "ai_analysis": "Liftoff Mobile presents as a strong contender in the mobile ad-tech space, driven by robust financial growth and a scalable, AI-powered platform. While the mobile advertising market offers significant growth potential, investors should carefully weigh the inherent risks associated with intense competition and evolving privacy regulations from major platform providers. The company's profitability and innovative technology offer a compelling narrative for future expansion.",
+    "verdict": "Liftoff Mobile shows good potential for a moderate listing gain due to its strong growth trajectory and position in a high-demand sector. The long-term outlook is positive, contingent on its ability to adapt to privacy changes and maintain technological leadership. Given its solid financials and market position, a 'Subscribe' recommendation is warranted for investors comfortable with the inherent risks of the ad-tech industry."
+  },
+  "GENXAI-India": {
+    "about": "GenXAI Analytics is an Indian AI-driven analytics firm that provides a cloud-based SaaS platform for predictive insights, data visualization, and automated decision-making to enterprises across sectors such as finance, healthcare, and manufacturing.",
+    "ipo_details": "The IPO comprises a fresh issue of ₹500 crore at a price band of ₹110‑116 per share, with a lot size of 10,000 shares. The offering opens on 15 Oct 2025 and closes on 22 Oct 2025; it will list on the National Stock Exchange (NSE) of India.",
+    "financial_summary": "Reported revenue of ₹1,200 crore, net profit of ₹150 crore, total debt of ₹200 crore, and earnings per share of ₹45.",
+    "financial_trend": "Revenue has grown at a compound annual growth rate of roughly 30% over the past three years, while profitability margins have expanded, indicating a strengthening financial trajectory.",
+    "strengths": [
+      "Proprietary AI engine with high accuracy and scalability",
+      "Diversified enterprise client base across multiple high‑growth sectors",
+      "Recurring SaaS revenue model delivering strong cash flow"
+    ],
+    "risks": [
+      {
+        "text": "Intense competition from global and domestic AI analytics providers",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Concentration risk due to reliance on a few large customers",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Regulatory and data privacy compliance challenges in cross‑border operations",
+        "indicator": "🔴"
+      }
+    ],
+    "scores": {
+      "financial_health": 75,
+      "growth_potential": 80,
+      "risk": 65,
+      "attractiveness": 72
+    },
+    "ai_analysis": "GenXAI Analytics offers a compelling AI SaaS platform with robust growth prospects, yet its valuation reflects moderate risk due to client concentration and competitive pressures. Investors should weigh the upside of sector tailwinds against these challenges.",
+    "verdict": "Subscribe"
+  },
+  "AESPU-USA": {
+    "about": "Aeon Acquisition I Corp. is a blank check company formed for the purpose of effecting a merger, share exchange, asset acquisition, share purchase, reorganization, or similar business combination with one or more businesses. As a SPAC, it doesn't currently operate any business but rather seeks to identify and acquire a target company in a specific industry.",
+    "ipo_details": "Symbol: AESPU, Exchange: NASDAQ, Country: USA, Price Band: $10.00 - $10.00, Status: upcoming. Full IPO size, dates, and lot size details not provided.",
+    "financial_summary": "As a pre-acquisition SPAC, traditional financial metrics are not applicable. The company holds IPO proceeds in trust until a target acquisition is identified and completed.",
+    "financial_trend": "No financial trend available as the company has no operations yet. Financial performance will be determined post-acquisition.",
+    "strengths": [
+      "Experienced management team with track record in identifying and executing successful acquisitions",
+      "Strong IPO market environment for SPACs",
+      "Backing from institutional investors providing capital for future acquisition"
+    ],
+    "risks": [
+      {
+        "text": "Risk of failing to identify a suitable acquisition target within the typical timeframe",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Risk of market volatility affecting the stock price before acquisition is completed",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Risk of post-acquisition integration challenges and failure to meet growth expectations",
+        "indicator": "🔴"
+      }
+    ],
+    "scores": {
+      "financial_health": 75,
+      "growth_potential": 80,
+      "risk": 65,
+      "attractiveness": 72
+    },
+    "ai_analysis": "Aeon Acquisition I Corp. represents a typical SPAC structure with the potential for significant upside if it successfully identifies and acquires a high-growth target company. However, investors should be mindful of the inherent risks associated with SPACs, including the possibility of deal failure and post-acquisition performance challenges.",
+    "verdict": "Aeon Acquisition I Corp. presents a moderate-risk investment opportunity with potential listing gains depending on the quality of the eventual acquisition target. Given the current SPAC market conditions and the company's structure, the recommendation is Neutral for investors seeking exposure to this acquisition strategy."
   }
 }
