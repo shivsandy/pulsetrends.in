@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T07:36:23.692195+00:00",
+  "last_updated": "2026-05-31T08:10:12.097473+00:00",
   "total": 76,
   "ipos": [
     {
@@ -741,7 +741,7 @@
     {
       "company_name": "SMR Jewels",
       "symbol": "SMR",
-      "price_band": "₹128                                                    - 135",
+      "price_band": "₹125",
       "open_date": "2026-05-26",
       "close_date": "2026-05-29",
       "listing_date": "2026-06-03",
@@ -947,6 +947,22 @@
       "country": "USA"
     },
     {
+      "company_name": "CMR Green Tech.",
+      "symbol": "",
+      "price_band": "",
+      "open_date": "",
+      "close_date": "",
+      "listing_date": "2026-06-10",
+      "lot_size": "",
+      "issue_size": "₹4,206 Cr (M.Cap)",
+      "gmp": "",
+      "subscription": "",
+      "status": "upcoming",
+      "exchange": "NSE",
+      "ipo_type": "mainboard",
+      "country": "India"
+    },
+    {
       "company_name": "CMR Green Technologies",
       "symbol": "CMRGREEN",
       "price_band": "₹182                                                    - 192",
@@ -970,7 +986,7 @@
       "close_date": "2026-06-09",
       "listing_date": "2026-06-12",
       "lot_size": "",
-      "issue_size": "",
+      "issue_size": "₹0 Cr (M.Cap)",
       "gmp": "",
       "subscription": "",
       "status": "upcoming",
@@ -1189,22 +1205,6 @@
     {
       "company_name": "EAAA India Alternatives",
       "symbol": "EAAAINDIA",
-      "price_band": "₹-",
-      "open_date": "",
-      "close_date": "",
-      "listing_date": "–",
-      "lot_size": "",
-      "issue_size": "",
-      "gmp": "",
-      "subscription": "",
-      "status": "upcoming",
-      "exchange": "NSE",
-      "ipo_type": "mainboard",
-      "country": "India"
-    },
-    {
-      "company_name": "FabIndia",
-      "symbol": "FABINDIA",
       "price_band": "₹-",
       "open_date": "",
       "close_date": "",

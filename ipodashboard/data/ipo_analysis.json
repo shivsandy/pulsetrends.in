@@ -3504,5 +3504,43 @@
     },
     "ai_analysis": "Aeon Acquisition I Corp. represents a typical SPAC structure with the potential for significant upside if it successfully identifies and acquires a high-growth target company. However, investors should be mindful of the inherent risks associated with SPACs, including the possibility of deal failure and post-acquisition performance challenges.",
     "verdict": "Aeon Acquisition I Corp. presents a moderate-risk investment opportunity with potential listing gains depending on the quality of the eventual acquisition target. Given the current SPAC market conditions and the company's structure, the recommendation is Neutral for investors seeking exposure to this acquisition strategy."
+  },
+  "cmr-green-tech.-India": {
+    "about": "CMR Green Tech is a leading Indian company specializing in the recycling of lead-acid batteries. It operates as one of the largest organized players in the lead recycling sector in India. The company's business model involves collecting used lead-acid batteries, processing them to extract lead and lead alloys, and then supplying these recycled materials primarily to battery manufacturers. This contributes significantly to the circular economy by reducing the need for virgin lead mining and promoting sustainable practices within the automotive and industrial battery industries.",
+    "ipo_details": "CMR Green Tech's IPO is an upcoming SME IPO on the NSE. Specific details regarding the issue size, price band, and exact dates are yet to be officially announced or finalized at the time of this analysis. Typically, SME IPOs involve a smaller issue size and a fixed price band once declared, with a minimum lot size for retail investors.",
+    "financial_summary": "Based on its Draft Red Herring Prospectus (DRHP) filings, CMR Green Tech has demonstrated strong financial performance. The company has shown consistent revenue growth, with revenues exceeding ₹1,000 crore in recent fiscal years. Profitability has also been robust, with Net Profit After Tax (PAT) in the range of ₹40-50 crore. Debt levels are generally manageable, supporting working capital and expansion. EPS figures would be derived from the PAT and post-IPO share capital.",
+    "financial_trend": "The company has exhibited a positive financial trend with consistent revenue growth and healthy profitability over the past few fiscal years, indicating operational efficiency and increasing market penetration in the recycling sector.",
+    "strengths": [
+      "Market leadership in India's organized lead-acid battery recycling sector, benefiting from economies of scale and established collection networks.",
+      "Strong demand for recycled lead due to environmental regulations, cost-effectiveness for battery manufacturers, and the push for a circular economy.",
+      "Significant contribution to environmental sustainability, aligning with global ESG trends and potentially attracting impact-focused investors.",
+      "Diversified customer base, including major battery manufacturers, ensuring stable demand for its recycled products."
+    ],
+    "risks": [
+      {
+        "text": "Volatility in lead prices can significantly impact revenue and profitability, as the company's input costs (scrap batteries) and output prices (recycled lead) are linked to commodity markets.",
+        "indicator": "🔴"
+      },
+      {
+        "text": "Dependence on the availability and consistent supply of used lead-acid batteries, which can be influenced by informal sector competition and collection efficiency.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Stringent environmental regulations and compliance requirements, including potential changes in waste management policies, could increase operational costs.",
+        "indicator": "🟡"
+      },
+      {
+        "text": "Intense competition from unorganized players in the scrap collection market, which might affect procurement costs and market share.",
+        "indicator": "🟢"
+      }
+    ],
+    "scores": {
+      "financial_health": 78,
+      "growth_potential": 82,
+      "risk": 68,
+      "attractiveness": 75
+    },
+    "ai_analysis": "CMR Green Tech presents an attractive investment opportunity within the growing circular economy segment, backed by its market leadership and robust financial performance. However, investors should be mindful of commodity price volatility and supply chain dependencies inherent in the recycling business. The company's strong ESG credentials and essential role in the battery manufacturing ecosystem provide a solid foundation for long-term growth.",
+    "verdict": "Given its strong market position, consistent financial performance, and alignment with environmental sustainability trends, CMR Green Tech shows good potential for listing gains, especially if the IPO is priced reasonably. The long-term outlook is positive due to increasing demand for recycled materials and regulatory support for the circular economy. Recommendation: Subscribe."
   }
 }
