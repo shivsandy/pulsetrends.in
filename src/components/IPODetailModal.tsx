@@ -185,7 +185,7 @@ export default function IPODetailModal({ stock, onClose }: IPODetailModalProps) 
                       {stock.risks.map((r, i) => (
                         <div key={i} className="flex items-start gap-2.5 bg-danger-muted border border-danger-border rounded-md p-2.5">
                           <TrendingDown className="w-3.5 h-3.5 text-danger flex-shrink-0 mt-0.5" />
-                          <p className="text-[12px] text-surface-800 leading-relaxed">{r}</p>
+                          <p className="text-[12px] text-surface-800 leading-relaxed">{r.text}</p>
                         </div>
                       ))}
                     </div>

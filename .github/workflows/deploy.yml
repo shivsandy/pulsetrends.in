@@ -81,6 +81,7 @@ jobs:
           git rm -rfq . 2>/dev/null || true
           cp /tmp/index.html index.html
           touch .nojekyll
-          git add index.html .nojekyll
+          echo "pulsetrends.in" > CNAME
+          git add index.html .nojekyll CNAME
           git commit -m "Deploy $(date +%F)"
           git push origin gh-pages
