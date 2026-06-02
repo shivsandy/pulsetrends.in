@@ -108,9 +108,7 @@ jobs:
           git fetch origin gh-pages 2>/dev/null || true
           git checkout gh-pages 2>/dev/null || git checkout --orphan gh-pages
           git rm -rfq . 2>/dev/null || true
-          # Copy ALL dist files recursively to preserve assets/ directory
-          cp -r dist/* .
-          cp -r dist/.* . 2>/dev/null || true
+          rsync -av --exclude='.git' dist/ ./
           touch .nojekyll
           echo "pulsetrends.in" > CNAME
           git add --all .
