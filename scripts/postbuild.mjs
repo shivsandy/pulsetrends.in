@@ -106,7 +106,16 @@ function buildNewsSitemap() {
 }
 
 function buildRobots() {
-  return `User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api/\nDisallow: /staging/\n\nSitemap: ${SITE_ORIGIN}/sitemap.xml\nSitemap: ${SITE_ORIGIN}/news-sitemap.xml\n`;
+  return `User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /api/
+Disallow: /staging/
+
+Sitemap: ${SITE_ORIGIN}/sitemap.xml
+Sitemap: ${SITE_ORIGIN}/news-sitemap.xml
+`;
 }
 
 function buildHeaders() {

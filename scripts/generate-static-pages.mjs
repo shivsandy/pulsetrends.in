@@ -333,39 +333,22 @@ export function generateStaticPages(distDir) {
     const articleSlug = `${slugify(article.headline)}-${article.id}`;
     const articlePath = `/news/${articleSlug}`;
     const pubDate = article.publishedAt ? article.publishedAt.split('T')[0] : new Date().toISOString().split('T')[0];
-    const schemas = [{
-      '@type': 'NewsArticle',
-      headline: article.headline,
-      description: article.metaDescription || article.headline,
-      datePublished: pubDate,
-      dateModified: pubDate,
-      author: { '@type': 'Person', name: 'Shiva Sandeep', url: SITE_ORIGIN },
-      publisher: { '@type': 'Organization', name: SITE_NAME, logo: { '@type': 'ImageObject', url: DEFAULT_OG_IMAGE } },
-      mainEntityOfPage: { '@type': 'WebPage', '@id': canonical(articlePath) },
-    }];
-
-    // Add FAQPage schema for articles that have frequentlyAskedQuestions
-    if (article.frequentlyAskedQuestions && article.frequentlyAskedQuestions.length > 0) {
-      schemas.push({
-        '@type': 'FAQPage',
-        mainEntity: article.frequentlyAskedQuestions.map((faq) => ({
-          '@type': 'Question',
-          name: faq.question,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: faq.answer,
-          },
-        })),
-      });
-    }
-
     routes.push({
       path: articlePath,
       title: `${article.headline} | ${SITE_NAME}`,
       description: article.metaDescription || article.headline,
       ogType: 'article',
       breadcrumbs: [{ name: 'Home', path: '/' }, { name: 'News', path: '/news' }, { name: article.headline, path: articlePath }],
-      schemas,
+      schemas: [{
+        '@type': 'NewsArticle',
+        headline: article.headline,
+        description: article.metaDescription || article.headline,
+        datePublished: pubDate,
+        dateModified: pubDate,
+        author: { '@type': 'Person', name: 'Shiva Sandeep', url: SITE_ORIGIN },
+        publisher: { '@type': 'Organization', name: SITE_NAME, logo: { '@type': 'ImageObject', url: DEFAULT_OG_IMAGE } },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': canonical(articlePath) },
+      }],
     });
   }
 
