@@ -62,8 +62,8 @@ def main() -> int:
         size_kb = NEWS_CACHE_FILE.stat().st_size / 1024
         print(f"[NewsCache] OK ({size_kb:.1f} KB)")
         return 0
-    print("[NewsCache] No cache file produced", file=sys.stderr)
-    return 1
+    print("[NewsCache] No cache file produced (site will show FALLBACK_NEWS this cycle)")
+    return 0
 
 
 if __name__ == "__main__":
