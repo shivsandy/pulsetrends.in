@@ -88,8 +88,25 @@ function buildSitemap(routes) {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
 }
 
+function buildNewsSitemap() {
+  const articles = extractArticlesFromTs(resolve('src/data/newsData.ts'));
+  const today = new Date().toISOString().split('T')[0];
+  const urls = articles
+    .map((a) => {
+      const slug = `${slugify(a.headline)}-${a.id}`;
+      const pubDate = a.publishedAt ? a.publishedAt.split('T')[0] : today;
+      const keywords = [a.primaryKeyword, ...(a.secondaryKeywords || []), ...(a.tags || [])]
+        .filter(Boolean)
+        .slice(0, 10)
+        .join(', ');
+      return `  <url>\n    <loc>${SITE_ORIGIN}/news/${slug}</loc>\n    <lastmod>${pubDate}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.6</priority>\n    <news:news>\n      <news:publication>\n        <news:name>PulseTrends</news:name>\n        <news:language>en</news:language>\n      </news:publication>\n      <news:publication_date>${pubDate}</news:publication_date>\n      <news:title>${a.headline.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')}</news:title>\n      <news:keywords>${keywords.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')}</news:keywords>\n    </news:news>\n  </url>`;
+    })
+    .join('\n');
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n${urls}\n</urlset>\n`;
+}
+
 function buildRobots() {
-  return `User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api/\nDisallow: /staging/\n\nSitemap: ${SITE_ORIGIN}/sitemap.xml\n`;
+  return `User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api/\nDisallow: /staging/\n\nSitemap: ${SITE_ORIGIN}/sitemap.xml\nSitemap: ${SITE_ORIGIN}/news-sitemap.xml\n`;
 }
 
 function main() {
@@ -134,6 +151,11 @@ function main() {
   const sitemap = buildSitemap(allRoutes);
   writeFileSync(resolve(distDir, 'sitemap.xml'), sitemap, 'utf8');
   console.log(`[postbuild] Wrote dist/sitemap.xml (${allRoutes.length} URLs)`);
+
+  // Generate news-sitemap.xml for Google News
+  const newsSitemap = buildNewsSitemap();
+  writeFileSync(resolve(distDir, 'news-sitemap.xml'), newsSitemap, 'utf8');
+  console.log(`[postbuild] Wrote dist/news-sitemap.xml (${allRoutes.filter(r => r.path.startsWith('/news/')).length} news URLs)`);
 
   // Generate robots.txt
   const robots = buildRobots();

@@ -1231,9 +1231,10 @@ def refresh_news():
 
     print(f"[NewsAPI] {len(enriched)} enriched items, generating articles...")
 
+    # Generate up to 9 articles (27 items / 3 per batch) for daily publishing
     new_articles = []
     batch_size = 3
-    for i in range(0, min(len(enriched), 18), batch_size):
+    for i in range(0, min(len(enriched), 27), batch_size):
         batch = enriched[i:i + batch_size]
         article = generate_article(batch)
         if article:
