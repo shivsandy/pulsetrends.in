@@ -398,24 +398,40 @@ CATEGORY_QUERY_MAP: dict = {
         "blockchain digital assets defi",
         "crypto trading exchange",
         "bitcoin ethereum price chart",
+        "digital finance crypto wallet",
+        "blockchain technology network",
+        "crypto mining rig",
+        "bitcoin ethereum abstract art",
     ],
     "ipo": [
         "ipo stock market listing",
         "initial public offering trading",
         "wall street trading floor",
         "financial documents earnings report",
+        "stock exchange building",
+        "investment banking finance",
+        "corporate headquarters modern",
+        "stock certificate trading",
     ],
     "india": [
         "mumbai stock exchange sensex nifty",
         "indian financial district bse nse",
         "india business economy market",
         "rupee indian currency banking",
+        "india stock market trading",
+        "mumbai skyline business district",
+        "indian rupee coins currency",
+        "digital payments india upi",
     ],
     "stocks": [
         "nasdaq stock market charts",
         "wall street trading screen",
         "equity portfolio finance",
         "global stock market trading",
+        "stock market bull bear",
+        "financial charts data",
+        "trading desk monitors",
+        "investment growth portfolio",
     ],
 }
 
@@ -442,6 +458,29 @@ def detect_category(text: str) -> str:
     return best if scores[best] > 0 else "stocks"
 
 
+
+def prune_old_articles(articles: List[dict], max_days: int = 60) -> List[dict]:
+    """Remove articles older than max_days from the list."""
+    cutoff = datetime.now(timezone.utc).timestamp() - max_days * 24 * 3600
+    kept = []
+    for art in articles:
+        try:
+            pub = art.get("publishedAt", "")
+            if pub:
+                # Parse ISO format date
+                dt = datetime.fromisoformat(pub.replace("Z", "+00:00"))
+                if dt.timestamp() < cutoff:
+                    continue
+            kept.append(art)
+        except Exception:
+            # If we can't parse the date, keep it
+            kept.append(art)
+    pruned = len(articles) - len(kept)
+    if pruned:
+        print(f"[NewsAPI] Pruned {pruned} articles older than {max_days} days")
+    return kept
+
+
 def _validate_image_url(url: str, timeout: int = 5) -> bool:
     try:
         resp = requests.head(url, allow_redirects=True, timeout=timeout)
@@ -454,6 +493,7 @@ def _validate_image_url(url: str, timeout: int = 5) -> bool:
 
 
 def fetch_images(title: str, count: int = 4, category: Optional[str] = None) -> List[dict]:
+    random.seed()  # ensure fresh random each call
     if not UNSPLASH_KEYS:
         return []
 
@@ -466,6 +506,16 @@ def fetch_images(title: str, count: int = 4, category: Optional[str] = None) -> 
     used_ids = load_used_image_ids()
     results: List[dict] = []
     seen_photo_ids: set = set()
+
+    # Shuffle to get variety across articles in the same run
+    random.shuffle(query_pool)
+
+    # Add a random topic suffix to one query for extra variety
+    random_topics = ["finance", "business", "technology", "data", "digital", "economy", "money", "analytics"]
+    if query_pool:
+        rand_topic = random.choice(random_topics)
+        query_pool.append(query_pool[0] + " " + rand_topic)
+    random.shuffle(query_pool)
 
     for q in query_pool:
         if len(results) >= count:
@@ -518,6 +568,52 @@ def fetch_images(title: str, count: int = 4, category: Optional[str] = None) -> 
         if len(used_ids) > 500:
             used_ids = set(sorted(used_ids)[-500:])
         save_used_image_ids(used_ids)
+    elif not results and base_words:
+        # Last resort: try a broader search with just the first title word
+        for uk in UNSPLASH_KEYS:
+            try:
+                fallback_q = base_words[0]
+                resp = requests.get(
+                    "https://api.unsplash.com/search/photos",
+                    params={"query": fallback_q, "per_page": 5, "orientation": "landscape"},
+                    headers={"Authorization": f"Client-ID {uk}"},
+                    timeout=10,
+                )
+                if resp.status_code != 200:
+                    continue
+                hits = resp.json().get("results", [])
+                for hit in hits:
+                    photo_id = hit.get("id")
+                    if not photo_id or photo_id in seen_photo_ids or photo_id in used_ids:
+                        continue
+                    url = hit.get("urls", {}).get("regular", "")
+                    if not url or not _validate_image_url(url):
+                        continue
+                    user = hit.get("user", {}) or {}
+                    user_name = user.get("name", "Unsplash")
+                    user_link = user.get("links", {}).get("html", "https://unsplash.com")
+                    alt_desc = (hit.get("alt_description") or title).strip()
+                    results.append({
+                        "url": url,
+                        "alt": alt_desc,
+                        "title": alt_desc[:80],
+                        "caption": f"{alt_desc} (via Unsplash)",
+                        "attribution": f"Photo by {user_name} on Unsplash",
+                        "sourceUrl": f"{user_link}?utm_source=pulsetrends&utm_medium=referral",
+                        "photoId": photo_id,
+                        "category": category,
+                    })
+                    if len(results) >= count:
+                        break
+                if results:
+                    break
+            except Exception:
+                continue
+        if results:
+            used_ids.update(r["photoId"] for r in results if "photoId" in r)
+            if len(used_ids) > 500:
+                used_ids = set(sorted(used_ids)[-500:])
+            save_used_image_ids(used_ids)
 
     return results
 
@@ -1242,10 +1338,18 @@ def refresh_news():
 
     with CACHE_LOCK:
         if new_articles:
+            # Merge with existing articles and enforce 60-day retention
+            existing = load_cached_news()
+            existing = prune_old_articles(existing)
+            merged = new_articles + existing
+            merged = prune_old_articles(merged)
+            merged.sort(key=lambda a: a.get("publishedAt", ""), reverse=True)
             NEWS_CACHE.clear()
-            NEWS_CACHE.extend(new_articles)
-            save_cached_news(new_articles)
-    print(f"[NewsAPI] Cache updated with {len(new_articles)} articles")
+            NEWS_CACHE.extend(merged)
+            save_cached_news(merged)
+            print(f"[NewsAPI] Cache updated with {len(new_articles)} new + {len(merged) - len(new_articles)} existing = {len(merged)} total")
+        else:
+            print(f"[NewsAPI] No new articles generated, keeping existing cache")
 
 
 @app.route("/api/news")

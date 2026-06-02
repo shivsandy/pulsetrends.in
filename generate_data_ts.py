@@ -8,6 +8,30 @@ import requests
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "src", "data")
 
+
+def prune_old_articles(articles: list, max_days: int = 60) -> list:
+    """Remove articles older than max_days from the list."""
+    if not isinstance(articles, list):
+        return []
+    cutoff = datetime.now(timezone.utc).timestamp() - max_days * 24 * 3600
+    kept = []
+    for art in articles:
+        if not isinstance(art, dict):
+            continue
+        try:
+            pub = art.get("publishedAt", "")
+            if pub:
+                dt = datetime.fromisoformat(pub.replace("Z", "+00:00"))
+                if dt.timestamp() < cutoff:
+                    continue
+            kept.append(art)
+        except Exception:
+            kept.append(art)
+    pruned = len(articles) - len(kept)
+    if pruned:
+        print(f"[DataGen] Pruned {pruned} articles older than {max_days} days")
+    return kept
+
 NEWSAPI_KEY = os.environ.get("NEWSAPI_KEY", "")
 
 
@@ -477,6 +501,9 @@ def generate_news_data():
     articles = load_json(news_cache_path)
     if not isinstance(articles, list):
         articles = []
+
+    # Enforce 60-day retention
+    articles = prune_old_articles(articles)
 
     print(f"[DataGen] Loading {len(articles)} news articles from cache...")
 
