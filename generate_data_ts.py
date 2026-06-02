@@ -142,7 +142,8 @@ def generate_ipo_data():
 
         news_snippet = search_news_for_ipo(name, symbol)
         if news_snippet:
-            enriched_analysis = ai_analysis + "\n\n" + esc(news_snippet) if ai_analysis else esc(news_snippet)
+            combined = (ai_analysis + "\n\n" + news_snippet) if ai_analysis else news_snippet
+            enriched_analysis = esc(combined)
         else:
             enriched_analysis = ai_analysis
 
