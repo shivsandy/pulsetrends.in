@@ -864,7 +864,8 @@ def write_news_data(all_articles):
             cells = ', '.join([f'"{esc(c)}"' for c in row])
             rows_lines.append(f'        [{cells}]')
         if rows_lines:
-            lines.append(f'      rows: [\n{",\n".join(rows_lines)}\n      ],')
+            rows_joined = ",\n".join(rows_lines)
+            lines.append(f'      rows: [\n{rows_joined}\n      ],')
         else:
             lines.append('      rows: [],')
         lines.append('    },')
