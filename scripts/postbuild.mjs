@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, copyFileSync, existsSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, copyFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const SITE_ORIGIN = 'https://pulsetrends.in';
@@ -109,6 +109,17 @@ function buildRobots() {
   return `User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api/\nDisallow: /staging/\n\nSitemap: ${SITE_ORIGIN}/sitemap.xml\nSitemap: ${SITE_ORIGIN}/news-sitemap.xml\n`;
 }
 
+function buildHeaders() {
+  return `/*
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=(), payment=(), usb=(), magnetometer=(), gyroscope=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com https://*.unsplash.com data: blob:; connect-src 'self' https://api.unsplash.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+`;
+}
+
 function main() {
   const distDir = resolve('dist');
   if (!existsSync(distDir)) {
@@ -161,6 +172,20 @@ function main() {
   const robots = buildRobots();
   writeFileSync(resolve(distDir, 'robots.txt'), robots, 'utf8');
   console.log('[postbuild] Wrote dist/robots.txt');
+
+  // Generate _headers for security headers
+  const headers = buildHeaders();
+  writeFileSync(resolve(distDir, '_headers'), headers, 'utf8');
+  console.log('[postbuild] Wrote dist/_headers (security headers)');
+
+  // Generate .well-known/security.txt
+  const securityWellKnownDir = resolve(distDir, '.well-known');
+  if (!existsSync(securityWellKnownDir)) {
+    mkdirSync(securityWellKnownDir, { recursive: true });
+  }
+  const securityTxt = `# Security Disclosure Policy\n# PulseTrends (https://pulsetrends.in)\n\nContact: mailto:pulsetrendsin@gmail.com\nPreferred-Languages: en, hi\nPolicy: https://pulsetrends.in/.well-known/security.txt\nExpires: 2027-06-02T00:00:00.000Z\nCanonical: https://pulsetrends.in/.well-known/security.txt\n`;
+  writeFileSync(resolve(securityWellKnownDir, 'security.txt'), securityTxt, 'utf8');
+  console.log('[postbuild] Wrote dist/.well-known/security.txt');
 }
 
 main();
