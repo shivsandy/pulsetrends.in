@@ -17,6 +17,27 @@ const sectorIcons: Record<string, React.ComponentType<{ className?: string }>> =
   'AgriTech': Sprout,
 };
 
+function getRiskSeverity(indicator: string) {
+  if (indicator.includes('🔴')) {
+    return {
+      label: 'High',
+      className: 'bg-danger-muted text-danger border-danger-border',
+    };
+  }
+
+  if (indicator.includes('🟢')) {
+    return {
+      label: 'Low',
+      className: 'bg-success-muted text-success border-success-border',
+    };
+  }
+
+  return {
+    label: 'Medium',
+    className: 'bg-warning-muted text-warning border-warning-border',
+  };
+}
+
 export default function IPODetailModal({ stock, onClose }: IPODetailModalProps) {
   const [expandedSection, setExpandedSection] = useState<string | null>('overview');
   const SectorIcon = sectorIcons[stock.sector] || Building2;
@@ -182,12 +203,33 @@ export default function IPODetailModal({ stock, onClose }: IPODetailModalProps) 
 
                   {id === 'risks' && (
                     <div className="space-y-2">
-                      {stock.risks.map((r, i) => (
-                        <div key={i} className="flex items-start gap-2.5 bg-danger-muted border border-danger-border rounded-md p-2.5">
-                          <TrendingDown className="w-3.5 h-3.5 text-danger flex-shrink-0 mt-0.5" />
-                          <p className="text-[12px] text-surface-800 leading-relaxed">{r.text}</p>
+                      {stock.risks.length > 0 ? (
+                        stock.risks.map((r, i) => {
+                          const severity = getRiskSeverity(r.indicator);
+
+                          return (
+                            <div key={i} className="bg-danger-muted border border-danger-border rounded-md p-3">
+                              <div className="flex items-start gap-2.5">
+                                <TrendingDown className="w-3.5 h-3.5 text-danger flex-shrink-0 mt-0.5" />
+                                <div className="min-w-0 flex-1">
+                                  <div className="flex flex-wrap items-center gap-2 mb-1.5">
+                                    <span className={`inline-flex items-center rounded border px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider ${severity.className}`}>
+                                      {severity.label} Risk
+                                    </span>
+                                  </div>
+                                  <p className="text-[12px] text-surface-900 leading-relaxed">{r.text}</p>
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        })
+                      ) : (
+                        <div className="bg-surface-100 border border-surface-300/40 rounded-md p-3">
+                          <p className="text-[12px] text-surface-700 leading-relaxed">
+                            No specific risk details are available for this IPO yet.
+                          </p>
                         </div>
-                      ))}
+                      )}
                     </div>
                   )}
 
