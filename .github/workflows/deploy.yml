@@ -103,15 +103,19 @@ jobs:
 
       - name: Deploy to gh-pages branch
         run: |
-          cp dist/index.html /tmp/index.html
           git config user.name "PulseTrends Bot"
           git config user.email "noreply@example.com"
           git fetch origin gh-pages 2>/dev/null || true
           git checkout gh-pages 2>/dev/null || git checkout --orphan gh-pages
           git rm -rfq . 2>/dev/null || true
-          cp /tmp/index.html index.html
+          cp dist/index.html index.html
+          cp dist/404.html 404.html
+          cp dist/robots.txt robots.txt
+          cp dist/sitemap.xml sitemap.xml
+          cp dist/og-default.png og-default.png
+          cp dist/favicon.svg favicon.svg
           touch .nojekyll
           echo "pulsetrends.in" > CNAME
-          git add index.html .nojekyll CNAME
+          git add index.html 404.html robots.txt sitemap.xml og-default.png favicon.svg .nojekyll CNAME
           git commit -m "Deploy $(date +%F)"
           git push origin gh-pages

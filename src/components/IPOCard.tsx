@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Calendar, DollarSign, Building2, ArrowRight, Cpu, Leaf, FlaskConical, Landmark, Sprout } from 'lucide-react';
 import type { IPOStock } from '../data/ipoData';
 import ScoreRing from './ScoreRing';
@@ -5,7 +6,7 @@ import Badge from './Badge';
 
 interface IPOCardProps {
   stock: IPOStock;
-  onClick: () => void;
+  slug: string;
 }
 
 const sectorIcons: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -16,23 +17,23 @@ const sectorIcons: Record<string, React.ComponentType<{ className?: string }>> =
   'AgriTech': Sprout,
 };
 
-export default function IPOCard({ stock, onClick }: IPOCardProps) {
+export default function IPOCard({ stock, slug }: IPOCardProps) {
   const statusVariant = stock.status === 'open' ? 'success' : stock.status === 'upcoming' ? 'warning' : 'info';
   const SectorIcon = sectorIcons[stock.sector] || Building2;
 
   return (
-    <div
-      onClick={onClick}
-      className="bg-surface-100 border border-surface-300/60 rounded-xl p-5 cursor-pointer hover:border-surface-500 transition-all duration-200 group"
+    <Link
+      to={`/ipo-analysis/${slug}`}
+      className="block bg-surface-100 border border-surface-300/60 rounded-xl p-5 hover:border-surface-500 transition-all duration-200 group"
+      aria-label={`View analysis for ${stock.company}`}
     >
-      {/* Header */}
       <div className="flex items-start justify-between mb-4">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg bg-surface-200 border border-surface-300 flex items-center justify-center">
+        <div className="flex items-center gap-3 min-w-0">
+          <div className="w-10 h-10 rounded-lg bg-surface-200 border border-surface-300 flex items-center justify-center shrink-0">
             <SectorIcon className="w-5 h-5 text-surface-700" />
           </div>
-          <div>
-            <h3 className="font-semibold text-surface-white text-[15px] leading-tight group-hover:text-brand-light transition-colors">
+          <div className="min-w-0">
+            <h3 className="font-semibold text-surface-white text-[15px] leading-tight group-hover:text-brand-light transition-colors truncate">
               {stock.company}
             </h3>
             <p className="text-[12px] text-surface-600 mt-0.5 font-mono">{stock.ticker}</p>
@@ -43,7 +44,6 @@ export default function IPOCard({ stock, onClick }: IPOCardProps) {
         </Badge>
       </div>
 
-      {/* Metrics Row */}
       <div className="grid grid-cols-3 gap-2.5 mb-4">
         <div className="bg-surface-50 border border-surface-300/40 rounded-lg px-3 py-2.5">
           <div className="flex items-center gap-1 mb-1">
@@ -68,7 +68,6 @@ export default function IPOCard({ stock, onClick }: IPOCardProps) {
         </div>
       </div>
 
-      {/* Financial Strip */}
       <div className="flex items-center gap-5 mb-4 text-[12px]">
         <div>
           <span className="text-surface-600">Growth</span>
@@ -90,7 +89,6 @@ export default function IPOCard({ stock, onClick }: IPOCardProps) {
         </div>
       </div>
 
-      {/* Footer: AI Score + CTA */}
       <div className="flex items-center justify-between pt-3.5 border-t border-surface-300/40">
         <div className="flex items-center gap-2.5">
           <ScoreRing score={stock.aiScores.overall} size={40} strokeWidth={3.5} showLabel={false} />
@@ -104,6 +102,6 @@ export default function IPOCard({ stock, onClick }: IPOCardProps) {
           <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
         </span>
       </div>
-    </div>
+    </Link>
   );
 }
