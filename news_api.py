@@ -23,12 +23,6 @@ CACHE_LOCK = threading.Lock()
 DATA_DIR = Path(__file__).resolve().parent / "data"
 NEWS_CACHE_FILE = DATA_DIR / "news_cache.json"
 
-OPENROUTER_KEYS = []
-for i in range(1, 9):
-    val = os.environ.get(f"OPENROUTER_API_KEY_{i}")
-    if val:
-        OPENROUTER_KEYS.append({"key": val, "index": i})
-
 NVIDIA_KEYS = []
 for i in range(1, 2):
     val = os.environ.get(f"NVIDIA_API_KEY_{i}")
@@ -127,178 +121,13 @@ class ModelHealth:
 
 model_health = ModelHealth()
 
-FALLBACK_FREE_MODELS = [
-    "meta-llama/llama-3.3-70b-instruct:free",
-    "mistralai/mistral-small-3.1-24b-instruct:free",
-    "google/gemma-3-27b-it:free",
-    "qwen/qwen3-32b:free",
-    "deepseek/deepseek-r1:free",
-    "deepseek/deepseek-chat:free",
-    "microsoft/phi-4:free",
-]
-
-OPENROUTER_KEY_MODELS: dict = {
-    1: [
-        "nvidia/nemotron-3-super-120b-a12b:free",
-        "meta-llama/llama-3.3-70b-instruct:free",
-        "qwen/qwen3-next-80b-a3b-instruct:free",
-    ],
-    2: [
-        "openai/gpt-oss-120b:free",
-        "openai/gpt-oss-20b:free",
-        "google/gemma-4-31b-it:free",
-    ],
-    3: [
-        "nvidia/nemotron-3-nano-30b-a3b:free",
-        "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-        "google/gemma-4-26b-a4b-it:free",
-    ],
-    4: [
-        "nousresearch/hermes-3-llama-3.1-405b:free",
-        "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
-        "qwen/qwen3-coder:free",
-    ],
-    5: [
-        "z-ai/glm-4.5-air:free",
-        "moonshotai/kimi-k2.6:free",
-        "poolside/laguna-m.1:free",
-    ],
-    6: [
-        "poolside/laguna-xs.2:free",
-        "nvidia/nemotron-nano-9b-v2:free",
-        "nvidia/nemotron-nano-12b-v2-vl:free",
-    ],
-    7: [
-        "meta-llama/llama-3.2-3b-instruct:free",
-        "liquid/lfm-2.5-1.2b-instruct:free",
-    ],
-    8: [
-        "poolside/laguna-xs.2:free",
-        "liquid/lfm-2.5-1.2b-instruct:free",
-    ],
-}
-
-
-def get_key_models(key_index: int) -> List[str]:
-    return list(OPENROUTER_KEY_MODELS.get(key_index, []))
-
-OPENROUTER_FALLBACK_NVIDIA_MODELS = [
-    "meta/llama-3.1-70b-instruct",
-    "mistralai/mistral-large",
-    "google/gemma-2-27b-it",
-]
+FALLBACK_FREE_MODELS: list = []
 
 GOOGLE_FREE_MODELS = [
     "gemini-2.5-flash",
     "gemini-2.0-flash",
     "gemma-3-27b-it",
 ]
-
-_DISCOVERED_FREE_MODELS: Optional[List[str]] = None
-
-
-def _probe_model(key: str, model: str, timeout: int = 8) -> bool:
-    try:
-        resp = requests.post(
-            "https://openrouter.ai/api/v1/chat/completions",
-            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-            json={
-                "model": model,
-                "messages": [{"role": "user", "content": "ping"}],
-                "max_tokens": 1,
-                "temperature": 0,
-            },
-            timeout=timeout,
-        )
-        if resp.status_code in (404, 400):
-            try:
-                body = (resp.text or "").lower()
-                if "model" in body and ("not found" in body or "invalid" in body or "does not exist" in body or "no endpoints" in body):
-                    return False
-            except Exception:
-                return True
-            return True
-        return True
-    except Exception:
-        return True
-
-
-def discover_free_models(api_keys: List[dict]) -> List[str]:
-    """Discover currently free models from OpenRouter's /v1/models endpoint.
-
-    Filters by pricing.prompt == "0" (truly free tier).
-    Caches result in module-level _DISCOVERED_FREE_MODELS for reuse.
-    """
-    global _DISCOVERED_FREE_MODELS
-    if _DISCOVERED_FREE_MODELS is not None:
-        return _DISCOVERED_FREE_MODELS
-
-    discovered: set = set()
-    probe_key = api_keys[0]["key"] if api_keys else None
-    for entry in api_keys:
-        try:
-            resp = requests.get(
-                "https://openrouter.ai/api/v1/models",
-                headers={"Authorization": f"Bearer {entry['key']}"},
-                timeout=15,
-            )
-            if resp.status_code == 200:
-                for m in resp.json().get("data", []):
-                    pricing = m.get("pricing", {})
-                    try:
-                        if float(pricing.get("prompt", "1")) == 0.0:
-                            mid = m.get("id", "")
-                            if mid and not mid.endswith(":free"):
-                                mid = mid + ":free"
-                            if mid:
-                                discovered.add(mid)
-                    except (ValueError, TypeError):
-                        pass
-        except Exception as e:
-            print(f"[NewsAPI] Model discovery probe failed for key {entry['index']}: {e}")
-        if discovered:
-            break
-
-    if discovered and probe_key:
-        from concurrent.futures import ThreadPoolExecutor, as_completed
-        candidates = sorted(discovered)
-        validated: List[str] = []
-        with ThreadPoolExecutor(max_workers=5) as ex:
-            futures = {ex.submit(_probe_model, probe_key, m): m for m in candidates}
-            for fut in as_completed(futures):
-                m = futures[fut]
-                try:
-                    ok = fut.result()
-                except Exception:
-                    ok = True
-                if ok:
-                    validated.append(m)
-                else:
-                    print(f"[NewsAPI] Dropping 404 model: {m}")
-        discovered = set(validated)
-        print(f"[NewsAPI] Validated {len(discovered)} free models after 404 probe")
-
-    if discovered:
-        sorted_models = sorted(discovered)
-        print(f"[NewsAPI] Discovered {len(sorted_models)} free models from OpenRouter")
-        _DISCOVERED_FREE_MODELS = sorted_models
-        return sorted_models
-    print(f"[NewsAPI] Model discovery failed, using {len(FALLBACK_FREE_MODELS)} fallback models")
-    _DISCOVERED_FREE_MODELS = list(FALLBACK_FREE_MODELS)
-    return _DISCOVERED_FREE_MODELS
-
-
-def reset_model_discovery() -> None:
-    """Clear the cached discovered model list (for testing)."""
-    global _DISCOVERED_FREE_MODELS
-    _DISCOVERED_FREE_MODELS = None
-
-
-def get_free_models() -> List[str]:
-    """Get the current free model list, discovering on first call."""
-    if OPENROUTER_KEYS:
-        return discover_free_models(OPENROUTER_KEYS)
-    return list(FALLBACK_FREE_MODELS)
 
 RSS_URLS = [
     "https://news.google.com/rss/search?q=cryptocurrency+bitcoin+ethereum&hl=en-US&gl=US&ceid=US:en",
@@ -1046,28 +875,6 @@ MISTRAL_FREE_MODELS = [
 ]
 
 
-def _call_openrouter(key: str, model: str, messages: List[dict], timeout: int = 90) -> Optional[str]:
-    try:
-        resp = requests.post(
-            "https://openrouter.ai/api/v1/chat/completions",
-            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-            json={"model": model, "messages": messages, "temperature": 0.7, "max_tokens": 16384},
-            timeout=timeout,
-        )
-        if resp.status_code != 200:
-            body = resp.text[:200] if resp.text else ""
-            print(f"[NewsAPI] HTTP {resp.status_code} from OpenRouter/{model}: {body}")
-            return None
-        data = resp.json()
-        if "choices" not in data or not data["choices"]:
-            print(f"[NewsAPI] OpenRouter/{model} returned no choices: {str(data)[:200]}")
-            return None
-        return data["choices"][0]["message"]["content"]
-    except Exception as e:
-        print(f"[NewsAPI] OpenRouter/{model} exception: {e}")
-        return None
-
-
 def _call_nvidia(key: str, model: str, messages: List[dict], timeout: int = 180) -> Optional[str]:
     try:
         resp = requests.post(
@@ -1200,60 +1007,47 @@ def _call_cohere(key: str, model: str, messages: List[dict], timeout: int = 60) 
 
 
 def _try_llm_providers(messages: List[dict]) -> Optional[dict]:
-    openrouter_models = get_free_models() if OPENROUTER_KEYS else []
     nvidia_models = list(NVIDIA_FREE_MODELS) if NVIDIA_KEYS else []
     google_models = list(GOOGLE_FREE_MODELS) if GOOGLE_KEYS else []
     groq_models = list(GROQ_FREE_MODELS) if GROQ_KEYS else []
     cohere_models = list(COHERE_FREE_MODELS) if COHERE_KEYS else []
     mistral_models = list(MISTRAL_FREE_MODELS) if MISTRAL_KEYS else []
 
-    openrouter_healthy = model_health.healthy_models(openrouter_models) if openrouter_models else []
     nvidia_healthy = model_health.healthy_models(nvidia_models) if nvidia_models else []
     google_healthy = model_health.healthy_models(google_models) if google_models else []
     groq_healthy = model_health.healthy_models(groq_models) if groq_models else []
     cohere_healthy = model_health.healthy_models(cohere_models) if cohere_models else []
     mistral_healthy = model_health.healthy_models(mistral_models) if mistral_models else []
 
-    print(f"[NewsAPI] Pool: OpenRouter={len(openrouter_healthy)}/{len(openrouter_models)}; Groq={len(groq_healthy)}/{len(groq_models)}; NVIDIA={len(nvidia_healthy)}/{len(nvidia_models)}; Google={len(google_healthy)}/{len(google_models)}; Cohere={len(cohere_healthy)}/{len(cohere_models)}; Mistral={len(mistral_healthy)}/{len(mistral_models)}")
+    print(f"[NewsAPI] Pool: Google={len(google_healthy)}/{len(google_models)}; Groq={len(groq_healthy)}/{len(groq_models)}; Mistral={len(mistral_healthy)}/{len(mistral_models)}; Cohere={len(cohere_healthy)}/{len(cohere_models)}; NVIDIA={len(nvidia_healthy)}/{len(nvidia_models)}")
 
     now = time.time()
-    or_all_cooled = bool(openrouter_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in openrouter_healthy)
-    groq_all_cooled = bool(groq_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in groq_healthy)
-    nvidia_all_cooled = bool(nvidia_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in nvidia_healthy)
     google_all_cooled = bool(google_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in google_healthy)
-    cohere_all_cooled = bool(cohere_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in cohere_healthy)
+    groq_all_cooled = bool(groq_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in groq_healthy)
     mistral_all_cooled = bool(mistral_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in mistral_healthy)
+    cohere_all_cooled = bool(cohere_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in cohere_healthy)
+    nvidia_all_cooled = bool(nvidia_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in nvidia_healthy)
 
     total_attempts = (
-        (len(OPENROUTER_KEYS) * len(openrouter_healthy)) +
-        (len(GROQ_KEYS) * len(groq_healthy)) +
-        (len(NVIDIA_KEYS) * len(nvidia_healthy)) +
         (len(GOOGLE_KEYS) * len(google_healthy)) +
+        (len(GROQ_KEYS) * len(groq_healthy)) +
+        (len(MISTRAL_KEYS) * len(mistral_healthy)) +
         (len(COHERE_KEYS) * len(cohere_healthy)) +
-        (len(MISTRAL_KEYS) * len(mistral_healthy))
+        (len(NVIDIA_KEYS) * len(nvidia_healthy))
     )
     if total_attempts == 0:
-        print(f"[NewsAPI] No LLM attempts possible (OR cooled={or_all_cooled}, Groq cooled={groq_all_cooled}, NVIDIA cooled={nvidia_all_cooled}, Google cooled={google_all_cooled}, Cohere cooled={cohere_all_cooled}, Mistral cooled={mistral_all_cooled})")
+        print(f"[NewsAPI] No LLM attempts possible (Google cooled={google_all_cooled}, Groq cooled={groq_all_cooled}, Mistral cooled={mistral_all_cooled}, Cohere cooled={cohere_all_cooled}, NVIDIA cooled={nvidia_all_cooled})")
         return None
 
-    for key_entry in OPENROUTER_KEYS:
-        idx = key_entry["index"]
-        preferred = get_key_models(idx)
-        healthy_for_key = [m for m in preferred if m in openrouter_healthy]
-        if not preferred:
-            continue
-        if not healthy_for_key:
-            print(f"[NewsAPI] Key {idx} preferred models all cooled, skipping to next key")
-            continue
-        for model in healthy_for_key:
+    for key_entry in GOOGLE_KEYS:
+        for model in google_healthy:
             start = time.time()
-            text = _call_openrouter(key_entry["key"], model, messages, timeout=90)
+            text = _call_google(key_entry["key"], model, messages)
             if text:
                 model_health.record_success(model)
-                print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via OpenRouter/{model} (key {idx})")
-                return {"text": text, "provider": "openrouter", "model": model}
+                print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via Google/{model} (key {key_entry['index']})")
+                return {"text": text, "provider": "google", "model": model}
             model_health.record_failure(model)
-        print(f"[NewsAPI] Key {idx} exhausted {len(healthy_for_key)} models, moving to next key")
 
     for key_entry in GROQ_KEYS:
         for model in groq_healthy:
@@ -1266,24 +1060,14 @@ def _try_llm_providers(messages: List[dict]) -> Optional[dict]:
             model_health.record_failure(model)
         print(f"[NewsAPI] Groq key {key_entry['index']} exhausted, moving on")
 
-    for key_entry in NVIDIA_KEYS:
-        for model in nvidia_healthy:
+    for key_entry in MISTRAL_KEYS:
+        for model in mistral_healthy:
             start = time.time()
-            text = _call_nvidia(key_entry["key"], model, messages)
+            text = _call_mistral(key_entry["key"], model, messages)
             if text:
                 model_health.record_success(model)
-                print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via NVIDIA/{model} (key {key_entry['index']})")
-                return {"text": text, "provider": "nvidia", "model": model}
-            model_health.record_failure(model)
-
-    for key_entry in GOOGLE_KEYS:
-        for model in google_healthy:
-            start = time.time()
-            text = _call_google(key_entry["key"], model, messages)
-            if text:
-                model_health.record_success(model)
-                print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via Google/{model} (key {key_entry['index']})")
-                return {"text": text, "provider": "google", "model": model}
+                print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via Mistral/{model} (key {key_entry['index']})")
+                return {"text": text, "provider": "mistral", "model": model}
             model_health.record_failure(model)
 
     for key_entry in COHERE_KEYS:
@@ -1296,14 +1080,14 @@ def _try_llm_providers(messages: List[dict]) -> Optional[dict]:
                 return {"text": text, "provider": "cohere", "model": model}
             model_health.record_failure(model)
 
-    for key_entry in MISTRAL_KEYS:
-        for model in mistral_healthy:
+    for key_entry in NVIDIA_KEYS:
+        for model in nvidia_healthy:
             start = time.time()
-            text = _call_mistral(key_entry["key"], model, messages)
+            text = _call_nvidia(key_entry["key"], model, messages)
             if text:
                 model_health.record_success(model)
-                print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via Mistral/{model} (key {key_entry['index']})")
-                return {"text": text, "provider": "mistral", "model": model}
+                print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via NVIDIA/{model} (key {key_entry['index']})")
+                return {"text": text, "provider": "nvidia", "model": model}
             model_health.record_failure(model)
 
     return None
@@ -1483,14 +1267,6 @@ def start_scheduler():
 
 def validate_env():
     checks = [
-        ("OPENROUTER_API_KEY_1", bool(os.environ.get("OPENROUTER_API_KEY_1"))),
-        ("OPENROUTER_API_KEY_2", bool(os.environ.get("OPENROUTER_API_KEY_2"))),
-        ("OPENROUTER_API_KEY_3", bool(os.environ.get("OPENROUTER_API_KEY_3"))),
-        ("OPENROUTER_API_KEY_4", bool(os.environ.get("OPENROUTER_API_KEY_4"))),
-        ("OPENROUTER_API_KEY_5", bool(os.environ.get("OPENROUTER_API_KEY_5"))),
-        ("OPENROUTER_API_KEY_6", bool(os.environ.get("OPENROUTER_API_KEY_6"))),
-        ("OPENROUTER_API_KEY_7", bool(os.environ.get("OPENROUTER_API_KEY_7"))),
-        ("OPENROUTER_API_KEY_8", bool(os.environ.get("OPENROUTER_API_KEY_8"))),
         ("NVIDIA_API_KEY_1", bool(os.environ.get("NVIDIA_API_KEY_1"))),
         ("GOOGLE_AI_API_KEY_1", bool(os.environ.get("GOOGLE_AI_API_KEY_1"))),
         ("GOOGLE_AI_API_KEY_2", bool(os.environ.get("GOOGLE_AI_API_KEY_2"))),
@@ -1501,6 +1277,7 @@ def validate_env():
         ("FINNHUB_API_KEY_2", bool(os.environ.get("FINNHUB_API_KEY_2"))),
         ("FINNHUB_API_KEY_3", bool(os.environ.get("FINNHUB_API_KEY_3"))),
         ("FINNHUB_API_KEY_4", bool(os.environ.get("FINNHUB_API_KEY_4"))),
+        ("FINNHUB_API_KEY_5", bool(os.environ.get("FINNHUB_API_KEY_5"))),
         ("NEWSAPI_KEY", bool(os.environ.get("NEWSAPI_KEY"))),
         ("UNSPLASH_ACCESS_KEY_1", bool(os.environ.get("UNSPLASH_ACCESS_KEY_1"))),
         ("UNSPLASH_ACCESS_KEY_2", bool(os.environ.get("UNSPLASH_ACCESS_KEY_2"))),

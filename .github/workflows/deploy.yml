@@ -36,26 +36,29 @@ jobs:
       - name: Collect crypto data
         run: python crypto_collector.py
 
-      - name: Analyze crypto projects
+      - name: Scrape IPOs (5 sources)
         env:
-          IPO_AI_API_KEY_1: ${{ secrets.IPO_AI_API_KEY_1 }}
-          IPO_AI_API_KEY_2: ${{ secrets.IPO_AI_API_KEY_2 }}
-          IPO_AI_API_KEY_3: ${{ secrets.IPO_AI_API_KEY_3 }}
-          IPO_AI_API_KEY_4: ${{ secrets.IPO_AI_API_KEY_4 }}
-          GOOGLE_AI_API_KEY_1: ${{ secrets.GOOGLE_AI_API_KEY_1 }}
-          GOOGLE_AI_API_KEY_2: ${{ secrets.GOOGLE_AI_API_KEY_2 }}
+          FINNHUB_API_KEY_1: ${{ secrets.FINNHUB_API_KEY_1 }}
+          FINNHUB_API_KEY_2: ${{ secrets.FINNHUB_API_KEY_2 }}
+          FINNHUB_API_KEY_3: ${{ secrets.FINNHUB_API_KEY_3 }}
+          FINNHUB_API_KEY_4: ${{ secrets.FINNHUB_API_KEY_4 }}
+          FINNHUB_API_KEY_5: ${{ secrets.FINNHUB_API_KEY_5 }}
+        run: python ipo_scraper.py
+
+      - name: Analyze crypto + IPO projects
+        env:
+          OPENROUTER_API_1: ${{ secrets.OPENROUTER_API_1 }}
+          OPENROUTER_API_2: ${{ secrets.OPENROUTER_API_2 }}
+          OPENROUTER_API_3: ${{ secrets.OPENROUTER_API_3 }}
+          OPENROUTER_API_4: ${{ secrets.OPENROUTER_API_4 }}
+          OPENROUTER_API_5: ${{ secrets.OPENROUTER_API_5 }}
+          OPENROUTER_API_6: ${{ secrets.OPENROUTER_API_6 }}
+          OPENROUTER_API_7: ${{ secrets.OPENROUTER_API_7 }}
+          OPENROUTER_API_8: ${{ secrets.OPENROUTER_API_8 }}
         run: python crypto_analyzer.py
 
       - name: Generate news cache for static build
         env:
-          OPENROUTER_API_KEY_1: ${{ secrets.OPENROUTER_API_KEY_1 }}
-          OPENROUTER_API_KEY_2: ${{ secrets.OPENROUTER_API_KEY_2 }}
-          OPENROUTER_API_KEY_3: ${{ secrets.OPENROUTER_API_KEY_3 }}
-          OPENROUTER_API_KEY_4: ${{ secrets.OPENROUTER_API_KEY_4 }}
-          OPENROUTER_API_KEY_5: ${{ secrets.OPENROUTER_API_KEY_5 }}
-          OPENROUTER_API_KEY_6: ${{ secrets.OPENROUTER_API_KEY_6 }}
-          OPENROUTER_API_KEY_7: ${{ secrets.OPENROUTER_API_KEY_7 }}
-          OPENROUTER_API_KEY_8: ${{ secrets.OPENROUTER_API_KEY_8 }}
           NVIDIA_API_KEY_1: ${{ secrets.NVIDIA_API_KEY_1 }}
           GOOGLE_AI_API_KEY_1: ${{ secrets.GOOGLE_AI_API_KEY_1 }}
           GOOGLE_AI_API_KEY_2: ${{ secrets.GOOGLE_AI_API_KEY_2 }}
@@ -66,6 +69,7 @@ jobs:
           FINNHUB_API_KEY_2: ${{ secrets.FINNHUB_API_KEY_2 }}
           FINNHUB_API_KEY_3: ${{ secrets.FINNHUB_API_KEY_3 }}
           FINNHUB_API_KEY_4: ${{ secrets.FINNHUB_API_KEY_4 }}
+          FINNHUB_API_KEY_5: ${{ secrets.FINNHUB_API_KEY_5 }}
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
           UNSPLASH_ACCESS_KEY_1: ${{ secrets.UNSPLASH_ACCESS_KEY_1 }}
           UNSPLASH_ACCESS_KEY_2: ${{ secrets.UNSPLASH_ACCESS_KEY_2 }}

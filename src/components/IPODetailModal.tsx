@@ -150,12 +150,17 @@ export default function IPODetailModal({ stock, onClose }: IPODetailModalProps) 
                         <div className="bg-surface-100 border border-surface-300/40 rounded-md p-3">
                           <p className="text-[10px] text-surface-600 uppercase tracking-wider font-medium mb-2.5">Subscription Status</p>
                           <div className="grid grid-cols-4 gap-2">
-                            {[
-                              { label: 'Retail', value: stock.subscriptionStatus.retail },
-                              { label: 'NII', value: stock.subscriptionStatus.nii },
-                              { label: 'QIB', value: stock.subscriptionStatus.qib },
-                              { label: 'Total', value: stock.subscriptionStatus.total },
-                            ].map((sub) => (
+                            {(() => {
+                              const sub = typeof stock.subscriptionStatus === 'string'
+                                ? { retail: stock.subscriptionStatus, nii: '-', qib: '-', total: stock.subscriptionStatus }
+                                : stock.subscriptionStatus;
+                              return [
+                                { label: 'Retail', value: sub.retail },
+                                { label: 'NII', value: sub.nii },
+                                { label: 'QIB', value: sub.qib },
+                                { label: 'Total', value: sub.total },
+                              ];
+                            })().map((sub) => (
                               <div key={sub.label} className="text-center">
                                 <p className="text-base font-bold text-brand-light">{sub.value}x</p>
                                 <p className="text-[10px] text-surface-600">{sub.label}</p>

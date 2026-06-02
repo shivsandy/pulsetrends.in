@@ -67,7 +67,14 @@ def search_news_for_ipo(company: str, ticker: str) -> str:
 
 
 def generate_ipo_data():
-    ipos_data = load_json(os.path.join(DATA_DIR, "ipos.json"))
+    new_path = os.path.join(DATA_DIR, "ipo_data.json")
+    legacy_path = os.path.join(DATA_DIR, "ipos.json")
+    if os.path.exists(new_path):
+        ipos_data = load_json(new_path)
+        print(f"[DataGen] Using new ipo_data.json ({len(ipos_data.get('ipos', []))} IPOs)")
+    else:
+        ipos_data = load_json(legacy_path)
+        print(f"[DataGen] Using legacy ipos.json ({len(ipos_data.get('ipos', []))} IPOs)")
     analysis_data = load_json(os.path.join(DATA_DIR, "ipo_analysis.json"))
     ipos = ipos_data.get("ipos", [])
 
@@ -79,19 +86,36 @@ def generate_ipo_data():
     lines.append('  company: string;')
     lines.append('  ticker: string;')
     lines.append('  sector: string;')
+    lines.append('  industry?: string;')
     lines.append('  description: string;')
+    lines.append('  about?: string;')
     lines.append('  founded: string;')
     lines.append('  headquarters: string;')
     lines.append('  employees: string;')
     lines.append('  ceo: string;')
     lines.append('  expectedDate: string;')
+    lines.append('  openDate?: string;')
+    lines.append('  closeDate?: string;')
+    lines.append('  listingDate?: string;')
     lines.append('  priceRange: string;')
+    lines.append('  priceBandHigh?: number;')
+    lines.append('  priceBandLow?: number;')
     lines.append('  lotSize: number;')
     lines.append('  issueSize: string;')
     lines.append('  listingExchange: string;')
     lines.append('  ipoType: string;')
     lines.append('  registrar: string;')
-    lines.append("  status: 'upcoming' | 'open' | 'listed';")
+    lines.append("  status: 'upcoming' | 'open' | 'listed' | 'subscribed';")
+    lines.append('  gmp?: number;')
+    lines.append('  gmpPercent?: number;')
+    lines.append('  subscriptionStatus?: string;')
+    lines.append('  anchorInvestors?: string[];')
+    lines.append('  rhpDate?: string;')
+    lines.append('  allotmentDate?: string;')
+    lines.append('  refundDate?: string;')
+    lines.append('  drhpUrl?: string;')
+    lines.append('  rhpUrl?: string;')
+    lines.append('  source?: string;')
     lines.append('  revenue: string;')
     lines.append('  revenueGrowth: string;')
     lines.append('  netIncome: string;')
@@ -112,40 +136,79 @@ def generate_ipo_data():
     lines.append('  };')
     lines.append('  aiAnalysis: string;')
     lines.append('  aiVerdict: string;')
+    lines.append('  aiRating?: string;')
+    lines.append('  aiRatingScore?: number;')
     lines.append('}')
     lines.append('')
     lines.append('export const ipoStocks: IPOStock[] = [')
 
     for i, ipo in enumerate(ipos):
-        name = ipo.get("company_name", "")
-        symbol = ipo.get("symbol", "")
-        country = ipo.get("country", "Global")
-        exchange = ipo.get("exchange", "")
+        name = ipo.get("name") or ipo.get("company_name", "")
+        symbol = ipo.get("ticker") or ipo.get("symbol", "")
+        country = ipo.get("headquarters") or ipo.get("country", "Global")
+        exchange = ipo.get("exchange") or ipo.get("listingExchange", "NSE/BSE")
         status = ipo.get("status", "upcoming")
-        price = ipo.get("price_band", "")
-        listing_date = ipo.get("listing_date", "")
-        open_date = ipo.get("open_date", "")
-        issue_size = ipo.get("issue_size", "")
-        lot_size = ipo.get("lot_size", "")
-        ipo_type = ipo.get("ipo_type", "mainboard")
+        if status not in ("upcoming", "open", "listed", "subscribed"):
+            status = "upcoming"
+        industry = ipo.get("industry", "")
+        sector = ipo.get("sector", "") or industry or "mainboard"
+        price_band_high = ipo.get("priceBandHigh", 0) or 0
+        price_band_low = ipo.get("priceBandLow", 0) or 0
+        if price_band_high and price_band_low:
+            price = f"Rs.{price_band_low} - Rs.{price_band_high}"
+        else:
+            price = ipo.get("priceRange") or ipo.get("price_band", "")
+        open_date = ipo.get("openDate", "") or ipo.get("open_date", "")
+        close_date = ipo.get("closeDate", "") or ipo.get("close_date", "")
+        listing_date = ipo.get("listingDate", "") or ipo.get("listing_date", "")
+        expected_date = listing_date or open_date
+        issue_size = ipo.get("issueSize", "") or ipo.get("issue_size", "")
+        lot_size = ipo.get("lotSize", 0) or ipo.get("lot_size", 0)
+        ipo_type = ipo.get("ipoType", "") or ipo.get("ipo_type", "mainboard")
+        gmp = ipo.get("gmp", 0) or 0
+        gmp_pct = ipo.get("gmpPercent", 0) or 0
+        subscription_status = ipo.get("subscriptionStatus", "") or ""
+        anchor_investors = ipo.get("anchorInvestors", []) or []
+        rhp_date = ipo.get("rhpDate", "") or ""
+        allotment_date = ipo.get("allotmentDate", "") or ""
+        refund_date = ipo.get("refundDate", "") or ""
+        drhp_url = ipo.get("drhpUrl", "") or ""
+        rhp_url = ipo.get("rhpUrl", "") or ""
+        source = ipo.get("source", "") or ""
+        about = ipo.get("about", "") or ipo.get("description", "")
+        description = about or name
 
-        akey = f"{symbol}-{country}" if symbol else f"{name.lower().replace(' ', '-')[:20]}-{country}"
-        analysis = analysis_data.get(akey, {})
+        akey_raw = ipo.get("id", "") or ""
+        if akey_raw:
+            akey = akey_raw
+        else:
+            akey = f"{symbol}-{country}" if symbol else f"{name.lower().replace(' ', '-')[:20]}-{country}"
+        akey_lookup = akey if akey.startswith("ipo:") else akey
+        analysis = analysis_data.get(akey_lookup) or analysis_data.get(akey) or {}
 
-        about_raw = analysis.get("about", "")
-        about = esc(about_raw) if isinstance(about_raw, str) else ""
-        strengths_raw = analysis.get("strengths", [])
+        strengths_raw = analysis.get("strengths", []) or analysis.get("key_drivers", [])
         risks_raw = analysis.get("risks", [])
         scores = analysis.get("scores", {})
-        ai_analysis = esc(analysis.get("ai_analysis", ""))
-        verdict = esc(analysis.get("verdict", ""))
+        ai_analysis_text = analysis.get("aiAnalysis", "") or analysis.get("summary", "")
+        ai_verdict_text = analysis.get("aiVerdict", "") or analysis.get("verdict", "")
+        ai_rating = analysis.get("final_rating", "") or analysis.get("aiRating", "")
+        ai_rating_score = analysis.get("final_rating_score") or analysis.get("aiRatingScore")
 
-        news_snippet = search_news_for_ipo(name, symbol)
+        if not strengths_raw and analysis:
+            swot = analysis.get("swot", {}) or {}
+            strengths_raw = swot.get("strengths", []) or []
+
+        news_snippet = ""
+        if not os.environ.get("SKIP_NEWS_FETCH"):
+            try:
+                news_snippet = search_news_for_ipo(name, symbol)
+            except Exception:
+                news_snippet = ""
         if news_snippet:
-            combined = (ai_analysis + "\n\n" + news_snippet) if ai_analysis else news_snippet
+            combined = (ai_analysis_text + "\n\n" + news_snippet) if ai_analysis_text else news_snippet
             enriched_analysis = esc(combined)
         else:
-            enriched_analysis = ai_analysis
+            enriched_analysis = esc(ai_analysis_text) if ai_analysis_text else ""
 
         strengths_list = strengths_raw if isinstance(strengths_raw, list) else []
         strengths_str = ', '.join([f'"{esc(s)}"' for s in strengths_list[:5]]) if strengths_list else ''
@@ -154,20 +217,59 @@ def generate_ipo_data():
         lines.append(f'    id: "{i + 1}",')
         lines.append(f'    company: "{esc(name)}",')
         lines.append(f'    ticker: "{esc(symbol)}",')
-        lines.append(f'    sector: "{esc(ipo_type)}",')
-        lines.append(f'    description: "{esc(about or name)}",')
+        lines.append(f'    sector: "{esc(sector)}",')
+        if industry:
+            lines.append(f'    industry: "{esc(industry)}",')
+        lines.append(f'    description: "{esc(description)}",')
+        if about and about != name:
+            lines.append(f'    about: "{esc(about)}",')
         lines.append(f'    founded: "",')
         lines.append(f'    headquarters: "{esc(country)}",')
         lines.append(f'    employees: "",')
         lines.append(f'    ceo: "",')
-        lines.append(f'    expectedDate: "{esc(listing_date or open_date)}",')
+        lines.append(f'    expectedDate: "{esc(expected_date)}",')
+        if open_date:
+            lines.append(f'    openDate: "{esc(open_date)}",')
+        if close_date:
+            lines.append(f'    closeDate: "{esc(close_date)}",')
+        if listing_date:
+            lines.append(f'    listingDate: "{esc(listing_date)}",')
         lines.append(f'    priceRange: "{esc(price)}",')
-        lines.append(f'    lotSize: {int(float(lot_size)) if lot_size.replace(",","").replace(".","").isdigit() else 0},')
-        lines.append(f'    issueSize: "{esc(issue_size)}",')
+        if price_band_high:
+            lines.append(f'    priceBandHigh: {price_band_high},')
+        if price_band_low:
+            lines.append(f'    priceBandLow: {price_band_low},')
+        try:
+            lot_int = int(float(str(lot_size).replace(",", ""))) if lot_size else 0
+        except (ValueError, TypeError):
+            lot_int = 0
+        lines.append(f'    lotSize: {lot_int},')
+        lines.append(f'    issueSize: "{esc(str(issue_size))}",')
         lines.append(f'    listingExchange: "{esc(exchange)}",')
         lines.append(f'    ipoType: "{esc(ipo_type)}",')
         lines.append(f'    registrar: "",')
         lines.append(f'    status: "{esc(status)}" as const,')
+        if gmp:
+            lines.append(f'    gmp: {gmp},')
+        if gmp_pct:
+            lines.append(f'    gmpPercent: {gmp_pct},')
+        if subscription_status:
+            lines.append(f'    subscriptionStatus: "{esc(subscription_status)}",')
+        if anchor_investors:
+            anchor_str = ', '.join([f'"{esc(a)}"' for a in anchor_investors[:20]])
+            lines.append(f'    anchorInvestors: [{anchor_str}],')
+        if rhp_date:
+            lines.append(f'    rhpDate: "{esc(rhp_date)}",')
+        if allotment_date:
+            lines.append(f'    allotmentDate: "{esc(allotment_date)}",')
+        if refund_date:
+            lines.append(f'    refundDate: "{esc(refund_date)}",')
+        if drhp_url:
+            lines.append(f'    drhpUrl: "{esc(drhp_url)}",')
+        if rhp_url:
+            lines.append(f'    rhpUrl: "{esc(rhp_url)}",')
+        if source:
+            lines.append(f'    source: "{esc(source)}",')
         lines.append(f'    revenue: "",')
         lines.append(f'    revenueGrowth: "",')
         lines.append(f'    netIncome: "",')
@@ -193,7 +295,14 @@ def generate_ipo_data():
         lines.append(f'      marketSentiment: {scores.get("attractiveness", 72)},')
         lines.append('    },')
         lines.append(f'    aiAnalysis: "{enriched_analysis}",')
-        lines.append(f'    aiVerdict: "{verdict}",')
+        lines.append(f'    aiVerdict: "{esc(ai_verdict_text)}",')
+        if ai_rating:
+            lines.append(f'    aiRating: "{esc(ai_rating)}",')
+        if ai_rating_score:
+            try:
+                lines.append(f'    aiRatingScore: {float(ai_rating_score)},')
+            except (ValueError, TypeError):
+                pass
         lines.append('  },')
 
         if (i + 1) % 20 == 0:
@@ -265,6 +374,16 @@ def generate_crypto_data():
         category = proj.get("category", "coin")
         description = esc(proj.get("description", ""))
         status = proj.get("status", "active")
+        if status not in ("upcoming", "active", "ended"):
+            status_map = {
+                "confirmed": "upcoming",
+                "ongoing": "active",
+                "live": "active",
+                "closed": "ended",
+                "expired": "ended",
+                "completed": "ended",
+            }
+            status = status_map.get(status.lower(), "active")
         price = esc(proj.get("price", ""))
         market_cap = esc(proj.get("market_cap", ""))
         volume = esc(proj.get("volume_24h", ""))

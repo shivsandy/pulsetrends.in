@@ -12,21 +12,161 @@ import requests
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 ANALYSIS_FILE = os.path.join(DATA_DIR, "crypto_analysis.json")
+IPO_ANALYSIS_FILE = os.path.join(DATA_DIR, "ipo_analysis.json")
 CRYPTO_FILE = os.path.join(DATA_DIR, "crypto_data.json")
+IPO_FILE = os.path.join(DATA_DIR, "ipo_data.json")
 
-FALLBACK_FREE_MODELS = [
-    "meta-llama/llama-3.3-70b-instruct:free",
-    "mistralai/mistral-small-3.1-24b-instruct:free",
-    "google/gemma-3-27b-it:free",
-    "qwen/qwen3-32b:free",
-    "deepseek/deepseek-r1:free",
-    "deepseek/deepseek-chat:free",
-    "microsoft/phi-4:free",
-]
+OPENROUTER_KEY_MODELS: dict = {
+    1: [
+        "nvidia/nemotron-3-super-120b-a12b:free",
+        "meta-llama/llama-3.3-70b-instruct:free",
+        "qwen/qwen3-next-80b-a3b-instruct:free",
+    ],
+    2: [
+        "openai/gpt-oss-120b:free",
+        "openai/gpt-oss-20b:free",
+        "google/gemma-4-31b-it:free",
+    ],
+    3: [
+        "nvidia/nemotron-3-nano-30b-a3b:free",
+        "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "google/gemma-4-26b-a4b-it:free",
+    ],
+    4: [
+        "nousresearch/hermes-3-llama-3.1-405b:free",
+        "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+        "qwen/qwen3-coder:free",
+    ],
+    5: [
+        "z-ai/glm-4.5-air:free",
+        "moonshotai/kimi-k2.6:free",
+        "poolside/laguna-m.1:free",
+    ],
+    6: [
+        "poolside/laguna-xs.2:free",
+        "nvidia/nemotron-nano-9b-v2:free",
+        "nvidia/nemotron-nano-12b-v2-vl:free",
+    ],
+    7: [
+        "meta-llama/llama-3.2-3b-instruct:free",
+        "liquid/lfm-2.5-1.2b-instruct:free",
+    ],
+    8: [
+        "poolside/laguna-xs.2:free",
+        "liquid/lfm-2.5-1.2b-instruct:free",
+    ],
+}
 
-GOOGLE_FREE_MODELS = ["gemini-2.5-flash", "gemini-2.0-flash"]
+CRYPTO_ANALYSIS_PROMPT = """Act as a senior crypto analyst with expertise in token economics, on-chain metrics, and airdrop risk assessment.
 
-_model_health: Dict[str, dict] = {}
+Project:
+Name: {name}
+Ticker: {ticker}
+Category: {category}
+Chain: {chain}
+Description: {description}
+Status: {status}
+
+Return EXACTLY this JSON (no other text, no markdown):
+{{
+  "summary": "1-2 sentence elevator pitch — what the project does, its market position, and unique value proposition.",
+  "business_overview": "Detailed explanation of the product, target market, business model, and revenue/capture mechanism.",
+  "market_analysis": "TAM/SAM/SOM framing, competitive landscape, differentiation, and growth catalysts vs headwinds.",
+  "tokenomics": "Token supply, distribution, vesting, utility, and emission schedule. Note concentration risks.",
+  "on_chain_metrics": "TVL, active addresses, transaction volume, DEX liquidity. Use realistic estimates if unknown and mark them as estimates.",
+  "team_and_backers": "Team background, investors, advisors, and prior shipped products. Note any red flags or standout credentials.",
+  "sentiment": "bullish",
+  "conviction_score": 75,
+  "key_drivers": ["Driver 1", "Driver 2", "Driver 3"],
+  "risks": ["Risk 1", "Risk 2", "Risk 3"],
+  "risk_assessment": {{
+    "overall_risk": "medium",
+    "smart_contract_risk": "low",
+    "team_risk": "medium",
+    "market_risk": "medium",
+    "regulatory_risk": "low",
+    "rug_pull_potential": "low",
+    "liquidity_risk": "medium",
+    "dilution_risk": "medium"
+  }},
+  "swot": {{
+    "strengths": ["Strength 1", "Strength 2"],
+    "weaknesses": ["Weakness 1", "Weakness 2"],
+    "opportunities": ["Opportunity 1", "Opportunity 2"],
+    "threats": ["Threat 1", "Threat 2"]
+  }},
+  "verdict": "2-3 sentence balanced outlook — who should care, what to watch, and a clear directional call.",
+  "final_rating": "BUY",
+  "final_rating_score": 7.5
+}}
+
+Constraints:
+- sentiment ∈ {{"bullish","bearish","neutral"}}
+- conviction_score ∈ 0-100
+- risk_assessment fields ∈ {{"low","medium","high"}}
+- final_rating ∈ {{"STRONG BUY","BUY","HOLD","SELL","STRONG SELL"}}
+- final_rating_score ∈ 0-10 (one decimal)
+- All text fields must be non-empty strings, no placeholders like "N/A" or "TBD"
+- Return ONLY the JSON object, no markdown fences, no commentary"""
+
+IPO_ANALYSIS_PROMPT = """Act as a senior equity research analyst with expertise in IPO valuation, fundamentals, and Indian & US primary markets.
+
+Company:
+Name: {name}
+Ticker: {ticker}
+Exchange: {exchange}
+Sector: {sector}
+Industry: {industry}
+Price Band: {price_band}
+Lot Size: {lot_size}
+Issue Size: {issue_size}
+GMP: {gmp} ({gmp_percent}%)
+Subscription Status: {subscription_status}
+Description: {description}
+About: {about}
+
+Return EXACTLY this JSON (no other text, no markdown):
+{{
+  "summary": "1-2 sentence elevator pitch — what the company does, market position, and IPO thesis.",
+  "business_overview": "Detailed explanation of products/services, target segments, revenue mix, and unit economics.",
+  "market_analysis": "TAM/SAM, competitive landscape, moat, and industry tailwinds vs headwinds.",
+  "financials": "Revenue, EBITDA, PAT growth over 3 years. Margins, ROCE, ROE. Note auditor concerns if any.",
+  "valuation": "P/E vs industry peers, EV/EBITDA, P/B. Compare with listed peers. Flag premium/discount.",
+  "ipo_structure": "Fresh issue vs OFS mix, promoter holding post-issue, use of proceeds, anchor investors.",
+  "team_and_promoters": "Promoter background, management track record, board composition, governance quality.",
+  "sentiment": "bullish",
+  "conviction_score": 75,
+  "key_drivers": ["Driver 1", "Driver 2", "Driver 3"],
+  "risks": ["Risk 1", "Risk 2", "Risk 3"],
+  "risk_assessment": {{
+    "overall_risk": "medium",
+    "valuation_risk": "medium",
+    "business_risk": "low",
+    "governance_risk": "low",
+    "market_risk": "medium",
+    "regulatory_risk": "low",
+    "liquidity_risk": "medium",
+    "promoter_risk": "medium"
+  }},
+  "swot": {{
+    "strengths": ["Strength 1", "Strength 2"],
+    "weaknesses": ["Weakness 1", "Weakness 2"],
+    "opportunities": ["Opportunity 1", "Opportunity 2"],
+    "threats": ["Threat 1", "Threat 2"]
+  }},
+  "verdict": "2-3 sentence balanced outlook — who should apply, what to watch, and a clear directional call.",
+  "final_rating": "SUBSCRIBE",
+  "final_rating_score": 7.5
+}}
+
+Constraints:
+- sentiment ∈ {{"bullish","bearish","neutral"}}
+- conviction_score ∈ 0-100
+- risk_assessment fields ∈ {{"low","medium","high"}}
+- final_rating ∈ {{"STRONG SUBSCRIBE","SUBSCRIBE","NEUTRAL","AVOID","STRONG AVOID"}}
+- final_rating_score ∈ 0-10 (one decimal)
+- All text fields must be non-empty strings, no placeholders like "N/A" or "TBD"
+- Return ONLY the JSON object, no markdown fences, no commentary"""
 
 
 def _health_key(provider: str, key_index: int, model: str) -> str:
@@ -81,71 +221,10 @@ def _healthy_models(provider: str, key_index: int, models: List[str]) -> List[st
     return [m for _, m in healthy]
 
 
-def discover_free_models(api_keys: List[dict]) -> List[str]:
-    discovered = set()
-    for entry in api_keys:
-        try:
-            resp = requests.get(
-                "https://openrouter.ai/api/v1/models",
-                headers={"Authorization": f"Bearer {entry['key']}"},
-                timeout=15,
-            )
-            if resp.status_code == 200:
-                for m in resp.json().get("data", []):
-                    pricing = m.get("pricing", {})
-                    try:
-                        if float(pricing.get("prompt", "1")) == 0.0:
-                            mid = m.get("id", "")
-                            if not mid.endswith(":free"):
-                                mid = mid + ":free"
-                            discovered.add(mid)
-                    except (ValueError, TypeError):
-                        pass
-        except Exception:
-            pass
-        if discovered:
-            break
-    if discovered:
-        sorted_models = sorted(discovered)
-        print(f"[Crypto Analyzer] Discovered {len(sorted_models)} free models")
-        return sorted_models
-    print(f"[Crypto Analyzer] Model discovery failed, using {len(FALLBACK_FREE_MODELS)} fallback models")
-    return list(FALLBACK_FREE_MODELS)
+_model_health: Dict[str, dict] = {}
 
 
-ANALYSIS_PROMPT = """Act as a crypto analyst with expertise in airdrop and token risk assessment. Analyze the following project and return ONLY valid JSON.
-
-Name: {name}
-Ticker: {ticker}
-Category: {category}
-Chain: {chain}
-Description: {description}
-Status: {status}
-
-Return EXACTLY this JSON structure:
-{{
-  "summary": "Project overview — what it does, its market position, and key value proposition.",
-  "market_analysis": "Analysis of market positioning, competition, and growth potential.",
-  "sentiment": "bullish",
-  "conviction_score": 75,
-  "key_drivers": ["Driver 1", "Driver 2", "Driver 3"],
-  "risks": ["Risk 1", "Risk 2", "Risk 3"],
-  "risk_assessment": {{
-    "overall_risk": "medium",
-    "smart_contract_risk": "low",
-    "team_risk": "medium",
-    "market_risk": "medium",
-    "regulatory_risk": "low",
-    "rug_pull_potential": "low",
-    "liquidity_risk": "medium",
-    "dilution_risk": "medium"
-  }},
-  "verdict": "Balanced assessment and outlook for this project."
-}}
-Important: sentiment must be one of "bullish", "bearish", or "neutral". conviction_score must be 0-100. risk_assessment fields must be one of "low", "medium", or "high". Return ONLY the JSON, no other text."""
-
-
-def _call_openrouter(api_key: str, model: str, prompt: str) -> Optional[str]:
+def _call_openrouter(api_key: str, model: str, prompt: str, system: str, timeout: int = 90) -> Optional[str]:
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
@@ -153,37 +232,26 @@ def _call_openrouter(api_key: str, model: str, prompt: str) -> Optional[str]:
     data = {
         "model": model,
         "messages": [
-            {"role": "system", "content": "You are a crypto analyst. Always respond with valid JSON only."},
+            {"role": "system", "content": system},
             {"role": "user", "content": prompt},
         ],
         "temperature": 0.3,
-        "max_tokens": 2048,
+        "max_tokens": 4096,
     }
     resp = requests.post(
         "https://openrouter.ai/api/v1/chat/completions",
         headers=headers,
         json=data,
-        timeout=30,
+        timeout=timeout,
     )
-    resp.raise_for_status()
-    return resp.json()["choices"][0]["message"]["content"]
-
-
-def _call_google(api_key: str, model: str, prompt: str) -> Optional[str]:
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
-    data = {
-        "contents": [{"parts": [{"text": f"You are a crypto analyst. Respond with valid JSON only.\n\n{prompt}"}]}],
-        "generationConfig": {"temperature": 0.3, "maxOutputTokens": 2048},
-    }
-    resp = requests.post(url, json=data, timeout=30)
-    resp.raise_for_status()
-    result = resp.json()
-    candidates = result.get("candidates", [])
-    if candidates:
-        parts = candidates[0].get("content", {}).get("parts", [])
-        if parts:
-            return parts[0].get("text", "")
-    return None
+    if resp.status_code != 200:
+        body = resp.text[:200] if resp.text else ""
+        print(f"[Crypto Analyzer] HTTP {resp.status_code} from OR/{model}: {body}")
+        return None
+    payload = resp.json()
+    if "choices" not in payload or not payload["choices"]:
+        return None
+    return payload["choices"][0]["message"]["content"]
 
 
 def _parse_json(text: str) -> Optional[dict]:
@@ -205,8 +273,24 @@ def _parse_json(text: str) -> Optional[dict]:
         return None
 
 
-def generate_analysis(project: dict, api_keys: List[dict], google_keys: List[dict], models: List[str]) -> Optional[dict]:
-    prompt = ANALYSIS_PROMPT.format(
+def _analysis_key_crypto(project: dict) -> str:
+    tid = (project.get("id") or "").strip().lower()
+    if tid:
+        return f"crypto:{tid}"
+    ticker = (project.get("ticker") or "").strip().upper()
+    return f"crypto:{ticker}"
+
+
+def _analysis_key_ipo(ipo: dict) -> str:
+    tid = (ipo.get("id") or "").strip().lower()
+    if tid:
+        return f"ipo:{tid}"
+    name = (ipo.get("name") or "").strip().lower()
+    return f"ipo:{name}"
+
+
+def generate_crypto_analysis(project: dict, api_keys: List[dict]) -> Optional[dict]:
+    prompt = CRYPTO_ANALYSIS_PROMPT.format(
         name=project.get("name", ""),
         ticker=project.get("ticker", ""),
         category=project.get("category", ""),
@@ -214,41 +298,23 @@ def generate_analysis(project: dict, api_keys: List[dict], google_keys: List[dic
         description=project.get("description", ""),
         status=project.get("status", ""),
     )
-
-    for gkey_entry in google_keys:
-        gkey_idx = gkey_entry["index"]
-        for gmodel in GOOGLE_FREE_MODELS:
-            healthy = _healthy_models("google", gkey_idx, [gmodel])
-            if not healthy:
-                continue
-            try:
-                start = time.time()
-                text = _call_google(gkey_entry["key"], gmodel, prompt)
-                latency = time.time() - start
-                result = _parse_json(text)
-                if result:
-                    _record_success("google", gkey_idx, gmodel, latency)
-                    print(f"[Crypto Analyzer] OK GA key{gkey_idx} model={gmodel} ({latency:.1f}s)")
-                    return result
-                print(f"[Crypto Analyzer] Bad JSON from {gmodel}, trying next")
-            except requests.exceptions.HTTPError as e:
-                code = e.response.status_code if hasattr(e, "response") else None
-                _record_failure("google", gkey_idx, gmodel, code)
-                print(f"[Crypto Analyzer] Fail GA key{gkey_idx} model={gmodel}: {e}")
+    system = "You are a senior crypto analyst. Always respond with valid JSON only, no markdown fences."
 
     for entry in api_keys:
         kidx = entry["index"]
-        for model in _healthy_models("openrouter", kidx, models):
+        preferred = OPENROUTER_KEY_MODELS.get(kidx, [])
+        for model in _healthy_models("openrouter", kidx, preferred):
             try:
                 start = time.time()
-                text = _call_openrouter(entry["key"], model, prompt)
+                text = _call_openrouter(entry["key"], model, prompt, system)
                 latency = time.time() - start
                 result = _parse_json(text)
                 if result:
                     _record_success("openrouter", kidx, model, latency)
                     print(f"[Crypto Analyzer] OK OR key{kidx} model={model} ({latency:.1f}s)")
                     return result
-                print(f"[Crypto Analyzer] Bad JSON from {model}, trying next")
+                print(f"[Crypto Analyzer] Bad JSON from OR/{model}, trying next")
+                _record_failure("openrouter", kidx, model)
             except requests.exceptions.HTTPError as e:
                 code = e.response.status_code if hasattr(e, "response") else None
                 _record_failure("openrouter", kidx, model, code)
@@ -260,117 +326,188 @@ def generate_analysis(project: dict, api_keys: List[dict], google_keys: List[dic
     return None
 
 
-def _analysis_key(project: dict) -> str:
-    tid = (project.get("id") or "").strip().lower()
-    if tid:
-        return tid
-    ticker = (project.get("ticker") or "").strip().upper()
-    return ticker
+def generate_ipo_analysis(ipo: dict, api_keys: List[dict]) -> Optional[dict]:
+    price_band = ipo.get("priceBand") or ipo.get("price_band") or {}
+    if isinstance(price_band, dict):
+        pb_high = price_band.get("high", "")
+        pb_low = price_band.get("low", "")
+        price_band_str = f"Rs.{pb_low} - Rs.{pb_high}" if pb_low and pb_high else "TBA"
+    else:
+        price_band_str = str(price_band) if price_band else "TBA"
+
+    prompt = IPO_ANALYSIS_PROMPT.format(
+        name=ipo.get("name", ""),
+        ticker=ipo.get("ticker", ""),
+        exchange=ipo.get("exchange", ""),
+        sector=ipo.get("sector", ""),
+        industry=ipo.get("industry", ""),
+        price_band=price_band_str,
+        lot_size=ipo.get("lotSize", ipo.get("lot_size", "")),
+        issue_size=ipo.get("issueSize", ipo.get("issue_size", "")),
+        gmp=ipo.get("gmp", ""),
+        gmp_percent=ipo.get("gmpPercent", ipo.get("gmp_percent", "")),
+        subscription_status=ipo.get("subscriptionStatus", ipo.get("subscription_status", "")),
+        description=ipo.get("description", ""),
+        about=ipo.get("about", ""),
+    )
+    system = "You are a senior equity research analyst. Always respond with valid JSON only, no markdown fences."
+
+    for entry in api_keys:
+        kidx = entry["index"]
+        preferred = OPENROUTER_KEY_MODELS.get(kidx, [])
+        for model in _healthy_models("openrouter", kidx, preferred):
+            try:
+                start = time.time()
+                text = _call_openrouter(entry["key"], model, prompt, system)
+                latency = time.time() - start
+                result = _parse_json(text)
+                if result:
+                    _record_success("openrouter", kidx, model, latency)
+                    print(f"[IPO Analyzer] OK OR key{kidx} model={model} ({latency:.1f}s)")
+                    return result
+                print(f"[IPO Analyzer] Bad JSON from OR/{model}, trying next")
+                _record_failure("openrouter", kidx, model)
+            except requests.exceptions.HTTPError as e:
+                code = e.response.status_code if hasattr(e, "response") else None
+                _record_failure("openrouter", kidx, model, code)
+                print(f"[IPO Analyzer] Fail OR key{kidx} model={model}: {e}")
+            except Exception as e:
+                _record_failure("openrouter", kidx, model)
+                print(f"[IPO Analyzer] Fail OR key{kidx} model={model}: {e}")
+
+    return None
 
 
-def needs_analysis_refresh() -> bool:
+def load_cache(path: str) -> dict:
     try:
-        with open(ANALYSIS_FILE, encoding="utf-8") as f:
-            data = json.load(f)
-        if not isinstance(data, dict):
-            return True
-        analyses = data
-        if not analyses:
-            return True
-        try:
-            with open(CRYPTO_FILE, encoding="utf-8") as f:
-                crypto = json.load(f)
-            projects = crypto.get("projects", [])
-            all_analyzed = all(_analysis_key(p) in analyses for p in projects)
-            if all_analyzed:
-                print(f"[Crypto Analyzer] All {len(projects)} projects analyzed, checking age...")
-                return False
-        except (FileNotFoundError, json.JSONDecodeError):
-            pass
-    except (FileNotFoundError, json.JSONDecodeError):
-        pass
-    return True
-
-
-def load_cache() -> dict:
-    try:
-        with open(ANALYSIS_FILE, encoding="utf-8") as f:
+        with open(path, encoding="utf-8") as f:
             return json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         return {}
 
 
-def save_cache(cache: dict):
+def save_cache(cache: dict, path: str):
     os.makedirs(DATA_DIR, exist_ok=True)
-    with open(ANALYSIS_FILE, "w", encoding="utf-8") as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(cache, f, indent=2, ensure_ascii=False)
-    print(f"[Crypto Analyzer] Saved {len(cache)} analyses to {ANALYSIS_FILE}")
+    print(f"[Crypto Analyzer] Saved {len(cache)} analyses to {path}")
 
 
-def analyze(projects: List[dict]):
-    api_keys = []
-    for i in range(1, 5):
-        val = os.environ.get(f"IPO_AI_API_KEY_{i}")
-        if val:
-            api_keys.append({"key": val, "index": i})
-
-    google_keys = []
-    for i in range(1, 3):
-        val = os.environ.get(f"GOOGLE_AI_API_KEY_{i}")
-        if val:
-            google_keys.append({"key": val, "index": i})
-
-    if not api_keys and not google_keys:
-        print("[Crypto Analyzer] No API keys set, skipping analysis")
+def analyze_crypto(projects: List[dict], api_keys: List[dict], max_workers: int = 5):
+    if not api_keys:
+        print("[Crypto Analyzer] No OpenRouter keys, skipping crypto analysis")
         return
-
-    models = discover_free_models(api_keys) if api_keys else list(FALLBACK_FREE_MODELS)
-    cache = load_cache()
-
+    cache = load_cache(ANALYSIS_FILE)
     to_analyze = []
     for proj in projects:
-        key = _analysis_key(proj)
-        if key not in cache:
+        if _analysis_key_crypto(proj) not in cache:
             to_analyze.append(proj)
 
     if not to_analyze:
-        print(f"[Crypto Analyzer] All {len(projects)} projects already analyzed, nothing to do")
+        print(f"[Crypto Analyzer] All {len(projects)} crypto projects already analyzed, nothing to do")
         return
 
-    print(f"[Crypto Analyzer] {len(to_analyze)}/{len(projects)} projects need analysis ({len(cache)} cached)")
+    print(f"[Crypto Analyzer] {len(to_analyze)}/{len(projects)} crypto projects need analysis ({len(cache)} cached)")
 
     lock = threading.Lock()
     done = [0]
 
     def _process(proj):
         name = proj.get("name", "")
-        result = generate_analysis(proj, api_keys, google_keys, models)
-        if result:
-            key = _analysis_key(proj)
-            with lock:
-                cache[key] = result
-                save_cache(cache)
-                done[0] += 1
-                print(f"[Crypto Analyzer] [{done[0]}/{len(to_analyze)}] OK {name}")
-            return
+        result = generate_crypto_analysis(proj, api_keys)
         with lock:
             done[0] += 1
-            print(f"[Crypto Analyzer] [{done[0]}/{len(to_analyze)}] FAIL {name}")
+            if result:
+                cache[_analysis_key_crypto(proj)] = result
+                save_cache(cache, ANALYSIS_FILE)
+                print(f"[Crypto Analyzer] [{done[0]}/{len(to_analyze)}] OK {name}")
+            else:
+                print(f"[Crypto Analyzer] [{done[0]}/{len(to_analyze)}] FAIL {name}")
 
-    with ThreadPoolExecutor(max_workers=5) as ex:
+    with ThreadPoolExecutor(max_workers=max_workers) as ex:
         futures = [ex.submit(_process, proj) for proj in to_analyze]
         for f in as_completed(futures):
             pass
 
-    print(f"[Crypto Analyzer] Done. {len(cache)} total analyses cached")
+    print(f"[Crypto Analyzer] Done. {len(cache)} total crypto analyses cached")
 
 
-if __name__ == "__main__":
+def analyze_ipos(ipos: List[dict], api_keys: List[dict], max_workers: int = 5):
+    if not api_keys:
+        print("[IPO Analyzer] No OpenRouter keys, skipping IPO analysis")
+        return
+    cache = load_cache(IPO_ANALYSIS_FILE)
+    to_analyze = []
+    for ipo in ipos:
+        if _analysis_key_ipo(ipo) not in cache:
+            to_analyze.append(ipo)
+
+    if not to_analyze:
+        print(f"[IPO Analyzer] All {len(ipos)} IPOs already analyzed, nothing to do")
+        return
+
+    print(f"[IPO Analyzer] {len(to_analyze)}/{len(ipos)} IPOs need analysis ({len(cache)} cached)")
+
+    lock = threading.Lock()
+    done = [0]
+
+    def _process(ipo):
+        name = ipo.get("name", "")
+        result = generate_ipo_analysis(ipo, api_keys)
+        with lock:
+            done[0] += 1
+            if result:
+                cache[_analysis_key_ipo(ipo)] = result
+                save_cache(cache, IPO_ANALYSIS_FILE)
+                print(f"[IPO Analyzer] [{done[0]}/{len(to_analyze)}] OK {name}")
+            else:
+                print(f"[IPO Analyzer] [{done[0]}/{len(to_analyze)}] FAIL {name}")
+
+    with ThreadPoolExecutor(max_workers=max_workers) as ex:
+        futures = [ex.submit(_process, ipo) for ipo in to_analyze]
+        for f in as_completed(futures):
+            pass
+
+    print(f"[IPO Analyzer] Done. {len(cache)} total IPO analyses cached")
+
+
+def load_or_keys() -> List[dict]:
+    keys = []
+    for i in range(1, 9):
+        val = os.environ.get(f"OPENROUTER_API_{i}")
+        if val:
+            keys.append({"key": val, "index": i})
+    return keys
+
+
+def load_projects() -> List[dict]:
     try:
         with open(CRYPTO_FILE, encoding="utf-8") as f:
             data = json.load(f)
-        projects = data.get("projects", [])
-        print(f"[Crypto Analyzer] Loaded {len(projects)} projects")
-        analyze(projects)
-    except FileNotFoundError:
-        print(f"[Crypto Analyzer] No crypto_data.json found. Run crypto_collector.py first.")
+        return data.get("projects", [])
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+
+
+def load_ipos() -> List[dict]:
+    try:
+        with open(IPO_FILE, encoding="utf-8") as f:
+            data = json.load(f)
+        return data.get("ipos", [])
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+
+
+if __name__ == "__main__":
+    api_keys = load_or_keys()
+    if not api_keys:
+        print("[Crypto Analyzer] No OPENROUTER_API_1..8 keys set, exiting")
+        raise SystemExit(0)
+
+    projects = load_projects()
+    print(f"[Crypto Analyzer] Loaded {len(projects)} crypto projects")
+    analyze_crypto(projects, api_keys)
+
+    ipos = load_ipos()
+    print(f"[IPO Analyzer] Loaded {len(ipos)} IPOs")
+    analyze_ipos(ipos, api_keys)
