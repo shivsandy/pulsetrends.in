@@ -1,12 +1,33 @@
+import { useEffect } from 'react';
 import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Ticker from '../components/Ticker';
 import Footer from '../components/Footer';
 import CookieConsent from '../components/CookieConsent';
 
+// Global search event to allow opening search from anywhere
+const SEARCH_OPEN_EVENT = 'pulsetrends:open-search';
+
+export function triggerSearchOpen() {
+  window.dispatchEvent(new CustomEvent(SEARCH_OPEN_EVENT));
+}
+
 export default function RootLayout() {
   const location = useLocation();
   const isHome = location.pathname === '/';
+
+  // Ctrl+K / Cmd+K keyboard shortcut for search
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        triggerSearchOpen();
+      }
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, []);
+
   return (
     <div className="min-h-screen bg-surface-0 flex flex-col">
       <a

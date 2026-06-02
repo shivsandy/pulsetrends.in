@@ -1,4 +1,4 @@
-import { Activity, TrendingUp, Brain, BarChart3 } from 'lucide-react';
+import { Activity, TrendingUp, Brain, BarChart3, User, Edit3, Shield } from 'lucide-react';
 import PageSeo from '../components/PageSeo';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { ROUTES } from '../seo/routes';
@@ -24,6 +24,7 @@ export default function AboutPage() {
             <p className="text-[13px] text-surface-600">IPO & Crypto Intelligence Platform</p>
           </div>
         </div>
+
         <p>PulseTrends is a financial intelligence platform focused on IPOs, cryptocurrency airdrops, and market-moving news. Our goal is to help investors and market participants navigate complex information through structured research, AI-assisted analysis, and clear explanations.</p>
 
         <h2>Our Mission</h2>
@@ -46,9 +47,25 @@ export default function AboutPage() {
           ))}
         </div>
 
+        <h2>Editorial Standards</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 my-4">
+          {[
+            { icon: Edit3, title: 'Human Oversight', desc: 'All AI-generated analysis is reviewed by our editorial team for accuracy, clarity, and completeness before publication.' },
+            { icon: Shield, title: 'Source Verification', desc: 'We cite publicly available sources — including financial filings, market data feeds, and reputable news outlets — and update content when material information changes.' },
+            { icon: Brain, title: 'AI as a Tool', desc: 'Artificial intelligence assists with data processing, pattern recognition, and initial draft generation. Final editorial decisions are made by humans.' },
+            { icon: User, title: 'Named Authors', desc: 'Every article carries an editorial byline, and our editorial team is listed to ensure accountability and transparency.' },
+          ].map((f) => (
+            <div key={f.title} className="bg-surface-100 border border-surface-300/60 rounded-lg p-4">
+              <f.icon className="w-4 h-4 text-brand mb-2" />
+              <h3 className="text-[13px] font-semibold text-surface-white mb-1">{f.title}</h3>
+              <p className="text-[12px] text-surface-700 leading-relaxed">{f.desc}</p>
+            </div>
+          ))}
+        </div>
+
         <h2>Our Technology</h2>
         <p>PulseTrends uses modern AI and data-processing technologies to assist with research, summarization, and analytical workflows.</p>
-        <p>Our platform incorporates multiple AI models, market data sources, public information, and analytical methodologies to generate research outputs and scoring frameworks. AI-generated content may be reviewed, refined, or supplemented with additional research before publication.</p>
+        <p>Our platform incorporates multiple AI models, market data sources, public information, and analytical methodologies to generate research outputs and scoring frameworks. AI-generated content is reviewed, refined, or supplemented with additional research before publication, in line with our editorial standards.</p>
 
         <h2>Our Approach</h2>
         <p>We believe effective market research should be:</p>
@@ -58,6 +75,12 @@ export default function AboutPage() {
           <li><strong>Evidence-Based</strong> — Analysis should be grounded in publicly available information and verifiable data.</li>
           <li><strong>Independent</strong> — Editorial decisions should not be influenced by compensation from covered projects or companies.</li>
         </ul>
+
+        <h2>Corrections Policy</h2>
+        <p>PulseTrends is committed to accuracy. If you identify an error in any of our content — whether factual, analytical, or typographical — please contact us at{' '}
+          <a href="mailto:pulsetrendsin@gmail.com" className="text-brand hover:text-brand-light">pulsetrendsin@gmail.com</a>.
+        </p>
+        <p>We review all correction requests promptly. Verified corrections are applied and noted in the article when material.</p>
 
         <h2>Important Disclaimer</h2>
         <p>PulseTrends provides information, research, commentary, and analytical content for educational and informational purposes only.</p>

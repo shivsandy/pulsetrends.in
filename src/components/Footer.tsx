@@ -15,7 +15,7 @@ export default function Footer() {
     { to: '/cookies', label: 'Cookies' },
   ] as const;
   return (
-    <footer className="border-t border-surface-300/60 mt-8 bg-surface-50">
+    <footer className="border-t border-surface-300/60 mt-8 bg-surface-50" role="contentinfo">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div>
@@ -29,7 +29,7 @@ export default function Footer() {
               AI-powered intelligence for IPOs, crypto airdrops, and market-moving news.
             </p>
           </div>
-          <nav aria-label="Sections">
+          <nav aria-label="Footer sections">
             <p className="text-[11px] text-surface-600 uppercase tracking-wider font-medium mb-2">Sections</p>
             <div className="flex flex-col gap-1.5">
               {sectionLinks.map((link) => (
@@ -44,7 +44,7 @@ export default function Footer() {
               ))}
             </div>
           </nav>
-          <nav aria-label="Pages">
+          <nav aria-label="Footer pages">
             <p className="text-[11px] text-surface-600 uppercase tracking-wider font-medium mb-2">Pages</p>
             <div className="flex flex-col gap-1.5">
               {pageLinks.map((link) => (

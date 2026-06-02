@@ -1,6 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Activity, TrendingUp, Coins, Newspaper, Menu, X, Info, Mail, FileText, Shield, Cookie } from 'lucide-react';
+import { Activity, TrendingUp, Coins, Newspaper, Menu, X, Info, Mail, FileText, Shield, Cookie, Search as SearchIcon } from 'lucide-react';
+import SearchModal from './SearchModal';
+
+const SEARCH_OPEN_EVENT = 'pulsetrends:open-search';
 
 const mainTabs = [
   { to: '/ipo-analysis' as const, label: 'IPO Analysis', icon: TrendingUp },
@@ -18,6 +21,14 @@ const pageTabs = [
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  // Listen for global Ctrl+K shortcut to open search
+  useEffect(() => {
+    const handler = () => setSearchOpen(true);
+    window.addEventListener(SEARCH_OPEN_EVENT, handler);
+    return () => window.removeEventListener(SEARCH_OPEN_EVENT, handler);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-surface-0/80 backdrop-blur-xl border-b border-surface-300/60">
@@ -76,7 +87,16 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
+            <button
+              type="button"
+              onClick={() => setSearchOpen(true)}
+              className="p-1.5 text-surface-700 hover:text-surface-white rounded-md hover:bg-surface-300 transition-colors"
+              aria-label="Search IPOs, news, and airdrops"
+              title="Search (Ctrl+K)"
+            >
+              <SearchIcon className="w-4 h-4" />
+            </button>
             <span className="hidden md:relative flex h-1.5 w-1.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-success opacity-60" />
               <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-success" />
@@ -92,6 +112,8 @@ export default function Header() {
             </button>
           </div>
         </div>
+
+        {searchOpen && <SearchModal onClose={() => setSearchOpen(false)} />}
 
         {mobileOpen && (
           <div className="md:hidden pb-3 pt-1 border-t border-surface-300/60 animate-fade-in">

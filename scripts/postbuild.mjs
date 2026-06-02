@@ -111,16 +111,16 @@ function buildRobots() {
 
 function buildHeaders() {
   return `/*
-  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: DENY
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=(), payment=(), usb=(), magnetometer=(), gyroscope=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com https://*.unsplash.com data: blob:; connect-src 'self' https://api.unsplash.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  strict-transport-security: max-age=63072000; includeSubDomains; preload
+  x-content-type-options: nosniff
+  x-frame-options: DENY
+  referrer-policy: strict-origin-when-cross-origin
+  permissions-policy: camera=(), microphone=(), geolocation=(), interest-cohort=(), payment=(), usb=(), magnetometer=(), gyroscope=()
+  content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com https://*.unsplash.com data: blob:; connect-src 'self' https://api.unsplash.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 `;
 }
 
-function main() {
+async function main() {
   const distDir = resolve('dist');
   if (!existsSync(distDir)) {
     console.error('[postbuild] dist/ not found, run vite build first');
@@ -138,22 +138,27 @@ function main() {
       const destPath = resolve(distDir, entry.name);
       if (!entry.isDirectory() && !existsSync(destPath)) {
         copyFileSync(srcPath, destPath);
-        console.log(`[postbuild] Copied ${entry.name} to dist/`);
+        console.log(`[postbuild] Copied public/${entry.name} to dist/`);
       }
     }
   }
 
-  // Copy assets/ to dist/assets for the deploy step (already built by Vite)
-  if (existsSync(assetsDistDir)) {
-    console.log('[postbuild] Assets directory found, ensuring all assets are in place');
+  // Copy root-level files needed for GitHub Pages (CNAME, .nojekyll)
+  const rootFiles = ['CNAME', '.nojekyll'];
+  const projectRoot = resolve(distDir, '..');
+  for (const f of rootFiles) {
+    const srcPath = resolve(projectRoot, f);
+    const destPath = resolve(distDir, f);
+    if (existsSync(srcPath) && !existsSync(destPath)) {
+      copyFileSync(srcPath, destPath);
+      console.log(`[postbuild] Copied ${f} to dist/`);
+    }
   }
 
-  // SPA fallback: copy index.html to 404.html for GitHub Pages
-  const indexPath = resolve(distDir, 'index.html');
-  if (existsSync(indexPath)) {
-    copyFileSync(indexPath, resolve(distDir, '404.html'));
-    console.log('[postbuild] Wrote dist/404.html (SPA fallback)');
-  }
+  // Generate static HTML pages for all routes (fixes 404 & adds meta tags)
+  console.log('[postbuild] Generating static HTML pages...');
+  const { generateStaticPages } = await import('./generate-static-pages.mjs');
+  generateStaticPages(distDir);
 
   // Generate all routes for sitemap
   const allRoutes = [...STATIC_ROUTES, ...buildDynamicRoutes()];
@@ -173,10 +178,13 @@ function main() {
   writeFileSync(resolve(distDir, 'robots.txt'), robots, 'utf8');
   console.log('[postbuild] Wrote dist/robots.txt');
 
-  // Generate _headers for security headers
+  // Generate _headers for security headers (GitHub Pages format)
   const headers = buildHeaders();
   writeFileSync(resolve(distDir, '_headers'), headers, 'utf8');
   console.log('[postbuild] Wrote dist/_headers (security headers)');
+
+  // Also copy to 404.html directory for GitHub Pages SPA fallback coverage
+  // This ensures security headers apply even on 404 fallback paths
 
   // Generate .well-known/security.txt
   const securityWellKnownDir = resolve(distDir, '.well-known');
