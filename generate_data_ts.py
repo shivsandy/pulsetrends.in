@@ -26,8 +26,7 @@ def esc(s):
         return str(s)
     if not isinstance(s, str):
         return str(s)
-    s = s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n").replace("\r", "")
-    return s
+    return json.dumps(s, ensure_ascii=False)[1:-1]
 
 
 def search_news_for_ipo(company: str, ticker: str) -> str:
@@ -231,12 +230,26 @@ def generate_crypto_data():
     lines.append('  eligibility: string;')
     lines.append('  farmingGuide: string;')
     lines.append('  tgeDate: string;')
+    lines.append('  website: string;')
+    lines.append('  socialLinks: { twitter: string; discord: string; telegram: string; website: string };')
+    lines.append('  steps: string[];')
+    lines.append('  availableFrom: string;')
     lines.append('  aiAnalysis?: {')
     lines.append('    summary: string;')
     lines.append("    sentiment: 'bullish' | 'bearish' | 'neutral';")
     lines.append('    convictionScore: number;')
     lines.append('    keyDrivers: string[];')
     lines.append('    risks: string[];')
+    lines.append('    riskAssessment: {')
+    lines.append("      overallRisk: 'low' | 'medium' | 'high';")
+    lines.append("      smartContractRisk: 'low' | 'medium' | 'high';")
+    lines.append("      teamRisk: 'low' | 'medium' | 'high';")
+    lines.append("      marketRisk: 'low' | 'medium' | 'high';")
+    lines.append("      regulatoryRisk: 'low' | 'medium' | 'high';")
+    lines.append("      rugPullPotential: 'low' | 'medium' | 'high';")
+    lines.append("      liquidityRisk: 'low' | 'medium' | 'high';")
+    lines.append("      dilutionRisk: 'low' | 'medium' | 'high';")
+    lines.append('    };')
     lines.append('    verdict: string;')
     lines.append('  };')
     lines.append('}')
@@ -258,6 +271,14 @@ def generate_crypto_data():
         eligibility = esc(proj.get("eligibility", ""))
         farming_guide = esc(proj.get("farming_guide", ""))
         tge_date = esc(proj.get("tge_date", ""))
+        website = esc(proj.get("website", ""))
+        social_links = proj.get("social_links", {})
+        if not isinstance(social_links, dict):
+            social_links = {}
+        steps = proj.get("steps", [])
+        if not isinstance(steps, list):
+            steps = []
+        available_from = esc(proj.get("available_from", ""))
 
         akey = pid.lower() if pid else ticker.upper()
         analysis = analysis_data.get(akey, {})
@@ -284,17 +305,37 @@ def generate_crypto_data():
         lines.append(f'    eligibility: "{eligibility}",')
         lines.append(f'    farmingGuide: "{farming_guide}",')
         lines.append(f'    tgeDate: "{tge_date}",')
+        lines.append(f'    website: "{website}",')
+        sl_tw = esc(social_links.get("twitter", ""))
+        sl_dc = esc(social_links.get("discord", ""))
+        sl_tg = esc(social_links.get("telegram", ""))
+        sl_ws = esc(social_links.get("website", ""))
+        lines.append(f'    socialLinks: {{ twitter: "{sl_tw}", discord: "{sl_dc}", telegram: "{sl_tg}", website: "{sl_ws}" }},')
+        steps_str = ', '.join([f'"{esc(s)}"' for s in steps[:10]])
+        lines.append(f'    steps: [{steps_str}],')
+        lines.append(f'    availableFrom: "{available_from}",')
 
         has_ai = analysis and (ai_summary or verdict)
         if has_ai:
             drivers_str = ', '.join([f'"{esc(d)}"' for d in key_drivers[:5]])
             risks_str = ', '.join([f'"{esc(r)}"' for r in risks[:5]])
+            ra = analysis.get("risk_assessment", {})
             lines.append('    aiAnalysis: {')
             lines.append(f'      summary: "{ai_summary}",')
             lines.append(f'      sentiment: "{sentiment}" as const,')
             lines.append(f'      convictionScore: {conviction},')
             lines.append(f'      keyDrivers: [{drivers_str}],')
             lines.append(f'      risks: [{risks_str}],')
+            lines.append('      riskAssessment: {')
+            lines.append(f'        overallRisk: "{ra.get("overall_risk", "medium")}" as const,')
+            lines.append(f'        smartContractRisk: "{ra.get("smart_contract_risk", "medium")}" as const,')
+            lines.append(f'        teamRisk: "{ra.get("team_risk", "medium")}" as const,')
+            lines.append(f'        marketRisk: "{ra.get("market_risk", "medium")}" as const,')
+            lines.append(f'        regulatoryRisk: "{ra.get("regulatory_risk", "medium")}" as const,')
+            lines.append(f'        rugPullPotential: "{ra.get("rug_pull_potential", "medium")}" as const,')
+            lines.append(f'        liquidityRisk: "{ra.get("liquidity_risk", "medium")}" as const,')
+            lines.append(f'        dilutionRisk: "{ra.get("dilution_risk", "medium")}" as const,')
+            lines.append('      },')
             lines.append(f'      verdict: "{verdict}",')
             lines.append('    },')
         else:

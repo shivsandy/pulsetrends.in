@@ -113,7 +113,7 @@ def discover_free_models(api_keys: List[dict]) -> List[str]:
     return list(FALLBACK_FREE_MODELS)
 
 
-ANALYSIS_PROMPT = """Act as a crypto analyst. Analyze the following crypto project and return ONLY valid JSON.
+ANALYSIS_PROMPT = """Act as a crypto analyst with expertise in airdrop and token risk assessment. Analyze the following project and return ONLY valid JSON.
 
 Name: {name}
 Ticker: {ticker}
@@ -130,9 +130,19 @@ Return EXACTLY this JSON structure:
   "conviction_score": 75,
   "key_drivers": ["Driver 1", "Driver 2", "Driver 3"],
   "risks": ["Risk 1", "Risk 2", "Risk 3"],
+  "risk_assessment": {{
+    "overall_risk": "medium",
+    "smart_contract_risk": "low",
+    "team_risk": "medium",
+    "market_risk": "medium",
+    "regulatory_risk": "low",
+    "rug_pull_potential": "low",
+    "liquidity_risk": "medium",
+    "dilution_risk": "medium"
+  }},
   "verdict": "Balanced assessment and outlook for this project."
 }}
-Important: sentiment must be one of "bullish", "bearish", or "neutral". conviction_score must be 0-100. Return ONLY the JSON, no other text."""
+Important: sentiment must be one of "bullish", "bearish", or "neutral". conviction_score must be 0-100. risk_assessment fields must be one of "low", "medium", or "high". Return ONLY the JSON, no other text."""
 
 
 def _call_openrouter(api_key: str, model: str, prompt: str) -> Optional[str]:
