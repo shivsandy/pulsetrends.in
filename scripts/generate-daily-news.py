@@ -2,7 +2,7 @@
 """
 Daily News Generator for PulseTrends
 =====================================
-Generates 9 articles daily (3 crypto + 4 IPO + 2 stock market) using
+Generates 11 articles daily (3 crypto + 5 IPO + 3 stock market) using
 LLM APIs from environment variables. Falls back across providers.
 
 Run: python scripts/generate-daily-news.py
@@ -97,6 +97,11 @@ def now_iso():
 
 def today_str():
     return datetime.now(timezone.utc).strftime("%B %d, %Y")
+
+# ── Author attribution ────────────────────────────────────────────────
+
+AUTHOR_BLOCK = "\n\n---\n\nAuthor: Shiva Sandeep\n\nTelegram: @its_terabyte\n\nWhatsApp:\n\n*Default WhatsApp profile image placeholder*\n\nPublished by PulseTrends\n\n---"
+AUTHOR_BLOCK_ESC = esc(AUTHOR_BLOCK)
 
 # ── LLM API callers ──────────────────────────────────────────────────
 
@@ -421,6 +426,76 @@ def fetch_unsplash_images(headline, category="stocks", count=4):
 
     return results
 
+# ── Existing Article Update ──────────────────────────────────────────
+
+def _find_ts_string_end(text, start):
+    """Find the end of a TypeScript string literal starting at start (after the opening quote)."""
+    i = start
+    while i < len(text):
+        if text[i] == '\\':
+            i += 2
+        elif text[i] == '"':
+            return i
+        else:
+            i += 1
+    return -1
+
+
+def update_existing_articles_author():
+    """
+    Scan existing newsData.ts and append author attribution to any articles
+    that are missing it. Does not modify article content, metadata, or structure.
+    """
+    if not NEWS_DATA_FILE.exists():
+        print("[Author Update] No existing news data file found, skipping.")
+        return
+
+    content = NEWS_DATA_FILE.read_text("utf-8")
+
+    if "Author: Shiva Sandeep" in content:
+        print("[Author Update] All existing articles already have author attribution.")
+        return
+
+    modified = 0
+    idx = 0
+    result = []
+    last_end = 0
+
+    while True:
+        da_start = content.find("detailedAnalysis:", idx)
+        if da_start == -1:
+            break
+
+        open_quote = content.find('"', da_start)
+        if open_quote == -1:
+            idx = da_start + 1
+            continue
+
+        close_quote = _find_ts_string_end(content, open_quote + 1)
+        if close_quote == -1:
+            idx = open_quote + 1
+            continue
+
+        inner = content[open_quote + 1:close_quote]
+
+        if "Author: Shiva Sandeep" not in inner:
+            new_inner = inner + AUTHOR_BLOCK_ESC
+            result.append(content[last_end:open_quote + 1])
+            result.append(new_inner)
+            result.append(content[close_quote])
+            last_end = close_quote + 1
+            modified += 1
+
+        idx = close_quote + 1
+
+    if modified:
+        result.append(content[last_end:])
+        NEWS_DATA_FILE.write_text("".join(result), "utf-8")
+        print(f"[Author Update] Appended author attribution to {modified} existing article(s).")
+    else:
+        print("[Author Update] No articles needed updating.")
+
+
 # ── Article Generation ──────────────────────────────────────────────
 
 def generate_articles_batch(category, count, date_str):
@@ -431,224 +506,190 @@ def generate_articles_batch(category, count, date_str):
     today = date_str
     articles = []
 
-    category_prompts = {
-        "crypto": f"""You are a veteran financial journalist covering cryptocurrency markets at PulseTrends.
+    # ── Base prompt shared across all categories ──────────────────────
+    base_prompt = f"""You are an expert financial journalist, SEO strategist, and newsroom editor working for PulseTrends (https://pulsetrends.in).
 
 Today's date: {today}
 
-Generate exactly ONE (1) news article about cryptocurrency markets. The article must be written in a natural, human-like journalistic style — as if a real financial reporter wrote it after researching the markets this morning.
+## NEWS DISCOVERY PROCESS
+Before creating content, gather information from multiple reputable sources. Identify trending topics with strong search demand. Research Google Trends data, trending search queries, high-volume keywords, related semantic keywords, long-tail keywords, and question-based keywords. Prioritize topics with the highest traffic potential.
 
-Requirements:
-- Write like a human financial journalist — use varied sentence lengths, contractions ("it's", "they're", "we've seen"), and natural paragraph transitions
-- Include specific price numbers, percentages, or market data to make it concrete
-- Cover topics like: Bitcoin/Ethereum price movements, DeFi trends, regulatory developments, institutional adoption, layer-2 growth, or crypto market analysis
-- Vary vocabulary — don't repeat the same phrases
-- Avoid AI-sounding patterns: no "Furthermore,", "Moreover,", "In conclusion," — just write naturally
-- The article should feel like something you'd read on Bloomberg or CoinDesk — factual, insightful, with a bit of personality
-- Include 1-2 sentences of expert-sounding commentary (attributed to "analysts" or a made-up analyst name)
+## CONTENT CREATION RULES
+- Never copy content from any source. Never publish rewritten paragraphs from source articles.
+- Read and understand source material, then independently write original content.
+- Produce journalist-quality reporting. Content must feel completely human-written.
+- Avoid robotic, repetitive, or AI-generated language patterns.
+- Use professional newsroom standards. Maintain factual accuracy. Verify information.
+- Use varied sentence lengths, contractions ("it's", "they're", "we've seen"), and natural paragraph transitions.
+- Include specific numbers, percentages, or market data to make it concrete.
+- Vary vocabulary — don't repeat the same phrases.
+- Avoid AI-sounding patterns: no "Furthermore,", "Moreover,", "In conclusion," — write naturally.
+- The article should feel like something you'd read on Bloomberg, Reuters, or CoinDesk.
+- Include 1-2 sentences of expert-sounding commentary (attributed to real-sounding analyst names).
 
+## ARTICLE STRUCTURE (follow this structure in your writing)
+1. **Headline** — Compelling, clickable, SEO-optimized headline
+2. **Introduction** — 2-3 sentences drawing readers in with the key news
+3. **Key Highlights** — 5 bullet points highlighting key facts
+4. **Main Story** — 5-7 paragraphs of in-depth analysis with markdown headings (## Market Overview, ## Key Developments, ## Market Impact, ## Expert Perspective, ## Historical Context)
+5. **Market Impact** — 3-4 sentences on what this means for the market
+6. **Investor Takeaway** — Key action items for investors (3-4 bullet points)
+7. **Expert Analysis** — Analyst commentary and expert perspectives
+8. **What Happens Next** — Future outlook and catalysts to watch
+9. **Conclusion** — Strong closing paragraph
+
+## SEO REQUIREMENTS
+For every article generate:
+- SEO Title (seoTitle)
+- Meta Title (metaTitle)
+- Meta Description (metaDescription) — under 160 characters
+- Focus Keyword (focusKeyword)
+- Secondary Keywords (secondaryKeywords) — 3-5 related keywords
+- URL Slug (slug)
+- Suggested Tags (tags) — 3-5 tags
+- Featured Image Prompt (featuredImagePrompt)
+
+Optimize for: Google Search, Google Discover, Google News, Bing News, Featured Snippets, AI Search Engines, Semantic SEO.
+
+## AUTHOR ATTRIBUTION
+At the end of every article's detailed analysis section, append:
+
+---
+
+Author: Shiva Sandeep
+
+Telegram: @its_terabyte
+
+WhatsApp:
+
+*Default WhatsApp profile image placeholder*
+
+Published by PulseTrends
+
+---
+
+## QUALITY CONTROL
+Before finalizing: ensure content is unique, passes plagiarism checks, does not appear AI-generated, is publication-ready, has proper grammar and readability, SEO optimization is complete, and facts are verified.
+
+## OUTPUT FORMAT
 Output ONLY a valid JSON object with NO markdown formatting, NO code fences, NO commentary. Just the raw JSON.
 
 The JSON must have exactly these fields:
 {{
-  "headline": "A compelling, clickable news headline",
-  "subheadline": "A supporting subheadline (1 sentence)",
+  "headline": "Compelling, clickable headline",
+  "subheadline": "Supporting subheadline (1 sentence)",
   "keyHighlights": ["5 bullet points as strings highlighting key facts"],
-  "executiveSummary": "2-3 sentence executive summary",
-  "marketBackground": "3-4 sentences providing market context",
-  "detailedAnalysis": "5-7 paragraphs of detailed analysis with markdown headings (## Bullish Factors, ## Bearish Factors, ## Risk Analysis, ## Expert Perspective, ## Historical Comparison, ## Market Impact)",
-  "expertInsights": "1-2 sentences of analyst commentary",
-  "financialMetrics": {{ "tableCaption": "Table title", "headers": ["3-4 column headers as strings"], "rows": [["row1_col1", "row1_col2", ...], ["row2_col1", ...]] }},
-  "risks": ["3-5 risk factors as strings"],
-  "opportunities": ["3-5 opportunities as strings"],
-  "outlook": "2-3 sentence market outlook",
-  "conclusion": "2-3 sentence conclusion",
-  "category": "crypto",
+  "executiveSummary": "2-3 sentence introduction",
+  "marketBackground": "3-4 sentences on market impact and context",
+  "detailedAnalysis": "5-7 paragraphs with markdown headings. Include the author attribution block at the very end.",
+  "expertInsights": "Expert perspective and analyst commentary",
+  "financialMetrics": {{ "tableCaption": "Table title", "headers": ["3-4 column headers"], "rows": [["row1_col1", "row1_col2", ...], ["row2_col1", ...]] }},
+  "risks": ["3-5 risk factors"],
+  "opportunities": ["3-5 opportunities"],
+  "outlook": "2-3 sentence future outlook (What Happens Next)",
+  "conclusion": "2-3 sentence strong conclusion",
+  "investorTakeaways": ["3-4 investor action items"],
+  "category": "{category}",
   "sentiment": "bullish or bearish or neutral",
   "impact": "low or medium or high",
-  "relatedCoins": ["BTC", "ETH", ...],
-  "relatedStocks": [],
+  "relatedCoins": ["TICKER", ...],
+  "relatedStocks": ["TICKER", ...],
   "primaryKeyword": "main SEO keyword",
-  "secondaryKeywords": ["3-5 related keywords"],
-  "tags": ["3-5 tags"],
-  "metaDescription": "SEO meta description under 160 chars",
-  "slug": "url-friendly-slug-here",
+  "secondaryKeywords": ["3-5 related SEO keywords"],
+  "tags": ["3-5 content tags"],
+  "seoTitle": "SEO-optimized title tag",
+  "metaTitle": "Meta title for search engines",
+  "metaDescription": "SEO meta description under 160 characters",
+  "slug": "url-friendly-slug",
   "focusKeyword": "primary SEO keyword",
+  "featuredImagePrompt": "Image generation prompt for the featured image",
   "sourcesReferenced": ["Source 1", "Source 2", "Source 3"],
   "aiAnalysis": {{
     "bullCase": "bullish scenario",
     "bearCase": "bearish scenario",
     "neutralCase": "neutral scenario",
-    "probabilityWeightedOutlook": "probability split",
+    "probabilityWeightedOutlook": "probability split e.g. 60%% bullish / 40%% bearish",
     "potentialCatalysts": ["2-3 catalysts"],
     "keyRisks": ["2-3 risks"]
   }},
   "publishedAt": "{datetime.now(timezone.utc).isoformat()}"
 }}
+"""
 
-WRITE THE ARTICLE TEXT NATURALLY as if a human journalist wrote it. Make the detailedAnalysis section substantive and insightful, not generic.""",
+    # ── Category-specific topic coverage ──────────────────────────────
+    category_topics = {
+        "crypto": """This article is about CRYPTOCURRENCY markets.
 
-        "ipo": f"""You are a veteran financial journalist covering IPO markets at PulseTrends.
+Cover topics like: Bitcoin price movements, Ethereum updates, altcoin trends, DeFi developments, blockchain technology, Web3 ecosystem, regulatory updates, institutional adoption, crypto market analysis, ETF flows, on-chain metrics, or layer-2 scaling.
 
-Today's date: {today}
+Focus on making this feel like a natural crypto market report a journalist would write.""",
 
-Generate exactly ONE (1) news article about IPOs (initial public offerings). The article must be written in a natural, human-like journalistic style.
+        "ipo": """This article is about IPO (Initial Public Offering) markets.
 
-Requirements:
-- Write like a human financial journalist — use varied sentence structures, natural transitions, contractions
-- Cover topics like: upcoming IPOs, IPO performance analysis, subscription rates, GMP trends, SEBI regulations, institutional investor activity, or specific IPO reviews
-- Include specific numbers (issue size, price bands, GMP, subscription figures) to make it concrete
-- Vary vocabulary — don't repeat phrases
-- Avoid AI-sounding patterns
-- Include 1-2 sentences of analyst commentary
+Cover topics like: upcoming IPOs, recently filed IPOs, SME IPOs, mainboard IPOs, global IPO developments, IPO GMP analysis, company fundamentals, risks and opportunities, subscription data, price band analysis, listing day performance, or SEBI regulatory changes.
 
-Output ONLY a valid JSON object with NO markdown formatting, NO code fences. The JSON fields are the same as above:
-{{
-  "headline": "...",
-  "subheadline": "...",
-  "keyHighlights": [...],
-  "executiveSummary": "...",
-  "marketBackground": "...",
-  "detailedAnalysis": "...",
-  "expertInsights": "...",
-  "financialMetrics": {{ "tableCaption": "...", "headers": [...], "rows": [...] }},
-  "risks": [...],
-  "opportunities": [...],
-  "outlook": "...",
-  "conclusion": "...",
-  "category": "ipo",
-  "sentiment": "bullish or bearish or neutral",
-  "impact": "low or medium or high",
-  "relatedCoins": [],
-  "relatedStocks": ["TICKER1", "TICKER2", ...],
-  "primaryKeyword": "...",
-  "secondaryKeywords": [...],
-  "tags": [...],
-  "metaDescription": "...",
-  "slug": "...",
-  "focusKeyword": "...",
-  "sourcesReferenced": [...],
-  "aiAnalysis": {{
-    "bullCase": "...",
-    "bearCase": "...",
-    "neutralCase": "...",
-    "probabilityWeightedOutlook": "...",
-    "potentialCatalysts": [...],
-    "keyRisks": [...]
-  }},
-  "publishedAt": "{datetime.now(timezone.utc).isoformat()}"
-}}
+Focus on Indian IPO market with specific company examples and subscription/GMP data.""",
 
-Make the article text sound natural and human-written, not like AI-generated content.""",
+        "stocks": """This article is about STOCK MARKET analysis.
 
-        "stocks": f"""You are a veteran financial journalist covering stock markets at PulseTrends.
+Cover topics like: trending stocks, earnings reports, market movers, institutional activity (FII/DII), sector performance, Nifty/Sensex movements, Fed policy impact, quarterly results, or global market trends.
 
-Today's date: {today}
-
-Generate exactly ONE (1) news article about stock markets. The article must be written in a natural, human-like journalistic style.
-
-Requirements:
-- Write like a human financial journalist — use varied sentence structures, natural transitions, contractions
-- Cover topics like: Nifty/Sensex movements, Fed policy impact, sector performance, quarterly earnings analysis, FII/DII flows, global market trends, or specific stock analysis
-- Include specific numbers (index levels, percentage changes, earnings figures) to make it concrete
-- Vary vocabulary
-- Avoid AI-sounding patterns
-- Include analyst commentary
-
-Output ONLY a valid JSON object with NO markdown formatting, NO code fences. Same JSON fields as above:
-{{
-  "headline": "...",
-  "subheadline": "...",
-  "keyHighlights": [...],
-  "executiveSummary": "...",
-  "marketBackground": "...",
-  "detailedAnalysis": "...",
-  "expertInsights": "...",
-  "financialMetrics": {{ "tableCaption": "...", "headers": [...], "rows": [...] }},
-  "risks": [...],
-  "opportunities": [...],
-  "outlook": "...",
-  "conclusion": "...",
-  "category": "stocks",
-  "sentiment": "bullish or bearish or neutral",
-  "impact": "low or medium or high",
-  "relatedCoins": [],
-  "relatedStocks": ["TICKER1", "TICKER2", ...],
-  "primaryKeyword": "...",
-  "secondaryKeywords": [...],
-  "tags": [...],
-  "metaDescription": "...",
-  "slug": "...",
-  "focusKeyword": "...",
-  "sourcesReferenced": [...],
-  "aiAnalysis": {{
-    "bullCase": "...",
-    "bearCase": "...",
-    "neutralCase": "...",
-    "probabilityWeightedOutlook": "...",
-    "potentialCatalysts": [...],
-    "keyRisks": [...]
-  }},
-  "publishedAt": "{datetime.now(timezone.utc).isoformat()}"
-}}
-
-Make the article text sound natural and human-written.""",
+Focus on Indian stock market with specific company examples and index levels.""",
     }
 
-    prompt_template = category_prompts.get(category, category_prompts["crypto"])
+    topic_instructions = category_topics.get(category, category_topics["crypto"])
+
+    # ── Topic angles for variety ──────────────────────────────────────────
+    angles = {
+        "crypto": [
+            "Focus on Bitcoin and Ethereum price action with specific price targets and market sentiment analysis. Use recent on-chain data.",
+            "Focus on altcoin season, DeFi protocols, or layer-2 ecosystem developments with TVL and usage metrics.",
+            "Focus on regulatory news, institutional adoption, or spot ETF flows with real fund flow data.",
+            "Focus on emerging trends like AI x crypto, RWAs, or Bitcoin L2s with specific project examples.",
+            "Focus on macro factors affecting crypto (Fed, dollar index, liquidity) and how traders are positioning.",
+        ],
+        "ipo": [
+            "Focus on an upcoming high-profile IPO with details on the company's financials, valuation, and investor sentiment.",
+            "Focus on recent IPO listings with listing-day performance, GMP trends, and what it signals for the market.",
+            "Focus on SME IPO activity — which SMEs are filing, subscription rates, and investor appetite.",
+            "Focus on IPO market trends — overall subscription data, number of filings, SEBI clearance pipeline, and 2026 outlook.",
+            "Focus on a global IPO development (e.g., a big US or Chinese listing) and its implications for Indian markets.",
+        ],
+        "stocks": [
+            "Focus on Nifty/Sensex weekly performance with sectoral rotation analysis and FII/DII flow data.",
+            "Focus on a major company's quarterly earnings report — revenue, profit, margins, guidance, and analyst reactions.",
+            "Focus on FII/DII activity, global fund flows, and how foreign institutional investors are positioned on India.",
+            "Focus on Fed policy, US interest rates, dollar index, and their cascading impact on emerging markets including India.",
+            "Focus on a specific sector showing strong momentum (e.g., banking, IT, pharma, auto, renewables) with top picks.",
+        ],
+    }
+
+    prompt_template = base_prompt
 
     for i in range(count):
         print(f"\n[{category.upper()}] Generating article {i+1}/{count}...")
-        
-        # Add variety by randomizing the topic angle
-        angles = {
-            "crypto": [
-                "Focus on Bitcoin and Ethereum price action and market sentiment.",
-                "Focus on altcoin season, DeFi, or layer-2 ecosystem developments.",
-                "Focus on regulatory news, institutional adoption, or ETF flows.",
-                "Focus on on-chain metrics, whale activity, or market structure.",
-                "Focus on a specific emerging trend in the crypto space.",
-            ],
-            "ipo": [
-                "Focus on an upcoming high-profile IPO and its market reception.",
-                "Focus on recent IPO listings and their listing-day performance.",
-                "Focus on IPO market trends, subscription data, and GMP movements.",
-                "Focus on SEBI regulatory changes affecting the IPO market.",
-                "Focus on a specific sector's IPO activity (e.g., fintech, tech, SME).",
-            ],
-            "stocks": [
-                "Focus on Nifty/Sensex movement and sectoral rotation.",
-                "Focus on a major company's quarterly earnings report.",
-                "Focus on FII/DII flows and global market impact on Indian markets.",
-                "Focus on Fed policy and its impact on emerging markets.",
-                "Focus on a specific sector showing strong momentum.",
-            ]
-        }
 
         extra_angle = random.choice(angles.get(category, angles["crypto"]))
-        full_prompt = f"{prompt_template}\n\nCRITICAL - Make this article feel DIFFERENT from the others. {extra_angle}\n\nEnsure the article reads like it was written by a human journalist, not an AI."
+        full_prompt = f"{prompt_template}\n\n## CATEGORY-SPECIFIC INSTRUCTIONS\n{topic_instructions}\n\n## THIS ARTICLE MUST BE DIFFERENT\n{extra_angle}\n\n## ARTICLE VARIETY\nMake this article feel distinct from any others in the same category. Use a different angle, different companies/examples, and a different narrative structure. Ensure the author attribution block is included at the end of detailedAnalysis.\n\nOutput ONLY valid JSON. No markdown. No code fences."
 
         result = None
         for attempt in range(MAX_RETIRES):
             result = call_llm(full_prompt)
             if result:
-                # Try to extract JSON
                 try:
-                    # Strip markdown code fences if present
                     cleaned = result.strip()
                     if cleaned.startswith("```"):
-                        cleaned = re.sub(r'^```(?:json)?\s*', '', cleaned)
-                        cleaned = re.sub(r'\s*```$', '', cleaned)
-                    
+                        cleaned = re.sub(r'^```(?:json)?\\s*', '', cleaned)
+                        cleaned = re.sub(r'\\s*```$', '', cleaned)
+
                     article = json.loads(cleaned)
-                    # Validate required fields
                     if not isinstance(article, dict):
                         raise ValueError("Response is not a JSON object")
                     required = ["headline", "detailedAnalysis", "metaDescription", "category", "publishedAt"]
                     missing = [f for f in required if f not in article]
                     if missing:
                         raise ValueError(f"Missing fields: {missing}")
-                    
+
                     # Ensure defaults
                     article.setdefault("id", make_id())
                     article.setdefault("subheadline", "")
@@ -656,6 +697,7 @@ Make the article text sound natural and human-written.""",
                     article.setdefault("executiveSummary", "")
                     article.setdefault("marketBackground", "")
                     article.setdefault("expertInsights", "")
+                    article.setdefault("investorTakeaways", [])
                     article.setdefault("financialMetrics", {"tableCaption": "", "headers": [], "rows": []})
                     article.setdefault("risks", [])
                     article.setdefault("opportunities", [])
@@ -670,11 +712,19 @@ Make the article text sound natural and human-written.""",
                     article.setdefault("primaryKeyword", "")
                     article.setdefault("secondaryKeywords", [])
                     article.setdefault("tags", [])
+                    article.setdefault("seoTitle", "")
+                    article.setdefault("metaTitle", "")
+                    article.setdefault("featuredImagePrompt", "")
                     article.setdefault("slug", slugify(article.get("headline", "")))
                     article.setdefault("focusKeyword", article.get("primaryKeyword", ""))
                     article.setdefault("publishedAt", now_iso())
-                    
-                    # Fetch Unsplash images for this article
+
+                    # Ensure author attribution is in detailedAnalysis
+                    da = article.get("detailedAnalysis", "")
+                    if "Author: Shiva Sandeep" not in da:
+                        article["detailedAnalysis"] = da + AUTHOR_BLOCK
+
+                    # Fetch Unsplash images
                     print(f"  → Fetching images for '{article['headline'][:50]}...'")
                     article_images = fetch_unsplash_images(
                         article.get("headline", ""),
@@ -683,38 +733,37 @@ Make the article text sound natural and human-written.""",
                     )
                     article["images"] = article_images
                     print(f"  → {len(article_images)} images attached")
-                    
+
                     articles.append(article)
                     print(f"  ✓ Article: {article['headline'][:70]}...")
                     break
                 except (json.JSONDecodeError, ValueError) as e:
                     print(f"  ✗ Parse error (attempt {attempt+1}): {e}")
-                    # Show part of the response for debugging
                     preview = result[:300] if result else "None"
-                    print(f"  Response preview: {preview}...")
+                    print(f"  Response preview: {{preview}}...")
                     time.sleep(2)
             else:
                 print(f"  ✗ LLM call failed (attempt {attempt+1})")
                 time.sleep(3)
-        
+
         if not result:
             print(f"  ✗ Failed to generate article after {MAX_RETIRES} attempts")
-    
+
     return articles
 
 
 def generate_all_articles(date_str):
-    """Generate all 9 articles for today."""
+    """Generate all 11 articles for today."""
     all_articles = []
     
     # 3 Crypto
     all_articles.extend(generate_articles_batch("crypto", 3, date_str))
     
-    # 4 IPO
-    all_articles.extend(generate_articles_batch("ipo", 4, date_str))
+    # 5 IPO
+    all_articles.extend(generate_articles_batch("ipo", 5, date_str))
     
-    # 2 Stock Market
-    all_articles.extend(generate_articles_batch("stocks", 2, date_str))
+    # 3 Stock Market
+    all_articles.extend(generate_articles_batch("stocks", 3, date_str))
     
     return all_articles
 
@@ -850,7 +899,11 @@ def write_news_data(all_articles):
             lines.append(f'    quickAnswer: "{esc(qa)}",')
         
         lines.append(f'    marketBackground: "{esc(art.get("marketBackground", ""))}",')
-        lines.append(f'    detailedAnalysis: "{esc(art.get("detailedAnalysis", ""))}",')
+        # Ensure author attribution is in detailedAnalysis
+        da_content = art.get("detailedAnalysis", "")
+        if "Author: Shiva Sandeep" not in da_content:
+            da_content += AUTHOR_BLOCK
+        lines.append(f'    detailedAnalysis: "{esc(da_content)}",')
         lines.append(f'    expertInsights: "{esc(art.get("expertInsights", ""))}",')
         
         lines.append('    financialMetrics: {')
@@ -1039,9 +1092,13 @@ def main():
     
     print(f"[API] Available providers: {', '.join(available)}")
     
+    # Update existing articles with author attribution
+    print("\n[Author Update] Checking existing articles...")
+    update_existing_articles_author()
+    
     date_str = today_str()
     
-    print(f"\n[Generate] Creating 9 articles (3 crypto + 4 IPO + 2 stocks)...")
+    print(f"\n[Generate] Creating 11 articles (3 crypto + 5 IPO + 3 stocks)...")
     new_articles = generate_all_articles(date_str)
     
     print(f"\n[Results] Generated {len(new_articles)} articles successfully")
@@ -1055,7 +1112,9 @@ def main():
     
     print("\n" + "=" * 60)
     print("  COMPLETE")
-    print(f"  {len(new_articles)} articles written to src/data/newsData.ts")
+    print(f"  {len(new_articles)} new articles written to src/data/newsData.ts")
+    print("  11 articles total (3 Crypto + 5 IPO + 3 Stocks)")
+    print("  Author attribution appended to all articles")
     print("  Next: Build and deploy")
     print("=" * 60)
     return 0
