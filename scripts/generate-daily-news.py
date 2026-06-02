@@ -27,9 +27,39 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "src" / "data"
 NEWS_DATA_FILE = DATA_DIR / "newsData.ts"
+CACHE_DIR = REPO_ROOT / "data"
+USED_IMAGES_FILE = CACHE_DIR / "used_news_images.json"
 MAX_RETIRES = 3
 TIMEOUT_SEC = 90
-MAX_ARTICLES_TO_KEEP = 50  # keep old articles + new ones, up to this cap
+
+# ── Unsplash category queries (mirror news_api.py) ──────────────────
+
+UNSPLASH_QUERY_MAP = {
+    "crypto": [
+        "cryptocurrency bitcoin ethereum",
+        "blockchain digital assets defi",
+        "crypto trading exchange",
+        "bitcoin ethereum price chart",
+        "digital finance crypto wallet",
+        "blockchain technology network",
+    ],
+    "ipo": [
+        "ipo stock market listing",
+        "initial public offering trading",
+        "wall street trading floor",
+        "stock exchange building",
+        "investment banking finance",
+        "financial documents earnings report",
+    ],
+    "stocks": [
+        "stock market charts data",
+        "wall street trading screen",
+        "nasdaq trading floor",
+        "global stock market trading",
+        "financial charts data analytics",
+        "trading desk monitors",
+    ],
+}
 
 # ── Helpers ──────────────────────────────────────────────────────────
 
@@ -269,6 +299,127 @@ def call_llm(prompt):
             return result
         print(f"[LLM] {name} failed, trying next provider...")
     return None
+
+# ── Unsplash Image Fetching ─────────────────────────────────────────
+
+def _load_used_image_ids():
+    """Load set of already-used Unsplash photo IDs."""
+    try:
+        if USED_IMAGES_FILE.exists():
+            with open(USED_IMAGES_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, list):
+                return set(data)
+    except Exception:
+        pass
+    return set()
+
+
+def _save_used_image_ids(ids):
+    """Save set of used Unsplash photo IDs to disk."""
+    try:
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        with open(USED_IMAGES_FILE, "w", encoding="utf-8") as f:
+            json.dump(sorted(ids), f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"[Unsplash] Save failed: {e}")
+
+
+def _validate_image_url(url):
+    """Quick HEAD check to ensure image URL is valid."""
+    try:
+        resp = requests.head(url, allow_redirects=True, timeout=5)
+        if resp.status_code == 200 and "image" in resp.headers.get("Content-Type", "").lower():
+            return True
+        resp = requests.get(url, stream=True, timeout=5)
+        return resp.status_code == 200 and "image" in resp.headers.get("Content-Type", "").lower()
+    except Exception:
+        return False
+
+
+def fetch_unsplash_images(headline, category="stocks", count=4):
+    """
+    Fetch unique images from Unsplash for an article.
+    Deduplicates against used_news_images.json to avoid reusing photos.
+    Returns a list of image dicts matching the ArticleImage interface.
+    """
+    unsplash_keys = []
+    for i in range(1, 4):
+        val = os.environ.get(f"UNSPLASH_ACCESS_KEY_{i}")
+        if val and val.strip():
+            unsplash_keys.append(val.strip())
+
+    if not unsplash_keys:
+        print("[Unsplash] No API keys found")
+        return []
+
+    # Build query pool from headline words + category queries
+    cat = category if category in UNSPLASH_QUERY_MAP else "stocks"
+    base_words = [w for w in re.sub(r'[^a-zA-Z0-9\s]', '', headline).split() if len(w) > 3][:3]
+    query_pool = list(UNSPLASH_QUERY_MAP.get(cat, UNSPLASH_QUERY_MAP["stocks"]))
+    if base_words:
+        query_pool = [" ".join(base_words)] + query_pool
+    random.shuffle(query_pool)
+
+    used_ids = _load_used_image_ids()
+    results = []
+    seen_photo_ids = set()
+
+    for q in query_pool:
+        if len(results) >= count:
+            break
+        for uk in unsplash_keys:
+            try:
+                resp = requests.get(
+                    "https://api.unsplash.com/search/photos",
+                    params={"query": q, "per_page": 10, "orientation": "landscape", "content_filter": "high"},
+                    headers={"Authorization": f"Client-ID {uk}"},
+                    timeout=10,
+                )
+                if resp.status_code != 200:
+                    continue
+                hits = resp.json().get("results", [])
+                for hit in hits:
+                    photo_id = hit.get("id")
+                    if not photo_id or photo_id in seen_photo_ids or photo_id in used_ids:
+                        continue
+                    url = hit.get("urls", {}).get("regular", "")
+                    if not url:
+                        continue
+                    if not _validate_image_url(url):
+                        continue
+                    user = hit.get("user", {}) or {}
+                    user_name = user.get("name", "Unsplash")
+                    user_link = user.get("links", {}).get("html", "https://unsplash.com")
+                    alt_desc = (hit.get("alt_description") or headline).strip()
+                    results.append({
+                        "url": url,
+                        "alt": alt_desc[:120],
+                        "title": alt_desc[:80],
+                        "caption": f"{alt_desc[:100]} (via Unsplash)",
+                        "attribution": f"Photo by {user_name} on Unsplash",
+                        "sourceUrl": f"{user_link}?utm_source=pulsetrends&utm_medium=referral",
+                        "photoId": photo_id,
+                        "category": cat,
+                    })
+                    seen_photo_ids.add(photo_id)
+                    if len(results) >= count:
+                        break
+                    break  # one image per query, move to next query
+            except Exception as e:
+                continue
+        if len(results) >= count:
+            break
+
+    # Save used IDs to prevent reuse
+    if results:
+        used_ids.update(r["photoId"] for r in results if "photoId" in r)
+        if len(used_ids) > 500:
+            used_ids = set(sorted(used_ids)[-500:])
+        _save_used_image_ids(used_ids)
+        print(f"[Unsplash] Fetched {len(results)} images for '{headline[:50]}...'")
+
+    return results
 
 # ── Article Generation ──────────────────────────────────────────────
 
@@ -523,6 +674,16 @@ Make the article text sound natural and human-written.""",
                     article.setdefault("focusKeyword", article.get("primaryKeyword", ""))
                     article.setdefault("publishedAt", now_iso())
                     
+                    # Fetch Unsplash images for this article
+                    print(f"  → Fetching images for '{article['headline'][:50]}...'")
+                    article_images = fetch_unsplash_images(
+                        article.get("headline", ""),
+                        category=article.get("category", "stocks"),
+                        count=4
+                    )
+                    article["images"] = article_images
+                    print(f"  → {len(article_images)} images attached")
+                    
                     articles.append(article)
                     print(f"  ✓ Article: {article['headline'][:70]}...")
                     break
@@ -739,8 +900,29 @@ def write_news_data(all_articles):
         else:
             lines.append('    aiAnalysis: null,')
         
-        # Images (use empty array since we can't reliably generate Unsplash URLs via LLM)
-        lines.append('    images: [],')
+        # Images from Unsplash
+        images = art.get("images", [])
+        if not isinstance(images, list) or not images:
+            lines.append('    images: [],')
+        else:
+            lines.append('    images: [')
+            for img in images[:4]:
+                lines.append('      {')
+                lines.append(f'        url: "{esc(img.get("url", ""))}",')
+                lines.append(f'        alt: "{esc(img.get("alt", ""))}",')
+                lines.append(f'        attribution: "{esc(img.get("attribution", "Photo via Unsplash"))}",')
+                if img.get("title"):
+                    lines.append(f'        title: "{esc(img.get("title", ""))}",')
+                if img.get("caption"):
+                    lines.append(f'        caption: "{esc(img.get("caption", ""))}",')
+                if img.get("category"):
+                    lines.append(f'        category: "{esc(img.get("category", ""))}",')
+                if img.get("sourceUrl"):
+                    lines.append(f'        sourceUrl: "{esc(img.get("sourceUrl", ""))}",')
+                if img.get("photoId"):
+                    lines.append(f'        photoId: "{esc(img.get("photoId", ""))}",')
+                lines.append('      },')
+            lines.append('    ],')
         
         lines.append(f'    category: "{esc(art.get("category", "stocks"))}",')
         lines.append(f'    sentiment: "{esc(art.get("sentiment", "neutral"))}",')
