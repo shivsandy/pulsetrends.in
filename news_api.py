@@ -24,7 +24,7 @@ DATA_DIR = Path(__file__).resolve().parent / "data"
 NEWS_CACHE_FILE = DATA_DIR / "news_cache.json"
 
 OPENROUTER_KEYS = []
-for i in range(1, 5):
+for i in range(1, 9):
     val = os.environ.get(f"OPENROUTER_API_KEY_{i}")
     if val:
         OPENROUTER_KEYS.append({"key": val, "index": i})
@@ -107,6 +107,51 @@ FALLBACK_FREE_MODELS = [
     "microsoft/phi-4:free",
 ]
 
+OPENROUTER_KEY_MODELS: dict = {
+    1: [
+        "nvidia/nemotron-3-super-120b-a12b:free",
+        "meta-llama/llama-3.3-70b-instruct:free",
+        "qwen/qwen3-next-80b-a3b-instruct:free",
+    ],
+    2: [
+        "openai/gpt-oss-120b:free",
+        "openai/gpt-oss-20b:free",
+        "google/gemma-4-31b-it:free",
+    ],
+    3: [
+        "nvidia/nemotron-3-nano-30b-a3b:free",
+        "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "google/gemma-4-26b-a4b-it:free",
+    ],
+    4: [
+        "nousresearch/hermes-3-llama-3.1-405b:free",
+        "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+        "qwen/qwen3-coder:free",
+    ],
+    5: [
+        "z-ai/glm-4.5-air:free",
+        "moonshotai/kimi-k2.6:free",
+        "poolside/laguna-m.1:free",
+    ],
+    6: [
+        "poolside/laguna-xs.2:free",
+        "nvidia/nemotron-nano-9b-v2:free",
+        "nvidia/nemotron-nano-12b-v2-vl:free",
+    ],
+    7: [
+        "meta-llama/llama-3.2-3b-instruct:free",
+        "liquid/lfm-2.5-1.2b-instruct:free",
+    ],
+    8: [
+        "poolside/laguna-xs.2:free",
+        "liquid/lfm-2.5-1.2b-instruct:free",
+    ],
+}
+
+
+def get_key_models(key_index: int) -> List[str]:
+    return list(OPENROUTER_KEY_MODELS.get(key_index, []))
+
 OPENROUTER_FALLBACK_NVIDIA_MODELS = [
     "meta/llama-3.1-70b-instruct",
     "mistralai/mistral-large",
@@ -122,6 +167,32 @@ GOOGLE_FREE_MODELS = [
 _DISCOVERED_FREE_MODELS: Optional[List[str]] = None
 
 
+def _probe_model(key: str, model: str, timeout: int = 8) -> bool:
+    try:
+        resp = requests.post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+            json={
+                "model": model,
+                "messages": [{"role": "user", "content": "ping"}],
+                "max_tokens": 1,
+                "temperature": 0,
+            },
+            timeout=timeout,
+        )
+        if resp.status_code in (404, 400):
+            try:
+                body = (resp.text or "").lower()
+                if "model" in body and ("not found" in body or "invalid" in body or "does not exist" in body or "no endpoints" in body):
+                    return False
+            except Exception:
+                return True
+            return True
+        return True
+    except Exception:
+        return True
+
+
 def discover_free_models(api_keys: List[dict]) -> List[str]:
     """Discover currently free models from OpenRouter's /v1/models endpoint.
 
@@ -133,6 +204,7 @@ def discover_free_models(api_keys: List[dict]) -> List[str]:
         return _DISCOVERED_FREE_MODELS
 
     discovered: set = set()
+    probe_key = api_keys[0]["key"] if api_keys else None
     for entry in api_keys:
         try:
             resp = requests.get(
@@ -156,6 +228,25 @@ def discover_free_models(api_keys: List[dict]) -> List[str]:
             print(f"[NewsAPI] Model discovery probe failed for key {entry['index']}: {e}")
         if discovered:
             break
+
+    if discovered and probe_key:
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+        candidates = sorted(discovered)
+        validated: List[str] = []
+        with ThreadPoolExecutor(max_workers=5) as ex:
+            futures = {ex.submit(_probe_model, probe_key, m): m for m in candidates}
+            for fut in as_completed(futures):
+                m = futures[fut]
+                try:
+                    ok = fut.result()
+                except Exception:
+                    ok = True
+                if ok:
+                    validated.append(m)
+                else:
+                    print(f"[NewsAPI] Dropping 404 model: {m}")
+        discovered = set(validated)
+        print(f"[NewsAPI] Validated {len(discovered)} free models after 404 probe")
 
     if discovered:
         sorted_models = sorted(discovered)
@@ -901,7 +992,7 @@ NVIDIA_FREE_MODELS = [
 ]
 
 
-def _call_openrouter(key: str, model: str, messages: List[dict], timeout: int = 180) -> Optional[str]:
+def _call_openrouter(key: str, model: str, messages: List[dict], timeout: int = 90) -> Optional[str]:
     try:
         resp = requests.post(
             "https://openrouter.ai/api/v1/chat/completions",
@@ -1008,14 +1099,23 @@ def _try_llm_providers(messages: List[dict]) -> Optional[dict]:
         return None
 
     for key_entry in OPENROUTER_KEYS:
-        for model in openrouter_healthy:
+        idx = key_entry["index"]
+        preferred = get_key_models(idx)
+        healthy_for_key = [m for m in preferred if m in openrouter_healthy]
+        if not preferred:
+            continue
+        if not healthy_for_key:
+            print(f"[NewsAPI] Key {idx} preferred models all cooled, skipping to next key")
+            continue
+        for model in healthy_for_key:
             start = time.time()
-            text = _call_openrouter(key_entry["key"], model, messages)
+            text = _call_openrouter(key_entry["key"], model, messages, timeout=90)
             if text:
                 model_health.record_success(model)
-                print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via OpenRouter/{model} (key {key_entry['index']})")
+                print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via OpenRouter/{model} (key {idx})")
                 return {"text": text, "provider": "openrouter", "model": model}
             model_health.record_failure(model)
+        print(f"[NewsAPI] Key {idx} exhausted {len(healthy_for_key)} models, moving to next key")
 
     for key_entry in NVIDIA_KEYS:
         for model in nvidia_healthy:
@@ -1040,6 +1140,36 @@ def _try_llm_providers(messages: List[dict]) -> Optional[dict]:
     return None
 
 
+def _try_parse_article_json(text: str) -> Optional[dict]:
+    json_match = re.search(r'\{.*\}', text, re.DOTALL)
+    if not json_match:
+        return None
+    try:
+        return json.loads(json_match.group())
+    except json.JSONDecodeError:
+        return None
+
+
+def _build_user_prompt(source_text: str, market_hint: str, category_hint: str) -> str:
+    return f"""Write a premium financial news article based on these sources. This is a {market_hint} {category_hint}-related story for PulseTrends readers.
+
+Sources:
+{source_text}
+
+Generate the complete JSON article as specified in the system prompt."""
+
+
+def _build_strict_user_prompt(base_prompt: str) -> str:
+    return base_prompt + (
+
+        "\n\nCRITICAL: Return ONLY a single valid JSON object. "
+        "No prose before or after the JSON. No markdown code fences. "
+        "Escape all double quotes inside string values with backslash. "
+        "Do not truncate the response mid-field. "
+        "Ensure the JSON is complete with matching braces and a final closing }."
+    )
+
+
 def generate_article(source_items: List[dict]) -> Optional[dict]:
     source_text = ""
     for item in source_items:
@@ -1059,27 +1189,26 @@ def generate_article(source_items: List[dict]) -> Optional[dict]:
     category_hint = "crypto" if is_crypto else ("ipo" if is_ipo else "stocks")
     market_hint = "India-focused" if is_india else "global"
 
-    user_prompt = f"""Write a premium financial news article based on these sources. This is a {market_hint} {category_hint}-related story for PulseTrends readers.
+    user_prompt = _build_user_prompt(source_text, market_hint, category_hint)
+    strict_prompt = _build_strict_user_prompt(user_prompt)
 
-Sources:
-{source_text}
-
-Generate the complete JSON article as specified in the system prompt."""
-
-    messages = [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": user_prompt}]
-    llm_response = _try_llm_providers(messages)
-    if not llm_response:
-        return None
-
-    text = llm_response["text"]
-    json_match = re.search(r'\{.*\}', text, re.DOTALL)
-    if not json_match:
-        return None
-
-    try:
-        result = json.loads(json_match.group())
-    except json.JSONDecodeError as e:
-        print(f"[NewsAPI] JSON parse failed: {e}")
+    result: Optional[dict] = None
+    last_err: Optional[str] = None
+    for attempt in range(2):
+        prompt = user_prompt if attempt == 0 else strict_prompt
+        messages = [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": prompt}]
+        llm_response = _try_llm_providers(messages)
+        if not llm_response:
+            print(f"[NewsAPI] LLM returned no response on attempt {attempt + 1}")
+            return None
+        result = _try_parse_article_json(llm_response["text"])
+        if result is not None:
+            if attempt == 1:
+                print(f"[NewsAPI] JSON parse recovered on strict retry (provider={llm_response.get('provider')}, model={llm_response.get('model')})")
+            break
+        last_err = "JSON parse failed"
+        print(f"[NewsAPI] {last_err} on attempt {attempt + 1}, {'retrying with strict prompt' if attempt == 0 else 'giving up'}")
+    if result is None:
         return None
 
     final_category = result.get("category") or category_hint
@@ -1189,6 +1318,10 @@ def validate_env():
         ("OPENROUTER_API_KEY_2", bool(os.environ.get("OPENROUTER_API_KEY_2"))),
         ("OPENROUTER_API_KEY_3", bool(os.environ.get("OPENROUTER_API_KEY_3"))),
         ("OPENROUTER_API_KEY_4", bool(os.environ.get("OPENROUTER_API_KEY_4"))),
+        ("OPENROUTER_API_KEY_5", bool(os.environ.get("OPENROUTER_API_KEY_5"))),
+        ("OPENROUTER_API_KEY_6", bool(os.environ.get("OPENROUTER_API_KEY_6"))),
+        ("OPENROUTER_API_KEY_7", bool(os.environ.get("OPENROUTER_API_KEY_7"))),
+        ("OPENROUTER_API_KEY_8", bool(os.environ.get("OPENROUTER_API_KEY_8"))),
         ("NVIDIA_API_KEY_1", bool(os.environ.get("NVIDIA_API_KEY_1"))),
         ("GOOGLE_AI_API_KEY_1", bool(os.environ.get("GOOGLE_AI_API_KEY_1"))),
         ("GOOGLE_AI_API_KEY_2", bool(os.environ.get("GOOGLE_AI_API_KEY_2"))),
