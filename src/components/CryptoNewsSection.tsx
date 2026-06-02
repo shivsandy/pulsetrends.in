@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Search, SlidersHorizontal, Newspaper, TrendingUp, TrendingDown, Minus, Brain, ChevronDown, ChevronUp, Clock, Zap, ExternalLink, RefreshCw, Lightbulb, AlertTriangle, Target, BarChart3, Quote, ListChecks, ArrowLeft, CalendarDays } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+import { Search, SlidersHorizontal, Newspaper, TrendingUp, TrendingDown, Minus, Brain, ChevronDown, Clock, Zap, ExternalLink, RefreshCw, Lightbulb, AlertTriangle, Target, BarChart3, Quote, ListChecks, ArrowLeft, CalendarDays } from 'lucide-react';
 import Badge from './Badge';
 
 interface FinancialMetrics {
@@ -40,8 +41,20 @@ interface NewsArticle {
   sourcesReferenced: string[];
   aiAnalysis: AiAnalysis | null;
   images: ArticleImage[];
-  ipoDetails?: any;
-  cryptoDetails?: any;
+  ipoDetails?: {
+    companyOverview?: string;
+    ipoSize?: string;
+    valuation?: string;
+    offerPrice?: string;
+    subscriptionStatus?: string;
+    greyMarketPremium?: string;
+  };
+  cryptoDetails?: {
+    tokenOverview?: string;
+    marketCap?: string;
+    tradingVolume?: string;
+    priceMovement?: string;
+  };
   category: string;
   sentiment: string;
   impact: string;
@@ -216,6 +229,7 @@ function ArticleReader({
 }) {
   const heroImage = getHeroImage(article);
   const ai = article.aiAnalysis;
+  const financialMetrics = article.financialMetrics;
 
   return (
     <article className="animate-fade-in">
@@ -316,23 +330,23 @@ function ArticleReader({
             )}
           </section>
 
-          {article.financialMetrics?.headers?.length > 0 && (
+          {financialMetrics && financialMetrics.headers.length > 0 && (
             <section className="rounded-lg border border-surface-300/50 bg-surface-100 p-5">
               <h2 className="mb-3 flex items-center gap-2 text-xl font-bold text-surface-white">
                 <BarChart3 className="h-5 w-5 text-brand-light" />
-                {article.financialMetrics.tableCaption || 'Market Metrics'}
+                {financialMetrics.tableCaption || 'Market Metrics'}
               </h2>
               <div className="overflow-x-auto rounded-lg border border-surface-300/40">
                 <table className="w-full text-[13px]">
                   <thead>
                     <tr className="bg-surface-200/70">
-                      {article.financialMetrics.headers.map((header) => (
+                      {financialMetrics.headers.map((header) => (
                         <th key={header} className="border-b border-surface-300/40 px-3 py-2 text-left font-semibold text-surface-900">{header}</th>
                       ))}
                     </tr>
                   </thead>
                   <tbody>
-                    {article.financialMetrics.rows.map((row, rowIndex) => (
+                    {financialMetrics.rows.map((row, rowIndex) => (
                       <tr key={rowIndex} className="border-b border-surface-300/20 last:border-0">
                         {row.map((cell, cellIndex) => (
                           <td key={cellIndex} className="px-3 py-2 text-surface-800">{cell}</td>
@@ -477,8 +491,8 @@ export default function CryptoNewsSection() {
       } else {
         setArticles(FALLBACK_NEWS);
       }
-    } catch (e: any) {
-      setError(e.message || 'Failed to load news');
+    } catch (error) {
+      setError(error instanceof Error ? error.message : 'Failed to load news');
       setArticles(FALLBACK_NEWS);
     } finally {
       setLoading(false);
@@ -511,7 +525,7 @@ export default function CryptoNewsSection() {
     return matchesSearch && matchesCategory && matchesSentiment;
   });
 
-  const sentimentConfig: Record<string, { icon: any; variant: 'success' | 'danger' | 'outline'; label: string }> = {
+  const sentimentConfig: Record<string, { icon: LucideIcon; variant: 'success' | 'danger' | 'outline'; label: string }> = {
     bullish: { icon: TrendingUp, variant: 'success', label: 'Bullish' },
     bearish: { icon: TrendingDown, variant: 'danger', label: 'Bearish' },
     neutral: { icon: Minus, variant: 'outline', label: 'Neutral' },

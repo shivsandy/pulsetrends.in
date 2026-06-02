@@ -1,10 +1,18 @@
-import { TrendingUp, TrendingDown } from 'lucide-react';
+import { TrendingDown, TrendingUp } from 'lucide-react';
 import { ipoStocks } from '../data/ipoData';
 
 export default function Ticker() {
-  const items = ipoStocks.slice(0, 20).flatMap(s => [
-    { label: s.ticker, value: `₹${s.priceRange?.split('–')[0]?.trim() || s.priceRange || '—'}`, up: true },
-    { label: s.ticker, value: s.score ? `${s.score}/100` : '—', up: (s.score || 50) >= 60 },
+  const items = ipoStocks.slice(0, 20).flatMap((stock) => [
+    {
+      label: stock.ticker,
+      value: stock.priceRange ? `Rs ${stock.priceRange.match(/\d[\d,]*/)?.[0] ?? stock.priceRange}` : '-',
+      up: true,
+    },
+    {
+      label: stock.ticker,
+      value: `${stock.aiScores.overall}/100`,
+      up: stock.aiScores.overall >= 60,
+    },
   ]);
 
   return (
@@ -12,7 +20,7 @@ export default function Ticker() {
       <div className="relative flex items-center h-full">
         <div className="animate-ticker flex items-center gap-6 whitespace-nowrap">
           {[...items, ...items].map((item, i) => (
-            <div key={i} className="flex items-center gap-1.5 text-[12px]">
+            <div key={`${item.label}-${item.value}-${i}`} className="flex items-center gap-1.5 text-[12px]">
               <span className="font-semibold text-surface-white">{item.label}</span>
               <span className="text-surface-700">{item.value}</span>
               {item.up

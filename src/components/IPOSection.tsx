@@ -59,7 +59,7 @@ export default function IPOSection() {
         </div>
         <div className="flex items-center gap-1.5">
           <SlidersHorizontal className="w-3.5 h-3.5 text-surface-600 mr-1" />
-          {['all', 'upcoming', 'open', 'listed'].map((status) => (
+          {['all', 'upcoming', 'open', 'subscribed', 'listed'].map((status) => (
             <button
               key={status}
               onClick={() => setStatusFilter(status)}
