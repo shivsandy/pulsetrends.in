@@ -6,6 +6,7 @@ import re
 import threading
 import time
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import List, Optional
 
 import requests
@@ -19,6 +20,8 @@ CORS(app)
 
 NEWS_CACHE: List[dict] = []
 CACHE_LOCK = threading.Lock()
+DATA_DIR = Path(__file__).resolve().parent / "data"
+NEWS_CACHE_FILE = DATA_DIR / "news_cache.json"
 
 OPENROUTER_KEYS = []
 for i in range(1, 5):
@@ -85,18 +88,41 @@ FREE_MODELS = [
 ]
 
 RSS_URLS = [
-    "https://news.google.com/rss/search?q=cryptocurrency+bitcoin&hl=en-US&gl=US&ceid=US:en",
-    "https://news.google.com/rss/search?q=IPO+stock+market&hl=en-US&gl=US&ceid=US:en",
-    "https://news.google.com/rss/search?q=crypto+news&hl=en-US&gl=US&ceid=US:en",
-    "https://news.google.com/rss/search?q=stock+market+news&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=cryptocurrency+bitcoin+ethereum&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=crypto+market+bitcoin+ethereum+ETF&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=IPO+stock+market+listing&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=India+IPO+NSE+BSE+GMP+subscription&hl=en-IN&gl=IN&ceid=IN:en",
+    "https://news.google.com/rss/search?q=Indian+stock+market+Sensex+Nifty+RBI&hl=en-IN&gl=IN&ceid=IN:en",
+    "https://news.google.com/rss/search?q=US+stocks+Nasdaq+S%26P+500+earnings&hl=en-US&gl=US&ceid=US:en",
     "https://feeds.bbci.co.uk/news/technology/rss.xml",
     "https://feeds.bbci.co.uk/news/business/rss.xml",
     "https://cointelegraph.com/rss",
     "https://coindesk.com/feed",
     "https://finance.yahoo.com/news/rss/index",
+    "https://www.livemint.com/rss/markets",
+    "https://www.livemint.com/rss/companies",
+    "https://www.moneycontrol.com/rss/marketreports.xml",
+    "https://www.moneycontrol.com/rss/business.xml",
+    "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
 ]
 
-NEWSAPI_QUERIES = ["cryptocurrency", "bitcoin", "IPO", "stock market", "crypto", "investing", "blockchain", "defi"]
+NEWSAPI_QUERIES = [
+    "cryptocurrency OR bitcoin OR ethereum",
+    "crypto ETF OR blockchain OR defi",
+    "IPO OR initial public offering OR stock listing",
+    "India IPO OR NSE IPO OR BSE IPO OR grey market premium",
+    "Indian stock market OR Sensex OR Nifty OR RBI",
+    "stock market earnings OR Nasdaq OR S&P 500",
+]
+
+MARKET_TERMS = [
+    "ipo", "initial public", "listing", "stock", "stocks", "market", "markets",
+    "nse", "bse", "nifty", "sensex", "rbi", "earnings", "nasdaq", "s&p",
+    "crypto", "cryptocurrency", "bitcoin", "ethereum", "blockchain", "defi",
+    "token", "coin", "etf", "funding", "valuation", "shares",
+]
+
+BLOCKED_TERMS = ["trump", "election", "sports", "weather", "celebrity", "movie", "cricket"]
 
 
 def fetch_rss() -> List[dict]:
@@ -147,12 +173,21 @@ def fetch_newsapi() -> List[dict]:
     return items
 
 
+def is_market_relevant(item: dict) -> bool:
+    text = f"{item.get('title', '')} {item.get('summary', '')}".lower()
+    if any(term in text for term in BLOCKED_TERMS):
+        return False
+    return any(term in text for term in MARKET_TERMS)
+
+
 def deduplicate(items: List[dict]) -> List[dict]:
     seen_titles = set()
+    seen_urls = set()
     result = []
     for item in items:
         t = item["title"].lower().strip()
-        if any(s in t for s in ["trump", "election", "sports", "weather", "celebrity"]):
+        url = item.get("url", "").strip()
+        if not is_market_relevant(item) or url in seen_urls:
             continue
         is_dup = False
         for seen in seen_titles:
@@ -162,8 +197,32 @@ def deduplicate(items: List[dict]) -> List[dict]:
                 break
         if not is_dup:
             seen_titles.add(t)
+            if url:
+                seen_urls.add(url)
             result.append(item)
     return result
+
+
+def load_cached_news() -> List[dict]:
+    try:
+        if NEWS_CACHE_FILE.exists():
+            with NEWS_CACHE_FILE.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, list):
+                print(f"[NewsAPI] Loaded {len(data)} cached articles from disk")
+                return data
+    except Exception as e:
+        print(f"[NewsAPI] Cache load failed: {e}")
+    return []
+
+
+def save_cached_news(articles: List[dict]) -> None:
+    try:
+        DATA_DIR.mkdir(parents=True, exist_ok=True)
+        with NEWS_CACHE_FILE.open("w", encoding="utf-8") as f:
+            json.dump(articles, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"[NewsAPI] Cache save failed: {e}")
 
 
 def scrape_article(url: str) -> Optional[dict]:
@@ -245,7 +304,7 @@ def fetch_images(title: str, count: int = 3) -> List[dict]:
 
 # ----- LLM Prompts -----
 
-SYSTEM_PROMPT = """You are a senior financial journalist at a institutional-grade news platform covering markets, IPOs, and cryptocurrency.
+SYSTEM_PROMPT = """You are a senior financial journalist at PulseTrends, an institutional-grade financial intelligence platform covering cryptocurrency, IPOs, Indian equities, and global stock markets.
 
 TASK: Write a premium-quality financial news article based on the source material provided.
 
@@ -257,7 +316,12 @@ RULES:
 - Explain complex financial concepts clearly
 - Professional tone similar to Bloomberg, Reuters, Financial Times
 - Use short paragraphs, tables where useful, bullet points when appropriate
-- Minimum 1200 words
+- Do not reproduce source article wording, sentence structure, or long quoted passages
+- Attribute factual claims to source names in a concise way
+- Prioritize India-relevant context when the story involves NSE, BSE, Sensex, Nifty, RBI, Indian IPOs, GMP, or Indian investors
+- Include search-friendly but natural language for crypto, IPO, stock market, and India market readers
+- Avoid legal, tax, or guaranteed-return claims
+- Minimum 900 words
 
 OUTPUT FORMAT: Return ONLY valid JSON with these exact fields:
 {
@@ -331,12 +395,18 @@ def generate_article(source_items: List[dict]) -> Optional[dict]:
             source_text += f"Full Article Content: {item['scraped_content'][:2000]}\n"
 
     title = source_items[0].get("title", "") if source_items else ""
-    is_crypto = any(kw in title.lower() for kw in ["bitcoin", "crypto", "ethereum", "blockchain", "defi", "nft", "token", "coin", "altcoin", "web3"])
-    is_ipo = any(kw in title.lower() for kw in ["ipo", "initial public", "listing", "offer", "subscription", "grey market"])
+    combined_text = " ".join(
+        f"{item.get('title', '')} {item.get('summary', '')} {item.get('source', '')}"
+        for item in source_items
+    ).lower()
+    is_crypto = any(kw in combined_text for kw in ["bitcoin", "crypto", "ethereum", "blockchain", "defi", "nft", "token", "coin", "altcoin", "web3"])
+    is_ipo = any(kw in combined_text for kw in ["ipo", "initial public", "listing", "offer", "subscription", "grey market", "gmp"])
+    is_india = any(kw in combined_text for kw in ["india", "indian", "nse", "bse", "nifty", "sensex", "rbi", "rupee"])
 
     category_hint = "crypto" if is_crypto else ("ipo" if is_ipo else "stocks")
+    market_hint = "India-focused" if is_india else "global"
 
-    user_prompt = f"""Write a premium financial news article based on these sources. This is a {category_hint}-related story.
+    user_prompt = f"""Write a premium financial news article based on these sources. This is a {market_hint} {category_hint}-related story for PulseTrends readers.
 
 Sources:
 {source_text}
@@ -387,10 +457,11 @@ def refresh_news():
     items = fetch_rss()
     items += fetch_newsapi()
     items = deduplicate(items)
+    print(f"[NewsAPI] {len(items)} relevant items after filtering")
 
     # Scrape full content for top articles
     enriched = []
-    for item in items[:15]:
+    for item in items[:24]:
         scraped = scrape_article(item["url"])
         if scraped:
             item["scraped_content"] = scraped.get("content", "")
@@ -404,15 +475,17 @@ def refresh_news():
 
     new_articles = []
     batch_size = 3
-    for i in range(0, min(len(enriched), 9), batch_size):
+    for i in range(0, min(len(enriched), 18), batch_size):
         batch = enriched[i:i + batch_size]
         article = generate_article(batch)
         if article:
             new_articles.append(article)
 
     with CACHE_LOCK:
-        NEWS_CACHE.clear()
-        NEWS_CACHE.extend(new_articles)
+        if new_articles:
+            NEWS_CACHE.clear()
+            NEWS_CACHE.extend(new_articles)
+            save_cached_news(new_articles)
     print(f"[NewsAPI] Cache updated with {len(new_articles)} articles")
 
 
@@ -453,6 +526,10 @@ def validate_env():
 if __name__ == "__main__":
     print("[NewsAPI] Initializing...")
     validate_env()
+    cached_articles = load_cached_news()
+    if cached_articles:
+        with CACHE_LOCK:
+            NEWS_CACHE.extend(cached_articles)
     refresh_news()
     start_scheduler()
     print("[NewsAPI] Server starting on http://0.0.0.0:5000")

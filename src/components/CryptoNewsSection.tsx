@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Search, SlidersHorizontal, Newspaper, TrendingUp, TrendingDown, Minus, Brain, ChevronDown, ChevronUp, Clock, Zap, ExternalLink, RefreshCw, Lightbulb, AlertTriangle, Target, BarChart3, Quote, ListChecks } from 'lucide-react';
+import { Search, SlidersHorizontal, Newspaper, TrendingUp, TrendingDown, Minus, Brain, ChevronDown, ChevronUp, Clock, Zap, ExternalLink, RefreshCw, Lightbulb, AlertTriangle, Target, BarChart3, Quote, ListChecks, ArrowLeft, CalendarDays } from 'lucide-react';
 import Badge from './Badge';
 
 interface FinancialMetrics {
@@ -147,21 +147,329 @@ const FALLBACK_NEWS: NewsArticle[] = [
 ];
 
 type AiTab = 'bull' | 'bear' | 'neutral';
+type CategoryFilter = 'all' | 'crypto' | 'ipo' | 'stocks' | 'india';
+
+const NEWS_API_BASE = import.meta.env.VITE_NEWS_API_URL ||
+  (import.meta.env.DEV ? 'http://localhost:5000' : '');
+
+const CATEGORY_FILTERS: { id: CategoryFilter; label: string }[] = [
+  { id: 'all', label: 'Top Stories' },
+  { id: 'crypto', label: 'Crypto' },
+  { id: 'ipo', label: 'IPO' },
+  { id: 'stocks', label: 'Stocks' },
+  { id: 'india', label: 'India' },
+];
+
+const FALLBACK_IMAGES: Record<string, ArticleImage> = {
+  crypto: {
+    url: 'https://images.unsplash.com/photo-1640161704729-cbe966a08476?auto=format&fit=crop&w=1400&q=80',
+    alt: 'Cryptocurrency market data on digital screens',
+    attribution: 'Photo by Unsplash',
+  },
+  ipo: {
+    url: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=80',
+    alt: 'Financial documents and market analysis',
+    attribution: 'Photo by Unsplash',
+  },
+  stocks: {
+    url: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1400&q=80',
+    alt: 'Stock market trading charts',
+    attribution: 'Photo by Unsplash',
+  },
+};
+
+function getHeroImage(article: NewsArticle): ArticleImage {
+  const image = article.images?.find((img) => img.url);
+  if (image) return image;
+  const category = (article.category || '').toLowerCase();
+  if (category.includes('crypto')) return FALLBACK_IMAGES.crypto;
+  if (category.includes('ipo')) return FALLBACK_IMAGES.ipo;
+  return FALLBACK_IMAGES.stocks;
+}
+
+function getReadingTime(article: NewsArticle) {
+  const text = [
+    article.executiveSummary,
+    article.marketBackground,
+    article.detailedAnalysis,
+    article.expertInsights,
+    article.outlook,
+    article.conclusion,
+  ].join(' ');
+  return Math.max(3, Math.ceil(text.split(/\s+/).filter(Boolean).length / 220));
+}
+
+function ArticleReader({
+  article,
+  relatedArticles,
+  aiTab,
+  onAiTabChange,
+  onBack,
+  onSelectArticle,
+}: {
+  article: NewsArticle;
+  relatedArticles: NewsArticle[];
+  aiTab: AiTab;
+  onAiTabChange: (tab: AiTab) => void;
+  onBack: () => void;
+  onSelectArticle: (article: NewsArticle) => void;
+}) {
+  const heroImage = getHeroImage(article);
+  const ai = article.aiAnalysis;
+
+  return (
+    <article className="animate-fade-in">
+      <button
+        onClick={onBack}
+        className="mb-4 inline-flex items-center gap-2 text-[13px] text-surface-700 hover:text-surface-white transition-colors"
+      >
+        <ArrowLeft className="w-4 h-4" />
+        Back to news
+      </button>
+
+      <div className="overflow-hidden rounded-xl border border-surface-300/60 bg-surface-100">
+        <div className="relative h-72 sm:h-[420px] overflow-hidden">
+          <img src={heroImage.url} alt={heroImage.alt || article.headline} className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-surface-100 via-surface-100/30 to-transparent" />
+          {heroImage.attribution && (
+            <span className="absolute bottom-3 right-3 rounded bg-surface-100/85 px-2 py-0.5 text-[10px] text-surface-700">
+              {heroImage.attribution}
+            </span>
+          )}
+        </div>
+
+        <div className="px-5 pb-7 pt-5 sm:px-8">
+          <div className="mb-3 flex flex-wrap items-center gap-2">
+            <Badge variant="default" size="sm">{article.category || 'markets'}</Badge>
+            <Badge variant={article.impact === 'high' ? 'danger' : article.impact === 'medium' ? 'warning' : 'info'} size="sm">
+              {article.impact || 'medium'} impact
+            </Badge>
+            <span className="inline-flex items-center gap-1 text-[12px] text-surface-600">
+              <CalendarDays className="h-3.5 w-3.5" />
+              {article.publishedAt ? new Date(article.publishedAt).toLocaleDateString() : 'Latest'}
+            </span>
+            <span className="text-[12px] text-surface-600">{getReadingTime(article)} min read</span>
+          </div>
+
+          <h1 className="max-w-4xl text-3xl font-bold leading-tight tracking-tight text-surface-white sm:text-[42px]">
+            {article.headline}
+          </h1>
+          {article.subheadline && (
+            <p className="mt-3 max-w-3xl text-[16px] leading-relaxed text-surface-700">
+              {article.subheadline}
+            </p>
+          )}
+
+          {(article.relatedCoins?.length > 0 || article.relatedStocks?.length > 0) && (
+            <div className="mt-4 flex flex-wrap items-center gap-1.5">
+              <span className="mr-1 text-[11px] uppercase tracking-wider text-surface-600">Related</span>
+              {[...(article.relatedCoins || []), ...(article.relatedStocks || [])].map((item) => (
+                <span key={item} className="rounded border border-surface-300/60 bg-surface-200 px-2 py-0.5 font-mono text-[11px] text-surface-800">
+                  {item}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_280px]">
+        <div className="space-y-6">
+          {article.keyHighlights?.length > 0 && (
+            <section className="rounded-lg border border-surface-300/50 bg-surface-100 p-5">
+              <h2 className="mb-3 text-[15px] font-bold text-surface-white">Key Takeaways</h2>
+              <div className="grid gap-2 sm:grid-cols-2">
+                {article.keyHighlights.slice(0, 6).map((item, index) => (
+                  <div key={index} className="flex items-start gap-2 rounded-md bg-surface-200/45 p-3">
+                    <ListChecks className="mt-0.5 h-4 w-4 shrink-0 text-brand-light" />
+                    <p className="text-[13px] leading-relaxed text-surface-800">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <section className="space-y-5 rounded-lg border border-surface-300/50 bg-surface-100 p-5 sm:p-6">
+            {article.executiveSummary && (
+              <div>
+                <h2 className="mb-2 text-xl font-bold text-surface-white">Summary</h2>
+                <p className="text-[15px] leading-8 text-surface-800">{article.executiveSummary}</p>
+              </div>
+            )}
+            {article.marketBackground && (
+              <div>
+                <h2 className="mb-2 text-xl font-bold text-surface-white">Market Context</h2>
+                <p className="text-[15px] leading-8 text-surface-800">{article.marketBackground}</p>
+              </div>
+            )}
+            {article.detailedAnalysis && (
+              <div>
+                <h2 className="mb-2 text-xl font-bold text-surface-white">Analysis</h2>
+                <p className="text-[15px] leading-8 text-surface-800">{article.detailedAnalysis}</p>
+              </div>
+            )}
+            {article.expertInsights && (
+              <div className="rounded-lg border-l-3 border-brand bg-surface-200/35 p-4">
+                <Quote className="mb-2 h-4 w-4 text-brand-light" />
+                <p className="text-[14px] italic leading-7 text-surface-800">{article.expertInsights}</p>
+              </div>
+            )}
+          </section>
+
+          {article.financialMetrics?.headers?.length > 0 && (
+            <section className="rounded-lg border border-surface-300/50 bg-surface-100 p-5">
+              <h2 className="mb-3 flex items-center gap-2 text-xl font-bold text-surface-white">
+                <BarChart3 className="h-5 w-5 text-brand-light" />
+                {article.financialMetrics.tableCaption || 'Market Metrics'}
+              </h2>
+              <div className="overflow-x-auto rounded-lg border border-surface-300/40">
+                <table className="w-full text-[13px]">
+                  <thead>
+                    <tr className="bg-surface-200/70">
+                      {article.financialMetrics.headers.map((header) => (
+                        <th key={header} className="border-b border-surface-300/40 px-3 py-2 text-left font-semibold text-surface-900">{header}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {article.financialMetrics.rows.map((row, rowIndex) => (
+                      <tr key={rowIndex} className="border-b border-surface-300/20 last:border-0">
+                        {row.map((cell, cellIndex) => (
+                          <td key={cellIndex} className="px-3 py-2 text-surface-800">{cell}</td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          )}
+
+          <section className="grid gap-4 sm:grid-cols-2">
+            {article.risks?.length > 0 && (
+              <div className="rounded-lg border border-danger-border/40 bg-danger-muted/30 p-4">
+                <h2 className="mb-2 flex items-center gap-2 text-[15px] font-bold text-danger">
+                  <AlertTriangle className="h-4 w-4" />
+                  Risks
+                </h2>
+                <ul className="space-y-2">
+                  {article.risks.map((risk, index) => (
+                    <li key={index} className="text-[13px] leading-relaxed text-surface-800">{risk}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {article.opportunities?.length > 0 && (
+              <div className="rounded-lg border border-success-border/40 bg-success-muted/30 p-4">
+                <h2 className="mb-2 flex items-center gap-2 text-[15px] font-bold text-success">
+                  <Lightbulb className="h-4 w-4" />
+                  Opportunities
+                </h2>
+                <ul className="space-y-2">
+                  {article.opportunities.map((item, index) => (
+                    <li key={index} className="text-[13px] leading-relaxed text-surface-800">{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </section>
+
+          {ai && (
+            <section className="rounded-lg border border-surface-300/50 bg-surface-100 p-5">
+              <h2 className="mb-3 flex items-center gap-2 text-xl font-bold text-surface-white">
+                <Target className="h-5 w-5 text-brand-light" />
+                Investment Lens
+              </h2>
+              <div className="mb-3 flex gap-1">
+                {(['bull', 'bear', 'neutral'] as AiTab[]).map((tab) => (
+                  <button
+                    key={tab}
+                    onClick={() => onAiTabChange(tab)}
+                    className={`rounded-md px-3 py-1.5 text-[12px] font-medium capitalize transition-all ${
+                      aiTab === tab
+                        ? tab === 'bull' ? 'bg-success text-white' : tab === 'bear' ? 'bg-danger text-white' : 'bg-surface-400 text-white'
+                        : 'bg-surface-200 text-surface-600 hover:text-surface-800'
+                    }`}
+                  >
+                    {tab === 'bull' ? 'Bull Case' : tab === 'bear' ? 'Bear Case' : 'Neutral'}
+                  </button>
+                ))}
+              </div>
+              <p className="text-[14px] leading-7 text-surface-800">
+                {aiTab === 'bull' ? ai.bullCase : aiTab === 'bear' ? ai.bearCase : ai.neutralCase}
+              </p>
+              {ai.probabilityWeightedOutlook && (
+                <p className="mt-3 border-t border-surface-300/40 pt-3 text-[13px] text-surface-700">
+                  <span className="font-semibold text-surface-900">Outlook:</span> {ai.probabilityWeightedOutlook}
+                </p>
+              )}
+            </section>
+          )}
+
+          {(article.outlook || article.conclusion) && (
+            <section className="rounded-lg border border-surface-300/50 bg-surface-100 p-5">
+              {article.outlook && <p className="mb-4 text-[15px] leading-8 text-surface-800">{article.outlook}</p>}
+              {article.conclusion && <p className="text-[15px] leading-8 text-surface-800">{article.conclusion}</p>}
+            </section>
+          )}
+
+          {article.sourcesReferenced?.length > 0 && (
+            <section className="border-t border-surface-300/50 pt-4">
+              <h2 className="mb-2 text-[13px] font-semibold uppercase tracking-wider text-surface-600">Sources Referenced</h2>
+              <ul className="space-y-1">
+                {article.sourcesReferenced.map((source, index) => (
+                  <li key={index} className="flex items-start gap-1.5 text-[12px] text-surface-600">
+                    <ExternalLink className="mt-0.5 h-3 w-3 shrink-0" />
+                    {source}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-[11px] italic leading-relaxed text-surface-500">
+                This PulseTrends story is AI-assisted and based on cited source material. It is informational content, not financial advice.
+              </p>
+            </section>
+          )}
+        </div>
+
+        <aside className="space-y-3">
+          <h2 className="text-[13px] font-semibold uppercase tracking-wider text-surface-600">More Stories</h2>
+          {relatedArticles.slice(0, 4).map((item) => {
+            const image = getHeroImage(item);
+            return (
+              <button
+                key={item.id}
+                onClick={() => onSelectArticle(item)}
+                className="group flex w-full gap-3 rounded-lg border border-surface-300/50 bg-surface-100 p-2 text-left transition-colors hover:border-surface-500"
+              >
+                <img src={image.url} alt={image.alt || item.headline} className="h-16 w-20 shrink-0 rounded-md object-cover" loading="lazy" />
+                <div>
+                  <p className="text-[11px] uppercase tracking-wider text-surface-600">{item.category || 'markets'}</p>
+                  <p className="line-clamp-3 text-[12px] font-semibold leading-snug text-surface-900 group-hover:text-brand-light">{item.headline}</p>
+                </div>
+              </button>
+            );
+          })}
+        </aside>
+      </div>
+    </article>
+  );
+}
 
 export default function CryptoNewsSection() {
   const [articles, setArticles] = useState<NewsArticle[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
+  const [categoryFilter, setCategoryFilter] = useState<CategoryFilter>('all');
   const [sentimentFilter, setSentimentFilter] = useState<string>('all');
-  const [expandedNews, setExpandedNews] = useState<string | null>(null);
+  const [selectedArticle, setSelectedArticle] = useState<NewsArticle | null>(null);
   const [aiTab, setAiTab] = useState<AiTab>('bull');
 
   const fetchNews = async () => {
     try {
       setLoading(true);
       setError('');
-      const resp = await fetch('http://localhost:5000/api/news');
+      const resp = await fetch(`${NEWS_API_BASE}/api/news`);
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       const data = await resp.json();
       if (data && data.length > 0) {
@@ -181,12 +489,26 @@ export default function CryptoNewsSection() {
 
   const filteredNews = articles.filter((news) => {
     const q = searchQuery.toLowerCase();
+    const searchableText = [
+      news.headline,
+      news.subheadline,
+      news.category,
+      news.primaryKeyword,
+      ...(news.secondaryKeywords || []),
+      ...(news.relatedCoins || []),
+      ...(news.relatedStocks || []),
+    ].join(' ').toLowerCase();
     const matchesSearch = news.headline.toLowerCase().includes(q) ||
+      searchableText.includes(q) ||
       (news.category || '').toLowerCase().includes(q) ||
       (news.relatedCoins || []).some(c => c.toLowerCase().includes(q)) ||
       (news.relatedStocks || []).some(s => s.toLowerCase().includes(q));
+    const matchesCategory = categoryFilter === 'all' ||
+      (categoryFilter === 'india'
+        ? /india|indian|nse|bse|nifty|sensex|rbi|gmp/.test(searchableText)
+        : (news.category || '').toLowerCase() === categoryFilter || searchableText.includes(categoryFilter));
     const matchesSentiment = sentimentFilter === 'all' || news.sentiment === sentimentFilter;
-    return matchesSearch && matchesSentiment;
+    return matchesSearch && matchesCategory && matchesSentiment;
   });
 
   const sentimentConfig: Record<string, { icon: any; variant: 'success' | 'danger' | 'outline'; label: string }> = {
@@ -201,16 +523,33 @@ export default function CryptoNewsSection() {
     low: 'info',
   };
 
+  if (selectedArticle) {
+    return (
+      <ArticleReader
+        article={selectedArticle}
+        relatedArticles={articles.filter((article) => article.id !== selectedArticle.id)}
+        aiTab={aiTab}
+        onAiTabChange={setAiTab}
+        onBack={() => setSelectedArticle(null)}
+        onSelectArticle={(article) => {
+          setSelectedArticle(article);
+          setAiTab('bull');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+      />
+    );
+  }
+
   return (
     <div className="space-y-6">
       <div className="border-b border-surface-300/60 pb-6">
         <Badge variant="default" size="md">News Intelligence</Badge>
         <h2 className="text-2xl font-bold text-surface-white mt-3 tracking-tight">
-          Financial News & AI Analysis
+          Crypto, IPO & Stock Market News
         </h2>
         <p className="text-[14px] text-surface-700 mt-1.5 max-w-2xl leading-relaxed">
-          Institutional-grade financial journalism with AI-powered sentiment analysis,
-          risk assessment, and actionable market insights.
+          Premium market coverage for crypto, IPOs, Indian equities, and global stocks with
+          AI-assisted analysis, source attribution, and investor-focused context.
         </p>
         <div className="flex items-center gap-5 mt-4">
           <div className="flex items-center gap-1.5">
@@ -241,7 +580,7 @@ export default function CryptoNewsSection() {
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-surface-600" />
           <input
             type="text"
-            placeholder="Search by headline, category, or coin..."
+            placeholder="Search crypto, IPOs, stocks, Nifty, Sensex..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-9 pr-4 py-2 bg-surface-200 border border-surface-300 rounded-lg text-[13px] text-surface-white placeholder-surface-600 focus:outline-none focus:border-surface-500 transition-colors"
@@ -256,6 +595,22 @@ export default function CryptoNewsSection() {
             </button>
           ))}
         </div>
+      </div>
+
+      <div className="flex gap-1.5 overflow-x-auto pb-1">
+        {CATEGORY_FILTERS.map((filter) => (
+          <button
+            key={filter.id}
+            onClick={() => setCategoryFilter(filter.id)}
+            className={`shrink-0 px-3 py-1.5 rounded-md text-[12px] font-medium transition-all ${
+              categoryFilter === filter.id
+                ? 'bg-brand-muted text-brand-light border border-brand-border'
+                : 'bg-surface-100 border border-surface-300/50 text-surface-700 hover:text-surface-white hover:border-surface-500'
+            }`}
+          >
+            {filter.label}
+          </button>
+        ))}
       </div>
 
       {loading && articles.length === 0 && (
@@ -273,23 +628,25 @@ export default function CryptoNewsSection() {
         </div>
       )}
 
-      <div className="space-y-3">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {filteredNews.map((news, i) => {
           const sentiment = sentimentConfig[news.sentiment] || sentimentConfig.neutral;
           const SentimentIcon = sentiment.icon;
-          const isExpanded = expandedNews === news.id;
+          const isExpanded = false;
           const ai = news.aiAnalysis;
-          const heroImage = news.images?.[0];
+          const heroImage = getHeroImage(news);
           const sectionImages = news.images?.slice(1) || [];
 
           return (
-            <div key={news.id} className="bg-surface-100 border border-surface-300/60 rounded-xl overflow-hidden hover:border-surface-500 transition-all duration-200 animate-fade-in"
+            <div key={news.id} className={`bg-surface-100 border border-surface-300/60 rounded-xl overflow-hidden hover:border-surface-500 transition-all duration-200 animate-fade-in ${
+              i === 0 ? 'lg:col-span-2' : ''
+            }`}
               style={{ animationDelay: `${i * 60}ms` }}>
 
               {heroImage?.url && (
                 <div className="relative w-full h-56 sm:h-72 overflow-hidden">
                   <img src={heroImage.url} alt={heroImage.alt || news.headline} className="w-full h-full object-cover" loading="lazy" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-surface-100 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-surface-100 via-surface-100/10 to-transparent" />
                   {heroImage.attribution && (
                     <span className="absolute bottom-2 right-3 text-[10px] text-surface-700 bg-surface-100/80 px-2 py-0.5 rounded">{heroImage.attribution}</span>
                   )}
@@ -304,7 +661,7 @@ export default function CryptoNewsSection() {
                   {news.publishedAt && <span className="text-[11px] text-surface-500">{new Date(news.publishedAt).toLocaleDateString()}</span>}
                 </div>
 
-                <h2 className="font-bold text-surface-white text-[17px] leading-snug mb-1.5">{news.headline}</h2>
+                <h2 className={`font-bold text-surface-white leading-snug mb-1.5 ${i === 0 ? 'text-[22px]' : 'text-[17px]'}`}>{news.headline}</h2>
                 {news.subheadline && <p className="text-[13px] text-surface-700 mb-3 leading-relaxed">{news.subheadline}</p>}
 
                 {news.keyHighlights && news.keyHighlights.length > 0 && (
@@ -328,11 +685,11 @@ export default function CryptoNewsSection() {
                       <span key={s} className="text-[11px] px-1.5 py-0.5 rounded bg-surface-200 text-surface-800 font-mono border border-surface-300/40">{s}</span>
                     ))}
                   </div>
-                  <button onClick={() => { setExpandedNews(isExpanded ? null : news.id); setAiTab('bull'); }}
+                  <button onClick={() => { setSelectedArticle(news); setAiTab('bull'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                     className="flex items-center gap-1.5 text-[12px] text-surface-700 hover:text-brand-light transition-colors font-medium">
                     <Brain className="w-3.5 h-3.5" />
-                    {isExpanded ? 'Collapse' : 'Read Full Article'}
-                    {isExpanded ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
+                    Read Full Article
+                    <ChevronDown className="w-3 h-3" />
                   </button>
                 </div>
               </div>
