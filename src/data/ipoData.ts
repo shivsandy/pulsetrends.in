@@ -15,7 +15,13 @@ export interface IPOStock {
   listingExchange: string;
   ipoType: string;
   registrar: string;
-  status: 'upcoming' | 'open' | 'listed';
+  status: 'upcoming' | 'open' | 'listed' | 'subscribed';
+  subscriptionStatus?: {
+    retail: string;
+    nii: string;
+    qib: string;
+    total: string;
+  };
   revenue: string;
   revenueGrowth: string;
   netIncome: string;
@@ -79,9 +85,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "AIAI Holdings offers a compelling growth story through its AI-driven fintech model, yet faces regulatory and market risks that could affect its near-term performance. The company's strong revenue growth and solid financial health support a cautiously optimistic outlook.
-
-Recent News:\n- Weekly news roundup: Googlebook announced, WhatsApp Incognito, Altman under fire and Foxconn breach (Techtarget.com)\n  Stay up to date with the latest U.S. tech news, IPOs and executive moves shaping the industry each week.",
+    aiAnalysis: "AIAI Holdings offers a compelling growth story through its AI-driven fintech model, yet faces regulatory and market risks that could affect its near-term performance. The company's strong revenue growth and solid financial health support a cautiously optimistic outlook.",
     aiVerdict: "Neutral",
   },
   {
@@ -124,9 +128,7 @@ Recent News:\n- Weekly news roundup: Googlebook announced, WhatsApp Incognito, A
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Vida Global’s IPO offers exposure to the expanding digital health sector, with a solid subscription model and AI‑driven product suite. While revenue growth is compelling, the company faces significant competitive and regulatory challenges, and its debt levels could constrain future flexibility. Investors should weigh the growth potential against the risks of scaling in a crowded market.
-
-Recent News:\n- Vida Global 3.33M share IPO price range $4.50-$5.00 (Thefly.com)\n  See the rest of the story here.\n\nthefly.com provides the latest financial news as it breaks. Known as a leader in market intelligence, The Fly's real-time, streaming news feed keeps individual investo",
+    aiAnalysis: "Vida Global’s IPO offers exposure to the expanding digital health sector, with a solid subscription model and AI‑driven product suite. While revenue growth is compelling, the company faces significant competitive and regulatory challenges, and its debt levels could constrain future flexibility. Investors should weigh the growth potential against the risks of scaling in a crowded market.",
     aiVerdict: "Neutral – The listing presents moderate long‑term upside, but the company’s high debt and competitive pressures warrant caution. Subscribe / Avoid / Neutral recommendation: Neutral.",
   },
   {
@@ -169,9 +171,7 @@ Recent News:\n- Vida Global 3.33M share IPO price range $4.50-$5.00 (Thefly.com)
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Lincoln International’s IPO offers a solid fee‑based advisory platform with proven revenue growth and a diversified client mix. While the firm benefits from experienced leadership and a robust market position, it faces concentration and regulatory risks that could impact future earnings. Overall, the company presents a balanced opportunity for investors seeking exposure to mid‑cap financial services.
-
-Recent News:\n- NYSE Content Update: Lincoln International Valued at $2 Billion after $420 Million IPO (PRNewswire)\n  NYSE issues a pre-market daily advisory direct from the trading floor. NEW YORK, May 20, 2026 /PRNewswire/ -- The New York Stock Exchange (NYSE) provides a daily pre-market update directly from the NY\n- Investment bank Lincoln International eyes $2 billion valuation in US IPO (The Times of India)\n  The spring IPO market is seeing a strong pickup in activity after a brief lull ​in March as issuers look past geopolitical uncertainty ⁠to move ‌ahead with their listing plans.In the busiest ​week for\n- Lincoln International seeks $421M in US IPO, files to list on NYSE (Crypto Briefing)\n  Lincoln's IPO could enhance its capital for growth and strategic investments, impacting its competitive stance in the mid-market advisory sector.\nThe post Lincoln International seeks $421M in US IPO, ",
+    aiAnalysis: "Lincoln International’s IPO offers a solid fee‑based advisory platform with proven revenue growth and a diversified client mix. While the firm benefits from experienced leadership and a robust market position, it faces concentration and regulatory risks that could impact future earnings. Overall, the company presents a balanced opportunity for investors seeking exposure to mid‑cap financial services.",
     aiVerdict: "Listing gain potential is moderate with a positive long‑term outlook; recommendation: Neutral",
   },
   {
@@ -214,9 +214,7 @@ Recent News:\n- NYSE Content Update: Lincoln International Valued at $2 Billion 
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Teamtech offers a differentiated, asset‑light rental model that aligns with India's infrastructure push, delivering steady cash flows and growth upside. However, its leverage and exposure to construction cycles add volatility, making the stock suitable for investors with a moderate risk appetite. Note: This is AI-generated based on model knowledge and should not be considered financial advice.
-
-Recent News:\n- Teamtech Formwork Solutions IPO: Check GMP, subscription, price band and other details (The Times of India)\n  Teamtech Formwork Solutions' IPO opens Tuesday with a muted grey market outlook, showing a 0% premium. The Rs 50.15 crore issue aims to fund a new manufacturing facility, debt repayment, and working c\n- IPO calendar: A cloud kitchen brand among 4 companies to launch public offers this week; check details (The Times of India)\n  Four SME IPOs are set to open this week across food, construction and textile sectors, aiming to raise over Rs 138 crore. While mainboard activity remains subdued, offerings like Vegorama Punjabi Angi\n- IPO calendar: 3 companies set to launch public offers this week; check details (The Times of India)\n  This comes as markets continue to witness sharp downswings and muted recoveries, with oil prices remaining elevated amid the seesaw political game in the Middle East.\n- Teamtech Formwork shares to list today. Check GMP ahead of debut (The Times of India)\n  Teamtech Formwork Solutions is set to list on the NSE SME platform on Tuesday, with grey market trends suggesting moderate listing gains. The IPO, which opened for subscription between May 19-21, was ",
+    aiAnalysis: "Teamtech offers a differentiated, asset‑light rental model that aligns with India's infrastructure push, delivering steady cash flows and growth upside. However, its leverage and exposure to construction cycles add volatility, making the stock suitable for investors with a moderate risk appetite. Note: This is AI-generated based on model knowledge and should not be considered financial advice.",
     aiVerdict: "Listing gain potential, long‑term outlook positive; Subscribe",
   },
   {
@@ -345,9 +343,7 @@ Recent News:\n- Teamtech Formwork Solutions IPO: Check GMP, subscription, price 
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Bio Medica Lab shows solid top‑line growth and improving profitability, supported by a scalable lab network and recurring corporate contracts. However, competitive pricing pressure and a moderate debt load introduce downside risk. Overall, the IPO appears reasonably priced for investors seeking exposure to India's diagnostics sector.
-
-Recent News:\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
+    aiAnalysis: "Bio Medica Lab shows solid top‑line growth and improving profitability, supported by a scalable lab network and recurring corporate contracts. However, competitive pricing pressure and a moderate debt load introduce downside risk. Overall, the IPO appears reasonably priced for investors seeking exposure to India's diagnostics sector.",
     aiVerdict: "Listing gain potential with a positive long‑term outlook; Subscribe.",
   },
   {
@@ -433,9 +429,7 @@ Recent News:\n- Show HN: Simple news aggregator with source bias meters (Unbiast
       management: 70,
       marketSentiment: 74,
     },
-    aiAnalysis: "M R Maniveni shows solid financial fundamentals with consistent revenue growth and manageable debt levels, supported by a diversified client base in the automotive and industrial markets. However, its performance is tied to sector cycles and raw‑material price swings, which introduce moderate risk. Overall, the IPO appears reasonably priced given the growth outlook, but investors should monitor sector dynamics.
-
-Recent News:\n- MR Maniveni Foods shares to list today. Check GMP ahead of debut (The Times of India)\n  MR Maniveni Foods shares are poised for their debut on the BSE SME platform this Monday. Grey market indicators suggest a flat listing, with shares trading near their issue price. The company's Rs 27 \n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers",
+    aiAnalysis: "M R Maniveni shows solid financial fundamentals with consistent revenue growth and manageable debt levels, supported by a diversified client base in the automotive and industrial markets. However, its performance is tied to sector cycles and raw‑material price swings, which introduce moderate risk. Overall, the IPO appears reasonably priced given the growth outlook, but investors should monitor sector dynamics.",
     aiVerdict: "Listing gain potential, long‑term outlook positive – Subscribe",
   },
   {
@@ -478,9 +472,7 @@ Recent News:\n- MR Maniveni Foods shares to list today. Check GMP ahead of debut
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Harikanta Overseas shows solid top‑line growth and improving leverage, which supports a positive outlook for its IPO. However, currency fluctuations and trade policy risks could pressure margins, so investors should weigh these factors carefully. Note: This is AI-generated based on model knowledge and should not be considered financial advice.
-
-Recent News:\n- Harikanta Overseas IPO: Check GMP, price band, subscription, other details (The Times of India)\n  Harikanta Overseas' SME IPO opens Wednesday, aiming to raise Rs 25.63 crore. The issue, priced between Rs 91-96, sees muted grey market sentiment with zero premium. Funds will bolster working capital \n- IPO calendar: A cloud kitchen brand among 4 companies to launch public offers this week; check details (The Times of India)\n  Four SME IPOs are set to open this week across food, construction and textile sectors, aiming to raise over Rs 138 crore. While mainboard activity remains subdued, offerings like Vegorama Punjabi Angi",
+    aiAnalysis: "Harikanta Overseas shows solid top‑line growth and improving leverage, which supports a positive outlook for its IPO. However, currency fluctuations and trade policy risks could pressure margins, so investors should weigh these factors carefully. Note: This is AI-generated based on model knowledge and should not be considered financial advice.",
     aiVerdict: "Listing gain potential appears moderate with a long‑term growth outlook; recommendation: Neutral – consider Subscribe if comfortable with trade‑related risks.",
   },
   {
@@ -523,9 +515,7 @@ Recent News:\n- Harikanta Overseas IPO: Check GMP, price band, subscription, oth
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Yaashvi Jewellers shows solid top‑line growth and a healthy balance sheet, supported by a strong brand in underserved markets. However, margin pressure from gold price swings and competitive dynamics add caution. Overall, the IPO appears reasonably priced for investors seeking exposure to India's jewellery sector.
-
-Recent News:\n- IPO calendar: 3 companies set to launch public offers this week; check details (The Times of India)\n  This comes as markets continue to witness sharp downswings and muted recoveries, with oil prices remaining elevated amid the seesaw political game in the Middle East.\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers",
+    aiAnalysis: "Yaashvi Jewellers shows solid top‑line growth and a healthy balance sheet, supported by a strong brand in underserved markets. However, margin pressure from gold price swings and competitive dynamics add caution. Overall, the IPO appears reasonably priced for investors seeking exposure to India's jewellery sector.",
     aiVerdict: "Listing gain potential with a positive long‑term outlook; Subscribe.",
   },
   {
@@ -611,9 +601,7 @@ Recent News:\n- IPO calendar: 3 companies set to launch public offers this week;
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Applied Aerospace benefits from aerospace sector growth but faces execution risks in scaling operations. Its tech focus offers long-term upside, though near-term volatility is possible.
-
-Recent News:\n- Applied Aerospace & Defense, Inc. Announces Launch of Initial Public Offering (PRNewswire)\n  HUNTSVILLE, Ala., May 26, 2026 /PRNewswire/ -- Applied Aerospace & Defense, Inc., an advanced manufacturer of mission critical systems for space and defense (\"Applied,\" \"we,\" or the \"Company\"), today ",
+    aiAnalysis: "Applied Aerospace benefits from aerospace sector growth but faces execution risks in scaling operations. Its tech focus offers long-term upside, though near-term volatility is possible.",
     aiVerdict: "Neutral recommendation. Long-term growth potential in aerospace aligns with strategic investments, but short-term risks warrant caution.",
   },
   {
@@ -702,9 +690,7 @@ Recent News:\n- Applied Aerospace & Defense, Inc. Announces Launch of Initial Pu
       management: 70,
       marketSentiment: 74,
     },
-    aiAnalysis: "INNIO Holding GmbH presents as a well-established industrial player with a strong niche in flexible gas-fired power generation, benefiting from the global energy transition towards more sustainable and distributed solutions. While it operates in a competitive and cyclical industry, its focus on innovation and robust service business provide stability. The IPO offers investors exposure to a mature company with a clear role in the evolving energy landscape.
-
-Recent News:\n- Advent-Backed Power Equipment Maker Innio Files for US IPO (Financial Post)\n  Gas engine manufacturer Innio Holding GmbH filed for a US initial public offering, joining a slew of industrial companies looking to tap the surge in data center spending.",
+    aiAnalysis: "INNIO Holding GmbH presents as a well-established industrial player with a strong niche in flexible gas-fired power generation, benefiting from the global energy transition towards more sustainable and distributed solutions. While it operates in a competitive and cyclical industry, its focus on innovation and robust service business provide stability. The IPO offers investors exposure to a mature company with a clear role in the evolving energy landscape.",
     aiVerdict: "Given its established market position and relevance in the energy transition, INNIO may see moderate listing gains, particularly if the broader market sentiment is positive. For long-term investors, the company offers a stable business model with potential for growth driven by decarbonization efforts and demand for flexible power. Recommendation: Neutral to Cautiously Subscribe for long-term holding.",
   },
   {
@@ -749,9 +735,7 @@ Recent News:\n- Advent-Backed Power Equipment Maker Innio Files for US IPO (Fina
       management: 70,
       marketSentiment: 75,
     },
-    aiAnalysis: "Liftoff Mobile presents as a strong contender in the mobile ad-tech space, driven by robust financial growth and a scalable, AI-powered platform. While the mobile advertising market offers significant growth potential, investors should carefully weigh the inherent risks associated with intense competition and evolving privacy regulations from major platform providers. The company's profitability and innovative technology offer a compelling narrative for future expansion.
-
-Recent News:\n- Liftoff Announces Launch of Initial Public Offering (PRNewswire)\n  REDWOOD CITY, Calif., May 29, 2026 /PRNewswire/ -- Liftoff Mobile, Inc. (\"Liftoff\"), a global leader in performance marketing and monetization solutions for the mobile app economy, today announced tha",
+    aiAnalysis: "Liftoff Mobile presents as a strong contender in the mobile ad-tech space, driven by robust financial growth and a scalable, AI-powered platform. While the mobile advertising market offers significant growth potential, investors should carefully weigh the inherent risks associated with intense competition and evolving privacy regulations from major platform providers. The company's profitability and innovative technology offer a compelling narrative for future expansion.",
     aiVerdict: "Liftoff Mobile shows good potential for a moderate listing gain due to its strong growth trajectory and position in a high-demand sector. The long-term outlook is positive, contingent on its ability to adapt to privacy changes and maintain technological leadership. Given its solid financials and market position, a 'Subscribe' recommendation is warranted for investors comfortable with the inherent risks of the ad-tech industry.",
   },
   {
@@ -794,9 +778,7 @@ Recent News:\n- Liftoff Announces Launch of Initial Public Offering (PRNewswire)
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Quantinuum represents a compelling but high-risk opportunity in the quantum computing revolution. The company's technological capabilities position it well against competitors, though execution risk remains elevated given the nascent quantum commercialization timeline. Investors should view this as a long-term play on quantum advantage rather than immediate returns.
-
-Recent News:\n- Honeywell's Quantinuum makes US IPO filing public (CNA)\n  May 8 : Industrial giant Honeywell's quantum computing company, Quantinuum, on Friday made public its paperwork for an initial public offering in the United States.The Broomfield, Colorado-based compa\n- Honeywell's Quantinuum moves closer to public markets with US IPO filing (CNA)\n  May 8 : Industrial giant Honeywell's Quantinuum publicly filed its paperwork for a U.S. initial public offering on Friday, moving the quantum computing company closer to a stock market listing.The IPO\n- Trapped-ion quantum computer startup Quantinuum files to go public (SiliconANGLE News)\n  Quantinuum Inc., a startup that makes quantum chips based on a so-called trapped-ion qubit architecture, today filed to go public. The Honeywell International Inc. spinoff hopes to sell about 21.05 mi\n- Quantinuum files for US IPO amid quantum computing enthusiasm (Crypto Briefing)\n  Quantinuum's IPO could signal increased investor confidence in quantum computing, potentially accelerating innovation and industry growth.\nThe post Quantinuum files for US IPO amid quantum computing e\n- Quantinuum seeks up to $1B in IPO, marking quantum computing’s first major traditional listing (Crypto Briefing)\n  Quantinuum's IPO could set a precedent for quantum computing's market viability, influencing investor confidence and sector growth dynamics.\nThe post Quantinuum seeks up to $1B in IPO, marking quantum",
+    aiAnalysis: "Quantinuum represents a compelling but high-risk opportunity in the quantum computing revolution. The company's technological capabilities position it well against competitors, though execution risk remains elevated given the nascent quantum commercialization timeline. Investors should view this as a long-term play on quantum advantage rather than immediate returns.",
     aiVerdict: "Neutral - While the long-term quantum computing market potential is substantial, the IPO faces execution and market timing risks. Recommend a cautious approach with small position sizing for technology-focused portfolios.",
   },
   {
@@ -839,9 +821,7 @@ Recent News:\n- Honeywell's Quantinuum makes US IPO filing public (CNA)\n  May 8
       management: 70,
       marketSentiment: 75,
     },
-    aiAnalysis: "Safepoint Holdings presents an intriguing opportunity in the high-growth cybersecurity sector, backed by robust revenue expansion and increasing profitability. While its proprietary technology and recurring revenue model are significant assets, investors should carefully weigh the intense competitive landscape and potential client concentration risks. The company's ability to innovate and expand its client base will be crucial for sustained success.
-
-Recent News:\n- Florida insurer Safepoint begins IPO roadshow (Lifeinsuranceinternational.com)\n  The company is marketing 6.24 millionshares in the offering at a price range of $15 to $17 each.\n- Insurance Firm Safepoint, Backers Seek $283.3 Million in IPO (Insurance Journal)\n  Safepoint Holdings Inc., an underwriter of specialty homeowners and commercial insurance, and some of its backers are seeking to raise as much as $283.3 million in an US initial public offering. The T",
+    aiAnalysis: "Safepoint Holdings presents an intriguing opportunity in the high-growth cybersecurity sector, backed by robust revenue expansion and increasing profitability. While its proprietary technology and recurring revenue model are significant assets, investors should carefully weigh the intense competitive landscape and potential client concentration risks. The company's ability to innovate and expand its client base will be crucial for sustained success.",
     aiVerdict: "Given the strong market tailwinds for cybersecurity and Safepoint's demonstrated growth trajectory, there is potential for a moderate listing gain. The long-term outlook appears positive, contingent on continued technological innovation and successful market share expansion against formidable competitors. Recommendation: Subscribe.",
   },
   {
@@ -884,9 +864,7 @@ Recent News:\n- Florida insurer Safepoint begins IPO roadshow (Lifeinsuranceinte
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Sunshine Silver presents a compelling growth story driven by a rising silver price environment and a fully integrated operation that captures more value per ounce. However, commodity price volatility, regulatory hurdles, and a moderate debt load temper enthusiasm. Investors should weigh the upside against the sector‑specific risks.
-
-Recent News:\n- Sunshine Silver Mining & Refining Announces Launch of its Initial Public Offering (PRNewswire)\n  KELLOGG, Idaho, May 26, 2026 /PRNewswire/ -- Sunshine Silver Mining & Refining Company (the \"Company\" or \"Sunshine\") today announced the launch of its initial public offering (\"IPO\") of 20,000,000 sha",
+    aiAnalysis: "Sunshine Silver presents a compelling growth story driven by a rising silver price environment and a fully integrated operation that captures more value per ounce. However, commodity price volatility, regulatory hurdles, and a moderate debt load temper enthusiasm. Investors should weigh the upside against the sector‑specific risks.",
     aiVerdict: "Listing gain potential, long‑term outlook positive; Recommend Subscribe with caution.",
   },
   {
@@ -929,9 +907,7 @@ Recent News:\n- Sunshine Silver Mining & Refining Announces Launch of its Initia
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "This IPO presents a balanced opportunity with solid growth prospects tempered by moderate risks; long-term outlook remains positive if execution stays on track.
-
-Recent News:\n- Aureate Tradde IPO opens for subscription today. Check GMP, price band and other details (The Times of India)\n  Aureate Tradde's initial public offering begins on Friday, May 29. The company is seeking to raise approximately Rs 27.29 crore through a fixed price issue. Grey market indications suggest a flat list\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers",
+    aiAnalysis: "This IPO presents a balanced opportunity with solid growth prospects tempered by moderate risks; long-term outlook remains positive if execution stays on track.",
     aiVerdict: "Listing gain potential is strong with a favorable long-term outlook, but avoid if regulatory risks escalate. Subscribe for updates.",
   },
   {
@@ -974,9 +950,7 @@ Recent News:\n- Aureate Tradde IPO opens for subscription today. Check GMP, pric
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Riku Dining Group presents an attractive growth story in the resilient restaurant industry, with strong unit-level economics and a proven expansion model. While competitive pressures and economic cyclicality pose near-term risks, the company's focus on scalable franchising and differentiated menu positioning supports long-term value creation. Valuation appears reasonable within the proposed price range given the growth trajectory.
-
-Recent News:\n- CGI and Stockmann enter strategic partnership (PRNewswire)\n  Stock Market Symbols GIB.A (TSX) GIB (NYSE) cgi.com/newsroom Strengthening Stockmann's omnichannel customer experience HELSINKI, May 12, 2026 /PRNewswire/ - CGI (TSX: GIB.A) (NYSE: GIB), one of the la",
+    aiAnalysis: "Riku Dining Group presents an attractive growth story in the resilient restaurant industry, with strong unit-level economics and a proven expansion model. While competitive pressures and economic cyclicality pose near-term risks, the company's focus on scalable franchising and differentiated menu positioning supports long-term value creation. Valuation appears reasonable within the proposed price range given the growth trajectory.",
     aiVerdict: "The stock is positioned for modest listing gains driven by market appetite for growth IPOs, with long-term potential dependent on execution of expansion plans. Recommend Neutral rating with cautious optimism for subscribers seeking exposure to the dining sector.",
   },
   {
@@ -1021,9 +995,7 @@ Recent News:\n- CGI and Stockmann enter strategic partnership (PRNewswire)\n  St
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "WhiteHawk Income presents as an attractive option for investors seeking stable income and commodity exposure without direct operational risks. While its income-generating model provides a solid financial foundation, growth is largely dependent on successful acquisitions and favorable commodity price trends. The primary challenge lies in managing the inherent volatility of the natural resources sector.
-
-Recent News:\n- Natural gas mineral firm WhiteHawk reveals sevenfold revenue surge in US IPO filing (The Times of India)\n  WhiteHawk, a leading natural gas royalty firm, is taking the stock market plunge with its initial public offering. This comes on the heels of an astonishing 615% revenue spike in 2025, mirroring the c",
+    aiAnalysis: "WhiteHawk Income presents as an attractive option for investors seeking stable income and commodity exposure without direct operational risks. While its income-generating model provides a solid financial foundation, growth is largely dependent on successful acquisitions and favorable commodity price trends. The primary challenge lies in managing the inherent volatility of the natural resources sector.",
     aiVerdict: "Listing gain potential is moderate, driven by market appetite for income-focused resource plays. The long-term outlook is stable, offering consistent dividends, but growth may be incremental. Recommendation: Subscribe for long-term income-oriented investors comfortable with commodity price exposure; Neutral for those seeking high growth.",
   },
   {
@@ -1068,9 +1040,7 @@ Recent News:\n- Natural gas mineral firm WhiteHawk reveals sevenfold revenue sur
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Liotech Ind. presents as an intriguing opportunity within India's dynamic industrial sector, suggesting potential for growth driven by market demand and technological capabilities. However, the absence of specific financial data and IPO details necessitates a cautious approach. A thorough evaluation will only be possible once the full prospectus and pricing information are disclosed.
-
-Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There's something fishy about the President's stock purchases.",
+    aiAnalysis: "Liotech Ind. presents as an intriguing opportunity within India's dynamic industrial sector, suggesting potential for growth driven by market demand and technological capabilities. However, the absence of specific financial data and IPO details necessitates a cautious approach. A thorough evaluation will only be possible once the full prospectus and pricing information are disclosed.",
     aiVerdict: "Given the limited information, a definitive recommendation is premature. Investors should await the release of the detailed prospectus and price band to assess listing gain potential and long-term outlook. Currently, a 'Neutral' stance is advised until more data is available.",
   },
   {
@@ -1158,9 +1128,7 @@ Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead o
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "SMR Jewels operates in a culturally significant and growing sector in India, offering potential for expansion. However, the jewelry industry is highly susceptible to commodity price fluctuations and intense competition, posing significant operational risks. Investors should carefully evaluate the company's financial performance and competitive positioning detailed in its RHP.
-
-Recent News:\n- SMR Jewels ₹67 crore IPO opens May 26; price band set at ₹128–₹135 per share (BusinessLine)\n  The IPO comprises a fresh issue of up to ₹54 crore and an offer for sale (OFS) of up to ₹13.23 crore, taking the total issue size to 49,80,000 shares\n- SMR Jewels IPO opens today. Check GMP, price band, subscription and other details (The Times of India)\n  SMR Jewels' SME IPO launches Tuesday. Grey market activity shows flat sentiment with no premium expected. The company aims to raise Rs 67.23 crore. The issue opens May 26 and closes May 29. Investors \n- IPO calendar: 3 companies set to launch public offers this week; check details (The Times of India)\n  This comes as markets continue to witness sharp downswings and muted recoveries, with oil prices remaining elevated amid the seesaw political game in the Middle East.\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers",
+    aiAnalysis: "SMR Jewels operates in a culturally significant and growing sector in India, offering potential for expansion. However, the jewelry industry is highly susceptible to commodity price fluctuations and intense competition, posing significant operational risks. Investors should carefully evaluate the company's financial performance and competitive positioning detailed in its RHP.",
     aiVerdict: "Given the sector's growth potential and the typical demand for jewelry in India, SMR Jewels may offer moderate listing gain potential, especially if priced attractively. For long-term outlook, it depends heavily on the company's ability to manage raw material volatility, competition, and maintain strong brand equity. A 'Subscribe with caution for listing gains' or 'Neutral' recommendation is appropriate, pending a detailed review of its financials and valuation.",
   },
   {
@@ -1247,9 +1215,7 @@ Recent News:\n- SMR Jewels ₹67 crore IPO opens May 26; price band set at ₹12
       management: 70,
       marketSentiment: 75,
     },
-    aiAnalysis: "CMR Green Tech presents an attractive investment opportunity within the growing circular economy segment, backed by its market leadership and robust financial performance. However, investors should be mindful of commodity price volatility and supply chain dependencies inherent in the recycling business. The company's strong ESG credentials and essential role in the battery manufacturing ecosystem provide a solid foundation for long-term growth.
-
-Recent News:\n- CMR Green Tech sets IPO price band at 182–192 per share (The Times of India)\n  CMR Green Technologies is launching its initial public offering. The price band for the 630 crore issue is set between 182 and 192 rupees per share. Investors can subscribe to the offer from June 3 to",
+    aiAnalysis: "CMR Green Tech presents an attractive investment opportunity within the growing circular economy segment, backed by its market leadership and robust financial performance. However, investors should be mindful of commodity price volatility and supply chain dependencies inherent in the recycling business. The company's strong ESG credentials and essential role in the battery manufacturing ecosystem provide a solid foundation for long-term growth.",
     aiVerdict: "Given its strong market position, consistent financial performance, and alignment with environmental sustainability trends, CMR Green Tech shows good potential for listing gains, especially if the IPO is priced reasonably. The long-term outlook is positive due to increasing demand for recycled materials and regulatory support for the circular economy. Recommendation: Subscribe.",
   },
   {
@@ -1378,9 +1344,7 @@ Recent News:\n- CMR Green Tech sets IPO price band at 182–192 per share (The T
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Vahh Chemicals enters the market at a time when India's chemical sector is experiencing growth, supported by government initiatives like Make in India. The company's focus on specialty chemicals could provide better margins, though it will need to navigate raw material price volatility and increasing competition.
-
-Recent News:\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers\n- IPO Calendar: Investors to get 2 mainboard public offers this week after a month of lull (The Times of India)\n  India’s IPO market is set to revive with two mainboard issues, CMR Green Technologies and Hexagon Nutrition, opening this week after a lull. Together aiming to raise nearly Rs 770 crore, the offerings",
+    aiAnalysis: "Vahh Chemicals enters the market at a time when India's chemical sector is experiencing growth, supported by government initiatives like Make in India. The company's focus on specialty chemicals could provide better margins, though it will need to navigate raw material price volatility and increasing competition.",
     aiVerdict: "Vahh Chemicals shows moderate listing gain potential given the positive industry outlook and reasonable price band. The long-term outlook appears positive with India's growing chemical sector, but investors should monitor raw material costs and competitive positioning. Recommendation: Neutral for risk-averse investors, Subscribe for those bullish on India's chemical sector growth.",
   },
   {
@@ -1423,9 +1387,7 @@ Recent News:\n- IPO market eyes selective June revival after two-month lull (Bus
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "GenXAI Analytics offers a compelling AI SaaS platform with robust growth prospects, yet its valuation reflects moderate risk due to client concentration and competitive pressures. Investors should weigh the upside of sector tailwinds against these challenges.
-
-Recent News:\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers\n- GenXAI Analytics to raise ₹55 cr via IPO on NSE Emerge (BusinessLine)\n  GenXAI Analytics aims to raise ₹55 crore through an IPO on NSE Emerge, issuing 47.28 lakh shares priced at ₹110-₹116.\n- IPO Calendar: Investors to get 2 mainboard public offers this week after a month of lull (The Times of India)\n  India’s IPO market is set to revive with two mainboard issues, CMR Green Technologies and Hexagon Nutrition, opening this week after a lull. Together aiming to raise nearly Rs 770 crore, the offerings",
+    aiAnalysis: "GenXAI Analytics offers a compelling AI SaaS platform with robust growth prospects, yet its valuation reflects moderate risk due to client concentration and competitive pressures. Investors should weigh the upside of sector tailwinds against these challenges.",
     aiVerdict: "Subscribe",
   },
   {
@@ -1468,9 +1430,7 @@ Recent News:\n- IPO market eyes selective June revival after two-month lull (Bus
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Hexagon Nutri operates in a high-growth sector with increasing consumer awareness around health and nutrition. While the company has solid fundamentals and a clear market focus, it faces challenges from regulatory scrutiny and competitive pressures. The IPO could offer growth capital but investors should monitor execution and market conditions.
-
-Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There's something fishy about the President's stock purchases.",
+    aiAnalysis: "Hexagon Nutri operates in a high-growth sector with increasing consumer awareness around health and nutrition. While the company has solid fundamentals and a clear market focus, it faces challenges from regulatory scrutiny and competitive pressures. The IPO could offer growth capital but investors should monitor execution and market conditions.",
     aiVerdict: "Neutral recommendation with potential for listing gains if execution improves and demand sustains.",
   },
   {
@@ -1513,9 +1473,7 @@ Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead o
       management: 70,
       marketSentiment: 73,
     },
-    aiAnalysis: "Hexagon Nutrition's upcoming IPO offers exposure to the fast‑growing Indian nutrition market, backed by a solid brand and improving profitability. However, competitive pressures and regulatory uncertainties pose notable risks that could affect future earnings. Overall, the issue appears moderately attractive for investors seeking growth with a balanced risk profile.
-
-Recent News:\n- CMR Green and Hexagon Nutrition set to launch IPOs next week (BusinessLine)\n  Upcoming IPOs from CMR Green and Hexagon Nutrition are set to invigorate the primary market next week.\n- Hexagon Nutrition IPO opens June 5: Price band fixed at Rs 42-45; check key details here (The Times of India)\n  Hexagon Nutrition Limited is launching its Initial Public Offering on June 5, 2026. The company plans to raise Rs 138.87 crore through an Offer for Sale. Investors can subscribe to shares priced betwe\n- IPO Calendar: Investors to get 2 mainboard public offers this week after a month of lull (The Times of India)\n  India’s IPO market is set to revive with two mainboard issues, CMR Green Technologies and Hexagon Nutrition, opening this week after a lull. Together aiming to raise nearly Rs 770 crore, the offerings\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers",
+    aiAnalysis: "Hexagon Nutrition's upcoming IPO offers exposure to the fast‑growing Indian nutrition market, backed by a solid brand and improving profitability. However, competitive pressures and regulatory uncertainties pose notable risks that could affect future earnings. Overall, the issue appears moderately attractive for investors seeking growth with a balanced risk profile.",
     aiVerdict: "Listing gain potential is modest given the undisclosed price band; long‑term outlook is positive due to sector growth. Recommendation: Subscribe for investors with a moderate risk appetite, otherwise Neutral.",
   },
   {
@@ -1558,9 +1516,7 @@ Recent News:\n- CMR Green and Hexagon Nutrition set to launch IPOs next week (Bu
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "DEEP FISSION, INC. operates in a high-growth, high-risk sector with significant potential for long-term impact in the clean energy space. While its technology is promising, the company faces substantial financial and regulatory hurdles that could affect near-term performance. Investors should consider both the strategic importance of nuclear energy and the company’s ability to execute on its roadmap.
-
-Recent News:\n- Deep Fission seeks $157M NASDAQ IPO after previous failed listing (Crypto Briefing)\n  Deep Fission's IPO pursuit highlights the growing investor interest in innovative nuclear solutions, potentially reshaping energy and tech sectors.\nThe post Deep Fission seeks $157M NASDAQ IPO after p\n- Deep Fission seeks $156M in US IPO to power AI’s insatiable energy appetite (Crypto Briefing)\n  Deep Fission's IPO highlights the growing intersection of nuclear innovation and AI energy demands, potentially reshaping energy markets.\nThe post Deep Fission seeks $156M in US IPO to power AI’s insa\n- Nuclear Company Deep Fission Files for $156 Million IPO (Financial Post)\n  Deep Fission Inc. is seeking to raise up to $156 million in a US initial public offering, the latest nuclear startup to go that route as artificial intelligence data centers stoke demand for electrici",
+    aiAnalysis: "DEEP FISSION, INC. operates in a high-growth, high-risk sector with significant potential for long-term impact in the clean energy space. While its technology is promising, the company faces substantial financial and regulatory hurdles that could affect near-term performance. Investors should consider both the strategic importance of nuclear energy and the company’s ability to execute on its roadmap.",
     aiVerdict: "Strong long-term growth potential with high execution risk. Recommend: Subscribe for long-term horizon.",
   },
   {
@@ -1603,9 +1559,7 @@ Recent News:\n- Deep Fission seeks $157M NASDAQ IPO after previous failed listin
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "MetaOptics offers a compelling blend of cutting‑edge technology and recurring software revenue, suggesting solid growth prospects, yet its reliance on a few major clients and regulatory risks introduce notable uncertainty. Investors should weigh the upside of a niche market against the modest financial health metrics.
-
-Recent News:\n- The six used cars that dealers won't touch because they're too expensive to fix - you might already own one (Dailymail.com)\n  When shopping for a second-hand car, one of the biggest concerns for buyers is whether it might be riddled with problems and become a drain on their finances.\n- How Korean brands like Hyundai and Kia took a bite out of the British car market before the Chinese influx of EVs (Dailymail.com)\n  Chinese cars are taking Britian by storm. But before this the UK experienced a Korean car boom. Now go-to middle-class buys, we look at the rise of Korean car brands like Hyundai and Kia.\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
+    aiAnalysis: "MetaOptics offers a compelling blend of cutting‑edge technology and recurring software revenue, suggesting solid growth prospects, yet its reliance on a few major clients and regulatory risks introduce notable uncertainty. Investors should weigh the upside of a niche market against the modest financial health metrics.",
     aiVerdict: "Listing gain potential, long-term outlook, and Subscribe",
   },
   {
@@ -1691,9 +1645,7 @@ Recent News:\n- The six used cars that dealers won't touch because they're too e
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "BOAT has established itself as a leading player in India's audio accessories market with strong brand recall among younger consumers. The company's growth trajectory and expansion plans suggest potential for continued success, though investors should monitor competitive pressures and margin performance post-listing.
-
-Recent News:\n- She Wants To Pay Off Debt, But He Bought A Boat And A Snowmobile. Even After Taking A Loan To Pay Off Credit Cards, They Maxed Them Out Again (Yahoo Entertainment)\n  A wife wanted to aggressively pay off their debt, but her husband wanted to continue enjoying hobbies and purchases that helped him “enjoy life” even after...\n- Legendary Texas Wildcatter’s Granddaughter Makes Energy’s Riskiest Bet (Forbes)\n  After a decade of blowouts, family fights and $300 million down the hole, Gloria Moncrief drilled one of the deepest, riskiest natural gas wells ever but will it pay off?\n- Fervo becomes clean energy’s biggest-ever IPO with $10B valuation—powered by the earth’s heat and AI’s hunger (Fortune)\n  Fervo is building its first commercial power plant project in Utah with goals to scale nationwide with the data center construction wave.\n- Trading volumes in unlisted shares plunge up to 70% (The Times of India)\n  Investor interest in unlisted shares is decreasing. Trading volumes have fallen significantly. This slowdown is due to lower prices and fewer new share offerings. Some popular companies still see acti\n- Anthropic cozies up to Elon Musk, IBM makes its case to win in AI, and Cerebras has big IPO plans (SiliconANGLE News)\n  Money, and desperation, sure can pave over a lot of ill will. This week’s example: Anthropic signed a mammoth deal with Elon Musk’s SpaceX to use all of the computing capacity of SpaceX’s Colossus dat",
+    aiAnalysis: "BOAT has established itself as a leading player in India's audio accessories market with strong brand recall among younger consumers. The company's growth trajectory and expansion plans suggest potential for continued success, though investors should monitor competitive pressures and margin performance post-listing.",
     aiVerdict: "Given the strong brand positioning and growth potential, BOAT IPO may offer listing gains. Long-term outlook appears positive with the company's expansion plans. Recommendation: Subscribe with a medium-term investment horizon, considering the competitive landscape and execution risks.",
   },
   {
@@ -1999,9 +1951,7 @@ Recent News:\n- She Wants To Pay Off Debt, But He Bought A Boat And A Snowmobile
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Flipkart's IPO presents a compelling opportunity given its dominant market position and proven path to profitability. The company's strong balance sheet, backed by Walmart, provides financial stability while its logistics infrastructure creates sustainable competitive advantages. However, execution risks around monetization and increasing competition warrant careful consideration.
-
-Recent News:\n- Flipkart puts IPO on hold amid market uncertainty – report (Yahoo Entertainment)\n- India not just a growth market, but a model for the future of retail: Walmart Chief John Furner (BusinessLine)\n  Walmart's CEO John Furner views India as a key growth platform and future retail model, emphasizing innovation and entrepreneurship.\n- Walmart Tells Flipkart to Shelve IPO Plans, Focus on Profitability (pymnts.com)\n  Walmart tapped the brakes on Flipkart’s long-anticipated public market debut. The U.S. retail giant is telling its Indian eCommerce subsidiary to reach profitability first, Moneycontrol reported Frida\n- Zepto gets SEBI nod for IPO, eyes ₹9,300 crore IPO amid quick commerce race (BusinessLine)\n  Mumbai-based quick commerce firm to file updated papers as it scales to over 2.5 million daily orders amid West Asia volatility\n- Supreme Court gives Flipkart eight weeks to clear MarQ inventory in trademark dispute (Livemint)\n  The top court refused to interfere with lower court orders, and held that Flipkart’s MarQ branding was deceptively similar to Marc Enterprises’ trademark.",
+    aiAnalysis: "Flipkart's IPO presents a compelling opportunity given its dominant market position and proven path to profitability. The company's strong balance sheet, backed by Walmart, provides financial stability while its logistics infrastructure creates sustainable competitive advantages. However, execution risks around monetization and increasing competition warrant careful consideration.",
     aiVerdict: "Listing gain potential appears positive in the short term given strong demand for quality Indian tech IPOs. Long-term outlook remains attractive due to India's e-commerce growth trajectory. Recommendation: SUBSCRIBE for long-term investment.",
   },
   {
@@ -2173,9 +2123,7 @@ Recent News:\n- Flipkart puts IPO on hold amid market uncertainty – report (Ya
       management: 70,
       marketSentiment: 75,
     },
-    aiAnalysis: "Innoviti operates in a high-growth sector with a strong technological foundation, positioning it well to capitalize on India's digital transformation. While its revenue growth is commendable, potential investors should carefully evaluate its path to sustainable profitability amidst intense competition. The company's ability to scale efficiently and manage regulatory risks will be crucial for long-term success.
-
-Recent News:\n- PoS terminal supply squeeze; Skyroot CEO on unicorn flight (The Times of India)\n  Happy Friday! The point-of-sale (PoS) supply has dried up in India as the West Asia conflict squeezes imports. This and more in today’s ETtech Morning Dispatch.",
+    aiAnalysis: "Innoviti operates in a high-growth sector with a strong technological foundation, positioning it well to capitalize on India's digital transformation. While its revenue growth is commendable, potential investors should carefully evaluate its path to sustainable profitability amidst intense competition. The company's ability to scale efficiently and manage regulatory risks will be crucial for long-term success.",
     aiVerdict: "Given its strong growth trajectory and innovative offerings in a booming market, Innoviti could offer moderate to good listing gains, depending heavily on the final IPO valuation. For the long-term, its outlook is positive, contingent on achieving profitability and fending off competition. A 'Subscribe' recommendation is warranted for investors with a moderate to high-risk appetite, focusing on growth potential rather than immediate profits.",
   },
   {
@@ -2218,9 +2166,7 @@ Recent News:\n- PoS terminal supply squeeze; Skyroot CEO on unicorn flight (The 
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Juniper Green Energy operates in India's rapidly expanding renewable energy sector, which benefits from strong government support and increasing environmental consciousness. The company's business model offers stable long-term revenue through PPAs, though it faces challenges related to capital intensity and policy dependency.
-
-Recent News:\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
+    aiAnalysis: "Juniper Green Energy operates in India's rapidly expanding renewable energy sector, which benefits from strong government support and increasing environmental consciousness. The company's business model offers stable long-term revenue through PPAs, though it faces challenges related to capital intensity and policy dependency.",
     aiVerdict: "Given India's renewable energy growth trajectory and the company's diversified project portfolio, Juniper Green Energy shows moderate listing gain potential with a positive long-term outlook. Investors with a medium to long-term investment horizon may consider subscribing to this IPO, but should evaluate the final price band and company fundamentals before making a decision.",
   },
   {
@@ -2263,9 +2209,7 @@ Recent News:\n- Show HN: Simple news aggregator with source bias meters (Unbiast
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "KUKU’s IPO presents an attractive entry point for investors looking to tap into India’s burgeoning digital economy, with solid revenue growth and a diversified business model. Nonetheless, the company’s high burn rate, competitive landscape, and regulatory headwinds warrant caution. Investors should weigh the potential upside against the inherent risks before committing.
-
-Recent News:\n- Short drama boom sends new wave of startups knocking on VC doors (Livemint)\n  Micro-drama startups are attracting new funding as engagement surges and investors bet on mobile-first short-form video platforms in India.",
+    aiAnalysis: "KUKU’s IPO presents an attractive entry point for investors looking to tap into India’s burgeoning digital economy, with solid revenue growth and a diversified business model. Nonetheless, the company’s high burn rate, competitive landscape, and regulatory headwinds warrant caution. Investors should weigh the potential upside against the inherent risks before committing.",
     aiVerdict: "Listing gain potential is moderate to high, with a positive long‑term outlook if the company can sustain growth and manage costs. Recommendation: Neutral – consider subscribing with a cautious approach and monitor post‑listing performance closely.",
   },
   {
@@ -2353,9 +2297,7 @@ Recent News:\n- Short drama boom sends new wave of startups knocking on VC doors
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Leapfrog Engineering Services operates in a resilient sector with steady demand for infrastructure development. While the upcoming IPO presents an opportunity to invest in a growing engineering services firm, investors should await detailed financial disclosures before making decisions. The company's long-term prospects appear positive given India's infrastructure push.
-
-Recent News:\n- Leslie’s, Inc. Announces Second Quarter 2026 Financial Results (GlobeNewswire)\n  Sales increase of 4.3% and Comparable sales increase of 6.6%   Achieved 8% customer count growth year-over-year  Company reiterates full year guidance ...",
+    aiAnalysis: "Leapfrog Engineering Services operates in a resilient sector with steady demand for infrastructure development. While the upcoming IPO presents an opportunity to invest in a growing engineering services firm, investors should await detailed financial disclosures before making decisions. The company's long-term prospects appear positive given India's infrastructure push.",
     aiVerdict: "Neutral - Awaiting detailed financial disclosures and pricing. Long-term outlook is positive given infrastructure sector growth, but near-term volatility is expected. Recommend subscribing only after reviewing the final prospectus and financial statements.",
   },
   {
@@ -2398,9 +2340,7 @@ Recent News:\n- Leslie’s, Inc. Announces Second Quarter 2026 Financial Results
       management: 70,
       marketSentiment: 73,
     },
-    aiAnalysis: "MakeMyTrip's IPO comes at a time when travel demand is rebounding, providing a solid growth runway. The company's strong market position and improving profitability support a favorable outlook, though competitive pressures and macro‑economic sensitivity remain key considerations.
-
-Recent News:\n- MakeMyTrip Takes Steps Toward India IPO (Skift)\n  MakeMyTrip wants to list in India but can't say when. The regulatory groundwork has started, the timeline hasn't. Watch this space... slowly.\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
+    aiAnalysis: "MakeMyTrip's IPO comes at a time when travel demand is rebounding, providing a solid growth runway. The company's strong market position and improving profitability support a favorable outlook, though competitive pressures and macro‑economic sensitivity remain key considerations.",
     aiVerdict: "Moderate to high listing gain potential with a neutral‑to‑positive long‑term outlook; recommendation: Subscribe for investors comfortable with sector‑specific risk.",
   },
   {
@@ -2529,9 +2469,7 @@ Recent News:\n- MakeMyTrip Takes Steps Toward India IPO (Skift)\n  MakeMyTrip wa
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Milestone Gears appears to be entering the capital markets at a time when India's manufacturing sector is showing growth potential. The company's focus on precision gears positions it well to benefit from various industrial applications, though investors should carefully evaluate the final financials and market conditions before subscribing.
-
-Recent News:\n- Sensex today | Stock Market Highlights: Sensex gains 789 pts, Nifty ends at 23,689 as US-China trade talks lift investor sentiment (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: Indian shares rose on Thursday, supported by steady earnings ​and signs of progress in U.S.-China trade relations, though sentiment ‌remained fragile as elevate\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
+    aiAnalysis: "Milestone Gears appears to be entering the capital markets at a time when India's manufacturing sector is showing growth potential. The company's focus on precision gears positions it well to benefit from various industrial applications, though investors should carefully evaluate the final financials and market conditions before subscribing.",
     aiVerdict: "Given the company's positioning in the growing manufacturing sector and the likely reasonable valuation, Milestone Gears shows moderate listing gain potential. The long-term outlook appears positive with increasing industrialization in India. Recommendation: Neutral - Wait for detailed financials and market conditions before making an investment decision.",
   },
   {
@@ -2574,9 +2512,7 @@ Recent News:\n- Sensex today | Stock Market Highlights: Sensex gains 789 pts, Ni
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Milky Mist shows promising growth in a niche dairy segment, but the absence of a clear price band and exposure to supply‑chain volatility pose notable uncertainties. The company's solid brand and distribution network support its attractiveness, yet investors should weigh the competitive pressures carefully.
-
-Recent News:\n- Fuel price hike: logistics, quick commerce and consumer firms brace for higher costs (Livemint)\n  A spike in fuel and input prices is squeezing margins for Indian consumer and logistics firms, potentially leading to higher product prices and delivery fees.",
+    aiAnalysis: "Milky Mist shows promising growth in a niche dairy segment, but the absence of a clear price band and exposure to supply‑chain volatility pose notable uncertainties. The company's solid brand and distribution network support its attractiveness, yet investors should weigh the competitive pressures carefully.",
     aiVerdict: "Listing gain potential is moderate; long‑term outlook is positive with a Subscribe recommendation.",
   },
   {
@@ -2619,9 +2555,7 @@ Recent News:\n- Fuel price hike: logistics, quick commerce and consumer firms br
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "OYO shows promising top-line growth but continues to operate at a loss, indicating execution risk. The company's scalable asset-light model offers upside, yet high debt and competitive pressures temper the investment case.
-
-Recent News:\n- Trading volumes in unlisted shares plunge up to 70% (The Times of India)\n  Investor interest in unlisted shares is decreasing. Trading volumes have fallen significantly. This slowdown is due to lower prices and fewer new share offerings. Some popular companies still see acti\n- REIT, InvIT IPOs gather pace as yield quality helps them weather market volatility (Livemint)\n  REITs and InvITs pool income-generating assets and distribute most cash flows to investors, attracting institutions and retail investors seeking predictable yields. Despite yield-plays not being insul\n- Lightspeed eyes new India fund; plans smaller corpus of $300-350 million (The Times of India)\n  The venture capital firm, which was initially looking to raise as much as $500 million for its fifth India fund, has now cut the target size to around $300-350 million, the people said, requesting ano\n- Lightspeed’s India rethink; Battery blues hit EVs (The Times of India)\n  Happy Wednesday! Lightspeed Venture Partners is expected to downsize its India-focused fund. This and more in today’s ETtech Morning Dispatch.",
+    aiAnalysis: "OYO shows promising top-line growth but continues to operate at a loss, indicating execution risk. The company's scalable asset-light model offers upside, yet high debt and competitive pressures temper the investment case.",
     aiVerdict: "Listing gain potential moderate; long-term outlook cautiously optimistic; recommendation: Hold",
   },
   {
@@ -2664,9 +2598,7 @@ Recent News:\n- Trading volumes in unlisted shares plunge up to 70% (The Times o
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Short balanced analysis paragraph (2-3 sentences). Note: This is AI-generated based on model knowledge and should not be considered financial advice.
-
-Recent News:\n- Picked wrong Melody? Parle Industries shares hit 5% upper circuit for 3rd day (The Times of India)\n  Parle Industries shares hit the 5% upper circuit for the third straight session after investors mistakenly linked the stock to Melody toffees gifted by PM Narendra Modi to Italy’s Giorgia Meloni. The \n- Everything's in a name: Parle Industries shares hit 5% upper circuit after PM Modi's 'Melody' gift to Meloni (The Times of India)\n  Shares of Parle Industries surged 5% and hit the upper circuit after Prime Minister Narendra Modi gifted Melody toffees to Italian Prime Minister Giorgia Meloni. This sparked social media attention, l\n- Be brand adjacent and boost your co (The Times of India)\n  A gift from Modi to Meloni caused a rush into the wrong Parle. Investors mistook a real estate firm for a confectioner, boosting its shares. This highlights brand adjacency, where similar names benefi",
+    aiAnalysis: "Short balanced analysis paragraph (2-3 sentences). Note: This is AI-generated based on model knowledge and should not be considered financial advice.",
     aiVerdict: "Listing gain potential is strong with favorable long-term outlook, but caution is advised due to sector competition and currency risks. Subscribe for updates, avoid if risk appetite is low, neutral if diversified.",
   },
   {
@@ -2752,9 +2684,7 @@ Recent News:\n- Picked wrong Melody? Parle Industries shares hit 5% upper circui
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "PhonePe shows strong growth potential driven by India's expanding digital payments market, but its financial health depends on achieving profitability before the IPO. The listing could offer attractive upside, though investors should monitor regulatory and competitive risks.
-
-Recent News:\n- Indian water-purifier maker Kent RO delays IPO as Mideast war dents sentiment (CNA)\n  CHENNAI, May 26 : Kent RO Systems has shelved plans to go public, its chairman told Reuters, as the Indian water-purifier maker becomes the latest company to delay its stock market debut with the Midd\n- Exclusive: Razorpay gets shareholder approval for Rs 2,700 crore IPO (MediaNama.com)\n  Razorpay gets shareholder approval to raise ₹2,700 crore via IPO, with OFS and pre-IPO placement plans. The fintech bets on AI, despite rising losses and intense competition.\nThe post Exclusive: Razor\n- PhonePe AI Agent Cuts Payment Gateway Integration to Minutes (pymnts.com)\n  PhonePe launched an artificial intelligence agent that enables merchants to integrate the company’s payment gateway through a conversational interface. With this new AI-powered integration layer, merc\n- India not just a growth market, but a model for the future of retail: Walmart Chief John Furner (BusinessLine)\n  Walmart's CEO John Furner views India as a key growth platform and future retail model, emphasizing innovation and entrepreneurship.\n- Zepto gets SEBI nod for IPO, eyes ₹9,300 crore IPO amid quick commerce race (BusinessLine)\n  Mumbai-based quick commerce firm to file updated papers as it scales to over 2.5 million daily orders amid West Asia volatility",
+    aiAnalysis: "PhonePe shows strong growth potential driven by India's expanding digital payments market, but its financial health depends on achieving profitability before the IPO. The listing could offer attractive upside, though investors should monitor regulatory and competitive risks.",
     aiVerdict: "Subscribe",
   },
   {
