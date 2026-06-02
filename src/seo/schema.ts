@@ -67,7 +67,7 @@ export function newsArticleSchema(article: {
     description: article.description,
     datePublished: article.publishedAt,
     dateModified: article.publishedAt,
-    author: { '@type': 'Organization', name: SITE.name, url: SITE.origin },
+    author: { '@type': 'Person', name: 'Shiva Sandeep', url: SITE.origin },
     publisher: {
       '@type': 'Organization',
       name: SITE.name,

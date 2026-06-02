@@ -63,13 +63,13 @@ export default function PrivacyPolicyPage() {
         <p>Our Service is not directed to children under the age of 13, and we do not knowingly collect personal information from children.</p>
 
         <h2>Your Rights</h2>
-        <p>Depending on your jurisdiction, you may have rights to access, correct, or delete any personal data we hold about you. To exercise these rights, contact us at privacy@pulsetrends.in.</p>
+        <p>Depending on your jurisdiction, you may have rights to access, correct, or delete any personal data we hold about you. To exercise these rights, contact us at pulsetrendsin@gmail.com.</p>
 
         <h2>Changes to This Policy</h2>
         <p>We may update this Privacy Policy from time to time. We will post the updated version on this page with a revised "Last updated" date. Continued use of the Service after changes constitutes acceptance of the revised policy.</p>
 
         <h2>Contact</h2>
-        <p>For privacy-related questions, email us at <a href="mailto:privacy@pulsetrends.in">privacy@pulsetrends.in</a>.</p>
+        <p>For privacy-related questions, email us at <a href="mailto:pulsetrendsin@gmail.com">pulsetrendsin@gmail.com</a>.</p>
       </div>
     </>
   );

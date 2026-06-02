@@ -765,7 +765,7 @@ Return ONLY valid JSON. No markdown code blocks. No text before or after. Struct
     "tags": ["tag list"],
     "entityCoverage": ["entities covered"]
   },
-  "schemaArticle": {"type": "NewsArticle", "headline": "...", "author": "PulseTrends", "publisher": "PulseTrends"},
+  "schemaArticle": {"type": "NewsArticle", "headline": "...", "author": "Shiva Sandeep", "publisher": "PulseTrends"},
   "schemaFAQ": [{"question": "...", "answer": "..."}],
   "schemaBreadcrumb": [{"name": "Home", "url": "/"}, {"name": "News", "url": "/news"}, {"name": "Article", "url": "/news/slug"}],
   "searchConsoleReadiness": 8,

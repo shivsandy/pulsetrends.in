@@ -54,7 +54,7 @@ export default function CookiesPage() {
         <p>By clicking "Accept" on the cookie banner, you consent to our use of strictly necessary cookies as described above. You can change your choice at any time by clearing your browser's storage for this site.</p>
 
         <h2>Contact</h2>
-        <p>For questions about our use of cookies, email us at <a href="mailto:privacy@pulsetrends.in">privacy@pulsetrends.in</a>.</p>
+        <p>For questions about our use of cookies, email us at <a href="mailto:pulsetrendsin@gmail.com">pulsetrendsin@gmail.com</a>.</p>
       </div>
     </>
   );

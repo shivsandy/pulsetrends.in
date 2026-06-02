@@ -60,7 +60,7 @@ export default function TermsPage() {
         <p>These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts in Bengaluru, India.</p>
 
         <h2>10. Contact</h2>
-        <p>For questions about these Terms, contact us at <a href="mailto:legal@pulsetrends.in">legal@pulsetrends.in</a>.</p>
+        <p>For questions about these Terms, contact us at <a href="mailto:pulsetrendsin@gmail.com">pulsetrendsin@gmail.com</a>.</p>
       </div>
     </>
   );

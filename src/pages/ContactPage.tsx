@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, HelpCircle } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import PageSeo from '../components/PageSeo';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { ROUTES } from '../seo/routes';
@@ -28,9 +28,7 @@ export default function ContactPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
           {[
-            { icon: Mail, title: 'Email', desc: 'For general inquiries and support', addr: 'hello@pulsetrends.in' },
-            { icon: MessageCircle, title: 'Feedback', desc: 'Suggestions or feature requests', addr: 'feedback@pulsetrends.in' },
-            { icon: HelpCircle, title: 'Support', desc: 'Technical issues and bugs', addr: 'support@pulsetrends.in' },
+            { icon: Mail, title: 'Email', desc: 'General inquiries, feedback & support', addr: 'pulsetrendsin@gmail.com' },
           ].map((c) => (
             <div key={c.title} className="bg-surface-100 border border-surface-300/60 rounded-lg p-4 text-center">
               <div className="w-10 h-10 rounded-lg bg-brand-muted flex items-center justify-center mx-auto mb-3">
@@ -47,7 +45,7 @@ export default function ContactPage() {
         <p>We aim to respond to all inquiries within 24-48 hours during business days. For urgent issues, please mention [URGENT] in your subject line and we'll prioritise your message.</p>
 
         <h2>Partnerships</h2>
-        <p>Interested in partnering with PulseTrends? We're open to collaborations with media outlets, data providers, research firms, and blockchain projects. Reach out to us at partnerships@pulsetrends.in with details about your proposal.</p>
+        <p>Interested in partnering with PulseTrends? We're open to collaborations with media outlets, data providers, research firms, and blockchain projects. Reach out to us at pulsetrendsin@gmail.com with details about your proposal.</p>
       </div>
     </>
   );
