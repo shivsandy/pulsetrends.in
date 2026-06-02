@@ -3,7 +3,7 @@ import { X, Shield } from 'lucide-react';
 
 interface CookieModalProps {
   onClose: () => void;
-  onDone: () => void;
+  onDone: (analytics: boolean, marketing: boolean) => void;
 }
 
 export default function CookieModal({ onClose, onDone }: CookieModalProps) {
@@ -69,7 +69,7 @@ export default function CookieModal({ onClose, onDone }: CookieModalProps) {
             Cancel
           </button>
           <button
-            onClick={onDone}
+            onClick={() => onDone(prefs.analytics, prefs.marketing)}
             className="px-4 py-1.5 rounded-md text-[12px] font-medium text-white bg-brand hover:bg-brand-light transition-colors"
           >
             Save Preferences
