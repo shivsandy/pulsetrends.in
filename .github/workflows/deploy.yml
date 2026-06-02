@@ -101,16 +101,14 @@ jobs:
       - name: Build React app
         run: npm run build
 
-      - name: Deploy to gh-pages branch
-        run: |
-          git config user.name "PulseTrends Bot"
-          git config user.email "noreply@example.com"
-          git fetch origin gh-pages 2>/dev/null || true
-          git checkout gh-pages 2>/dev/null || git checkout --orphan gh-pages
-          git rm -rfq . 2>/dev/null || true
-          rsync -av --exclude='.git' dist/ ./
-          touch .nojekyll
-          echo "pulsetrends.in" > CNAME
-          git add --all .
-          git diff --cached --quiet || git commit -m "Deploy $(date +%F)"
-          git push origin gh-pages
+      - name: Deploy to gh-pages branch (zero-downtime)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: 'PulseTrends Bot'
+          user_email: 'noreply@example.com'
+          cname: pulsetrends.in
+          enable_jekyll: false
