@@ -15,7 +15,13 @@ export interface IPOStock {
   listingExchange: string;
   ipoType: string;
   registrar: string;
-  status: 'upcoming' | 'open' | 'listed';
+  status: 'upcoming' | 'open' | 'subscribed' | 'listed';
+  subscriptionStatus?: {
+    retail: number;
+    nii: number;
+    qib: number;
+    total: number;
+  };
   revenue: string;
   revenueGrowth: string;
   netIncome: string;

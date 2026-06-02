@@ -394,6 +394,7 @@ def generate_news_data():
     lines.append('  subheadline: string;')
     lines.append('  keyHighlights: string[];')
     lines.append('  executiveSummary: string;')
+    lines.append('  quickAnswer?: string;')
     lines.append('  marketBackground: string;')
     lines.append('  detailedAnalysis: string;')
     lines.append('  expertInsights: string;')
@@ -402,6 +403,8 @@ def generate_news_data():
     lines.append('  opportunities: string[];')
     lines.append('  outlook: string;')
     lines.append('  conclusion: string;')
+    lines.append('  frequentlyAskedQuestions?: { question: string; answer: string }[];')
+    lines.append('  investorTakeaways?: string[];')
     lines.append('  sourcesReferenced: string[];')
     lines.append('  aiAnalysis: AiAnalysis | null;')
     lines.append('  images: ArticleImage[];')
@@ -412,9 +415,34 @@ def generate_news_data():
     lines.append('  impact: string;')
     lines.append('  relatedCoins: string[];')
     lines.append('  relatedStocks: string[];')
+    lines.append('  relatedEntities?: string[];')
     lines.append('  primaryKeyword: string;')
     lines.append('  secondaryKeywords: string[];')
+    lines.append('  tags?: string[];')
+    lines.append('  seoTitle?: string;')
+    lines.append('  metaTitle?: string;')
     lines.append('  metaDescription: string;')
+    lines.append('  slug?: string;')
+    lines.append('  focusKeyword?: string;')
+    lines.append('  categories?: string[];')
+    lines.append('  seoHeadlines?: string[];')
+    lines.append('  ctrHeadlines?: string[];')
+    lines.append('  socialHeadlines?: string[];')
+    lines.append('  peopleAlsoAsk?: string[];')
+    lines.append('  relatedSearches?: string[];')
+    lines.append('  longTailKeywords?: string[];')
+    lines.append('  indexingNotes?: { primaryKeyword: string; searchIntent: string; category: string; tags: string[]; entityCoverage: string[] };')
+    lines.append('  searchConsoleReadiness?: number;')
+    lines.append('  adsenseReadiness?: number;')
+    lines.append('  seoScore?: number;')
+    lines.append('  geoScore?: number;')
+    lines.append('  authorityScore?: number;')
+    lines.append('  aiCitationPotential?: number;')
+    lines.append('  featuredImagePrompt?: string;')
+    lines.append('  imageFilename?: string;')
+    lines.append('  imageAltText?: string;')
+    lines.append('  imageCaption?: string;')
+    lines.append('  imageTitle?: string;')
     lines.append('  publishedAt: string;')
     lines.append('}')
     lines.append('')
@@ -553,7 +581,92 @@ def generate_news_data():
         sk = art.get("secondaryKeywords", [])
         sk = sk if isinstance(sk, list) else []
         lines.append('    secondaryKeywords: [' + ', '.join([f'"{esc(k)}"' for k in sk[:5]]) + '],')
+        tags = art.get("tags", [])
+        tags = tags if isinstance(tags, list) else []
+        if tags:
+            lines.append('    tags: [' + ', '.join([f'"{esc(t)}"' for t in tags[:10]]) + '],')
+        if art.get("seoTitle"):
+            lines.append(f'    seoTitle: "{esc(art.get("seoTitle", ""))}",')
+        if art.get("metaTitle"):
+            lines.append(f'    metaTitle: "{esc(art.get("metaTitle", ""))}",')
         lines.append(f'    metaDescription: "{esc(art.get("metaDescription", ""))}",')
+        if art.get("slug"):
+            lines.append(f'    slug: "{esc(art.get("slug", ""))}",')
+        if art.get("focusKeyword"):
+            lines.append(f'    focusKeyword: "{esc(art.get("focusKeyword", ""))}",')
+        cats = art.get("categories", [])
+        cats = cats if isinstance(cats, list) else []
+        if cats:
+            lines.append('    categories: [' + ', '.join([f'"{esc(c)}"' for c in cats[:5]]) + '],')
+        rel_ents = art.get("relatedEntities", [])
+        rel_ents = rel_ents if isinstance(rel_ents, list) else []
+        if rel_ents:
+            lines.append('    relatedEntities: [' + ', '.join([f'"{esc(e)}"' for e in rel_ents[:8]]) + '],')
+        if art.get("quickAnswer"):
+            lines.append(f'    quickAnswer: "{esc(art.get("quickAnswer", ""))}",')
+        faq = art.get("frequentlyAskedQuestions", [])
+        if isinstance(faq, list) and faq:
+            lines.append('    frequentlyAskedQuestions: [')
+            for item in faq[:8]:
+                if isinstance(item, dict):
+                    lines.append(f'      {{ question: "{esc(item.get("question", ""))}", answer: "{esc(item.get("answer", ""))}" }},')
+            lines.append('    ],')
+        takeaways = art.get("investorTakeaways", [])
+        takeaways = takeaways if isinstance(takeaways, list) else []
+        if takeaways:
+            lines.append('    investorTakeaways: [' + ', '.join([f'"{esc(t)}"' for t in takeaways[:6]]) + '],')
+        seo_h = art.get("seoHeadlines", [])
+        if isinstance(seo_h, list) and seo_h:
+            lines.append('    seoHeadlines: [' + ', '.join([f'"{esc(h)}"' for h in seo_h[:5]]) + '],')
+        ctr_h = art.get("ctrHeadlines", [])
+        if isinstance(ctr_h, list) and ctr_h:
+            lines.append('    ctrHeadlines: [' + ', '.join([f'"{esc(h)}"' for h in ctr_h[:5]]) + '],')
+        soc_h = art.get("socialHeadlines", [])
+        if isinstance(soc_h, list) and soc_h:
+            lines.append('    socialHeadlines: [' + ', '.join([f'"{esc(h)}"' for h in soc_h[:5]]) + '],')
+        paa = art.get("peopleAlsoAsk", [])
+        if isinstance(paa, list) and paa:
+            lines.append('    peopleAlsoAsk: [' + ', '.join([f'"{esc(q)}"' for q in paa[:8]]) + '],')
+        rs_searches = art.get("relatedSearches", [])
+        if isinstance(rs_searches, list) and rs_searches:
+            lines.append('    relatedSearches: [' + ', '.join([f'"{esc(q)}"' for q in rs_searches[:10]]) + '],')
+        ltk = art.get("longTailKeywords", [])
+        if isinstance(ltk, list) and ltk:
+            lines.append('    longTailKeywords: [' + ', '.join([f'"{esc(q)}"' for q in ltk[:8]]) + '],')
+        idx_notes = art.get("indexingNotes")
+        if isinstance(idx_notes, dict):
+            ent_cov = idx_notes.get("entityCoverage", [])
+            ent_cov = ent_cov if isinstance(ent_cov, list) else []
+            idx_tags = idx_notes.get("tags", [])
+            idx_tags = idx_tags if isinstance(idx_tags, list) else []
+            lines.append('    indexingNotes: {')
+            lines.append(f'      primaryKeyword: "{esc(idx_notes.get("primaryKeyword", ""))}",')
+            lines.append(f'      searchIntent: "{esc(idx_notes.get("searchIntent", "informational"))}",')
+            lines.append(f'      category: "{esc(idx_notes.get("category", ""))}",')
+            lines.append('      tags: [' + ', '.join([f'"{esc(t)}"' for t in idx_tags[:8]]) + '],')
+            lines.append('      entityCoverage: [' + ', '.join([f'"{esc(e)}"' for e in ent_cov[:8]]) + '],')
+            lines.append('    },')
+        for score_field, score_key in [
+            ("searchConsoleReadiness", "searchConsoleReadiness"),
+            ("adsenseReadiness", "adsenseReadiness"),
+            ("seoScore", "seoScore"),
+            ("geoScore", "geoScore"),
+            ("authorityScore", "authorityScore"),
+            ("aiCitationPotential", "aiCitationPotential"),
+        ]:
+            v = art.get(score_key)
+            if isinstance(v, (int, float)):
+                lines.append(f'    {score_field}: {int(v)},')
+        if art.get("featuredImagePrompt"):
+            lines.append(f'    featuredImagePrompt: "{esc(art.get("featuredImagePrompt", ""))}",')
+        if art.get("imageFilename"):
+            lines.append(f'    imageFilename: "{esc(art.get("imageFilename", ""))}",')
+        if art.get("imageAltText"):
+            lines.append(f'    imageAltText: "{esc(art.get("imageAltText", ""))}",')
+        if art.get("imageCaption"):
+            lines.append(f'    imageCaption: "{esc(art.get("imageCaption", ""))}",')
+        if art.get("imageTitle"):
+            lines.append(f'    imageTitle: "{esc(art.get("imageTitle", ""))}",')
         lines.append(f'    publishedAt: "{esc(art.get("publishedAt", ""))}",')
         lines.append('  },')
 
