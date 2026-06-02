@@ -41,6 +41,36 @@ for i in range(1, 3):
     if val:
         GOOGLE_KEYS.append({"key": val, "index": i})
 
+GROQ_KEYS = []
+for i in range(1, 4):
+    val = os.environ.get(f"GROQ_API_KEY_{i}")
+    if val:
+        GROQ_KEYS.append({"key": val, "index": i})
+if not GROQ_KEYS:
+    val = os.environ.get("GROQ_API")
+    if val:
+        GROQ_KEYS.append({"key": val, "index": 1})
+
+COHERE_KEYS = []
+for i in range(1, 3):
+    val = os.environ.get(f"COHERE_API_KEY_{i}")
+    if val:
+        COHERE_KEYS.append({"key": val, "index": i})
+if not COHERE_KEYS:
+    val = os.environ.get("COHERE_API")
+    if val:
+        COHERE_KEYS.append({"key": val, "index": 1})
+
+MISTRAL_KEYS = []
+for i in range(1, 3):
+    val = os.environ.get(f"MISTRAL_API_KEY_{i}")
+    if val:
+        MISTRAL_KEYS.append({"key": val, "index": i})
+if not MISTRAL_KEYS:
+    val = os.environ.get("MISTRAL_API")
+    if val:
+        MISTRAL_KEYS.append({"key": val, "index": 1})
+
 FINNHUB_KEYS = []
 for i in range(1, 5):
     val = os.environ.get(f"FINNHUB_API_KEY_{i}")
@@ -991,6 +1021,30 @@ NVIDIA_FREE_MODELS = [
     "meta/llama-3.3-70b-instruct",
 ]
 
+GROQ_FREE_MODELS = [
+    "qwen/qwen3-32b",
+    "groq/compound",
+    "groq/compound-mini",
+    "llama-3.1-8b-instant",
+    "llama-3.3-70b-versatile",
+    "meta-llama/llama-4-scout-17b-16e-instruct",
+    "meta-llama/llama-prompt-guard-2-22m",
+    "meta-llama/llama-prompt-guard-2-86m",
+    "openai/gpt-oss-120b",
+    "openai/gpt-oss-20b",
+    "openai/gpt-oss-safeguard-20b",
+]
+
+COHERE_FREE_MODELS = [
+    "command-r-plus",
+    "command-r",
+]
+
+MISTRAL_FREE_MODELS = [
+    "mistral-small-latest",
+    "open-mistral-nemo",
+]
+
 
 def _call_openrouter(key: str, model: str, messages: List[dict], timeout: int = 90) -> Optional[str]:
     try:
@@ -1073,29 +1127,113 @@ def _call_google(key: str, model: str, messages: List[dict], timeout: int = 180)
         return None
 
 
+def _call_openai_compat(endpoint: str, key: str, model: str, messages: List[dict], provider: str, timeout: int = 60) -> Optional[str]:
+    try:
+        resp = requests.post(
+            endpoint,
+            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+            json={"model": model, "messages": messages, "temperature": 0.7, "max_tokens": 16384},
+            timeout=timeout,
+        )
+        if resp.status_code != 200:
+            body = resp.text[:200] if resp.text else ""
+            print(f"[NewsAPI] HTTP {resp.status_code} from {provider}/{model}: {body}")
+            return None
+        data = resp.json()
+        if "choices" not in data or not data["choices"]:
+            print(f"[NewsAPI] {provider}/{model} returned no choices: {str(data)[:200]}")
+            return None
+        return data["choices"][0]["message"]["content"]
+    except Exception as e:
+        print(f"[NewsAPI] {provider}/{model} exception: {e}")
+        return None
+
+
+def _call_groq(key: str, model: str, messages: List[dict], timeout: int = 60) -> Optional[str]:
+    return _call_openai_compat(
+        "https://api.groq.com/openai/v1/chat/completions",
+        key, model, messages, "Groq", timeout,
+    )
+
+
+def _call_mistral(key: str, model: str, messages: List[dict], timeout: int = 60) -> Optional[str]:
+    return _call_openai_compat(
+        "https://api.mistral.ai/v1/chat/completions",
+        key, model, messages, "Mistral", timeout,
+    )
+
+
+def _call_cohere(key: str, model: str, messages: List[dict], timeout: int = 60) -> Optional[str]:
+    try:
+        system_text = ""
+        user_text = ""
+        for m in messages:
+            if m.get("role") == "system":
+                system_text = m.get("content", "")
+            elif m.get("role") == "user":
+                user_text = m.get("content", "")
+        resp = requests.post(
+            "https://api.cohere.com/v1/chat",
+            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+            json={
+                "model": model,
+                "message": user_text,
+                "preamble": system_text,
+                "temperature": 0.7,
+                "max_tokens": 16384,
+            },
+            timeout=timeout,
+        )
+        if resp.status_code != 200:
+            body = resp.text[:200] if resp.text else ""
+            print(f"[NewsAPI] HTTP {resp.status_code} from Cohere/{model}: {body}")
+            return None
+        data = resp.json()
+        text = data.get("text", "")
+        if not text:
+            print(f"[NewsAPI] Cohere/{model} returned no text: {str(data)[:200]}")
+            return None
+        return text
+    except Exception as e:
+        print(f"[NewsAPI] Cohere/{model} exception: {e}")
+        return None
+
+
 def _try_llm_providers(messages: List[dict]) -> Optional[dict]:
     openrouter_models = get_free_models() if OPENROUTER_KEYS else []
     nvidia_models = list(NVIDIA_FREE_MODELS) if NVIDIA_KEYS else []
     google_models = list(GOOGLE_FREE_MODELS) if GOOGLE_KEYS else []
+    groq_models = list(GROQ_FREE_MODELS) if GROQ_KEYS else []
+    cohere_models = list(COHERE_FREE_MODELS) if COHERE_KEYS else []
+    mistral_models = list(MISTRAL_FREE_MODELS) if MISTRAL_KEYS else []
 
     openrouter_healthy = model_health.healthy_models(openrouter_models) if openrouter_models else []
     nvidia_healthy = model_health.healthy_models(nvidia_models) if nvidia_models else []
     google_healthy = model_health.healthy_models(google_models) if google_models else []
+    groq_healthy = model_health.healthy_models(groq_models) if groq_models else []
+    cohere_healthy = model_health.healthy_models(cohere_models) if cohere_models else []
+    mistral_healthy = model_health.healthy_models(mistral_models) if mistral_models else []
 
-    print(f"[NewsAPI] Pool: OpenRouter={len(openrouter_healthy)} healthy of {len(openrouter_models)}; NVIDIA={len(nvidia_healthy)} of {len(nvidia_models)}; Google={len(google_healthy)} of {len(google_models)}")
+    print(f"[NewsAPI] Pool: OpenRouter={len(openrouter_healthy)}/{len(openrouter_models)}; Groq={len(groq_healthy)}/{len(groq_models)}; NVIDIA={len(nvidia_healthy)}/{len(nvidia_models)}; Google={len(google_healthy)}/{len(google_models)}; Cohere={len(cohere_healthy)}/{len(cohere_models)}; Mistral={len(mistral_healthy)}/{len(mistral_models)}")
 
     now = time.time()
     or_all_cooled = bool(openrouter_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in openrouter_healthy)
+    groq_all_cooled = bool(groq_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in groq_healthy)
     nvidia_all_cooled = bool(nvidia_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in nvidia_healthy)
     google_all_cooled = bool(google_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in google_healthy)
+    cohere_all_cooled = bool(cohere_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in cohere_healthy)
+    mistral_all_cooled = bool(mistral_healthy) and all(model_health.data.get(m, {}).get("cooldown", 0) > now for m in mistral_healthy)
 
     total_attempts = (
         (len(OPENROUTER_KEYS) * len(openrouter_healthy)) +
+        (len(GROQ_KEYS) * len(groq_healthy)) +
         (len(NVIDIA_KEYS) * len(nvidia_healthy)) +
-        (len(GOOGLE_KEYS) * len(google_healthy))
+        (len(GOOGLE_KEYS) * len(google_healthy)) +
+        (len(COHERE_KEYS) * len(cohere_healthy)) +
+        (len(MISTRAL_KEYS) * len(mistral_healthy))
     )
     if total_attempts == 0:
-        print(f"[NewsAPI] No LLM attempts possible (OR cooled={or_all_cooled}, NVIDIA cooled={nvidia_all_cooled}, Google cooled={google_all_cooled})")
+        print(f"[NewsAPI] No LLM attempts possible (OR cooled={or_all_cooled}, Groq cooled={groq_all_cooled}, NVIDIA cooled={nvidia_all_cooled}, Google cooled={google_all_cooled}, Cohere cooled={cohere_all_cooled}, Mistral cooled={mistral_all_cooled})")
         return None
 
     for key_entry in OPENROUTER_KEYS:
@@ -1117,6 +1255,17 @@ def _try_llm_providers(messages: List[dict]) -> Optional[dict]:
             model_health.record_failure(model)
         print(f"[NewsAPI] Key {idx} exhausted {len(healthy_for_key)} models, moving to next key")
 
+    for key_entry in GROQ_KEYS:
+        for model in groq_healthy:
+            start = time.time()
+            text = _call_groq(key_entry["key"], model, messages)
+            if text:
+                model_health.record_success(model)
+                print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via Groq/{model} (key {key_entry['index']})")
+                return {"text": text, "provider": "groq", "model": model}
+            model_health.record_failure(model)
+        print(f"[NewsAPI] Groq key {key_entry['index']} exhausted, moving on")
+
     for key_entry in NVIDIA_KEYS:
         for model in nvidia_healthy:
             start = time.time()
@@ -1135,6 +1284,26 @@ def _try_llm_providers(messages: List[dict]) -> Optional[dict]:
                 model_health.record_success(model)
                 print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via Google/{model} (key {key_entry['index']})")
                 return {"text": text, "provider": "google", "model": model}
+            model_health.record_failure(model)
+
+    for key_entry in COHERE_KEYS:
+        for model in cohere_healthy:
+            start = time.time()
+            text = _call_cohere(key_entry["key"], model, messages)
+            if text:
+                model_health.record_success(model)
+                print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via Cohere/{model} (key {key_entry['index']})")
+                return {"text": text, "provider": "cohere", "model": model}
+            model_health.record_failure(model)
+
+    for key_entry in MISTRAL_KEYS:
+        for model in mistral_healthy:
+            start = time.time()
+            text = _call_mistral(key_entry["key"], model, messages)
+            if text:
+                model_health.record_success(model)
+                print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via Mistral/{model} (key {key_entry['index']})")
+                return {"text": text, "provider": "mistral", "model": model}
             model_health.record_failure(model)
 
     return None
@@ -1325,6 +1494,9 @@ def validate_env():
         ("NVIDIA_API_KEY_1", bool(os.environ.get("NVIDIA_API_KEY_1"))),
         ("GOOGLE_AI_API_KEY_1", bool(os.environ.get("GOOGLE_AI_API_KEY_1"))),
         ("GOOGLE_AI_API_KEY_2", bool(os.environ.get("GOOGLE_AI_API_KEY_2"))),
+        ("GROQ_API", bool(os.environ.get("GROQ_API") or os.environ.get("GROQ_API_KEY_1"))),
+        ("COHERE_API", bool(os.environ.get("COHERE_API") or os.environ.get("COHERE_API_KEY_1"))),
+        ("MISTRAL_API", bool(os.environ.get("MISTRAL_API") or os.environ.get("MISTRAL_API_KEY_1"))),
         ("FINNHUB_API_KEY_1", bool(os.environ.get("FINNHUB_API_KEY_1"))),
         ("FINNHUB_API_KEY_2", bool(os.environ.get("FINNHUB_API_KEY_2"))),
         ("FINNHUB_API_KEY_3", bool(os.environ.get("FINNHUB_API_KEY_3"))),
