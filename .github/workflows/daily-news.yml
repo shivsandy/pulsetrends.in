@@ -1,0 +1,75 @@
+name: Daily News Generator
+
+on:
+  schedule:
+    # 6 AM Eastern Time = 10:00 UTC (EDT) / 11:00 UTC (EST)
+    # We run at 10 AM UTC which covers 6 AM EDT (summer) and 5 AM EST (winter)
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+    # Allow manual trigger for testing
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-news
+  cancel-in-progress: false
+
+jobs:
+  generate-news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests==2.32.3
+
+      - name: Generate 9 daily news articles (3 Crypto + 4 IPO + 2 Stocks)
+        env:
+          GOOGLE_AI_API_KEY_1: ${{ secrets.GOOGLE_AI_API_KEY_1 }}
+          GOOGLE_AI_API_KEY_2: ${{ secrets.GOOGLE_AI_API_KEY_2 }}
+          GROQ_API: ${{ secrets.GROQ_API }}
+          COHERE_API: ${{ secrets.COHERE_API }}
+          MISTRAL_API: ${{ secrets.MISTRAL_API }}
+        run: python scripts/generate-daily-news.py
+
+      - name: Commit news articles
+        run: |
+          git config user.name "PulseTrends Bot"
+          git config user.email "noreply@example.com"
+          git add src/data/newsData.ts
+          git diff --cached --quiet || git commit -m "Daily news: auto-generate 9 articles $(date +%F)"
+          git push
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install Node deps
+        run: npm ci
+
+      - name: Build React app
+        run: npm run build
+
+      - name: Deploy to gh-pages branch (zero-downtime)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: 'PulseTrends Bot'
+          user_email: 'noreply@example.com'
+          cname: pulsetrends.in
+          enable_jekyll: false
