@@ -23,8 +23,6 @@ export interface CryptoProject {
   };
 }
 
-export const cryptoNews: any[] = [];
-
 export const cryptoProjects: CryptoProject[] = [
   {
     id: "1",

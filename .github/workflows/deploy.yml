@@ -1,39 +1,89 @@
-name: Deploy to GitHub Pages
+name: Data Pipeline & Deploy
 
 on:
-  push:
-    branches: [master]
+  schedule:
+    - cron: '0 5 */2 * *'
+  workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
-  build:
+  pipeline:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+        with:
+          ref: master
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests==2.32.3 beautifulsoup4==4.12.3 lxml==5.3.0
+
+      - name: Scrape airdrops.io
+        run: python airdrops_scraper.py
+
+      - name: Collect crypto data
+        run: python crypto_collector.py
+
+      - name: Analyze crypto projects
+        env:
+          IPO_AI_API_KEY_1: ${{ secrets.IPO_AI_API_KEY_1 }}
+          IPO_AI_API_KEY_2: ${{ secrets.IPO_AI_API_KEY_2 }}
+          IPO_AI_API_KEY_3: ${{ secrets.IPO_AI_API_KEY_3 }}
+          IPO_AI_API_KEY_4: ${{ secrets.IPO_AI_API_KEY_4 }}
+          GOOGLE_AI_API_KEY_1: ${{ secrets.GOOGLE_AI_API_KEY_1 }}
+          GOOGLE_AI_API_KEY_2: ${{ secrets.GOOGLE_AI_API_KEY_2 }}
+        run: python crypto_analyzer.py
+
+      - name: Generate TypeScript data files
+        env:
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+        run: python generate_data_ts.py
+
+      - name: Commit updated data files
+        run: |
+          git config user.name "PulseTrends Bot"
+          git config user.email "noreply@example.com"
+          git add data/ src/data/
+          git diff --cached --quiet || git commit -m "Auto: update data $(date +%F)"
+          git push
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-      - run: npm ci
-      - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
+
+      - name: Install Node deps
+        run: npm ci
+
+      - name: Build React app
+        run: npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
-    needs: build
-    runs-on: ubuntu-latest
+    needs: pipeline
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4

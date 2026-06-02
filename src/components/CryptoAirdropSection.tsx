@@ -1,20 +1,43 @@
 import { useState } from 'react';
-import { Search, SlidersHorizontal, Coins, Gift, Sparkles, Brain, TrendingUp, TrendingDown } from 'lucide-react';
+import { Search, SlidersHorizontal, Coins, Gift, Sparkles, Brain, TrendingUp, TrendingDown, Clock, CheckCircle2 } from 'lucide-react';
 import { cryptoProjects } from '../data/cryptoData';
 import type { CryptoProject } from '../data/cryptoData';
 import Badge from './Badge';
 
+type CategoryTab = 'all' | 'airdrop' | 'coin' | 'defi' | 'l1' | 'l2' | 'meme';
+
+const CATEGORY_TABS: { id: CategoryTab; label: string }[] = [
+  { id: 'all', label: 'All' },
+  { id: 'airdrop', label: 'Airdrops' },
+  { id: 'coin', label: 'Coins' },
+  { id: 'defi', label: 'DeFi' },
+  { id: 'l1', label: 'L1' },
+  { id: 'l2', label: 'L2' },
+  { id: 'meme', label: 'Meme' },
+];
+
+const HUMAN_CATEGORIES: Record<string, string> = {
+  airdrop: 'Airdrop',
+  coin: 'Coin',
+  defi: 'DeFi',
+  l1: 'L1 Blockchain',
+  l2: 'L2 Scaling',
+  meme: 'Meme',
+};
+
 export default function CryptoAirdropSection() {
+  const [catTab, setCatTab] = useState<CategoryTab>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<string>('all');
 
   const filtered = cryptoProjects.filter((p) => {
-    const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    const matchesCat = catTab === 'all' || p.category === catTab;
+    const matchesSearch = searchQuery === '' ||
+      p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       p.ticker.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      p.chain.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      p.category.toLowerCase().includes(searchQuery.toLowerCase());
+      p.chain.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesStatus = statusFilter === 'all' || p.status === statusFilter;
-    return matchesSearch && matchesStatus;
+    return matchesCat && matchesSearch && matchesStatus;
   });
 
   return (
@@ -25,12 +48,12 @@ export default function CryptoAirdropSection() {
           Crypto Projects & Airdrops
         </h2>
         <p className="text-[14px] text-surface-700 mt-1.5 max-w-2xl leading-relaxed">
-          AI-powered analysis of top cryptocurrencies, DeFi protocols, and airdrop opportunities.
+          AI-powered analysis of top cryptocurrencies, airdrops, and DeFi protocols.
         </p>
         <div className="flex items-center gap-5 mt-4">
           <div className="flex items-center gap-1.5">
             <Gift className="w-3.5 h-3.5 text-surface-600" />
-            <span className="text-[12px] text-surface-700"><span className="font-semibold text-surface-white">{cryptoProjects.filter(p => p.status === 'active').length}</span> Active</span>
+            <span className="text-[12px] text-surface-700"><span className="font-semibold text-surface-white">{cryptoProjects.filter(p => p.category === 'airdrop' && p.status === 'active').length}</span> Active Airdrops</span>
           </div>
           <div className="flex items-center gap-1.5">
             <Coins className="w-3.5 h-3.5 text-surface-600" />
@@ -41,6 +64,22 @@ export default function CryptoAirdropSection() {
             <span className="text-[12px] text-surface-700"><span className="font-semibold text-surface-white">AI</span> Scored</span>
           </div>
         </div>
+      </div>
+
+      <div className="flex flex-wrap items-center gap-1.5">
+        {CATEGORY_TABS.map(tab => (
+          <button
+            key={tab.id}
+            onClick={() => setCatTab(tab.id)}
+            className={`px-2.5 py-1.5 rounded-md text-[12px] font-medium transition-all ${
+              catTab === tab.id
+                ? 'bg-brand text-white'
+                : 'text-surface-600 hover:text-surface-800 hover:bg-surface-200'
+            }`}
+          >
+            {tab.label}
+          </button>
+        ))}
       </div>
 
       <div className="flex flex-col sm:flex-row gap-3">
@@ -74,7 +113,7 @@ export default function CryptoAirdropSection() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {filtered.map((project, i) => (
-          <CryptoProjectCard key={project.id} project={project} index={i} />
+          <CryptoProjectCard key={project.id} project={project} index={i} catTab={catTab} />
         ))}
       </div>
 
@@ -88,12 +127,15 @@ export default function CryptoAirdropSection() {
   );
 }
 
-function CryptoProjectCard({ project, index }: { project: CryptoProject; index: number }) {
+function CryptoProjectCard({ project, index, catTab }: { project: CryptoProject; index: number; catTab: CategoryTab }) {
   const analysis = project.aiAnalysis;
+  const isAirdrop = project.category === 'airdrop';
   const sentiment = analysis?.sentiment || 'neutral';
   const sentimentColor =
     sentiment === 'bullish' ? 'text-success' :
     sentiment === 'bearish' ? 'text-danger' : 'text-surface-700';
+
+  const catLabel = HUMAN_CATEGORIES[project.category] || project.category;
 
   return (
     <div className="bg-surface-100 border border-surface-300/60 rounded-xl p-5 hover:border-surface-500 transition-all duration-200 animate-fade-in group"
@@ -101,7 +143,7 @@ function CryptoProjectCard({ project, index }: { project: CryptoProject; index: 
       <div className="flex items-start justify-between mb-3">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-lg bg-surface-200 border border-surface-300 flex items-center justify-center">
-            <Coins className="w-5 h-5 text-surface-700" />
+            {isAirdrop ? <Gift className="w-5 h-5 text-brand" /> : <Coins className="w-5 h-5 text-surface-700" />}
           </div>
           <div>
             <h3 className="font-semibold text-surface-white text-[15px] leading-tight group-hover:text-brand-light transition-colors">{project.name}</h3>
@@ -112,10 +154,27 @@ function CryptoProjectCard({ project, index }: { project: CryptoProject; index: 
       </div>
 
       <div className="flex items-center gap-2 mb-2 text-[12px]">
-        <Badge variant="info" size="sm">{project.category}</Badge>
+        <Badge variant={isAirdrop ? 'warning' : 'info'} size="sm">{catLabel}</Badge>
         {project.price && <span className="text-surface-700 font-mono">{project.price}</span>}
-        {project.marketCap && <span className="text-surface-600">MCap: {project.marketCap}</span>}
+        {!isAirdrop && project.marketCap && <span className="text-surface-600">MCap: {project.marketCap}</span>}
       </div>
+
+      {isAirdrop && (project.estimatedValue || project.eligibility) && (
+        <div className="grid grid-cols-2 gap-2 mb-3">
+          {project.estimatedValue && (
+            <div className="bg-brand-muted border border-brand-border rounded-md px-3 py-2">
+              <span className="text-[10px] text-brand-light uppercase tracking-wider font-medium">Est. Value</span>
+              <p className="text-[13px] font-semibold text-brand-light">{project.estimatedValue}</p>
+            </div>
+          )}
+          {project.eligibility && (
+            <div className="bg-success-muted border border-success-border rounded-md px-3 py-2">
+              <span className="text-[10px] text-success uppercase tracking-wider font-medium">Eligibility</span>
+              <p className="text-[12px] text-success font-medium truncate">{project.eligibility}</p>
+            </div>
+          )}
+        </div>
+      )}
 
       <p className="text-[13px] text-surface-700 mb-3 line-clamp-2 leading-relaxed">{project.description}</p>
 
@@ -136,16 +195,23 @@ function CryptoProjectCard({ project, index }: { project: CryptoProject; index: 
           {analysis.keyDrivers.length > 0 && (
             <div className="flex flex-wrap gap-1 mt-2">
               {analysis.keyDrivers.slice(0, 3).map((d, i) => (
-                <span key={i} className="text-[10px] px-1.5 py-0.5 rounded bg-success-muted border border-success-border text-success">{d.slice(0, 40)}</span>
+                <span key={i} className="text-[10px] px-1.5 py-0.5 rounded bg-success-muted border border-success-border text-success truncate max-w-[200px]">{d}</span>
               ))}
             </div>
           )}
         </div>
       )}
 
+      {isAirdrop && project.farmingGuide && (
+        <div className="flex items-center gap-1.5 mt-2 text-[11px] text-surface-600">
+          <CheckCircle2 className="w-3 h-3 text-surface-600" />
+          <span className="truncate">{project.farmingGuide}</span>
+        </div>
+      )}
+
       <div className="flex items-center justify-between pt-3 mt-3 border-t border-surface-300/40">
         <div className="flex items-center gap-1.5">
-          <span className="text-[11px] text-surface-600">Vol: {project.volume24h || '—'}</span>
+          {project.volume24h && <span className="text-[11px] text-surface-600">Vol: {project.volume24h}</span>}
         </div>
         <span className="text-[12px] text-surface-700 group-hover:text-brand-light transition-colors font-medium">
           {analysis?.verdict ? `Verdict: ${analysis.verdict.slice(0, 60)}...` : 'No AI verdict'}

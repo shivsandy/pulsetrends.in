@@ -393,14 +393,32 @@ def health():
 
 def start_scheduler():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(refresh_news, "interval", hours=1, next_run_time=None)
-    scheduler.add_job(refresh_news, "interval", seconds=30, max_instances=1)
+    scheduler.add_job(refresh_news, "interval", hours=24, next_run_time=None)
     scheduler.start()
     atexit.register(lambda: scheduler.shutdown(wait=False))
 
 
+def validate_env():
+    checks = [
+        ("OPENROUTER_API_KEY_1", bool(os.environ.get("OPENROUTER_API_KEY_1"))),
+        ("OPENROUTER_API_KEY_2", bool(os.environ.get("OPENROUTER_API_KEY_2"))),
+        ("OPENROUTER_API_KEY_3", bool(os.environ.get("OPENROUTER_API_KEY_3"))),
+        ("OPENROUTER_API_KEY_4", bool(os.environ.get("OPENROUTER_API_KEY_4"))),
+        ("NVIDIA_API_KEY_1", bool(os.environ.get("NVIDIA_API_KEY_1"))),
+        ("NVIDIA_API_KEY_2", bool(os.environ.get("NVIDIA_API_KEY_2"))),
+        ("NEWSAPI_KEY", bool(os.environ.get("NEWSAPI_KEY"))),
+        ("UNSPLASH_ACCESS_KEY_1", bool(os.environ.get("UNSPLASH_ACCESS_KEY_1"))),
+        ("UNSPLASH_ACCESS_KEY_2", bool(os.environ.get("UNSPLASH_ACCESS_KEY_2"))),
+        ("UNSPLASH_ACCESS_KEY_3", bool(os.environ.get("UNSPLASH_ACCESS_KEY_3"))),
+    ]
+    print("[NewsAPI] Env validation:")
+    for name, present in checks:
+        print(f"  {name}: {'YES' if present else 'MISSING'}")
+
+
 if __name__ == "__main__":
     print("[NewsAPI] Initializing...")
+    validate_env()
     refresh_news()
     start_scheduler()
     print(f"[NewsAPI] Server starting on http://0.0.0.0:5000")
