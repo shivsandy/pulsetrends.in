@@ -352,7 +352,223 @@ def generate_crypto_data():
     print(f"[DataGen] Wrote {len(projects)} crypto projects to cryptoData.ts")
 
 
+def generate_news_data():
+    news_cache_path = os.path.join(DATA_DIR, "news_cache.json")
+    articles = load_json(news_cache_path)
+    if not isinstance(articles, list):
+        articles = []
+
+    print(f"[DataGen] Loading {len(articles)} news articles from cache...")
+
+    lines = []
+    lines.append('export interface ArticleImage {')
+    lines.append('  url: string;')
+    lines.append('  alt: string;')
+    lines.append('  attribution: string;')
+    lines.append('  title?: string;')
+    lines.append('  caption?: string;')
+    lines.append('  category?: string;')
+    lines.append('  sourceUrl?: string;')
+    lines.append('  source?: string;')
+    lines.append('  photoId?: string;')
+    lines.append('}')
+    lines.append('')
+    lines.append('export interface FinancialMetrics {')
+    lines.append('  tableCaption: string;')
+    lines.append('  headers: string[];')
+    lines.append('  rows: string[][];')
+    lines.append('}')
+    lines.append('')
+    lines.append('export interface AiAnalysis {')
+    lines.append('  bullCase: string;')
+    lines.append('  bearCase: string;')
+    lines.append('  neutralCase: string;')
+    lines.append('  probabilityWeightedOutlook: string;')
+    lines.append('  potentialCatalysts: string[];')
+    lines.append('  keyRisks: string[];')
+    lines.append('}')
+    lines.append('')
+    lines.append('export interface NewsArticle {')
+    lines.append('  id: string;')
+    lines.append('  headline: string;')
+    lines.append('  subheadline: string;')
+    lines.append('  keyHighlights: string[];')
+    lines.append('  executiveSummary: string;')
+    lines.append('  marketBackground: string;')
+    lines.append('  detailedAnalysis: string;')
+    lines.append('  expertInsights: string;')
+    lines.append('  financialMetrics: FinancialMetrics;')
+    lines.append('  risks: string[];')
+    lines.append('  opportunities: string[];')
+    lines.append('  outlook: string;')
+    lines.append('  conclusion: string;')
+    lines.append('  sourcesReferenced: string[];')
+    lines.append('  aiAnalysis: AiAnalysis | null;')
+    lines.append('  images: ArticleImage[];')
+    lines.append('  ipoDetails?: { [key: string]: string };')
+    lines.append('  cryptoDetails?: { [key: string]: string };')
+    lines.append('  category: string;')
+    lines.append('  sentiment: string;')
+    lines.append('  impact: string;')
+    lines.append('  relatedCoins: string[];')
+    lines.append('  relatedStocks: string[];')
+    lines.append('  primaryKeyword: string;')
+    lines.append('  secondaryKeywords: string[];')
+    lines.append('  metaDescription: string;')
+    lines.append('  publishedAt: string;')
+    lines.append('}')
+    lines.append('')
+    lines.append('export const newsArticles: NewsArticle[] = [')
+
+    for i, art in enumerate(articles):
+        if not isinstance(art, dict):
+            continue
+        images_raw = art.get("images", [])
+        if not isinstance(images_raw, list):
+            images_raw = []
+        images = [img for img in images_raw if isinstance(img, dict) and img.get("url")]
+
+        financial_metrics = art.get("financialMetrics", {})
+        if not isinstance(financial_metrics, dict):
+            financial_metrics = {}
+        fm_headers = financial_metrics.get("headers", [])
+        fm_rows = financial_metrics.get("rows", [])
+        if not isinstance(fm_headers, list):
+            fm_headers = []
+        if not isinstance(fm_rows, list):
+            fm_rows = []
+
+        ai_analysis = art.get("aiAnalysis")
+        if not isinstance(ai_analysis, dict):
+            ai_analysis = None
+
+        ipo_details = art.get("ipoDetails")
+        if ipo_details is not None and not isinstance(ipo_details, dict):
+            ipo_details = None
+
+        crypto_details = art.get("cryptoDetails")
+        if crypto_details is not None and not isinstance(crypto_details, dict):
+            crypto_details = None
+
+        lines.append('  {')
+        lines.append(f'    id: "{esc(art.get("id", f"news-{i}"))}",')
+        lines.append(f'    headline: "{esc(art.get("headline", ""))}",')
+        lines.append(f'    subheadline: "{esc(art.get("subheadline", ""))}",')
+        kh = art.get("keyHighlights", [])
+        kh = kh if isinstance(kh, list) else []
+        kh_str = ', '.join([f'"{esc(k)}"' for k in kh[:8]])
+        lines.append(f'    keyHighlights: [{kh_str}],')
+        lines.append(f'    executiveSummary: "{esc(art.get("executiveSummary", ""))}",')
+        lines.append(f'    marketBackground: "{esc(art.get("marketBackground", ""))}",')
+        lines.append(f'    detailedAnalysis: "{esc(art.get("detailedAnalysis", ""))}",')
+        lines.append(f'    expertInsights: "{esc(art.get("expertInsights", ""))}",')
+        lines.append('    financialMetrics: {')
+        lines.append(f'      tableCaption: "{esc(financial_metrics.get("tableCaption", ""))}",')
+        headers_str = ', '.join([f'"{esc(h)}"' for h in fm_headers])
+        lines.append(f'      headers: [{headers_str}],')
+        rows_lines = []
+        for row in fm_rows:
+            if not isinstance(row, list):
+                continue
+            cells_str = ', '.join([f'"{esc(c)}"' for c in row])
+            rows_lines.append(f'        [{cells_str}]')
+        rows_block = ',\n'.join(rows_lines)
+        if rows_block:
+            lines.append(f'      rows: [\n{rows_block}\n      ],')
+        else:
+            lines.append('      rows: [],')
+        lines.append('    },')
+        risks = art.get("risks", [])
+        risks = risks if isinstance(risks, list) else []
+        lines.append('    risks: [' + ', '.join([f'"{esc(r)}"' for r in risks[:6]]) + '],')
+        opps = art.get("opportunities", [])
+        opps = opps if isinstance(opps, list) else []
+        lines.append('    opportunities: [' + ', '.join([f'"{esc(o)}"' for o in opps[:6]]) + '],')
+        lines.append(f'    outlook: "{esc(art.get("outlook", ""))}",')
+        lines.append(f'    conclusion: "{esc(art.get("conclusion", ""))}",')
+        sources = art.get("sourcesReferenced", [])
+        sources = sources if isinstance(sources, list) else []
+        lines.append('    sourcesReferenced: [' + ', '.join([f'"{esc(s)}"' for s in sources[:8]]) + '],')
+
+        if ai_analysis:
+            lines.append('    aiAnalysis: {')
+            lines.append(f'      bullCase: "{esc(ai_analysis.get("bullCase", ""))}",')
+            lines.append(f'      bearCase: "{esc(ai_analysis.get("bearCase", ""))}",')
+            lines.append(f'      neutralCase: "{esc(ai_analysis.get("neutralCase", ""))}",')
+            lines.append(f'      probabilityWeightedOutlook: "{esc(ai_analysis.get("probabilityWeightedOutlook", ""))}",')
+            cats = ai_analysis.get("potentialCatalysts", [])
+            cats = cats if isinstance(cats, list) else []
+            lines.append('      potentialCatalysts: [' + ', '.join([f'"{esc(c)}"' for c in cats[:6]]) + '],')
+            krs = ai_analysis.get("keyRisks", [])
+            krs = krs if isinstance(krs, list) else []
+            lines.append('      keyRisks: [' + ', '.join([f'"{esc(r)}"' for r in krs[:6]]) + '],')
+            lines.append('    },')
+        else:
+            lines.append('    aiAnalysis: null,')
+
+        lines.append('    images: [')
+        for img in images[:4]:
+            lines.append('      {')
+            lines.append(f'        url: "{esc(img.get("url", ""))}",')
+            lines.append(f'        alt: "{esc(img.get("alt", ""))}",')
+            lines.append(f'        attribution: "{esc(img.get("attribution", "Photo via Unsplash"))}",')
+            if img.get("title"):
+                lines.append(f'        title: "{esc(img.get("title", ""))}",')
+            if img.get("caption"):
+                lines.append(f'        caption: "{esc(img.get("caption", ""))}",')
+            if img.get("category"):
+                lines.append(f'        category: "{esc(img.get("category", ""))}",')
+            if img.get("sourceUrl"):
+                lines.append(f'        sourceUrl: "{esc(img.get("sourceUrl", ""))}",')
+            if img.get("source"):
+                lines.append(f'        source: "{esc(img.get("source", ""))}",')
+            if img.get("photoId"):
+                lines.append(f'        photoId: "{esc(img.get("photoId", ""))}",')
+            lines.append('      },')
+        lines.append('    ],')
+
+        if ipo_details:
+            lines.append('    ipoDetails: {')
+            for k, v in ipo_details.items():
+                if isinstance(v, (str, int, float)):
+                    lines.append(f'      {k}: "{esc(v)}",')
+            lines.append('    },')
+        if crypto_details:
+            lines.append('    cryptoDetails: {')
+            for k, v in crypto_details.items():
+                if isinstance(v, (str, int, float)):
+                    lines.append(f'      {k}: "{esc(v)}",')
+            lines.append('    },')
+
+        lines.append(f'    category: "{esc(art.get("category", "stocks"))}",')
+        lines.append(f'    sentiment: "{esc(art.get("sentiment", "neutral"))}",')
+        lines.append(f'    impact: "{esc(art.get("impact", "medium"))}",')
+        rc = art.get("relatedCoins", [])
+        rc = rc if isinstance(rc, list) else []
+        lines.append('    relatedCoins: [' + ', '.join([f'"{esc(c)}"' for c in rc[:6]]) + '],')
+        rs = art.get("relatedStocks", [])
+        rs = rs if isinstance(rs, list) else []
+        lines.append('    relatedStocks: [' + ', '.join([f'"{esc(s)}"' for s in rs[:6]]) + '],')
+        lines.append(f'    primaryKeyword: "{esc(art.get("primaryKeyword", ""))}",')
+        sk = art.get("secondaryKeywords", [])
+        sk = sk if isinstance(sk, list) else []
+        lines.append('    secondaryKeywords: [' + ', '.join([f'"{esc(k)}"' for k in sk[:5]]) + '],')
+        lines.append(f'    metaDescription: "{esc(art.get("metaDescription", ""))}",')
+        lines.append(f'    publishedAt: "{esc(art.get("publishedAt", ""))}",')
+        lines.append('  },')
+
+    lines.append('];')
+    lines.append('')
+
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    out_path = os.path.join(OUTPUT_DIR, "newsData.ts")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+    print(f"[DataGen] Wrote {len(articles)} news articles to newsData.ts")
+
+
 if __name__ == "__main__":
     generate_ipo_data()
     generate_crypto_data()
+    generate_news_data()
     print("[DataGen] Done")

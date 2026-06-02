@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import type { LucideIcon } from 'lucide-react';
 import { Search, SlidersHorizontal, Newspaper, TrendingUp, TrendingDown, Minus, Brain, ChevronDown, Clock, Zap, ExternalLink, RefreshCw, Lightbulb, AlertTriangle, Target, BarChart3, Quote, ListChecks, ArrowLeft, CalendarDays } from 'lucide-react';
 import Badge from './Badge';
+import { newsArticles } from '../data/newsData';
 
 interface FinancialMetrics {
   tableCaption: string;
@@ -22,6 +23,12 @@ interface ArticleImage {
   url: string;
   alt: string;
   attribution: string;
+  title?: string;
+  caption?: string;
+  category?: string;
+  sourceUrl?: string;
+  source?: string;
+  photoId?: string;
 }
 
 interface NewsArticle {
@@ -173,31 +180,166 @@ const CATEGORY_FILTERS: { id: CategoryFilter; label: string }[] = [
   { id: 'india', label: 'India' },
 ];
 
-const FALLBACK_IMAGES: Record<string, ArticleImage> = {
-  crypto: {
-    url: 'https://images.unsplash.com/photo-1640161704729-cbe966a08476?auto=format&fit=crop&w=1400&q=80',
-    alt: 'Cryptocurrency market data on digital screens',
-    attribution: 'Photo by Unsplash',
-  },
-  ipo: {
-    url: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=80',
-    alt: 'Financial documents and market analysis',
-    attribution: 'Photo by Unsplash',
-  },
-  stocks: {
-    url: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1400&q=80',
-    alt: 'Stock market trading charts',
-    attribution: 'Photo by Unsplash',
-  },
+const FALLBACK_IMAGES: Record<string, ArticleImage[]> = {
+  crypto: [
+    {
+      url: 'https://images.unsplash.com/photo-1640161704729-cbe966a08476?auto=format&fit=crop&w=1400&q=80',
+      alt: 'Bitcoin and cryptocurrency market data on digital trading screens',
+      title: 'Bitcoin and cryptocurrency market data',
+      caption: 'Cryptocurrency market data on digital trading screens',
+      attribution: 'Photo by Avi Waxman on Unsplash',
+      category: 'crypto',
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1400&q=80',
+      alt: 'Bitcoin and Ethereum physical coins with blockchain visualization',
+      title: 'Bitcoin Ethereum physical coins',
+      caption: 'Bitcoin and Ethereum physical coins',
+      attribution: 'Photo by Dmitry Demidko on Unsplash',
+      category: 'crypto',
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=1400&q=80',
+      alt: 'Ethereum cryptocurrency coin close-up with golden lighting',
+      title: 'Ethereum cryptocurrency coin',
+      caption: 'Ethereum cryptocurrency coin',
+      attribution: 'Photo on Unsplash',
+      category: 'crypto',
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1518544801976-3e159e50e5bb?auto=format&fit=crop&w=1400&q=80',
+      alt: 'DeFi and decentralized finance blockchain network visualization',
+      title: 'DeFi blockchain network',
+      caption: 'DeFi blockchain network visualization',
+      attribution: 'Photo on Unsplash',
+      category: 'crypto',
+    },
+  ],
+  ipo: [
+    {
+      url: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=80',
+      alt: 'IPO prospectus and financial documents on a desk',
+      title: 'IPO prospectus and financial documents',
+      caption: 'IPO prospectus and financial documents',
+      attribution: 'Photo on Unsplash',
+      category: 'ipo',
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1400&q=80',
+      alt: 'Stock market trading floor with screens and analyst workstations',
+      title: 'Stock market trading floor',
+      caption: 'Stock market trading floor',
+      attribution: 'Photo on Unsplash',
+      category: 'ipo',
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1400&q=80',
+      alt: 'Initial public offering bell ringing ceremony on the trading floor',
+      title: 'IPO bell ringing ceremony',
+      caption: 'IPO bell ringing ceremony',
+      attribution: 'Photo on Unsplash',
+      category: 'ipo',
+    },
+  ],
+  india: [
+    {
+      url: 'https://images.unsplash.com/photo-1605651531144-51381895e23d?auto=format&fit=crop&w=1400&q=80',
+      alt: 'Mumbai cityscape with financial district skyline',
+      title: 'Mumbai financial district skyline',
+      caption: 'Mumbai financial district skyline',
+      attribution: 'Photo by Photo by Sudipta Mondal on Unsplash',
+      category: 'india',
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&w=1400&q=80',
+      alt: 'Bombay Stock Exchange building exterior in Dalal Street, Mumbai',
+      title: 'Bombay Stock Exchange Dalal Street',
+      caption: 'BSE Dalal Street, Mumbai',
+      attribution: 'Photo on Unsplash',
+      category: 'india',
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1568871391916-72e64a36a93d?auto=format&fit=crop&w=1400&q=80',
+      alt: 'Indian rupee currency notes and financial documents',
+      title: 'Indian rupee currency notes',
+      caption: 'Indian rupee currency notes',
+      attribution: 'Photo on Unsplash',
+      category: 'india',
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1604594849809-dfedbc827105?auto=format&fit=crop&w=1400&q=80',
+      alt: 'Indian stock market trading display with Sensex and Nifty tickers',
+      title: 'Sensex and Nifty market display',
+      caption: 'Sensex and Nifty market display',
+      attribution: 'Photo on Unsplash',
+      category: 'india',
+    },
+  ],
+  stocks: [
+    {
+      url: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1400&q=80',
+      alt: 'Stock market trading charts on a multi-screen trading desk',
+      title: 'Stock market trading charts',
+      caption: 'Stock market trading charts',
+      attribution: 'Photo on Unsplash',
+      category: 'stocks',
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=1400&q=80',
+      alt: 'Bull and bear market trend charts for global equity investing',
+      title: 'Bull and bear market trend charts',
+      caption: 'Bull and bear market trend charts',
+      attribution: 'Photo on Unsplash',
+      category: 'stocks',
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1559523182-a284c3fb7cff?auto=format&fit=crop&w=1400&q=80',
+      alt: 'Wall Street financial district skyscrapers in lower Manhattan',
+      title: 'Wall Street financial district',
+      caption: 'Wall Street financial district',
+      attribution: 'Photo on Unsplash',
+      category: 'stocks',
+    },
+  ],
 };
 
-function getHeroImage(article: NewsArticle): ArticleImage {
+const KEYWORD_FALLBACK_HINTS: Array<{ match: RegExp; category: keyof typeof FALLBACK_IMAGES }> = [
+  { match: /\b(bitcoin|btc)\b/i, category: 'crypto' },
+  { match: /\b(ethereum|eth|ether)\b/i, category: 'crypto' },
+  { match: /\b(defi|decentralized|blockchain|altcoin|web3|stablecoin|nft)\b/i, category: 'crypto' },
+  { match: /\b(nifty|sensex|nse|bse|mumbai|indian|rupee|rbi|sebi)\b/i, category: 'india' },
+  { match: /\b(ipo|listing|drhp|prospectus|grey market|gmp|anchor investor|book building)\b/i, category: 'ipo' },
+  { match: /\b(nasdaq|s&p|dow|jones|wall street|earnings|dividend|equity)\b/i, category: 'stocks' },
+];
+
+function detectImageCategory(article: NewsArticle): keyof typeof FALLBACK_IMAGES {
+  const text = `${article.headline} ${article.subheadline || ''} ${article.primaryKeyword || ''} ${(article.category || '')}`.toLowerCase();
+  for (const hint of KEYWORD_FALLBACK_HINTS) {
+    if (hint.match.test(text)) return hint.category;
+  }
+  const cat = (article.category || '').toLowerCase();
+  if (cat.includes('crypto')) return 'crypto';
+  if (cat.includes('ipo')) return 'ipo';
+  if (cat.includes('india')) return 'india';
+  return 'stocks';
+}
+
+function fallbackImageFor(article: NewsArticle, index: number = 0): ArticleImage {
+  const category = detectImageCategory(article);
+  const set = FALLBACK_IMAGES[category] || FALLBACK_IMAGES.stocks;
+  const pick = set[Math.abs(index) % set.length];
+  const keyword = (article.primaryKeyword || article.headline || '').trim();
+  return {
+    ...pick,
+    alt: pick.alt + (keyword ? ` - ${keyword}` : ''),
+    title: keyword ? `${pick.title} - ${keyword}` : pick.title,
+  };
+}
+
+function getHeroImage(article: NewsArticle, index: number = 0): ArticleImage {
   const image = article.images?.find((img) => img.url);
   if (image) return image;
-  const category = (article.category || '').toLowerCase();
-  if (category.includes('crypto')) return FALLBACK_IMAGES.crypto;
-  if (category.includes('ipo')) return FALLBACK_IMAGES.ipo;
-  return FALLBACK_IMAGES.stocks;
+  return fallbackImageFor(article, index);
 }
 
 function getReadingTime(article: NewsArticle) {
@@ -483,17 +625,24 @@ export default function CryptoNewsSection() {
     try {
       setLoading(true);
       setError('');
-      const resp = await fetch(`${NEWS_API_BASE}/api/news`);
-      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-      const data = await resp.json();
-      if (data && data.length > 0) {
-        setArticles(data);
-      } else {
-        setArticles(FALLBACK_NEWS);
+      if (NEWS_API_BASE) {
+        const resp = await fetch(`${NEWS_API_BASE}/api/news`);
+        if (resp.ok) {
+          const data = await resp.json();
+          if (data && data.length > 0) {
+            setArticles(data);
+            return;
+          }
+        }
       }
+      if (newsArticles.length > 0) {
+        setArticles(newsArticles);
+        return;
+      }
+      setArticles(FALLBACK_NEWS);
     } catch (error) {
       setError(error instanceof Error ? error.message : 'Failed to load news');
-      setArticles(FALLBACK_NEWS);
+      setArticles(newsArticles.length > 0 ? newsArticles : FALLBACK_NEWS);
     } finally {
       setLoading(false);
     }
@@ -648,7 +797,7 @@ export default function CryptoNewsSection() {
           const SentimentIcon = sentiment.icon;
           const isExpanded = false;
           const ai = news.aiAnalysis;
-          const heroImage = getHeroImage(news);
+          const heroImage = getHeroImage(news, i);
           const sectionImages = news.images?.slice(1) || [];
 
           return (

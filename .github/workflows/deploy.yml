@@ -28,7 +28,7 @@ jobs:
       - name: Install Python deps
         run: |
           python -m pip install --upgrade pip
-          pip install requests==2.32.3 beautifulsoup4==4.12.3 lxml==5.3.0
+          pip install requests==2.32.3 beautifulsoup4==4.12.3 lxml==5.3.0 flask==3.0.3 flask-cors==4.0.1 apscheduler==3.10.4
 
       - name: Scrape airdrops.io
         run: python airdrops_scraper.py
@@ -45,6 +45,23 @@ jobs:
           GOOGLE_AI_API_KEY_1: ${{ secrets.GOOGLE_AI_API_KEY_1 }}
           GOOGLE_AI_API_KEY_2: ${{ secrets.GOOGLE_AI_API_KEY_2 }}
         run: python crypto_analyzer.py
+
+      - name: Generate news cache for static build
+        env:
+          OPENROUTER_API_KEY_1: ${{ secrets.OPENROUTER_API_KEY_1 }}
+          OPENROUTER_API_KEY_2: ${{ secrets.OPENROUTER_API_KEY_2 }}
+          OPENROUTER_API_KEY_3: ${{ secrets.OPENROUTER_API_KEY_3 }}
+          OPENROUTER_API_KEY_4: ${{ secrets.OPENROUTER_API_KEY_4 }}
+          NVIDIA_API_KEY_1: ${{ secrets.NVIDIA_API_KEY_1 }}
+          FINNHUB_API_KEY_1: ${{ secrets.FINNHUB_API_KEY_1 }}
+          FINNHUB_API_KEY_2: ${{ secrets.FINNHUB_API_KEY_2 }}
+          FINNHUB_API_KEY_3: ${{ secrets.FINNHUB_API_KEY_3 }}
+          FINNHUB_API_KEY_4: ${{ secrets.FINNHUB_API_KEY_4 }}
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+          UNSPLASH_ACCESS_KEY_1: ${{ secrets.UNSPLASH_ACCESS_KEY_1 }}
+          UNSPLASH_ACCESS_KEY_2: ${{ secrets.UNSPLASH_ACCESS_KEY_2 }}
+          UNSPLASH_ACCESS_KEY_3: ${{ secrets.UNSPLASH_ACCESS_KEY_3 }}
+        run: python generate_news_cache.py
 
       - name: Generate TypeScript data files
         env:

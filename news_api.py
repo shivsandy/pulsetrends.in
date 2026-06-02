@@ -29,12 +29,26 @@ for i in range(1, 5):
     if val:
         OPENROUTER_KEYS.append({"key": val, "index": i})
 
+NVIDIA_KEYS = []
+for i in range(1, 2):
+    val = os.environ.get(f"NVIDIA_API_KEY_{i}")
+    if val:
+        NVIDIA_KEYS.append({"key": val, "index": i})
+
+FINNHUB_KEYS = []
+for i in range(1, 5):
+    val = os.environ.get(f"FINNHUB_API_KEY_{i}")
+    if val:
+        FINNHUB_KEYS.append({"key": val, "index": i})
+
 NEWSAPI_KEY = os.environ.get("NEWSAPI_KEY", "")
 UNSPLASH_KEYS = []
 for i in range(1, 4):
     val = os.environ.get(f"UNSPLASH_ACCESS_KEY_{i}")
     if val:
         UNSPLASH_KEYS.append(val)
+
+USED_IMAGES_FILE = DATA_DIR / "used_news_images.json"
 
 
 class ModelHealth:
@@ -173,6 +187,57 @@ def fetch_newsapi() -> List[dict]:
     return items
 
 
+def fetch_finnhub() -> List[dict]:
+    if not FINNHUB_KEYS:
+        return []
+    items: List[dict] = []
+    today = datetime.now(timezone.utc)
+    week_ago = today.fromtimestamp(today.timestamp() - 7 * 24 * 3600, tz=timezone.utc)
+    from_str = week_ago.strftime("%Y-%m-%d")
+    to_str = today.strftime("%Y-%m-%d")
+
+    key_index = 0
+    for category in ["general", "forex", "crypto"]:
+        if key_index >= len(FINNHUB_KEYS):
+            key_index = 0
+        key = FINNHUB_KEYS[key_index]["key"]
+        try:
+            resp = requests.get(
+                "https://finnhub.io/api/v1/news",
+                params={"category": category, "token": key, "minId": 0},
+                timeout=15,
+            )
+            if resp.status_code == 200:
+                for article in resp.json()[:15]:
+                    title = (article.get("headline") or "").strip()
+                    url = article.get("url", "")
+                    summary = (article.get("summary") or "")[:500]
+                    image = article.get("image", "")
+                    source = article.get("source", "finnhub")
+                    published_ts = article.get("datetime")
+                    published = ""
+                    if published_ts:
+                        try:
+                            published = datetime.fromtimestamp(published_ts, tz=timezone.utc).isoformat()
+                        except Exception:
+                            pass
+                    if title and len(title) > 20 and url:
+                        items.append({
+                            "title": title,
+                            "url": url,
+                            "summary": summary,
+                            "published": published,
+                            "source": source,
+                            "image": image,
+                        })
+        except Exception as e:
+            print(f"[NewsAPI] Finnhub {category} fetch error: {e}")
+        key_index += 1
+
+    print(f"[NewsAPI] Finnhub: {len(items)} items")
+    return items
+
+
 def is_market_relevant(item: dict) -> bool:
     text = f"{item.get('title', '')} {item.get('summary', '')}".lower()
     if any(term in text for term in BLOCKED_TERMS):
@@ -223,6 +288,27 @@ def save_cached_news(articles: List[dict]) -> None:
             json.dump(articles, f, ensure_ascii=False, indent=2)
     except Exception as e:
         print(f"[NewsAPI] Cache save failed: {e}")
+
+
+def load_used_image_ids() -> set:
+    try:
+        if USED_IMAGES_FILE.exists():
+            with USED_IMAGES_FILE.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, list):
+                return set(data)
+    except Exception as e:
+        print(f"[NewsAPI] Used-images load failed: {e}")
+    return set()
+
+
+def save_used_image_ids(ids: set) -> None:
+    try:
+        DATA_DIR.mkdir(parents=True, exist_ok=True)
+        with USED_IMAGES_FILE.open("w", encoding="utf-8") as f:
+            json.dump(sorted(ids), f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"[NewsAPI] Used-images save failed: {e}")
 
 
 def scrape_article(url: str) -> Optional[dict]:
@@ -278,27 +364,133 @@ def scrape_article(url: str) -> Optional[dict]:
         return None
 
 
-def fetch_images(title: str, count: int = 3) -> List[dict]:
-    keywords = re.sub(r'[^a-zA-Z0-9\s]', '', title)
-    words = [w for w in keywords.split() if len(w) > 3][:5]
-    queries = [" ".join(words)] if words else ["business finance"]
-    queries += ["crypto finance technology", "stock market trading", "blockchain digital assets"]
+CATEGORY_QUERY_MAP: dict = {
+    "crypto": [
+        "cryptocurrency bitcoin ethereum",
+        "blockchain digital assets defi",
+        "crypto trading exchange",
+        "bitcoin ethereum price chart",
+    ],
+    "ipo": [
+        "ipo stock market listing",
+        "initial public offering trading",
+        "wall street trading floor",
+        "financial documents earnings report",
+    ],
+    "india": [
+        "mumbai stock exchange sensex nifty",
+        "indian financial district bse nse",
+        "india business economy market",
+        "rupee indian currency banking",
+    ],
+    "stocks": [
+        "nasdaq stock market charts",
+        "wall street trading screen",
+        "equity portfolio finance",
+        "global stock market trading",
+    ],
+}
 
-    results = []
-    for q in queries[:count]:
-        for uk in UNSPLASH_KEYS:
-            try:
-                resp = requests.get("https://api.unsplash.com/search/photos", params={"query": q, "per_page": 3, "orientation": "landscape"}, headers={"Authorization": f"Client-ID {uk}"}, timeout=10)
-                if resp.status_code == 200:
-                    hits = resp.json().get("results", [])
-                    if hits:
-                        r = hits[0]
-                        results.append({"url": r["urls"]["regular"], "alt": r.get("alt_description") or title, "attribution": f"Photo by {r['user']['name']} on Unsplash"})
-                        break
-            except Exception:
-                pass
+
+TOPIC_KEYWORDS: dict = {
+    "crypto": ["bitcoin", "crypto", "ethereum", "blockchain", "defi", "nft", "token", "coin", "altcoin", "web3", "stablecoin"],
+    "ipo": ["ipo", "initial public", "listing", "offer", "subscription", "grey market", "gmp", "drhp", "anchor"],
+    "india": ["india", "indian", "nse", "bse", "nifty", "sensex", "rbi", "rupee", "mumbai", "sebi"],
+    "stocks": ["stock", "stocks", "equity", "shares", "dividend", "earnings", "nasdaq", "s&p", "dow jones"],
+}
+
+
+def detect_category(text: str) -> str:
+    text_lower = (text or "").lower()
+    scores: dict = {}
+    for cat, keywords in TOPIC_KEYWORDS.items():
+        scores[cat] = sum(1 for kw in keywords if kw in text_lower)
+    if not any(scores.values()):
+        return "stocks"
+    india_score = scores.get("india", 0)
+    if india_score >= 2 and india_score >= scores.get("ipo", 0) and india_score >= scores.get("crypto", 0) and india_score >= scores.get("stocks", 0):
+        return "india"
+    best = max(scores, key=lambda k: scores[k])
+    return best if scores[best] > 0 else "stocks"
+
+
+def _validate_image_url(url: str, timeout: int = 5) -> bool:
+    try:
+        resp = requests.head(url, allow_redirects=True, timeout=timeout)
+        if resp.status_code == 200 and "image" in resp.headers.get("Content-Type", "").lower():
+            return True
+        resp = requests.get(url, stream=True, timeout=timeout)
+        return resp.status_code == 200 and "image" in resp.headers.get("Content-Type", "").lower()
+    except Exception:
+        return False
+
+
+def fetch_images(title: str, count: int = 4, category: Optional[str] = None) -> List[dict]:
+    if not UNSPLASH_KEYS:
+        return []
+
+    category = category or detect_category(title)
+    query_pool = CATEGORY_QUERY_MAP.get(category, CATEGORY_QUERY_MAP["stocks"])
+    base_words = [w for w in re.sub(r'[^a-zA-Z0-9\s]', '', title).split() if len(w) > 3][:3]
+    if base_words:
+        query_pool = [" ".join(base_words)] + query_pool
+
+    used_ids = load_used_image_ids()
+    results: List[dict] = []
+    seen_photo_ids: set = set()
+
+    for q in query_pool:
         if len(results) >= count:
             break
+        for uk in UNSPLASH_KEYS:
+            try:
+                resp = requests.get(
+                    "https://api.unsplash.com/search/photos",
+                    params={"query": q, "per_page": 10, "orientation": "landscape", "content_filter": "high"},
+                    headers={"Authorization": f"Client-ID {uk}"},
+                    timeout=10,
+                )
+                if resp.status_code != 200:
+                    continue
+                hits = resp.json().get("results", [])
+                for hit in hits:
+                    photo_id = hit.get("id")
+                    if not photo_id or photo_id in seen_photo_ids or photo_id in used_ids:
+                        continue
+                    url = hit.get("urls", {}).get("regular", "")
+                    if not url:
+                        continue
+                    if not _validate_image_url(url):
+                        continue
+                    user = hit.get("user", {}) or {}
+                    user_name = user.get("name", "Unsplash")
+                    user_link = user.get("links", {}).get("html", "https://unsplash.com")
+                    alt_desc = (hit.get("alt_description") or title).strip()
+                    results.append({
+                        "url": url,
+                        "alt": alt_desc,
+                        "title": alt_desc[:80],
+                        "caption": f"{alt_desc} (via Unsplash)",
+                        "attribution": f"Photo by {user_name} on Unsplash",
+                        "sourceUrl": f"{user_link}?utm_source=pulsetrends&utm_medium=referral",
+                        "photoId": photo_id,
+                        "category": category,
+                    })
+                    seen_photo_ids.add(photo_id)
+                    break
+                if len(results) >= count:
+                    break
+            except Exception:
+                continue
+        if len(results) >= count:
+            break
+
+    if results:
+        used_ids.update(r["photoId"] for r in results if "photoId" in r)
+        if len(used_ids) > 500:
+            used_ids = set(sorted(used_ids)[-500:])
+        save_used_image_ids(used_ids)
+
     return results
 
 
@@ -387,6 +579,70 @@ For crypto-related articles, include these ADDITIONAL fields:
 IMPORTANT: Return ONLY the JSON object. No other text before or after."""
 
 
+NVIDIA_FREE_MODELS = [
+    "meta/llama-3.1-70b-instruct",
+    "mistralai/mistral-large",
+    "google/gemma-2-27b-it",
+]
+
+
+def _call_openrouter(key: str, model: str, messages: List[dict], timeout: int = 180) -> Optional[str]:
+    try:
+        resp = requests.post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+            json={"model": model, "messages": messages, "temperature": 0.7, "max_tokens": 8192},
+            timeout=timeout,
+        )
+        if resp.status_code != 200:
+            return None
+        return resp.json()["choices"][0]["message"]["content"]
+    except Exception:
+        return None
+
+
+def _call_nvidia(key: str, model: str, messages: List[dict], timeout: int = 180) -> Optional[str]:
+    try:
+        resp = requests.post(
+            "https://integrate.api.nvidia.com/v1/chat/completions",
+            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json", "Accept": "application/json"},
+            json={"model": model, "messages": messages, "temperature": 0.7, "max_tokens": 8192, "stream": False},
+            timeout=timeout,
+        )
+        if resp.status_code != 200:
+            return None
+        return resp.json()["choices"][0]["message"]["content"]
+    except Exception:
+        return None
+
+
+def _try_llm_providers(messages: List[dict]) -> Optional[dict]:
+    openrouter_healthy = model_health.healthy_models(FREE_MODELS)
+    nvidia_healthy = model_health.healthy_models(NVIDIA_FREE_MODELS)
+
+    for key_entry in OPENROUTER_KEYS:
+        for model in openrouter_healthy:
+            start = time.time()
+            text = _call_openrouter(key_entry["key"], model, messages)
+            if text:
+                model_health.record_success(model)
+                print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via OpenRouter/{model} (key {key_entry['index']})")
+                return {"text": text, "provider": "openrouter", "model": model}
+            model_health.record_failure(model)
+
+    for key_entry in NVIDIA_KEYS:
+        for model in nvidia_healthy:
+            start = time.time()
+            text = _call_nvidia(key_entry["key"], model, messages)
+            if text:
+                model_health.record_success(model)
+                print(f"[NewsAPI] Generated article in {time.time() - start:.0f}s via NVIDIA/{model} (key {key_entry['index']})")
+                return {"text": text, "provider": "nvidia", "model": model}
+            model_health.record_failure(model)
+
+    return None
+
+
 def generate_article(source_items: List[dict]) -> Optional[dict]:
     source_text = ""
     for item in source_items:
@@ -413,49 +669,72 @@ Sources:
 
 Generate the complete JSON article as specified in the system prompt."""
 
-    for key_entry in OPENROUTER_KEYS:
-        healthy = model_health.healthy_models(FREE_MODELS)
-        if not healthy:
-            continue
-        model = healthy[0]
-        try:
-            start = time.time()
-            resp = requests.post(
-                "https://openrouter.ai/api/v1/chat/completions",
-                headers={"Authorization": f"Bearer {key_entry['key']}", "Content-Type": "application/json"},
-                json={"model": model, "messages": [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": user_prompt}], "temperature": 0.7, "max_tokens": 8192},
-                timeout=180,
-            )
-            resp.raise_for_status()
-            text = resp.json()["choices"][0]["message"]["content"]
-            model_health.record_success(model)
-            latency = time.time() - start
-            print(f"[NewsAPI] Generated article in {latency:.0f}s using {model}")
+    messages = [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": user_prompt}]
+    llm_response = _try_llm_providers(messages)
+    if not llm_response:
+        return None
 
-            json_match = re.search(r'\{.*\}', text, re.DOTALL)
-            if json_match:
-                result = json.loads(json_match.group())
-                images = fetch_images(result.get("headline", title), 3)
-                result["images"] = images
-                result["id"] = f"news-{int(time.time())}-{random.randint(1000, 9999)}"
-                result["publishedAt"] = datetime.now(timezone.utc).isoformat()
-                if not result.get("headline"):
-                    result["headline"] = title
-                if not result.get("metaDescription"):
-                    result["metaDescription"] = (result.get("subheadline") or title)[:160]
-                return result
-        except Exception as e:
-            model_health.record_failure(model)
-            print(f"[NewsAPI] Article gen error for key{key_entry['index']}/{model}: {e}")
-            continue
+    text = llm_response["text"]
+    json_match = re.search(r'\{.*\}', text, re.DOTALL)
+    if not json_match:
+        return None
 
-    return None
+    try:
+        result = json.loads(json_match.group())
+    except json.JSONDecodeError as e:
+        print(f"[NewsAPI] JSON parse failed: {e}")
+        return None
+
+    final_category = result.get("category") or category_hint
+    if final_category == "stocks" and is_india:
+        final_category = "india"
+    final_category = final_category if final_category in CATEGORY_QUERY_MAP else category_hint
+
+    og_image_url = ""
+    og_image_alt = ""
+    for item in source_items:
+        if item.get("image"):
+            og_image_url = item["image"]
+            og_image_alt = item.get("title", title)
+            break
+
+    images: List[dict] = []
+    if og_image_url and _validate_image_url(og_image_url):
+        images.append({
+            "url": og_image_url,
+            "alt": og_image_alt or title,
+            "title": (og_image_alt or title)[:80],
+            "caption": (og_image_alt or title) + " (Source article image)",
+            "attribution": item.get("source", "Source") if isinstance(item, dict) else "Source",
+            "category": final_category,
+            "source": "og-image",
+        })
+
+    if len(images) < 4:
+        fetched = fetch_images(result.get("headline", title), count=4 - len(images), category=final_category)
+        existing_urls = {i["url"] for i in images}
+        for img in fetched:
+            if img["url"] not in existing_urls:
+                images.append(img)
+                if len(images) >= 4:
+                    break
+
+    result["images"] = images
+    result["category"] = final_category
+    result["id"] = f"news-{int(time.time())}-{random.randint(1000, 9999)}"
+    result["publishedAt"] = datetime.now(timezone.utc).isoformat()
+    if not result.get("headline"):
+        result["headline"] = title
+    if not result.get("metaDescription"):
+        result["metaDescription"] = (result.get("subheadline") or title)[:160]
+    return result
 
 
 def refresh_news():
     print("[NewsAPI] Refreshing news cache...")
     items = fetch_rss()
     items += fetch_newsapi()
+    items += fetch_finnhub()
     items = deduplicate(items)
     print(f"[NewsAPI] {len(items)} relevant items after filtering")
 
@@ -513,6 +792,11 @@ def validate_env():
         ("OPENROUTER_API_KEY_2", bool(os.environ.get("OPENROUTER_API_KEY_2"))),
         ("OPENROUTER_API_KEY_3", bool(os.environ.get("OPENROUTER_API_KEY_3"))),
         ("OPENROUTER_API_KEY_4", bool(os.environ.get("OPENROUTER_API_KEY_4"))),
+        ("NVIDIA_API_KEY_1", bool(os.environ.get("NVIDIA_API_KEY_1"))),
+        ("FINNHUB_API_KEY_1", bool(os.environ.get("FINNHUB_API_KEY_1"))),
+        ("FINNHUB_API_KEY_2", bool(os.environ.get("FINNHUB_API_KEY_2"))),
+        ("FINNHUB_API_KEY_3", bool(os.environ.get("FINNHUB_API_KEY_3"))),
+        ("FINNHUB_API_KEY_4", bool(os.environ.get("FINNHUB_API_KEY_4"))),
         ("NEWSAPI_KEY", bool(os.environ.get("NEWSAPI_KEY"))),
         ("UNSPLASH_ACCESS_KEY_1", bool(os.environ.get("UNSPLASH_ACCESS_KEY_1"))),
         ("UNSPLASH_ACCESS_KEY_2", bool(os.environ.get("UNSPLASH_ACCESS_KEY_2"))),
