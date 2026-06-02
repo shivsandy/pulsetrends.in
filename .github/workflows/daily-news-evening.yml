@@ -1,16 +1,16 @@
-name: Daily News — Morning Batch
+name: Daily News — Evening Batch
 
 on:
   schedule:
-    # 6 AM Eastern Time = 10:00 UTC (EDT) / 11:00 UTC (EST)
-    - cron: '0 10 * * *'
+    # 6 PM Eastern Time = 22:00 UTC (EDT) / 23:00 UTC (EST)
+    - cron: '0 22 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: daily-news-morning
+  group: daily-news-evening
   cancel-in-progress: false
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests==2.32.3
 
-      - name: Generate 3 morning articles (1 Crypto + 1 IPO + 1 Stocks)
+      - name: Generate 3 evening articles (1 Crypto + 1 IPO + 1 Stocks)
         env:
           GOOGLE_AI_API_KEY_1: ${{ secrets.GOOGLE_AI_API_KEY_1 }}
           GOOGLE_AI_API_KEY_2: ${{ secrets.GOOGLE_AI_API_KEY_2 }}
@@ -41,14 +41,14 @@ jobs:
           UNSPLASH_ACCESS_KEY_1: ${{ secrets.UNSPLASH_ACCESS_KEY_1 }}
           UNSPLASH_ACCESS_KEY_2: ${{ secrets.UNSPLASH_ACCESS_KEY_2 }}
           UNSPLASH_ACCESS_KEY_3: ${{ secrets.UNSPLASH_ACCESS_KEY_3 }}
-        run: python scripts/generate-daily-news.py --batch morning
+        run: python scripts/generate-daily-news.py --batch evening
 
       - name: Commit news articles
         run: |
           git config user.name "PulseTrends Bot"
           git config user.email "noreply@example.com"
           git add src/data/newsData.ts data/daily_news_cache.json
-          git diff --cached --quiet || git commit -m "Morning batch: 3 news articles $(date +%F)"
+          git diff --cached --quiet || git commit -m "Evening batch: 3 news articles $(date +%F)"
           git push
 
       - name: Set up Node

@@ -2,10 +2,14 @@
 """
 Daily News Generator for PulseTrends
 =====================================
-Generates 11 articles daily (3 crypto + 5 IPO + 3 stock market) using
-LLM APIs from environment variables. Falls back across providers.
+Generates 3 articles per batch, 2 batches per day (6 total):
+  - 6 AM ET: morning batch (1 Crypto + 1 IPO + 1 Stocks)
+  - 6 PM ET: evening batch (1 Crypto + 1 IPO + 1 Stocks)
 
-Run: python scripts/generate-daily-news.py
+Uses LLM APIs from environment variables. Falls back across providers.
+
+Run: python scripts/generate-daily-news.py --batch morning
+     python scripts/generate-daily-news.py --batch evening
 
 Environment variables (GitHub Secrets):
   GOOGLE_AI_API_KEY_1, GOOGLE_AI_API_KEY_2   — Google Gemini
@@ -14,6 +18,7 @@ Environment variables (GitHub Secrets):
   MISTRAL_API                                   — Mistral
 """
 
+import argparse
 import json
 import os
 import re
@@ -29,6 +34,7 @@ DATA_DIR = REPO_ROOT / "src" / "data"
 NEWS_DATA_FILE = DATA_DIR / "newsData.ts"
 CACHE_DIR = REPO_ROOT / "data"
 USED_IMAGES_FILE = CACHE_DIR / "used_news_images.json"
+DAILY_CACHE_FILE = CACHE_DIR / "daily_news_cache.json"
 MAX_RETIRES = 3
 TIMEOUT_SEC = 90
 
@@ -426,6 +432,26 @@ def fetch_unsplash_images(headline, category="stocks", count=4):
 
     return results
 
+# ── Cache (cross-batch persistence) ──────────────────────────────────
+
+def load_cache():
+    """Load articles from daily cache JSON."""
+    if DAILY_CACHE_FILE.exists():
+        try:
+            with open(DAILY_CACHE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return []
+
+
+def save_cache(articles):
+    """Save articles to daily cache JSON."""
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    with open(DAILY_CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(articles, f, indent=2, ensure_ascii=False)
+
+
 # ── Existing Article Update ──────────────────────────────────────────
 
 def _find_ts_string_end(text, start):
@@ -753,17 +779,17 @@ Focus on Indian stock market with specific company examples and index levels."""
 
 
 def generate_all_articles(date_str):
-    """Generate all 11 articles for today."""
+    """Generate 3 articles for a single batch — 1 Crypto + 1 IPO + 1 Stocks."""
     all_articles = []
     
-    # 3 Crypto
-    all_articles.extend(generate_articles_batch("crypto", 3, date_str))
+    # 1 Crypto
+    all_articles.extend(generate_articles_batch("crypto", 1, date_str))
     
-    # 5 IPO
-    all_articles.extend(generate_articles_batch("ipo", 5, date_str))
+    # 1 IPO
+    all_articles.extend(generate_articles_batch("ipo", 1, date_str))
     
-    # 3 Stock Market
-    all_articles.extend(generate_articles_batch("stocks", 3, date_str))
+    # 1 Stock Market
+    all_articles.extend(generate_articles_batch("stocks", 1, date_str))
     
     return all_articles
 
@@ -1063,11 +1089,22 @@ def write_news_data(all_articles):
 # ── Main ─────────────────────────────────────────────────────────────
 
 def main():
+    parser = argparse.ArgumentParser(description="PulseTrends Daily News Generator")
+    parser.add_argument(
+        "--batch",
+        choices=["morning", "evening"],
+        default="morning",
+        help="Which batch to generate (morning=6am ET, evening=6pm ET)",
+    )
+    args = parser.parse_args()
+    batch = args.batch
+    
     if not _try_imports():
         print("[!] Missing 'requests' library. Install with: pip install requests")
     
     print("=" * 60)
     print("  PULSETRENDS DAILY NEWS GENERATOR")
+    print(f"  Batch: {batch.upper()}")
     print(f"  Date: {today_str()}")
     print(f"  UTC: {datetime.now(timezone.utc).isoformat()}")
     print("=" * 60)
@@ -1087,7 +1124,6 @@ def main():
         print("[!] No LLM API keys found in environment variables.")
         print("    Set at least one of: GROQ_API, MISTRAL_API, GOOGLE_AI_API_KEY_1, COHERE_API")
         print("    (These are configured as GitHub Secrets in the repository.)")
-        print("    Running in dry-run mode — using fallback articles.")
         return 1
     
     print(f"[API] Available providers: {', '.join(available)}")
@@ -1098,22 +1134,29 @@ def main():
     
     date_str = today_str()
     
-    print(f"\n[Generate] Creating 11 articles (3 crypto + 5 IPO + 3 stocks)...")
+    print(f"\n[Generate] Creating 3 articles (1 Crypto + 1 IPO + 1 Stocks)...")
     new_articles = generate_all_articles(date_str)
     
-    print(f"\n[Results] Generated {len(new_articles)} articles successfully")
+    print(f"\n[Results] Generated {len(new_articles)} articles for {batch} batch")
     
     if not new_articles:
         print("[!] No articles were generated. Something went wrong.")
         return 1
     
-    # Write all articles
-    write_news_data(new_articles)
+    # Load existing cache and prepend new articles (newest first)
+    existing = load_cache()
+    all_articles = new_articles + existing
+    save_cache(all_articles)
+    print(f"[Cache] {len(existing)} existing + {len(new_articles)} new = {len(all_articles)} total cached")
+    
+    # Write all articles to TypeScript
+    write_news_data(all_articles)
     
     print("\n" + "=" * 60)
     print("  COMPLETE")
-    print(f"  {len(new_articles)} new articles written to src/data/newsData.ts")
-    print("  11 articles total (3 Crypto + 5 IPO + 3 Stocks)")
+    print(f"  Batch: {batch.upper()} — {len(new_articles)} articles generated")
+    print(f"  Total in cache: {len(all_articles)} articles")
+    print(f"  Written to src/data/newsData.ts")
     print("  Author attribution appended to all articles")
     print("  Next: Build and deploy")
     print("=" * 60)
