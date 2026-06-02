@@ -16,9 +16,9 @@ function loadConsent(): CookiePrefs | null {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return null;
     const parsed = JSON.parse(raw) as CookiePrefs;
-    // Check if consent is older than 1 year
-    const oneYear = 365 * 24 * 60 * 60 * 1000;
-    if (Date.now() - parsed.timestamp > oneYear) {
+    // Check if consent is older than 7 days
+    const sevenDays = 7 * 24 * 60 * 60 * 1000;
+    if (Date.now() - parsed.timestamp > sevenDays) {
       localStorage.removeItem(STORAGE_KEY);
       return null;
     }

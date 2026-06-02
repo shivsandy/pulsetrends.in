@@ -24,37 +24,110 @@ export default function CookiesPage() {
             <p className="text-[13px] text-surface-600">Last updated: 1 June 2026</p>
           </div>
         </div>
-        <p>This Cookie Policy explains what cookies are, how PulseTrends uses them, and how you can control them.</p>
+
+        <p>This Cookie Policy explains what cookies are, how PulseTrends ("we", "our", or "us") uses them, and the choices available to users regarding cookies.</p>
+
+        <hr className="border-surface-300/40 my-6" />
 
         <h2>What Are Cookies?</h2>
-        <p>Cookies are small text files placed in your browser by websites you visit. They are widely used to make sites work more efficiently and to provide information to site owners.</p>
-
-        <h2>Cookies We Use</h2>
-        <p>PulseTrends uses only <strong>strictly necessary first-party cookies</strong>:</p>
+        <p>Cookies are small text files that websites store on your device when you visit them. Cookies help websites function properly, remember user preferences, improve performance, and provide insights about how visitors use a website.</p>
+        <p>Cookies may be either:</p>
         <ul>
-          <li><strong>cookie-consent</strong> — remembers your cookie consent choice (Accept / Decline). Duration: 1 year.</li>
-        </ul>
-        <p>We do <strong>not</strong> use:</p>
-        <ul>
-          <li>Advertising or remarketing cookies</li>
-          <li>Cross-site tracking cookies</li>
-          <li>Third-party analytics that profile you across sites</li>
+          <li><strong>Session cookies</strong>, which expire when you close your browser.</li>
+          <li><strong>Persistent cookies</strong>, which remain on your device until they expire or are deleted.</li>
         </ul>
 
-        <h2>Third-Party Cookies</h2>
-        <p>Some content on our pages (e.g., article images) is loaded from third-party services such as Unsplash. These providers may set their own cookies when their content is loaded in your browser. We do not control these cookies. Refer to their privacy policies:</p>
+        <hr className="border-surface-300/40 my-6" />
+
+        <h2>Cookies We Currently Use</h2>
+        <p>At present, PulseTrends uses only limited cookies necessary for the operation of the Service.</p>
+
+        <h3>Essential Cookies</h3>
+        <p>These cookies are required for basic website functionality and cannot be disabled through our systems.</p>
+
+        <div className="overflow-x-auto my-4">
+          <table className="w-full text-[13px] border-collapse">
+            <thead>
+              <tr className="bg-surface-200/50">
+                <th className="text-left px-4 py-2.5 font-semibold text-surface-white border-b border-surface-300/40">Cookie</th>
+                <th className="text-left px-4 py-2.5 font-semibold text-surface-white border-b border-surface-300/40">Purpose</th>
+                <th className="text-left px-4 py-2.5 font-semibold text-surface-white border-b border-surface-300/40">Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-surface-300/20">
+                <td className="px-4 py-2.5 font-mono text-[12px] text-surface-white">cookie-consent</td>
+                <td className="px-4 py-2.5 text-surface-800">Stores your cookie preference selection</td>
+                <td className="px-4 py-2.5 text-surface-800">Up to 7 days</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Without these cookies, certain features of the Service may not function correctly.</p>
+
+        <hr className="border-surface-300/40 my-6" />
+
+        <h2>Future Use of Analytics or Advertising Cookies</h2>
+        <p>As PulseTrends evolves, we may introduce analytics, advertising, or other optional cookies to improve the Service and support its operation.</p>
+        <p>If such cookies are introduced:</p>
         <ul>
-          <li><a href="https://unsplash.com/privacy" target="_blank" rel="noopener noreferrer">Unsplash Privacy Policy</a></li>
+          <li>This Cookie Policy will be updated accordingly.</li>
+          <li>Where required by applicable law, users will be given the opportunity to provide consent before such cookies are activated.</li>
         </ul>
+
+        <hr className="border-surface-300/40 my-6" />
+
+        <h2>Third-Party Content</h2>
+        <p>Some content displayed on the Service may be provided by third-party services.</p>
+        <p>Examples may include:</p>
+        <ul>
+          <li>Images</li>
+          <li>Embedded content</li>
+          <li>Videos</li>
+          <li>Social media content</li>
+          <li>Advertising content</li>
+        </ul>
+        <p>These third parties may place cookies or similar technologies on your device when their content is loaded.</p>
+        <p>We do not control third-party cookies and encourage users to review the privacy and cookie policies of those providers.</p>
+
+        <hr className="border-surface-300/40 my-6" />
 
         <h2>Managing Cookies</h2>
-        <p>You can control or delete cookies through your browser settings. Most browsers also allow you to refuse all cookies or indicate when a cookie is being sent. Note that disabling essential cookies may affect site functionality.</p>
+        <p>Most web browsers allow you to:</p>
+        <ul>
+          <li>View stored cookies</li>
+          <li>Delete existing cookies</li>
+          <li>Block certain cookies</li>
+          <li>Block all cookies</li>
+          <li>Receive notifications when cookies are being set</li>
+        </ul>
+        <p>Instructions vary by browser, but settings are generally available within your browser's Privacy or Security settings.</p>
+        <p>Please note that disabling essential cookies may affect the functionality of the Service.</p>
+
+        <hr className="border-surface-300/40 my-6" />
 
         <h2>Your Consent</h2>
-        <p>By clicking "Accept" on the cookie banner, you consent to our use of strictly necessary cookies as described above. You can change your choice at any time by clearing your browser's storage for this site.</p>
+        <p>Where required by law, we will request your consent before using non-essential cookies.</p>
+        <p>You may withdraw or modify your cookie preferences at any time by adjusting your browser settings or using any cookie preference tools that may be made available on the Service.</p>
+
+        <hr className="border-surface-300/40 my-6" />
+
+        <h2>Changes to This Cookie Policy</h2>
+        <p>We may update this Cookie Policy from time to time.</p>
+        <p>Any changes will be posted on this page together with an updated "Last updated" date.</p>
+        <p>Continued use of the Service after changes become effective constitutes acceptance of the updated Cookie Policy.</p>
+
+        <hr className="border-surface-300/40 my-6" />
 
         <h2>Contact</h2>
-        <p>For questions about our use of cookies, email us at <a href="mailto:pulsetrendsin@gmail.com">pulsetrendsin@gmail.com</a>.</p>
+        <p>For questions regarding this Cookie Policy or our use of cookies, contact:</p>
+        <p>
+          <strong>Email:</strong>{' '}
+          <a href="mailto:pulsetrendsin@gmail.com" className="text-brand hover:text-brand-light transition-colors">
+            pulsetrendsin@gmail.com
+          </a>
+        </p>
       </div>
     </>
   );
