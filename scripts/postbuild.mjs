@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, copyFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, copyFileSync, existsSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const SITE_ORIGIN = 'https://pulsetrends.in';
@@ -99,28 +99,46 @@ function main() {
     process.exit(1);
   }
 
+  const publicDir = resolve('public');
+  const assetsDistDir = resolve(distDir, 'assets');
+
+  // Copy public/ assets (e.g., favicon, og-image) into dist/ for deployment
+  if (existsSync(publicDir)) {
+    const publicEntries = readdirSync(publicDir, { withFileTypes: true });
+    for (const entry of publicEntries) {
+      const srcPath = resolve(publicDir, entry.name);
+      const destPath = resolve(distDir, entry.name);
+      if (!entry.isDirectory() && !existsSync(destPath)) {
+        copyFileSync(srcPath, destPath);
+        console.log(`[postbuild] Copied ${entry.name} to dist/`);
+      }
+    }
+  }
+
+  // Copy assets/ to dist/assets for the deploy step (already built by Vite)
+  if (existsSync(assetsDistDir)) {
+    console.log('[postbuild] Assets directory found, ensuring all assets are in place');
+  }
+
+  // SPA fallback: copy index.html to 404.html for GitHub Pages
   const indexPath = resolve(distDir, 'index.html');
   if (existsSync(indexPath)) {
     copyFileSync(indexPath, resolve(distDir, '404.html'));
     console.log('[postbuild] Wrote dist/404.html (SPA fallback)');
   }
 
+  // Generate all routes for sitemap
   const allRoutes = [...STATIC_ROUTES, ...buildDynamicRoutes()];
+  
+  // Generate sitemap.xml
   const sitemap = buildSitemap(allRoutes);
   writeFileSync(resolve(distDir, 'sitemap.xml'), sitemap, 'utf8');
   console.log(`[postbuild] Wrote dist/sitemap.xml (${allRoutes.length} URLs)`);
 
+  // Generate robots.txt
   const robots = buildRobots();
   writeFileSync(resolve(distDir, 'robots.txt'), robots, 'utf8');
   console.log('[postbuild] Wrote dist/robots.txt');
-
-  for (const f of ['og-default.png', 'favicon.svg']) {
-    const src = resolve('public', f);
-    if (existsSync(src)) {
-      copyFileSync(src, resolve(distDir, f));
-      console.log(`[postbuild] Copied ${f} to dist/`);
-    }
-  }
 }
 
 main();

@@ -36,7 +36,7 @@ export default function ContactPage() {
               <div className="w-10 h-10 rounded-lg bg-brand-muted flex items-center justify-center mx-auto mb-3">
                 <c.icon className="w-5 h-5 text-brand" />
               </div>
-              <h2 className="text-[14px] font-semibold text-surface-white mb-1">{c.title}</h2>
+              <h3 className="text-[14px] font-semibold text-surface-white mb-1">{c.title}</h3>
               <p className="text-[12px] text-surface-700 mb-2">{c.desc}</p>
               <a href={`mailto:${c.addr}`} className="text-[13px] text-brand hover:text-brand-light transition-colors">{c.addr}</a>
             </div>

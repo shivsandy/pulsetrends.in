@@ -54,13 +54,13 @@ export default function IPODetailPage({ slug: propSlug, onBack }: IPODetailPageP
 
   const path = `/ipo-analysis/${slug}`;
   const url = canonical(path);
-  const schema = JSON.stringify(financialProductSchema({
+  const financialSchema = financialProductSchema({
     name: stock.company,
     description: stock.description || `${stock.company} (${stock.ticker}) — IPO analysis with AI scoring and risk assessment.`,
     urlPath: path,
     category: stock.sector,
     identifier: stock.ticker,
-  }));
+  });
 
   return (
     <>
@@ -70,6 +70,7 @@ export default function IPODetailPage({ slug: propSlug, onBack }: IPODetailPageP
           title: `${stock.company} (${stock.ticker}) IPO Analysis | PulseTrends`,
           description: `${stock.company} IPO analysis: company overview, financial snapshot, AI scoring (${stock.aiScores.overall}/100), strengths, and risks. ${stock.description || ''}`.slice(0, 160),
           ogType: 'article',
+          schema: financialSchema,
         }}
         breadcrumbs={[
           { name: 'Home', path: '/' },
@@ -77,7 +78,6 @@ export default function IPODetailPage({ slug: propSlug, onBack }: IPODetailPageP
           { name: stock.company, path: `/ipo-analysis/${slug}` },
         ]}
       />
-      <script type="application/ld+json">{schema}</script>
 
       <article className="max-w-3xl mx-auto">
         <Breadcrumbs items={([

@@ -34,18 +34,16 @@ export default function NewsDetailPage() {
   const path = `/news/${slug}`;
   const description = (article.subheadline || article.metaDescription || article.executiveSummary || '').slice(0, 160);
   const heroImage = article.images?.find((i) => i && i.url);
-  const schema = JSON.stringify(
-    newsArticleSchema({
-      id: article.id,
-      headline: article.headline,
-      description,
-      publishedAt: article.publishedAt,
-      image: heroImage?.url,
-      urlPath: path,
-    }),
-  );
+  const articleSchema = newsArticleSchema({
+    id: article.id,
+    headline: article.headline,
+    description,
+    publishedAt: article.publishedAt,
+    image: heroImage?.url,
+    urlPath: path,
+  });
   // Build related-articles JSON-LD ItemList for richer SERP
-  const relatedList = JSON.stringify({
+  const relatedList = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     itemListElement: newsArticles.slice(0, 10).map((a, idx) => ({
@@ -54,7 +52,7 @@ export default function NewsDetailPage() {
       url: canonical(`/news/${a.id}-${a.id}`),
       name: a.headline,
     })),
-  });
+  };
 
   return (
     <>
@@ -65,6 +63,7 @@ export default function NewsDetailPage() {
           description,
           ogType: 'article',
           ogImage: heroImage?.url,
+          schema: [articleSchema, relatedList],
         }}
         breadcrumbs={[
           { name: 'Home', path: '/' },
@@ -72,8 +71,6 @@ export default function NewsDetailPage() {
           { name: article.headline, path: `/news/${slug}` },
         ]}
       />
-      <script type="application/ld+json">{schema}</script>
-      <script type="application/ld+json">{relatedList}</script>
       <ArticleReader article={article} />
     </>
   );

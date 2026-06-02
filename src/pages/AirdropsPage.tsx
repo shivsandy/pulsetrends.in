@@ -5,7 +5,7 @@ import { cryptoProjects } from '../data/cryptoData';
 import type { CryptoProject } from '../data/cryptoData';
 import Badge from '../components/Badge';
 import PageSeo from '../components/PageSeo';
-import Breadcrumbs, { type Crumb } from '../components/Breadcrumbs';
+import Breadcrumbs from '../components/Breadcrumbs';
 import { ROUTES } from '../seo/routes';
 import { slugify } from '../seo/config';
 import { financialProductSchema } from '../seo/schema';
@@ -186,7 +186,7 @@ function AirdropCardInline({
 function AirdropDetailView({ project }: { project: CryptoProject }) {
   const ai = project.aiAnalysis;
   const slug = makeAirdropSlug(project);
-  const schema = financialProductSchema({
+  const airdropSchema = financialProductSchema({
     name: project.name,
     description: project.description,
     urlPath: `/airdrops/${slug}`,
@@ -202,6 +202,7 @@ function AirdropDetailView({ project }: { project: CryptoProject }) {
           description: project.description.slice(0, 160),
           path: `/airdrops/${slug}`,
           ogType: 'website',
+          schema: airdropSchema,
         }}
         breadcrumbs={[
           { name: 'Home', path: '/' },
@@ -209,7 +210,6 @@ function AirdropDetailView({ project }: { project: CryptoProject }) {
           { name: project.name, path: `/airdrops/${slug}` },
         ]}
       />
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
 
       <Link
         to="/airdrops"
@@ -384,9 +384,9 @@ export default function AirdropsPage() {
           />
           <Breadcrumbs items={[
             { name: 'Home', path: '/' },
-            { name: 'Airdrops' },
+            { name: 'Airdrops', path: '/airdrops' },
             { name: 'Not Found' },
-          ] as Crumb[]} />
+          ]} />
           <div className="text-center py-16 border border-surface-300/40 rounded-xl bg-surface-50">
             <h1 className="text-xl font-semibold text-surface-white">Airdrop Not Found</h1>
             <p className="text-[14px] text-surface-600 mt-2">The airdrop "{slug}" could not be found.</p>
@@ -409,7 +409,7 @@ export default function AirdropsPage() {
           { name: 'Airdrops', path: '/airdrops' },
         ]}
       />
-      <Breadcrumbs items={[{ name: 'Home', path: '/' }, { name: 'Airdrops' }] as Crumb[]} />
+      <Breadcrumbs items={[{ name: 'Home', path: '/' }, { name: 'Airdrops' }]} />
       <div className="space-y-6">
         <div className="border-b border-surface-300/60 pb-6">
           <Badge variant="default" size="md">Airdrop Intelligence</Badge>
