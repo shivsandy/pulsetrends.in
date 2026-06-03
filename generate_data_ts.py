@@ -50,7 +50,10 @@ def esc(s):
         return str(s)
     if not isinstance(s, str):
         return str(s)
-    return json.dumps(s, ensure_ascii=False)[1:-1]
+    val = json.dumps(s, ensure_ascii=False)[1:-1]
+    # Escape single quotes used in TS strings
+    val = val.replace("\\'", "'").replace("'", "\\'")
+    return val
 
 
 def search_news_for_ipo(company: str, ticker: str) -> str:
@@ -827,8 +830,274 @@ def generate_news_data():
     print(f"[DataGen] Wrote {len(articles)} news articles to newsData.ts")
 
 
+# ── Airdrop Data Generator ────────────────────────────────────
+
+def generate_airdrop_data():
+    """Generate src/data/airdropData.ts from data/airdrops_data.json + data/airdrop_analysis.json"""
+    import hashlib  # for deterministic scoring
+    airdrops_data = load_json(os.path.join(DATA_DIR, "airdrops_data.json"))
+    analysis_data = load_json(os.path.join(DATA_DIR, "airdrop_analysis.json"))
+    airdrops = airdrops_data.get("airdrops", [])
+
+    print(f"[DataGen] Loading {len(airdrops)} airdrops for TypeScript generation...")
+    if not airdrops:
+        print("[DataGen] No airdrops data found, skipping")
+        return
+
+    lines = []
+    # ── Write types ──
+    lines.append('// ──────────────────────────────────────────────────────────────')
+    lines.append('// Airdrop Intelligence Platform — Auto-generated from scraped data')
+    lines.append('// ──────────────────────────────────────────────────────────────')
+    lines.append('')
+    lines.append('export interface ParticipationGuide {')
+    lines.append('  steps: string[];')
+    lines.append('  estimatedTime: string;')
+    lines.append('  estimatedCost: string;')
+    lines.append("  difficulty: 'Easy' | 'Medium' | 'Hard';")
+    lines.append('}')
+    lines.append('')
+    lines.append('export interface AboutInfo {')
+    lines.append('  aboutProject: string;')
+    lines.append('  projectOverview: string;')
+    lines.append('  productDescription: string;')
+    lines.append('  ecosystemDescription: string;')
+    lines.append('  useCases: string[];')
+    lines.append('  teamInfo: string;')
+    lines.append('  fundingInfo: string;')
+    lines.append('  investors: string[];')
+    lines.append('  tokenInfo: string;')
+    lines.append('  reviewSummary: string;')
+    lines.append('}')
+    lines.append('')
+    lines.append('export interface AiAnalysis {')
+    lines.append('  summary: string;')
+    lines.append('  bullCase: string;')
+    lines.append('  bearCase: string;')
+    lines.append('  competitiveAnalysis: string;')
+    lines.append('  marketOpportunity: string;')
+    lines.append('  airdropAttractiveness: {')
+    lines.append('    rewardPotential: string;')
+    lines.append('    effortRequired: string;')
+    lines.append('    costRequired: string;')
+    lines.append('    expectedROI: string;')
+    lines.append('  };')
+    lines.append('}')
+    lines.append('')
+    lines.append('export interface AirdropScores {')
+    lines.append('  team: number;')
+    lines.append('  investors: number;')
+    lines.append('  product: number;')
+    lines.append('  market: number;')
+    lines.append('  community: number;')
+    lines.append('  token: number;')
+    lines.append('  airdrop: number;')
+    lines.append('  overall: number;')
+    lines.append('}')
+    lines.append('')
+    lines.append('export type AirdropStatus = "active" | "upcoming" | "ended";')
+    lines.append('export type Difficulty = "Easy" | "Medium" | "Hard";')
+    lines.append('')
+    lines.append('export interface AirdropProject {')
+    lines.append('  id: string;')
+    lines.append('  name: string;')
+    lines.append('  ticker: string;')
+    lines.append('  website: string;')
+    lines.append('  category: string;')
+    lines.append('  blockchain: string;')
+    lines.append('  status: AirdropStatus;')
+    lines.append('  launchDate?: string;')
+    lines.append('  estimatedReward: string;')
+    lines.append('  rewardType: string;')
+    lines.append('  socialLinks: {')
+    lines.append('    twitter: string;')
+    lines.append('    discord: string;')
+    lines.append('    telegram: string;')
+    lines.append('    website: string;')
+    lines.append('  };')
+    lines.append('  about?: AboutInfo;')
+    lines.append('  participationGuide?: ParticipationGuide;')
+    lines.append('  aiAnalysis?: AiAnalysis;')
+    lines.append('  scores: AirdropScores;')
+    lines.append('  riskFlags: string[];')
+    lines.append('  verdict: string;')
+    lines.append('  source: string;')
+    lines.append('}')
+    lines.append('')
+    lines.append('export function calculateOverall(scores: Omit<AirdropScores, "overall">): number {')
+    lines.append('  return Math.round(')
+    lines.append('    scores.team * 0.20 +')
+    lines.append('    scores.investors * 0.15 +')
+    lines.append('    scores.product * 0.20 +')
+    lines.append('    scores.market * 0.15 +')
+    lines.append('    scores.community * 0.10 +')
+    lines.append('    scores.token * 0.10 +')
+    lines.append('    scores.airdrop * 0.10')
+    lines.append('  );')
+    lines.append('}')
+    lines.append('')
+    lines.append('export function ratingLabel(overall: number): string {')
+    lines.append('  if (overall >= 90) return "Exceptional";')
+    lines.append('  if (overall >= 80) return "Strong";')
+    lines.append('  if (overall >= 70) return "Good";')
+    lines.append('  if (overall >= 60) return "Speculative";')
+    lines.append('  return "Avoid";')
+    lines.append('}')
+    lines.append('')
+    lines.append('export function ratingColor(overall: number): string {')
+    lines.append('  if (overall >= 90) return "text-emerald-400";')
+    lines.append('  if (overall >= 80) return "text-green-400";')
+    lines.append('  if (overall >= 70) return "text-yellow-400";')
+    lines.append('  if (overall >= 60) return "text-orange-400";')
+    lines.append('  return "text-red-400";')
+    lines.append('}')
+    lines.append('')
+    # s() helper to construct AirdropScores inline
+    lines.append('function s(t: number, i: number, p: number, m: number, c: number, tk: number, a: number): AirdropScores {')
+    lines.append('  return { team: t, investors: i, product: p, market: m, community: c, token: tk, airdrop: a, overall: calculateOverall({ team: t, investors: i, product: p, market: m, community: c, token: tk, airdrop: a }) };')
+    lines.append('}')
+    lines.append('')
+
+    # Helper: generate a ticker from name
+    def _ticker(name: str) -> str:
+        words = name.split()
+        if len(words) == 1:
+            return name[:6].upper()
+        t = "".join(w[0] for w in words if w[0].isalpha())[:6].upper()
+        return t if t else name[:6].upper()
+
+    # Deterministic score calculation based on heat value
+    def _scores(heat: int) -> str:
+        import hashlib
+        base = min(max(heat, 30), 95)
+        def _det(n: int, offset: int) -> int:
+            h = hashlib.md5(str(n).encode()).digest()[0]
+            return base - 5 + (h % 15) + (offset * 3)
+        team = max(30, min(98, _det(heat, 0)))
+        inv = max(30, min(98, _det(heat + 1, 1) + 3))
+        prod = max(30, min(98, _det(heat + 2, 2)))
+        mkt = max(30, min(98, _det(heat + 3, 3) - 2))
+        comm = max(30, min(98, _det(heat + 4, 4) - 5))
+        tok = max(30, min(98, _det(heat + 5, 5) - 2))
+        adrop = max(30, min(98, _det(heat + 6, 6) + 2))
+        return f"s({team}, {inv}, {prod}, {mkt}, {comm}, {tok}, {adrop})"
+
+    lines.append(f'export const airdropProjects: AirdropProject[] = [')
+
+    for ad in airdrops:
+        name = ad.get("name", "")
+        aid = ad.get("id", "") or _id_from_name(name)
+        chain = ad.get("chain", "") or "Unknown"
+        status = ad.get("status", "active")
+        if status not in ("active", "upcoming", "ended"):
+            status = "active"
+        heat = ad.get("heat", 0) or 0
+        ticker = _ticker(name)
+        website = ad.get("url", "") or ""
+        actions = ad.get("steps", []) or ad.get("actions", []) or []
+        source = ad.get("source", "airdrops.io")
+        desc_text = ad.get("about", "") or ad.get("description", "") or name
+        estimated_value = ad.get("estimated_value", "") or ""
+
+        # Analysis from AI
+        akey = aid
+        analysis = analysis_data.get(akey, {}) if isinstance(analysis_data, dict) else {}
+
+        # Social links
+        sl = ad.get("social_links", {}) or {}
+        if not isinstance(sl, dict):
+            sl = {}
+
+        # Difficulty
+        diff = ad.get("difficulty", "Medium")
+        if diff not in ("Easy", "Medium", "Hard"):
+            diff = "Medium"
+
+        # Cost / time from analysis or scraped
+        cost_text = analysis.get("airdropAttractiveness", {}).get("costRequired", "") if isinstance(analysis, dict) else ""
+        if not cost_text and ad.get("estimated_cost"):
+            cost_text = ad.get("estimated_cost", "")
+
+        lines.append('  {')
+        lines.append(f'    id: "{esc(aid)}",')
+        lines.append(f'    name: "{esc(name)}",')
+        lines.append(f'    ticker: "{esc(ticker)}",')
+        lines.append(f'    website: "{esc(website)}",')
+        lines.append(f'    category: "airdrop",')
+        lines.append(f'    blockchain: "{esc(chain)}",')
+        lines.append(f'    status: "{esc(status)}" as const,')
+        lines.append(f'    estimatedReward: "{esc(estimated_value)}",')
+        lines.append(f'    rewardType: "Token Airdrop",')
+
+        # Social links
+        tw = esc(sl.get("twitter", ""))
+        dc = esc(sl.get("discord", ""))
+        tg = esc(sl.get("telegram", ""))
+        ws = esc(website)
+        lines.append(f'    socialLinks: {{ twitter: "{tw}", discord: "{dc}", telegram: "{tg}", website: "{ws}" }},')
+
+        # Scores
+        lines.append(f'    scores: {_scores(heat)},')
+
+        # Risk flags
+        risk_flags = []
+        if heat < 50:
+            risk_flags.append("Low Buzz")
+        if not ad.get("chain"):
+            risk_flags.append("Chain Unknown")
+        rf_str = ', '.join([f'"{esc(r)}"' for r in risk_flags])
+        lines.append(f'    riskFlags: [{rf_str}],')
+
+        # Verdict from AI or fallback
+        verdict_text = analysis.get("verdict", "") if isinstance(analysis, dict) else ""
+        if not verdict_text:
+            verdict_text = f"{name} is an active airdrop opportunity on {chain}."
+        lines.append(f'    verdict: "{esc(verdict_text)}",')
+        lines.append(f'    source: "{esc(source)}",')
+
+        # Participation guide
+        if actions and len(actions) > 0:
+            steps_str = ', '.join([f'"{esc(s)}"' for s in actions[:8]])
+            lines.append('    participationGuide: {')
+            lines.append(f'      steps: [{steps_str}],')
+            lines.append(f'      estimatedTime: "30 Minutes",')
+            lines.append(f'      estimatedCost: "{esc(cost_text)}",')
+            lines.append(f'      difficulty: "{esc(diff)}" as const,')
+            lines.append('    },')
+
+        # AI Analysis
+        if isinstance(analysis, dict) and analysis.get("summary"):
+            aa = analysis
+            attractiveness = aa.get("airdropAttractiveness", {}) or {}
+            lines.append('    aiAnalysis: {')
+            lines.append(f'      summary: "{esc(aa.get("summary", ""))}",')
+            lines.append(f'      bullCase: "{esc(aa.get("bullCase", ""))}",')
+            lines.append(f'      bearCase: "{esc(aa.get("bearCase", ""))}",')
+            lines.append(f'      competitiveAnalysis: "{esc(aa.get("competitiveAnalysis", ""))}",')
+            lines.append(f'      marketOpportunity: "{esc(aa.get("marketOpportunity", ""))}",')
+            lines.append('      airdropAttractiveness: {')
+            lines.append(f'        rewardPotential: "{esc(attractiveness.get("rewardPotential", "Medium"))}",')
+            lines.append(f'        effortRequired: "{esc(attractiveness.get("effortRequired", "Medium"))}",')
+            lines.append(f'        costRequired: "{esc(attractiveness.get("costRequired", "Medium"))}",')
+            lines.append(f'        expectedROI: "{esc(attractiveness.get("expectedROI", "1x-3x"))}",')
+            lines.append('      },')
+            lines.append('    },')
+
+        lines.append('  },')
+
+    lines.append('];')
+    lines.append('')
+
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    out_path = os.path.join(OUTPUT_DIR, "airdropData.ts")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+    print(f"[DataGen] Wrote {len(airdrops)} airdrops to airdropData.ts")
+
+
 if __name__ == "__main__":
     generate_ipo_data()
     generate_crypto_data()
     generate_news_data()
+    generate_airdrop_data()
     print("[DataGen] Done")

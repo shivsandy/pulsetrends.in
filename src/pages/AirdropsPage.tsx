@@ -331,30 +331,11 @@ export default function AirdropsPage() {
   const [filterStatus, setFilterStatus] = useState<'all' | 'active' | 'upcoming'>('all');
   const [sortBy, setSortBy] = useState<SortKey>('score');
 
-  // Detail view
-  if (slug) {
-    const project = airdropProjects.find((p) => makeSlug(p) === slug);
-    if (!project) {
-      return (
-        <>
-          <PageSeo meta={{ ...ROUTES.airdrops, title: 'Airdrop Not Found | PulseTrends', path: `/airdrops/${slug}` }} />
-          <Breadcrumbs items={[{ name: 'Home', path: '/' }, { name: 'Airdrops', path: '/airdrops' }, { name: 'Not Found' }]} />
-          <div className="text-center py-16 border border-surface-300/40 rounded-xl bg-surface-50">
-            <h1 className="text-xl font-semibold text-surface-white">Airdrop Not Found</h1>
-            <p className="text-[14px] text-surface-600 mt-2">This airdrop is not in our database.</p>
-            <Link to="/airdrops" className="inline-block mt-4 px-4 py-2 bg-brand text-white text-[13px] font-medium rounded-md hover:bg-brand-hover">Browse all airdrops</Link>
-          </div>
-        </>
-      );
-    }
-    return <AirdropDetailView project={project} />;
-  }
-
-  // Stats
+  // Stats (safe before conditional return - not hooks)
   const activeCount = airdropProjects.filter((p) => p.status === 'active').length;
   const totalCount = airdropProjects.length;
 
-  // Filtered & sorted
+  // Filtered & sorted (hook - must be before any conditional return)
   const filtered = useMemo(() => {
     let result = [...airdropProjects];
     if (filterStatus !== 'all') result = result.filter((p) => p.status === filterStatus);
@@ -378,6 +359,25 @@ export default function AirdropsPage() {
     });
     return result;
   }, [search, filterStatus, sortBy]);
+
+  // Detail view (after all hooks to avoid React hooks ordering violation)
+  if (slug) {
+    const project = airdropProjects.find((p) => makeSlug(p) === slug);
+    if (!project) {
+      return (
+        <>
+          <PageSeo meta={{ ...ROUTES.airdrops, title: 'Airdrop Not Found | PulseTrends', path: `/airdrops/${slug}` }} />
+          <Breadcrumbs items={[{ name: 'Home', path: '/' }, { name: 'Airdrops', path: '/airdrops' }, { name: 'Not Found' }]} />
+          <div className="text-center py-16 border border-surface-300/40 rounded-xl bg-surface-50">
+            <h1 className="text-xl font-semibold text-surface-white">Airdrop Not Found</h1>
+            <p className="text-[14px] text-surface-600 mt-2">This airdrop is not in our database.</p>
+            <Link to="/airdrops" className="inline-block mt-4 px-4 py-2 bg-brand text-white text-[13px] font-medium rounded-md hover:bg-brand-hover">Browse all airdrops</Link>
+          </div>
+        </>
+      );
+    }
+    return <AirdropDetailView project={project} />;
+  }
 
   return (
     <>

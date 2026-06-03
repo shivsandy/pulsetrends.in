@@ -393,6 +393,46 @@ def save_cache(cache: dict, path: str):
     print(f"[Crypto Analyzer] Saved {len(cache)} analyses to {path}")
 
 
+def generate_airdrop_analysis(project: dict, api_keys: List[dict]) -> Optional[dict]:
+    """Generate AI analysis for a single airdrop project."""
+    steps_str = "; ".join(project.get("steps", []) or project.get("actions", []) or [])
+    prompt = AIRDROP_ANALYSIS_PROMPT.format(
+        name=project.get("name", ""),
+        category=project.get("category", "airdrop"),
+        chain=project.get("chain", ""),
+        description=(project.get("about") or project.get("description", ""))[:500],
+        status=project.get("status", "active"),
+        steps=steps_str[:300],
+        estimated_value=project.get("estimated_value", ""),
+    )
+    system = "You are a senior airdrop analyst. Always respond with valid JSON only, no markdown fences."
+
+    for entry in api_keys:
+        kidx = entry["index"]
+        preferred = OPENROUTER_KEY_MODELS.get(kidx, [])
+        for model in _healthy_models("openrouter", kidx, preferred):
+            try:
+                start = time.time()
+                text = _call_openrouter(entry["key"], model, prompt, system)
+                latency = time.time() - start
+                result = _parse_json(text)
+                if result:
+                    _record_success("openrouter", kidx, model, latency)
+                    print(f"[Airdrop Analyzer] OK OR key{kidx} model={model} ({latency:.1f}s)")
+                    return result
+                print(f"[Airdrop Analyzer] Bad JSON from OR/{model}, trying next")
+                _record_failure("openrouter", kidx, model)
+            except requests.exceptions.HTTPError as e:
+                code = e.response.status_code if hasattr(e, "response") else None
+                _record_failure("openrouter", kidx, model, code)
+                print(f"[Airdrop Analyzer] Fail OR key{kidx} model={model}: {e}")
+            except Exception as e:
+                _record_failure("openrouter", kidx, model)
+                print(f"[Airdrop Analyzer] Fail OR key{kidx} model={model}: {e}")
+
+    return None
+
+
 def analyze_crypto(projects: List[dict], api_keys: List[dict], max_workers: int = 5):
     if not api_keys:
         print("[Crypto Analyzer] No OpenRouter keys, skipping crypto analysis")
