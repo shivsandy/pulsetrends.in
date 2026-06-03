@@ -2,42 +2,63 @@ import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import CookieModal from './CookieModal';
 
-const STORAGE_KEY = 'pulsetrends_cookie_consent';
+const COOKIE_NAME = 'pulsetrends_cookie_consent';
+const SEVEN_DAYS_SECONDS = 7 * 24 * 60 * 60;
 
 interface CookiePrefs {
   consent: boolean;
   analytics: boolean;
   marketing: boolean;
-  timestamp: number;
 }
 
+/**
+ * Read a cookie by name. Returns null if not found or unparseable.
+ */
+function getCookie(name: string): string | null {
+  const match = document.cookie.match(new RegExp(`(?:^|;\\s*)${encodeURIComponent(name)}=([^;]*)`));
+  return match ? decodeURIComponent(match[1]) : null;
+}
+
+/**
+ * Set a cookie with the given name, value, and attributes.
+ * 7-day expiry via max-age, scoped to entire site.
+ */
+function setCookie(name: string, value: string): void {
+  const encodedName = encodeURIComponent(name);
+  const encodedValue = encodeURIComponent(value);
+  const isSecure = window.location.protocol === 'https:';
+  document.cookie = [
+    `${encodedName}=${encodedValue}`,
+    `max-age=${SEVEN_DAYS_SECONDS}`,
+    'path=/',
+    'SameSite=Lax',
+    isSecure ? 'Secure' : '',
+  ]
+    .filter(Boolean)
+    .join('; ');
+}
+
+/** Parse stored JSON from the cookie. Returns null if missing or expired. */
 function loadConsent(): CookiePrefs | null {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = getCookie(COOKIE_NAME);
     if (!raw) return null;
-    const parsed = JSON.parse(raw) as CookiePrefs;
-    // Check if consent is older than 7 days
-    const sevenDays = 7 * 24 * 60 * 60 * 1000;
-    if (Date.now() - parsed.timestamp > sevenDays) {
-      localStorage.removeItem(STORAGE_KEY);
-      return null;
-    }
-    return parsed;
+    const parsed = JSON.parse(raw) as CookiePrefs & { timestamp?: number };
+    // Basic shape check
+    if (typeof parsed.consent !== 'boolean') return null;
+    return { consent: parsed.consent, analytics: parsed.analytics, marketing: parsed.marketing };
   } catch {
     return null;
   }
 }
 
-function saveConsent(consent: boolean, analytics: boolean, marketing: boolean) {
+/** Persist consent preferences as a cookie with a 7-day max-age. */
+function saveConsent(consent: boolean, analytics: boolean, marketing: boolean): void {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({
-      consent,
-      analytics,
-      marketing,
-      timestamp: Date.now(),
-    }));
+    const payload = JSON.stringify({ consent, analytics, marketing });
+    setCookie(COOKIE_NAME, payload);
   } catch {
-    // localStorage may be unavailable
+    // cookie may be unavailable
   }
 }
 
@@ -70,7 +91,7 @@ export default function CookieConsent() {
     setVisible(false);
   };
 
-  // Don't flash the banner before checking localStorage
+  // Don't flash the banner before checking the cookie
   if (!loaded || !visible) return null;
 
   return (
