@@ -1,3 +1,4 @@
+import json
 import os
 import sys
 import time
@@ -38,6 +39,7 @@ def main() -> int:
         return 0
 
     NEWS_LOCK_FILE.write_text("locked")
+    cached = []
     try:
         sys.path.insert(0, str(Path(__file__).resolve().parent))
         import news_api
@@ -58,9 +60,29 @@ def main() -> int:
         except Exception:
             pass
 
+    # Safety: never overwrite cache if new version has < 50% of old article count
     if NEWS_CACHE_FILE.exists():
-        size_kb = NEWS_CACHE_FILE.stat().st_size / 1024
-        print(f"[NewsCache] OK ({size_kb:.1f} KB)")
+        try:
+            with open(NEWS_CACHE_FILE, encoding="utf-8") as f:
+                new_cache = json.load(f)
+            if isinstance(new_cache, list):
+                new_count = len(new_cache)
+                # Compare with old cache if we had one
+                if cached and isinstance(cached, list) and len(cached) > 5:
+                    old_count = len(cached)
+                    if new_count < old_count * 0.5:
+                        print(f"[NewsCache] WARNING: New cache has {new_count} articles vs {old_count} old (>50% drop)")
+                        print(f"[NewsCache] Preserving old cache to prevent data loss")
+                        # Restore old cache
+                        with open(NEWS_CACHE_FILE, "w", encoding="utf-8") as f:
+                            json.dump(cached, f, indent=2, ensure_ascii=False)
+                        print(f"[NewsCache] Restored old cache ({old_count} articles)")
+                        return 0
+                print(f"[NewsCache] OK ({new_count} articles, {NEWS_CACHE_FILE.stat().st_size / 1024:.1f} KB)")
+            else:
+                print(f"[NewsCache] Warning: cache is not a list")
+        except Exception as e:
+            print(f"[NewsCache] Safety check failed: {e}")
         return 0
     print("[NewsCache] No cache file produced (site will show FALLBACK_NEWS this cycle)")
     return 0

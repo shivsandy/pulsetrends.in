@@ -509,6 +509,9 @@ def generate_news_data():
     articles = prune_old_articles(articles)
 
     print(f"[DataGen] Loading {len(articles)} news articles from cache...")
+    if len(articles) == 0:
+        print("[DataGen] WARNING: 0 articles in cache — newsData.ts will be empty!")
+        print("[DataGen] If this is unexpected, check generate_news_cache.py output")
 
     lines = []
     lines.append('export interface ArticleImage {')
