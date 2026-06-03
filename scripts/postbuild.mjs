@@ -43,15 +43,24 @@ function extractArticlesFromTs(tsPath) {
   return safeEvalArr(match[1]);
 }
 
-function safeEvalArr(arrLiteral) {
+function extractAirdropsFromTs(tsPath) {
+  if (!existsSync(tsPath)) return [];
+  const src = readFileSync(tsPath, 'utf8');
+  const match = src.match(/export\s+const\s+airdropProjects\s*:\s*AirdropProject\[\]\s*=\s*(\[[\s\S]*?\n\];)/);
+  if (!match) return [];
+  return safeEvalArr(match[1], AIRDROP_SCORES_HELPER);
+}
+
+function safeEvalArr(arrLiteral, helpers = '') {
   const cleaned = arrLiteral
     .replace(/;\s*$/, '')
     .replace(/\s+as\s+(const|[A-Za-z_$][\w$]*(\[\])?)/g, '')
     .replace(/:\s*IPOStock\[\]/g, '')
     .replace(/:\s*CryptoProject\[\]/g, '')
-    .replace(/:\s*NewsArticle\[\]/g, '');
+    .replace(/:\s*NewsArticle\[\]/g, '')
+    .replace(/:\s*AirdropProject\[\]/g, '');
   try {
-    const parsed = Function(`"use strict";return (${cleaned});`)();
+    const parsed = Function(`"use strict";${helpers} return (${cleaned});`)();
     return Array.isArray(parsed) ? parsed : [];
   } catch (e) {
     console.warn('[postbuild] parse error:', e.message);
@@ -59,12 +68,26 @@ function safeEvalArr(arrLiteral) {
   }
 }
 
+// Helper: airdrop scores function (needed by airdropData.ts)
+const AIRDROP_SCORES_HELPER = `
+  function s(t,i,p,m,c,tk,a) {
+    var o = Math.round(t*0.20 + i*0.15 + p*0.20 + m*0.15 + c*0.10 + tk*0.10 + a*0.10);
+    return { team:t, investors:i, product:p, market:m, community:c, token:tk, airdrop:a, overall:o };
+  }
+`;
+
 function buildDynamicRoutes() {
   const routes = [];
   for (const stock of extractStocksFromTs(resolve('src/data/ipoData.ts'))) {
     const slug = `${slugify(stock.company)}-${stock.id}`;
     routes.push({ path: `/ipo-analysis/${slug}`, priority: '0.7', changefreq: 'daily' });
   }
+  // Airdrops from airdropData.ts (primary source, new pipeline)
+  for (const project of extractAirdropsFromTs(resolve('src/data/airdropData.ts'))) {
+    const slug = `${slugify(project.name)}-${project.id}`;
+    routes.push({ path: `/airdrops/${slug}`, priority: '0.6', changefreq: 'daily' });
+  }
+  // Also include airdrops from cryptoData.ts (legacy) for backwards compatibility
   for (const project of extractProjectsFromTs(resolve('src/data/cryptoData.ts'))) {
     if (project.category !== 'airdrop') continue;
     const slug = `${slugify(project.name)}-${project.id}`;
