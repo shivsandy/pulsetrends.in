@@ -556,7 +556,7 @@ export const airdropProjects: AirdropProject[] = [
       aboutProject: 'Babylon is a protocol that brings Bitcoin staking to the PoS ecosystem.',
       projectOverview: 'Bitcoin holders can stake their BTC without third-party bridges or wrapping.',
       productDescription: 'Trustless Bitcoin staking protocol leveraging Bitcoin\'s script language.',
-      ecosystemDescription: '',
+      ecosystemDescription: 'Bitcoin holders staking via Babylon, finality providers operating nodes, and a growing set of PoS chains (Cosmos, Polygon, BNB Chain) integrating Babylon for cryptoeconomic security. The ecosystem also includes liquid staking protocols building on Babylon to offer tradable stBTC derivatives.',
       useCases: ['Bitcoin restaking', 'PoS chain security', 'BTC yield generation'],
       teamInfo: 'Founded by David Tse, Stanford professor and blockchain researcher.',
       fundingInfo: 'Raised $70M from top crypto investors.',
