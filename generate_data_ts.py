@@ -9,7 +9,41 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "src", "data")
 
 
-def prune_old_articles(articles: list, max_days: int = 60) -> list:
+ARTIFACTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "artifacts", "news")
+
+
+def load_news_articles_from_artifacts() -> list:
+    """Load all news articles from artifacts/news/*.json files."""
+    if not os.path.isdir(ARTIFACTS_DIR):
+        return []
+    all_articles = []
+    seen_ids = set()
+    try:
+        for fname in sorted(os.listdir(ARTIFACTS_DIR)):
+            if not fname.endswith(".json"):
+                continue
+            fpath = os.path.join(ARTIFACTS_DIR, fname)
+            try:
+                with open(fpath, encoding="utf-8") as f:
+                    batch = json.load(f)
+                if not isinstance(batch, list):
+                    continue
+                for art in batch:
+                    if not isinstance(art, dict):
+                        continue
+                    aid = art.get("id", "")
+                    if aid and aid not in seen_ids:
+                        seen_ids.add(aid)
+                        all_articles.append(art)
+            except Exception:
+                continue
+    except Exception:
+        pass
+    print(f"[DataGen] Loaded {len(all_articles)} articles from artifacts")
+    return all_articles
+
+
+def prune_old_articles(articles: list, max_days: int = 70) -> list:
     """Remove articles older than max_days from the list."""
     if not isinstance(articles, list):
         return []
@@ -501,16 +535,36 @@ def generate_crypto_data():
 
 def generate_news_data():
     news_cache_path = os.path.join(DATA_DIR, "news_cache.json")
-    articles = load_json(news_cache_path)
-    if not isinstance(articles, list):
-        articles = []
+    current = load_json(news_cache_path)
+    if not isinstance(current, list):
+        current = []
 
-    # Enforce 60-day retention
-    articles = prune_old_articles(articles)
+    # Load archived articles from artifacts
+    archived = load_news_articles_from_artifacts()
 
-    print(f"[DataGen] Loading {len(articles)} news articles from cache...")
+    # Merge: current cache first (most recent), then archived (deduped by ID)
+    seen_ids = set()
+    merged = []
+    for art in current:
+        if isinstance(art, dict):
+            aid = art.get("id", "")
+            if aid and aid not in seen_ids:
+                seen_ids.add(aid)
+                merged.append(art)
+    for art in archived:
+        if isinstance(art, dict):
+            aid = art.get("id", "")
+            if aid and aid not in seen_ids:
+                seen_ids.add(aid)
+                merged.append(art)
+
+    # Enforce 70-day retention
+    articles = prune_old_articles(merged)
+
+    print(f"[DataGen] Loaded {len(current)} from cache + {len(archived)} from artifacts = {len(merged)} merged, "
+          f"{len(articles)} after 70-day pruning")
     if len(articles) == 0:
-        print("[DataGen] WARNING: 0 articles in cache — newsData.ts will be empty!")
+        print("[DataGen] WARNING: 0 articles after merge — newsData.ts will be empty!")
         print("[DataGen] If this is unexpected, check generate_news_cache.py output")
 
     lines = []

@@ -2,12 +2,44 @@ import json
 import os
 import sys
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 
-DATA_DIR = Path(__file__).resolve().parent / "data"
+ROOT_DIR = Path(__file__).resolve().parent
+DATA_DIR = ROOT_DIR / "data"
+ARTIFACTS_DIR = ROOT_DIR / "artifacts" / "news"
 NEWS_CACHE_FILE = DATA_DIR / "news_cache.json"
 NEWS_LOCK_FILE = DATA_DIR / "news_cache.lock"
 MAX_AGE_SECONDS = 24 * 3600
+
+
+def archive_articles(articles: list):
+    """Save new articles to a dated artifact file in artifacts/news/YYYY-MM-DD.json."""
+    if not articles:
+        return
+    ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    artifact_path = ARTIFACTS_DIR / f"{today}.json"
+    
+    # Load existing artifacts for today (if any from earlier runs)
+    existing = []
+    if artifact_path.exists():
+        try:
+            existing = json.loads(artifact_path.read_text(encoding="utf-8"))
+            if not isinstance(existing, list):
+                existing = []
+        except Exception:
+            existing = []
+    
+    # Merge by ID, preferring new articles
+    seen_ids = {a.get("id", "") for a in existing if isinstance(a, dict)}
+    for a in articles:
+        if isinstance(a, dict) and a.get("id", "") not in seen_ids:
+            existing.append(a)
+            seen_ids.add(a.get("id", ""))
+    
+    artifact_path.write_text(json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"[NewsCache] Archived {len(articles)} articles to {artifact_path.name}")
 
 
 def is_cache_fresh() -> bool:
@@ -67,6 +99,9 @@ def main() -> int:
                 new_cache = json.load(f)
             if isinstance(new_cache, list):
                 new_count = len(new_cache)
+                # Archive new articles to dated artifacts
+                if new_count > 0:
+                    archive_articles(new_cache)
                 # Compare with old cache if we had one
                 if cached and isinstance(cached, list) and len(cached) > 5:
                     old_count = len(cached)
