@@ -59,6 +59,9 @@ export interface NewsArticle {
   seoTitle?: string;
   metaTitle?: string;
   metaDescription: string;
+  author?: string;
+  authorAvatar?: string;
+  telegram?: string;
   slug?: string;
   focusKeyword?: string;
   categories?: string[];
@@ -87,6 +90,9 @@ export const newsArticles: NewsArticle[] = [
   {
     id: "news-1780399533-7107",
     headline: "Bitcoin & Ethereum Prices Slip on June 1 2026 Amid Market Selloff",
+    author: "Shiva Sandeep",
+    authorAvatar: "/author-avatar.jpg",
+    telegram: "its_terabyte",
     subheadline: "Global crypto markets tumble as Bitcoin and Ethereum post declines on Monday, June 1, 2026.",
     keyHighlights: ["Bitcoin and Ethereum prices fell on Monday, June 1, 2026", "Broad selloff across cryptocurrency assets reported", "No specific catalysts disclosed in the sources", "Market sentiment turned bearish for major digital assets", "Price movements reflect ongoing volatility in crypto markets"],
     executiveSummary: "Bitcoin and Ethereum experienced price declines on Monday, June 1, 2026, as part of a wider cryptocurrency market selloff. The drop was noted across major digital assets but no detailed catalysts were provided in the available reports. Investors are watching for potential rebound signals amid heightened volatility.",
@@ -227,6 +233,9 @@ export const newsArticles: NewsArticle[] = [
   {
     id: "news-1780399577-7213",
     headline: "IG Launches Zero-Commission Crypto Payments Transforming India\'s Digital Economy",
+    author: "Shiva Sandeep",
+    authorAvatar: "/author-avatar.jpg",
+    telegram: "its_terabyte",
     subheadline: "Breakthrough in Low-Cost Fintech Reshapes Crypto Adoption for Emerging Markets",
     keyHighlights: [],
     executiveSummary: "India\'s burgeoning crypto market experiences renewed growth following IG\'s introduction of fee-free payment solutions, addressing regional challenges in transaction costs and accessibility.",
@@ -303,6 +312,9 @@ export const newsArticles: NewsArticle[] = [
   {
     id: "news-1780399675-6173",
     headline: "Bitcoin, Ethereum, XRP Slide as Geopolitical Tensions and Market Sentiment Weaken",
+    author: "Shiva Sandeep",
+    authorAvatar: "/author-avatar.jpg",
+    telegram: "its_terabyte",
     subheadline: "Global crypto indices tumble amid rising uncertainty over the Israel‑Hezbollah conflict and a shift in risk appetite.",
     keyHighlights: ["Bitcoin fell 4.2% to $28,350, its weakest level in 12 days.", "Ethereum slipped 3.8% to $1,950, while XRP dropped 5.1% to $0.57.", "Geopolitical tensions in the Middle East are tightening risk‑off sentiment across digital assets.", "Institutional interest in Bitcoin remains muted; Bitcoin‑based ETFs have yet to launch in the US.", "Historical comparison shows a 70‑day moving average breach for Bitcoin, raising bearish flags."],
     executiveSummary: "Bitcoin, Ethereum, and XRP all fell in the first half of 2024 as geopolitical tensions between Israel and Hezbollah intensified, pushing risk‑off sentiment into the crypto market.  Bitcoin’s price slid 4.2% to $28,350, its lowest in 12 days, while Ethereum and XRP fell 3.8% and 5.1% respectively.  Market participants are re‑evaluating exposure as the Israel‑Iran deal talks stall and global uncertainty rises.  This article analyzes the catalysts, technical signals, and potential implications for institutional and retail investors.",
@@ -425,6 +437,9 @@ export const newsArticles: NewsArticle[] = [
   {
     id: "news-1780399747-2025",
     headline: "Bitcoin vs Ethereum: Which Crypto Offers Better Returns in 2024?",
+    author: "Shiva Sandeep",
+    authorAvatar: "/author-avatar.jpg",
+    telegram: "its_terabyte",
     subheadline: "BTC and ETH face headwinds as crypto market sees renewed volatility",
     keyHighlights: ["Bitcoin dips below $74,000 as crypto sell-off intensifies", "Ethereum loses over 3% amid broader market weakness", "May trading sees BTC down for the month with uncertainty lingering", "Institutional flows remain mixed despite ETF approvals", "Technical indicators suggest potential for further downside"],
     executiveSummary: "The cryptocurrency market is experiencing renewed volatility as Bitcoin falls below $74,000 and Ethereum drops over 3%, extending May\'s downward trend. With both major cryptocurrencies facing selling pressure, investors are increasingly questioning whether Bitcoin or Ethereum offers better risk-adjusted returns. While Bitcoin maintains its role as digital gold with institutional adoption accelerating through spot ETFs, Ethereum\'s upcoming network upgrades and DeFi dominance present different value propositions. Market momentum suggests the debate between BTC and ETH has become more nuanced, with neither asset providing clear superiority across all metrics. The current environment favors a balanced approach rather than outright allocation to either cryptocurrency.",

@@ -100,6 +100,29 @@ function ArticleCard({ article, index, i }: { article: NewsArticle; index: numbe
           </div>
         )}
 
+        <div className="flex items-center gap-2 mt-2 mb-3">
+          <img
+            src="/author-avatar.jpg"
+            alt="Shiva Sandeep"
+            width={20}
+            height={20}
+            className="w-5 h-5 rounded-full object-cover"
+          />
+          <span className="text-[11px] text-surface-600">
+            {article.author || 'Shiva Sandeep'}
+            {article.telegram && (
+              <span className="ml-1">
+                <a
+                  href={`https://t.me/${article.telegram}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sky-400 hover:text-sky-300"
+                >@{article.telegram}</a>
+              </span>
+            )}
+          </span>
+        </div>
+
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
             <span className="text-[11px] text-surface-600 mr-1">Related</span>
