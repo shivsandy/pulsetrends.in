@@ -497,7 +497,37 @@ export default function AirdropsPage() {
                     )}
                   </div>
 
-                  {/* Row count indicator */}
+                  {/* AI Summary */}
+                  {project.aiAnalysis?.summary && (
+                    <div className="mt-2 p-2.5 rounded-lg bg-surface-50 border border-surface-300/40">
+                      <p className="text-[11px] font-semibold text-surface-600 uppercase tracking-wider mb-1 flex items-center gap-1">
+                        <Brain className="w-3 h-3" /> AI Analysis
+                      </p>
+                      <p className="text-[12px] text-surface-700 leading-relaxed line-clamp-2">{project.aiAnalysis.summary}</p>
+                    </div>
+                  )}
+
+                  {/* Participation Steps Preview */}
+                  {pg && pg.steps.length > 0 && (
+                    <div className="mt-2 p-2.5 rounded-lg bg-surface-50 border border-surface-300/40">
+                      <p className="text-[11px] font-semibold text-surface-600 uppercase tracking-wider mb-1 flex items-center gap-1">
+                        <CheckCircle2 className="w-3 h-3 text-success" /> How To Participate
+                      </p>
+                      <ol className="space-y-0.5">
+                        {pg.steps.slice(0, 2).map((step, si) => (
+                          <li key={si} className="flex items-start gap-1.5 text-[12px] text-surface-700">
+                            <span className="w-4 h-4 rounded-full bg-brand-muted border border-brand-border text-brand-light text-[9px] font-bold flex items-center justify-center shrink-0 mt-0.5">{si + 1}</span>
+                            <span className="leading-relaxed truncate min-w-0">{step}</span>
+                          </li>
+                        ))}
+                        {pg.steps.length > 2 && (
+                          <li className="text-[11px] text-surface-600 italic pl-6">+{pg.steps.length - 2} more steps</li>
+                        )}
+                      </ol>
+                    </div>
+                  )}
+
+                  {/* Verdict */}
                   <div className="mt-3 pt-3 border-t border-surface-300/40 flex items-center justify-between text-[11px] text-surface-600">
                     <span className="truncate">{project.verdict.slice(0, 60)}...</span>
                     <Sparkles className="w-3 h-3 text-brand-light shrink-0 ml-2" />
