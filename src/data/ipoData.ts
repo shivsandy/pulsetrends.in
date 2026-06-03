@@ -99,7 +99,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Weekly news roundup: Googlebook announced, WhatsApp Incognito, Altman under fire and Foxconn breach (Techtarget.com)\n  Stay up to date with the latest U.S. tech news, IPOs and executive moves shaping the industry each week.",
+    aiAnalysis: "",
     aiVerdict: "Neutral",
   },
   {
@@ -143,7 +143,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Vida Global 3.33M share IPO price range $4.50-$5.00 (Thefly.com)\n  See the rest of the story here.\n\nthefly.com provides the latest financial news as it breaks. Known as a leader in market intelligence, The Fly's real-time, streaming news feed keeps individual investo",
+    aiAnalysis: "",
     aiVerdict: "Neutral – The listing presents moderate long‑term upside, but the company’s high debt and competitive pressures warrant caution. Subscribe / Avoid / Neutral recommendation: Neutral.",
   },
   {
@@ -187,7 +187,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- NYSE Content Update: Lincoln International Valued at $2 Billion after $420 Million IPO (PRNewswire)\n  NYSE issues a pre-market daily advisory direct from the trading floor. NEW YORK, May 20, 2026 /PRNewswire/ -- The New York Stock Exchange (NYSE) provides a daily pre-market update directly from the NY\n- Investment bank Lincoln International eyes $2 billion valuation in US IPO (The Times of India)\n  The spring IPO market is seeing a strong pickup in activity after a brief lull ​in March as issuers look past geopolitical uncertainty ⁠to move ‌ahead with their listing plans.In the busiest ​week for\n- Lincoln International seeks $421M in US IPO, files to list on NYSE (Crypto Briefing)\n  Lincoln's IPO could enhance its capital for growth and strategic investments, impacting its competitive stance in the mid-market advisory sector.\nThe post Lincoln International seeks $421M in US IPO, ",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential is moderate with a positive long‑term outlook; recommendation: Neutral",
   },
   {
@@ -233,7 +233,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Teamtech Formwork Solutions IPO: Check GMP, subscription, price band and other details (The Times of India)\n  Teamtech Formwork Solutions' IPO opens Tuesday with a muted grey market outlook, showing a 0% premium. The Rs 50.15 crore issue aims to fund a new manufacturing facility, debt repayment, and working c\n- IPO calendar: A cloud kitchen brand among 4 companies to launch public offers this week; check details (The Times of India)\n  Four SME IPOs are set to open this week across food, construction and textile sectors, aiming to raise over Rs 138 crore. While mainboard activity remains subdued, offerings like Vegorama Punjabi Angi\n- IPO calendar: 3 companies set to launch public offers this week; check details (The Times of India)\n  This comes as markets continue to witness sharp downswings and muted recoveries, with oil prices remaining elevated amid the seesaw political game in the Middle East.\n- Teamtech Formwork shares to list today. Check GMP ahead of debut (The Times of India)\n  Teamtech Formwork Solutions is set to list on the NSE SME platform on Tuesday, with grey market trends suggesting moderate listing gains. The IPO, which opened for subscription between May 19-21, was ",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential, long‑term outlook positive; Subscribe",
   },
   {
@@ -371,7 +371,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential with a positive long‑term outlook; Subscribe.",
   },
   {
@@ -463,7 +463,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 74,
     },
-    aiAnalysis: "Recent News:\n- MR Maniveni Foods shares to list today. Check GMP ahead of debut (The Times of India)\n  MR Maniveni Foods shares are poised for their debut on the BSE SME platform this Monday. Grey market indicators suggest a flat listing, with shares trading near their issue price. The company's Rs 27 \n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential, long‑term outlook positive – Subscribe",
   },
   {
@@ -509,7 +509,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Harikanta Overseas IPO: Check GMP, price band, subscription, other details (The Times of India)\n  Harikanta Overseas' SME IPO opens Wednesday, aiming to raise Rs 25.63 crore. The issue, priced between Rs 91-96, sees muted grey market sentiment with zero premium. Funds will bolster working capital \n- IPO calendar: A cloud kitchen brand among 4 companies to launch public offers this week; check details (The Times of India)\n  Four SME IPOs are set to open this week across food, construction and textile sectors, aiming to raise over Rs 138 crore. While mainboard activity remains subdued, offerings like Vegorama Punjabi Angi",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential appears moderate with a long‑term growth outlook; recommendation: Neutral – consider Subscribe if comfortable with trade‑related risks.",
   },
   {
@@ -555,7 +555,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- IPO calendar: 3 companies set to launch public offers this week; check details (The Times of India)\n  This comes as markets continue to witness sharp downswings and muted recoveries, with oil prices remaining elevated amid the seesaw political game in the Middle East.\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers\n- Yaashvi Jewellers shares to list today. Check GMP ahead of debut (The Times of India)\n  Yaashvi Jewellers' shares are poised for their debut on the BSE SME platform. The initial public offering is expected to see a subdued listing performance. Grey market indicators suggest the stock wil",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential with a positive long‑term outlook; Subscribe.",
   },
   {
@@ -600,7 +600,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "Aeon Acquisition I Corp. presents a moderate-risk investment opportunity with potential listing gains depending on the quality of the eventual acquisition target. Given the current SPAC market conditions and the company's structure, the recommendation is Neutral for investors seeking exposure to this acquisition strategy.",
+    aiVerdict: "Aeon Acquisition I Corp. presents a moderate-risk investment opportunity with potential listing gains depending on the quality of the eventual acquisition target. Given the current SPAC market conditions and the company\'s structure, the recommendation is Neutral for investors seeking exposure to this acquisition strategy.",
   },
   {
     id: "13",
@@ -643,7 +643,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Applied Aerospace & Defense, Inc. Announces Launch of Initial Public Offering (PRNewswire)\n  HUNTSVILLE, Ala., May 26, 2026 /PRNewswire/ -- Applied Aerospace & Defense, Inc., an advanced manufacturer of mission critical systems for space and defense (\"Applied,\" \"we,\" or the \"Company\"), today ",
+    aiAnalysis: "",
     aiVerdict: "Neutral recommendation. Long-term growth potential in aerospace aligns with strategic investments, but short-term risks warrant caution.",
   },
   {
@@ -691,7 +691,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 70,
     },
     aiAnalysis: "",
-    aiVerdict: "Given the 'upcoming' status and lack of detailed financial information, a definitive verdict is challenging. The listing gain potential will depend heavily on the final valuation, market sentiment, and subscription rates. Long-term outlook hinges on the company's ability to sustain growth, manage competition, and adapt to fashion trends. A 'Neutral' recommendation is prudent until the RHP is released, advising investors to 'Subscribe' or 'Avoid' only after a thorough review of the complete offer document.",
+    aiVerdict: "Given the \'upcoming\' status and lack of detailed financial information, a definitive verdict is challenging. The listing gain potential will depend heavily on the final valuation, market sentiment, and subscription rates. Long-term outlook hinges on the company\'s ability to sustain growth, manage competition, and adapt to fashion trends. A \'Neutral\' recommendation is prudent until the RHP is released, advising investors to \'Subscribe\' or \'Avoid\' only after a thorough review of the complete offer document.",
   },
   {
     id: "15",
@@ -736,7 +736,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 74,
     },
-    aiAnalysis: "Recent News:\n- Advent-Backed Power Equipment Maker Innio Files for US IPO (Financial Post)\n  Gas engine manufacturer Innio Holding GmbH filed for a US initial public offering, joining a slew of industrial companies looking to tap the surge in data center spending.",
+    aiAnalysis: "",
     aiVerdict: "Given its established market position and relevance in the energy transition, INNIO may see moderate listing gains, particularly if the broader market sentiment is positive. For long-term investors, the company offers a stable business model with potential for growth driven by decarbonization efforts and demand for flexible power. Recommendation: Neutral to Cautiously Subscribe for long-term holding.",
   },
   {
@@ -769,7 +769,7 @@ export const ipoStocks: IPOStock[] = [
     strengths: ["Leveraging proprietary AI and machine learning for highly optimized mobile ad campaigns, leading to superior ROI for clients.", "Operating in the large and continuously expanding mobile app economy, benefiting from increasing digital ad spend.", "Diversified client base across various app categories and strong client retention rates, indicating sticky platform usage.", "Scalable business model with high operating leverage, allowing for efficient growth and margin expansion."],
     risks: [
       { text: "Intense competition in the mobile advertising technology sector from both established players and emerging startups, potentially impacting market share and pricing power.", indicator: "🔴" },
-      { text: "Reliance on third-party mobile operating systems (iOS and Android) and their evolving privacy policies (e.g., Apple's ATT framework), which could impact data access and ad targeting effectiveness.", indicator: "🔴" },
+      { text: "Reliance on third-party mobile operating systems (iOS and Android) and their evolving privacy policies (e.g., Apple\'s ATT framework), which could impact data access and ad targeting effectiveness.", indicator: "🔴" },
       { text: "Potential for ad fraud and brand safety concerns, which could damage client trust and platform reputation if not effectively managed.", indicator: "🟡" },
       { text: "Economic downturns or shifts in advertiser spending habits could lead to reduced demand for mobile advertising services.", indicator: "🟡" },
       { text: "Valuation at the IPO price band might be considered high by some investors, especially given the competitive landscape and regulatory uncertainties.", indicator: "🟡" },
@@ -782,8 +782,8 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 75,
     },
-    aiAnalysis: "Recent News:\n- Liftoff Announces Launch of Initial Public Offering (PRNewswire)\n  REDWOOD CITY, Calif., May 29, 2026 /PRNewswire/ -- Liftoff Mobile, Inc. (\"Liftoff\"), a global leader in performance marketing and monetization solutions for the mobile app economy, today announced tha",
-    aiVerdict: "Liftoff Mobile shows good potential for a moderate listing gain due to its strong growth trajectory and position in a high-demand sector. The long-term outlook is positive, contingent on its ability to adapt to privacy changes and maintain technological leadership. Given its solid financials and market position, a 'Subscribe' recommendation is warranted for investors comfortable with the inherent risks of the ad-tech industry.",
+    aiAnalysis: "",
+    aiVerdict: "Liftoff Mobile shows good potential for a moderate listing gain due to its strong growth trajectory and position in a high-demand sector. The long-term outlook is positive, contingent on its ability to adapt to privacy changes and maintain technological leadership. Given its solid financials and market position, a \'Subscribe\' recommendation is warranted for investors comfortable with the inherent risks of the ad-tech industry.",
   },
   {
     id: "17",
@@ -826,7 +826,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Honeywell's Quantinuum makes US IPO filing public (CNA)\n  May 8 : Industrial giant Honeywell's quantum computing company, Quantinuum, on Friday made public its paperwork for an initial public offering in the United States.The Broomfield, Colorado-based compa\n- Honeywell's Quantinuum eyes $14.3 billion valuation in upsized US IPO (CNA)\n  June 1 : Honeywell's Quantinuum is targeting a valuation of up to $14.3 billion in its upsized U.S. initial public offering, underscoring robust investor appetite around quantum computing.The Broomfie\n- Honeywell's Quantinuum moves closer to public markets with US IPO filing (CNA)\n  May 8 : Industrial giant Honeywell's Quantinuum publicly filed its paperwork for a U.S. initial public offering on Friday, moving the quantum computing company closer to a stock market listing.The IPO\n- Trapped-ion quantum computer startup Quantinuum files to go public (SiliconANGLE News)\n  Quantinuum Inc., a startup that makes quantum chips based on a so-called trapped-ion qubit architecture, today filed to go public. The Honeywell International Inc. spinoff hopes to sell about 21.05 mi\n- Quantinuum files for US IPO amid quantum computing enthusiasm (Crypto Briefing)\n  Quantinuum's IPO could signal increased investor confidence in quantum computing, potentially accelerating innovation and industry growth.\nThe post Quantinuum files for US IPO amid quantum computing e",
+    aiAnalysis: "",
     aiVerdict: "Neutral - While the long-term quantum computing market potential is substantial, the IPO faces execution and market timing risks. Recommend a cautious approach with small position sizing for technology-focused portfolios.",
   },
   {
@@ -870,8 +870,8 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 75,
     },
-    aiAnalysis: "Recent News:\n- Florida insurer Safepoint begins IPO roadshow (Lifeinsuranceinternational.com)\n  The company is marketing 6.24 millionshares in the offering at a price range of $15 to $17 each.\n- Insurance Firm Safepoint, Backers Seek $283.3 Million in IPO (Insurance Journal)\n  Safepoint Holdings Inc., an underwriter of specialty homeowners and commercial insurance, and some of its backers are seeking to raise as much as $283.3 million in an US initial public offering. The T",
-    aiVerdict: "Given the strong market tailwinds for cybersecurity and Safepoint's demonstrated growth trajectory, there is potential for a moderate listing gain. The long-term outlook appears positive, contingent on continued technological innovation and successful market share expansion against formidable competitors. Recommendation: Subscribe.",
+    aiAnalysis: "",
+    aiVerdict: "Given the strong market tailwinds for cybersecurity and Safepoint\'s demonstrated growth trajectory, there is potential for a moderate listing gain. The long-term outlook appears positive, contingent on continued technological innovation and successful market share expansion against formidable competitors. Recommendation: Subscribe.",
   },
   {
     id: "19",
@@ -914,7 +914,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Sunshine Silver Mining & Refining Announces Launch of its Initial Public Offering (PRNewswire)\n  KELLOGG, Idaho, May 26, 2026 /PRNewswire/ -- Sunshine Silver Mining & Refining Company (the \"Company\" or \"Sunshine\") today announced the launch of its initial public offering (\"IPO\") of 20,000,000 sha",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential, long‑term outlook positive; Recommend Subscribe with caution.",
   },
   {
@@ -960,7 +960,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Aureate Tradde IPO opens for subscription today. Check GMP, price band and other details (The Times of India)\n  Aureate Tradde's initial public offering begins on Friday, May 29. The company is seeking to raise approximately Rs 27.29 crore through a fixed price issue. Grey market indications suggest a flat list\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential is strong with a favorable long-term outlook, but avoid if regulatory risks escalate. Subscribe for updates.",
   },
   {
@@ -1004,7 +1004,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- CGI and Stockmann enter strategic partnership (PRNewswire)\n  Stock Market Symbols GIB.A (TSX) GIB (NYSE) cgi.com/newsroom Strengthening Stockmann's omnichannel customer experience HELSINKI, May 12, 2026 /PRNewswire/ - CGI (TSX: GIB.A) (NYSE: GIB), one of the la",
+    aiAnalysis: "",
     aiVerdict: "The stock is positioned for modest listing gains driven by market appetite for growth IPOs, with long-term potential dependent on execution of expansion plans. Recommend Neutral rating with cautious optimism for subscribers seeking exposure to the dining sector.",
   },
   {
@@ -1050,7 +1050,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Natural gas mineral firm WhiteHawk reveals sevenfold revenue surge in US IPO filing (The Times of India)\n  WhiteHawk, a leading natural gas royalty firm, is taking the stock market plunge with its initial public offering. This comes on the heels of an astonishing 615% revenue spike in 2025, mirroring the c",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential is moderate, driven by market appetite for income-focused resource plays. The long-term outlook is stable, offering consistent dividends, but growth may be incremental. Recommendation: Subscribe for long-term income-oriented investors comfortable with commodity price exposure; Neutral for those seeking high growth.",
   },
   {
@@ -1080,7 +1080,7 @@ export const ipoStocks: IPOStock[] = [
     roce: "",
     eps: "",
     peRatio: "",
-    strengths: ["Exposure to India's robust and expanding industrial and manufacturing sectors, driven by government initiatives and infrastructure development.", "Potential for technological expertise or specialized product offerings that provide a competitive edge in its niche.", "Experienced management team with a proven track record in the industrial domain.", "Diversified client base reducing dependency on a single sector or customer."],
+    strengths: ["Exposure to India\'s robust and expanding industrial and manufacturing sectors, driven by government initiatives and infrastructure development.", "Potential for technological expertise or specialized product offerings that provide a competitive edge in its niche.", "Experienced management team with a proven track record in the industrial domain.", "Diversified client base reducing dependency on a single sector or customer."],
     risks: [
       { text: "Intense competition from both domestic and international players in the industrial technology and manufacturing space.", indicator: "🟡" },
       { text: "Vulnerability to economic downturns and cyclical demand patterns in the industrial sector, impacting order books and revenue.", indicator: "🔴" },
@@ -1096,8 +1096,8 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There's something fishy about the President's stock purchases.",
-    aiVerdict: "Given the limited information, a definitive recommendation is premature. Investors should await the release of the detailed prospectus and price band to assess listing gain potential and long-term outlook. Currently, a 'Neutral' stance is advised until more data is available.",
+    aiAnalysis: "",
+    aiVerdict: "Given the limited information, a definitive recommendation is premature. Investors should await the release of the detailed prospectus and price band to assess listing gain potential and long-term outlook. Currently, a \'Neutral\' stance is advised until more data is available.",
   },
   {
     id: "24",
@@ -1128,7 +1128,7 @@ export const ipoStocks: IPOStock[] = [
     roce: "",
     eps: "",
     peRatio: "",
-    strengths: ["Strong in-house R&D capabilities and technological expertise in specialized electronic components.", "Diversified client base across critical and growing industrial sectors, reducing dependency on a single segment.", "Beneficiary of government initiatives like 'Make in India' and Production Linked Incentive (PLI) schemes promoting domestic electronics manufacturing."],
+    strengths: ["Strong in-house R&D capabilities and technological expertise in specialized electronic components.", "Diversified client base across critical and growing industrial sectors, reducing dependency on a single segment.", "Beneficiary of government initiatives like \'Make in India\' and Production Linked Incentive (PLI) schemes promoting domestic electronics manufacturing."],
     risks: [
       { text: "Intense competition from both domestic and international players in the highly fragmented electronics manufacturing sector.", indicator: "🟡" },
       { text: "Significant dependence on global supply chains for raw materials and critical components, making it vulnerable to geopolitical tensions and logistical disruptions.", indicator: "🔴" },
@@ -1143,7 +1143,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 78,
     },
     aiAnalysis: "",
-    aiVerdict: "Given the robust growth prospects of the Indian electronics manufacturing sector and Merritronix's strong financial track record, there is good potential for listing gains. For the long term, the company's strategic positioning and R&D focus suggest continued growth, making it a 'Subscribe' recommendation.",
+    aiVerdict: "Given the robust growth prospects of the Indian electronics manufacturing sector and Merritronix\'s strong financial track record, there is good potential for listing gains. For the long term, the company\'s strategic positioning and R&D focus suggest continued growth, making it a \'Subscribe\' recommendation.",
   },
   {
     id: "25",
@@ -1190,8 +1190,8 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- SMR Jewels ₹67 crore IPO opens May 26; price band set at ₹128–₹135 per share (BusinessLine)\n  The IPO comprises a fresh issue of up to ₹54 crore and an offer for sale (OFS) of up to ₹13.23 crore, taking the total issue size to 49,80,000 shares\n- SMR Jewels IPO opens today. Check GMP, price band, subscription and other details (The Times of India)\n  SMR Jewels' SME IPO launches Tuesday. Grey market activity shows flat sentiment with no premium expected. The company aims to raise Rs 67.23 crore. The issue opens May 26 and closes May 29. Investors \n- IPO calendar: 3 companies set to launch public offers this week; check details (The Times of India)\n  This comes as markets continue to witness sharp downswings and muted recoveries, with oil prices remaining elevated amid the seesaw political game in the Middle East.\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers",
-    aiVerdict: "Given the sector's growth potential and the typical demand for jewelry in India, SMR Jewels may offer moderate listing gain potential, especially if priced attractively. For long-term outlook, it depends heavily on the company's ability to manage raw material volatility, competition, and maintain strong brand equity. A 'Subscribe with caution for listing gains' or 'Neutral' recommendation is appropriate, pending a detailed review of its financials and valuation.",
+    aiAnalysis: "",
+    aiVerdict: "Given the sector\'s growth potential and the typical demand for jewelry in India, SMR Jewels may offer moderate listing gain potential, especially if priced attractively. For long-term outlook, it depends heavily on the company\'s ability to manage raw material volatility, competition, and maintain strong brand equity. A \'Subscribe with caution for listing gains\' or \'Neutral\' recommendation is appropriate, pending a detailed review of its financials and valuation.",
   },
   {
     id: "26",
@@ -1264,9 +1264,9 @@ export const ipoStocks: IPOStock[] = [
     roce: "",
     eps: "",
     peRatio: "",
-    strengths: ["Market leadership in India's organized lead-acid battery recycling sector, benefiting from economies of scale and established collection networks.", "Strong demand for recycled lead due to environmental regulations, cost-effectiveness for battery manufacturers, and the push for a circular economy.", "Significant contribution to environmental sustainability, aligning with global ESG trends and potentially attracting impact-focused investors.", "Diversified customer base, including major battery manufacturers, ensuring stable demand for its recycled products."],
+    strengths: ["Market leadership in India\'s organized lead-acid battery recycling sector, benefiting from economies of scale and established collection networks.", "Strong demand for recycled lead due to environmental regulations, cost-effectiveness for battery manufacturers, and the push for a circular economy.", "Significant contribution to environmental sustainability, aligning with global ESG trends and potentially attracting impact-focused investors.", "Diversified customer base, including major battery manufacturers, ensuring stable demand for its recycled products."],
     risks: [
-      { text: "Volatility in lead prices can significantly impact revenue and profitability, as the company's input costs (scrap batteries) and output prices (recycled lead) are linked to commodity markets.", indicator: "🔴" },
+      { text: "Volatility in lead prices can significantly impact revenue and profitability, as the company\'s input costs (scrap batteries) and output prices (recycled lead) are linked to commodity markets.", indicator: "🔴" },
       { text: "Dependence on the availability and consistent supply of used lead-acid batteries, which can be influenced by informal sector competition and collection efficiency.", indicator: "🟡" },
       { text: "Stringent environmental regulations and compliance requirements, including potential changes in waste management policies, could increase operational costs.", indicator: "🟡" },
       { text: "Intense competition from unorganized players in the scrap collection market, which might affect procurement costs and market share.", indicator: "🟢" },
@@ -1279,7 +1279,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 75,
     },
-    aiAnalysis: "Recent News:\n- CMR Green Tech sets IPO price band at 182–192 per share (The Times of India)\n  CMR Green Technologies is launching its initial public offering. The price band for the 630 crore issue is set between 182 and 192 rupees per share. Investors can subscribe to the offer from June 3 to",
+    aiAnalysis: "",
     aiVerdict: "Given its strong market position, consistent financial performance, and alignment with environmental sustainability trends, CMR Green Tech shows good potential for listing gains, especially if the IPO is priced reasonably. The long-term outlook is positive due to increasing demand for recycled materials and regulatory support for the circular economy. Recommendation: Subscribe.",
   },
   {
@@ -1369,7 +1369,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- U.S. Stock Market IPO: ERock eyes staggering $5 billion. Check company profile, symbol at New York Stock Exchange (The Times of India)\n  ERock, founded ​in 2006, provides natural gas generators to data centers, ⁠utilities, and commercial and industrial customers across nine U.S. ​states, with a huge chunk of revenue ​coming from high-g\n- ERock aims for US$5 billion valuation in U.S. IPO (BNNBloomberg.ca)\n  ERock, which makes natural gas generators for critical facilities, is targeting a valuation of up to $5 billion in its initial public offering in the United States, it said in a regulatory filing on M",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential: modest; Long-term outlook: positive; Recommendation: Subscribe",
   },
   {
@@ -1401,7 +1401,7 @@ export const ipoStocks: IPOStock[] = [
     roce: "",
     eps: "",
     peRatio: "",
-    strengths: ["Strong presence in India's growing chemical manufacturing sector", "Potential for export opportunities to international markets", "Specialty chemicals segment typically offers better margins than bulk chemicals"],
+    strengths: ["Strong presence in India\'s growing chemical manufacturing sector", "Potential for export opportunities to international markets", "Specialty chemicals segment typically offers better margins than bulk chemicals"],
     risks: [
       { text: "Volatility in raw material prices affecting profit margins", indicator: "🟡" },
       { text: "Competition from established global and domestic chemical manufacturers", indicator: "🟡" },
@@ -1415,8 +1415,8 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers\n- IPO Calendar: Investors to get 2 mainboard public offers this week after a month of lull (The Times of India)\n  India’s IPO market is set to revive with two mainboard issues, CMR Green Technologies and Hexagon Nutrition, opening this week after a lull. Together aiming to raise nearly Rs 770 crore, the offerings",
-    aiVerdict: "Vahh Chemicals shows moderate listing gain potential given the positive industry outlook and reasonable price band. The long-term outlook appears positive with India's growing chemical sector, but investors should monitor raw material costs and competitive positioning. Recommendation: Neutral for risk-averse investors, Subscribe for those bullish on India's chemical sector growth.",
+    aiAnalysis: "",
+    aiVerdict: "Vahh Chemicals shows moderate listing gain potential given the positive industry outlook and reasonable price band. The long-term outlook appears positive with India\'s growing chemical sector, but investors should monitor raw material costs and competitive positioning. Recommendation: Neutral for risk-averse investors, Subscribe for those bullish on India\'s chemical sector growth.",
   },
   {
     id: "31",
@@ -1461,7 +1461,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers\n- GenXAI Analytics to raise ₹55 cr via IPO on NSE Emerge (BusinessLine)\n  GenXAI Analytics aims to raise ₹55 crore through an IPO on NSE Emerge, issuing 47.28 lakh shares priced at ₹110-₹116.\n- IPO Calendar: Investors to get 2 mainboard public offers this week after a month of lull (The Times of India)\n  India’s IPO market is set to revive with two mainboard issues, CMR Green Technologies and Hexagon Nutrition, opening this week after a lull. Together aiming to raise nearly Rs 770 crore, the offerings",
+    aiAnalysis: "",
     aiVerdict: "Subscribe",
   },
   {
@@ -1505,7 +1505,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There's something fishy about the President's stock purchases.",
+    aiAnalysis: "",
     aiVerdict: "Neutral recommendation with potential for listing gains if execution improves and demand sustains.",
   },
   {
@@ -1551,7 +1551,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 73,
     },
-    aiAnalysis: "Recent News:\n- CMR Green and Hexagon Nutrition set to launch IPOs next week (BusinessLine)\n  Upcoming IPOs from CMR Green and Hexagon Nutrition are set to invigorate the primary market next week.\n- Hexagon Nutrition IPO opens June 5: Price band fixed at Rs 42-45; check key details here (The Times of India)\n  Hexagon Nutrition Limited is launching its Initial Public Offering on June 5, 2026. The company plans to raise Rs 138.87 crore through an Offer for Sale. Investors can subscribe to shares priced betwe\n- IPO Calendar: Investors to get 2 mainboard public offers this week after a month of lull (The Times of India)\n  India’s IPO market is set to revive with two mainboard issues, CMR Green Technologies and Hexagon Nutrition, opening this week after a lull. Together aiming to raise nearly Rs 770 crore, the offerings\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential is modest given the undisclosed price band; long‑term outlook is positive due to sector growth. Recommendation: Subscribe for investors with a moderate risk appetite, otherwise Neutral.",
   },
   {
@@ -1594,7 +1594,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Deep Fission seeks $157M NASDAQ IPO after previous failed listing (Crypto Briefing)\n  Deep Fission's IPO pursuit highlights the growing investor interest in innovative nuclear solutions, potentially reshaping energy and tech sectors.\nThe post Deep Fission seeks $157M NASDAQ IPO after p\n- Deep Fission seeks $156M in US IPO to power AI’s insatiable energy appetite (Crypto Briefing)\n  Deep Fission's IPO highlights the growing intersection of nuclear innovation and AI energy demands, potentially reshaping energy markets.\nThe post Deep Fission seeks $156M in US IPO to power AI’s insa\n- Nuclear Company Deep Fission Files for $156 Million IPO (Financial Post)\n  Deep Fission Inc. is seeking to raise up to $156 million in a US initial public offering, the latest nuclear startup to go that route as artificial intelligence data centers stoke demand for electrici",
+    aiAnalysis: "",
     aiVerdict: "Strong long-term growth potential with high execution risk. Recommend: Subscribe for long-term horizon.",
   },
   {
@@ -1637,7 +1637,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- The six used cars that dealers won't touch because they're too expensive to fix - you might already own one (Dailymail.com)\n  When shopping for a second-hand car, one of the biggest concerns for buyers is whether it might be riddled with problems and become a drain on their finances.\n- How Korean brands like Hyundai and Kia took a bite out of the British car market before the Chinese influx of EVs (Dailymail.com)\n  Chinese cars are taking Britian by storm. But before this the UK experienced a Korean car boom. Now go-to middle-class buys, we look at the rise of Korean car brands like Hyundai and Kia.\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential, long-term outlook, and Subscribe",
   },
   {
@@ -1667,7 +1667,7 @@ export const ipoStocks: IPOStock[] = [
     roce: "",
     eps: "",
     peRatio: "",
-    strengths: ["Digital-first model with high customer acquisition efficiency", "Strong brand recognition in India's insurance sector", "AI-driven underwriting and claims processing capabilities"],
+    strengths: ["Digital-first model with high customer acquisition efficiency", "Strong brand recognition in India\'s insurance sector", "AI-driven underwriting and claims processing capabilities"],
     risks: [
       { text: "Dependence on digital ecosystem growth in India", indicator: "🟡" },
       { text: "Regulatory changes in insurance sector", indicator: "🔴" },
@@ -1725,8 +1725,8 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- She Wants To Pay Off Debt, But He Bought A Boat And A Snowmobile. Even After Taking A Loan To Pay Off Credit Cards, They Maxed Them Out Again (Yahoo Entertainment)\n  A wife wanted to aggressively pay off their debt, but her husband wanted to continue enjoying hobbies and purchases that helped him “enjoy life” even after...\n- Legendary Texas Wildcatter’s Granddaughter Makes Energy’s Riskiest Bet (Forbes)\n  After a decade of blowouts, family fights and $300 million down the hole, Gloria Moncrief drilled one of the deepest, riskiest natural gas wells ever but will it pay off?\n- Fervo becomes clean energy’s biggest-ever IPO with $10B valuation—powered by the earth’s heat and AI’s hunger (Fortune)\n  Fervo is building its first commercial power plant project in Utah with goals to scale nationwide with the data center construction wave.\n- Trading volumes in unlisted shares plunge up to 70% (The Times of India)\n  Investor interest in unlisted shares is decreasing. Trading volumes have fallen significantly. This slowdown is due to lower prices and fewer new share offerings. Some popular companies still see acti\n- Anthropic cozies up to Elon Musk, IBM makes its case to win in AI, and Cerebras has big IPO plans (SiliconANGLE News)\n  Money, and desperation, sure can pave over a lot of ill will. This week’s example: Anthropic signed a mammoth deal with Elon Musk’s SpaceX to use all of the computing capacity of SpaceX’s Colossus dat",
-    aiVerdict: "Given the strong brand positioning and growth potential, BOAT IPO may offer listing gains. Long-term outlook appears positive with the company's expansion plans. Recommendation: Subscribe with a medium-term investment horizon, considering the competitive landscape and execution risks.",
+    aiAnalysis: "",
+    aiVerdict: "Given the strong brand positioning and growth potential, BOAT IPO may offer listing gains. Long-term outlook appears positive with the company\'s expansion plans. Recommendation: Subscribe with a medium-term investment horizon, considering the competitive landscape and execution risks.",
   },
   {
     id: "38",
@@ -1860,7 +1860,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 75,
     },
     aiAnalysis: "",
-    aiVerdict: "The listing gain potential will heavily depend on the final IPO pricing and prevailing market sentiment. For long-term investors, Cult.fit offers exposure to a high-growth sector and a strong brand, but the path to profitability remains a key concern. A 'Neutral' recommendation is appropriate until the price band is announced, at which point a 'Subscribe for long-term growth if valuation is reasonable' or 'Avoid if valuation is stretched' can be considered, with a close watch on future financial performance.",
+    aiVerdict: "The listing gain potential will heavily depend on the final IPO pricing and prevailing market sentiment. For long-term investors, Cult.fit offers exposure to a high-growth sector and a strong brand, but the path to profitability remains a key concern. A \'Neutral\' recommendation is appropriate until the price band is announced, at which point a \'Subscribe for long-term growth if valuation is reasonable\' or \'Avoid if valuation is stretched\' can be considered, with a close watch on future financial performance.",
   },
   {
     id: "41",
@@ -1905,7 +1905,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 75,
     },
     aiAnalysis: "",
-    aiVerdict: "Given its strong brand, robust market position in a growing industry, and anticipated healthy financials, Duroflex holds good potential for listing gains, especially if the IPO is priced reasonably. For long-term investors, the company offers exposure to India's expanding consumer discretionary and home comfort sector. A 'Subscribe' recommendation is likely, pending final IPO pricing and detailed prospectus review.",
+    aiVerdict: "Given its strong brand, robust market position in a growing industry, and anticipated healthy financials, Duroflex holds good potential for listing gains, especially if the IPO is priced reasonably. For long-term investors, the company offers exposure to India\'s expanding consumer discretionary and home comfort sector. A \'Subscribe\' recommendation is likely, pending final IPO pricing and detailed prospectus review.",
   },
   {
     id: "42",
@@ -1951,7 +1951,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 70,
     },
     aiAnalysis: "",
-    aiVerdict: "Given the 'upcoming' status and absence of crucial financial data and price band, a 'Neutral' recommendation is appropriate for now. The long-term outlook for alternative investments in India is positive, suggesting potential for growth, but listing gain potential will heavily depend on valuation and market sentiment at the time of the IPO. Investors should 'Wait for Details' before making any subscription decisions.",
+    aiVerdict: "Given the \'upcoming\' status and absence of crucial financial data and price band, a \'Neutral\' recommendation is appropriate for now. The long-term outlook for alternative investments in India is positive, suggesting potential for growth, but listing gain potential will heavily depend on valuation and market sentiment at the time of the IPO. Investors should \'Wait for Details\' before making any subscription decisions.",
   },
   {
     id: "43",
@@ -2024,7 +2024,7 @@ export const ipoStocks: IPOStock[] = [
     roce: "",
     eps: "",
     peRatio: "",
-    strengths: ["Market leadership position in India's e-commerce sector with 49% market share", "Strong logistics network covering 6000+ cities with 200+ fulfillment centers", "Diverse revenue streams including marketplace, retail, and advertising business"],
+    strengths: ["Market leadership position in India\'s e-commerce sector with 49% market share", "Strong logistics network covering 6000+ cities with 200+ fulfillment centers", "Diverse revenue streams including marketplace, retail, and advertising business"],
     risks: [
       { text: "Intense competition from Amazon and other players may erode market share", indicator: "🟡" },
       { text: "Regulatory uncertainties around e-commerce policies and data localization", indicator: "🟡" },
@@ -2038,8 +2038,8 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Flipkart puts IPO on hold amid market uncertainty – report (Yahoo Entertainment)\n- India not just a growth market, but a model for the future of retail: Walmart Chief John Furner (BusinessLine)\n  Walmart's CEO John Furner views India as a key growth platform and future retail model, emphasizing innovation and entrepreneurship.\n- Walmart Tells Flipkart to Shelve IPO Plans, Focus on Profitability (pymnts.com)\n  Walmart tapped the brakes on Flipkart’s long-anticipated public market debut. The U.S. retail giant is telling its Indian eCommerce subsidiary to reach profitability first, Moneycontrol reported Frida\n- Zepto gets SEBI nod for IPO, eyes ₹9,300 crore IPO amid quick commerce race (BusinessLine)\n  Mumbai-based quick commerce firm to file updated papers as it scales to over 2.5 million daily orders amid West Asia volatility\n- Supreme Court gives Flipkart eight weeks to clear MarQ inventory in trademark dispute (Livemint)\n  The top court refused to interfere with lower court orders, and held that Flipkart’s MarQ branding was deceptively similar to Marc Enterprises’ trademark.",
-    aiVerdict: "Listing gain potential appears positive in the short term given strong demand for quality Indian tech IPOs. Long-term outlook remains attractive due to India's e-commerce growth trajectory. Recommendation: SUBSCRIBE for long-term investment.",
+    aiAnalysis: "",
+    aiVerdict: "Listing gain potential appears positive in the short term given strong demand for quality Indian tech IPOs. Long-term outlook remains attractive due to India\'s e-commerce growth trajectory. Recommendation: SUBSCRIBE for long-term investment.",
   },
   {
     id: "45",
@@ -2170,7 +2170,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Coca-Cola says it’s looking at listing HCCH on BSE (BusinessLine)\n  The company said that this potential listing will be a significant milestone, completing the refranchising of HCCH and positioning it well to capitalise on the opportunities in the Indian market\n- Coca-Cola announces plans to list its largest bottler Hindustan Coca-Cola Holdings (HCCH) (The Times of India)\n  Coca-Cola is exploring a public listing in India for the parent company of its largest bottler, Hindustan Coca-Cola Holdings (HCCH), with a potential 2027 debut on Indian stock exchanges. This move ai",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential is moderate with a long‑term outlook that hinges on cost control and market expansion. Recommendation: Neutral – consider subscribing if you seek a stable, mid‑cap investment with a solid brand backing, but be mindful of commodity and regulatory risks.",
   },
   {
@@ -2200,10 +2200,10 @@ export const ipoStocks: IPOStock[] = [
     roce: "",
     eps: "",
     peRatio: "",
-    strengths: ["Strong market position in the Indian fintech space, particularly in providing integrated payment and lending solutions for offline retail.", "Innovative technology platform that integrates payments, consumer finance, and analytics, offering a comprehensive solution to merchants.", "Significant growth potential driven by India's rapidly expanding digital payments market and increasing demand for financial inclusion and credit solutions."],
+    strengths: ["Strong market position in the Indian fintech space, particularly in providing integrated payment and lending solutions for offline retail.", "Innovative technology platform that integrates payments, consumer finance, and analytics, offering a comprehensive solution to merchants.", "Significant growth potential driven by India\'s rapidly expanding digital payments market and increasing demand for financial inclusion and credit solutions."],
     risks: [
       { text: "Intense competition from established payment players, banks, and other emerging fintech companies in a highly competitive Indian market.", indicator: "🔴" },
-      { text: "Regulatory changes in India's payment, lending, and data privacy landscape could impact business operations, compliance costs, and revenue streams.", indicator: "🟡" },
+      { text: "Regulatory changes in India\'s payment, lending, and data privacy landscape could impact business operations, compliance costs, and revenue streams.", indicator: "🟡" },
       { text: "Sustained profitability remains a challenge for many growth-stage fintechs, requiring continuous investment in technology and market expansion, which could dilute shareholder value.", indicator: "🟡" },
     ],
     aiScores: {
@@ -2214,8 +2214,8 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 75,
     },
-    aiAnalysis: "Recent News:\n- PoS terminal supply squeeze; Skyroot CEO on unicorn flight (The Times of India)\n  Happy Friday! The point-of-sale (PoS) supply has dried up in India as the West Asia conflict squeezes imports. This and more in today’s ETtech Morning Dispatch.",
-    aiVerdict: "Given its strong growth trajectory and innovative offerings in a booming market, Innoviti could offer moderate to good listing gains, depending heavily on the final IPO valuation. For the long-term, its outlook is positive, contingent on achieving profitability and fending off competition. A 'Subscribe' recommendation is warranted for investors with a moderate to high-risk appetite, focusing on growth potential rather than immediate profits.",
+    aiAnalysis: "",
+    aiVerdict: "Given its strong growth trajectory and innovative offerings in a booming market, Innoviti could offer moderate to good listing gains, depending heavily on the final IPO valuation. For the long-term, its outlook is positive, contingent on achieving profitability and fending off competition. A \'Subscribe\' recommendation is warranted for investors with a moderate to high-risk appetite, focusing on growth potential rather than immediate profits.",
   },
   {
     id: "49",
@@ -2244,7 +2244,7 @@ export const ipoStocks: IPOStock[] = [
     roce: "",
     eps: "",
     peRatio: "",
-    strengths: ["Strong position in India's growing renewable energy market", "Diverse portfolio of solar and wind projects providing stable revenue streams", "Favorable government policies and incentives supporting renewable energy adoption"],
+    strengths: ["Strong position in India\'s growing renewable energy market", "Diverse portfolio of solar and wind projects providing stable revenue streams", "Favorable government policies and incentives supporting renewable energy adoption"],
     risks: [
       { text: "Dependence on government subsidies and policy changes", indicator: "🟡" },
       { text: "Fluctuations in power purchase agreement prices and availability", indicator: "🟡" },
@@ -2258,8 +2258,8 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
-    aiVerdict: "Given India's renewable energy growth trajectory and the company's diversified project portfolio, Juniper Green Energy shows moderate listing gain potential with a positive long-term outlook. Investors with a medium to long-term investment horizon may consider subscribing to this IPO, but should evaluate the final price band and company fundamentals before making a decision.",
+    aiAnalysis: "",
+    aiVerdict: "Given India\'s renewable energy growth trajectory and the company\'s diversified project portfolio, Juniper Green Energy shows moderate listing gain potential with a positive long-term outlook. Investors with a medium to long-term investment horizon may consider subscribing to this IPO, but should evaluate the final price band and company fundamentals before making a decision.",
   },
   {
     id: "50",
@@ -2302,7 +2302,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Short drama boom sends new wave of startups knocking on VC doors (Livemint)\n  Micro-drama startups are attracting new funding as engagement surges and investors bet on mobile-first short-form video platforms in India.",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential is moderate to high, with a positive long‑term outlook if the company can sustain growth and manage costs. Recommendation: Neutral – consider subscribing with a cautious approach and monitor post‑listing performance closely.",
   },
   {
@@ -2392,7 +2392,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Leslie’s, Inc. Announces Second Quarter 2026 Financial Results (GlobeNewswire)\n  Sales increase of 4.3% and Comparable sales increase of 6.6%   Achieved 8% customer count growth year-over-year  Company reiterates full year guidance ...",
+    aiAnalysis: "",
     aiVerdict: "Neutral - Awaiting detailed financial disclosures and pricing. Long-term outlook is positive given infrastructure sector growth, but near-term volatility is expected. Recommend subscribing only after reviewing the final prospectus and financial statements.",
   },
   {
@@ -2422,7 +2422,7 @@ export const ipoStocks: IPOStock[] = [
     roce: "",
     eps: "",
     peRatio: "",
-    strengths: ["Strong brand recognition and market leadership in India's online travel sector", "Diversified revenue mix across flights, hotels, holidays and B2B travel solutions", "Robust technology platform with high mobile app engagement and data analytics capabilities"],
+    strengths: ["Strong brand recognition and market leadership in India\'s online travel sector", "Diversified revenue mix across flights, hotels, holidays and B2B travel solutions", "Robust technology platform with high mobile app engagement and data analytics capabilities"],
     risks: [
       { text: "Intense competition from global OTAs (Expedia, Booking) and domestic players (Yatra, Cleartrip) could pressure margins.", indicator: "🟡" },
       { text: "Dependence on discretionary travel spending makes the business vulnerable to macro‑economic slowdowns or travel restrictions.", indicator: "🔴" },
@@ -2436,7 +2436,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 73,
     },
-    aiAnalysis: "Recent News:\n- MakeMyTrip Takes Steps Toward India IPO (Skift)\n  MakeMyTrip wants to list in India but can't say when. The regulatory groundwork has started, the timeline hasn't. Watch this space... slowly.\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
+    aiAnalysis: "",
     aiVerdict: "Moderate to high listing gain potential with a neutral‑to‑positive long‑term outlook; recommendation: Subscribe for investors comfortable with sector‑specific risk.",
   },
   {
@@ -2568,8 +2568,8 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Sensex today | Stock Market Highlights: Sensex gains 789 pts, Nifty ends at 23,689 as US-China trade talks lift investor sentiment (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: Indian shares rose on Thursday, supported by steady earnings ​and signs of progress in U.S.-China trade relations, though sentiment ‌remained fragile as elevate\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
-    aiVerdict: "Given the company's positioning in the growing manufacturing sector and the likely reasonable valuation, Milestone Gears shows moderate listing gain potential. The long-term outlook appears positive with increasing industrialization in India. Recommendation: Neutral - Wait for detailed financials and market conditions before making an investment decision.",
+    aiAnalysis: "",
+    aiVerdict: "Given the company\'s positioning in the growing manufacturing sector and the likely reasonable valuation, Milestone Gears shows moderate listing gain potential. The long-term outlook appears positive with increasing industrialization in India. Recommendation: Neutral - Wait for detailed financials and market conditions before making an investment decision.",
   },
   {
     id: "57",
@@ -2612,7 +2612,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Fuel price hike: logistics, quick commerce and consumer firms brace for higher costs (Livemint)\n  A spike in fuel and input prices is squeezing margins for Indian consumer and logistics firms, potentially leading to higher product prices and delivery fees.",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential is moderate; long‑term outlook is positive with a Subscribe recommendation.",
   },
   {
@@ -2656,7 +2656,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Oyo-Parent Prism Gets Green Light From Indian Regulator for IPO (Skift)\n  Prism’s SEBI approval signals IPO momentum, but timing remains cautious. Stronger profits, Motel 6 integration, and premium expansion may finally give Oyo’s parent company the public-market credibilit\n- Oyo-parent Prism secures Sebi's nod to launch Rs 6,650-crore IPO (The Times of India)\n  Oyo's parent company, Prism, has received approval from Sebi to proceed with its Rs 6,650 crore IPO. The company is expected to be valued between USD 7-8 billion. Prism plans to file its public Update\n- Oyo parent Prism gets Sebi nod for Rs 6,650 crore IPO (The Times of India)\n  India Business News: Mumbai: Prism, the parent company of Oyo, has secured markets regulator Sebi’s nod to go ahead with its IPO in what will be its third attempt at going.\n- Oyo-parent Prism gets Sebi approval for ₹6,650 crore IPO: Report (Livemint)\n  Prism, Oyo's parent firm, has received Sebi approval to raise  ₹6,650 crore through an IPO. Details here.\n- Oyo readies market debut; IT's comeback rally (The Times of India)\n  Oyo's IPO plans are back on track after securing Sebi approval. This and more in today's ETtech Top 5.",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential moderate; long-term outlook cautiously optimistic; recommendation: Hold",
   },
   {
@@ -2700,7 +2700,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Picked wrong Melody? Parle Industries shares hit 5% upper circuit for 3rd day (The Times of India)\n  Parle Industries shares hit the 5% upper circuit for the third straight session after investors mistakenly linked the stock to Melody toffees gifted by PM Narendra Modi to Italy’s Giorgia Meloni. The \n- Everything's in a name: Parle Industries shares hit 5% upper circuit after PM Modi's 'Melody' gift to Meloni (The Times of India)\n  Shares of Parle Industries surged 5% and hit the upper circuit after Prime Minister Narendra Modi gifted Melody toffees to Italian Prime Minister Giorgia Meloni. This sparked social media attention, l\n- Be brand adjacent and boost your co (The Times of India)\n  A gift from Modi to Meloni caused a rush into the wrong Parle. Investors mistook a real estate firm for a confectioner, boosting its shares. This highlights brand adjacency, where similar names benefi",
+    aiAnalysis: "",
     aiVerdict: "Listing gain potential is strong with favorable long-term outlook, but caution is advised due to sector competition and currency risks. Subscribe for updates, avoid if risk appetite is low, neutral if diversified.",
   },
   {
@@ -2774,7 +2774,7 @@ export const ipoStocks: IPOStock[] = [
     roce: "",
     eps: "",
     peRatio: "",
-    strengths: ["Dominant market share in India's UPI payments segment", "Strong ecosystem with integration across e‑commerce and financial services", "Backed by major investors and a large existing user base"],
+    strengths: ["Dominant market share in India\'s UPI payments segment", "Strong ecosystem with integration across e‑commerce and financial services", "Backed by major investors and a large existing user base"],
     risks: [
       { text: "Regulatory changes affecting digital payments could impact operations", indicator: "🟡" },
       { text: "Intense competition from other fintech and banking platforms may pressure margins", indicator: "🟡" },
@@ -2788,7 +2788,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "Recent News:\n- Indian water-purifier maker Kent RO delays IPO as Mideast war dents sentiment (CNA)\n  CHENNAI, May 26 : Kent RO Systems has shelved plans to go public, its chairman told Reuters, as the Indian water-purifier maker becomes the latest company to delay its stock market debut with the Midd\n- Exclusive: Razorpay gets shareholder approval for Rs 2,700 crore IPO (MediaNama.com)\n  Razorpay gets shareholder approval to raise ₹2,700 crore via IPO, with OFS and pre-IPO placement plans. The fintech bets on AI, despite rising losses and intense competition.\nThe post Exclusive: Razor\n- PhonePe AI Agent Cuts Payment Gateway Integration to Minutes (pymnts.com)\n  PhonePe launched an artificial intelligence agent that enables merchants to integrate the company’s payment gateway through a conversational interface. With this new AI-powered integration layer, merc\n- India not just a growth market, but a model for the future of retail: Walmart Chief John Furner (BusinessLine)\n  Walmart's CEO John Furner views India as a key growth platform and future retail model, emphasizing innovation and entrepreneurship.\n- Zepto gets SEBI nod for IPO, eyes ₹9,300 crore IPO amid quick commerce race (BusinessLine)\n  Mumbai-based quick commerce firm to file updated papers as it scales to over 2.5 million daily orders amid West Asia volatility",
+    aiAnalysis: "",
     aiVerdict: "Subscribe",
   },
   {
@@ -3009,7 +3009,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "Moderate listing gain potential with strong long-term outlook in India's expanding insurance market. Subscribe for long-term investors with risk tolerance, but monitor post-IPO performance metrics closely.",
+    aiVerdict: "Moderate listing gain potential with strong long-term outlook in India\'s expanding insurance market. Subscribe for long-term investors with risk tolerance, but monitor post-IPO performance metrics closely.",
   },
   {
     id: "67",
@@ -3038,7 +3038,7 @@ export const ipoStocks: IPOStock[] = [
     roce: "",
     eps: "",
     peRatio: "",
-    strengths: ["Fast delivery model creates strong customer stickiness", "Large addressable market in India's tier‑1 and tier‑2 cities", "Strategic partnerships with FMCG brands and local suppliers"],
+    strengths: ["Fast delivery model creates strong customer stickiness", "Large addressable market in India\'s tier‑1 and tier‑2 cities", "Strategic partnerships with FMCG brands and local suppliers"],
     risks: [
       { text: "High cash burn and mounting debt could pressure liquidity", indicator: "🔴" },
       { text: "Intense competition from established players like Swiggy, Zomato and BigBasket", indicator: "🟡" },
@@ -3143,7 +3143,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 76,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe for long-term growth given the strong technology moat. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe for long-term growth given the strong technology moat. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "70",
@@ -3189,7 +3189,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 74,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term perspective given the strong growth trajectory. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term perspective given the strong growth trajectory. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "71",
@@ -3235,7 +3235,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium-term perspective given the brand strength. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium-term perspective given the brand strength. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "72",
@@ -3281,7 +3281,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium-term perspective given the brand strength. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium-term perspective given the brand strength. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "73",
@@ -3327,7 +3327,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "74",
@@ -3373,7 +3373,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "75",
@@ -3419,7 +3419,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium-term perspective given the brand strength. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium-term perspective given the brand strength. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "76",
@@ -3465,7 +3465,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 74,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term perspective given the strong growth trajectory. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term perspective given the strong growth trajectory. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "77",
@@ -3511,7 +3511,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 76,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe for long-term growth given the strong technology moat. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe for long-term growth given the strong technology moat. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "78",
@@ -3557,7 +3557,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "79",
@@ -3603,7 +3603,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium-term perspective given the brand strength. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium-term perspective given the brand strength. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "80",
@@ -3649,7 +3649,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 74,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term perspective given the strong growth trajectory. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term perspective given the strong growth trajectory. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "81",
@@ -3695,7 +3695,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe for stable returns with moderate growth potential. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe for stable returns with moderate growth potential. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "82",
@@ -3741,7 +3741,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 73,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe given the strong ESG tailwinds and government support. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe given the strong ESG tailwinds and government support. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "83",
@@ -3787,7 +3787,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a long-term perspective given the defensive nature. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a long-term perspective given the defensive nature. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "84",
@@ -3833,7 +3833,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "85",
@@ -3879,7 +3879,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "86",
@@ -3925,7 +3925,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 76,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe for long-term growth given the strong technology moat. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe for long-term growth given the strong technology moat. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "87",
@@ -3971,7 +3971,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 76,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe for long-term growth given the strong technology moat. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe for long-term growth given the strong technology moat. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "88",
@@ -4017,7 +4017,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "89",
@@ -4063,7 +4063,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "90",
@@ -4109,7 +4109,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 74,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term perspective given the strong growth trajectory. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term perspective given the strong growth trajectory. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "91",
@@ -4155,7 +4155,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 76,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe for long-term growth given the strong technology moat. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe for long-term growth given the strong technology moat. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "92",
@@ -4201,7 +4201,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 74,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term perspective given the strong growth trajectory. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term perspective given the strong growth trajectory. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "93",
@@ -4247,7 +4247,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "94",
@@ -4293,7 +4293,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "95",
@@ -4339,7 +4339,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 74,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term perspective given the strong growth trajectory. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term perspective given the strong growth trajectory. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "96",
@@ -4385,7 +4385,7 @@ export const ipoStocks: IPOStock[] = [
       marketSentiment: 72,
     },
     aiAnalysis: "",
-    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company's market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company's competitive advantages.",
+    aiVerdict: "The IPO offers moderate to strong listing gain potential given the company\'s market positioning and sector tailwinds. Subscribe with a medium to long-term investment horizon. Long-term outlook remains positive supported by industry growth trends and the company\'s competitive advantages.",
   },
   {
     id: "97",

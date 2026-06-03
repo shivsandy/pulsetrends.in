@@ -58,7 +58,7 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Bitcoin (BTC) is the pioneering decentralized digital currency, operating on a peer-to-peer electronic cash system. It holds the dominant market position as the largest cryptocurrency by market capitalization, often referred to as 'digital gold' due to its scarcity, censorship resistance, and role as a store of value. Its key value proposition lies in its fixed supply cap of 21 million coins, robust security through proof-of-work, and unparalleled decentralization, offering an alternative to traditional financial systems.",
+      summary: "Bitcoin (BTC) is the pioneering decentralized digital currency, operating on a peer-to-peer electronic cash system. It holds the dominant market position as the largest cryptocurrency by market capitalization, often referred to as \'digital gold\' due to its scarcity, censorship resistance, and role as a store of value. Its key value proposition lies in its fixed supply cap of 21 million coins, robust security through proof-of-work, and unparalleled decentralization, offering an alternative to traditional financial systems.",
       sentiment: "bullish" as const,
       convictionScore: 92,
       keyDrivers: ["Macroeconomic Tailwinds: Inflationary pressures and geopolitical instability driving demand for scarce, decentralized assets.", "Institutional Adoption: Continued integration into traditional finance via ETFs, corporate treasuries, and sovereign wealth funds.", "Halving Events: Programmatic supply shock every four years, historically leading to price appreciation.", "Network Effects & Security: Largest and most secure blockchain network, fostering trust and utility.", "Technological Advancements: Development of Layer 2 solutions (e.g., Lightning Network) improving scalability and usability."],
@@ -73,7 +73,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Bitcoin remains the foundational asset of the cryptocurrency ecosystem, embodying the principles of decentralization and scarcity. Its 'digital gold' narrative is strengthening amidst global economic uncertainty, attracting both retail and institutional capital. While short-term volatility and regulatory hurdles persist, its long-term outlook is robust, driven by increasing adoption, network effects, and its fixed supply. Bitcoin is poised to continue its role as a primary store of value and a foundational layer for future financial innovation.",
+      verdict: "Bitcoin remains the foundational asset of the cryptocurrency ecosystem, embodying the principles of decentralization and scarcity. Its \'digital gold\' narrative is strengthening amidst global economic uncertainty, attracting both retail and institutional capital. While short-term volatility and regulatory hurdles persist, its long-term outlook is robust, driven by increasing adoption, network effects, and its fixed supply. Bitcoin is poised to continue its role as a primary store of value and a foundational layer for future financial innovation.",
     },
   },
   {
@@ -99,8 +99,8 @@ export const cryptoProjects: CryptoProject[] = [
       summary: "Ethereum (ETH) is the leading decentralized smart contract platform, enabling developers to build and deploy decentralized applications (dApps), decentralized finance (DeFi) protocols, and non-fungible tokens (NFTs). With a market cap exceeding $240 billion, it holds a dominant position as the foundational layer for a vast and diverse blockchain ecosystem. Its key value proposition lies in its robust network effect, developer community, security, and the extensive utility derived from its programmable blockchain capabilities.",
       sentiment: "bullish" as const,
       convictionScore: 85,
-      keyDrivers: ["Successful implementation and adoption of scalability solutions (Layer 2s, future sharding/Danksharding).", "Continued growth and innovation within the DeFi, NFT, and Web3 gaming ecosystems.", "Increasing institutional adoption, including potential spot Ethereum ETFs and enterprise blockchain solutions.", "Deflationary tokenomics post-Merge, reducing supply and increasing scarcity.", "Ethereum's role as a global settlement layer for various blockchain networks."],
-      risks: ["Intensifying competition from high-performance Layer 1 blockchains potentially siphoning market share.", "Regulatory uncertainty and potential adverse policy decisions impacting decentralized protocols.", "Technical risks associated with complex network upgrades or potential security vulnerabilities.", "Concerns regarding centralization vectors, such as Lido's dominance in liquid staking or client diversity.", "Macroeconomic headwinds impacting overall crypto market sentiment and investment."],
+      keyDrivers: ["Successful implementation and adoption of scalability solutions (Layer 2s, future sharding/Danksharding).", "Continued growth and innovation within the DeFi, NFT, and Web3 gaming ecosystems.", "Increasing institutional adoption, including potential spot Ethereum ETFs and enterprise blockchain solutions.", "Deflationary tokenomics post-Merge, reducing supply and increasing scarcity.", "Ethereum\'s role as a global settlement layer for various blockchain networks."],
+      risks: ["Intensifying competition from high-performance Layer 1 blockchains potentially siphoning market share.", "Regulatory uncertainty and potential adverse policy decisions impacting decentralized protocols.", "Technical risks associated with complex network upgrades or potential security vulnerabilities.", "Concerns regarding centralization vectors, such as Lido\'s dominance in liquid staking or client diversity.", "Macroeconomic headwinds impacting overall crypto market sentiment and investment."],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -111,7 +111,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Ethereum remains a cornerstone of the crypto economy, acting as the primary settlement layer for a vast array of decentralized applications. Its robust network effect, dedicated developer community, and ongoing commitment to scalability and security position it for continued long-term growth. While facing competition and regulatory scrutiny, its foundational role and continuous innovation, particularly with the 'Surge' and 'Scourge' phases of its roadmap, suggest a strong bullish outlook. The potential for institutional adoption further solidifies its position as a blue-chip crypto asset.",
+      verdict: "Ethereum remains a cornerstone of the crypto economy, acting as the primary settlement layer for a vast array of decentralized applications. Its robust network effect, dedicated developer community, and ongoing commitment to scalability and security position it for continued long-term growth. While facing competition and regulatory scrutiny, its foundational role and continuous innovation, particularly with the \'Surge\' and \'Scourge\' phases of its roadmap, suggest a strong bullish outlook. The potential for institutional adoption further solidifies its position as a blue-chip crypto asset.",
     },
   },
   {
@@ -149,7 +149,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Tether (USDT) remains an indispensable component of the cryptocurrency ecosystem, primarily due to its dominant market share, deep liquidity, and widespread integration. Despite persistent regulatory challenges and competition, its utility as a stable trading pair and a bridge for fiat-to-crypto transactions ensures its continued relevance. The project's long-term stability and growth will largely depend on its ability to enhance transparency, adapt to evolving regulatory frameworks, and maintain its peg amidst market pressures. While essential, its inherent risks warrant a cautious outlook.",
+      verdict: "Tether (USDT) remains an indispensable component of the cryptocurrency ecosystem, primarily due to its dominant market share, deep liquidity, and widespread integration. Despite persistent regulatory challenges and competition, its utility as a stable trading pair and a bridge for fiat-to-crypto transactions ensures its continued relevance. The project\'s long-term stability and growth will largely depend on its ability to enhance transparency, adapt to evolving regulatory frameworks, and maintain its peg amidst market pressures. While essential, its inherent risks warrant a cautious outlook.",
     },
   },
   {
@@ -187,7 +187,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "BNB represents a cornerstone asset within a dominant and expanding cryptocurrency ecosystem. Its robust utility, deflationary supply mechanics, and continuous development efforts underpin its strong value proposition. While navigating significant regulatory challenges and facing centralization critiques, BNB's established network effects and strategic innovations position it for continued relevance and potential appreciation, albeit with risks intrinsically linked to the regulatory landscape and the stability of Binance.",
+      verdict: "BNB represents a cornerstone asset within a dominant and expanding cryptocurrency ecosystem. Its robust utility, deflationary supply mechanics, and continuous development efforts underpin its strong value proposition. While navigating significant regulatory challenges and facing centralization critiques, BNB\'s established network effects and strategic innovations position it for continued relevance and potential appreciation, albeit with risks intrinsically linked to the regulatory landscape and the stability of Binance.",
     },
   },
   {
@@ -213,8 +213,8 @@ export const cryptoProjects: CryptoProject[] = [
       summary: "XRP is a digital asset designed to facilitate fast, low-cost, and scalable cross-border payments. It acts as a bridge currency on the RippleNet payment network, aiming to disrupt traditional correspondent banking systems. With a market cap of approximately $79.7 billion, it holds a significant position among cryptocurrencies, primarily targeting institutional use cases rather than broad retail adoption.",
       sentiment: "bullish" as const,
       convictionScore: 75,
-      keyDrivers: ["Favorable resolution of the ongoing SEC lawsuit, providing regulatory clarity.", "Increased adoption of RippleNet's On-Demand Liquidity (ODL) solution by financial institutions.", "Expansion into new payment corridors and use cases, including potential involvement in Central Bank Digital Currencies (CBDCs).", "Technological advancements and ecosystem growth on the XRP Ledger (XRPL)."],
-      risks: ["Unfavorable outcome or prolonged uncertainty from the SEC lawsuit, potentially hindering US market operations.", "Intense competition from other blockchain payment solutions and traditional financial systems.", "Regulatory headwinds and varying legal classifications across different jurisdictions.", "Perceived centralization concerns due to Ripple's significant holdings and influence over the XRP ecosystem."],
+      keyDrivers: ["Favorable resolution of the ongoing SEC lawsuit, providing regulatory clarity.", "Increased adoption of RippleNet\'s On-Demand Liquidity (ODL) solution by financial institutions.", "Expansion into new payment corridors and use cases, including potential involvement in Central Bank Digital Currencies (CBDCs).", "Technological advancements and ecosystem growth on the XRP Ledger (XRPL)."],
+      risks: ["Unfavorable outcome or prolonged uncertainty from the SEC lawsuit, potentially hindering US market operations.", "Intense competition from other blockchain payment solutions and traditional financial systems.", "Regulatory headwinds and varying legal classifications across different jurisdictions.", "Perceived centralization concerns due to Ripple\'s significant holdings and influence over the XRP ecosystem."],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -225,7 +225,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "XRP presents a compelling investment case for its potential to revolutionize cross-border payments. Its established network, institutional focus, and technological efficiency are strong fundamentals. However, the project's trajectory is heavily influenced by the outcome of its legal battle with the SEC. A favorable resolution would likely unlock significant growth and institutional confidence, while an unfavorable one could pose substantial challenges. Despite the regulatory overhang, the long-term vision and market opportunity remain attractive, warranting a cautiously optimistic outlook.",
+      verdict: "XRP presents a compelling investment case for its potential to revolutionize cross-border payments. Its established network, institutional focus, and technological efficiency are strong fundamentals. However, the project\'s trajectory is heavily influenced by the outcome of its legal battle with the SEC. A favorable resolution would likely unlock significant growth and institutional confidence, while an unfavorable one could pose substantial challenges. Despite the regulatory overhang, the long-term vision and market opportunity remain attractive, warranting a cautiously optimistic outlook.",
     },
   },
   {
@@ -251,8 +251,8 @@ export const cryptoProjects: CryptoProject[] = [
       summary: "USDC is a leading regulated, fiat-backed stablecoin pegged 1:1 to the US dollar. It operates as a digital dollar, providing stability and liquidity across various blockchain networks. With a substantial market capitalization, it serves as a critical bridge between traditional finance and the decentralized economy, widely used in DeFi, trading, and cross-border payments.",
       sentiment: "bullish" as const,
       convictionScore: 85,
-      keyDrivers: ["Regulatory clarity and acceptance, positioning USDC as a 'safe' stablecoin.", "Continued demand for stable assets in the volatile crypto market.", "Growth of the DeFi ecosystem, where USDC is a foundational asset.", "Increasing institutional adoption of digital assets and blockchain technology.", "Transparency and regular attestations of its reserve assets."],
-      risks: ["Potential for adverse regulatory changes impacting stablecoin operations or reserve requirements.", "Risk of a de-peg event, even if temporary, which could erode user trust.", "Concerns regarding the quality or liquidity of its reserve assets, despite attestations.", "Centralization risks associated with Circle's control over the asset, including potential for asset freezing.", "Intense competition from other stablecoins and potential future central bank digital currencies (CBDCs)."],
+      keyDrivers: ["Regulatory clarity and acceptance, positioning USDC as a \'safe\' stablecoin.", "Continued demand for stable assets in the volatile crypto market.", "Growth of the DeFi ecosystem, where USDC is a foundational asset.", "Increasing institutional adoption of digital assets and blockchain technology.", "Transparency and regular attestations of its reserve assets."],
+      risks: ["Potential for adverse regulatory changes impacting stablecoin operations or reserve requirements.", "Risk of a de-peg event, even if temporary, which could erode user trust.", "Concerns regarding the quality or liquidity of its reserve assets, despite attestations.", "Centralization risks associated with Circle\'s control over the asset, including potential for asset freezing.", "Intense competition from other stablecoins and potential future central bank digital currencies (CBDCs)."],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -263,7 +263,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "USDC is an indispensable component of the cryptocurrency ecosystem, providing essential stability and liquidity. Its strong market position, commitment to regulatory compliance, and transparent reserve reporting make it a preferred choice for a wide range of users, from retail traders to institutional investors. While inherent risks related to regulation, centralization, and de-pegging exist, USDC's foundational utility and ongoing integration into both traditional and decentralized finance position it for continued relevance and growth as the digital economy evolves.",
+      verdict: "USDC is an indispensable component of the cryptocurrency ecosystem, providing essential stability and liquidity. Its strong market position, commitment to regulatory compliance, and transparent reserve reporting make it a preferred choice for a wide range of users, from retail traders to institutional investors. While inherent risks related to regulation, centralization, and de-pegging exist, USDC\'s foundational utility and ongoing integration into both traditional and decentralized finance position it for continued relevance and growth as the digital economy evolves.",
     },
   },
   {
@@ -556,7 +556,7 @@ export const cryptoProjects: CryptoProject[] = [
       sentiment: "bullish" as const,
       convictionScore: 78,
       keyDrivers: ["Fee discount incentives on BitMEX and iFinex platforms", "Strong liquidity and high market cap within exchange-native tokens", "Potential expansion of iFinex services and cross‑platform utility"],
-      risks: ["Regulatory pressure on leveraged crypto trading", "Dependence on BitMEX's market share and user growth", "Competition from other exchange tokens offering similar or broader ecosystems"],
+      risks: ["Regulatory pressure on leveraged crypto trading", "Dependence on BitMEX\'s market share and user growth", "Competition from other exchange tokens offering similar or broader ecosystems"],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -567,7 +567,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "LEO Token enjoys a solid position due to its integration with a major derivatives exchange, offering tangible utility for traders. While regulatory and competitive risks exist, the token's large market cap and fee discount model provide a compelling value proposition, supporting a cautiously optimistic outlook.",
+      verdict: "LEO Token enjoys a solid position due to its integration with a major derivatives exchange, offering tangible utility for traders. While regulatory and competitive risks exist, the token\'s large market cap and fee discount model provide a compelling value proposition, supporting a cautiously optimistic outlook.",
     },
   },
   {
@@ -628,7 +628,7 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Rain (RAIN) is a cryptocurrency project with its own blockchain called 'rain'. With a market capitalization of approximately $8.35 billion, it represents a significant player in the cryptocurrency ecosystem. The project maintains an active status, indicating ongoing development and market presence.",
+      summary: "Rain (RAIN) is a cryptocurrency project with its own blockchain called \'rain\'. With a market capitalization of approximately $8.35 billion, it represents a significant player in the cryptocurrency ecosystem. The project maintains an active status, indicating ongoing development and market presence.",
       sentiment: "bullish" as const,
       convictionScore: 75,
       keyDrivers: ["Own blockchain infrastructure providing potential for ecosystem development", "Significant market capitalization indicating investor confidence", "Active status suggesting ongoing development and community engagement"],
@@ -643,7 +643,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Rain presents itself as a substantial cryptocurrency project with its own blockchain and significant market capitalization. While its active status suggests ongoing development, the lack of detailed information about its specific value proposition makes a complete assessment challenging. The project's market position indicates investor confidence, but it will need to demonstrate clear differentiation and utility to maintain and grow its position in the competitive cryptocurrency landscape.",
+      verdict: "Rain presents itself as a substantial cryptocurrency project with its own blockchain and significant market capitalization. While its active status suggests ongoing development, the lack of detailed information about its specific value proposition makes a complete assessment challenging. The project\'s market position indicates investor confidence, but it will need to demonstrate clear differentiation and utility to maintain and grow its position in the competitive cryptocurrency landscape.",
     },
   },
   {
@@ -757,7 +757,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Monero maintains a strong position as the leading privacy cryptocurrency with significant utility for users prioritizing financial anonymity. While regulatory risks and market volatility present challenges, its first-mover advantage, robust technology, and dedicated community support a neutral-to-positive outlook. The project's long-term viability depends on navigating regulatory landscapes while maintaining its core privacy mission.",
+      verdict: "Monero maintains a strong position as the leading privacy cryptocurrency with significant utility for users prioritizing financial anonymity. While regulatory risks and market volatility present challenges, its first-mover advantage, robust technology, and dedicated community support a neutral-to-positive outlook. The project\'s long-term viability depends on navigating regulatory landscapes while maintaining its core privacy mission.",
     },
   },
   {
@@ -784,7 +784,7 @@ export const cryptoProjects: CryptoProject[] = [
       sentiment: "bullish" as const,
       convictionScore: 72,
       keyDrivers: ["Increased trading volume on WhiteBIT exchange driving demand for fee discounts", "Expansion of WhiteBIT Chain ecosystem with DeFi and NFT integrations", "Staking and yield programs that lock up WBT, reducing circulating supply"],
-      risks: ["Regulatory scrutiny targeting centralized exchange tokens", "Dependence on WhiteBIT's trading volume and user base", "Potential competition from newer exchange tokens or alternative chains"],
+      risks: ["Regulatory scrutiny targeting centralized exchange tokens", "Dependence on WhiteBIT\'s trading volume and user base", "Potential competition from newer exchange tokens or alternative chains"],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -795,7 +795,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "While WBT benefits from strong exchange backing and utility, its price is closely tied to WhiteBIT's performance and faces regulatory scrutiny typical of centralized exchange tokens. A balanced outlook suggests moderate upside if the exchange continues to grow, but risks remain.",
+      verdict: "While WBT benefits from strong exchange backing and utility, its price is closely tied to WhiteBIT\'s performance and faces regulatory scrutiny typical of centralized exchange tokens. A balanced outlook suggests moderate upside if the exchange continues to grow, but risks remain.",
     },
   },
   {
@@ -833,7 +833,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Canton presents as a substantial blockchain project with a notable market presence. While its large market cap suggests investor confidence and established positioning, the lack of detailed information about its specific technology and use cases makes a comprehensive assessment challenging. The project appears to have solid foundations and potential for growth, particularly if it continues to develop its ecosystem and demonstrates clear value propositions to users and developers. Investors should seek more detailed information about the project's roadmap, team, and actual adoption before making significant investment decisions.",
+      verdict: "Canton presents as a substantial blockchain project with a notable market presence. While its large market cap suggests investor confidence and established positioning, the lack of detailed information about its specific technology and use cases makes a comprehensive assessment challenging. The project appears to have solid foundations and potential for growth, particularly if it continues to develop its ecosystem and demonstrates clear value propositions to users and developers. Investors should seek more detailed information about the project\'s roadmap, team, and actual adoption before making significant investment decisions.",
     },
   },
   {
@@ -935,8 +935,8 @@ export const cryptoProjects: CryptoProject[] = [
       summary: "Toncoin (TON) is the native utility token of The Open Network, a high-performance Layer 1 blockchain designed for mass adoption. Its primary value proposition lies in its deep integration with Telegram, providing a seamless onboarding experience for millions of users through a built-in wallet and a growing ecosystem of mini-apps.",
       sentiment: "bullish" as const,
       convictionScore: 82,
-      keyDrivers: ["Deep integration with Telegram's massive user base", "Rapid growth of the TON mini-app ecosystem and GameFi", "High scalability and transaction throughput for retail payments"],
-      risks: ["Regulatory scrutiny regarding its historical association with Telegram", "Centralization concerns regarding validator distribution", "Dependence on Telegram's platform policies and stability"],
+      keyDrivers: ["Deep integration with Telegram\'s massive user base", "Rapid growth of the TON mini-app ecosystem and GameFi", "High scalability and transaction throughput for retail payments"],
+      risks: ["Regulatory scrutiny regarding its historical association with Telegram", "Centralization concerns regarding validator distribution", "Dependence on Telegram\'s platform policies and stability"],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -947,7 +947,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "TON is one of the most promising projects for mass adoption due to its unique distribution strategy. If it successfully converts a fraction of Telegram's users into Web3 users, it could see significant valuation growth, though regulatory risks remain a primary headwind.",
+      verdict: "TON is one of the most promising projects for mass adoption due to its unique distribution strategy. If it successfully converts a fraction of Telegram\'s users into Web3 users, it could see significant valuation growth, though regulatory risks remain a primary headwind.",
     },
   },
   {
@@ -985,7 +985,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "USD1 presents a solid stablecoin project with significant market capitalization and active status. While it faces stiff competition from more established stablecoins, its substantial market cap indicates a viable product with real adoption. The project's custom blockchain may offer technical advantages that help differentiate it in a crowded market. USD1 appears well-positioned to capture a portion of the growing stablecoin market, though its growth may be constrained by the dominance of established players. Overall, it represents a stable, functional project with moderate growth potential in an essential segment of the crypto economy.",
+      verdict: "USD1 presents a solid stablecoin project with significant market capitalization and active status. While it faces stiff competition from more established stablecoins, its substantial market cap indicates a viable product with real adoption. The project\'s custom blockchain may offer technical advantages that help differentiate it in a crowded market. USD1 appears well-positioned to capture a portion of the growing stablecoin market, though its growth may be constrained by the dominance of established players. Overall, it represents a stable, functional project with moderate growth potential in an essential segment of the crypto economy.",
     },
   },
   {
@@ -1137,7 +1137,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Hedera presents a compelling enterprise-focused blockchain solution with strong technical foundations and corporate backing. While facing stiff competition and regulatory challenges, its hashgraph technology offers distinct advantages for enterprise applications. The project's active development and growing ecosystem suggest promising long-term potential, though success will depend on continued enterprise adoption and navigating the evolving regulatory landscape.",
+      verdict: "Hedera presents a compelling enterprise-focused blockchain solution with strong technical foundations and corporate backing. While facing stiff competition and regulatory challenges, its hashgraph technology offers distinct advantages for enterprise applications. The project\'s active development and growing ecosystem suggest promising long-term potential, though success will depend on continued enterprise adoption and navigating the evolving regulatory landscape.",
     },
   },
   {
@@ -1289,7 +1289,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Sui's innovative architecture and focus on scalability position it as a promising player in the evolving blockchain landscape. While short-term volatility is likely, long-term success depends on sustained developer engagement and market demand for high-performance networks.",
+      verdict: "Sui\'s innovative architecture and focus on scalability position it as a promising player in the evolving blockchain landscape. While short-term volatility is likely, long-term success depends on sustained developer engagement and market demand for high-performance networks.",
     },
   },
   {
@@ -1467,8 +1467,8 @@ export const cryptoProjects: CryptoProject[] = [
       summary: "Tether Gold (XAUT) is a tokenized physical gold product issued by Tether, offering a 1:1 backing of gold reserves. It provides investors with a blockchain-native way to hold and transfer gold, combining the stability of a precious metal with the liquidity and accessibility of crypto. As a regulated stablecoin-like asset, XAUT occupies a niche between traditional gold ETFs and pure crypto assets, positioning itself as a bridge for institutional and retail investors seeking a hedge against fiat inflation.",
       sentiment: "bullish" as const,
       convictionScore: 78,
-      keyDrivers: ["Strong backing by Tether's infrastructure and liquidity", "Increasing demand for tokenized gold as a hedge and store of value", "Regulatory compliance and transparent reserve attestations"],
-      risks: ["Regulatory pressure on stablecoins and tokenized assets", "Reliance on Tether's reputation and operational stability", "Market volatility of gold prices affecting token demand"],
+      keyDrivers: ["Strong backing by Tether\'s infrastructure and liquidity", "Increasing demand for tokenized gold as a hedge and store of value", "Regulatory compliance and transparent reserve attestations"],
+      risks: ["Regulatory pressure on stablecoins and tokenized assets", "Reliance on Tether\'s reputation and operational stability", "Market volatility of gold prices affecting token demand"],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -1479,7 +1479,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Tether Gold presents a compelling value proposition as a digital gold asset with solid backing and ecosystem support. While regulatory and reputational risks exist, the growing appetite for tokenized commodities and the project's integration with Tether's network suggest a positive outlook.",
+      verdict: "Tether Gold presents a compelling value proposition as a digital gold asset with solid backing and ecosystem support. While regulatory and reputational risks exist, the growing appetite for tokenized commodities and the project\'s integration with Tether\'s network suggest a positive outlook.",
     },
   },
   {
@@ -1578,10 +1578,10 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "BlackRock USD Institutional Digital Liquidity Fund (BUIDL) is a tokenized fund aimed at providing institutional investors with exposure to USD-denominated digital assets while maintaining liquidity. Backed by BlackRock's brand, it positions itself as a bridge between traditional finance and crypto, offering a regulated, low-volatility alternative to typical high‑risk tokens.",
+      summary: "BlackRock USD Institutional Digital Liquidity Fund (BUIDL) is a tokenized fund aimed at providing institutional investors with exposure to USD-denominated digital assets while maintaining liquidity. Backed by BlackRock\'s brand, it positions itself as a bridge between traditional finance and crypto, offering a regulated, low-volatility alternative to typical high‑risk tokens.",
       sentiment: "neutral" as const,
       convictionScore: 68,
-      keyDrivers: ["BlackRock's brand and institutional network", "Demand for regulated, USD‑linked digital assets", "Increasing adoption of crypto by traditional finance"],
+      keyDrivers: ["BlackRock\'s brand and institutional network", "Demand for regulated, USD‑linked digital assets", "Increasing adoption of crypto by traditional finance"],
       risks: ["Regulatory uncertainty and potential restrictions", "Competition from established stablecoins and other tokenized funds", "Liquidity constraints if institutional demand fluctuates"],
       riskAssessment: {
         overallRisk: "medium" as const,
@@ -1616,7 +1616,7 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Ondo US Dollar Yield (USDY) is a stablecoin‑type token that aims to generate yield on USD‑denominated assets through decentralized finance strategies. It positions itself as a high‑yield alternative to traditional stablecoins, leveraging Ondo's asset management protocols to allocate capital across lending, liquidity provision, and structured products, while maintaining a 1:1 peg to the US dollar.",
+      summary: "Ondo US Dollar Yield (USDY) is a stablecoin‑type token that aims to generate yield on USD‑denominated assets through decentralized finance strategies. It positions itself as a high‑yield alternative to traditional stablecoins, leveraging Ondo\'s asset management protocols to allocate capital across lending, liquidity provision, and structured products, while maintaining a 1:1 peg to the US dollar.",
       sentiment: "bullish" as const,
       convictionScore: 78,
       keyDrivers: ["High on‑chain yield compared to traditional stablecoins", "Integration with multiple DeFi lending and liquidity platforms", "Strong backing and asset management expertise from the Ondo team"],
@@ -1654,7 +1654,7 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Mantle is a Layer‑2 scaling solution built on Optimistic Rollup technology for the Ethereum ecosystem. It aims to provide high throughput, low transaction fees, and developer-friendly tooling while maintaining strong security guarantees through Ethereum's base layer. With a market cap of roughly $2.09 B, Mantle positions itself as a mid‑tier competitor among rollup projects, targeting both DeFi and NFT applications that require scalable infrastructure.",
+      summary: "Mantle is a Layer‑2 scaling solution built on Optimistic Rollup technology for the Ethereum ecosystem. It aims to provide high throughput, low transaction fees, and developer-friendly tooling while maintaining strong security guarantees through Ethereum\'s base layer. With a market cap of roughly $2.09 B, Mantle positions itself as a mid‑tier competitor among rollup projects, targeting both DeFi and NFT applications that require scalable infrastructure.",
       sentiment: "bullish" as const,
       convictionScore: 78,
       keyDrivers: ["EVM‑compatible optimistic rollup delivering low fees and high throughput", "Strategic partnerships and incentive programs attracting DeFi and NFT projects", "Strong backing from investors and a sizable market cap indicating liquidity"],
@@ -1821,7 +1821,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "OKB shows solid fundamentals driven by OKX's growth, but regulatory and competitive risks warrant a balanced outlook.",
+      verdict: "OKB shows solid fundamentals driven by OKX\'s growth, but regulatory and competitive risks warrant a balanced outlook.",
     },
   },
   {
@@ -1882,11 +1882,11 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Ripple USD (RLUSD) is a stablecoin pegged to the US dollar on the Ripple ledger, offering fast, low-cost settlement for cross-border payments and DeFi applications. Backed by a $1.8B market cap, it leverages Ripple's existing network and partnerships with financial institutions to provide a trusted digital dollar alternative.",
+      summary: "Ripple USD (RLUSD) is a stablecoin pegged to the US dollar on the Ripple ledger, offering fast, low-cost settlement for cross-border payments and DeFi applications. Backed by a $1.8B market cap, it leverages Ripple\'s existing network and partnerships with financial institutions to provide a trusted digital dollar alternative.",
       sentiment: "bullish" as const,
       convictionScore: 75,
-      keyDrivers: ["Integration with Ripple's fast, low-cost XRP ledger", "Strong institutional partnerships and regulatory focus", "Increasing demand for dollar‑denominated stablecoins in cross‑border payments"],
-      risks: ["Regulatory scrutiny of stablecoins and Ripple's legal challenges", "Intense competition from larger, more liquid stablecoins", "Dependence on Ripple's ecosystem growth and adoption"],
+      keyDrivers: ["Integration with Ripple\'s fast, low-cost XRP ledger", "Strong institutional partnerships and regulatory focus", "Increasing demand for dollar‑denominated stablecoins in cross‑border payments"],
+      risks: ["Regulatory scrutiny of stablecoins and Ripple\'s legal challenges", "Intense competition from larger, more liquid stablecoins", "Dependence on Ripple\'s ecosystem growth and adoption"],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -1897,7 +1897,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "RLUSD shows solid fundamentals and a clear value proposition within Ripple's ecosystem, offering a competitive stablecoin option for institutional payments. While regulatory and competitive pressures remain, its strong backing and network effects support a positive outlook.",
+      verdict: "RLUSD shows solid fundamentals and a clear value proposition within Ripple\'s ecosystem, offering a competitive stablecoin option for institutional payments. While regulatory and competitive pressures remain, its strong backing and network effects support a positive outlook.",
     },
   },
   {
@@ -1973,7 +1973,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Ondo presents a compelling value proposition in the tokenized fixed‑income space with solid market traction and institutional backing. While regulatory and competitive risks remain, the project's differentiated offering and growing demand for stable yields support a positive outlook.",
+      verdict: "Ondo presents a compelling value proposition in the tokenized fixed‑income space with solid market traction and institutional backing. While regulatory and competitive risks remain, the project\'s differentiated offering and growing demand for stable yields support a positive outlook.",
     },
   },
   {
@@ -1999,8 +1999,8 @@ export const cryptoProjects: CryptoProject[] = [
       summary: "Falcon USD (USDF) is a stablecoin operating on the Falcon Finance blockchain, designed to maintain a 1:1 peg to the US dollar. It aims to provide low‑fee, fast transactions for DeFi applications and cross‑chain payments, positioning itself as a utility token for the Falcon ecosystem and broader crypto markets.",
       sentiment: "bullish" as const,
       convictionScore: 75,
-      keyDrivers: ["Integration with Falcon Finance's fast, low‑cost blockchain", "Increasing demand for stablecoins in DeFi and cross‑chain swaps", "Strategic partnerships and listings on major exchanges"],
-      risks: ["Strong competition from established stablecoins (USDC, USDT, DAI)", "Regulatory scrutiny on stablecoin reserves and audits", "Reliance on Falcon Finance's network security and adoption"],
+      keyDrivers: ["Integration with Falcon Finance\'s fast, low‑cost blockchain", "Increasing demand for stablecoins in DeFi and cross‑chain swaps", "Strategic partnerships and listings on major exchanges"],
+      risks: ["Strong competition from established stablecoins (USDC, USDT, DAI)", "Regulatory scrutiny on stablecoin reserves and audits", "Reliance on Falcon Finance\'s network security and adoption"],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -2300,10 +2300,10 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Bitget Token (BGB) is the native utility token of the Bitget exchange, offering fee discounts, staking rewards, and governance rights. It leverages the exchange's large user base and high trading volume to drive token utility and liquidity, positioning itself as a key incentive layer within a rapidly growing crypto brokerage ecosystem.",
+      summary: "Bitget Token (BGB) is the native utility token of the Bitget exchange, offering fee discounts, staking rewards, and governance rights. It leverages the exchange\'s large user base and high trading volume to drive token utility and liquidity, positioning itself as a key incentive layer within a rapidly growing crypto brokerage ecosystem.",
       sentiment: "bullish" as const,
       convictionScore: 78,
-      keyDrivers: ["Fee discount and staking incentives driving token demand", "Bitget's expanding user base and product suite", "Active governance participation and token burn mechanisms"],
+      keyDrivers: ["Fee discount and staking incentives driving token demand", "Bitget\'s expanding user base and product suite", "Active governance participation and token burn mechanisms"],
       risks: ["Regulatory scrutiny of centralized exchanges", "Intense competition from larger exchange tokens", "Potential token price volatility due to market sentiment swings"],
       riskAssessment: {
         overallRisk: "medium" as const,
@@ -2338,7 +2338,7 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Binance CEX is a centralized cryptocurrency exchange offering spot, futures, and DeFi services across multiple blockchains. It is the world's largest exchange by daily trading volume, providing deep liquidity, a wide asset selection, and a suite of financial products, positioning itself as a one‑stop hub for traders and investors.",
+      summary: "Binance CEX is a centralized cryptocurrency exchange offering spot, futures, and DeFi services across multiple blockchains. It is the world\'s largest exchange by daily trading volume, providing deep liquidity, a wide asset selection, and a suite of financial products, positioning itself as a one‑stop hub for traders and investors.",
       sentiment: "bullish" as const,
       convictionScore: 78,
       keyDrivers: ["Market leadership and deep liquidity", "Broad product suite including futures, staking, and DeFi integrations", "Strong brand and ecosystem built around BNB"],
@@ -2604,7 +2604,7 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Robinhood Crypto is a multi‑chain decentralized finance platform that extends Robinhood's retail brokerage brand into crypto trading, offering a user‑friendly interface for buying, selling, and holding digital assets without complex onboarding. It leverages Robinhood's existing user base and brand trust to capture retail market share in crypto, positioning itself as a bridge between traditional finance and decentralized markets.",
+      summary: "Robinhood Crypto is a multi‑chain decentralized finance platform that extends Robinhood\'s retail brokerage brand into crypto trading, offering a user‑friendly interface for buying, selling, and holding digital assets without complex onboarding. It leverages Robinhood\'s existing user base and brand trust to capture retail market share in crypto, positioning itself as a bridge between traditional finance and decentralized markets.",
       sentiment: "neutral" as const,
       convictionScore: 68,
       keyDrivers: ["Strong brand recognition and existing retail user base", "Multi‑chain support expanding asset variety", "Potential regulatory approval boosting mainstream adoption"],
@@ -2680,10 +2680,10 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Binance Staked ETH (WBETH) is a tokenized representation of Binance's BETH, which itself is a liquid staking token for Ethereum 2.0. Users deposit BETH into the WBETH wrapper to receive WBETH at a 1:1 ratio, gaining exposure to the underlying staked ETH and its accrued staking rewards while retaining liquidity across multiple chains.",
+      summary: "Binance Staked ETH (WBETH) is a tokenized representation of Binance\'s BETH, which itself is a liquid staking token for Ethereum 2.0. Users deposit BETH into the WBETH wrapper to receive WBETH at a 1:1 ratio, gaining exposure to the underlying staked ETH and its accrued staking rewards while retaining liquidity across multiple chains.",
       sentiment: "bullish" as const,
       convictionScore: 78,
-      keyDrivers: ["Binance's large ecosystem and user base", "Increasing demand for liquid ETH staking solutions", "Cross‑chain compatibility expanding use cases"],
+      keyDrivers: ["Binance\'s large ecosystem and user base", "Increasing demand for liquid ETH staking solutions", "Cross‑chain compatibility expanding use cases"],
       risks: ["Regulatory scrutiny on centralized staking services", "Competition from decentralized liquid staking providers", "Potential smart‑contract vulnerabilities in the wrapper"],
       riskAssessment: {
         overallRisk: "medium" as const,
@@ -2695,7 +2695,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "WBETH offers a compelling value proposition through Binance's reach and multi‑chain liquidity, positioning it well for growth, though regulatory and competitive risks warrant cautious optimism.",
+      verdict: "WBETH offers a compelling value proposition through Binance\'s reach and multi‑chain liquidity, positioning it well for growth, though regulatory and competitive risks warrant cautious optimism.",
     },
   },
   {
@@ -2870,10 +2870,10 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Hyperliquid Bridge (HYPE) is a multi‑chain DeFi bridge that enables minting of native USDC on the Hyperliquid Layer‑1 via Circle's CCTP and facilitates USDC transfers from Arbitrum. It leverages Hyperliquid's strong reputation in perpetual futures and spot trading to provide low‑latency, low‑fee cross‑chain liquidity for traders and DeFi users.",
+      summary: "Hyperliquid Bridge (HYPE) is a multi‑chain DeFi bridge that enables minting of native USDC on the Hyperliquid Layer‑1 via Circle\'s CCTP and facilitates USDC transfers from Arbitrum. It leverages Hyperliquid\'s strong reputation in perpetual futures and spot trading to provide low‑latency, low‑fee cross‑chain liquidity for traders and DeFi users.",
       sentiment: "bullish" as const,
       convictionScore: 78,
-      keyDrivers: ["Hyperliquid's strong brand and high‑frequency trading ecosystem", "CCTP-backed USDC minting ensures regulatory compliance and liquidity", "Multi‑chain support positions the bridge for network effect as more chains adopt"],
+      keyDrivers: ["Hyperliquid\'s strong brand and high‑frequency trading ecosystem", "CCTP-backed USDC minting ensures regulatory compliance and liquidity", "Multi‑chain support positions the bridge for network effect as more chains adopt"],
       risks: ["Intense competition from more established cross‑chain bridges", "Reliance on USDC and CCTP could expose the project to regulatory or technical disruptions", "Limited current chain coverage may restrict network effects early on"],
       riskAssessment: {
         overallRisk: "medium" as const,
@@ -2885,7 +2885,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Hyperliquid Bridge leverages a solid trading platform and secure USDC minting to carve a niche in the cross‑chain liquidity market. While competition and dependency on USDC present challenges, the project's alignment with a high‑volume trading ecosystem offers strong upside potential.",
+      verdict: "Hyperliquid Bridge leverages a solid trading platform and secure USDC minting to carve a niche in the cross‑chain liquidity market. While competition and dependency on USDC present challenges, the project\'s alignment with a high‑volume trading ecosystem offers strong upside potential.",
     },
   },
   {
@@ -2923,7 +2923,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Bitget shows solid fundamentals and a clear value proposition in the derivatives market, with promising growth avenues through DeFi expansion. While regulatory and competitive risks persist, the project's strengths merit a cautiously optimistic outlook.",
+      verdict: "Bitget shows solid fundamentals and a clear value proposition in the derivatives market, with promising growth avenues through DeFi expansion. While regulatory and competitive risks persist, the project\'s strengths merit a cautiously optimistic outlook.",
     },
   },
   {
@@ -2984,10 +2984,10 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Binance Bitcoin is a bridged, pegged BTC token issued via Binance Bridge on the Bitcoin network, allowing Binance users to move Bitcoin onto Binance's ecosystem for DeFi participation. It serves as a gateway for Bitcoin holders to access Binance's liquidity, staking, and yield products without leaving the Bitcoin chain.",
+      summary: "Binance Bitcoin is a bridged, pegged BTC token issued via Binance Bridge on the Bitcoin network, allowing Binance users to move Bitcoin onto Binance\'s ecosystem for DeFi participation. It serves as a gateway for Bitcoin holders to access Binance\'s liquidity, staking, and yield products without leaving the Bitcoin chain.",
       sentiment: "neutral" as const,
       convictionScore: 62,
-      keyDrivers: ["Binance's large liquidity and user base", "Increasing demand for Bitcoin exposure in DeFi", "Integration with Binance's suite of financial products"],
+      keyDrivers: ["Binance\'s large liquidity and user base", "Increasing demand for Bitcoin exposure in DeFi", "Integration with Binance\'s suite of financial products"],
       risks: ["Centralized bridge custody risk", "Regulatory pressure on cross-chain tokenization", "Limited adoption beyond Binance ecosystem"],
       riskAssessment: {
         overallRisk: "medium" as const,
@@ -2999,7 +2999,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "The project offers a useful bridge for Bitcoin liquidity into Binance's DeFi services, but its centralized nature and regulatory environment temper optimism, leading to a balanced outlook.",
+      verdict: "The project offers a useful bridge for Bitcoin liquidity into Binance\'s DeFi services, but its centralized nature and regulatory environment temper optimism, leading to a balanced outlook.",
     },
   },
   {
@@ -3060,7 +3060,7 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Ethena USDe (ENA) is a synthetic stablecoin protocol on Ethereum that issues USDe, a dollar‑pegged token collateralized by ETH and other assets. It aims to provide a low‑cost, decentralized alternative to fiat‑backed stablecoins, leveraging Ethereum's security and composability within DeFi.",
+      summary: "Ethena USDe (ENA) is a synthetic stablecoin protocol on Ethereum that issues USDe, a dollar‑pegged token collateralized by ETH and other assets. It aims to provide a low‑cost, decentralized alternative to fiat‑backed stablecoins, leveraging Ethereum\'s security and composability within DeFi.",
       sentiment: "bullish" as const,
       convictionScore: 78,
       keyDrivers: ["Dynamic collateral ratio that adapts to ETH volatility", "Deep integration potential with Ethereum DeFi ecosystems", "Increasing demand for decentralized, on‑chain dollar assets"],
@@ -3084,7 +3084,7 @@ export const cryptoProjects: CryptoProject[] = [
     ticker: "GT",
     chain: "Multi-Chain",
     category: "defi",
-    description: "Established in 2013, Gate is a cryptocurrency exchange serving over 53 million+ global users. The platform supports spot trading, futures trading, margin trading, and wealth management products for more than 4,600+ cryptocurrencies, using zero-knowledge technology to ensure transparency and verifiability of user assets. Various Gate entities have obtained or completed regulatory registrations, licences, authorizations, or approvals across various jurisdictions, such as Lithuania, Argentina, Malta, Italy, Gibraltar, Bahamas, and Hong Kong. In 2024, Gate Group also completed the acquisition of a Japan-licensed exchange. In April 2025, Gate Technology FZE ('Gate Dubai'), a part of Gate Group, obtained a full operational license from the Virtual Assets Regulatory Authority (VARA) in Dubai",
+    description: "Established in 2013, Gate is a cryptocurrency exchange serving over 53 million+ global users. The platform supports spot trading, futures trading, margin trading, and wealth management products for more than 4,600+ cryptocurrencies, using zero-knowledge technology to ensure transparency and verifiability of user assets. Various Gate entities have obtained or completed regulatory registrations, licences, authorizations, or approvals across various jurisdictions, such as Lithuania, Argentina, Malta, Italy, Gibraltar, Bahamas, and Hong Kong. In 2024, Gate Group also completed the acquisition of a Japan-licensed exchange. In April 2025, Gate Technology FZE (\'Gate Dubai\'), a part of Gate Group, obtained a full operational license from the Virtual Assets Regulatory Authority (VARA) in Dubai",
     status: "active" as const,
     price: "",
     marketCap: "$4,444,603,354",
@@ -3160,7 +3160,7 @@ export const cryptoProjects: CryptoProject[] = [
     ticker: "-",
     chain: "Multi-Chain",
     category: "defi",
-    description: "World's biggest Bitcoin and Ethereum Options Exchange and the most advanced crypto derivatives trading platform with up to 50x leverage on Crypto Futures.",
+    description: "World\'s biggest Bitcoin and Ethereum Options Exchange and the most advanced crypto derivatives trading platform with up to 50x leverage on Crypto Futures.",
     status: "active" as const,
     price: "",
     marketCap: "$4,169,923,884",
@@ -3212,10 +3212,10 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "USDT0 aims to serve as a unified gateway for Tether's cross‑chain interoperability and expansion on Ethereum, offering tools and bridges that enable seamless movement of USDT across multiple blockchains while maintaining liquidity and compliance.",
+      summary: "USDT0 aims to serve as a unified gateway for Tether\'s cross‑chain interoperability and expansion on Ethereum, offering tools and bridges that enable seamless movement of USDT across multiple blockchains while maintaining liquidity and compliance.",
       sentiment: "neutral" as const,
       convictionScore: 68,
-      keyDrivers: ["Tether's dominant stablecoin market share", "Increasing demand for cross‑chain stablecoin liquidity", "Potential integration with emerging L2 solutions"],
+      keyDrivers: ["Tether\'s dominant stablecoin market share", "Increasing demand for cross‑chain stablecoin liquidity", "Potential integration with emerging L2 solutions"],
       risks: ["Security vulnerabilities in bridge contracts", "Regulatory scrutiny on stablecoins and cross‑chain protocols", "Strong competition from established interoperability platforms"],
       riskAssessment: {
         overallRisk: "medium" as const,
@@ -3227,7 +3227,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "USDT0 offers a compelling value proposition for Tether's ecosystem, but its success hinges on execution, security, and differentiation in a crowded bridge market.",
+      verdict: "USDT0 offers a compelling value proposition for Tether\'s ecosystem, but its success hinges on execution, security, and differentiation in a crowded bridge market.",
     },
   },
   {
@@ -3250,7 +3250,7 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Babylon Protocol enables Bitcoin holders to lock their BTC in a self‑custodial vault and earn yields by validating proof‑of‑stake (PoS) chains without bridging assets or relying on third parties. The protocol claims fast unbonding, scalable restaking, and liquidity for staked BTC, positioning itself as a bridge between Bitcoin's security and DeFi yield opportunities.",
+      summary: "Babylon Protocol enables Bitcoin holders to lock their BTC in a self‑custodial vault and earn yields by validating proof‑of‑stake (PoS) chains without bridging assets or relying on third parties. The protocol claims fast unbonding, scalable restaking, and liquidity for staked BTC, positioning itself as a bridge between Bitcoin\'s security and DeFi yield opportunities.",
       sentiment: "neutral" as const,
       convictionScore: 68,
       keyDrivers: ["First‑mover advantage in non‑custodial Bitcoin restaking", "Increasing demand for Bitcoin‑backed liquidity in PoS ecosystems", "Potential partnerships with major PoS chains to expand validator participation"],
@@ -3303,7 +3303,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "SparkLend presents a compelling value proposition in the stablecoin lending sector by addressing the volatility of interest rates. Its predictable, governance-defined rates, backed by the SLL's consistent liquidity, offer a significant advantage for users prioritizing stability. While it faces stiff competition from established players, its unique approach could carve out a substantial niche. The multi-chain expansion is a smart move for growth. The project's long-term success will hinge on the flawless execution of its SLL, effective governance, and its ability to attract and retain users seeking a more predictable DeFi lending experience. Overall, it's a promising project with a clear differentiator.",
+      verdict: "SparkLend presents a compelling value proposition in the stablecoin lending sector by addressing the volatility of interest rates. Its predictable, governance-defined rates, backed by the SLL\'s consistent liquidity, offer a significant advantage for users prioritizing stability. While it faces stiff competition from established players, its unique approach could carve out a substantial niche. The multi-chain expansion is a smart move for growth. The project\'s long-term success will hinge on the flawless execution of its SLL, effective governance, and its ability to attract and retain users seeking a more predictable DeFi lending experience. Overall, it\'s a promising project with a clear differentiator.",
     },
   },
   {
@@ -3330,7 +3330,7 @@ export const cryptoProjects: CryptoProject[] = [
       sentiment: "bullish" as const,
       convictionScore: 78,
       keyDrivers: ["Continued growth and adoption of EigenLayer and the restaking ecosystem.", "Increasing demand for liquid and composable ETH staking solutions.", "Expansion of DeFi integrations and use cases for eETH.", "Strong focus on decentralization and non-custodial security, appealing to a segment of stakers.", "Potential for new yield opportunities and incentives within the restaking layer."],
-      risks: ["Smart contract vulnerabilities in ether.fi's or EigenLayer's protocols.", "Intense competition from other LRT protocols and established LSPs.", "Slashing risk for validators, though mitigated by diversification and insurance.", "Regulatory uncertainty surrounding DeFi, staking, and restaking services.", "Concentration risk and dependence on the long-term success and security of EigenLayer."],
+      risks: ["Smart contract vulnerabilities in ether.fi\'s or EigenLayer\'s protocols.", "Intense competition from other LRT protocols and established LSPs.", "Slashing risk for validators, though mitigated by diversification and insurance.", "Regulatory uncertainty surrounding DeFi, staking, and restaking services.", "Concentration risk and dependence on the long-term success and security of EigenLayer."],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -3341,7 +3341,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "ether.fi is a leading innovator in the burgeoning liquid restaking sector, offering a compelling decentralized and non-custodial solution for Ethereum stakers. Its strategic integration with EigenLayer positions it favorably to capture significant value from the restaking narrative and associated multi-layered yield opportunities. While it faces stiff competition and inherent smart contract and slashing risks, its commitment to user control and liquidity makes it a strong contender. The project's future success is closely tied to the continued expansion of the restaking ecosystem and its ability to maintain a competitive edge through innovation and security.",
+      verdict: "ether.fi is a leading innovator in the burgeoning liquid restaking sector, offering a compelling decentralized and non-custodial solution for Ethereum stakers. Its strategic integration with EigenLayer positions it favorably to capture significant value from the restaking narrative and associated multi-layered yield opportunities. While it faces stiff competition and inherent smart contract and slashing risks, its commitment to user control and liquidity makes it a strong contender. The project\'s future success is closely tied to the continued expansion of the restaking ecosystem and its ability to maintain a competitive edge through innovation and security.",
     },
   },
   {
@@ -3364,11 +3364,11 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "JustLend is a decentralized lending and borrowing protocol built on the Tron blockchain. It facilitates the creation of fund pools where interest rates for various TRON-based assets are algorithmically determined by their supply and demand. Its core value proposition is to provide a robust and efficient DeFi lending solution within the Tron ecosystem, enabling users to earn interest on their crypto assets or borrow against them, leveraging Tron's lower transaction costs and existing user base.",
+      summary: "JustLend is a decentralized lending and borrowing protocol built on the Tron blockchain. It facilitates the creation of fund pools where interest rates for various TRON-based assets are algorithmically determined by their supply and demand. Its core value proposition is to provide a robust and efficient DeFi lending solution within the Tron ecosystem, enabling users to earn interest on their crypto assets or borrow against them, leveraging Tron\'s lower transaction costs and existing user base.",
       sentiment: "bullish" as const,
       convictionScore: 75,
-      keyDrivers: ["Continued growth and adoption of the Tron ecosystem, increasing TVL and user activity.", "Fundamental and sustained demand for decentralized lending and borrowing services in the broader crypto market.", "Integration and synergy with other dApps and projects within the Tron network.", "Tron's competitive advantage in transaction speed and lower fees compared to some rival chains."],
-      risks: ["Potential smart contract vulnerabilities or exploits, which are inherent risks in all DeFi protocols.", "Intense competition from established lending protocols on other major blockchains, potentially limiting cross-chain appeal.", "Regulatory scrutiny and evolving legal frameworks for DeFi protocols could impact operations.", "Reliance on the overall success and health of the Tron blockchain; a decline in Tron's ecosystem would negatively affect JustLend.", "Liquidity risks for less popular assets, potentially affecting borrowing/lending efficiency."],
+      keyDrivers: ["Continued growth and adoption of the Tron ecosystem, increasing TVL and user activity.", "Fundamental and sustained demand for decentralized lending and borrowing services in the broader crypto market.", "Integration and synergy with other dApps and projects within the Tron network.", "Tron\'s competitive advantage in transaction speed and lower fees compared to some rival chains."],
+      risks: ["Potential smart contract vulnerabilities or exploits, which are inherent risks in all DeFi protocols.", "Intense competition from established lending protocols on other major blockchains, potentially limiting cross-chain appeal.", "Regulatory scrutiny and evolving legal frameworks for DeFi protocols could impact operations.", "Reliance on the overall success and health of the Tron blockchain; a decline in Tron\'s ecosystem would negatively affect JustLend.", "Liquidity risks for less popular assets, potentially affecting borrowing/lending efficiency."],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -3379,7 +3379,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "JustLend is a foundational and essential DeFi lending protocol within the Tron ecosystem, offering critical utility for users to manage and leverage their TRON-based assets. Its algorithmic interest rate model provides efficiency, and its established position on Tron gives it a significant advantage within that specific chain. While its growth trajectory is closely linked to the broader adoption and TVL of the Tron network, the fundamental demand for lending and borrowing services provides a stable and positive outlook. Investors should weigh its strong ecosystem position and utility against inherent DeFi risks and potential competition from other chains. Overall, JustLend presents a solid investment case for those bullish on the Tron ecosystem's future.",
+      verdict: "JustLend is a foundational and essential DeFi lending protocol within the Tron ecosystem, offering critical utility for users to manage and leverage their TRON-based assets. Its algorithmic interest rate model provides efficiency, and its established position on Tron gives it a significant advantage within that specific chain. While its growth trajectory is closely linked to the broader adoption and TVL of the Tron network, the fundamental demand for lending and borrowing services provides a stable and positive outlook. Investors should weigh its strong ecosystem position and utility against inherent DeFi risks and potential competition from other chains. Overall, JustLend presents a solid investment case for those bullish on the Tron ecosystem\'s future.",
     },
   },
   {
@@ -3405,7 +3405,7 @@ export const cryptoProjects: CryptoProject[] = [
       summary: "Tether Gold (XAUt) is a multi-chain tokenized asset that represents direct ownership of real physical gold, held in secure vaults. It bridges the traditional asset class of gold with the blockchain ecosystem, offering the liquidity, divisibility, and transferability typically associated with crypto assets. XAUt serves as a stable store of value, a hedge against market volatility, and a foundational component for DeFi applications seeking exposure to real-world assets (RWAs).",
       sentiment: "bullish" as const,
       convictionScore: 75,
-      keyDrivers: ["Increasing demand for real-world assets (RWAs) on-chain and in DeFi.", "Gold's traditional role as an inflation hedge and safe-haven asset.", "Enhanced liquidity, divisibility, and transferability compared to physical gold.", "Growing adoption of multi-chain solutions for asset tokenization.", "Tether's established market presence and infrastructure."],
+      keyDrivers: ["Increasing demand for real-world assets (RWAs) on-chain and in DeFi.", "Gold\'s traditional role as an inflation hedge and safe-haven asset.", "Enhanced liquidity, divisibility, and transferability compared to physical gold.", "Growing adoption of multi-chain solutions for asset tokenization.", "Tether\'s established market presence and infrastructure."],
       risks: ["Custodial risk associated with the physical gold reserves held by Tether.", "Regulatory uncertainty and potential scrutiny surrounding stablecoins and tokenized assets.", "Competition from other established gold-backed tokens and traditional gold investment products.", "Reputational risk associated with the broader Tether ecosystem (USDT).", "Smart contract risks when integrated into various DeFi protocols."],
       riskAssessment: {
         overallRisk: "medium" as const,
@@ -3417,7 +3417,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Tether Gold (XAUt) presents a compelling proposition by digitizing one of the oldest and most trusted stores of value. Its ability to bring gold's stability and hedging properties to the blockchain, combined with the inherent advantages of crypto (liquidity, divisibility, programmability), positions it strongly within the evolving RWA narrative. While facing custodial and regulatory risks, and competition, XAUt offers a valuable tool for both traditional investors seeking blockchain exposure and crypto natives looking for a stable, uncorrelated asset. Its future success is closely tied to broader DeFi adoption and the continued demand for secure, transparent, and liquid tokenized real-world assets.",
+      verdict: "Tether Gold (XAUt) presents a compelling proposition by digitizing one of the oldest and most trusted stores of value. Its ability to bring gold\'s stability and hedging properties to the blockchain, combined with the inherent advantages of crypto (liquidity, divisibility, programmability), positions it strongly within the evolving RWA narrative. While facing custodial and regulatory risks, and competition, XAUt offers a valuable tool for both traditional investors seeking blockchain exposure and crypto natives looking for a stable, uncorrelated asset. Its future success is closely tied to broader DeFi adoption and the continued demand for secure, transparent, and liquid tokenized real-world assets.",
     },
   },
   {
@@ -3426,7 +3426,7 @@ export const cryptoProjects: CryptoProject[] = [
     ticker: "ARB",
     chain: "Ethereum",
     category: "defi",
-    description: "The Arbitrum Bridge acts as a secure channel connecting Ethereum's mainnet (Layer-1) with the Arbitrum Rollup (Layer-2). This bridge allows users to transfer assets, like ETH or ERC-20 tokens, between these layers",
+    description: "The Arbitrum Bridge acts as a secure channel connecting Ethereum\'s mainnet (Layer-1) with the Arbitrum Rollup (Layer-2). This bridge allows users to transfer assets, like ETH or ERC-20 tokens, between these layers",
     status: "active" as const,
     price: "",
     marketCap: "$3,109,121,469",
@@ -3440,11 +3440,11 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "The Arbitrum Bridge serves as the critical infrastructure connecting Ethereum's mainnet (Layer-1) with the Arbitrum Rollup (Layer-2). Its core function is to facilitate secure and efficient transfer of assets, primarily ETH and ERC-20 tokens, between these layers. This enables users to leverage Arbitrum's lower transaction costs and higher throughput, making it a fundamental component for the Arbitrum ecosystem's market position as a leading Ethereum scaling solution.",
+      summary: "The Arbitrum Bridge serves as the critical infrastructure connecting Ethereum\'s mainnet (Layer-1) with the Arbitrum Rollup (Layer-2). Its core function is to facilitate secure and efficient transfer of assets, primarily ETH and ERC-20 tokens, between these layers. This enables users to leverage Arbitrum\'s lower transaction costs and higher throughput, making it a fundamental component for the Arbitrum ecosystem\'s market position as a leading Ethereum scaling solution.",
       sentiment: "bullish" as const,
       convictionScore: 85,
       keyDrivers: ["Continued growth and adoption of the Arbitrum network and its dApps.", "Increasing demand for Ethereum scaling solutions to reduce gas fees and improve transaction speeds.", "Technological advancements and security enhancements within the Arbitrum ecosystem.", "Overall market trend towards multi-chain and L2 interoperability."],
-      risks: ["Intense competition from other Layer-2 solutions (Optimism, zkSync, StarkNet, etc.).", "Potential security vulnerabilities or exploits within the bridge mechanism, despite strong track record.", "Regulatory scrutiny on cross-chain bridges and DeFi infrastructure.", "Dependence on Ethereum's long-term scaling roadmap and L1 security."],
+      risks: ["Intense competition from other Layer-2 solutions (Optimism, zkSync, StarkNet, etc.).", "Potential security vulnerabilities or exploits within the bridge mechanism, despite strong track record.", "Regulatory scrutiny on cross-chain bridges and DeFi infrastructure.", "Dependence on Ethereum\'s long-term scaling roadmap and L1 security."],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -3455,7 +3455,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "The Arbitrum Bridge is a foundational and indispensable component of one of the leading Ethereum Layer-2 scaling solutions. Its robust functionality and security are critical for the Arbitrum ecosystem's continued growth and adoption. While facing stiff competition in the L2 space and inherent bridge security risks, its strong market position, coupled with the overarching need for Ethereum scalability, positions it for continued relevance and success. The future of the bridge is intrinsically linked to the success of Arbitrum and the broader L2 narrative, making it a high-conviction play on Ethereum's scaling future.",
+      verdict: "The Arbitrum Bridge is a foundational and indispensable component of one of the leading Ethereum Layer-2 scaling solutions. Its robust functionality and security are critical for the Arbitrum ecosystem\'s continued growth and adoption. While facing stiff competition in the L2 space and inherent bridge security risks, its strong market position, coupled with the overarching need for Ethereum scalability, positions it for continued relevance and success. The future of the bridge is intrinsically linked to the success of Arbitrum and the broader L2 narrative, making it a high-conviction play on Ethereum\'s scaling future.",
     },
   },
   {
@@ -3520,7 +3520,7 @@ export const cryptoProjects: CryptoProject[] = [
       sentiment: "bullish" as const,
       convictionScore: 78,
       keyDrivers: ["Expansion of collateral types and risk management frameworks", "Increasing adoption of DAI in DeFi lending, payments, and NFT marketplaces", "Launch of subDAOs to enhance governance scalability and community participation"],
-      risks: ["Regulatory pressure on stablecoins could impact DAI's usability", "Collateral volatility leading to liquidation cascades in stressed markets", "Governance fragmentation or delays in implementing critical upgrades"],
+      risks: ["Regulatory pressure on stablecoins could impact DAI\'s usability", "Collateral volatility leading to liquidation cascades in stressed markets", "Governance fragmentation or delays in implementing critical upgrades"],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -3683,7 +3683,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "EigenLayer presents a compelling value proposition by extending Ethereum's security model to emerging services, offering stakers enhanced returns. While regulatory and technical risks remain, the project's unique positioning and alignment with Ethereum's scaling trajectory warrant a bullish outlook with moderate conviction.",
+      verdict: "EigenLayer presents a compelling value proposition by extending Ethereum\'s security model to emerging services, offering stakers enhanced returns. While regulatory and technical risks remain, the project\'s unique positioning and alignment with Ethereum\'s scaling trajectory warrant a bullish outlook with moderate conviction.",
     },
   },
   {
@@ -3730,7 +3730,7 @@ export const cryptoProjects: CryptoProject[] = [
     ticker: "ENA",
     chain: "Ethereum",
     category: "defi",
-    description: "Synthetic dollar protocol with 'Internet Bonds' via delta-neutral hedging.",
+    description: "Synthetic dollar protocol with \'Internet Bonds\' via delta-neutral hedging.",
     status: "active" as const,
     price: "",
     marketCap: "",
@@ -3835,7 +3835,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Avalanche presents a compelling value proposition with its subnet model and performance metrics, supporting continued ecosystem expansion. While competitive pressures and governance risks exist, the project's technical strengths and growing developer adoption justify a bullish outlook.",
+      verdict: "Avalanche presents a compelling value proposition with its subnet model and performance metrics, supporting continued ecosystem expansion. While competitive pressures and governance risks exist, the project\'s technical strengths and growing developer adoption justify a bullish outlook.",
     },
   },
   {
@@ -3858,7 +3858,7 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Polygon is a leading Ethereum scaling solution offering a multi‑chain ecosystem that includes a POS sidechain, a zkEVM rollup, and a modular CDK framework. It provides developers with low‑cost, high‑throughput transaction processing while maintaining compatibility with Ethereum's security and tooling, positioning itself as the go‑to aggregation layer for DeFi, NFTs, and Web3 applications.",
+      summary: "Polygon is a leading Ethereum scaling solution offering a multi‑chain ecosystem that includes a POS sidechain, a zkEVM rollup, and a modular CDK framework. It provides developers with low‑cost, high‑throughput transaction processing while maintaining compatibility with Ethereum\'s security and tooling, positioning itself as the go‑to aggregation layer for DeFi, NFTs, and Web3 applications.",
       sentiment: "bullish" as const,
       convictionScore: 78,
       keyDrivers: ["Multi‑product scaling suite (POS, zkEVM, CDK) attracting diverse use cases", "Robust developer community and extensive ecosystem integrations", "Increasing Ethereum congestion driving demand for low‑cost L2 solutions"],
@@ -3896,10 +3896,10 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Arbitrum is an Optimistic Rollup layer‑2 scaling solution on Ethereum, offering fast, low‑cost transactions while inheriting Ethereum's security. It holds the largest TVL among L2s and recently introduced Orbit, a framework for launching custom L3 chains, expanding its ecosystem and positioning it as a hub for modular scaling.",
+      summary: "Arbitrum is an Optimistic Rollup layer‑2 scaling solution on Ethereum, offering fast, low‑cost transactions while inheriting Ethereum\'s security. It holds the largest TVL among L2s and recently introduced Orbit, a framework for launching custom L3 chains, expanding its ecosystem and positioning it as a hub for modular scaling.",
       sentiment: "bullish" as const,
       convictionScore: 78,
-      keyDrivers: ["Largest TVL and developer ecosystem among Optimistic rollups", "Orbit framework enabling customizable L3 chains and new revenue streams", "Strong backing and roadmap alignment with Ethereum's scaling roadmap"],
+      keyDrivers: ["Largest TVL and developer ecosystem among Optimistic rollups", "Orbit framework enabling customizable L3 chains and new revenue streams", "Strong backing and roadmap alignment with Ethereum\'s scaling roadmap"],
       risks: ["Emergence of zk‑rollups offering lower latency and better data availability", "Potential regulatory scrutiny on rollup architectures and token utility", "Dependence on Ethereum mainnet security; any major Ethereum issue could impact Arbitrum"],
       riskAssessment: {
         overallRisk: "medium" as const,
@@ -3934,7 +3934,7 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Optimism is an optimistic rollup layer‑2 scaling solution on Ethereum, offering faster, cheaper transactions while retaining Ethereum's security. Its OP Stack powers a growing ecosystem of L2s and the broader Superchain, positioning Optimism as a foundational infrastructure provider.",
+      summary: "Optimism is an optimistic rollup layer‑2 scaling solution on Ethereum, offering faster, cheaper transactions while retaining Ethereum\'s security. Its OP Stack powers a growing ecosystem of L2s and the broader Superchain, positioning Optimism as a foundational infrastructure provider.",
       sentiment: "bullish" as const,
       convictionScore: 78,
       keyDrivers: ["Network effects from the OP Stack attracting new L2s", "Strong developer community and ecosystem grants", "Continued Ethereum demand driving rollup adoption"],
@@ -3976,7 +3976,7 @@ export const cryptoProjects: CryptoProject[] = [
       sentiment: "bullish" as const,
       convictionScore: 78,
       keyDrivers: ["Coinbase backing and integrated fiat on‑ramps", "OP Stack compatibility enabling easy upgrades and cross‑L2 composability", "Active incentive programs driving developer and user adoption"],
-      risks: ["Heavy reliance on Coinbase's strategic direction and regulatory posture", "Intense competition from both optimistic and zk‑rollup L2s", "Potential centralization concerns affecting community trust"],
+      risks: ["Heavy reliance on Coinbase\'s strategic direction and regulatory posture", "Intense competition from both optimistic and zk‑rollup L2s", "Potential centralization concerns affecting community trust"],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -4025,7 +4025,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Celestia presents a compelling value proposition as the backbone for modular rollups, with solid growth prospects driven by the rollup boom. While competitive pressures and incentive design pose risks, the project's early lead and ecosystem support suggest a favorable outlook for TIA.",
+      verdict: "Celestia presents a compelling value proposition as the backbone for modular rollups, with solid growth prospects driven by the rollup boom. While competitive pressures and incentive design pose risks, the project\'s early lead and ecosystem support suggest a favorable outlook for TIA.",
     },
   },
   {
@@ -4063,7 +4063,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Cosmos presents a compelling value proposition through its interoperable hub‑and‑zone model, positioning it well for continued ecosystem expansion. While competition and security concerns pose challenges, the project's strong developer base and growing IBC usage support a positive outlook.",
+      verdict: "Cosmos presents a compelling value proposition through its interoperable hub‑and‑zone model, positioning it well for continued ecosystem expansion. While competition and security concerns pose challenges, the project\'s strong developer base and growing IBC usage support a positive outlook.",
     },
   },
   {
@@ -4177,7 +4177,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Shiba Inu offers a compelling blend of community power and emerging utility through its Layer‑2 and DeFi components. While the ecosystem shows promise, the project's success is closely tied to Shibarium's execution and broader meme‑coin market dynamics, suggesting a balanced outlook.",
+      verdict: "Shiba Inu offers a compelling blend of community power and emerging utility through its Layer‑2 and DeFi components. While the ecosystem shows promise, the project\'s success is closely tied to Shibarium\'s execution and broader meme‑coin market dynamics, suggesting a balanced outlook.",
     },
   },
   {
@@ -4200,7 +4200,7 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Dogwifhat (WIF) is a Solana-based meme token featuring a dog wearing a hat motif. It leverages Solana's low fees and high throughput to attract retail traders seeking cheap, fast transactions. The project positions itself as a community‑driven meme asset, aiming to build virality through social media, NFT tie‑ins, and occasional airdrops.",
+      summary: "Dogwifhat (WIF) is a Solana-based meme token featuring a dog wearing a hat motif. It leverages Solana\'s low fees and high throughput to attract retail traders seeking cheap, fast transactions. The project positions itself as a community‑driven meme asset, aiming to build virality through social media, NFT tie‑ins, and occasional airdrops.",
       sentiment: "neutral" as const,
       convictionScore: 58,
       keyDrivers: ["Strong community engagement and viral social media campaigns", "Low transaction costs and fast finality on Solana", "Potential NFT and partnership integrations boosting utility"],
@@ -4215,7 +4215,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Dogwifhat offers typical meme‑coin appeal with modest differentiation. While community hype could drive short‑term spikes, the project's long‑term sustainability is uncertain without clear utility or broader ecosystem partnerships.",
+      verdict: "Dogwifhat offers typical meme‑coin appeal with modest differentiation. While community hype could drive short‑term spikes, the project\'s long‑term sustainability is uncertain without clear utility or broader ecosystem partnerships.",
     },
   },
   {
@@ -4238,7 +4238,7 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Bonk (BONK) is a dog-themed meme token on the Solana blockchain, launched via a community airdrop. It aims to capture the Solana meme market by leveraging the network's low fees and high throughput, positioning itself as the first dog-centric meme coin on Solana and targeting both retail traders and the broader Solana community.",
+      summary: "Bonk (BONK) is a dog-themed meme token on the Solana blockchain, launched via a community airdrop. It aims to capture the Solana meme market by leveraging the network\'s low fees and high throughput, positioning itself as the first dog-centric meme coin on Solana and targeting both retail traders and the broader Solana community.",
       sentiment: "neutral" as const,
       convictionScore: 55,
       keyDrivers: ["Strong community support from the Solana ecosystem", "Low transaction costs and fast finality on Solana", "Potential partnerships with NFT projects and DeFi protocols"],
@@ -4253,7 +4253,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Bonk shows promise as a community‑driven meme token on Solana, but its success is contingent on sustained social momentum and broader utility development. Investors should weigh the speculative nature against the project's growth opportunities.",
+      verdict: "Bonk shows promise as a community‑driven meme token on Solana, but its success is contingent on sustained social momentum and broader utility development. Investors should weigh the speculative nature against the project\'s growth opportunities.",
     },
   },
   {
@@ -4352,11 +4352,11 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Render Network is a decentralized GPU rendering platform built on Solana, enabling developers and creators to outsource AI model inference and 3D graphics rendering to a distributed pool of GPU providers. By leveraging Solana's high throughput and low fees, it offers fast, cost‑effective rendering services, positioning itself as a blockchain‑native alternative to centralized cloud render farms.",
+      summary: "Render Network is a decentralized GPU rendering platform built on Solana, enabling developers and creators to outsource AI model inference and 3D graphics rendering to a distributed pool of GPU providers. By leveraging Solana\'s high throughput and low fees, it offers fast, cost‑effective rendering services, positioning itself as a blockchain‑native alternative to centralized cloud render farms.",
       sentiment: "bullish" as const,
       convictionScore: 75,
       keyDrivers: ["Rapid growth in AI and real‑time 3D rendering demand", "Low transaction costs and high throughput of Solana", "Potential partnerships with game engines and NFT/Metaverse projects"],
-      risks: ["Reliance on Solana's network stability and ecosystem health", "Competition from well‑funded centralized cloud providers", "Liquidity and token utility uncertainty if rendering demand plateaus"],
+      risks: ["Reliance on Solana\'s network stability and ecosystem health", "Competition from well‑funded centralized cloud providers", "Liquidity and token utility uncertainty if rendering demand plateaus"],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -4481,7 +4481,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Arweave offers a compelling differentiated solution in the decentralized storage space with solid adoption momentum. While competition and regulatory factors pose challenges, the project's unique value proposition and growing ecosystem support a positive outlook.",
+      verdict: "Arweave offers a compelling differentiated solution in the decentralized storage space with solid adoption momentum. While competition and regulatory factors pose challenges, the project\'s unique value proposition and growing ecosystem support a positive outlook.",
     },
   },
   {
@@ -4519,7 +4519,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Worldcoin presents a compelling value proposition as a global identity layer with token incentives, but its success hinges on regulatory clearance and widespread hardware adoption. The project's innovative approach and early mover advantage suggest upside, yet significant execution risks warrant a balanced outlook.",
+      verdict: "Worldcoin presents a compelling value proposition as a global identity layer with token incentives, but its success hinges on regulatory clearance and widespread hardware adoption. The project\'s innovative approach and early mover advantage suggest upside, yet significant execution risks warrant a balanced outlook.",
     },
   },
   {
@@ -4557,7 +4557,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Sei presents a compelling value proposition for on‑chain trading, with strong technical differentiation and early ecosystem traction. While risks around security and market adoption exist, the project's unique focus and partnerships suggest a positive outlook for medium‑term growth.",
+      verdict: "Sei presents a compelling value proposition for on‑chain trading, with strong technical differentiation and early ecosystem traction. While risks around security and market adoption exist, the project\'s unique focus and partnerships suggest a positive outlook for medium‑term growth.",
     },
   },
   {
@@ -4671,7 +4671,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Injective presents a compelling value proposition with its order‑book architecture and cross‑chain focus, offering strong upside if it can capture market share from AMM‑centric platforms and expand its developer ecosystem. While competitive pressures and regulatory risks persist, the project's unique positioning and growing DeFi derivatives demand support a cautiously optimistic outlook.",
+      verdict: "Injective presents a compelling value proposition with its order‑book architecture and cross‑chain focus, offering strong upside if it can capture market share from AMM‑centric platforms and expand its developer ecosystem. While competitive pressures and regulatory risks persist, the project\'s unique positioning and growing DeFi derivatives demand support a cautiously optimistic outlook.",
     },
   },
   {
@@ -5156,7 +5156,7 @@ export const cryptoProjects: CryptoProject[] = [
       sentiment: "bullish" as const,
       convictionScore: 78,
       keyDrivers: ["Coinbase backing and integrated fiat on‑ramps", "OP Stack compatibility enabling easy upgrades and cross‑L2 composability", "Active incentive programs driving developer and user adoption"],
-      risks: ["Heavy reliance on Coinbase's strategic direction and regulatory posture", "Intense competition from both optimistic and zk‑rollup L2s", "Potential centralization concerns affecting community trust"],
+      risks: ["Heavy reliance on Coinbase\'s strategic direction and regulatory posture", "Intense competition from both optimistic and zk‑rollup L2s", "Potential centralization concerns affecting community trust"],
       riskAssessment: {
         overallRisk: "medium" as const,
         smartContractRisk: "medium" as const,
@@ -5396,7 +5396,7 @@ export const cryptoProjects: CryptoProject[] = [
     steps: [],
     availableFrom: "",
     aiAnalysis: {
-      summary: "Bonk (BONK) is a dog-themed meme token on the Solana blockchain, launched via a community airdrop. It aims to capture the Solana meme market by leveraging the network's low fees and high throughput, positioning itself as the first dog-centric meme coin on Solana and targeting both retail traders and the broader Solana community.",
+      summary: "Bonk (BONK) is a dog-themed meme token on the Solana blockchain, launched via a community airdrop. It aims to capture the Solana meme market by leveraging the network\'s low fees and high throughput, positioning itself as the first dog-centric meme coin on Solana and targeting both retail traders and the broader Solana community.",
       sentiment: "neutral" as const,
       convictionScore: 55,
       keyDrivers: ["Strong community support from the Solana ecosystem", "Low transaction costs and fast finality on Solana", "Potential partnerships with NFT projects and DeFi protocols"],
@@ -5411,7 +5411,7 @@ export const cryptoProjects: CryptoProject[] = [
         liquidityRisk: "medium" as const,
         dilutionRisk: "medium" as const,
       },
-      verdict: "Bonk shows promise as a community‑driven meme token on Solana, but its success is contingent on sustained social momentum and broader utility development. Investors should weigh the speculative nature against the project's growth opportunities.",
+      verdict: "Bonk shows promise as a community‑driven meme token on Solana, but its success is contingent on sustained social momentum and broader utility development. Investors should weigh the speculative nature against the project\'s growth opportunities.",
     },
   },
   {
