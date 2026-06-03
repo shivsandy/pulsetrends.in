@@ -982,22 +982,120 @@ def generate_airdrop_data():
         adrop = max(30, min(98, _det(heat + 6, 6) + 2))
         return f"s({team}, {inv}, {prod}, {mkt}, {comm}, {tok}, {adrop})"
 
+    # ── Cleanup helpers ──
+    import re as _re
+
+    def _clean_steps(steps: list) -> list:
+        """Remove noise from participation steps - footer text, FAQ, social links, etc."""
+        if not steps:
+            return []
+        cleaned = []
+        skip_patterns = [
+            r"^(you'?re|share|copy|report|help|subscribe|follow|explore|home|latest|hot|retroactive|confirmed|blog|faq|calendar|contact|donate|newsletter|stay safe)",
+            r"^©\s*20", r"^all rights reserved", r"^x\(former", r"^telegram", r"^x follow",
+            r"^airdrop(s)?\.io", r"^\. \. \.", r"^\d+ (more|other)", r"^check out",
+            r"^more airdrops", r"^difficulty", r"^cost to farm", r"^overview website",
+            r"^ticker:", r"^\[email", r"^frequently asked", r"^conclusion", r"^is the.*confirmed",
+            r"^do i need", r"^when (will|is)", r"^what (activities|is)",
+            r"^requirements", r"^funding", r"^\$", r"^read our", r"^explore home",
+            r"^join (waitlist|discord|telegram|newsletter)",
+            r"^you can also check back", r"^consistent activity",
+            r"^this step can", r"^that's a \d+%", r"^old points migrate",
+        ]
+        for step in steps:
+            s = step.strip()
+            if not s or len(s) < 5:
+                continue
+            if any(_re.match(p, s, _re.I) for p in skip_patterns):
+                continue
+            if len(s) > 300 and any(x in s.lower() for x in ['airdrops.io', 'cookie', 'newsletter', 'subscribe', 'all rights reserved']):
+                continue
+            cleaned.append(s)
+        final = []
+        for s in cleaned:
+            if not final or s[:30] != final[-1][:30]:
+                final.append(s)
+        return final[:10]
+
+    def _clean_description(text: str, name: str) -> str:
+        if not text or text == name:
+            return ""
+        cut_points = [
+            "Share Copy link X Telegram Report",
+            "Frequently Asked Questions",
+            "Conclusion",
+            "More Airdrops to Farm",
+            "Explore Home Latest",
+            "Follow us to never miss",
+            "Airdrop Newsletter",
+            "© 20",
+            "Stay safe",
+            "Read our safety guide",
+            "X Follow us to never",
+        ]
+        result = text
+        for cut in cut_points:
+            idx = result.find(cut)
+            if idx > 0:
+                result = result[:idx]
+        result = _re.sub(r'\s+', ' ', result).strip()
+        return result[:600]
+
+    def _clean_cost_text(text: str) -> str:
+        if not text:
+            return ""
+        text = text.strip()
+        noise = [
+            "to Farm Free", "to Farm Medium", "to Farm High", "to Farm Low",
+            "Overview Website:", "Overview Website", "Free Overview",
+        ]
+        for n in noise:
+            if n in text:
+                text = text.replace(n, "").strip()
+        text = _re.sub(r'^[\s,\-;.]+', '', text).strip()
+        if not text or len(text) > 100:
+            return "Variable"
+        return text
+
     lines.append(f'export const airdropProjects: AirdropProject[] = [')
 
     for ad in airdrops:
         name = ad.get("name", "")
         aid = ad.get("id", "") or _id_from_name(name)
-        chain = ad.get("chain", "") or "Unknown"
+        
+        # Clean up chain
+        raw_chain = ad.get("chain", "") or ""
+        chain_map = {
+            "Ongoing": "", "Own": "", "chain": "", "n": "",
+        }
+        chain = chain_map.get(raw_chain, raw_chain)
+        if not chain or len(chain) < 2:
+            chain = "Multi-Chain"
+        
         status = ad.get("status", "active")
         if status not in ("active", "upcoming", "ended"):
             status = "active"
         heat = ad.get("heat", 0) or 0
-        ticker = _ticker(name)
+        raw_name = name
+        ticker = _ticker(raw_name)
         website = ad.get("url", "") or ""
+        
         actions = ad.get("steps", []) or ad.get("actions", []) or []
+        actions = _clean_steps(actions)
+        
         source = ad.get("source", "airdrops.io")
+        
         desc_text = ad.get("about", "") or ad.get("description", "") or name
+        desc_text = _clean_description(desc_text, name)
+        
+        # Extract estimated value
         estimated_value = ad.get("estimated_value", "") or ""
+        if not estimated_value:
+            val_match = _re.search(r'\$[0-9,]+(?:\s*[–-]\s*\$?[0-9,]+)?', str(ad.get("description", "")) or "")
+            if val_match:
+                estimated_value = val_match.group(0)
+        if not estimated_value:
+            estimated_value = "TBA"
 
         # Analysis from AI
         akey = aid
@@ -1008,15 +1106,76 @@ def generate_airdrop_data():
         if not isinstance(sl, dict):
             sl = {}
 
-        # Difficulty
         diff = ad.get("difficulty", "Medium")
         if diff not in ("Easy", "Medium", "Hard"):
             diff = "Medium"
 
-        # Cost / time from analysis or scraped
-        cost_text = analysis.get("airdropAttractiveness", {}).get("costRequired", "") if isinstance(analysis, dict) else ""
+        cost_text = ""
+        if isinstance(analysis, dict):
+            attr = analysis.get("airdropAttractiveness", {}) or {}
+            cost_text = attr.get("costRequired", "")
         if not cost_text and ad.get("estimated_cost"):
-            cost_text = ad.get("estimated_cost", "")
+            cost_text = str(ad.get("estimated_cost", ""))
+        cost_text = _clean_cost_text(cost_text)
+
+        # Generate about section from description text
+        about_obj = None
+        if desc_text and len(desc_text) > 40:
+            about_obj_lines = []
+            about_obj_lines.append('    about: {')
+            about_obj_lines.append(f'      aboutProject: "{esc(desc_text[:300])}",')
+            about_obj_lines.append(f'      projectOverview: "{esc(desc_text[:250])}",')
+            about_obj_lines.append(f'      productDescription: "{esc(desc_text[:200])}",')
+            about_obj_lines.append(f'      ecosystemDescription: "Airdrop opportunity on {chain}.",')
+            about_obj_lines.append('      useCases: [],')
+            about_obj_lines.append(f'      teamInfo: "Information from {source}.",')
+            about_obj_lines.append(f'      fundingInfo: "Funding details TBA.",')
+            about_obj_lines.append('      investors: [],')
+            about_obj_lines.append(f'      tokenInfo: "{ticker} token details TBA.",')
+            about_obj_lines.append(f'      reviewSummary: "{name} is tracked as an active airdrop on {chain}."')
+            about_obj_lines.append('    },')
+            about_obj = about_obj_lines
+
+        # Generate default AI analysis if not available from API
+        ai_analysis_lines = None
+        if isinstance(analysis, dict) and analysis.get("summary"):
+            aa = analysis
+            attractiveness = aa.get("airdropAttractiveness", {}) or {}
+            ai_analysis_lines = []
+            ai_analysis_lines.append('    aiAnalysis: {')
+            ai_analysis_lines.append(f'      summary: "{esc(aa.get("summary", ""))}",')
+            ai_analysis_lines.append(f'      bullCase: "{esc(aa.get("bullCase", ""))}",')
+            ai_analysis_lines.append(f'      bearCase: "{esc(aa.get("bearCase", ""))}",')
+            ai_analysis_lines.append(f'      competitiveAnalysis: "{esc(aa.get("competitiveAnalysis", ""))}",')
+            ai_analysis_lines.append(f'      marketOpportunity: "{esc(aa.get("marketOpportunity", ""))}",')
+            ai_analysis_lines.append('      airdropAttractiveness: {')
+            ai_analysis_lines.append(f'        rewardPotential: "{esc(attractiveness.get("rewardPotential", "Medium"))}",')
+            ai_analysis_lines.append(f'        effortRequired: "{esc(attractiveness.get("effortRequired", "Medium"))}",')
+            ai_analysis_lines.append(f'        costRequired: "{esc(attractiveness.get("costRequired", "Medium"))}",')
+            ai_analysis_lines.append(f'        expectedROI: "{esc(attractiveness.get("expectedROI", "1x-3x"))}",')
+            ai_analysis_lines.append('      },')
+            ai_analysis_lines.append('    },')
+        elif desc_text and len(desc_text) > 40:
+            # Generate a basic AI analysis from description
+            ai_analysis_lines = []
+            short_desc = desc_text[:200]
+            # Compute values properly (avoid Python boolean precedence issues)
+            reward = "Medium" if chain in ("Ethereum", "Solana", "Multi-Chain") else "Low"
+            cost_map = {"Easy": "Low", "Medium": "Medium"}
+            cost_val = cost_map.get(diff, "High")
+            ai_analysis_lines.append('    aiAnalysis: {')
+            ai_analysis_lines.append(f'      summary: "{esc(short_desc)}",')
+            ai_analysis_lines.append(f'      bullCase: "{name} offers an airdrop opportunity on {chain} with growing community interest.",')
+            ai_analysis_lines.append(f'      bearCase: "Airdrop details and tokenomics are not yet confirmed.",')
+            ai_analysis_lines.append(f'      competitiveAnalysis: "Active airdrop in the {chain} ecosystem.",')
+            ai_analysis_lines.append(f'      marketOpportunity: "Growing demand for {chain} ecosystem participation.",')
+            ai_analysis_lines.append('      airdropAttractiveness: {')
+            ai_analysis_lines.append(f'        rewardPotential: "{reward}",')
+            ai_analysis_lines.append(f'        effortRequired: "{diff}",')
+            ai_analysis_lines.append(f'        costRequired: "{cost_val}",')
+            ai_analysis_lines.append(f'        expectedROI: "1x-3x",')
+            ai_analysis_lines.append('      },')
+            ai_analysis_lines.append('    },')
 
         lines.append('  {')
         lines.append(f'    id: "{esc(aid)}",')
@@ -1055,6 +1214,10 @@ def generate_airdrop_data():
         lines.append(f'    verdict: "{esc(verdict_text)}",')
         lines.append(f'    source: "{esc(source)}",')
 
+        # About section
+        if about_obj:
+            lines.extend(about_obj)
+
         # Participation guide
         if actions and len(actions) > 0:
             steps_str = ', '.join([f'"{esc(s)}"' for s in actions[:8]])
@@ -1065,23 +1228,9 @@ def generate_airdrop_data():
             lines.append(f'      difficulty: "{esc(diff)}" as const,')
             lines.append('    },')
 
-        # AI Analysis
-        if isinstance(analysis, dict) and analysis.get("summary"):
-            aa = analysis
-            attractiveness = aa.get("airdropAttractiveness", {}) or {}
-            lines.append('    aiAnalysis: {')
-            lines.append(f'      summary: "{esc(aa.get("summary", ""))}",')
-            lines.append(f'      bullCase: "{esc(aa.get("bullCase", ""))}",')
-            lines.append(f'      bearCase: "{esc(aa.get("bearCase", ""))}",')
-            lines.append(f'      competitiveAnalysis: "{esc(aa.get("competitiveAnalysis", ""))}",')
-            lines.append(f'      marketOpportunity: "{esc(aa.get("marketOpportunity", ""))}",')
-            lines.append('      airdropAttractiveness: {')
-            lines.append(f'        rewardPotential: "{esc(attractiveness.get("rewardPotential", "Medium"))}",')
-            lines.append(f'        effortRequired: "{esc(attractiveness.get("effortRequired", "Medium"))}",')
-            lines.append(f'        costRequired: "{esc(attractiveness.get("costRequired", "Medium"))}",')
-            lines.append(f'        expectedROI: "{esc(attractiveness.get("expectedROI", "1x-3x"))}",')
-            lines.append('      },')
-            lines.append('    },')
+        # AI Analysis (from cache or auto-generated)
+        if ai_analysis_lines:
+            lines.extend(ai_analysis_lines)
 
         lines.append('  },')
 
