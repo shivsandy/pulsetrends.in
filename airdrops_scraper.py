@@ -380,7 +380,10 @@ def _extract_about(soup: BeautifulSoup, text: str, name: str) -> str:
         if len(txt) > 100 and "cookie" not in txt.lower() and "menu" not in txt.lower():
             return txt[:1000]
 
-    return ""def _extract_social_links(soup: BeautifulSoup, text: str) -> dict:
+    return ""
+
+
+def _extract_social_links(soup: BeautifulSoup, text: str) -> dict:
     """Extract Twitter/X, Discord, Telegram links from the main content area."""
     links: dict = {}
     # Scope to main article content to avoid nav/footer links
