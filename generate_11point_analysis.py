@@ -1010,7 +1010,12 @@ def generate_comprehensive_analysis(ipo, idx, analysis_data):
     }
 
 def main():
-    ipos_data = load_json(os.path.join(DATA_DIR, "ipos.json"))
+    new_path = os.path.join(DATA_DIR, "ipo_data.json")
+    legacy_path = os.path.join(DATA_DIR, "ipos.json")
+    if os.path.exists(new_path):
+        ipos_data = load_json(new_path)
+    else:
+        ipos_data = load_json(legacy_path)
     ipos = ipos_data.get("ipos", [])
 
     print(f"[21Point] Generating comprehensive 21-section analysis for {len(ipos)} IPOs...")

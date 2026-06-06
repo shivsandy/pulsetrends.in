@@ -1,5 +1,6 @@
 import json
 import os
+import random
 import re
 import time
 from datetime import datetime, timedelta, timezone
@@ -433,116 +434,216 @@ def _parse_screener_date(text: str) -> str:
         return t
 
 
-def scrape_screener(max_pages: int = 40) -> List[dict]:
-    """Scrape recent IPOs from screener.in/ipo/recent/ (listed companies, post-listing data)."""
+SCRAPER_URLS = {
+    "recent": {"path": "/ipo/recent/", "type": "standard", "max_pages": 50, "status": "listed"},
+    "below_price": {"path": "/ipo/below-price/", "type": "standard", "max_pages": 30, "status": "listed"},
+    "main": {"path": "/ipo/", "type": "upcoming", "max_pages": 50, "status": "upcoming"},
+    "rights": {"path": "/ipo/rights/", "type": "rights", "max_pages": 20, "status": "rights"},
+}
+
+
+def _parse_screener_row_standard(
+    cells: List[str], href: str, company_name: str, screener_id: str,
+) -> dict:
+    """Parse a standard 6-column screener IPO row (recent, below-price)."""
+    listing_date = _parse_screener_date(strip_html(cells[1]))
+    ipo_mcap_raw = strip_html(cells[2])
+    ipo_mcap = parse_number(ipo_mcap_raw)
+    ipo_price_text = strip_html(cells[3]).replace("\u20b9", "").strip()
+    ipo_price = parse_number(ipo_price_text)
+    curr_price_text = strip_html(cells[4]).replace("\u20b9", "").strip()
+    curr_price = parse_number(curr_price_text)
+    pct_change = parse_percent(strip_html(cells[5]))
+    return {
+        "listingDate": listing_date,
+        "priceBandHigh": ipo_price or 0,
+        "priceBandLow": ipo_price or 0,
+        "fiscalMetrics": {
+            "currentPrice": curr_price or 0,
+            "percentChange": pct_change or 0,
+            "ipoMcap": ipo_mcap or 0,
+        },
+    }
+
+
+def _extract_screener_company(cell0: str) -> tuple:
+    """Extract (href, company_name, screener_id) from the first cell of a screener row."""
+    name_match = re.search(
+        r'<a[^>]*href="([^"]+)"[^>]*>(?:.*?<span[^>]*class="[^"]*ink-900[^"]*"[^>]*>)?([^<]+)',
+        cell0, re.DOTALL,
+    )
+    if not name_match:
+        return None, None, None
+    href = name_match.group(1)
+    raw_name = name_match.group(2)
+    company_name = re.sub(r"\s+", " ", raw_name).strip()
+    if not company_name or len(company_name) < 2:
+        return None, None, None
+    cid_match = re.search(r'/company/(?:id/)?(\d+)', href)
+    screener_id = cid_match.group(1) if cid_match else ""
+    return href, company_name, screener_id
+
+
+def _scrape_screener_pages(
+    base_path: str,
+    max_pages: int,
+    table_type: str,
+    source_status: str,
+) -> List[dict]:
+    """Generic page scraper for any screener.in IPO table page."""
     out: List[dict] = []
-    base_url = "https://www.screener.in/ipo/recent/"
+    base_url = f"https://www.screener.in{base_path}"
     headers = {"User-Agent": UA}
+    consecutive_empty = 0
+    retry_delay = 5
 
     for page in range(1, max_pages + 1):
         url = f"{base_url}?page={page}"
-        try:
-            resp = requests.get(url, headers=headers, timeout=TIMEOUT)
-            if resp.status_code != 200:
-                print(f"[IPO Scraper] Screener page {page} HTTP {resp.status_code}")
-                break
-            html = resp.text
-            # Extract tbody first, then rows within it
-            tbody_match = re.search(r'<tbody>(.*?)</tbody>', html, re.DOTALL | re.IGNORECASE)
-            if not tbody_match:
-                print(f"[IPO Scraper] Screener page {page}: no tbody found")
-                break
-            tbody = tbody_match.group(1)
-            rows = re.findall(
-                r'<tr[^>]*>(.*?)</tr>',
-                tbody, re.DOTALL | re.IGNORECASE,
-            )
-            page_count = 0
-            for row_html in rows:
-                cells = re.findall(
-                    r'<td[^>]*>(.*?)</td>',
-                    row_html, re.DOTALL | re.IGNORECASE,
-                )
-                if len(cells) < 6:
+        resp = None
+        for attempt in range(3):
+            try:
+                resp = requests.get(url, headers=headers, timeout=TIMEOUT)
+                if resp.status_code == 429:
+                    wait = retry_delay * (attempt + 1) + random.uniform(0, 2)
+                    print(f"[IPO Scraper] {base_path} page {page}: 429, retrying in {wait:.0f}s")
+                    time.sleep(wait)
+                    if attempt == 2:
+                        retry_delay = min(retry_delay * 2, 60)
                     continue
-                # Cell 0: company name inside <a><span class="ink-900 hover-link">Name</span></a>
-                name_match = re.search(
-                    r'<a[^>]*href="([^"]+)"[^>]*>.*?<span[^>]*class="[^"]*ink-900[^"]*"[^>]*>([^<]+)</span>',
-                    cells[0], re.DOTALL,
-                )
-                if not name_match:
-                    continue
-                href, raw_name = name_match.group(1), name_match.group(2)
-                company_name = re.sub(r"\s+", " ", raw_name).strip()
-                if not company_name or len(company_name) < 2:
-                    continue
-
-                # Extract company ID from href
-                cid_match = re.search(r'/company/(?:id/)?(\d+)', href)
-                screener_id = cid_match.group(1) if cid_match else ""
-
-                listing_date = _parse_screener_date(strip_html(cells[1]))
-
-                ipo_mcap_raw = strip_html(cells[2])
-                ipo_mcap = parse_number(ipo_mcap_raw)
-
-                # Price cells: <span class="ink-600">₹</span> followed by optional number
-                ipo_price_text = strip_html(cells[3]).replace("\u20b9", "").strip()
-                ipo_price = parse_number(ipo_price_text)
-
-                curr_price_text = strip_html(cells[4]).replace("\u20b9", "").strip()
-                curr_price = parse_number(curr_price_text)
-
-                pct_change = parse_percent(strip_html(cells[5]))
-
-                out.append({
-                    "id": f"screener-{screener_id}" if screener_id else f"screener-{_slugify(company_name)}",
-                    "name": company_name,
-                    "ticker": "",
-                    "exchange": "BSE",
-                    "sector": "",
-                    "industry": "",
-                    "status": "listed",
-                    "openDate": "",
-                    "closeDate": "",
-                    "listingDate": listing_date,
-                    "description": "",
-                    "about": "",
-                    "priceBandHigh": ipo_price or 0,
-                    "priceBandLow": ipo_price or 0,
-                    "lotSize": 0,
-                    "issueSize": "",
-                    "gmp": 0,
-                    "gmpPercent": 0,
-                    "subscriptionStatus": "",
-                    "anchorInvestors": [],
-                    "rhpDate": "",
-                    "allotmentDate": "",
-                    "refundDate": "",
-                    "drhpUrl": "",
-                    "rhpUrl": f"https://www.screener.in{href}" if href.startswith("/") else href,
-                    "fiscalMetrics": {
-                        "currentPrice": curr_price or 0,
-                        "percentChange": pct_change or 0,
-                        "ipoMcap": ipo_mcap or 0,
-                    },
-                    "source": "screener",
-                    "screenerId": screener_id,
-                    "last_updated": datetime.now(timezone.utc).isoformat(),
-                })
-                page_count += 1
-
-            print(f"[IPO Scraper] Screener page {page}: {page_count} IPOs")
-            if page_count == 0:
-                print(f"[IPO Scraper] Screener: no more data, stopping at page {page}")
+                if resp.status_code != 200:
+                    print(f"[IPO Scraper] {base_path} page {page} HTTP {resp.status_code}")
                 break
-            time.sleep(0.5)
-        except Exception as e:
-            print(f"[IPO Scraper] Screener page {page} failed: {e}")
-            break
+            except Exception as e:
+                print(f"[IPO Scraper] {base_path} page {page} attempt {attempt} failed: {e}")
+                time.sleep(retry_delay)
+                continue
 
-    print(f"[IPO Scraper] Screener total: {len(out)} IPOs")
+        if not resp or resp.status_code != 200:
+            consecutive_empty += 1
+            if consecutive_empty > 2:
+                break
+            continue
+
+        html = resp.text
+        tbody_match = re.search(r'<tbody>(.*?)</tbody>', html, re.DOTALL | re.IGNORECASE)
+        if not tbody_match:
+            consecutive_empty += 1
+            if consecutive_empty > 2:
+                break
+            continue
+
+        tbody = tbody_match.group(1)
+        rows = re.findall(r'<tr[^>]*>(.*?)</tr>', tbody, re.DOTALL | re.IGNORECASE)
+
+        page_count = 0
+        for row_html in rows:
+            cells = re.findall(r'<td[^>]*>(.*?)</td>', row_html, re.DOTALL | re.IGNORECASE)
+            if len(cells) < 4:
+                continue
+            href, company_name, screener_id = _extract_screener_company(cells[0])
+            if not company_name:
+                continue
+
+            ipo_data = {
+                "id": f"screener-{screener_id}" if screener_id else f"screener-{_slugify(company_name)}",
+                "name": company_name,
+                "ticker": "",
+                "exchange": "BSE",
+                "sector": "",
+                "industry": "",
+                "status": source_status,
+                "openDate": "",
+                "closeDate": "",
+                "listingDate": "",
+                "description": "",
+                "about": "",
+                "priceBandHigh": 0,
+                "priceBandLow": 0,
+                "lotSize": 0,
+                "issueSize": "",
+                "gmp": 0,
+                "gmpPercent": 0,
+                "subscriptionStatus": "",
+                "anchorInvestors": [],
+                "rhpDate": "",
+                "allotmentDate": "",
+                "refundDate": "",
+                "drhpUrl": "",
+                "rhpUrl": f"https://www.screener.in{href}" if href.startswith("/") else href,
+                "fiscalMetrics": {},
+                "source": f"screener_{base_path.strip('/').replace('/', '_')}",
+                "screenerId": screener_id,
+                "last_updated": datetime.now(timezone.utc).isoformat(),
+            }
+
+            if table_type == "standard":
+                extra = _parse_screener_row_standard(cells, href, company_name, screener_id)
+                ipo_data.update(extra)
+            elif table_type == "upcoming":
+                listing_date = _parse_screener_date(strip_html(cells[2])) if len(cells) > 2 else ""
+                ipo_data["listingDate"] = listing_date
+                ipo_data["openDate"] = strip_html(cells[1]) if len(cells) > 1 else ""
+                sub_raw = strip_html(cells[4]) if len(cells) > 4 else ""
+                ipo_data["subscriptionStatus"] = sub_raw
+                mcap_raw = strip_html(cells[3]) if len(cells) > 3 else ""
+                mcap_val = parse_number(mcap_raw)
+                if mcap_val:
+                    ipo_data["fiscalMetrics"]["ipoMcap"] = mcap_val
+            elif table_type == "rights":
+                ipo_data["listingDate"] = _normalize_date(strip_html(cells[1])) if len(cells) > 1 else ""
+                ratio_text = strip_html(cells[2]) if len(cells) > 2 else ""
+                ipo_data["issueSize"] = ratio_text
+                rp_text = strip_html(cells[3]).replace("\u20b9", "").strip() if len(cells) > 3 else ""
+                rp = parse_number(rp_text)
+                cp_text = strip_html(cells[4]).replace("\u20b9", "").strip() if len(cells) > 4 else ""
+                cp = parse_number(cp_text)
+                ipo_data["fiscalMetrics"]["rightsPrice"] = rp or 0
+                ipo_data["fiscalMetrics"]["currentPrice"] = cp or 0
+
+            out.append(ipo_data)
+            page_count += 1
+
+        print(f"[IPO Scraper] {base_path} page {page}: {page_count} IPOs")
+        if page_count == 0:
+            consecutive_empty += 1
+            if consecutive_empty > 2:
+                print(f"[IPO Scraper] {base_path}: no more data, stopping at page {page}")
+                break
+        else:
+            consecutive_empty = 0
+        time.sleep(random.uniform(0.8, 1.5))
+
+    print(f"[IPO Scraper] {base_path} total: {len(out)} IPOs")
     return out
+
+
+def scrape_screener() -> List[dict]:
+    """Scrape IPO data from all screener.in IPO listing pages."""
+    all_ipos: List[dict] = []
+    for key, cfg in SCRAPER_URLS.items():
+        try:
+            batch = _scrape_screener_pages(
+                base_path=cfg["path"],
+                max_pages=cfg["max_pages"],
+                table_type=cfg["type"],
+                source_status=cfg["status"],
+            )
+            all_ipos.extend(batch)
+        except Exception as e:
+            print(f"[IPO Scraper] Screener {key} failed: {e}")
+        # Stagger sources to avoid rate limiting
+        if key != list(SCRAPER_URLS.keys())[-1]:
+            time.sleep(random.uniform(3, 6))
+    # Deduplicate by id
+    seen: set = set()
+    deduped: List[dict] = []
+    for ipo in all_ipos:
+        iid = ipo.get("id")
+        if iid and iid not in seen:
+            seen.add(iid)
+            deduped.append(ipo)
+    print(f"[IPO Scraper] Screener all sources: {len(all_ipos)} raw, {len(deduped)} unique")
+    return deduped
 
 
 def strip_html(text: str) -> str:
