@@ -2,7 +2,7 @@ import json
 import os
 import re
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from typing import Dict, List, Optional
 from xml.etree import ElementTree
 
@@ -418,6 +418,166 @@ def scrape_nse_bse() -> List[dict]:
     return out
 
 
+def _parse_screener_date(text: str) -> str:
+    """Parse screener.in relative dates into ISO date string."""
+    t = text.strip().lower()
+    today = datetime.now(timezone.utc)
+    if t == "today":
+        return today.strftime("%Y-%m-%d")
+    if t == "yesterday":
+        return (today - timedelta(days=1)).strftime("%Y-%m-%d")
+    try:
+        dt = datetime.strptime(t, "%d %b %Y")
+        return dt.strftime("%Y-%m-%d")
+    except ValueError:
+        return t
+
+
+def scrape_screener(max_pages: int = 40) -> List[dict]:
+    """Scrape recent IPOs from screener.in/ipo/recent/ (listed companies, post-listing data)."""
+    out: List[dict] = []
+    base_url = "https://www.screener.in/ipo/recent/"
+    headers = {"User-Agent": UA}
+
+    for page in range(1, max_pages + 1):
+        url = f"{base_url}?page={page}"
+        try:
+            resp = requests.get(url, headers=headers, timeout=TIMEOUT)
+            if resp.status_code != 200:
+                print(f"[IPO Scraper] Screener page {page} HTTP {resp.status_code}")
+                break
+            html = resp.text
+            # Extract tbody first, then rows within it
+            tbody_match = re.search(r'<tbody>(.*?)</tbody>', html, re.DOTALL | re.IGNORECASE)
+            if not tbody_match:
+                print(f"[IPO Scraper] Screener page {page}: no tbody found")
+                break
+            tbody = tbody_match.group(1)
+            rows = re.findall(
+                r'<tr[^>]*>(.*?)</tr>',
+                tbody, re.DOTALL | re.IGNORECASE,
+            )
+            page_count = 0
+            for row_html in rows:
+                cells = re.findall(
+                    r'<td[^>]*>(.*?)</td>',
+                    row_html, re.DOTALL | re.IGNORECASE,
+                )
+                if len(cells) < 6:
+                    continue
+                # Cell 0: company name inside <a><span class="ink-900 hover-link">Name</span></a>
+                name_match = re.search(
+                    r'<a[^>]*href="([^"]+)"[^>]*>.*?<span[^>]*class="[^"]*ink-900[^"]*"[^>]*>([^<]+)</span>',
+                    cells[0], re.DOTALL,
+                )
+                if not name_match:
+                    continue
+                href, raw_name = name_match.group(1), name_match.group(2)
+                company_name = re.sub(r"\s+", " ", raw_name).strip()
+                if not company_name or len(company_name) < 2:
+                    continue
+
+                # Extract company ID from href
+                cid_match = re.search(r'/company/(?:id/)?(\d+)', href)
+                screener_id = cid_match.group(1) if cid_match else ""
+
+                listing_date = _parse_screener_date(strip_html(cells[1]))
+
+                ipo_mcap_raw = strip_html(cells[2])
+                ipo_mcap = parse_number(ipo_mcap_raw)
+
+                # Price cells: <span class="ink-600">₹</span> followed by optional number
+                ipo_price_text = strip_html(cells[3]).replace("\u20b9", "").strip()
+                ipo_price = parse_number(ipo_price_text)
+
+                curr_price_text = strip_html(cells[4]).replace("\u20b9", "").strip()
+                curr_price = parse_number(curr_price_text)
+
+                pct_change = parse_percent(strip_html(cells[5]))
+
+                out.append({
+                    "id": f"screener-{screener_id}" if screener_id else f"screener-{_slugify(company_name)}",
+                    "name": company_name,
+                    "ticker": "",
+                    "exchange": "BSE",
+                    "sector": "",
+                    "industry": "",
+                    "status": "listed",
+                    "openDate": "",
+                    "closeDate": "",
+                    "listingDate": listing_date,
+                    "description": "",
+                    "about": "",
+                    "priceBandHigh": ipo_price or 0,
+                    "priceBandLow": ipo_price or 0,
+                    "lotSize": 0,
+                    "issueSize": "",
+                    "gmp": 0,
+                    "gmpPercent": 0,
+                    "subscriptionStatus": "",
+                    "anchorInvestors": [],
+                    "rhpDate": "",
+                    "allotmentDate": "",
+                    "refundDate": "",
+                    "drhpUrl": "",
+                    "rhpUrl": f"https://www.screener.in{href}" if href.startswith("/") else href,
+                    "fiscalMetrics": {
+                        "currentPrice": curr_price or 0,
+                        "percentChange": pct_change or 0,
+                        "ipoMcap": ipo_mcap or 0,
+                    },
+                    "source": "screener",
+                    "screenerId": screener_id,
+                    "last_updated": datetime.now(timezone.utc).isoformat(),
+                })
+                page_count += 1
+
+            print(f"[IPO Scraper] Screener page {page}: {page_count} IPOs")
+            if page_count == 0:
+                print(f"[IPO Scraper] Screener: no more data, stopping at page {page}")
+                break
+            time.sleep(0.5)
+        except Exception as e:
+            print(f"[IPO Scraper] Screener page {page} failed: {e}")
+            break
+
+    print(f"[IPO Scraper] Screener total: {len(out)} IPOs")
+    return out
+
+
+def strip_html(text: str) -> str:
+    """Remove HTML tags and trim."""
+    return re.sub(r'<[^>]+>', '', text).strip()
+
+
+def parse_number(text: str) -> Optional[float]:
+    """Parse a number from a string, handling ₹, commas, and empty values."""
+    t = text.strip()
+    if not t or t == "\u20b9" or t == "-":
+        return None
+    t = t.replace("\u20b9", "").replace(",", "").replace(" ", "").strip()
+    try:
+        return float(t)
+    except ValueError:
+        return None
+
+
+def parse_percent(text: str) -> Optional[float]:
+    """Parse a percentage string like '-5%' or '⇣ 5%'."""
+    t = text.strip()
+    if not t or t == "-":
+        return None
+    # Remove arrows/unicode symbols
+    t = re.sub(r'[^\d.\-%+]', '', t)
+    t = t.replace("%", "").strip()
+    if not t:
+        return None
+    try:
+        return float(t)
+    except ValueError:
+        return None
+
+
 def merge_ipos(existing: List[dict], fresh: List[dict]) -> List[dict]:
     """Merge by id; existing wins on duplicate (preserve manual edits)."""
     by_id = {ipo.get("id"): ipo for ipo in existing}
@@ -465,6 +625,7 @@ def main():
     fresh.extend(scrape_investorgain())
     fresh.extend(scrape_chittorgarh())
     fresh.extend(scrape_sec_edgar())
+    fresh.extend(scrape_screener())
     merged = merge_ipos(existing, fresh)
     save_ipos(merged)
     save_cache_meta({"last_updated": datetime.now(timezone.utc).isoformat()})

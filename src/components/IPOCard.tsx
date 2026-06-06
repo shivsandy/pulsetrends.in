@@ -68,26 +68,57 @@ export default function IPOCard({ stock, slug }: IPOCardProps) {
         </div>
       </div>
 
-      <div className="flex items-center gap-5 mb-4 text-[12px]">
-        <div>
-          <span className="text-surface-600">Growth</span>
-          <p className={`font-semibold ${stock.revenueGrowth.startsWith('+') ? 'text-success' : 'text-danger'}`}>
-            {stock.revenueGrowth}
-          </p>
+      {(stock.currentPrice || stock.percentChange || stock.marketCap) ? (
+        <div className="flex items-center gap-5 mb-4 text-[12px]">
+          {stock.currentPrice ? (
+            <div>
+              <span className="text-surface-600">Price</span>
+              <p className="font-semibold text-surface-900">₹{stock.currentPrice}</p>
+            </div>
+          ) : null}
+          {stock.percentChange ? (
+            <>
+              <div className="w-px h-5 bg-surface-300" />
+              <div>
+                <span className="text-surface-600">Change</span>
+                <p className={`font-semibold ${stock.percentChange >= 0 ? 'text-success' : 'text-danger'}`}>
+                  {stock.percentChange > 0 ? '+' : ''}{stock.percentChange}%
+                </p>
+              </div>
+            </>
+          ) : null}
+          {stock.marketCap ? (
+            <>
+              <div className="w-px h-5 bg-surface-300" />
+              <div>
+                <span className="text-surface-600">M Cap</span>
+                <p className="font-semibold text-surface-900">₹{stock.marketCap}Cr</p>
+              </div>
+            </>
+          ) : null}
         </div>
-        <div className="w-px h-5 bg-surface-300" />
-        <div>
-          <span className="text-surface-600">Margin</span>
-          <p className={`font-semibold ${parseFloat(stock.profitMargin) > 0 ? 'text-success' : 'text-danger'}`}>
-            {stock.profitMargin}
-          </p>
+      ) : (
+        <div className="flex items-center gap-5 mb-4 text-[12px]">
+          <div>
+            <span className="text-surface-600">Growth</span>
+            <p className={`font-semibold ${stock.revenueGrowth.startsWith('+') ? 'text-success' : 'text-danger'}`}>
+              {stock.revenueGrowth}
+            </p>
+          </div>
+          <div className="w-px h-5 bg-surface-300" />
+          <div>
+            <span className="text-surface-600">Margin</span>
+            <p className={`font-semibold ${parseFloat(stock.profitMargin) > 0 ? 'text-success' : 'text-danger'}`}>
+              {stock.profitMargin}
+            </p>
+          </div>
+          <div className="w-px h-5 bg-surface-300" />
+          <div>
+            <span className="text-surface-600">P/E</span>
+            <p className="font-semibold text-surface-900">{stock.peRatio}</p>
+          </div>
         </div>
-        <div className="w-px h-5 bg-surface-300" />
-        <div>
-          <span className="text-surface-600">P/E</span>
-          <p className="font-semibold text-surface-900">{stock.peRatio}</p>
-        </div>
-      </div>
+      )}
 
       <div className="flex items-center justify-between pt-3.5 border-t border-surface-300/40">
         <div className="flex items-center gap-2.5">

@@ -177,6 +177,9 @@ def generate_ipo_data():
     lines.append('  drhpUrl?: string;')
     lines.append('  rhpUrl?: string;')
     lines.append('  source?: string;')
+    lines.append('  currentPrice?: number;')
+    lines.append('  percentChange?: number;')
+    lines.append('  marketCap?: number;')
     lines.append('  revenue: string;')
     lines.append('  revenueGrowth: string;')
     lines.append('  netIncome: string;')
@@ -236,6 +239,12 @@ def generate_ipo_data():
         drhp_url = ipo.get("drhpUrl", "") or ""
         rhp_url = ipo.get("rhpUrl", "") or ""
         source = ipo.get("source", "") or ""
+        fm = ipo.get("fiscalMetrics", {}) or {}
+        if not isinstance(fm, dict):
+            fm = {}
+        current_price = fm.get("currentPrice", ipo.get("currentPrice", 0)) or 0
+        pct_change = fm.get("percentChange", ipo.get("percentChange", 0)) or 0
+        mcap = fm.get("ipoMcap", ipo.get("marketCap", 0)) or 0
         about = ipo.get("about", "") or ipo.get("description", "")
         description = about or name
 
@@ -331,6 +340,12 @@ def generate_ipo_data():
             lines.append(f'    rhpUrl: "{esc(rhp_url)}",')
         if source:
             lines.append(f'    source: "{esc(source)}",')
+        if current_price:
+            lines.append(f'    currentPrice: {current_price},')
+        if pct_change:
+            lines.append(f'    percentChange: {pct_change},')
+        if mcap:
+            lines.append(f'    marketCap: {mcap},')
         lines.append(f'    revenue: "",')
         lines.append(f'    revenueGrowth: "",')
         lines.append(f'    netIncome: "",')
