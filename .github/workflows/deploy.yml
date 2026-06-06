@@ -2,7 +2,7 @@ name: Data Pipeline & Deploy
 
 on:
   schedule:
-    - cron: '0 5 */2 * *'
+    - cron: '0 5 */3 * *'
   workflow_dispatch:
 
 permissions:
@@ -55,6 +55,7 @@ jobs:
       - name: Generate TypeScript data files
         env:
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+          SKIP_NEWS_FETCH: "1"
         run: python generate_data_ts.py
 
       - name: Commit updated data files

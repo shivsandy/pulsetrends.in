@@ -1,4 +1,5 @@
 import atexit
+import concurrent.futures
 import json
 import os
 import random
@@ -1306,39 +1307,58 @@ def generate_article(source_items: List[dict]) -> Optional[dict]:
 
 
 def refresh_news():
-    print("[NewsAPI] Refreshing news cache...")
-    items = fetch_rss()
-    items += fetch_newsapi()
-    items += fetch_finnhub()
-    items = deduplicate(items)
+    print("[NewsAPI] Refreshing news cache in parallel...")
+
+    # Step 1: Fetch from all sources in parallel
+    all_items = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+        rss_fut = pool.submit(fetch_rss)
+        newsapi_fut = pool.submit(fetch_newsapi)
+        finnhub_fut = pool.submit(fetch_finnhub)
+        for fut in concurrent.futures.as_completed([rss_fut, newsapi_fut, finnhub_fut]):
+            try:
+                all_items.extend(fut.result())
+            except Exception as e:
+                print(f"[NewsAPI] Fetch failed: {e}")
+
+    items = deduplicate(all_items)
     print(f"[NewsAPI] {len(items)} relevant items after filtering")
 
-    # Scrape full content for top articles
-    enriched = []
-    for item in items[:24]:
-        scraped = scrape_article(item["url"])
-        if scraped:
-            item["scraped_content"] = scraped.get("content", "")
-            if scraped.get("image") and not item.get("image"):
-                item["image"] = scraped["image"]
-            if scraped.get("author"):
-                item["author"] = scraped["author"]
-        enriched.append(item)
+    # Step 2: Scrape articles in parallel (up to 24)
+    enriched = list(items[:24])
+    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
+        fut_map = {pool.submit(scrape_article, item["url"]): item for item in enriched}
+        for fut in concurrent.futures.as_completed(fut_map):
+            item = fut_map[fut]
+            try:
+                scraped = fut.result()
+                if scraped:
+                    item["scraped_content"] = scraped.get("content", "")
+                    if scraped.get("image") and not item.get("image"):
+                        item["image"] = scraped["image"]
+                    if scraped.get("author"):
+                        item["author"] = scraped["author"]
+            except Exception:
+                pass
 
-    print(f"[NewsAPI] {len(enriched)} enriched items, generating articles...")
+    print(f"[NewsAPI] {len(enriched)} enriched items, generating articles in parallel...")
 
-    # Generate up to 9 articles (27 items / 3 per batch) for daily publishing
+    # Step 3: Generate articles in parallel (up to 9 batches of 3 items each)
     new_articles = []
     batch_size = 3
-    for i in range(0, min(len(enriched), 27), batch_size):
-        batch = enriched[i:i + batch_size]
-        article = generate_article(batch)
-        if article:
-            new_articles.append(article)
+    batches = [enriched[i:i + batch_size] for i in range(0, min(len(enriched), 27), batch_size)]
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(batches)) as pool:
+        batch_futs = {pool.submit(generate_article, batch): batch for batch in batches}
+        for fut in concurrent.futures.as_completed(batch_futs):
+            try:
+                article = fut.result()
+                if article:
+                    new_articles.append(article)
+            except Exception as e:
+                print(f"[NewsAPI] Article generation failed: {e}")
 
     with CACHE_LOCK:
         if new_articles:
-            # Merge with existing articles and enforce 60-day retention
             existing = load_cached_news()
             existing = prune_old_articles(existing)
             merged = new_articles + existing

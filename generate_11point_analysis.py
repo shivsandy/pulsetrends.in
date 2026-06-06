@@ -1018,21 +1018,38 @@ def main():
         ipos_data = load_json(legacy_path)
     ipos = ipos_data.get("ipos", [])
 
-    print(f"[21Point] Generating comprehensive 21-section analysis for {len(ipos)} IPOs...")
+    out_path = os.path.join(OUTPUT_DIR, "ipoComprehensiveAnalysis.json")
+    existing = load_json(out_path)
 
-    results = {}
+    # Build set of IPO IDs already analyzed (from existing slugs)
+    analyzed_ids = set()
     for i, ipo in enumerate(ipos):
-        analysis = generate_comprehensive_analysis(ipo, i, {})
+        name = ipo.get("name") or ipo.get("company_name", "")
+        symbol = ipo.get("ticker") or ipo.get("symbol", "")
+        slug = generate_slug(name, symbol, i)
+        if slug in existing:
+            analyzed_ids.add(ipo.get("id", ""))
+
+    new_ipos = [ipo for ipo in ipos if ipo.get("id", "") not in analyzed_ids]
+    print(f"[21Point] {len(analyzed_ids)} already analyzed, {len(new_ipos)} new IPOs to process")
+
+    if not new_ipos:
+        print(f"[21Point] No new IPOs to analyze, existing {len(existing)} entries preserved")
+        return
+
+    results = dict(existing)
+    for i, ipo in enumerate(new_ipos):
+        idx = ipos.index(ipo)  # preserve original position
+        analysis = generate_comprehensive_analysis(ipo, idx, {})
         results[analysis["slug"]] = analysis
         if (i + 1) % 20 == 0:
-            print(f"[21Point] Processed {i + 1}/{len(ipos)} IPOs")
+            print(f"[21Point] Processed {i + 1}/{len(new_ipos)} new IPOs")
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    out_path = os.path.join(OUTPUT_DIR, "ipoComprehensiveAnalysis.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
 
-    print(f"[21Point] Generated analysis for {len(results)} IPOs -> {out_path}")
+    print(f"[21Point] Added {len(new_ipos)} new, total {len(results)} IPOs -> {out_path}")
     print(f"[21Point] Done")
 
 if __name__ == "__main__":
