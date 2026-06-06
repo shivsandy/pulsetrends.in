@@ -1,0 +1,63 @@
+name: IPO & Crypto Analysis
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ipo-crypto
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests==2.32.3 beautifulsoup4==4.12.3 lxml==5.3.0 flask==3.0.3 flask-cors==4.0.1 apscheduler==3.10.4
+
+      - name: Collect crypto data
+        run: python crypto_collector.py
+
+      - name: Scrape IPOs (5 sources)
+        env:
+          FINNHUB_API_KEY_1: ${{ secrets.FINNHUB_API_KEY_1 }}
+          FINNHUB_API_KEY_2: ${{ secrets.FINNHUB_API_KEY_2 }}
+          FINNHUB_API_KEY_3: ${{ secrets.FINNHUB_API_KEY_3 }}
+          FINNHUB_API_KEY_4: ${{ secrets.FINNHUB_API_KEY_4 }}
+          FINNHUB_API_KEY_5: ${{ secrets.FINNHUB_API_KEY_5 }}
+        run: python ipo_scraper.py
+
+      - name: Analyze crypto + IPO projects
+        env:
+          OPENROUTER_API_1: ${{ secrets.OPENROUTER_API_1 }}
+          OPENROUTER_API_2: ${{ secrets.OPENROUTER_API_2 }}
+          OPENROUTER_API_3: ${{ secrets.OPENROUTER_API_3 }}
+          OPENROUTER_API_4: ${{ secrets.OPENROUTER_API_4 }}
+          OPENROUTER_API_5: ${{ secrets.OPENROUTER_API_5 }}
+          OPENROUTER_API_6: ${{ secrets.OPENROUTER_API_6 }}
+          OPENROUTER_API_7: ${{ secrets.OPENROUTER_API_7 }}
+          OPENROUTER_API_8: ${{ secrets.OPENROUTER_API_8 }}
+        run: python crypto_analyzer.py
+
+      - name: Commit updated data files
+        run: |
+          git config user.name "PulseTrends Bot"
+          git config user.email "noreply@example.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Auto: update crypto & IPO data $(date +%F)"
+          git push
