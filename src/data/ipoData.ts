@@ -102,7 +102,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- CMR Green Tech sets IPO price band at 182–192 per share (The Times of India)\n  CMR Green Technologies is launching its initial public offering. The price band for the 630 crore issue is set between 182 and 192 rupees per share. Investors can subscribe to the offer from June 3 to\n- Sensex today | Stock Market Highlights: Sensex, Nifty end flat after weak open; Sensex up 14 pts, Nifty gains 11 pts (BusinessLine)\n  Sensex, Nifty, Stock Price Highlights: After a negative opening, benchmarks ended flat. Sensex was up 13.84 pts or 0.02% to end at 74,360.01, Nifty 50 inched up 10.95 pts or 0.05% to 23,416.55.",
     aiVerdict: "",
   },
   {
@@ -146,7 +146,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Merritronix IPO opens for subscription today: Check GMP, price band and other details (The Times of India)\n  Merritronix\'s IPO opens with a muted grey market premium of 0%, indicating a cautious investor sentiment despite its presence in the defense and aerospace electronics sector. The Rs 70 crore book-buil\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers\n- IPO Calendar: Investors to get 2 mainboard public offers this week after a month of lull (The Times of India)\n  India’s IPO market is set to revive with two mainboard issues, CMR Green Technologies and Hexagon Nutrition, opening this week after a lull. Together aiming to raise nearly Rs 770 crore, the offerings",
     aiVerdict: "",
   },
   {
@@ -190,7 +190,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- SMR Jewels ₹67 crore IPO opens May 26; price band set at ₹128–₹135 per share (BusinessLine)\n  The IPO comprises a fresh issue of up to ₹54 crore and an offer for sale (OFS) of up to ₹13.23 crore, taking the total issue size to 49,80,000 shares\n- SMR Jewels IPO opens today. Check GMP, price band, subscription and other details (The Times of India)\n  SMR Jewels\' SME IPO launches Tuesday. Grey market activity shows flat sentiment with no premium expected. The company aims to raise Rs 67.23 crore. The issue opens May 26 and closes May 29. Investors \n- IPO calendar: 3 companies set to launch public offers this week; check details (The Times of India)\n  This comes as markets continue to witness sharp downswings and muted recoveries, with oil prices remaining elevated amid the seesaw political game in the Middle East.\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers",
     aiVerdict: "",
   },
   {
@@ -238,7 +238,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Aureate Tradde IPO opens for subscription today. Check GMP, price band and other details (The Times of India)\n  Aureate Tradde\'s initial public offering begins on Friday, May 29. The company is seeking to raise approximately Rs 27.29 crore through a fixed price issue. Grey market indications suggest a flat list\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers",
     aiVerdict: "",
   },
   {
@@ -286,7 +286,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Rajnandini Fashion India IPO: Check GMP, price band, subscription and other details (The Times of India)\n  Rajnandini Fashion India\'s IPO opens Tuesday, with grey market activity suggesting a modest 10% premium. The BSE SME issue aims to raise Rs 18.2 crore, with a price band of Rs 59-63 per share. The com\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers",
     aiVerdict: "",
   },
   {
@@ -334,7 +334,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Harikanta Overseas IPO: Check GMP, price band, subscription, other details (The Times of India)\n  Harikanta Overseas\' SME IPO opens Wednesday, aiming to raise Rs 25.63 crore. The issue, priced between Rs 91-96, sees muted grey market sentiment with zero premium. Funds will bolster working capital \n- IPO calendar: A cloud kitchen brand among 4 companies to launch public offers this week; check details (The Times of India)\n  Four SME IPOs are set to open this week across food, construction and textile sectors, aiming to raise over Rs 138 crore. While mainboard activity remains subdued, offerings like Vegorama Punjabi Angi",
     aiVerdict: "",
   },
   {
@@ -381,7 +381,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- IPO calendar: 3 companies set to launch public offers this week; check details (The Times of India)\n  This comes as markets continue to witness sharp downswings and muted recoveries, with oil prices remaining elevated amid the seesaw political game in the Middle East.\n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers\n- Yaashvi Jewellers shares to list today. Check GMP ahead of debut (The Times of India)\n  Yaashvi Jewellers\' shares are poised for their debut on the BSE SME platform. The initial public offering is expected to see a subdued listing performance. Grey market indicators suggest the stock wil",
     aiVerdict: "",
   },
   {
@@ -429,7 +429,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- MR Maniveni Foods shares to list today. Check GMP ahead of debut (The Times of India)\n  MR Maniveni Foods shares are poised for their debut on the BSE SME platform this Monday. Grey market indicators suggest a flat listing, with shares trading near their issue price. The company\'s Rs 27 \n- IPO market eyes selective June revival after two-month lull (BusinessLine)\n  The improving June calendar follows a lull that saw only two mainboard IPO launches in April and none in May, as geopolitical tensions, volatile markets and valuation concerns prompted several issuers",
     aiVerdict: "",
   },
   {
@@ -477,7 +477,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Autofurnish IPO opens today. Check GMP, price band, subscription and other details (The Times of India)\n  Autofurnish\'s SME IPO opens for subscription on Thursday. Grey market activity shows flat sentiment with no premium expected. The company aims to raise Rs 14.6 crore through a fresh issue of shares. A\n- IPO calendar: 3 companies set to launch public offers this week; check details (The Times of India)\n  This comes as markets continue to witness sharp downswings and muted recoveries, with oil prices remaining elevated amid the seesaw political game in the Middle East.\n- Autofurnish to make its debut on BSE SME platform today. Check GMP and other details (The Times of India)\n  Autofurnish is poised for its stock market debut on Friday, with initial grey market signals suggesting a neutral investor sentiment. The automotive accessories manufacturer\'s IPO, which opened for su",
     aiVerdict: "",
   },
   {
@@ -525,7 +525,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Q-Line Biotec shares to list today. Check GMP ahead of debut (The Times of India)\n  Q-Line Biotech is poised for a strong stock market debut on Friday. Investor demand appears robust, with grey market trends showing a significant premium. The company\'s shares are expected to list at \n- Vikas Khemani-backed Q-Line Biotech IPO subscribed over 2 times on Day 1 as GMP soars to 42% (The Times of India)\n  Vikas Khemani-backed Q-Line Biotech\'s IPO opened on Wednesday, aiming to raise up to Rs 214.48 crore on NSE Emerge. The company, operating in the in-vitro diagnostics and healthcare solutions segment,\n- IPO calendar: 3 companies set to launch public offers this week; check details (The Times of India)\n  This comes as markets continue to witness sharp downswings and muted recoveries, with oil prices remaining elevated amid the seesaw political game in the Middle East.\n- Q-Line Biotech to raise ₹214 cr via IPO on NSE Emerge (BusinessLine)\n  The company will use net proceeds from the IPO for meeting working capital requirements, repayment of loans and the general corporate purposes\n- Sensex today | Stock Market Highlights: Nifty, Sensex close marginally lower amid inflation worries, IT stocks shine (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: Domestic equity markets closed with marginal losses on Tuesday as investor sentiment remained cautious amid concerns over inflationary pressures, elevated crude",
     aiVerdict: "",
   },
   {
@@ -573,7 +573,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -621,7 +621,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Vegorama Punjabi shares to debut today. Check GMP ahead of debut (The Times of India)\n  Vegorama Punjabi Angithi\'s shares are poised for their stock market debut on Wednesday, with strong grey market indicators suggesting a healthy listing. The IPO, priced at Rs 77, saw a 12% premium in \n- Vegorama Punjabi IPO: Check GMP, subscription, price band and other details (The Times of India)\n  Vegorama Punjabi Angithi\'s SME IPO opens Wednesday, with a 20% grey market premium signaling strong investor interest and expected listing gains. The company aims to raise Rs 38.38 crore to fund expan\n- IPO calendar: A cloud kitchen brand among 4 companies to launch public offers this week; check details (The Times of India)\n  Four SME IPOs are set to open this week across food, construction and textile sectors, aiming to raise over Rs 138 crore. While mainboard activity remains subdued, offerings like Vegorama Punjabi Angi\n- IPO calendar: 3 companies set to launch public offers this week; check details (The Times of India)\n  This comes as markets continue to witness sharp downswings and muted recoveries, with oil prices remaining elevated amid the seesaw political game in the Middle East.",
     aiVerdict: "",
   },
   {
@@ -669,7 +669,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Teamtech Formwork Solutions IPO: Check GMP, subscription, price band and other details (The Times of India)\n  Teamtech Formwork Solutions\' IPO opens Tuesday with a muted grey market outlook, showing a 0% premium. The Rs 50.15 crore issue aims to fund a new manufacturing facility, debt repayment, and working c\n- IPO calendar: A cloud kitchen brand among 4 companies to launch public offers this week; check details (The Times of India)\n  Four SME IPOs are set to open this week across food, construction and textile sectors, aiming to raise over Rs 138 crore. While mainboard activity remains subdued, offerings like Vegorama Punjabi Angi\n- IPO calendar: 3 companies set to launch public offers this week; check details (The Times of India)\n  This comes as markets continue to witness sharp downswings and muted recoveries, with oil prices remaining elevated amid the seesaw political game in the Middle East.\n- Teamtech Formwork shares to list today. Check GMP ahead of debut (The Times of India)\n  Teamtech Formwork Solutions is set to list on the NSE SME platform on Tuesday, with grey market trends suggesting moderate listing gains. The IPO, which opened for subscription between May 19-21, was ",
     aiVerdict: "",
   },
   {
@@ -717,7 +717,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- NFP Sampoorna Foods IPO: Check GMP, subscription, price band and other details (The Times of India)\n  NFP Sampoorna Foods IPO opens for subscription on Monday. Grey market signals indicate a flat outlook with no premium expected. The company aims to raise Rs 24.53 crore through a fresh issue of shares\n- IPO calendar: A cloud kitchen brand among 4 companies to launch public offers this week; check details (The Times of India)\n  Four SME IPOs are set to open this week across food, construction and textile sectors, aiming to raise over Rs 138 crore. While mainboard activity remains subdued, offerings like Vegorama Punjabi Angi\n- NFP Sampoorna Foods shares to list today. Check GMP ahead of debut (The Times of India)\n  NFP Sampoorna Foods is poised for its stock market debut on Monday, with grey market signals suggesting a flat listing. The company, specializing in cashew nut processing and distribution, raised Rs 2\n- IPO calendar: 3 companies set to launch public offers this week; check details (The Times of India)\n  This comes as markets continue to witness sharp downswings and muted recoveries, with oil prices remaining elevated amid the seesaw political game in the Middle East.",
     aiVerdict: "",
   },
   {
@@ -765,7 +765,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- RFBL Flexi Pack fixes price band at Rs 47-50 for IPO, to hit markets on May 12 (The Times of India)\n  Flexible packaging materials manufacturer RFBL Flexi Pack Ltd on Saturday announced a price band of Rs 47-50 per equity share for its initial public offering, which opens for subscription on May 12.\n- IPO Calendar: 2 issues to keep investors busy but mainboard activity remains muted (The Times of India)\n  India\'s primary market is set for a busy week with two SME IPOs. RFBL Flexi Pack and Goldline Pharmaceutical will open for subscription on May 12, aiming to raise close to Rs 47 crore. Investors can g",
     aiVerdict: "",
   },
   {
@@ -813,7 +813,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- IPO Calendar: 2 issues to keep investors busy but mainboard activity remains muted (The Times of India)\n  India\'s primary market is set for a busy week with two SME IPOs. RFBL Flexi Pack and Goldline Pharmaceutical will open for subscription on May 12, aiming to raise close to Rs 47 crore. Investors can g",
     aiVerdict: "",
   },
   {
@@ -861,7 +861,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -905,7 +905,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Jhunjhunwala-backed Bagmane Prime Office REIT lists at 3.5% premium over IPO price (The Times of India)\n  Bagmane Prime Office REIT debuted on the NSE at Rs 103.50, a 3.5% premium to its IPO price, following a highly subscribed Rs 3,405 crore offering. The Bengaluru-focused REIT, backed by Blackstone, att\n- Bagmane Prime Office REIT IPO: Subscribed 83% so far on Day 2; check GMP and key details (The Times of India)\n  Bagmane Prime Office REIT IPO is 83% subscribed on Day 2, driven by steady institutional and investor interest. The issue aims to raise Rs 3,405 crore, with a modest grey market premium. Backed by hig\n- Blackstone and Jhunjhunwala-backed Bagmane draws 2 lakh applications, highest for all REIT IPOs (The Times of India)\n  Bagmane Prime Office REIT received record investor participation and strong oversubscription in its Rs 3,405 crore IPO. Backed by Blackstone and Bagmane Group, the trust offers exposure to premium Ben\n- Investors place trust in REITs and InvITs amid lacklustre IPOs (The Times of India)\n  REIT and InvIT issuances are attracting significant investor interest, outperforming traditional IPOs amid equity market volatility. These trusts offer stable, annuity-like income from operational ass\n- Bagmane Prime Office REIT ends 3.7% higher at ₹103.66 (BusinessLine)\n  Bagmane Prime Office REIT closes Day 1 at ₹103.66, reflecting strong investor interest with 23.71 times IPO subscription.",
     aiVerdict: "",
   },
   {
@@ -953,7 +953,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -1001,7 +1001,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -1049,7 +1049,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did you get OnEMI Technology IPO allotment? The GMP ahead of listing is the best in last few months (The Times of India)\n  Investors can check their OnEMI Technology IPO allotment status today. The fintech company\'s public issue closed on May 5. Shares are set to list on May 8. The IPO saw strong demand. The grey market i\n- OnEMI Technology shares to list today. GMP signals at one of the strongest debuts in recent past (The Times of India)\n  OnEMI Technology Solutions, the company behind Kissht, is poised for its stock market debut. Grey market trends suggest a strong listing, with shares expected to trade above the issue price. The IPO s\n- Kissht parent OnEMI Tech shares soar 11% after strong D-Street debut. Should you buy, sell, or hold? (The Times of India)\n  OnEMI Technology Solutions shares saw a strong debut, jumping 11% on their listing day. The company operates digital lending platforms Kissht and Ring. Analysts suggest caution due to potential volati\n- Investors place trust in REITs and InvITs amid lacklustre IPOs (The Times of India)\n  REIT and InvIT issuances are attracting significant investor interest, outperforming traditional IPOs amid equity market volatility. These trusts offer stable, annuity-like income from operational ass\n- REIT, InvIT IPOs gather pace as yield quality helps them weather market volatility (Livemint)\n  REITs and InvITs pool income-generating assets and distribute most cash flows to investors, attracting institutions and retail investors seeking predictable yields. Despite yield-plays not being insul",
     aiVerdict: "",
   },
   {
@@ -1097,7 +1097,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Sensex today | Stock Market Highlights: Sensex plunges 1,456 pts, Nifty closes at 23,379, Rupee falls to 95.63/$ on Iran-US deadlock (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: The turmoil in the Indian stock markets continued on Tuesday as both benchmark indices closed sharply lower amid rising concerns over the escalating tensions in",
     aiVerdict: "",
   },
   {
@@ -1141,7 +1141,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -1189,7 +1189,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -1233,7 +1233,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Investors place trust in REITs and InvITs amid lacklustre IPOs (The Times of India)\n  REIT and InvIT issuances are attracting significant investor interest, outperforming traditional IPOs amid equity market volatility. These trusts offer stable, annuity-like income from operational ass\n- REIT, InvIT IPOs gather pace as yield quality helps them weather market volatility (Livemint)\n  REITs and InvITs pool income-generating assets and distribute most cash flows to investors, attracting institutions and retail investors seeking predictable yields. Despite yield-plays not being insul",
     aiVerdict: "",
   },
   {
@@ -1281,7 +1281,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -1329,7 +1329,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Investors place trust in REITs and InvITs amid lacklustre IPOs (The Times of India)\n  REIT and InvIT issuances are attracting significant investor interest, outperforming traditional IPOs amid equity market volatility. These trusts offer stable, annuity-like income from operational ass\n- Sensex today | Stock Market Highlights: Sensex crashes 1,313 points, rupee hits record low amid US-Iran tensions (BusinessLine)\n  Sensex Today, Nifty 50 | Stock Market Highlights: Indian stock markets plunged on Monday as soaring crude oil prices and fading hopes of a US-Iran peace deal triggered heavy selling, with the Sensex c\n- Sensex today | Stock Market Highlights: Nifty, Sensex close marginally lower amid inflation worries, IT stocks shine (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: Domestic equity markets closed with marginal losses on Tuesday as investor sentiment remained cautious amid concerns over inflationary pressures, elevated crude\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
     aiVerdict: "",
   },
   {
@@ -1377,7 +1377,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -1424,7 +1424,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- SpaceX Warns Humans May Suffer ‘Same Fate As Dinosaurs’ in Eye-Popping IPO Pitch (New York Magazine)\n  The prospectus for Elon Musk’s SpaceX, which is seeking as much as $75 billion from investors, is full of vivid declarations and ‘spicy’ revelations.\n- uniQure Q1 Earnings Call Highlights (MarketBeat)\n  uniQure (NASDAQ:QURE) executives outlined progress and upcoming regulatory milestones for lead Huntington’s disease gene therapy candidate AMT-130 during the...\n- Wall Street thinks there’s a chance the S&P 500 could push 20% higher by 2027 (Fortune)\n  PLUS: Inside SpaceX\'s IPO strategy, and the new normal for immigration.\n- Critical Metals Highlights Tanbreez Gains, NATO Supply Chain Push at Critical Metals Conference (MarketBeat)\n  Critical Metals (NASDAQ:CRML) outlined recent progress at its Tanbreez rare earths project in Greenland and discussed its efforts to build an end-to-end...\n- AI Update, June 5, 2026: AI News and Views From the Past Week (MarketingProfs.com)\n  Catch up on select AI news and developments since Friday, May 29. Stay in the know. Read the full article at MarketingProfs",
     aiVerdict: "",
   },
   {
@@ -1472,7 +1472,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -1520,7 +1520,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Sensex today | Stock Market Highlights: Sensex, Nifty end flat after weak open; Sensex up 14 pts, Nifty gains 11 pts (BusinessLine)\n  Sensex, Nifty, Stock Price Highlights: After a negative opening, benchmarks ended flat. Sensex was up 13.84 pts or 0.02% to end at 74,360.01, Nifty 50 inched up 10.95 pts or 0.05% to 23,416.55.\n- Sensex today | Stock Market Highlights: Nifty, Sensex close marginally lower amid inflation worries, IT stocks shine (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: Domestic equity markets closed with marginal losses on Tuesday as investor sentiment remained cautious amid concerns over inflationary pressures, elevated crude\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
     aiVerdict: "",
   },
   {
@@ -1568,7 +1568,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -1616,7 +1616,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -1664,7 +1664,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -1712,7 +1712,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -1760,7 +1760,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -1808,7 +1808,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Sensex today | Stock Market Highlights: Sensex plunges 1,456 pts, Nifty closes at 23,379, Rupee falls to 95.63/$ on Iran-US deadlock (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: The turmoil in the Indian stock markets continued on Tuesday as both benchmark indices closed sharply lower amid rising concerns over the escalating tensions in",
     aiVerdict: "",
   },
   {
@@ -1851,7 +1851,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -1899,7 +1899,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -1943,7 +1943,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- REIT, InvIT IPOs gather pace as yield quality helps them weather market volatility (Livemint)\n  REITs and InvITs pool income-generating assets and distribute most cash flows to investors, attracting institutions and retail investors seeking predictable yields. Despite yield-plays not being insul",
     aiVerdict: "",
   },
   {
@@ -1991,7 +1991,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- IPO investors brace for 73 lock-in expiries worth $34 billion in three months. Will your portfolio be impacted? (The Times of India)\n  India’s stock market is set for a wave of IPO lock-in expiries over the next three months, with shares worth $34 billion from 73 recently listed companies becoming eligible for trading, according to N",
     aiVerdict: "",
   },
   {
@@ -2039,7 +2039,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Sensex today | Stock Market Highlights: Sensex falls 479 points, Nifty slips below 23,950 as rupee weakens (BusinessLine)\n  Sensex Today, Nifty 50 | Stock Market Highlights: Sensex and Nifty closed lower on Tuesday as rising crude oil prices and escalating US-Iran tensions dampened investor sentiment, triggering broad-base",
     aiVerdict: "",
   },
   {
@@ -2087,7 +2087,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2135,7 +2135,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2183,7 +2183,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2231,7 +2231,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2279,7 +2279,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2327,7 +2327,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2375,7 +2375,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2423,7 +2423,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2471,7 +2471,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2519,7 +2519,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2567,7 +2567,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2615,7 +2615,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2663,7 +2663,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2711,7 +2711,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2759,7 +2759,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- IPO investors brace for 73 lock-in expiries worth $34 billion in three months. Will your portfolio be impacted? (The Times of India)\n  India’s stock market is set for a wave of IPO lock-in expiries over the next three months, with shares worth $34 billion from 73 recently listed companies becoming eligible for trading, according to N\n- IPO investors brace for 70 lock-in expiries worth $35 billion in three months. Do you own any? (The Times of India)\n  According to Nuvama Alternative & Quantitative Research, the Indian stock market is set to witness a significant wave of lock-in expiries between May 26 and August 31, as shares of 70 recently listed \n- Sensex today | Stock Market Highlights: Sensex falls 479 points, Nifty slips below 23,950 as rupee weakens (BusinessLine)\n  Sensex Today, Nifty 50 | Stock Market Highlights: Sensex and Nifty closed lower on Tuesday as rising crude oil prices and escalating US-Iran tensions dampened investor sentiment, triggering broad-base\n- Sensex today | Stock Market Highlights: Sensex plunges 1,456 pts, Nifty closes at 23,379, Rupee falls to 95.63/$ on Iran-US deadlock (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: The turmoil in the Indian stock markets continued on Tuesday as both benchmark indices closed sharply lower amid rising concerns over the escalating tensions in",
     aiVerdict: "",
   },
   {
@@ -2807,7 +2807,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- IPO investors brace for 73 lock-in expiries worth $34 billion in three months. Will your portfolio be impacted? (The Times of India)\n  India’s stock market is set for a wave of IPO lock-in expiries over the next three months, with shares worth $34 billion from 73 recently listed companies becoming eligible for trading, according to N\n- IPO investors brace for 70 lock-in expiries worth $35 billion in three months. Do you own any? (The Times of India)\n  According to Nuvama Alternative & Quantitative Research, the Indian stock market is set to witness a significant wave of lock-in expiries between May 26 and August 31, as shares of 70 recently listed ",
     aiVerdict: "",
   },
   {
@@ -2855,7 +2855,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2903,7 +2903,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -2950,7 +2950,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- CMR Green and Hexagon Nutrition set to launch IPOs next week (BusinessLine)\n  Upcoming IPOs from CMR Green and Hexagon Nutrition are set to invigorate the primary market next week.\n- Sensex today | Stock Market Highlights: Sensex crashes 1,313 points, rupee hits record low amid US-Iran tensions (BusinessLine)\n  Sensex Today, Nifty 50 | Stock Market Highlights: Indian stock markets plunged on Monday as soaring crude oil prices and fading hopes of a US-Iran peace deal triggered heavy selling, with the Sensex c\n- Sensex today | Stock Market Highlights: Sensex plunges 1,456 pts, Nifty closes at 23,379, Rupee falls to 95.63/$ on Iran-US deadlock (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: The turmoil in the Indian stock markets continued on Tuesday as both benchmark indices closed sharply lower amid rising concerns over the escalating tensions in",
     aiVerdict: "",
   },
   {
@@ -2998,7 +2998,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -3045,7 +3045,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -3093,7 +3093,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Veritas Finance explores ₹1,000 crore secondary deal as IPO plans delay (Livemint)\n  Chennai-based NBFC considers ₹800–1,000 crore largely secondary deal to offer exits to early investors as volatile markets delay its IPO plans.&nbsp;\n- Arohan Financial Services files IPO papers with Sebi; eyes Rs 600 cr via fresh issue (The Times of India)\n  US Teachers Insurance and Annuity Association, a retirement financial services firm, Michael & Susan Dell Foundation, Aavishkaar Goodwell India Microfinance Development Company-II Ltd, Tano Capital, T\n- From Meesho to Fractal: Rs 2.3 lakh crore startup shares to hit market by August as lock-ins expire (Moneycontrol)\n  Lock-in expiries in some of India’s biggest startup IPOs are expected to trigger a wave of secondary share sales, with venture investors increasingly turning to markets for liquidity as late-stage pri",
     aiVerdict: "",
   },
   {
@@ -3140,7 +3140,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -3188,7 +3188,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
     aiVerdict: "",
   },
   {
@@ -3236,7 +3236,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -3284,7 +3284,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Sensex today | Stock Market Highlights: Sensex gains 789 pts, Nifty ends at 23,689 as US-China trade talks lift investor sentiment (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: Indian shares rose on Thursday, supported by steady earnings ​and signs of progress in U.S.-China trade relations, though sentiment ‌remained fragile as elevate",
     aiVerdict: "",
   },
   {
@@ -3332,7 +3332,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- What Is A \'C-Shaped\' Economy? Wall Street\'s New Buzzword Explained (Yahoo Entertainment)\n  When Hilton Worldwide CEO Christopher Nassetta introduced the term \"C-shaped economy\" during the company\'s latest earnings call, he added a new phrase to...\n- An Apple (II) for Teacher (Technicshistory.com)\n  By early 1980, the Apple II, which had trailed the Commodore PET and Tandy/Radio Shack TRS-80 at first, had become a remarkable success, with a great deal of help from Personal Software’s VisiCalc.…\n- Globaltech Corp. (OTCQB: GLTK) Update to Shareholders (GlobeNewswire)\n  RENO, Nevada, June 03, 2026 (GLOBE NEWSWIRE) -- Globaltech Corporation (“Globaltech” or the “Company”) (OTCQB: GLTK), a U.S.-based technology holding company, is providing this Update to Shareholders \n- Sensex today | Stock Market Highlights: Sensex, Nifty end flat after weak open; Sensex up 14 pts, Nifty gains 11 pts (BusinessLine)\n  Sensex, Nifty, Stock Price Highlights: After a negative opening, benchmarks ended flat. Sensex was up 13.84 pts or 0.02% to end at 74,360.01, Nifty 50 inched up 10.95 pts or 0.05% to 23,416.55.\n- ARKO Petroleum Corp. Reports First Quarter 2026 Results (GlobeNewswire)\n  ARKO Petroleum Corp. today announced financial results for the first quarter ended March 31, 2026....",
     aiVerdict: "",
   },
   {
@@ -3380,7 +3380,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Sensex today | Stock Market Highlights: Benchmark indices end lower; Sensex drops 516 pts to 77,328, Nifty closes at 24,176 amid West Asia tensions (BusinessLine)\n  Sensex, Nifty, Share Prices: Indian equity markets continued to trade lower on Friday as escalating US-Iran tensions near the Strait of Hormuz rattled global sentiment, while sustained foreign investo",
     aiVerdict: "",
   },
   {
@@ -3428,7 +3428,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -3476,7 +3476,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Sensex today | Stock Market Highlights: Sensex crashes 1,313 points, rupee hits record low amid US-Iran tensions (BusinessLine)\n  Sensex Today, Nifty 50 | Stock Market Highlights: Indian stock markets plunged on Monday as soaring crude oil prices and fading hopes of a US-Iran peace deal triggered heavy selling, with the Sensex c",
     aiVerdict: "",
   },
   {
@@ -3524,7 +3524,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -3572,7 +3572,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
     aiVerdict: "",
   },
   {
@@ -3620,7 +3620,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -3668,7 +3668,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -3716,7 +3716,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- The Seed 100: The best early-stage investors of 2026 (Business Insider)\n  Business Insider\'s annual Seed 100 list recognizes the early-stage investors who provide crucial support to budding startups.\n- CMR Green and Hexagon Nutrition set to launch IPOs next week (BusinessLine)\n  Upcoming IPOs from CMR Green and Hexagon Nutrition are set to invigorate the primary market next week.\n- From Meesho to Fractal: Rs 2.3 lakh crore startup shares to hit market by August as lock-ins expire (Moneycontrol)\n  Lock-in expiries in some of India’s biggest startup IPOs are expected to trigger a wave of secondary share sales, with venture investors increasingly turning to markets for liquidity as late-stage pri\n- Sensex today | Stock Market Highlights: Sensex gains 789 pts, Nifty ends at 23,689 as US-China trade talks lift investor sentiment (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: Indian shares rose on Thursday, supported by steady earnings ​and signs of progress in U.S.-China trade relations, though sentiment ‌remained fragile as elevate",
     aiVerdict: "",
   },
   {
@@ -3764,7 +3764,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -3812,7 +3812,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -3860,7 +3860,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
     aiVerdict: "",
   },
   {
@@ -3908,7 +3908,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -3956,7 +3956,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -4004,7 +4004,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Sensex today | Stock Market Highlights: Nifty, Sensex close marginally lower amid inflation worries, IT stocks shine (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: Domestic equity markets closed with marginal losses on Tuesday as investor sentiment remained cautious amid concerns over inflationary pressures, elevated crude\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
     aiVerdict: "",
   },
   {
@@ -4052,7 +4052,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -4100,7 +4100,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -4148,7 +4148,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- CMR Green and Hexagon Nutrition set to launch IPOs next week (BusinessLine)\n  Upcoming IPOs from CMR Green and Hexagon Nutrition are set to invigorate the primary market next week.\n- Sensex today | Stock Market Highlights: Sensex closes flat, Nifty ends at 23,650 as Iran war worries offset IT gains (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: India\'s equity benchmarks closed flat on ​Monday as persistent concerns over the impact of the ‌Iran war offset a partial rebound in IT stocks.\n- Sensex today | Stock Market Highlights: Markets end lower amid cautious sentiment over fragile US-Iran truce (BusinessLine)\n  Sensex Today, Nifty 50 | Stock Market Highlights: The benchmark BSE Sensex fell 0.19 per cent to close at 75,867.8, while the broader NSE Nifty 50 slipped 0.03 per cent to 23,907.15, as losses in heav",
     aiVerdict: "",
   },
   {
@@ -4196,7 +4196,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -4244,7 +4244,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -4292,7 +4292,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -4340,7 +4340,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -4388,7 +4388,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -4436,7 +4436,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- The Seed 100: The best early-stage investors of 2026 (Business Insider)\n  Business Insider\'s annual Seed 100 list recognizes the early-stage investors who provide crucial support to budding startups.\n- TechCrunch Mobility: Lime’s IPO gamble (Yahoo Entertainment)\n  Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, how AI is playing a part.\n- LexinFintech Q1 Earnings Call Highlights (MarketBeat)\n  LexinFintech (NASDAQ:LX) reported higher first-quarter loan volume and revenue as management said growth in its diversified ecosystem businesses helped...\n- Sensex today | Stock Market Highlights: Sensex closes flat, Nifty ends at 23,650 as Iran war worries offset IT gains (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: India\'s equity benchmarks closed flat on ​Monday as persistent concerns over the impact of the ‌Iran war offset a partial rebound in IT stocks.\n- Sensex today | Stock Market Highlights: Sensex crashes 1,313 points, rupee hits record low amid US-Iran tensions (BusinessLine)\n  Sensex Today, Nifty 50 | Stock Market Highlights: Indian stock markets plunged on Monday as soaring crude oil prices and fading hopes of a US-Iran peace deal triggered heavy selling, with the Sensex c",
     aiVerdict: "",
   },
   {
@@ -4484,7 +4484,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -4532,7 +4532,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Sensex today | Stock Market Highlights: Sensex gains 789 pts, Nifty ends at 23,689 as US-China trade talks lift investor sentiment (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: Indian shares rose on Thursday, supported by steady earnings ​and signs of progress in U.S.-China trade relations, though sentiment ‌remained fragile as elevate\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
     aiVerdict: "",
   },
   {
@@ -4580,7 +4580,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Sensex today | Stock Market Highlights: Sensex crashes 1,313 points, rupee hits record low amid US-Iran tensions (BusinessLine)\n  Sensex Today, Nifty 50 | Stock Market Highlights: Indian stock markets plunged on Monday as soaring crude oil prices and fading hopes of a US-Iran peace deal triggered heavy selling, with the Sensex c",
     aiVerdict: "",
   },
   {
@@ -4628,7 +4628,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -4676,7 +4676,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -4724,7 +4724,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Did Trump Accidentally Buy Stock in a Sushi Restaurant Instead of a Tech Company? (Gizmodo.com)\n  There\'s something fishy about the President\'s stock purchases.",
     aiVerdict: "",
   },
   {
@@ -4772,7 +4772,7 @@ export const ipoStocks: IPOStock[] = [
       management: 70,
       marketSentiment: 72,
     },
-    aiAnalysis: "",
+    aiAnalysis: "Recent News:\n- Sensex today | Stock Market Highlights: Sensex gains 789 pts, Nifty ends at 23,689 as US-China trade talks lift investor sentiment (BusinessLine)\n  Sensex, Nifty, Share Prices Highlights: Indian shares rose on Thursday, supported by steady earnings ​and signs of progress in U.S.-China trade relations, though sentiment ‌remained fragile as elevate\n- Show HN: Simple news aggregator with source bias meters (Unbiasthenews.com)\n  Article URL: https://unbiasthenews.com\nComments URL: https://news.ycombinator.com/item?id=48327194\nPoints: 2\n# Comments: 0",
     aiVerdict: "",
   },
   {
