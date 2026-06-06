@@ -129,7 +129,7 @@ export default function ArticleReader({ article }: ArticleReaderProps) {
                 {article.author || 'Shiva Sandeep'}
               </p>
               <div className="flex items-center gap-2 text-[11px] text-surface-600">
-                <span>Senior Market Analyst</span>
+                <span>Analyst</span>
                 {article.telegram && (
                   <a
                     href={`https://t.me/${article.telegram}`}
