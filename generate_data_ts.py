@@ -539,12 +539,23 @@ def generate_news_data():
     if not isinstance(current, list):
         current = []
 
+    daily_cache_path = os.path.join(DATA_DIR, "daily_news_cache.json")
+    daily_articles = load_json(daily_cache_path)
+    if not isinstance(daily_articles, list):
+        daily_articles = []
+
     # Load archived articles from artifacts
     archived = load_news_articles_from_artifacts()
 
-    # Merge: current cache first (most recent), then archived (deduped by ID)
+    # Merge: daily cache (most recent), then news cache, then archived (deduped by ID)
     seen_ids = set()
     merged = []
+    for art in daily_articles:
+        if isinstance(art, dict):
+            aid = art.get("id", "")
+            if aid and aid not in seen_ids:
+                seen_ids.add(aid)
+                merged.append(art)
     for art in current:
         if isinstance(art, dict):
             aid = art.get("id", "")
@@ -561,7 +572,7 @@ def generate_news_data():
     # Enforce 70-day retention
     articles = prune_old_articles(merged)
 
-    print(f"[DataGen] Loaded {len(current)} from cache + {len(archived)} from artifacts = {len(merged)} merged, "
+    print(f"[DataGen] Loaded {len(daily_articles)} from daily cache + {len(current)} from cache + {len(archived)} from artifacts = {len(merged)} merged, "
           f"{len(articles)} after 70-day pruning")
     if len(articles) == 0:
         print("[DataGen] WARNING: 0 articles after merge — newsData.ts will be empty!")
