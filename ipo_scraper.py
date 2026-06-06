@@ -1,3 +1,4 @@
+import concurrent.futures
 import json
 import os
 import random
@@ -436,10 +437,111 @@ def _parse_screener_date(text: str) -> str:
 
 SCRAPER_URLS = {
     "recent": {"path": "/ipo/recent/", "type": "standard", "max_pages": 50, "status": "listed"},
-    "below_price": {"path": "/ipo/below-price/", "type": "standard", "max_pages": 30, "status": "listed"},
-    "main": {"path": "/ipo/", "type": "upcoming", "max_pages": 50, "status": "upcoming"},
-    "rights": {"path": "/ipo/rights/", "type": "rights", "max_pages": 20, "status": "rights"},
 }
+
+GLOBAL_STOCKS = [
+    {"name":"Apple Inc.","ticker":"AAPL","exchange":"NASDAQ","sector":"Technology","industry":"Consumer Electronics","country":"US"},
+    {"name":"Microsoft Corporation","ticker":"MSFT","exchange":"NASDAQ","sector":"Technology","industry":"Software","country":"US"},
+    {"name":"Alphabet Inc.","ticker":"GOOGL","exchange":"NASDAQ","sector":"Technology","industry":"Internet Services","country":"US"},
+    {"name":"Amazon.com Inc.","ticker":"AMZN","exchange":"NASDAQ","sector":"Consumer Cyclical","industry":"E-Commerce","country":"US"},
+    {"name":"NVIDIA Corporation","ticker":"NVDA","exchange":"NASDAQ","sector":"Technology","industry":"Semiconductors","country":"US"},
+    {"name":"Meta Platforms Inc.","ticker":"META","exchange":"NASDAQ","sector":"Technology","industry":"Social Media","country":"US"},
+    {"name":"Tesla Inc.","ticker":"TSLA","exchange":"NASDAQ","sector":"Consumer Cyclical","industry":"Auto Manufacturers","country":"US"},
+    {"name":"Berkshire Hathaway Inc.","ticker":"BRK.B","exchange":"NYSE","sector":"Financial","industry":"Insurance","country":"US"},
+    {"name":"Eli Lilly and Company","ticker":"LLY","exchange":"NYSE","sector":"Healthcare","industry":"Pharmaceuticals","country":"US"},
+    {"name":"Broadcom Inc.","ticker":"AVGO","exchange":"NASDAQ","sector":"Technology","industry":"Semiconductors","country":"US"},
+    {"name":"JPMorgan Chase & Co.","ticker":"JPM","exchange":"NYSE","sector":"Financial","industry":"Banks","country":"US"},
+    {"name":"Visa Inc.","ticker":"V","exchange":"NYSE","sector":"Financial","industry":"Credit Services","country":"US"},
+    {"name":"UnitedHealth Group Inc.","ticker":"UNH","exchange":"NYSE","sector":"Healthcare","industry":"Healthcare Plans","country":"US"},
+    {"name":"Johnson & Johnson","ticker":"JNJ","exchange":"NYSE","sector":"Healthcare","industry":"Drug Manufacturers","country":"US"},
+    {"name":"Walmart Inc.","ticker":"WMT","exchange":"NYSE","sector":"Consumer Defensive","industry":"Discount Stores","country":"US"},
+    {"name":"Procter & Gamble Company","ticker":"PG","exchange":"NYSE","sector":"Consumer Defensive","industry":"Household Products","country":"US"},
+    {"name":"Mastercard Incorporated","ticker":"MA","exchange":"NYSE","sector":"Financial","industry":"Credit Services","country":"US"},
+    {"name":"Exxon Mobil Corporation","ticker":"XOM","exchange":"NYSE","sector":"Energy","industry":"Oil & Gas","country":"US"},
+    {"name":"Oracle Corporation","ticker":"ORCL","exchange":"NYSE","sector":"Technology","industry":"Software","country":"US"},
+    {"name":"Home Depot Inc.","ticker":"HD","exchange":"NYSE","sector":"Consumer Cyclical","industry":"Home Improvement","country":"US"},
+    {"name":"Costco Wholesale Corp","ticker":"COST","exchange":"NASDAQ","sector":"Consumer Defensive","industry":"Discount Stores","country":"US"},
+    {"name":"AbbVie Inc.","ticker":"ABBV","exchange":"NYSE","sector":"Healthcare","industry":"Drug Manufacturers","country":"US"},
+    {"name":"Coca-Cola Company","ticker":"KO","exchange":"NYSE","sector":"Consumer Defensive","industry":"Beverages","country":"US"},
+    {"name":"Merck & Co. Inc.","ticker":"MRK","exchange":"NYSE","sector":"Healthcare","industry":"Drug Manufacturers","country":"US"},
+    {"name":"PepsiCo Inc.","ticker":"PEP","exchange":"NASDAQ","sector":"Consumer Defensive","industry":"Beverages","country":"US"},
+    {"name":"Chevron Corporation","ticker":"CVX","exchange":"NYSE","sector":"Energy","industry":"Oil & Gas","country":"US"},
+    {"name":"McDonald's Corporation","ticker":"MCD","exchange":"NYSE","sector":"Consumer Cyclical","industry":"Restaurants","country":"US"},
+    {"name":"Salesforce Inc.","ticker":"CRM","exchange":"NYSE","sector":"Technology","industry":"Software","country":"US"},
+    {"name":"Adobe Inc.","ticker":"ADBE","exchange":"NASDAQ","sector":"Technology","industry":"Software","country":"US"},
+    {"name":"Cisco Systems Inc.","ticker":"CSCO","exchange":"NASDAQ","sector":"Technology","industry":"Communication Equipment","country":"US"},
+    {"name":"Netflix Inc.","ticker":"NFLX","exchange":"NASDAQ","sector":"Communication","industry":"Entertainment","country":"US"},
+    {"name":"Advanced Micro Devices","ticker":"AMD","exchange":"NASDAQ","sector":"Technology","industry":"Semiconductors","country":"US"},
+    {"name":"Accenture plc","ticker":"ACN","exchange":"NYSE","sector":"Technology","industry":"Consulting","country":"IE"},
+    {"name":"Intel Corporation","ticker":"INTC","exchange":"NASDAQ","sector":"Technology","industry":"Semiconductors","country":"US"},
+    {"name":"Comcast Corporation","ticker":"CMCSA","exchange":"NASDAQ","sector":"Communication","industry":"Telecom","country":"US"},
+    {"name":"Intuitive Surgical Inc.","ticker":"ISRG","exchange":"NASDAQ","sector":"Healthcare","industry":"Medical Devices","country":"US"},
+    {"name":"SAP SE","ticker":"SAP","exchange":"XETRA","sector":"Technology","industry":"Software","country":"DE"},
+    {"name":"ASML Holding N.V.","ticker":"ASML","exchange":"NASDAQ","sector":"Technology","industry":"Semiconductors","country":"NL"},
+    {"name":"LVMH Moet Hennessy","ticker":"MC","exchange":"EURONEXT","sector":"Consumer Cyclical","industry":"Luxury Goods","country":"FR"},
+    {"name":"Novo Nordisk A/S","ticker":"NVO","exchange":"NYSE","sector":"Healthcare","industry":"Drug Manufacturers","country":"DK"},
+    {"name":"Nestlé S.A.","ticker":"NSRGY","exchange":"OTC","sector":"Consumer Defensive","industry":"Food","country":"CH"},
+    {"name":"Roche Holding AG","ticker":"RHHBY","exchange":"OTC","sector":"Healthcare","industry":"Drug Manufacturers","country":"CH"},
+    {"name":"Toyota Motor Corporation","ticker":"TM","exchange":"NYSE","sector":"Consumer Cyclical","industry":"Auto Manufacturers","country":"JP"},
+    {"name":"Samsung Electronics Co.","ticker":"SSNLF","exchange":"OTC","sector":"Technology","industry":"Consumer Electronics","country":"KR"},
+    {"name":"TSMC","ticker":"TSM","exchange":"NYSE","sector":"Technology","industry":"Semiconductors","country":"TW"},
+    {"name":"Sony Group Corporation","ticker":"SONY","exchange":"NYSE","sector":"Technology","industry":"Consumer Electronics","country":"JP"},
+    {"name":"Alibaba Group Holding Ltd","ticker":"BABA","exchange":"NYSE","sector":"Consumer Cyclical","industry":"E-Commerce","country":"CN"},
+    {"name":"Tencent Holdings Ltd","ticker":"TCEHY","exchange":"OTC","sector":"Technology","industry":"Internet Services","country":"CN"},
+    {"name":"Shell plc","ticker":"SHEL","exchange":"NYSE","sector":"Energy","industry":"Oil & Gas","country":"GB"},
+    {"name":"TotalEnergies SE","ticker":"TTE","exchange":"NYSE","sector":"Energy","industry":"Oil & Gas","country":"FR"},
+    {"name":"Novartis AG","ticker":"NVS","exchange":"NYSE","sector":"Healthcare","industry":"Drug Manufacturers","country":"CH"},
+    {"name":"HSBC Holdings plc","ticker":"HSBC","exchange":"NYSE","sector":"Financial","industry":"Banks","country":"GB"},
+    {"name":"BP p.l.c.","ticker":"BP","exchange":"NYSE","sector":"Energy","industry":"Oil & Gas","country":"GB"},
+    {"name":"Diageo plc","ticker":"DEO","exchange":"NYSE","sector":"Consumer Defensive","industry":"Beverages","country":"GB"},
+    {"name":"GlaxoSmithKline plc","ticker":"GSK","exchange":"NYSE","sector":"Healthcare","industry":"Drug Manufacturers","country":"GB"},
+    {"name":"Canon Inc.","ticker":"CAJ","exchange":"NYSE","sector":"Technology","industry":"Office Equipment","country":"JP"},
+    {"name":"Honda Motor Co. Ltd.","ticker":"HMC","exchange":"NYSE","sector":"Consumer Cyclical","industry":"Auto Manufacturers","country":"JP"},
+    {"name":"Mitsubishi UFJ Financial","ticker":"MUFG","exchange":"NYSE","sector":"Financial","industry":"Banks","country":"JP"},
+    {"name":"AstraZeneca PLC","ticker":"AZN","exchange":"NASDAQ","sector":"Healthcare","industry":"Drug Manufacturers","country":"GB"},
+    {"name":"BHP Group Ltd","ticker":"BHP","exchange":"NYSE","sector":"Basic Materials","industry":"Metals & Mining","country":"AU"},
+    {"name":"Rio Tinto Group","ticker":"RIO","exchange":"NYSE","sector":"Basic Materials","industry":"Metals & Mining","country":"GB"},
+    {"name":"Linde plc","ticker":"LIN","exchange":"NYSE","sector":"Basic Materials","industry":"Specialty Chemicals","country":"GB"},
+    {"name":"Airbus SE","ticker":"EADSY","exchange":"OTC","sector":"Industrials","industry":"Aerospace","country":"FR"},
+    {"name":"Siemens AG","ticker":"SIEGY","exchange":"OTC","sector":"Industrials","industry":"Industrial Equipment","country":"DE"},
+    {"name":"Bayer AG","ticker":"BAYRY","exchange":"OTC","sector":"Healthcare","industry":"Drug Manufacturers","country":"DE"},
+    {"name":"Deutsche Telekom AG","ticker":"DTEGY","exchange":"OTC","sector":"Communication","industry":"Telecom","country":"DE"},
+    {"name":"Adidas AG","ticker":"ADDYY","exchange":"OTC","sector":"Consumer Cyclical","industry":"Apparel","country":"DE"},
+    {"name":"BMW Group","ticker":"BMWYY","exchange":"OTC","sector":"Consumer Cyclical","industry":"Auto Manufacturers","country":"DE"},
+    {"name":"Mercedes-Benz Group","ticker":"MBGYY","exchange":"OTC","sector":"Consumer Cyclical","industry":"Auto Manufacturers","country":"DE"},
+    {"name":"Volkswagen AG","ticker":"VWAGY","exchange":"OTC","sector":"Consumer Cyclical","industry":"Auto Manufacturers","country":"DE"},
+    {"name":"Allianz SE","ticker":"ALIZY","exchange":"OTC","sector":"Financial","industry":"Insurance","country":"DE"},
+    {"name":"Anheuser-Busch InBev","ticker":"BUD","exchange":"NYSE","sector":"Consumer Defensive","industry":"Beverages","country":"BE"},
+    {"name":"Unilever PLC","ticker":"UL","exchange":"NYSE","sector":"Consumer Defensive","industry":"Household Products","country":"GB"},
+    {"name":"Reckitt Benckiser Group","ticker":"RBGLY","exchange":"OTC","sector":"Consumer Defensive","industry":"Household Products","country":"GB"},
+    {"name":"Shopify Inc.","ticker":"SHOP","exchange":"NYSE","sector":"Technology","industry":"Software","country":"CA"},
+    {"name":"Canadian National Railway","ticker":"CNI","exchange":"NYSE","sector":"Industrials","industry":"Railroads","country":"CA"},
+    {"name":"Brookfield Asset Mgmt","ticker":"BAM","exchange":"NYSE","sector":"Financial","industry":"Asset Management","country":"CA"},
+    {"name":"Royal Bank of Canada","ticker":"RY","exchange":"NYSE","sector":"Financial","industry":"Banks","country":"CA"},
+    {"name":"TC Energy Corporation","ticker":"TRP","exchange":"NYSE","sector":"Energy","industry":"Oil & Gas Midstream","country":"CA"},
+    {"name":"Shopee / Sea Limited","ticker":"SE","exchange":"NYSE","sector":"Technology","industry":"Internet Services","country":"SG"},
+    {"name":"DBS Group Holdings Ltd","ticker":"DBSDY","exchange":"OTC","sector":"Financial","industry":"Banks","country":"SG"},
+    {"name":"POSCO Holdings Inc.","ticker":"PKX","exchange":"NYSE","sector":"Basic Materials","industry":"Steel","country":"KR"},
+    {"name":"Hyundai Motor Company","ticker":"HYMTF","exchange":"OTC","sector":"Consumer Cyclical","industry":"Auto Manufacturers","country":"KR"},
+    {"name":"LG Energy Solution Ltd","ticker":"LGES","exchange":"KRX","sector":"Technology","industry":"Batteries","country":"KR"},
+    {"name":"SK Hynix Inc.","ticker":"HXSCL","exchange":"OTC","sector":"Technology","industry":"Semiconductors","country":"KR"},
+    {"name":"Nintendo Co. Ltd.","ticker":"NTDOY","exchange":"OTC","sector":"Technology","industry":"Entertainment","country":"JP"},
+    {"name":"Keyence Corporation","ticker":"KYCCF","exchange":"OTC","sector":"Technology","industry":"Scientific Instruments","country":"JP"},
+    {"name":"Recruit Holdings Co.","ticker":"RCRRF","exchange":"OTC","sector":"Industrials","industry":"Staffing","country":"JP"},
+    {"name":"SoftBank Group Corp","ticker":"SFTBY","exchange":"OTC","sector":"Financial","industry":"Asset Management","country":"JP"},
+    {"name":"China Mobile Ltd","ticker":"CHL","exchange":"NYSE","sector":"Communication","industry":"Telecom","country":"CN"},
+    {"name":"Meituan","ticker":"MPNGY","exchange":"OTC","sector":"Technology","industry":"Internet Services","country":"CN"},
+    {"name":"BYD Company Ltd","ticker":"BYDDY","exchange":"OTC","sector":"Consumer Cyclical","industry":"Auto Manufacturers","country":"CN"},
+    {"name":"PDD Holdings Inc.","ticker":"PDD","exchange":"NASDAQ","sector":"Consumer Cyclical","industry":"E-Commerce","country":"CN"},
+    {"name":"JD.com Inc.","ticker":"JD","exchange":"NASDAQ","sector":"Consumer Cyclical","industry":"E-Commerce","country":"CN"},
+    {"name":"NetEase Inc.","ticker":"NTES","exchange":"NASDAQ","sector":"Technology","industry":"Internet Services","country":"CN"},
+    {"name":"Baidu Inc.","ticker":"BIDU","exchange":"NASDAQ","sector":"Technology","industry":"Internet Services","country":"CN"},
+    {"name":"ASM International NV","ticker":"ASMIY","exchange":"OTC","sector":"Technology","industry":"Semiconductors","country":"NL"},
+    {"name":"Infineon Technologies AG","ticker":"IFNNY","exchange":"OTC","sector":"Technology","industry":"Semiconductors","country":"DE"},
+    {"name":"Uber Technologies Inc.","ticker":"UBER","exchange":"NYSE","sector":"Technology","industry":"Software","country":"US"},
+    {"name":"Palantir Technologies Inc.","ticker":"PLTR","exchange":"NASDAQ","sector":"Technology","industry":"Software","country":"US"},
+    {"name":"Spotify Technology S.A.","ticker":"SPOT","exchange":"NYSE","sector":"Communication","industry":"Entertainment","country":"SE"},
+]
 
 
 def _parse_screener_row_standard(
@@ -618,22 +720,29 @@ def _scrape_screener_pages(
 
 
 def scrape_screener() -> List[dict]:
-    """Scrape IPO data from all screener.in IPO listing pages."""
+    """Scrape IPO data from all screener.in IPO listing pages in parallel."""
     all_ipos: List[dict] = []
-    for key, cfg in SCRAPER_URLS.items():
-        try:
-            batch = _scrape_screener_pages(
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
+        futures = {}
+        for key, cfg in SCRAPER_URLS.items():
+            fut = executor.submit(
+                _scrape_screener_pages,
                 base_path=cfg["path"],
                 max_pages=cfg["max_pages"],
                 table_type=cfg["type"],
                 source_status=cfg["status"],
             )
-            all_ipos.extend(batch)
-        except Exception as e:
-            print(f"[IPO Scraper] Screener {key} failed: {e}")
-        # Stagger sources to avoid rate limiting
-        if key != list(SCRAPER_URLS.keys())[-1]:
-            time.sleep(random.uniform(3, 6))
+            futures[fut] = key
+
+        for fut in concurrent.futures.as_completed(futures):
+            key = futures[fut]
+            try:
+                batch = fut.result()
+                print(f"[IPO Scraper] Screener {key} finished: {len(batch)} IPOs")
+                all_ipos.extend(batch)
+            except Exception as e:
+                print(f"[IPO Scraper] Screener {key} failed: {e}")
+
     # Deduplicate by id
     seen: set = set()
     deduped: List[dict] = []
@@ -644,6 +753,50 @@ def scrape_screener() -> List[dict]:
             deduped.append(ipo)
     print(f"[IPO Scraper] Screener all sources: {len(all_ipos)} raw, {len(deduped)} unique")
     return deduped
+
+
+def scrape_global_stocks() -> List[dict]:
+    """Return a curated list of 100+ global stocks (ex-India) with sector data."""
+    out: List[dict] = []
+    for stock in GLOBAL_STOCKS:
+        ticker = stock["ticker"]
+        name = stock["name"]
+        exchange = stock["exchange"]
+        sector = stock["sector"]
+        industry = stock["industry"]
+        country = stock["country"]
+        out.append({
+            "id": f"global-{ticker.lower().replace('.', '-')}",
+            "name": name,
+            "ticker": ticker,
+            "exchange": exchange,
+            "sector": sector,
+            "industry": industry,
+            "status": "listed",
+            "openDate": "",
+            "closeDate": "",
+            "listingDate": "",
+            "description": f"{name} is a {industry.lower()} company listed on {exchange}, headquartered in {country}.",
+            "about": name,
+            "priceBandHigh": 0,
+            "priceBandLow": 0,
+            "lotSize": 0,
+            "issueSize": "",
+            "gmp": 0,
+            "gmpPercent": 0,
+            "subscriptionStatus": "",
+            "anchorInvestors": [],
+            "rhpDate": "",
+            "allotmentDate": "",
+            "refundDate": "",
+            "drhpUrl": "",
+            "rhpUrl": "",
+            "fiscalMetrics": {},
+            "source": "global_stocks",
+            "last_updated": datetime.now(timezone.utc).isoformat(),
+        })
+    print(f"[IPO Scraper] Global stocks: {len(out)}")
+    return out
 
 
 def strip_html(text: str) -> str:
@@ -727,6 +880,7 @@ def main():
     fresh.extend(scrape_chittorgarh())
     fresh.extend(scrape_sec_edgar())
     fresh.extend(scrape_screener())
+    fresh.extend(scrape_global_stocks())
     merged = merge_ipos(existing, fresh)
     save_ipos(merged)
     save_cache_meta({"last_updated": datetime.now(timezone.utc).isoformat()})
