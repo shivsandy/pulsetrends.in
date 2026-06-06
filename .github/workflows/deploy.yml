@@ -1,6 +1,8 @@
 name: Data Pipeline & Deploy
 
 on:
+  push:
+    branches: [master]
   schedule:
     - cron: '0 5 */3 * *'
   workflow_dispatch:
