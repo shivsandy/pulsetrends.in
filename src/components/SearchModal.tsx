@@ -7,6 +7,7 @@ import { ipoStocks } from '../data/ipoData';
 import { newsArticles } from '../data/newsData';
 import { cryptoProjects } from '../data/cryptoData';
 import { slugify } from '../seo/config';
+import { trackSearch } from '../lib/analytics';
 
 interface SearchResult {
   type: 'ipo' | 'news' | 'airdrop';
@@ -98,9 +99,10 @@ export default function SearchModal({ onClose }: { onClose: () => void }) {
   }, [query]);
 
   const handleSelect = useCallback((url: string) => {
+    if (query.trim()) trackSearch(query.trim());
     onClose();
     navigate(url);
-  }, [navigate, onClose]);
+  }, [navigate, onClose, query]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'ArrowDown') {

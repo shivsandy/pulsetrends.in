@@ -1,0 +1,319 @@
+export interface TopicConfig {
+  slug: string;
+  title: string;
+  description: string;
+  keywords: string;
+  ogType: 'article';
+  h1: string;
+  sections: { h2: string; content: string }[];
+  faqs: { q: string; a: string }[];
+  relatedStocks?: string[];
+  relatedCoins?: string[];
+}
+
+export const TOPIC_CONFIGS: Record<string, TopicConfig> = {
+  'what-is-cryptocurrency': {
+    slug: 'what-is-cryptocurrency',
+    title: 'What is Cryptocurrency? A Complete Beginner\'s Guide',
+    description: 'Learn what cryptocurrency is, how it works, its benefits and risks, and how to get started with digital assets in India. Complete beginner\'s guide.',
+    keywords: 'cryptocurrency, what is cryptocurrency, crypto explained, digital currency, blockchain, crypto for beginners, cryptocurrency India',
+    ogType: 'article',
+    h1: 'What is Cryptocurrency? A Complete Beginner\'s Guide',
+    sections: [
+      {
+        h2: 'What is Cryptocurrency? (Quick Answer)',
+        content: 'Cryptocurrency is a digital or virtual currency that uses cryptography for security and operates on decentralised networks called blockchains. Unlike traditional currencies issued by governments (like the Indian Rupee or US Dollar), cryptocurrencies are not controlled by any central authority such as a bank or government. Bitcoin, created in 2009, was the first cryptocurrency and remains the most valuable by market capitalisation.'
+      },
+      {
+        h2: 'How Does Cryptocurrency Work?',
+        content: 'Cryptocurrencies operate on blockchain technology — a distributed ledger that records all transactions across a network of computers. When you send cryptocurrency to someone, the transaction is broadcast to the network, verified by participants (miners or validators), and added as a permanent block to the chain. This process ensures security, transparency, and immutability without requiring a trusted third party.'
+      },
+      {
+        h2: 'Key Types of Cryptocurrencies',
+        content: 'There are thousands of cryptocurrencies serving different purposes. Bitcoin (BTC) is a store of value and digital gold. Ethereum (ETH) enables smart contracts and decentralised applications. Stablecoins like USDT and USDC maintain a fixed value (typically $1) and are used for trading and payments. Other categories include DeFi tokens (AAVE, UNI), exchange tokens (BNB), and meme coins (DOGE, SHIB).'
+      },
+      {
+        h2: 'How to Buy Cryptocurrency in India',
+        content: 'To buy cryptocurrency in India, you need to: (1) Choose a reputable crypto exchange like CoinDCX, WazirX, or CoinSwitch; (2) Complete KYC verification with your PAN card and Aadhaar; (3) Deposit INR via UPI, bank transfer, or debit card; (4) Place your first trade to buy Bitcoin, Ethereum, or other cryptocurrencies. Indian exchanges charge 0% to 0.1% trading fees and are regulated under India\'s PMLA guidelines.'
+      },
+      {
+        h2: 'Benefits of Cryptocurrency',
+        content: 'Cryptocurrency offers several advantages over traditional finance: decentralisation removes the need for intermediaries, transactions are faster and cheaper for cross-border transfers, blockchain provides transparency and security, and cryptocurrencies are accessible to anyone with an internet connection. Additionally, cryptocurrencies can serve as a hedge against inflation in countries with unstable currencies.'
+      },
+      {
+        h2: 'Risks of Cryptocurrency',
+        content: 'Cryptocurrency investing carries significant risks. Price volatility is extreme — Bitcoin has experienced 50%+ drops multiple times. Regulatory uncertainty exists globally, including in India where crypto taxation is 30% on gains plus 1% TDS. Security risks include hacks of exchanges and wallets. Users should only invest what they can afford to lose and use secure storage methods like hardware wallets for larger holdings.'
+      },
+      {
+        h2: 'Cryptocurrency Regulation in India',
+        content: 'India\'s cryptocurrency regulatory landscape has evolved significantly. The Supreme Court lifted the RBI banking ban in 2020. In 2022, India introduced a 30% tax on crypto gains and 1% TDS on transactions. Crypto exchanges in India comply with PMLA anti-money laundering requirements. While not fully regulated as legal tender, cryptocurrency trading and investing are legal in India with applicable tax obligations.'
+      },
+      {
+        h2: 'Top Cryptocurrencies by Market Cap',
+        content: 'As of 2026, the largest cryptocurrencies by market capitalisation are: Bitcoin (BTC) at approximately $1.4 trillion, Ethereum (ETH) at $241 billion, Tether (USDT) at $187 billion, and several other major assets. PulseTrends tracks 160+ cryptocurrencies with AI-powered analysis, conviction scores, and market data to help investors make informed decisions.'
+      },
+      {
+        h2: 'Getting Started with Crypto at PulseTrends',
+        content: 'PulseTrends provides comprehensive cryptocurrency coverage including real-time prices, market analysis, AI-driven sentiment scores, and detailed project reviews. Track Bitcoin, Ethereum, and 160+ cryptocurrencies with in-depth analysis, risk assessments, and investment verdicts tailored for the Indian market.'
+      },
+    ],
+    faqs: [
+      { q: 'What is cryptocurrency in simple words?', a: 'Cryptocurrency is digital money that uses encryption to secure transactions and operates without banks or governments. Think of it as internet-native money that you can send to anyone in the world instantly.' },
+      { q: 'Is cryptocurrency legal in India?', a: 'Yes, cryptocurrency trading and investing are legal in India. The government imposes a 30% tax on crypto gains and 1% TDS on transactions. Crypto exchanges must comply with PMLA regulations.' },
+      { q: 'Can cryptocurrency be converted to cash?', a: 'Yes, you can sell cryptocurrency on Indian exchanges like CoinDCX or WazirX and withdraw INR to your bank account via UPI or bank transfer.' },
+      { q: 'Which cryptocurrency should I buy as a beginner?', a: 'Bitcoin (BTC) and Ethereum (ETH) are the most established cryptocurrencies with the largest market capitalisations and are recommended for beginners due to their liquidity and track record.' },
+      { q: 'How is cryptocurrency taxed in India?', a: 'Cryptocurrency gains are taxed at 30% in India. A 1% TDS is deducted on all crypto transactions. Losses from one crypto cannot offset gains from another for tax purposes.' },
+    ],
+    relatedCoins: ['BTC', 'ETH', 'USDT'],
+  },
+  'what-is-bitcoin': {
+    slug: 'what-is-bitcoin',
+    title: 'What is Bitcoin (BTC)? Complete Guide to the World\'s First Cryptocurrency',
+    description: 'Learn what Bitcoin is, how it works, its history, price analysis, mining, and investment potential. Complete guide to BTC for Indian investors.',
+    keywords: 'bitcoin, what is bitcoin, BTC, bitcoin explained, bitcoin price, bitcoin mining, digital gold, cryptocurrency',
+    ogType: 'article',
+    h1: 'What is Bitcoin (BTC)? Complete Guide to the World\'s First Cryptocurrency',
+    sections: [
+      {
+        h2: 'What is Bitcoin? (Quick Answer)',
+        content: 'Bitcoin (BTC) is the world\'s first decentralised digital currency, created in 2009 by an anonymous person or group using the name Satoshi Nakamoto. It operates on a peer-to-peer network without central banks or intermediaries, using blockchain technology to verify transactions. As of 2026, Bitcoin has a market capitalisation of approximately $1.4 trillion and is the largest cryptocurrency by market cap.'
+      },
+      {
+        h2: 'How Does Bitcoin Work?',
+        content: 'Bitcoin uses a technology called blockchain — a public, distributed ledger that records every transaction ever made. Transactions are verified by network participants called miners who solve complex mathematical problems using specialised hardware. Once verified, transactions are grouped into "blocks" and added to the chain. This consensus mechanism, called Proof of Work (PoW), ensures the network remains secure and decentralised.'
+      },
+      {
+        h2: 'Bitcoin Price History',
+        content: 'Bitcoin\'s price history has been characterised by extreme volatility and remarkable growth. From less than $0.01 in 2009, Bitcoin reached $1 in 2011, $1,000 in 2013, $19,000 in 2017, $68,000 in 2021, and has continued to grow with periodic corrections. As of June 2026, Bitcoin trades at approximately $70,863. Each halving event (approximately every 4 years) has historically preceded significant price appreciation by reducing new supply.'
+      },
+      {
+        h2: 'How to Buy Bitcoin in India',
+        content: 'Buying Bitcoin in India is straightforward through registered cryptocurrency exchanges. Choose a platform like CoinDCX, WazirX, or CoinSwitch, complete KYC verification with PAN and Aadhaar, deposit INR via UPI or bank transfer, and purchase Bitcoin. Indian exchanges support fractional buying (you can buy as little as ₹100 worth of Bitcoin). Bitcoin purchases are subject to 30% capital gains tax and 1% TDS under Indian law.'
+      },
+      {
+        h2: 'Bitcoin Mining Explained',
+        content: 'Bitcoin mining is the process of creating new Bitcoins and verifying transactions. Miners compete to solve complex cryptographic puzzles using ASIC (Application-Specific Integrated Circuit) hardware. The first miner to solve the puzzle adds a new block to the blockchain and receives newly created Bitcoins as a reward. The current block reward is 3.125 BTC (after the 2024 halving). Mining requires significant electricity and specialised equipment, making it largely industrialised.'
+      },
+      {
+        h2: 'Bitcoin vs Traditional Investments',
+        content: 'Bitcoin offers unique characteristics compared to traditional investments like stocks, gold, and real estate. It has a fixed supply of 21 million coins (making it deflationary), operates 24/7/365, is globally accessible, and provides portfolio diversification. However, it has higher volatility than gold or stocks and lacks the dividend yield of equities. Many institutional investors now allocate 1-5% of portfolios to Bitcoin as a hedge against monetary debasement.'
+      },
+      {
+        h2: 'Risks of Investing in Bitcoin',
+        content: 'Bitcoin investing carries significant risks including extreme price volatility (30-50% corrections are common), regulatory uncertainty across jurisdictions, security risks (exchange hacks, wallet loss), and technological risks from potential quantum computing threats. Investors should use reputable exchanges, store coins in hardware wallets for long-term holding, and only invest what they can afford to lose.'
+      },
+      {
+        h2: 'Bitcoin Price Analysis on PulseTrends',
+        content: 'PulseTrends provides comprehensive Bitcoin analysis including real-time BTC price tracking, AI-powered market sentiment analysis, conviction scores, technical indicators, and expert market commentary. Our platform tracks Bitcoin alongside 160+ cryptocurrencies with in-depth analysis tailored for Indian investors.'
+      },
+    ],
+    faqs: [
+      { q: 'Who created Bitcoin?', a: 'Bitcoin was created by an anonymous person or group using the pseudonym Satoshi Nakamoto in 2008, with the first block mined in January 2009.' },
+      { q: 'How many Bitcoins are there?', a: 'The maximum supply of Bitcoin is capped at 21 million coins. As of 2026, approximately 19.7 million Bitcoins have been mined, leaving about 1.3 million yet to be created.' },
+      { q: 'Is Bitcoin legal in India?', a: 'Yes, Bitcoin is legal to own, trade, and invest in India. Gains are taxed at 30% with 1% TDS on transactions.' },
+      { q: 'Can I buy a fraction of a Bitcoin?', a: 'Yes, Bitcoin is divisible to 8 decimal places. The smallest unit (0.00000001 BTC) is called a Satoshi. You can buy as little as ₹100 worth of Bitcoin on Indian exchanges.' },
+      { q: 'What is a Bitcoin halving?', a: 'A Bitcoin halving is an event that occurs approximately every 4 years, cutting the block reward for miners in half. This reduces the rate of new Bitcoin supply, historically leading to price increases.' },
+    ],
+    relatedCoins: ['BTC', 'ETH', 'USDT'],
+  },
+  'what-is-ethereum': {
+    slug: 'what-is-ethereum',
+    title: 'What is Ethereum (ETH)? Complete Guide to the World\'s Smart Contract Platform',
+    description: 'Learn what Ethereum is, how smart contracts work, ETH 2.0 upgrade, DeFi ecosystem, and investment potential. Complete guide for Indian investors.',
+    keywords: 'ethereum, what is ethereum, ETH, smart contracts, ethereum 2.0, blockchain, DeFi, dApps, cryptocurrency',
+    ogType: 'article',
+    h1: 'What is Ethereum (ETH)? Complete Guide to the World\'s Smart Contract Platform',
+    sections: [
+      {
+        h2: 'What is Ethereum? (Quick Answer)',
+        content: 'Ethereum is a decentralised blockchain platform that enables smart contracts and decentralised applications (dApps) to run without downtime, fraud, or third-party interference. Created by Vitalik Buterin in 2015, Ethereum is the second-largest cryptocurrency by market capitalisation at approximately $241 billion. Its native cryptocurrency, Ether (ETH), powers the network.'
+      },
+      {
+        h2: 'How Does Ethereum Work?',
+        content: 'Ethereum operates as a global, open-source platform for decentralised applications. Developers write smart contracts — self-executing code that automatically runs when predetermined conditions are met. These smart contracts power a vast ecosystem including DeFi (decentralised finance) protocols, NFT marketplaces, decentralised exchanges, and gaming applications. Ethereum transitioned from Proof of Work to Proof of Stake (PoS) in 2022, reducing energy consumption by 99.9%.'
+      },
+      {
+        h2: 'Ethereum vs Bitcoin: Key Differences',
+        content: 'While Bitcoin primarily serves as a store of value (digital gold), Ethereum is a programmable blockchain platform for building applications. Bitcoin uses Proof of Work mining, while Ethereum uses Proof of Stake. Ethereum has a flexible supply with no maximum cap, supports smart contracts, and processes transactions faster with lower fees through its Layer 2 scaling solutions. Bitcoin is more established as a store of value; Ethereum offers greater utility and growth potential.'
+      },
+      {
+        h2: 'What is DeFi?',
+        content: 'Decentralised Finance (DeFi) is a blockchain-based financial ecosystem that operates without traditional intermediaries like banks, brokers, or exchanges. Built primarily on Ethereum, DeFi protocols offer lending, borrowing, trading, yield farming, and staking services through smart contracts. Total value locked (TVL) in DeFi protocols exceeds $50 billion, with platforms like Uniswap, Aave, and MakerDAO leading the ecosystem.'
+      },
+      {
+        h2: 'How to Buy Ethereum in India',
+        content: 'Ethereum can be purchased on Indian cryptocurrency exchanges like CoinDCX, WazirX, and CoinSwitch. Complete KYC verification with PAN and Aadhaar, deposit INR via UPI or bank transfer, and buy ETH. Ethereum can be purchased fractionally (as little as ₹100). All transactions are subject to India\'s 30% crypto tax and 1% TDS.'
+      },
+      {
+        h2: 'Ethereum Use Cases',
+        content: 'Ethereum\'s programmability enables diverse applications: Decentralised Finance (DeFi) for lending and trading without banks; Non-Fungible Tokens (NFTs) for digital ownership; Decentralised Autonomous Organisations (DAOs) for community governance; Supply Chain tracking; Identity verification; and Gaming/metaverse applications. Enterprise adoption includes JPMorgan, Microsoft, and Samsung building on Ethereum.'
+      },
+      {
+        h2: 'Risks of Ethereum Investing',
+        content: 'Ethereum investment risks include smart contract bugs and hacks (over $2 billion lost from DeFi exploits), protocol competition from Solana, Avalanche, and other Layer 1 blockchains, regulatory uncertainty around DeFi protocols, fee volatility during network congestion, and the inherent volatility of cryptocurrency markets.'
+      },
+      {
+        h2: 'Ethereum Price Analysis on PulseTrends',
+        content: 'PulseTrends provides real-time Ethereum price tracking, AI-powered market analysis, conviction scores, and comprehensive research. Track ETH alongside 160+ cryptocurrencies with expert commentary and data-driven insights for Indian investors.'
+      },
+    ],
+    faqs: [
+      { q: 'What is the difference between Ethereum and Ether?', a: 'Ethereum is the blockchain platform, while Ether (ETH) is the native cryptocurrency used to power transactions and applications on the network.' },
+      { q: 'What is Ethereum 2.0?', a: 'Ethereum 2.0 (now called the Consensus Layer) was the upgrade that transitioned Ethereum from Proof of Work to Proof of Stake, reducing energy consumption by 99.9% and setting the foundation for future scalability improvements.' },
+      { q: 'Can Ethereum reach $10,000?', a: 'Price predictions vary widely among analysts. Factors affecting ETH price include DeFi adoption, institutional investment, Layer 2 scaling success, and overall crypto market conditions.' },
+      { q: 'Is Ethereum a good investment in 2026?', a: 'Ethereum has strong fundamentals with the largest developer ecosystem in crypto. However, like all crypto investments, it carries significant risk and should be part of a diversified portfolio.' },
+      { q: 'What are gas fees on Ethereum?', a: 'Gas fees are transaction costs paid to validators for processing transactions on Ethereum. Fees vary based on network congestion and can range from a few cents to several dollars per transaction.' },
+    ],
+    relatedCoins: ['ETH', 'BTC', 'SOL'],
+  },
+  'what-is-ipo': {
+    slug: 'what-is-ipo',
+    title: 'What is an IPO? Complete Guide to Initial Public Offerings for Indian Investors',
+    description: 'Learn what an IPO is, how it works, how to apply, IPO GMP explained, allotment process, and listing strategies. Complete Indian IPO investing guide.',
+    keywords: 'IPO, what is IPO, initial public offering, IPO explained, IPO India, how to apply for IPO, IPO GMP, IPO allotment, stock market',
+    ogType: 'article',
+    h1: 'What is an IPO? Complete Guide to Initial Public Offerings for Indian Investors',
+    sections: [
+      {
+        h2: 'What is an IPO? (Quick Answer)',
+        content: 'An Initial Public Offering (IPO) is the process where a private company sells shares to the public for the first time to raise capital from investors. When a company goes public, its shares begin trading on a stock exchange like BSE or NSE in India. IPOs allow companies to raise funds for expansion, debt repayment, or providing exit opportunities for existing investors. PulseTrends tracks over 1,000 IPOs with comprehensive analysis.'
+      },
+      {
+        h2: 'How Does an IPO Work?',
+        content: 'The IPO process begins with a company filing a Draft Red Herring Prospectus (DRHP) with SEBI, detailing its business, financials, and risks. After SEBI approval, the company sets a price band and opens the IPO for subscription. Investors can apply during the bidding period (typically 3-5 days). After the IPO closes, shares are allotted, and the stock lists on the exchange. The entire process takes 2-3 months from filing to listing.'
+      },
+      {
+        h2: 'Types of IPOs in India',
+        content: 'Indian IPOs come in several types: Mainboard IPOs are larger issues (minimum ₹10 crore) listed on BSE/NSE with full SEBI oversight. SME IPOs are smaller issues listed on BSE SME or NSE Emerge platforms with relaxed regulations. Book Building IPOs determine price based on investor demand. Fixed Price IPOs set a fixed issue price. Offer for Sale (OFS) involves existing shareholders selling their stakes, while Fresh Issue creates new shares for the company.'
+      },
+      {
+        h2: 'How to Apply for an IPO in India',
+        content: 'To apply for an IPO in India, you need: (1) A demat account with a SEBI-registered broker like Zerodha, Groww, Upstox, or Angel One; (2) A linked bank account for UPI; (3) During the IPO bidding period, log into your broker app, select the IPO, enter your bid quantity and price, and authorise the UPI mandate. Your application amount is blocked until allotment. You can apply via ASBA (Applications Supported by Blocked Amount) through your bank.'
+      },
+      {
+        h2: 'What is IPO GMP? (Grey Market Premium)',
+        content: 'IPO Grey Market Premium (GMP) is the unofficial price at which IPO shares trade before listing on the stock exchange. GMP indicates market demand and expected listing gains. For example, if an IPO has a issue price of ₹200 and GMP is ₹80, the expected listing price is ₹280 (40% gain). GMP is unregulated and carries no guarantee. PulseTrends tracks IPO GMP, subscription status, and provides pre-listing analysis for all major IPOs.'
+      },
+      {
+        h2: 'How IPO Allotment Works',
+        content: 'IPO allotment is processed after the bidding period closes. If the IPO is oversubscribed, shares are allocated through a lottery system for retail investors (applications up to ₹2 lakh). Basis of Allotment is done by the registrar, typically within 6-7 days after the IPO closes. You can check allotment status on the registrar\'s website (Link Intime, KFintech) or your broker app using your PAN or application number.'
+      },
+      {
+        h2: 'IPO Listing Day: What to Expect',
+        content: 'On listing day, the stock begins trading on the exchange at a listing price determined by market demand. A strong IPO may list at 20-50% above issue price. Some investors sell on listing day for quick gains, while others hold for long-term. Key factors affecting listing performance include overall market conditions, subscription levels, GMP trends, and company fundamentals.'
+      },
+      {
+        h2: 'Best IPO Analysis on PulseTrends',
+        content: 'PulseTrends provides India\'s most comprehensive IPO analysis with 21-section research reports covering company overview, financial analysis, valuation, SWOT, risk assessment, peer comparison, and investment verdicts. Track over 1,000 IPOs with AI-powered scoring, GMP data, and expert analysis tailored for Indian investors.'
+      },
+    ],
+    faqs: [
+      { q: 'What is the minimum amount required to apply for an IPO?', a: 'Retail investors can apply for a minimum of 1 lot (typically ₹10,000-₹15,000). The maximum retail application is ₹2,00,000. Beyond that, you fall under HNI (High Net Worth Individual) category.' },
+      { q: 'Can I sell IPO shares immediately on listing day?', a: 'Yes, you can sell IPO shares on the listing day. Many investors sell on listing day to lock in gains if the stock lists at a premium above the issue price.' },
+      { q: 'What happens if an IPO is undersubscribed?', a: 'If an IPO is undersubscribed, the issue may be extended, the price band may be revised downward, or in extreme cases, the IPO may be withdrawn.' },
+      { q: 'How is IPO oversubscription calculated?', a: 'Oversubscription is calculated as total bids divided by shares offered. For example, if an IPO received bids for 50 lakh shares against 10 lakh shares offered, it is 5x oversubscribed.' },
+      { q: 'What is the difference between mainboard and SME IPO?', a: 'Mainboard IPOs are larger (₹10cr+), listed on BSE/NSE, with stricter SEBI regulations. SME IPOs are smaller, listed on BSE SME/NSE Emerge, with relaxed compliance requirements.' },
+    ],
+    relatedStocks: ['RELIANCE', 'TCS', 'INFY'],
+  },
+  'how-to-buy-cryptocurrency-in-india': {
+    slug: 'how-to-buy-cryptocurrency-in-india',
+    title: 'How to Buy Cryptocurrency in India: Step-by-Step Guide (2026)',
+    description: 'Complete step-by-step guide on how to buy cryptocurrency in India. Best exchanges, KYC process, payment methods, taxes, and security tips for Indian investors.',
+    keywords: 'buy cryptocurrency India, how to buy crypto India, crypto exchanges India, buy Bitcoin India, CoinDCX, WazirX, CoinSwitch, crypto India',
+    ogType: 'article',
+    h1: 'How to Buy Cryptocurrency in India: Step-by-Step Guide (2026)',
+    sections: [
+      {
+        h2: 'How to Buy Cryptocurrency in India (Quick Guide)',
+        content: 'Buying cryptocurrency in India requires 4 simple steps: (1) Choose a SEBI-compliant crypto exchange; (2) Complete KYC verification with PAN Card and Aadhaar; (3) Deposit Indian Rupees via UPI, bank transfer, or debit card; (4) Buy Bitcoin, Ethereum, or any supported cryptocurrency. Popular Indian exchanges include CoinDCX, WazirX, and CoinSwitch, all offering zero-fee INR deposits and user-friendly mobile apps.'
+      },
+      {
+        h2: 'Best Crypto Exchanges in India (2026)',
+        content: 'The top cryptocurrency exchanges in India as of 2026 are: CoinDCX (best for beginners, 300+ coins, insured wallet), WazirX (largest trading volume, integrated with Binance), CoinSwitch (simple interface, best for first-time buyers), ZebPay (India\'s oldest exchange, high liquidity), and BitBNS (low fees, advanced trading features). All major exchanges comply with PMLA regulations and offer 24/7 customer support.'
+      },
+      {
+        h2: 'Step 1: Choose an Exchange and Sign Up',
+        content: 'Download the app or visit the website of your chosen exchange. Sign up with your email address and phone number. Set a strong password and enable two-factor authentication (2FA) immediately. Most exchanges offer a seamless onboarding process that takes 5-10 minutes to complete.'
+      },
+      {
+        h2: 'Step 2: Complete KYC Verification',
+        content: 'Indian exchanges require mandatory KYC verification under PMLA guidelines. You will need: your PAN Card (for tax purposes), Aadhaar Card (for identity verification), and a selfie or live photo for facial recognition. KYC verification typically takes 5 minutes to 24 hours. Without KYC, you cannot deposit INR or trade on Indian exchanges.'
+      },
+      {
+        h2: 'Step 3: Deposit INR',
+        content: 'After KYC approval, deposit Indian Rupees into your exchange wallet. Most Indian exchanges offer multiple deposit options: UPI (instant, zero fee), NEFT/IMPS bank transfer (1-2 hours), and debit card (instant, 1-2% fee). Minimum deposit is typically ₹100-₹500. UPI is the most popular method with instant settlement and no charges.'
+      },
+      {
+        h2: 'Step 4: Buy Cryptocurrency',
+        content: 'Once your INR wallet is funded, navigate to the buy/sell section of the exchange. Select the cryptocurrency you want to purchase (Bitcoin, Ethereum, etc.), enter the amount in INR or the coin quantity, review the price and fees, and confirm the transaction. You can buy fractional amounts — as little as ₹100 worth of Bitcoin. Your purchased coins will appear in your exchange wallet instantly.'
+      },
+      {
+        h2: 'Step 5: Secure Your Cryptocurrency',
+        content: 'For long-term holding, transfer your cryptocurrency from the exchange to a personal wallet. Options include: hardware wallets like Ledger or Trezor (most secure, ₹5,000-₹15,000), software wallets like MetaMask or Trust Wallet (free, mobile-friendly), and paper wallets (offline storage). Exchanges are vulnerable to hacks, so storing large amounts on exchanges is not recommended.'
+      },
+      {
+        h2: 'Cryptocurrency Taxation in India',
+        content: 'India taxes cryptocurrency gains at 30% under Section 115BBH of the Income Tax Act. A 1% TDS is deducted on all crypto transactions. Losses from crypto cannot be offset against gains. Crypto must be declared in your annual ITR filing under "Income from Other Sources" or "Capital Gains". Tax is applicable on all crypto-to-crypto trades, not just crypto-to-INR conversions.'
+      },
+    ],
+    faqs: [
+      { q: 'What is the minimum amount to buy crypto in India?', a: 'Most Indian exchanges allow you to buy as little as ₹100 worth of cryptocurrency. There is no upper limit for purchase, subject to your bank\'s transaction limits.' },
+      { q: 'Which crypto exchange is best for beginners in India?', a: 'CoinSwitch and CoinDCX are best for beginners due to their simple interfaces, zero-fee INR deposits, and educational resources.' },
+      { q: 'Can I buy crypto with cash in India?', a: 'No, legitimate exchanges do not accept cash deposits. All transactions must be through banking channels (UPI, NEFT, IMPS) with full KYC compliance.' },
+      { q: 'Is crypto safe from government seizure in India?', a: 'While cryptocurrency is legal in India, the government can track transactions through exchange KYC data and blockchain analytics. Always comply with tax obligations.' },
+      { q: 'Which cryptocurrency should I buy first in India?', a: 'Bitcoin (BTC) and Ethereum (ETH) are recommended for first-time buyers due to their track record, liquidity, and widespread acceptance.' },
+    ],
+    relatedCoins: ['BTC', 'ETH', 'USDT'],
+  },
+  'how-to-apply-for-ipo': {
+    slug: 'how-to-apply-for-ipo',
+    title: 'How to Apply for an IPO in India: Step-by-Step Guide (2026)',
+    description: 'Complete step-by-step guide on how to apply for an IPO in India. ASBA, UPI, demat account, bidding process, allotment check, and listing day strategies.',
+    keywords: 'apply IPO India, how to apply for IPO, IPO application, ASBA, UPI IPO, demat account, IPO bidding, IPO allotment, Zerodha, Groww',
+    ogType: 'article',
+    h1: 'How to Apply for an IPO in India: Step-by-Step Guide (2026)',
+    sections: [
+      {
+        h2: 'How to Apply for an IPO in India (Quick Guide)',
+        content: 'Applying for an IPO requires: (1) A demat and trading account with a SEBI-registered broker; (2) A linked bank account with UPI enabled; (3) During the IPO bidding window, log into your broker app, select the IPO, enter bid details, and authorise payment via UPI. Your funds are blocked until allotment. PulseTrends tracks all upcoming IPOs with detailed analysis and GMP data to help you make informed decisions.'
+      },
+      {
+        h2: 'Prerequisites for IPO Application',
+        content: 'Before applying for an IPO, ensure you have: A demat account with CDSL or NSDL (offered by brokers like Zerodha, Groww, Upstox, Angel One); A trading account linked to your demat; A savings bank account with UPI enabled; Your PAN Card linked to your demat account; Sufficient funds for the application amount. All these can be set up within 24 hours through any major broker\'s online account opening process.'
+      },
+      {
+        h2: 'Step 1: Find Upcoming IPOs',
+        content: 'Track the IPO calendar on PulseTrends to stay updated on upcoming IPOs. Key dates to watch: Opening Date (when bidding starts), Closing Date (when bidding ends), Allotment Date (when shares are allocated), and Listing Date (when stock starts trading). Our platform provides comprehensive details including price band, lot size, issue size, and GMP for every IPO.'
+      },
+      {
+        h2: 'Step 2: Apply Through Your Broker (ASBA)',
+        content: 'All IPO applications in India use ASBA (Applications Supported by Blocked Amount). Log into your broker\'s trading app or website (Zerodha Kite, Groww, Upstox Pro, etc.). Navigate to the IPO section, select the IPO you want to apply for, enter your bid quantity (minimum 1 lot) and price (within the price band), select your demat account, and submit. Your application amount is blocked in your bank account.'
+      },
+      {
+        h2: 'Step 3: Authorise via UPI',
+        content: 'After submitting your IPO application through your broker, you will receive a UPI mandate request on your UPI-enabled phone (Google Pay, PhonePe, Paytm, BHIM). Open the UPI app, review the mandate details (amount, IPO name, validity), and authorise with your UPI PIN. The mandate blocks the application amount until allotment. If not allotted, the mandate is automatically cancelled and funds are released.'
+      },
+      {
+        h2: 'Step 4: Check Allotment Status',
+        content: 'IPO allotment status is typically available 5-7 days after the IPO closes. You can check allotment on: the registrar\'s website (Link Intime or KFintech) using your PAN or application number; your broker\'s trading platform; or the BSE/NSE website. If you receive allotment, shares will be credited to your demat account 2-3 days before listing.'
+      },
+      {
+        h2: 'Step 5: Listing Day Strategy',
+        content: 'On listing day, the stock opens for trading on the exchange. Three common strategies: (1) Sell on listing day to lock in gains if listing price is above issue price; (2) Hold for medium-term if fundamentals are strong and GMP indicates sustained demand; (3) Hold long-term if you believe in the company\'s growth story. PulseTrends provides pre-listing analysis and listing gain estimates to guide your decision.'
+      },
+      {
+        h2: 'Common IPO Application Mistakes to Avoid',
+        content: 'Avoid these common mistakes: Bidding at the cut-off price when you should bid at a specific price for better allotment chances; Applying from multiple demat accounts with the same PAN (applications will be rejected); Incorrect PAN or demat details; Insufficient funds for the UPI mandate; Missing the UPI mandate authorisation deadline (typically 5 PM on bidding day).'
+      },
+    ],
+    faqs: [
+      { q: 'Can I apply for an IPO without a demat account?', a: 'No, a demat account is mandatory for IPO applications in India. You can open one online through brokers like Zerodha, Groww, or Upstox within 24 hours.' },
+      { q: 'What is the minimum investment for an IPO?', a: 'The minimum investment is 1 lot, typically ranging from ₹10,000 to ₹15,000 depending on the IPO price band and lot size.' },
+      { q: 'Can I apply for an IPO through my bank?', a: 'Yes, most banks offer IPO application through their internet banking platforms via ASBA. You can apply through SBI, HDFC, ICICI, and other major banks.' },
+      { q: 'What happens if I don\'t get IPO allotment?', a: 'If you don\'t get allotment, the UPI mandate is automatically cancelled and your blocked funds are released within 2-3 days after the allotment date.' },
+      { q: 'Can I apply for an IPO from multiple accounts?', a: 'You can apply from multiple demat accounts only if they have different PAN numbers. Applications with the same PAN from multiple accounts will be rejected.' },
+    ],
+    relatedStocks: ['TCS', 'RELIANCE', 'HDFC'],
+  },
+};

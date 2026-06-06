@@ -2,16 +2,23 @@ import { Activity, TrendingUp, Brain, BarChart3, User, Edit3, Shield } from 'luc
 import PageSeo from '../components/PageSeo';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { ROUTES } from '../seo/routes';
+import { SITE } from '../seo/config';
+import { personSchema } from '../seo/schema';
 
 export default function AboutPage() {
+  const authorSchema = personSchema('Shiva Sandeep', `${SITE.origin}/about`, 'Editor & Analyst', 'Shiva Sandeep is the editor and analyst at PulseTrends, providing AI-powered IPO and crypto market intelligence.');
   return (
     <>
       <PageSeo
-        meta={ROUTES.about}
+        meta={{
+          ...ROUTES.about,
+          schema: { '@context': 'https://schema.org', '@graph': [authorSchema] },
+        }}
         breadcrumbs={[
           { name: 'Home', path: '/' },
           { name: 'About', path: '/about' },
         ]}
+        imageOverride={`${SITE.origin}/og-default.png`}
       />
       <div className="max-w-3xl mx-auto page-content animate-fade-in">
         <Breadcrumbs items={[{ name: 'Home', path: '/' }, { name: 'About' }]} />

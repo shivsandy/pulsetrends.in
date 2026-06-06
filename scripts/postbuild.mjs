@@ -1,5 +1,5 @@
-import { readFileSync, writeFileSync, copyFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { readFileSync, writeFileSync, copyFileSync, existsSync, readdirSync, mkdirSync, statSync } from 'node:fs';
+import { resolve, dirname } from 'node:path';
 
 const SITE_ORIGIN = 'https://pulsetrends.in';
 
@@ -13,6 +13,14 @@ const STATIC_ROUTES = [
   { path: '/privacy-policy', priority: '0.3', changefreq: 'yearly' },
   { path: '/terms', priority: '0.3', changefreq: 'yearly' },
   { path: '/cookies', priority: '0.3', changefreq: 'yearly' },
+  { path: '/learn', priority: '0.7', changefreq: 'weekly' },
+  { path: '/learn/what-is-cryptocurrency', priority: '0.8', changefreq: 'monthly' },
+  { path: '/learn/what-is-bitcoin', priority: '0.8', changefreq: 'monthly' },
+  { path: '/learn/what-is-ethereum', priority: '0.8', changefreq: 'monthly' },
+  { path: '/learn/what-is-ipo', priority: '0.8', changefreq: 'monthly' },
+  { path: '/learn/how-to-buy-cryptocurrency-in-india', priority: '0.8', changefreq: 'monthly' },
+  { path: '/learn/how-to-apply-for-ipo', priority: '0.8', changefreq: 'monthly' },
+  { path: '/author/shiva-sandeep', priority: '0.6', changefreq: 'weekly' },
 ];
 
 function slugify(s) {
@@ -148,7 +156,7 @@ function buildHeaders() {
   x-frame-options: DENY
   referrer-policy: strict-origin-when-cross-origin
   permissions-policy: camera=(), microphone=(), geolocation=(), interest-cohort=(), payment=(), usb=(), magnetometer=(), gyroscope=()
-  content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com https://*.unsplash.com data: blob:; connect-src 'self' https://api.unsplash.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com https://*.unsplash.com https://www.google-analytics.com https://www.googletagmanager.com data: blob:; connect-src 'self' https://api.unsplash.com https://www.google-analytics.com https://www.googletagmanager.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 `;
 }
 
@@ -185,6 +193,16 @@ async function main() {
       copyFileSync(srcPath, destPath);
       console.log(`[postbuild] Copied ${f} to dist/`);
     }
+  }
+
+  // Copy ipoComprehensiveAnalysis.json for runtime fetch (avoids 34MB bundle)
+  const analysisSrc = resolve(projectRoot, 'src/data/ipoComprehensiveAnalysis.json');
+  const analysisDestDir = resolve(distDir, 'data');
+  if (existsSync(analysisSrc)) {
+    if (!existsSync(analysisDestDir)) mkdirSync(analysisDestDir, { recursive: true });
+    copyFileSync(analysisSrc, resolve(analysisDestDir, 'ipoComprehensiveAnalysis.json'));
+    const size = (statSync(analysisSrc).size / 1024 / 1024).toFixed(1);
+    console.log(`[postbuild] Copied analysis data (${size}MB) to dist/data/`);
   }
 
   // Generate static HTML pages for all routes (fixes 404 & adds meta tags)

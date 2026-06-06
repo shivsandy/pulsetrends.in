@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import PageSeo from '../components/PageSeo';
-import ArticleReader, { findArticleBySlug } from '../components/ArticleReader';
+import ArticleReader, { findArticleBySlug, getArticleSlug } from '../components/ArticleReader';
 import { canonical } from '../seo/config';
 import { newsArticleSchema } from '../seo/schema';
 import { newsArticles } from '../data/newsData';
@@ -41,6 +41,9 @@ export default function NewsDetailPage() {
     publishedAt: article.publishedAt,
     image: heroImage?.url,
     urlPath: path,
+    category: article.category,
+    tags: article.tags || article.secondaryKeywords || [],
+    author: article.author,
   });
   // Build related-articles JSON-LD ItemList for richer SERP
   const relatedList = {
@@ -49,7 +52,7 @@ export default function NewsDetailPage() {
     itemListElement: newsArticles.slice(0, 10).map((a, idx) => ({
       '@type': 'ListItem',
       position: idx + 1,
-      url: canonical(`/news/${a.id}-${a.id}`),
+      url: canonical(`/news/${getArticleSlug(a)}`),
       name: a.headline,
     })),
   };
@@ -64,6 +67,7 @@ export default function NewsDetailPage() {
           ogType: 'article',
           ogImage: heroImage?.url,
           schema: [articleSchema, relatedList],
+          keywords: [article.category, article.primaryKeyword, ...(article.secondaryKeywords || []), ...(article.tags || [])].filter(Boolean).join(', '),
         }}
         breadcrumbs={[
           { name: 'Home', path: '/' },

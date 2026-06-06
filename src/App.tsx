@@ -14,6 +14,9 @@ const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'));
 const TermsPage = lazy(() => import('./pages/TermsPage'));
 const CookiesPage = lazy(() => import('./pages/CookiesPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+const AuthorPage = lazy(() => import('./pages/AuthorPage'));
+const LearnHubPage = lazy(() => import('./pages/LearnHubPage'));
+const TopicsPage = lazy(() => import('./pages/TopicsPage'));
 
 function SuspenseWrapper({ children }: { children: React.ReactNode }) {
   return (
@@ -48,6 +51,9 @@ export const router = createBrowserRouter([
       { path: 'privacy-policy', element: <SuspenseWrapper><PrivacyPolicyPage /></SuspenseWrapper> },
       { path: 'terms', element: <SuspenseWrapper><TermsPage /></SuspenseWrapper> },
       { path: 'cookies', element: <SuspenseWrapper><CookiesPage /></SuspenseWrapper> },
+      { path: 'author/:slug', element: <SuspenseWrapper><AuthorPage /></SuspenseWrapper> },
+      { path: 'learn', element: <SuspenseWrapper><LearnHubPage /></SuspenseWrapper> },
+      { path: 'learn/:slug', element: <SuspenseWrapper><TopicsPage /></SuspenseWrapper> },
       { path: 'east-texas-politics-mayoral-candidates-discuss-vision-for-tyler-ahead-of-runoff', element: <Navigate to="/news" replace /> },
       { path: '*', element: <SuspenseWrapper><NotFoundPage /></SuspenseWrapper> },
     ],

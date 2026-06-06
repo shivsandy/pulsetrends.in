@@ -8,6 +8,7 @@ export default function Footer() {
     { to: '/news', label: 'News', icon: Newspaper },
   ] as const;
   const pageLinks = [
+    { to: '/learn', label: 'Learn' },
     { to: '/about', label: 'About' },
     { to: '/contact', label: 'Contact' },
     { to: '/privacy-policy', label: 'Privacy' },

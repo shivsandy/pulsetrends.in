@@ -59,6 +59,8 @@ export function newsArticleSchema(article: {
   image?: string;
   author?: string;
   urlPath: string;
+  category?: string;
+  tags?: string[];
 }) {
   return {
     '@context': 'https://schema.org',
@@ -67,7 +69,13 @@ export function newsArticleSchema(article: {
     description: article.description,
     datePublished: article.publishedAt,
     dateModified: article.publishedAt,
-    author: { '@type': 'Person', name: 'Shiva Sandeep', url: SITE.origin },
+    articleSection: article.category || 'Market News',
+    keywords: (article.tags || []).join(', '),
+    author: {
+      '@type': 'Person',
+      name: article.author || 'Shiva Sandeep',
+      url: `https://twitter.com/pulsetrends`,
+    },
     publisher: {
       '@type': 'Organization',
       name: SITE.name,
@@ -75,6 +83,33 @@ export function newsArticleSchema(article: {
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical(article.urlPath) },
     image: article.image ? [canonical(article.image)] : [`${SITE.origin}/og-default.png`],
+  };
+}
+
+export function personSchema(name: string, url: string, jobTitle?: string, description?: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name,
+    url,
+    jobTitle: jobTitle || 'Editor',
+    description: description || `${name} is an editor at ${SITE.name}.`,
+    sameAs: [`https://twitter.com/pulsetrends`],
+  };
+}
+
+export function faqPageSchema(questions: { question: string; answer: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: questions.map((q) => ({
+      '@type': 'Question',
+      name: q.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: q.answer,
+      },
+    })),
   };
 }
 

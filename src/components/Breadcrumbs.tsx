@@ -10,10 +10,6 @@ interface BreadcrumbsProps {
   items: Crumb[];
 }
 
-interface BreadcrumbsProps {
-  items: Crumb[];
-}
-
 export default function Breadcrumbs({ items }: BreadcrumbsProps) {
   if (items.length === 0) return null;
   return (

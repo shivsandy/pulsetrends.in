@@ -1,4 +1,5 @@
 import { SITE, canonical } from './config';
+import type { IPOStock } from '../data/ipoData';
 
 export type JsonLd = Record<string, unknown> | Record<string, unknown>[];
 
@@ -10,6 +11,7 @@ export interface PageMeta {
   ogImage?: string;
   noindex?: boolean;
   schema?: JsonLd;
+  keywords?: string;
 }
 
 const DEFAULT_OG = `${SITE.origin}/og-default.png`;
@@ -119,32 +121,39 @@ export function getMetaForPath(pathname: string): PageMeta {
   if (clean === '/' || clean === '') return ROUTES.home;
   if (clean === '/ipo-analysis') return ROUTES.ipoAnalysis;
   if (clean.startsWith('/ipo-analysis/')) {
+    const ipoName = clean.replace('/ipo-analysis/', '').split('-').slice(0, -1).join(' ').replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
     return {
       path: clean,
-      title: `IPO Analysis | ${SITE.name}`,
-      description:
-        'Detailed IPO analysis: company overview, financial snapshot, AI scoring, and risk assessment.',
+      title: ipoName ? `${ipoName} IPO Analysis | ${SITE.name}` : `IPO Analysis | ${SITE.name}`,
+      description: ipoName
+        ? `Comprehensive ${ipoName} IPO analysis: 21-section research with financials, valuation, SWOT, risk assessment, and investment verdict.`
+        : 'Detailed IPO analysis: company overview, financial snapshot, AI scoring, and risk assessment.',
       ogType: 'article',
       ogImage: DEFAULT_OG,
     };
   }
   if (clean === '/airdrops') return ROUTES.airdrops;
   if (clean.startsWith('/airdrops/')) {
+    const projectName = clean.replace('/airdrops/', '').split('-').slice(0, -1).join(' ').replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
     return {
       path: clean,
-      title: `Crypto Airdrop | ${SITE.name}`,
-      description:
-        'Crypto airdrop details: eligibility, estimated value, farming guide, and risk assessment.',
+      title: projectName ? `${projectName} Airdrop Guide | ${SITE.name}` : `Crypto Airdrops | ${SITE.name}`,
+      description: projectName
+        ? `${projectName} crypto airdrop: eligibility criteria, estimated value, step-by-step farming guide, and risk assessment.`
+        : 'Crypto airdrop details: eligibility, estimated value, farming guide, and risk assessment.',
       ogType: 'article',
       ogImage: DEFAULT_OG,
     };
   }
   if (clean === '/news') return ROUTES.news;
   if (clean.startsWith('/news/')) {
+    const headline = clean.replace('/news/', '').split('-').slice(0, -1).join(' ').replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
     return {
       path: clean,
-      title: `Market News Article | ${SITE.name}`,
-      description: 'AI-analyzed market news with sentiment and impact scoring.',
+      title: headline ? `${headline} | ${SITE.name}` : `Market News | ${SITE.name}`,
+      description: headline
+        ? `AI-analyzed: ${headline}. Sentiment analysis, impact scoring, and actionable market insights.`
+        : 'AI-analyzed market news with sentiment and impact scoring.',
       ogType: 'article',
       ogImage: DEFAULT_OG,
     };

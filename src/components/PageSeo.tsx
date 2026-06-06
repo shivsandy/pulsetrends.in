@@ -17,6 +17,7 @@ export default function PageSeo({ meta, breadcrumbs, imageOverride }: PageSeoPro
     <>
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
+      {meta.keywords && <meta name="keywords" content={meta.keywords} />}
       <meta name="robots" content={robots} />
       <link rel="canonical" href={url} />
       <meta property="og:site_name" content={SITE.name} />

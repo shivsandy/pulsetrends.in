@@ -8,3 +8,6 @@ __pycache__
 .env
 *.local
 .vscode/
+
+# Build artifacts
+assets/

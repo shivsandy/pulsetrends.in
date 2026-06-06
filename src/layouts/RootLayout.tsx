@@ -1,9 +1,10 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Ticker from '../components/Ticker';
 import Footer from '../components/Footer';
 import CookieConsent from '../components/CookieConsent';
+import { initGA, trackPageView, initScrollTracking, initTimeOnPage, resetTrackingForNewPage, setupOutboundLinkTracking } from '../lib/analytics';
 
 // Global search event to allow opening search from anywhere
 const SEARCH_OPEN_EVENT = 'pulsetrends:open-search';
@@ -15,6 +16,26 @@ export function triggerSearchOpen() {
 export default function RootLayout() {
   const location = useLocation();
   const isHome = location.pathname === '/';
+  const prevPath = useRef(location.pathname);
+
+  // Initialize GA4 once
+  useEffect(() => {
+    initGA();
+    setupOutboundLinkTracking();
+    initScrollTracking();
+    initTimeOnPage();
+  }, []);
+
+  // Track page views on route change (SPA navigation)
+  useEffect(() => {
+    if (prevPath.current !== location.pathname) {
+      resetTrackingForNewPage();
+      prevPath.current = location.pathname;
+    }
+    trackPageView(location.pathname, document.title);
+    initScrollTracking();
+    initTimeOnPage();
+  }, [location.pathname]);
 
   // Ctrl+K / Cmd+K keyboard shortcut for search
   useEffect(() => {

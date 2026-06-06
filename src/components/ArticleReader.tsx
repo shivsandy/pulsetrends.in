@@ -126,7 +126,9 @@ export default function ArticleReader({ article }: ArticleReaderProps) {
             />
             <div>
               <p className="text-[13px] font-semibold text-surface-white">
-                {article.author || 'Shiva Sandeep'}
+                <Link to={`/author/shiva-sandeep`} className="hover:text-brand-light transition-colors">
+                  {article.author || 'Shiva Sandeep'}
+                </Link>
               </p>
               <div className="flex items-center gap-2 text-[11px] text-surface-600">
                 <span>Analyst</span>

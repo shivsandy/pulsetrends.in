@@ -11,6 +11,18 @@ interface CookiePrefs {
   marketing: boolean;
 }
 
+const GA_MEASUREMENT_ID = 'G-SC8VSW3D32';
+
+function setGAConsent(enabled: boolean) {
+  if (typeof window === 'undefined' || !window.gtag) return;
+  window.gtag('consent', 'update', {
+    analytics_storage: enabled ? 'granted' : 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+  });
+}
+
 /**
  * Read a cookie by name. Returns null if not found or unparseable.
  */
@@ -71,22 +83,28 @@ export default function CookieConsent() {
     const existing = loadConsent();
     if (!existing) {
       setVisible(true);
+      setGAConsent(false);
+    } else {
+      setGAConsent(existing.analytics);
     }
     setLoaded(true);
   }, []);
 
   const accept = () => {
     saveConsent(true, true, true);
+    setGAConsent(true);
     setVisible(false);
   };
 
   const decline = () => {
     saveConsent(false, false, false);
+    setGAConsent(false);
     setVisible(false);
   };
 
   const customiseDone = (analytics: boolean, marketing: boolean) => {
     saveConsent(true, analytics, marketing);
+    setGAConsent(analytics);
     setModalOpen(false);
     setVisible(false);
   };

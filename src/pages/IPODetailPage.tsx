@@ -26,7 +26,7 @@ interface PeerItem {
   pe: string; ev_ebitda: string; roe: string; roce: string; de: string; rev_growth: string;
 }
 interface ChartItem {
-  name: string; description: string;
+  name: string; description: string; values?: number[]; unit?: string;
 }
 interface RiskItem {
   category: string; rating: string; detail: string;
@@ -682,13 +682,38 @@ function SectionPeerComparison(data: ComprehensiveAnalysis['section_14_peer_comp
 
 function SectionGraphDashboard(data: ComprehensiveAnalysis['section_15_graph_dashboard']) {
   return (
-    <div className="space-y-3">
-      {data.charts.map((chart, i) => (
-        <div key={i} className="bg-surface-50 border border-surface-300/40 rounded-lg p-3">
-          <p className="text-[12px] font-semibold text-surface-white mb-0.5">{chart.name}</p>
-          <p className="text-[12px] text-surface-700">{chart.description}</p>
-        </div>
-      ))}
+    <div className="space-y-4">
+      {data.charts.map((chart, i) => {
+        const hasBars = chart.values && chart.values.length > 1;
+        const maxVal = hasBars ? Math.max(...chart.values) : 1;
+        return (
+          <div key={i} className="bg-surface-50 border border-surface-300/40 rounded-lg p-3">
+            <p className="text-[12px] font-semibold text-surface-white mb-0.5">{chart.name}</p>
+            <p className="text-[11px] text-surface-700 mb-2">{chart.description}</p>
+            {hasBars && (
+              <div className="flex items-end gap-1.5 h-24">
+                {chart.values.map((v, vi) => {
+                  const pct = (v / maxVal) * 100;
+                  const color = chart.name.includes('Debt')
+                    ? 'bg-amber-400'
+                    : ['bg-emerald-400', 'bg-blue-400', 'bg-violet-400', 'bg-cyan-400'][vi % 4];
+                  return (
+                    <div key={vi} className="flex-1 flex flex-col items-center justify-end h-full">
+                      <span className="text-[9px] text-surface-700 mb-0.5 font-medium">
+                        {chart.unit === '%' ? `${Math.round(v)}%` : chart.unit ? `${chart.unit}${v >= 1000 ? `${(v/1000).toFixed(1)}k` : v.toLocaleString()}` : v.toLocaleString()}
+                      </span>
+                      <div
+                        className={`w-full ${color} rounded-t-sm transition-all duration-300`}
+                        style={{ height: `${Math.max(pct, 4)}%` }}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }
@@ -868,11 +893,13 @@ export default function IPODetailPage() {
 
   useEffect(() => {
     if (!slug) { setLoading(false); return; }
-    import('../data/ipoComprehensiveAnalysis.json').then((mod) => {
-      const data = (mod.default || mod) as Record<string, ComprehensiveAnalysis>;
-      setAnalysis(data[slug] || null);
-      setLoading(false);
-    }).catch(() => setLoading(false));
+    fetch('/data/ipoComprehensiveAnalysis.json')
+      .then((r) => { if (!r.ok) throw new Error('Failed to load'); return r.json(); })
+      .then((data: Record<string, ComprehensiveAnalysis>) => {
+        setAnalysis(data[slug] || null);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
   }, [slug]);
 
   if (!stock) {
@@ -889,13 +916,36 @@ export default function IPODetailPage() {
 
   const path = `/ipo-analysis/${slug}`;
   const url = canonical(path);
-  const financialSchema = financialProductSchema({
-    name: stock.company,
-    description: stock.description || `${stock.company} (${stock.ticker}) — IPO analysis with AI scoring and risk assessment.`,
-    urlPath: path,
-    category: stock.sector,
-    identifier: stock.ticker,
-  });
+  const financialSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      financialProductSchema({
+        name: stock.company,
+        description: stock.description || `${stock.company} (${stock.ticker}) — IPO analysis with AI scoring and risk assessment.`,
+        urlPath: path,
+        category: stock.sector,
+        identifier: stock.ticker,
+      }),
+      {
+        '@type': 'Article',
+        headline: `${stock.company} (${stock.ticker}) IPO Analysis`,
+        description: `Comprehensive 21-section IPO analysis report for ${stock.company} covering financials, valuation, SWOT, risk assessment, and investment verdict.`,
+        datePublished: stock.openDate || new Date().toISOString().split('T')[0],
+        dateModified: new Date().toISOString().split('T')[0],
+        author: {
+          '@type': 'Person',
+          name: 'Shiva Sandeep',
+          url: 'https://pulsetrends.in/about',
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'PulseTrends',
+          logo: { '@type': 'ImageObject', url: 'https://pulsetrends.in/og-default.png' },
+        },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+      },
+    ],
+  };
 
   const a = analysis;
   const scores = a?.investment_verdict?.scores as (Record<string, number> | undefined);
@@ -959,6 +1009,7 @@ export default function IPODetailPage() {
           description: `${stock.company} IPO analysis: 21-section comprehensive research report with financials, valuation, SWOT, risk assessment, and investment verdict.`,
           ogType: 'article',
           schema: financialSchema,
+          keywords: `${stock.company}, ${stock.ticker}, IPO, ${stock.sector}, ${stock.industry}, stock analysis, IPO review, financial analysis, investment`,
         }}
         breadcrumbs={[
           { name: 'Home', path: '/' },

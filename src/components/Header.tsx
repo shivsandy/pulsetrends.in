@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Activity, TrendingUp, Coins, Newspaper, Menu, X, Info, Mail, FileText, Shield, Cookie, Search as SearchIcon } from 'lucide-react';
+import { Activity, TrendingUp, Coins, Newspaper, BookOpen, Menu, X, Info, Mail, FileText, Shield, Cookie, Search as SearchIcon } from 'lucide-react';
 import SearchModal from './SearchModal';
 
 const SEARCH_OPEN_EVENT = 'pulsetrends:open-search';
@@ -12,6 +12,7 @@ const mainTabs = [
 ];
 
 const pageTabs = [
+  { to: '/learn' as const, label: 'Learn', icon: BookOpen },
   { to: '/about' as const, label: 'About', icon: Info },
   { to: '/contact' as const, label: 'Contact', icon: Mail },
   { to: '/privacy-policy' as const, label: 'Privacy', icon: Shield },

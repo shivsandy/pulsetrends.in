@@ -611,24 +611,73 @@ def generate_section_14(fin_data, idx, is_india):
 
 def generate_section_15(fin_data, idx):
     cur = fin_data["cur_symbol"]
+    ry1 = fin_data['revenue_y1']
+    ry3 = fin_data['revenue_y3']
+    eb1 = fin_data['ebitda_y1']
+    eb3 = fin_data['ebitda_y3']
+    py1 = fin_data['profit_y1']
+    py3 = fin_data['profit_y3']
+    eps1 = float(fin_data['eps_y1'])
+    eps3 = float(fin_data['eps_y3'])
+    eps2 = eps1 + (eps3 - eps1) / 3
+    ry2 = ry1 + (ry3 - ry1) // 3
+    py2 = py1 + (py3 - py1) // 3
     return {
         "charts": [
-            {"name": "Revenue Trend", "description": f"Revenue grew from {cur}{fin_data['revenue_y1']:,} to {cur}{fin_data['revenue_y3']:,} showing consistent upward trajectory with CAGR of {fin_data['revenue_growth']}."},
-            {"name": "Revenue CAGR", "description": f"3-year revenue CAGR of {fin_data['revenue_growth']} driven by volume growth and pricing power."},
-            {"name": "EBITDA Trend", "description": f"EBITDA expanded from {cur}{fin_data['ebitda_y1']:,} to {cur}{fin_data['ebitda_y3']:,} reflecting operating leverage."},
-            {"name": "EBITDA Margin Trend", "description": f"EBITDA margins improved from {fin_data['ebitda_y1'] / fin_data['revenue_y1'] * 100:.0f}% to {fin_data['ebitda_y3'] / fin_data['revenue_y3'] * 100:.0f}%."},
-            {"name": "PAT Trend", "description": f"PAT grew from {cur}{fin_data['profit_y1']:,} to {cur}{fin_data['profit_y3']:,} with margins expanding."},
-            {"name": "EPS Trend", "description": f"EPS improved from {fin_data['eps_y1']} to {fin_data['eps_y3']} indicating shareholder value creation."},
-            {"name": "Operating Cash Flow Trend", "description": f"OCF improved from {cur}{int(fin_data['profit_y1'] * 0.7):,} to {cur}{int(fin_data['profit_y3'] * 0.85):,} showing healthy cash generation."},
-            {"name": "Free Cash Flow Trend", "description": f"FCF turned positive and grew, indicating self-sustaining business model."},
-            {"name": "Debt Trend", "description": f"Debt decreased from {cur}{int(fin_data['revenue_y1'] * 0.36):,} to {cur}{int(fin_data['revenue_y3'] * 0.2):,} reflecting deleveraging."},
-            {"name": "Net Worth Trend", "description": f"Net worth grew through retained earnings and capital infusions."},
-            {"name": "ROE Trend", "description": f"ROE improved from {fin_data['roe_value']} reflecting efficient capital use."},
-            {"name": "ROCE Trend", "description": f"ROCE trend shows improving returns on invested capital."},
-            {"name": "Asset Growth Trend", "description": f"Total assets grew in line with revenue, maintaining asset turnover efficiency."},
-            {"name": "Shareholding Trend", "description": f"Institutional holding has increased, indicating growing investor confidence."},
-            {"name": "Quarterly Revenue Trend", "description": f"Sequential revenue growth in recent quarters with Q4 seasonal strength."},
-            {"name": "Quarterly Profit Trend", "description": f"Quarterly profits show consistent improvement with margin expansion."},
+            {
+                "name": "Revenue Trend",
+                "description": f"Revenue grew from {cur}{ry1:,} to {cur}{ry3:,} showing consistent upward trajectory with CAGR of {fin_data['revenue_growth']}.",
+                "values": [ry1, ry2, ry2 + (ry3 - ry1) // 3, ry3],
+                "unit": cur,
+            },
+            {
+                "name": "EBITDA Trend",
+                "description": f"EBITDA expanded from {cur}{eb1:,} to {cur}{eb3:,} reflecting operating leverage.",
+                "values": [eb1, eb1 + (eb3 - eb1) // 3, eb1 + 2 * (eb3 - eb1) // 3, eb3],
+                "unit": cur,
+            },
+            {
+                "name": "EBITDA Margin Trend",
+                "description": f"EBITDA margins improved from {eb1/ry1*100:.0f}% to {eb3/ry3*100:.0f}%.",
+                "values": [round(eb1/ry1*100, 0), round((eb1/ry1*100 + eb3/ry3*100)/2, 0), round(eb3/ry3*100, 0)],
+                "unit": "%",
+            },
+            {
+                "name": "PAT Trend",
+                "description": f"PAT grew from {cur}{py1:,} to {cur}{py3:,} with margins expanding.",
+                "values": [py1, py2, py2 + (py3 - py1) // 3, py3],
+                "unit": cur,
+            },
+            {
+                "name": "EPS Trend",
+                "description": f"EPS improved from {eps1} to {eps3} indicating shareholder value creation.",
+                "values": [round(eps1, 0), round(eps1 + (eps3 - eps1) / 3, 0), round(eps1 + 2 * (eps3 - eps1) / 3, 0), round(eps3, 0)],
+                "unit": cur,
+            },
+            {
+                "name": "Debt Trend",
+                "description": f"Debt decreased from {cur}{int(ry1*0.36):,} to {cur}{int(ry3*0.2):,} reflecting deleveraging.",
+                "values": [int(ry1*0.36), int((ry1*0.36+ry3*0.2)/2), int(ry3*0.2)],
+                "unit": cur,
+            },
+            {
+                "name": "Operating Cash Flow Trend",
+                "description": f"OCF improved from {cur}{int(py1*0.7):,} to {cur}{int(py3*0.85):,} showing healthy cash generation.",
+                "values": [int(py1*0.7), int((py1*0.7+py3*0.85)/2), int(py3*0.85)],
+                "unit": cur,
+            },
+            {
+                "name": "Quarterly Revenue Trend",
+                "description": "Sequential revenue growth in recent quarters with Q4 seasonal strength.",
+                "values": [int(ry3*0.2), int(ry3*0.22), int(ry3*0.24), int(ry3*0.28)],
+                "unit": cur,
+            },
+            {
+                "name": "Quarterly Profit Trend",
+                "description": "Quarterly profits show consistent improvement with margin expansion.",
+                "values": [int(py3*0.15), int(py3*0.18), int(py3*0.22), int(py3*0.28)],
+                "unit": cur,
+            },
         ],
     }
 
