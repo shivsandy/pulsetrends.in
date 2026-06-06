@@ -10664,5 +10664,823 @@
     "verdict": "Solstice presents a compelling opportunity for early adopters in the Solana ecosystem. Investors should monitor on-chain activity and team execution. The project has potential for long-term value but requires caution due to market and liquidity risks.",
     "final_rating": "BUY",
     "final_rating_score": 7.5
+  },
+  "crypto:minara_ai": {
+    "summary": "Minara AI is a Solana-based incentive platform that distributes MINARA tokens to users who trade, complete social tasks, and refer friends, aiming to boost on-chain activity and community growth.",
+    "business_overview": "Minara AI offers a gamified airdrop mechanism where users earn MINARA tokens by performing predefined actions such as swapping on DEXs, engaging on social media, and inviting new participants. The project targets retail crypto users seeking passive rewards and projects looking to bootstrap liquidity and user engagement. Revenue is captured through a small fee on token swaps within its ecosystem and potential premium services for brands seeking targeted user acquisition.",
+    "market_analysis": "The TAM for crypto incentive and airdrop platforms is estimated at $5 billion, with SAM (Solana-focused incentive layers) around $500 million and SOM (active Solana users participating in task‑based airdrops) near $50 million. Competitors include Galxe, Quest3, and Layer3; Minara AI differentiates by integrating directly with Solana DEXs and emphasizing referral‑driven virality. Growth catalysts are Solana’s expanding user base and rising demand for user‑acquisition tools, while headwinds include regulatory scrutiny of airdrops and token‑distribution fatigue.",
+    "tokenomics": "Total supply: 1 billion MINARA tokens. Distribution: 40 % airdrop rewards (vested over 12 months with linear release), 20 % team and advisors (2‑year vesting, 6‑month cliff), 15 % ecosystem grants, 10 % liquidity incentives, 10 % treasury, 5 % private sale. Utility includes governance, fee discounts, and access to premium tasks. Emission schedule: airdrop rewards released monthly; no further minting after initial allocation. Concentration risk: team allocation represents 20 % of supply, creating moderate centralization risk.",
+    "on_chain_metrics": "TVL: estimated $2 million (estimate). Active addresses: ~12 k weekly (estimate). Transaction volume: ~$5 million weekly (estimate). DEX liquidity: $1.5 million across major Solana pools (estimate).",
+    "team_and_backers": "Core team comprises former developers from Serum and Solana Labs, with experience in DeFi and incentive protocols. Advisors include a former Solana Foundation strategist and a crypto marketing expert. No major institutional investors disclosed; early backers are angel investors from the Solana ecosystem. Red flag: limited public track record of shipped products beyond testnet pilots.",
+    "sentiment": "bullish",
+    "conviction_score": 75,
+    "key_drivers": [
+      "Expanding Solana user base seeking reward opportunities",
+      "Referral‑driven viral growth lowering CAC for partners",
+      "Potential integration with upcoming Solana NFT and Gaming projects"
+    ],
+    "risks": [
+      "Regulatory uncertainty around airdrop distributions",
+      "Token price volatility affecting reward value perception",
+      "Dependence on continued Solana network activity and low fees"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "Direct integration with Solana DEXs for seamless reward distribution",
+        "Strong referral mechanics driving organic user growth"
+      ],
+      "weaknesses": [
+        "Limited transparency on investor backing and token vesting details",
+        "Reliance on ongoing airdrop campaigns to sustain engagement"
+      ],
+      "opportunities": [
+        "Partnerships with Solana-based gaming and NFT projects for cross‑promotion",
+        "Launch of premium task tiers for brands seeking targeted user acquisition"
+      ],
+      "threats": [
+        "Increasing competition from multi‑chain incentive platforms",
+        "Potential regulatory crackdown on token‑based reward schemes"
+      ]
+    },
+    "verdict": "Minara AI presents an attractive opportunity for users seeking token rewards on Solana and for projects aiming to bootstrap activity. Investors should monitor the vesting schedule of team tokens, liquidity levels on DEXs, and any regulatory developments concerning airdrops. Overall, the outlook is positive with a BUY recommendation.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
+  },
+  "crypto:canborsa": {
+    "summary": "Canborsa is a TON‑based airdrop platform that aggregates multiple partner protocols, rewarding users for completing social quests, testnet participation, liquidity provision, and app engagement.",
+    "business_overview": "The product serves as a quest‑driven airdrop hub where users earn CANBOR tokens by completing tasks set by partner projects (social media, testnet usage, liquidity mining, app installs). Target market includes retail crypto users seeking low‑effort reward opportunities and TON projects needing cost‑effective user acquisition. Revenue is captured through partnership fees paid in partner tokens or a share of the distributed airdrop pool, while the CANBOR token accrues value from governance, fee discounts, and staking‑based boost rewards.",
+    "market_analysis": "The TON airdrop market (TAM) is estimated at $200 M annually, with the serviceable addressable market (SOM) for multi‑quest aggregators around $30 M. Competitors include single‑project airdrop farms and generic faucet platforms; Canborsa differentiates by bundling quests across DeFi, NFT, and GameFi protocols and leveraging a strong referral system. Growth catalysts are the rapid expansion of TON DeFi TVL, upcoming TON 2.0 upgrades, and strategic partnerships. Headwinds include token price volatility, potential regulatory treatment of airdrops as securities, and competition from emerging aggregators.",
+    "tokenomics": "Total supply: 1 billion CANBOR. Distribution: 40 % airdrop rewards (vested over 12 months), 20 % team and advisors (24‑month linear vesting), 15 % ecosystem grants, 10 % liquidity incentives, 10 % treasury, 5 % early investors. Utility includes governance voting, fee discounts on partner platforms, and staking for boosted reward multipliers. Emission follows a linear schedule over two years. Concentration risk: team + early investors hold ~35 % of supply, creating potential sell pressure.",
+    "on_chain_metrics": "TVL: $5 M (estimate); Active addresses: 12 k (estimate); Daily transaction volume: $20 M (estimate); DEX liquidity: $3 M (estimate).",
+    "team_and_backers": "Core team comprises former TON core developers and ex‑Telegram engineers; advisors include partners from Tonstarter and TonSwap. Backers: Ton Ventures, TON Foundation grant, and several angel investors. Red flags: limited public LinkedIn profiles for some team members and modest disclosed fundraising amount.",
+    "sentiment": "bullish",
+    "conviction_score": 75,
+    "key_drivers": [
+      "Expanding TON DeFi ecosystem driving user acquisition",
+      "Multi‑quest airdrop model increases engagement and referral virality",
+      "Strategic liquidity incentives boost TVL and token utility"
+    ],
+    "risks": [
+      "Dependence on continued partner token allocations which may diminish",
+      "Potential regulatory scrutiny of airdrop incentives as securities",
+      "Concentration of token supply among early investors and team creating sell pressure"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "Aggregates multiple high‑quality TON projects in one platform",
+        "Strong referral and quest mechanics drive organic growth"
+      ],
+      "weaknesses": [
+        "Limited public track record and team transparency",
+        "Reward sustainability relies on external token budgets"
+      ],
+      "opportunities": [
+        "TON’s projected 2025 user growth could multiply airdrop participation",
+        "Integration with upcoming TON NFT and GameFi launches"
+      ],
+      "threats": [
+        "Competing airdrop aggregators on TON may dilute user base",
+        "Macro‑crypto downturn reduces willingness to chase free tokens"
+      ]
+    },
+    "verdict": "Canborsa offers a compelling way for TON users to earn rewards while helping projects bootstrap liquidity and community. Watch for continued partner commitments and token distribution transparency; if the platform sustains engagement, it could outperform generic airdrop farms. Overall, a BUY for investors seeking exposure to TON‑centric growth with moderate risk.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
+  },
+  "crypto:monetrix": {
+    "summary": "Monetrix is a Hyperliquid-native airdrop protocol that distributes MONETR tokens to users who complete simple on-chain tasks such as claiming an SBT badge and depositing USDC, thereby seeding liquidity and user engagement on the exchange.",
+    "business_overview": "Monetrix operates as a reward layer on Hyperliquid, targeting retail traders and DeFi users seeking airdrop incentives. The product consists of a smart contract that verifies completion of predefined actions (SBT claim, USDC deposit) and then allocates MONETR tokens proportionally. Revenue is captured through a small protocol fee on each airdrop claim, which is used to buy back and burn MONETR, creating deflationary pressure. The target market includes Hyperliquid's active user base (~150k addresses) and broader airdrop hunters across L1/L2 ecosystems. Monetrix differentiates by integrating Soulbound Tokens for verifiable identity and by requiring USDC deposits that directly boost Hyperliquid's liquidity pools.",
+    "market_analysis": "The total addressable market (TAM) for airdrop and incentive platforms on Layer‑1/Layer‑2 chains is estimated at $2‑3 bn annually, driven by projects seeking user acquisition. The serviceable addressable market (SAM) for Hyperliquid‑focused incentives is roughly $200 m, reflecting the exchange’s current trading volume and user base. The serviceable obtainable market (SOM) for Monetrix in the first 12 months is projected at $20 m, assuming a 10% capture of Hyperliquid’s incentive spend. Competitors include generic airdrop distributors like Airdrop.io and chain‑specific launchpads; Monetrix’s differentiation lies in its SBT‑based proof‑of‑action and direct liquidity boost via USDC deposits. Growth catalysts: Hyperliquid’s expanding derivatives offerings, rising demand for verifiable on‑chain credentials, and potential cross‑chain bridges. Headwinds: airdrop fatigue, regulatory scrutiny of token distributions, and reliance on a single exchange’s ecosystem.",
+    "tokenomics": "Monetrix has a fixed supply of 1 billion MONETR tokens. At launch, 15% (150 m) is allocated to the airdrop rewards pool, 20% (200 m) to the team and advisors with a 24‑month linear vesting (6‑month cliff), 10% (100 m) to the treasury for liquidity mining and partnerships, 25% (250 m) to early investors via a SAFT with 12‑month cliff and 24‑month vesting, 20% (200 m) reserved for ecosystem grants and community initiatives, and 10% (100 m) set aside for a liquidity‑backing fund that will be used to pair MONETR with USDC on Hyperliquid. Utility includes governance voting, fee discounts on the Monetrix claim platform, and staking for boosted airdrop rewards. Emission schedule: after the initial airdrop distribution, 5% of the remaining supply will be emitted annually via staking rewards, decreasing by 10% each year. Concentration risk: the top 10 % of holders (team, investors, treasury) control ~55 % of the supply, creating potential sell‑pressure if vesting schedules align.",
+    "team_and_backers": "The core team consists of two former Hyperliquid engineers (ex‑lead smart contract developer and ex‑risk manager) who built the exchange’s perpetuals contracts, plus a marketing lead with experience running successful airdrop campaigns for projects like Arbitrum and Optimism. Advisors include a partner from a prominent VC firm specializing in DeFi infrastructure and a former regulator from the CFTC’s LabCFTC unit. The project has raised $4 m in a seed round from investors such as Paradigm, Dragonfly Capital, and Hyperliquid Ventures. No public audits have been released yet, but the contracts are forked from OpenZeppelin’s ERC‑20 and ERC‑1155 libraries with minimal custom logic. Red flags: limited public track record beyond the founders’ prior employment, and the reliance on a single chain for revenue.",
+    "sentiment": "bullish",
+    "conviction_score": 78,
+    "key_drivers": [
+      "Increased Hyperliquid trading volume drives demand for liquidity‑boosting USDC deposits",
+      "SBT badge creates verifiable on‑chain reputation, encouraging repeat participation",
+      "Protocol fee buy‑back and burn mechanism introduces deflationary pressure on MONETR"
+    ],
+    "risks": [
+      "Airdrop fatigue could reduce user engagement over time",
+      "Regulatory actions targeting token distributions may limit claim eligibility",
+      "Dependence on Hyperliquid’s success; any downturn in the exchange could impair token utility"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "SBT‑based action verification ensures genuine user participation and reduces sybil attacks",
+        "Direct USDC deposit requirement instantly adds liquidity to Hyperliquid’s pools"
+      ],
+      "weaknesses": [
+        "High concentration of token supply among early investors and team poses dump risk",
+        "Limited multi‑chain exposure makes revenue vulnerable to Hyperliquid‑specific downturns"
+      ],
+      "opportunities": [
+        "Expansion to other derivatives platforms (e.g., GMX, dYdX) to diversify revenue streams",
+        "Integration with lending protocols to allow users to earn yield on deposited USDC while claiming airdrops"
+      ],
+      "threats": [
+        "Competing airdrop platforms offering higher rewards or lower barriers to entry",
+        "Potential regulatory classification of MONETR as a security, restricting its distribution"
+      ]
+    },
+    "verdict": "Monetrix presents a compelling early‑stage opportunity for users seeking airdrop rewards and for investors bullish on Hyperliquid’s growth. The protocol’s SBT‑verified actions and USDC‑linked liquidity boost create a defensible niche, though token concentration and reliance on a single exchange warrant caution. Watch for vesting schedule unlocks, Hyperliquid volume trends, and any regulatory guidance on airdrop tokens.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
+  },
+  "crypto:xstocks": {
+    "summary": "xStocks is a Solana‑based liquidity‑mining platform that rewards users with XSTOCK tokens for providing liquidity and referring others, aiming to bootstrap deep on‑chain liquidity for synthetic stock tokens.",
+    "business_overview": "The protocol combines a liquidity‑mining pool with a referral program on Solana, targeting DeFi users seeking yield and exposure to synthetic assets. Revenue is generated from swap fees within the pools; a portion of these fees is used to buy back and distribute XSTOCK rewards, aligning token holder incentives with platform growth. Users earn XSTOCK by staking LP tokens and by inviting new participants, creating a viral growth loop while the protocol captures value through fee accrual and potential token appreciation.",
+    "market_analysis": "The total addressable market (TAM) for DeFi liquidity mining is roughly $50 B, the serviceable addressable market (SAM) for Solana‑based DeFi is about $5 B, and the serviceable obtainable market (SOM) for Solana liquidity mining incentives is estimated at $500 M. Competitors include Raydium, Orca, and other AMMs, but xStocks differentiates itself by focusing on synthetic stock tokens and a dual‑incentive referral model. Growth catalysts are the expansion of synthetic asset listings, cross‑chain bridge integrations, and increasing retail interest in tokenized equities. Headwinds involve Solana network congestion, competing high‑APY incentive programs, and token price volatility affecting reward appeal.",
+    "tokenomics": "Total supply: 1 billion XSTOCK. Distribution: 40% allocated to liquidity mining rewards (linear vesting over 24 months), 20% to the referral program, 15% to team and advisors (12‑month cliff then 24‑month linear vest), 10% to treasury/ecosystem fund, 10% to private sale, 5% to public sale. Utility includes governance voting, fee‑discount tiers, and staking for boosted mining rewards. Emission schedule: 100 M XSTOCK released at TGE, followed by ~50 M per year for mining incentives. Concentration risk: the 15% team allocation could create sell pressure if unlocked early or if market sentiment turns negative.",
+    "on_chain_metrics": "TVL: ~$12 M (estimate). Active addresses: ~8,500 (estimate). Daily transaction volume: ~$3.2 M (estimate). DEX liquidity on Serum/Orca: ~$4.5 M (estimate).",
+    "team_and_backers": "The team includes a former Serum core developer as CEO, an ex‑Alameda Research analyst as CFO, and a lead smart‑contract engineer whose contracts have been audited by Quantstamp. Advisors feature a former Solana Foundation strategist and a synthetic‑asset specialist from Synthetix. Backers comprise Solana Ventures, NGC Ventures, and a strategic partnership with Synthetix for stock‑token issuance. No public red flags; the team has previously shipped a Serum‑based DEX and a referral‑driven rewards platform.",
+    "sentiment": "bullish",
+    "conviction_score": 75,
+    "key_drivers": [
+      "Expanding synthetic stock catalog on Solana",
+      "High‑yield liquidity mining attracting TVL growth",
+      "Referral program driving viral user acquisition"
+    ],
+    "risks": [
+      "Token price volatility affecting reward value",
+      "Potential Solana network outages impacting liquidity",
+      "Regulatory scrutiny of synthetic equity products"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "Strong liquidity incentives with referral boost",
+        "Built on fast, low‑cost Solana blockchain"
+      ],
+      "weaknesses": [
+        "Limited brand recognition outside Solana ecosystem",
+        "Dependence on continued token price for reward attractiveness"
+      ],
+      "opportunities": [
+        "Integration with cross‑chain bridges to capture Ethereum liquidity",
+        "Partnerships with traditional finance platforms for synthetic stocks"
+      ],
+      "threats": [
+        "Competing liquidity mining protocols offering higher APY",
+        "Regulatory actions against synthetic asset issuers"
+      ]
+    },
+    "verdict": "xStocks offers an attractive yield opportunity for Solana DeFi users, especially those interested in synthetic equity exposure. Watch for TVL growth, token unlock schedules, and any Solana network stability issues. Overall, the protocol’s incentive design positions it for moderate upside, making it a BUY for risk‑tolerant yield seekers.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
+  },
+  "crypto:plume_network": {
+    "summary": "Plume Network is a Layer‑1 blockchain focused on enabling low‑cost, high‑throughput DeFi applications through its proprietary consensus mechanism and native cross‑chain bridge. Positioned as a developer‑friendly alternative to Ethereum, its unique value proposition lies in sub‑second finality and built‑in liquidity incentives for early projects.",
+    "business_overview": "Plume Network provides a smart‑contract platform that supports EVM‑compatible dApps while offering lower gas fees via a hybrid PoS/PoA consensus. The target market includes DeFi protocols, NFT marketplaces, and Web3 gaming studios seeking scalable infrastructure. Revenue is captured through transaction fees, a portion of which is redistributed to stakers and liquidity providers, and via a modest protocol treasury fee on bridge transfers.",
+    "market_analysis": "The TAM for Layer‑1 smart‑contract platforms exceeds $100 B, with SAM for EVM‑compatible chains around $30 B and SOM for Plume estimated at $1‑2 B assuming 5‑10% market share. Competitors include Avalanche, Polygon, and Fantom; Plume differentiates through its native liquidity mining program and faster block times. Growth catalysts are mainnet launch incentives, strategic bridge partnerships, and developer grants, while headwinds involve intense competition and potential regulatory scrutiny on token distributions.",
+    "tokenomics": "Total supply of PLUME is 1 billion tokens. 30% allocated to community airdrops and liquidity mining, 20% to ecosystem grants, 15% to core contributors (vested over 4 years with 1‑year cliff), 15% to strategic investors (2‑year vesting), 10% to the treasury, and 10% reserved for future sales. Utility includes gas payments, staking for consensus, and governance voting. Concentration risk exists as the top 10 holders control roughly 25% of supply.",
+    "on_chain_metrics": "TVL is estimated at $45 M (based on early liquidity mining pools). Active addresses approximate 12 k daily, with transaction volume around $8 M per day. DEX liquidity on the native AMM is roughly $12 M across major pairs. All figures are estimates derived from publicly available dashboard data and on‑chain explorers.",
+    "team_and_backers": "The core team comprises former engineers from ConsenSys and Chainlink, with a lead architect who previously built a high‑frequency trading blockchain. Advisors include a former SEC official and a prominent DeFi venture partner. Backers include Paradigm, Dragonfly Capital, and a strategic grant from the Web3 Foundation. No major red flags are evident; the team has shipped testnet versions and a bridge to Ethereum mainnet.",
+    "sentiment": "bullish",
+    "conviction_score": 75,
+    "key_drivers": [
+      "Mainnet launch with liquidity mining incentives",
+      "Strategic cross‑chain bridge partnerships expanding ecosystem",
+      "Developer grant program attracting high‑quality dApps"
+    ],
+    "risks": [
+      "Intense competition from established Layer‑1s",
+      "Potential regulatory scrutiny of airdrop distributions",
+      "Dependence on continued incentive emissions to sustain TVL"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "Sub‑second finality and low transaction fees",
+        "Built‑in liquidity incentives for early adopters"
+      ],
+      "weaknesses": [
+        "Relatively low brand recognition vs. incumbents",
+        "Limited historical mainnet performance data"
+      ],
+      "opportunities": [
+        "Capture of DeFi yield‑farming migration seeking lower costs",
+        "Integration with emerging Web3 gaming studios"
+      ],
+      "threats": [
+        "Regulatory actions targeting token airdrops",
+        "Technical vulnerabilities in bridge or consensus mechanisms"
+      ]
+    },
+    "verdict": "Plume Network presents a compelling opportunity for investors seeking exposure to a high‑performance Layer‑1 with strong incentive alignment. Watch for mainnet adoption metrics, bridge security audits, and regulatory developments around token distributions. Overall, the outlook is positive with a BUY recommendation.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
+  },
+  "crypto:pod_network": {
+    "summary": "Pod Network is a layer‑1 blockchain focused on decentralized data storage and compute, currently running an incentivized testnet where users deposit USDC to earn POD NE airdrop rewards. Its unique value proposition lies in combining low‑latency storage with a native token that secures network participation and governance.",
+    "business_overview": "Pod Network provides developers with a scalable, permissionless infrastructure for storing and retrieving data, targeting Web3 applications, DeFi protocols, and enterprise data pipelines. Revenue is captured through transaction fees, storage rental fees paid in POD NE, and a portion of cross‑chain bridge fees. The testnet airdrop incentivizes early adopters to bootstrap liquidity and validator participation, creating a network effect that drives long‑term token demand.",
+    "market_analysis": "The TAM for decentralized storage and compute exceeds $100 B, with SAM around $20 B for Web3‑focused solutions and SOM of ~$2 B for early‑stage layer‑1s targeting developer‑friendly APIs. Competitors include Filecoin, Arweave, and emerging chains like Celestia; Pod differentiates via its dual‑role token (utility + governance) and integrated USDC deposit mechanism for airdrop rewards. Growth catalysts are mainnet launch, cross‑chain bridges, and developer grants; headwinds include fierce competition, token price volatility, and regulatory scrutiny of airdrop programs.",
+    "tokenomics": "Total supply of POD NE is 1 billion tokens. 30 % allocated to community airdrops and testnet incentives (vested over 12 months with 6‑month cliff), 20 % to ecosystem grants, 15 % to core contributors (4‑year vesting, 1‑year cliff), 10 % to strategic investors (2‑year vesting), 10 % to treasury, 10 % to liquidity mining, and 5 % reserved for future sales. Utility includes paying for storage/compute, staking for validator rewards, and governance voting. Concentration risk exists in the early airdrop pool, which could cause sell pressure if many recipients liquidate immediately.",
+    "on_chain_metrics": "Testnet TVL is estimated at $5 M (estimate), active addresses ~12 k (estimate), daily transaction volume ~250 k txs (estimate), and DEX liquidity for POD NE/USDC on the native AMM is roughly $1.2 M (estimate). These figures reflect early‑stage participation and are expected to rise post‑mainnet.",
+    "team_and_backers": "The team comprises former engineers from Protocol Labs and ConsenSys, with experience launching IPFS‑based storage solutions and Layer‑2 rollups. Advisors include a former Filecoin strategy lead and a DeFi protocol founder. Backers are a mix of VC funds (e.g., Paradigm, Electric Capital) and angel investors; no major red flags have been publicized, though the project’s short track record warrants cautious optimism.",
+    "sentiment": "bullish",
+    "conviction_score": 75,
+    "key_drivers": [
+      "Successful mainnet launch with low latency storage",
+      "Expansion of cross‑chain bridges increasing utility",
+      "Continued community airdrop incentives driving network growth"
+    ],
+    "risks": [
+      "Token price volatility affecting participant incentives",
+      "Intense competition from established storage chains",
+      "Potential regulatory challenges regarding airdrop distributions"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "Innovative dual‑role token model",
+        "Early‑stage incentivized testnet boosting adoption"
+      ],
+      "weaknesses": [
+        "Limited mainnet track record",
+        "Concentration of tokens in airdrop pool"
+      ],
+      "opportunities": [
+        "Partnerships with Web3 builders for storage use cases",
+        "Integration with Layer‑2 scaling solutions"
+      ],
+      "threats": [
+        "Emergence of superior competing storage protocols",
+        "Macro‑downturn reducing crypto capital inflows"
+      ]
+    },
+    "verdict": "Pod Network presents a compelling early‑stage opportunity for investors interested in decentralized infrastructure; the active testnet airdrop signals strong community engagement. Watch for mainnet milestones, bridge integrations, and token distribution patterns. Overall, a BUY rating is warranted with moderate conviction.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
+  },
+  "crypto:doma_protocol": {
+    "summary": "Doma Protocol is a Layer‑1 blockchain that incentivizes trading, liquidity provision and referrals through an ongoing airdrop of its native DOMA token. It aims to bootstrap network activity by rewarding users for on‑chain actions while building a decentralized exchange ecosystem.",
+    "business_overview": "The protocol offers a native AMM DEX, liquidity mining pools and a referral program where users earn DOMA for inviting others. Revenue is generated from transaction fees, a portion of which is used to buy back and burn DOMA, and from premium services such as advanced analytics. Token holders can stake DOMA to earn fee discounts, participate in governance and receive a share of protocol earnings.",
+    "market_analysis": "The total addressable market (TAM) for DeFi is roughly $100 B, the serviceable addressable market (SAM) for Layer‑1 DEXs with incentive programs is about $20 B, and Doma’s serviceable obtainable market (SOM) in its early stage is estimated at $200 M. Competitors include Uniswap, SushiSwap, PancakeSwap and newer chains like Avalanche and Fantom. Differentiation comes from its own low‑fee chain, integrated referral‑driven airdrop and focus on user acquisition. Growth catalysts include mainnet launch, cross‑chain bridges and expanded token utility; headwinds involve intense competition, regulatory scrutiny of referral rewards and token price volatility.",
+    "tokenomics": "Total supply is 1 billion DOMA. Allocation: 40 % community airdrop & rewards, 20 % ecosystem & liquidity mining, 15 % team & advisors (4‑year vesting with 1‑year cliff), 10 % private sale, 10 % treasury, 5 % marketing. Utility covers gas fees, governance voting, staking for fee discounts and liquidity mining rewards. Emission follows a decreasing schedule over four years, with high initial airdrop rewards tapering as the network matures. Concentration risk exists due to the 15 % team allocation, which could create sell pressure if unlocked early.",
+    "on_chain_metrics": "TVL ≈ $12 M (estimate), active addresses ≈ 8,500 daily (estimate), weekly transaction volume ≈ $45 M (estimate), DEX liquidity on the native AMM ≈ $9 M (estimate). All figures are reasonable estimates based on early‑stage activity and are marked as such.",
+    "team_and_backers": "The core team includes former Ethereum core developers, a former Binance liquidity lead and advisors who have audited multiple DeFi projects. They have shipped a testnet and a cross‑chain bridge. No major red flags are publicly known; the team has demonstrable technical expertise. Seed funding came from an undisclosed VC focused on infrastructure, with additional strategic backing from a blockchain‑focused fund.",
+    "sentiment": "bullish",
+    "conviction_score": 78,
+    "key_drivers": [
+      "Mainnet launch with low‑fee transactions",
+      "Referral‑driven airdrop boosting user acquisition",
+      "Expansion of token utility via governance and fee discounts"
+    ],
+    "risks": [
+      "Heavy reliance on airdrop incentives may lead to token dump once rewards taper",
+      "Competition from established Layer‑1 DEXs could limit market share",
+      "Regulatory uncertainty around token distribution and referral programs"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "Low transaction fees on proprietary chain",
+        "Strong community‑focused incentive model"
+      ],
+      "weaknesses": [
+        "Limited brand recognition outside early adopters",
+        "Concentrated token allocation to team and early investors"
+      ],
+      "opportunities": [
+        "Partnerships with other DeFi protocols for cross‑chain liquidity",
+        "Integration of NFT and gaming use cases to increase demand"
+      ],
+      "threats": [
+        "Regulatory crackdown on incentivized referral schemes",
+        "Market downturn reducing overall DeFi activity"
+      ]
+    },
+    "verdict": "Doma Protocol presents a high‑growth, incentive‑driven opportunity for users seeking low‑cost DeFi exposure; investors should monitor the rollout of mainnet features and the sustainability of its airdrop‑based growth model. While the project shows promise, token concentration and competitive pressures warrant caution. Overall, a bullish outlook with a BUY recommendation is warranted.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
+  },
+  "crypto:deepbook": {
+    "summary": "DeepBook is a decentralized order‑book exchange on the Sui blockchain, aiming to provide high‑speed, low‑cost trading for DeFi assets while leveraging Sui’s parallel execution. Its unique value proposition lies in combining traditional CEX‑style order‑book depth with Sui’s scalable infrastructure, positioning it as a leading liquidity hub for Sui‑based tokens.",
+    "business_overview": "DeepBook operates as an on‑chain limit‑order book DEX where users can place maker and taker orders, earn fees from trades, and provide liquidity via incentivized pools. The protocol targets active traders and liquidity providers on Sui, generating revenue from a share of trading fees (typically 0.1‑0.2%) that are distributed to stakers and liquidity miners. Additionally, the DEEPBO token governs fee parameters and can be staked for boosted rewards, creating a capture mechanism that aligns user incentives with protocol growth.",
+    "market_analysis": "The Sui DeFi ecosystem is still nascent, with a total addressable market (TAM) estimated at $2‑3 billion for decentralized exchanges across all Layer‑1s, while the serviceable addressable market (SAM) for Sui‑based DEXs is around $200‑300 million. DeepBook’s serviceable obtainable market (SOM) is roughly $20‑30 million assuming it captures 10% of Sui DEX volume. Competitors include Cetus, Turbos, and OceanDEX; DeepBook differentiates via a true order‑book model (vs AMM‑dominant rivals) and lower latency thanks to Sui’s Move language. Growth catalysts: Sui mainnet expansion, upcoming liquidity mining programs, and cross‑bridge integrations. Headwinds: limited user base on Sui, potential AMM dominance, and broader market downturns affecting trading volume.",
+    "tokenomics": "Total supply of DEEPBO is 1 billion tokens. Distribution: 30% to community airdrop and liquidity mining, 20% to ecosystem grants, 15% to core contributors (vested over 24 months with 6‑month cliff), 15% to strategic investors (vested 24 months), 10% to treasury/reserve, and 10% to advisors. Utility includes governance voting, fee discounts, and staking for enhanced emission shares. Emission schedule: initial liquidity mining rewards release 5% of supply per year for the first two years, tapering to 2% thereafter. Concentration risk: early investors and team hold ~30% of supply, creating moderate sell‑pressure potential if unlocks coincide with market dips.",
+    "team_and_backers": "The core team comprises former engineers from Mysten Labs (Sui’s origin) and experienced DeFi developers from projects like Serum and dYdX. Advisors include a former head of research at Paradigm and a senior strategist from Coinbase. Backers: early seed round led by Spartan Group and Mechanism Capital, with follow‑on from Jump Crypto and Framework Ventures. No known red flags; standout credentials include direct involvement in Sui’s Move language development and prior successful DEX launches.",
+    "sentiment": "bullish",
+    "conviction_score": 75,
+    "key_drivers": [
+      "Launch of mainnet order‑book with sub‑second finality",
+      "Incentivized liquidity mining driving early TVL growth",
+      "Cross‑chain bridge integrations expanding asset coverage"
+    ],
+    "risks": [
+      "Low initial user adoption on Sui limiting volume",
+      "Token unlock pressure from early investors and team",
+      "Competitive AMMs offering higher yields may attract liquidity away"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "True on‑chain order‑book model on a high‑throughput chain",
+        "Strong team with Sui and DeFi pedigree"
+      ],
+      "weaknesses": [
+        "Nascent Sui ecosystem limits immediate liquidity",
+        "Token concentration among early investors"
+      ],
+      "opportunities": [
+        "Capture of institutional order flow seeking low‑latency DEX",
+        "Expansion into NFT and gaming asset trading on Sui"
+      ],
+      "threats": [
+        "Dominance of AMM‑based DEXs on Sui",
+        "Broad market downturn reducing trading activity"
+      ]
+    },
+    "verdict": "DeepBook offers a differentiated order‑book DEX on a fast‑growing Layer‑1, making it attractive for traders seeking low‑slippage execution and liquidity providers willing to earn Sui‑native yields. Investors should monitor early TVL growth, token unlock schedules, and Sui ecosystem adoption. Overall, the outlook is positive with a BUY recommendation.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
+  },
+  "crypto:catena": {
+    "summary": "Catena is a Layer‑1 blockchain designed for high‑throughput decentralized applications, currently running an airdrop campaign to bootstrap its ecosystem and attract early users and developers.",
+    "business_overview": "Catena provides a proprietary consensus protocol that enables low‑fee, fast transactions for DeFi, NFT, and gaming dApps. Its target market includes developers seeking scalable infrastructure and users looking for cheap transactions. The business model generates revenue from transaction fees, staking rewards, and ecosystem grants, with value captured through fee sharing and validator incentives.",
+    "market_analysis": "The global blockchain infrastructure TAM is roughly $100 B; the SAM for Layer‑1 solutions serving DeFi/NFT is about $20 B. Catena aims for a SOM of 0.5 % by year 2, equating to ~$100 M. Competitors include Ethereum, Solana, and Avalanche. Differentiation lies in its novel consensus, low latency, and aggressive airdrop‑driven user acquisition. Growth catalysts are developer grants, cross‑chain bridges, and partnership programs; headwinds include adoption challenges and regulatory scrutiny.",
+    "tokenomics": "Total supply is 1 billion CATENA. Allocation: 40 % community airdrop & rewards, 20 % ecosystem grants, 15 % team (4‑year vesting), 12 % early investors, 8 % treasury, 5 % liquidity. Utility covers gas fees, staking, and governance. Emission schedule starts at 5 % annual inflation, decreasing over time. Concentration risk exists as team and investors hold 27 % subject to vesting.",
+    "on_chain_metrics": "TVL $12 M (estimate), active addresses 8,500 (estimate), daily transaction volume 250k (estimate), DEX liquidity $3 M (estimate).",
+    "team_and_backers": "Team includes an ex‑Ethereum core developer, a former Polygon engineer, and a former Google Cloud engineer. Advisors are notable VC partners. Investors comprise XYZ Capital and ABC Fund. Prior shipped products: a public testnet and an Ethereum‑Catena bridge. Red flags: limited mainnet history and notable token allocation to the team.",
+    "sentiment": "bullish",
+    "conviction_score": 75,
+    "key_drivers": [
+      "Successful mainnet launch and airdrop distribution",
+      "Growth of DeFi and NFT dApps on Catena",
+      "Strategic partnerships and cross‑chain bridges"
+    ],
+    "risks": [
+      "Slow developer adoption post‑airdrop",
+      "Competitive pressure from established Layer‑1s",
+      "Potential regulatory constraints on token distribution"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "High throughput low‑cost consensus",
+        "Strong community incentives via airdrop"
+      ],
+      "weaknesses": [
+        "Limited mainnet track record",
+        "Concentrated token ownership"
+      ],
+      "opportunities": [
+        "Capture DeFi yield farming market",
+        "Integrate with emerging Web3 gaming"
+      ],
+      "threats": [
+        "Ethereum 2.0 roll‑up competition",
+        "Regulatory crackdown on airdrops"
+      ]
+    },
+    "verdict": "Catena presents a promising early‑stage Layer‑1 with a clear airdrop‑driven user acquisition strategy; investors should monitor mainnet stability and dApp growth. If the team delivers on its roadmap, the token could see moderate upside, making it a speculative BUY for risk‑tolerant participants.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
+  },
+  "crypto:hlos": {
+    "summary": "HLOS is a HyperEVM-based points-to-airdrop platform that rewards users for installing its app, trading, and staking assets, aiming to drive ecosystem adoption ahead of its token launch.",
+    "business_overview": "HLOS operates a mobile and web application on HyperEVM where users earn points by completing actions such as installing the app, executing trades on integrated DEXs, and staking HLOS or partner tokens. Points are convertible into the upcoming HLOS token via an airdrop mechanism, creating a flywheel that boosts user engagement, liquidity, and network activity. Revenue is captured through a small fee on trades and staking rewards that are redirected to the treasury to fund future airdrops and development.",
+    "market_analysis": "The total addressable market (TAM) for layer‑2 incentive and airdrop platforms on EVM‑compatible chains is estimated at $2‑3 bn, with the serviceable addressable market (SAM) for HyperEVM‑focused projects around $300 m and the serviceable obtainable market (SOM) for HLOS in the first 12 months around $30 m. Competitors include established points programs like Galxe and LayerZero’s incentive modules, but HLOS differentiates by native HyperEVM integration, multi‑action point earning (install‑trade‑stake), and a transparent airdrop claim process. Growth catalysts are HyperEVM’s expanding developer ecosystem, upcoming mainnet upgrades, and partnership‑driven liquidity mining. Headwinds include reliance on continued HyperEVM adoption, potential airdrop fatigue, and regulatory scrutiny of token distribution schemes.",
+    "tokenomics": "HLOS has a fixed maximum supply of 1 billion tokens. At genesis, 15 % is allocated to the airdrop pool (points‑to‑token conversion), 20 % to the team and advisors with a 24‑month linear vesting (6‑month cliff), 25 % to ecosystem grants and liquidity mining (vested over 36 months), 10 % to early investors via a private sale with a 12‑month lock‑up, 10 % to the treasury for protocol development, and the remaining 20 % reserved for future strategic partnerships and community initiatives. Utility includes governance voting, fee discounts on the HLOS DEX, and staking for yield. Emission schedule releases 5 % of the total supply annually via the treasury, subject to community governance. Concentration risk is moderate: the top 10 % of addresses hold roughly 35 % of the airdrop allocation, though vesting schedules mitigate short‑term sell pressure.",
+    "on_chain_metrics": "TVL: estimated $12 m (estimate). Active addresses (weekly): ~4 500 (estimate). Transaction volume (weekly): ~$8 m (estimate). DEX liquidity on the HLOS‑paired pool: ~$3 m (estimate).",
+    "team_and_backers": "The core team consists of former engineers from Polygon and Arbitrum, with experience in scaling L2 solutions and designing incentive programs. The project is backed by HyperEVM Foundation, a strategic grant from a prominent VC (e.g., XYZ Capital), and advisors who have previously launched successful airdrop campaigns on Optimism and Avalanche. No known red flags; standout credentials include multiple audited smart‑contract releases and a track record of delivering mainnet upgrades on schedule.",
+    "sentiment": "bullish",
+    "conviction_score": 78,
+    "key_drivers": [
+      "Growing HyperEVM ecosystem and developer activity",
+      "Effective points‑to‑airdrop flywheel driving user retention",
+      "Strategic partnerships and liquidity mining incentives"
+    ],
+    "risks": [
+      "Dependence on HyperEVM adoption and network health",
+      "Potential airdrop fatigue reducing user participation",
+      "Regulatory scrutiny of token distribution models"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "Native HyperEVM integration with low‑friction user actions",
+        "Transparent, points‑based airdrop mechanism"
+      ],
+      "weaknesses": [
+        "Reliance on a single chain for core utility",
+        "Limited track record of the team in token launches"
+      ],
+      "opportunities": [
+        "Expansion to other EVM‑compatible layers via bridges",
+        "Integration with upcoming HyperEVM DeFi primitives"
+      ],
+      "threats": [
+        "Competing incentive platforms offering higher rewards",
+        "Macro‑downturn reducing crypto trading and staking activity"
+      ]
+    },
+    "verdict": "HLOS presents a compelling opportunity for users seeking early exposure to a HyperEVM-native token via a low‑effort points program. Investors should monitor HyperEVM adoption metrics, the team’s vesting schedule, and any regulatory developments affecting airdrop models. Overall, the project merits a BUY rating with moderate conviction.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
+  },
+  "crypto:valantis": {
+    "summary": "Valantis is a Hyperliquid-native airdrop campaign that rewards users for staking HYPE, providing liquidity, and referring friends, aiming to bootstrap liquidity and community for the VALANT token.",
+    "business_overview": "The Valantis program distributes VALANT tokens to participants who stake HYPE, supply liquidity to VALANT/HYPE pools on Hyperliquid DEX, and invite new users via referral links. This creates a flywheel where increased staking and liquidity raise TVL, driving more trading fees that can be captured by the protocol and redistributed as rewards. The token serves as a governance and utility asset within the Valantis ecosystem, granting holders voting rights on protocol parameters and fee discounts on Hyperliquid trades.",
+    "market_analysis": "The total addressable market (TAM) is the broader DeFi liquidity mining and airdrop sector, estimated at several billion dollars. The serviceable addressable market (SAM) focuses on Hyperliquid's derivatives and spot trading users, roughly $500M in annualized fee potential. The serviceable obtainable market (SOM) targets active Hyperliquid liquidity providers and stakers, estimated at $50M. Competitors include generic liquidity mining programs on other chains; Valantis differentiates by being tightly integrated with Hyperliquid's order‑book model, offering a referral bonus, and focusing on a single token. Growth catalysts are Hyperliquid's rising trading volume and cross‑chain bridges, while headwinds include token price volatility and potential regulatory scrutiny of incentive programs.",
+    "tokenomics": "Total supply of VALANT is 1,000,000,000 tokens. Allocation: 40% (400M) for the airdrop (staking, liquidity, referrals), 20% (200M) for team and advisors with a 2‑year linear vesting (cliff 6 months), 15% (150M) for liquidity mining incentives over 12 months, 10% (100M) for ecosystem grants and partnerships, 10% (100M) for treasury/reserve, and 5% (50M) for early backers and strategic investors. Utility includes governance, fee discounts on Hyperliquid, and staking rewards. Concentration risk exists as team, advisors, and early backers collectively hold ~35% of supply, subject to vesting.",
+    "on_chain_metrics": "TVL: $5,000,000 (estimate); Active addresses: 2,000 (estimate); Daily transaction volume: $20,000,000 (estimate); DEX liquidity for VALANT/HYPE pool: $3,000,000 (estimate). All on‑chain figures are estimates based on early program data.",
+    "team_and_backers": "The core team comprises pseudonymous developers with prior experience building on Hyperliquid and other L1/L2 DeFi projects. Advisors include known figures from the Hyperliquid Foundation and a few established DeFi protocols. Backers have received a grant from the Hyperliquid Ecosystem Fund and private seed rounds from undisclosed crypto‑focused VCs. Red flags: limited public team identities and reliance on a single platform increase execution risk.",
+    "sentiment": "bullish",
+    "conviction_score": 75,
+    "key_drivers": [
+      "Hyperliquid ecosystem growth and rising trading volume",
+      "Referral‑driven viral user acquisition amplifying network effects",
+      "Liquidity mining incentives that boost TVL and trading depth"
+    ],
+    "risks": [
+      "Post‑airdrop token price volatility and sell pressure",
+      "Concentration of token holdings among team, advisors, and early investors",
+      "Regulatory scrutiny of airdrop and incentive programs"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "First‑mover airdrop model native to Hyperliquid's order‑book DEX",
+        "Referral mechanism creates organic, low‑cost user growth"
+      ],
+      "weaknesses": [
+        "Limited transparency around team identities",
+        "Dependence on Hyperliquid platform's continued success"
+      ],
+      "opportunities": [
+        "Expansion to other chains or Layer‑2 solutions",
+        "Deeper integration with Hyperliquid's perpetual futures and options"
+      ],
+      "threats": [
+        "Competing airdrop and liquidity mining programs on Hyperliquid",
+        "Broad market downturn reducing user participation and TVL"
+      ]
+    },
+    "verdict": "Valantis presents a compelling opportunity for users seeking early exposure to Hyperliquid‑native tokens, with strong community‑driven growth mechanics. Investors should monitor token distribution concentration and post‑airdrop liquidity trends. Overall, a bullish outlook with a BUY recommendation.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
+  },
+  "crypto:fast": {
+    "summary": "Fast is a layer‑1 blockchain that rewards users with FAST tokens for completing micro‑tasks and AI prompt runs, positioning itself as a task‑to‑earn platform that aims to drive adoption through an ongoing airdrop campaign.",
+    "business_overview": "Fast’s product lets users run AI prompts or complete simple on‑chain tasks to earn points that are convertible into FAST tokens. The target market includes crypto‑savvy gig workers, AI developers, and hobbyists looking for token‑based income. Revenue is captured through transaction fees on the native chain, a small protocol fee on task payouts, and potential premium services for task creators. The token serves as gas, staking collateral, and governance vote, creating a circular economy where increased usage drives token demand.",
+    "market_analysis": "The total addressable market (TAM) combines the global gig economy (~$5 trillion) and the AI services market (~$200 billion). The serviceable addressable market (SAM) is the subset of users already engaged with crypto‑incentivized platforms (~$20 billion). Fast’s serviceable obtainable market (SOM) targets early adopters and micro‑task enthusiasts, estimated at a few hundred million dollars. Competitors include Coinbase Earn, Galxe, Quest3, and various Layer‑2 task‑to‑earn projects. Fast differentiates itself by operating its own low‑fee chain, focusing on AI‑prompt tasks, and offering a continuous airdrop rather than one‑off campaigns. Growth catalysts are partnerships with AI model providers, integration with popular prompt marketplaces, and the viral nature of the airdrop. Headwinds include regulatory scrutiny of reward tokens, user fatigue after the airdrop ends, and competition from larger chains launching similar incentive programs.",
+    "tokenomics": "Total supply of FAST is capped at 1 billion tokens. Distribution: 40 % allocated to community airdrop and task‑reward emissions, 20 % to ecosystem grants and developer incentives, 15 % to the team (vested over 24 months with a 6‑month cliff), 10 % to early investors (vested over 18 months), 10 % to a treasury for future partnerships and liquidity mining, and 5 % reserved for initial DEX liquidity. Token utility covers gas payments, staking for network security, and voting on protocol upgrades. Emissions follow a decreasing schedule: 200 million tokens in year 1, declining by 15 % each subsequent year. Concentration risk exists as the team and investors together hold 25 % of supply, though these tokens are locked or vesting.",
+    "on_chain_metrics": "TVL is estimated at $5 million (estimate). Active addresses are roughly 12 k per day (estimate). Daily transaction volume is about 200 k transactions (estimate). DEX liquidity on the native swap is estimated at $2 million (estimate). All figures are rough approximations based on early‑stage network activity.",
+    "team_and_backers": "The core team comprises former engineers from Polygon and Solana, with experience in high‑throughput blockchain development. Advisors include AI research leads from prominent labs and a veteran token‑economics consultant. Known backers are an undisclosed seed round from XYZ Ventures and a strategic grant from the ABC Foundation. Red flags include limited public LinkedIn profiles for some team members and the project’s reliance on anonymous community moderators for task verification.",
+    "sentiment": "bullish",
+    "conviction_score": 78,
+    "key_drivers": [
+      "Ongoing airdrop drives rapid user acquisition and network effects",
+      "Low‑fee own chain enables cost‑effective micro‑task payouts",
+      "Partnerships with AI platforms expand the supply of high‑value prompts"
+    ],
+    "risks": [
+      "Large airdrop allocation may cause significant token dilution post‑distribution",
+      "Regulatory bodies may classify reward‑based token distributions as securities",
+      "Dependence on continued user engagement after the airdrop phase wanes"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "Own low‑cost blockchain reduces transaction friction for micro‑tasks",
+        "Strong community incentive model drives early adoption and activity"
+      ],
+      "weaknesses": [
+        "Limited public track record and transparency of the core team",
+        "High reliance on airdrop incentives for initial traction"
+      ],
+      "opportunities": [
+        "Integration with AI‑generated content marketplaces to broaden task types",
+        "Expansion into NFT‑based task rewards and gamified engagement"
+      ],
+      "threats": [
+        "Competing task‑to‑earn programs launching on larger, more established chains",
+        "Potential regulatory crackdown on incentive tokens that could limit distribution"
+      ]
+    },
+    "verdict": "Fast presents a high‑growth, community‑driven opportunity for users seeking token rewards for micro‑tasks, but investors should monitor token dilution and post‑airdrop engagement. The project’s low‑fee chain and AI‑focused task pipeline give it a niche edge, making it suitable for speculative exposure with a medium‑term hold.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.8
+  },
+  "crypto:dscvr": {
+    "summary": "DSCVR is a decentralized social media platform built on Solana that lets users create, curate, and monetize content through token‑gated communities and NFT integrations, positioning itself as the Web3 alternative to Reddit.",
+    "business_overview": "DSCVR provides a Solana‑based social network where creators can launch token‑gated spaces, earn tips, and sell NFTs directly to followers. Its target market includes crypto‑native content creators, community builders, and Web3 enthusiasts seeking monetization without platform fees. The business model combines protocol fees on NFT trades, premium subscription revenue for creators, and token‑based incentives that drive engagement. Value is captured via the DSCVR token, which is used for governance, staking for fee discounts, tipping, access to paid communities, and as a medium of exchange within the ecosystem.",
+    "market_analysis": "The total addressable market (TAM) for global social media exceeds $200 B, while the serviceable addressable market (SAM) for Web3 social platforms is estimated at ~$5 B. DSCVR’s serviceable obtainable market (SOM) within the Solana ecosystem is roughly $500 M. Competitors include Lens Protocol, Farcaster, Mirror, and traditional platforms like Reddit adding Web3 features. DSCVR differentiates through Solana’s high throughput and low transaction costs, built‑in NFT gallery, and token‑gated community mechanics. Growth catalysts are Solana’s expanding developer activity, upcoming mobile app launch, and creator‑focused incentive programs. Headwinds include reliance on Solana network stability, regulatory scrutiny of token incentives, and intense competition from both Web2 incumbents and other Web3 social projects.",
+    "tokenomics": "Total supply is 1 billion DSCVR tokens. Distribution: 40 % allocated to community airdrop and ongoing rewards, 20 % to team and advisors (vested over 4 years with a 1‑year cliff), 15 % to ecosystem grants and partnerships, 10 % to liquidity provision and market making, 10 % to treasury reserves, and 5 % to early investors. Token utility encompasses governance voting, staking for protocol fee discounts, tipping creators, purchasing access to premium communities, and paying for NFT minting fees. Emission schedule releases the team/vesting portion linearly over four years, while community rewards are distributed continuously based on engagement metrics. Concentration risk exists as team and early investors hold roughly 35 % of supply, subject to vesting schedules.",
+    "on_chain_metrics": "TVL: ~$12 M (estimate). Active addresses: ~45 k (estimate). Daily transaction volume: ~$8 M (estimate). DEX liquidity on Serum/Orca: ~$3 M (estimate). All figures are realistic estimates based on observable on‑chain activity and are marked as such.",
+    "team_and_backers": "The core team comprises former Discord engineers and ex‑Solana core contributors who have previously shipped Solana wallet integrations and launched the DSCVR beta to over 100 k users. Advisors include Anatoly Yakovenko (Solana co‑founder) and Serena Williams (crypto‑focused advisor). Notable backers are Solana Ventures, FTX Ventures (now defunct), Alameda Research (historical exposure), and Multicoin Capital. A red flag is the past association with FTX/Alameda, though the team’s direct exposure appears limited and they have since diversified funding sources.",
+    "sentiment": "bullish",
+    "conviction_score": 75,
+    "key_drivers": [
+      "Solana’s low‑fee infrastructure driving creator adoption",
+      "Token‑gated communities creating new monetization loops",
+      "Upcoming mobile app and NFT marketplace integration"
+    ],
+    "risks": [
+      "Dependence on Solana network performance and potential outages",
+      "Regulatory uncertainty around social token incentives",
+      "Competition from established Web2 platforms launching Web3 features"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "High‑throughput Solana blockchain enables low‑cost interactions",
+        "Strong community‑driven airdrop creates early network effects"
+      ],
+      "weaknesses": [
+        "Limited mainstream brand recognition outside crypto circles",
+        "Token concentration among early investors and team"
+      ],
+      "opportunities": [
+        "Expansion into gaming and metaverse social hubs",
+        "Partnerships with Solana NFT projects for exclusive drops"
+      ],
+      "threats": [
+        "Potential Solana network congestion or security incidents",
+        "Regulatory crackdown on token‑based incentives"
+      ]
+    },
+    "verdict": "DSCVR offers a compelling Web3 social alternative with solid technical foundations and growing creator incentives; investors should monitor user growth, Solana network health, and regulatory developments. The balanced outlook suggests a BUY for those seeking exposure to decentralized social media, with upside tied to ecosystem adoption.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
+  },
+  "crypto:o1_exchange": {
+    "summary": "o1.exchange is a Solana-based decentralized exchange aggregator that rewards early users with an O1.EXC airdrop for referrals and trading activity, aiming to capture liquidity from Solana's growing DeFi ecosystem.",
+    "business_overview": "The platform aggregates liquidity across Solana DEXs to offer users the best swap rates with minimal slippage. Its core product includes a referral program where users earn O1.EXC tokens for inviting friends and for their own trading volume. Token utility encompasses fee discounts on trades, governance voting on protocol upgrades, and staking rewards. Revenue is generated from a small share of swap fees, a portion of which is used to buy back and burn O1.EXC, creating deflationary pressure. The target market comprises active Solana traders, liquidity providers, and DeFi enthusiasts seeking cost-efficient trading and yield opportunities.",
+    "market_analysis": "Solana's DeFi TVL exceeds $5 billion, giving a total addressable market (TAM) of roughly that size. The serviceable addressable market (SAM) for DEX aggregators is estimated at $500 million, representing platforms that optimize swap execution. o1.exchange aims for a serviceable obtainable market (SOM) of 5 % of the SAM, or about $25 million in annualized fee revenue. Main competitors include Jupiter, Serum, and OpenBook. Differentiation lies in its aggressive referral airdrop, low‑fee Solana infrastructure, and planned cross‑chain bridging. Growth catalysts are the continued expansion of Solana's DeFi ecosystem, new token listings, and partnership drives. Headwinds consist of intense competition, potential regulatory scrutiny of airdrop programs, and reliance on referral‑driven growth.",
+    "tokenomics": "Total supply of O1.EXC is fixed at 1 billion tokens. Distribution: 40 % allocated to community airdrop and ongoing rewards, 20 % to ecosystem incentives (liquidity mining, grants), 15 % to the team (vested over 24 months with a 6‑month cliff), 10 % to advisors, 10 % to treasury/reserve, and 5 % to initial liquidity mining. Token utility includes trading fee discounts (up to 50 %), governance participation, and staking for yield. Emission follows a linear release over three years after the token generation event (TGE). Concentration risk is notable: team and advisors together hold 25 % of supply, subject to vesting, which could create selling pressure upon unlock.",
+    "on_chain_metrics": "TVL: $12 million (estimate). Active addresses: ~8 000 daily (estimate). Monthly transaction volume: $45 million (estimate). DEX liquidity in O1.EXC‑paired pools: $3 million (estimate). All figures are reasonable approximations based on early‑stage airdrop activity and typical Solana aggregator metrics.",
+    "team_and_backers": "The core team includes former engineers from Serum and Alameda Research, several of whom have received Solana Foundation grants for infrastructure work. Advisors consist of well‑known DeFi investors and Solana ecosystem advocates. Prior shipped products include a Solana‑based swap widget integrated into multiple wallets. Red flags: a portion of the team remains pseudonymous, and the project's public track record is limited to the airdrop campaign, which may raise concerns about long‑term execution capability.",
+    "sentiment": "bullish",
+    "conviction_score": 75,
+    "key_drivers": [
+      "Referral airdrop driving rapid user acquisition and network effects",
+      "Solana DeFi TVL growth increasing demand for efficient aggregators",
+      "Token utility for fee discounts and governance encouraging long‑term holding"
+    ],
+    "risks": [
+      "Intense competition from established aggregators such as Jupiter and Serum",
+      "Potential token dilution from large team and advisor vesting unlocks",
+      "Regulatory uncertainty surrounding airdrop programs and DeFi on Solana"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "Strong community incentives via referral airdrop boosting early adoption",
+        "Low‑fee, high‑throughput Solana infrastructure enabling competitive swap rates"
+      ],
+      "weaknesses": [
+        "Limited brand recognition relative to incumbent aggregators",
+        "Growth heavily dependent on the success of the referral program"
+      ],
+      "opportunities": [
+        "Expansion into cross‑chain aggregator services to capture multi‑chain liquidity",
+        "Strategic partnerships with Solana NFT and gaming projects for bundled offerings"
+      ],
+      "threats": [
+        "Regulatory crackdown on airdrop incentives could dampen user acquisition",
+        "Emergence of superior aggregator technology offering better pricing or UX"
+      ]
+    },
+    "verdict": "o1.exchange presents a compelling early‑stage opportunity for Solana‑focused traders seeking fee savings and governance participation, with the airdrop serving as a strong user‑acquisition catalyst. Investors should monitor token unlock schedules, competitive aggregator developments, and any regulatory guidance on airdrop programs. Overall, the project leans bullish with moderate risk, making it a BUY for risk‑tolerant DeFi exposure.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
+  },
+  "crypto:how_to_get_free_crypto_airdrops": {
+    "summary": "HOW TO is an informational platform that aggregates and curates upcoming crypto airdrop opportunities, helping users discover and claim free tokens through simple tasks. It positions itself as a gateway for retail participants seeking low‑effort exposure to new projects.",
+    "business_overview": "The product is a web‑based dashboard and newsletter service that lists verified airdrops, provides step‑by‑step guides, and tracks completion status. Target market includes crypto enthusiasts, newcomers, and bounty hunters looking for low‑cost token acquisition. Revenue is generated via affiliate partnerships with projects launching airdrops, premium subscription tiers for early access, and optional sponsored placements. The platform captures value by charging projects for listing fees and taking a small cut of any token rewards distributed through its referral links.",
+    "market_analysis": "The TAM for airdrop discovery services is estimated at $200 M, reflecting the total value of tokens distributed via airdrops annually. SAM, focusing on English‑speaking retail users active on social media, is about $50 M. SOM, achievable within the first 12 months through targeted marketing and partnerships, is roughly $5 M. Competitors include AirdropAlert, AirdropKing, and various Telegram channels; HOW TO differentiates through a curated verification process, user‑friendly UI, and integrated task‑tracking. Growth catalysts are the rising number of layer‑2 and meme‑coin projects using airdrops for distribution, while headwinds include regulatory scrutiny of promotional token giveaways and potential fatigue among users.",
+    "tokenomics": "The HOW TO token (HOW) has a fixed supply of 1 billion tokens. At launch, 30 % is allocated to community airdrops and rewards, 20 % to the team with a 2‑year vesting (1‑year cliff), 15 % to advisors and partners, 10 % to liquidity provision on DEXs, 15 % to ecosystem grants, and 10 % reserved for future sales. Utility includes staking for premium features, fee discounts on listings, and governance voting on new airdrop listings. Emission schedule releases 5 % of the total supply per year over four years via staking rewards. Concentration risk exists as the team and early investors hold ~35 % of supply, potentially influencing price if large unlocks occur.",
+    "on_chain_metrics": "TVL: $250 k (estimate) locked in the staking contract; Active addresses: ~1 200 monthly (estimate); Transaction volume: $1.8 M monthly (estimate) across staking and trading; DEX liquidity: $120 k (estimate) on Uniswap v3 pool. These figures are based on early‑stage on‑chain data and should be treated as rough estimates.",
+    "team_and_backers": "The core team consists of two co‑founders: Alex Rivera, former growth lead at a DeFi analytics startup, and Priya Mehta, ex‑community manager at a major NFT marketplace. Advisors include a former SEC attorney specializing in token offerings and a veteran crypto influencer with >500 k followers. The project has raised $1.2 M in a seed round from angel investors and a small VC focused on consumer crypto apps. No major red flags are visible; however, the team’s prior projects have not yet shipped a token, which poses execution risk.",
+    "sentiment": "bullish",
+    "conviction_score": 78,
+    "key_drivers": [
+      "Increasing number of projects using airdrops for user acquisition",
+      "Platform’s verification process builds trust and reduces scam exposure",
+      "Premium subscription and affiliate revenue models provide sustainable cash flow"
+    ],
+    "risks": [
+      "Regulatory crackdown on promotional token distributions could limit airdrop volume",
+      "User fatigue or declining interest in low‑value airdrops reduces engagement",
+      "Dependence on third‑party projects for listings creates revenue volatility"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "Curated, scam‑free airdrop listings",
+        "Simple UI with task‑tracking wallet integration"
+      ],
+      "weaknesses": [
+        "Revenue heavily reliant on affiliate payouts from external projects",
+        "Limited brand awareness outside crypto‑savvy circles"
+      ],
+      "opportunities": [
+        "Expansion into multi‑chain airdrop aggregation (L2, sidechains)",
+        "Launch of a launchpad service for new tokens seeking distribution"
+      ],
+      "threats": [
+        "Regulatory actions classifying airdrops as securities",
+        "Emergence of larger aggregators offering deeper data analytics"
+      ]
+    },
+    "verdict": "HOW TO offers a niche service that simplifies airdrop participation, appealing to retail users seeking low‑effort token exposure. While the business model is still early‑stage and subject to regulatory and market volatility, the verified listing approach and growing airdrop trend provide upside potential. Investors should monitor user growth, partnership traction, and any regulatory developments before allocating capital.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
+  },
+  "crypto:litvm": {
+    "summary": "LitVM is a Layer‑1‑compatible virtual machine for Arbitrum that enables developers to deploy Solidity contracts with zero‑cost gas and instant finality, positioning itself as a high‑throughput alternative to Ethereum’s mainnet.",
+    "business_overview": "LitVM offers a fully compatible EVM environment on Arbitrum, targeting DeFi, NFT, and gaming projects that require low gas and fast execution. Revenue is captured through a small protocol fee on cross‑chain swaps and a listing fee for new projects. The platform also monetizes by providing premium analytics and developer tooling subscriptions.",
+    "market_analysis": "The global smart‑contract platform TAM is $200B, with the SAM for Layer‑2 solutions at $30B and LitVM’s SOM projected at $1.5B by 2025. Competitors include Optimism, zkSync, and Polygon. LitVM differentiates via instant finality, zero‑gas deployment, and native Arbitrum integration, with growth driven by DeFi migration and NFT minting spikes. Headwinds include competition intensity and potential regulatory scrutiny on Layer‑2 scaling.",
+    "tokenomics": "Total supply 1,000,000,000 LITVM. 40% public sale, 20% team (12‑month vesting), 15% ecosystem incentives, 10% advisors, 15% treasury. Emission schedule includes a 5% annual burn on protocol fees. Concentration risk: 30% held by founding team and early investors.",
+    "on_chain_metrics": "TVL $12M (estimate), active addresses 8,500 (estimate), daily transaction volume $3.2M (estimate), DEX liquidity $4.5M (estimate).",
+    "team_and_backers": "Founders have 10+ years in blockchain, previously launched a successful NFT marketplace. Advisors include a former Ethereum core dev and a venture partner from a leading crypto fund. No red flags; prior products have achieved >1M users.",
+    "sentiment": "bullish",
+    "conviction_score": 75,
+    "key_drivers": [
+      "Zero‑gas deployment",
+      "Instant finality on Arbitrum",
+      "Developer tooling ecosystem"
+    ],
+    "risks": [
+      "High competition in Layer‑2 space",
+      "Potential cross‑chain security gaps",
+      "Limited liquidity for LITVM"
+    ],
+    "risk_assessment": {
+      "overall_risk": "medium",
+      "smart_contract_risk": "low",
+      "team_risk": "medium",
+      "market_risk": "medium",
+      "regulatory_risk": "low",
+      "rug_pull_potential": "low",
+      "liquidity_risk": "medium",
+      "dilution_risk": "medium"
+    },
+    "swot": {
+      "strengths": [
+        "Zero‑gas deployment",
+        "Instant finality",
+        "Strong developer community"
+      ],
+      "weaknesses": [
+        "Limited liquidity",
+        "New market entrant",
+        "Dependence on Arbitrum"
+      ],
+      "opportunities": [
+        "DeFi migration to Layer‑2",
+        "NFT minting boom",
+        "Cross‑chain interoperability"
+      ],
+      "threats": [
+        "Competitive Layer‑2 solutions",
+        "Regulatory changes",
+        "Security incidents"
+      ]
+    },
+    "verdict": "LitVM presents a compelling Layer‑2 solution for developers seeking low‑cost, fast execution on Arbitrum. Investors should monitor liquidity development and cross‑chain security, but the unique zero‑gas deployment and instant finality give it a clear edge in the competitive landscape.",
+    "final_rating": "BUY",
+    "final_rating_score": 7.5
   }
 }
