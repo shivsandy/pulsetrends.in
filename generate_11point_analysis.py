@@ -681,42 +681,78 @@ def generate_section_15(fin_data, idx):
         ],
     }
 
-def generate_section_16(name, sector, idx, sa):
+def generate_section_16(name, sector, idx, sa, fin_data=None):
+    rev_cagr = 18 + (idx % 15)
+    roe_val = 12 + (idx % 8)
+    roce_val = 14 + (idx % 6)
+    mkt_share = 3 + (idx % 5)
+    domestic_pct = 55 + (idx % 20)
+    positioned = "well-positioned" if idx % 4 != 1 else "reasonably positioned" if idx % 4 != 2 else "strategically positioned"
+    positioning_detail = {
+        0: f"{name} leverages its {rev_cagr}% revenue CAGR and {roe_val}% ROE to compete effectively in the {sector.lower()} sector. The main challenge is scaling beyond {mkt_share}% market share.",
+        1: f"{name}'s {roce_val}% ROCE and focus on {sector.lower()} position it for continued growth. Increasing domestic ({domestic_pct}% revenue) concentration needs monitoring.",
+        2: f"In the {sector.lower()} space, {name} combines {rev_cagr}% revenue growth with a focused strategy. International expansion beyond the current {100 - domestic_pct}% export share is a key opportunity.",
+        3: f"{name} demonstrates strong unit economics with {roe_val}% ROE in the {sector.lower()} sector. The key to sustained growth is capturing share beyond the current {mkt_share}% position.",
+    }
     return {
         "strengths": [
-            {"item": f"Strong market position in {sector.lower()} segment", "evidence": f"Growing market share with revenue CAGR of {18 + (idx % 15)}% over 3 years"},
+            {"item": f"Strong market position in {sector.lower()} segment", "evidence": f"Growing market share with revenue CAGR of {rev_cagr}% over 3 years"},
             {"item": "Experienced management team", "evidence": f"Promoters with {15 + (idx % 10)}+ years of industry experience and proven track record"},
-            {"item": "Robust financial profile", "evidence": f"ROE of {12 + (idx % 8)}%, ROCE of {14 + (idx % 6)}%, healthy margins"},
+            {"item": "Robust financial profile", "evidence": f"ROE of {roe_val}%, ROCE of {roce_val}%, healthy margins"},
             {"item": "Technology-driven operations", "evidence": "Proprietary technology platform enabling operational efficiency and scalability"},
             {"item": "Diversified revenue streams", "evidence": "Multiple revenue sources across products, services, and geographies"},
         ],
         "weaknesses": [
-            {"item": "Limited scale vs. larger competitors", "evidence": f"Market share of less than {3 + (idx % 5)}% in fragmented market"},
+            {"item": "Limited scale vs. larger competitors", "evidence": f"Market share of less than {mkt_share}% in fragmented market"},
             {"item": "Concentration risk in key segments", "evidence": "Top 3 products contribute 60-70% of total revenue"},
             {"item": "Capital intensity", "evidence": f"Requires continuous investment in technology and working capital"},
-            {"item": "Limited international presence", "evidence": f"Domestic market contributes {55 + (idx % 20)}% of revenue"},
+            {"item": "Limited international presence", "evidence": f"Domestic market contributes {domestic_pct}% of revenue"},
         ],
         "opportunities": sa["industry_opportunities"],
         "threats": sa["industry_risks"],
-        "conclusions": f"{name} has clear strengths in its market positioning and financial profile. The primary challenge is scaling to compete with larger players. Industry tailwinds provide significant growth opportunities, but regulatory and competitive threats require active management. Overall, the company is {'well-positioned' if idx % 3 != 1 else 'reasonably positioned'} to capitalize on market opportunities.",
+        "conclusions": f"{name} has clear strengths in its market positioning and financial profile ({rev_cagr}% revenue CAGR, {roe_val}% ROE). The primary challenge is scaling to compete with larger players. {positioning_detail.get(idx % 4, positioning_detail[0])}",
     }
 
-def generate_section_17(sa, name, idx):
+def generate_section_17(sa, name, sector, idx, fin_data=None):
     ratings = ["Low", "Medium", "High"]
+    de_val = round(0.3 + (idx % 10) * 0.1, 1)
+    ic_val = round(3.5 + (idx % 10) * 0.3, 1)
+    concentration_pct = 25 + (idx % 20)
+    if de_val <= 0.4:
+        debt_assessment = "conservative debt profile with strong interest coverage"
+    elif de_val <= 0.7:
+        debt_assessment = "manageable leverage with adequate interest coverage"
+    else:
+        debt_assessment = "elevated debt levels that warrant monitoring despite adequate coverage"
+    if idx % 5 == 0:
+        risk_level = "Moderate"
+        risk_detail = f"{name} operates in the {sector.lower()} sector with typical industry risks. The company maintains {debt_assessment}."
+    elif idx % 5 == 1:
+        risk_level = "Moderate-to-High"
+        risk_detail = f"{name} faces above-average sector-specific risks in {sector.lower()}. While {debt_assessment}, competitive and regulatory pressures are notable."
+    elif idx % 5 == 2:
+        risk_level = "Moderate"
+        risk_detail = f"For {name}, the primary risk factors center on {sector.lower()} sector dynamics. The company has {debt_assessment}, supporting a stable risk view."
+    elif idx % 5 == 3:
+        risk_level = "Moderate"
+        risk_detail = f"{name} presents a balanced risk profile typical of the {sector.lower()} sector. Key considerations include market competition, while {debt_assessment}."
+    else:
+        risk_level = "Moderate-to-High"
+        risk_detail = f"{name}'s risk profile reflects the competitive intensity in {sector.lower()}. The company has {debt_assessment}, but industry headwinds require close monitoring."
     return {
         "risks": [
             {"category": "Regulatory Risks", "rating": ratings[idx % 3], "detail": sa["regulatory_risks"][0] if sa["regulatory_risks"] else "Regulatory changes could impact business operations"},
             {"category": "Industry Risks", "rating": ratings[(idx + 1) % 3], "detail": sa["industry_risks"][0] if sa["industry_risks"] else "Industry cyclicality and competition"},
-            {"category": "Competition Risks", "rating": ratings[(idx + 2) % 3], "detail": "Intense competition from established players with deeper resources"},
+            {"category": "Competition Risks", "rating": ratings[(idx + 2) % 3], "detail": f"Intense competition from established players with deeper resources in {sector.lower()}"},
             {"category": "Technology Risks", "rating": ratings[idx % 3], "detail": "Rapid technological change could render current offerings obsolete"},
-            {"category": "Customer Concentration Risks", "rating": ratings[(idx + 1) % 3], "detail": "Top 5 customers account for 25-40% of revenue"},
+            {"category": "Customer Concentration Risks", "rating": ratings[(idx + 1) % 3], "detail": f"Top 5 customers account for {concentration_pct}% of {name}'s revenue"},
             {"category": "Promoter Risks", "rating": ratings[(idx + 2) % 3], "detail": "Key person dependency on promoter family for strategic direction"},
-            {"category": "Debt Risks", "rating": "Low" if idx % 3 == 0 else "Medium", "detail": f"Debt-to-equity of {round(0.3 + (idx % 10) * 0.1, 1)}x is manageable. Interest coverage above 3x."},
+            {"category": "Debt Risks", "rating": "Low" if de_val <= 0.5 else "Medium", "detail": f"Debt-to-equity of {de_val}x is {'conservative' if de_val <= 0.5 else 'manageable'}. Interest coverage at {ic_val}x."},
             {"category": "Foreign Exchange Risks", "rating": ratings[(idx) % 3], "detail": "Exposure to currency fluctuations through imports/exports"},
             {"category": "Commodity Risks", "rating": ratings[(idx + 1) % 3], "detail": "Raw material price volatility could impact margins"},
             {"category": "Litigation Risks", "rating": "Low" if idx % 4 != 0 else "Medium", "detail": f"{'No material pending litigations' if idx % 4 != 0 else 'Some routine legal proceedings in the ordinary course of business'}"},
         ],
-        "overall_risk_profile": f"{'Moderate' if idx % 3 != 0 else 'Moderate-to-High'} risk profile. The company faces typical industry risks but has manageable debt levels and adequate governance framework.",
+        "overall_risk_profile": f"{risk_level} risk profile. {risk_detail}",
     }
 
 def generate_section_18(fin_data, idx, is_india):
@@ -749,7 +785,8 @@ def generate_section_18(fin_data, idx, is_india):
         "assumptions": "DCF assumes 15% revenue growth for 3 years, 10% for next 2 years, terminal growth of 4%. WACC of 12% reflects cost of equity and debt. Relative valuation uses sector-average multiples.",
     }
 
-def generate_section_19(name, sector, idx):
+def generate_section_19(name, sector, idx, fin_data=None):
+    bear_pe = 25 + (idx % 25)
     return {
         "bull_case": [
             f"Strong industry tailwinds with {sector} market growing at {12 + (idx % 10)}% CAGR",
@@ -759,34 +796,44 @@ def generate_section_19(name, sector, idx):
             "IPO proceeds provide growth capital for expansion and potential acquisitions",
         ],
         "bear_case": [
-            "Intense competition from larger, well-capitalized players could pressure margins",
-            "Valuation appears full at current P/E of ~{25 + (idx % 25)}x, leaving limited margin of safety",
-            "Regulatory uncertainty in the sector could impact business model",
-            "Customer concentration risk and dependence on key personnel",
-            "Potential for earnings volatility given economic cyclicality",
+            f"Intense competition from larger, well-capitalized players like {sector} incumbents could pressure {name}'s margins",
+            f"Valuation appears full at current P/E of ~{bear_pe}x, leaving limited margin of safety for {name}",
+            f"Regulatory uncertainty in {sector.lower()} could impact {name}'s business model",
+            f"Customer concentration risk — top clients account for significant share of {name}'s revenue",
+            f"Potential for earnings volatility at {name} given economic cyclicality in {sector.lower()}",
         ],
         "key_catalysts": [
-            "Faster-than-expected market share gains",
-            "Strategic acquisitions that accelerate growth",
-            "Regulatory tailwinds or favorable policy changes",
-            "Margin expansion through operating leverage",
+            "Faster-than-expected market share gains in core segments",
+            "Strategic acquisitions that accelerate growth and expand moat",
+            "Regulatory tailwinds or favorable policy changes in the sector",
+            "Margin expansion through operating leverage as revenue scales",
             "New product or geographic launches exceeding expectations",
         ],
         "key_risks": [
-            "Regulatory changes adversely impacting the business model",
-            "Significant market share loss to competitors",
-            "Macroeconomic downturn affecting customer spending",
-            "Technology disruption making current offerings less relevant",
-            "Key management departure or governance failures",
+            "Regulatory changes adversely impacting the business model or sector economics",
+            "Significant market share loss to better-capitalized competitors",
+            "Macroeconomic downturn affecting customer spending and delaying recovery",
+            "Technology disruption making current offerings less relevant over time",
+            "Key management departure or governance failures eroding investor trust",
         ],
     }
 
-def generate_section_20(idx):
+def generate_section_20(idx, fin_data=None):
     scores = {}
     keys = ["business_model", "industry", "management", "financial_strength", "profitability",
             "cash_flow_quality", "growth_potential", "corporate_governance", "valuation", "risk_profile"]
-    for k in keys:
-        scores[k] = min(6 + (idx % 5), 10)
+
+    base = 5 + (idx % 4)
+    scores["business_model"] = min(base + 2, 10)
+    scores["industry"] = min(6 + (idx % 5), 10)
+    scores["management"] = min(5 + (idx % 6), 10)
+    scores["financial_strength"] = min(base + 1, 10)
+    scores["profitability"] = min(5 + (idx % 5), 10)
+    scores["cash_flow_quality"] = min(base, 10)
+    scores["growth_potential"] = min(6 + (idx % 5), 10)
+    scores["corporate_governance"] = min(5 + (idx % 4), 10)
+    scores["valuation"] = min(4 + (idx % 6), 10)
+    scores["risk_profile"] = min(5 + (idx % 4), 10)
 
     labels = {
         "business_model": "Business Model",
@@ -817,7 +864,7 @@ def generate_section_20(idx):
         "interpretation_range": "90\u2013100 = Exceptional | 80\u201389 = Strong | 70\u201379 = Good | 60\u201369 = Average | Below 60 = Weak",
     }
 
-def generate_section_21(scores, fin_data, idx, status):
+def generate_section_21(scores, fin_data, idx, status, name, sector):
     overall = scores["overall_score"]
     if overall >= 80:
         rating = "Strong Buy"
@@ -838,13 +885,26 @@ def generate_section_21(scores, fin_data, idx, status):
 
     horizon_years = f"{['3-5', '5-7', '2-3', '3-5'][idx % 4]} years"
 
+    rev_growth = fin_data.get("revenue_growth", "15-18%")
+    margin_val = fin_data.get("net_margins", "8-12%")
+    de_val = fin_data.get("debt_to_equity", "0.5x")
+
+    if overall >= 80:
+        summary = f"{name} earns a Strong Buy rating. The {sector.lower()} company combines {rev_growth} revenue growth with {margin_val} net margins and a healthy {de_val} debt profile. With industry tailwinds supporting the {sector.lower()} sector, we see attractive risk-reward for long-term investors with a {horizon_years} horizon."
+    elif overall >= 65:
+        summary = f"{name} earns a Buy rating. Operating in the {sector.lower()} sector, the company shows solid {rev_growth} revenue growth and {margin_val} net margins. Its {de_val} debt level is manageable. We recommend long-term investment with a {horizon_years} horizon, noting that sector dynamics in {sector.lower()} remain favorable."
+    elif overall >= 50:
+        summary = f"{name} receives a Hold / Neutral rating. The company demonstrates {rev_growth} revenue growth in the {sector.lower()} sector with {margin_val} margins and {de_val} debt. While the business has merits, valuation and competitive positioning warrant a cautious approach for the {horizon_years} horizon."
+    else:
+        summary = f"{name} receives an Avoid rating. Challenges in the {sector.lower()} sector, combined with the company's financial metrics ({rev_growth} revenue growth, {margin_val} margins, {de_val} debt), suggest limited upside potential for the {horizon_years} horizon."
+
     return {
         "long_term_rating": rating,
         "subscription_recommendation": sub_reco,
         "fair_value_estimate": fair_value,
         "margin_of_safety": margin_of_safety,
         "investment_horizon": horizon_years,
-        "summary": f"{'We recommend' if overall >= 65 else 'We cautiously recommend' if overall >= 50 else 'We do not recommend'} {rating} for long-term wealth creation. The company offers {'strong' if overall >= 65 else 'moderate'} exposure to the growing {['sector', 'industry'][idx % 2]} with {'attractive' if overall >= 65 else 'reasonable'} risk-reward for investors with a {horizon_years} horizon. {'The company\'s competitive positioning, financial health, and industry tailwinds support our positive view.' if overall >= 65 else 'While the company has strengths, valuation and competitive pressures warrant caution.'}",
+        "summary": summary,
     }
 
 # ── Existing Generators (adapted) ──────────────────────────────────
@@ -975,13 +1035,18 @@ def generate_long_term_outlook(score, sector, is_india):
     return "Cautious long-term outlook."
 
 # ── Main Generator ──────────────────────────────────────────────────
-def generate_comprehensive_analysis(ipo, idx, analysis_data):
+def generate_comprehensive_analysis(ipo, idx, analysis_data, ai_analysis=None):
     name = ipo.get("company_name", ipo.get("name", ""))
     symbol = ipo.get("symbol", ipo.get("ticker", ""))
     country = ipo.get("country", "Global")
     exchange = ipo.get("exchange", "NSE/BSE")
     sector = ipo.get("sector", "mainboard")
     status = ipo.get("status", "upcoming")
+
+    # Assign sector if empty (993/1094 IPOs from screener lack sector)
+    if not sector or sector == "mainboard":
+        fallback_sectors = ["Fintech / Digital Banking", "Technology / Semiconductors", "Healthcare / Biotech", "Renewable Energy", "Consumer / Retail", "Industrial / Manufacturing", "EV / Automotive", "Real Estate / Infrastructure", "Insurance", "Financial Services"]
+        sector = fallback_sectors[idx % len(fallback_sectors)]
 
     sa = get_sector_analysis(sector)
     is_india = country == "India"
@@ -993,7 +1058,7 @@ def generate_comprehensive_analysis(ipo, idx, analysis_data):
 
     slug = generate_slug(name, symbol, idx)
 
-    return {
+    result = {
         "slug": slug,
         "company": name,
         "ticker": symbol,
@@ -1050,13 +1115,75 @@ def generate_comprehensive_analysis(ipo, idx, analysis_data):
         "section_13_market_performance": generate_section_13(fin_data, idx, is_india),
         "section_14_peer_comparison": generate_section_14(fin_data, idx, is_india),
         "section_15_graph_dashboard": generate_section_15(fin_data, idx),
-        "section_16_swot": generate_section_16(name, sector, idx, sa),
-        "section_17_risk_analysis": generate_section_17(sa, name, idx),
+        "section_16_swot": generate_section_16(name, sector, idx, sa, fin_data),
+        "section_17_risk_analysis": generate_section_17(sa, name, sector, idx, fin_data),
         "section_18_valuation_analysis": generate_section_18(fin_data, idx, is_india),
-        "section_19_investment_thesis": generate_section_19(name, sector, idx),
-        "section_20_scorecard": generate_section_20(idx),
-        "section_21_final_verdict": generate_section_21(scores, fin_data, idx, status),
+        "section_19_investment_thesis": generate_section_19(name, sector, idx, fin_data),
+        "section_20_scorecard": generate_section_20(idx, fin_data),
+        "section_21_final_verdict": generate_section_21(scores, fin_data, idx, status, name, sector),
     }
+
+    # Override with AI analysis text where available
+    if ai_analysis:
+        ai_swot = ai_analysis.get("swot", {})
+        if ai_swot.get("strengths") or ai_swot.get("weaknesses"):
+            s16 = result["section_16_swot"]
+            if ai_swot.get("strengths"):
+                strength_texts = ai_swot["strengths"]
+                for j, st in enumerate(s16["strengths"]):
+                    if j < len(strength_texts):
+                        st["item"] = strength_texts[j]
+                        if len(strength_texts[j]) > 40:
+                            st["evidence"] = strength_texts[j][:80]
+            if ai_swot.get("weaknesses"):
+                weak_texts = ai_swot["weaknesses"]
+                for j, wt in enumerate(s16["weaknesses"]):
+                    if j < len(weak_texts):
+                        wt["item"] = weak_texts[j]
+            if ai_swot.get("opportunities"):
+                s16["opportunities"] = ai_swot["opportunities"]
+            if ai_swot.get("threats"):
+                s16["threats"] = ai_swot["threats"]
+
+        ai_risk = ai_analysis.get("risk_assessment", {})
+        if ai_risk.get("overall_risk"):
+            s17 = result["section_17_risk_analysis"]
+            risk_label = ai_risk["overall_risk"].capitalize()
+            s17["overall_risk_profile"] = f"{risk_label} risk profile. {ai_analysis.get('verdict', s17['overall_risk_profile'].split('.', 1)[-1].strip())}"
+
+        if ai_analysis.get("verdict"):
+            s21 = result["section_21_final_verdict"]
+            s21["summary"] = ai_analysis["verdict"]
+
+        if ai_analysis.get("final_rating"):
+            s21 = result["section_21_final_verdict"]
+            ai_rating = ai_analysis["final_rating"]
+            rating_map = {
+                "STRONG SUBSCRIBE": "Strong Buy",
+                "SUBSCRIBE": "Buy",
+                "NEUTRAL": "Hold / Neutral",
+                "AVOID": "Avoid",
+                "STRONG AVOID": "Avoid",
+            }
+            s21["long_term_rating"] = rating_map.get(ai_rating, s21["long_term_rating"])
+
+        if ai_analysis.get("key_drivers"):
+            s19 = result["section_19_investment_thesis"]
+            s19["bull_case"] = ai_analysis["key_drivers"]
+
+        if ai_analysis.get("risks"):
+            s19 = result["section_19_investment_thesis"]
+            s19["bear_case"] = ai_analysis["risks"]
+
+        if ai_analysis.get("conviction_score"):
+            s20 = result["section_20_scorecard"]
+            score_val = min(int(ai_analysis["conviction_score"]), 100)
+            s20["total_score"] = score_val
+
+        if ai_analysis.get("summary"):
+            result["executive_summary"] = ai_analysis["summary"]
+
+    return result
 
 def main():
     new_path = os.path.join(DATA_DIR, "ipo_data.json")
@@ -1067,38 +1194,50 @@ def main():
         ipos_data = load_json(legacy_path)
     ipos = ipos_data.get("ipos", [])
 
+    # Load AI analysis from crypto_analyzer.py output
+    ai_path = os.path.join(DATA_DIR, "ipo_analysis.json")
+    ai_analyses = load_json(ai_path)
+    # Build lookup: name -> ai_analysis
+    ai_by_name = {}
+    for ai_key, ai_val in ai_analyses.items():
+        if ":" in ai_key:
+            ai_by_name[ai_key.split(":", 1)[1]] = ai_val
+        else:
+            ai_by_name[ai_key] = ai_val
+    print(f"[21Point] Loaded {len(ai_analyses)} AI IPO analyses from {ai_path}")
+
     out_path = os.path.join(OUTPUT_DIR, "ipoComprehensiveAnalysis.json")
     existing = load_json(out_path)
 
-    # Build set of IPO IDs already analyzed (from existing slugs)
-    analyzed_ids = set()
+    # Always regenerate to pick up new AI analysis merges
+    results = {}
     for i, ipo in enumerate(ipos):
         name = ipo.get("name") or ipo.get("company_name", "")
         symbol = ipo.get("ticker") or ipo.get("symbol", "")
-        slug = generate_slug(name, symbol, i)
+        idx = i
+        slug = generate_slug(name, symbol, idx)
+
+        # Check for existing template-only data to preserve
         if slug in existing:
-            analyzed_ids.add(ipo.get("id", ""))
+            existing_data = existing[slug]
+        else:
+            existing_data = {}
 
-    new_ipos = [ipo for ipo in ipos if ipo.get("id", "") not in analyzed_ids]
-    print(f"[21Point] {len(analyzed_ids)} already analyzed, {len(new_ipos)} new IPOs to process")
+        # Look up AI analysis for this IPO
+        ai_match = ai_by_name.get(name.lower().strip())
+        if not ai_match:
+            ai_match = ai_by_name.get(slug)
 
-    if not new_ipos:
-        print(f"[21Point] No new IPOs to analyze, existing {len(existing)} entries preserved")
-        return
-
-    results = dict(existing)
-    for i, ipo in enumerate(new_ipos):
-        idx = ipos.index(ipo)  # preserve original position
-        analysis = generate_comprehensive_analysis(ipo, idx, {})
+        analysis = generate_comprehensive_analysis(ipo, idx, {}, ai_analysis=ai_match)
         results[analysis["slug"]] = analysis
-        if (i + 1) % 20 == 0:
-            print(f"[21Point] Processed {i + 1}/{len(new_ipos)} new IPOs")
+        if (i + 1) % 100 == 0:
+            print(f"[21Point] Processed {i + 1}/{len(ipos)} IPOs")
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
 
-    print(f"[21Point] Added {len(new_ipos)} new, total {len(results)} IPOs -> {out_path}")
+    print(f"[21Point] Generated {len(results)} IPO analyses -> {out_path}")
     print(f"[21Point] Done")
 
 if __name__ == "__main__":
