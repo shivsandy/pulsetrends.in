@@ -472,7 +472,7 @@ def analyze_crypto(projects: List[dict], api_keys: List[dict], max_workers: int 
     print(f"[Crypto Analyzer] Done. {len(cache)} total crypto analyses cached")
 
 
-def analyze_ipos(ipos: List[dict], api_keys: List[dict], max_workers: int = 5):
+def analyze_ipos(ipos: List[dict], api_keys: List[dict], max_workers: int = 8, batch_size: int = 50):
     if not api_keys:
         print("[IPO Analyzer] No OpenRouter keys, skipping IPO analysis")
         return
@@ -481,12 +481,15 @@ def analyze_ipos(ipos: List[dict], api_keys: List[dict], max_workers: int = 5):
     for ipo in ipos:
         if _analysis_key_ipo(ipo) not in cache:
             to_analyze.append(ipo)
+            if len(to_analyze) >= batch_size:
+                break
 
     if not to_analyze:
         print(f"[IPO Analyzer] All {len(ipos)} IPOs already analyzed, nothing to do")
         return
 
-    print(f"[IPO Analyzer] {len(to_analyze)}/{len(ipos)} IPOs need analysis ({len(cache)} cached)")
+    remaining = len(ipos) - len(cache) - len(to_analyze)
+    print(f"[IPO Analyzer] Analyzing {len(to_analyze)} IPOs this run ({len(cache)} cached, ~{remaining} remaining)")
 
     lock = threading.Lock()
     done = [0]
@@ -508,7 +511,7 @@ def analyze_ipos(ipos: List[dict], api_keys: List[dict], max_workers: int = 5):
         for f in as_completed(futures):
             pass
 
-    print(f"[IPO Analyzer] Done. {len(cache)} total IPO analyses cached")
+    print(f"[IPO Analyzer] Done. {len(cache)} total IPO analyses cached ({len(ipos) - len(cache)} remaining)")
 
 
 def load_or_keys() -> List[dict]:
