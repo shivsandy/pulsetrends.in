@@ -149,7 +149,26 @@ function buildHtml({
   stylesheetHref,
   jsSrc,
   modulepreloadLinks = [],
+  redirectTo,
 }) {
+  if (redirectTo) {
+    const redirectUrl = redirectTo.startsWith('http') ? redirectTo : `${SITE_ORIGIN}${redirectTo}`;
+    return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta http-equiv="refresh" content="0; url=${redirectUrl}" />
+    <title>Redirecting... | ${SITE_NAME}</title>
+    <link rel="canonical" href="${redirectUrl}" />
+  </head>
+  <body>
+    <p>Redirecting to <a href="${redirectUrl}">${redirectUrl}</a>...</p>
+    <script>window.location.replace("${redirectUrl}");</script>
+  </body>
+</html>`;
+  }
   const url = canonical(path);
   const robots = noindex ? 'noindex,nofollow' : 'index,follow,max-image-preview:large';
 
@@ -372,6 +391,21 @@ export function generateStaticPages(distDir) {
     });
   }
 
+  // Redirects for old/removed URLs
+  const redirectRoutes = [
+    '/east-texas-politics-mayoral-candidates-discuss-vision-for-tyler-ahead-of-runoff',
+  ];
+
+  for (const oldPath of redirectRoutes) {
+    routes.push({
+      path: oldPath,
+      title: 'Redirecting...',
+      description: 'This page has moved.',
+      noindex: true,
+      redirectTo: '/news',
+    });
+  }
+
   // 404 page
   routes.push({
     path: '/404',
@@ -395,6 +429,7 @@ export function generateStaticPages(distDir) {
       stylesheetHref,
       jsSrc,
       modulepreloadLinks: modulepreloads,
+      redirectTo: route.redirectTo,
     });
 
     let outputDir, outputFile;

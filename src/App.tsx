@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import RootLayout from './layouts/RootLayout';
 import HomePage from './pages/HomePage';
@@ -48,6 +48,7 @@ export const router = createBrowserRouter([
       { path: 'privacy-policy', element: <SuspenseWrapper><PrivacyPolicyPage /></SuspenseWrapper> },
       { path: 'terms', element: <SuspenseWrapper><TermsPage /></SuspenseWrapper> },
       { path: 'cookies', element: <SuspenseWrapper><CookiesPage /></SuspenseWrapper> },
+      { path: 'east-texas-politics-mayoral-candidates-discuss-vision-for-tyler-ahead-of-runoff', element: <Navigate to="/news" replace /> },
       { path: '*', element: <SuspenseWrapper><NotFoundPage /></SuspenseWrapper> },
     ],
   },

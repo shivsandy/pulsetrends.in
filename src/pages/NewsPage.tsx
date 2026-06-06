@@ -1,12 +1,14 @@
-import { useState } from 'react';
-import { Search, SlidersHorizontal, Newspaper, TrendingUp, TrendingDown, Minus, Brain, Clock, Zap, ListChecks, CalendarDays, type LucideIcon } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { useState, useMemo } from 'react';
+import { Search, SlidersHorizontal, Newspaper, TrendingUp, TrendingDown, Minus, Brain, Clock, Zap, ListChecks, CalendarDays, ChevronLeft, ChevronRight, type LucideIcon } from 'lucide-react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { newsArticles, type NewsArticle } from '../data/newsData';
 import Badge from '../components/Badge';
 import { ROUTES } from '../seo/routes';
 import { getArticleSlug } from '../components/ArticleReader';
 import Breadcrumbs from '../components/Breadcrumbs';
 import PageSeo from '../components/PageSeo';
+
+const POSTS_PER_PAGE = 5;
 
 const CATEGORY_FILTERS = [
   { id: 'all', label: 'Top Stories' },
@@ -143,40 +145,184 @@ function ArticleCard({ article, index, i }: { article: NewsArticle; index: numbe
   );
 }
 
+function Pagination({
+  currentPage,
+  totalPages,
+  onPageChange,
+}: {
+  currentPage: number;
+  totalPages: number;
+  onPageChange: (page: number) => void;
+}) {
+  if (totalPages <= 1) return null;
+
+  const getPageNumbers = () => {
+    const pages: (number | 'ellipsis')[] = [];
+    const siblings = 1;
+    const start = Math.max(2, currentPage - siblings);
+    const end = Math.min(totalPages - 1, currentPage + siblings);
+
+    pages.push(1);
+
+    if (start > 2) {
+      pages.push('ellipsis');
+    }
+
+    for (let i = start; i <= end; i++) {
+      pages.push(i);
+    }
+
+    if (end < totalPages - 1) {
+      pages.push('ellipsis');
+    }
+
+    if (totalPages > 1) {
+      pages.push(totalPages);
+    }
+
+    return pages;
+  };
+
+  const pageNumbers = getPageNumbers();
+
+  return (
+    <nav className="flex items-center justify-center gap-1.5 pt-4" aria-label="News pagination">
+      <button
+        type="button"
+        onClick={() => onPageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+        className="inline-flex items-center gap-1 px-3 py-2 rounded-lg text-[12px] font-medium transition-all disabled:opacity-30 disabled:cursor-not-allowed enabled:hover:bg-surface-200 enabled:hover:text-surface-white text-surface-700 border border-surface-300/50 bg-surface-100"
+        aria-label="Previous page"
+      >
+        <ChevronLeft className="w-3.5 h-3.5" />
+        <span className="hidden sm:inline">Previous</span>
+      </button>
+
+      <div className="flex items-center gap-1">
+        {pageNumbers.map((page, idx) =>
+          page === 'ellipsis' ? (
+            <span
+              key={`ellipsis-${idx}`}
+              className="px-2 py-1.5 text-[12px] text-surface-600 select-none"
+              aria-hidden="true"
+            >
+              ...
+            </span>
+          ) : (
+            <button
+              key={page}
+              type="button"
+              onClick={() => onPageChange(page)}
+              disabled={page === currentPage}
+              className={`min-w-[36px] px-2.5 py-1.5 rounded-lg text-[12px] font-medium transition-all ${
+                page === currentPage
+                  ? 'bg-brand-muted text-brand-light border border-brand-border cursor-default'
+                  : 'text-surface-700 hover:text-surface-white hover:bg-surface-200 border border-surface-300/50 bg-surface-100'
+              }`}
+              aria-label={`Page ${page}`}
+              aria-current={page === currentPage ? 'page' : undefined}
+            >
+              {page}
+            </button>
+          )
+        )}
+      </div>
+
+      <button
+        type="button"
+        onClick={() => onPageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+        className="inline-flex items-center gap-1 px-3 py-2 rounded-lg text-[12px] font-medium transition-all disabled:opacity-30 disabled:cursor-not-allowed enabled:hover:bg-surface-200 enabled:hover:text-surface-white text-surface-700 border border-surface-300/50 bg-surface-100"
+        aria-label="Next page"
+      >
+        <span className="hidden sm:inline">Next</span>
+        <ChevronRight className="w-3.5 h-3.5" />
+      </button>
+    </nav>
+  );
+}
+
 export default function NewsPage() {
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const pageParam = searchParams.get('page');
+  const parsed = pageParam ? parseInt(pageParam, 10) : 1;
+  const currentPage = Number.isNaN(parsed) || parsed < 1 ? 1 : parsed;
+
   const [searchQuery, setSearchQuery] = useState('');
   const [categoryFilter, setCategoryFilter] = useState<CategoryFilter>('all');
   const [sentimentFilter, setSentimentFilter] = useState<string>('all');
 
   const articles = newsArticles;
 
-  const filtered = articles.filter((news) => {
-    const q = searchQuery.toLowerCase();
-    const matchesSearch = !q || [
-      news.headline,
-      news.subheadline,
-      news.category,
-      news.primaryKeyword,
-      ...(news.secondaryKeywords || []),
-      ...(news.relatedCoins || []),
-      ...(news.relatedStocks || []),
-    ].join(' ').toLowerCase().includes(q);
-    const matchesCategory = categoryFilter === 'all' || news.category === categoryFilter;
-    const matchesSentiment = sentimentFilter === 'all' || news.sentiment === sentimentFilter;
-    return matchesSearch && matchesCategory && matchesSentiment;
-  });
+  const filtered = useMemo(() => {
+    return articles.filter((news) => {
+      const q = searchQuery.toLowerCase();
+      const matchesSearch = !q || [
+        news.headline,
+        news.subheadline,
+        news.category,
+        news.primaryKeyword,
+        ...(news.secondaryKeywords || []),
+        ...(news.relatedCoins || []),
+        ...(news.relatedStocks || []),
+      ].join(' ').toLowerCase().includes(q);
+      const matchesCategory = categoryFilter === 'all' || news.category === categoryFilter;
+      const matchesSentiment = sentimentFilter === 'all' || news.sentiment === sentimentFilter;
+      return matchesSearch && matchesCategory && matchesSentiment;
+    });
+  }, [articles, searchQuery, categoryFilter, sentimentFilter]);
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE));
+  const safePage = Math.min(currentPage, totalPages);
+  const pageStart = (safePage - 1) * POSTS_PER_PAGE;
+  const paginatedArticles = filtered.slice(pageStart, pageStart + POSTS_PER_PAGE);
+
+  const handlePageChange = (page: number) => {
+    if (page < 1 || page > totalPages) return;
+    setSearchParams(page === 1 ? {} : { page: String(page) });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value);
+    handlePageChange(1);
+  };
+
+  const handleCategoryChange = (filter: CategoryFilter) => {
+    setCategoryFilter(filter);
+    handlePageChange(1);
+  };
+
+  const handleSentimentChange = (s: string) => {
+    setSentimentFilter(s);
+    handlePageChange(1);
+  };
 
   return (
     <>
       <PageSeo
-        meta={ROUTES.news}
+        meta={{
+          ...ROUTES.news,
+          ...(safePage > 1
+            ? {
+                title: `Market News - Page ${safePage} | PulseTrends`,
+                description: `Market news page ${safePage} — AI-analyzed crypto, IPO, and stock market updates with sentiment and impact scoring.`,
+              }
+            : {}),
+        }}
         breadcrumbs={[
           { name: 'Home', path: '/' },
           { name: 'News', path: '/news' },
+          ...(safePage > 1 ? [{ name: `Page ${safePage}`, path: `/news?page=${safePage}` }] : []),
         ]}
       />
       <div className="space-y-6">
-        <Breadcrumbs items={[{ name: 'Home', path: '/' }, { name: 'News' }]} />
+        <Breadcrumbs items={[
+          { name: 'Home', path: '/' },
+          { name: 'News', path: '/news' },
+          ...(safePage > 1 ? [{ name: `Page ${safePage}` }] : []),
+        ]} />
         <div className="border-b border-surface-300/60 pb-6">
           <div className="flex items-center gap-2 mb-1">
             <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-brand-muted border border-brand-border text-[11px] font-semibold text-brand-light uppercase tracking-wider">News Intelligence</span>
@@ -208,7 +354,7 @@ export default function NewsPage() {
               type="text"
               placeholder="Search crypto, IPOs, stocks, Nifty, Sensex..."
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={handleSearchChange}
               className="w-full pl-9 pr-4 py-2 bg-surface-200 border border-surface-300 rounded-lg text-[13px] text-surface-white placeholder-surface-600 focus:outline-none focus:border-surface-500 transition-colors"
               aria-label="Search news"
             />
@@ -219,7 +365,7 @@ export default function NewsPage() {
               <button
                 key={s}
                 type="button"
-                onClick={() => setSentimentFilter(s)}
+                onClick={() => handleSentimentChange(s)}
                 className={`px-2.5 py-1.5 rounded-md text-[12px] font-medium transition-all ${
                   sentimentFilter === s ? 'bg-surface-300 text-surface-white' : 'text-surface-600 hover:text-surface-800 hover:bg-surface-200'
                 }`}
@@ -238,7 +384,7 @@ export default function NewsPage() {
               type="button"
               role="tab"
               aria-selected={categoryFilter === filter.id}
-              onClick={() => setCategoryFilter(filter.id)}
+              onClick={() => handleCategoryChange(filter.id)}
               className={`shrink-0 px-3 py-1.5 rounded-md text-[12px] font-medium transition-all ${
                 categoryFilter === filter.id
                   ? 'bg-brand-muted text-brand-light border border-brand-border'
@@ -255,11 +401,18 @@ export default function NewsPage() {
             <p className="text-surface-600 text-[14px]">No stories match your criteria</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {filtered.map((article, i) => (
-              <ArticleCard key={article.id} article={article} index={i} i={i} />
-            ))}
-          </div>
+          <>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              {paginatedArticles.map((article, i) => (
+                <ArticleCard key={article.id} article={article} index={(safePage - 1) * POSTS_PER_PAGE + i} i={i} />
+              ))}
+            </div>
+            <Pagination
+              currentPage={safePage}
+              totalPages={totalPages}
+              onPageChange={handlePageChange}
+            />
+          </>
         )}
       </div>
     </>
