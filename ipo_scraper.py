@@ -92,16 +92,10 @@ def save_cache_meta(meta: dict):
 
 
 def needs_refresh() -> bool:
-    meta = load_cache_meta()
-    last = meta.get("last_updated")
-    if not last:
-        return True
-    try:
-        last_dt = datetime.fromisoformat(last)
-        age_days = (datetime.now(timezone.utc) - last_dt).days
-        return age_days >= 2
-    except (ValueError, TypeError):
-        return True
+    existing = load_existing_ipos()
+    if len(existing) > 0:
+        return False
+    return True
 
 
 def scrape_sec_edgar() -> List[dict]:
