@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import Badge from '../components/Badge';
 import ScoreRing from '../components/ScoreRing';
+import PerformanceChart from '../components/PerformanceChart';
 
 // ── Types ──────────────────────────────────────────────────────────
 interface TimelineEvent {
@@ -681,11 +682,22 @@ function SectionPeerComparison(data: ComprehensiveAnalysis['section_14_peer_comp
 }
 
 function SectionGraphDashboard(data: ComprehensiveAnalysis['section_15_graph_dashboard']) {
+  const performanceSeries = data.charts.find(c => c.values && c.values.length > 2);
   return (
     <div className="space-y-4">
+      {performanceSeries && (
+        <PerformanceChart
+          data={performanceSeries.values}
+          unit={performanceSeries.unit || ''}
+          title={performanceSeries.name}
+          description={performanceSeries.description}
+          yLabel="Issue Price"
+        />
+      )}
       {data.charts.map((chart, i) => {
         const hasBars = chart.values && chart.values.length > 1;
         const maxVal = hasBars ? Math.max(...chart.values) : 1;
+        if (chart === performanceSeries) return null;
         return (
           <div key={i} className="bg-surface-50 border border-surface-300/40 rounded-lg p-3">
             <p className="text-[12px] font-semibold text-surface-white mb-0.5">{chart.name}</p>
