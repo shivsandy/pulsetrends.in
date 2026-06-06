@@ -691,7 +691,8 @@ function SectionGraphDashboard(data: ComprehensiveAnalysis['section_15_graph_das
           unit={performanceSeries.unit || ''}
           title={performanceSeries.name}
           description={performanceSeries.description}
-          yLabel="Issue Price"
+          mode="return"
+          yLabel="Start Value"
         />
       )}
       {data.charts.map((chart, i) => {

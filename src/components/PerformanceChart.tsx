@@ -15,6 +15,7 @@ interface PerformanceChartProps {
   title?: string;
   description?: string;
   yLabel?: string;
+  mode?: 'absolute' | 'return';
 }
 
 function generateSmoothPath(points: { x: number; y: number }[]): string {
@@ -43,7 +44,7 @@ function intersectX(p1: { x: number; y: number }, p2: { x: number; y: number }, 
 }
 
 export default function PerformanceChart({
-  data, baseline, height = 240, unit = '', title, description, yLabel,
+  data, baseline, height = 240, unit = '', title, description, yLabel, mode = 'absolute',
 }: PerformanceChartProps) {
   const normalized: DataPoint[] = Array.isArray(data) && data.length > 0
     ? typeof data[0] === 'number'
@@ -51,20 +52,30 @@ export default function PerformanceChart({
       : data as DataPoint[]
     : [];
   if (normalized.length < 2) return null;
-  const values = normalized.map(d => d.value);
 
-  const min = Math.min(...values, baseline ?? 0);
-  const max = Math.max(...values, baseline ?? 0);
+  const firstVal = normalized[0].value;
+  const bl = mode === 'return' ? 0 : (baseline ?? 0);
+
+  const processed = useMemo(() => {
+    return normalized.map((d) => {
+      const v = mode === 'return' && firstVal !== 0
+        ? ((d.value - firstVal) / firstVal) * 100
+        : d.value;
+      return { ...d, displayValue: v };
+    });
+  }, [normalized, mode, firstVal]);
+
+  const values = processed.map(d => d.displayValue);
+
+  const min = Math.min(...values, bl);
+  const max = Math.max(...values, bl);
   const range = max - min || 1;
   const pad = range * 0.1;
   const chartMin = min - pad;
   const chartMax = max + pad;
   const chartRange = chartMax - chartMin;
 
-  const bl = baseline ?? 0;
-
   const WIDTH = 700;
-
   const padding = { top: 12, bottom: 28, left: 48, right: 16 };
   const plotW = WIDTH - padding.left - padding.right;
   const plotH = height - padding.top - padding.bottom;
@@ -78,9 +89,7 @@ export default function PerformanceChart({
   }
 
   const baselineY = yPos(bl);
-  const points = normalized.map((d, i) => ({ x: xPos(i), y: yPos(d.value), value: d.value, label: d.label }));
-
-  const pathSmooth = generateSmoothPath(points);
+  const points = processed.map((d, i) => ({ x: xPos(i), y: yPos(d.displayValue), value: d.value, displayValue: d.displayValue, label: d.label }));
 
   const fillPoints = useMemo(() => {
     if (points.length < 2) return '';
@@ -93,8 +102,7 @@ export default function PerformanceChart({
       const p2 = points[i + 1];
       const xi = intersectX(p1, p2, baselineY);
       if (xi !== null) {
-        const cpx = p1.x + (p2.x - p1.x) * 0.5;
-        segments.push(`L ${p1.x},${p1.y} Q ${cpx},${(p1.y + p2.y) / 2} ${xi},${baselineY}`);
+        segments.push(`L ${p1.x},${p1.y} L ${xi},${baselineY}`);
       } else {
         segments.push(`L ${p1.x},${p1.y}`);
       }
@@ -146,12 +154,21 @@ export default function PerformanceChart({
     return indices.map(i => ({ index: i, label: normalized[i].label }));
   }, [normalized]);
 
-  const lastValue = values[values.length - 1];
-  const firstValue = values[0];
-  const change = lastValue - firstValue;
-  const changePct = firstValue !== 0 ? ((change / firstValue) * 100) : 0;
-  const isUp = change >= 0;
-  const changeAbs = unit === '' ? Math.abs(lastValue - (baseline ?? firstValue)) : 0;
+  const lastDisplay = values[values.length - 1];
+  const firstDisplay = values[0];
+  const isUp = lastDisplay >= bl;
+  const changeFromFirst = mode === 'return' ? lastDisplay : (firstVal !== 0 ? ((lastDisplay - firstDisplay) / Math.abs(firstDisplay)) * 100 : 0);
+
+  function formatYVal(v: number): string {
+    if (mode === 'return') {
+      return `${v >= 0 ? '+' : ''}${v.toFixed(1)}%`;
+    }
+    const abs = Math.abs(v);
+    if (abs >= 1_00_00_000) return `${unit}${(v / 1_00_00_000).toFixed(1)}Cr`;
+    if (abs >= 1_00_000) return `${unit}${(v / 1_00_000).toFixed(1)}L`;
+    if (abs >= 1_000) return `${unit}${(v / 1_000).toFixed(1)}k`;
+    return `${unit}${Math.round(v).toLocaleString()}`;
+  }
 
   return (
     <div className="bg-surface-50 border border-surface-300/40 rounded-lg p-4">
@@ -165,16 +182,16 @@ export default function PerformanceChart({
       <div className="flex items-center gap-4 mb-3 text-[11px]">
         <div className="flex items-center gap-1.5">
           <span className="text-surface-600">Start:</span>
-          <span className="font-semibold text-surface-white">{unit}{firstValue.toLocaleString()}</span>
+          <span className="font-semibold text-surface-white">{unit}{firstVal.toLocaleString()}</span>
         </div>
         <div className="flex items-center gap-1.5">
           <span className="text-surface-600">Current:</span>
           <span className={`font-semibold ${isUp ? 'text-success' : 'text-danger'}`}>
-            {unit}{lastValue.toLocaleString()}
+            {unit}{normalized[normalized.length - 1].value.toLocaleString()}
           </span>
         </div>
         <div className={`flex items-center gap-1 font-semibold ${isUp ? 'text-success' : 'text-danger'}`}>
-          {isUp ? '▲' : '▼'} {Math.abs(changePct).toFixed(1)}%
+          {isUp ? '▲' : '▼'} {Math.abs(changeFromFirst).toFixed(1)}%
         </div>
       </div>
 
@@ -208,7 +225,7 @@ export default function PerformanceChart({
               fontSize="9"
               fontFamily="inherit"
             >
-              {unit}{Math.round(tick).toLocaleString()}
+              {formatYVal(tick)}
             </text>
           </g>
         ))}
@@ -228,7 +245,7 @@ export default function PerformanceChart({
           fontSize="8"
           fontFamily="inherit"
         >
-          {yLabel || 'Issue Price'}
+          {mode === 'return' ? '0% (Start)' : (yLabel || 'Baseline')}
         </text>
 
         {/* Gradient fill area */}
@@ -311,7 +328,7 @@ export default function PerformanceChart({
         </span>
         <span className="inline-flex items-center gap-1">
           <span className="w-3 h-px border-t border-dashed" style={{ borderColor: 'currentColor' }} />
-          {yLabel || 'Issue Price'}
+          {mode === 'return' ? '0% Return' : (yLabel || 'Baseline')}
         </span>
       </div>
     </div>
