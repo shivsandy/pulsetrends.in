@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-06T20:22:11.179052+00:00",
+  "last_updated": "2026-06-07T08:27:04.408801+00:00",
   "total": 37,
   "airdrops": [
     {
       "id": "polymarket",
       "name": "Polymarket",
       "url": "https://airdrops.io/polymarket/",
-      "heat": 418,
+      "heat": 419,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Polymarket Actions: Deposit",
         "Make predictions"
       ],
-      "description": "418° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP 389° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP 351° Ongoing Dreamcash Actions: Sign Up, Trade & refer friends to Earn XPs CLAIM AIRDROP 240° Ongoing Confirmed Ink Actions: Trade on Kraken Pro & Interact with Dapps CLAIM AIRDROP 217° Ongoing Base Actions: Complete Onchain Tasks, Social",
+      "description": "419° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP 392° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP 355° Ongoing Dreamcash Actions: Sign Up, Trade & refer friends to Earn XPs CLAIM AIRDROP 240° Ongoing Confirmed Ink Actions: Trade on Kraken Pro & Interact with Dapps CLAIM AIRDROP 211° Ongoing Base Actions: Complete Onchain Tasks, Social",
       "source": "airdrops.io",
       "tge_date": "will follow the completion of its U",
       "steps": [
@@ -45,14 +45,14 @@
       "id": "solpump",
       "name": "SolPump",
       "url": "https://airdrops.io/solpump/",
-      "heat": 389,
+      "heat": 392,
       "status": "active",
       "chain": "Solana",
       "actions": [
         "SolPump Actions: Participate hourly",
         "grab free SOL"
       ],
-      "description": "389° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP",
+      "description": "392° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Visit the SolPump Platform",
@@ -108,7 +108,7 @@
       "id": "dreamcash",
       "name": "Dreamcash",
       "url": "https://airdrops.io/dreamcash/",
-      "heat": 351,
+      "heat": 355,
       "status": "active",
       "chain": "Hyperliquid",
       "actions": [
@@ -116,7 +116,7 @@
         "Trade",
         "refer friends to Earn XPs"
       ],
-      "description": "351° Ongoing Dreamcash Actions: Sign Up, Trade & refer friends to Earn XPs CLAIM AIRDROP",
+      "description": "355° Ongoing Dreamcash Actions: Sign Up, Trade & refer friends to Earn XPs CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Not announced Vesting Schedule : Not announced Season 1 is live, with two reward tracks running in parallel: an XP track and weekly USDT payouts",
       "steps": [
@@ -168,7 +168,7 @@
       "id": "base",
       "name": "Base",
       "url": "https://airdrops.io/base/",
-      "heat": 217,
+      "heat": 211,
       "status": "active",
       "chain": "Base",
       "actions": [
@@ -176,7 +176,7 @@
         "Social Tasks",
         "and Download App"
       ],
-      "description": "217° Ongoing Base Actions: Complete Onchain Tasks, Social Tasks, and Download App CLAIM AIRDROP",
+      "description": "211° Ongoing Base Actions: Complete Onchain Tasks, Social Tasks, and Download App CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "es",
       "steps": [
@@ -192,7 +192,7 @@
         "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fbase%2F&text=Base",
         "github": "https://github.com/base-org"
       },
-      "eligibility": "2026 Earn Free SOL Every Hour JOIN NOW Skip to content Menu Home Latest Airdrops Hot Airdrops Potential Airdrops Hyperliquid Airdrops MegaETH Airdrops Base Airdrops Solana Airdrops Monad Airdrops Soneium Airdrops Aptos Airdrops TON Airdrops zkSync Airdrops Blast Airdrops Telegram Airdrops Show all Claims Blog Contact Menu Home Latest Airdrops Hot Airdrops Potential Airdrops Hyperliquid Airdrops MegaETH Airdrops Base Airdrops Solana Airdrops Monad Airdrops Soneium Airdrops Aptos Airdrops TON Airdrops zkSync Airdrops Blast Airdrops Telegram Airdrops Show all Claims Blog Contact AD Base 217° Loading",
+      "eligibility": "2026 Earn Free SOL Every Hour JOIN NOW Skip to content Menu Home Latest Airdrops Hot Airdrops Potential Airdrops Hyperliquid Airdrops MegaETH Airdrops Base Airdrops Solana Airdrops Monad Airdrops Soneium Airdrops Aptos Airdrops TON Airdrops zkSync Airdrops Blast Airdrops Telegram Airdrops Show all Claims Blog Contact Menu Home Latest Airdrops Hot Airdrops Potential Airdrops Hyperliquid Airdrops MegaETH Airdrops Base Airdrops Solana Airdrops Monad Airdrops Soneium Airdrops Aptos Airdrops TON Airdrops zkSync Airdrops Blast Airdrops Telegram Airdrops Show all Claims Blog Contact AD Base 211° Loading",
       "difficulty": "Hard",
       "estimated_cost": ", fast transactions for decentralized applications, DeFi protocols, NFTs, and payments"
     },
@@ -358,16 +358,47 @@
       "estimated_cost": "s will be"
     },
     {
+      "id": "dustswap",
+      "name": "Dustswap",
+      "url": "https://airdrops.io/dustswap/",
+      "heat": 125,
+      "status": "confirmed",
+      "chain": "Base",
+      "actions": [
+        "Dustswap Actions: Complete quests",
+        "claim Discord role",
+        "refer friends"
+      ],
+      "description": "125° Ongoing Confirmed Dustswap Actions: Complete quests, claim Discord role & refer friends CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "event for $DUST is on the roadmap",
+      "steps": [
+        "Join the Dustswap Discord",
+        "Follow @DustswapOnBase on X",
+        "Post about Dustswap on X and mention @DustswapOnBase",
+        "Share your post link in the #claim_early_user channel"
+      ],
+      "about": "What is Dustswap? Dustswap is a gamified DeFi swap and bridge platform on Base , built on OpenOcean’s aggregation infrastructure. It turns routine on-chain activity like swaps, quests, and daily logins into a points-based progression system, with rewards paid out in its upcoming $DUST token. Dustswap has not disclosed funding details or named backers publicly. The app is live on mainnet, the Particle Points system is operational, and a token generation event for $DUST is on the roadmap.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Dustswap&url=https%3A%2F%2Fairdrops.io%2Fdustswap%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fdustswap%2F&text=Dustswap",
+        "discord": "https://discord.gg/dustswap"
+      },
+      "eligibility": "Twitter / X More Airdrops to Farm Domination Finance Ongoing Base View Guide → OmenX Ongoing Base View Guide → Otomato Ongoing Arbitrum, Base View Guide → Limitless Prediction Markets Ongoing Base View Guide → Kash Ongoing Base View Guide → Charms Ongoing Base View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications",
+      "difficulty": "Easy",
+      "estimated_cost": "nothing"
+    },
+    {
       "id": "xstocks",
       "name": "xStocks",
       "url": "https://airdrops.io/xstocks/",
-      "heat": 127,
+      "heat": 123,
       "status": "active",
       "chain": "Solana",
       "actions": [
         "xStocks Actions: Provide liqudity and refer to earn"
       ],
-      "description": "127° Ongoing xStocks Actions: Provide liqudity and refer to earn CLAIM AIRDROP",
+      "description": "123° Ongoing xStocks Actions: Provide liqudity and refer to earn CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Analyst — 10,000+ xPoints",
@@ -388,13 +419,13 @@
       "id": "grass",
       "name": "Grass",
       "url": "https://airdrops.io/grass/",
-      "heat": 123,
+      "heat": 121,
       "status": "confirmed",
       "chain": "Solana",
       "actions": [
         "Grass Actions: Install Grass extension and keep to earn points 🌱"
       ],
-      "description": "123° Ongoing Confirmed Grass Actions: Install Grass extension and keep active to earn points 🌱 CLAIM AIRDROP",
+      "description": "121° Ongoing Confirmed Grass Actions: Install Grass extension and keep active to earn points 🌱 CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "t, Gate",
       "steps": [
@@ -453,7 +484,7 @@
       "id": "kinetiq",
       "name": "Kinetiq",
       "url": "https://airdrops.io/kinetiq/",
-      "heat": 123,
+      "heat": 118,
       "status": "confirmed",
       "chain": "Hyperliquid",
       "actions": [
@@ -461,7 +492,7 @@
         "stake KNTQ",
         "trade perps"
       ],
-      "description": "123° Ongoing Confirmed Kinetiq Actions: Stake HYPE, stake KNTQ & trade perps CLAIM AIRDROP",
+      "description": "118° Ongoing Confirmed Kinetiq Actions: Stake HYPE, stake KNTQ & trade perps CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Download the Markets iOS app",
@@ -541,37 +572,6 @@
       "estimated_cost": "to Farm Medium Overview Website: saturn"
     },
     {
-      "id": "dustswap",
-      "name": "Dustswap",
-      "url": "https://airdrops.io/dustswap/",
-      "heat": 115,
-      "status": "confirmed",
-      "chain": "Base",
-      "actions": [
-        "Dustswap Actions: Complete quests",
-        "claim Discord role",
-        "refer friends"
-      ],
-      "description": "115° Ongoing Confirmed Dustswap Actions: Complete quests, claim Discord role & refer friends CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "event for $DUST is on the roadmap",
-      "steps": [
-        "Join the Dustswap Discord",
-        "Follow @DustswapOnBase on X",
-        "Post about Dustswap on X and mention @DustswapOnBase",
-        "Share your post link in the #claim_early_user channel"
-      ],
-      "about": "What is Dustswap? Dustswap is a gamified DeFi swap and bridge platform on Base , built on OpenOcean’s aggregation infrastructure. It turns routine on-chain activity like swaps, quests, and daily logins into a points-based progression system, with rewards paid out in its upcoming $DUST token. Dustswap has not disclosed funding details or named backers publicly. The app is live on mainnet, the Particle Points system is operational, and a token generation event for $DUST is on the roadmap.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Dustswap&url=https%3A%2F%2Fairdrops.io%2Fdustswap%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fdustswap%2F&text=Dustswap",
-        "discord": "https://discord.gg/dustswap"
-      },
-      "eligibility": "Twitter / X More Airdrops to Farm Domination Finance Ongoing Base View Guide → OmenX Ongoing Base View Guide → Otomato Ongoing Arbitrum, Base View Guide → Limitless Prediction Markets Ongoing Base View Guide → Kash Ongoing Base View Guide → Charms Ongoing Base View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications",
-      "difficulty": "Easy",
-      "estimated_cost": "nothing"
-    },
-    {
       "id": "minara_ai",
       "name": "Minara AI",
       "url": "https://airdrops.io/minara-ai/",
@@ -604,14 +604,14 @@
       "id": "monetrix",
       "name": "Monetrix",
       "url": "https://airdrops.io/monetrix/",
-      "heat": 66,
+      "heat": 69,
       "status": "active",
       "chain": "Hyperliquid",
       "actions": [
         "Monetrix Actions: Claim early badge SBT",
         "deposit USDC"
       ],
-      "description": "66° Ongoing Monetrix Actions: Claim early badge SBT & deposit USDC CLAIM AIRDROP",
+      "description": "69° Ongoing Monetrix Actions: Claim early badge SBT & deposit USDC CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": ". The Pioneer SBT and GEMs may factor into future distributions, but no specific token allocation has been confirmed",
       "steps": [
@@ -637,13 +637,13 @@
       "id": "canborsa",
       "name": "Canborsa",
       "url": "https://airdrops.io/canborsa/",
-      "heat": 56,
+      "heat": 64,
       "status": "confirmed",
       "chain": "TON",
       "actions": [
         "Canborsa Actions: Complete social quests and refer users"
       ],
-      "description": "56° Ongoing Canborsa Actions: Complete social quests and refer users CLAIM AIRDROP 30° Ongoing Pod Network Actions: Join testnet, deposit USDC & claim role CLAIM AIRDROP 36° Ongoing Doma Protocol Actions: Trade, provide liquidity & refer friends CLAIM AIRDROP Ongoing HLOS Actions: Install App, Trade & Stake for Points CLAIM AIRDROP Ongoing Catena Actions: Join waitlist CLAIM AIRDROP 23° Ongoing Mi",
+      "description": "64° Ongoing Canborsa Actions: Complete social quests and refer users CLAIM AIRDROP Ongoing Pod Network Actions: Join testnet, deposit USDC & claim role CLAIM AIRDROP 23° Ongoing Doma Protocol Actions: Trade, provide liquidity & refer friends CLAIM AIRDROP Ongoing HLOS Actions: Install App, Trade & Stake for Points CLAIM AIRDROP Ongoing Catena Actions: Join waitlist CLAIM AIRDROP Ongoing Minotaurus",
       "source": "airdrops.io",
       "tge_date": "date or reward distribution timeline has been announced",
       "steps": [
@@ -665,14 +665,14 @@
       "id": "deepbook",
       "name": "DeepBook",
       "url": "https://airdrops.io/deepbook/",
-      "heat": 51,
+      "heat": 28,
       "status": "confirmed",
       "chain": "Sui",
       "actions": [
         "DeepBook Actions: Join waitlist",
         "refer and claim DEEP"
       ],
-      "description": "51° Ongoing Confirmed DeepBook Actions: Join waitlist, refer and claim DEEP Claim Live CLAIM AIRDROP 78° Ongoing Minara AI Actions: Trade, social tasks & refer friends CLAIM AIRDROP 24° Ongoing Confirmed Plume Network Actions: Connect Wallet & Claim Airdrop Claim Live CLAIM AIRDROP Ongoing Confirmed o1.exchange Actions: Refer users Claim Live CLAIM AIRDROP Ongoing Fast Actions: Run prompts & Compl",
+      "description": "28° Ongoing Confirmed DeepBook Actions: Join waitlist, refer and claim DEEP Claim Live CLAIM AIRDROP 78° Ongoing Minara AI Actions: Trade, social tasks & refer friends CLAIM AIRDROP Ongoing Confirmed Plume Network Actions: Connect Wallet & Claim Airdrop Claim Live CLAIM AIRDROP Ongoing Confirmed o1.exchange Actions: Refer users Claim Live CLAIM AIRDROP Ongoing Fast Actions: Run prompts & Complete ",
       "source": "airdrops.io",
       "steps": [
         "Approve the connection request in your wallet.",
@@ -691,7 +691,7 @@
       "id": "doma_protocol",
       "name": "Doma Protocol",
       "url": "https://airdrops.io/doma-protocol/",
-      "heat": 36,
+      "heat": 23,
       "status": "active",
       "chain": "Own",
       "actions": [
@@ -699,7 +699,7 @@
         "provide liquidity",
         "refer friends"
       ],
-      "description": "36° Ongoing Doma Protocol Actions: Trade, provide liquidity & refer friends CLAIM AIRDROP",
+      "description": "23° Ongoing Doma Protocol Actions: Trade, provide liquidity & refer friends CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Trading domain tokens: earns 10,000 pts per $1 in fees",
@@ -719,15 +719,11 @@
       "id": "pod_network",
       "name": "Pod Network",
       "url": "https://airdrops.io/pod-network/",
-      "heat": 30,
+      "heat": 0,
       "status": "active",
       "chain": "Own",
-      "actions": [
-        "Pod Network Actions: Join testnet",
-        "deposit USDC",
-        "claim role"
-      ],
-      "description": "30° Ongoing Pod Network Actions: Join testnet, deposit USDC & claim role CLAIM AIRDROP",
+      "actions": [],
+      "description": "Ongoing Pod Network Actions: Join testnet, deposit USDC & claim role CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "$10,500 if you register before the start and deposit on the waitlist",
@@ -743,93 +739,6 @@
       "eligibility": "requires either a verified X account or more than 100 followers",
       "difficulty": "Easy",
       "estimated_cost": "to Farm Low Overview Website: test"
-    },
-    {
-      "id": "plume_network",
-      "name": "Plume Network",
-      "url": "https://airdrops.io/plume-network/",
-      "heat": 24,
-      "status": "confirmed",
-      "chain": "Own",
-      "actions": [
-        "Plume Network Actions: Connect Wallet"
-      ],
-      "description": "24° Ongoing Confirmed Plume Network Actions: Connect Wallet & Claim Airdrop Claim Live CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": ", with rewards proportional to deposit size",
-      "steps": [
-        "Testnet Users with Miles: Rewards are distributed above a set threshold on a tier-based system, calculated from Plume Miles, Stamps earned, and airplane mode tasks. Anti-sybil measures apply to protect genuine participants.",
-        "Active Community Members: Holders of select Plume Discord roles who took part in the testnet campaign.",
-        "Pre-Deposit Stakers: Users who deposited above a threshold across the three StakeStone and Nest pre-deposit campaigns and held funds until TGE, with rewards proportional to deposit size. The third campaign snapshot was taken January 18 at 5:00 PM UTC.",
-        "Polymarket",
-        "Ondo",
-        "World Liberty Financial (WLFI)",
-        "AIXBT by Virtuals",
-        "Select users of Backed Assets, Dinari, and Swarm X",
-        "Visit the Plume Season 2 registration page and connect your eligible wallet",
-        "Confirm the wallet holds at least 10,000 Plume Points (PP)",
-        "Complete Human Passport verification if prompted, building a score above 20",
-        "Total Allocation: 150,000,000 PLUME tokens",
-        "Eligibility: Open to all participants",
-        "Earning Methods: Onchain activity participation",
-        "Boost Opportunities: Available through Royco, Merkl incentives, and Portal campaigns",
-        "Visit Plume portal to start claiming and staking",
-        "Complete available quests and activities",
-        "Engage in ecosystem interactions to earn Plume Points",
-        "Monitor your progress through the Portal dashboard",
-        "Using the Plume Portal to earn Plume Points (PP)",
-        "Engaging in staking activities",
-        "Completing quests and ecosystem activities",
-        "Participating in onchain interactions",
-        "Visit the Plume Network website and register for the incentivized testnet",
-        "Connect your wallet for verification",
-        "Link your X (formerly Twitter) and Discord accounts",
-        "Complete initial tasks to earn 300 points",
-        "Use the referral system to earn additional 30 points per referral",
-        "Mint a Plume Goon NFT (limited availability)",
-        "Request ETH from the testnet faucet for NFT minting"
-      ],
-      "about": "What is Plume Network? Plume Network is a modular Layer 2 blockchain focused on real-world assets (RWAs). The platform integrates asset tokenization and compliance providers directly into the chain, creating a streamlined environment for RWA project deployment. By combining these elements, Plume aims to simplify the process of bringing real-world assets onto the blockchain while maintaining necessary compliance standards. The project has gained significant attention in the blockchain space, securing $10 million in funding from established investors including Galaxy Digital, Superscrypt, Reciprocal, and Portal Ventures. This backing demonstrates the market’s interest in Plume’s approach to RWA tokenization and management.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Plume%20Network&url=https%3A%2F%2Fairdrops.io%2Fplume-network%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fplume-network%2F&text=Plume%20Network",
-        "discord": "https://discord.gg/plume"
-      },
-      "eligibility": "is tied to Plume Points (PP), earned through staking, liquidity provision, trading volume, swaps, transactions, unique dApp interactions, and referrals",
-      "estimated_cost": "to Farm Free Overview Website: plumenetwork"
-    },
-    {
-      "id": "minotaurus",
-      "name": "Minotaurus",
-      "url": "https://airdrops.io/minotaurus/",
-      "heat": 23,
-      "status": "active",
-      "chain": "BSC",
-      "actions": [
-        "Minotaurus Actions: Earn tickets to enter $100k giveaway"
-      ],
-      "description": "23° Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored",
-      "source": "airdrops.io",
-      "steps": [
-        "500 USDT spent = 10 extra tickets",
-        "5,000 USDT spent = 100 extra tickets",
-        "1st Place: 50,000 USDT worth of $MTAUR",
-        "2nd Place: 20,000 USDT worth of $MTAUR",
-        "3rd Place: 10,000 USDT worth of $MTAUR",
-        "4th Place: 5,000 USDT worth of $MTAUR",
-        "5th Place: 4,000 USDT worth of $MTAUR",
-        "6th Place: 3,000 USDT worth of $MTAUR",
-        "7th Place: 2,000 USDT worth of $MTAUR",
-        "8th Place: 1,500 USDT worth of $MTAUR",
-        "9th Place: 1,000 USDT worth of $MTAUR",
-        "10th Place: 500 USDT worth of $MTAUR"
-      ],
-      "about": "What is Minotaurus? Minotaurus is a blockchain gaming project built around a maze-based mobile game and the $MTAUR utility token. Players move through maze-like settings, gather in-game currency, avoid obstacles, and unlock new parts of the game. The goal of the project is to create a casual, mobile-first experience with $MTAUR at the heart of the game’s economy. In the game, $MTAUR can be used for a lot of different things, such as getting to characters, buying things in the marketplace, using consumables, customizing your avatar, going to special zones, playing mini-games, and getting social rewards. With $MTAUR currently priced at 0.00012 USDT, the project’s presale has already raised over 3.1 million USDT. The planned listing price is 0.00020000 USDT. ⚠️ Only invest what you can afford to lose. This is not financial advice — crypto assets are highly volatile and presale participation carries significant risk.",
-      "social_links": {
-        "twitter": "https://x.com/minotaurus_io",
-        "telegram": "https://t.me/minotaurus_chat"
-      },
-      "eligibility": "Telegram Twitter / X More Airdrops to Farm Billions Network Ongoing BSC View Guide → Binance Ended BSC, Ethereum View Guide → Genius Ongoing BSC, Ethereum View Guide → Ultramarkets Ongoing Arbitrum, BSC View Guide → Derivio Ongoing BSC, Solana View Guide → Unitas Labs Ongoing BSC View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications"
     },
     {
       "id": "hlos",
@@ -880,6 +789,37 @@
       },
       "eligibility": "Email Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications",
       "estimated_cost": "s nothing, which makes it a low-effort way to register as an early user if the team ever introduces rewards"
+    },
+    {
+      "id": "minotaurus",
+      "name": "Minotaurus",
+      "url": "https://airdrops.io/minotaurus/",
+      "heat": 0,
+      "status": "active",
+      "chain": "BSC",
+      "actions": [],
+      "description": "Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored",
+      "source": "airdrops.io",
+      "steps": [
+        "500 USDT spent = 10 extra tickets",
+        "5,000 USDT spent = 100 extra tickets",
+        "1st Place: 50,000 USDT worth of $MTAUR",
+        "2nd Place: 20,000 USDT worth of $MTAUR",
+        "3rd Place: 10,000 USDT worth of $MTAUR",
+        "4th Place: 5,000 USDT worth of $MTAUR",
+        "5th Place: 4,000 USDT worth of $MTAUR",
+        "6th Place: 3,000 USDT worth of $MTAUR",
+        "7th Place: 2,000 USDT worth of $MTAUR",
+        "8th Place: 1,500 USDT worth of $MTAUR",
+        "9th Place: 1,000 USDT worth of $MTAUR",
+        "10th Place: 500 USDT worth of $MTAUR"
+      ],
+      "about": "What is Minotaurus? Minotaurus is a blockchain gaming project built around a maze-based mobile game and the $MTAUR utility token. Players move through maze-like settings, gather in-game currency, avoid obstacles, and unlock new parts of the game. The goal of the project is to create a casual, mobile-first experience with $MTAUR at the heart of the game’s economy. In the game, $MTAUR can be used for a lot of different things, such as getting to characters, buying things in the marketplace, using consumables, customizing your avatar, going to special zones, playing mini-games, and getting social rewards. With $MTAUR currently priced at 0.00012 USDT, the project’s presale has already raised over 3.1 million USDT. The planned listing price is 0.00020000 USDT. ⚠️ Only invest what you can afford to lose. This is not financial advice — crypto assets are highly volatile and presale participation carries significant risk.",
+      "social_links": {
+        "twitter": "https://x.com/minotaurus_io",
+        "telegram": "https://t.me/minotaurus_chat"
+      },
+      "eligibility": "Telegram Twitter / X More Airdrops to Farm Billions Network Ongoing BSC View Guide → Binance Ended BSC, Ethereum View Guide → Genius Ongoing BSC, Ethereum View Guide → Ultramarkets Ongoing Arbitrum, BSC View Guide → Derivio Ongoing BSC, Solana View Guide → Unitas Labs Ongoing BSC View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications"
     },
     {
       "id": "predikt",
@@ -1038,6 +978,58 @@
       "eligibility": ", so a wallet with a real track record is better positioned than a fresh one",
       "difficulty": "Easy",
       "estimated_cost": "to Farm Free Overview Website: rabbithole"
+    },
+    {
+      "id": "plume_network",
+      "name": "Plume Network",
+      "url": "https://airdrops.io/plume-network/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "Own",
+      "actions": [],
+      "description": "Ongoing Confirmed Plume Network Actions: Connect Wallet & Claim Airdrop Claim Live CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": ", with rewards proportional to deposit size",
+      "steps": [
+        "Testnet Users with Miles: Rewards are distributed above a set threshold on a tier-based system, calculated from Plume Miles, Stamps earned, and airplane mode tasks. Anti-sybil measures apply to protect genuine participants.",
+        "Active Community Members: Holders of select Plume Discord roles who took part in the testnet campaign.",
+        "Pre-Deposit Stakers: Users who deposited above a threshold across the three StakeStone and Nest pre-deposit campaigns and held funds until TGE, with rewards proportional to deposit size. The third campaign snapshot was taken January 18 at 5:00 PM UTC.",
+        "Polymarket",
+        "Ondo",
+        "World Liberty Financial (WLFI)",
+        "AIXBT by Virtuals",
+        "Select users of Backed Assets, Dinari, and Swarm X",
+        "Visit the Plume Season 2 registration page and connect your eligible wallet",
+        "Confirm the wallet holds at least 10,000 Plume Points (PP)",
+        "Complete Human Passport verification if prompted, building a score above 20",
+        "Total Allocation: 150,000,000 PLUME tokens",
+        "Eligibility: Open to all participants",
+        "Earning Methods: Onchain activity participation",
+        "Boost Opportunities: Available through Royco, Merkl incentives, and Portal campaigns",
+        "Visit Plume portal to start claiming and staking",
+        "Complete available quests and activities",
+        "Engage in ecosystem interactions to earn Plume Points",
+        "Monitor your progress through the Portal dashboard",
+        "Using the Plume Portal to earn Plume Points (PP)",
+        "Engaging in staking activities",
+        "Completing quests and ecosystem activities",
+        "Participating in onchain interactions",
+        "Visit the Plume Network website and register for the incentivized testnet",
+        "Connect your wallet for verification",
+        "Link your X (formerly Twitter) and Discord accounts",
+        "Complete initial tasks to earn 300 points",
+        "Use the referral system to earn additional 30 points per referral",
+        "Mint a Plume Goon NFT (limited availability)",
+        "Request ETH from the testnet faucet for NFT minting"
+      ],
+      "about": "What is Plume Network? Plume Network is a modular Layer 2 blockchain focused on real-world assets (RWAs). The platform integrates asset tokenization and compliance providers directly into the chain, creating a streamlined environment for RWA project deployment. By combining these elements, Plume aims to simplify the process of bringing real-world assets onto the blockchain while maintaining necessary compliance standards. The project has gained significant attention in the blockchain space, securing $10 million in funding from established investors including Galaxy Digital, Superscrypt, Reciprocal, and Portal Ventures. This backing demonstrates the market’s interest in Plume’s approach to RWA tokenization and management.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Plume%20Network&url=https%3A%2F%2Fairdrops.io%2Fplume-network%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fplume-network%2F&text=Plume%20Network",
+        "discord": "https://discord.gg/plume"
+      },
+      "eligibility": "is tied to Plume Points (PP), earned through staking, liquidity provision, trading volume, swaps, transactions, unique dApp interactions, and referrals",
+      "estimated_cost": "to Farm Free Overview Website: plumenetwork"
     },
     {
       "id": "o1_exchange",
@@ -1294,7 +1286,7 @@
       "description": "How to get free crypto airdrops? Cryptocurrency airdrops typically require users to complete simple tasks like following social media accounts, sharing posts, or signing up for newsletters. They might also include interacting with crypto DApps. Check reputable crypto websites for current airdrop opportunities.",
       "source": "airdrops.io",
       "steps": [
-        "Complete social quests and refer users CLAIM AIRDROP 30° Ongoing Pod Network Actions: Join testnet, deposit USDC & claim role CLAIM AIRDROP 36° Ongoing Doma Protocol Actions: Trade, provide liquidity & refer friends CLAIM AIRDROP Ongoing HLOS Actions: Install App, Trade & Stake for Points CLAIM AIRDROP Ongoing Catena Actions: Join waitlist CLAIM AIRDROP 23° Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored Ongoing Predikt Actions: Join waitlist CLAIM AIRDROP Ongoing Confirmed Vibe Trading Actions: Earn points and refer users CLAIM AIRDROP Ongoing Ceitnot Actions: Join testnet CLAIM AIRDROP Ongoing CoinEx Actions: Deposit and trade to earn CLAIM AIRDROP 115° Ongoing Confirmed Dustswap Actions: Complete quests, claim Discord role & refer friends CLAIM AIRDROP Ongoing Domination Finance Actions: Deposit and earn CLAIM AIRDROP Ongoing RabbitHole Actions: Join waitlist CLAIM AIRDROP Ongoing okbet Actions: Invite friends and complete quests CLAIM AIRDROP 51° Ongoing Confirmed DeepBook Actions: Join waitlist, refer and claim DEEP Claim Live CLAIM AIRDROP Ongoing PopDEX Actions: Get Discord role CLAIM AIRDROP Ongoing Confirmed Ondo Perps Actions: Join waitlist & trade perps CLAIM AIRDROP Ongoing isometric Actions: Sign up & Make Testnet Trades CLAIM AIRDROP X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
+        "Complete social quests and refer users CLAIM AIRDROP Ongoing Pod Network Actions: Join testnet, deposit USDC & claim role CLAIM AIRDROP 23° Ongoing Doma Protocol Actions: Trade, provide liquidity & refer friends CLAIM AIRDROP Ongoing HLOS Actions: Install App, Trade & Stake for Points CLAIM AIRDROP Ongoing Catena Actions: Join waitlist CLAIM AIRDROP Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored Ongoing Predikt Actions: Join waitlist CLAIM AIRDROP Ongoing Confirmed Vibe Trading Actions: Earn points and refer users CLAIM AIRDROP Ongoing Ceitnot Actions: Join testnet CLAIM AIRDROP Ongoing CoinEx Actions: Deposit and trade to earn CLAIM AIRDROP 125° Ongoing Confirmed Dustswap Actions: Complete quests, claim Discord role & refer friends CLAIM AIRDROP Ongoing Domination Finance Actions: Deposit and earn CLAIM AIRDROP Ongoing RabbitHole Actions: Join waitlist CLAIM AIRDROP Ongoing okbet Actions: Invite friends and complete quests CLAIM AIRDROP 28° Ongoing Confirmed DeepBook Actions: Join waitlist, refer and claim DEEP Claim Live CLAIM AIRDROP Ongoing PopDEX Actions: Get Discord role CLAIM AIRDROP Ongoing Confirmed Ondo Perps Actions: Join waitlist & trade perps CLAIM AIRDROP Ongoing isometric Actions: Sign up & Make Testnet Trades CLAIM AIRDROP X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
       ],
       "about": "Here you will find the most recent airdrop campaigns. Click on a drop to see more information and to find a step-by-step guide to claiming some free crypto"
     }
