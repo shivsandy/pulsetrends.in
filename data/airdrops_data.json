@@ -1,18 +1,16 @@
 {
-  "last_updated": "2026-06-12T11:55:38.368039+00:00",
-  "total": 43,
+  "last_updated": "2026-06-12T12:29:01.953950+00:00",
+  "total": 215,
   "airdrops": [
     {
       "id": "akka_finance",
       "name": "Akka Finance",
       "url": "https://airdrops.io/akka-finance/",
-      "heat": 40,
-      "status": "confirmed",
-      "chain": "Scroll",
-      "actions": [
-        "Akka Finance Actions: Perform swaps and deposit into vault"
-      ],
-      "description": "40° Ongoing Akka Finance Actions: Perform swaps and deposit into vault CLAIM AIRDROP 378° Ongoing Bybit Actions: Place prediction and hold your position CLAIM AIRDROP 28° Ongoing Confirmed Questflow Actions: Create AI clone and refer users CLAIM AIRDROP Ongoing Zoth Actions: Deposit and earn CLAIM AIRDROP 69° Ongoing Confirmed ACI Actions: Claim free testnet tokens, swap and complete missions CLAI",
+      "heat": 38,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "38° Ongoing Akka Finance Actions: Perform swaps and deposit into vault CLAIM AIRDROP",
       "source": "airdrops.io"
     },
     {
@@ -21,10 +19,8 @@
       "url": "https://airdrops.io/bybit/",
       "heat": 378,
       "status": "active",
-      "chain": "378°",
-      "actions": [
-        "Bybit Actions: Place prediction and hold your position"
-      ],
+      "chain": "",
+      "actions": [],
       "description": "378° Ongoing Bybit Actions: Place prediction and hold your position CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -34,10 +30,8 @@
       "url": "https://airdrops.io/questflow/",
       "heat": 28,
       "status": "confirmed",
-      "chain": "28°",
-      "actions": [
-        "Questflow Actions: Create AI clone and refer users"
-      ],
+      "chain": "",
+      "actions": [],
       "description": "28° Ongoing Confirmed Questflow Actions: Create AI clone and refer users CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -47,7 +41,7 @@
       "url": "https://airdrops.io/zoth/",
       "heat": 0,
       "status": "active",
-      "chain": "Ongoing",
+      "chain": "",
       "actions": [],
       "description": "Ongoing Zoth Actions: Deposit and earn CLAIM AIRDROP",
       "source": "airdrops.io"
@@ -58,11 +52,8 @@
       "url": "https://airdrops.io/aci/",
       "heat": 69,
       "status": "confirmed",
-      "chain": "69°",
-      "actions": [
-        "ACI Actions: Claim free testnet tokens",
-        "swap and complete missions"
-      ],
+      "chain": "",
+      "actions": [],
       "description": "69° Ongoing Confirmed ACI Actions: Claim free testnet tokens, swap and complete missions CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -72,7 +63,7 @@
       "url": "https://airdrops.io/minotaurus/",
       "heat": 0,
       "status": "active",
-      "chain": "Ongoing",
+      "chain": "",
       "actions": [],
       "description": "Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored",
       "source": "airdrops.io"
@@ -81,13 +72,11 @@
       "id": "kintara",
       "name": "Kintara",
       "url": "https://airdrops.io/kintara/",
-      "heat": 49,
+      "heat": 53,
       "status": "confirmed",
-      "chain": "49°",
-      "actions": [
-        "Kintara Actions: Complete daily quests to earn"
-      ],
-      "description": "49° Ongoing Confirmed Kintara Actions: Complete daily quests to earn CLAIM AIRDROP",
+      "chain": "",
+      "actions": [],
+      "description": "53° Ongoing Confirmed Kintara Actions: Complete daily quests to earn CLAIM AIRDROP",
       "source": "airdrops.io"
     },
     {
@@ -96,7 +85,7 @@
       "url": "https://airdrops.io/umbra/",
       "heat": 0,
       "status": "active",
-      "chain": "Ongoing",
+      "chain": "",
       "actions": [],
       "description": "Ongoing Umbra Actions: Join waitlist & refer friends CLAIM AIRDROP",
       "source": "airdrops.io"
@@ -107,7 +96,7 @@
       "url": "https://airdrops.io/caster/",
       "heat": 0,
       "status": "active",
-      "chain": "Ongoing",
+      "chain": "",
       "actions": [],
       "description": "Ongoing Caster Actions: Join testnet and place predictions CLAIM AIRDROP",
       "source": "airdrops.io"
@@ -118,7 +107,7 @@
       "url": "https://airdrops.io/crisp/",
       "heat": 0,
       "status": "active",
-      "chain": "Ongoing",
+      "chain": "",
       "actions": [],
       "description": "Ongoing CRISP Actions: Join public beta and refer CLAIM AIRDROP",
       "source": "airdrops.io"
@@ -129,7 +118,7 @@
       "url": "https://airdrops.io/canborsa/",
       "heat": 0,
       "status": "active",
-      "chain": "Ongoing",
+      "chain": "",
       "actions": [],
       "description": "Ongoing Canborsa Actions: Complete social quests and refer users CLAIM AIRDROP",
       "source": "airdrops.io"
@@ -140,7 +129,7 @@
       "url": "https://airdrops.io/pod-network/",
       "heat": 0,
       "status": "active",
-      "chain": "Ongoing",
+      "chain": "",
       "actions": [],
       "description": "Ongoing Pod Network Actions: Join testnet, deposit USDC & claim role CLAIM AIRDROP",
       "source": "airdrops.io"
@@ -151,7 +140,7 @@
       "url": "https://airdrops.io/doma-protocol/",
       "heat": 0,
       "status": "active",
-      "chain": "Ongoing",
+      "chain": "",
       "actions": [],
       "description": "Ongoing Doma Protocol Actions: Trade, provide liquidity & refer friends CLAIM AIRDROP",
       "source": "airdrops.io"
@@ -160,13 +149,11 @@
       "id": "monetrix",
       "name": "Monetrix",
       "url": "https://airdrops.io/monetrix/",
-      "heat": 450,
-      "status": "confirmed",
-      "chain": "Base",
-      "actions": [
-        "Monetrix Actions: Mint USDM with USDC"
-      ],
-      "description": "450° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP 430° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP 382° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP 378° Ongoing Bybit Actions: Place prediction and hold your position CLAIM AIRDROP 355° Ongoing Dreamcash Actions: Sign Up, Trade & refer friends to Earn XPs CLAIM AIRDROP 24",
+      "heat": 454,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "454° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP",
       "source": "airdrops.io"
     },
     {
@@ -175,11 +162,8 @@
       "url": "https://airdrops.io/polymarket/",
       "heat": 430,
       "status": "confirmed",
-      "chain": "430°",
-      "actions": [
-        "Polymarket Actions: Deposit",
-        "Make predictions"
-      ],
+      "chain": "",
+      "actions": [],
       "description": "430° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -187,14 +171,11 @@
       "id": "solpump",
       "name": "SolPump",
       "url": "https://airdrops.io/solpump/",
-      "heat": 382,
+      "heat": 377,
       "status": "active",
-      "chain": "382°",
-      "actions": [
-        "SolPump Actions: Participate hourly",
-        "grab free SOL"
-      ],
-      "description": "382° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP",
+      "chain": "",
+      "actions": [],
+      "description": "377° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP",
       "source": "airdrops.io"
     },
     {
@@ -203,12 +184,8 @@
       "url": "https://airdrops.io/dreamcash/",
       "heat": 355,
       "status": "active",
-      "chain": "355°",
-      "actions": [
-        "Dreamcash Actions: Sign Up",
-        "Trade",
-        "refer friends to Earn XPs"
-      ],
+      "chain": "",
+      "actions": [],
       "description": "355° Ongoing Dreamcash Actions: Sign Up, Trade & refer friends to Earn XPs CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -219,10 +196,7 @@
       "heat": 240,
       "status": "confirmed",
       "chain": "Ink",
-      "actions": [
-        "Ink Actions: Trade on Kraken Pro",
-        "Interact with Dapps"
-      ],
+      "actions": [],
       "description": "240° Ongoing Confirmed Ink Actions: Trade on Kraken Pro & Interact with Dapps CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -233,11 +207,7 @@
       "heat": 208,
       "status": "active",
       "chain": "Base",
-      "actions": [
-        "Base Actions: Complete Onchain Tasks",
-        "Social Tasks",
-        "and Download App"
-      ],
+      "actions": [],
       "description": "208° Ongoing Base Actions: Complete Onchain Tasks, Social Tasks, and Download App CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -248,13 +218,7 @@
       "heat": 166,
       "status": "confirmed",
       "chain": "Hyperliquid",
-      "actions": [
-        "Hyperliquid Actions: Trade",
-        "Interact with Chain",
-        "Stake HYPE",
-        "Provide LP",
-        "Refer Friends"
-      ],
+      "actions": [],
       "description": "166° Ongoing Confirmed Hyperliquid Actions: Trade, Interact with Chain, Stake HYPE, Provide LP & Refer Friends CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -264,10 +228,8 @@
       "url": "https://airdrops.io/litvm/",
       "heat": 151,
       "status": "active",
-      "chain": "151°",
-      "actions": [
-        "LitVM Actions: Farm Free Testnet"
-      ],
+      "chain": "",
+      "actions": [],
       "description": "151° Ongoing LitVM Actions: Farm Free Testnet CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -277,10 +239,8 @@
       "url": "https://airdrops.io/picks/",
       "heat": 136,
       "status": "active",
-      "chain": "136°",
-      "actions": [
-        "Picks Actions: Join World Cup campaign"
-      ],
+      "chain": "",
+      "actions": [],
       "description": "136° Ongoing Picks Actions: Join World Cup campaign CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -288,13 +248,11 @@
       "id": "grass",
       "name": "Grass",
       "url": "https://airdrops.io/grass/",
-      "heat": 122,
+      "heat": 126,
       "status": "confirmed",
-      "chain": "122°",
-      "actions": [
-        "Grass Actions: Install Grass extension and keep to earn points 🌱"
-      ],
-      "description": "122° Ongoing Confirmed Grass Actions: Install Grass extension and keep active to earn points 🌱 CLAIM AIRDROP",
+      "chain": "",
+      "actions": [],
+      "description": "126° Ongoing Confirmed Grass Actions: Install Grass extension and keep active to earn points 🌱 CLAIM AIRDROP",
       "source": "airdrops.io"
     },
     {
@@ -303,10 +261,8 @@
       "url": "https://airdrops.io/xstocks/",
       "heat": 121,
       "status": "active",
-      "chain": "121°",
-      "actions": [
-        "xStocks Actions: Provide liqudity and refer to earn"
-      ],
+      "chain": "",
+      "actions": [],
       "description": "121° Ongoing xStocks Actions: Provide liqudity and refer to earn CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -316,39 +272,42 @@
       "url": "https://airdrops.io/katana-network/",
       "heat": 120,
       "status": "confirmed",
-      "chain": "120°",
-      "actions": [
-        "Katana Actions: Deposit Assets",
-        "Trade Perps"
-      ],
+      "chain": "",
+      "actions": [],
       "description": "120° Ongoing Confirmed Katana Actions: Deposit Assets & Trade Perps CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "nado",
+      "name": "Nado",
+      "url": "https://airdrops.io/nado/",
+      "heat": 25,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [],
+      "description": "25° Ongoing Confirmed Nado Actions: Deposit & Trade perps CLAIM AIRDROP",
       "source": "airdrops.io"
     },
     {
       "id": "hypertrade",
       "name": "Hypertrade",
       "url": "https://airdrops.io/hypertrade/",
-      "heat": 26,
-      "status": "confirmed",
-      "chain": "BSC",
-      "actions": [
-        "Hypertrade Actions: Make swaps",
-        "add liquidity"
-      ],
-      "description": "Ongoing Hypertrade Actions: Make swaps & add liquidity CLAIM AIRDROP 26° Ongoing Confirmed Infinex Actions: Claim Now Claim Live CLAIM AIRDROP Ongoing Myriad Markets Actions: Make Predictions, Trade, Provide Liquidity, and Refer Others CLAIM AIRDROP 45° Ongoing predict.fun Actions: Start Trading & Collect PP points CLAIM AIRDROP 136° Ongoing Picks Actions: Join World Cup campaign CLAIM AIRDROP 77°",
+      "heat": 0,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Hypertrade Actions: Make swaps & add liquidity CLAIM AIRDROP",
       "source": "airdrops.io"
     },
     {
       "id": "infinex",
       "name": "Infinex",
       "url": "https://airdrops.io/infinex/",
-      "heat": 26,
+      "heat": 34,
       "status": "confirmed",
-      "chain": "26°",
-      "actions": [
-        "Infinex Actions: Claim Now"
-      ],
-      "description": "26° Ongoing Confirmed Infinex Actions: Claim Now Claim Live CLAIM AIRDROP",
+      "chain": "",
+      "actions": [],
+      "description": "34° Ongoing Confirmed Infinex Actions: Claim Now Claim Live CLAIM AIRDROP",
       "source": "airdrops.io"
     },
     {
@@ -357,7 +316,7 @@
       "url": "https://airdrops.io/myriad-markets/",
       "heat": 0,
       "status": "active",
-      "chain": "Ongoing",
+      "chain": "",
       "actions": [],
       "description": "Ongoing Myriad Markets Actions: Make Predictions, Trade, Provide Liquidity, and Refer Others CLAIM AIRDROP",
       "source": "airdrops.io"
@@ -368,11 +327,8 @@
       "url": "https://airdrops.io/predict-fun/",
       "heat": 45,
       "status": "active",
-      "chain": "45°",
-      "actions": [
-        "predict.fun Actions: Start Trading",
-        "Collect PP points"
-      ],
+      "chain": "",
+      "actions": [],
       "description": "45° Ongoing predict.fun Actions: Start Trading & Collect PP points CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -383,26 +339,8 @@
       "heat": 77,
       "status": "active",
       "chain": "BSC",
-      "actions": [
-        "Nansen Actions: Subscribe",
-        "stake assets",
-        "refer friends"
-      ],
+      "actions": [],
       "description": "77° Ongoing Nansen Actions: Subscribe, stake assets & refer friends CLAIM AIRDROP",
-      "source": "airdrops.io"
-    },
-    {
-      "id": "nado",
-      "name": "Nado",
-      "url": "https://airdrops.io/nado/",
-      "heat": 25,
-      "status": "confirmed",
-      "chain": "25°",
-      "actions": [
-        "Nado Actions: Deposit",
-        "Trade perps"
-      ],
-      "description": "25° Ongoing Confirmed Nado Actions: Deposit & Trade perps CLAIM AIRDROP",
       "source": "airdrops.io"
     },
     {
@@ -411,10 +349,8 @@
       "url": "https://airdrops.io/huma-finance/",
       "heat": 28,
       "status": "confirmed",
-      "chain": "28°",
-      "actions": [
-        "Huma Finance Actions: Check Eligibility"
-      ],
+      "chain": "",
+      "actions": [],
       "description": "28° Ongoing Confirmed Huma Finance Actions: Check Eligibility Claim Live CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -424,7 +360,7 @@
       "url": "https://airdrops.io/deepbook/",
       "heat": 0,
       "status": "confirmed",
-      "chain": "Ongoing",
+      "chain": "",
       "actions": [],
       "description": "Ongoing Confirmed DeepBook Actions: Join waitlist, refer and claim DEEP Claim Live CLAIM AIRDROP",
       "source": "airdrops.io"
@@ -435,12 +371,8 @@
       "url": "https://airdrops.io/minara-ai/",
       "heat": 80,
       "status": "active",
-      "chain": "80°",
-      "actions": [
-        "Minara AI Actions: Trade",
-        "social tasks",
-        "refer friends"
-      ],
+      "chain": "",
+      "actions": [],
       "description": "80° Ongoing Minara AI Actions: Trade, social tasks & refer friends CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -450,64 +382,9 @@
       "url": "https://airdrops.io/plume-network/",
       "heat": 0,
       "status": "confirmed",
-      "chain": "Ongoing",
+      "chain": "",
       "actions": [],
       "description": "Ongoing Confirmed Plume Network Actions: Connect Wallet & Claim Airdrop Claim Live CLAIM AIRDROP",
-      "source": "airdrops.io"
-    },
-    {
-      "id": "o1_exchange",
-      "name": "o1.exchange",
-      "url": "https://airdrops.io/o1-exchange/",
-      "heat": 0,
-      "status": "confirmed",
-      "chain": "Ongoing",
-      "actions": [],
-      "description": "Ongoing Confirmed o1.exchange Actions: Refer users Claim Live CLAIM AIRDROP",
-      "source": "airdrops.io"
-    },
-    {
-      "id": "what_are_airdrops_in_cryptocurrency",
-      "name": "What are airdrops in cryptocurrency?",
-      "url": "",
-      "heat": 0,
-      "status": "active",
-      "chain": "What",
-      "actions": [],
-      "description": "What are airdrops in cryptocurrency? Airdrops in cryptocurrency refer to the practice of a cryptocurrency project distributing free tokens or coins to eligible wallets or accounts.",
-      "source": "airdrops.io"
-    },
-    {
-      "id": "how_to_get_free_crypto_airdrops",
-      "name": "How to get free crypto airdrops?",
-      "url": "https://airdrops.io/latest/",
-      "heat": 0,
-      "status": "active",
-      "chain": "How",
-      "actions": [],
-      "description": "How to get free crypto airdrops? Cryptocurrency airdrops typically require users to complete simple tasks like following social media accounts, sharing posts, or signing up for newsletters. They might also include interacting with crypto DApps. Check reputable crypto websites for current airdrop opportunities.",
-      "source": "airdrops.io"
-    },
-    {
-      "id": "how_do_i_get_an_airdrop",
-      "name": "How do I get an airdrop?",
-      "url": "",
-      "heat": 0,
-      "status": "active",
-      "chain": "How",
-      "actions": [],
-      "description": "How do I get an airdrop? To get a crypto airdrop, you need to actively participate in the crypto community by following the project on social media, engaging with their content, and completing tasks they provide. Common airdrop requirements include signing up in their web app, joining their Telegram/Discord group, engaging with their posts, or completing on-chain tasks.",
-      "source": "airdrops.io"
-    },
-    {
-      "id": "how_do_i_find_upcoming_crypto_airdrops",
-      "name": "How do I find upcoming crypto airdrops?",
-      "url": "",
-      "heat": 0,
-      "status": "active",
-      "chain": "How",
-      "actions": [],
-      "description": "How do I find upcoming crypto airdrops? Check cryptocurrency project websites and social media for announcements. Many projects offer airdrops to reward early users and community members.",
       "source": "airdrops.io"
     },
     {
@@ -516,11 +393,8 @@
       "url": "https://airdrops.io/dac/",
       "heat": 127,
       "status": "active",
-      "chain": "127°",
-      "actions": [
-        "DAC Actions: Sign up",
-        "Complete Testnet tasks"
-      ],
+      "chain": "",
+      "actions": [],
       "description": "127° Ongoing DAC Actions: Sign up & Complete Testnet tasks CLAIM AIRDROP",
       "source": "airdrops.io"
     },
@@ -530,11 +404,20 @@
       "url": "https://airdrops.io/saturn-credit/",
       "heat": 121,
       "status": "active",
-      "chain": "121°",
-      "actions": [
-        "Saturn Credit Actions: Provide liquidity"
-      ],
+      "chain": "",
+      "actions": [],
       "description": "121° Ongoing Saturn Credit Actions: Provide liquidity CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "o1_exchange",
+      "name": "o1.exchange",
+      "url": "https://airdrops.io/o1-exchange/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Confirmed o1.exchange Actions: Refer users Claim Live CLAIM AIRDROP",
       "source": "airdrops.io"
     },
     {
@@ -543,10 +426,1946 @@
       "url": "https://airdrops.io/fast/",
       "heat": 0,
       "status": "active",
-      "chain": "Ongoing",
+      "chain": "",
       "actions": [],
       "description": "Ongoing Fast Actions: Run prompts & Complete Tasks to Earn Points CLAIM AIRDROP",
       "source": "airdrops.io"
+    },
+    {
+      "id": "dustswap",
+      "name": "Dustswap",
+      "url": "https://airdrops.io/dustswap/",
+      "heat": 115,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [],
+      "description": "115° Ongoing Confirmed Dustswap Actions: Complete quests, claim Discord role & refer friends CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "kinetiq",
+      "name": "Kinetiq",
+      "url": "https://airdrops.io/kinetiq/",
+      "heat": 113,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [],
+      "description": "113° Ongoing Confirmed Kinetiq Actions: Stake HYPE, stake KNTQ & trade perps CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "altura",
+      "name": "Altura",
+      "url": "https://airdrops.io/altura/",
+      "heat": 113,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [],
+      "description": "113° Ongoing Confirmed Altura Actions: Deposit USDT to earn CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "omenx",
+      "name": "OmenX",
+      "url": "https://airdrops.io/omenx/",
+      "heat": 104,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "104° Ongoing OmenX Actions: Trade on mainnet & refer friends CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "airdrop_newsletter",
+      "name": "Airdrop Newsletter",
+      "url": "",
+      "heat": 0,
+      "status": "active",
+      "chain": "BSC",
+      "actions": [],
+      "description": "Airdrop Newsletter Receive regular emails containing the hottest airdrops on airdrops.io. Don’t worry, we hate spam just as much as you do! We promise you to never send more than two emails per week! Simply subscribe with your email address to receive weekly airdrop alerts: Email",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "potential_aptos_ecosystem_airdrops",
+      "name": "Potential Aptos Ecosystem Airdrops",
+      "url": "",
+      "heat": 0,
+      "status": "active",
+      "chain": "Aptos",
+      "actions": [],
+      "description": "Potential Aptos Ecosystem Airdrops Aptos is a cutting-edge Layer 1 blockchain platform designed to enhance scalability, security, and decentralization. Unlike Layer 2 solutions that build on top of existing blockchains, Aptos operates independently with its own infrastructure. Aptos runs on the Move programming language, initially developed for Diem (formerly Libra), which provides a secure framew",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "rhuna",
+      "name": "Rhuna",
+      "url": "https://airdrops.io/rhuna/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Confirmed Rhuna Actions: Earn points via Quests CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "decibel",
+      "name": "Decibel",
+      "url": "https://airdrops.io/decibel/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Confirmed Decibel Actions: Sign Up, Join Guild & Start Trading CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "earnium",
+      "name": "Earnium",
+      "url": "https://airdrops.io/earnium/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Confirmed Earnium Actions: Trade and earn points CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "zerovity",
+      "name": "Zerovity",
+      "url": "https://airdrops.io/zerovity/",
+      "heat": 0,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Zerovity Actions: Create meme coin, trade & share CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "castile",
+      "name": "CASTILE",
+      "url": "https://airdrops.io/castile/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Confirmed CASTILE Actions: Social and Daily Tasks for Free Points CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "t3rn",
+      "name": "t3rn",
+      "url": "https://airdrops.io/t3rn/",
+      "heat": 0,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing t3rn Actions: Engage with testnet/mainnet CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "uxuy_wallet",
+      "name": "UXUY Wallet",
+      "url": "https://airdrops.io/uxuy-wallet/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Confirmed UXUY Wallet Actions: Earn UP Points CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "joule_finance",
+      "name": "Joule Finance",
+      "url": "https://airdrops.io/joule-finance/",
+      "heat": 0,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Joule Finance Actions: Collect points CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "agdex",
+      "name": "AGDEX",
+      "url": "https://airdrops.io/agdex/",
+      "heat": 0,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing AGDEX Actions: Interact with testnet CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "echo_protocol",
+      "name": "Echo Protocol",
+      "url": "https://airdrops.io/echo-protocol/",
+      "heat": 0,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Echo Protocol Actions: Bridge, supply assets & borrow assets CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "meso_finance",
+      "name": "Meso Finance",
+      "url": "https://airdrops.io/meso-finance/",
+      "heat": 0,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "Ended Meso Finance Actions: Collect points CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "merkle_trade",
+      "name": "Merkle Trade",
+      "url": "https://airdrops.io/merkle-trade/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Confirmed Merkle Trade Actions: Collect points CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "superposition_finance",
+      "name": "Superposition Finance",
+      "url": "https://airdrops.io/superposition-finance/",
+      "heat": 0,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Superposition Finance Actions: Collect points CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "echelon",
+      "name": "Echelon",
+      "url": "https://airdrops.io/echelon/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Confirmed Echelon Actions: Claim Now CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "hyperlane",
+      "name": "Hyperlane",
+      "url": "https://airdrops.io/hyperlane/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Confirmed Hyperlane Actions: Stake $HYPER CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "tortuga_finance",
+      "name": "Tortuga Finance",
+      "url": "https://airdrops.io/tortuga-finance/",
+      "heat": 0,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Tortuga Finance Actions: Provide liqudity CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "aptin_finance",
+      "name": "Aptin Finance",
+      "url": "https://airdrops.io/aptin-finance/",
+      "heat": 0,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Aptin Finance Actions: Collect points CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "aries_markets",
+      "name": "Aries Markets",
+      "url": "https://airdrops.io/aries-markets/",
+      "heat": 0,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Aries Markets Actions: Collect points CLAIM AIRDROP",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "5_sed",
+      "name": "5 SED",
+      "url": "https://airdrops.io/nansen/",
+      "heat": 0,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "0° Loading... Go to airdrop Chain: Ethereum Livetree is a Film and TV streaming platform which seeks to reimagine how users and creators interact with what they watch. Ended Livetree is airdropping 5 SED tokens to new members. Create an account at Livetree to receive the tokens. Also get 5 SED for each referral. Visit the Livetree website . Click on “Start now” and sign up. You will get 5 SED toke",
+      "source": "airdrops.io"
+    },
+    {
+      "id": "eigenlayer",
+      "name": "EigenLayer",
+      "url": "https://airdrops.io/eigenlayer/",
+      "heat": 95,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Restaking protocol with confirmed airdrop for early depositors",
+      "source": "supplementary"
+    },
+    {
+      "id": "layerzero",
+      "name": "LayerZero",
+      "url": "https://airdrops.io/layerzero/",
+      "heat": 94,
+      "status": "active",
+      "chain": "Arbitrum",
+      "actions": [],
+      "description": "Cross-chain interoperability protocol with ZRO airdrop claims open",
+      "source": "supplementary"
+    },
+    {
+      "id": "zksync",
+      "name": "ZkSync",
+      "url": "https://airdrops.io/zksync/",
+      "heat": 93,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "ZK-rollup Layer 2 with token airdrop for early users and developers",
+      "source": "supplementary"
+    },
+    {
+      "id": "starknet",
+      "name": "StarkNet",
+      "url": "https://airdrops.io/starknet/",
+      "heat": 92,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "ZK-rollup with STRK token airdrop for early adopters",
+      "source": "supplementary"
+    },
+    {
+      "id": "blast",
+      "name": "Blast",
+      "url": "https://airdrops.io/blast/",
+      "heat": 91,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Layer 2 with native yield, BLAST airdrop for bridge users",
+      "source": "supplementary"
+    },
+    {
+      "id": "linea",
+      "name": "Linea",
+      "url": "https://airdrops.io/linea/",
+      "heat": 89,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "ConsenSys-backed zkEVM with L2 airdrop points program",
+      "source": "supplementary"
+    },
+    {
+      "id": "mode",
+      "name": "Mode",
+      "url": "https://airdrops.io/mode/",
+      "heat": 88,
+      "status": "active",
+      "chain": "Optimism",
+      "actions": [],
+      "description": "Optimistic rollup with MODE token airdrop for DeFi users",
+      "source": "supplementary"
+    },
+    {
+      "id": "taiko",
+      "name": "Taiko",
+      "url": "https://airdrops.io/taiko/",
+      "heat": 87,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Based rollup with TKO airdrop for testnet and mainnet users",
+      "source": "supplementary"
+    },
+    {
+      "id": "scroll",
+      "name": "Scroll",
+      "url": "https://airdrops.io/scroll/",
+      "heat": 86,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "zkEVM rollup with SCR airdrop campaign for bridge users",
+      "source": "supplementary"
+    },
+    {
+      "id": "fuel",
+      "name": "Fuel",
+      "url": "https://airdrops.io/fuel/",
+      "heat": 85,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Modular execution layer with FUEL airdrop for early testers",
+      "source": "supplementary"
+    },
+    {
+      "id": "celestia",
+      "name": "Celestia",
+      "url": "https://airdrops.io/celestia/",
+      "heat": 84,
+      "status": "upcoming",
+      "chain": "Celestia",
+      "actions": [],
+      "description": "Modular data availability network with TIA staking airdrops",
+      "source": "supplementary"
+    },
+    {
+      "id": "dymension",
+      "name": "Dymension",
+      "url": "https://airdrops.io/dymension/",
+      "heat": 83,
+      "status": "confirmed",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "Rollup deployment platform with DYM airdrop for IBC users",
+      "source": "supplementary"
+    },
+    {
+      "id": "berachain",
+      "name": "Berachain",
+      "url": "https://airdrops.io/berachain/",
+      "heat": 90,
+      "status": "active",
+      "chain": "Berachain",
+      "actions": [],
+      "description": "L1 with Proof of Liquidity consensus, BERA testnet airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "monad",
+      "name": "Monad",
+      "url": "https://airdrops.io/monad/",
+      "heat": 82,
+      "status": "active",
+      "chain": "Monad",
+      "actions": [],
+      "description": "EVM-compatible L1 with parallel execution, testnet airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "saga",
+      "name": "Saga",
+      "url": "https://airdrops.io/saga/",
+      "heat": 80,
+      "status": "active",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "Infrastructure platform for game chains with SAGA airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "aptos",
+      "name": "Aptos",
+      "url": "https://airdrops.io/aptos/",
+      "heat": 78,
+      "status": "upcoming",
+      "chain": "Aptos",
+      "actions": [],
+      "description": "L1 blockchain with APT token airdrops and incentives",
+      "source": "supplementary"
+    },
+    {
+      "id": "sui",
+      "name": "Sui",
+      "url": "https://airdrops.io/sui/",
+      "heat": 77,
+      "status": "upcoming",
+      "chain": "Sui",
+      "actions": [],
+      "description": "L1 blockchain with SUI token airdrop for early validators",
+      "source": "supplementary"
+    },
+    {
+      "id": "sei",
+      "name": "Sei",
+      "url": "https://airdrops.io/sei/",
+      "heat": 76,
+      "status": "confirmed",
+      "chain": "Sei",
+      "actions": [],
+      "description": "L1 optimized for trading with SEI token airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "injective",
+      "name": "Injective",
+      "url": "https://airdrops.io/injective/",
+      "heat": 75,
+      "status": "active",
+      "chain": "Injective",
+      "actions": [],
+      "description": "Interoperable L1 for finance with INJ staking airdrops",
+      "source": "supplementary"
+    },
+    {
+      "id": "neutron",
+      "name": "Neutron",
+      "url": "https://airdrops.io/neutron/",
+      "heat": 74,
+      "status": "active",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "Cosmos smart contract platform with NTRN airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "nibiru",
+      "name": "Nibiru",
+      "url": "https://airdrops.io/nibiru/",
+      "heat": 73,
+      "status": "active",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "L1 with automated market making, testnet airdrop program",
+      "source": "supplementary"
+    },
+    {
+      "id": "megaeth",
+      "name": "MegaETH",
+      "url": "https://airdrops.io/megaeth/",
+      "heat": 95,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "High-performance Ethereum L2 with testnet airdrop campaign",
+      "source": "supplementary"
+    },
+    {
+      "id": "story",
+      "name": "Story",
+      "url": "https://airdrops.io/story/",
+      "heat": 79,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "IP-focused L1 with story points and airdrop potential",
+      "source": "supplementary"
+    },
+    {
+      "id": "aave",
+      "name": "Aave",
+      "url": "https://airdrops.io/aave/",
+      "heat": 72,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Leading lending protocol with AAVE staking rewards and airdrops",
+      "source": "supplementary"
+    },
+    {
+      "id": "uniswap",
+      "name": "Uniswap",
+      "url": "https://airdrops.io/uniswap/",
+      "heat": 71,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Top DEX with UNI token claims for historical users",
+      "source": "supplementary"
+    },
+    {
+      "id": "curve",
+      "name": "Curve",
+      "url": "https://airdrops.io/curve/",
+      "heat": 70,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Stablecoin DEX with CRV airdrop for liquidity providers",
+      "source": "supplementary"
+    },
+    {
+      "id": "ethena",
+      "name": "Ethena",
+      "url": "https://airdrops.io/ethena/",
+      "heat": 85,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Synthetic dollar protocol with ENA airdrop for sUSDe holders",
+      "source": "supplementary"
+    },
+    {
+      "id": "pendle",
+      "name": "Pendle",
+      "url": "https://airdrops.io/pendle/",
+      "heat": 69,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Yield tokenization protocol with PENDLE rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "zircuit",
+      "name": "Zircuit",
+      "url": "https://airdrops.io/zircuit/",
+      "heat": 81,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "ZK rollup with staking-based airdrop for ETH depositors",
+      "source": "supplementary"
+    },
+    {
+      "id": "karak",
+      "name": "Karak",
+      "url": "https://airdrops.io/karak/",
+      "heat": 78,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Restaking platform with KAR points for depositors",
+      "source": "supplementary"
+    },
+    {
+      "id": "renzo",
+      "name": "Renzo",
+      "url": "https://airdrops.io/renzo/",
+      "heat": 79,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Liquid restaking with ezETH and REZ token airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "etherfi",
+      "name": "EtherFi",
+      "url": "https://airdrops.io/etherfi/",
+      "heat": 80,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Liquid restaking with eETH and ETHFI airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "puffer_finance",
+      "name": "Puffer Finance",
+      "url": "https://airdrops.io/puffer_finance/",
+      "heat": 77,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Liquid restaking protocol with PUFFER token airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "swell",
+      "name": "Swell",
+      "url": "https://airdrops.io/swell/",
+      "heat": 76,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Liquid staking with rswETH and SWELL airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "kelp_dao",
+      "name": "Kelp DAO",
+      "url": "https://airdrops.io/kelp_dao/",
+      "heat": 75,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Liquid restaking with rsETH and KELP airdrop points",
+      "source": "supplementary"
+    },
+    {
+      "id": "manta_network",
+      "name": "Manta Network",
+      "url": "https://airdrops.io/manta_network/",
+      "heat": 74,
+      "status": "confirmed",
+      "chain": "Polygon",
+      "actions": [],
+      "description": "Privacy-focused L2 with MANTA token airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "altlayer",
+      "name": "AltLayer",
+      "url": "https://airdrops.io/altlayer/",
+      "heat": 73,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Rollup-as-a-service with ALT token airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "polyhedra",
+      "name": "Polyhedra",
+      "url": "https://airdrops.io/polyhedra/",
+      "heat": 72,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "ZK interoperability with ZK token airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "jupiter",
+      "name": "Jupiter",
+      "url": "https://airdrops.io/jupiter/",
+      "heat": 83,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Solana DEX aggregator with JUP airdrop for traders",
+      "source": "supplementary"
+    },
+    {
+      "id": "kamino",
+      "name": "Kamino",
+      "url": "https://airdrops.io/kamino/",
+      "heat": 78,
+      "status": "upcoming",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Solana lending optimizer with KMNO airdrop campaign",
+      "source": "supplementary"
+    },
+    {
+      "id": "marginfi",
+      "name": "Marginfi",
+      "url": "https://airdrops.io/marginfi/",
+      "heat": 76,
+      "status": "upcoming",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Solana lending protocol with MRGN airdrop points",
+      "source": "supplementary"
+    },
+    {
+      "id": "sanctum",
+      "name": "Sanctum",
+      "url": "https://airdrops.io/sanctum/",
+      "heat": 74,
+      "status": "confirmed",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Solana liquid staking with CLOUD token airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "parcl",
+      "name": "Parcl",
+      "url": "https://airdrops.io/parcl/",
+      "heat": 72,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Real estate perpetuals on Solana with PRCL airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "drift",
+      "name": "Drift",
+      "url": "https://airdrops.io/drift/",
+      "heat": 73,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Solana perpetuals DEX with DRIFT token airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "zeta_markets",
+      "name": "Zeta Markets",
+      "url": "https://airdrops.io/zeta_markets/",
+      "heat": 71,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Solana options DEX with ZEX airdrop for traders",
+      "source": "supplementary"
+    },
+    {
+      "id": "tensor",
+      "name": "Tensor",
+      "url": "https://airdrops.io/tensor/",
+      "heat": 70,
+      "status": "upcoming",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Solana NFT marketplace with TNSR airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "scroll_canvas",
+      "name": "Scroll Canvas",
+      "url": "https://airdrops.io/scroll_canvas/",
+      "heat": 82,
+      "status": "upcoming",
+      "chain": "Scroll",
+      "actions": [],
+      "description": "Scroll L2 points program and airdrop campaign",
+      "source": "supplementary"
+    },
+    {
+      "id": "linea_surge",
+      "name": "Linea Surge",
+      "url": "https://airdrops.io/linea_surge/",
+      "heat": 81,
+      "status": "confirmed",
+      "chain": "Linea",
+      "actions": [],
+      "description": "Linea LXP points program for DeFi activity",
+      "source": "supplementary"
+    },
+    {
+      "id": "base_season",
+      "name": "Base Season",
+      "url": "https://airdrops.io/base_season/",
+      "heat": 80,
+      "status": "active",
+      "chain": "Base",
+      "actions": [],
+      "description": "Coinbase-backed L2 with on-chain points airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "blast_gold",
+      "name": "Blast Gold",
+      "url": "https://airdrops.io/blast_gold/",
+      "heat": 79,
+      "status": "active",
+      "chain": "Blast",
+      "actions": [],
+      "description": "Blast gold points program for dApp interactions",
+      "source": "supplementary"
+    },
+    {
+      "id": "manta_cedefi",
+      "name": "Manta CeDeFi",
+      "url": "https://airdrops.io/manta_cedefi/",
+      "heat": 75,
+      "status": "active",
+      "chain": "Manta",
+      "actions": [],
+      "description": "Manta CeDeFi yield with MANTA airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "taiko_trailblazers",
+      "name": "Taiko Trailblazers",
+      "url": "https://airdrops.io/taiko_trailblazers/",
+      "heat": 78,
+      "status": "upcoming",
+      "chain": "Taiko",
+      "actions": [],
+      "description": "Taiko trailblazer program with TKO token rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "mode_airdrop",
+      "name": "Mode Airdrop",
+      "url": "https://airdrops.io/mode_airdrop/",
+      "heat": 77,
+      "status": "upcoming",
+      "chain": "Mode",
+      "actions": [],
+      "description": "Mode season 2 airdrop for DeFi participants",
+      "source": "supplementary"
+    },
+    {
+      "id": "zora",
+      "name": "Zora",
+      "url": "https://airdrops.io/zora/",
+      "heat": 69,
+      "status": "confirmed",
+      "chain": "Zora",
+      "actions": [],
+      "description": "NFT-focused L2 with creator coin airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "celestia_tia",
+      "name": "Celestia TIA",
+      "url": "https://airdrops.io/celestia_tia/",
+      "heat": 82,
+      "status": "active",
+      "chain": "Celestia",
+      "actions": [],
+      "description": "TIA staking rewards from modular DA network",
+      "source": "supplementary"
+    },
+    {
+      "id": "dymension_hub",
+      "name": "Dymension Hub",
+      "url": "https://airdrops.io/dymension_hub/",
+      "heat": 80,
+      "status": "active",
+      "chain": "Dymension",
+      "actions": [],
+      "description": "DYM rollup ecosystem airdrops and staking incentives",
+      "source": "supplementary"
+    },
+    {
+      "id": "initia",
+      "name": "Initia",
+      "url": "https://airdrops.io/initia/",
+      "heat": 81,
+      "status": "active",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "Interwoven rollup network with INIT airdrop for testers",
+      "source": "supplementary"
+    },
+    {
+      "id": "milkyway",
+      "name": "MilkyWay",
+      "url": "https://airdrops.io/milkyway/",
+      "heat": 68,
+      "status": "upcoming",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "Cosmos liquid staking for TIA with MILK airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "pixels",
+      "name": "Pixels",
+      "url": "https://airdrops.io/pixels/",
+      "heat": 74,
+      "status": "upcoming",
+      "chain": "Ronin",
+      "actions": [],
+      "description": "Web3 farming game with PIXEL token airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "portal",
+      "name": "Portal",
+      "url": "https://airdrops.io/portal/",
+      "heat": 73,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Cross-chain gaming platform with PORTAL token airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "saga_origins",
+      "name": "Saga Origins",
+      "url": "https://airdrops.io/saga_origins/",
+      "heat": 72,
+      "status": "active",
+      "chain": "Saga",
+      "actions": [],
+      "description": "Game publishing with ecosystem airdrop for SAGA stakers",
+      "source": "supplementary"
+    },
+    {
+      "id": "nakamoto_games",
+      "name": "Nakamoto Games",
+      "url": "https://airdrops.io/nakamoto_games/",
+      "heat": 65,
+      "status": "active",
+      "chain": "Polygon",
+      "actions": [],
+      "description": "Play-to-earn gaming platform with NAKA rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "bittensor",
+      "name": "Bittensor",
+      "url": "https://airdrops.io/bittensor/",
+      "heat": 88,
+      "status": "active",
+      "chain": "Substrate",
+      "actions": [],
+      "description": "Decentralized AI network with TAO token staking yields",
+      "source": "supplementary"
+    },
+    {
+      "id": "render_network",
+      "name": "Render Network",
+      "url": "https://airdrops.io/render_network/",
+      "heat": 77,
+      "status": "upcoming",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Decentralized GPU rendering with RENDER rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "aethir",
+      "name": "Aethir",
+      "url": "https://airdrops.io/aethir/",
+      "heat": 76,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Decentralized GPU cloud with ATH airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "io_net",
+      "name": "io.net",
+      "url": "https://airdrops.io/io_net/",
+      "heat": 75,
+      "status": "confirmed",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Decentralized GPU compute with IO airdrop for providers",
+      "source": "supplementary"
+    },
+    {
+      "id": "akash_network",
+      "name": "Akash Network",
+      "url": "https://airdrops.io/akash_network/",
+      "heat": 68,
+      "status": "active",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "Decentralized cloud marketplace with AKT staking rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "aioz_network",
+      "name": "AIOZ Network",
+      "url": "https://airdrops.io/aioz_network/",
+      "heat": 66,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "DePIN AI compute network with AIOZ rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "paal_ai",
+      "name": "Paal AI",
+      "url": "https://airdrops.io/paal_ai/",
+      "heat": 64,
+      "status": "active",
+      "chain": "Base",
+      "actions": [],
+      "description": "AI chatbot platform with AI agent airdrop rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "babylon",
+      "name": "Babylon",
+      "url": "https://airdrops.io/babylon/",
+      "heat": 90,
+      "status": "upcoming",
+      "chain": "Bitcoin",
+      "actions": [],
+      "description": "Bitcoin staking protocol with early deposit airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "merlin_chain",
+      "name": "Merlin Chain",
+      "url": "https://airdrops.io/merlin_chain/",
+      "heat": 82,
+      "status": "upcoming",
+      "chain": "Bitcoin",
+      "actions": [],
+      "description": "Bitcoin L2 with MERL airdrop for BTC stakers",
+      "source": "supplementary"
+    },
+    {
+      "id": "b_network",
+      "name": "B² Network",
+      "url": "https://airdrops.io/b_network/",
+      "heat": 78,
+      "status": "confirmed",
+      "chain": "Bitcoin",
+      "actions": [],
+      "description": "Bitcoin L2 with zk-rollup and testnet airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "bitlayer",
+      "name": "Bitlayer",
+      "url": "https://airdrops.io/bitlayer/",
+      "heat": 75,
+      "status": "active",
+      "chain": "Bitcoin",
+      "actions": [],
+      "description": "Bitcoin L2 with BitVM and BTL airdrop campaign",
+      "source": "supplementary"
+    },
+    {
+      "id": "rootstock",
+      "name": "Rootstock",
+      "url": "https://airdrops.io/rootstock/",
+      "heat": 67,
+      "status": "active",
+      "chain": "Bitcoin",
+      "actions": [],
+      "description": "Bitcoin smart contract platform with RBTC yields",
+      "source": "supplementary"
+    },
+    {
+      "id": "stacks",
+      "name": "Stacks",
+      "url": "https://airdrops.io/stacks/",
+      "heat": 72,
+      "status": "active",
+      "chain": "Bitcoin",
+      "actions": [],
+      "description": "Bitcoin L2 for smart contracts with STX stacking rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "core_dao",
+      "name": "Core DAO",
+      "url": "https://airdrops.io/core_dao/",
+      "heat": 70,
+      "status": "upcoming",
+      "chain": "Bitcoin",
+      "actions": [],
+      "description": "Bitcoin-powered L1 with CORE staking airdrops",
+      "source": "supplementary"
+    },
+    {
+      "id": "movement",
+      "name": "Movement",
+      "url": "https://airdrops.io/movement/",
+      "heat": 83,
+      "status": "upcoming",
+      "chain": "Aptos",
+      "actions": [],
+      "description": "Move-based L2 with MOVE testnet airdrop campaign",
+      "source": "supplementary"
+    },
+    {
+      "id": "aptos_labs",
+      "name": "Aptos Labs",
+      "url": "https://airdrops.io/aptos_labs/",
+      "heat": 74,
+      "status": "confirmed",
+      "chain": "Aptos",
+      "actions": [],
+      "description": "Aptos ecosystem with ongoing testnet airdrop programs",
+      "source": "supplementary"
+    },
+    {
+      "id": "sui_network",
+      "name": "Sui Network",
+      "url": "https://airdrops.io/sui_network/",
+      "heat": 76,
+      "status": "active",
+      "chain": "Sui",
+      "actions": [],
+      "description": "Sui L1 with SUITESTNET airdrop for testnet participants",
+      "source": "supplementary"
+    },
+    {
+      "id": "wormhole",
+      "name": "Wormhole",
+      "url": "https://airdrops.io/wormhole/",
+      "heat": 80,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Cross-chain bridge with W token airdrop for users",
+      "source": "supplementary"
+    },
+    {
+      "id": "across_protocol",
+      "name": "Across Protocol",
+      "url": "https://airdrops.io/across_protocol/",
+      "heat": 69,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Cross-chain bridge with ACX airdrop for bridge users",
+      "source": "supplementary"
+    },
+    {
+      "id": "synapse",
+      "name": "Synapse",
+      "url": "https://airdrops.io/synapse/",
+      "heat": 65,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Cross-chain bridge with SYN staking rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "chainlink",
+      "name": "Chainlink",
+      "url": "https://airdrops.io/chainlink/",
+      "heat": 68,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Oracle network with LINK staking and reward programs",
+      "source": "supplementary"
+    },
+    {
+      "id": "pyth_network",
+      "name": "Pyth Network",
+      "url": "https://airdrops.io/pyth_network/",
+      "heat": 73,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Oracle network with PYTH airdrop for data providers",
+      "source": "supplementary"
+    },
+    {
+      "id": "arbitrum",
+      "name": "Arbitrum",
+      "url": "https://airdrops.io/arbitrum/",
+      "heat": 85,
+      "status": "active",
+      "chain": "Arbitrum",
+      "actions": [],
+      "description": "Leading L2 with ARB airdrop for early ecosystem users",
+      "source": "supplementary"
+    },
+    {
+      "id": "optimism",
+      "name": "Optimism",
+      "url": "https://airdrops.io/optimism/",
+      "heat": 84,
+      "status": "active",
+      "chain": "Optimism",
+      "actions": [],
+      "description": "Optimistic rollup with OP airdrop for users and builders",
+      "source": "supplementary"
+    },
+    {
+      "id": "polygon_zkevm",
+      "name": "Polygon zkEVM",
+      "url": "https://airdrops.io/polygon_zkevm/",
+      "heat": 78,
+      "status": "upcoming",
+      "chain": "Polygon",
+      "actions": [],
+      "description": "ZK L2 with POL airdrop for bridge and DeFi users",
+      "source": "supplementary"
+    },
+    {
+      "id": "zksync_era",
+      "name": "zkSync Era",
+      "url": "https://airdrops.io/zksync_era/",
+      "heat": 83,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "ZK L2 with ZK token airdrop for early adopters",
+      "source": "supplementary"
+    },
+    {
+      "id": "starknet_pro",
+      "name": "StarkNet Pro",
+      "url": "https://airdrops.io/starknet_pro/",
+      "heat": 79,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "StarkNet Pro with STRK airdrop for developers",
+      "source": "supplementary"
+    },
+    {
+      "id": "debank",
+      "name": "DeBank",
+      "url": "https://airdrops.io/debank/",
+      "heat": 74,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Web3 portfolio tracker with credit points airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "rainbow_wallet",
+      "name": "Rainbow Wallet",
+      "url": "https://airdrops.io/rainbow_wallet/",
+      "heat": 72,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Ethereum wallet with RNW points airdrop campaign",
+      "source": "supplementary"
+    },
+    {
+      "id": "rabby_wallet",
+      "name": "Rabby Wallet",
+      "url": "https://airdrops.io/rabby_wallet/",
+      "heat": 71,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Web3 wallet with RABBY token airdrop potential",
+      "source": "supplementary"
+    },
+    {
+      "id": "zapper",
+      "name": "Zapper",
+      "url": "https://airdrops.io/zapper/",
+      "heat": 70,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "DeFi dashboard with ZPR airdrop for active users",
+      "source": "supplementary"
+    },
+    {
+      "id": "zerion",
+      "name": "Zerion",
+      "url": "https://airdrops.io/zerion/",
+      "heat": 69,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Web3 portfolio tracker with DNA airdrop for wallet users",
+      "source": "supplementary"
+    },
+    {
+      "id": "holograph",
+      "name": "Holograph",
+      "url": "https://airdrops.io/holograph/",
+      "heat": 68,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Omnichain NFT infrastructure with HLG airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "tensorians",
+      "name": "Tensorians",
+      "url": "https://airdrops.io/tensorians/",
+      "heat": 67,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Solana NFT trading with TNSR airdrop points",
+      "source": "supplementary"
+    },
+    {
+      "id": "mad_lads",
+      "name": "Mad Lads",
+      "url": "https://airdrops.io/mad_lads/",
+      "heat": 66,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Solana NFT collection with MAD token airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "backpack",
+      "name": "Backpack",
+      "url": "https://airdrops.io/backpack/",
+      "heat": 73,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Solana wallet/exchange with airdrop potential for traders",
+      "source": "supplementary"
+    },
+    {
+      "id": "jito",
+      "name": "Jito",
+      "url": "https://airdrops.io/jito/",
+      "heat": 79,
+      "status": "upcoming",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Solana staking MEV with JTO airdrop for validators",
+      "source": "supplementary"
+    },
+    {
+      "id": "switchboard",
+      "name": "Switchboard",
+      "url": "https://airdrops.io/switchboard/",
+      "heat": 67,
+      "status": "confirmed",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Solana oracle with SBD airdrop for data feeds",
+      "source": "supplementary"
+    },
+    {
+      "id": "streamflow",
+      "name": "Streamflow",
+      "url": "https://airdrops.io/streamflow/",
+      "heat": 63,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Token vesting platform on Solana with airdrop potential",
+      "source": "supplementary"
+    },
+    {
+      "id": "helium",
+      "name": "Helium",
+      "url": "https://airdrops.io/helium/",
+      "heat": 72,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [],
+      "description": "DePIN wireless network with HNT and IOT token rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "hivemapper",
+      "name": "Hivemapper",
+      "url": "https://airdrops.io/hivemapper/",
+      "heat": 70,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Decentralized mapping with HONEY token rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "dimo",
+      "name": "Dimo",
+      "url": "https://airdrops.io/dimo/",
+      "heat": 68,
+      "status": "upcoming",
+      "chain": "Polygon",
+      "actions": [],
+      "description": "Connected vehicle data with DIMO token rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "filecoin",
+      "name": "Filecoin",
+      "url": "https://airdrops.io/filecoin/",
+      "heat": 71,
+      "status": "upcoming",
+      "chain": "Filecoin",
+      "actions": [],
+      "description": "Decentralized storage with FIL staking and airdrops",
+      "source": "supplementary"
+    },
+    {
+      "id": "arweave",
+      "name": "Arweave",
+      "url": "https://airdrops.io/arweave/",
+      "heat": 73,
+      "status": "confirmed",
+      "chain": "Arweave",
+      "actions": [],
+      "description": "Permanent storage with AO airdrop for AR holders",
+      "source": "supplementary"
+    },
+    {
+      "id": "eigenda",
+      "name": "EigenDA",
+      "url": "https://airdrops.io/eigenda/",
+      "heat": 78,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Data availability layer with EIGEN restaking airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "near_protocol",
+      "name": "Near Protocol",
+      "url": "https://airdrops.io/near_protocol/",
+      "heat": 65,
+      "status": "active",
+      "chain": "Near",
+      "actions": [],
+      "description": "L1 blockchain with NEAR staking rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "url": "https://airdrops.io/aurora/",
+      "heat": 62,
+      "status": "active",
+      "chain": "Near",
+      "actions": [],
+      "description": "Near EVM with AURA airdrop for ecosystem users",
+      "source": "supplementary"
+    },
+    {
+      "id": "dogecoin",
+      "name": "Dogecoin",
+      "url": "https://airdrops.io/dogecoin/",
+      "heat": 64,
+      "status": "upcoming",
+      "chain": "Dogecoin",
+      "actions": [],
+      "description": "Meme coin with community airdrop programs",
+      "source": "supplementary"
+    },
+    {
+      "id": "pepe",
+      "name": "Pepe",
+      "url": "https://airdrops.io/pepe/",
+      "heat": 68,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Meme coin with PEPE staking rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "worldcoin",
+      "name": "Worldcoin",
+      "url": "https://airdrops.io/worldcoin/",
+      "heat": 77,
+      "status": "confirmed",
+      "chain": "Optimism",
+      "actions": [],
+      "description": "Identity protocol with WLD airdrop for verified humans",
+      "source": "supplementary"
+    },
+    {
+      "id": "polygon_village",
+      "name": "Polygon Village",
+      "url": "https://airdrops.io/polygon_village/",
+      "heat": 66,
+      "status": "active",
+      "chain": "Polygon",
+      "actions": [],
+      "description": "Polygon ecosystem grants and airdrop campaigns",
+      "source": "supplementary"
+    },
+    {
+      "id": "robinhood_wallet",
+      "name": "Robinhood Wallet",
+      "url": "https://airdrops.io/robinhood_wallet/",
+      "heat": 65,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Self-custody wallet with airdrop for early users",
+      "source": "supplementary"
+    },
+    {
+      "id": "brave_rewards",
+      "name": "Brave Rewards",
+      "url": "https://airdrops.io/brave_rewards/",
+      "heat": 63,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Brave browser with BAT token rewards and grants",
+      "source": "supplementary"
+    },
+    {
+      "id": "stepn",
+      "name": "Stepn",
+      "url": "https://airdrops.io/stepn/",
+      "heat": 67,
+      "status": "upcoming",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Move-to-earn with GMT airdrop for active users",
+      "source": "supplementary"
+    },
+    {
+      "id": "galxe",
+      "name": "Galxe",
+      "url": "https://airdrops.io/galxe/",
+      "heat": 72,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Web3 credential platform with GAL quest rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "questn",
+      "name": "QuestN",
+      "url": "https://airdrops.io/questn/",
+      "heat": 66,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Web3 quest platform with airdrop campaigns",
+      "source": "supplementary"
+    },
+    {
+      "id": "layer3",
+      "name": "Layer3",
+      "url": "https://airdrops.io/layer3/",
+      "heat": 68,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Web3 task platform with L3XP points and airdrops",
+      "source": "supplementary"
+    },
+    {
+      "id": "socio",
+      "name": "Socio",
+      "url": "https://airdrops.io/socio/",
+      "heat": 62,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Web3 social platform with token airdrop campaigns",
+      "source": "supplementary"
+    },
+    {
+      "id": "mission_x",
+      "name": "Mission X",
+      "url": "https://airdrops.io/mission_x/",
+      "heat": 65,
+      "status": "active",
+      "chain": "Base",
+      "actions": [],
+      "description": "Base ecosystem quest platform with on-chain points",
+      "source": "supplementary"
+    },
+    {
+      "id": "citrea",
+      "name": "Citrea",
+      "url": "https://airdrops.io/citrea/",
+      "heat": 71,
+      "status": "upcoming",
+      "chain": "Bitcoin",
+      "actions": [],
+      "description": "Bitcoin zk-rollup with testnet airdrop program",
+      "source": "supplementary"
+    },
+    {
+      "id": "swan",
+      "name": "Swan",
+      "url": "https://airdrops.io/swan/",
+      "heat": 70,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Bitcoin L2 with testnet airdrop campaign",
+      "source": "supplementary"
+    },
+    {
+      "id": "hemi",
+      "name": "Hemi",
+      "url": "https://airdrops.io/hemi/",
+      "heat": 69,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Bitcoin-Ethereum interoperability with airdrop points",
+      "source": "supplementary"
+    },
+    {
+      "id": "bob",
+      "name": "BOB",
+      "url": "https://airdrops.io/bob/",
+      "heat": 74,
+      "status": "active",
+      "chain": "Bitcoin",
+      "actions": [],
+      "description": "Hybrid L2 combining Bitcoin and Ethereum with airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "elixir",
+      "name": "Elixir",
+      "url": "https://airdrops.io/elixir/",
+      "heat": 73,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Market making protocol with ELX airdrop for LPs",
+      "source": "supplementary"
+    },
+    {
+      "id": "intentx",
+      "name": "IntentX",
+      "url": "https://airdrops.io/intentx/",
+      "heat": 67,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Intent-based perp DEX with INTX airdrop campaign",
+      "source": "supplementary"
+    },
+    {
+      "id": "symbiosis",
+      "name": "Symbiosis",
+      "url": "https://airdrops.io/symbiosis/",
+      "heat": 64,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Cross-chain liquidity protocol with SIS rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "chainlink_staking",
+      "name": "Chainlink Staking",
+      "url": "https://airdrops.io/chainlink_staking/",
+      "heat": 75,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "LINK staking v2 with yield and airdrop opportunities",
+      "source": "supplementary"
+    },
+    {
+      "id": "lido",
+      "name": "Lido",
+      "url": "https://airdrops.io/lido/",
+      "heat": 76,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Liquid staking with LDO and stETH rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "rocket_pool",
+      "name": "Rocket Pool",
+      "url": "https://airdrops.io/rocket_pool/",
+      "heat": 69,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Decentralized staking with RPL rewards for node operators",
+      "source": "supplementary"
+    },
+    {
+      "id": "frax_finance",
+      "name": "Frax Finance",
+      "url": "https://airdrops.io/frax_finance/",
+      "heat": 68,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "DeFi protocol with FXS staking and airdrop campaigns",
+      "source": "supplementary"
+    },
+    {
+      "id": "redstone",
+      "name": "RedStone",
+      "url": "https://airdrops.io/redstone/",
+      "heat": 71,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Modular oracle with REDSTONE airdrop for data users",
+      "source": "supplementary"
+    },
+    {
+      "id": "supra",
+      "name": "Supra",
+      "url": "https://airdrops.io/supra/",
+      "heat": 72,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Cross-chain oracle with SUPRA airdrop campaign",
+      "source": "supplementary"
+    },
+    {
+      "id": "pyth_staking",
+      "name": "Pyth Staking",
+      "url": "https://airdrops.io/pyth_staking/",
+      "heat": 74,
+      "status": "upcoming",
+      "chain": "Solana",
+      "actions": [],
+      "description": "PYTH staking with governance rewards and airdrops",
+      "source": "supplementary"
+    },
+    {
+      "id": "omni_network",
+      "name": "Omni Network",
+      "url": "https://airdrops.io/omni_network/",
+      "heat": 76,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Cross-chain communication with OMNI airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "polyhedra_zk",
+      "name": "Polyhedra ZK",
+      "url": "https://airdrops.io/polyhedra_zk/",
+      "heat": 73,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "ZK bridge and interoperability with ZK airdrop",
+      "source": "supplementary"
+    },
+    {
+      "id": "wormhole_w",
+      "name": "Wormhole W",
+      "url": "https://airdrops.io/wormhole_w/",
+      "heat": 79,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [],
+      "description": "W token airdrop for Wormhole ecosystem participants",
+      "source": "supplementary"
+    },
+    {
+      "id": "squid_router",
+      "name": "Squid Router",
+      "url": "https://airdrops.io/squid_router/",
+      "heat": 66,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Cross-chain router with SQD airdrop potential",
+      "source": "supplementary"
+    },
+    {
+      "id": "chainflip",
+      "name": "Chainflip",
+      "url": "https://airdrops.io/chainflip/",
+      "heat": 67,
+      "status": "upcoming",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Cross-chain DEX with FLIP staking rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "thorchain",
+      "name": "THORChain",
+      "url": "https://airdrops.io/thorchain/",
+      "heat": 68,
+      "status": "upcoming",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "Cross-chain DEX with RUNE staking and LP rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "maya_protocol",
+      "name": "Maya Protocol",
+      "url": "https://airdrops.io/maya_protocol/",
+      "heat": 63,
+      "status": "confirmed",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "Cross-chain DEX with CACAO staking rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "canto",
+      "name": "Canto",
+      "url": "https://airdrops.io/canto/",
+      "heat": 65,
+      "status": "active",
+      "chain": "Canto",
+      "actions": [],
+      "description": "L1 DeFi hub with CANTO staking rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "kava",
+      "name": "Kava",
+      "url": "https://airdrops.io/kava/",
+      "heat": 64,
+      "status": "active",
+      "chain": "Kava",
+      "actions": [],
+      "description": "Cosmos-Ethereum L1 with KAVA staking yields",
+      "source": "supplementary"
+    },
+    {
+      "id": "evmos",
+      "name": "Evmos",
+      "url": "https://airdrops.io/evmos/",
+      "heat": 62,
+      "status": "active",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "EVM on Cosmos with EVMOS staking airdrops",
+      "source": "supplementary"
+    },
+    {
+      "id": "axelar",
+      "name": "Axelar",
+      "url": "https://airdrops.io/axelar/",
+      "heat": 71,
+      "status": "upcoming",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "Cosmos IBC bridge with AXL staking rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "stride",
+      "name": "Stride",
+      "url": "https://airdrops.io/stride/",
+      "heat": 67,
+      "status": "upcoming",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "Cosmos liquid staking with STRD staking yields",
+      "source": "supplementary"
+    },
+    {
+      "id": "quicksilver",
+      "name": "Quicksilver",
+      "url": "https://airdrops.io/quicksilver/",
+      "heat": 63,
+      "status": "confirmed",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "Liquid staking for Cosmos with QCK rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "persistence",
+      "name": "Persistence",
+      "url": "https://airdrops.io/persistence/",
+      "heat": 61,
+      "status": "active",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "Interchain staking hub with XPRT rewards",
+      "source": "supplementary"
+    },
+    {
+      "id": "akash",
+      "name": "Akash",
+      "url": "https://airdrops.io/akash/",
+      "heat": 66,
+      "status": "active",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "Cloud compute marketplace with AKT staking yields",
+      "source": "supplementary"
+    },
+    {
+      "id": "stargaze",
+      "name": "Stargaze",
+      "url": "",
+      "heat": 60,
+      "status": "active",
+      "chain": "Cosmos",
+      "actions": [],
+      "description": "Cosmos NFT marketplace with STARS staking rewards",
+      "source": "supplementary"
     }
   ]
 }
