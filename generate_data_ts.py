@@ -127,6 +127,18 @@ def search_news_for_ipo(company: str, ticker: str) -> str:
     return ""
 
 
+def _slugify_company(name):
+    import re as _re
+    import unicodedata as _ud
+    s = (name or '').strip()
+    s = _ud.normalize('NFKD', s).encode('ascii', 'ignore').decode('ascii')
+    s = s.lower()
+    s = s.replace('&', ' and ')
+    s = _re.sub(r'[^a-z0-9]+', '-', s)
+    s = _re.sub(r'^-+|-+$', '', s)
+    return s[:80]
+
+
 def generate_ipo_data():
     new_path = os.path.join(DATA_DIR, "ipo_data.json")
     legacy_path = os.path.join(DATA_DIR, "ipos.json")
@@ -138,6 +150,10 @@ def generate_ipo_data():
         print(f"[DataGen] Using legacy ipos.json ({len(ipos_data.get('ipos', []))} IPOs)")
     analysis_data = load_json(os.path.join(DATA_DIR, "ipo_analysis.json"))
     ipos = ipos_data.get("ipos", [])
+
+    # Load comprehensive analysis JSON for per-IPO scores
+    comp_analysis = load_json(os.path.join(DATA_DIR, "..", "src", "data", "ipoComprehensiveAnalysis.json"))
+    print(f"[DataGen] Loaded {len(comp_analysis)} comprehensive analysis entries")
 
     print(f"[DataGen] Loading {len(ipos)} IPOs, fetching web news...")
 
@@ -362,13 +378,33 @@ def generate_ipo_data():
             rind = esc(r["indicator"]) if isinstance(r, dict) else '"🟡"'
             lines.append(f'      {{ text: "{rtext}", indicator: "{rind}" }},')
         lines.append('    ],')
+        # Try comprehensive analysis scores first, fall back to ipo_analysis.json
+        comp_slug = f"{_slugify_company(name)}-{i + 1}"
+        comp_entry = comp_analysis.get(comp_slug, {})
+        comp_scores = comp_entry.get('investment_verdict', {}).get('scores', {}) if isinstance(comp_entry, dict) else {}
+
+        if comp_scores and isinstance(comp_scores, dict):
+            overall_val = int(comp_scores.get('overall_score', 50))
+            fundamentals_val = int(comp_scores.get('financial_strength', 50))
+            valuation_val = int(comp_scores.get('valuation_attractiveness', 50))
+            growth_val = int(comp_scores.get('business_quality', 50))
+            management_val = int(comp_scores.get('management_quality', 50))
+            sentiment_val = int(comp_scores.get('industry_outlook', 50))
+        else:
+            overall_val = scores.get("attractiveness", scores.get("overall", 75))
+            fundamentals_val = scores.get("financial_health", 70)
+            valuation_val = scores.get("risk", 65)
+            growth_val = scores.get("growth_potential", 75)
+            management_val = 70
+            sentiment_val = scores.get("attractiveness", 72)
+
         lines.append('    aiScores: {')
-        lines.append(f'      overall: {scores.get("attractiveness", scores.get("overall", 75))},')
-        lines.append(f'      fundamentals: {scores.get("financial_health", 70)},')
-        lines.append(f'      valuation: {scores.get("risk", 65)},')
-        lines.append(f'      growth: {scores.get("growth_potential", 75)},')
-        lines.append(f'      management: 70,')
-        lines.append(f'      marketSentiment: {scores.get("attractiveness", 72)},')
+        lines.append(f'      overall: {overall_val},')
+        lines.append(f'      fundamentals: {fundamentals_val},')
+        lines.append(f'      valuation: {valuation_val},')
+        lines.append(f'      growth: {growth_val},')
+        lines.append(f'      management: {management_val},')
+        lines.append(f'      marketSentiment: {sentiment_val},')
         lines.append('    },')
         lines.append(f'    aiAnalysis: "{enriched_analysis}",')
         lines.append(f'    aiVerdict: "{esc(ai_verdict_text)}",')
