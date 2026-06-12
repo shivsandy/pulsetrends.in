@@ -169,12 +169,92 @@ def _parse_actions_from_card(text: str) -> list[str]:
 # ── airdrops.io Scraping ────────────────────────────────────────
 
 
-def scrape_airdrops_io_listing() -> list[dict]:
-    """Scrape airdrops.io homepage listing cards."""
-    print("[Airdrops Scraper] Fetching airdrops.io listing...")
-    resp = requests.get(BASE_URL, headers=HEADERS, timeout=30)
-    resp.raise_for_status()
-    soup = BeautifulSoup(resp.text, "html.parser")
+def _scrape_single_page(url: str, seen_ids: set[str]) -> list[dict]:
+    """Scrape a single airdrops.io page and return valid airdrop cards."""
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=30)
+        if resp.status_code != 200:
+            print(f"[Airdrops Scraper] Page {url} returned HTTP {resp.status_code}")
+            return []
+        soup = BeautifulSoup(resp.text, "html.parser")
+    except Exception as e:
+        print(f"[Airdrops Scraper] Error fetching {url}: {e}")
+        return []
+
+    results: list[dict] = []
+    # Find all article-like cards
+    cards = soup.select("article, div.post, div.entry, [class*=airdrop], [class*=item]")
+    if not cards:
+        cards = soup.find_all("div", class_=re.compile(r"airdrop|item|card|post", re.I))
+
+    for card in cards:
+        try:
+            name_el = card.select_one("h2, h3, h4, .entry-title, .title, strong")
+            if not name_el:
+                continue
+            name = _clean_text(name_el.get_text(strip=True))
+            if not _is_valid_name(name):
+                continue
+
+            aid = _id_from_name(name)
+            if aid in seen_ids:
+                continue
+            seen_ids.add(aid)
+
+            # Link
+            link_el = card.select_one("a[href*='airdrops.io']") or name_el.find_parent("a")
+            card_url = _href(link_el) if link_el else ""
+
+            # Get full card text
+            full_text = _clean_text(card.get_text(separator=" ", strip=True))
+
+            heat = _parse_heat_score(full_text)
+            status = _parse_status(full_text)
+
+            # Chain from card
+            chain_text = _clean_text(card.get_text(separator=" ", strip=True))
+            chain = _parse_chain(chain_text)
+
+            # Description / actions
+            actions = _parse_actions_from_card(full_text) if heat > 0 else []
+            description = full_text[:400] if len(full_text) > 400 else full_text
+
+            results.append({
+                "id": aid,
+                "name": name,
+                "url": card_url,
+                "heat": heat,
+                "status": status,
+                "chain": chain,
+                "actions": actions,
+                "description": description,
+                "source": "airdrops.io",
+            })
+        except Exception:
+            continue
+
+    return results
+
+
+def scrape_airdrops_io_listing(max_pages: int = 5) -> list[dict]:
+    """Scrape airdrops.io listing cards across multiple pages."""
+    print(f"[Airdrops Scraper] Fetching airdrops.io listing (up to {max_pages} pages)...")
+    
+    all_airdrops: list[dict] = []
+    seen_ids: set[str] = set()
+
+    for page_num in range(1, max_pages + 1):
+        url = f"{BASE_URL}/page/{page_num}/" if page_num > 1 else BASE_URL
+        page_results = _scrape_single_page(url, seen_ids)
+        if not page_results:
+            print(f"[Airdrops Scraper] No more results after page {page_num - 1}, stopping")
+            break
+        all_airdrops.extend(page_results)
+        print(f"[Airdrops Scraper] Page {page_num}: +{len(page_results)} airdrops (total: {len(all_airdrops)})")
+        time.sleep(1.0)  # Be polite
+
+    print(f"[Airdrops Scraper] Found {len(all_airdrops)} valid airdrops from listing")
+    return all_airdrops
 
     airdrops: list[dict] = []
     seen_ids: set[str] = set()
