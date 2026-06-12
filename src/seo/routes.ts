@@ -59,7 +59,7 @@ export const ROUTES: Record<string, PageMeta> = {
     path: '/ipo-analysis',
     title: `IPO Analysis - Latest IPO Reviews & Insights | ${SITE.name}`,
     description:
-      'In-depth IPO analysis with company overviews, financial snapshots, AI scoring, and risk assessment for upcoming Indian and global IPOs.',
+      'Looking for the best upcoming IPOs to invest in? In-depth IPO analysis with company overviews, financial snapshots, AI scoring, and risk assessment for Indian and global IPOs.',
     ogType: 'website',
     ogImage: DEFAULT_OG,
   },
@@ -67,7 +67,7 @@ export const ROUTES: Record<string, PageMeta> = {
     path: '/airdrops',
     title: `Crypto Airdrops - Latest Free Token Opportunities | ${SITE.name}`,
     description:
-      'Track active and upcoming crypto airdrops. Eligibility guides, estimated values, farming strategies, and AI conviction scores.',
+      'Want free crypto tokens? Track active and upcoming airdrops with eligibility guides, estimated values, farming strategies, and AI conviction scores.',
     ogType: 'website',
     ogImage: DEFAULT_OG,
   },
@@ -75,21 +75,21 @@ export const ROUTES: Record<string, PageMeta> = {
     path: '/news',
     title: `Market News - Stock Market & Crypto Updates | ${SITE.name}`,
     description:
-      'AI-analyzed market news with sentiment, impact scoring, bull/bear cases, and actionable insights for crypto and equity markets.',
+      'What\'s moving the markets today? AI-analyzed crypto, IPO, and stock market news with sentiment analysis, impact scoring, and actionable insights.',
     ogType: 'website',
     ogImage: DEFAULT_OG,
   },
   about: {
     path: '/about',
     title: `About Us - ${SITE.name} | IPO & Crypto Intelligence`,
-    description: `${SITE.name} is a financial intelligence platform delivering AI-powered analysis of IPOs, crypto airdrops, and market-moving news.`,
+    description: `${SITE.name} delivers AI-powered financial intelligence — IPO analysis, crypto airdrop tracking, and market-moving news for modern investors.`,
     ogType: 'website',
     ogImage: DEFAULT_OG,
   },
   contact: {
     path: '/contact',
     title: `Contact Us - ${SITE.name}`,
-    description: `Get in touch with the ${SITE.name} team. For inquiries, feedback, support, or partnerships.`,
+    description: `Have questions or feedback? Contact the ${SITE.name} team for inquiries, support, or partnership opportunities.`,
     ogType: 'website',
     ogImage: DEFAULT_OG,
   },
@@ -126,7 +126,7 @@ export function getMetaForPath(pathname: string): PageMeta {
       path: clean,
       title: ipoName ? `${ipoName} IPO Analysis | ${SITE.name}` : `IPO Analysis | ${SITE.name}`,
       description: ipoName
-        ? `Comprehensive ${ipoName} IPO analysis: 21-section research with financials, valuation, SWOT, risk assessment, and investment verdict.`
+        ? `Should you invest in ${ipoName} IPO? Comprehensive 21-section research with financials, valuation, SWOT analysis, risk assessment, and AI-powered investment verdict.`
         : 'Detailed IPO analysis: company overview, financial snapshot, AI scoring, and risk assessment.',
       ogType: 'article',
       ogImage: DEFAULT_OG,
@@ -139,7 +139,7 @@ export function getMetaForPath(pathname: string): PageMeta {
       path: clean,
       title: projectName ? `${projectName} Airdrop Guide | ${SITE.name}` : `Crypto Airdrops | ${SITE.name}`,
       description: projectName
-        ? `${projectName} crypto airdrop: eligibility criteria, estimated value, step-by-step farming guide, and risk assessment.`
+        ? `How to get the ${projectName} airdrop? Complete guide: eligibility criteria, estimated value, step-by-step farming instructions, and risk assessment.`
         : 'Crypto airdrop details: eligibility, estimated value, farming guide, and risk assessment.',
       ogType: 'article',
       ogImage: DEFAULT_OG,
@@ -152,7 +152,7 @@ export function getMetaForPath(pathname: string): PageMeta {
       path: clean,
       title: headline ? `${headline} | ${SITE.name}` : `Market News | ${SITE.name}`,
       description: headline
-        ? `AI-analyzed: ${headline}. Sentiment analysis, impact scoring, and actionable market insights.`
+        ? `${headline} — AI-analyzed market impact. Get sentiment analysis, bull/bear cases, and actionable crypto and equity market insights.`
         : 'AI-analyzed market news with sentiment and impact scoring.',
       ogType: 'article',
       ogImage: DEFAULT_OG,

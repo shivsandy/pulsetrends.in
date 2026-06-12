@@ -88,6 +88,7 @@ export default function ArticleReader({ article }: ArticleReaderProps) {
               alt={heroImage.alt || article.headline}
               width={1400}
               height={788}
+              loading="lazy"
               decoding="async"
               className="h-full w-full object-cover"
             />

@@ -61,6 +61,8 @@ export function newsArticleSchema(article: {
   urlPath: string;
   category?: string;
   tags?: string[];
+  // Entity seeds for Google Knowledge Graph / AI citation
+  about?: string[];
 }) {
   return {
     '@context': 'https://schema.org',
@@ -71,6 +73,14 @@ export function newsArticleSchema(article: {
     dateModified: article.publishedAt,
     articleSection: article.category || 'Market News',
     keywords: (article.tags || []).join(', '),
+    ...(article.about && article.about.length > 0
+      ? {
+          about: article.about.map((entity) => ({
+            '@type': 'Thing',
+            name: entity,
+          })),
+        }
+      : {}),
     author: {
       '@type': 'Person',
       name: article.author || 'Shiva Sandeep',

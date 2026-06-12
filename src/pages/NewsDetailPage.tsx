@@ -34,6 +34,16 @@ export default function NewsDetailPage() {
   const path = `/news/${slug}`;
   const description = (article.subheadline || article.metaDescription || article.executiveSummary || '').slice(0, 160);
   const heroImage = article.images?.find((i) => i && i.url);
+  // Build entity about array for Knowledge Graph / AI citation
+  const aboutEntities = [
+    article.category,
+    article.primaryKeyword,
+    ...(article.secondaryKeywords || []),
+    ...(article.tags || []),
+    ...(article.relatedCoins || []),
+    ...(article.relatedStocks || []),
+  ].filter(Boolean) as string[];
+
   const articleSchema = newsArticleSchema({
     id: article.id,
     headline: article.headline,
@@ -44,6 +54,7 @@ export default function NewsDetailPage() {
     category: article.category,
     tags: article.tags || article.secondaryKeywords || [],
     author: article.author,
+    about: aboutEntities,
   });
   // Build related-articles JSON-LD ItemList for richer SERP
   const relatedList = {
