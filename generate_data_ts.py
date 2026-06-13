@@ -182,7 +182,7 @@ def generate_ipo_data():
     lines.append('  listingExchange: string;')
     lines.append('  ipoType: string;')
     lines.append('  registrar: string;')
-    lines.append("  status: 'upcoming' | 'open' | 'listed' | 'subscribed';")
+    lines.append("  status: 'upcoming' | 'open' | 'listed' | 'subscribed' | 'closed';")
     lines.append('  gmp?: number;')
     lines.append('  gmpPercent?: number;')
     lines.append('  subscriptionStatus?: string;')
@@ -228,8 +228,8 @@ def generate_ipo_data():
         country = ipo.get("headquarters") or ipo.get("country", "Global")
         exchange = ipo.get("exchange") or ipo.get("listingExchange", "NSE/BSE")
         status = ipo.get("status", "upcoming")
-        if status not in ("upcoming", "open", "listed", "subscribed"):
-            status = "upcoming"
+        if status not in ("upcoming", "open", "listed", "subscribed", "closed"):
+            status = "closed" if status in ("rights",) else "upcoming"
         industry = ipo.get("industry", "")
         sector = ipo.get("sector", "") or industry or "mainboard"
         price_band_high = ipo.get("priceBandHigh", 0) or 0

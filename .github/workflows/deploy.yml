@@ -54,6 +54,9 @@ jobs:
           UNSPLASH_ACCESS_KEY_3: ${{ secrets.UNSPLASH_ACCESS_KEY_3 }}
         run: python generate_news_cache.py
 
+      - name: Check IPO availability (auto-close past-date IPOs)
+        run: python scripts/check_ipo_availability.py
+
       - name: Generate TypeScript data files
         env:
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}

@@ -98,7 +98,7 @@ export default function IPOAnalysisPage() {
   const currentPage = Number.isNaN(parsed) || parsed < 1 ? 1 : parsed;
 
   const [searchQuery, setSearchQuery] = useState('');
-  const [statusFilter, setStatusFilter] = useState<string>('all');
+  const [statusFilter, setStatusFilter] = useState<string>('upcoming');
 
   const filteredStocks = useMemo(() => {
     return ipoStocks.filter((stock) => {
