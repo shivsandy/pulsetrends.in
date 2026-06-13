@@ -661,18 +661,14 @@ def generate_article_for_trend(trend: dict, category: str, date_str: str) -> Opt
     category_map = {
         "crypto": "crypto",
         "ipo": "ipo",
-        "general": "stocks",
-        "sports": "stocks",
-        "entertainment": "stocks",
-        "technology": "crypto",
-        "economy": "stocks",
-        "breaking": "stocks",
+        "general": "trending",
+        "sports": "sports",
+        "entertainment": "entertainment",
+        "technology": "technology",
+        "economy": "economy",
+        "breaking": "breaking",
     }
-    mapped_category = category_map.get(category, "stocks")
-    
-    # For crypto and IPO, keep the original category for accuracy
-    if category in ("crypto", "ipo"):
-        mapped_category = category
+    mapped_category = category_map.get(category, "trending")
     
     article_prompt = f"""You are an expert journalist writing for PulseTrends (https://pulsetrends.in). Today is {date_str}.
 

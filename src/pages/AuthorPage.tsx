@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { Mail, Send, ArrowLeft, BookOpen, TrendingUp, Coins, Newspaper, ExternalLink } from 'lucide-react';
+import { Mail, Send, ArrowLeft, BookOpen, TrendingUp, Coins, Newspaper, ExternalLink, Trophy, Film, Monitor, BarChart3, AlertTriangle, Globe } from 'lucide-react';
 import PageSeo from '../components/PageSeo';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { SITE, canonical } from '../seo/config';
@@ -180,6 +180,12 @@ function AuthorArticleCard({ article, index }: { article: NewsArticle; index: nu
   const slug = getArticleSlug(article);
   const categoryIcon = article.category === 'crypto' ? <Coins className="w-3.5 h-3.5" /> :
     article.category === 'ipo' ? <TrendingUp className="w-3.5 h-3.5" /> :
+    article.category === 'sports' ? <Trophy className="w-3.5 h-3.5" /> :
+    article.category === 'entertainment' ? <Film className="w-3.5 h-3.5" /> :
+    article.category === 'technology' ? <Monitor className="w-3.5 h-3.5" /> :
+    article.category === 'economy' ? <BarChart3 className="w-3.5 h-3.5" /> :
+    article.category === 'breaking' ? <AlertTriangle className="w-3.5 h-3.5" /> :
+    article.category === 'trending' ? <Globe className="w-3.5 h-3.5" /> :
     <Newspaper className="w-3.5 h-3.5" />;
 
   return (
