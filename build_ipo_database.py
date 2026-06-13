@@ -1877,10 +1877,61 @@ def to_rankings(ipos: List[dict], path: str):
 
 
 def main():
+    import sys
+    FORCE = "--force" in sys.argv
+
     os.makedirs(DATA_DIR, exist_ok=True)
+
+    master_path = os.path.join(DATA_DIR, "ipo_master_database.json")
+    incremental = not FORCE
+
+    # Incremental: load existing master DB, only process new IPOs
+    existing_map = {}
+    if incremental:
+        try:
+            with open(master_path, encoding="utf-8") as f:
+                existing_db = json.load(f)
+            for ipo in existing_db.get("ipos", []):
+                key = ipo.get("company_name", "").lower().strip()
+                ticker = ipo.get("ticker", "").lower().strip()
+                if key:
+                    existing_map[key] = ipo
+                if ticker:
+                    existing_map[ticker] = ipo
+            print(f"[Incremental] Loaded {len(existing_db.get('ipos',[]))} existing scored IPOs")
+        except (FileNotFoundError, json.JSONDecodeError):
+            print("[Incremental] No existing master database — full build")
+            incremental = False
 
     # Build database
     ipos = build_master_database()
+
+    # Incremental merge: keep existing scores for old IPOs
+    if incremental and existing_map:
+        merged = []
+        new_count = 0
+        kept_count = 0
+        for ipo in ipos:
+            key = ipo.get("company_name", "").lower().strip()
+            existing = existing_map.get(key)
+            if existing and "ai_score" in existing:
+                # Keep old scores, only update status/date fields from new data
+                existing["status"] = ipo.get("status", existing.get("status", "listed"))
+                existing["ipo_date"] = ipo.get("ipo_date", existing.get("ipo_date", ""))
+                if ipo.get("gmp"):
+                    existing["gmp"] = ipo["gmp"]
+                if ipo.get("subscription"):
+                    existing["subscription"] = ipo["subscription"]
+                merged.append(existing)
+                kept_count += 1
+            else:
+                merged.append(ipo)
+                new_count += 1
+
+        # Sort by AI score
+        merged.sort(key=lambda x: x.get("ai_score", 0), reverse=True)
+        ipos = merged
+        print(f"[Incremental] Kept {kept_count} existing + added {new_count} new = {len(ipos)} total")
 
     # Stats
     stats = compute_stats(ipos)

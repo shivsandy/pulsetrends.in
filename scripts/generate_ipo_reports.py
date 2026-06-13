@@ -626,6 +626,9 @@ def generate_report(ipo, analysis_entry):
     return r
 
 def main():
+    import sys
+    FORCE = "--force" in sys.argv
+
     with open(DB_PATH, encoding="utf-8") as f:
         db = json.load(f)
     ipos = db["ipos"]
@@ -639,12 +642,31 @@ def main():
     except (FileNotFoundError, json.JSONDecodeError):
         print("No analysis data found — proceeding without it.")
 
-    reports = {}
-    count = 0
+    # Load existing reports for incremental mode
+    existing_reports = {}
+    if not FORCE:
+        try:
+            with open(OUTPUT_PATH, encoding="utf-8") as f:
+                existing_reports = json.load(f)
+            print(f"Loaded {len(existing_reports)} existing reports (incremental mode).")
+        except (FileNotFoundError, json.JSONDecodeError):
+            print("No existing reports found — generating all.")
+    else:
+        print("Force mode — regenerating all reports.")
+
+    reports = dict(existing_reports)
+    new_count = 0
+    skipped_count = 0
+
     for ipo in ipos:
         name = ipo.get("company_name", "Unknown")
         ticker = safe_str(ipo.get("ticker", ""))
         key = f"{ticker}-{name}" if ticker else name
+
+        # Skip if report already exists (incremental mode)
+        if not FORCE and key in existing_reports:
+            skipped_count += 1
+            continue
 
         # Find analysis entry by matching name or ticker
         analysis_entry = None
@@ -657,14 +679,14 @@ def main():
                 break
 
         reports[key] = generate_report(ipo, analysis_entry)
-        count += 1
-        if count % 200 == 0:
-            print(f"  Generated {count}/{len(ipos)} reports...")
+        new_count += 1
+        if new_count % 100 == 0:
+            print(f"  Generated {new_count} new reports (skipped {skipped_count})...")
 
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(reports, f, indent=2, ensure_ascii=False)
 
-    print(f"\nDone! Generated {len(reports)} institutional reports -> {OUTPUT_PATH}")
+    print(f"\nDone! {new_count} new + {skipped_count} existing = {len(reports)} total reports -> {OUTPUT_PATH}")
     print(f"File size: {os.path.getsize(OUTPUT_PATH) / 1024 / 1024:.1f} MB")
 
 if __name__ == "__main__":
