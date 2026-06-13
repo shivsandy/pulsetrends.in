@@ -151,6 +151,15 @@ def generate_ipo_data():
     analysis_data = load_json(os.path.join(DATA_DIR, "ipo_analysis.json"))
     ipos = ipos_data.get("ipos", [])
 
+    # Load master database for fallback analysis (covers all 2001 IPOs)
+    master_db = load_json(os.path.join(DATA_DIR, "ipo_master_database.json"))
+    master_lookup = {}
+    for mipo in master_db.get("ipos", []):
+        key = mipo.get("company_name", "").lower().strip()
+        if key:
+            master_lookup[key] = mipo
+    print(f"[DataGen] Loaded {len(master_lookup)} master DB entries for fallback analysis")
+
     # Load comprehensive analysis JSON for per-IPO scores
     comp_analysis = load_json(os.path.join(DATA_DIR, "..", "src", "data", "ipoComprehensiveAnalysis.json"))
     print(f"[DataGen] Loaded {len(comp_analysis)} comprehensive analysis entries")
@@ -280,6 +289,21 @@ def generate_ipo_data():
         ai_rating = analysis.get("final_rating", "") or analysis.get("aiRating", "")
         ai_rating_score = analysis.get("final_rating_score") or analysis.get("aiRatingScore")
 
+        # Fallback: use master database data when no ipo_analysis.json entry exists
+        if not ai_analysis_text:
+            mipo = master_lookup.get(name.lower().strip()) or master_lookup.get(symbol.lower().strip())
+            if mipo:
+                summary_text = mipo.get("ipo_summary", "")
+                thesis_text = mipo.get("investment_thesis", "")
+                score_exp_text = mipo.get("ai_score_explanation", "")
+                ai_analysis_text = (score_exp_text or thesis_text or summary_text)
+                if not ai_verdict_text:
+                    ai_verdict_text = mipo.get("ai_rating", "")
+                if not ai_rating:
+                    ai_rating = mipo.get("ai_rating", "")
+                if ai_rating_score is None:
+                    ai_rating_score = mipo.get("ai_score")
+
         if not strengths_raw and analysis:
             swot = analysis.get("swot", {}) or {}
             strengths_raw = swot.get("strengths", []) or []
@@ -385,18 +409,28 @@ def generate_ipo_data():
 
         if comp_scores and isinstance(comp_scores, dict):
             overall_val = int(comp_scores.get('overall_score', 50))
-            fundamentals_val = int(comp_scores.get('financial_strength', 50))
-            valuation_val = int(comp_scores.get('valuation_attractiveness', 50))
-            growth_val = int(comp_scores.get('business_quality', 50))
-            management_val = int(comp_scores.get('management_quality', 50))
-            sentiment_val = int(comp_scores.get('industry_outlook', 50))
+            fundamentals_val = int(comp_scores.get('fundamentals_score') or comp_scores.get('financial_strength', 50))
+            valuation_val = int(comp_scores.get('valuation_score') or comp_scores.get('valuation_attractiveness', 50))
+            growth_val = int(comp_scores.get('growth_score') or comp_scores.get('business_quality', 50))
+            management_val = int(comp_scores.get('management_score') or comp_scores.get('management_quality', 50))
+            sentiment_val = int(comp_scores.get('market_sentiment_score') or comp_scores.get('industry_outlook', 50))
         else:
-            overall_val = scores.get("attractiveness", scores.get("overall", 75))
-            fundamentals_val = scores.get("financial_health", 70)
-            valuation_val = scores.get("risk", 65)
-            growth_val = scores.get("growth_potential", 75)
-            management_val = 70
-            sentiment_val = scores.get("attractiveness", 72)
+            # Try master database scores first, fall back to ipo_analysis or hardcoded
+            m_sb = mipo.get("score_breakdown", {}) if mipo else {}
+            if m_sb:
+                overall_val = int(mipo.get("ai_score", 50))
+                fundamentals_val = int(m_sb.get("fundamentals", 50))
+                valuation_val = int(m_sb.get("valuation", 50))
+                growth_val = int(m_sb.get("business_quality", 50))
+                management_val = int(m_sb.get("governance", 50))
+                sentiment_val = int(m_sb.get("ipo_demand", 50))
+            else:
+                overall_val = scores.get("attractiveness", scores.get("overall", 75))
+                fundamentals_val = scores.get("financial_health", 70)
+                valuation_val = scores.get("risk", 65)
+                growth_val = scores.get("growth_potential", 75)
+                management_val = 70
+                sentiment_val = scores.get("attractiveness", 72)
 
         lines.append('    aiScores: {')
         lines.append(f'      overall: {overall_val},')
