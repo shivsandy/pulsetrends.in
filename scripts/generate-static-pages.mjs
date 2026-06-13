@@ -206,6 +206,7 @@ function buildHtml({
     ${preloadHtml ? `    ${preloadHtml}` : ''}
 
     <!-- Google AdSense -->
+    <meta name="google-adsense-account" content="ca-pub-5890647711476838">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5890647711476838"
      crossorigin="anonymous"></script>
 
