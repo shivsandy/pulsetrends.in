@@ -121,8 +121,16 @@ function buildSitemap(routes) {
 
 function buildNewsSitemap() {
   const articles = extractArticlesFromTs(resolve('src/data/newsData.ts'));
-  const today = new Date().toISOString().split('T')[0];
-  const urls = articles
+  const now = new Date();
+  const fortyEightHoursAgo = new Date(now.getTime() - 48 * 60 * 60 * 1000);
+  const today = now.toISOString().split('T')[0];
+  const recentArticles = articles.filter((a) => {
+    if (!a.publishedAt) return false;
+    const pubDate = new Date(a.publishedAt);
+    return pubDate >= fortyEightHoursAgo;
+  });
+  console.log(`[postbuild] News sitemap: ${recentArticles.length}/${articles.length} articles from last 48 hours`);
+  const urls = recentArticles
     .map((a) => {
       const slug = `${slugify(a.headline)}-${a.id}`;
       const pubDate = a.publishedAt ? a.publishedAt.split('T')[0] : today;
