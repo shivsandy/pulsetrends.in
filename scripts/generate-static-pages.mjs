@@ -201,8 +201,13 @@ function buildHtml({
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
     <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
 
     ${preloadHtml ? `    ${preloadHtml}` : ''}
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5890647711476838"
+     crossorigin="anonymous"></script>
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="${SITE_NAME}" />
