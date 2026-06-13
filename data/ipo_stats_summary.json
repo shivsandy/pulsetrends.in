@@ -1,0 +1,153 @@
+{
+  "total_ipos": 2001,
+  "avg_score": 54.5,
+  "median_score": 54.2,
+  "min_score": 35.1,
+  "max_score": 79.1,
+  "rating_distribution": {
+    "Good IPO": 32,
+    "Average IPO": 472,
+    "Weak IPO": 892,
+    "Avoid": 605
+  },
+  "sector_distribution": {
+    "Unknown": 1078,
+    "Technology": 152,
+    "Consumer Cyclical": 138,
+    "Industrials": 130,
+    "Financial": 129,
+    "Basic Materials": 107,
+    "Healthcare": 83,
+    "Consumer Defensive": 76,
+    "Communication": 31,
+    "Energy": 28,
+    "Utilities": 28,
+    "Real Estate": 21
+  },
+  "exchange_distribution": {
+    "BSE": 996,
+    "NSE": 709,
+    "NYSE": 104,
+    "NASDAQ": 96,
+    "OTC": 26,
+    "HKEX": 18,
+    "TSX": 14,
+    "ASX": 13,
+    "LSE": 13,
+    "SGX": 4,
+    "XETRA": 3,
+    "EURONEXT": 3,
+    "KRX": 1,
+    "IDX": 1
+  },
+  "status_distribution": {
+    "listed": 1917,
+    "upcoming": 79,
+    "open": 3,
+    "rights": 2
+  },
+  "top_10": [
+    {
+      "company_name": "Tata Technologies Ltd",
+      "ticker": "TATATECH",
+      "ai_score": 79.1
+    },
+    {
+      "company_name": "Fortescue Metals Group",
+      "ticker": "FMG",
+      "ai_score": 77.2
+    },
+    {
+      "company_name": "Apple Inc.",
+      "ticker": "AAPL",
+      "ai_score": 75.6
+    },
+    {
+      "company_name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "ai_score": 75.3
+    },
+    {
+      "company_name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "ai_score": 75.1
+    },
+    {
+      "company_name": "HDFC Life Insurance Co.",
+      "ticker": "HDFCLIFE",
+      "ai_score": 74.5
+    },
+    {
+      "company_name": "Macquarie Group Ltd",
+      "ticker": "MQG",
+      "ai_score": 74.4
+    },
+    {
+      "company_name": "Reliance Jio",
+      "ticker": "RELJIO",
+      "ai_score": 73.9
+    },
+    {
+      "company_name": "Visaman Global",
+      "ticker": "",
+      "ai_score": 73.6
+    },
+    {
+      "company_name": "Tata Consultancy Services",
+      "ticker": "TCS",
+      "ai_score": 72.8
+    }
+  ],
+  "bottom_10": [
+    {
+      "company_name": "Solvex Edibles",
+      "ticker": "",
+      "ai_score": 37.9
+    },
+    {
+      "company_name": "Amara Raja Batteries Ltd",
+      "ticker": "AMARAJABAT",
+      "ai_score": 37.5
+    },
+    {
+      "company_name": "Amic Forging",
+      "ticker": "",
+      "ai_score": 37.2
+    },
+    {
+      "company_name": "Goodman Group",
+      "ticker": "GMG",
+      "ai_score": 37.1
+    },
+    {
+      "company_name": "Merritronix",
+      "ticker": "MRTX",
+      "ai_score": 36.9
+    },
+    {
+      "company_name": "Net Avenue",
+      "ticker": "",
+      "ai_score": 36.7
+    },
+    {
+      "company_name": "Bluestone Jewel",
+      "ticker": "",
+      "ai_score": 36.6
+    },
+    {
+      "company_name": "Earkart",
+      "ticker": "",
+      "ai_score": 36.0
+    },
+    {
+      "company_name": "CMR Green Tech.",
+      "ticker": "",
+      "ai_score": 35.6
+    },
+    {
+      "company_name": "SMR Jewels",
+      "ticker": "SMR",
+      "ai_score": 35.1
+    }
+  ]
+}
