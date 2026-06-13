@@ -97,7 +97,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 50,
       fundamentals: 50,
-      valuation: 72,
+      valuation: 45,
       growth: 55,
       management: 60,
       marketSentiment: 65,
@@ -141,7 +141,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 51,
       fundamentals: 51,
-      valuation: 73,
+      valuation: 46,
       growth: 56,
       management: 61,
       marketSentiment: 66,
@@ -185,7 +185,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 52,
       fundamentals: 52,
-      valuation: 73,
+      valuation: 47,
       growth: 57,
       management: 62,
       marketSentiment: 67,
@@ -233,7 +233,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 53,
       fundamentals: 53,
-      valuation: 74,
+      valuation: 48,
       growth: 58,
       management: 63,
       marketSentiment: 68,
@@ -281,7 +281,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 54,
       fundamentals: 54,
-      valuation: 74,
+      valuation: 49,
       growth: 59,
       management: 64,
       marketSentiment: 69,
@@ -1755,7 +1755,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 85,
       fundamentals: 85,
-      valuation: 72,
+      valuation: 45,
       growth: 90,
       management: 65,
       marketSentiment: 75,
@@ -1803,7 +1803,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 86,
       fundamentals: 86,
-      valuation: 73,
+      valuation: 46,
       growth: 91,
       management: 66,
       marketSentiment: 76,
@@ -1846,7 +1846,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 87,
       fundamentals: 87,
-      valuation: 73,
+      valuation: 47,
       growth: 92,
       management: 67,
       marketSentiment: 77,
@@ -1894,7 +1894,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 88,
       fundamentals: 88,
-      valuation: 74,
+      valuation: 48,
       growth: 93,
       management: 68,
       marketSentiment: 78,
@@ -1938,7 +1938,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 89,
       fundamentals: 89,
-      valuation: 74,
+      valuation: 49,
       growth: 94,
       management: 69,
       marketSentiment: 79,
@@ -3423,7 +3423,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 80,
       fundamentals: 80,
-      valuation: 72,
+      valuation: 45,
       growth: 85,
       management: 70,
       marketSentiment: 85,
@@ -3471,7 +3471,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 81,
       fundamentals: 81,
-      valuation: 73,
+      valuation: 46,
       growth: 86,
       management: 71,
       marketSentiment: 86,
@@ -3519,7 +3519,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 82,
       fundamentals: 82,
-      valuation: 73,
+      valuation: 47,
       growth: 87,
       management: 72,
       marketSentiment: 87,
@@ -3567,7 +3567,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 83,
       fundamentals: 83,
-      valuation: 74,
+      valuation: 48,
       growth: 88,
       management: 73,
       marketSentiment: 88,
@@ -3615,7 +3615,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 84,
       fundamentals: 84,
-      valuation: 74,
+      valuation: 49,
       growth: 89,
       management: 74,
       marketSentiment: 89,
@@ -5099,7 +5099,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 75,
       fundamentals: 75,
-      valuation: 72,
+      valuation: 45,
       growth: 80,
       management: 75,
       marketSentiment: 70,
@@ -5147,7 +5147,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 76,
       fundamentals: 76,
-      valuation: 73,
+      valuation: 46,
       growth: 81,
       management: 76,
       marketSentiment: 71,
@@ -5195,7 +5195,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 77,
       fundamentals: 77,
-      valuation: 73,
+      valuation: 47,
       growth: 82,
       management: 77,
       marketSentiment: 72,
@@ -5243,7 +5243,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 78,
       fundamentals: 78,
-      valuation: 74,
+      valuation: 48,
       growth: 83,
       management: 78,
       marketSentiment: 73,
@@ -5291,7 +5291,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 79,
       fundamentals: 79,
-      valuation: 74,
+      valuation: 49,
       growth: 84,
       management: 79,
       marketSentiment: 74,
@@ -6779,7 +6779,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 70,
       fundamentals: 70,
-      valuation: 72,
+      valuation: 45,
       growth: 75,
       management: 80,
       marketSentiment: 80,
@@ -6827,7 +6827,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 71,
       fundamentals: 71,
-      valuation: 73,
+      valuation: 46,
       growth: 76,
       management: 81,
       marketSentiment: 81,
@@ -6875,7 +6875,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 72,
       fundamentals: 72,
-      valuation: 73,
+      valuation: 47,
       growth: 77,
       management: 82,
       marketSentiment: 82,
@@ -6923,7 +6923,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 73,
       fundamentals: 73,
-      valuation: 74,
+      valuation: 48,
       growth: 78,
       management: 83,
       marketSentiment: 83,
@@ -6971,7 +6971,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 74,
       fundamentals: 74,
-      valuation: 74,
+      valuation: 49,
       growth: 79,
       management: 84,
       marketSentiment: 84,
@@ -8455,7 +8455,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 65,
       fundamentals: 65,
-      valuation: 72,
+      valuation: 45,
       growth: 70,
       management: 85,
       marketSentiment: 65,
@@ -8503,7 +8503,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 66,
       fundamentals: 66,
-      valuation: 73,
+      valuation: 46,
       growth: 71,
       management: 86,
       marketSentiment: 66,
@@ -8551,7 +8551,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 67,
       fundamentals: 67,
-      valuation: 73,
+      valuation: 47,
       growth: 72,
       management: 87,
       marketSentiment: 67,
@@ -8599,7 +8599,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 68,
       fundamentals: 68,
-      valuation: 74,
+      valuation: 48,
       growth: 73,
       management: 88,
       marketSentiment: 68,
@@ -8647,7 +8647,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 69,
       fundamentals: 69,
-      valuation: 74,
+      valuation: 49,
       growth: 74,
       management: 89,
       marketSentiment: 69,
@@ -10135,7 +10135,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 60,
       fundamentals: 60,
-      valuation: 72,
+      valuation: 45,
       growth: 65,
       management: 60,
       marketSentiment: 75,
@@ -10183,7 +10183,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 61,
       fundamentals: 61,
-      valuation: 73,
+      valuation: 46,
       growth: 66,
       management: 61,
       marketSentiment: 76,
@@ -10231,7 +10231,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 62,
       fundamentals: 62,
-      valuation: 73,
+      valuation: 47,
       growth: 67,
       management: 62,
       marketSentiment: 77,
@@ -10279,7 +10279,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 63,
       fundamentals: 63,
-      valuation: 74,
+      valuation: 48,
       growth: 68,
       management: 63,
       marketSentiment: 78,
@@ -10327,7 +10327,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 64,
       fundamentals: 64,
-      valuation: 74,
+      valuation: 49,
       growth: 69,
       management: 64,
       marketSentiment: 79,
@@ -11814,7 +11814,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 55,
       fundamentals: 55,
-      valuation: 72,
+      valuation: 45,
       growth: 60,
       management: 65,
       marketSentiment: 85,
@@ -11862,7 +11862,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 56,
       fundamentals: 56,
-      valuation: 73,
+      valuation: 46,
       growth: 61,
       management: 66,
       marketSentiment: 86,
@@ -11910,7 +11910,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 57,
       fundamentals: 57,
-      valuation: 73,
+      valuation: 47,
       growth: 62,
       management: 67,
       marketSentiment: 87,
@@ -11958,7 +11958,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 58,
       fundamentals: 58,
-      valuation: 74,
+      valuation: 48,
       growth: 63,
       management: 68,
       marketSentiment: 88,
@@ -12006,7 +12006,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 59,
       fundamentals: 59,
-      valuation: 74,
+      valuation: 49,
       growth: 64,
       management: 69,
       marketSentiment: 89,
@@ -13494,7 +13494,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 50,
       fundamentals: 50,
-      valuation: 72,
+      valuation: 45,
       growth: 55,
       management: 70,
       marketSentiment: 70,
@@ -13542,7 +13542,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 51,
       fundamentals: 51,
-      valuation: 73,
+      valuation: 46,
       growth: 56,
       management: 71,
       marketSentiment: 71,
@@ -13590,7 +13590,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 52,
       fundamentals: 52,
-      valuation: 73,
+      valuation: 47,
       growth: 57,
       management: 72,
       marketSentiment: 72,
@@ -13638,7 +13638,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 53,
       fundamentals: 53,
-      valuation: 74,
+      valuation: 48,
       growth: 58,
       management: 73,
       marketSentiment: 73,
@@ -13682,7 +13682,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 54,
       fundamentals: 54,
-      valuation: 74,
+      valuation: 49,
       growth: 59,
       management: 74,
       marketSentiment: 74,
@@ -15165,7 +15165,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 85,
       fundamentals: 85,
-      valuation: 72,
+      valuation: 45,
       growth: 90,
       management: 75,
       marketSentiment: 80,
@@ -15213,7 +15213,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 86,
       fundamentals: 86,
-      valuation: 73,
+      valuation: 46,
       growth: 91,
       management: 76,
       marketSentiment: 81,
@@ -15261,7 +15261,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 87,
       fundamentals: 87,
-      valuation: 73,
+      valuation: 47,
       growth: 92,
       management: 77,
       marketSentiment: 82,
@@ -15309,7 +15309,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 88,
       fundamentals: 88,
-      valuation: 74,
+      valuation: 48,
       growth: 93,
       management: 78,
       marketSentiment: 83,
@@ -15357,7 +15357,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 89,
       fundamentals: 89,
-      valuation: 74,
+      valuation: 49,
       growth: 94,
       management: 79,
       marketSentiment: 84,
@@ -16845,7 +16845,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 80,
       fundamentals: 80,
-      valuation: 72,
+      valuation: 45,
       growth: 85,
       management: 80,
       marketSentiment: 65,
@@ -16893,7 +16893,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 81,
       fundamentals: 81,
-      valuation: 73,
+      valuation: 46,
       growth: 86,
       management: 81,
       marketSentiment: 66,
@@ -16941,7 +16941,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 82,
       fundamentals: 82,
-      valuation: 73,
+      valuation: 47,
       growth: 87,
       management: 82,
       marketSentiment: 67,
@@ -16989,7 +16989,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 83,
       fundamentals: 83,
-      valuation: 74,
+      valuation: 48,
       growth: 88,
       management: 83,
       marketSentiment: 68,
@@ -17037,7 +17037,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 84,
       fundamentals: 84,
-      valuation: 74,
+      valuation: 49,
       growth: 89,
       management: 84,
       marketSentiment: 69,
@@ -18525,7 +18525,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 75,
       fundamentals: 75,
-      valuation: 72,
+      valuation: 45,
       growth: 80,
       management: 85,
       marketSentiment: 75,
@@ -18573,7 +18573,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 76,
       fundamentals: 76,
-      valuation: 73,
+      valuation: 46,
       growth: 81,
       management: 86,
       marketSentiment: 76,
@@ -18621,7 +18621,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 77,
       fundamentals: 77,
-      valuation: 73,
+      valuation: 47,
       growth: 82,
       management: 87,
       marketSentiment: 77,
@@ -18717,7 +18717,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 79,
       fundamentals: 79,
-      valuation: 74,
+      valuation: 49,
       growth: 84,
       management: 89,
       marketSentiment: 79,
@@ -20201,7 +20201,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 70,
       fundamentals: 70,
-      valuation: 72,
+      valuation: 45,
       growth: 75,
       management: 60,
       marketSentiment: 85,
@@ -20249,7 +20249,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 71,
       fundamentals: 71,
-      valuation: 73,
+      valuation: 46,
       growth: 76,
       management: 61,
       marketSentiment: 86,
@@ -20297,7 +20297,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 72,
       fundamentals: 72,
-      valuation: 73,
+      valuation: 47,
       growth: 77,
       management: 62,
       marketSentiment: 87,
@@ -20345,7 +20345,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 73,
       fundamentals: 73,
-      valuation: 74,
+      valuation: 48,
       growth: 78,
       management: 63,
       marketSentiment: 88,
@@ -20393,7 +20393,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 74,
       fundamentals: 74,
-      valuation: 74,
+      valuation: 49,
       growth: 79,
       management: 64,
       marketSentiment: 89,
@@ -21877,7 +21877,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 65,
       fundamentals: 65,
-      valuation: 72,
+      valuation: 45,
       growth: 70,
       management: 65,
       marketSentiment: 70,
@@ -21925,7 +21925,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 66,
       fundamentals: 66,
-      valuation: 73,
+      valuation: 46,
       growth: 71,
       management: 66,
       marketSentiment: 71,
@@ -21973,7 +21973,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 67,
       fundamentals: 67,
-      valuation: 73,
+      valuation: 47,
       growth: 72,
       management: 67,
       marketSentiment: 72,
@@ -22021,7 +22021,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 68,
       fundamentals: 68,
-      valuation: 74,
+      valuation: 48,
       growth: 73,
       management: 68,
       marketSentiment: 73,
@@ -22069,7 +22069,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 69,
       fundamentals: 69,
-      valuation: 74,
+      valuation: 49,
       growth: 74,
       management: 69,
       marketSentiment: 74,
@@ -23552,7 +23552,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 60,
       fundamentals: 60,
-      valuation: 72,
+      valuation: 45,
       growth: 65,
       management: 70,
       marketSentiment: 80,
@@ -23600,7 +23600,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 61,
       fundamentals: 61,
-      valuation: 73,
+      valuation: 46,
       growth: 66,
       management: 71,
       marketSentiment: 81,
@@ -23648,7 +23648,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 62,
       fundamentals: 62,
-      valuation: 73,
+      valuation: 47,
       growth: 67,
       management: 72,
       marketSentiment: 82,
@@ -23696,7 +23696,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 63,
       fundamentals: 63,
-      valuation: 74,
+      valuation: 48,
       growth: 68,
       management: 73,
       marketSentiment: 83,
@@ -23744,7 +23744,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 64,
       fundamentals: 64,
-      valuation: 74,
+      valuation: 49,
       growth: 69,
       management: 74,
       marketSentiment: 84,
@@ -25223,7 +25223,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 55,
       fundamentals: 55,
-      valuation: 72,
+      valuation: 45,
       growth: 60,
       management: 75,
       marketSentiment: 65,
@@ -25271,7 +25271,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 56,
       fundamentals: 56,
-      valuation: 73,
+      valuation: 46,
       growth: 61,
       management: 76,
       marketSentiment: 66,
@@ -25319,7 +25319,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 57,
       fundamentals: 57,
-      valuation: 73,
+      valuation: 47,
       growth: 62,
       management: 77,
       marketSentiment: 67,
@@ -25367,7 +25367,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 58,
       fundamentals: 58,
-      valuation: 74,
+      valuation: 48,
       growth: 63,
       management: 78,
       marketSentiment: 68,
@@ -25415,7 +25415,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 59,
       fundamentals: 59,
-      valuation: 74,
+      valuation: 49,
       growth: 64,
       management: 79,
       marketSentiment: 69,
@@ -26903,7 +26903,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 50,
       fundamentals: 50,
-      valuation: 72,
+      valuation: 45,
       growth: 55,
       management: 80,
       marketSentiment: 75,
@@ -26951,7 +26951,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 51,
       fundamentals: 51,
-      valuation: 73,
+      valuation: 46,
       growth: 56,
       management: 81,
       marketSentiment: 76,
@@ -26999,7 +26999,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 52,
       fundamentals: 52,
-      valuation: 73,
+      valuation: 47,
       growth: 57,
       management: 82,
       marketSentiment: 77,
@@ -27047,7 +27047,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 53,
       fundamentals: 53,
-      valuation: 74,
+      valuation: 48,
       growth: 58,
       management: 83,
       marketSentiment: 78,
@@ -27095,7 +27095,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 54,
       fundamentals: 54,
-      valuation: 74,
+      valuation: 49,
       growth: 59,
       management: 84,
       marketSentiment: 79,
@@ -28583,7 +28583,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 85,
       fundamentals: 85,
-      valuation: 72,
+      valuation: 45,
       growth: 90,
       management: 85,
       marketSentiment: 85,
@@ -28631,7 +28631,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 86,
       fundamentals: 86,
-      valuation: 73,
+      valuation: 46,
       growth: 91,
       management: 86,
       marketSentiment: 86,
@@ -28679,7 +28679,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 87,
       fundamentals: 87,
-      valuation: 73,
+      valuation: 47,
       growth: 92,
       management: 87,
       marketSentiment: 87,
@@ -28727,7 +28727,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 88,
       fundamentals: 88,
-      valuation: 74,
+      valuation: 48,
       growth: 93,
       management: 88,
       marketSentiment: 88,
@@ -28775,7 +28775,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 89,
       fundamentals: 89,
-      valuation: 74,
+      valuation: 49,
       growth: 94,
       management: 89,
       marketSentiment: 89,
@@ -30263,7 +30263,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 80,
       fundamentals: 80,
-      valuation: 72,
+      valuation: 45,
       growth: 85,
       management: 60,
       marketSentiment: 70,
@@ -30311,7 +30311,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 81,
       fundamentals: 81,
-      valuation: 73,
+      valuation: 46,
       growth: 86,
       management: 61,
       marketSentiment: 71,
@@ -30359,7 +30359,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 82,
       fundamentals: 82,
-      valuation: 73,
+      valuation: 47,
       growth: 87,
       management: 62,
       marketSentiment: 72,
@@ -30407,7 +30407,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 83,
       fundamentals: 83,
-      valuation: 74,
+      valuation: 48,
       growth: 88,
       management: 63,
       marketSentiment: 73,
@@ -30455,7 +30455,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 84,
       fundamentals: 84,
-      valuation: 74,
+      valuation: 49,
       growth: 89,
       management: 64,
       marketSentiment: 74,
@@ -31943,7 +31943,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 75,
       fundamentals: 75,
-      valuation: 72,
+      valuation: 45,
       growth: 80,
       management: 65,
       marketSentiment: 80,
@@ -31991,7 +31991,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 76,
       fundamentals: 76,
-      valuation: 73,
+      valuation: 46,
       growth: 81,
       management: 66,
       marketSentiment: 81,
@@ -32039,7 +32039,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 77,
       fundamentals: 77,
-      valuation: 73,
+      valuation: 47,
       growth: 82,
       management: 67,
       marketSentiment: 82,
@@ -32087,7 +32087,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 78,
       fundamentals: 78,
-      valuation: 74,
+      valuation: 48,
       growth: 83,
       management: 68,
       marketSentiment: 83,
@@ -32135,7 +32135,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 79,
       fundamentals: 79,
-      valuation: 74,
+      valuation: 49,
       growth: 84,
       management: 69,
       marketSentiment: 84,
@@ -33623,7 +33623,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 70,
       fundamentals: 70,
-      valuation: 72,
+      valuation: 45,
       growth: 75,
       management: 70,
       marketSentiment: 65,
@@ -33671,7 +33671,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 71,
       fundamentals: 71,
-      valuation: 73,
+      valuation: 46,
       growth: 76,
       management: 71,
       marketSentiment: 66,
@@ -33719,7 +33719,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 72,
       fundamentals: 72,
-      valuation: 73,
+      valuation: 47,
       growth: 77,
       management: 72,
       marketSentiment: 67,
@@ -33767,7 +33767,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 73,
       fundamentals: 73,
-      valuation: 74,
+      valuation: 48,
       growth: 78,
       management: 73,
       marketSentiment: 68,
@@ -33815,7 +33815,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 74,
       fundamentals: 74,
-      valuation: 74,
+      valuation: 49,
       growth: 79,
       management: 74,
       marketSentiment: 69,
@@ -35303,7 +35303,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 65,
       fundamentals: 65,
-      valuation: 72,
+      valuation: 45,
       growth: 70,
       management: 75,
       marketSentiment: 75,
@@ -35351,7 +35351,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 66,
       fundamentals: 66,
-      valuation: 73,
+      valuation: 46,
       growth: 71,
       management: 76,
       marketSentiment: 76,
@@ -35399,7 +35399,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 67,
       fundamentals: 67,
-      valuation: 73,
+      valuation: 47,
       growth: 72,
       management: 77,
       marketSentiment: 77,
@@ -35447,7 +35447,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 68,
       fundamentals: 68,
-      valuation: 74,
+      valuation: 48,
       growth: 73,
       management: 78,
       marketSentiment: 78,
@@ -35495,7 +35495,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 69,
       fundamentals: 69,
-      valuation: 74,
+      valuation: 49,
       growth: 74,
       management: 79,
       marketSentiment: 79,
@@ -36983,7 +36983,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 60,
       fundamentals: 60,
-      valuation: 72,
+      valuation: 45,
       growth: 65,
       management: 80,
       marketSentiment: 85,
@@ -37079,7 +37079,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 62,
       fundamentals: 62,
-      valuation: 73,
+      valuation: 47,
       growth: 67,
       management: 82,
       marketSentiment: 87,
@@ -37127,7 +37127,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 63,
       fundamentals: 63,
-      valuation: 74,
+      valuation: 48,
       growth: 68,
       management: 83,
       marketSentiment: 88,
@@ -37175,7 +37175,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 64,
       fundamentals: 64,
-      valuation: 74,
+      valuation: 49,
       growth: 69,
       management: 84,
       marketSentiment: 89,
@@ -38663,7 +38663,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 55,
       fundamentals: 55,
-      valuation: 72,
+      valuation: 45,
       growth: 60,
       management: 85,
       marketSentiment: 70,
@@ -38711,7 +38711,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 56,
       fundamentals: 56,
-      valuation: 73,
+      valuation: 46,
       growth: 61,
       management: 86,
       marketSentiment: 71,
@@ -38759,7 +38759,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 57,
       fundamentals: 57,
-      valuation: 73,
+      valuation: 47,
       growth: 62,
       management: 87,
       marketSentiment: 72,
@@ -38807,7 +38807,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 58,
       fundamentals: 58,
-      valuation: 74,
+      valuation: 48,
       growth: 63,
       management: 88,
       marketSentiment: 73,
@@ -38855,7 +38855,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 59,
       fundamentals: 59,
-      valuation: 74,
+      valuation: 49,
       growth: 64,
       management: 89,
       marketSentiment: 74,
@@ -40343,7 +40343,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 50,
       fundamentals: 50,
-      valuation: 72,
+      valuation: 45,
       growth: 55,
       management: 60,
       marketSentiment: 80,
@@ -40391,7 +40391,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 51,
       fundamentals: 51,
-      valuation: 73,
+      valuation: 46,
       growth: 56,
       management: 61,
       marketSentiment: 81,
@@ -40439,7 +40439,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 52,
       fundamentals: 52,
-      valuation: 73,
+      valuation: 47,
       growth: 57,
       management: 62,
       marketSentiment: 82,
@@ -40487,7 +40487,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 53,
       fundamentals: 53,
-      valuation: 74,
+      valuation: 48,
       growth: 58,
       management: 63,
       marketSentiment: 83,
@@ -40535,7 +40535,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 54,
       fundamentals: 54,
-      valuation: 74,
+      valuation: 49,
       growth: 59,
       management: 64,
       marketSentiment: 84,
@@ -42023,7 +42023,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 85,
       fundamentals: 85,
-      valuation: 72,
+      valuation: 45,
       growth: 90,
       management: 65,
       marketSentiment: 65,
@@ -42071,7 +42071,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 86,
       fundamentals: 86,
-      valuation: 73,
+      valuation: 46,
       growth: 91,
       management: 66,
       marketSentiment: 66,
@@ -42119,7 +42119,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 87,
       fundamentals: 87,
-      valuation: 73,
+      valuation: 47,
       growth: 92,
       management: 67,
       marketSentiment: 67,
@@ -42167,7 +42167,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 88,
       fundamentals: 88,
-      valuation: 74,
+      valuation: 48,
       growth: 93,
       management: 68,
       marketSentiment: 68,
@@ -42215,7 +42215,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 89,
       fundamentals: 89,
-      valuation: 74,
+      valuation: 49,
       growth: 94,
       management: 69,
       marketSentiment: 69,
@@ -43703,7 +43703,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 80,
       fundamentals: 80,
-      valuation: 72,
+      valuation: 45,
       growth: 85,
       management: 70,
       marketSentiment: 75,
@@ -43751,7 +43751,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 81,
       fundamentals: 81,
-      valuation: 73,
+      valuation: 46,
       growth: 86,
       management: 71,
       marketSentiment: 76,
@@ -43799,7 +43799,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 82,
       fundamentals: 82,
-      valuation: 73,
+      valuation: 47,
       growth: 87,
       management: 72,
       marketSentiment: 77,
@@ -43847,7 +43847,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 83,
       fundamentals: 83,
-      valuation: 74,
+      valuation: 48,
       growth: 88,
       management: 73,
       marketSentiment: 78,
@@ -43895,7 +43895,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 84,
       fundamentals: 84,
-      valuation: 74,
+      valuation: 49,
       growth: 89,
       management: 74,
       marketSentiment: 79,
@@ -45383,7 +45383,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 75,
       fundamentals: 75,
-      valuation: 72,
+      valuation: 45,
       growth: 80,
       management: 75,
       marketSentiment: 85,
@@ -45431,7 +45431,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 76,
       fundamentals: 76,
-      valuation: 73,
+      valuation: 46,
       growth: 81,
       management: 76,
       marketSentiment: 86,
@@ -45479,7 +45479,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 77,
       fundamentals: 77,
-      valuation: 73,
+      valuation: 47,
       growth: 82,
       management: 77,
       marketSentiment: 87,
@@ -45527,7 +45527,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 78,
       fundamentals: 78,
-      valuation: 74,
+      valuation: 48,
       growth: 83,
       management: 78,
       marketSentiment: 88,
@@ -45575,7 +45575,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 79,
       fundamentals: 79,
-      valuation: 74,
+      valuation: 49,
       growth: 84,
       management: 79,
       marketSentiment: 89,
@@ -47063,7 +47063,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 70,
       fundamentals: 70,
-      valuation: 72,
+      valuation: 45,
       growth: 75,
       management: 80,
       marketSentiment: 70,
@@ -47111,7 +47111,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 71,
       fundamentals: 71,
-      valuation: 73,
+      valuation: 46,
       growth: 76,
       management: 81,
       marketSentiment: 71,
@@ -47159,7 +47159,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 72,
       fundamentals: 72,
-      valuation: 73,
+      valuation: 47,
       growth: 77,
       management: 82,
       marketSentiment: 72,
@@ -47207,7 +47207,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 73,
       fundamentals: 73,
-      valuation: 74,
+      valuation: 48,
       growth: 78,
       management: 83,
       marketSentiment: 73,
@@ -47255,7 +47255,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 74,
       fundamentals: 74,
-      valuation: 74,
+      valuation: 49,
       growth: 79,
       management: 84,
       marketSentiment: 74,
@@ -48590,7 +48590,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 65,
       fundamentals: 65,
-      valuation: 72,
+      valuation: 45,
       growth: 70,
       management: 85,
       marketSentiment: 80,
@@ -48674,7 +48674,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 67,
       fundamentals: 67,
-      valuation: 73,
+      valuation: 47,
       growth: 72,
       management: 87,
       marketSentiment: 82,
@@ -48716,7 +48716,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 68,
       fundamentals: 68,
-      valuation: 74,
+      valuation: 48,
       growth: 73,
       management: 88,
       marketSentiment: 83,
@@ -48758,7 +48758,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 69,
       fundamentals: 69,
-      valuation: 74,
+      valuation: 49,
       growth: 74,
       management: 89,
       marketSentiment: 84,
@@ -50060,7 +50060,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 60,
       fundamentals: 60,
-      valuation: 72,
+      valuation: 45,
       growth: 65,
       management: 60,
       marketSentiment: 65,
@@ -50102,7 +50102,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 61,
       fundamentals: 61,
-      valuation: 73,
+      valuation: 46,
       growth: 66,
       management: 61,
       marketSentiment: 66,
@@ -50144,7 +50144,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 62,
       fundamentals: 62,
-      valuation: 73,
+      valuation: 47,
       growth: 67,
       management: 62,
       marketSentiment: 67,
@@ -50186,7 +50186,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 63,
       fundamentals: 63,
-      valuation: 74,
+      valuation: 48,
       growth: 68,
       management: 63,
       marketSentiment: 68,
@@ -50228,7 +50228,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 64,
       fundamentals: 64,
-      valuation: 74,
+      valuation: 49,
       growth: 69,
       management: 64,
       marketSentiment: 69,
@@ -51530,7 +51530,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 55,
       fundamentals: 55,
-      valuation: 72,
+      valuation: 45,
       growth: 60,
       management: 65,
       marketSentiment: 75,
@@ -51572,7 +51572,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 56,
       fundamentals: 56,
-      valuation: 73,
+      valuation: 46,
       growth: 61,
       management: 66,
       marketSentiment: 76,
@@ -51614,7 +51614,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 57,
       fundamentals: 57,
-      valuation: 73,
+      valuation: 47,
       growth: 62,
       management: 67,
       marketSentiment: 77,
@@ -51656,7 +51656,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 58,
       fundamentals: 58,
-      valuation: 74,
+      valuation: 48,
       growth: 63,
       management: 68,
       marketSentiment: 78,
@@ -51698,7 +51698,7 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 59,
       fundamentals: 59,
-      valuation: 74,
+      valuation: 49,
       growth: 64,
       management: 69,
       marketSentiment: 79,
