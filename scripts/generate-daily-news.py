@@ -1,44 +1,77 @@
 #!/usr/bin/env python3
 """
-Daily News Generator for PulseTrends
-=====================================
-Generates 3 articles per batch, 2 batches per day (6 total):
-  - 6 AM ET: morning batch (1 Crypto + 1 IPO + 1 Stocks)
-  - 6 PM ET: evening batch (1 Crypto + 1 IPO + 1 Stocks)
+Daily News Generator for PulseTrends — CONSOLIDATED PIPELINE
+=============================================================
+Runs once daily and generates 11 articles total:
+  - 3 Crypto articles (trending crypto/blockchain keywords)
+  - 3 IPO articles (trending IPO/stock-market keywords)
+  - 5 Hot-topic articles (general trending topics from across the web)
 
-Uses LLM APIs from environment variables. Falls back across providers.
+Pipeline:
+  1. Fetch 25+ RSS feeds from news, finance, sports, entertainment sources
+  2. Use an LLM to discover & rank 11 trending keywords (3 crypto, 3 IPO, 5 general)
+  3. Check existing newsData.ts for duplicate topics
+  4. Generate all 11 articles using LLM providers
+  5. Fetch Unsplash images for each article
+  6. Prepend articles to src/data/newsData.ts (newest first)
 
-Run: python scripts/generate-daily-news.py --batch morning
-     python scripts/generate-daily-news.py --batch evening
+Run: python scripts/generate-daily-news.py
 
 Environment variables (GitHub Secrets):
-  GOOGLE_AI_API_KEY_1, GOOGLE_AI_API_KEY_2   — Google Gemini
-  GROQ_API                                      — Groq (fast inference)
-  COHERE_API                                    — Cohere
-  MISTRAL_API                                   — Mistral
+  GROQ_API, MISTRAL_API, GOOGLE_AI_API_KEY_1/2, COHERE_API  — LLM providers
+  UNSPLASH_ACCESS_KEY_1/2/3                                   — Unsplash images
 """
 
-import argparse
 import json
 import os
+import random
 import re
 import sys
-import random
 import time
-import traceback
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Optional
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "src" / "data"
 NEWS_DATA_FILE = DATA_DIR / "newsData.ts"
 CACHE_DIR = REPO_ROOT / "data"
 USED_IMAGES_FILE = CACHE_DIR / "used_news_images.json"
-DAILY_CACHE_FILE = CACHE_DIR / "daily_news_cache.json"
-MAX_RETIRES = 3
+MAX_RETRIES = 3
 TIMEOUT_SEC = 90
 
-# ── Unsplash category queries (mirror news_api.py) ──────────────────
+# ── RSS Feed Sources for Trend Discovery ──────────────────────────
+
+TREND_RSS_FEEDS = [
+    # Global news
+    "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en",
+    "https://feeds.bbci.co.uk/news/rss.xml",
+    "https://feeds.bbci.co.uk/news/technology/rss.xml",
+    "https://feeds.bbci.co.uk/news/business/rss.xml",
+    "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+    "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+    # Finance & Markets
+    "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+    "https://www.cnbc.com/id/100727362/device/rss/rss.html",
+    "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+    # Crypto & Tech
+    "https://cointelegraph.com/rss",
+    "https://coindesk.com/feed",
+    # Sports
+    "https://feeds.bbci.co.uk/sport/rss.xml",
+    "https://www.cricbuzz.com/cricket-feed/news",
+    # Entertainment
+    "https://variety.com/feed",
+    "https://www.hollywoodreporter.com/feed",
+    # India-specific
+    "https://www.livemint.com/rss/markets",
+    "https://www.moneycontrol.com/rss/marketreports.xml",
+    "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
+    "https://timesofindia.indiatimes.com/rssfeeds/1967008.cms",
+]
+
+# ── Unsplash image queries per category ───────────────────────────
 
 UNSPLASH_QUERY_MAP = {
     "crypto": [
@@ -60,17 +93,48 @@ UNSPLASH_QUERY_MAP = {
     "stocks": [
         "stock market charts data",
         "wall street trading screen",
-        "nasdaq trading floor",
-        "global stock market trading",
         "financial charts data analytics",
         "trading desk monitors",
     ],
+    "breaking": [
+        "breaking news live update",
+        "global news event",
+        "news conference press",
+    ],
+    "sports": [
+        "sports stadium action",
+        "football cricket match",
+        "athlete competition sport",
+    ],
+    "entertainment": [
+        "movie premiere red carpet",
+        "concert music festival",
+        "celebrity event stage",
+    ],
+    "technology": [
+        "ai artificial intelligence tech",
+        "robot future technology",
+        "computer code screen",
+    ],
+    "economy": [
+        "stock market trading",
+        "global economy finance",
+        "money business growth",
+    ],
+    "general": [
+        "world news global",
+        "people city street",
+        "current events today",
+    ],
 }
 
-# ── Helpers ──────────────────────────────────────────────────────────
+# ── Author attribution ────────────────────────────────────────────
+
+AUTHOR_BLOCK = "\n\n---\n\nAuthor: Shiva Sandeep\n\nTelegram: @its_terabyte\n\nWhatsApp:\n\n*Default WhatsApp profile image placeholder*\n\nPublished by PulseTrends\n\n---"
+
+# ── Helpers ───────────────────────────────────────────────────────
 
 def esc(s):
-    """Escape a string for embedding in TypeScript string literal."""
     if s is None:
         return ""
     if isinstance(s, (int, float)):
@@ -82,20 +146,18 @@ def esc(s):
         .replace('"', '\\"')
         .replace("\n", "\\n")
         .replace("\r", "\\r")
-        .replace("\t", "\\t")
-    )
+        .replace("\t", "\\t"))
 
 def slugify(text):
     s = text.lower().strip()
     s = re.sub(r'[^\w\s-]', '', s)
     s = re.sub(r'[\s_]+', '-', s)
     s = re.sub(r'-+', '-', s)
-    return s.strip('-')[:60]
+    return s.strip('-')[:80]
 
 def make_id():
-    import random as rnd
     ts = int(time.time() * 1000)
-    r = rnd.randint(1000, 9999)
+    r = random.randint(1000, 9999)
     return f"news-{ts}-{r}"
 
 def now_iso():
@@ -104,47 +166,103 @@ def now_iso():
 def today_str():
     return datetime.now(timezone.utc).strftime("%B %d, %Y")
 
-# ── Author attribution ────────────────────────────────────────────────
+# ── Trend Category Detection ──────────────────────────────────────
 
-AUTHOR_BLOCK = "\n\n---\n\nAuthor: Shiva Sandeep\n\nTelegram: @its_terabyte\n\nWhatsApp:\n\n*Default WhatsApp profile image placeholder*\n\nPublished by PulseTrends\n\n---"
-AUTHOR_BLOCK_ESC = esc(AUTHOR_BLOCK)
+def detect_trend_category(keyword: str, context: str = "") -> str:
+    """Map a keyword to a broad category for Unsplash queries."""
+    text = f"{keyword} {context}".lower()
+    if any(w in text for w in ["sport", "cricket", "football", "tennis", "olympics", "nba", "match", "tournament", "championship"]):
+        return "sports"
+    if any(w in text for w in ["movie", "film", "celebrity", "actor", "actress", "concert", "music", "netflix", "entertainment", "award", "oscar", "grammy"]):
+        return "entertainment"
+    if any(w in text for w in ["ai", "artificial intelligence", "robot", "chatgpt", "openai", "tech", "software", "google", "apple", "microsoft", "meta", "tesla", "spacex", "nasa"]):
+        return "technology"
+    if any(w in text for w in ["stock", "market", "economy", "inflation", "gdp", "rate", "rbi", "fed", "oil", "gold", "price", "trade", "tariff", "finance", "bank", "budget"]):
+        return "economy"
+    if any(w in text for w in ["war", "conflict", "attack", "strike", "protest", "election", "president", "political", "government", "policy", "law", "court"]):
+        return "breaking"
+    if any(w in text for w in ["bitcoin", "crypto", "ethereum", "blockchain", "defi", "altcoin", "nft", "web3"]):
+        return "crypto"
+    if any(w in text for w in ["ipo", "listing", "sebi", "gmp", "subscription"]):
+        return "ipo"
+    return "general"
 
-# ── LLM API callers ──────────────────────────────────────────────────
+# ── HTTP / Imports ────────────────────────────────────────────────
 
 def _try_imports():
-    global requests
+    global requests, xml_etree
     try:
         import requests as req
         requests = req
+        import xml.etree.ElementTree as ET
+        xml_etree = ET
         return True
     except ImportError:
-        print("[!] 'requests' not installed. Install with: pip install requests")
+        print("[!] Missing 'requests' library. Install with: pip install requests")
         return False
 
+# ── RSS Feed Fetching ─────────────────────────────────────────────
+
+def fetch_feeds() -> list[dict]:
+    """Fetch headlines from all RSS feeds for trend discovery."""
+    items = []
+    for url in TREND_RSS_FEEDS:
+        try:
+            resp = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=15)
+            if resp.status_code != 200:
+                continue
+            root = xml_etree.fromstring(resp.content)
+            # Standard RSS items
+            for item in root.iter("item"):
+                title = item.findtext("title", "")
+                link = item.findtext("link", "")
+                desc = item.findtext("description", "")
+                pubdate = item.findtext("pubDate", "")
+                if title and len(title) > 15:
+                    items.append({
+                        "title": title.strip(),
+                        "url": link.strip(),
+                        "summary": desc.strip()[:300] if desc else "",
+                        "source": url.split("/")[2] if "//" in url else url,
+                        "published": pubdate.strip(),
+                    })
+            # Atom entries
+            for entry in root.iter("{http://www.w3.org/2005/Atom}entry"):
+                title = entry.findtext("{http://www.w3.org/2005/Atom}title", "")
+                link_el = entry.find("{http://www.w3.org/2005/Atom}link")
+                link = link_el.get("href", "") if link_el is not None else ""
+                summary = entry.findtext("{http://www.w3.org/2005/Atom}summary", "")
+                published = entry.findtext("{http://www.w3.org/2005/Atom}published", "")
+                if title and len(title) > 15:
+                    items.append({
+                        "title": title.strip(),
+                        "url": link.strip(),
+                        "summary": summary.strip()[:300] if summary else "",
+                        "source": url.split("/")[2] if "//" in url else url,
+                        "published": published.strip(),
+                    })
+        except Exception:
+            pass
+    print(f"[Feeds] Fetched {len(items)} headlines from {len(TREND_RSS_FEEDS)} feeds")
+    return items
+
+# ── LLM API Callers ───────────────────────────────────────────────
+
 def call_gemini(prompt, api_keys):
-    """Call Google Gemini API. Tries multiple keys."""
     if not api_keys:
         return None
     model = "gemini-2.0-flash"
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "temperature": 0.85,
-            "topP": 0.95,
-            "maxOutputTokens": 8192,
-        }
+        "generationConfig": {"temperature": 0.85, "topP": 0.95, "maxOutputTokens": 8192}
     }
     for key in api_keys:
         if not key:
             continue
         try:
-            resp = requests.post(
-                f"{url}?key={key}",
-                json=payload,
-                timeout=TIMEOUT_SEC,
-                headers={"Content-Type": "application/json"},
-            )
+            resp = requests.post(f"{url}?key={key}", json=payload, timeout=TIMEOUT_SEC,
+                                 headers={"Content-Type": "application/json"})
             if resp.status_code == 200:
                 data = resp.json()
                 candidates = data.get("candidates", [])
@@ -153,26 +271,22 @@ def call_gemini(prompt, api_keys):
                     if text:
                         return text.strip()
             elif resp.status_code == 429:
-                print(f"[Gemini] Rate limited on key, trying next...")
+                print(f"[Gemini] Rate limited, trying next key...")
                 time.sleep(2)
                 continue
-            else:
-                print(f"[Gemini] HTTP {resp.status_code}: {resp.text[:200]}")
         except Exception as e:
             print(f"[Gemini] Error: {e}")
             time.sleep(1)
     return None
 
-
 def call_groq(prompt, api_keys):
-    """Call Groq API (fast inference)."""
     if not api_keys:
         return None
     url = "https://api.groq.com/openai/v1/chat/completions"
     payload = {
         "model": "llama-3.3-70b-versatile",
         "messages": [
-            {"role": "system", "content": "You are an expert financial journalist and market analyst. Write in a natural, human-like style as if you're an experienced journalist reporting on financial markets. Use varied sentence structures, contractions, and natural transitions. Avoid sounding like an AI."},
+            {"role": "system", "content": "You are an expert financial journalist and market analyst. Write in a natural, human-like style. Return ONLY valid JSON."},
             {"role": "user", "content": prompt}
         ],
         "temperature": 0.85,
@@ -183,15 +297,8 @@ def call_groq(prompt, api_keys):
         if not key:
             continue
         try:
-            resp = requests.post(
-                url,
-                json=payload,
-                timeout=TIMEOUT_SEC,
-                headers={
-                    "Authorization": f"Bearer {key}",
-                    "Content-Type": "application/json",
-                }
-            )
+            resp = requests.post(url, json=payload, timeout=TIMEOUT_SEC,
+                                 headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
             if resp.status_code == 200:
                 data = resp.json()
                 choice = data.get("choices", [{}])[0]
@@ -202,23 +309,19 @@ def call_groq(prompt, api_keys):
                 print(f"[Groq] Rate limited, retrying...")
                 time.sleep(3)
                 continue
-            else:
-                print(f"[Groq] HTTP {resp.status_code}: {resp.text[:200]}")
         except Exception as e:
             print(f"[Groq] Error: {e}")
             time.sleep(1)
     return None
 
-
 def call_mistral(prompt, api_keys):
-    """Call Mistral API."""
     if not api_keys:
         return None
     url = "https://api.mistral.ai/v1/chat/completions"
     payload = {
         "model": "mistral-large-latest",
         "messages": [
-            {"role": "system", "content": "You are an expert financial journalist and market analyst. Write in a natural, human-like style as if you're an experienced journalist reporting on financial markets. Use varied sentence structures, contractions, and natural transitions. Avoid sounding like an AI."},
+            {"role": "system", "content": "You are an expert financial journalist and market analyst. Write in a natural, human-like style. Return ONLY valid JSON."},
             {"role": "user", "content": prompt}
         ],
         "temperature": 0.85,
@@ -229,31 +332,20 @@ def call_mistral(prompt, api_keys):
         if not key:
             continue
         try:
-            resp = requests.post(
-                url,
-                json=payload,
-                timeout=TIMEOUT_SEC,
-                headers={
-                    "Authorization": f"Bearer {key}",
-                    "Content-Type": "application/json",
-                }
-            )
+            resp = requests.post(url, json=payload, timeout=TIMEOUT_SEC,
+                                 headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
             if resp.status_code == 200:
                 data = resp.json()
                 choice = data.get("choices", [{}])[0]
                 text = choice.get("message", {}).get("content", "")
                 if text:
                     return text.strip()
-            else:
-                print(f"[Mistral] HTTP {resp.status_code}: {resp.text[:200]}")
         except Exception as e:
             print(f"[Mistral] Error: {e}")
             time.sleep(1)
     return None
 
-
 def call_cohere(prompt, api_keys):
-    """Call Cohere API."""
     if not api_keys:
         return None
     url = "https://api.cohere.com/v2/chat"
@@ -262,43 +354,33 @@ def call_cohere(prompt, api_keys):
         "message": prompt,
         "temperature": 0.85,
         "max_tokens": 4096,
-        "preamble": "You are an expert financial journalist and market analyst. Write in a natural, human-like style as if you're an experienced journalist reporting on financial markets. Use varied sentence structures, contractions, and natural transitions. Avoid sounding like an AI.",
+        "preamble": "You are an expert financial journalist and market analyst. Write in a natural, human-like style. Return ONLY valid JSON.",
     }
     for key in api_keys:
         if not key:
             continue
         try:
-            resp = requests.post(
-                url,
-                json=payload,
-                timeout=TIMEOUT_SEC,
-                headers={
-                    "Authorization": f"Bearer {key}",
-                    "Content-Type": "application/json",
-                }
-            )
+            resp = requests.post(url, json=payload, timeout=TIMEOUT_SEC,
+                                 headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
             if resp.status_code == 200:
                 data = resp.json()
                 text = data.get("message", {}).get("content", [{}])[0].get("text", "")
                 if text:
                     return text.strip()
-            else:
-                print(f"[Cohere] HTTP {resp.status_code}: {resp.text[:200]}")
         except Exception as e:
             print(f"[Cohere] Error: {e}")
             time.sleep(1)
     return None
 
-
 def call_llm(prompt):
-    """Try all LLM providers in order. Returns text or None."""
+    """Try all LLM providers in random order. Returns text or None."""
     providers = [
         ("Groq", call_groq, os.environ.get("GROQ_API", "").split(",")),
         ("Mistral", call_mistral, os.environ.get("MISTRAL_API", "").split(",")),
-        ("Gemini", call_gemini, (os.environ.get("GOOGLE_AI_API_KEY_1", ""), os.environ.get("GOOGLE_AI_API_KEY_2", ""))),
+        ("Gemini", call_gemini, [os.environ.get("GOOGLE_AI_API_KEY_1", ""), os.environ.get("GOOGLE_AI_API_KEY_2", "")]),
         ("Cohere", call_cohere, os.environ.get("COHERE_API", "").split(",")),
     ]
-    random.shuffle(providers)  # vary which provider gets called first each run
+    random.shuffle(providers)
     for name, func, keys in providers:
         filtered = [k.strip() for k in (keys if isinstance(keys, (list, tuple)) else [keys]) if k.strip()]
         if not filtered:
@@ -308,13 +390,166 @@ def call_llm(prompt):
         if result:
             print(f"[LLM] {name} succeeded ({len(result)} chars)")
             return result
-        print(f"[LLM] {name} failed, trying next provider...")
     return None
 
-# ── Unsplash Image Fetching ─────────────────────────────────────────
+# ── Step 1 & 2: Trend Discovery ───────────────────────────────────
+
+def discover_trending_keywords(feed_items: list[dict]) -> dict:
+    """
+    Use LLM to analyze news feeds and identify:
+    - 3 trending crypto/blockchain keywords
+    - 3 trending IPO/stock-market keywords
+    - 5 trending general keywords (diverse categories)
+    
+    Returns dict with keys 'crypto', 'ipo', 'general' each containing a list of keyword dicts.
+    """
+    random.shuffle(feed_items)
+    sample = feed_items[:100]
+    
+    headlines_text = ""
+    for item in sample:
+        headlines_text += f"- {item['title']} ({item['source']})\n"
+    
+    today = today_str()
+    
+    trend_prompt = f"""You are a real-time trend analyst for PulseTrends, a financial news website. Today is {today}.
+
+Below are {len(sample)} current news headlines from major global sources.
+
+## YOUR TASK
+Analyze these headlines and identify EXACTLY 11 trending keywords across three categories:
+
+### CATEGORY 1: CRYPTO (3 keywords)
+Trending topics in cryptocurrency, blockchain, Web3, DeFi, Bitcoin, Ethereum, altcoins, NFT, crypto regulation, institutional adoption.
+These MUST be genuinely trending in crypto right now.
+
+### CATEGORY 2: IPO (3 keywords)
+Trending topics in IPO markets, stock market listings, company filings, SEBI regulations, GMP trends, SME IPOs, global IPOs.
+These MUST be genuinely trending in IPO/finance right now.
+
+### CATEGORY 3: GENERAL HOT TOPICS (5 keywords)
+The hottest trending topics from across the entire internet. Follow this priority order:
+1. Breaking Global News (wars, disasters, major political events)
+2. Major Sports Events (World Cup, IPL, Olympics, championships)
+3. Entertainment & Celebrity News (movie releases, celebrity events)
+4. AI & Technology News (new launches, breakthroughs, regulation)
+5. Oil, Gold, Economy & Policy News (market-moving economic news)
+6. Viral Internet Trends (memes, viral challenges, cultural moments)
+
+## IMPORTANT RULES
+- Keywords MUST change daily — never use fixed topics
+- Each keyword must be verifiably trending with clear signals
+- NO category mixing — a crypto keyword stays in crypto, IPO stays in IPO
+- Keywords across categories must be DISTINCT (no overlap)
+- Rank within each category by score (highest first)
+
+## SCORING (1-100)
+For each keyword calculate all five scores:
+1. Search Demand
+2. News Coverage Growth  
+3. Social Media Mentions
+4. User Engagement Potential
+5. Google Discover Potential
+
+## CURRENT HEADLINES
+{headlines_text}
+
+## OUTPUT FORMAT
+Return ONLY valid JSON, no markdown, no code fences, no commentary:
+
+{{
+  "date": "{today}",
+  "crypto": [
+    {{"rank": 1, "keyword": "crypto keyword", "searchDemand": 92, "newsCoverageGrowth": 88, "socialMentions": 85, "engagementPotential": 90, "googleDiscoverPotential": 87, "overallScore": 88, "context": "Why trending"}},
+    {{"rank": 2, ...}},
+    {{"rank": 3, ...}}
+  ],
+  "ipo": [
+    {{"rank": 1, "keyword": "ipo keyword", ...}},
+    {{"rank": 2, ...}},
+    {{"rank": 3, ...}}
+  ],
+  "general": [
+    {{"rank": 1, "keyword": "hot topic", ...}},
+    {{"rank": 2, ...}},
+    {{"rank": 3, ...}},
+    {{"rank": 4, ...}},
+    {{"rank": 5, ...}}
+  ]
+}}"""
+    
+    print("\n[Trends] Discovering 11 trending keywords via LLM (3 crypto + 3 IPO + 5 general)...")
+    result = call_llm(trend_prompt)
+    if not result:
+        print("[Trends] LLM trend analysis failed")
+        return {}
+    
+    try:
+        cleaned = result.strip()
+        if cleaned.startswith("```"):
+            cleaned = re.sub(r'^```(?:json)?\s*', '', cleaned)
+            cleaned = re.sub(r'\s*```$', '', cleaned)
+        data = json.loads(cleaned)
+        result_dict = {}
+        for cat in ["crypto", "ipo", "general"]:
+            keywords = data.get(cat, [])
+            if keywords:
+                result_dict[cat] = keywords[:3 if cat != "general" else 5]
+                print(f"[Trends] {cat.upper()}: {len(result_dict[cat])} keywords")
+                for kw in result_dict[cat]:
+                    print(f"  #{kw.get('rank', '?')}: {kw.get('keyword', 'N/A')} (score: {kw.get('overallScore', '?')})")
+            else:
+                result_dict[cat] = []
+                print(f"[Trends] {cat.upper()}: 0 keywords (fallback needed)")
+        return result_dict
+    except (json.JSONDecodeError, ValueError) as e:
+        print(f"[Trends] Failed to parse: {e}")
+        print(f"  Raw: {result[:500]}")
+        return {}
+
+# ── Step 3: Duplicate Check ───────────────────────────────────────
+
+def load_existing_keywords() -> set:
+    """Load all existing headlines, primaryKeywords, and tags from newsData.ts."""
+    existing = set()
+    if not NEWS_DATA_FILE.exists():
+        return existing
+    content = NEWS_DATA_FILE.read_text("utf-8")
+    
+    headline_pattern = re.compile(r'headline:\s*"([^"]*)"')
+    for match in headline_pattern.finditer(content):
+        existing.add(match.group(1).lower().strip())
+    
+    kw_pattern = re.compile(r'primaryKeyword:\s*"([^"]*)"')
+    for match in kw_pattern.finditer(content):
+        existing.add(match.group(1).lower().strip())
+    
+    tag_pattern = re.compile(r'tags:\s*\[(.*?)\]', re.DOTALL)
+    for match in tag_pattern.finditer(content):
+        tags_str = match.group(1)
+        tag_items = re.findall(r'"([^"]*)"', tags_str)
+        for t in tag_items:
+            existing.add(t.lower().strip())
+    
+    print(f"[Dedup] Loaded {len(existing)} existing keywords from newsData.ts")
+    return existing
+
+def is_duplicate(keyword: str, existing_keywords: set) -> bool:
+    """Check if a keyword overlaps with any existing article content."""
+    kw_lower = keyword.lower().strip()
+    if kw_lower in existing_keywords:
+        return True
+    kw_words = set(kw_lower.split())
+    for existing in existing_keywords:
+        existing_words = set(existing.split())
+        overlap = kw_words & existing_words
+        if len(overlap) >= 2 and len(overlap) / max(len(kw_words), len(existing_words)) > 0.5:
+            return True
+    return False
+
+# ── Unsplash Image Fetching ───────────────────────────────────────
 
 def _load_used_image_ids():
-    """Load set of already-used Unsplash photo IDs."""
     try:
         if USED_IMAGES_FILE.exists():
             with open(USED_IMAGES_FILE, "r", encoding="utf-8") as f:
@@ -325,9 +560,7 @@ def _load_used_image_ids():
         pass
     return set()
 
-
 def _save_used_image_ids(ids):
-    """Save set of used Unsplash photo IDs to disk."""
     try:
         CACHE_DIR.mkdir(parents=True, exist_ok=True)
         with open(USED_IMAGES_FILE, "w", encoding="utf-8") as f:
@@ -335,9 +568,7 @@ def _save_used_image_ids(ids):
     except Exception as e:
         print(f"[Unsplash] Save failed: {e}")
 
-
 def _validate_image_url(url):
-    """Quick HEAD check to ensure image URL is valid."""
     try:
         resp = requests.head(url, allow_redirects=True, timeout=5)
         if resp.status_code == 200 and "image" in resp.headers.get("Content-Type", "").lower():
@@ -347,35 +578,27 @@ def _validate_image_url(url):
     except Exception:
         return False
 
-
 def fetch_unsplash_images(headline, category="stocks", count=4):
-    """
-    Fetch unique images from Unsplash for an article.
-    Deduplicates against used_news_images.json to avoid reusing photos.
-    Returns a list of image dicts matching the ArticleImage interface.
-    """
+    """Fetch unique images from Unsplash for an article."""
     unsplash_keys = []
     for i in range(1, 4):
         val = os.environ.get(f"UNSPLASH_ACCESS_KEY_{i}")
         if val and val.strip():
             unsplash_keys.append(val.strip())
-
     if not unsplash_keys:
-        print("[Unsplash] No API keys found")
         return []
-
-    # Build query pool from headline words + category queries
-    cat = category if category in UNSPLASH_QUERY_MAP else "stocks"
+    
+    cat = category if category in UNSPLASH_QUERY_MAP else "general"
     base_words = [w for w in re.sub(r'[^a-zA-Z0-9\s]', '', headline).split() if len(w) > 3][:3]
-    query_pool = list(UNSPLASH_QUERY_MAP.get(cat, UNSPLASH_QUERY_MAP["stocks"]))
+    query_pool = list(UNSPLASH_QUERY_MAP.get(cat, UNSPLASH_QUERY_MAP["general"]))
     if base_words:
         query_pool = [" ".join(base_words)] + query_pool
     random.shuffle(query_pool)
-
+    
     used_ids = _load_used_image_ids()
     results = []
     seen_photo_ids = set()
-
+    
     for q in query_pool:
         if len(results) >= count:
             break
@@ -395,9 +618,7 @@ def fetch_unsplash_images(headline, category="stocks", count=4):
                     if not photo_id or photo_id in seen_photo_ids or photo_id in used_ids:
                         continue
                     url = hit.get("urls", {}).get("regular", "")
-                    if not url:
-                        continue
-                    if not _validate_image_url(url):
+                    if not url or not _validate_image_url(url):
                         continue
                     user = hit.get("user", {}) or {}
                     user_name = user.get("name", "Unsplash")
@@ -416,749 +637,479 @@ def fetch_unsplash_images(headline, category="stocks", count=4):
                     seen_photo_ids.add(photo_id)
                     if len(results) >= count:
                         break
-                    break  # one image per query, move to next query
-            except Exception as e:
+                    break
+            except Exception:
                 continue
-        if len(results) >= count:
-            break
-
-    # Save used IDs to prevent reuse
+    
     if results:
         used_ids.update(r["photoId"] for r in results if "photoId" in r)
         if len(used_ids) > 500:
             used_ids = set(sorted(used_ids)[-500:])
         _save_used_image_ids(used_ids)
         print(f"[Unsplash] Fetched {len(results)} images for '{headline[:50]}...'")
-
+    
     return results
 
-# ── Cache (cross-batch persistence) ──────────────────────────────────
+# ── Article Generation (Step 4) ───────────────────────────────────
 
-def load_cache():
-    """Load articles from daily cache JSON."""
-    if DAILY_CACHE_FILE.exists():
-        try:
-            with open(DAILY_CACHE_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            pass
-    return []
+def generate_article_for_trend(trend: dict, category: str, date_str: str) -> Optional[dict]:
+    """Generate a full article for a single trending keyword."""
+    keyword = trend.get("keyword", "")
+    context = trend.get("context", "")
+    
+    # Map trend category to PulseTrends category
+    category_map = {
+        "crypto": "crypto",
+        "ipo": "ipo",
+        "general": "stocks",
+        "sports": "stocks",
+        "entertainment": "stocks",
+        "technology": "crypto",
+        "economy": "stocks",
+        "breaking": "stocks",
+    }
+    mapped_category = category_map.get(category, "stocks")
+    
+    # For crypto and IPO, keep the original category for accuracy
+    if category in ("crypto", "ipo"):
+        mapped_category = category
+    
+    article_prompt = f"""You are an expert journalist writing for PulseTrends (https://pulsetrends.in). Today is {date_str}.
 
+## TOPIC
+Write a premium, engaging, click-worthy news article about this trending topic:
+- **Trending Keyword:** {keyword}
+- **Context:** {context}
+- **Category:** {category}
 
-def save_cache(articles):
-    """Save articles to daily cache JSON."""
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    with open(DAILY_CACHE_FILE, "w", encoding="utf-8") as f:
-        json.dump(articles, f, indent=2, ensure_ascii=False)
+## ARTICLE REQUIREMENTS
+- Write in a natural, human-like journalistic style (like Bloomberg, Reuters, CoinDesk)
+- Use varied sentence structures, contractions, and natural transitions
+- Include specific data, percentages, and concrete details
+- DO NOT sound like AI-generated content
+- Avoid: "Furthermore,", "Moreover,", "In conclusion,"
+- If relevant, include 1-2 analyst/expert quotes (attributed to realistic names)
 
-
-# ── Existing Article Update ──────────────────────────────────────────
-
-def _find_ts_string_end(text, start):
-    """Find the end of a TypeScript string literal starting at start (after the opening quote)."""
-    i = start
-    while i < len(text):
-        if text[i] == '\\':
-            i += 2
-        elif text[i] == '"':
-            return i
-        else:
-            i += 1
-    return -1
-
-
-def update_existing_articles_author():
-    """
-    Scan existing newsData.ts and append author attribution to any articles
-    that are missing it. Does not modify article content, metadata, or structure.
-    """
-    if not NEWS_DATA_FILE.exists():
-        print("[Author Update] No existing news data file found, skipping.")
-        return
-
-    content = NEWS_DATA_FILE.read_text("utf-8")
-
-    if "Author: Shiva Sandeep" in content:
-        print("[Author Update] All existing articles already have author attribution.")
-        return
-
-    modified = 0
-    idx = 0
-    result = []
-    last_end = 0
-
-    while True:
-        da_start = content.find("detailedAnalysis:", idx)
-        if da_start == -1:
-            break
-
-        open_quote = content.find('"', da_start)
-        if open_quote == -1:
-            idx = da_start + 1
-            continue
-
-        close_quote = _find_ts_string_end(content, open_quote + 1)
-        if close_quote == -1:
-            idx = open_quote + 1
-            continue
-
-        inner = content[open_quote + 1:close_quote]
-
-        if "Author: Shiva Sandeep" not in inner:
-            new_inner = inner + AUTHOR_BLOCK_ESC
-            result.append(content[last_end:open_quote + 1])
-            result.append(new_inner)
-            result.append(content[close_quote])
-            last_end = close_quote + 1
-            modified += 1
-
-        idx = close_quote + 1
-
-    if modified:
-        result.append(content[last_end:])
-        NEWS_DATA_FILE.write_text("".join(result), "utf-8")
-        print(f"[Author Update] Appended author attribution to {modified} existing article(s).")
-    else:
-        print("[Author Update] No articles needed updating.")
-
-
-# ── Article Generation ──────────────────────────────────────────────
-
-def generate_articles_batch(category, count, date_str):
-    """
-    Generate `count` articles for a given category.
-    Returns a list of article dicts.
-    """
-    today = date_str
-    articles = []
-
-    # ── Base prompt shared across all categories ──────────────────────
-    base_prompt = f"""You are an expert financial journalist, SEO strategist, and newsroom editor working for PulseTrends (https://pulsetrends.in).
-
-Today's date: {today}
-
-## NEWS DISCOVERY PROCESS
-Before creating content, gather information from multiple reputable sources. Identify trending topics with strong search demand. Research Google Trends data, trending search queries, high-volume keywords, related semantic keywords, long-tail keywords, and question-based keywords. Prioritize topics with the highest traffic potential.
-
-## CONTENT CREATION RULES
-- Never copy content from any source. Never publish rewritten paragraphs from source articles.
-- Read and understand source material, then independently write original content.
-- Produce journalist-quality reporting. Content must feel completely human-written.
-- Avoid robotic, repetitive, or AI-generated language patterns.
-- Use professional newsroom standards. Maintain factual accuracy. Verify information.
-- Use varied sentence lengths, contractions ("it's", "they're", "we've seen"), and natural paragraph transitions.
-- Include specific numbers, percentages, or market data to make it concrete.
-- Vary vocabulary — don't repeat the same phrases.
-- Avoid AI-sounding patterns: no "Furthermore,", "Moreover,", "In conclusion," — write naturally.
-- The article should feel like something you'd read on Bloomberg, Reuters, or CoinDesk.
-- Include 1-2 sentences of expert-sounding commentary (attributed to real-sounding analyst names).
-
-## ARTICLE STRUCTURE (follow this structure in your writing)
-1. **Headline** — Compelling, clickable, SEO-optimized headline
-2. **Introduction** — 2-3 sentences drawing readers in with the key news
-3. **Key Highlights** — 5 bullet points highlighting key facts
-4. **Main Story** — 5-7 paragraphs of in-depth analysis with markdown headings (## Market Overview, ## Key Developments, ## Market Impact, ## Expert Perspective, ## Historical Context)
-5. **Market Impact** — 3-4 sentences on what this means for the market
-6. **Investor Takeaway** — Key action items for investors (3-4 bullet points)
-7. **Expert Analysis** — Analyst commentary and expert perspectives
-8. **What Happens Next** — Future outlook and catalysts to watch
+## ARTICLE STRUCTURE
+1. **Headline** — Compelling, clickable, SEO-optimized (50-70 chars)
+2. **Subheadline** — One-sentence summary hook
+3. **Key Highlights** — 5 bullet points of key facts
+4. **Executive Summary** — 2-3 paragraph overview
+5. **Detailed Analysis** — Full article with markdown headings (## Section Title)
+   For crypto: include price data, market cap, trading volume, on-chain metrics
+   For IPO: include subscription data, GMP, financials, valuation
+   For general: include what happened, why it matters, key players, reactions
+6. **Market Impact** — 3-4 sentences on what this means
+7. **Expert Perspective** — Analyst commentary
+8. **What Happens Next** — Future outlook and catalysts
 9. **Conclusion** — Strong closing paragraph
+10. **Author attribution** — Append at the very end: {AUTHOR_BLOCK}
 
 ## SEO REQUIREMENTS
-For every article generate:
-- SEO Title (seoTitle)
-- Meta Title (metaTitle)
-- Meta Description (metaDescription) — under 160 characters
-- Focus Keyword (focusKeyword)
-- Secondary Keywords (secondaryKeywords) — 3-5 related keywords
-- URL Slug (slug)
-- Suggested Tags (tags) — 3-5 tags
-- Featured Image Prompt (featuredImagePrompt)
-
-Optimize for: Google Search, Google Discover, Google News, Bing News, Featured Snippets, AI Search Engines, Semantic SEO.
-
-## AUTHOR ATTRIBUTION
-At the end of every article's detailed analysis section, append:
-
----
-
-Author: Shiva Sandeep
-
-Telegram: @its_terabyte
-
-WhatsApp:
-
-*Default WhatsApp profile image placeholder*
-
-Published by PulseTrends
-
----
-
-## QUALITY CONTROL
-Before finalizing: ensure content is unique, passes plagiarism checks, does not appear AI-generated, is publication-ready, has proper grammar and readability, SEO optimization is complete, and facts are verified.
+- metaDescription: Under 160 characters, keyword-rich
+- primaryKeyword: "{keyword}"
+- secondaryKeywords: 3-5 related keywords
+- tags: 5-8 short tags relevant to the topic
+- slug: URL-friendly version of headline
+- sentiment: bullish/bearish/neutral based on topic tone
+- impact: low/medium/high
 
 ## OUTPUT FORMAT
-Output ONLY a valid JSON object with NO markdown formatting, NO code fences, NO commentary. Just the raw JSON.
+Return ONLY valid JSON. No markdown. No code fences. No commentary.
 
-The JSON must have exactly these fields:
 {{
-  "headline": "Compelling, clickable headline",
-  "subheadline": "Supporting subheadline (1 sentence)",
-  "keyHighlights": ["5 bullet points as strings highlighting key facts"],
-  "executiveSummary": "2-3 sentence introduction",
-  "marketBackground": "3-4 sentences on market impact and context",
-  "detailedAnalysis": "5-7 paragraphs with markdown headings. Include the author attribution block at the very end.",
-  "expertInsights": "Expert perspective and analyst commentary",
-  "financialMetrics": {{ "tableCaption": "Table title", "headers": ["3-4 column headers"], "rows": [["row1_col1", "row1_col2", ...], ["row2_col1", ...]] }},
-  "risks": ["3-5 risk factors"],
-  "opportunities": ["3-5 opportunities"],
-  "outlook": "2-3 sentence future outlook (What Happens Next)",
-  "conclusion": "2-3 sentence strong conclusion",
-  "investorTakeaways": ["3-4 investor action items"],
-  "category": "{category}",
+  "headline": "SEO-optimized clickable headline",
+  "subheadline": "One-sentence hook",
+  "keyHighlights": ["5 bullet points"],
+  "executiveSummary": "2-3 paragraph overview",
+  "marketBackground": "Background context",
+  "detailedAnalysis": "Full article with markdown headings. Include author attribution at the very end.",
+  "expertInsights": "Expert/analyst perspectives",
+  "outlook": "What happens next",
+  "conclusion": "Strong closing",
+  "financialMetrics": {{"tableCaption": "", "headers": [], "rows": []}},
+  "risks": ["2-3 risks"],
+  "opportunities": ["2-3 opportunities"],
+  "sourcesReferenced": ["2-4 source names"],
+  "aiAnalysis": null,
+  "category": "{mapped_category}",
   "sentiment": "bullish or bearish or neutral",
   "impact": "low or medium or high",
-  "relatedCoins": ["TICKER", ...],
-  "relatedStocks": ["TICKER", ...],
-  "primaryKeyword": "main SEO keyword",
-  "secondaryKeywords": ["3-5 related SEO keywords"],
-  "tags": ["3-5 content tags"],
-  "seoTitle": "SEO-optimized title tag",
-  "metaTitle": "Meta title for search engines",
-  "metaDescription": "SEO meta description under 160 characters",
+  "relatedCoins": [],
+  "relatedStocks": [],
+  "relatedEntities": ["Entity 1", "Entity 2"],
+  "primaryKeyword": "{keyword}",
+  "secondaryKeywords": ["kw1", "kw2", "kw3", "kw4"],
+  "tags": ["tag1", "tag2", "tag3", "tag4", "tag5"],
+  "metaDescription": "Under 160 chars SEO meta description",
   "slug": "url-friendly-slug",
-  "focusKeyword": "primary SEO keyword",
-  "featuredImagePrompt": "Image generation prompt for the featured image",
-  "sourcesReferenced": ["Source 1", "Source 2", "Source 3"],
-  "aiAnalysis": {{
-    "bullCase": "bullish scenario",
-    "bearCase": "bearish scenario",
-    "neutralCase": "neutral scenario",
-    "probabilityWeightedOutlook": "probability split e.g. 60%% bullish / 40%% bearish",
-    "potentialCatalysts": ["2-3 catalysts"],
-    "keyRisks": ["2-3 risks"]
-  }},
-  "publishedAt": "{datetime.now(timezone.utc).isoformat()}"
-}}
-"""
-
-    # ── Category-specific topic coverage ──────────────────────────────
-    category_topics = {
-        "crypto": """This article is about CRYPTOCURRENCY markets.
-
-Cover topics like: Bitcoin price movements, Ethereum updates, altcoin trends, DeFi developments, blockchain technology, Web3 ecosystem, regulatory updates, institutional adoption, crypto market analysis, ETF flows, on-chain metrics, or layer-2 scaling.
-
-Focus on making this feel like a natural crypto market report a journalist would write.""",
-
-        "ipo": """This article is about IPO (Initial Public Offering) markets.
-
-Cover topics like: upcoming IPOs, recently filed IPOs, SME IPOs, mainboard IPOs, global IPO developments, IPO GMP analysis, company fundamentals, risks and opportunities, subscription data, price band analysis, listing day performance, or SEBI regulatory changes.
-
-Focus on Indian IPO market with specific company examples and subscription/GMP data.""",
-
-        "stocks": """This article is about STOCK MARKET analysis.
-
-Cover topics like: trending stocks, earnings reports, market movers, institutional activity (FII/DII), sector performance, Nifty/Sensex movements, Fed policy impact, quarterly results, or global market trends.
-
-Focus on Indian stock market with specific company examples and index levels.""",
-    }
-
-    topic_instructions = category_topics.get(category, category_topics["crypto"])
-
-    # ── Topic angles for variety ──────────────────────────────────────────
-    angles = {
-        "crypto": [
-            "Focus on Bitcoin and Ethereum price action with specific price targets and market sentiment analysis. Use recent on-chain data.",
-            "Focus on altcoin season, DeFi protocols, or layer-2 ecosystem developments with TVL and usage metrics.",
-            "Focus on regulatory news, institutional adoption, or spot ETF flows with real fund flow data.",
-            "Focus on emerging trends like AI x crypto, RWAs, or Bitcoin L2s with specific project examples.",
-            "Focus on macro factors affecting crypto (Fed, dollar index, liquidity) and how traders are positioning.",
-        ],
-        "ipo": [
-            "Focus on an upcoming high-profile IPO with details on the company's financials, valuation, and investor sentiment.",
-            "Focus on recent IPO listings with listing-day performance, GMP trends, and what it signals for the market.",
-            "Focus on SME IPO activity — which SMEs are filing, subscription rates, and investor appetite.",
-            "Focus on IPO market trends — overall subscription data, number of filings, SEBI clearance pipeline, and 2026 outlook.",
-            "Focus on a global IPO development (e.g., a big US or Chinese listing) and its implications for Indian markets.",
-        ],
-        "stocks": [
-            "Focus on Nifty/Sensex weekly performance with sectoral rotation analysis and FII/DII flow data.",
-            "Focus on a major company's quarterly earnings report — revenue, profit, margins, guidance, and analyst reactions.",
-            "Focus on FII/DII activity, global fund flows, and how foreign institutional investors are positioned on India.",
-            "Focus on Fed policy, US interest rates, dollar index, and their cascading impact on emerging markets including India.",
-            "Focus on a specific sector showing strong momentum (e.g., banking, IT, pharma, auto, renewables) with top picks.",
-        ],
-    }
-
-    prompt_template = base_prompt
-
-    for i in range(count):
-        print(f"\n[{category.upper()}] Generating article {i+1}/{count}...")
-
-        extra_angle = random.choice(angles.get(category, angles["crypto"]))
-        full_prompt = f"{prompt_template}\n\n## CATEGORY-SPECIFIC INSTRUCTIONS\n{topic_instructions}\n\n## THIS ARTICLE MUST BE DIFFERENT\n{extra_angle}\n\n## ARTICLE VARIETY\nMake this article feel distinct from any others in the same category. Use a different angle, different companies/examples, and a different narrative structure. Ensure the author attribution block is included at the end of detailedAnalysis.\n\nOutput ONLY valid JSON. No markdown. No code fences."
-
-        result = None
-        for attempt in range(MAX_RETIRES):
-            result = call_llm(full_prompt)
-            if result:
-                try:
-                    cleaned = result.strip()
-                    if cleaned.startswith("```"):
-                        cleaned = re.sub(r'^```(?:json)?\\s*', '', cleaned)
-                        cleaned = re.sub(r'\\s*```$', '', cleaned)
-
-                    article = json.loads(cleaned)
-                    if not isinstance(article, dict):
-                        raise ValueError("Response is not a JSON object")
-                    required = ["headline", "detailedAnalysis", "metaDescription", "category", "publishedAt"]
-                    missing = [f for f in required if f not in article]
-                    if missing:
-                        raise ValueError(f"Missing fields: {missing}")
-
-                    # Ensure defaults
-                    article.setdefault("id", make_id())
-                    article.setdefault("subheadline", "")
-                    article.setdefault("keyHighlights", [])
-                    article.setdefault("executiveSummary", "")
-                    article.setdefault("marketBackground", "")
-                    article.setdefault("expertInsights", "")
-                    article.setdefault("investorTakeaways", [])
-                    article.setdefault("financialMetrics", {"tableCaption": "", "headers": [], "rows": []})
-                    article.setdefault("risks", [])
-                    article.setdefault("opportunities", [])
-                    article.setdefault("outlook", "")
-                    article.setdefault("conclusion", "")
-                    article.setdefault("sourcesReferenced", [])
-                    article.setdefault("aiAnalysis", None)
-                    article.setdefault("sentiment", "neutral")
-                    article.setdefault("impact", "medium")
-                    article.setdefault("relatedCoins", [])
-                    article.setdefault("relatedStocks", [])
-                    article.setdefault("primaryKeyword", "")
-                    article.setdefault("secondaryKeywords", [])
-                    article.setdefault("tags", [])
-                    article.setdefault("seoTitle", "")
-                    article.setdefault("metaTitle", "")
-                    article.setdefault("featuredImagePrompt", "")
-                    article.setdefault("slug", slugify(article.get("headline", "")))
-                    article.setdefault("focusKeyword", article.get("primaryKeyword", ""))
-                    article.setdefault("publishedAt", now_iso())
-
-                    # Ensure author attribution is in detailedAnalysis
-                    da = article.get("detailedAnalysis", "")
-                    if "Author: Shiva Sandeep" not in da:
-                        article["detailedAnalysis"] = da + AUTHOR_BLOCK
-
-                    # Fetch Unsplash images
-                    print(f"  → Fetching images for '{article['headline'][:50]}...'")
-                    article_images = fetch_unsplash_images(
-                        article.get("headline", ""),
-                        category=article.get("category", "stocks"),
-                        count=4
-                    )
-                    article["images"] = article_images
-                    print(f"  → {len(article_images)} images attached")
-
-                    articles.append(article)
-                    print(f"  ✓ Article: {article['headline'][:70]}...")
-                    break
-                except (json.JSONDecodeError, ValueError) as e:
-                    print(f"  ✗ Parse error (attempt {attempt+1}): {e}")
-                    preview = result[:300] if result else "None"
-                    print(f"  Response preview: {{preview}}...")
-                    time.sleep(2)
-            else:
-                print(f"  ✗ LLM call failed (attempt {attempt+1})")
-                time.sleep(3)
-
-        if not result:
-            print(f"  ✗ Failed to generate article after {MAX_RETIRES} attempts")
-
-    return articles
-
-
-def generate_all_articles(date_str):
-    """Generate 3 articles for a single batch — 1 Crypto + 1 IPO + 1 Stocks."""
-    all_articles = []
+  "focusKeyword": "{keyword}",
+  "publishedAt": "{now_iso()}"
+}}"""
     
-    # 1 Crypto
-    all_articles.extend(generate_articles_batch("crypto", 1, date_str))
+    for attempt in range(MAX_RETRIES):
+        print(f"  → Generating '{keyword}' (attempt {attempt+1})...")
+        result = call_llm(article_prompt)
+        if result:
+            try:
+                cleaned = result.strip()
+                if cleaned.startswith("```"):
+                    cleaned = re.sub(r'^```(?:json)?\s*', '', cleaned)
+                    cleaned = re.sub(r'\s*```$', '', cleaned)
+                article = json.loads(cleaned)
+                
+                required = ["headline", "detailedAnalysis", "metaDescription"]
+                missing = [f for f in required if f not in article]
+                if missing:
+                    raise ValueError(f"Missing fields: {missing}")
+                
+                article.setdefault("id", make_id())
+                article.setdefault("subheadline", "")
+                article.setdefault("keyHighlights", [])
+                article.setdefault("executiveSummary", "")
+                article.setdefault("marketBackground", "")
+                article.setdefault("expertInsights", "")
+                article.setdefault("outlook", "")
+                article.setdefault("conclusion", "")
+                article.setdefault("financialMetrics", {"tableCaption": "", "headers": [], "rows": []})
+                article.setdefault("risks", [])
+                article.setdefault("opportunities", [])
+                article.setdefault("sourcesReferenced", [])
+                article.setdefault("aiAnalysis", None)
+                article.setdefault("sentiment", "neutral")
+                article.setdefault("impact", "medium")
+                article.setdefault("relatedCoins", [])
+                article.setdefault("relatedStocks", [])
+                article.setdefault("relatedEntities", [])
+                article.setdefault("secondaryKeywords", [])
+                article.setdefault("tags", [])
+                article.setdefault("publishedAt", now_iso())
+                article.setdefault("slug", slugify(article.get("headline", keyword)))
+                article.setdefault("primaryKeyword", keyword)
+                article.setdefault("focusKeyword", keyword)
+                
+                # Ensure author attribution
+                da = article.get("detailedAnalysis", "")
+                if "Author: Shiva Sandeep" not in da:
+                    article["detailedAnalysis"] = da + AUTHOR_BLOCK
+                
+                # Fetch Unsplash images
+                print(f"  → Fetching images for '{article['headline'][:50]}...'")
+                img_cat = detect_trend_category(keyword, context)
+                # Use mapped_category for unsplash queries if available
+                if category in ("crypto",) or img_cat == "crypto":
+                    img_cat = "crypto"
+                elif category in ("ipo",) or img_cat == "ipo":
+                    img_cat = "ipo"
+                article_images = fetch_unsplash_images(
+                    article.get("headline", keyword),
+                    category=img_cat,
+                    count=4
+                )
+                article["images"] = article_images
+                print(f"  → {len(article_images)} images attached")
+                
+                print(f"  ✓ Generated: {article['headline'][:70]}...")
+                return article
+            except (json.JSONDecodeError, ValueError) as e:
+                print(f"  ✗ Parse error (attempt {attempt+1}): {e}")
+                time.sleep(2)
+        else:
+            print(f"  ✗ LLM call failed (attempt {attempt+1})")
+            time.sleep(3)
     
-    # 1 IPO
-    all_articles.extend(generate_articles_batch("ipo", 1, date_str))
-    
-    # 1 Stock Market
-    all_articles.extend(generate_articles_batch("stocks", 1, date_str))
-    
-    return all_articles
+    print(f"  ✗ Failed to generate article for '{keyword}'")
+    return None
 
-# ── File Writing ─────────────────────────────────────────────────────
+# ── File Writing (Step 6) ─────────────────────────────────────────
 
-def write_news_data(all_articles):
-    """Write all articles to newsData.ts in the exact TypeScript format."""
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
+def prepend_to_news_data(articles: list[dict]):
+    """Prepend articles to the beginning of the newsArticles array in newsData.ts."""
+    if not articles:
+        print("[Write] No articles to write")
+        return
     
+    if not NEWS_DATA_FILE.exists():
+        print(f"[Write] ERROR: {NEWS_DATA_FILE} does not exist")
+        return
+    
+    content = NEWS_DATA_FILE.read_text("utf-8")
+    
+    # Find the array declaration
+    decl_pattern = "export const newsArticles: NewsArticle[] = ["
+    decl_start = content.find(decl_pattern)
+    if decl_start == -1:
+        print("[Write] ERROR: Could not find newsArticles array declaration")
+        return
+    
+    # The opening bracket is the '[' right after '= '
+    eq_pos = content.find("= [", decl_start)
+    if eq_pos == -1:
+        print("[Write] ERROR: Could not find '= ['")
+        return
+    # Insert pos right after the '[' (which is at eq_pos+2, so we want eq_pos+3)
+    insert_pos = eq_pos + 3
+    
+    # Build the new article entries
+    new_entries = []
+    for art in articles:
+        new_entries.append(format_article_ts(art))
+    
+    entries_str = ",\n".join(new_entries)
+    
+    # Insert new articles right after the opening '[' of the array
+    # Use lstrip("\r\n") to only strip newlines, preserving indentation
+    remaining = content[insert_pos:]
+    if remaining.startswith("\r\n"):
+        remaining = remaining[2:]
+    elif remaining.startswith("\n"):
+        remaining = remaining[1:]
+    
+    new_content = content[:insert_pos] + "\n" + entries_str + ",\n" + remaining
+    
+    NEWS_DATA_FILE.write_text(new_content, encoding="utf-8")
+    print(f"[Write] Prepended {len(articles)} new articles to {NEWS_DATA_FILE}")
+
+def format_article_ts(art: dict) -> str:
+    """Format a single article as TypeScript object literal string."""
     lines = []
-    lines.append('export interface ArticleImage {')
-    lines.append('  url: string;')
-    lines.append('  alt: string;')
-    lines.append('  attribution: string;')
-    lines.append('  title?: string;')
-    lines.append('  caption?: string;')
-    lines.append('  category?: string;')
-    lines.append('  sourceUrl?: string;')
-    lines.append('  source?: string;')
-    lines.append('  photoId?: string;')
-    lines.append('}')
-    lines.append('')
-    lines.append('export interface FinancialMetrics {')
-    lines.append('  tableCaption: string;')
-    lines.append('  headers: string[];')
-    lines.append('  rows: string[][];')
-    lines.append('}')
-    lines.append('')
-    lines.append('export interface AiAnalysis {')
-    lines.append('  bullCase: string;')
-    lines.append('  bearCase: string;')
-    lines.append('  neutralCase: string;')
-    lines.append('  probabilityWeightedOutlook: string;')
-    lines.append('  potentialCatalysts: string[];')
-    lines.append('  keyRisks: string[];')
-    lines.append('}')
-    lines.append('')
-    lines.append('export interface NewsArticle {')
-    lines.append('  id: string;')
-    lines.append('  headline: string;')
-    lines.append('  subheadline: string;')
-    lines.append('  keyHighlights: string[];')
-    lines.append('  executiveSummary: string;')
-    lines.append('  quickAnswer?: string;')
-    lines.append('  marketBackground: string;')
-    lines.append('  detailedAnalysis: string;')
-    lines.append('  expertInsights: string;')
-    lines.append('  financialMetrics: FinancialMetrics;')
-    lines.append('  risks: string[];')
-    lines.append('  opportunities: string[];')
-    lines.append('  outlook: string;')
-    lines.append('  conclusion: string;')
-    lines.append('  frequentlyAskedQuestions?: { question: string; answer: string }[];')
-    lines.append('  investorTakeaways?: string[];')
-    lines.append('  sourcesReferenced: string[];')
-    lines.append('  aiAnalysis: AiAnalysis | null;')
-    lines.append('  images: ArticleImage[];')
-    lines.append('  ipoDetails?: { [key: string]: string };')
-    lines.append('  cryptoDetails?: { [key: string]: string };')
-    lines.append('  category: string;')
-    lines.append('  sentiment: string;')
-    lines.append('  impact: string;')
-    lines.append('  relatedCoins: string[];')
-    lines.append('  relatedStocks: string[];')
-    lines.append('  relatedEntities?: string[];')
-    lines.append('  primaryKeyword: string;')
-    lines.append('  secondaryKeywords: string[];')
-    lines.append('  tags?: string[];')
-    lines.append('  seoTitle?: string;')
-    lines.append('  metaTitle?: string;')
-    lines.append('  metaDescription: string;')
-    lines.append('  slug?: string;')
-    lines.append('  focusKeyword?: string;')
-    lines.append('  categories?: string[];')
-    lines.append('  seoHeadlines?: string[];')
-    lines.append('  ctrHeadlines?: string[];')
-    lines.append('  socialHeadlines?: string[];')
-    lines.append('  peopleAlsoAsk?: string[];')
-    lines.append('  relatedSearches?: string[];')
-    lines.append('  longTailKeywords?: string[];')
-    lines.append('  indexingNotes?: { primaryKeyword: string; searchIntent: string; category: string; tags: string[]; entityCoverage: string[] };')
-    lines.append('  searchConsoleReadiness?: number;')
-    lines.append('  adsenseReadiness?: number;')
-    lines.append('  seoScore?: number;')
-    lines.append('  geoScore?: number;')
-    lines.append('  authorityScore?: number;')
-    lines.append('  aiCitationPotential?: number;')
-    lines.append('  featuredImagePrompt?: string;')
-    lines.append('  imageFilename?: string;')
-    lines.append('  imageAltText?: string;')
-    lines.append('  imageCaption?: string;')
-    lines.append('  imageTitle?: string;')
-    lines.append('  publishedAt: string;')
-    lines.append('}')
-    lines.append('')
-    lines.append('export const newsArticles: NewsArticle[] = [')
+    lines.append('  {')
+    lines.append(f'    id: "{esc(art.get("id", make_id()))}",')
+    lines.append(f'    headline: "{esc(art.get("headline", ""))}",')
+    lines.append(f'    subheadline: "{esc(art.get("subheadline", ""))}",')
     
-    for i, art in enumerate(all_articles):
-        # Format images (use empty array as default since we don't generate Unsplash URLs)
-        images = art.get("images", [])
-        if not isinstance(images, list):
-            images = []
-        
-        # Financial metrics
-        fm = art.get("financialMetrics", {})
-        if not isinstance(fm, dict):
-            fm = {"tableCaption": "", "headers": [], "rows": []}
-        fm_headers = fm.get("headers", [])
-        fm_rows = fm.get("rows", [])
-        if not isinstance(fm_headers, list):
-            fm_headers = []
-        if not isinstance(fm_rows, list):
-            fm_rows = []
-        
-        # AI Analysis
-        ai = art.get("aiAnalysis")
-        if not isinstance(ai, dict):
-            ai = None
-        
-        lines.append('  {')
-        lines.append(f'    id: "{esc(art.get("id", make_id()))}",')
-        lines.append(f'    headline: "{esc(art.get("headline", ""))}",')
-        lines.append(f'    subheadline: "{esc(art.get("subheadline", ""))}",')
-        
-        kh = art.get("keyHighlights", [])
-        kh = kh if isinstance(kh, list) else []
-        lines.append('    keyHighlights: [' + ', '.join([f'"{esc(k)}"' for k in kh[:8]]) + '],')
-        
-        lines.append(f'    executiveSummary: "{esc(art.get("executiveSummary", ""))}",')
-        
-        qa = art.get("quickAnswer", "")
-        if qa:
-            lines.append(f'    quickAnswer: "{esc(qa)}",')
-        
-        lines.append(f'    marketBackground: "{esc(art.get("marketBackground", ""))}",')
-        # Ensure author attribution is in detailedAnalysis
-        da_content = art.get("detailedAnalysis", "")
-        if "Author: Shiva Sandeep" not in da_content:
-            da_content += AUTHOR_BLOCK
-        lines.append(f'    detailedAnalysis: "{esc(da_content)}",')
-        lines.append(f'    expertInsights: "{esc(art.get("expertInsights", ""))}",')
-        
-        lines.append('    financialMetrics: {')
-        lines.append(f'      tableCaption: "{esc(fm.get("tableCaption", ""))}",')
-        headers_str = ', '.join([f'"{esc(h)}"' for h in fm_headers])
-        lines.append(f'      headers: [{headers_str}],')
-        rows_lines = []
-        for row in fm_rows:
-            if not isinstance(row, list):
-                continue
+    kh = art.get("keyHighlights", [])
+    kh = kh if isinstance(kh, list) else []
+    lines.append('    keyHighlights: [' + ', '.join([f'"{esc(k)}"' for k in kh[:8]]) + '],')
+    
+    lines.append(f'    executiveSummary: "{esc(art.get("executiveSummary", ""))}",')
+    lines.append(f'    marketBackground: "{esc(art.get("marketBackground", ""))}",')
+    
+    da = art.get("detailedAnalysis", "")
+    if "Author: Shiva Sandeep" not in da:
+        da += AUTHOR_BLOCK
+    lines.append(f'    detailedAnalysis: "{esc(da)}",')
+    
+    lines.append(f'    expertInsights: "{esc(art.get("expertInsights", ""))}",')
+    
+    fm = art.get("financialMetrics", {"tableCaption": "", "headers": [], "rows": []})
+    if not isinstance(fm, dict):
+        fm = {"tableCaption": "", "headers": [], "rows": []}
+    lines.append('    financialMetrics: {')
+    lines.append(f'      tableCaption: "{esc(fm.get("tableCaption", ""))}",')
+    headers_str = ', '.join([f'"{esc(h)}"' for h in fm.get("headers", [])])
+    lines.append(f'      headers: [{headers_str}],')
+    rows_lines = []
+    for row in fm.get("rows", []):
+        if isinstance(row, list):
             cells = ', '.join([f'"{esc(c)}"' for c in row])
             rows_lines.append(f'        [{cells}]')
-        if rows_lines:
-            rows_joined = ",\n".join(rows_lines)
-            lines.append(f'      rows: [\n{rows_joined}\n      ],')
-        else:
-            lines.append('      rows: [],')
-        lines.append('    },')
-        
-        risks = art.get("risks", [])
-        risks = risks if isinstance(risks, list) else []
-        lines.append('    risks: [' + ', '.join([f'"{esc(r)}"' for r in risks[:6]]) + '],')
-        
-        opps = art.get("opportunities", [])
-        opps = opps if isinstance(opps, list) else []
-        lines.append('    opportunities: [' + ', '.join([f'"{esc(o)}"' for o in opps[:6]]) + '],')
-        
-        lines.append(f'    outlook: "{esc(art.get("outlook", ""))}",')
-        lines.append(f'    conclusion: "{esc(art.get("conclusion", ""))}",')
-        
-        sources = art.get("sourcesReferenced", [])
-        sources = sources if isinstance(sources, list) else []
-        lines.append('    sourcesReferenced: [' + ', '.join([f'"{esc(s)}"' for s in sources[:8]]) + '],')
-        
-        if ai:
-            lines.append('    aiAnalysis: {')
-            lines.append(f'      bullCase: "{esc(ai.get("bullCase", ""))}",')
-            lines.append(f'      bearCase: "{esc(ai.get("bearCase", ""))}",')
-            lines.append(f'      neutralCase: "{esc(ai.get("neutralCase", ""))}",')
-            lines.append(f'      probabilityWeightedOutlook: "{esc(ai.get("probabilityWeightedOutlook", ""))}",')
-            cats = ai.get("potentialCatalysts", [])
-            cats = cats if isinstance(cats, list) else []
-            lines.append('      potentialCatalysts: [' + ', '.join([f'"{esc(c)}"' for c in cats[:6]]) + '],')
-            krs = ai.get("keyRisks", [])
-            krs = krs if isinstance(krs, list) else []
-            lines.append('      keyRisks: [' + ', '.join([f'"{esc(r)}"' for r in krs[:6]]) + '],')
-            lines.append('    },')
-        else:
-            lines.append('    aiAnalysis: null,')
-        
-        # Images from Unsplash
-        images = art.get("images", [])
-        if not isinstance(images, list) or not images:
-            lines.append('    images: [],')
-        else:
-            lines.append('    images: [')
-            for img in images[:4]:
-                lines.append('      {')
-                lines.append(f'        url: "{esc(img.get("url", ""))}",')
-                lines.append(f'        alt: "{esc(img.get("alt", ""))}",')
-                lines.append(f'        attribution: "{esc(img.get("attribution", "Photo via Unsplash"))}",')
-                if img.get("title"):
-                    lines.append(f'        title: "{esc(img.get("title", ""))}",')
-                if img.get("caption"):
-                    lines.append(f'        caption: "{esc(img.get("caption", ""))}",')
-                if img.get("category"):
-                    lines.append(f'        category: "{esc(img.get("category", ""))}",')
-                if img.get("sourceUrl"):
-                    lines.append(f'        sourceUrl: "{esc(img.get("sourceUrl", ""))}",')
-                if img.get("photoId"):
-                    lines.append(f'        photoId: "{esc(img.get("photoId", ""))}",')
-                lines.append('      },')
-            lines.append('    ],')
-        
-        lines.append(f'    category: "{esc(art.get("category", "stocks"))}",')
-        lines.append(f'    sentiment: "{esc(art.get("sentiment", "neutral"))}",')
-        lines.append(f'    impact: "{esc(art.get("impact", "medium"))}",')
-        
-        rc = art.get("relatedCoins", [])
-        rc = rc if isinstance(rc, list) else []
-        lines.append('    relatedCoins: [' + ', '.join([f'"{esc(c)}"' for c in rc[:6]]) + '],')
-        
-        rs = art.get("relatedStocks", [])
-        rs = rs if isinstance(rs, list) else []
-        lines.append('    relatedStocks: [' + ', '.join([f'"{esc(s)}"' for s in rs[:6]]) + '],')
-        
-        lines.append(f'    primaryKeyword: "{esc(art.get("primaryKeyword", ""))}",')
-        
-        sk = art.get("secondaryKeywords", [])
-        sk = sk if isinstance(sk, list) else []
-        lines.append('    secondaryKeywords: [' + ', '.join([f'"{esc(k)}"' for k in sk[:5]]) + '],')
-        
-        tags = art.get("tags", [])
-        tags = tags if isinstance(tags, list) else []
-        if tags:
-            lines.append('    tags: [' + ', '.join([f'"{esc(t)}"' for t in tags[:10]]) + '],')
-        
-        seo_title = art.get("seoTitle", "")
-        if seo_title:
-            lines.append(f'    seoTitle: "{esc(seo_title)}",')
-        
-        meta_title = art.get("metaTitle", "")
-        if meta_title:
-            lines.append(f'    metaTitle: "{esc(meta_title)}",')
-        
-        lines.append(f'    metaDescription: "{esc(art.get("metaDescription", ""))}",')
-        
-        slug = art.get("slug", "")
-        if slug:
-            lines.append(f'    slug: "{esc(slug)}",')
-        else:
-            lines.append(f'    slug: "{slugify(art.get("headline", ""))}",')
-        
-        fk = art.get("focusKeyword", "")
-        if fk:
-            lines.append(f'    focusKeyword: "{esc(fk)}",')
-        
-        cats = art.get("categories", [])
+    if rows_lines:
+        rows_joined = ",\n".join(rows_lines)
+        lines.append(f'      rows: [\n{rows_joined}\n      ],')
+    else:
+        lines.append('      rows: [],')
+    lines.append('    },')
+    
+    risks = art.get("risks", [])
+    risks = risks if isinstance(risks, list) else []
+    lines.append('    risks: [' + ', '.join([f'"{esc(r)}"' for r in risks[:6]]) + '],')
+    
+    opps = art.get("opportunities", [])
+    opps = opps if isinstance(opps, list) else []
+    lines.append('    opportunities: [' + ', '.join([f'"{esc(o)}"' for o in opps[:6]]) + '],')
+    
+    lines.append(f'    outlook: "{esc(art.get("outlook", ""))}",')
+    lines.append(f'    conclusion: "{esc(art.get("conclusion", ""))}",')
+    
+    sources = art.get("sourcesReferenced", [])
+    sources = sources if isinstance(sources, list) else []
+    lines.append('    sourcesReferenced: [' + ', '.join([f'"{esc(s)}"' for s in sources[:8]]) + '],')
+    
+    ai = art.get("aiAnalysis")
+    if ai and isinstance(ai, dict):
+        lines.append('    aiAnalysis: {')
+        lines.append(f'      bullCase: "{esc(ai.get("bullCase", ""))}",')
+        lines.append(f'      bearCase: "{esc(ai.get("bearCase", ""))}",')
+        lines.append(f'      neutralCase: "{esc(ai.get("neutralCase", ""))}",')
+        lines.append(f'      probabilityWeightedOutlook: "{esc(ai.get("probabilityWeightedOutlook", ""))}",')
+        cats = ai.get("potentialCatalysts", [])
         cats = cats if isinstance(cats, list) else []
-        if cats:
-            lines.append('    categories: [' + ', '.join([f'"{esc(c)}"' for c in cats[:5]]) + '],')
-        
-        rel_ents = art.get("relatedEntities", [])
-        rel_ents = rel_ents if isinstance(rel_ents, list) else []
-        if rel_ents:
-            lines.append('    relatedEntities: [' + ', '.join([f'"{esc(e)}"' for e in rel_ents[:8]]) + '],')
-        
-        faq = art.get("frequentlyAskedQuestions", [])
-        if isinstance(faq, list) and faq:
-            lines.append('    frequentlyAskedQuestions: [')
-            for item in faq[:8]:
-                if isinstance(item, dict):
-                    lines.append(f'      {{ question: "{esc(item.get("question", ""))}", answer: "{esc(item.get("answer", ""))}" }},')
-            lines.append('    ],')
-        
-        takeaways = art.get("investorTakeaways", [])
-        takeaways = takeaways if isinstance(takeaways, list) else []
-        if takeaways:
-            lines.append('    investorTakeaways: [' + ', '.join([f'"{esc(t)}"' for t in takeaways[:6]]) + '],')
-        
-        for score_field in ["searchConsoleReadiness", "adsenseReadiness", "seoScore", "geoScore", "authorityScore", "aiCitationPotential"]:
-            v = art.get(score_field)
-            if isinstance(v, (int, float)):
-                lines.append(f'    {score_field}: {int(v)},')
-        
-        lines.append(f'    publishedAt: "{esc(art.get("publishedAt", now_iso()))}",')
-        lines.append('  },')
+        lines.append('      potentialCatalysts: [' + ', '.join([f'"{esc(c)}"' for c in cats[:6]]) + '],')
+        krs = ai.get("keyRisks", [])
+        krs = krs if isinstance(krs, list) else []
+        lines.append('      keyRisks: [' + ', '.join([f'"{esc(r)}"' for r in krs[:6]]) + '],')
+        lines.append('    },')
+    else:
+        lines.append('    aiAnalysis: null,')
     
-    lines.append('];')
-    lines.append('')
+    # Images
+    images = art.get("images", [])
+    if not isinstance(images, list) or not images:
+        lines.append('    images: [],')
+    else:
+        lines.append('    images: [')
+        for img in images[:4]:
+            lines.append('      {')
+            lines.append(f'        url: "{esc(img.get("url", ""))}",')
+            lines.append(f'        alt: "{esc(img.get("alt", ""))}",')
+            lines.append(f'        attribution: "{esc(img.get("attribution", "Photo via Unsplash"))}",')
+            if img.get("title"):
+                lines.append(f'        title: "{esc(img.get("title", ""))}",')
+            if img.get("caption"):
+                lines.append(f'        caption: "{esc(img.get("caption", ""))}",')
+            if img.get("category"):
+                lines.append(f'        category: "{esc(img.get("category", ""))}",')
+            if img.get("sourceUrl"):
+                lines.append(f'        sourceUrl: "{esc(img.get("sourceUrl", ""))}",')
+            if img.get("photoId"):
+                lines.append(f'        photoId: "{esc(img.get("photoId", ""))}",')
+            lines.append('      },')
+        lines.append('    ],')
     
-    NEWS_DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
-    NEWS_DATA_FILE.write_text("\n".join(lines), encoding="utf-8")
-    print(f"\n[Write] Wrote {len(all_articles)} articles to {NEWS_DATA_FILE}")
+    lines.append(f'    category: "{esc(art.get("category", "stocks"))}",')
+    lines.append(f'    sentiment: "{esc(art.get("sentiment", "neutral"))}",')
+    lines.append(f'    impact: "{esc(art.get("impact", "medium"))}",')
+    
+    rc = art.get("relatedCoins", [])
+    rc = rc if isinstance(rc, list) else []
+    lines.append('    relatedCoins: [' + ', '.join([f'"{esc(c)}"' for c in rc[:6]]) + '],')
+    
+    rs = art.get("relatedStocks", [])
+    rs = rs if isinstance(rs, list) else []
+    lines.append('    relatedStocks: [' + ', '.join([f'"{esc(s)}"' for s in rs[:6]]) + '],')
+    
+    rel_ents = art.get("relatedEntities", [])
+    rel_ents = rel_ents if isinstance(rel_ents, list) else []
+    if rel_ents:
+        lines.append('    relatedEntities: [' + ', '.join([f'"{esc(e)}"' for e in rel_ents[:8]]) + '],')
+    
+    lines.append(f'    primaryKeyword: "{esc(art.get("primaryKeyword", ""))}",')
+    
+    sk = art.get("secondaryKeywords", [])
+    sk = sk if isinstance(sk, list) else []
+    lines.append('    secondaryKeywords: [' + ', '.join([f'"{esc(k)}"' for k in sk[:5]]) + '],')
+    
+    tags = art.get("tags", [])
+    tags = tags if isinstance(tags, list) else []
+    if tags:
+        lines.append('    tags: [' + ', '.join([f'"{esc(t)}"' for t in tags[:10]]) + '],')
+    
+    lines.append(f'    metaDescription: "{esc(art.get("metaDescription", ""))}",')
+    lines.append(f'    slug: "{esc(art.get("slug", slugify(art.get("headline", ""))))}",')
+    
+    fk = art.get("focusKeyword", "") or art.get("primaryKeyword", "")
+    lines.append(f'    focusKeyword: "{esc(fk)}",')
+    
+    lines.append(f'    publishedAt: "{esc(art.get("publishedAt", now_iso()))}",')
+    lines.append('  }')
+    
+    return "\n".join(lines)
 
-
-# ── Main ─────────────────────────────────────────────────────────────
+# ── Main Pipeline ─────────────────────────────────────────────────
 
 def main():
-    parser = argparse.ArgumentParser(description="PulseTrends Daily News Generator")
-    parser.add_argument(
-        "--batch",
-        choices=["morning", "evening"],
-        default="morning",
-        help="Which batch to generate (morning=6am ET, evening=6pm ET)",
-    )
-    args = parser.parse_args()
-    batch = args.batch
-    
     if not _try_imports():
         print("[!] Missing 'requests' library. Install with: pip install requests")
+        return 1
     
     print("=" * 60)
-    print("  PULSETRENDS DAILY NEWS GENERATOR")
-    print(f"  Batch: {batch.upper()}")
+    print("  PULSETRENDS DAILY NEWS — CONSOLIDATED PIPELINE")
     print(f"  Date: {today_str()}")
-    print(f"  UTC: {datetime.now(timezone.utc).isoformat()}")
+    print(f"  UTC:  {now_iso()}")
+    print(f"  Target: 11 articles (3 Crypto + 3 IPO + 5 Trending)")
     print("=" * 60)
     
-    # Check if at least one API key is available
+    # Check LLM availability
     available = []
-    for name, env_var in [
-        ("Groq", "GROQ_API"),
-        ("Mistral", "MISTRAL_API"),
-        ("Gemini", "GOOGLE_AI_API_KEY_1"),
-        ("Cohere", "COHERE_API"),
-    ]:
+    for name, env_var in [("Groq", "GROQ_API"), ("Mistral", "MISTRAL_API"),
+                          ("Gemini", "GOOGLE_AI_API_KEY_1"), ("Cohere", "COHERE_API")]:
         if os.environ.get(env_var, "").strip():
             available.append(name)
-    
     if not available:
-        print("[!] No LLM API keys found in environment variables.")
-        print("    Set at least one of: GROQ_API, MISTRAL_API, GOOGLE_AI_API_KEY_1, COHERE_API")
-        print("    (These are configured as GitHub Secrets in the repository.)")
+        print("[!] No LLM API keys found. Set at least one of: GROQ_API, MISTRAL_API, GOOGLE_AI_API_KEY_1, COHERE_API")
+        return 1
+    print(f"[API] Available providers: {', '.join(available)}\n")
+    
+    # ── Step 1: Fetch RSS feeds ──
+    print("[Step 1/5] Fetching news feeds for trend analysis...")
+    feed_items = fetch_feeds()
+    if not feed_items:
+        print("[!] No feed items fetched, cannot discover trends")
+        return 1
+    print(f"  → {len(feed_items)} headlines collected\n")
+    
+    # ── Step 2: Discover trending keywords ──
+    print("[Step 2/5] Discovering trending keywords (3 crypto + 3 IPO + 5 general)...")
+    trends = discover_trending_keywords(feed_items)
+    if not trends:
+        print("[!] Failed to discover trending keywords")
         return 1
     
-    print(f"[API] Available providers: {', '.join(available)}")
+    # Check we have at least some keywords
+    total_found = sum(len(v) for v in trends.values())
+    if total_found == 0:
+        print("[!] No keywords discovered across any category")
+        return 1
     
-    # Update existing articles with author attribution
-    print("\n[Author Update] Checking existing articles...")
-    update_existing_articles_author()
+    print(f"\n  → {total_found} total trending keywords discovered\n")
     
-    date_str = today_str()
+    # ── Step 3: Check for duplicates ──
+    print("[Step 3/5] Checking existing articles for duplicates...")
+    existing_keywords = load_existing_keywords()
     
-    print(f"\n[Generate] Creating 3 articles (1 Crypto + 1 IPO + 1 Stocks)...")
-    new_articles = generate_all_articles(date_str)
+    filtered_trends = {"crypto": [], "ipo": [], "general": []}
+    total_skipped = 0
+    for cat in ["crypto", "ipo", "general"]:
+        for t in trends.get(cat, []):
+            kw = t.get("keyword", "")
+            if is_duplicate(kw, existing_keywords):
+                print(f"  ✗ [{cat.upper()}] SKIP: '{kw}' — already covered")
+                total_skipped += 1
+            else:
+                filtered_trends[cat].append(t)
+                print(f"  ✓ [{cat.upper()}] '{kw}' — new topic")
     
-    print(f"\n[Results] Generated {len(new_articles)} articles for {batch} batch")
+    print(f"\n  → {total_skipped} skipped, {sum(len(v) for v in filtered_trends.values())} unique topics\n")
+    
+    total_to_generate = sum(len(v) for v in filtered_trends.values())
+    if total_to_generate == 0:
+        print("[!] All trending topics are already covered. Nothing to generate.")
+        return 0
+    
+    # ── Step 4: Generate articles ──
+    print(f"[Step 4/5] Generating {total_to_generate} articles...")
+    new_articles = []
+    
+    for cat in ["crypto", "ipo", "general"]:
+        cat_trends = filtered_trends.get(cat, [])
+        if not cat_trends:
+            print(f"\n  [{cat.upper()}] No new topics to generate")
+            continue
+        print(f"\n  [{cat.upper()}] Generating {len(cat_trends)} article(s):")
+        for i, trend in enumerate(cat_trends):
+            print(f"\n  [{i+1}/{len(cat_trends)}] Topic: {trend.get('keyword', 'N/A')}")
+            article = generate_article_for_trend(trend, cat, today_str())
+            if article:
+                new_articles.append(article)
     
     if not new_articles:
-        print("[!] No articles were generated. Something went wrong.")
+        print("\n[!] No articles were generated")
         return 1
     
-    # Load existing cache and prepend new articles (newest first)
-    existing = load_cache()
-    all_articles = new_articles + existing
-    save_cache(all_articles)
-    print(f"[Cache] {len(existing)} existing + {len(new_articles)} new = {len(all_articles)} total cached")
+    print(f"\n  ✓ Total generated: {len(new_articles)} articles")
     
-    # Write all articles to TypeScript
-    write_news_data(all_articles)
+    # ── Step 5: Prepend to newsData.ts ──
+    print("\n[Step 5/5] Prepending articles to newsData.ts...")
+    prepend_to_news_data(new_articles)
     
     print("\n" + "=" * 60)
     print("  COMPLETE")
-    print(f"  Batch: {batch.upper()} — {len(new_articles)} articles generated")
-    print(f"  Total in cache: {len(all_articles)} articles")
-    print(f"  Written to src/data/newsData.ts")
-    print("  Author attribution appended to all articles")
-    print("  Next: Build and deploy")
+    print(f"  {len(new_articles)} articles generated and written")
+    print(f"  Breakdown: {sum(1 for a in new_articles if a.get('category') == 'crypto')} crypto, "
+          f"{sum(1 for a in new_articles if a.get('category') == 'ipo')} ipo, "
+          f"{sum(1 for a in new_articles if a.get('category') != 'crypto' and a.get('category') != 'ipo')} trending")
+    print(f"  Location: src/data/newsData.ts")
     print("=" * 60)
     return 0
 

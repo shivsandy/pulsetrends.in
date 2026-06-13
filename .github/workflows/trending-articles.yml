@@ -1,11 +1,11 @@
-name: Trending Hot-Topic Articles
+# DISABLED — Consolidated into daily-news.yml (single pipeline)
+# Old: Generated 5 hot-topic articles twice daily
+# New: Single run at 6am ET generates 11 articles (3 crypto + 3 IPO + 5 trending)
+
+name: Trending Hot-Topic Articles (DISABLED)
 
 on:
-  schedule:
-    # 8 AM Eastern Time = 12:00 UTC
-    - cron: '0 12 * * *'
-    # 8 PM Eastern Time = 00:00 UTC next day
-    - cron: '0 0 * * *'
+  # Never runs automatically
   workflow_dispatch:
 
 permissions:
@@ -19,60 +19,5 @@ jobs:
   generate-trending:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: master
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install Python deps
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests==2.32.3
-
-      - name: Generate 5 trending hot-topic articles
-        env:
-          GOOGLE_AI_API_KEY_1: ${{ secrets.GOOGLE_AI_API_KEY_1 }}
-          GOOGLE_AI_API_KEY_2: ${{ secrets.GOOGLE_AI_API_KEY_2 }}
-          GROQ_API: ${{ secrets.GROQ_API }}
-          COHERE_API: ${{ secrets.COHERE_API }}
-          MISTRAL_API: ${{ secrets.MISTRAL_API }}
-          UNSPLASH_ACCESS_KEY_1: ${{ secrets.UNSPLASH_ACCESS_KEY_1 }}
-          UNSPLASH_ACCESS_KEY_2: ${{ secrets.UNSPLASH_ACCESS_KEY_2 }}
-          UNSPLASH_ACCESS_KEY_3: ${{ secrets.UNSPLASH_ACCESS_KEY_3 }}
-        run: python scripts/generate-trending-articles.py
-
-      - name: Commit new trending articles
-        run: |
-          git config user.name "PulseTrends Bot"
-          git config user.email "noreply@example.com"
-          git add src/data/newsData.ts data/trend_cache.json
-          git diff --cached --quiet || git commit -m "Hot topics: 5 trending articles $(date +%F)"
-          git push
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - name: Install Node deps
-        run: npm ci
-
-      - name: Build React app
-        run: npm run build
-
-      - name: Deploy to gh-pages branch (zero-downtime)
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages
-          force_orphan: true
-          user_name: 'PulseTrends Bot'
-          user_email: 'noreply@example.com'
-          cname: pulsetrends.in
-          enable_jekyll: false
+      - name: Disabled
+        run: echo "This workflow is disabled. Consolidated into daily-news.yml"
