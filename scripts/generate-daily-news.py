@@ -886,7 +886,15 @@ def format_article_ts(art: dict) -> str:
         da += AUTHOR_BLOCK
     lines.append(f'    detailedAnalysis: "{esc(da)}",')
     
-    lines.append(f'    expertInsights: "{esc(art.get("expertInsights", ""))}",')
+    # expertInsights might be a dict or list from LLM if it returned an object instead of a string
+    ei = art.get("expertInsights", "")
+    if ei is None:
+        ei = ""
+    elif isinstance(ei, (dict, list)):
+        ei = json.dumps(ei)
+    elif not isinstance(ei, str):
+        ei = str(ei)
+    lines.append(f'    expertInsights: "{esc(ei)}",')
     
     fm = art.get("financialMetrics", {"tableCaption": "", "headers": [], "rows": []})
     if not isinstance(fm, dict):
