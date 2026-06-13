@@ -231,7 +231,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -279,7 +279,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -327,7 +327,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -374,7 +374,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -422,7 +422,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -470,7 +470,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -518,7 +518,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -566,7 +566,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -614,7 +614,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -662,7 +662,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -710,7 +710,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -758,7 +758,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -806,7 +806,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 21,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -854,7 +854,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -898,7 +898,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 51,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -946,7 +946,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -994,7 +994,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1042,7 +1042,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 68,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1090,7 +1090,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1182,7 +1182,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 61,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1226,7 +1226,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 23,
+      overall: 58,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1274,7 +1274,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1322,7 +1322,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1370,7 +1370,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1417,7 +1417,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1465,7 +1465,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1513,7 +1513,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 65,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1609,7 +1609,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 70,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1657,7 +1657,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1705,7 +1705,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1753,7 +1753,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 73,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1801,7 +1801,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1844,7 +1844,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 20,
+      overall: 30,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1892,7 +1892,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -1936,7 +1936,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 48,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2032,7 +2032,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 58,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2080,7 +2080,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2128,7 +2128,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2176,7 +2176,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2224,7 +2224,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2272,7 +2272,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 68,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2320,7 +2320,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2464,7 +2464,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 66,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2512,7 +2512,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 75,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2560,7 +2560,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2608,7 +2608,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2656,7 +2656,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2704,7 +2704,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2752,7 +2752,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 79,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2800,7 +2800,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 56,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2848,7 +2848,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 56,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2896,7 +2896,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2943,7 +2943,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -2991,7 +2991,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3038,7 +3038,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 71,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3086,7 +3086,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 72,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3133,7 +3133,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3181,7 +3181,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 26,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3229,7 +3229,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3277,7 +3277,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3325,7 +3325,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 58,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3373,7 +3373,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3421,7 +3421,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3469,7 +3469,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3517,7 +3517,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3565,7 +3565,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3613,7 +3613,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3709,7 +3709,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 70,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3757,7 +3757,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3805,7 +3805,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3853,7 +3853,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3901,7 +3901,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3949,7 +3949,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -3997,7 +3997,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4045,7 +4045,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 82,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4093,7 +4093,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4141,7 +4141,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 66,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4189,7 +4189,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4237,7 +4237,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4285,7 +4285,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 63,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4333,7 +4333,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4381,7 +4381,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4429,7 +4429,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4477,7 +4477,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4525,7 +4525,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4573,7 +4573,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4621,7 +4621,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4669,7 +4669,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 59,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4717,7 +4717,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4765,7 +4765,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 61,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4813,7 +4813,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4861,7 +4861,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -4909,7 +4909,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5001,7 +5001,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5049,7 +5049,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5097,7 +5097,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 71,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5145,7 +5145,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5193,7 +5193,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 64,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5241,7 +5241,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5289,7 +5289,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5337,7 +5337,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5385,7 +5385,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5433,7 +5433,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5481,7 +5481,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5529,7 +5529,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 56,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5577,7 +5577,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 70,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5625,7 +5625,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5673,7 +5673,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5721,7 +5721,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 73,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5769,7 +5769,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5817,7 +5817,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5865,7 +5865,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 74,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5913,7 +5913,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -5961,7 +5961,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6009,7 +6009,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6057,7 +6057,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 27,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6105,7 +6105,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 23,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6153,7 +6153,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 76,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6201,7 +6201,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 72,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6249,7 +6249,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6297,7 +6297,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6345,7 +6345,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6393,7 +6393,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6441,7 +6441,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6489,7 +6489,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6537,7 +6537,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 57,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6585,7 +6585,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6633,7 +6633,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6681,7 +6681,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6729,7 +6729,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6777,7 +6777,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6825,7 +6825,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6873,7 +6873,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6921,7 +6921,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -6969,7 +6969,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 65,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7017,7 +7017,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 71,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7065,7 +7065,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7113,7 +7113,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 74,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7161,7 +7161,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 68,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7209,7 +7209,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 86,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7257,7 +7257,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7305,7 +7305,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 61,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7353,7 +7353,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 73,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7449,7 +7449,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7497,7 +7497,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 84,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7545,7 +7545,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7641,7 +7641,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7689,7 +7689,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 88,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7737,7 +7737,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 89,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7785,7 +7785,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 66,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7833,7 +7833,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 83,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7881,7 +7881,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7929,7 +7929,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -7977,7 +7977,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8025,7 +8025,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 72,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8073,7 +8073,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8121,7 +8121,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 77,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8217,7 +8217,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8261,7 +8261,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 27,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8309,7 +8309,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 81,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8357,7 +8357,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 85,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8405,7 +8405,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 67,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8453,7 +8453,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8501,7 +8501,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 80,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8549,7 +8549,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8597,7 +8597,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 74,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8645,7 +8645,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8693,7 +8693,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8741,7 +8741,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8837,7 +8837,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 63,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8885,7 +8885,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -8933,12 +8933,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 75,
-      fundamentals: 75,
-      valuation: 55,
-      growth: 80,
-      management: 65,
-      marketSentiment: 75,
+      overall: 50,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -8981,7 +8981,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9029,7 +9029,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9077,7 +9077,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9125,7 +9125,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9173,7 +9173,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9221,7 +9221,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9269,7 +9269,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 57,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9317,7 +9317,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9365,7 +9365,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9413,7 +9413,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9461,7 +9461,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9509,7 +9509,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9557,7 +9557,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9605,7 +9605,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 62,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9653,7 +9653,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9701,7 +9701,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9749,7 +9749,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9797,7 +9797,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9845,7 +9845,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9893,7 +9893,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9941,7 +9941,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -9989,7 +9989,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10037,7 +10037,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10085,7 +10085,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 73,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10133,7 +10133,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10181,7 +10181,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 61,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10229,7 +10229,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10277,7 +10277,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10373,7 +10373,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 58,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10421,7 +10421,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10469,7 +10469,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 57,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10517,7 +10517,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10565,7 +10565,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10613,7 +10613,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10661,7 +10661,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10709,7 +10709,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 58,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10757,7 +10757,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10805,7 +10805,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10853,7 +10853,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 73,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10901,7 +10901,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10949,7 +10949,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 70,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -10997,7 +10997,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 59,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11045,7 +11045,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 67,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11093,7 +11093,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11141,7 +11141,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11188,7 +11188,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 65,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11236,7 +11236,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11284,7 +11284,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 57,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11332,7 +11332,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11380,7 +11380,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11428,7 +11428,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11476,7 +11476,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 76,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11524,7 +11524,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11572,7 +11572,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11620,7 +11620,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11668,7 +11668,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11716,7 +11716,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 74,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11764,7 +11764,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11812,7 +11812,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11860,7 +11860,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11908,7 +11908,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -11956,7 +11956,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12004,7 +12004,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12052,7 +12052,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12100,7 +12100,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12148,7 +12148,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12196,7 +12196,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12244,7 +12244,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12292,7 +12292,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12340,7 +12340,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12388,7 +12388,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12436,7 +12436,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12484,7 +12484,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12532,7 +12532,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12580,7 +12580,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12628,7 +12628,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12676,7 +12676,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12724,7 +12724,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 68,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12772,7 +12772,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12820,7 +12820,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12868,7 +12868,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12916,7 +12916,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -12964,7 +12964,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 58,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13012,7 +13012,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13108,7 +13108,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13156,7 +13156,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13204,7 +13204,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 72,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13252,7 +13252,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 59,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13300,7 +13300,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13348,7 +13348,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 79,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13396,7 +13396,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13444,7 +13444,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 57,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13492,7 +13492,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13540,7 +13540,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 58,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13588,7 +13588,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 78,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13636,7 +13636,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13680,7 +13680,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 22,
+      overall: 37,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13728,7 +13728,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13776,7 +13776,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13824,7 +13824,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13872,7 +13872,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13920,7 +13920,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 79,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -13968,7 +13968,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 70,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14016,7 +14016,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14064,7 +14064,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 57,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14112,7 +14112,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14160,7 +14160,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14208,7 +14208,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14256,7 +14256,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14304,7 +14304,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14352,7 +14352,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14400,7 +14400,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14496,7 +14496,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14544,7 +14544,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14592,7 +14592,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14640,7 +14640,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 73,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14688,7 +14688,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14736,7 +14736,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 73,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14928,7 +14928,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 76,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -14972,7 +14972,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 21,
+      overall: 59,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15020,7 +15020,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15068,7 +15068,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15163,7 +15163,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15211,7 +15211,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15259,7 +15259,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 58,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15307,7 +15307,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 60,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15355,7 +15355,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15403,7 +15403,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 61,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15451,7 +15451,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 74,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15499,7 +15499,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 58,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15547,7 +15547,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15595,7 +15595,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15643,7 +15643,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 63,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15691,7 +15691,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15739,7 +15739,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 64,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15787,7 +15787,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 65,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15835,7 +15835,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 66,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15931,7 +15931,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -15979,7 +15979,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16027,7 +16027,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16075,7 +16075,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 74,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16123,7 +16123,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16171,7 +16171,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16219,7 +16219,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16267,7 +16267,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 77,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16315,7 +16315,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16363,7 +16363,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16411,7 +16411,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16459,7 +16459,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 59,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16507,7 +16507,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16555,7 +16555,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16603,7 +16603,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16651,7 +16651,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16699,7 +16699,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16747,7 +16747,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16795,7 +16795,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16843,7 +16843,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16891,7 +16891,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16939,7 +16939,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 92,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -16987,7 +16987,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 66,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17035,7 +17035,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17083,7 +17083,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17131,7 +17131,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17179,7 +17179,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17227,7 +17227,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17275,7 +17275,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17325,10 +17325,10 @@ export const ipoStocks: IPOStock[] = [
     aiScores: {
       overall: 50,
       fundamentals: 50,
-      valuation: 55,
-      growth: 55,
-      management: 60,
-      marketSentiment: 75,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -17371,7 +17371,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17419,7 +17419,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17467,7 +17467,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17515,7 +17515,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 61,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17563,7 +17563,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17611,7 +17611,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17659,7 +17659,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 57,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17707,7 +17707,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17755,7 +17755,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17803,7 +17803,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17851,7 +17851,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17899,7 +17899,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 61,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -17995,7 +17995,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18043,7 +18043,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18091,7 +18091,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18139,7 +18139,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18187,7 +18187,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18235,7 +18235,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18283,7 +18283,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18331,7 +18331,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18379,7 +18379,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18427,7 +18427,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18475,7 +18475,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18523,7 +18523,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 77,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18571,7 +18571,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 76,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18619,7 +18619,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18715,7 +18715,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 80,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18763,7 +18763,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18811,7 +18811,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18859,7 +18859,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18907,7 +18907,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -18955,7 +18955,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19003,7 +19003,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 23,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19051,7 +19051,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19143,7 +19143,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19191,7 +19191,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 70,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19239,7 +19239,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19287,7 +19287,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19335,7 +19335,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19383,7 +19383,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19431,7 +19431,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19479,7 +19479,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19527,7 +19527,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19575,7 +19575,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19623,7 +19623,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19671,7 +19671,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19719,7 +19719,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19767,7 +19767,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19815,7 +19815,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19863,7 +19863,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19911,7 +19911,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -19959,7 +19959,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 25,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20007,7 +20007,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20055,7 +20055,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20103,7 +20103,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20151,7 +20151,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20247,7 +20247,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20295,7 +20295,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20343,7 +20343,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 75,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20391,7 +20391,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 58,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20439,7 +20439,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20487,7 +20487,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20535,12 +20535,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 77,
-      fundamentals: 77,
-      valuation: 52,
-      growth: 82,
-      management: 67,
-      marketSentiment: 67,
+      overall: 50,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -20583,7 +20583,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20631,7 +20631,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 68,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20727,7 +20727,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20775,7 +20775,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 65,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20823,7 +20823,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20871,7 +20871,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20919,7 +20919,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -20967,7 +20967,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21015,7 +21015,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 57,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21063,7 +21063,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21111,7 +21111,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21159,7 +21159,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21255,7 +21255,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21303,12 +21303,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
-      fundamentals: 53,
-      valuation: 68,
-      growth: 58,
-      management: 83,
-      marketSentiment: 83,
+      overall: 50,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -21351,7 +21351,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21399,7 +21399,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21447,7 +21447,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21495,7 +21495,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21543,7 +21543,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21591,7 +21591,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21639,7 +21639,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21687,7 +21687,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21783,7 +21783,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21831,7 +21831,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 67,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21875,7 +21875,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 65,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21923,7 +21923,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -21971,7 +21971,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 57,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22019,7 +22019,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22067,12 +22067,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
-      fundamentals: 69,
-      valuation: 49,
-      growth: 74,
-      management: 69,
-      marketSentiment: 74,
+      overall: 50,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -22115,7 +22115,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22163,7 +22163,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 63,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22211,7 +22211,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22259,7 +22259,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22307,7 +22307,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22355,7 +22355,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 23,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22403,7 +22403,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22451,7 +22451,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 61,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22499,7 +22499,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 27,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22547,7 +22547,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22687,7 +22687,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 72,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22734,7 +22734,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 66,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22782,7 +22782,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 66,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22830,7 +22830,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 68,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22878,7 +22878,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 78,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22926,7 +22926,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 61,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -22974,7 +22974,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23022,7 +23022,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23070,7 +23070,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23118,7 +23118,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 75,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23166,7 +23166,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23214,7 +23214,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23262,7 +23262,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 77,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23310,7 +23310,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23358,7 +23358,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 75,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23406,7 +23406,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23502,7 +23502,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 76,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23550,7 +23550,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 62,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23598,7 +23598,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 75,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23646,7 +23646,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23694,7 +23694,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23742,7 +23742,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23790,7 +23790,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23838,7 +23838,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23886,7 +23886,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23930,7 +23930,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 54,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -23977,7 +23977,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 56,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24025,7 +24025,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24073,7 +24073,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24121,7 +24121,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24169,7 +24169,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24217,7 +24217,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24265,7 +24265,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24313,7 +24313,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 72,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24361,7 +24361,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24409,7 +24409,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 61,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24457,7 +24457,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24549,7 +24549,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 63,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24597,7 +24597,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24645,7 +24645,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24693,7 +24693,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 21,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24741,7 +24741,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 72,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24789,7 +24789,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 70,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24837,7 +24837,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 73,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24885,7 +24885,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 64,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24933,7 +24933,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 74,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -24981,7 +24981,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25029,7 +25029,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 61,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25077,7 +25077,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 60,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25125,7 +25125,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25173,7 +25173,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25221,7 +25221,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 74,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25269,7 +25269,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25317,7 +25317,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25365,7 +25365,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25413,7 +25413,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25461,7 +25461,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 81,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25509,7 +25509,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25557,7 +25557,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25605,7 +25605,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25653,7 +25653,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25701,7 +25701,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25749,7 +25749,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25797,7 +25797,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25845,7 +25845,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25893,7 +25893,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25941,7 +25941,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -25989,7 +25989,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26037,7 +26037,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26085,7 +26085,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26133,7 +26133,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26181,7 +26181,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 61,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26277,7 +26277,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26325,7 +26325,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26373,7 +26373,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26421,7 +26421,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26469,7 +26469,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26517,7 +26517,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26565,7 +26565,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26613,7 +26613,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26661,7 +26661,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26709,7 +26709,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26757,7 +26757,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26805,7 +26805,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 64,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26853,7 +26853,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 65,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26901,7 +26901,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26949,7 +26949,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -26997,7 +26997,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27045,7 +27045,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27093,7 +27093,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27141,7 +27141,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27189,7 +27189,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27237,7 +27237,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27285,7 +27285,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27333,7 +27333,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 59,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27381,7 +27381,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27429,7 +27429,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 75,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27477,7 +27477,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 84,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27525,7 +27525,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27573,7 +27573,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27621,7 +27621,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27669,7 +27669,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 22,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27717,7 +27717,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27765,7 +27765,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27813,7 +27813,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27861,7 +27861,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -27957,7 +27957,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28005,7 +28005,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 27,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28053,7 +28053,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 62,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28101,7 +28101,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28149,7 +28149,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28197,7 +28197,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 64,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28293,7 +28293,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28341,7 +28341,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 61,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28389,7 +28389,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28437,7 +28437,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28485,7 +28485,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 78,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28533,7 +28533,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28581,7 +28581,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28629,7 +28629,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 25,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28677,7 +28677,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28725,7 +28725,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 57,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28773,7 +28773,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 25,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28821,7 +28821,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28869,7 +28869,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28917,7 +28917,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -28965,7 +28965,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29013,7 +29013,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 22,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29061,7 +29061,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29109,7 +29109,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29157,7 +29157,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29205,7 +29205,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29253,7 +29253,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29301,7 +29301,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 56,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29349,7 +29349,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 68,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29397,7 +29397,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29493,7 +29493,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 78,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29541,7 +29541,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29589,7 +29589,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 60,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29637,7 +29637,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29685,7 +29685,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 80,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29733,7 +29733,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29829,7 +29829,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 27,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29877,7 +29877,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29925,7 +29925,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -29973,7 +29973,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30021,7 +30021,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30069,7 +30069,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 20,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30117,7 +30117,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30165,7 +30165,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30213,7 +30213,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30261,7 +30261,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 57,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30309,12 +30309,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 81,
-      fundamentals: 81,
-      valuation: 46,
-      growth: 86,
-      management: 61,
-      marketSentiment: 71,
+      overall: 50,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -30357,7 +30357,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30405,7 +30405,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30453,7 +30453,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30501,7 +30501,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 59,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30549,7 +30549,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30597,7 +30597,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30645,7 +30645,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30693,7 +30693,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30741,7 +30741,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30789,7 +30789,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30837,7 +30837,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30885,7 +30885,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 59,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30933,7 +30933,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -30981,7 +30981,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31029,7 +31029,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31077,7 +31077,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 79,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31125,7 +31125,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31173,7 +31173,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31221,7 +31221,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31269,7 +31269,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31317,7 +31317,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31365,7 +31365,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31413,7 +31413,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31461,7 +31461,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 82,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31509,7 +31509,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31557,7 +31557,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31605,7 +31605,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31653,7 +31653,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31701,7 +31701,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31749,7 +31749,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 62,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31797,7 +31797,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31845,7 +31845,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 20,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31893,7 +31893,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31941,7 +31941,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 65,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -31989,7 +31989,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 65,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32037,7 +32037,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32085,7 +32085,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32133,7 +32133,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32181,7 +32181,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32229,7 +32229,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32277,7 +32277,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 63,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32325,7 +32325,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32373,7 +32373,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32421,7 +32421,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32517,7 +32517,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32565,7 +32565,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32613,7 +32613,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32661,7 +32661,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 27,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32709,7 +32709,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32757,7 +32757,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32805,7 +32805,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32853,7 +32853,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 74,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32901,7 +32901,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32949,7 +32949,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -32997,7 +32997,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 75,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33045,7 +33045,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33093,7 +33093,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33141,7 +33141,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33189,7 +33189,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33237,7 +33237,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33285,7 +33285,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33333,7 +33333,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33381,7 +33381,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33429,7 +33429,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 58,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33477,7 +33477,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33525,7 +33525,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 27,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33573,7 +33573,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 78,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33621,7 +33621,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 67,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33669,7 +33669,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 23,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33717,7 +33717,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33765,7 +33765,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33813,7 +33813,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 86,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33861,7 +33861,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33909,7 +33909,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -33957,7 +33957,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34005,7 +34005,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34053,7 +34053,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 72,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34101,7 +34101,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34149,7 +34149,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34197,7 +34197,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34245,7 +34245,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34293,7 +34293,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 80,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34341,7 +34341,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34389,7 +34389,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34437,7 +34437,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34485,7 +34485,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34533,7 +34533,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34581,7 +34581,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 81,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34629,7 +34629,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34677,7 +34677,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34725,7 +34725,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34773,7 +34773,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34821,7 +34821,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 63,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34869,7 +34869,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34917,7 +34917,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -34965,7 +34965,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35013,7 +35013,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35109,7 +35109,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 27,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35157,7 +35157,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 20,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35205,7 +35205,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 62,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35253,7 +35253,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35301,7 +35301,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35349,7 +35349,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35397,7 +35397,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35445,7 +35445,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35493,7 +35493,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 24,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35541,7 +35541,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 68,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35589,7 +35589,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 59,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35637,7 +35637,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35685,7 +35685,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35733,7 +35733,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35781,7 +35781,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35877,7 +35877,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35925,7 +35925,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -35973,7 +35973,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36021,7 +36021,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36069,12 +36069,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 81,
-      fundamentals: 81,
-      valuation: 61,
-      growth: 86,
-      management: 61,
-      marketSentiment: 66,
+      overall: 50,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -36117,7 +36117,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36165,7 +36165,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 68,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36213,7 +36213,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 67,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36261,7 +36261,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36309,7 +36309,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 62,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36357,12 +36357,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 87,
-      fundamentals: 87,
-      valuation: 67,
-      growth: 92,
-      management: 67,
-      marketSentiment: 72,
+      overall: 50,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -36405,7 +36405,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36453,7 +36453,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 63,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36501,7 +36501,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 74,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36549,7 +36549,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36597,7 +36597,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36645,7 +36645,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 67,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36693,7 +36693,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 82,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36789,7 +36789,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36837,7 +36837,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36885,7 +36885,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36933,7 +36933,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -36981,7 +36981,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37077,7 +37077,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37125,7 +37125,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37173,7 +37173,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 77,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37221,7 +37221,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37269,7 +37269,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37317,7 +37317,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37365,7 +37365,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 64,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37413,7 +37413,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37461,7 +37461,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 64,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37509,7 +37509,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 76,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37557,7 +37557,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37605,7 +37605,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37653,7 +37653,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37701,7 +37701,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 63,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37749,7 +37749,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37797,7 +37797,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37845,7 +37845,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37893,7 +37893,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 25,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37941,7 +37941,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 23,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -37989,7 +37989,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38037,7 +38037,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 21,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38085,7 +38085,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 57,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38133,7 +38133,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38181,7 +38181,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 73,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38229,7 +38229,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38277,7 +38277,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38325,7 +38325,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38373,7 +38373,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 62,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38421,7 +38421,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38469,7 +38469,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38517,7 +38517,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38565,7 +38565,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38613,7 +38613,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 64,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38661,7 +38661,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38709,7 +38709,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38757,7 +38757,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38805,7 +38805,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38853,7 +38853,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38901,7 +38901,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -38949,7 +38949,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39045,7 +39045,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39093,7 +39093,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39141,7 +39141,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39189,7 +39189,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39237,7 +39237,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39285,7 +39285,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 56,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39333,7 +39333,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39381,7 +39381,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39429,7 +39429,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 67,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39477,7 +39477,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39525,7 +39525,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39573,7 +39573,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 70,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39621,7 +39621,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39669,7 +39669,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 64,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39717,7 +39717,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 56,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39765,7 +39765,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39813,7 +39813,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39861,7 +39861,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39909,7 +39909,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -39957,7 +39957,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 68,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40005,7 +40005,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 72,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40053,7 +40053,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40101,7 +40101,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40197,7 +40197,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40245,7 +40245,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 41,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40293,7 +40293,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40341,7 +40341,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40389,7 +40389,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40437,7 +40437,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40485,7 +40485,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40533,7 +40533,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 66,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40581,7 +40581,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 67,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40629,7 +40629,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 72,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40677,7 +40677,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 64,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40725,7 +40725,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40773,7 +40773,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40821,7 +40821,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40869,7 +40869,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 25,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40917,7 +40917,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -40965,7 +40965,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41013,7 +41013,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 73,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41061,7 +41061,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41109,7 +41109,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 73,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41157,7 +41157,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 60,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41301,7 +41301,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41349,7 +41349,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 70,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41397,7 +41397,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41445,7 +41445,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41493,7 +41493,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41541,7 +41541,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 62,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41589,7 +41589,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41637,7 +41637,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41685,7 +41685,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41733,7 +41733,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 62,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41781,7 +41781,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41877,7 +41877,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -41925,7 +41925,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 58,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42021,7 +42021,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42069,7 +42069,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42117,7 +42117,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42165,7 +42165,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 20,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42213,7 +42213,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42261,7 +42261,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 25,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42309,7 +42309,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42357,7 +42357,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42405,7 +42405,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42453,7 +42453,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42501,7 +42501,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42549,7 +42549,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42597,7 +42597,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42645,7 +42645,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 37,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42693,7 +42693,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42741,7 +42741,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42789,7 +42789,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 58,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42837,7 +42837,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 57,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42885,7 +42885,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42933,7 +42933,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -42981,7 +42981,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 56,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43029,7 +43029,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43077,7 +43077,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43125,7 +43125,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43173,7 +43173,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 72,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43221,7 +43221,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43269,7 +43269,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43317,7 +43317,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 64,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43365,7 +43365,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43413,7 +43413,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43461,7 +43461,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 76,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43509,7 +43509,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 76,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43557,7 +43557,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 24,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43605,7 +43605,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43653,7 +43653,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 35,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43701,7 +43701,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43749,7 +43749,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43797,7 +43797,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43845,7 +43845,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 67,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43893,7 +43893,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 59,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43941,7 +43941,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 56,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -43989,7 +43989,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44037,7 +44037,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44085,7 +44085,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 83,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44133,7 +44133,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 67,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44181,7 +44181,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44229,7 +44229,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 27,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44277,7 +44277,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 26,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44325,7 +44325,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 26,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44373,7 +44373,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 71,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44421,7 +44421,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 56,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44469,7 +44469,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 43,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44517,7 +44517,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44565,7 +44565,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 26,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44613,7 +44613,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 21,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44661,7 +44661,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 62,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44709,7 +44709,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 80,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44757,7 +44757,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 23,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44805,7 +44805,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44853,7 +44853,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44901,7 +44901,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 20,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44949,7 +44949,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 63,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -44997,7 +44997,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 40,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45045,7 +45045,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 66,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45093,7 +45093,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 72,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45189,7 +45189,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45285,7 +45285,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 67,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45333,7 +45333,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45381,7 +45381,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 49,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45429,7 +45429,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45477,7 +45477,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 70,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45525,7 +45525,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 52,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45573,7 +45573,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45621,7 +45621,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45669,7 +45669,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45717,7 +45717,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45765,7 +45765,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45813,7 +45813,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 26,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45861,7 +45861,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 54,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45909,7 +45909,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 30,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -45957,7 +45957,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 42,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46005,7 +46005,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46053,7 +46053,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 34,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46101,7 +46101,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 36,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46149,7 +46149,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 70,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46197,7 +46197,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 28,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46245,7 +46245,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 51,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46293,7 +46293,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 60,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46341,7 +46341,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46389,7 +46389,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 66,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46437,7 +46437,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 23,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46485,7 +46485,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 32,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46533,7 +46533,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46581,7 +46581,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 59,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46629,7 +46629,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 47,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46725,7 +46725,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 62,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46773,7 +46773,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 46,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46821,7 +46821,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46869,7 +46869,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 48,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46917,7 +46917,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 53,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -46965,7 +46965,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -47013,7 +47013,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 26,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -47061,7 +47061,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 64,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -47109,7 +47109,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 29,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -47157,7 +47157,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 67,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -47205,7 +47205,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 44,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -47253,7 +47253,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 39,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -47301,7 +47301,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 45,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -47349,7 +47349,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 38,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -47397,7 +47397,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -47445,7 +47445,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 31,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -47534,7 +47534,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 27,
+      overall: 50,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -47578,7 +47578,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 33,
+      overall: 36,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -47790,12 +47790,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 86,
-      fundamentals: 86,
-      valuation: 61,
-      growth: 91,
-      management: 66,
-      marketSentiment: 86,
+      overall: 84,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -48000,7 +48000,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 68,
+      overall: 88,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -48462,7 +48462,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 64,
+      overall: 85,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -48546,7 +48546,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 78,
+      overall: 84,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -48756,12 +48756,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
-      fundamentals: 69,
-      valuation: 49,
-      growth: 74,
-      management: 89,
-      marketSentiment: 84,
+      overall: 63,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -49134,7 +49134,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 79,
+      overall: 60,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -49218,12 +49218,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 80,
-      fundamentals: 80,
-      valuation: 60,
-      growth: 85,
-      management: 70,
-      marketSentiment: 70,
+      overall: 88,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -49302,12 +49302,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 82,
-      fundamentals: 82,
-      valuation: 62,
-      growth: 87,
-      management: 72,
-      marketSentiment: 72,
+      overall: 88,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -49386,7 +49386,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 80,
+      overall: 57,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -49848,12 +49848,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 55,
-      fundamentals: 55,
-      valuation: 75,
-      growth: 60,
-      management: 85,
-      marketSentiment: 85,
+      overall: 76,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -49932,7 +49932,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 73,
+      overall: 60,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -50016,7 +50016,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 78,
+      overall: 64,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -50184,7 +50184,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 76,
+      overall: 77,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -50226,7 +50226,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 61,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -50520,7 +50520,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 79,
+      overall: 73,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -50730,7 +50730,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 76,
+      overall: 77,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -50814,7 +50814,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 82,
+      overall: 63,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -50856,7 +50856,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 80,
+      overall: 74,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -50940,7 +50940,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 74,
+      overall: 70,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -50982,12 +50982,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 82,
-      fundamentals: 82,
-      valuation: 67,
-      growth: 87,
-      management: 82,
-      marketSentiment: 87,
+      overall: 55,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -51066,7 +51066,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 74,
+      overall: 78,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -51108,7 +51108,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 61,
+      overall: 65,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -51150,7 +51150,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 80,
+      overall: 75,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -51192,7 +51192,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 78,
+      overall: 64,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -51276,7 +51276,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 69,
+      overall: 76,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -51318,7 +51318,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 70,
+      overall: 55,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -51444,7 +51444,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 66,
+      overall: 70,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -51528,7 +51528,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 80,
+      overall: 59,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -51570,12 +51570,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 56,
-      fundamentals: 56,
-      valuation: 46,
-      growth: 61,
-      management: 66,
-      marketSentiment: 76,
+      overall: 68,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
@@ -51612,7 +51612,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 78,
+      overall: 76,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -51696,7 +51696,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 86,
+      overall: 73,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -51738,7 +51738,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 78,
+      overall: 63,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -51822,7 +51822,7 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 62,
+      overall: 60,
       fundamentals: 50,
       valuation: 50,
       growth: 50,
@@ -51864,12 +51864,12 @@ export const ipoStocks: IPOStock[] = [
     risks: [
     ],
     aiScores: {
-      overall: 63,
-      fundamentals: 63,
-      valuation: 53,
-      growth: 68,
-      management: 73,
-      marketSentiment: 83,
+      overall: 70,
+      fundamentals: 50,
+      valuation: 50,
+      growth: 50,
+      management: 50,
+      marketSentiment: 50,
     },
     aiAnalysis: "",
     aiVerdict: "",
