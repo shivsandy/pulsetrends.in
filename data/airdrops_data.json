@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-06-13T19:34:26.914878+00:00",
-  "total": 36,
+  "last_updated": "2026-06-16T10:15:47.150827+00:00",
+  "total": 38,
   "airdrops": [
     {
       "id": "monetrix",
       "name": "Monetrix",
       "url": "https://airdrops.io/monetrix/",
-      "heat": 448,
+      "heat": 459,
       "status": "confirmed",
       "chain": "Hyperliquid",
       "actions": [
         "Monetrix Actions: Mint USDM with USDC"
       ],
-      "description": "448° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP 405° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP 387° Ongoing Bybit Actions: Place prediction and hold your position CLAIM AIRDROP 379° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP 355° Ongoing Dreamcash Actions: Sign Up, Trade & refer friends to Earn XPs CLAIM AIRDROP 24",
+      "description": "459° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP 414° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP 391° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP 383° Ongoing Bybit Actions: Place prediction and hold your position CLAIM AIRDROP 351° Ongoing Dreamcash Actions: Sign Up, Trade & refer friends to Earn XPs CLAIM AIRDROP 24",
       "source": "airdrops.io",
       "tge_date": "Date : Not announced Season 0 rewards three groups: stablecoin holders, yield participants, and liquidity providers",
       "steps": [
@@ -40,14 +40,14 @@
       "id": "polymarket",
       "name": "Polymarket",
       "url": "https://airdrops.io/polymarket/",
-      "heat": 405,
+      "heat": 414,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Polymarket Actions: Deposit",
         "Make predictions"
       ],
-      "description": "405° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP",
+      "description": "414° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "will follow the completion of its U",
       "steps": [
@@ -76,41 +76,17 @@
       "estimated_cost": "s for active market makers"
     },
     {
-      "id": "bybit",
-      "name": "Bybit",
-      "url": "https://airdrops.io/bybit/",
-      "heat": 387,
-      "status": "active",
-      "chain": "Own",
-      "actions": [
-        "Bybit Actions: Place prediction and hold your position"
-      ],
-      "description": "387° Ongoing Bybit Actions: Place prediction and hold your position CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "steps": [
-        "or external wallets are involved. How does settlement work on Bybit Prediction? Markets settle automatically after the official event result is confirmed. Winning positions receive payouts; losing positions expire. Timing depends on when the official result is published after the event ends. Conclusion Bybit Prediction brings prediction market trading into the Bybit ecosystem with no blockchain setup required. The football season campaign runs for a limited window, so completing KYC and placing your first trade sooner gives you access to the full reward period. Predict now You're interested in more projects that do not have any token yet and could potentially airdrop a governance token to early users in the future? Then check out our list of potential retroactive airdrops to not miss out on the next DeFi airdrop! Requirements Email Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Difficulty Easy Cost to Farm Low Overview Website: bybit.com Documentation: Visit now X (Formerly Twitter): Facebook: Telegram Group: Telegram Channel: Discord Chat: Reddit: Blog: Video X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
-      ],
-      "about": "What is Bybit? Bybit is a global cryptocurrency exchange that started in 2018 and now has more than 70 million users around the world. The platform lets you trade spot, derivatives, staking, and earn products with major cryptocurrencies like Bitcoin and Ethereum. Bybit EU is the exchange’s European-regulated branch that offers EU users crypto services that meet all legal requirements. It has features like Fiat Deposit, Fixed Savings, Spot Margin Trading, and Trading Bots that make it useful for both new crypto airdrop farmers and active traders who are managing their positions.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Bybit&url=https%3A%2F%2Fairdrops.io%2Fbybit%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fbybit%2F&text=Bybit"
-      },
-      "eligibility": ". It has features like Fiat Deposit, Fixed Savings, Spot Margin Trading, and Trading Bots that make it useful for both new crypto airdrop farmers and active traders who are managing their positions",
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Low Overview Website: bybit"
-    },
-    {
       "id": "solpump",
       "name": "SolPump",
       "url": "https://airdrops.io/solpump/",
-      "heat": 379,
+      "heat": 391,
       "status": "active",
       "chain": "Solana",
       "actions": [
         "SolPump Actions: Participate hourly",
         "grab free SOL"
       ],
-      "description": "379° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP",
+      "description": "391° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Visit the SolPump Platform",
@@ -163,10 +139,34 @@
       "estimated_cost": "to Farm Low Overview Website: solpump"
     },
     {
+      "id": "bybit",
+      "name": "Bybit",
+      "url": "https://airdrops.io/bybit/",
+      "heat": 383,
+      "status": "active",
+      "chain": "Own",
+      "actions": [
+        "Bybit Actions: Place prediction and hold your position"
+      ],
+      "description": "383° Ongoing Bybit Actions: Place prediction and hold your position CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "steps": [
+        "or external wallets are involved. How does settlement work on Bybit Prediction? Markets settle automatically after the official event result is confirmed. Winning positions receive payouts; losing positions expire. Timing depends on when the official result is published after the event ends. Conclusion Bybit Prediction brings prediction market trading into the Bybit ecosystem with no blockchain setup required. The football season campaign runs for a limited window, so completing KYC and placing your first trade sooner gives you access to the full reward period. Predict now You're interested in more projects that do not have any token yet and could potentially airdrop a governance token to early users in the future? Then check out our list of potential retroactive airdrops to not miss out on the next DeFi airdrop! Requirements Email Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Difficulty Easy Cost to Farm Low Overview Website: bybit.com Documentation: Visit now X (Formerly Twitter): Facebook: Telegram Group: Telegram Channel: Discord Chat: Reddit: Blog: Video X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
+      ],
+      "about": "What is Bybit? Bybit is a global cryptocurrency exchange that started in 2018 and now has more than 70 million users around the world. The platform lets you trade spot, derivatives, staking, and earn products with major cryptocurrencies like Bitcoin and Ethereum. Bybit EU is the exchange’s European-regulated branch that offers EU users crypto services that meet all legal requirements. It has features like Fiat Deposit, Fixed Savings, Spot Margin Trading, and Trading Bots that make it useful for both new crypto airdrop farmers and active traders who are managing their positions.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Bybit&url=https%3A%2F%2Fairdrops.io%2Fbybit%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fbybit%2F&text=Bybit"
+      },
+      "eligibility": ". It has features like Fiat Deposit, Fixed Savings, Spot Margin Trading, and Trading Bots that make it useful for both new crypto airdrop farmers and active traders who are managing their positions",
+      "difficulty": "Easy",
+      "estimated_cost": "to Farm Low Overview Website: bybit"
+    },
+    {
       "id": "dreamcash",
       "name": "Dreamcash",
       "url": "https://airdrops.io/dreamcash/",
-      "heat": 355,
+      "heat": 351,
       "status": "active",
       "chain": "Hyperliquid",
       "actions": [
@@ -174,7 +174,7 @@
         "Trade",
         "refer friends to Earn XPs"
       ],
-      "description": "355° Ongoing Dreamcash Actions: Sign Up, Trade & refer friends to Earn XPs CLAIM AIRDROP",
+      "description": "351° Ongoing Dreamcash Actions: Sign Up, Trade & refer friends to Earn XPs CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Not announced Vesting Schedule : Not announced Season 1 is live, with two reward tracks running in parallel: an XP track and weekly USDT payouts",
       "steps": [
@@ -197,14 +197,14 @@
       "id": "ink",
       "name": "Ink",
       "url": "https://airdrops.io/ink-chain/",
-      "heat": 240,
+      "heat": 242,
       "status": "confirmed",
       "chain": "Own",
       "actions": [
         "Ink Actions: Trade on Kraken Pro",
         "Interact with Dapps"
       ],
-      "description": "240° Ongoing Confirmed Ink Actions: Trade on Kraken Pro & Interact with Dapps CLAIM AIRDROP",
+      "description": "242° Ongoing Confirmed Ink Actions: Trade on Kraken Pro & Interact with Dapps CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Expected July-September 2026 Latest Update: The Ink Points leaderboard for Kraken Pro users is now live",
       "steps": [
@@ -226,7 +226,7 @@
       "id": "base",
       "name": "Base",
       "url": "https://airdrops.io/base/",
-      "heat": 209,
+      "heat": 205,
       "status": "active",
       "chain": "Base",
       "actions": [
@@ -234,7 +234,7 @@
         "Social Tasks",
         "and Download App"
       ],
-      "description": "209° Ongoing Base Actions: Complete Onchain Tasks, Social Tasks, and Download App CLAIM AIRDROP",
+      "description": "205° Ongoing Base Actions: Complete Onchain Tasks, Social Tasks, and Download App CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "es",
       "steps": [
@@ -250,15 +250,69 @@
         "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fbase%2F&text=Base",
         "github": "https://github.com/base-org"
       },
-      "eligibility": "2026 Earn Free SOL Every Hour JOIN NOW Skip to content Menu Home Latest Airdrops Hot Airdrops Potential Airdrops Hyperliquid Airdrops MegaETH Airdrops Base Airdrops Solana Airdrops Monad Airdrops Soneium Airdrops Aptos Airdrops TON Airdrops zkSync Airdrops Blast Airdrops Telegram Airdrops Show all Claims Blog Contact Menu Home Latest Airdrops Hot Airdrops Potential Airdrops Hyperliquid Airdrops MegaETH Airdrops Base Airdrops Solana Airdrops Monad Airdrops Soneium Airdrops Aptos Airdrops TON Airdrops zkSync Airdrops Blast Airdrops Telegram Airdrops Show all Claims Blog Contact AD Base 209° Loading",
+      "eligibility": "2026 Earn Free SOL Every Hour JOIN NOW Skip to content Menu Home Latest Airdrops Hot Airdrops Potential Airdrops Hyperliquid Airdrops MegaETH Airdrops Base Airdrops Solana Airdrops Monad Airdrops Soneium Airdrops Aptos Airdrops TON Airdrops zkSync Airdrops Blast Airdrops Telegram Airdrops Show all Claims Blog Contact Menu Home Latest Airdrops Hot Airdrops Potential Airdrops Hyperliquid Airdrops MegaETH Airdrops Base Airdrops Solana Airdrops Monad Airdrops Soneium Airdrops Aptos Airdrops TON Airdrops zkSync Airdrops Blast Airdrops Telegram Airdrops Show all Claims Blog Contact AD Base 205° Loading",
       "difficulty": "Hard",
       "estimated_cost": ", fast transactions for decentralized applications, DeFi protocols, NFTs, and payments"
+    },
+    {
+      "id": "hypertrade",
+      "name": "Hypertrade",
+      "url": "https://airdrops.io/hypertrade/",
+      "heat": 198,
+      "status": "active",
+      "chain": "Hyperliquid",
+      "actions": [
+        "Hypertrade Actions: Make swaps",
+        "add liquidity"
+      ],
+      "description": "198° Ongoing Hypertrade Actions: Make swaps & add liquidity CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": ", but the points system is live and accumulating rewards for early users",
+      "steps": [
+        "At the end of the stage, HYPE tokens will be distributed to contributors.",
+        "Activity before the stage ends counts toward the initial distribution."
+      ],
+      "about": "What is Hypertrade? Hypertrade is a DEX aggregator built specifically for the Hyperliquid ecosystem, designed to help users find the best rates when swapping crypto across both HyperCore and HyperEVM. The platform searches across multiple decentralized exchanges including Hyperliquid Spot, Hyperswap, and Prjx to identify the most favorable swap rates. When executing trades, Hypertrade automatically splits orders across different exchanges if needed to maximize output and minimize slippage. The platform uses Invisium Swap Simulations to simulate complex swap paths before execution, ensuring 100% accurate swap quotes for users.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Hypertrade&url=https%3A%2F%2Fairdrops.io%2Fhypertrade%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fhypertrade%2F&text=Hypertrade",
+        "discord": "https://discord.gg/hypertrade"
+      },
+      "difficulty": "Easy",
+      "estimated_cost": "to Farm Medium Overview Website: ht"
+    },
+    {
+      "id": "litvm",
+      "name": "LitVM",
+      "url": "https://airdrops.io/litvm/",
+      "heat": 160,
+      "status": "active",
+      "chain": "Arbitrum",
+      "actions": [
+        "LitVM Actions: Farm Free Testnet"
+      ],
+      "description": "160° Ongoing LitVM Actions: Farm Free Testnet CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "pad on the LiteForge testnet, which went live on April 15, 2026",
+      "steps": [
+        "are fine. The goal is breadth of activity across the ecosystem. Step 6: Deploy a Token Visit Lester Labs , connect your wallet, and create a token. It’s a one",
+        "time interaction, but deploying a contract adds a different type of on",
+        "chain activity to your history. Step 7: Participate in the LiteForge Pioneer Campaign on Arkada Visit the campaign page , connect your wallet, and work through the available quests to accumulate LitPT points within the LiteForge ecosystem. Tips for Maximizing Your LitVM Allocation Come back regularly. One session won’t be enough. In retroactive distributions, what usually matters is building a history of interactions across dApps over several weeks. Using them every day or almost every day is better than just one long session. Cover all the dApps. Bridge, predict, lend, and deploy. It’s safer to have a wider range of activities across the whole ecosystem than to focus on just one protocol. Frequently Asked Questions Is the LitVM Airdrop Confirmed? No, LitVM has not said anything about a token, a ticker, or a date for distribution. The project has said that 51% of the final supply will go to the community, but nothing else has been set in stone. Do I Need Real LTC or ETH to Participate? No. You can get zkLTC for free from the faucet and use it on the LiteForge testnet. You don’t have to pay anything to take part—no bridging or buying is needed. What Activities Are Most Likely to Count? Using multiple dApps consistently over time is the safest way to do things like bridge transactions, lending, prediction markets, and deploying contracts. Over the course of weeks, volume and frequency matter more than one big interaction. Conclusion LitVM has not confirmed an airdrop, but the 51% community allocation and Charlie Lee’s support make it worth the time investment, especially since the testnet is free to use. Get on the LiteForge testnet right now, check out all the dApps that are available, and come back to see how the project grows. Join testnet You're interested in more projects that do not have any token yet and could potentially airdrop a governance token to early users in the future? Then check out our list of potential retroactive airdrops to not miss out on the next DeFi airdrop! More Airdrops to Farm Nansen Ongoing Arbitrum, Avalanche View Guide → Ceitnot Ongoing Arbitrum View Guide → Otomato Ongoing Arbitrum, Base View Guide → Variational Ongoing Arbitrum View Guide → Hibachi Ongoing Arbitrum, Base View Guide → Hyperliquid Ongoing Own chain, Arbitrum View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Difficulty Beginner Cost to Farm Free Overview Website: litvm.com Whitepaper: View Whitepaper Documentation: Visit now X (Formerly Twitter): Telegram Channel: Discord Chat: Blog: X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
+      ],
+      "about": "What is LitVM? LitVM is Litecoin’s Virtual Machine. It is an EVM-compatible rollup built on the Arbitrum Nitro/Orbit stack that adds smart contracts, DeFi, and Web3 apps to Litecoin. It uses zero-knowledge technology so that LTC holders can access yield, tokenized real-world assets, and on-chain apps without leaving Litecoin. Charlie Lee, who created Litecoin, supports the project. The main point is simple: LTC holders don’t have as many DeFi options as Ethereum or Solana holders do, and LitVM wants to change that. There is already a prediction market, a DeFi dashboard, and a token launchpad on the LiteForge testnet, which went live on April 15, 2026.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=LitVM&url=https%3A%2F%2Fairdrops.io%2Flitvm%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Flitvm%2F&text=LitVM",
+        "discord": "https://discord.gg/fwCxnEXTWd"
+      },
+      "eligibility": "criteria yet",
+      "estimated_cost": "to Farm Free Overview Website: litvm"
     },
     {
       "id": "hyperliquid",
       "name": "Hyperliquid",
       "url": "https://airdrops.io/hyperliquid/",
-      "heat": 164,
+      "heat": 159,
       "status": "confirmed",
       "chain": "Arbitrum",
       "actions": [
@@ -268,7 +322,7 @@
         "Provide LP",
         "Refer Friends"
       ],
-      "description": "164° Ongoing Confirmed Hyperliquid Actions: Trade, Interact with Chain, Stake HYPE, Provide LP & Refer Friends CLAIM AIRDROP",
+      "description": "159° Ongoing Confirmed Hyperliquid Actions: Trade, Interact with Chain, Stake HYPE, Provide LP & Refer Friends CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Create your accountVisit Hyperliquid and connect your wallet — this referral link gives you an instant 4% discount on all trading feesComplete account setup and accept the terms of service",
@@ -359,43 +413,16 @@
       "estimated_cost": "averaging works well for larger positions given price volatility Complete the staking process Go to “Staking” → transfer HYPE from spot balance to staking balance → click “Stake Tokens” Consider delegating to HypurrCollective validator for added benefits: Earn Nansen points alongside staking rewards Access to exclusive ecosystem airdrops Track record of 5 successful airdrops since staking launch What staking pays HYPE token rewards from network inflation USDC rewards from platform trading fees Eligibility for ecosystem project airdrops Governance participation in protocol decisions For higher yield, liquid staking protocols like Kinetiq and LoopedHYPE let you stake HYPE, receive an LST, then deploy that LST into HyperEVM DEX liquidity pools — stacking staking APR, LP APR, and protocol points at the same time"
     },
     {
-      "id": "litvm",
-      "name": "LitVM",
-      "url": "https://airdrops.io/litvm/",
-      "heat": 153,
-      "status": "active",
-      "chain": "Arbitrum",
-      "actions": [
-        "LitVM Actions: Farm Free Testnet"
-      ],
-      "description": "153° Ongoing LitVM Actions: Farm Free Testnet CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "pad on the LiteForge testnet, which went live on April 15, 2026",
-      "steps": [
-        "are fine. The goal is breadth of activity across the ecosystem. Step 6: Deploy a Token Visit Lester Labs , connect your wallet, and create a token. It’s a one",
-        "time interaction, but deploying a contract adds a different type of on",
-        "chain activity to your history. Step 7: Participate in the LiteForge Pioneer Campaign on Arkada Visit the campaign page , connect your wallet, and work through the available quests to accumulate LitPT points within the LiteForge ecosystem. Tips for Maximizing Your LitVM Allocation Come back regularly. One session won’t be enough. In retroactive distributions, what usually matters is building a history of interactions across dApps over several weeks. Using them every day or almost every day is better than just one long session. Cover all the dApps. Bridge, predict, lend, and deploy. It’s safer to have a wider range of activities across the whole ecosystem than to focus on just one protocol. Frequently Asked Questions Is the LitVM Airdrop Confirmed? No, LitVM has not said anything about a token, a ticker, or a date for distribution. The project has said that 51% of the final supply will go to the community, but nothing else has been set in stone. Do I Need Real LTC or ETH to Participate? No. You can get zkLTC for free from the faucet and use it on the LiteForge testnet. You don’t have to pay anything to take part—no bridging or buying is needed. What Activities Are Most Likely to Count? Using multiple dApps consistently over time is the safest way to do things like bridge transactions, lending, prediction markets, and deploying contracts. Over the course of weeks, volume and frequency matter more than one big interaction. Conclusion LitVM has not confirmed an airdrop, but the 51% community allocation and Charlie Lee’s support make it worth the time investment, especially since the testnet is free to use. Get on the LiteForge testnet right now, check out all the dApps that are available, and come back to see how the project grows. Join testnet You're interested in more projects that do not have any token yet and could potentially airdrop a governance token to early users in the future? Then check out our list of potential retroactive airdrops to not miss out on the next DeFi airdrop! More Airdrops to Farm Nansen Ongoing Arbitrum, Avalanche View Guide → Ceitnot Ongoing Arbitrum View Guide → Otomato Ongoing Arbitrum, Base View Guide → Variational Ongoing Arbitrum View Guide → Hibachi Ongoing Arbitrum, Base View Guide → Hyperliquid Ongoing Own chain, Arbitrum View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Difficulty Beginner Cost to Farm Free Overview Website: litvm.com Whitepaper: View Whitepaper Documentation: Visit now X (Formerly Twitter): Telegram Channel: Discord Chat: Blog: X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
-      ],
-      "about": "What is LitVM? LitVM is Litecoin’s Virtual Machine. It is an EVM-compatible rollup built on the Arbitrum Nitro/Orbit stack that adds smart contracts, DeFi, and Web3 apps to Litecoin. It uses zero-knowledge technology so that LTC holders can access yield, tokenized real-world assets, and on-chain apps without leaving Litecoin. Charlie Lee, who created Litecoin, supports the project. The main point is simple: LTC holders don’t have as many DeFi options as Ethereum or Solana holders do, and LitVM wants to change that. There is already a prediction market, a DeFi dashboard, and a token launchpad on the LiteForge testnet, which went live on April 15, 2026.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=LitVM&url=https%3A%2F%2Fairdrops.io%2Flitvm%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Flitvm%2F&text=LitVM",
-        "discord": "https://discord.gg/fwCxnEXTWd"
-      },
-      "eligibility": "criteria yet",
-      "estimated_cost": "to Farm Free Overview Website: litvm"
-    },
-    {
       "id": "picks",
       "name": "Picks",
       "url": "https://airdrops.io/picks/",
-      "heat": 138,
+      "heat": 136,
       "status": "active",
-      "chain": "138°",
+      "chain": "136°",
       "actions": [
         "Picks Actions: Join World Cup campaign"
       ],
-      "description": "138° Ongoing Picks Actions: Join World Cup campaign CLAIM AIRDROP",
+      "description": "136° Ongoing Picks Actions: Join World Cup campaign CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "announcement, no points program, and no published snapshot criteria",
       "about": "What is Picks? Picks is an on-chain sports prediction skill game where players choose athletes, guess how well they will do in real life, and compete on leaderboards for prizes of up to 30 times their bet. The main idea is simple: the more you know about sports, the better your results will be. Picks is different from regular sports betting because it is set up as a skill-based competition. The more a player knows, the higher they will be on the leaderboard, the more benefits they will get, and the more exclusive access they will have. The platform has a verifiable, permissionless base because predictions and results are settled onchain. The project is currently in pre-launch, and the waitlist for the pre-season is open.",
@@ -412,44 +439,17 @@
       ]
     },
     {
-      "id": "xstocks",
-      "name": "xStocks",
-      "url": "https://airdrops.io/xstocks/",
-      "heat": 124,
-      "status": "active",
-      "chain": "Solana",
-      "actions": [
-        "xStocks Actions: Provide liqudity and refer to earn"
-      ],
-      "description": "124° Ongoing xStocks Actions: Provide liqudity and refer to earn CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "steps": [
-        "Analyst — 10,000+ xPoints",
-        "Associate — 50,000+ xPoints",
-        "VP — 100,000+ xPoints",
-        "Director — 500,000+ xPoints",
-        "MD — 1,000,000+ xPoints"
-      ],
-      "about": "What is xStocks? xStocks is a tokenized equities platform that lets you trade over 75 U.S. stocks and ETFs on-chain and on centralized exchanges. Kraken bought the platform in December 2025. Assets like $SPYx are fully backed traditional securities that you can access 24/7 without having to open a brokerage account. The platform is for DeFi users who want to be able to use on-chain assets in traditional markets. People can trade, add liquidity, and use xStocks tokens as collateral in borrowing and lending markets, all without leaving the DeFi interface. Backed.fi, the parent company of xStocks, has raised a total of $9.5M across two funding rounds.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=xStocks&url=https%3A%2F%2Fairdrops.io%2Fxstocks%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fxstocks%2F&text=xStocks"
-      },
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Medium Overview Website: xstocks"
-    },
-    {
       "id": "katana",
       "name": "Katana",
       "url": "https://airdrops.io/katana-network/",
-      "heat": 120,
+      "heat": 124,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Katana Actions: Deposit Assets",
         "Trade Perps"
       ],
-      "description": "120° Ongoing Confirmed Katana Actions: Deposit Assets & Trade Perps CLAIM AIRDROP",
+      "description": "124° Ongoing Confirmed Katana Actions: Deposit Assets & Trade Perps CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Event",
       "steps": [
@@ -485,13 +485,13 @@
       "id": "grass",
       "name": "Grass",
       "url": "https://airdrops.io/grass/",
-      "heat": 116,
+      "heat": 123,
       "status": "confirmed",
       "chain": "Solana",
       "actions": [
         "Grass Actions: Install Grass extension and keep to earn points 🌱"
       ],
-      "description": "116° Ongoing Confirmed Grass Actions: Install Grass extension and keep active to earn points 🌱 CLAIM AIRDROP",
+      "description": "123° Ongoing Confirmed Grass Actions: Install Grass extension and keep active to earn points 🌱 CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "t, Gate",
       "steps": [
@@ -547,10 +547,95 @@
       "estimated_cost": "to Farm Free Overview Website: app"
     },
     {
+      "id": "xstocks",
+      "name": "xStocks",
+      "url": "https://airdrops.io/xstocks/",
+      "heat": 120,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [
+        "xStocks Actions: Provide liqudity and refer to earn"
+      ],
+      "description": "120° Ongoing xStocks Actions: Provide liqudity and refer to earn CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "steps": [
+        "Analyst — 10,000+ xPoints",
+        "Associate — 50,000+ xPoints",
+        "VP — 100,000+ xPoints",
+        "Director — 500,000+ xPoints",
+        "MD — 1,000,000+ xPoints"
+      ],
+      "about": "What is xStocks? xStocks is a tokenized equities platform that lets you trade over 75 U.S. stocks and ETFs on-chain and on centralized exchanges. Kraken bought the platform in December 2025. Assets like $SPYx are fully backed traditional securities that you can access 24/7 without having to open a brokerage account. The platform is for DeFi users who want to be able to use on-chain assets in traditional markets. People can trade, add liquidity, and use xStocks tokens as collateral in borrowing and lending markets, all without leaving the DeFi interface. Backed.fi, the parent company of xStocks, has raised a total of $9.5M across two funding rounds.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=xStocks&url=https%3A%2F%2Fairdrops.io%2Fxstocks%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fxstocks%2F&text=xStocks"
+      },
+      "difficulty": "Easy",
+      "estimated_cost": "to Farm Medium Overview Website: xstocks"
+    },
+    {
+      "id": "sekai",
+      "name": "SEKAI",
+      "url": "https://airdrops.io/sekai/",
+      "heat": 116,
+      "status": "active",
+      "chain": "Hyperliquid",
+      "actions": [
+        "SEKAI Actions: Join testnet",
+        "swap and provide liquidity"
+      ],
+      "description": "116° Ongoing SEKAI Actions: Join testnet, swap and provide liquidity CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "in communications around the Kappas NFT mint, but no token ticker, distribution mechanics, or timeline has been announced",
+      "steps": [
+        "Network Name: Hyperliquid Testnet",
+        "RPC URL: https://rpc.hyperliquid-testnet.xyz/evm",
+        "Chain ID: 998",
+        "Currency Symbol: HYPE"
+      ],
+      "about": "What is Sekai? Sekai is a liquid staking protocol built on HyperEVM, Hyperliquid’s EVM-compatible smart contract layer. It lets anyone launch a custom liquid staking token (LST) representing staked HYPE, with each LST backed by real staking yield and usable across DeFi. The protocol’s main draw is its shared exit liquidity layer. Normally, every new LST has to bootstrap its own AMM pool, which disadvantages small or early-stage tokens. Sekai raised community funding through a Sekai Kappas NFT mint rather than a traditional VC round.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=SEKAI&url=https%3A%2F%2Fairdrops.io%2Fsekai%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fsekai%2F&text=SEKAI",
+        "discord": "https://discord.gg/sekai-fi"
+      },
+      "difficulty": "Easy",
+      "estimated_cost": ". Real funds are not required until mainnet launches"
+    },
+    {
+      "id": "ondo_perps",
+      "name": "Ondo Perps",
+      "url": "https://airdrops.io/ondo-perps/",
+      "heat": 109,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [
+        "Ondo Perps Actions: Hold ONDO",
+        "join waitlist"
+      ],
+      "description": "109° Ongoing Confirmed Ondo Perps Actions: Hold ONDO & join waitlist CLAIM AIRDROP Ongoing Forte Protocol Actions: Interact with testnet CLAIM AIRDROP 33° Ongoing Confirmed Nado Actions: Deposit & Trade perps CLAIM AIRDROP 414° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP 198° Ongoing Hypertrade Actions: Make swaps & add liquidity CLAIM AIRDROP 32° Ongoing Confirm",
+      "source": "airdrops.io",
+      "tge_date": "Date: N/A (ONDO already live; future distributions unconfirmed) Early Access codes for Ondo Perps are being sent in waves to waitlist members",
+      "steps": [
+        "Ongoing Confirmed Ondo Perps Airdrop Details Ondo Perps has an upcoming points program and is currently distributing USDC rewards to traders every week.",
+        "Rewards are now claimable here .",
+        "How to Farm the Ondo Perps Airdrop Step 1: Join the Ondo Perps Waitlist Visit the Ondo Perps waitlist and submit your email to register for Early Access.",
+        "KYC is required if you win a raffle prize."
+      ],
+      "about": "What is Ondo Perps? Ondo Perps is a perpetual futures trading platform built by the team behind Ondo Finance, offering 24/7 trading on tokenized U.S. equities, ETFs, and commodities. Users can take long or short positions on assets like NVDA, TSLA, AAPL, gold, silver, and oil with up to 20x leverage. The platform launched in early access in 2025 and is available to users outside the United States and other restricted jurisdictions. The platform’s main differentiator is planned support for tokenized securities as collateral. Existing RWA perps venues force traders to post stablecoins, locking up capital twice when they already hold the underlying asset. Ondo Finance previously raised a $4M seed round in 2021; a $20M Series A in 2022 led by Founders Fund and Pantera Capital, with backing from Coinbase Ventures, Tiger Global, and Wintermute and $22M in May 2022.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Ondo%20Perps&url=https%3A%2F%2Fairdrops.io%2Fondo-perps%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fondo-perps%2F&text=Ondo%20Perps"
+      },
+      "eligibility": ". Step 2: Claim past rewards (if eligible) If you participated in any closed campaigns before the April 1, 2026 snapshot, head to the Ondo rewards page",
+      "difficulty": "Medium",
+      "estimated_cost": "to Farm Medium Overview Website: ondoperps"
+    },
+    {
       "id": "nansen",
       "name": "Nansen",
       "url": "https://airdrops.io/nansen/",
-      "heat": 81,
+      "heat": 84,
       "status": "active",
       "chain": "Ethereum",
       "actions": [
@@ -558,7 +643,7 @@
         "stake assets",
         "refer friends"
       ],
-      "description": "81° Ongoing Nansen Actions: Subscribe, stake assets & refer friends CLAIM AIRDROP",
+      "description": "84° Ongoing Nansen Actions: Subscribe, stake assets & refer friends CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "es, and capital flows across more than 20 chains, including Ethereum, Solana, Base, Hyperliquid, and Aptos",
       "steps": [
@@ -635,32 +720,34 @@
       ]
     },
     {
-      "id": "infinex",
-      "name": "Infinex",
-      "url": "https://airdrops.io/infinex/",
-      "heat": 55,
+      "id": "near_protocol",
+      "name": "NEAR Protocol",
+      "url": "https://airdrops.io/near-protocol/",
+      "heat": 62,
       "status": "confirmed",
-      "chain": "Ethereum",
+      "chain": "Own",
       "actions": [
-        "Infinex Actions: Claim Now"
+        "NEAR Protocol Actions: Deposit funds and make swaps"
       ],
-      "description": "55° Ongoing Confirmed Infinex Actions: Claim Now Claim Live CLAIM AIRDROP",
+      "description": "62° Ongoing Confirmed NEAR Protocol Actions: Deposit funds and make swaps CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "ed at its TGE on January 30, 2026, at 19:00 UTC, with the Patron NFT snapshot taken earlier that day at 07:00 UTC",
+      "tge_date": "Date: Triggered by dual milestone ($70M TVL + NEAR price >= $3",
       "steps": [
-        "Vouchers are valid from TGE and expire on January 30, 2027",
-        "Each voucher type locks in a different fixed FDV, so check the price before redeeming",
-        "Import existing perps wallets from Hyperliquid, Drift, or Synthetix",
-        "More trading volume means faster crate accrual"
+        "Transactions execute inside a NEAR private shard backed by Trusted Execution Environments (TEEs), keeping amounts and counterparties hidden until settlement.",
+        "Distribution Method: On-chain activity score (confidential balance weighted by time + swaps) TGE Date: Triggered by dual milestone ($70M TVL + NEAR price >= $3.",
+        "Allocation is scored by sustained confidential balance weighted by time held, plus confidential swap activity.",
+        "How to farm the [email protected] airdrop Step 1: Visit NEAR website and create an account Go to the NEAR website and sign up if you do not already have an account.",
+        "Consistent users from Drop 1 are well-positioned for future rounds."
       ],
-      "about": "What is Infinex? Infinex is a multi-chain account protocol that uses smart contracts on EVM chains and Solana to streamline transaction signing and wallet management. The platform employs non-phishable passkeys, enhancing security while simplifying the user experience across different blockchain networks. As users interact with various chains through the Infinex platform—whether bridging assets or sending transactions—a new account contract is automatically deployed on each accessed blockchain. The project has gained significant traction in the crypto space, securing $65.3 million in funding through an NFT sale with backing from notable investors including Framework Ventures, Solana Ventures, and Wintermute. Infinex aims to address key pain points in the blockchain user experience by offering a unified account system that works seamlessly across multiple networks.",
+      "about": "What is NEAR Protocol? NEAR Protocol is a sharded layer-1 blockchain built around cross-chain execution and privacy. Its main consumer interface lets users swap assets across 35+ chains without manually bridging or managing gas on each network. It has raised over $607 million in total funding and targets high throughput with low fees. The protocol’s defining feature right now is Confidential Intents, launched in February 2026. Transactions execute inside a NEAR private shard backed by Trusted Execution Environments (TEEs), keeping amounts and counterparties hidden until settlement.",
       "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Infinex&url=https%3A%2F%2Fairdrops.io%2Finfinex%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Finfinex%2F&text=Infinex",
-        "discord": "https://discord.gg/infinex"
+        "twitter": "https://x.com/intent/tweet?text=NEAR%20Protocol&url=https%3A%2F%2Fairdrops.io%2Fnear-protocol%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fnear-protocol%2F&text=NEAR%20Protocol",
+        "github": "https://github.com/near"
       },
+      "eligibility": ". Step 6: Keep your balance above $100 and keep swapping Allocation is time-weighted, so consistent holding over weeks scores considerably higher than a balance added close to the snapshot",
       "difficulty": "Easy",
-      "estimated_cost": ". Earning new vouchers through Craterun requires trading perpetuals on Infinex, which involves real capital, so that portion is not free"
+      "estimated_cost": "to Farm Medium Overview Website: near"
     },
     {
       "id": "predict_fun",
@@ -697,99 +784,104 @@
       "estimated_cost": "to Farm Medium Overview Website: predict"
     },
     {
-      "id": "sekai",
-      "name": "SEKAI",
-      "url": "https://airdrops.io/sekai/",
-      "heat": 40,
-      "status": "confirmed",
-      "chain": "Hyperliquid",
-      "actions": [
-        "SEKAI Actions: Join testnet",
-        "swap and provide liquidity"
-      ],
-      "description": "40° Ongoing SEKAI Actions: Join testnet, swap and provide liquidity CLAIM AIRDROP 24° Ongoing Confirmed NEAR Protocol Actions: Deposit funds and make swaps CLAIM AIRDROP 24° Ongoing MEXC Actions: Two events with separate reward pools CLAIM AIRDROP 33° Ongoing Akka Finance Actions: Perform swaps and deposit into vault CLAIM AIRDROP 387° Ongoing Bybit Actions: Place prediction and hold your position",
-      "source": "airdrops.io",
-      "tge_date": "in communications around the Kappas NFT mint, but no token ticker, distribution mechanics, or timeline has been announced",
-      "steps": [
-        "Network Name: Hyperliquid Testnet",
-        "RPC URL: https://rpc.hyperliquid-testnet.xyz/evm",
-        "Chain ID: 998",
-        "Currency Symbol: HYPE"
-      ],
-      "about": "What is Sekai? Sekai is a liquid staking protocol built on HyperEVM, Hyperliquid’s EVM-compatible smart contract layer. It lets anyone launch a custom liquid staking token (LST) representing staked HYPE, with each LST backed by real staking yield and usable across DeFi. The protocol’s main draw is its shared exit liquidity layer. Normally, every new LST has to bootstrap its own AMM pool, which disadvantages small or early-stage tokens. Sekai raised community funding through a Sekai Kappas NFT mint rather than a traditional VC round.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=SEKAI&url=https%3A%2F%2Fairdrops.io%2Fsekai%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fsekai%2F&text=SEKAI",
-        "discord": "https://discord.gg/sekai-fi"
-      },
-      "difficulty": "Easy",
-      "estimated_cost": ". Real funds are not required until mainnet launches"
-    },
-    {
-      "id": "aci",
-      "name": "ACI",
-      "url": "https://airdrops.io/aci/",
-      "heat": 37,
-      "status": "confirmed",
-      "chain": "Own",
-      "actions": [
-        "ACI Actions: Claim free testnet tokens",
-        "swap and complete missions"
-      ],
-      "description": "37° Ongoing Confirmed ACI Actions: Claim free testnet tokens, swap and complete missions CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "steps": [
-        "Finish your missions before then to qualify.",
-        "To qualify for the 30,000,000 $ACI testnet allocation, complete your missions and Zealy quests before that date.",
-        "Claiming Sepolia ETH, swapping for $ACI, staking, and clearing missions takes little capital and positions you for the distribution ahead of the June 30, 2026 deadline."
-      ],
-      "about": "What is ACI? ACI is an early-stage blockchain that describes itself as the first AI blockchain built on post-quantum cryptography. Post-quantum cryptography is the project’s main differentiator: it uses encryption meant to resist attacks from future quantum computers, a problem other post-quantum chains are also working on.",
-      "social_links": {
-        "twitter": "https://x.com/ACIToken/status/2059952826701300155",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Faci%2F&text=ACI",
-        "discord": "https://discord.gg/JUFrqe55PM"
-      },
-      "eligibility": ". Step 4: Stake ACI to Unlock Missions On the staking page, stake your ACI tokens",
-      "difficulty": "Easy",
-      "estimated_cost": ", and rewards come from completing on-chain activity and quests rather than buying anything"
-    },
-    {
-      "id": "akka_finance",
-      "name": "Akka Finance",
-      "url": "https://airdrops.io/akka-finance/",
+      "id": "nado",
+      "name": "Nado",
+      "url": "https://airdrops.io/nado/",
       "heat": 33,
-      "status": "active",
-      "chain": "Hyperliquid",
+      "status": "confirmed",
+      "chain": "Ink",
       "actions": [
-        "Akka Finance Actions: Perform swaps and deposit into vault"
+        "Nado Actions: Deposit",
+        "Trade perps"
       ],
-      "description": "33° Ongoing Akka Finance Actions: Perform swaps and deposit into vault CLAIM AIRDROP",
+      "description": "33° Ongoing Confirmed Nado Actions: Deposit & Trade perps CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "tied to current platform activity",
+      "tge_date": "event",
       "steps": [
-        "Ongoing Akka Finance Airdrop Details Akka Finance has not announced a confirmed airdrop, points program, or token launch tied to current platform activity.",
-        "Being an early depositor on record puts you ahead of users who join after any rewards announcement."
+        "ROI Contest ($75,000): Ranks by percentage return, calculated as PNL divided by start value plus net deposits. Both realized and unrealized gains count. Requires a $100 minimum balance and $250,000 in trading volume during the competition.",
+        "Volume Contest ($25,000): Ranks by total notional volume in USDT across all eligible markets. Requires only a $100 minimum balance."
       ],
-      "about": "What is Akka Finance? Akka Finance is a liquidity aggregator and execution layer built for on-chain trading. Rather than routing swaps through a single venue, it splits and routes orders across multiple sources to match quoted prices with minimal slippage. The platform launched on Hyperliquid and has processed over $200M in volume across 1M+ transactions, with multi-chain expansion planned. Akka also runs the Hyper AI Vault, an automated perp strategy that takes directional long/short positions on top Hyperliquid assets using a proprietary AI model. The vault has been live since April 15, 2026.",
+      "about": "What is Nado? Nado is a central-limit orderbook (CLOB) decentralized exchange built on the Ink blockchain, developed by the team behind Kraken. The platform combines spot and perpetual trading through a unified margin system, allowing traders to manage collateral dynamically across multiple positions. Built on Ink, Nado leverages the blockchain’s infrastructure to deliver orderbook-based trading with multiple collateral options and margin trading capabilities. The platform targets traders looking for a comprehensive trading experience that includes both spot markets and leveraged perpetual positions on a single interface.",
       "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Akka%20Finance&url=https%3A%2F%2Fairdrops.io%2Fakka-finance%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fakka-finance%2F&text=Akka%20Finance",
-        "github": "https://github.com/Akka-Finance"
+        "twitter": "https://x.com/intent/tweet?text=Nado&url=https%3A%2F%2Fairdrops.io%2Fnado%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fnado%2F&text=Nado"
       },
+      "eligibility": ", so consistent weekly activity matters more than a single large session",
       "difficulty": "Medium",
-      "estimated_cost": "to Farm Medium Overview Website: akka"
+      "estimated_cost": "to Farm Medium Overview Website: app"
+    },
+    {
+      "id": "infinex",
+      "name": "Infinex",
+      "url": "https://airdrops.io/infinex/",
+      "heat": 32,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [
+        "Infinex Actions: Claim Now"
+      ],
+      "description": "32° Ongoing Confirmed Infinex Actions: Claim Now Claim Live CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "ed at its TGE on January 30, 2026, at 19:00 UTC, with the Patron NFT snapshot taken earlier that day at 07:00 UTC",
+      "steps": [
+        "Vouchers are valid from TGE and expire on January 30, 2027",
+        "Each voucher type locks in a different fixed FDV, so check the price before redeeming",
+        "Import existing perps wallets from Hyperliquid, Drift, or Synthetix",
+        "More trading volume means faster crate accrual"
+      ],
+      "about": "What is Infinex? Infinex is a multi-chain account protocol that uses smart contracts on EVM chains and Solana to streamline transaction signing and wallet management. The platform employs non-phishable passkeys, enhancing security while simplifying the user experience across different blockchain networks. As users interact with various chains through the Infinex platform—whether bridging assets or sending transactions—a new account contract is automatically deployed on each accessed blockchain. The project has gained significant traction in the crypto space, securing $65.3 million in funding through an NFT sale with backing from notable investors including Framework Ventures, Solana Ventures, and Wintermute. Infinex aims to address key pain points in the blockchain user experience by offering a unified account system that works seamlessly across multiple networks.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Infinex&url=https%3A%2F%2Fairdrops.io%2Finfinex%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Finfinex%2F&text=Infinex",
+        "discord": "https://discord.gg/infinex"
+      },
+      "difficulty": "Easy",
+      "estimated_cost": ". Earning new vouchers through Craterun requires trading perpetuals on Infinex, which involves real capital, so that portion is not free"
+    },
+    {
+      "id": "42",
+      "name": "42",
+      "url": "https://airdrops.io/42/",
+      "heat": 28,
+      "status": "confirmed",
+      "chain": "BSC",
+      "actions": [
+        "42 Actions: Trade Event Markets and Earn Discord Roles"
+      ],
+      "description": "28° Ongoing 42 Actions: Trade Event Markets and Earn Discord Roles CLAIM AIRDROP 116° Ongoing SEKAI Actions: Join testnet, swap and provide liquidity CLAIM AIRDROP 62° Ongoing Confirmed NEAR Protocol Actions: Deposit funds and make swaps CLAIM AIRDROP Ongoing MEXC Actions: Two events with separate reward pools CLAIM AIRDROP Ongoing Akka Finance Actions: Perform swaps and deposit into vault CLAIM A",
+      "source": "airdrops.io",
+      "tge_date": ". Early users who trade actively and engage with the community may be rewarded if a token is introduced in the future",
+      "steps": [
+        "Sports: Match outcomes, player stats, tournament results",
+        "Crypto prices: BTC, ETH, and altcoin price targets",
+        "FDV and fundamentals: Protocol metrics and valuation markets",
+        "Politics and news: Major real-world event outcomes",
+        "Alpha Hunter: Share market insights and submit your wallet to verify trading activity",
+        "Outcome Alchemist: Consistent high-quality insights and active trading on 42",
+        "Signal Amplifier: Awarded weekly to members engaging with 42 posts on X",
+        "Insight Scout: Awarded weekly to members providing product feedback",
+        "Content Alchemist: Awarded weekly for quality content (threads, videos, memes) in the content lab",
+        "Ambassador: Active community builders representing 42"
+      ],
+      "about": "What is 42? 42 (previously Alkimiya) is a decentralized prediction market and asset issuance protocol on BNB Chain that turns real-world events into tradable on-chain assets. Users can create and trade “eventcoins” tied to sports results, political outcomes, crypto price movements, DeFi metrics, and more. 42 raised $7.2M from a notable investor group including Dragonfly, Coinbase Ventures, YZI Labs, Castle Island Ventures, 1kx, and Enlight Capital. Version 2 launched on BNB Chain in May 2026 with live mainnet trading.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=42&url=https%3A%2F%2Fairdrops.io%2F42%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2F42%2F&text=42"
+      },
+      "difficulty": "Easy",
+      "estimated_cost": "s nothing and may compound later"
     },
     {
       "id": "kintara",
       "name": "Kintara",
       "url": "https://airdrops.io/kintara/",
-      "heat": 32,
+      "heat": 26,
       "status": "confirmed",
       "chain": "Solana",
       "actions": [
         "Kintara Actions: Complete daily quests to earn"
       ],
-      "description": "32° Ongoing Confirmed Kintara Actions: Complete daily quests to earn CLAIM AIRDROP",
+      "description": "26° Ongoing Confirmed Kintara Actions: Complete daily quests to earn CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "fees. If you don’t have any, purchase SOL on Binance and withdraw it to your wallet. Step 2: Buy $KINS on PumpSwap Go to PumpSwap , connect your wallet, and swap SOL for $KINS. You need a minimum of 1 $KINS to access the game, though buying a little extra leaves room for paid spins later. Step 3: Connect Your Wallet to Kintara Open the Kintara game and connect the same wallet. Step 4: Complete the Tutorial and Grab Your Tools New characters spawn on the Mainland with no gear. Follow the tutorial NPC near spawn to collect your axe, pickaxe, fishing rod, and hammer. Open your inventory with the I key and drag each tool to a hotbar slot (keys 1 to 6). Step 5: Gather Resources and Complete Daily Quests Equip a tool and click resources to gather them: Wood : Chop trees with an axe on the Mainland or in Whisperwood Stone and coal : Mine rocks with a pickaxe, or use the Mainland Mine interior Fish : Cast a fishing rod at ponds in Whisperwood or the open water in The Pond Check the daily quest UI for objectives like chopping wood, mining stone, or killing mobs. Quests reward gold, items, and XP, which feed directly into your earnings. Step 6: Sell Gold for $KINS on the Marketplace Open the Marketplace from the radar HUD cart icon. Under the gold",
@@ -812,176 +904,16 @@
       "estimated_cost": "3 worth of $KINS each, with half burned and half sent to the treasury, while every gold-for- KINS sale routes 5% to the treasury and 95% to the seller"
     },
     {
-      "id": "forte_protocol",
-      "name": "Forte Protocol",
-      "url": "https://airdrops.io/forte-protocol/",
-      "heat": 29,
-      "status": "confirmed",
-      "chain": "Ethereum",
-      "actions": [
-        "Forte Protocol Actions: Interact with testnet"
-      ],
-      "description": "Ongoing Forte Protocol Actions: Interact with testnet CLAIM AIRDROP 29° Ongoing Confirmed Nado Actions: Deposit & Trade perps CLAIM AIRDROP 405° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP Ongoing Hypertrade Actions: Make swaps & add liquidity CLAIM AIRDROP 55° Ongoing Confirmed Infinex Actions: Claim Now Claim Live CLAIM AIRDROP Ongoing Myriad Markets Actions: M",
-      "source": "airdrops.io",
-      "tge_date": "has been announced, the Pioneer Stone campaign on Galxe strongly suggests a future airdrop",
-      "steps": [
-        "Visit the Fairground rewards page",
-        "Enter your email and complete the verification",
-        "Answer the form questions and submit",
-        "Visit the Galxe Campaign PageGo to the official Forte Protocol Pioneer Stone campaign",
-        "Go to the official Forte Protocol Pioneer Stone campaign",
-        "Connect Your Wallet or Social LoginClick “Connect Wallet” and choose your preferred web3 walletAlternatively, use social login if you don’t have a walletEnsure your account is over 1 month old to be eligible",
-        "Click “Connect Wallet” and choose your preferred web3 wallet",
-        "Alternatively, use social login if you don’t have a wallet",
-        "Ensure your account is over 1 month old to be eligible",
-        "Complete Quest 1: Prove You Can Hear the CallFollow Forte Protocol on X (Twitter)Like and retweet the campaign announcementComplete the verification steps on GalxeEarn 25 points upon completion",
-        "Follow Forte Protocol on X (Twitter)",
-        "Like and retweet the campaign announcement",
-        "Complete the verification steps on Galxe",
-        "Earn 25 points upon completion",
-        "Complete Quest 2: Spread the WordAccess Quest 2 hereComplete the required social media interactionsAnswer quiz questions about Forte’s documentation (review docs at docs.forterulesengine.io)Claim your points after verification",
-        "Access Quest 2 here",
-        "Complete the required social media interactions",
-        "Answer quiz questions about Forte’s documentation (review docs at docs.forterulesengine.io)",
-        "Claim your points after verification",
-        "Complete Quest 3Navigate to Quest 3Follow the specific quest requirementsComplete all tasks to maximize your point accumulation",
-        "Navigate to Quest 3",
-        "Follow the specific quest requirements",
-        "Complete all tasks to maximize your point accumulation",
-        "Monitor for Additional QuestsCheck the Galxe campaign page regularly for new questsFollow Forte Protocol’s official X account for announcementsStay active in the community to catch time-sensitive FCFS opportunities",
-        "Check the Galxe campaign page regularly for new quests",
-        "Follow Forte Protocol’s official X account for announcements",
-        "Stay active in the community to catch time-sensitive FCFS opportunities"
-      ],
-      "about": "What is Forte Protocol? Forte Protocol is a blockchain infrastructure platform that enables developers to build and manage compliant on-chain economies. The platform provides tools for token management, regulatory compliance, and economic stability across digital assets. While initially focused on gaming and NFTs, Forte has expanded to support stablecoins, real-world assets (RWAs), and payment systems. Forte offers an open-source Rules Engine that allows developers to define and enforce custom rules for token operations directly on-chain. This includes controlling minting, transfers, and burning tokens, as well as implementing compliance checks like KYC/AML integration. The platform automates economic mechanisms such as vesting schedules while verifying asset backing for RWAs. Built to be EVM-compatible, Forte works across multiple blockchain networks. Forte has raised approximately $910 million in funding , backed by prominent investors including Andreessen Horowitz (a16z), Solana Ven",
-      "social_links": {
-        "twitter": "https://x.com/ForteProtocol",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fforte-protocol%2F&text=Forte%20Protocol"
-      },
-      "eligibility": "Complete all tasks to maximize your point accumulation Monitor for Additional Quests Check the Galxe campaign page regularly for new quests Follow Forte Protocol’s official X account for announcements Stay active in the community to catch time-sensitive FCFS opportunities Understanding Forte Protocol’s Technology The Rules Engine Forte’s Rules Engine enables developers to program economic logic directly on-chain",
-      "difficulty": "Medium",
-      "estimated_cost": "to Farm Free Overview Website: forte"
-    },
-    {
-      "id": "nado",
-      "name": "Nado",
-      "url": "https://airdrops.io/nado/",
-      "heat": 29,
-      "status": "confirmed",
-      "chain": "Ink",
-      "actions": [
-        "Nado Actions: Deposit",
-        "Trade perps"
-      ],
-      "description": "29° Ongoing Confirmed Nado Actions: Deposit & Trade perps CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "event",
-      "steps": [
-        "ROI Contest ($75,000): Ranks by percentage return, calculated as PNL divided by start value plus net deposits. Both realized and unrealized gains count. Requires a $100 minimum balance and $250,000 in trading volume during the competition.",
-        "Volume Contest ($25,000): Ranks by total notional volume in USDT across all eligible markets. Requires only a $100 minimum balance."
-      ],
-      "about": "What is Nado? Nado is a central-limit orderbook (CLOB) decentralized exchange built on the Ink blockchain, developed by the team behind Kraken. The platform combines spot and perpetual trading through a unified margin system, allowing traders to manage collateral dynamically across multiple positions. Built on Ink, Nado leverages the blockchain’s infrastructure to deliver orderbook-based trading with multiple collateral options and margin trading capabilities. The platform targets traders looking for a comprehensive trading experience that includes both spot markets and leveraged perpetual positions on a single interface.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Nado&url=https%3A%2F%2Fairdrops.io%2Fnado%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fnado%2F&text=Nado"
-      },
-      "eligibility": ", so consistent weekly activity matters more than a single large session",
-      "difficulty": "Medium",
-      "estimated_cost": "to Farm Medium Overview Website: app"
-    },
-    {
-      "id": "near_protocol",
-      "name": "NEAR Protocol",
-      "url": "https://airdrops.io/near-protocol/",
-      "heat": 24,
-      "status": "confirmed",
-      "chain": "Own",
-      "actions": [
-        "NEAR Protocol Actions: Deposit funds and make swaps"
-      ],
-      "description": "24° Ongoing Confirmed NEAR Protocol Actions: Deposit funds and make swaps CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "Date: Triggered by dual milestone ($70M TVL + NEAR price >= $3",
-      "steps": [
-        "Transactions execute inside a NEAR private shard backed by Trusted Execution Environments (TEEs), keeping amounts and counterparties hidden until settlement.",
-        "Distribution Method: On-chain activity score (confidential balance weighted by time + swaps) TGE Date: Triggered by dual milestone ($70M TVL + NEAR price >= $3.",
-        "Allocation is scored by sustained confidential balance weighted by time held, plus confidential swap activity.",
-        "How to farm the [email protected] airdrop Step 1: Visit NEAR website and create an account Go to the NEAR website and sign up if you do not already have an account.",
-        "Consistent users from Drop 1 are well-positioned for future rounds."
-      ],
-      "about": "What is NEAR Protocol? NEAR Protocol is a sharded layer-1 blockchain built around cross-chain execution and privacy. Its main consumer interface lets users swap assets across 35+ chains without manually bridging or managing gas on each network. It has raised over $607 million in total funding and targets high throughput with low fees. The protocol’s defining feature right now is Confidential Intents, launched in February 2026. Transactions execute inside a NEAR private shard backed by Trusted Execution Environments (TEEs), keeping amounts and counterparties hidden until settlement.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=NEAR%20Protocol&url=https%3A%2F%2Fairdrops.io%2Fnear-protocol%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fnear-protocol%2F&text=NEAR%20Protocol",
-        "github": "https://github.com/near"
-      },
-      "eligibility": ". Step 6: Keep your balance above $100 and keep swapping Allocation is time-weighted, so consistent holding over weeks scores considerably higher than a balance added close to the snapshot",
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Medium Overview Website: near"
-    },
-    {
-      "id": "mexc",
-      "name": "MEXC",
-      "url": "https://airdrops.io/mexc/",
-      "heat": 24,
-      "status": "active",
-      "chain": "",
-      "actions": [
-        "MEXC Actions: Two events with separate reward pools"
-      ],
-      "description": "24° Ongoing MEXC Actions: Two events with separate reward pools CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "Date : N/A — USDT rewards paid out after the event ends Vesting Schedule : N/A The breakdown is as follows: 7 million USDT for daily trading rewards, 2 million USDT for team PNL performance, and 1 million USDT for individual PNL rate rankings",
-      "steps": [
-        "Become a Team Leader: Apply before April 27, 2026. The leaders of the top 10 teams by futures PNL split the team prize pool. The Early Bird bonus is for teams that form with 10 or more members before April 12. The first 100 teams to form get 100 USDT, and the top 20 teams with the most members get 500 USDT.",
-        "Join a Team: Join before April 27, 2026. Teams need a minimum of 10 members. As a member, you’re eligible for both team and individual rewards at the same time."
-      ],
-      "about": "What is MEXC? MEXC is a centralized cryptocurrency exchange that started in 2018 and has more than 40 million users in over 170 countries. It has about 3,000 spot trading pairs and lists more than 3,000 coins and tokens, including Bitcoin, Ethereum, Solana, and several altcoins in the DeFi, GameFi, AI, and memecoin sectors. The platform has spot trading, futures, margin, and ETF products, as well as a Launchpad for early access to tokens. MEXC puts out Proof of Reserves reports every two months and has an insurance fund worth $526 million. Holders of its native token, MX, get discounts on fees, access to Launchpool, and first dibs on Kickstarter events. MEXC is popular with traders who want to get in on projects before they hit the bigger exchanges because it tends to list trending tokens early.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=MEXC&url=https%3A%2F%2Fairdrops.io%2Fmexc%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fmexc%2F&text=MEXC"
-      },
-      "eligibility": "E-Mail required Goto airdrop MEXC Airdrop June 2025 Total value: n/a MEXC Exclusive Airdrops",
-      "difficulty": "Easy",
-      "estimated_cost": "nothing"
-    },
-    {
-      "id": "questflow",
-      "name": "Questflow",
-      "url": "https://airdrops.io/questflow/",
-      "heat": 24,
-      "status": "confirmed",
-      "chain": "Base",
-      "actions": [
-        "Questflow Actions: Create AI clone and refer users"
-      ],
-      "description": "24° Ongoing Confirmed Questflow Actions: Create AI clone and refer users CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "? Questflow has not announced a token launch date",
-      "steps": [
-        "Post about your trading experience with screenshots",
-        "Complete a minimum trade through your Clone",
-        "Follow Questflow’s social accounts"
-      ],
-      "about": "What is Questflow AI? Questflow is a decentralized AI agentic brokerage that lets users build, deploy, and monetize autonomous trading agents called Clones. Each Clone gets its own wallet, scans markets 24/7, and executes trades on platforms like Hyperliquid and Polymarket . Questflow has raised around $8M total , with a seed round backed by Cyber Fund, Delphi Labs, Animoca Brands, HashKey Capital, and Eden Block, among others. The platform is live, with active trading, Clone creation, and campaign activity already running.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Questflow&url=https%3A%2F%2Fairdrops.io%2Fquestflow%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fquestflow%2F&text=Questflow"
-      },
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Medium Overview Website: questflow"
-    },
-    {
       "id": "minotaurus",
       "name": "Minotaurus",
       "url": "https://airdrops.io/minotaurus/",
-      "heat": 23,
+      "heat": 22,
       "status": "active",
       "chain": "BSC",
       "actions": [
         "Minotaurus Actions: Earn tickets to enter $100k giveaway"
       ],
-      "description": "23° Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored",
+      "description": "22° Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored",
       "source": "airdrops.io",
       "steps": [
         "500 USDT spent = 10 extra tickets",
@@ -1002,34 +934,107 @@
         "twitter": "https://x.com/minotaurus_io",
         "telegram": "https://t.me/minotaurus_chat"
       },
-      "eligibility": "Telegram Twitter / X More Airdrops to Farm Nansen Ongoing Arbitrum, Avalanche View Guide → Billions Network Ongoing BSC View Guide → Binance Ended BSC, Ethereum View Guide → Genius Ongoing BSC, Ethereum View Guide → Ultramarkets Ongoing Arbitrum, BSC View Guide → Derivio Ongoing BSC, Solana View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications"
+      "eligibility": "Telegram Twitter / X More Airdrops to Farm 42 Ongoing BSC View Guide → Nansen Ongoing Arbitrum, Avalanche View Guide → Billions Network Ongoing BSC View Guide → Binance Ended BSC, Ethereum View Guide → Genius Ongoing BSC, Ethereum View Guide → Ultramarkets Ongoing Arbitrum, BSC View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications"
     },
     {
-      "id": "huma_finance",
-      "name": "Huma Finance",
-      "url": "https://airdrops.io/huma-finance/",
-      "heat": 21,
+      "id": "aci",
+      "name": "ACI",
+      "url": "https://airdrops.io/aci/",
+      "heat": 22,
       "status": "confirmed",
-      "chain": "Ethereum",
+      "chain": "Own",
       "actions": [
-        "Huma Finance Actions: Check Eligibility"
+        "ACI Actions: Claim free testnet tokens",
+        "swap and complete missions"
       ],
-      "description": "21° Ongoing Confirmed Huma Finance Actions: Check Eligibility Claim Live CLAIM AIRDROP",
+      "description": "22° Ongoing Confirmed ACI Actions: Claim free testnet tokens, swap and complete missions CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "and operates a continuous allocation model, so further seasons are likely as long as the program continues",
       "steps": [
-        "Classic: Earns real yield (around 10.5% APY, updated monthly) plus a base rate of Feathers. Best if you want returns alongside airdrop points.",
-        "Maxi: Earns 0% APY but generates up to 5x the Feathers of Classic mode. Best if you are optimizing purely for allocation."
+        "Finish your missions before then to qualify.",
+        "To qualify for the 30,000,000 $ACI testnet allocation, complete your missions and Zealy quests before that date.",
+        "Claiming Sepolia ETH, swapping for $ACI, staking, and clearing missions takes little capital and positions you for the distribution ahead of the June 30, 2026 deadline."
       ],
-      "about": "What is Huma Finance? Huma Finance is the first PayFi network in the crypto space, focusing on revolutionizing global payment settlements using blockchain technology. The platform enables payment institutions worldwide to settle transactions 24/7 using stablecoins and on-chain liquidity, addressing the inefficiencies of traditional financial infrastructure. Huma brings increased speed, transparency, and efficiency to cross-border payments and settlements. The project has gained significant traction, having processed over $3.8 billion in transaction volume to date. Huma’s unique approach to payment infrastructure has attracted backing from major players in the blockchain industry, including Solana, Circle, Stellar Development Foundation (SDF), and Galaxy Digital. The project has raised $46.30 million in funding from investors such as HashKey Capital, Circle, and ParaFi Capital.",
+      "about": "What is ACI? ACI is an early-stage blockchain that describes itself as the first AI blockchain built on post-quantum cryptography. Post-quantum cryptography is the project’s main differentiator: it uses encryption meant to resist attacks from future quantum computers, a problem other post-quantum chains are also working on.",
       "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Huma%20Finance&url=https%3A%2F%2Fairdrops.io%2Fhuma-finance%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fhuma-finance%2F&text=Huma%20Finance",
-        "github": "https://github.com/00labs"
+        "twitter": "https://x.com/ACIToken/status/2059952826701300155",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Faci%2F&text=ACI",
+        "discord": "https://discord.gg/JUFrqe55PM"
       },
-      "eligibility": "Chain: Ethereum, Solana Claim Live What is Huma Finance? Huma Finance is the first PayFi network in the crypto space, focusing on revolutionizing global payment settlements using blockchain technology",
+      "eligibility": ". Step 4: Stake ACI to Unlock Missions On the staking page, stake your ACI tokens",
+      "difficulty": "Easy",
+      "estimated_cost": ", and rewards come from completing on-chain activity and quests rather than buying anything"
+    },
+    {
+      "id": "mexc",
+      "name": "MEXC",
+      "url": "https://airdrops.io/mexc/",
+      "heat": 0,
+      "status": "active",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing MEXC Actions: Two events with separate reward pools CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "Date : N/A — USDT rewards paid out after the event ends Vesting Schedule : N/A The breakdown is as follows: 7 million USDT for daily trading rewards, 2 million USDT for team PNL performance, and 1 million USDT for individual PNL rate rankings",
+      "steps": [
+        "Become a Team Leader: Apply before April 27, 2026. The leaders of the top 10 teams by futures PNL split the team prize pool. The Early Bird bonus is for teams that form with 10 or more members before April 12. The first 100 teams to form get 100 USDT, and the top 20 teams with the most members get 500 USDT.",
+        "Join a Team: Join before April 27, 2026. Teams need a minimum of 10 members. As a member, you’re eligible for both team and individual rewards at the same time."
+      ],
+      "about": "What is MEXC? MEXC is a centralized cryptocurrency exchange that started in 2018 and has more than 40 million users in over 170 countries. It has about 3,000 spot trading pairs and lists more than 3,000 coins and tokens, including Bitcoin, Ethereum, Solana, and several altcoins in the DeFi, GameFi, AI, and memecoin sectors. The platform has spot trading, futures, margin, and ETF products, as well as a Launchpad for early access to tokens. MEXC puts out Proof of Reserves reports every two months and has an insurance fund worth $526 million. Holders of its native token, MX, get discounts on fees, access to Launchpool, and first dibs on Kickstarter events. MEXC is popular with traders who want to get in on projects before they hit the bigger exchanges because it tends to list trending tokens early.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=MEXC&url=https%3A%2F%2Fairdrops.io%2Fmexc%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fmexc%2F&text=MEXC"
+      },
+      "eligibility": "E-Mail required Goto airdrop MEXC Airdrop June 2025 Total value: n/a MEXC Exclusive Airdrops",
+      "difficulty": "Easy",
+      "estimated_cost": "nothing"
+    },
+    {
+      "id": "akka_finance",
+      "name": "Akka Finance",
+      "url": "https://airdrops.io/akka-finance/",
+      "heat": 0,
+      "status": "active",
+      "chain": "Hyperliquid",
+      "actions": [],
+      "description": "Ongoing Akka Finance Actions: Perform swaps and deposit into vault CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "tied to current platform activity",
+      "steps": [
+        "Ongoing Akka Finance Airdrop Details Akka Finance has not announced a confirmed airdrop, points program, or token launch tied to current platform activity.",
+        "Being an early depositor on record puts you ahead of users who join after any rewards announcement."
+      ],
+      "about": "What is Akka Finance? Akka Finance is a liquidity aggregator and execution layer built for on-chain trading. Rather than routing swaps through a single venue, it splits and routes orders across multiple sources to match quoted prices with minimal slippage. The platform launched on Hyperliquid and has processed over $200M in volume across 1M+ transactions, with multi-chain expansion planned. Akka also runs the Hyper AI Vault, an automated perp strategy that takes directional long/short positions on top Hyperliquid assets using a proprietary AI model. The vault has been live since April 15, 2026.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Akka%20Finance&url=https%3A%2F%2Fairdrops.io%2Fakka-finance%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fakka-finance%2F&text=Akka%20Finance",
+        "github": "https://github.com/Akka-Finance"
+      },
       "difficulty": "Medium",
-      "estimated_cost": "to Farm Medium Overview Website: huma"
+      "estimated_cost": "to Farm Medium Overview Website: akka"
+    },
+    {
+      "id": "questflow",
+      "name": "Questflow",
+      "url": "https://airdrops.io/questflow/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "Base",
+      "actions": [],
+      "description": "Ongoing Confirmed Questflow Actions: Create AI clone and refer users CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "? Questflow has not announced a token launch date",
+      "steps": [
+        "Post about your trading experience with screenshots",
+        "Complete a minimum trade through your Clone",
+        "Follow Questflow’s social accounts"
+      ],
+      "about": "What is Questflow AI? Questflow is a decentralized AI agentic brokerage that lets users build, deploy, and monetize autonomous trading agents called Clones. Each Clone gets its own wallet, scans markets 24/7, and executes trades on platforms like Hyperliquid and Polymarket . Questflow has raised around $8M total , with a seed round backed by Cyber Fund, Delphi Labs, Animoca Brands, HashKey Capital, and Eden Block, among others. The platform is live, with active trading, Clone creation, and campaign activity already running.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Questflow&url=https%3A%2F%2Fairdrops.io%2Fquestflow%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fquestflow%2F&text=Questflow"
+      },
+      "difficulty": "Easy",
+      "estimated_cost": "to Farm Medium Overview Website: questflow"
     },
     {
       "id": "zoth",
@@ -1106,50 +1111,53 @@
       "estimated_cost": "nothing: Sepolia ETH for gas: claim from the Alchemy Arbitrum Sepolia faucet"
     },
     {
-      "id": "crisp",
-      "name": "CRISP",
-      "url": "https://airdrops.io/crisp/",
+      "id": "forte_protocol",
+      "name": "Forte Protocol",
+      "url": "https://airdrops.io/forte-protocol/",
       "heat": 0,
       "status": "active",
-      "chain": "Polygon",
+      "chain": "Ethereum",
       "actions": [],
-      "description": "Ongoing CRISP Actions: Join public beta and refer CLAIM AIRDROP",
+      "description": "Ongoing Forte Protocol Actions: Interact with testnet CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "date, and no airdrop is currently confirmed",
+      "tge_date": "has been announced, the Pioneer Stone campaign on Galxe strongly suggests a future airdrop",
       "steps": [
-        "available today. Join public beta You're interested in more projects that do not have any token yet and could potentially airdrop a governance token to early users in the future? Then check out our list of potential retroactive airdrops to not miss out on the next DeFi airdrop! More Airdrops to Farm Nansen Ongoing Arbitrum, Avalanche View Guide → Otomato Ongoing Arbitrum, Base View Guide → Poly Helper Ongoing Polygon View Guide → Robin Markets Ongoing Polygon View Guide → Ultramarkets Ongoing Arbitrum, BSC View Guide → PolyGun Ongoing Polygon View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Difficulty Medium Cost to Farm Medium Overview Website: crisp.trade Ticker: CRISP Documentation: Visit now X (Formerly Twitter): Telegram Group: X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
+        "Visit the Fairground rewards page",
+        "Enter your email and complete the verification",
+        "Answer the form questions and submit",
+        "Visit the Galxe Campaign PageGo to the official Forte Protocol Pioneer Stone campaign",
+        "Go to the official Forte Protocol Pioneer Stone campaign",
+        "Connect Your Wallet or Social LoginClick “Connect Wallet” and choose your preferred web3 walletAlternatively, use social login if you don’t have a walletEnsure your account is over 1 month old to be eligible",
+        "Click “Connect Wallet” and choose your preferred web3 wallet",
+        "Alternatively, use social login if you don’t have a wallet",
+        "Ensure your account is over 1 month old to be eligible",
+        "Complete Quest 1: Prove You Can Hear the CallFollow Forte Protocol on X (Twitter)Like and retweet the campaign announcementComplete the verification steps on GalxeEarn 25 points upon completion",
+        "Follow Forte Protocol on X (Twitter)",
+        "Like and retweet the campaign announcement",
+        "Complete the verification steps on Galxe",
+        "Earn 25 points upon completion",
+        "Complete Quest 2: Spread the WordAccess Quest 2 hereComplete the required social media interactionsAnswer quiz questions about Forte’s documentation (review docs at docs.forterulesengine.io)Claim your points after verification",
+        "Access Quest 2 here",
+        "Complete the required social media interactions",
+        "Answer quiz questions about Forte’s documentation (review docs at docs.forterulesengine.io)",
+        "Claim your points after verification",
+        "Complete Quest 3Navigate to Quest 3Follow the specific quest requirementsComplete all tasks to maximize your point accumulation",
+        "Navigate to Quest 3",
+        "Follow the specific quest requirements",
+        "Complete all tasks to maximize your point accumulation",
+        "Monitor for Additional QuestsCheck the Galxe campaign page regularly for new questsFollow Forte Protocol’s official X account for announcementsStay active in the community to catch time-sensitive FCFS opportunities",
+        "Check the Galxe campaign page regularly for new quests",
+        "Follow Forte Protocol’s official X account for announcements",
+        "Stay active in the community to catch time-sensitive FCFS opportunities"
       ],
-      "about": "What is CRISP? CRISP is an intelligence and execution terminal for prediction markets, built primarily around Polymarket . It brings smart money tracking, algorithmic market screening, fast execution, and copy trading into one interface designed for both human traders and AI agents.",
+      "about": "What is Forte Protocol? Forte Protocol is a blockchain infrastructure platform that enables developers to build and manage compliant on-chain economies. The platform provides tools for token management, regulatory compliance, and economic stability across digital assets. While initially focused on gaming and NFTs, Forte has expanded to support stablecoins, real-world assets (RWAs), and payment systems. Forte offers an open-source Rules Engine that allows developers to define and enforce custom rules for token operations directly on-chain. This includes controlling minting, transfers, and burning tokens, as well as implementing compliance checks like KYC/AML integration. The platform automates economic mechanisms such as vesting schedules while verifying asset backing for RWAs. Built to be EVM-compatible, Forte works across multiple blockchain networks. Forte has raised approximately $910 million in funding , backed by prominent investors including Andreessen Horowitz (a16z), Solana Ven",
       "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=CRISP&url=https%3A%2F%2Fairdrops.io%2Fcrisp%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fcrisp%2F&text=CRISP"
+        "twitter": "https://x.com/ForteProtocol",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fforte-protocol%2F&text=Forte%20Protocol"
       },
+      "eligibility": "Complete all tasks to maximize your point accumulation Monitor for Additional Quests Check the Galxe campaign page regularly for new quests Follow Forte Protocol’s official X account for announcements Stay active in the community to catch time-sensitive FCFS opportunities Understanding Forte Protocol’s Technology The Rules Engine Forte’s Rules Engine enables developers to program economic logic directly on-chain",
       "difficulty": "Medium",
-      "estimated_cost": "s $207 to $267 and unlocks premium features, early access to the upcoming AI agent, and Inner Circle membership"
-    },
-    {
-      "id": "hypertrade",
-      "name": "Hypertrade",
-      "url": "https://airdrops.io/hypertrade/",
-      "heat": 0,
-      "status": "active",
-      "chain": "Hyperliquid",
-      "actions": [],
-      "description": "Ongoing Hypertrade Actions: Make swaps & add liquidity CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": ", but the points system is live and accumulating rewards for early users",
-      "steps": [
-        "At the end of the stage, HYPE tokens will be distributed to contributors.",
-        "Activity before the stage ends counts toward the initial distribution."
-      ],
-      "about": "What is Hypertrade? Hypertrade is a DEX aggregator built specifically for the Hyperliquid ecosystem, designed to help users find the best rates when swapping crypto across both HyperCore and HyperEVM. The platform searches across multiple decentralized exchanges including Hyperliquid Spot, Hyperswap, and Prjx to identify the most favorable swap rates. When executing trades, Hypertrade automatically splits orders across different exchanges if needed to maximize output and minimize slippage. The platform uses Invisium Swap Simulations to simulate complex swap paths before execution, ensuring 100% accurate swap quotes for users.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Hypertrade&url=https%3A%2F%2Fairdrops.io%2Fhypertrade%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fhypertrade%2F&text=Hypertrade",
-        "discord": "https://discord.gg/hypertrade"
-      },
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Medium Overview Website: ht"
+      "estimated_cost": "to Farm Free Overview Website: forte"
     },
     {
       "id": "myriad_markets",
@@ -1174,6 +1182,31 @@
       },
       "difficulty": "Medium",
       "estimated_cost": "anything to sign up for and finish social quests"
+    },
+    {
+      "id": "huma_finance",
+      "name": "Huma Finance",
+      "url": "https://airdrops.io/huma-finance/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Ongoing Confirmed Huma Finance Actions: Check Eligibility Claim Live CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "and operates a continuous allocation model, so further seasons are likely as long as the program continues",
+      "steps": [
+        "Classic: Earns real yield (around 10.5% APY, updated monthly) plus a base rate of Feathers. Best if you want returns alongside airdrop points.",
+        "Maxi: Earns 0% APY but generates up to 5x the Feathers of Classic mode. Best if you are optimizing purely for allocation."
+      ],
+      "about": "What is Huma Finance? Huma Finance is the first PayFi network in the crypto space, focusing on revolutionizing global payment settlements using blockchain technology. The platform enables payment institutions worldwide to settle transactions 24/7 using stablecoins and on-chain liquidity, addressing the inefficiencies of traditional financial infrastructure. Huma brings increased speed, transparency, and efficiency to cross-border payments and settlements. The project has gained significant traction, having processed over $3.8 billion in transaction volume to date. Huma’s unique approach to payment infrastructure has attracted backing from major players in the blockchain industry, including Solana, Circle, Stellar Development Foundation (SDF), and Galaxy Digital. The project has raised $46.30 million in funding from investors such as HashKey Capital, Circle, and ParaFi Capital.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Huma%20Finance&url=https%3A%2F%2Fairdrops.io%2Fhuma-finance%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fhuma-finance%2F&text=Huma%20Finance",
+        "github": "https://github.com/00labs"
+      },
+      "eligibility": "Chain: Ethereum, Solana Claim Live What is Huma Finance? Huma Finance is the first PayFi network in the crypto space, focusing on revolutionizing global payment settlements using blockchain technology",
+      "difficulty": "Medium",
+      "estimated_cost": "to Farm Medium Overview Website: huma"
     },
     {
       "id": "deepbook",
@@ -1209,9 +1242,31 @@
       "description": "How to get free crypto airdrops? Cryptocurrency airdrops typically require users to complete simple tasks like following social media accounts, sharing posts, or signing up for newsletters. They might also include interacting with crypto DApps. Check reputable crypto websites for current airdrop opportunities.",
       "source": "airdrops.io",
       "steps": [
-        "Join testnet, swap and provide liquidity CLAIM AIRDROP 24° Ongoing Confirmed NEAR Protocol Actions: Deposit funds and make swaps CLAIM AIRDROP 24° Ongoing MEXC Actions: Two events with separate reward pools CLAIM AIRDROP 33° Ongoing Akka Finance Actions: Perform swaps and deposit into vault CLAIM AIRDROP 387° Ongoing Bybit Actions: Place prediction and hold your position CLAIM AIRDROP 23° Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored 24° Ongoing Confirmed Questflow Actions: Create AI clone and refer users CLAIM AIRDROP Ongoing Zoth Actions: Deposit and earn CLAIM AIRDROP 37° Ongoing Confirmed ACI Actions: Claim free testnet tokens, swap and complete missions CLAIM AIRDROP 32° Ongoing Confirmed Kintara Actions: Complete daily quests to earn CLAIM AIRDROP Ongoing Umbra Actions: Join waitlist & refer friends CLAIM AIRDROP Ongoing Caster Actions: Join testnet and place predictions CLAIM AIRDROP Ongoing CRISP Actions: Join public beta and refer CLAIM AIRDROP Ongoing Canborsa Actions: Complete social quests and refer users CLAIM AIRDROP Ongoing Pod Network Actions: Join testnet, deposit USDC & claim role CLAIM AIRDROP Ongoing Doma Protocol Actions: Trade, provide liquidity & refer friends CLAIM AIRDROP Ongoing HLOS Actions: Install App, Trade & Stake for Points CLAIM AIRDROP Ongoing Catena Actions: Join waitlist CLAIM AIRDROP X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
+        "Trade Event Markets and Earn Discord Roles CLAIM AIRDROP 116° Ongoing SEKAI Actions: Join testnet, swap and provide liquidity CLAIM AIRDROP 62° Ongoing Confirmed NEAR Protocol Actions: Deposit funds and make swaps CLAIM AIRDROP Ongoing MEXC Actions: Two events with separate reward pools CLAIM AIRDROP Ongoing Akka Finance Actions: Perform swaps and deposit into vault CLAIM AIRDROP 22° Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored 383° Ongoing Bybit Actions: Place prediction and hold your position CLAIM AIRDROP Ongoing Confirmed Questflow Actions: Create AI clone and refer users CLAIM AIRDROP Ongoing Zoth Actions: Deposit and earn CLAIM AIRDROP 22° Ongoing Confirmed ACI Actions: Claim free testnet tokens, swap and complete missions CLAIM AIRDROP 26° Ongoing Confirmed Kintara Actions: Complete daily quests to earn CLAIM AIRDROP Ongoing Umbra Actions: Join waitlist & refer friends CLAIM AIRDROP Ongoing Caster Actions: Join testnet and place predictions CLAIM AIRDROP Ongoing CRISP Actions: Join public beta and refer CLAIM AIRDROP Ongoing Canborsa Actions: Complete social quests and refer users CLAIM AIRDROP Ongoing Pod Network Actions: Join testnet, deposit USDC & claim role CLAIM AIRDROP Ongoing Doma Protocol Actions: Trade, provide liquidity & refer friends CLAIM AIRDROP Ongoing HLOS Actions: Install App, Trade & Stake for Points CLAIM AIRDROP X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
       ],
       "about": "Here you will find the most recent airdrop campaigns. Click on a drop to see more information and to find a step-by-step guide to claiming some free crypto"
+    },
+    {
+      "id": "crisp",
+      "name": "CRISP",
+      "url": "https://airdrops.io/crisp/",
+      "heat": 0,
+      "status": "active",
+      "chain": "Polygon",
+      "actions": [],
+      "description": "Ongoing CRISP Actions: Join public beta and refer CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "date, and no airdrop is currently confirmed",
+      "steps": [
+        "available today. Join public beta You're interested in more projects that do not have any token yet and could potentially airdrop a governance token to early users in the future? Then check out our list of potential retroactive airdrops to not miss out on the next DeFi airdrop! More Airdrops to Farm Nansen Ongoing Arbitrum, Avalanche View Guide → Otomato Ongoing Arbitrum, Base View Guide → Poly Helper Ongoing Polygon View Guide → Robin Markets Ongoing Polygon View Guide → Ultramarkets Ongoing Arbitrum, BSC View Guide → PolyGun Ongoing Polygon View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Difficulty Medium Cost to Farm Medium Overview Website: crisp.trade Ticker: CRISP Documentation: Visit now X (Formerly Twitter): Telegram Group: X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
+      ],
+      "about": "What is CRISP? CRISP is an intelligence and execution terminal for prediction markets, built primarily around Polymarket . It brings smart money tracking, algorithmic market screening, fast execution, and copy trading into one interface designed for both human traders and AI agents.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=CRISP&url=https%3A%2F%2Fairdrops.io%2Fcrisp%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fcrisp%2F&text=CRISP"
+      },
+      "difficulty": "Medium",
+      "estimated_cost": "s $207 to $267 and unlocks premium features, early access to the upcoming AI agent, and Inner Circle membership"
     }
   ]
 }
