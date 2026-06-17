@@ -1,6 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
 import { ipoStocks } from '../data/ipoData';
 import type { IPOStock } from '../data/ipoData';
+import { screenerFinancialData } from '../data/screenerFinancialData';
+import ScreenerFinancialSections from '../components/ScreenerFinancialSections';
 import PageSeo from '../components/PageSeo';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { canonical, slugify } from '../seo/config';
@@ -139,6 +141,7 @@ export default function IPODetailPage() {
   };
 
   const hasDetailedAnalysis = !!(stock.executiveSummary || stock.businessOverview || stock.financialAnalysis);
+  const financialAnalysis = screenerFinancialData[stock.company];
 
   return (
     <>
@@ -386,6 +389,17 @@ export default function IPODetailPage() {
               </div>
             )}
           </SectionBox>
+        )}
+
+        {/* SCREENER.IN COMPREHENSIVE FINANCIAL ANALYSIS */}
+        {financialAnalysis && (
+          <section className="mb-6">
+            <div className="flex items-center gap-2 mb-4">
+              <BarChart3 className="w-5 h-5 text-brand-light" />
+              <h2 className="text-lg font-semibold text-surface-white">Comprehensive Financial Analysis</h2>
+            </div>
+            <ScreenerFinancialSections financials={financialAnalysis} />
+          </section>
         )}
 
         {/* AI RESEARCH ANALYSIS */}

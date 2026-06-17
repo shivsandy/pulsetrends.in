@@ -1,8 +1,11 @@
-import { useEffect, useRef } from 'react';
-import { X, Building2, Calendar, Brain, AlertTriangle, CheckCircle2, Lightbulb, FileText, Cpu, Leaf, FlaskConical, Landmark, Sprout, ArrowUpRight } from 'lucide-react';
+import { useEffect, useRef, useMemo } from 'react';
+import { X, Building2, Calendar, Brain, AlertTriangle, CheckCircle2, Lightbulb, FileText, Cpu, Leaf, FlaskConical, Landmark, Sprout, ArrowUpRight, BarChart3 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import type { IPOStock } from '../data/ipoData';
 import { getDateDisplay } from '../utils/ipoDisplay';
+import { screenerFinancialData } from '../data/screenerFinancialData';
+import type { CompanyFinancialAnalysis } from '../data/screenerFinancialData';
+import ScreenerFinancialSections from './ScreenerFinancialSections';
 import ScoreRing from './ScoreRing';
 import Badge from './Badge';
 
@@ -43,6 +46,9 @@ function ScoreCard({ label, score }: { label: string; score: number }) {
 export default function IPOModal({ stock, slug, onClose }: IPOModalProps) {
   const overlayRef = useRef<HTMLDivElement>(null);
   const SectorIcon = sectorIcons[stock.sector] || Building2;
+  const financialAnalysis: CompanyFinancialAnalysis | undefined = useMemo(() => {
+    return screenerFinancialData[stock.company] || undefined;
+  }, [stock.company]);
 
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
@@ -242,6 +248,16 @@ export default function IPOModal({ stock, slug, onClose }: IPOModalProps) {
               </div>
             </div>
           ) : null}
+
+          {/* SCREENER.IN FINANCIAL ANALYSIS */}
+          {financialAnalysis && (
+            <div className="mb-6">
+              <h3 className="text-sm font-semibold text-surface-white mb-3 flex items-center gap-2">
+                <BarChart3 className="w-4 h-4 text-brand-light" /> Comprehensive Financial Analysis
+              </h3>
+              <ScreenerFinancialSections financials={financialAnalysis} />
+            </div>
+          )}
 
           {/* LINK TO FULL PAGE */}
           <div className="pt-4 border-t border-surface-300/40 flex items-center justify-between">

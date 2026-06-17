@@ -179,6 +179,26 @@ def generate_ipo_data():
     analysis_data = load_json(os.path.join(DATA_DIR, "ipo_analysis.json"))
     ipos = ipos_data.get("ipos", [])
 
+    # Load screener.in data (upcoming + recent IPOs within 30 days)
+    screener_data = load_json(os.path.join(DATA_DIR, "screener_ipos.json"))
+    screener_ipos = screener_data.get("ipos", []) if isinstance(screener_data, dict) else []
+    if screener_ipos:
+        print(f"[DataGen] Loaded {len(screener_ipos)} screener.in IPOs for merging")
+        # Merge: add screener IPOs that don't already exist (dedup by name)
+        existing_names = set()
+        for ipo in ipos:
+            name = (ipo.get("name") or ipo.get("company_name", "")).lower().strip()
+            if name:
+                existing_names.add(name)
+        merged_count = 0
+        for sipo in screener_ipos:
+            sname = (sipo.get("name") or "").lower().strip()
+            if sname and sname not in existing_names:
+                ipos.append(sipo)
+                existing_names.add(sname)
+                merged_count += 1
+        print(f"[DataGen] Merged {merged_count} new screener.in IPOs into list ({len(ipos)} total)")
+
     # Load master database for fallback analysis (covers all 2001 IPOs)
     master_db = load_json(os.path.join(DATA_DIR, "ipo_master_database.json"))
     master_lookup = {}

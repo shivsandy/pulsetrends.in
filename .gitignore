@@ -11,3 +11,9 @@ __pycache__
 
 # Build artifacts
 assets/
+
+# CommandCode agent config
+.commandcode/
+
+# Debug scripts
+_debug_tcs.py
