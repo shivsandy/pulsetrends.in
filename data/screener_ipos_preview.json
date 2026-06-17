@@ -80,21 +80,21 @@
     "name": "Horizon Reclaim",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-06-19",
+    "listingDate": "2026-06-18",
     "marketCap": 201.0
   },
   {
     "name": "Susan Electrical",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-06-18",
+    "listingDate": "2026-06-17",
     "marketCap": 258.0
   },
   {
     "name": "Utkal Speciality",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-06-17",
+    "listingDate": "yesterday",
     "marketCap": 129.0
   },
   {
@@ -6986,17 +6986,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sonalis Consumer",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-06-19",
-    "marketCap": 0
-  },
-  {
     "name": "Utkal Speciality",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2026-06-17",
+    "listingDate": "yesterday",
     "marketCap": 129.0
   },
   {
@@ -11054,6 +11047,13 @@
   },
   {
     "name": "Oasis Securities",
+    "status": "rights",
+    "source_category": "rights",
+    "listingDate": "",
+    "marketCap": 0
+  },
+  {
+    "name": "Marg Techno-Proj",
     "status": "rights",
     "source_category": "rights",
     "listingDate": "",
