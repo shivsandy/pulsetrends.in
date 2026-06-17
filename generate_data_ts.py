@@ -168,61 +168,27 @@ def _extract_comp_analysis(comp_entry: dict) -> dict:
     }
 
 def generate_ipo_data():
-    new_path = os.path.join(DATA_DIR, "ipo_data.json")
-    legacy_path = os.path.join(DATA_DIR, "ipos.json")
-    if os.path.exists(new_path):
-        ipos_data = load_json(new_path)
-        print(f"[DataGen] Using new ipo_data.json ({len(ipos_data.get('ipos', []))} IPOs)")
-    else:
-        ipos_data = load_json(legacy_path)
-        print(f"[DataGen] Using legacy ipos.json ({len(ipos_data.get('ipos', []))} IPOs)")
-    analysis_data = load_json(os.path.join(DATA_DIR, "ipo_analysis.json"))
-    ipos = ipos_data.get("ipos", [])
-
-    # Load screener.in data (upcoming + recent IPOs within 30 days)
+    # Primary source: screener.in data only
     screener_data = load_json(os.path.join(DATA_DIR, "screener_ipos.json"))
-    screener_ipos = screener_data.get("ipos", []) if isinstance(screener_data, dict) else []
-    if screener_ipos:
-        print(f"[DataGen] Loaded {len(screener_ipos)} screener.in IPOs for merging")
-        # Merge: add screener IPOs that don't already exist (dedup by name)
-        existing_names = set()
-        for ipo in ipos:
-            name = (ipo.get("name") or ipo.get("company_name", "")).lower().strip()
-            if name:
-                existing_names.add(name)
-        merged_count = 0
-        for sipo in screener_ipos:
-            sname = (sipo.get("name") or "").lower().strip()
-            if sname and sname not in existing_names:
-                ipos.append(sipo)
-                existing_names.add(sname)
-                merged_count += 1
-        print(f"[DataGen] Merged {merged_count} new screener.in IPOs into list ({len(ipos)} total)")
+    ipos = screener_data.get("ipos", []) if isinstance(screener_data, dict) else []
+    print(f"[DataGen] Using {len(ipos)} screener.in IPOs as data source.")
 
-    # Load master database for fallback analysis (covers all 2001 IPOs)
+    analysis_data = load_json(os.path.join(DATA_DIR, "ipo_analysis.json"))
+
+    # Load master database for fallback scores
     master_db = load_json(os.path.join(DATA_DIR, "ipo_master_database.json"))
     master_lookup = {}
     for mipo in master_db.get("ipos", []):
         key = mipo.get("company_name", "").lower().strip()
         if key:
             master_lookup[key] = mipo
-    print(f"[DataGen] Loaded {len(master_lookup)} master DB entries for fallback analysis")
+    print(f"[DataGen] Loaded {len(master_lookup)} master DB entries for score fallback.")
 
-    # Load comprehensive analysis JSON for per-IPO scores
+    # Load comprehensive analysis JSON (44-section format)
     comp_analysis = load_json(os.path.join(DATA_DIR, "..", "src", "data", "ipoComprehensiveAnalysis.json"))
-    print(f"[DataGen] Loaded {len(comp_analysis)} comprehensive analysis entries")
+    print(f"[DataGen] Loaded {len(comp_analysis)} comprehensive analysis entries (44 sections).")
 
-    # Build company-name-based lookup for comp analysis
-    comp_by_name = {}
-    for ckey, centry in comp_analysis.items():
-        # Extract company name from key by removing trailing -{number}
-        cname_key = re.sub(r'-\d+$', '', ckey).strip()
-        if cname_key and isinstance(centry, dict) and centry.get('business_overview'):
-            if cname_key not in comp_by_name:
-                comp_by_name[cname_key] = centry
-    print(f"[DataGen] Built name-based lookup: {len(comp_by_name)} entries")
-
-    print(f"[DataGen] Loading {len(ipos)} IPOs, fetching web news...")
+    print(f"[DataGen] Generating TS data for {len(ipos)} IPOs...")
 
     lines = []
     lines.append('export interface IPOStock {')
@@ -260,6 +226,7 @@ def generate_ipo_data():
     lines.append('  drhpUrl?: string;')
     lines.append('  rhpUrl?: string;')
     lines.append('  source?: string;')
+    lines.append('  sourceUrl?: string;')
     lines.append('  currentPrice?: number;')
     lines.append('  percentChange?: number;')
     lines.append('  marketCap?: number;')
@@ -291,6 +258,7 @@ def generate_ipo_data():
     lines.append('  financialAnalysis?: string;')
     lines.append('  balanceSheetAnalysis?: string;')
     lines.append('  cashFlowAnalysis?: string;')
+    lines.append('  ratioAnalysis?: string;')
     lines.append('  ipoDetails?: string;')
     lines.append('  valuationAnalysis?: string;')
     lines.append('  managementQuality?: string;')
@@ -305,6 +273,16 @@ def generate_ipo_data():
     lines.append('  scorecardInterpretation?: string;')
     lines.append('  longTermRating?: string;')
     lines.append('  subscriptionRecommendation?: string;')
+    lines.append('  listingGainView?: string;')
+    lines.append('  seo?: {')
+    lines.append('    title: string;')
+    lines.append('    description: string;')
+    lines.append('    canonical_url: string;')
+    lines.append('    keywords: string[];')
+    lines.append('    ai_overview_ready?: boolean;')
+    lines.append('  };')
+    lines.append('  faq?: { question: string; answer: string }[];')
+    lines.append('  schema_markup?: Record<string, unknown>;')
     lines.append('}')
     lines.append('')
     lines.append('export const ipoStocks: IPOStock[] = [')
@@ -485,40 +463,38 @@ def generate_ipo_data():
             rind = esc(r["indicator"]) if isinstance(r, dict) else '"🟡"'
             lines.append(f'      {{ text: "{rtext}", indicator: "{rind}" }},')
         lines.append('    ],')
-        # Try comprehensive analysis scores first, fall back to ipo_analysis.json
+        # Find comprehensive analysis by slug (screener IPOs have consistent indexing)
         comp_slug = f"{_slugify_company(name)}-{i + 1}"
         comp_entry = comp_analysis.get(comp_slug, {})
-        if not comp_entry or not comp_entry.get('business_overview'):
-            # Fallback: try matching by company name slug (handles index mismatch)
-            name_slug = _slugify_company(name)
-            comp_entry = comp_by_name.get(name_slug, {})
         comp_entry_data = _extract_comp_analysis(comp_entry) if isinstance(comp_entry, dict) else {}
         comp_scores = comp_entry.get('investment_verdict', {}).get('scores', {}) if isinstance(comp_entry, dict) else {}
 
+        # Fallback for AI scores: master DB
+        mipo = master_lookup.get(name.lower().strip()) or master_lookup.get(symbol.lower().strip())
+        m_sb = mipo.get("score_breakdown", {}) if mipo else {}
+        master_ai_score = int(mipo.get("ai_score", 55)) if mipo else 55
+
         if comp_scores and isinstance(comp_scores, dict):
-            overall_val = int(comp_scores.get('overall_score', 50))
-            fundamentals_val = int(comp_scores.get('fundamentals_score') or comp_scores.get('financial_strength', 50))
-            valuation_val = int(comp_scores.get('valuation_score') or comp_scores.get('valuation_attractiveness', 50))
-            growth_val = int(comp_scores.get('growth_score') or comp_scores.get('business_quality', 50))
-            management_val = int(comp_scores.get('management_score') or comp_scores.get('management_quality', 50))
-            sentiment_val = int(comp_scores.get('market_sentiment_score') or comp_scores.get('industry_outlook', 50))
+            overall_val = int(comp_scores.get('overall_score', master_ai_score))
+            fundamentals_val = int(comp_scores.get('fundamentals_score', m_sb.get('fundamentals', 50)))
+            valuation_val = int(comp_scores.get('valuation_score', m_sb.get('valuation', 50)))
+            growth_val = int(comp_scores.get('growth_score', m_sb.get('business_quality', 50)))
+            management_val = int(comp_scores.get('management_score', m_sb.get('governance', 50)))
+            sentiment_val = int(comp_scores.get('market_sentiment_score', m_sb.get('ipo_demand', 50)))
+        elif m_sb:
+            overall_val = master_ai_score
+            fundamentals_val = int(m_sb.get("fundamentals", 50))
+            valuation_val = int(m_sb.get("valuation", 50))
+            growth_val = int(m_sb.get("business_quality", 50))
+            management_val = int(m_sb.get("governance", 50))
+            sentiment_val = int(m_sb.get("ipo_demand", 50))
         else:
-            # Try master database scores first, fall back to ipo_analysis or hardcoded
-            m_sb = mipo.get("score_breakdown", {}) if mipo else {}
-            if m_sb:
-                overall_val = int(mipo.get("ai_score", 50))
-                fundamentals_val = int(m_sb.get("fundamentals", 50))
-                valuation_val = int(m_sb.get("valuation", 50))
-                growth_val = int(m_sb.get("business_quality", 50))
-                management_val = int(m_sb.get("governance", 50))
-                sentiment_val = int(m_sb.get("ipo_demand", 50))
-            else:
-                overall_val = scores.get("attractiveness", scores.get("overall", 75))
-                fundamentals_val = scores.get("financial_health", 70)
-                valuation_val = scores.get("risk", 65)
-                growth_val = scores.get("growth_potential", 75)
-                management_val = 70
-                sentiment_val = scores.get("attractiveness", 72)
+            overall_val = master_ai_score
+            fundamentals_val = 55
+            valuation_val = 50
+            growth_val = 55
+            management_val = 55
+            sentiment_val = 50
 
         lines.append('    aiScores: {')
         lines.append(f'      overall: {overall_val},')
@@ -590,6 +566,37 @@ def generate_ipo_data():
             lines.append(f'    scorecardTotalScore: {comp_entry_data["scorecard_total"]},')
         if comp_entry_data.get('scorecard_interpretation'):
             lines.append(f'    scorecardInterpretation: "{esc(comp_entry_data["scorecard_interpretation"])}",')
+
+        # New 44-section fields
+        if comp_entry.get('seo'):
+            seo = comp_entry['seo']
+            lines.append('    seo: {')
+            lines.append(f'      title: "{esc(seo.get("title",""))}",')
+            lines.append(f'      description: "{esc(seo.get("description",""))}",')
+            lines.append(f'      canonical_url: "{esc(seo.get("canonical_url",""))}",')
+            kw = seo.get("keywords", [])
+            kw_str = ', '.join([f'"{esc(k)}"' for k in kw[:8]])
+            lines.append(f'      keywords: [{kw_str}],')
+            lines.append(f'      ai_overview_ready: {str(seo.get("ai_overview_ready", False)).lower()},')
+            lines.append('    },')
+
+        if comp_entry.get('faq'):
+            faq_items = comp_entry['faq'][:10]
+            lines.append('    faq: [')
+            for item in faq_items:
+                lines.append(f'      {{ question: "{esc(item.get("question",""))}", answer: "{esc(item.get("answer",""))}" }},')
+            lines.append('    ],')
+
+        if comp_entry.get('schema_markup'):
+            lines.append(f'    schema_markup: {json.dumps(comp_entry["schema_markup"])},')
+
+        # New section fields
+        if comp_entry.get('ratio_analysis'):
+            lines.append(f'    ratioAnalysis: "{esc(comp_entry["ratio_analysis"])}",')
+
+        verdict_fields = comp_entry.get('investment_verdict', {})
+        if verdict_fields.get('listing_gain_view'):
+            lines.append(f'    listingGainView: "{esc(verdict_fields["listing_gain_view"])}",')
 
         lines.append('  },')
 
