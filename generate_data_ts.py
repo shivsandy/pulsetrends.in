@@ -192,6 +192,16 @@ def generate_ipo_data():
     comp_analysis = load_json(os.path.join(DATA_DIR, "..", "src", "data", "ipoComprehensiveAnalysis.json"))
     print(f"[DataGen] Loaded {len(comp_analysis)} comprehensive analysis entries")
 
+    # Build company-name-based lookup for comp analysis
+    comp_by_name = {}
+    for ckey, centry in comp_analysis.items():
+        # Extract company name from key by removing trailing -{number}
+        cname_key = re.sub(r'-\d+$', '', ckey).strip()
+        if cname_key and isinstance(centry, dict) and centry.get('business_overview'):
+            if cname_key not in comp_by_name:
+                comp_by_name[cname_key] = centry
+    print(f"[DataGen] Built name-based lookup: {len(comp_by_name)} entries")
+
     print(f"[DataGen] Loading {len(ipos)} IPOs, fetching web news...")
 
     lines = []
@@ -453,6 +463,10 @@ def generate_ipo_data():
         # Try comprehensive analysis scores first, fall back to ipo_analysis.json
         comp_slug = f"{_slugify_company(name)}-{i + 1}"
         comp_entry = comp_analysis.get(comp_slug, {})
+        if not comp_entry or not comp_entry.get('business_overview'):
+            # Fallback: try matching by company name slug (handles index mismatch)
+            name_slug = _slugify_company(name)
+            comp_entry = comp_by_name.get(name_slug, {})
         comp_entry_data = _extract_comp_analysis(comp_entry) if isinstance(comp_entry, dict) else {}
         comp_scores = comp_entry.get('investment_verdict', {}).get('scores', {}) if isinstance(comp_entry, dict) else {}
 
