@@ -1103,9 +1103,36 @@ def main():
     
     print(f"\n  ✓ Total generated: {len(new_articles)} articles")
     
-    # ── Step 5: Prepend to newsData.ts ──
-    print("\n[Step 5/5] Prepending articles to newsData.ts...")
+    # ── Step 5: Prepend to newsData.ts and save to daily cache ──
+    print("\n[Step 5/5] Prepending articles to newsData.ts and saving to daily cache...")
     prepend_to_news_data(new_articles)
+    
+    # Save to daily_news_cache.json so deploy pipeline doesn't lose these articles
+    try:
+        cache_path = CACHE_DIR / "daily_news_cache.json"
+        # Load existing cache
+        existing = []
+        if cache_path.exists():
+            with open(cache_path, "r", encoding="utf-8") as f:
+                existing = json.load(f)
+        if not isinstance(existing, list):
+            existing = []
+        # Prepend new articles to cache
+        seen_ids = set(a.get("id", "") for a in existing)
+        for art in new_articles:
+            aid = art.get("id", "")
+            if aid and aid not in seen_ids:
+                seen_ids.add(aid)
+                existing.insert(0, art)
+        # Keep max 500 articles in cache
+        if len(existing) > 500:
+            existing = existing[:500]
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        with open(cache_path, "w", encoding="utf-8") as f:
+            json.dump(existing, f, ensure_ascii=False, indent=2)
+        print(f"[Cache] Saved {len(new_articles)} articles to daily_news_cache.json ({len(existing)} total)")
+    except Exception as e:
+        print(f"[Cache] Failed to save to daily_news_cache.json: {e}")
     
     print("\n" + "=" * 60)
     print("  COMPLETE")

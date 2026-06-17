@@ -1,12 +1,13 @@
-import { Link } from 'react-router-dom';
 import { Calendar, DollarSign, Building2, ArrowRight, Cpu, Leaf, FlaskConical, Landmark, Sprout } from 'lucide-react';
 import type { IPOStock } from '../data/ipoData';
+import { getDateDisplay } from '../utils/ipoDisplay';
 import ScoreRing from './ScoreRing';
 import Badge from './Badge';
 
 interface IPOCardProps {
   stock: IPOStock;
   slug: string;
+  onClick?: (slug: string) => void;
 }
 
 const sectorIcons: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -17,14 +18,15 @@ const sectorIcons: Record<string, React.ComponentType<{ className?: string }>> =
   'AgriTech': Sprout,
 };
 
-export default function IPOCard({ stock, slug }: IPOCardProps) {
+export default function IPOCard({ stock, slug, onClick }: IPOCardProps) {
   const statusVariant = stock.status === 'open' ? 'success' : stock.status === 'upcoming' ? 'warning' : 'info';
   const SectorIcon = sectorIcons[stock.sector] || Building2;
 
   return (
-    <Link
-      to={`/ipo-analysis/${slug}`}
-      className="block bg-surface-100 border border-surface-300/60 rounded-xl p-5 hover:border-surface-500 transition-all duration-200 group"
+    <button
+      type="button"
+      onClick={() => onClick?.(slug)}
+      className="w-full text-left block bg-surface-100 border border-surface-300/60 rounded-xl p-5 hover:border-surface-500 transition-all duration-200 group cursor-pointer"
       aria-label={`View analysis for ${stock.company}`}
     >
       <div className="flex items-start justify-between mb-4">
@@ -62,9 +64,11 @@ export default function IPOCard({ stock, slug }: IPOCardProps) {
         <div className="bg-surface-50 border border-surface-300/40 rounded-lg px-3 py-2.5">
           <div className="flex items-center gap-1 mb-1">
             <Calendar className="w-3 h-3 text-surface-600" />
-            <span className="text-[10px] text-surface-600 uppercase tracking-wider font-medium">Date</span>
+            <span className="text-[10px] text-surface-600 uppercase tracking-wider font-medium">
+              {stock.status === 'listed' ? 'Listed' : 'Date'}
+            </span>
           </div>
-          <p className="text-[13px] font-semibold text-surface-white">{stock.expectedDate.split(',')[0]}</p>
+          <p className="text-[13px] font-semibold text-surface-white">{getDateDisplay(stock)}</p>
         </div>
       </div>
 
@@ -133,6 +137,6 @@ export default function IPOCard({ stock, slug }: IPOCardProps) {
           <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
         </span>
       </div>
-    </Link>
+    </button>
   );
 }

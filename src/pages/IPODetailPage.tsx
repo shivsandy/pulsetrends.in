@@ -212,12 +212,12 @@ export default function IPODetailPage() {
             <p className="text-[14px] font-semibold text-surface-white mt-1">{stock.issueSize || 'TBA'}</p>
           </div>
           {stock.expectedDate && (
-            <div className="bg-surface-100 border border-surface-300/40 rounded-lg p-3">
-              <p className="text-[10px] text-surface-600 uppercase tracking-wider font-medium">Expected Date</p>
-              <p className="text-[14px] font-semibold text-surface-white mt-1 flex items-center gap-1.5">
-                <Calendar className="w-3.5 h-3.5" /> {stock.expectedDate}
-              </p>
-            </div>
+          <div className="bg-surface-100 border border-surface-300/40 rounded-lg p-3">
+            <p className="text-[10px] text-surface-600 uppercase tracking-wider font-medium">{stock.status === 'listed' ? 'Listing Date' : 'Expected Date'}</p>
+            <p className="text-[14px] font-semibold text-surface-white mt-1 flex items-center gap-1.5">
+              <Calendar className="w-3.5 h-3.5" /> {stock.status === 'listed' && stock.listingDate ? stock.listingDate : stock.expectedDate.split(',')[0]}
+            </p>
+          </div>
           )}
           {stock.headquarters && (
             <div className="bg-surface-100 border border-surface-300/40 rounded-lg p-3">

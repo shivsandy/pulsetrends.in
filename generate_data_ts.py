@@ -308,7 +308,12 @@ def generate_ipo_data():
         open_date = ipo.get("openDate", "") or ipo.get("open_date", "")
         close_date = ipo.get("closeDate", "") or ipo.get("close_date", "")
         listing_date = ipo.get("listingDate", "") or ipo.get("listing_date", "")
-        expected_date = listing_date or open_date
+        # For listed IPOs, set expected_date to empty so UI shows "Listed"
+        # For upcoming/open IPOs, use real dates
+        if status == "listed":
+            expected_date = listing_date or ""
+        else:
+            expected_date = open_date or ""
         issue_size = ipo.get("issueSize", "") or ipo.get("issue_size", "")
         lot_size = ipo.get("lotSize", 0) or ipo.get("lot_size", 0)
         ipo_type = ipo.get("ipoType", "") or ipo.get("ipo_type", "mainboard")

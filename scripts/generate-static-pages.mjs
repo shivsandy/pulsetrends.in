@@ -45,7 +45,7 @@ function safeEvalArr(arrLiteral) {
 function extractStocksFromTs(tsPath) {
   if (!existsSync(tsPath)) return [];
   const src = readFileSync(tsPath, 'utf8');
-  const match = src.match(/export\s+const\s+ipoStocks\s*:\s*IPOStock\[\]\s*=\s*(\[[\s\S]*?\n\];)/);
+  const match = src.match(/export\s+const\s+ipoStocks\s*:\s*IPOStock\[\]\s*=\s*(\[[\s\S]*\n\];)/);
   if (!match) return [];
   return safeEvalArr(match[1]);
 }
@@ -53,7 +53,7 @@ function extractStocksFromTs(tsPath) {
 function extractNewsFromTs(tsPath) {
   if (!existsSync(tsPath)) return [];
   const src = readFileSync(tsPath, 'utf8');
-  const match = src.match(/export\s+const\s+newsArticles\s*:\s*NewsArticle\[\]\s*=\s*(\[[\s\S]*?\n\];)/);
+  const match = src.match(/export\s+const\s+newsArticles\s*:\s*NewsArticle\[\]\s*=\s*(\[[\s\S]*\n\];)/);
   if (!match) return [];
   return safeEvalArr(match[1]);
 }
@@ -61,7 +61,7 @@ function extractNewsFromTs(tsPath) {
 function extractProjectsFromTs(tsPath) {
   if (!existsSync(tsPath)) return [];
   const src = readFileSync(tsPath, 'utf8');
-  const match = src.match(/export\s+const\s+cryptoProjects\s*:\s*CryptoProject\[\]\s*=\s*(\[[\s\S]*?\n\];)/);
+  const match = src.match(/export\s+const\s+cryptoProjects\s*:\s*CryptoProject\[\]\s*=\s*(\[[\s\S]*\n\];)/);
   if (!match) return [];
   return safeEvalArr(match[1]);
 }

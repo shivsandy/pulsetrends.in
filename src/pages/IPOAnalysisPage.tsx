@@ -4,6 +4,7 @@ import { useSearchParams } from 'react-router-dom';
 import { ipoStocks } from '../data/ipoData';
 import type { IPOStock } from '../data/ipoData';
 import IPOCard from '../components/IPOCard';
+import IPOModal from '../components/IPOModal';
 import Badge from '../components/Badge';
 import PageSeo from '../components/PageSeo';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -99,6 +100,7 @@ export default function IPOAnalysisPage() {
 
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<string>('all');
+  const [selectedIpo, setSelectedIpo] = useState<IPOStock | null>(null);
 
   const filteredStocks = useMemo(() => {
     return ipoStocks.filter((stock) => {
@@ -213,7 +215,7 @@ export default function IPOAnalysisPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {paginatedStocks.map((stock, i) => (
             <div key={stock.id} className="animate-fade-in" style={{ animationDelay: `${i * 60}ms` }}>
-              <IPOCard stock={stock} slug={makeSlug(stock)} />
+              <IPOCard stock={stock} slug={makeSlug(stock)} onClick={() => setSelectedIpo(stock)} />
             </div>
           ))}
         </div>
@@ -233,6 +235,10 @@ export default function IPOAnalysisPage() {
           </div>
         )}
       </div>
+
+      {selectedIpo && (
+        <IPOModal stock={selectedIpo} slug={makeSlug(selectedIpo)} onClose={() => setSelectedIpo(null)} />
+      )}
     </>
   );
 }
