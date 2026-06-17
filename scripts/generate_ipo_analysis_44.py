@@ -98,6 +98,28 @@ def render_table(headers, rows):
         lines.append("| " + " | ".join(cells) + " |")
     return "\n".join(lines)
 
+def strip_md(text):
+    """Strip markdown formatting to plain text (no markdown renderer in frontend)."""
+    if not text: return text
+    text = re.sub(r'\*\*(.+?)\*\*', r'\1', text)
+    text = re.sub(r'\*(.+?)\*', r'\1', text)
+    text = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text)
+    text = re.sub(r'^#{1,6}\s+', '', text, flags=re.MULTILINE)
+    text = re.sub(r'^\|.*\|$', '', text, flags=re.MULTILINE)
+    text = re.sub(r'^-{3,}$', '', text, flags=re.MULTILINE)
+    text = re.sub(r'^[\| ]+-{3,}', '', text, flags=re.MULTILINE)
+    text = re.sub(r'\|', '', text)
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    lines = [l.strip() for l in text.split('\n') if l.strip()]
+    return '\n'.join(lines)
+
+def fmt_table(rows):
+    """Format table rows as readable plain text lines."""
+    lines = []
+    for row in rows:
+        lines.append("  - " + ", ".join(str(c) if c else "N/A" for c in row))
+    return '\n'.join(lines)
+
 def compute_screener_scores(ipo, financial_data):
     """Derive AI scores from available screener.in data fields."""
     fm = ipo.get("fiscalMetrics", {}) or {}
@@ -281,10 +303,12 @@ def generate_44_section_entry(ipo, financial_data, master, slug):
         ipo_details += f"\n🔗 **Source**: [{source_url}]({source_url})\n"
 
     # ========== SECTION 2: EXECUTIVE SUMMARY ==========
+    ticker_display = f"({ticker})" if ticker else ""
+    industry_display = industry if industry else "General"
     exec_summary = (
         f"## Investment Verdict: **{ai_rating}**\n\n"
         f"**Confidence Score: {overall:.0f}/100**\n\n"
-        f"{name} ({ticker}) operates in the **{sector}** sector ({industry or 'General'} industry). "
+        f"{name} {ticker_display}operates in the **{sector}** sector ({industry_display} industry). "
         f"AI Score: **{overall:.0f}/100** ({ai_rating}). "
         f"Fundamentals: **{fs_val:.0f}/100** ({score_label(fs_val)}). "
         f"Business Quality: **{bq_val:.0f}/100** ({score_label(bq_val)}). "
@@ -625,7 +649,7 @@ The overall market sentiment is **{sentiment_score}** based on available indicat
 Confidence Level: **{overall:.0f}/100**
 
 **Final Assessment**
-{name} ({ticker}) — AI Score: **{overall:.0f}/100** | Rating: **{ai_rating}**
+{name} {ticker_display.strip()} — AI Score: {overall:.0f}/100 | Rating: {ai_rating}
 Suitable for {'aggressive' if overall >= 65 else 'moderate' if overall >= 50 else 'conservative'} investors with appropriate risk appetite.
 """
 
@@ -676,20 +700,20 @@ Suitable for {'aggressive' if overall >= 65 else 'moderate' if overall >= 50 els
         "industry": industry,
         "exchange": exchange,
         "status": status,
-        "executive_summary": exec_summary,
-        "business_overview": bus_overview,
-        "industry_analysis": industry_analysis,
-        "financial_analysis": financial_analysis,
-        "balance_sheet_analysis": balance_sheet_analysis,
-        "cash_flow_analysis": cash_flow_analysis,
-        "ratio_analysis": ratio_analysis,
-        "ipo_details": ipo_details,
-        "valuation_analysis": valuation_analysis,
-        "management_quality": management_quality,
-        "risk_assessment": risk_assessment,
-        "strengths_weaknesses": strengths_weaknesses,
-        "market_sentiment": market_sentiment,
-        "final_verdict": final_verdict,
+        "executive_summary": strip_md(exec_summary),
+        "business_overview": strip_md(bus_overview),
+        "industry_analysis": strip_md(industry_analysis),
+        "financial_analysis": strip_md(financial_analysis),
+        "balance_sheet_analysis": strip_md(balance_sheet_analysis),
+        "cash_flow_analysis": strip_md(cash_flow_analysis),
+        "ratio_analysis": strip_md(ratio_analysis),
+        "ipo_details": strip_md(ipo_details),
+        "valuation_analysis": strip_md(valuation_analysis),
+        "management_quality": strip_md(management_quality),
+        "risk_assessment": strip_md(risk_assessment),
+        "strengths_weaknesses": strip_md(strengths_weaknesses),
+        "market_sentiment": strip_md(market_sentiment),
+        "final_verdict": strip_md(final_verdict),
         "ai_scorecard": {
             "categories": scorecard_categories,
             "total_score": round(overall / 10, 1),
