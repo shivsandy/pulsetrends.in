@@ -588,10 +588,11 @@ def generate_44_section_entry(ipo, financial_data, master, slug):
         f_lines = [f"- ⚠ {f}" for f in flags[:4]]
         flags_text = "\n".join(f_lines)
 
+    nl = chr(10)
     risk_assessment = f"""## Identified Risks
 
 {risk_text}
-{f'\n\n### Red Flags\n{flags_text}' if flags_text else ''}
+{nl + nl + '### Red Flags' + nl + flags_text if flags_text else ''}
 
 ## Risk Categories
 | Risk Category | Level | Description |
