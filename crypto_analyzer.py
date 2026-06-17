@@ -16,48 +16,37 @@ IPO_ANALYSIS_FILE = os.path.join(DATA_DIR, "ipo_analysis.json")
 CRYPTO_FILE = os.path.join(DATA_DIR, "crypto_data.json")
 IPO_FILE = os.path.join(DATA_DIR, "ipo_data.json")
 
+# ── All 18 free models assigned to every key ──────────────────────
+_ALL_MODELS = [
+    "nex-agi/nex-n2-pro:free",
+    "nvidia/nemotron-3.5-content-safety:free",
+    "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "poolside/laguna-xs.2:free",
+    "poolside/laguna-m.1:free",
+    "google/gemma-4-26b-a4b-it:free",
+    "google/gemma-4-31b-it:free",
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "liquid/lfm-2.5-1.2b-thinking:free",
+    "nvidia/nemotron-3-nano-30b-a3b:free",
+    "nvidia/nemotron-nano-12b-v2-vl:free",
+    "qwen/qwen3-next-80b-a3b-instruct:free",
+    "openai/gpt-oss-120b:free",
+    "qwen/qwen3-coder:free",
+    "meta-llama/llama-3.3-70b-instruct:free",
+    "meta-llama/llama-3.2-3b-instruct:free",
+    "nousresearch/hermes-3-llama-3.1-405b:free",
+]
+
 OPENROUTER_KEY_MODELS: dict = {
-    1: [
-        "nex-agi/nex-n2-pro:free",                          # Primary
-        "nvidia/nemotron-3.5-content-safety:free",           # Fallback
-        "nvidia/nemotron-3-nano-30b-a3b:free",               # Distributed
-    ],
-    2: [
-        "nvidia/nemotron-3.5-content-safety:free",           # Primary
-        "nvidia/nemotron-3-ultra-550b-a55b:free",            # Fallback
-        "liquid/lfm-2.5-1.2b-thinking:free",                 # Distributed
-    ],
-    3: [
-        "nvidia/nemotron-3-ultra-550b-a55b:free",            # Primary
-        "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", # Fallback
-        "nvidia/nemotron-nano-12b-v2-vl:free",               # Distributed
-    ],
-    4: [
-        "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", # Primary
-        "poolside/laguna-xs.2:free",                         # Fallback
-        "qwen/qwen3-next-80b-a3b-instruct:free",             # Distributed
-    ],
-    5: [
-        "poolside/laguna-xs.2:free",                         # Primary
-        "poolside/laguna-m.1:free",                          # Fallback
-        "openai/gpt-oss-120b:free",                          # Distributed
-    ],
-    6: [
-        "poolside/laguna-m.1:free",                          # Primary
-        "google/gemma-4-26b-a4b-it:free",                     # Fallback
-        "qwen/qwen3-coder:free",                             # Distributed
-    ],
-    7: [
-        "google/gemma-4-26b-a4b-it:free",                    # Primary
-        "google/gemma-4-31b-it:free",                         # Fallback
-        "meta-llama/llama-3.3-70b-instruct:free",            # Distributed
-    ],
-    8: [
-        "google/gemma-4-31b-it:free",                        # Primary
-        "nvidia/nemotron-3-super-120b-a12b:free",             # Fallback
-        "meta-llama/llama-3.2-3b-instruct:free",             # Distributed
-        "nousresearch/hermes-3-llama-3.1-405b:free",         # Distributed
-    ],
+    1: list(_ALL_MODELS),
+    2: list(_ALL_MODELS),
+    3: list(_ALL_MODELS),
+    4: list(_ALL_MODELS),
+    5: list(_ALL_MODELS),
+    6: list(_ALL_MODELS),
+    7: list(_ALL_MODELS),
+    8: list(_ALL_MODELS),
 }
 
 CRYPTO_ANALYSIS_PROMPT = """Act as a senior crypto analyst with expertise in token economics, on-chain metrics, and airdrop risk assessment.

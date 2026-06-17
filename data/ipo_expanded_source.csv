@@ -1,1 +1,964 @@
-[]
+company_name,ticker,exchange,sector,industry,country,ai_score,ai_rating
+Tata Consultancy Services,TCS,NSE,Technology,Software,IN,80.1,Strong IPO
+Reliance Industries Ltd,RIL,NSE,Energy,Conglomerate,IN,79.2,Good IPO
+HDFC Bank Ltd,HDFCBANK,NSE,Financial,Banks,IN,77.2,Good IPO
+Uniinfo Telecom Services,UNIINFO,NSE,Technology,Telecom,IN,74.5,Good IPO
+Tata Technologies Ltd,TATATECH,NSE,Technology,Software,IN,74.1,Good IPO
+Tata Power Co Ltd,TATAPOWER,NSE,Utilities,Electric Utilities,IN,73.8,Good IPO
+HDFC Life Insurance Co.,HDFCLIFE,NSE,Financial,Insurance,IN,73.0,Good IPO
+United Overseas Bank Ltd,U11,SGX,Financial,Banks,SG,72.8,Good IPO
+Shree Ram Proteins Ltd,SHREERAMPR,NSE,Consumer Defensive,Food,IN,72.8,Good IPO
+Zoom Video Communications,ZM,NASDAQ,Technology,Software,US,72.5,Good IPO
+Tata Coffee Ltd,TATACOFFEE,NSE,Consumer Defensive,Food,IN,72.5,Good IPO
+Oversea-Chinese Banking Corp,O39,SGX,Financial,Banks,SG,72.1,Good IPO
+Dollarama Inc.,DOL,TSX,Consumer Defensive,Discount Stores,CA,71.8,Good IPO
+Ultra Wiring Connect Sys,ULTRACONN,NSE,Industrials,Electrical Equipment,IN,71.5,Good IPO
+Restaurant Brands Intl,QSR,TSX,Consumer Cyclical,Restaurants,CA,71.3,Good IPO
+Prism Johnson Ltd,PRISMJOHNS,NSE,Basic Materials,Cement,IN,70.8,Good IPO
+Bharat Forge Ltd,BHARATFORG,NSE,Consumer Cyclical,Auto Parts,IN,70.6,Good IPO
+Waste Connections Inc.,WCN,TSX,Industrials,Waste Management,CA,70.6,Good IPO
+Bajaj Consumer Care Ltd,BAJAJCON,NSE,Consumer Defensive,Personal Care,IN,70.4,Good IPO
+Union Bank of India,UNIONBANK,NSE,Financial,Banks,IN,70.2,Good IPO
+Aeroflex Industries Ltd,AEROFLEX,NSE,Industrials,Industrial Equipment,IN,70.2,Good IPO
+Punjab National Bank,PNB,NSE,Financial,Banks,IN,70.0,Good IPO
+DBS Group Holdings Ltd,D05,SGX,Financial,Banks,SG,69.9,Average IPO
+Tata Investment Corp Ltd,TATAINVEST,NSE,Financial,Financial Services,IN,69.6,Average IPO
+Alok Industries Ltd,ALOKINDS,NSE,Consumer Cyclical,Textiles,IN,69.6,Average IPO
+LIC Housing Finance Ltd,LICHSGFIN,NSE,Financial,Housing Finance,IN,69.3,Average IPO
+Klaviyo Inc.,KVYO,NYSE,Technology,Software,US,69.3,Average IPO
+Bajaj Finance Ltd,BAJFINANCE,NSE,Financial,Financial Services,IN,69.1,Average IPO
+Globus Spirits Ltd,GLOBUSSPR,NSE,Consumer Defensive,Beverages,IN,69.1,Average IPO
+Indiabulls Housing Finance,IBULHSGFIN,NSE,Financial,Housing Finance,IN,69.0,Average IPO
+Mahindra Lifespace Developers,MAHLIFE,NSE,Real Estate,Real Estate Development,IN,68.9,Average IPO
+Rashtriya Chemicals & Fertil.,RCF,NSE,Basic Materials,Fertilizers,IN,68.9,Average IPO
+Owais Metal & Mineral,OWAISMETL,NSE,Basic Materials,Metals & Mining,IN,68.9,Average IPO
+Rajnandini Metal Ltd,RAJNMETAL,NSE,Basic Materials,Metals & Mining,IN,68.8,Average IPO
+Trident Lifeline Ltd,TRIDENTLFE,NSE,Healthcare,Pharmaceuticals,IN,68.8,Average IPO
+Tata Consumer Products,TATACONSUM,NSE,Consumer Defensive,Food,IN,68.7,Average IPO
+Udayshivakumar Infra Ltd,USKINFRA,NSE,Industrials,Infrastructure,IN,68.7,Average IPO
+Tata Steel Ltd,TATASTEEL,NSE,Basic Materials,Steel,IN,68.6,Average IPO
+Vertex Pharmaceuticals Inc.,VRTX,NASDAQ,Healthcare,Biotechnology,US,68.5,Average IPO
+Godrej Consumer Products,GODREJCP,NSE,Consumer Defensive,Personal Care,IN,68.3,Average IPO
+Thangamayil Jewellery Ltd,THANGAMAYL,NSE,Consumer Cyclical,Luxury Goods,IN,68.3,Average IPO
+Tata Chemicals Ltd,TATACHEM,NSE,Basic Materials,Chemicals,IN,68.2,Average IPO
+Thirani Proj & Trading Ltd,THIRANI,NSE,Industrials,Trading,IN,68.2,Average IPO
+Exide Industries Ltd,EXIDEIND,NSE,Consumer Cyclical,Auto Parts,IN,68.1,Average IPO
+Alimentation Couche-Tard,ATD,TSX,Consumer Cyclical,Retail,CA,68.1,Average IPO
+Transgenic Bio Services Ltd,TRANSGENIC,NSE,Healthcare,Biotechnology,IN,68.0,Average IPO
+Bharat Heavy Electricals Ltd,BHEL,NSE,Industrials,Industrial Equipment,IN,67.9,Average IPO
+Indian Hotels Co Ltd,INDHOTEL,NSE,Consumer Cyclical,Hotels,IN,67.9,Average IPO
+Instacart (Maplebear Inc.),CART,NASDAQ,Technology,Software,US,67.9,Average IPO
+Xiaomi Corp,1810,HKEX,Technology,Consumer Electronics,CN,67.9,Average IPO
+Shree Maruti Integ Chem,SHREEMARUT,NSE,Basic Materials,Chemicals,IN,67.9,Average IPO
+Accent Microcell Ltd,ACCENTMIC,NSE,Technology,Telecom,IN,67.7,Average IPO
+R R Kabel Ltd,RRKABEL,NSE,Industrials,Electrical Equipment,IN,67.6,Average IPO
+ZTO Express (Cayman) Inc.,2057,HKEX,Industrials,Logistics,CN,67.6,Average IPO
+Rivian Automotive Inc.,RIVN,NASDAQ,Consumer Cyclical,Auto Manufacturers,US,67.5,Average IPO
+Bajaj Finserv Ltd,BAJAJFINSV,NSE,Financial,Financial Services,IN,67.5,Average IPO
+Pandora Media Inc.,P,NYSE,Communication,Entertainment,US,67.4,Average IPO
+Akme Fintrade India Ltd,AKMEFINTR,NSE,Financial,Financial Services,IN,67.4,Average IPO
+Colgate-Palmolive India Ltd,COLPAL,NSE,Consumer Defensive,Personal Care,IN,67.3,Average IPO
+Mahindra & Mahindra Fin.,M&MFIN,NSE,Financial,Financial Services,IN,67.3,Average IPO
+Bajaj Electricals Ltd,BAJAJELEC,NSE,Consumer Cyclical,Consumer Electronics,IN,67.2,Average IPO
+Mahindra Holidays & Resorts,MHRIL,NSE,Consumer Cyclical,Hotels,IN,67.2,Average IPO
+Ramco Cements Ltd,RAMCOCEM,NSE,Basic Materials,Cement,IN,67.2,Average IPO
+Kashi Visa Residency Ltd,KASHIVISA,NSE,Financial,Financial Services,IN,67.2,Average IPO
+Shree Karni Fabcom Ltd,SHREEKARNI,NSE,Consumer Cyclical,Textiles,IN,67.2,Average IPO
+Spotify Technology S.A.,SPOT,NYSE,Communication,Entertainment,SE,67.0,Average IPO
+Entertainment Network India,ENIL,NSE,Communication,Media,IN,67.0,Average IPO
+Reliance Infrastructure Ltd,RELINFRA,NSE,Utilities,Electric Utilities,IN,67.0,Average IPO
+Tirupati Graphite PLC,TIRUPATIGR,NSE,Basic Materials,Mining,IN,67.0,Average IPO
+Canara Bank,CANBK,NSE,Financial,Banks,IN,66.9,Average IPO
+ASOS PLC,ASOS,LSE,Consumer Cyclical,E-Commerce,GB,66.8,Average IPO
+Barclays PLC,BARC,LSE,Financial,Banks,GB,66.8,Average IPO
+Efactor Experience Solutions,EFACTOR,NSE,Communication,Media,IN,66.8,Average IPO
+Go Fashion India Ltd,GOCOLORS,NSE,Consumer Cyclical,Apparel,IN,66.8,Average IPO
+Intuitive Surgical Inc.,ISRG,NASDAQ,Healthcare,Medical Devices,US,66.8,Average IPO
+Burger King India Ltd,BURGERKING,NSE,Consumer Cyclical,Restaurants,IN,66.7,Average IPO
+Bajaj Auto Ltd,BAJAJ-AUTO,NSE,Consumer Cyclical,Auto Manufacturers,IN,66.7,Average IPO
+Bharat Dynamics Ltd,BDL,NSE,Industrials,Defense,IN,66.7,Average IPO
+LinkedIn Corp,LNKD,NYSE,Technology,Internet Services,US,66.7,Average IPO
+Jalpa Shah Securities Ltd,JALPA,NSE,Financial,Financial Services,IN,66.7,Average IPO
+Booking Holdings Inc.,BKNG,NASDAQ,Consumer Cyclical,Travel Services,US,66.7,Average IPO
+IndiaMart InterMesh Ltd,INDIAMART,NSE,Technology,Internet Services,IN,66.6,Average IPO
+Trip.com Group Ltd,9961,HKEX,Consumer Cyclical,Travel Services,CN,66.6,Average IPO
+DoorDash Inc.,DASH,NYSE,Technology,Software,US,66.5,Average IPO
+CrowdStrike Holdings Inc.,CRWD,NASDAQ,Technology,Cybersecurity,US,66.5,Average IPO
+Emami Ltd,EMAMILTD,NSE,Consumer Defensive,Personal Care,IN,66.5,Average IPO
+Rain Industries Ltd,RAIN,NSE,Basic Materials,Chemicals,IN,66.5,Average IPO
+SenseTime Group Inc.,0020,HKEX,Technology,Software,CN,66.5,Average IPO
+MegaTech Polycon Ltd,MEGATECH,NSE,Industrials,Packaging,IN,66.5,Average IPO
+Aditya Birla Capital Ltd,ABCAPITAL,NSE,Financial,Financial Services,IN,66.5,Average IPO
+Bank of Baroda,BANKBARODA,NSE,Financial,Banks,IN,66.4,Average IPO
+DraftKings Inc.,DKNG,NASDAQ,Consumer Cyclical,Gambling,US,66.4,Average IPO
+Vedanta Ltd,VEDL,NSE,Basic Materials,Metals & Mining,IN,66.3,Average IPO
+Fiverr International Ltd,FVRR,NYSE,Communication,Internet Services,IL,66.3,Average IPO
+Shopify Inc.,SHOP,NYSE,Technology,Software,CA,66.2,Average IPO
+Elgi Equipments Ltd,ELGIEQUIP,NSE,Industrials,Industrial Equipment,IN,66.2,Average IPO
+Oberoi Realty Ltd,OBEROIRLTY,NSE,Real Estate,Real Estate Development,IN,66.1,Average IPO
+Life Insurance Corp of India,SBILIFE,NSE,Financial,Insurance,IN,66.1,Average IPO
+Tejas Networks Ltd,TEJASNET,NSE,Technology,Telecom,IN,66.1,Average IPO
+Aditya Birla Fashion & Retail,ABFRL,NSE,Consumer Cyclical,Apparel,IN,66.0,Average IPO
+MakeMyTrip Ltd,MMYT,NASDAQ,Technology,Travel Technology,IN,65.9,Average IPO
+Thomson Reuters Corp,TRI,TSX,Industrials,Business Services,CA,65.9,Average IPO
+Zynga Inc.,ZNGA,NASDAQ,Communication,Entertainment,US,65.9,Average IPO
+GMM Pfaudler Ltd,GMMPFAUDLR,NSE,Industrials,Industrial Equipment,IN,65.9,Average IPO
+BEML Ltd,BEML,NSE,Industrials,Defense,IN,65.8,Average IPO
+Maharashtra Seamless Ltd,MAHSEAMLES,NSE,Basic Materials,Steel,IN,65.8,Average IPO
+Engineers India Ltd,ENGINERSIN,NSE,Industrials,Engineering,IN,65.6,Average IPO
+Alembic Pharmaceuticals Ltd,APLLTD,NSE,Healthcare,Pharmaceuticals,IN,65.6,Average IPO
+Coca-Cola Company,KO,NYSE,Consumer Defensive,Beverages,US,65.5,Average IPO
+Sea Limited,SE,NYSE,Technology,Internet Services,SG,65.5,Average IPO
+TC Energy Corp,TRP,TSX,Energy,Oil & Gas Midstream,CA,65.5,Average IPO
+GHCL Ltd,GHCL,NSE,Basic Materials,Chemicals,IN,65.5,Average IPO
+Petronet LNG Ltd,PETRONET,NSE,Energy,Oil & Gas,IN,65.4,Average IPO
+Medirom Healthcare Tech.,MED,NYSE,Healthcare,Healthcare Services,IL,65.4,Average IPO
+Jumia Technologies AG,JMIA,NYSE,Consumer Cyclical,E-Commerce,DE,65.4,Average IPO
+Groupon Inc.,GRPN,NASDAQ,Technology,Internet Services,US,65.4,Average IPO
+Shanti Spintex Ltd,SHANTISPIN,NSE,Consumer Cyclical,Textiles,IN,65.4,Average IPO
+Avanti Feeds Ltd,AVANTIFEED,NSE,Consumer Defensive,Food,IN,65.3,Average IPO
+Zenith Steel Pipes Ltd,ZENITHSTL,NSE,Basic Materials,Steel,IN,65.3,Average IPO
+Berger Paints India Ltd,BERGEPAINT,NSE,Basic Materials,Chemicals,IN,65.2,Average IPO
+Endurance Technologies Ltd,ENDURANCE,NSE,Consumer Cyclical,Auto Parts,IN,65.2,Average IPO
+Grab Holdings Ltd,GRAB,NASDAQ,Technology,Software,SG,65.1,Average IPO
+Zaggle Prepaid Ocean,ZAGGLE,NSE,Technology,Fintech,IN,65.1,Average IPO
+Airbnb Inc.,ABNB,NASDAQ,Consumer Cyclical,Travel Services,US,65.0,Average IPO
+Gland Pharma Ltd,GLAND,NSE,Healthcare,Pharmaceuticals,IN,65.0,Average IPO
+Constellation Software Inc.,CSU,TSX,Technology,Software,CA,65.0,Average IPO
+Electro Force Ltd,ELECTROFRC,NSE,Industrials,Electrical Equipment,IN,65.0,Average IPO
+Godrej Properties Ltd,GODREJPROP,NSE,Real Estate,Real Estate Development,IN,64.9,Average IPO
+Amara Raja Batteries Ltd,AMARAJABAT,NSE,Consumer Cyclical,Auto Parts,IN,64.9,Average IPO
+IIFL Wealth Management,IIFLWAM,NSE,Financial,Wealth Management,IN,64.8,Average IPO
+Zenith Health Care Ltd,ZENITHHEL,NSE,Healthcare,Pharmaceuticals,IN,64.8,Average IPO
+Mastercard Incorporated,MA,NYSE,Financial,Credit Services,US,64.7,Average IPO
+Robinhood Markets Inc.,HOOD,NASDAQ,Financial,Brokerage,US,64.7,Average IPO
+Zydus Lifesciences Ltd,ZYDUSLIFE,NSE,Healthcare,Pharmaceuticals,IN,64.7,Average IPO
+Arm Holdings PLC,ARM,NASDAQ,Technology,Semiconductors,GB,64.7,Average IPO
+R B Z Wellness Ltd,RBZWELL,NSE,Consumer Defensive,Personal Care,IN,64.7,Average IPO
+Shivalic Power Control Ltd,SHIVALICP,NSE,Industrials,Electrical Equipment,IN,64.7,Average IPO
+ICICI Prudential Life Ins.,ICICIPRULI,NSE,Financial,Insurance,IN,64.6,Average IPO
+PolicyBazaar (PB Fintech),POLICYBZR,NSE,Technology,Fintech,IN,64.6,Average IPO
+CAMS Ltd,CAMS,NSE,Financial,Financial Services,IN,64.6,Average IPO
+ABS Marine Services Ltd,ABSMARINE,NSE,Industrials,Logistics,IN,64.6,Average IPO
+Rallis India Ltd,RALLIS,NSE,Basic Materials,Fertilizers,IN,64.4,Average IPO
+IREDA Ltd,IREDA,NSE,Financial,Financial Services,IN,64.3,Average IPO
+DLF Ltd,DLF,NSE,Real Estate,Real Estate Development,IN,64.3,Average IPO
+Mahanagar Gas Ltd,MGL,NSE,Utilities,Gas Distribution,IN,64.2,Average IPO
+Laurus Labs Ltd,LAURUSLABS,NSE,Healthcare,Pharmaceuticals,IN,64.2,Average IPO
+Jay Kailash Namkeen Ltd,JKNAMCHEM,NSE,Consumer Defensive,Food,IN,64.2,Average IPO
+Yatra Online Ltd,YATRA,NSE,Technology,Travel Technology,IN,64.2,Average IPO
+Bata India Ltd,BATAINDIA,NSE,Consumer Cyclical,Footwear,IN,64.0,Average IPO
+Sigma Solve Ltd,SIGMASOLV,NSE,Technology,Software,IN,64.0,Average IPO
+Alkyl Amines Chemicals Ltd,ALKYLAMINE,NSE,Basic Materials,Chemicals,IN,64.0,Average IPO
+Texmaco Rail & Engineering,TEXRAIL,NSE,Industrials,Railways,IN,63.9,Average IPO
+One97 Communications (Paytm),PAYTM,NSE,Technology,Fintech,IN,63.9,Average IPO
+Mamaearth (Honasa),MAMAEARTH,NSE,Consumer Defensive,Personal Care,IN,63.8,Average IPO
+Unity Software Inc.,U,NYSE,Technology,Software,US,63.8,Average IPO
+Zillow Group Inc.,ZG,NASDAQ,Real Estate,Real Estate Services,US,63.8,Average IPO
+Megastar Foods Ltd,MEGASTAR,NSE,Consumer Defensive,Food,IN,63.8,Average IPO
+Dr. Lal PathLabs Ltd,LALPATHLAB,NSE,Healthcare,Diagnostics,IN,63.7,Average IPO
+Chipotle Mexican Grill Inc.,CMG,NYSE,Consumer Cyclical,Restaurants,US,63.7,Average IPO
+Snowflake Inc.,SNOW,NYSE,Technology,Software,US,63.6,Average IPO
+Coinbase Global Inc.,COIN,NASDAQ,Financial,Digital Assets,US,63.6,Average IPO
+Tencent Holdings Ltd,TCEHY,OTC,Technology,Internet Services,CN,63.6,Average IPO
+Dindigul Farm Product Ltd,DINDFARM,NSE,Consumer Defensive,Food,IN,63.6,Average IPO
+PVR INOX Ltd,PVRINOX,NSE,Communication,Entertainment,IN,63.5,Average IPO
+Fedbank Financial Services,FEDFINA,NSE,Financial,Financial Services,IN,63.5,Average IPO
+Federal Bank Ltd,FEDERALBNK,NSE,Financial,Banks,IN,63.4,Average IPO
+Atul Ltd,ATUL,NSE,Basic Materials,Chemicals,IN,63.4,Average IPO
+Balaji Amines Ltd,BALAMINES,NSE,Basic Materials,Chemicals,IN,63.4,Average IPO
+Dixon Technologies India,DIXON,NSE,Technology,Consumer Electronics,IN,63.4,Average IPO
+Slack Technologies Inc.,WORK,NYSE,Technology,Software,US,63.4,Average IPO
+Uber Technologies Inc.,UBER,NYSE,Technology,Software,US,63.3,Average IPO
+Johnson & Johnson,JNJ,NYSE,Healthcare,Drug Manufacturers,US,63.3,Average IPO
+PDD Holdings Inc.,PDD,NASDAQ,Consumer Cyclical,E-Commerce,CN,63.3,Average IPO
+Tata Motors Ltd,TATAMOTORS,NSE,Consumer Cyclical,Auto Manufacturers,IN,63.3,Average IPO
+Ping An Insurance Group,2318,HKEX,Financial,Insurance,CN,63.3,Average IPO
+Enviro Infra Engineers Ltd,ENVIRO,NSE,Industrials,Infrastructure,IN,63.3,Average IPO
+Sharpline Broadcast Ltd,SHARPLINE,NSE,Communication,Media,IN,63.3,Average IPO
+Signet Industries Ltd,SIGNETIND,NSE,Basic Materials,Chemicals,IN,63.3,Average IPO
+AIA Engineering Ltd,AIAENG,NSE,Industrials,Industrial Equipment,IN,63.3,Average IPO
+IEX (Indian Energy Exchange),IEX,NSE,Financial,Financial Services,IN,63.2,Average IPO
+India Cements Ltd,INDIACEM,NSE,Basic Materials,Cement,IN,63.2,Average IPO
+Zee Entertainment Enterprises,ZEEL,NSE,Communication,Entertainment,IN,63.2,Average IPO
+Chewy Inc.,CHWY,NYSE,Consumer Cyclical,E-Commerce,US,63.2,Average IPO
+Zee Entertainment Ltd,ZEEL,NSE,Communication,Entertainment,IN,63.1,Average IPO
+Sena Development Ltd,SENADEV,NSE,Real Estate,Real Estate Development,IN,63.1,Average IPO
+Intel Corporation,INTC,NASDAQ,Technology,Semiconductors,US,63.0,Average IPO
+SKF India Ltd,SKFINDIA,NSE,Industrials,Industrial Equipment,IN,63.0,Average IPO
+Brookfield Corp,BN,TSX,Financial,Asset Management,CA,63.0,Average IPO
+KM Agritech Ltd,KMAGRI,NSE,Consumer Defensive,Food,IN,63.0,Average IPO
+Delhivery Ltd,DELHIVERY,NSE,Industrials,Logistics,IN,62.9,Average IPO
+IDBI Bank Ltd,IDBI,NSE,Financial,Banks,IN,62.9,Average IPO
+JSW Infrastructure Ltd,JSWINFRA,NSE,Industrials,Infrastructure,IN,62.8,Average IPO
+Trent Ltd,TRENT,NSE,Consumer Cyclical,Retail,IN,62.8,Average IPO
+Kothari Industrial Corp,KOTHARIIND,NSE,Basic Materials,Fertilizers,IN,62.8,Average IPO
+Yudiz Solutions Ltd,YUDIZ,NSE,Technology,Software,IN,62.8,Average IPO
+Marico Ltd,MARICO,NSE,Consumer Defensive,Personal Care,IN,62.7,Average IPO
+La Opala RG Ltd,LAOPALA,NSE,Consumer Cyclical,Household Products,IN,62.7,Average IPO
+Procter & Gamble,PG,NYSE,Consumer Defensive,Household Products,US,62.6,Average IPO
+PetroChina Co Ltd,0857,HKEX,Energy,Oil & Gas,CN,62.6,Average IPO
+Indo Farm Equipment Ltd,INDOFARM,NSE,Industrials,Farm Equipment,IN,62.6,Average IPO
+Perfect Infraengineers Ltd,PERFECTINF,NSE,Industrials,Infrastructure,IN,62.6,Average IPO
+Shreeshay Engienering Ltd,SHREESHAY,NSE,Industrials,Engineering,IN,62.6,Average IPO
+Palantir Technologies Inc.,PLTR,NASDAQ,Technology,Software,US,62.5,Average IPO
+Mankind Pharma Ltd,MANKIND,NSE,Healthcare,Pharmaceuticals,IN,62.4,Average IPO
+Page Industries Ltd,PAGEIND,NSE,Consumer Cyclical,Apparel,IN,62.4,Average IPO
+Sobha Ltd,SOBHA,NSE,Real Estate,Real Estate Development,IN,62.4,Average IPO
+Croissance Agriculture Ltd,CROISSANCE,NSE,Consumer Defensive,Food,IN,62.4,Average IPO
+EasyJet PLC,EZJ,LSE,Industrials,Airlines,GB,62.3,Average IPO
+Meituan,3690,HKEX,Technology,Internet Services,CN,62.3,Average IPO
+Ixigo (Le Travenues),IXIGO,NSE,Technology,Travel Technology,IN,62.2,Average IPO
+Balrampur Chini Mills Ltd,BALRAMCHIN,NSE,Consumer Defensive,Sugar,IN,62.2,Average IPO
+Suven Pharmaceuticals Ltd,SUVENPHAR,NSE,Healthcare,Pharmaceuticals,IN,62.2,Average IPO
+Beyond Meat Inc.,BYND,NASDAQ,Consumer Defensive,Food,US,62.2,Average IPO
+Digidrive Distributors Ltd,DIGIDRIVE,NSE,Consumer Cyclical,E-Commerce,IN,62.2,Average IPO
+Docmode Health Tech Ltd,DOCMODE,NSE,Healthcare,Healthcare Services,IN,62.2,Average IPO
+Inox India Ltd,INOXINDIA,NSE,Industrials,Industrial Equipment,IN,62.2,Average IPO
+Tata Power Ltd,TATAPOWER,NSE,Utilities,Electric Utilities,IN,62.1,Average IPO
+RailTel Corp of India,RAILTEL,NSE,Technology,Telecom,IN,62.1,Average IPO
+Delta Corp Ltd,DELTACORP,NSE,Consumer Cyclical,Entertainment,IN,62.1,Average IPO
+Quess Corp Ltd,QUESS,NSE,Industrials,Staffing,IN,62.1,Average IPO
+Technowrapar Software,TECHNOWRA,NSE,Technology,Software,IN,62.1,Average IPO
+Paradeep Phosphates Ltd,PARADEEP,NSE,Basic Materials,Fertilizers,IN,62.0,Average IPO
+Gujarat Gas Ltd,GUJGAS,NSE,Utilities,Gas Distribution,IN,62.0,Average IPO
+IIFL Finance Ltd,IIFL,NSE,Financial,Financial Services,IN,62.0,Average IPO
+Weibo Corp,WB,NASDAQ,Communication,Internet Services,CN,62.0,Average IPO
+Integra Essentia Ltd,INTEGRAESS,NSE,Consumer Defensive,Food,IN,62.0,Average IPO
+Krystal Integrated Services,KRYSTAL,NSE,Industrials,Business Services,IN,62.0,Average IPO
+UnitedHealth Group Inc.,UNH,NYSE,Healthcare,Healthcare Plans,US,61.9,Average IPO
+Tata Elxsi Ltd,TATAELXSI,NSE,Technology,Software,IN,61.9,Average IPO
+Cyient Ltd,CYIENT,NSE,Technology,Engineering Services,IN,61.9,Average IPO
+NetEase Inc.,9999,HKEX,Technology,Internet Services,CN,61.9,Average IPO
+J.G. Chemicals Ltd,JGCHEM,NSE,Basic Materials,Chemicals,IN,61.9,Average IPO
+Tac Security Solutions Ltd,TACSEC,NSE,Technology,Cybersecurity,IN,61.9,Average IPO
+Astral Ltd,ASTRAL,NSE,Industrials,Building Materials,IN,61.8,Average IPO
+Quality Foils India Ltd,QUALIFOIL,NSE,Industrials,Packaging,IN,61.8,Average IPO
+Shree Vasu Logistics Ltd,VASULOGIS,NSE,Industrials,Logistics,IN,61.8,Average IPO
+Lululemon Athletica Inc.,LULU,NASDAQ,Consumer Cyclical,Apparel,CA,61.8,Average IPO
+Li Auto Inc.,LI,NASDAQ,Consumer Cyclical,Auto Manufacturers,CN,61.7,Average IPO
+IGL (Indraprastha Gas),IGL,NSE,Utilities,Gas Distribution,IN,61.7,Average IPO
+IFCI Ltd,IFCI,NSE,Financial,Financial Services,IN,61.7,Average IPO
+Kiwitech Solutions Ltd,KIWITECH,NSE,Technology,Software,IN,61.7,Average IPO
+Yash Optics & Lens Ltd,YASHOPTICS,NSE,Healthcare,Medical Devices,IN,61.7,Average IPO
+Rolex Rings Ltd,ROLEXRINGS,NSE,Consumer Cyclical,Auto Parts,IN,61.6,Average IPO
+Linde India Ltd,LINDEINDIA,NSE,Basic Materials,Chemicals,IN,61.6,Average IPO
+Pondy Oxides & Chemicals,PONDYOXIDE,NSE,Basic Materials,Chemicals,IN,61.6,Average IPO
+Svarnim Trade Udyog Ltd,STUL,NSE,Consumer Cyclical,Trading,IN,61.6,Average IPO
+Konstelec Engineers Ltd,KONSTELEC,NSE,Industrials,Engineering,IN,61.6,Average IPO
+Adidas AG,ADS,XETRA,Consumer Cyclical,Apparel,DE,61.6,Average IPO
+Sun TV Network Ltd,SUNTV,NSE,Communication,Entertainment,IN,61.5,Average IPO
+Interiors & More Ltd,INTERIORS,NSE,Consumer Cyclical,Retail,IN,61.5,Average IPO
+Pearl Green Clubs & Resorts,PEARLGREEN,NSE,Consumer Cyclical,Hotels,IN,61.5,Average IPO
+Krsnaa Diagnostics Ltd,KRSNAA,NSE,Healthcare,Diagnostics,IN,61.4,Average IPO
+DiDi Global Inc.,DIDIY,OTC,Technology,Software,CN,61.4,Average IPO
+Kuaishou Technology,1024,HKEX,Communication,Internet Services,CN,61.4,Average IPO
+Suncor Energy Inc.,SU,TSX,Energy,Oil & Gas,CA,61.4,Average IPO
+SAP SE,SAP,XETRA,Technology,Software,DE,61.4,Average IPO
+L&T Technology Services,LTTS,NSE,Technology,Engineering Services,IN,61.3,Average IPO
+Swiggy Ltd,SWIGGY,NSE,Technology,Internet Services,IN,61.3,Average IPO
+Tamilnad Agricult Chem,TAC,NSE,Basic Materials,Fertilizers,IN,61.3,Average IPO
+Everest Kanto Cylinder Ltd,EKC,NSE,Industrials,Industrial Equipment,IN,61.3,Average IPO
+Automotive Axles Ltd,AUTOAXLES,NSE,Consumer Cyclical,Auto Parts,IN,61.2,Average IPO
+Bumble Inc.,BMBL,NASDAQ,Technology,Software,US,61.2,Average IPO
+NVIDIA Corporation,NVDA,NASDAQ,Technology,Semiconductors,US,61.1,Average IPO
+EID Parry (India) Ltd,EIDPARRY,NSE,Consumer Defensive,Sugar,IN,61.1,Average IPO
+Lloyds Metals & Energy Ltd,LLOYDSME,NSE,Basic Materials,Metals & Mining,IN,61.1,Average IPO
+NIO Inc.,NIO,NYSE,Consumer Cyclical,Auto Manufacturers,CN,61.0,Average IPO
+KPIT Technologies Ltd,KPITTECH,NSE,Technology,Software,IN,61.0,Average IPO
+Westlife Foodworld Ltd,WESTLIFE,NSE,Consumer Cyclical,Restaurants,IN,61.0,Average IPO
+GlaxoSmithKline PLC,GSK,LSE,Healthcare,Pharmaceuticals,GB,61.0,Average IPO
+King Digital Entertainment,KING,NYSE,Communication,Entertainment,GB,61.0,Average IPO
+Cosmic CRF Ltd,COSMICRF,NSE,Technology,Software,IN,61.0,Average IPO
+Manba Finance Ltd,MANBAFIN,NSE,Financial,Financial Services,IN,61.0,Average IPO
+Protean eGov Technologies,PROTEAN,NSE,Technology,Software,IN,61.0,Average IPO
+Zomato Ltd,ZOMATO,NSE,Technology,Internet Services,IN,60.9,Average IPO
+Hero MotoCorp Ltd,HEROMOTOCO,NSE,Consumer Cyclical,Auto Manufacturers,IN,60.9,Average IPO
+Tarmat Ltd,TARMAT,NSE,Industrials,Infrastructure,IN,60.9,Average IPO
+Salesforce Inc.,CRM,NYSE,Technology,Software,US,60.8,Average IPO
+Zensar Technologies Ltd,ZENSARTECH,NSE,Technology,Software,IN,60.8,Average IPO
+Eastern Logica Infoway Ltd,ELOGICA,NSE,Technology,Software,IN,60.8,Average IPO
+Eicher Motors Ltd,EICHERMOT,NSE,Consumer Cyclical,Auto Manufacturers,IN,60.7,Average IPO
+Honeywell Automation India Ltd,HONAUT,NSE,Industrials,Industrial Equipment,IN,60.7,Average IPO
+Housing & Urban Dev Corp,HUDCO,NSE,Financial,Housing Finance,IN,60.7,Average IPO
+LendingClub Corp,LC,NYSE,Financial,Financial Services,US,60.7,Average IPO
+Indo Borax & Chemicals Ltd,INDOBORAX,NSE,Basic Materials,Chemicals,IN,60.7,Average IPO
+Wardwizard Healthcare Ltd,WARDWIZ,NSE,Healthcare,Healthcare Services,IN,60.7,Average IPO
+Genus Paper & Boards Ltd,GENUSPAPER,NSE,Basic Materials,Paper,IN,60.7,Average IPO
+Microsoft Corporation,MSFT,NASDAQ,Technology,Software,US,60.6,Average IPO
+XPeng Inc.,XPEV,NYSE,Consumer Cyclical,Auto Manufacturers,CN,60.6,Average IPO
+Infosys Ltd,INFY,NSE,Technology,Software,IN,60.6,Average IPO
+Dr. Reddy's Labs ADR,RDY,NYSE,Healthcare,Pharmaceuticals,IN,60.6,Average IPO
+Marine Electricals India,MARINE,NSE,Industrials,Electrical Equipment,IN,60.6,Average IPO
+Yashraj Biotechnology Ltd,YASHRAJ,NSE,Healthcare,Biotechnology,IN,60.6,Average IPO
+ICICI Bank Ltd,ICICIBANK,NSE,Financial,Banks,IN,60.5,Average IPO
+Licious,LICIOUS,NSE,Consumer Defensive,Food,IN,60.5,Average IPO
+Droneacharya Aerial Innov,DRONE,NSE,Technology,Drones,IN,60.5,Average IPO
+Pansari Developers Ltd,PANSARIDV,NSE,Real Estate,Real Estate Development,IN,60.5,Average IPO
+Advanced Micro Devices,AMD,NASDAQ,Technology,Semiconductors,US,60.4,Average IPO
+Cognizant Technology Solutions,CTSH,NASDAQ,Technology,Consulting,US,60.4,Average IPO
+JPMorgan Chase & Co.,JPM,NYSE,Financial,Banks,US,60.3,Average IPO
+Visa Inc.,V,NYSE,Financial,Credit Services,US,60.3,Average IPO
+Nykaa (FSN E-Commerce),NYKAA,NSE,Consumer Cyclical,E-Commerce,IN,60.3,Average IPO
+Bajaj Holdings & Investment,BAJAJHLDNG,NSE,Financial,Financial Services,IN,60.3,Average IPO
+Radico Khaitan Ltd,RADICO,NSE,Consumer Defensive,Beverages,IN,60.3,Average IPO
+CWD Engineering Ltd,CWDENG,NSE,Industrials,Engineering,IN,60.3,Average IPO
+Fermenta Biotech Ltd,FERMENTA,NSE,Healthcare,Biotechnology,IN,60.3,Average IPO
+Sapphire Foods India Ltd,SAPPHIRE,NSE,Consumer Cyclical,Restaurants,IN,60.2,Average IPO
+Poly Medicure Ltd,POLYMED,NSE,Healthcare,Medical Devices,IN,60.2,Average IPO
+Canadian Pacific Kansas City,CP,TSX,Industrials,Railroads,CA,60.2,Average IPO
+Selinah International Ltd,SELINAH,NSE,Consumer Cyclical,Apparel,IN,60.2,Average IPO
+ERIS Lifesciences Ltd,ERIS,NSE,Healthcare,Pharmaceuticals,IN,60.2,Average IPO
+Novo Nordisk A/S,NVO,NYSE,Healthcare,Drug Manufacturers,DK,60.1,Average IPO
+Dmart (Avenue Supermarts),DMART,NSE,Consumer Defensive,Discount Stores,IN,60.1,Average IPO
+Shriram Transport Finance,SHRIRAMFIN,NSE,Financial,Financial Services,IN,60.1,Average IPO
+Enbridge Inc.,ENB,TSX,Energy,Oil & Gas Midstream,CA,60.1,Average IPO
+Five-Star Business Finance,FIVESTAR,NSE,Financial,Financial Services,IN,60.1,Average IPO
+Dabur India Ltd,DABUR,NSE,Consumer Defensive,Personal Care,IN,60.0,Average IPO
+Hindustan Zinc Ltd,HINDZINC,NSE,Basic Materials,Metals & Mining,IN,60.0,Average IPO
+HDFC AMC Ltd,HDFCAMC,NSE,Financial,Asset Management,IN,60.0,Average IPO
+KPR Mill Ltd,KPRMILL,NSE,Consumer Cyclical,Textiles,IN,60.0,Average IPO
+Burberry Group PLC,BRBY,LSE,Consumer Cyclical,Luxury Goods,GB,60.0,Average IPO
+Haidilao International,6862,HKEX,Consumer Cyclical,Restaurants,CN,60.0,Average IPO
+Puranik Builders Ltd,PURANIK,NSE,Real Estate,Real Estate Development,IN,60.0,Average IPO
+Deutsche Boerse AG,DB1,XETRA,Financial,Financial Services,DE,60.0,Average IPO
+Walmart Inc.,WMT,NYSE,Consumer Defensive,Discount Stores,US,59.9,Weak IPO
+Baidu Inc.,BIDU,NASDAQ,Technology,Internet Services,CN,59.9,Weak IPO
+HFCL Ltd,HFCL,NSE,Technology,Communication Equipment,IN,59.9,Weak IPO
+Vodafone Idea Ltd,IDEA,NSE,Communication,Telecom,IN,59.9,Weak IPO
+iQiyi Inc.,IQ,NASDAQ,Communication,Entertainment,CN,59.9,Weak IPO
+Greenhitech Ventures Ltd,GREENHITEC,NSE,Technology,Software,IN,59.9,Weak IPO
+Harshdeep Hortico Ltd,HARSHHORT,NSE,Consumer Defensive,Food,IN,59.9,Weak IPO
+Infinium Pharmachem Ltd,INFINIUM,NSE,Healthcare,Pharmaceuticals,IN,59.9,Weak IPO
+Galaxy Surfactants Ltd,GALAXYSURF,NSE,Basic Materials,Chemicals,IN,59.9,Weak IPO
+Pidilite Industries Ltd,PIDILITIND,NSE,Basic Materials,Chemicals,IN,59.8,Weak IPO
+Astral Poly Technik,ASTRAL,NSE,Industrials,Plumbing,IN,59.8,Weak IPO
+Sastasundar Ventures Ltd,SASTASUNDR,NSE,Healthcare,Healthcare Services,IN,59.8,Weak IPO
+Shree Tirupati Balajee,TIRUPATIBJ,NSE,Industrials,Infrastructure,IN,59.8,Weak IPO
+Fine Organic Industries Ltd,FINEORG,NSE,Basic Materials,Chemicals,IN,59.8,Weak IPO
+JSW Steel Ltd,JSWSTEEL,NSE,Basic Materials,Steel,IN,59.7,Weak IPO
+Oswal Agro Mills Ltd,OSWALAGRO,NSE,Consumer Defensive,Food,IN,59.7,Weak IPO
+Power Finance Corp Ltd,PFC,NSE,Financial,Financial Services,IN,59.6,Weak IPO
+Whirlpool of India Ltd,WHIRLPOOL,NSE,Consumer Cyclical,Consumer Electronics,IN,59.6,Weak IPO
+Vijaya Diagnostic Centre,VIJAYA,NSE,Healthcare,Diagnostics,IN,59.6,Weak IPO
+Deepak Fertilisers & Petro,DEEPAKFERT,NSE,Basic Materials,Fertilizers,IN,59.5,Weak IPO
+Pinterest Inc.,PINS,NYSE,Communication,Internet Services,US,59.5,Weak IPO
+Canadian Imperial Bank,CM,TSX,Financial,Banks,CA,59.5,Weak IPO
+Orient Refractories Ltd,ORIENTREF,NSE,Industrials,Industrial Equipment,IN,59.5,Weak IPO
+Havells India Ltd,HAVELLS,NSE,Industrials,Electrical Equipment,IN,59.4,Weak IPO
+Bosch Ltd,BOSCHLTD,NSE,Consumer Cyclical,Auto Parts,IN,59.4,Weak IPO
+Wonder Fibromats Ltd,WONDERFIB,NSE,Consumer Cyclical,Textiles,IN,59.4,Weak IPO
+Apple Inc.,AAPL,NASDAQ,Technology,Consumer Electronics,US,59.3,Weak IPO
+JD.com Inc.,JD,NASDAQ,Consumer Cyclical,E-Commerce,CN,59.3,Weak IPO
+Mrs. Bectors Food Specialities,BECTORFOOD,NSE,Consumer Defensive,Food,IN,59.3,Weak IPO
+Windlas Biotech Ltd,WINDLAS,NSE,Healthcare,Pharmaceuticals,IN,59.3,Weak IPO
+Accenture plc,ACN,NYSE,Technology,Consulting,IE,59.2,Weak IPO
+Devyani International Ltd,DEVYANI,NSE,Consumer Cyclical,Restaurants,IN,59.2,Weak IPO
+Sun Pharma Advanced Research,SPARC,NSE,Healthcare,Pharmaceuticals,IN,59.2,Weak IPO
+Race Eco Chain Ltd,RACEECO,NSE,Industrials,Logistics,IN,59.2,Weak IPO
+Epigral Ltd,EPIGRAL,NSE,Basic Materials,Chemicals,IN,59.2,Weak IPO
+GMR Airports Infrastructure,GMRINFRA,NSE,Industrials,Infrastructure,IN,59.1,Weak IPO
+Hindustan Petroleum Corp,HINDPETRO,NSE,Energy,Oil & Gas,IN,59.1,Weak IPO
+Signature Global India Ltd,SIGNATURE,NSE,Real Estate,Real Estate Development,IN,59.1,Weak IPO
+Magna Electrocast Ltd,MAGNAELEC,NSE,Industrials,Industrial Equipment,IN,59.1,Weak IPO
+ABB India Ltd,ABB,NSE,Industrials,Industrial Equipment,IN,59.0,Weak IPO
+Orchid Pharma Ltd,ORCHIDPHAR,NSE,Healthcare,Pharmaceuticals,IN,59.0,Weak IPO
+Paytm (One97 Comm.),PAYTM,NSE,Technology,Fintech,IN,58.9,Weak IPO
+Pinduoduo Inc.,PDD,NASDAQ,Consumer Cyclical,E-Commerce,CN,58.9,Weak IPO
+Dentach International Ltd,DENTACH,NSE,Healthcare,Medical Devices,IN,58.8,Weak IPO
+Adobe Inc.,ADBE,NASDAQ,Technology,Software,US,58.7,Weak IPO
+Shree Cement Ltd,SHREECEM,NSE,Basic Materials,Cement,IN,58.7,Weak IPO
+Supreme Industries Ltd,SUPREMEIND,NSE,Industrials,Building Materials,IN,58.7,Weak IPO
+Unilever PLC,ULVR,LSE,Consumer Defensive,Household Products,GB,58.7,Weak IPO
+Bank of Montreal,BMO,TSX,Financial,Banks,CA,58.7,Weak IPO
+Canadian National Railway,CNR,TSX,Industrials,Railroads,CA,58.7,Weak IPO
+Innovana Thinklabs Ltd,INNOVANA,NSE,Technology,Software,IN,58.7,Weak IPO
+Netweb Technologies India,NETWEB,NSE,Technology,Software,IN,58.7,Weak IPO
+Adani Total Gas Ltd,ATGL,NSE,Utilities,Gas Distribution,IN,58.6,Weak IPO
+eClerx Services Ltd,ECLERX,NSE,Technology,Consulting,IN,58.6,Weak IPO
+Iconic Fashion India Ltd,ICONICFASH,NSE,Consumer Cyclical,Apparel,IN,58.6,Weak IPO
+Marsons Ltd,MARSONS,NSE,Industrials,Industrial Equipment,IN,58.6,Weak IPO
+Swasti Vinayaka Art & Her,SWASTIVI,NSE,Consumer Cyclical,Retail,IN,58.6,Weak IPO
+Infineon Technologies,IFX,XETRA,Technology,Semiconductors,DE,58.6,Weak IPO
+Amazon.com Inc.,AMZN,NASDAQ,Consumer Cyclical,E-Commerce,US,58.5,Weak IPO
+Container Corp of India Ltd,CONCOR,NSE,Industrials,Logistics,IN,58.5,Weak IPO
+DCB Bank Ltd,DCBBANK,NSE,Financial,Banks,IN,58.5,Weak IPO
+Didiglobal Inc.,DIDI,NYSE,Technology,Software,CN,58.5,Weak IPO
+SBFC Finance Ltd,SBFC,NSE,Financial,Financial Services,IN,58.5,Weak IPO
+Tega Industries Ltd,TEGA,NSE,Industrials,Industrial Equipment,IN,58.5,Weak IPO
+Siemens Ltd,SIEMENS,NSE,Industrials,Industrial Equipment,IN,58.4,Weak IPO
+New India Assurance Co,NIACL,NSE,Financial,Insurance,IN,58.3,Weak IPO
+Polycab India Ltd,POLYCAB,NSE,Industrials,Electrical Equipment,IN,58.3,Weak IPO
+Reddit Inc.,RDDT,NYSE,Communication,Internet Services,US,58.3,Weak IPO
+GSK plc,GSK,NYSE,Healthcare,Drug Manufacturers,GB,58.2,Weak IPO
+Varun Beverages Ltd,VBL,NSE,Consumer Defensive,Beverages,IN,58.2,Weak IPO
+Coromandel International Ltd,COROMANDEL,NSE,Basic Materials,Fertilizers,IN,58.2,Weak IPO
+Zuari Agro Chemicals Ltd,ZUARI,NSE,Basic Materials,Fertilizers,IN,58.2,Weak IPO
+Star Health & Allied Ins,STARHEALTH,NSE,Financial,Insurance,IN,58.2,Weak IPO
+Sun Pharmaceutical Inds.,SUNPHARMA,NSE,Healthcare,Pharmaceuticals,IN,58.1,Weak IPO
+Tata Communications Ltd,TATACOMM,NSE,Communication,Telecom,IN,58.1,Weak IPO
+J.K. Lakshmi Cement Ltd,JKLAKSHMI,NSE,Basic Materials,Cement,IN,58.1,Weak IPO
+Jubilant FoodWorks Ltd,JUBLFOOD,NSE,Consumer Cyclical,Restaurants,IN,58.0,Weak IPO
+Strides Pharma Science Ltd,STAR,NSE,Healthcare,Pharmaceuticals,IN,58.0,Weak IPO
+Welspun India Ltd,WELSPUNIND,NSE,Consumer Cyclical,Textiles,IN,58.0,Weak IPO
+GlobalFoundries Inc.,GFS,NASDAQ,Technology,Semiconductors,US,58.0,Weak IPO
+Alibaba Group Holding Ltd,BABA,NYSE,Consumer Cyclical,E-Commerce,CN,57.9,Weak IPO
+Crompton Greaves Consumer,CROMPTON,NSE,Consumer Cyclical,Consumer Electronics,IN,57.9,Weak IPO
+Winsol Engineers Ltd,WINSOL,NSE,Industrials,Engineering,IN,57.9,Weak IPO
+Equitas Small Finance Bank,EQUITASBNK,NSE,Financial,Banks,IN,57.9,Weak IPO
+Freshworks Inc.,FRSH,NASDAQ,Technology,Software,US,57.8,Weak IPO
+British American Tobacco,BATS,LSE,Consumer Defensive,Tobacco,GB,57.8,Weak IPO
+JD Logistics Inc.,2618,HKEX,Industrials,Logistics,CN,57.8,Weak IPO
+Tech Mahindra Ltd,TECHM,NSE,Technology,Software,IN,57.7,Weak IPO
+Torrent Pharmaceuticals Ltd,TORNTPHARM,NSE,Healthcare,Pharmaceuticals,IN,57.7,Weak IPO
+KFin Technologies Ltd,KFINTECH,NSE,Technology,Fintech,IN,57.7,Weak IPO
+LVMH Moet Hennessy,MC,EURONEXT,Consumer Cyclical,Luxury Goods,FR,57.7,Weak IPO
+Amber Enterprises India Ltd,AMBER,NSE,Consumer Cyclical,Consumer Electronics,IN,57.6,Weak IPO
+Sterling Tools Ltd,STERTOOLS,NSE,Consumer Cyclical,Auto Parts,IN,57.6,Weak IPO
+DocuSign Inc.,DOCU,NASDAQ,Technology,Software,US,57.6,Weak IPO
+GE Shipping Co Ltd,GESHIP,NSE,Industrials,Logistics,IN,57.6,Weak IPO
+Toronto-Dominion Bank,TD,TSX,Financial,Banks,CA,57.5,Weak IPO
+Logisticus Infra Ltd,LOGISTICUS,NSE,Industrials,Infrastructure,IN,57.5,Weak IPO
+Polo Queen Industrial,POLOQUEEN,NSE,Consumer Cyclical,Household Products,IN,57.5,Weak IPO
+United Spirits Ltd,MCDOWELL-N,NSE,Consumer Defensive,Beverages,IN,57.4,Weak IPO
+Westlife Development Ltd,WESTLIFE,NSE,Consumer Cyclical,Restaurants,IN,57.4,Weak IPO
+Asahi India Glass Ltd,ASAHIINDIA,NSE,Consumer Cyclical,Auto Parts,IN,57.4,Weak IPO
+Opendoor Technologies Inc.,OPEN,NASDAQ,Real Estate,Real Estate Services,US,57.4,Weak IPO
+TaskUs Inc.,TASK,NASDAQ,Technology,Consulting,US,57.4,Weak IPO
+KG Petrochem Ltd,KGPETRO,NSE,Energy,Oil & Gas,IN,57.4,Weak IPO
+Scan Steels Ltd,SCANSTL,NSE,Basic Materials,Steel,IN,57.4,Weak IPO
+Swaraj Engines Ltd,SWARAJENG,NSE,Industrials,Farm Equipment,IN,57.4,Weak IPO
+Heritage Foods Ltd,HERITGFOOD,NSE,Consumer Defensive,Food,IN,57.4,Weak IPO
+Roche Holding AG,RHHBY,OTC,Healthcare,Drug Manufacturers,CH,57.3,Weak IPO
+Artemis Medicare Services,ARTEMISMED,NSE,Healthcare,Healthcare Services,IN,57.3,Weak IPO
+Elastic N.V.,ESTC,NYSE,Technology,Software,NL,57.3,Weak IPO
+Gujarat Toolroom Ltd,GUJTOOLR,NSE,Industrials,Industrial Equipment,IN,57.3,Weak IPO
+CDSL Ltd,CDSL,NSE,Financial,Financial Services,IN,57.2,Weak IPO
+Archean Chemical Industries,ARCHEAN,NSE,Basic Materials,Chemicals,IN,57.2,Weak IPO
+KNR Constructions Ltd,KNRCON,NSE,Industrials,Infrastructure,IN,57.2,Weak IPO
+Fitbit Inc.,FIT,NYSE,Technology,Consumer Electronics,US,57.2,Weak IPO
+Newgen Software Technologies,NEWGEN,NSE,Technology,Software,IN,57.2,Weak IPO
+Nova Agri Tech Ltd,NOVAAGRI,NSE,Consumer Defensive,Food,IN,57.2,Weak IPO
+W S Industries India Ltd,WSI,NSE,Industrials,Electrical Equipment,IN,57.2,Weak IPO
+Shankara Building Products,SHANKARA,NSE,Industrials,Building Materials,IN,57.1,Weak IPO
+GrubHub Inc.,GRUB,NYSE,Technology,Software,US,57.1,Weak IPO
+Khaitan India Ltd,KHAITANIND,NSE,Consumer Cyclical,Consumer Electronics,IN,57.1,Weak IPO
+Madhusudan Masala Ltd,MADHUSUDAN,NSE,Consumer Defensive,Food,IN,57.1,Weak IPO
+United Breweries Ltd,UBL,NSE,Consumer Defensive,Beverages,IN,57.0,Weak IPO
+Sumitomo Chemical India Ltd,SUMICHEM,NSE,Basic Materials,Chemicals,IN,57.0,Weak IPO
+Trade Desk Inc.,TTD,NASDAQ,Technology,Software,US,57.0,Weak IPO
+GAIL (India) Ltd,GAIL,NSE,Energy,Oil & Gas,IN,56.9,Weak IPO
+Syngene International Ltd,SYNGENE,NSE,Healthcare,Biotechnology,IN,56.9,Weak IPO
+Lyft Inc.,LYFT,NASDAQ,Technology,Software,US,56.9,Weak IPO
+Sanstar Ltd,SANSTAR,NSE,Consumer Defensive,Food,IN,56.9,Weak IPO
+Netflix Inc.,NFLX,NASDAQ,Communication,Entertainment,US,56.8,Weak IPO
+Aptus Value Housing Finance,APTUS,NSE,Financial,Housing Finance,IN,56.8,Weak IPO
+Heidelberg Cement India Ltd,HEIDELBERG,NSE,Basic Materials,Cement,IN,56.8,Weak IPO
+VST Industries Ltd,VSTIND,NSE,Consumer Defensive,Tobacco,IN,56.8,Weak IPO
+InfoBeans Technologies Ltd,INFOBEANS,NSE,Technology,Software,IN,56.8,Weak IPO
+Hexaware Technologies Ltd,HEXAWARE,NSE,Technology,Software,IN,56.8,Weak IPO
+Cisco Systems Inc.,CSCO,NASDAQ,Technology,Communication Equipment,US,56.7,Weak IPO
+Mindtree Ltd,MINDTREE,NSE,Technology,Software,IN,56.7,Weak IPO
+Neuland Laboratories Ltd,NEULANDLAB,NSE,Healthcare,Pharmaceuticals,IN,56.7,Weak IPO
+Chimo Agri Products Ltd,CHIMOAGRI,NSE,Consumer Defensive,Food,IN,56.7,Weak IPO
+ONGC Ltd,ONGC,NSE,Energy,Oil & Gas,IN,56.6,Weak IPO
+Lupin Ltd,LUPIN,NSE,Healthcare,Pharmaceuticals,IN,56.6,Weak IPO
+NBCC (India) Ltd,NBCC,NSE,Industrials,Construction,IN,56.6,Weak IPO
+National Aluminium Co Ltd,NATIONALUM,NSE,Basic Materials,Metals & Mining,IN,56.6,Weak IPO
+KEC International Ltd,KEC,NSE,Industrials,Infrastructure,IN,56.6,Weak IPO
+JD Health International,6618,HKEX,Healthcare,Healthcare Services,CN,56.6,Weak IPO
+Omfurn India Ltd,OMFURN,NSE,Consumer Cyclical,Household Products,IN,56.6,Weak IPO
+AstraZeneca PLC,AZN,NASDAQ,Healthcare,Drug Manufacturers,GB,56.5,Weak IPO
+Corporation Bank,CORPBANK,NSE,Financial,Banks,IN,56.5,Weak IPO
+Zscaler Inc.,ZS,NASDAQ,Technology,Cybersecurity,US,56.5,Weak IPO
+BP PLC,BP.,LSE,Energy,Oil & Gas,GB,56.5,Weak IPO
+HMA Agro Industries Ltd,HMAAGRO,NSE,Consumer Defensive,Food,IN,56.5,Weak IPO
+Nureca Ltd,NURECA,NSE,Healthcare,Medical Devices,IN,56.5,Weak IPO
+Elgi Rubber Co Ltd,ELGIRUBCO,NSE,Consumer Cyclical,Auto Parts,IN,56.5,Weak IPO
+Hermes International,RMS,EURONEXT,Consumer Cyclical,Luxury Goods,FR,56.5,Weak IPO
+HCL Technologies Ltd,HCLTECH,NSE,Technology,Software,IN,56.4,Weak IPO
+Adani Green Energy Ltd,ADANIGREEN,NSE,Utilities,Renewable Energy,IN,56.3,Weak IPO
+Ircon International Ltd,IRCON,NSE,Industrials,Infrastructure,IN,56.3,Weak IPO
+Hindustan Copper Ltd,HINDCOPPER,NSE,Basic Materials,Metals & Mining,IN,56.3,Weak IPO
+J.M. Financial Ltd,JMFINANCIL,NSE,Financial,Financial Services,IN,56.3,Weak IPO
+Containe Tech Ltd,CONTAINER,NSE,Industrials,Logistics,IN,56.3,Weak IPO
+Orbit Exports Ltd,ORBITEXPO,NSE,Consumer Cyclical,Textiles,IN,56.3,Weak IPO
+Sheela Foam Ltd,SHEELAFOAM,NSE,Consumer Cyclical,Household Products,IN,56.3,Weak IPO
+Macobs Technologies Ltd,MACOBS,NSE,Technology,Software,IN,56.2,Weak IPO
+Aurobindo Pharma Ltd,AUROPHARMA,NSE,Healthcare,Pharmaceuticals,IN,56.1,Weak IPO
+Welspun Corp Ltd,WELCORP,NSE,Basic Materials,Steel,IN,56.1,Weak IPO
+MongoDB Inc.,MDB,NASDAQ,Technology,Software,US,56.1,Weak IPO
+Fortescue Metals Group,FMG,ASX,Basic Materials,Metals & Mining,AU,56.1,Weak IPO
+Polar Power India Ltd,POLARPOWER,NSE,Utilities,Electric Utilities,IN,56.1,Weak IPO
+Meta Platforms Inc.,META,NASDAQ,Technology,Social Media,US,56.0,Weak IPO
+NCC Ltd,NCC,NSE,Industrials,Construction,IN,56.0,Weak IPO
+Nu Holdings Ltd,NU,NYSE,Financial,Banks,BR,56.0,Weak IPO
+BYD Co Ltd,1211,HKEX,Consumer Cyclical,Auto Manufacturers,CN,56.0,Weak IPO
+GoPro Inc.,GPRO,NASDAQ,Technology,Consumer Electronics,US,55.9,Weak IPO
+Bajel Projects Ltd,BAJEL,NSE,Industrials,Engineering,IN,55.9,Weak IPO
+Hindalco Industries Ltd,HINDALCO,NSE,Basic Materials,Metals & Mining,IN,55.8,Weak IPO
+Rail Vikas Nigam Ltd,RVNL,NSE,Industrials,Infrastructure,IN,55.8,Weak IPO
+Shipping Corp of India Ltd,SCI,NSE,Industrials,Logistics,IN,55.8,Weak IPO
+Gujarat State Petronet Ltd,GSPL,NSE,Utilities,Gas Distribution,IN,55.7,Weak IPO
+Kirloskar Brothers Ltd,KIRLOSBROS,NSE,Industrials,Industrial Equipment,IN,55.7,Weak IPO
+Bank of Nova Scotia,BNS,TSX,Financial,Banks,CA,55.7,Weak IPO
+Zendesk Inc.,ZEN,NYSE,Technology,Software,US,55.7,Weak IPO
+Phaarmasia Ltd,PHAARMASIA,NSE,Healthcare,Pharmaceuticals,IN,55.7,Weak IPO
+Hathway Cable & Datacom,HATHWAY,NSE,Communication,Media,IN,55.7,Weak IPO
+Gujarat State Fertilizers,GSFC,NSE,Basic Materials,Fertilizers,IN,55.6,Weak IPO
+Okta Inc.,OKTA,NASDAQ,Technology,Software,US,55.6,Weak IPO
+Sonata Software Ltd,SONATSOFTW,NSE,Technology,Software,IN,55.5,Weak IPO
+Godrej Agrovet Ltd,GODREJAGRO,NSE,Consumer Defensive,Food,IN,55.5,Weak IPO
+China Petroleum & Chemical,0386,HKEX,Energy,Oil & Gas,CN,55.5,Weak IPO
+Geely Automobile Holdings,0175,HKEX,Consumer Cyclical,Auto Manufacturers,CN,55.5,Weak IPO
+Greenway GreenEnergy Ltd,GREENWAY,NSE,Utilities,Renewable Energy,IN,55.5,Weak IPO
+Samsara Inc.,IOT,NYSE,Technology,Software,US,55.4,Weak IPO
+Suraj Estate Developers,SURAJEST,NSE,Real Estate,Real Estate Development,IN,55.4,Weak IPO
+NATCO Pharma Ltd,NATCOPHARM,NSE,Healthcare,Pharmaceuticals,IN,55.3,Weak IPO
+Sarveshwar Foods Ltd,SARVFOODS,NSE,Consumer Defensive,Food,IN,55.3,Weak IPO
+Merck & Co. Inc.,MRK,NYSE,Healthcare,Drug Manufacturers,US,55.2,Weak IPO
+BSE Ltd,BSE,NSE,Financial,Financial Services,IN,55.2,Weak IPO
+Indian Bank,INDIANB,NSE,Financial,Banks,IN,55.2,Weak IPO
+Transurban Group,TCL,ASX,Industrials,Infrastructure,AU,55.2,Weak IPO
+PNB Gilts Ltd,PNBGILTS,NSE,Financial,Financial Services,IN,55.2,Weak IPO
+J.K. Paper Ltd,JKPAPER,NSE,Basic Materials,Paper,IN,55.1,Weak IPO
+CNOOC Ltd,0883,HKEX,Energy,Oil & Gas,CN,55.1,Weak IPO
+ITC Ltd,ITC,NSE,Consumer Defensive,Tobacco,IN,55.0,Weak IPO
+Apollo Hospitals Ltd,APOLLOHOSP,NSE,Healthcare,Healthcare Services,IN,55.0,Weak IPO
+Bharat Electronics Ltd,BEL,NSE,Industrials,Aerospace & Defense,IN,55.0,Weak IPO
+PNB Housing Finance Ltd,PNBHOUSING,NSE,Financial,Housing Finance,IN,55.0,Weak IPO
+GitLab Inc.,GTLB,NASDAQ,Technology,Software,US,55.0,Weak IPO
+Gopal Snacks Ltd,GOPALSNACK,NSE,Consumer Defensive,Food,IN,55.0,Weak IPO
+Khoobsurat Ltd,KHOOB,NSE,Consumer Cyclical,Apparel,IN,55.0,Weak IPO
+Voltrans Engineers Ltd,VOLTRANS,NSE,Industrials,Electrical Equipment,IN,55.0,Weak IPO
+Senco Gold Ltd,SENCO,NSE,Consumer Cyclical,Luxury Goods,IN,55.0,Weak IPO
+AbbVie Inc.,ABBV,NYSE,Healthcare,Drug Manufacturers,US,54.9,Weak IPO
+Just Dial Ltd,JUSTDIAL,NSE,Technology,Internet Services,IN,54.9,Weak IPO
+Comed Chemicals Ltd,COMEDCHEM,NSE,Healthcare,Pharmaceuticals,IN,54.9,Weak IPO
+Electrosteel Castings Ltd,ELECTCAST,NSE,Basic Materials,Steel,IN,54.9,Weak IPO
+Oil India Ltd,OIL,NSE,Energy,Oil & Gas,IN,54.8,Weak IPO
+China Mobile Ltd,0941,HKEX,Communication,Telecom,CN,54.8,Weak IPO
+Platinum Industries Ltd,PLATINUM,NSE,Basic Materials,Chemicals,IN,54.8,Weak IPO
+Superior Industries Ltd,SUPERIOR,NSE,Consumer Cyclical,Auto Parts,IN,54.8,Weak IPO
+Nuvoco Vistas Corp Ltd,NUVOCO,NSE,Basic Materials,Cement,IN,54.8,Weak IPO
+APL Apollo Tubes Ltd,APLAPOLLO,NSE,Basic Materials,Steel,IN,54.7,Weak IPO
+Sterling & Wilson Renewable,SWSOLAR,NSE,Utilities,Renewable Energy,IN,54.7,Weak IPO
+Bilibili Inc.,9626,HKEX,Communication,Entertainment,CN,54.7,Weak IPO
+Sansera Engineering Ltd,SANSERA,NSE,Consumer Cyclical,Auto Parts,IN,54.7,Weak IPO
+Kering SA,KER,EURONEXT,Consumer Cyclical,Luxury Goods,FR,54.7,Weak IPO
+Computer Age Mgmt Services,CAMS,NSE,Financial,Financial Services,IN,54.6,Weak IPO
+Cellecor Gadgets Ltd,CELLECOR,NSE,Technology,Consumer Electronics,IN,54.6,Weak IPO
+Dodla Dairy Ltd,DODLA,NSE,Consumer Defensive,Food,IN,54.6,Weak IPO
+Persistent Systems Ltd,PERSISTENT,NSE,Technology,Software,IN,54.5,Weak IPO
+J.K. Cement Ltd,JKCEMENT,NSE,Basic Materials,Cement,IN,54.5,Weak IPO
+HubSpot Inc.,HUBS,NYSE,Technology,Software,US,54.5,Weak IPO
+GPT Healthcare Ltd,GPTHEALTHC,NSE,Healthcare,Healthcare Services,IN,54.5,Weak IPO
+Indifra Ltd,INDIFRA,NSE,Industrials,Infrastructure,IN,54.5,Weak IPO
+Saianand Commercials Ltd,SAIANAND,NSE,Consumer Cyclical,Trading,IN,54.5,Weak IPO
+Happy Forgings Ltd,HAPPYFORGE,NSE,Industrials,Auto Parts,IN,54.5,Weak IPO
+Novartis AG,NVS,NYSE,Healthcare,Drug Manufacturers,CH,54.4,Weak IPO
+Fortis Healthcare Ltd,FORTIS,NSE,Healthcare,Healthcare Services,IN,54.4,Weak IPO
+Samvardhana Motherson Intl,MOTHERSUMI,NSE,Consumer Cyclical,Auto Parts,IN,54.4,Weak IPO
+China Construction Bank,0939,HKEX,Financial,Banks,CN,54.4,Weak IPO
+L&T Infotech Ltd,LTI,NSE,Technology,Software,IN,54.3,Weak IPO
+Industrial & Comm Bank China,1398,HKEX,Financial,Banks,CN,54.3,Weak IPO
+Chitradurga Spintex Ltd,CHITRASPIN,NSE,Consumer Cyclical,Textiles,IN,54.3,Weak IPO
+Pipavav Defence & Offshore,PIPAVAVDOC,NSE,Industrials,Shipbuilding,IN,54.2,Weak IPO
+Chemplast Sanmar Ltd,CHEMPLASTS,NSE,Basic Materials,Chemicals,IN,54.2,Weak IPO
+Nexxus Petro Industries,NEXXUS,NSE,Energy,Oil & Gas,IN,54.2,Weak IPO
+Salasar Techno Engineering,SALASAR,NSE,Industrials,Engineering,IN,54.2,Weak IPO
+Rategain Travel Technologies,RATEGAIN,NSE,Technology,Travel Technology,IN,54.2,Weak IPO
+Ami Organics Ltd,AMIORG,NSE,Basic Materials,Chemicals,IN,54.1,Weak IPO
+City Union Bank Ltd,CUB,NSE,Financial,Banks,IN,54.1,Weak IPO
+CRISIL Ltd,CRISIL,NSE,Financial,Financial Services,IN,54.1,Weak IPO
+Libas Consumer Products,LIBAS,NSE,Consumer Cyclical,Apparel,IN,54.1,Weak IPO
+Adani Wilmar Ltd,AWL,NSE,Consumer Defensive,Food,IN,54.0,Weak IPO
+Intellect Design Arena,INTELLECT,NSE,Technology,Software,IN,54.0,Weak IPO
+Ipca Laboratories Ltd,IPCALAB,NSE,Healthcare,Pharmaceuticals,IN,54.0,Weak IPO
+CME Group Inc.,CME,NASDAQ,Financial,Financial Services,US,54.0,Weak IPO
+Biocon Ltd,BIOCON,NSE,Healthcare,Biotechnology,IN,53.9,Weak IPO
+Lemon Tree Hotels Ltd,LEMONTREE,NSE,Consumer Cyclical,Hotels,IN,53.9,Weak IPO
+Sagar Diamonds Ltd,SAGARDIA,NSE,Consumer Cyclical,Luxury Goods,IN,53.9,Weak IPO
+Hindustan Unilever Ltd,HINDUNILVR,NSE,Consumer Defensive,Household Products,IN,53.8,Weak IPO
+Britannia Industries Ltd,BRITANNIA,NSE,Consumer Defensive,Food,IN,53.8,Weak IPO
+Adani Power Ltd,ADANIPOWER,NSE,Utilities,Electric Utilities,IN,53.8,Weak IPO
+TVS Motor Company Ltd,TVSMOTOR,NSE,Consumer Cyclical,Auto Manufacturers,IN,53.8,Weak IPO
+Divi's Laboratories,DIVISLAB,NSE,Healthcare,Pharmaceuticals,IN,53.8,Weak IPO
+Oriental Bank of Commerce,ORIENTALBK,NSE,Financial,Banks,IN,53.8,Weak IPO
+Carnation Industries Ltd,CARNATION,NSE,Industrials,Industrial Equipment,IN,53.8,Weak IPO
+Obscro Meditronics Ltd,OBSCRO,NSE,Healthcare,Medical Devices,IN,53.8,Weak IPO
+Cochin Shipyard Ltd,COCHINSHIP,NSE,Industrials,Shipbuilding,IN,53.7,Weak IPO
+Sanofi India Ltd,SANOFI,NSE,Healthcare,Pharmaceuticals,IN,53.7,Weak IPO
+Venky's India Ltd,VENKYS,NSE,Consumer Defensive,Food,IN,53.7,Weak IPO
+Convoy Inc.,CVY,NYSE,Technology,Software,US,53.7,Weak IPO
+Cava Group Inc.,CAVA,NYSE,Consumer Cyclical,Restaurants,US,53.7,Weak IPO
+Etsy Inc.,ETSY,NASDAQ,Consumer Cyclical,E-Commerce,US,53.7,Weak IPO
+Coal India Ltd,COALINDIA,NSE,Energy,Coal,IN,53.6,Weak IPO
+Kanchi Karpooram Ltd,KKCL,NSE,Consumer Defensive,Sugar,IN,53.6,Weak IPO
+Multi Commodity Exchange,MCX,NSE,Financial,Financial Services,IN,53.6,Weak IPO
+Motherson Sumi Wiring India,MSUMI,NSE,Consumer Cyclical,Auto Parts,IN,53.5,Weak IPO
+Hindustan Foods Ltd,HINDFOODS,NSE,Consumer Defensive,Food,IN,53.5,Weak IPO
+HG Infra Engineering Ltd,HGINFRA,NSE,Industrials,Infrastructure,IN,53.5,Weak IPO
+Intercontinental Exchange,ICE,NYSE,Financial,Financial Services,US,53.5,Weak IPO
+State Bank of India,SBIN,NSE,Financial,Banks,IN,53.3,Weak IPO
+Landmark Cars Ltd,LANDMARK,NSE,Consumer Cyclical,Auto Retail,IN,53.3,Weak IPO
+Viviana Power Tech Ltd,VIVIANAPR,NSE,Utilities,Electric Utilities,IN,53.3,Weak IPO
+Kirloskar Oil Engines Ltd,KIRLOSENG,NSE,Industrials,Industrial Equipment,IN,53.2,Weak IPO
+Gujarat Pipavav Port Ltd,GPPL,NSE,Industrials,Infrastructure,IN,53.2,Weak IPO
+Kenvue Inc.,KVUE,NYSE,Consumer Defensive,Personal Care,US,53.2,Weak IPO
+Square Inc. (Block),SQ,NYSE,Technology,Fintech,US,53.2,Weak IPO
+Mahindra Lifespace Dev Ltd,MAHLIFE,NSE,Real Estate,Real Estate Development,IN,53.2,Weak IPO
+SpiceJet Ltd,SPICEJET,NSE,Industrials,Airlines,IN,53.1,Weak IPO
+Voltas Ltd,VOLTAS,NSE,Consumer Cyclical,Consumer Electronics,IN,53.1,Weak IPO
+Srivari Spices & Foods,SRIVARI,NSE,Consumer Defensive,Food,IN,53.1,Weak IPO
+Karur Vysya Bank Ltd,KARURVYSYA,NSE,Financial,Banks,IN,53.0,Weak IPO
+Alibaba Health Info. Tech.,0241,HKEX,Healthcare,Healthcare Services,CN,53.0,Weak IPO
+PagerDuty Inc.,PD,NYSE,Technology,Software,US,53.0,Weak IPO
+Nanoch EMerge Ltd,NANOCH,NSE,Technology,Semiconductors,IN,53.0,Weak IPO
+Sumuka Agro Industries,SUMUKAAGRO,NSE,Consumer Defensive,Food,IN,53.0,Weak IPO
+Oil & Natural Gas Corp,ONGC,NSE,Energy,Oil & Gas,IN,52.9,Weak IPO
+Royal Bank of Canada,RY,TSX,Financial,Banks,CA,52.9,Weak IPO
+Baba Arts Ltd,BABAARTS,NSE,Communication,Entertainment,IN,52.9,Weak IPO
+Garuda Construction & Eng,GARUDA,NSE,Industrials,Construction,IN,52.9,Weak IPO
+Inducto Steel Ltd,INDUCTO,NSE,Basic Materials,Steel,IN,52.9,Weak IPO
+PepsiCo Inc.,PEP,NASDAQ,Consumer Defensive,Beverages,US,52.8,Weak IPO
+Power Grid Corp of India,POWERGRID,NSE,Utilities,Electric Utilities,IN,52.8,Weak IPO
+Adani Ports & SEZ Ltd,ADANIPORTS,NSE,Industrials,Infrastructure,IN,52.8,Weak IPO
+Max Healthcare Institute Ltd,MAXHEALTH,NSE,Healthcare,Healthcare Services,IN,52.8,Weak IPO
+Fone4 Communications Ltd,FONE4,NSE,Technology,Telecom,IN,52.8,Weak IPO
+Easy Trip Planners Ltd,EASEMYTRIP,NSE,Technology,Travel Technology,IN,52.8,Weak IPO
+Jindal Drilling & Inds Ltd,JINDALDRILL,NSE,Energy,Oil & Gas,IN,52.8,Weak IPO
+Ambarella Inc.,AMBA,NASDAQ,Technology,Semiconductors,US,52.7,Weak IPO
+Asarfi Hospital Ltd,ASARFI,NSE,Healthcare,Healthcare Services,IN,52.7,Weak IPO
+Hi-Green Carbon Ltd,HIGREEN,NSE,Basic Materials,Chemicals,IN,52.7,Weak IPO
+Vivid Mercantile Ltd,VIVIDMERC,NSE,Consumer Cyclical,Trading,IN,52.7,Weak IPO
+CyberTech Systems & Software,CYBERTECH,NSE,Technology,Software,IN,52.7,Weak IPO
+BlackRock Inc.,BLK,NYSE,Financial,Asset Management,US,52.7,Weak IPO
+Wipro Ltd,WIPRO,NSE,Technology,Software,IN,52.6,Weak IPO
+Cummins India Ltd,CUMMINSIND,NSE,Industrials,Industrial Equipment,IN,52.6,Weak IPO
+Mazagon Dock Shipbuilders,MAZDOCK,NSE,Industrials,Shipbuilding,IN,52.6,Weak IPO
+HOSACA India Ltd,HOSACA,NSE,Financial,Financial Services,IN,52.6,Weak IPO
+Adani Enterprises Ltd,ADANIENT,NSE,Energy,Conglomerate,IN,52.5,Weak IPO
+Majesco Ltd,MAJESCO,NSE,Technology,Software,IN,52.5,Weak IPO
+Goodman Group,GMG,ASX,Real Estate,Real Estate Investment,AU,52.5,Weak IPO
+Atmastco Ltd,ATMASTCO,NSE,Industrials,Engineering,IN,52.5,Weak IPO
+RMC Switchgears Ltd,RMCSWITCH,NSE,Industrials,Electrical Equipment,IN,52.5,Weak IPO
+Oracle Corporation,ORCL,NYSE,Technology,Software,US,52.4,Weak IPO
+Nestlé India Ltd,NESTLEIND,NSE,Consumer Defensive,Food,IN,52.4,Weak IPO
+Telstra Group Ltd,TLS,ASX,Communication,Telecom,AU,52.4,Weak IPO
+Kaushalya Infra Ltd,KAUSHALYA,NSE,Industrials,Infrastructure,IN,52.4,Weak IPO
+Lancer Containers Ltd,LANCER,NSE,Industrials,Packaging,IN,52.4,Weak IPO
+Home Depot Inc.,HD,NYSE,Consumer Cyclical,Home Improvement,US,52.3,Weak IPO
+Bharti Airtel Ltd,BHARTIARTL,NSE,Communication,Telecom,IN,52.3,Weak IPO
+Maruti Suzuki India Ltd,MARUTI,NSE,Consumer Cyclical,Auto Manufacturers,IN,52.3,Weak IPO
+Twilio Inc.,TWLO,NYSE,Technology,Software,US,52.3,Weak IPO
+Sudarshan Chemical Inds,SUDARSCHEM,NSE,Basic Materials,Chemicals,IN,52.3,Weak IPO
+Mphasis Ltd,MPHASIS,NSE,Technology,Software,IN,52.2,Weak IPO
+Safari Industries India Ltd,SAFARI,NSE,Consumer Cyclical,Household Products,IN,52.2,Weak IPO
+Medplus Health Services Ltd,MEDPLUS,NSE,Healthcare,Pharmaceuticals,IN,52.2,Weak IPO
+Vinati Organics Ltd,VINATIORGA,NSE,Basic Materials,Chemicals,IN,52.1,Weak IPO
+Bright Outdoor Media Ltd,BRIGHT,NSE,Communication,Media,IN,52.1,Weak IPO
+Kalyani Cast Tech Ltd,KALYANCAST,NSE,Industrials,Industrial Equipment,IN,52.1,Weak IPO
+Credo Brands Marketing Ltd,MUFTI,NSE,Consumer Cyclical,Apparel,IN,52.1,Weak IPO
+Godfrey Phillips India Ltd,GODFRYPHLP,NSE,Consumer Defensive,Tobacco,IN,52.0,Weak IPO
+M&M Ltd,M&M,NSE,Consumer Cyclical,Auto Manufacturers,IN,51.8,Weak IPO
+Anand Rathi Wealth Ltd,ANANDRATHI,NSE,Financial,Wealth Management,IN,51.8,Weak IPO
+Karnavati Finvest Ltd,KARNAVATIF,NSE,Financial,Financial Services,IN,51.8,Weak IPO
+Inox Wind Energy Ltd,INOXWIND,NSE,Utilities,Renewable Energy,IN,51.8,Weak IPO
+Finolex Industries Ltd,FINPIPE,NSE,Industrials,Plumbing,IN,51.7,Weak IPO
+Jubilant Pharmova Ltd,JUBLPHARMA,NSE,Healthcare,Pharmaceuticals,IN,51.7,Weak IPO
+Birkenstock Holding PLC,BIRK,NYSE,Consumer Cyclical,Footwear,DE,51.7,Weak IPO
+Vivaa Tradecom Ltd,VIVAATRAD,NSE,Consumer Cyclical,Trading,IN,51.7,Weak IPO
+Compucom Software Ltd,COMPUSOFT,NSE,Technology,Software,IN,51.7,Weak IPO
+HAL (Hindustan Aeronautics),HAL,NSE,Industrials,Aerospace & Defense,IN,51.6,Weak IPO
+Info Edge India Ltd,NAUKRI,NSE,Technology,Internet Services,IN,51.6,Weak IPO
+New Relic Inc.,NEWR,NYSE,Technology,Software,US,51.6,Weak IPO
+Associated Alcohols Ltd,ASSOALCOH,NSE,Consumer Defensive,Beverages,IN,51.6,Weak IPO
+G R Infraprojects Ltd,GRINFRA,NSE,Industrials,Infrastructure,IN,51.5,Weak IPO
+Solara Active Pharma Sci.,SOLARA,NSE,Healthcare,Pharmaceuticals,IN,51.5,Weak IPO
+STC India Ltd,STCINDIA,NSE,Industrials,Trading,IN,51.5,Weak IPO
+Mahindra & Mahindra Financial,M&MFIN,NSE,Financial,Financial Services,IN,51.4,Weak IPO
+Clean Science & Technology,CLEAN,NSE,Basic Materials,Chemicals,IN,51.4,Weak IPO
+Navodaya Enterprises Ltd,NAVODAYA,NSE,Consumer Cyclical,Retail,IN,51.4,Weak IPO
+Gujarat Ambuja Exports Ltd,GAEL,NSE,Consumer Defensive,Food,IN,51.4,Weak IPO
+SBI Life Insurance Co.,SBILIFE,NSE,Financial,Insurance,IN,51.3,Weak IPO
+Indian Oil Corporation,IOC,NSE,Energy,Oil & Gas,IN,51.3,Weak IPO
+Aether Industries Ltd,AETHER,NSE,Basic Materials,Chemicals,IN,51.3,Weak IPO
+Indus Towers Ltd,INDUSTOWER,NSE,Communication,Telecom,IN,51.3,Weak IPO
+Globe International Carriers,GICL,NSE,Industrials,Logistics,IN,51.3,Weak IPO
+Royal Plus Ltd,ROYALPLUS,NSE,Consumer Defensive,Food,IN,51.3,Weak IPO
+Moody's Corporation,MCO,NYSE,Financial,Financial Services,US,51.3,Weak IPO
+Phoenix Mills Ltd,PHOENIXLTD,NSE,Real Estate,Real Estate Development,IN,51.2,Weak IPO
+NTPC Ltd,NTPC,NSE,Utilities,Electric Utilities,IN,51.1,Weak IPO
+Divis Laboratories Ltd,DIVISLAB,NSE,Healthcare,Pharmaceuticals,IN,51.1,Weak IPO
+AIA Group Ltd,1299,HKEX,Financial,Insurance,HK,51.1,Weak IPO
+Fastly Inc.,FSLY,NYSE,Technology,Software,US,51.1,Weak IPO
+Titan Company Ltd,TITAN,NSE,Consumer Cyclical,Retail,IN,51.0,Weak IPO
+L&T Finance Holdings,LICHSGFIN,NSE,Financial,Financial Services,IN,51.0,Weak IPO
+Kajaria Ceramics Ltd,KAJARIACER,NSE,Industrials,Building Materials,IN,51.0,Weak IPO
+Route Mobile Ltd,ROUTE,NSE,Technology,Software,IN,51.0,Weak IPO
+Sakthi Auto Component Ltd,SAKTHAUTO,NSE,Consumer Cyclical,Auto Parts,IN,51.0,Weak IPO
+Linde plc,LIN,NYSE,Basic Materials,Specialty Chemicals,GB,50.9,Weak IPO
+AU Small Finance Bank,AUBANK,NSE,Financial,Banks,IN,50.9,Weak IPO
+SRF Ltd,SRF,NSE,Basic Materials,Chemicals,IN,50.9,Weak IPO
+Chennai Petroleum Corp Ltd,CHENNPETRO,NSE,Energy,Oil & Gas,IN,50.9,Weak IPO
+Firstsource Solutions Ltd,FSL,NSE,Technology,Consulting,IN,50.9,Weak IPO
+Muthoot Finance Ltd,MUTHOOTFIN,NSE,Financial,Financial Services,IN,50.9,Weak IPO
+V-Guard Industries Ltd,VGUARD,NSE,Consumer Cyclical,Consumer Electronics,IN,50.9,Weak IPO
+Azure Exim Services Ltd,AZURE,NSE,Industrials,Logistics,IN,50.9,Weak IPO
+Virinchi Ltd,VIRINCHI,NSE,Technology,Software,IN,50.9,Weak IPO
+GlaxoSmithKline Pharma Ltd,GLAXO,NSE,Healthcare,Pharmaceuticals,IN,50.8,Weak IPO
+Varroc Engineering Ltd,VARROC,NSE,Consumer Cyclical,Auto Parts,IN,50.8,Weak IPO
+HashiCorp Inc.,HCP,NASDAQ,Technology,Software,US,50.8,Weak IPO
+Macquarie Group Ltd,MQG,ASX,Financial,Financial Services,AU,50.8,Weak IPO
+Bayer CropScience Ltd,BAYERCROP,NSE,Basic Materials,Fertilizers,IN,50.8,Weak IPO
+Marathon Nextgen Realty,MARATHON,NSE,Real Estate,Real Estate Development,IN,50.7,Weak IPO
+Ruchi Soya Industries Ltd,RUCHISOYA,NSE,Consumer Defensive,Food,IN,50.7,Weak IPO
+Apollo Tyres Ltd,APOLLOTYRE,NSE,Consumer Cyclical,Auto Parts,IN,50.7,Weak IPO
+Gujarat Mineral Dev Corp,GMDCLTD,NSE,Basic Materials,Mining,IN,50.6,Weak IPO
+DLocal Ltd,DLO,NASDAQ,Technology,Fintech,UY,50.6,Weak IPO
+Century Plyboards India Ltd,CENTURYPLY,NSE,Industrials,Building Materials,IN,50.5,Weak IPO
+Thermax Ltd,THERMAX,NSE,Industrials,Industrial Equipment,IN,50.4,Weak IPO
+Vaibhav Global Ltd,VAIBHAVGBL,NSE,Consumer Cyclical,Retail,IN,50.4,Weak IPO
+BP p.l.c.,BP,NYSE,Energy,Oil & Gas,GB,50.3,Weak IPO
+Apeejay Surrendra Park Hotels,PARKHOTELS,NSE,Consumer Cyclical,Hotels,IN,50.3,Weak IPO
+Naapbooks Ltd,NAAPBOOKS,NSE,Technology,Software,IN,50.3,Weak IPO
+Grasim Industries Ltd,GRASIM,NSE,Basic Materials,Cement,IN,50.2,Weak IPO
+Orient Electric Ltd,ORIENTELEC,NSE,Consumer Cyclical,Consumer Electronics,IN,50.2,Weak IPO
+Ratnamani Metals & Tubes,RATNAMANI,NSE,Basic Materials,Steel,IN,50.2,Weak IPO
+Tesco PLC,TSCO,LSE,Consumer Defensive,Discount Stores,GB,50.2,Weak IPO
+National Australia Bank,NAB,ASX,Financial,Banks,AU,50.2,Weak IPO
+Wesfarmers Ltd,WES,ASX,Consumer Defensive,Discount Stores,AU,50.2,Weak IPO
+Torrent Power Ltd,TORNTPOWER,NSE,Utilities,Electric Utilities,IN,50.1,Weak IPO
+Rubber Plastic Industries,RUBBERPLA,NSE,Basic Materials,Chemicals,IN,50.1,Weak IPO
+JSW Holdings Ltd,JSWHL,NSE,Financial,Financial Services,IN,50.0,Weak IPO
+Kalpataru Power Transm Ltd,KALPATPOWR,NSE,Industrials,Infrastructure,IN,50.0,Weak IPO
+RPSG Ventures Ltd,RPSGVENT,NSE,Consumer Cyclical,Retail,IN,50.0,Weak IPO
+BLS E-Services Ltd,BLSE,NSE,Technology,Software,IN,50.0,Weak IPO
+Bombay Super Hybrid Seeds,BSHSL,NSE,Consumer Defensive,Food,IN,50.0,Weak IPO
+Hemani Industries Ltd,HEMANI,NSE,Basic Materials,Chemicals,IN,50.0,Weak IPO
+Vishal Fabrics Ltd,VISHALFAB,NSE,Consumer Cyclical,Textiles,IN,50.0,Weak IPO
+Australia & NZ Banking Grp,ANZ,ASX,Financial,Banks,AU,49.9,Avoid
+Pfizer Inc.,PFE,NYSE,Healthcare,Pharmaceuticals,US,49.8,Avoid
+Jyoti CNC Automation Ltd,JYOTICNC,NSE,Industrials,Industrial Equipment,IN,49.8,Avoid
+Macrotech Developers Ltd,LODHA,NSE,Real Estate,Real Estate Development,IN,49.7,Avoid
+Glenmark Life Sciences Ltd,GLS,NSE,Healthcare,Pharmaceuticals,IN,49.7,Avoid
+Gujarat Narmada Valley Fert.,GNFC,NSE,Basic Materials,Fertilizers,IN,49.7,Avoid
+Squarespace Inc.,SQSP,NYSE,Technology,Software,US,49.7,Avoid
+Spark & Sparks Electricals,SPARK,NSE,Industrials,Electrical Equipment,IN,49.7,Avoid
+Piramal Enterprises Ltd,PEL,NSE,Financial,Financial Services,IN,49.5,Avoid
+NHPC Ltd,NHPC,NSE,Utilities,Electric Utilities,IN,49.5,Avoid
+Finolex Cables Ltd,FINPIPE,NSE,Industrials,Electrical Equipment,IN,49.5,Avoid
+Vodafone Group PLC,VOD,LSE,Communication,Telecom,GB,49.5,Avoid
+Dhanuka Agritech Ltd,DHANUKA,NSE,Basic Materials,Fertilizers,IN,49.5,Avoid
+GE T&D India Ltd,GET&D,NSE,Industrials,Electrical Equipment,IN,49.4,Avoid
+Mishra Dhatu Nigam Ltd,MIDHANI,NSE,Basic Materials,Metals & Mining,IN,49.4,Avoid
+Repco Home Finance Ltd,REPCOHOME,NSE,Financial,Housing Finance,IN,49.4,Avoid
+Hitachi Energy India Ltd,POWERINDIA,NSE,Industrials,Electrical Equipment,IN,49.4,Avoid
+Siemens Healthineers AG,SHL,XETRA,Healthcare,Medical Devices,DE,49.4,Avoid
+Deutsche Telekom AG,DTE,XETRA,Communication,Telecom,DE,49.4,Avoid
+TotalEnergies SE,TTE,NYSE,Energy,Oil & Gas,FR,49.3,Avoid
+Jubilant Ingrevia Ltd,JUBLINGREA,NSE,Basic Materials,Chemicals,IN,49.3,Avoid
+S J Logistics India Ltd,SJLOGISTIC,NSE,Industrials,Logistics,IN,49.3,Avoid
+Indoco Remedies Ltd,INDOCO,NSE,Healthcare,Pharmaceuticals,IN,49.3,Avoid
+CG Power & Industrial Sol.,CGPOWER,NSE,Industrials,Electrical Equipment,IN,49.2,Avoid
+Chambal Fertilizers Ltd,CHAMBLFERT,NSE,Basic Materials,Fertilizers,IN,49.2,Avoid
+BLS International Services,BLS,NSE,Industrials,Business Services,IN,49.2,Avoid
+Vishwaraj Sugar Ind Ltd,VISHWASUG,NSE,Consumer Defensive,Sugar,IN,49.2,Avoid
+S&P Global Inc.,SPGI,NYSE,Financial,Financial Services,US,49.2,Avoid
+Vilas Transcore Ltd,VILASTRAN,NSE,Industrials,Electrical Equipment,IN,49.1,Avoid
+Dr. Reddy's Labs Ltd,DRREDDY,NSE,Healthcare,Pharmaceuticals,IN,49.0,Avoid
+UltraTech Cement Ltd,ULTRACEMCO,NSE,Basic Materials,Cement,IN,49.0,Avoid
+GMR Airports Ltd,GMRINFRA,NSE,Industrials,Infrastructure,IN,49.0,Avoid
+NLC India Ltd,NLCINDIA,NSE,Energy,Coal,IN,49.0,Avoid
+Trident Ltd,TRIDENT,NSE,Consumer Cyclical,Textiles,IN,49.0,Avoid
+Rishabh Instruments Ltd,RISHABHINS,NSE,Industrials,Electrical Equipment,IN,49.0,Avoid
+Exxon Mobil Corporation,XOM,NYSE,Energy,Oil & Gas,US,48.9,Avoid
+CESC Ltd,CESC,NSE,Utilities,Electric Utilities,IN,48.9,Avoid
+Manappuram Finance Ltd,MANAPPURAM,NSE,Financial,Financial Services,IN,48.9,Avoid
+Rishabh Digha Steel,RISHABHDIG,NSE,Basic Materials,Steel,IN,48.9,Avoid
+Edelweiss Financial Services,EDELWEISS,NSE,Financial,Financial Services,IN,48.8,Avoid
+Gayatri Rubicon Ltd,GAYATRI,NSE,Basic Materials,Chemicals,IN,48.8,Avoid
+Jiyo Eco Friendly Agricult,JIYOECO,NSE,Consumer Defensive,Food,IN,48.8,Avoid
+Sreechem Resins Ltd,SREECHEM,NSE,Basic Materials,Chemicals,IN,48.8,Avoid
+Glenmark Pharmaceuticals Ltd,GLENMARK,NSE,Healthcare,Pharmaceuticals,IN,48.7,Avoid
+Toast Inc.,TOST,NYSE,Technology,Software,US,48.7,Avoid
+Jana Small Finance Bank,JSFB,NSE,Financial,Banks,IN,48.7,Avoid
+Broadcom Inc.,AVGO,NASDAQ,Technology,Semiconductors,US,48.6,Avoid
+Chevron Corporation,CVX,NYSE,Energy,Oil & Gas,US,48.6,Avoid
+CEAT Ltd,CEATLTD,NSE,Consumer Cyclical,Auto Parts,IN,48.6,Avoid
+Sky Gold Ltd,SKYGOLD,NSE,Consumer Cyclical,Luxury Goods,IN,48.6,Avoid
+Moderna Inc.,MRNA,NASDAQ,Healthcare,Biotechnology,US,48.5,Avoid
+Deepak Nitrite Ltd,DEEPAKNTR,NSE,Basic Materials,Chemicals,IN,48.5,Avoid
+Escorts Kubota Ltd,ESCORTS,NSE,Industrials,Farm Equipment,IN,48.5,Avoid
+JK Tyre & Industries Ltd,JKTYRE,NSE,Consumer Cyclical,Auto Parts,IN,48.5,Avoid
+Response Informatics Ltd,RESPONSO,NSE,Technology,Software,IN,48.5,Avoid
+High Ground Enterprise Ltd,HIGHGROUND,NSE,Technology,Software,IN,48.5,Avoid
+Castrol India Ltd,CASTROLIND,NSE,Energy,Oil & Gas,IN,48.4,Avoid
+Kuwer Industries Ltd,KUWER,NSE,Industrials,Packaging,IN,48.4,Avoid
+Coforge Ltd,COFORGE,NSE,Technology,Software,IN,48.3,Avoid
+Gujarat Fluorochemicals Ltd,GUJFLUORO,NSE,Basic Materials,Chemicals,IN,48.3,Avoid
+V-Mart Retail Ltd,VMART,NSE,Consumer Cyclical,Retail,IN,48.3,Avoid
+DigitalOcean Holdings Inc.,DOCN,NYSE,Technology,Software,US,48.3,Avoid
+Cipla Ltd,CIPLA,NSE,Healthcare,Pharmaceuticals,IN,48.2,Avoid
+Century Textiles & Inds Ltd,CENTURYTEX,NSE,Consumer Cyclical,Textiles,IN,48.2,Avoid
+BEML Land Assets Ltd,BEMLLAND,NSE,Real Estate,Real Estate Development,IN,48.2,Avoid
+Greenply Industries Ltd,GREENPLY,NSE,Industrials,Building Materials,IN,48.2,Avoid
+Avenue Supermarts (D-Mart),DMART,NSE,Consumer Defensive,Discount Stores,IN,48.1,Avoid
+Indian Overseas Bank,IOB,NSE,Financial,Banks,IN,48.1,Avoid
+IndusInd Bank Ltd,INDUSINDBK,NSE,Financial,Banks,IN,48.1,Avoid
+Sirca Paint India Ltd,SIRCAPAINT,NSE,Basic Materials,Chemicals,IN,48.1,Avoid
+Cochin Malabar Estates,COCHINMAL,NSE,Consumer Defensive,Food,IN,48.1,Avoid
+IDFC First Bank Ltd,IDFCFIRSTB,NSE,Financial,Banks,IN,48.0,Avoid
+Godrej Industries Ltd,GODREJIND,NSE,Consumer Defensive,Conglomerate,IN,48.0,Avoid
+Metropolis Healthcare Ltd,METROPOLIS,NSE,Healthcare,Diagnostics,IN,48.0,Avoid
+NMDC Steel Ltd,NMDCSTEEL,NSE,Basic Materials,Steel,IN,48.0,Avoid
+Affirm Holdings Inc.,AFRM,NASDAQ,Technology,Fintech,US,48.0,Avoid
+Mukesh Babu Financial,MUKESHBABU,NSE,Financial,Financial Services,IN,48.0,Avoid
+Riba Textiles Ltd,RIBATEXTIL,NSE,Consumer Cyclical,Textiles,IN,48.0,Avoid
+BASF India Ltd,BASF,NSE,Basic Materials,Chemicals,IN,48.0,Avoid
+FDC Ltd,FDC,NSE,Healthcare,Pharmaceuticals,IN,47.9,Avoid
+ZoomInfo Technologies Inc.,ZI,NASDAQ,Technology,Software,US,47.9,Avoid
+Mufin Bikes India Ltd,MUFINBIKE,NSE,Consumer Cyclical,Auto Manufacturers,IN,47.9,Avoid
+Vikram Aroma Chemicals,VIKRAMAROM,NSE,Basic Materials,Chemicals,IN,47.9,Avoid
+Greaves Cotton Ltd,GREAVESCOT,NSE,Industrials,Industrial Equipment,IN,47.9,Avoid
+SJVN Ltd,SJVN,NSE,Utilities,Electric Utilities,IN,47.8,Avoid
+Mono Pharmacare Ltd,MONOPHARM,NSE,Healthcare,Pharmaceuticals,IN,47.8,Avoid
+Evexia Lifecare Ltd,EVEXIA,NSE,Healthcare,Pharmaceuticals,IN,47.7,Avoid
+Arvind & Co Engg Services,ACE,NSE,Industrials,Engineering,IN,47.6,Avoid
+Central Bank of India,CENTRALBK,NSE,Financial,Banks,IN,47.5,Avoid
+Minda Corp Ltd,MINDACORP,NSE,Consumer Cyclical,Auto Parts,IN,47.5,Avoid
+Woolworths Group Ltd,WOW,ASX,Consumer Defensive,Discount Stores,AU,47.5,Avoid
+AMETEK Inc.,AME,NYSE,Industrials,Industrial Equipment,US,47.5,Avoid
+Roper Technologies Inc.,ROP,NYSE,Technology,Software,US,47.5,Avoid
+Larsen & Toubro Ltd,LT,NSE,Industrials,Construction,IN,47.4,Avoid
+Yes Bank Ltd,YESBANK,NSE,Financial,Banks,IN,47.4,Avoid
+Navin Fluorine International,NAVINFLUOR,NSE,Basic Materials,Chemicals,IN,47.4,Avoid
+Cloudflare Inc.,NET,NYSE,Technology,Software,US,47.4,Avoid
+Alpex Solar Ltd,ALPEXSOLAR,NSE,Utilities,Renewable Energy,IN,47.4,Avoid
+Mutual Benefit & Housing,MUTUALBN,NSE,Financial,Financial Services,IN,47.4,Avoid
+Grindwell Norton Ltd,GRINDWELL,NSE,Industrials,Industrial Equipment,IN,47.4,Avoid
+KPI Green Energy Ltd,KPIGREEN,NSE,Utilities,Renewable Energy,IN,47.3,Avoid
+Foxco Solutions Ltd,FOXCO,NSE,Industrials,Trading,IN,47.3,Avoid
+My Mudra FinCorp Ltd,MYMUDRA,NSE,Financial,Financial Services,IN,47.3,Avoid
+Ganesh Housing Corp Ltd,GANESHHOUC,NSE,Real Estate,Real Estate Development,IN,47.2,Avoid
+UCO Bank,UCOBANK,NSE,Financial,Banks,IN,47.2,Avoid
+Esconet Technologies Ltd,ESCONET,NSE,Technology,Software,IN,47.2,Avoid
+Axis Bank Ltd,AXISBANK,NSE,Financial,Banks,IN,47.1,Avoid
+National Grid PLC,NG.,LSE,Utilities,Electric Utilities,GB,47.1,Avoid
+MK Exim India Ltd,MKEXIM,NSE,Industrials,Trading,IN,47.1,Avoid
+InterGlobe Aviation (IndiGo),INDIGO,NSE,Industrials,Airlines,IN,47.0,Avoid
+Shriram Finance Ltd,SHRIRAMFIN,NSE,Financial,Financial Services,IN,47.0,Avoid
+Relaxo Footwears Ltd,RELAXO,NSE,Consumer Cyclical,Footwear,IN,47.0,Avoid
+Westpac Banking Corp,WBC,ASX,Financial,Banks,AU,47.0,Avoid
+Felix Industries Ltd,FELIX,NSE,Industrials,Waste Management,IN,47.0,Avoid
+Resonance Specialties Ltd,RESONANCE,NSE,Basic Materials,Chemicals,IN,47.0,Avoid
+Bandhan Bank Ltd,BANDHANBNK,NSE,Financial,Banks,IN,46.9,Avoid
+Roblox Corp,RBLX,NYSE,Technology,Software,US,46.9,Avoid
+Remitly Global Inc.,RELY,NASDAQ,Technology,Fintech,US,46.9,Avoid
+Datadog Inc.,DDOG,NASDAQ,Technology,Software,US,46.9,Avoid
+Gravita India Ltd,GRAVITA,NSE,Basic Materials,Recycling,IN,46.9,Avoid
+SBI Cards & Payment,SBICARD,NSE,Financial,Financial Services,IN,46.8,Avoid
+Cholamandalam Investment,CHOLAHLDNG,NSE,Financial,Financial Services,IN,46.8,Avoid
+Suzlon Energy Ltd,SUZLON,NSE,Utilities,Renewable Energy,IN,46.8,Avoid
+Duolingo Inc.,DUOL,NASDAQ,Technology,Software,US,46.8,Avoid
+Costco Wholesale Corp,COST,NASDAQ,Consumer Defensive,Discount Stores,US,46.7,Avoid
+Capacite Infraprojects Ltd,CAPACITE,NSE,Industrials,Infrastructure,IN,46.7,Avoid
+Eli Lilly and Company,LLY,NYSE,Healthcare,Pharmaceuticals,US,46.6,Avoid
+South West Pinnacle,SOUTHWEST,NSE,Basic Materials,Mining,IN,46.6,Avoid
+Jio Financial Services Ltd,JIOFIN,NSE,Financial,Financial Services,IN,46.5,Avoid
+Smartlink Holdings Ltd,SMARTLINK,NSE,Technology,Software,IN,46.5,Avoid
+Shell plc,SHEL,NYSE,Energy,Oil & Gas,GB,46.4,Avoid
+Kotak Mahindra Bank Ltd,KOTAKBANK,NSE,Financial,Banks,IN,46.4,Avoid
+Nippon Life India AMC,NAM-INDIA,NSE,Financial,Asset Management,IN,46.4,Avoid
+NMDC Ltd,NMDC,NSE,Basic Materials,Metals & Mining,IN,46.4,Avoid
+Reckitt Benckiser Group,RKT,LSE,Consumer Defensive,Household Products,GB,46.3,Avoid
+Reetech International Cargo,REETECH,NSE,Industrials,Logistics,IN,46.2,Avoid
+Vidli Restaurants Ltd,VIDLI,NSE,Consumer Cyclical,Restaurants,IN,46.2,Avoid
+Ambuja Cements Ltd,AMBUJACEM,NSE,Basic Materials,Cement,IN,46.2,Avoid
+Regeneron Pharmaceuticals Inc.,REGN,NASDAQ,Healthcare,Biotechnology,US,46.2,Avoid
+Rolls-Royce Holdings PLC,RR.,LSE,Industrials,Aerospace & Defense,GB,46.1,Avoid
+Amwill Health Care Ltd,AMWILL,NSE,Healthcare,Healthcare Services,IN,46.1,Avoid
+Spaceage Products Ltd,SPACEAGE,NSE,Industrials,Packaging,IN,46.1,Avoid
+Jhaveri Credits Ltd,JHAVERICRD,NSE,Financial,Financial Services,IN,46.0,Avoid
+Mishkat Agro Ltd,MISHKAT,NSE,Consumer Defensive,Food,IN,46.0,Avoid
+Jindal Steel & Power Ltd,JSPL,NSE,Basic Materials,Steel,IN,45.9,Avoid
+Barbeque Nation Hospitality,BARBEQUE,NSE,Consumer Cyclical,Restaurants,IN,45.9,Avoid
+Retina Paints & Coatings,RETINA,NSE,Basic Materials,Chemicals,IN,45.9,Avoid
+Restaurant Brands Asia,RBA,NSE,Consumer Cyclical,Restaurants,IN,45.8,Avoid
+JD Healthcare & Life Sci,JDHEALTH,NSE,Healthcare,Healthcare Services,IN,45.7,Avoid
+Can Fin Homes Ltd,CANFINHOME,NSE,Financial,Housing Finance,IN,45.7,Avoid
+Allianz SE,ALV,XETRA,Financial,Insurance,DE,45.7,Avoid
+Aarti Industries Ltd,AARTIIND,NSE,Basic Materials,Chemicals,IN,45.6,Avoid
+JITF Infralogistics Ltd,JITFINFRA,NSE,Industrials,Logistics,IN,45.6,Avoid
+Virya Resources Ltd,VIRYARES,NSE,Basic Materials,Mining,IN,45.6,Avoid
+Venus Pipes & Tubes Ltd,VENUSPIPES,NSE,Industrials,Steel,IN,45.4,Avoid
+Asian Paints Ltd,ASIANPAINT,NSE,Basic Materials,Chemicals,IN,45.3,Avoid
+Angel One Ltd,ANGELONE,NSE,Financial,Brokerage,IN,45.3,Avoid
+Jagran Prakashan Ltd,JAGRAN,NSE,Communication,Media,IN,45.3,Avoid
+Esab India Ltd,ESABINDIA,NSE,Industrials,Industrial Equipment,IN,45.3,Avoid
+RELX PLC,REL,LSE,Industrials,Business Services,GB,45.2,Avoid
+GoTo Gojek Tokopedia,GOTO,IDX,Technology,Internet Services,ID,45.2,Avoid
+CSL Ltd,CSL,ASX,Healthcare,Biotechnology,AU,45.2,Avoid
+Tesla Inc.,TSLA,NASDAQ,Consumer Cyclical,Auto Manufacturers,US,45.1,Avoid
+JFL Life Sciences Ltd,JFLLIFE,NSE,Healthcare,Pharmaceuticals,IN,45.1,Avoid
+Solex Energy Ltd,SOLEX,NSE,Utilities,Renewable Energy,IN,45.1,Avoid
+Carborundum Universal Ltd,CARBORUNIV,NSE,Industrials,Industrial Equipment,IN,45.0,Avoid
+Gabriel India Ltd,GABRIEL,NSE,Consumer Cyclical,Auto Parts,IN,45.0,Avoid
+RBM Infracon Ltd,RBMINFRA,NSE,Real Estate,Real Estate Development,IN,45.0,Avoid
+Remus Pharmaceuticals Ltd,REMUSPHARM,NSE,Healthcare,Pharmaceuticals,IN,45.0,Avoid
+Silicon Rental Solutions,SILICON,NSE,Technology,Software,IN,45.0,Avoid
+India Glycols Ltd,INDIAGLYCO,NSE,Basic Materials,Chemicals,IN,45.0,Avoid
+Oracle Financial Services,OFSS,NSE,Technology,Software,IN,44.8,Avoid
+Inox Wind Ltd,INOXWIND,NSE,Utilities,Renewable Energy,IN,44.8,Avoid
+Sea Ltd,SE,NYSE,Technology,Internet Services,SG,44.6,Avoid
+Commonwealth Bank of Aust.,CBA,ASX,Financial,Banks,AU,44.6,Avoid
+Bikaji Foods International,BIKAJI,NSE,Consumer Defensive,Food,IN,44.6,Avoid
+Jindal Stainless Ltd,JSL,NSE,Basic Materials,Steel,IN,44.4,Avoid
+Time Technoplast Ltd,TIMETECHNO,NSE,Basic Materials,Chemicals,IN,44.4,Avoid
+BHP Group Ltd,BHP,ASX,Basic Materials,Metals & Mining,AU,44.4,Avoid
+Bharti Hexacom Ltd,BHARTIHEXA,NSE,Communication,Telecom,IN,44.2,Avoid
+SKP Securities Ltd,SKPSEC,NSE,Financial,Financial Services,IN,44.2,Avoid
+Motilal Oswal Financial,MOTILALOFS,NSE,Financial,Financial Services,IN,44.1,Avoid
+SMS Lifesciences India Ltd,SMSLIFE,NSE,Healthcare,Pharmaceuticals,IN,44.1,Avoid
+Bombay Burmah Trading Corp,BBTC,NSE,Consumer Defensive,Food,IN,43.9,Avoid
+REC Ltd,RECLTD,NSE,Financial,Financial Services,IN,43.9,Avoid
+PI Industries Ltd,PIIND,NSE,Basic Materials,Fertilizers,IN,43.8,Avoid
+Rio Tinto Ltd,RIO,ASX,Basic Materials,Metals & Mining,AU,43.8,Avoid
+Vani Commercials Ltd,VANICOMM,NSE,Consumer Cyclical,Trading,IN,43.8,Avoid
+Bharat Rasayan Ltd,BHARATRAS,NSE,Basic Materials,Chemicals,IN,43.8,Avoid
+Gateway Distripark Ltd,GDL,NSE,Industrials,Logistics,IN,43.7,Avoid
+Dynatrace Inc.,DT,NYSE,Technology,Software,US,43.6,Avoid
+HSBC Holdings PLC,HSBA,LSE,Financial,Banks,GB,43.5,Avoid
+London Stock Exchange Group,LSEG,LSE,Financial,Financial Services,GB,43.5,Avoid
+Balaji Speciality Chemicals,BALAMINES,NSE,Basic Materials,Chemicals,IN,43.5,Avoid
+CapitaLand Investment Ltd,9CI,SGX,Real Estate,Real Estate Investment,SG,43.3,Avoid
+Borosil Renewables Ltd,BOROSIL,NSE,Utilities,Renewable Energy,IN,43.1,Avoid
+Transport Corp of India Ltd,TCI,NSE,Industrials,Logistics,IN,43.1,Avoid
+Utkarsh Small Finance Bank,UTKARSHBNK,NSE,Financial,Banks,IN,43.1,Avoid
+Birla Corp Ltd,BIRLACORPN,NSE,Basic Materials,Cement,IN,43.1,Avoid
+RBL Bank Ltd,RBLBANK,NSE,Financial,Banks,IN,42.8,Avoid
+Blue Star Ltd,BLUESTARCO,NSE,Consumer Cyclical,Consumer Electronics,IN,42.7,Avoid
+Bolt Technology OU,BOLT,NYSE,Technology,Software,EE,42.7,Avoid
+Silver Touch Technologies,SILVERTUC,NSE,Technology,Software,IN,42.7,Avoid
+Waaree Energies Ltd,WAAREEENER,NSE,Utilities,Renewable Energy,IN,42.6,Avoid
+J.S.W. Energy Ltd,JSWENERGY,NSE,Utilities,Electric Utilities,IN,42.6,Avoid
+QuantumScape Corp,QS,NYSE,Consumer Cyclical,Auto Parts,US,42.5,Avoid
+McDonald's Corporation,MCD,NYSE,Consumer Cyclical,Restaurants,US,42.4,Avoid
+Thomas Cook India Ltd,THOMASCOOK,NSE,Consumer Cyclical,Travel Services,IN,42.4,Avoid
+Info Edge (India) Ltd,NAUKRI,NSE,Technology,Internet Services,IN,42.0,Avoid
+Lloyds Banking Group,LLOY,LSE,Financial,Banks,GB,41.8,Avoid
+Teamlease Services Ltd,TEAMLEASE,NSE,Industrials,Staffing,IN,41.7,Avoid
+Lucid Group Inc.,LCID,NASDAQ,Consumer Cyclical,Auto Manufacturers,US,41.3,Avoid
+Singapore Airlines Ltd,C6L,SGX,Industrials,Airlines,SG,41.2,Avoid
+Veerkrupa Jewellers Ltd,VEERKRUPA,NSE,Consumer Cyclical,Luxury Goods,IN,41.2,Avoid
+Berkshire Hathaway Inc.,BRK.B,NYSE,Financial,Insurance,US,41.1,Avoid
+Premier Energies Ltd,PREMIERENE,NSE,Utilities,Renewable Energy,IN,40.8,Avoid
+Urban Enviro Waste Mgmt,URBANENVIRO,NSE,Industrials,Waste Management,IN,40.8,Avoid
+Bharat Petroleum Corp Ltd,BPCL,NSE,Energy,Oil & Gas,IN,40.1,Avoid
+Dixon Technologies (India),DIXON,NSE,Technology,Consumer Electronics,IN,39.7,Avoid
+Max Financial Services,MFSL,NSE,Financial,Insurance,IN,39.7,Avoid
+Updater Services Ltd,UDS,NSE,Industrials,Business Services,IN,39.2,Avoid
+Blue Dart Express Ltd,BLUEDART,NSE,Industrials,Logistics,IN,38.5,Avoid
+Univastu India Ltd,UNIVASTU,NSE,Real Estate,Real Estate Development,IN,38.4,Avoid
+Alphabet Inc.,GOOGL,NASDAQ,Technology,Internet Services,US,37.3,Avoid

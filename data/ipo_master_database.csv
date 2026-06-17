@@ -1,1 +1,964 @@
-[]
+company_name,ticker,exchange,sector,industry,status,ipo_date,issue_price,price_band_low,price_band_high,listing_price,current_price,offer_size,market_cap_at_ipo,current_market_cap,gmp,subscription,ai_score,ai_rating,ai_confidence,source,country
+Tata Consultancy Services,TCS,NSE,Technology,Software,listed,2004-01-01,,,,,,,,,,,80.1,Strong IPO,High,expansion_db,IN
+Reliance Industries Ltd,RIL,NSE,Energy,Conglomerate,listed,1977-01-01,,,,,,,,,,,79.2,Good IPO,Medium,expansion_db,IN
+HDFC Bank Ltd,HDFCBANK,NSE,Financial,Banks,listed,1995-01-01,,,,,,,,,,,77.2,Good IPO,Medium,expansion_db,IN
+Uniinfo Telecom Services,UNIINFO,NSE,Technology,Telecom,listed,2024-01-01,,,,,,,,,,,74.5,Good IPO,Medium,expansion_db,IN
+Tata Technologies Ltd,TATATECH,NSE,Technology,Software,listed,2023-01-01,,,,,,,,,,,74.1,Good IPO,Medium,expansion_db,IN
+Tata Power Co Ltd,TATAPOWER,NSE,Utilities,Electric Utilities,listed,1919-01-01,,,,,,,,,,,73.8,Good IPO,Medium,expansion_db,IN
+HDFC Life Insurance Co.,HDFCLIFE,NSE,Financial,Insurance,listed,2017-01-01,,,,,,,,,,,73.0,Good IPO,Medium,expansion_db,IN
+United Overseas Bank Ltd,U11,SGX,Financial,Banks,listed,1999-01-01,,,,,,,,,,,72.8,Good IPO,Medium,expansion_db,SG
+Shree Ram Proteins Ltd,SHREERAMPR,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,72.8,Good IPO,Medium,expansion_db,IN
+Zoom Video Communications,ZM,NASDAQ,Technology,Software,listed,2019-01-01,,,,,,,,,,,72.5,Good IPO,Medium,expansion_db,US
+Tata Coffee Ltd,TATACOFFEE,NSE,Consumer Defensive,Food,listed,1995-01-01,,,,,,,,,,,72.5,Good IPO,Medium,expansion_db,IN
+Oversea-Chinese Banking Corp,O39,SGX,Financial,Banks,listed,1999-01-01,,,,,,,,,,,72.1,Good IPO,Medium,expansion_db,SG
+Dollarama Inc.,DOL,TSX,Consumer Defensive,Discount Stores,listed,2009-01-01,,,,,,,,,,,71.8,Good IPO,Medium,expansion_db,CA
+Ultra Wiring Connect Sys,ULTRACONN,NSE,Industrials,Electrical Equipment,listed,2024-01-01,,,,,,,,,,,71.5,Good IPO,Medium,expansion_db,IN
+Restaurant Brands Intl,QSR,TSX,Consumer Cyclical,Restaurants,listed,2014-01-01,,,,,,,,,,,71.3,Good IPO,Medium,expansion_db,CA
+Prism Johnson Ltd,PRISMJOHNS,NSE,Basic Materials,Cement,listed,2007-01-01,,,,,,,,,,,70.8,Good IPO,Medium,expansion_db,IN
+Bharat Forge Ltd,BHARATFORG,NSE,Consumer Cyclical,Auto Parts,listed,2003-01-01,,,,,,,,,,,70.6,Good IPO,Medium,expansion_db,IN
+Waste Connections Inc.,WCN,TSX,Industrials,Waste Management,listed,2003-01-01,,,,,,,,,,,70.6,Good IPO,Medium,expansion_db,CA
+Bajaj Consumer Care Ltd,BAJAJCON,NSE,Consumer Defensive,Personal Care,listed,1995-01-01,,,,,,,,,,,70.4,Good IPO,Medium,expansion_db,IN
+Union Bank of India,UNIONBANK,NSE,Financial,Banks,listed,1995-01-01,,,,,,,,,,,70.2,Good IPO,Medium,expansion_db,IN
+Aeroflex Industries Ltd,AEROFLEX,NSE,Industrials,Industrial Equipment,listed,2023-01-01,,,,,,,,,,,70.2,Good IPO,Medium,expansion_db,IN
+Punjab National Bank,PNB,NSE,Financial,Banks,listed,1995-01-01,,,,,,,,,,,70.0,Good IPO,Medium,expansion_db,IN
+DBS Group Holdings Ltd,D05,SGX,Financial,Banks,listed,1999-01-01,,,,,,,,,,,69.9,Average IPO,Medium,expansion_db,SG
+Tata Investment Corp Ltd,TATAINVEST,NSE,Financial,Financial Services,listed,1995-01-01,,,,,,,,,,,69.6,Average IPO,Medium,expansion_db,IN
+Alok Industries Ltd,ALOKINDS,NSE,Consumer Cyclical,Textiles,listed,2003-01-01,,,,,,,,,,,69.6,Average IPO,Medium,expansion_db,IN
+LIC Housing Finance Ltd,LICHSGFIN,NSE,Financial,Housing Finance,listed,2002-01-01,,,,,,,,,,,69.3,Average IPO,Medium,expansion_db,IN
+Klaviyo Inc.,KVYO,NYSE,Technology,Software,listed,2023-01-01,,,,,,,,,,,69.3,Average IPO,Medium,expansion_db,US
+Bajaj Finance Ltd,BAJFINANCE,NSE,Financial,Financial Services,listed,2003-01-01,,,,,,,,,,,69.1,Average IPO,Medium,expansion_db,IN
+Globus Spirits Ltd,GLOBUSSPR,NSE,Consumer Defensive,Beverages,listed,2007-01-01,,,,,,,,,,,69.1,Average IPO,Medium,expansion_db,IN
+Indiabulls Housing Finance,IBULHSGFIN,NSE,Financial,Housing Finance,listed,2006-01-01,,,,,,,,,,,69.0,Average IPO,Medium,expansion_db,IN
+Mahindra Lifespace Developers,MAHLIFE,NSE,Real Estate,Real Estate Development,listed,2007-01-01,,,,,,,,,,,68.9,Average IPO,Medium,expansion_db,IN
+Rashtriya Chemicals & Fertil.,RCF,NSE,Basic Materials,Fertilizers,listed,1995-01-01,,,,,,,,,,,68.9,Average IPO,Medium,expansion_db,IN
+Owais Metal & Mineral,OWAISMETL,NSE,Basic Materials,Metals & Mining,listed,2024-01-01,,,,,,,,,,,68.9,Average IPO,Medium,expansion_db,IN
+Rajnandini Metal Ltd,RAJNMETAL,NSE,Basic Materials,Metals & Mining,listed,2024-01-01,,,,,,,,,,,68.8,Average IPO,Medium,expansion_db,IN
+Trident Lifeline Ltd,TRIDENTLFE,NSE,Healthcare,Pharmaceuticals,listed,2024-01-01,,,,,,,,,,,68.8,Average IPO,Medium,expansion_db,IN
+Tata Consumer Products,TATACONSUM,NSE,Consumer Defensive,Food,listed,2003-01-01,,,,,,,,,,,68.7,Average IPO,Medium,expansion_db,IN
+Udayshivakumar Infra Ltd,USKINFRA,NSE,Industrials,Infrastructure,listed,2024-01-01,,,,,,,,,,,68.7,Average IPO,Medium,expansion_db,IN
+Tata Steel Ltd,TATASTEEL,NSE,Basic Materials,Steel,listed,1907-01-01,,,,,,,,,,,68.6,Average IPO,Medium,expansion_db,IN
+Vertex Pharmaceuticals Inc.,VRTX,NASDAQ,Healthcare,Biotechnology,listed,1991-01-01,,,,,,,,,,,68.5,Average IPO,Medium,expansion_db,US
+Godrej Consumer Products,GODREJCP,NSE,Consumer Defensive,Personal Care,listed,2001-01-01,,,,,,,,,,,68.3,Average IPO,Medium,expansion_db,IN
+Thangamayil Jewellery Ltd,THANGAMAYL,NSE,Consumer Cyclical,Luxury Goods,listed,2007-01-01,,,,,,,,,,,68.3,Average IPO,Medium,expansion_db,IN
+Tata Chemicals Ltd,TATACHEM,NSE,Basic Materials,Chemicals,listed,1995-01-01,,,,,,,,,,,68.2,Average IPO,Medium,expansion_db,IN
+Thirani Proj & Trading Ltd,THIRANI,NSE,Industrials,Trading,listed,2024-01-01,,,,,,,,,,,68.2,Average IPO,Medium,expansion_db,IN
+Exide Industries Ltd,EXIDEIND,NSE,Consumer Cyclical,Auto Parts,listed,2003-01-01,,,,,,,,,,,68.1,Average IPO,Medium,expansion_db,IN
+Alimentation Couche-Tard,ATD,TSX,Consumer Cyclical,Retail,listed,1996-01-01,,,,,,,,,,,68.1,Average IPO,Medium,expansion_db,CA
+Transgenic Bio Services Ltd,TRANSGENIC,NSE,Healthcare,Biotechnology,listed,2024-01-01,,,,,,,,,,,68.0,Average IPO,Medium,expansion_db,IN
+Bharat Heavy Electricals Ltd,BHEL,NSE,Industrials,Industrial Equipment,listed,1994-01-01,,,,,,,,,,,67.9,Average IPO,Medium,expansion_db,IN
+Indian Hotels Co Ltd,INDHOTEL,NSE,Consumer Cyclical,Hotels,listed,1995-01-01,,,,,,,,,,,67.9,Average IPO,Medium,expansion_db,IN
+Instacart (Maplebear Inc.),CART,NASDAQ,Technology,Software,listed,2023-01-01,,,,,,,,,,,67.9,Average IPO,Medium,expansion_db,US
+Xiaomi Corp,1810,HKEX,Technology,Consumer Electronics,listed,2018-01-01,,,,,,,,,,,67.9,Average IPO,Medium,expansion_db,CN
+Shree Maruti Integ Chem,SHREEMARUT,NSE,Basic Materials,Chemicals,listed,2024-01-01,,,,,,,,,,,67.9,Average IPO,Medium,expansion_db,IN
+Accent Microcell Ltd,ACCENTMIC,NSE,Technology,Telecom,listed,2024-01-01,,,,,,,,,,,67.7,Average IPO,Medium,expansion_db,IN
+R R Kabel Ltd,RRKABEL,NSE,Industrials,Electrical Equipment,listed,2023-01-01,,,,,,,,,,,67.6,Average IPO,Medium,expansion_db,IN
+ZTO Express (Cayman) Inc.,2057,HKEX,Industrials,Logistics,listed,2020-01-01,,,,,,,,,,,67.6,Average IPO,Medium,expansion_db,CN
+Rivian Automotive Inc.,RIVN,NASDAQ,Consumer Cyclical,Auto Manufacturers,listed,2021-01-01,,,,,,,,,,,67.5,Average IPO,Medium,expansion_db,US
+Bajaj Finserv Ltd,BAJAJFINSV,NSE,Financial,Financial Services,listed,2007-01-01,,,,,,,,,,,67.5,Average IPO,Medium,expansion_db,IN
+Pandora Media Inc.,P,NYSE,Communication,Entertainment,listed,2011-01-01,,,,,,,,,,,67.4,Average IPO,Medium,expansion_db,US
+Akme Fintrade India Ltd,AKMEFINTR,NSE,Financial,Financial Services,listed,2024-01-01,,,,,,,,,,,67.4,Average IPO,Medium,expansion_db,IN
+Colgate-Palmolive India Ltd,COLPAL,NSE,Consumer Defensive,Personal Care,listed,1979-01-01,,,,,,,,,,,67.3,Average IPO,Medium,expansion_db,IN
+Mahindra & Mahindra Fin.,M&MFIN,NSE,Financial,Financial Services,listed,2003-01-01,,,,,,,,,,,67.3,Average IPO,Medium,expansion_db,IN
+Bajaj Electricals Ltd,BAJAJELEC,NSE,Consumer Cyclical,Consumer Electronics,listed,2007-01-01,,,,,,,,,,,67.2,Average IPO,Medium,expansion_db,IN
+Mahindra Holidays & Resorts,MHRIL,NSE,Consumer Cyclical,Hotels,listed,2007-01-01,,,,,,,,,,,67.2,Average IPO,Medium,expansion_db,IN
+Ramco Cements Ltd,RAMCOCEM,NSE,Basic Materials,Cement,listed,2003-01-01,,,,,,,,,,,67.2,Average IPO,Medium,expansion_db,IN
+Kashi Visa Residency Ltd,KASHIVISA,NSE,Financial,Financial Services,listed,2024-01-01,,,,,,,,,,,67.2,Average IPO,Medium,expansion_db,IN
+Shree Karni Fabcom Ltd,SHREEKARNI,NSE,Consumer Cyclical,Textiles,listed,2024-01-01,,,,,,,,,,,67.2,Average IPO,Medium,expansion_db,IN
+Spotify Technology S.A.,SPOT,NYSE,Communication,Entertainment,listed,2018-01-01,,,,,,,,,,,67.0,Average IPO,Medium,expansion_db,SE
+Entertainment Network India,ENIL,NSE,Communication,Media,listed,2007-01-01,,,,,,,,,,,67.0,Average IPO,Medium,expansion_db,IN
+Reliance Infrastructure Ltd,RELINFRA,NSE,Utilities,Electric Utilities,listed,2004-01-01,,,,,,,,,,,67.0,Average IPO,Medium,expansion_db,IN
+Tirupati Graphite PLC,TIRUPATIGR,NSE,Basic Materials,Mining,listed,2024-01-01,,,,,,,,,,,67.0,Average IPO,Medium,expansion_db,IN
+Canara Bank,CANBK,NSE,Financial,Banks,listed,1995-01-01,,,,,,,,,,,66.9,Average IPO,Medium,expansion_db,IN
+ASOS PLC,ASOS,LSE,Consumer Cyclical,E-Commerce,listed,2001-01-01,,,,,,,,,,,66.8,Average IPO,Medium,expansion_db,GB
+Barclays PLC,BARC,LSE,Financial,Banks,listed,1980-01-01,,,,,,,,,,,66.8,Average IPO,Medium,expansion_db,GB
+Efactor Experience Solutions,EFACTOR,NSE,Communication,Media,listed,2024-01-01,,,,,,,,,,,66.8,Average IPO,Medium,expansion_db,IN
+Go Fashion India Ltd,GOCOLORS,NSE,Consumer Cyclical,Apparel,listed,2021-01-01,,,,,,,,,,,66.8,Average IPO,Medium,expansion_db,IN
+Intuitive Surgical Inc.,ISRG,NASDAQ,Healthcare,Medical Devices,listed,2000-01-01,,,,,,,,,,,66.8,Average IPO,Medium,expansion_db,US
+Burger King India Ltd,BURGERKING,NSE,Consumer Cyclical,Restaurants,listed,2020-01-01,,,,,,,,,,,66.7,Average IPO,Medium,expansion_db,IN
+Bajaj Auto Ltd,BAJAJ-AUTO,NSE,Consumer Cyclical,Auto Manufacturers,listed,2003-01-01,,,,,,,,,,,66.7,Average IPO,Medium,expansion_db,IN
+Bharat Dynamics Ltd,BDL,NSE,Industrials,Defense,listed,2018-01-01,,,,,,,,,,,66.7,Average IPO,Medium,expansion_db,IN
+LinkedIn Corp,LNKD,NYSE,Technology,Internet Services,listed,2011-01-01,,,,,,,,,,,66.7,Average IPO,Medium,expansion_db,US
+Jalpa Shah Securities Ltd,JALPA,NSE,Financial,Financial Services,listed,2024-01-01,,,,,,,,,,,66.7,Average IPO,Medium,expansion_db,IN
+Booking Holdings Inc.,BKNG,NASDAQ,Consumer Cyclical,Travel Services,listed,1999-01-01,,,,,,,,,,,66.7,Average IPO,Medium,expansion_db,US
+IndiaMart InterMesh Ltd,INDIAMART,NSE,Technology,Internet Services,listed,2019-01-01,,,,,,,,,,,66.6,Average IPO,Medium,expansion_db,IN
+Trip.com Group Ltd,9961,HKEX,Consumer Cyclical,Travel Services,listed,2021-01-01,,,,,,,,,,,66.6,Average IPO,Medium,expansion_db,CN
+DoorDash Inc.,DASH,NYSE,Technology,Software,listed,2020-01-01,,,,,,,,,,,66.5,Average IPO,Medium,expansion_db,US
+CrowdStrike Holdings Inc.,CRWD,NASDAQ,Technology,Cybersecurity,listed,2019-01-01,,,,,,,,,,,66.5,Average IPO,Medium,expansion_db,US
+Emami Ltd,EMAMILTD,NSE,Consumer Defensive,Personal Care,listed,2006-01-01,,,,,,,,,,,66.5,Average IPO,Medium,expansion_db,IN
+Rain Industries Ltd,RAIN,NSE,Basic Materials,Chemicals,listed,2003-01-01,,,,,,,,,,,66.5,Average IPO,Medium,expansion_db,IN
+SenseTime Group Inc.,0020,HKEX,Technology,Software,listed,2021-01-01,,,,,,,,,,,66.5,Average IPO,Medium,expansion_db,CN
+MegaTech Polycon Ltd,MEGATECH,NSE,Industrials,Packaging,listed,2024-01-01,,,,,,,,,,,66.5,Average IPO,Medium,expansion_db,IN
+Aditya Birla Capital Ltd,ABCAPITAL,NSE,Financial,Financial Services,listed,2017-01-01,,,,,,,,,,,66.5,Average IPO,Medium,expansion_db,IN
+Bank of Baroda,BANKBARODA,NSE,Financial,Banks,listed,1995-01-01,,,,,,,,,,,66.4,Average IPO,Medium,expansion_db,IN
+DraftKings Inc.,DKNG,NASDAQ,Consumer Cyclical,Gambling,listed,2020-01-01,,,,,,,,,,,66.4,Average IPO,Medium,expansion_db,US
+Vedanta Ltd,VEDL,NSE,Basic Materials,Metals & Mining,listed,1998-01-01,,,,,,,,,,,66.3,Average IPO,Medium,expansion_db,IN
+Fiverr International Ltd,FVRR,NYSE,Communication,Internet Services,listed,2019-01-01,,,,,,,,,,,66.3,Average IPO,Medium,expansion_db,IL
+Shopify Inc.,SHOP,NYSE,Technology,Software,listed,2015-01-01,,,,,,,,,,,66.2,Average IPO,Medium,expansion_db,CA
+Elgi Equipments Ltd,ELGIEQUIP,NSE,Industrials,Industrial Equipment,listed,2003-01-01,,,,,,,,,,,66.2,Average IPO,Medium,expansion_db,IN
+Oberoi Realty Ltd,OBEROIRLTY,NSE,Real Estate,Real Estate Development,listed,2010-01-01,,,,,,,,,,,66.1,Average IPO,Medium,expansion_db,IN
+Life Insurance Corp of India,SBILIFE,NSE,Financial,Insurance,listed,2022-01-01,,,,,,,,,,,66.1,Average IPO,Medium,expansion_db,IN
+Tejas Networks Ltd,TEJASNET,NSE,Technology,Telecom,listed,2017-01-01,,,,,,,,,,,66.1,Average IPO,Medium,expansion_db,IN
+Aditya Birla Fashion & Retail,ABFRL,NSE,Consumer Cyclical,Apparel,listed,2015-01-01,,,,,,,,,,,66.0,Average IPO,Medium,expansion_db,IN
+MakeMyTrip Ltd,MMYT,NASDAQ,Technology,Travel Technology,listed,2010-01-01,,,,,,,,,,,65.9,Average IPO,Medium,expansion_db,IN
+Thomson Reuters Corp,TRI,TSX,Industrials,Business Services,listed,2002-01-01,,,,,,,,,,,65.9,Average IPO,Medium,expansion_db,CA
+Zynga Inc.,ZNGA,NASDAQ,Communication,Entertainment,listed,2011-01-01,,,,,,,,,,,65.9,Average IPO,Medium,expansion_db,US
+GMM Pfaudler Ltd,GMMPFAUDLR,NSE,Industrials,Industrial Equipment,listed,2007-01-01,,,,,,,,,,,65.9,Average IPO,Medium,expansion_db,IN
+BEML Ltd,BEML,NSE,Industrials,Defense,listed,1996-01-01,,,,,,,,,,,65.8,Average IPO,Medium,expansion_db,IN
+Maharashtra Seamless Ltd,MAHSEAMLES,NSE,Basic Materials,Steel,listed,2003-01-01,,,,,,,,,,,65.8,Average IPO,Medium,expansion_db,IN
+Engineers India Ltd,ENGINERSIN,NSE,Industrials,Engineering,listed,1996-01-01,,,,,,,,,,,65.6,Average IPO,Medium,expansion_db,IN
+Alembic Pharmaceuticals Ltd,APLLTD,NSE,Healthcare,Pharmaceuticals,listed,2003-01-01,,,,,,,,,,,65.6,Average IPO,Medium,expansion_db,IN
+Coca-Cola Company,KO,NYSE,Consumer Defensive,Beverages,listed,1919-01-01,,,,,,,,,,,65.5,Average IPO,Medium,expansion_db,US
+Sea Limited,SE,NYSE,Technology,Internet Services,listed,2017-01-01,,,,,,,,,,,65.5,Average IPO,Medium,expansion_db,SG
+TC Energy Corp,TRP,TSX,Energy,Oil & Gas Midstream,listed,1998-01-01,,,,,,,,,,,65.5,Average IPO,Medium,expansion_db,CA
+GHCL Ltd,GHCL,NSE,Basic Materials,Chemicals,listed,1995-01-01,,,,,,,,,,,65.5,Average IPO,Medium,expansion_db,IN
+Petronet LNG Ltd,PETRONET,NSE,Energy,Oil & Gas,listed,2004-01-01,,,,,,,,,,,65.4,Average IPO,Medium,expansion_db,IN
+Medirom Healthcare Tech.,MED,NYSE,Healthcare,Healthcare Services,listed,2019-01-01,,,,,,,,,,,65.4,Average IPO,Medium,expansion_db,IL
+Jumia Technologies AG,JMIA,NYSE,Consumer Cyclical,E-Commerce,listed,2019-01-01,,,,,,,,,,,65.4,Average IPO,Medium,expansion_db,DE
+Groupon Inc.,GRPN,NASDAQ,Technology,Internet Services,listed,2011-01-01,,,,,,,,,,,65.4,Average IPO,Medium,expansion_db,US
+Shanti Spintex Ltd,SHANTISPIN,NSE,Consumer Cyclical,Textiles,listed,2024-01-01,,,,,,,,,,,65.4,Average IPO,Medium,expansion_db,IN
+Avanti Feeds Ltd,AVANTIFEED,NSE,Consumer Defensive,Food,listed,2007-01-01,,,,,,,,,,,65.3,Average IPO,Medium,expansion_db,IN
+Zenith Steel Pipes Ltd,ZENITHSTL,NSE,Basic Materials,Steel,listed,2024-01-01,,,,,,,,,,,65.3,Average IPO,Medium,expansion_db,IN
+Berger Paints India Ltd,BERGEPAINT,NSE,Basic Materials,Chemicals,listed,1995-01-01,,,,,,,,,,,65.2,Average IPO,Medium,expansion_db,IN
+Endurance Technologies Ltd,ENDURANCE,NSE,Consumer Cyclical,Auto Parts,listed,2016-01-01,,,,,,,,,,,65.2,Average IPO,Medium,expansion_db,IN
+Grab Holdings Ltd,GRAB,NASDAQ,Technology,Software,listed,2021-01-01,,,,,,,,,,,65.1,Average IPO,Medium,expansion_db,SG
+Zaggle Prepaid Ocean,ZAGGLE,NSE,Technology,Fintech,listed,2023-01-01,,,,,,,,,,,65.1,Average IPO,Medium,expansion_db,IN
+Airbnb Inc.,ABNB,NASDAQ,Consumer Cyclical,Travel Services,listed,2020-01-01,,,,,,,,,,,65.0,Average IPO,Medium,expansion_db,US
+Gland Pharma Ltd,GLAND,NSE,Healthcare,Pharmaceuticals,listed,2020-01-01,,,,,,,,,,,65.0,Average IPO,Medium,expansion_db,IN
+Constellation Software Inc.,CSU,TSX,Technology,Software,listed,2006-01-01,,,,,,,,,,,65.0,Average IPO,Medium,expansion_db,CA
+Electro Force Ltd,ELECTROFRC,NSE,Industrials,Electrical Equipment,listed,2024-01-01,,,,,,,,,,,65.0,Average IPO,Medium,expansion_db,IN
+Godrej Properties Ltd,GODREJPROP,NSE,Real Estate,Real Estate Development,listed,2009-01-01,,,,,,,,,,,64.9,Average IPO,Medium,expansion_db,IN
+Amara Raja Batteries Ltd,AMARAJABAT,NSE,Consumer Cyclical,Auto Parts,listed,2003-01-01,,,,,,,,,,,64.9,Average IPO,Medium,expansion_db,IN
+IIFL Wealth Management,IIFLWAM,NSE,Financial,Wealth Management,listed,2021-01-01,,,,,,,,,,,64.8,Average IPO,Medium,expansion_db,IN
+Zenith Health Care Ltd,ZENITHHEL,NSE,Healthcare,Pharmaceuticals,listed,2024-01-01,,,,,,,,,,,64.8,Average IPO,Medium,expansion_db,IN
+Mastercard Incorporated,MA,NYSE,Financial,Credit Services,listed,2006-01-01,,,,,,,,,,,64.7,Average IPO,Medium,expansion_db,US
+Robinhood Markets Inc.,HOOD,NASDAQ,Financial,Brokerage,listed,2021-01-01,,,,,,,,,,,64.7,Average IPO,Medium,expansion_db,US
+Zydus Lifesciences Ltd,ZYDUSLIFE,NSE,Healthcare,Pharmaceuticals,listed,2003-01-01,,,,,,,,,,,64.7,Average IPO,Medium,expansion_db,IN
+Arm Holdings PLC,ARM,NASDAQ,Technology,Semiconductors,listed,2023-01-01,,,,,,,,,,,64.7,Average IPO,Medium,expansion_db,GB
+R B Z Wellness Ltd,RBZWELL,NSE,Consumer Defensive,Personal Care,listed,2024-01-01,,,,,,,,,,,64.7,Average IPO,Medium,expansion_db,IN
+Shivalic Power Control Ltd,SHIVALICP,NSE,Industrials,Electrical Equipment,listed,2024-01-01,,,,,,,,,,,64.7,Average IPO,Medium,expansion_db,IN
+ICICI Prudential Life Ins.,ICICIPRULI,NSE,Financial,Insurance,listed,2016-01-01,,,,,,,,,,,64.6,Average IPO,Medium,expansion_db,IN
+PolicyBazaar (PB Fintech),POLICYBZR,NSE,Technology,Fintech,listed,2021-01-01,,,,,,,,,,,64.6,Average IPO,Medium,expansion_db,IN
+CAMS Ltd,CAMS,NSE,Financial,Financial Services,listed,2020-01-01,,,,,,,,,,,64.6,Average IPO,Medium,expansion_db,IN
+ABS Marine Services Ltd,ABSMARINE,NSE,Industrials,Logistics,listed,2024-01-01,,,,,,,,,,,64.6,Average IPO,Medium,expansion_db,IN
+Rallis India Ltd,RALLIS,NSE,Basic Materials,Fertilizers,listed,1995-01-01,,,,,,,,,,,64.4,Average IPO,Medium,expansion_db,IN
+IREDA Ltd,IREDA,NSE,Financial,Financial Services,listed,2023-01-01,,,,,,,,,,,64.3,Average IPO,Medium,expansion_db,IN
+DLF Ltd,DLF,NSE,Real Estate,Real Estate Development,listed,2007-01-01,,,,,,,,,,,64.3,Average IPO,Medium,expansion_db,IN
+Mahanagar Gas Ltd,MGL,NSE,Utilities,Gas Distribution,listed,2016-01-01,,,,,,,,,,,64.2,Average IPO,Medium,expansion_db,IN
+Laurus Labs Ltd,LAURUSLABS,NSE,Healthcare,Pharmaceuticals,listed,2016-01-01,,,,,,,,,,,64.2,Average IPO,Medium,expansion_db,IN
+Jay Kailash Namkeen Ltd,JKNAMCHEM,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,64.2,Average IPO,Medium,expansion_db,IN
+Yatra Online Ltd,YATRA,NSE,Technology,Travel Technology,listed,2022-01-01,,,,,,,,,,,64.2,Average IPO,Medium,expansion_db,IN
+Bata India Ltd,BATAINDIA,NSE,Consumer Cyclical,Footwear,listed,2003-01-01,,,,,,,,,,,64.0,Average IPO,Medium,expansion_db,IN
+Sigma Solve Ltd,SIGMASOLV,NSE,Technology,Software,listed,2022-01-01,,,,,,,,,,,64.0,Average IPO,Medium,expansion_db,IN
+Alkyl Amines Chemicals Ltd,ALKYLAMINE,NSE,Basic Materials,Chemicals,listed,2007-01-01,,,,,,,,,,,64.0,Average IPO,Medium,expansion_db,IN
+Texmaco Rail & Engineering,TEXRAIL,NSE,Industrials,Railways,listed,2007-01-01,,,,,,,,,,,63.9,Average IPO,Medium,expansion_db,IN
+One97 Communications (Paytm),PAYTM,NSE,Technology,Fintech,listed,2021-01-01,,,,,,,,,,,63.9,Average IPO,Medium,expansion_db,IN
+Mamaearth (Honasa),MAMAEARTH,NSE,Consumer Defensive,Personal Care,listed,2023-01-01,,,,,,,,,,,63.8,Average IPO,Medium,expansion_db,IN
+Unity Software Inc.,U,NYSE,Technology,Software,listed,2020-01-01,,,,,,,,,,,63.8,Average IPO,Medium,expansion_db,US
+Zillow Group Inc.,ZG,NASDAQ,Real Estate,Real Estate Services,listed,2011-01-01,,,,,,,,,,,63.8,Average IPO,Medium,expansion_db,US
+Megastar Foods Ltd,MEGASTAR,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,63.8,Average IPO,Medium,expansion_db,IN
+Dr. Lal PathLabs Ltd,LALPATHLAB,NSE,Healthcare,Diagnostics,listed,2021-01-01,,,,,,,,,,,63.7,Average IPO,Medium,expansion_db,IN
+Chipotle Mexican Grill Inc.,CMG,NYSE,Consumer Cyclical,Restaurants,listed,2006-01-01,,,,,,,,,,,63.7,Average IPO,Medium,expansion_db,US
+Snowflake Inc.,SNOW,NYSE,Technology,Software,listed,2020-01-01,,,,,,,,,,,63.6,Average IPO,Medium,expansion_db,US
+Coinbase Global Inc.,COIN,NASDAQ,Financial,Digital Assets,listed,2021-01-01,,,,,,,,,,,63.6,Average IPO,Medium,expansion_db,US
+Tencent Holdings Ltd,TCEHY,OTC,Technology,Internet Services,listed,2004-01-01,,,,,,,,,,,63.6,Average IPO,Medium,expansion_db,CN
+Dindigul Farm Product Ltd,DINDFARM,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,63.6,Average IPO,Medium,expansion_db,IN
+PVR INOX Ltd,PVRINOX,NSE,Communication,Entertainment,listed,2006-01-01,,,,,,,,,,,63.5,Average IPO,Medium,expansion_db,IN
+Fedbank Financial Services,FEDFINA,NSE,Financial,Financial Services,listed,2023-01-01,,,,,,,,,,,63.5,Average IPO,Medium,expansion_db,IN
+Federal Bank Ltd,FEDERALBNK,NSE,Financial,Banks,listed,1995-01-01,,,,,,,,,,,63.4,Average IPO,Medium,expansion_db,IN
+Atul Ltd,ATUL,NSE,Basic Materials,Chemicals,listed,1994-01-01,,,,,,,,,,,63.4,Average IPO,Medium,expansion_db,IN
+Balaji Amines Ltd,BALAMINES,NSE,Basic Materials,Chemicals,listed,2007-01-01,,,,,,,,,,,63.4,Average IPO,Medium,expansion_db,IN
+Dixon Technologies India,DIXON,NSE,Technology,Consumer Electronics,listed,2017-01-01,,,,,,,,,,,63.4,Average IPO,Medium,expansion_db,IN
+Slack Technologies Inc.,WORK,NYSE,Technology,Software,listed,2019-01-01,,,,,,,,,,,63.4,Average IPO,Medium,expansion_db,US
+Uber Technologies Inc.,UBER,NYSE,Technology,Software,listed,2019-01-01,,,,,,,,,,,63.3,Average IPO,Medium,expansion_db,US
+Johnson & Johnson,JNJ,NYSE,Healthcare,Drug Manufacturers,listed,1944-01-01,,,,,,,,,,,63.3,Average IPO,Medium,expansion_db,US
+PDD Holdings Inc.,PDD,NASDAQ,Consumer Cyclical,E-Commerce,listed,2018-01-01,,,,,,,,,,,63.3,Average IPO,Medium,expansion_db,CN
+Tata Motors Ltd,TATAMOTORS,NSE,Consumer Cyclical,Auto Manufacturers,listed,1945-01-01,,,,,,,,,,,63.3,Average IPO,Medium,expansion_db,IN
+Ping An Insurance Group,2318,HKEX,Financial,Insurance,listed,2004-01-01,,,,,,,,,,,63.3,Average IPO,Medium,expansion_db,CN
+Enviro Infra Engineers Ltd,ENVIRO,NSE,Industrials,Infrastructure,listed,2024-01-01,,,,,,,,,,,63.3,Average IPO,Medium,expansion_db,IN
+Sharpline Broadcast Ltd,SHARPLINE,NSE,Communication,Media,listed,2024-01-01,,,,,,,,,,,63.3,Average IPO,Medium,expansion_db,IN
+Signet Industries Ltd,SIGNETIND,NSE,Basic Materials,Chemicals,listed,2007-01-01,,,,,,,,,,,63.3,Average IPO,Medium,expansion_db,IN
+AIA Engineering Ltd,AIAENG,NSE,Industrials,Industrial Equipment,listed,2007-01-01,,,,,,,,,,,63.3,Average IPO,Medium,expansion_db,IN
+IEX (Indian Energy Exchange),IEX,NSE,Financial,Financial Services,listed,2017-01-01,,,,,,,,,,,63.2,Average IPO,Medium,expansion_db,IN
+India Cements Ltd,INDIACEM,NSE,Basic Materials,Cement,listed,1995-01-01,,,,,,,,,,,63.2,Average IPO,Medium,expansion_db,IN
+Zee Entertainment Enterprises,ZEEL,NSE,Communication,Entertainment,listed,2001-01-01,,,,,,,,,,,63.2,Average IPO,Medium,expansion_db,IN
+Chewy Inc.,CHWY,NYSE,Consumer Cyclical,E-Commerce,listed,2019-01-01,,,,,,,,,,,63.2,Average IPO,Medium,expansion_db,US
+Zee Entertainment Ltd,ZEEL,NSE,Communication,Entertainment,listed,2001-01-01,,,,,,,,,,,63.1,Average IPO,Medium,expansion_db,IN
+Sena Development Ltd,SENADEV,NSE,Real Estate,Real Estate Development,listed,2024-01-01,,,,,,,,,,,63.1,Average IPO,Medium,expansion_db,IN
+Intel Corporation,INTC,NASDAQ,Technology,Semiconductors,listed,1971-01-01,,,,,,,,,,,63.0,Average IPO,Medium,expansion_db,US
+SKF India Ltd,SKFINDIA,NSE,Industrials,Industrial Equipment,listed,1995-01-01,,,,,,,,,,,63.0,Average IPO,Medium,expansion_db,IN
+Brookfield Corp,BN,TSX,Financial,Asset Management,listed,1998-01-01,,,,,,,,,,,63.0,Average IPO,Medium,expansion_db,CA
+KM Agritech Ltd,KMAGRI,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,63.0,Average IPO,Medium,expansion_db,IN
+Delhivery Ltd,DELHIVERY,NSE,Industrials,Logistics,listed,2022-01-01,,,,,,,,,,,62.9,Average IPO,Medium,expansion_db,IN
+IDBI Bank Ltd,IDBI,NSE,Financial,Banks,listed,1995-01-01,,,,,,,,,,,62.9,Average IPO,Medium,expansion_db,IN
+JSW Infrastructure Ltd,JSWINFRA,NSE,Industrials,Infrastructure,listed,2023-01-01,,,,,,,,,,,62.8,Average IPO,Medium,expansion_db,IN
+Trent Ltd,TRENT,NSE,Consumer Cyclical,Retail,listed,1998-01-01,,,,,,,,,,,62.8,Average IPO,Medium,expansion_db,IN
+Kothari Industrial Corp,KOTHARIIND,NSE,Basic Materials,Fertilizers,listed,1995-01-01,,,,,,,,,,,62.8,Average IPO,Medium,expansion_db,IN
+Yudiz Solutions Ltd,YUDIZ,NSE,Technology,Software,listed,2024-01-01,,,,,,,,,,,62.8,Average IPO,Medium,expansion_db,IN
+Marico Ltd,MARICO,NSE,Consumer Defensive,Personal Care,listed,1996-01-01,,,,,,,,,,,62.7,Average IPO,Medium,expansion_db,IN
+La Opala RG Ltd,LAOPALA,NSE,Consumer Cyclical,Household Products,listed,2007-01-01,,,,,,,,,,,62.7,Average IPO,Medium,expansion_db,IN
+Procter & Gamble,PG,NYSE,Consumer Defensive,Household Products,listed,1890-01-01,,,,,,,,,,,62.6,Average IPO,Medium,expansion_db,US
+PetroChina Co Ltd,0857,HKEX,Energy,Oil & Gas,listed,2000-01-01,,,,,,,,,,,62.6,Average IPO,Medium,expansion_db,CN
+Indo Farm Equipment Ltd,INDOFARM,NSE,Industrials,Farm Equipment,listed,2024-01-01,,,,,,,,,,,62.6,Average IPO,Medium,expansion_db,IN
+Perfect Infraengineers Ltd,PERFECTINF,NSE,Industrials,Infrastructure,listed,2024-01-01,,,,,,,,,,,62.6,Average IPO,Medium,expansion_db,IN
+Shreeshay Engienering Ltd,SHREESHAY,NSE,Industrials,Engineering,listed,2024-01-01,,,,,,,,,,,62.6,Average IPO,Medium,expansion_db,IN
+Palantir Technologies Inc.,PLTR,NASDAQ,Technology,Software,listed,2020-01-01,,,,,,,,,,,62.5,Average IPO,Medium,expansion_db,US
+Mankind Pharma Ltd,MANKIND,NSE,Healthcare,Pharmaceuticals,listed,2023-01-01,,,,,,,,,,,62.4,Average IPO,Medium,expansion_db,IN
+Page Industries Ltd,PAGEIND,NSE,Consumer Cyclical,Apparel,listed,2007-01-01,,,,,,,,,,,62.4,Average IPO,Medium,expansion_db,IN
+Sobha Ltd,SOBHA,NSE,Real Estate,Real Estate Development,listed,2006-01-01,,,,,,,,,,,62.4,Average IPO,Medium,expansion_db,IN
+Croissance Agriculture Ltd,CROISSANCE,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,62.4,Average IPO,Medium,expansion_db,IN
+EasyJet PLC,EZJ,LSE,Industrials,Airlines,listed,2000-01-01,,,,,,,,,,,62.3,Average IPO,Medium,expansion_db,GB
+Meituan,3690,HKEX,Technology,Internet Services,listed,2018-01-01,,,,,,,,,,,62.3,Average IPO,Medium,expansion_db,CN
+Ixigo (Le Travenues),IXIGO,NSE,Technology,Travel Technology,listed,2024-01-01,,,,,,,,,,,62.2,Average IPO,Medium,expansion_db,IN
+Balrampur Chini Mills Ltd,BALRAMCHIN,NSE,Consumer Defensive,Sugar,listed,1995-01-01,,,,,,,,,,,62.2,Average IPO,Medium,expansion_db,IN
+Suven Pharmaceuticals Ltd,SUVENPHAR,NSE,Healthcare,Pharmaceuticals,listed,2020-01-01,,,,,,,,,,,62.2,Average IPO,Medium,expansion_db,IN
+Beyond Meat Inc.,BYND,NASDAQ,Consumer Defensive,Food,listed,2019-01-01,,,,,,,,,,,62.2,Average IPO,Medium,expansion_db,US
+Digidrive Distributors Ltd,DIGIDRIVE,NSE,Consumer Cyclical,E-Commerce,listed,2024-01-01,,,,,,,,,,,62.2,Average IPO,Medium,expansion_db,IN
+Docmode Health Tech Ltd,DOCMODE,NSE,Healthcare,Healthcare Services,listed,2024-01-01,,,,,,,,,,,62.2,Average IPO,Medium,expansion_db,IN
+Inox India Ltd,INOXINDIA,NSE,Industrials,Industrial Equipment,listed,2023-01-01,,,,,,,,,,,62.2,Average IPO,Medium,expansion_db,IN
+Tata Power Ltd,TATAPOWER,NSE,Utilities,Electric Utilities,listed,1919-01-01,,,,,,,,,,,62.1,Average IPO,Medium,expansion_db,IN
+RailTel Corp of India,RAILTEL,NSE,Technology,Telecom,listed,2021-01-01,,,,,,,,,,,62.1,Average IPO,Medium,expansion_db,IN
+Delta Corp Ltd,DELTACORP,NSE,Consumer Cyclical,Entertainment,listed,2007-01-01,,,,,,,,,,,62.1,Average IPO,Medium,expansion_db,IN
+Quess Corp Ltd,QUESS,NSE,Industrials,Staffing,listed,2016-01-01,,,,,,,,,,,62.1,Average IPO,Medium,expansion_db,IN
+Technowrapar Software,TECHNOWRA,NSE,Technology,Software,listed,2024-01-01,,,,,,,,,,,62.1,Average IPO,Medium,expansion_db,IN
+Paradeep Phosphates Ltd,PARADEEP,NSE,Basic Materials,Fertilizers,listed,2022-01-01,,,,,,,,,,,62.0,Average IPO,Medium,expansion_db,IN
+Gujarat Gas Ltd,GUJGAS,NSE,Utilities,Gas Distribution,listed,2015-01-01,,,,,,,,,,,62.0,Average IPO,Medium,expansion_db,IN
+IIFL Finance Ltd,IIFL,NSE,Financial,Financial Services,listed,2007-01-01,,,,,,,,,,,62.0,Average IPO,Medium,expansion_db,IN
+Weibo Corp,WB,NASDAQ,Communication,Internet Services,listed,2014-01-01,,,,,,,,,,,62.0,Average IPO,Medium,expansion_db,CN
+Integra Essentia Ltd,INTEGRAESS,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,62.0,Average IPO,Medium,expansion_db,IN
+Krystal Integrated Services,KRYSTAL,NSE,Industrials,Business Services,listed,2024-01-01,,,,,,,,,,,62.0,Average IPO,Medium,expansion_db,IN
+UnitedHealth Group Inc.,UNH,NYSE,Healthcare,Healthcare Plans,listed,1984-01-01,,,,,,,,,,,61.9,Average IPO,Medium,expansion_db,US
+Tata Elxsi Ltd,TATAELXSI,NSE,Technology,Software,listed,2001-01-01,,,,,,,,,,,61.9,Average IPO,Medium,expansion_db,IN
+Cyient Ltd,CYIENT,NSE,Technology,Engineering Services,listed,2004-01-01,,,,,,,,,,,61.9,Average IPO,Medium,expansion_db,IN
+NetEase Inc.,9999,HKEX,Technology,Internet Services,listed,2020-01-01,,,,,,,,,,,61.9,Average IPO,Medium,expansion_db,CN
+J.G. Chemicals Ltd,JGCHEM,NSE,Basic Materials,Chemicals,listed,2024-01-01,,,,,,,,,,,61.9,Average IPO,Medium,expansion_db,IN
+Tac Security Solutions Ltd,TACSEC,NSE,Technology,Cybersecurity,listed,2024-01-01,,,,,,,,,,,61.9,Average IPO,Medium,expansion_db,IN
+Astral Ltd,ASTRAL,NSE,Industrials,Building Materials,listed,2007-01-01,,,,,,,,,,,61.8,Average IPO,Medium,expansion_db,IN
+Quality Foils India Ltd,QUALIFOIL,NSE,Industrials,Packaging,listed,2024-01-01,,,,,,,,,,,61.8,Average IPO,Medium,expansion_db,IN
+Shree Vasu Logistics Ltd,VASULOGIS,NSE,Industrials,Logistics,listed,2024-01-01,,,,,,,,,,,61.8,Average IPO,Medium,expansion_db,IN
+Lululemon Athletica Inc.,LULU,NASDAQ,Consumer Cyclical,Apparel,listed,2007-01-01,,,,,,,,,,,61.8,Average IPO,Medium,expansion_db,CA
+Li Auto Inc.,LI,NASDAQ,Consumer Cyclical,Auto Manufacturers,listed,2020-01-01,,,,,,,,,,,61.7,Average IPO,Medium,expansion_db,CN
+IGL (Indraprastha Gas),IGL,NSE,Utilities,Gas Distribution,listed,2004-01-01,,,,,,,,,,,61.7,Average IPO,Medium,expansion_db,IN
+IFCI Ltd,IFCI,NSE,Financial,Financial Services,listed,1995-01-01,,,,,,,,,,,61.7,Average IPO,Medium,expansion_db,IN
+Kiwitech Solutions Ltd,KIWITECH,NSE,Technology,Software,listed,2024-01-01,,,,,,,,,,,61.7,Average IPO,Medium,expansion_db,IN
+Yash Optics & Lens Ltd,YASHOPTICS,NSE,Healthcare,Medical Devices,listed,2024-01-01,,,,,,,,,,,61.7,Average IPO,Medium,expansion_db,IN
+Rolex Rings Ltd,ROLEXRINGS,NSE,Consumer Cyclical,Auto Parts,listed,2021-01-01,,,,,,,,,,,61.6,Average IPO,Medium,expansion_db,IN
+Linde India Ltd,LINDEINDIA,NSE,Basic Materials,Chemicals,listed,1995-01-01,,,,,,,,,,,61.6,Average IPO,Medium,expansion_db,IN
+Pondy Oxides & Chemicals,PONDYOXIDE,NSE,Basic Materials,Chemicals,listed,2007-01-01,,,,,,,,,,,61.6,Average IPO,Medium,expansion_db,IN
+Svarnim Trade Udyog Ltd,STUL,NSE,Consumer Cyclical,Trading,listed,2007-01-01,,,,,,,,,,,61.6,Average IPO,Medium,expansion_db,IN
+Konstelec Engineers Ltd,KONSTELEC,NSE,Industrials,Engineering,listed,2024-01-01,,,,,,,,,,,61.6,Average IPO,Medium,expansion_db,IN
+Adidas AG,ADS,XETRA,Consumer Cyclical,Apparel,listed,1995-01-01,,,,,,,,,,,61.6,Average IPO,Medium,expansion_db,DE
+Sun TV Network Ltd,SUNTV,NSE,Communication,Entertainment,listed,2006-01-01,,,,,,,,,,,61.5,Average IPO,Medium,expansion_db,IN
+Interiors & More Ltd,INTERIORS,NSE,Consumer Cyclical,Retail,listed,2024-01-01,,,,,,,,,,,61.5,Average IPO,Medium,expansion_db,IN
+Pearl Green Clubs & Resorts,PEARLGREEN,NSE,Consumer Cyclical,Hotels,listed,2024-01-01,,,,,,,,,,,61.5,Average IPO,Medium,expansion_db,IN
+Krsnaa Diagnostics Ltd,KRSNAA,NSE,Healthcare,Diagnostics,listed,2021-01-01,,,,,,,,,,,61.4,Average IPO,Medium,expansion_db,IN
+DiDi Global Inc.,DIDIY,OTC,Technology,Software,listed,2021-01-01,,,,,,,,,,,61.4,Average IPO,Medium,expansion_db,CN
+Kuaishou Technology,1024,HKEX,Communication,Internet Services,listed,2021-01-01,,,,,,,,,,,61.4,Average IPO,Medium,expansion_db,CN
+Suncor Energy Inc.,SU,TSX,Energy,Oil & Gas,listed,1992-01-01,,,,,,,,,,,61.4,Average IPO,Medium,expansion_db,CA
+SAP SE,SAP,XETRA,Technology,Software,listed,1998-01-01,,,,,,,,,,,61.4,Average IPO,Medium,expansion_db,DE
+L&T Technology Services,LTTS,NSE,Technology,Engineering Services,listed,2016-01-01,,,,,,,,,,,61.3,Average IPO,Medium,expansion_db,IN
+Swiggy Ltd,SWIGGY,NSE,Technology,Internet Services,listed,2024-01-01,,,,,,,,,,,61.3,Average IPO,Medium,expansion_db,IN
+Tamilnad Agricult Chem,TAC,NSE,Basic Materials,Fertilizers,listed,2024-01-01,,,,,,,,,,,61.3,Average IPO,Medium,expansion_db,IN
+Everest Kanto Cylinder Ltd,EKC,NSE,Industrials,Industrial Equipment,listed,2007-01-01,,,,,,,,,,,61.3,Average IPO,Medium,expansion_db,IN
+Automotive Axles Ltd,AUTOAXLES,NSE,Consumer Cyclical,Auto Parts,listed,2005-01-01,,,,,,,,,,,61.2,Average IPO,Medium,expansion_db,IN
+Bumble Inc.,BMBL,NASDAQ,Technology,Software,listed,2021-01-01,,,,,,,,,,,61.2,Average IPO,Medium,expansion_db,US
+NVIDIA Corporation,NVDA,NASDAQ,Technology,Semiconductors,listed,1999-01-01,,,,,,,,,,,61.1,Average IPO,Medium,expansion_db,US
+EID Parry (India) Ltd,EIDPARRY,NSE,Consumer Defensive,Sugar,listed,1995-01-01,,,,,,,,,,,61.1,Average IPO,Medium,expansion_db,IN
+Lloyds Metals & Energy Ltd,LLOYDSME,NSE,Basic Materials,Metals & Mining,listed,2007-01-01,,,,,,,,,,,61.1,Average IPO,Medium,expansion_db,IN
+NIO Inc.,NIO,NYSE,Consumer Cyclical,Auto Manufacturers,listed,2018-01-01,,,,,,,,,,,61.0,Average IPO,Medium,expansion_db,CN
+KPIT Technologies Ltd,KPITTECH,NSE,Technology,Software,listed,2014-01-01,,,,,,,,,,,61.0,Average IPO,Medium,expansion_db,IN
+Westlife Foodworld Ltd,WESTLIFE,NSE,Consumer Cyclical,Restaurants,listed,2017-01-01,,,,,,,,,,,61.0,Average IPO,Medium,expansion_db,IN
+GlaxoSmithKline PLC,GSK,LSE,Healthcare,Pharmaceuticals,listed,1947-01-01,,,,,,,,,,,61.0,Average IPO,Medium,expansion_db,GB
+King Digital Entertainment,KING,NYSE,Communication,Entertainment,listed,2014-01-01,,,,,,,,,,,61.0,Average IPO,Medium,expansion_db,GB
+Cosmic CRF Ltd,COSMICRF,NSE,Technology,Software,listed,2024-01-01,,,,,,,,,,,61.0,Average IPO,Medium,expansion_db,IN
+Manba Finance Ltd,MANBAFIN,NSE,Financial,Financial Services,listed,2024-01-01,,,,,,,,,,,61.0,Average IPO,Medium,expansion_db,IN
+Protean eGov Technologies,PROTEAN,NSE,Technology,Software,listed,2023-01-01,,,,,,,,,,,61.0,Average IPO,Medium,expansion_db,IN
+Zomato Ltd,ZOMATO,NSE,Technology,Internet Services,listed,2021-01-01,,,,,,,,,,,60.9,Average IPO,Medium,expansion_db,IN
+Hero MotoCorp Ltd,HEROMOTOCO,NSE,Consumer Cyclical,Auto Manufacturers,listed,2003-01-01,,,,,,,,,,,60.9,Average IPO,Medium,expansion_db,IN
+Tarmat Ltd,TARMAT,NSE,Industrials,Infrastructure,listed,2024-01-01,,,,,,,,,,,60.9,Average IPO,Medium,expansion_db,IN
+Salesforce Inc.,CRM,NYSE,Technology,Software,listed,2004-01-01,,,,,,,,,,,60.8,Average IPO,Medium,expansion_db,US
+Zensar Technologies Ltd,ZENSARTECH,NSE,Technology,Software,listed,2003-01-01,,,,,,,,,,,60.8,Average IPO,Medium,expansion_db,IN
+Eastern Logica Infoway Ltd,ELOGICA,NSE,Technology,Software,listed,2024-01-01,,,,,,,,,,,60.8,Average IPO,Medium,expansion_db,IN
+Eicher Motors Ltd,EICHERMOT,NSE,Consumer Cyclical,Auto Manufacturers,listed,2003-01-01,,,,,,,,,,,60.7,Average IPO,Medium,expansion_db,IN
+Honeywell Automation India Ltd,HONAUT,NSE,Industrials,Industrial Equipment,listed,1995-01-01,,,,,,,,,,,60.7,Average IPO,Medium,expansion_db,IN
+Housing & Urban Dev Corp,HUDCO,NSE,Financial,Housing Finance,listed,2017-01-01,,,,,,,,,,,60.7,Average IPO,Medium,expansion_db,IN
+LendingClub Corp,LC,NYSE,Financial,Financial Services,listed,2014-01-01,,,,,,,,,,,60.7,Average IPO,Medium,expansion_db,US
+Indo Borax & Chemicals Ltd,INDOBORAX,NSE,Basic Materials,Chemicals,listed,2007-01-01,,,,,,,,,,,60.7,Average IPO,Medium,expansion_db,IN
+Wardwizard Healthcare Ltd,WARDWIZ,NSE,Healthcare,Healthcare Services,listed,2024-01-01,,,,,,,,,,,60.7,Average IPO,Medium,expansion_db,IN
+Genus Paper & Boards Ltd,GENUSPAPER,NSE,Basic Materials,Paper,listed,2007-01-01,,,,,,,,,,,60.7,Average IPO,Medium,expansion_db,IN
+Microsoft Corporation,MSFT,NASDAQ,Technology,Software,listed,1986-01-01,,,,,,,,,,,60.6,Average IPO,Medium,expansion_db,US
+XPeng Inc.,XPEV,NYSE,Consumer Cyclical,Auto Manufacturers,listed,2020-01-01,,,,,,,,,,,60.6,Average IPO,Medium,expansion_db,CN
+Infosys Ltd,INFY,NSE,Technology,Software,listed,1993-01-01,,,,,,,,,,,60.6,Average IPO,Medium,expansion_db,IN
+Dr. Reddy's Labs ADR,RDY,NYSE,Healthcare,Pharmaceuticals,listed,2001-01-01,,,,,,,,,,,60.6,Average IPO,Medium,expansion_db,IN
+Marine Electricals India,MARINE,NSE,Industrials,Electrical Equipment,listed,2024-01-01,,,,,,,,,,,60.6,Average IPO,Medium,expansion_db,IN
+Yashraj Biotechnology Ltd,YASHRAJ,NSE,Healthcare,Biotechnology,listed,2024-01-01,,,,,,,,,,,60.6,Average IPO,Medium,expansion_db,IN
+ICICI Bank Ltd,ICICIBANK,NSE,Financial,Banks,listed,1994-01-01,,,,,,,,,,,60.5,Average IPO,Medium,expansion_db,IN
+Licious,LICIOUS,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,60.5,Average IPO,Medium,expansion_db,IN
+Droneacharya Aerial Innov,DRONE,NSE,Technology,Drones,listed,2024-01-01,,,,,,,,,,,60.5,Average IPO,Medium,expansion_db,IN
+Pansari Developers Ltd,PANSARIDV,NSE,Real Estate,Real Estate Development,listed,2024-01-01,,,,,,,,,,,60.5,Average IPO,Medium,expansion_db,IN
+Advanced Micro Devices,AMD,NASDAQ,Technology,Semiconductors,listed,1979-01-01,,,,,,,,,,,60.4,Average IPO,Medium,expansion_db,US
+Cognizant Technology Solutions,CTSH,NASDAQ,Technology,Consulting,listed,1998-01-01,,,,,,,,,,,60.4,Average IPO,Medium,expansion_db,US
+JPMorgan Chase & Co.,JPM,NYSE,Financial,Banks,listed,1969-01-01,,,,,,,,,,,60.3,Average IPO,Medium,expansion_db,US
+Visa Inc.,V,NYSE,Financial,Credit Services,listed,2008-01-01,,,,,,,,,,,60.3,Average IPO,Medium,expansion_db,US
+Nykaa (FSN E-Commerce),NYKAA,NSE,Consumer Cyclical,E-Commerce,listed,2021-01-01,,,,,,,,,,,60.3,Average IPO,Medium,expansion_db,IN
+Bajaj Holdings & Investment,BAJAJHLDNG,NSE,Financial,Financial Services,listed,2004-01-01,,,,,,,,,,,60.3,Average IPO,Medium,expansion_db,IN
+Radico Khaitan Ltd,RADICO,NSE,Consumer Defensive,Beverages,listed,1995-01-01,,,,,,,,,,,60.3,Average IPO,Medium,expansion_db,IN
+CWD Engineering Ltd,CWDENG,NSE,Industrials,Engineering,listed,2024-01-01,,,,,,,,,,,60.3,Average IPO,Medium,expansion_db,IN
+Fermenta Biotech Ltd,FERMENTA,NSE,Healthcare,Biotechnology,listed,2007-01-01,,,,,,,,,,,60.3,Average IPO,Medium,expansion_db,IN
+Sapphire Foods India Ltd,SAPPHIRE,NSE,Consumer Cyclical,Restaurants,listed,2021-01-01,,,,,,,,,,,60.2,Average IPO,Medium,expansion_db,IN
+Poly Medicure Ltd,POLYMED,NSE,Healthcare,Medical Devices,listed,2007-01-01,,,,,,,,,,,60.2,Average IPO,Medium,expansion_db,IN
+Canadian Pacific Kansas City,CP,TSX,Industrials,Railroads,listed,1995-01-01,,,,,,,,,,,60.2,Average IPO,Medium,expansion_db,CA
+Selinah International Ltd,SELINAH,NSE,Consumer Cyclical,Apparel,listed,2024-01-01,,,,,,,,,,,60.2,Average IPO,Medium,expansion_db,IN
+ERIS Lifesciences Ltd,ERIS,NSE,Healthcare,Pharmaceuticals,listed,2017-01-01,,,,,,,,,,,60.2,Average IPO,Medium,expansion_db,IN
+Novo Nordisk A/S,NVO,NYSE,Healthcare,Drug Manufacturers,listed,1999-01-01,,,,,,,,,,,60.1,Average IPO,Medium,expansion_db,DK
+Dmart (Avenue Supermarts),DMART,NSE,Consumer Defensive,Discount Stores,listed,2017-01-01,,,,,,,,,,,60.1,Average IPO,Medium,expansion_db,IN
+Shriram Transport Finance,SHRIRAMFIN,NSE,Financial,Financial Services,listed,1995-01-01,,,,,,,,,,,60.1,Average IPO,Medium,expansion_db,IN
+Enbridge Inc.,ENB,TSX,Energy,Oil & Gas Midstream,listed,1998-01-01,,,,,,,,,,,60.1,Average IPO,Medium,expansion_db,CA
+Five-Star Business Finance,FIVESTAR,NSE,Financial,Financial Services,listed,2022-01-01,,,,,,,,,,,60.1,Average IPO,Medium,expansion_db,IN
+Dabur India Ltd,DABUR,NSE,Consumer Defensive,Personal Care,listed,1994-01-01,,,,,,,,,,,60.0,Average IPO,Medium,expansion_db,IN
+Hindustan Zinc Ltd,HINDZINC,NSE,Basic Materials,Metals & Mining,listed,2007-01-01,,,,,,,,,,,60.0,Average IPO,Medium,expansion_db,IN
+HDFC AMC Ltd,HDFCAMC,NSE,Financial,Asset Management,listed,2018-01-01,,,,,,,,,,,60.0,Average IPO,Medium,expansion_db,IN
+KPR Mill Ltd,KPRMILL,NSE,Consumer Cyclical,Textiles,listed,2007-01-01,,,,,,,,,,,60.0,Average IPO,Medium,expansion_db,IN
+Burberry Group PLC,BRBY,LSE,Consumer Cyclical,Luxury Goods,listed,2002-01-01,,,,,,,,,,,60.0,Average IPO,Medium,expansion_db,GB
+Haidilao International,6862,HKEX,Consumer Cyclical,Restaurants,listed,2018-01-01,,,,,,,,,,,60.0,Average IPO,Medium,expansion_db,CN
+Puranik Builders Ltd,PURANIK,NSE,Real Estate,Real Estate Development,listed,2024-01-01,,,,,,,,,,,60.0,Average IPO,Medium,expansion_db,IN
+Deutsche Boerse AG,DB1,XETRA,Financial,Financial Services,listed,2001-01-01,,,,,,,,,,,60.0,Average IPO,Medium,expansion_db,DE
+Walmart Inc.,WMT,NYSE,Consumer Defensive,Discount Stores,listed,1970-01-01,,,,,,,,,,,59.9,Weak IPO,Low,expansion_db,US
+Baidu Inc.,BIDU,NASDAQ,Technology,Internet Services,listed,2005-01-01,,,,,,,,,,,59.9,Weak IPO,Low,expansion_db,CN
+HFCL Ltd,HFCL,NSE,Technology,Communication Equipment,listed,1994-01-01,,,,,,,,,,,59.9,Weak IPO,Low,expansion_db,IN
+Vodafone Idea Ltd,IDEA,NSE,Communication,Telecom,listed,2007-01-01,,,,,,,,,,,59.9,Weak IPO,Low,expansion_db,IN
+iQiyi Inc.,IQ,NASDAQ,Communication,Entertainment,listed,2018-01-01,,,,,,,,,,,59.9,Weak IPO,Low,expansion_db,CN
+Greenhitech Ventures Ltd,GREENHITEC,NSE,Technology,Software,listed,2024-01-01,,,,,,,,,,,59.9,Weak IPO,Low,expansion_db,IN
+Harshdeep Hortico Ltd,HARSHHORT,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,59.9,Weak IPO,Low,expansion_db,IN
+Infinium Pharmachem Ltd,INFINIUM,NSE,Healthcare,Pharmaceuticals,listed,2024-01-01,,,,,,,,,,,59.9,Weak IPO,Low,expansion_db,IN
+Galaxy Surfactants Ltd,GALAXYSURF,NSE,Basic Materials,Chemicals,listed,2018-01-01,,,,,,,,,,,59.9,Weak IPO,Low,expansion_db,IN
+Pidilite Industries Ltd,PIDILITIND,NSE,Basic Materials,Chemicals,listed,1993-01-01,,,,,,,,,,,59.8,Weak IPO,Low,expansion_db,IN
+Astral Poly Technik,ASTRAL,NSE,Industrials,Plumbing,listed,2007-01-01,,,,,,,,,,,59.8,Weak IPO,Low,expansion_db,IN
+Sastasundar Ventures Ltd,SASTASUNDR,NSE,Healthcare,Healthcare Services,listed,2015-01-01,,,,,,,,,,,59.8,Weak IPO,Low,expansion_db,IN
+Shree Tirupati Balajee,TIRUPATIBJ,NSE,Industrials,Infrastructure,listed,2024-01-01,,,,,,,,,,,59.8,Weak IPO,Low,expansion_db,IN
+Fine Organic Industries Ltd,FINEORG,NSE,Basic Materials,Chemicals,listed,2018-01-01,,,,,,,,,,,59.8,Weak IPO,Low,expansion_db,IN
+JSW Steel Ltd,JSWSTEEL,NSE,Basic Materials,Steel,listed,1994-01-01,,,,,,,,,,,59.7,Weak IPO,Low,expansion_db,IN
+Oswal Agro Mills Ltd,OSWALAGRO,NSE,Consumer Defensive,Food,listed,1995-01-01,,,,,,,,,,,59.7,Weak IPO,Low,expansion_db,IN
+Power Finance Corp Ltd,PFC,NSE,Financial,Financial Services,listed,2007-01-01,,,,,,,,,,,59.6,Weak IPO,Low,expansion_db,IN
+Whirlpool of India Ltd,WHIRLPOOL,NSE,Consumer Cyclical,Consumer Electronics,listed,2003-01-01,,,,,,,,,,,59.6,Weak IPO,Low,expansion_db,IN
+Vijaya Diagnostic Centre,VIJAYA,NSE,Healthcare,Diagnostics,listed,2021-01-01,,,,,,,,,,,59.6,Weak IPO,Low,expansion_db,IN
+Deepak Fertilisers & Petro,DEEPAKFERT,NSE,Basic Materials,Fertilizers,listed,1995-01-01,,,,,,,,,,,59.5,Weak IPO,Low,expansion_db,IN
+Pinterest Inc.,PINS,NYSE,Communication,Internet Services,listed,2019-01-01,,,,,,,,,,,59.5,Weak IPO,Low,expansion_db,US
+Canadian Imperial Bank,CM,TSX,Financial,Banks,listed,1996-01-01,,,,,,,,,,,59.5,Weak IPO,Low,expansion_db,CA
+Orient Refractories Ltd,ORIENTREF,NSE,Industrials,Industrial Equipment,listed,2023-01-01,,,,,,,,,,,59.5,Weak IPO,Low,expansion_db,IN
+Havells India Ltd,HAVELLS,NSE,Industrials,Electrical Equipment,listed,2000-01-01,,,,,,,,,,,59.4,Weak IPO,Low,expansion_db,IN
+Bosch Ltd,BOSCHLTD,NSE,Consumer Cyclical,Auto Parts,listed,1996-01-01,,,,,,,,,,,59.4,Weak IPO,Low,expansion_db,IN
+Wonder Fibromats Ltd,WONDERFIB,NSE,Consumer Cyclical,Textiles,listed,2024-01-01,,,,,,,,,,,59.4,Weak IPO,Low,expansion_db,IN
+Apple Inc.,AAPL,NASDAQ,Technology,Consumer Electronics,listed,1980-01-01,,,,,,,,,,,59.3,Weak IPO,Low,expansion_db,US
+JD.com Inc.,JD,NASDAQ,Consumer Cyclical,E-Commerce,listed,2014-01-01,,,,,,,,,,,59.3,Weak IPO,Low,expansion_db,CN
+Mrs. Bectors Food Specialities,BECTORFOOD,NSE,Consumer Defensive,Food,listed,2020-01-01,,,,,,,,,,,59.3,Weak IPO,Low,expansion_db,IN
+Windlas Biotech Ltd,WINDLAS,NSE,Healthcare,Pharmaceuticals,listed,2021-01-01,,,,,,,,,,,59.3,Weak IPO,Low,expansion_db,IN
+Accenture plc,ACN,NYSE,Technology,Consulting,listed,2001-01-01,,,,,,,,,,,59.2,Weak IPO,Low,expansion_db,IE
+Devyani International Ltd,DEVYANI,NSE,Consumer Cyclical,Restaurants,listed,2021-01-01,,,,,,,,,,,59.2,Weak IPO,Low,expansion_db,IN
+Sun Pharma Advanced Research,SPARC,NSE,Healthcare,Pharmaceuticals,listed,2007-01-01,,,,,,,,,,,59.2,Weak IPO,Low,expansion_db,IN
+Race Eco Chain Ltd,RACEECO,NSE,Industrials,Logistics,listed,2024-01-01,,,,,,,,,,,59.2,Weak IPO,Low,expansion_db,IN
+Epigral Ltd,EPIGRAL,NSE,Basic Materials,Chemicals,listed,2007-01-01,,,,,,,,,,,59.2,Weak IPO,Low,expansion_db,IN
+GMR Airports Infrastructure,GMRINFRA,NSE,Industrials,Infrastructure,listed,2006-01-01,,,,,,,,,,,59.1,Weak IPO,Low,expansion_db,IN
+Hindustan Petroleum Corp,HINDPETRO,NSE,Energy,Oil & Gas,listed,1995-01-01,,,,,,,,,,,59.1,Weak IPO,Low,expansion_db,IN
+Signature Global India Ltd,SIGNATURE,NSE,Real Estate,Real Estate Development,listed,2023-01-01,,,,,,,,,,,59.1,Weak IPO,Low,expansion_db,IN
+Magna Electrocast Ltd,MAGNAELEC,NSE,Industrials,Industrial Equipment,listed,2024-01-01,,,,,,,,,,,59.1,Weak IPO,Low,expansion_db,IN
+ABB India Ltd,ABB,NSE,Industrials,Industrial Equipment,listed,1992-01-01,,,,,,,,,,,59.0,Weak IPO,Low,expansion_db,IN
+Orchid Pharma Ltd,ORCHIDPHAR,NSE,Healthcare,Pharmaceuticals,listed,2003-01-01,,,,,,,,,,,59.0,Weak IPO,Low,expansion_db,IN
+Paytm (One97 Comm.),PAYTM,NSE,Technology,Fintech,listed,2021-01-01,,,,,,,,,,,58.9,Weak IPO,Low,expansion_db,IN
+Pinduoduo Inc.,PDD,NASDAQ,Consumer Cyclical,E-Commerce,listed,2018-01-01,,,,,,,,,,,58.9,Weak IPO,Low,expansion_db,CN
+Dentach International Ltd,DENTACH,NSE,Healthcare,Medical Devices,listed,2024-01-01,,,,,,,,,,,58.8,Weak IPO,Low,expansion_db,IN
+Adobe Inc.,ADBE,NASDAQ,Technology,Software,listed,1986-01-01,,,,,,,,,,,58.7,Weak IPO,Low,expansion_db,US
+Shree Cement Ltd,SHREECEM,NSE,Basic Materials,Cement,listed,2003-01-01,,,,,,,,,,,58.7,Weak IPO,Low,expansion_db,IN
+Supreme Industries Ltd,SUPREMEIND,NSE,Industrials,Building Materials,listed,1995-01-01,,,,,,,,,,,58.7,Weak IPO,Low,expansion_db,IN
+Unilever PLC,ULVR,LSE,Consumer Defensive,Household Products,listed,1987-01-01,,,,,,,,,,,58.7,Weak IPO,Low,expansion_db,GB
+Bank of Montreal,BMO,TSX,Financial,Banks,listed,1996-01-01,,,,,,,,,,,58.7,Weak IPO,Low,expansion_db,CA
+Canadian National Railway,CNR,TSX,Industrials,Railroads,listed,1995-01-01,,,,,,,,,,,58.7,Weak IPO,Low,expansion_db,CA
+Innovana Thinklabs Ltd,INNOVANA,NSE,Technology,Software,listed,2023-01-01,,,,,,,,,,,58.7,Weak IPO,Low,expansion_db,IN
+Netweb Technologies India,NETWEB,NSE,Technology,Software,listed,2023-01-01,,,,,,,,,,,58.7,Weak IPO,Low,expansion_db,IN
+Adani Total Gas Ltd,ATGL,NSE,Utilities,Gas Distribution,listed,2018-01-01,,,,,,,,,,,58.6,Weak IPO,Low,expansion_db,IN
+eClerx Services Ltd,ECLERX,NSE,Technology,Consulting,listed,2007-01-01,,,,,,,,,,,58.6,Weak IPO,Low,expansion_db,IN
+Iconic Fashion India Ltd,ICONICFASH,NSE,Consumer Cyclical,Apparel,listed,2024-01-01,,,,,,,,,,,58.6,Weak IPO,Low,expansion_db,IN
+Marsons Ltd,MARSONS,NSE,Industrials,Industrial Equipment,listed,2024-01-01,,,,,,,,,,,58.6,Weak IPO,Low,expansion_db,IN
+Swasti Vinayaka Art & Her,SWASTIVI,NSE,Consumer Cyclical,Retail,listed,2024-01-01,,,,,,,,,,,58.6,Weak IPO,Low,expansion_db,IN
+Infineon Technologies,IFX,XETRA,Technology,Semiconductors,listed,1999-01-01,,,,,,,,,,,58.6,Weak IPO,Low,expansion_db,DE
+Amazon.com Inc.,AMZN,NASDAQ,Consumer Cyclical,E-Commerce,listed,1997-01-01,,,,,,,,,,,58.5,Weak IPO,Low,expansion_db,US
+Container Corp of India Ltd,CONCOR,NSE,Industrials,Logistics,listed,2006-01-01,,,,,,,,,,,58.5,Weak IPO,Low,expansion_db,IN
+DCB Bank Ltd,DCBBANK,NSE,Financial,Banks,listed,2006-01-01,,,,,,,,,,,58.5,Weak IPO,Low,expansion_db,IN
+Didiglobal Inc.,DIDI,NYSE,Technology,Software,listed,2021-01-01,,,,,,,,,,,58.5,Weak IPO,Low,expansion_db,CN
+SBFC Finance Ltd,SBFC,NSE,Financial,Financial Services,listed,2023-01-01,,,,,,,,,,,58.5,Weak IPO,Low,expansion_db,IN
+Tega Industries Ltd,TEGA,NSE,Industrials,Industrial Equipment,listed,2021-01-01,,,,,,,,,,,58.5,Weak IPO,Low,expansion_db,IN
+Siemens Ltd,SIEMENS,NSE,Industrials,Industrial Equipment,listed,1996-01-01,,,,,,,,,,,58.4,Weak IPO,Low,expansion_db,IN
+New India Assurance Co,NIACL,NSE,Financial,Insurance,listed,2017-01-01,,,,,,,,,,,58.3,Weak IPO,Low,expansion_db,IN
+Polycab India Ltd,POLYCAB,NSE,Industrials,Electrical Equipment,listed,2019-01-01,,,,,,,,,,,58.3,Weak IPO,Low,expansion_db,IN
+Reddit Inc.,RDDT,NYSE,Communication,Internet Services,listed,2024-01-01,,,,,,,,,,,58.3,Weak IPO,Low,expansion_db,US
+GSK plc,GSK,NYSE,Healthcare,Drug Manufacturers,listed,1947-01-01,,,,,,,,,,,58.2,Weak IPO,Low,expansion_db,GB
+Varun Beverages Ltd,VBL,NSE,Consumer Defensive,Beverages,listed,2016-01-01,,,,,,,,,,,58.2,Weak IPO,Low,expansion_db,IN
+Coromandel International Ltd,COROMANDEL,NSE,Basic Materials,Fertilizers,listed,1995-01-01,,,,,,,,,,,58.2,Weak IPO,Low,expansion_db,IN
+Zuari Agro Chemicals Ltd,ZUARI,NSE,Basic Materials,Fertilizers,listed,2003-01-01,,,,,,,,,,,58.2,Weak IPO,Low,expansion_db,IN
+Star Health & Allied Ins,STARHEALTH,NSE,Financial,Insurance,listed,2021-01-01,,,,,,,,,,,58.2,Weak IPO,Low,expansion_db,IN
+Sun Pharmaceutical Inds.,SUNPHARMA,NSE,Healthcare,Pharmaceuticals,listed,1994-01-01,,,,,,,,,,,58.1,Weak IPO,Low,expansion_db,IN
+Tata Communications Ltd,TATACOMM,NSE,Communication,Telecom,listed,2002-01-01,,,,,,,,,,,58.1,Weak IPO,Low,expansion_db,IN
+J.K. Lakshmi Cement Ltd,JKLAKSHMI,NSE,Basic Materials,Cement,listed,1995-01-01,,,,,,,,,,,58.1,Weak IPO,Low,expansion_db,IN
+Jubilant FoodWorks Ltd,JUBLFOOD,NSE,Consumer Cyclical,Restaurants,listed,2010-01-01,,,,,,,,,,,58.0,Weak IPO,Low,expansion_db,IN
+Strides Pharma Science Ltd,STAR,NSE,Healthcare,Pharmaceuticals,listed,2006-01-01,,,,,,,,,,,58.0,Weak IPO,Low,expansion_db,IN
+Welspun India Ltd,WELSPUNIND,NSE,Consumer Cyclical,Textiles,listed,2005-01-01,,,,,,,,,,,58.0,Weak IPO,Low,expansion_db,IN
+GlobalFoundries Inc.,GFS,NASDAQ,Technology,Semiconductors,listed,2021-01-01,,,,,,,,,,,58.0,Weak IPO,Low,expansion_db,US
+Alibaba Group Holding Ltd,BABA,NYSE,Consumer Cyclical,E-Commerce,listed,2014-01-01,,,,,,,,,,,57.9,Weak IPO,Low,expansion_db,CN
+Crompton Greaves Consumer,CROMPTON,NSE,Consumer Cyclical,Consumer Electronics,listed,2015-01-01,,,,,,,,,,,57.9,Weak IPO,Low,expansion_db,IN
+Winsol Engineers Ltd,WINSOL,NSE,Industrials,Engineering,listed,2024-01-01,,,,,,,,,,,57.9,Weak IPO,Low,expansion_db,IN
+Equitas Small Finance Bank,EQUITASBNK,NSE,Financial,Banks,listed,2016-01-01,,,,,,,,,,,57.9,Weak IPO,Low,expansion_db,IN
+Freshworks Inc.,FRSH,NASDAQ,Technology,Software,listed,2021-01-01,,,,,,,,,,,57.8,Weak IPO,Low,expansion_db,US
+British American Tobacco,BATS,LSE,Consumer Defensive,Tobacco,listed,1980-01-01,,,,,,,,,,,57.8,Weak IPO,Low,expansion_db,GB
+JD Logistics Inc.,2618,HKEX,Industrials,Logistics,listed,2021-01-01,,,,,,,,,,,57.8,Weak IPO,Low,expansion_db,CN
+Tech Mahindra Ltd,TECHM,NSE,Technology,Software,listed,2006-01-01,,,,,,,,,,,57.7,Weak IPO,Low,expansion_db,IN
+Torrent Pharmaceuticals Ltd,TORNTPHARM,NSE,Healthcare,Pharmaceuticals,listed,1995-01-01,,,,,,,,,,,57.7,Weak IPO,Low,expansion_db,IN
+KFin Technologies Ltd,KFINTECH,NSE,Technology,Fintech,listed,2022-01-01,,,,,,,,,,,57.7,Weak IPO,Low,expansion_db,IN
+LVMH Moet Hennessy,MC,EURONEXT,Consumer Cyclical,Luxury Goods,listed,1987-01-01,,,,,,,,,,,57.7,Weak IPO,Low,expansion_db,FR
+Amber Enterprises India Ltd,AMBER,NSE,Consumer Cyclical,Consumer Electronics,listed,2018-01-01,,,,,,,,,,,57.6,Weak IPO,Low,expansion_db,IN
+Sterling Tools Ltd,STERTOOLS,NSE,Consumer Cyclical,Auto Parts,listed,2006-01-01,,,,,,,,,,,57.6,Weak IPO,Low,expansion_db,IN
+DocuSign Inc.,DOCU,NASDAQ,Technology,Software,listed,2018-01-01,,,,,,,,,,,57.6,Weak IPO,Low,expansion_db,US
+GE Shipping Co Ltd,GESHIP,NSE,Industrials,Logistics,listed,2004-01-01,,,,,,,,,,,57.6,Weak IPO,Low,expansion_db,IN
+Toronto-Dominion Bank,TD,TSX,Financial,Banks,listed,1996-01-01,,,,,,,,,,,57.5,Weak IPO,Low,expansion_db,CA
+Logisticus Infra Ltd,LOGISTICUS,NSE,Industrials,Infrastructure,listed,2024-01-01,,,,,,,,,,,57.5,Weak IPO,Low,expansion_db,IN
+Polo Queen Industrial,POLOQUEEN,NSE,Consumer Cyclical,Household Products,listed,2024-01-01,,,,,,,,,,,57.5,Weak IPO,Low,expansion_db,IN
+United Spirits Ltd,MCDOWELL-N,NSE,Consumer Defensive,Beverages,listed,1997-01-01,,,,,,,,,,,57.4,Weak IPO,Low,expansion_db,IN
+Westlife Development Ltd,WESTLIFE,NSE,Consumer Cyclical,Restaurants,listed,2017-01-01,,,,,,,,,,,57.4,Weak IPO,Low,expansion_db,IN
+Asahi India Glass Ltd,ASAHIINDIA,NSE,Consumer Cyclical,Auto Parts,listed,1997-01-01,,,,,,,,,,,57.4,Weak IPO,Low,expansion_db,IN
+Opendoor Technologies Inc.,OPEN,NASDAQ,Real Estate,Real Estate Services,listed,2020-01-01,,,,,,,,,,,57.4,Weak IPO,Low,expansion_db,US
+TaskUs Inc.,TASK,NASDAQ,Technology,Consulting,listed,2021-01-01,,,,,,,,,,,57.4,Weak IPO,Low,expansion_db,US
+KG Petrochem Ltd,KGPETRO,NSE,Energy,Oil & Gas,listed,2024-01-01,,,,,,,,,,,57.4,Weak IPO,Low,expansion_db,IN
+Scan Steels Ltd,SCANSTL,NSE,Basic Materials,Steel,listed,2024-01-01,,,,,,,,,,,57.4,Weak IPO,Low,expansion_db,IN
+Swaraj Engines Ltd,SWARAJENG,NSE,Industrials,Farm Equipment,listed,2007-01-01,,,,,,,,,,,57.4,Weak IPO,Low,expansion_db,IN
+Heritage Foods Ltd,HERITGFOOD,NSE,Consumer Defensive,Food,listed,2003-01-01,,,,,,,,,,,57.4,Weak IPO,Low,expansion_db,IN
+Roche Holding AG,RHHBY,OTC,Healthcare,Drug Manufacturers,listed,1996-01-01,,,,,,,,,,,57.3,Weak IPO,Low,expansion_db,CH
+Artemis Medicare Services,ARTEMISMED,NSE,Healthcare,Healthcare Services,listed,2021-01-01,,,,,,,,,,,57.3,Weak IPO,Low,expansion_db,IN
+Elastic N.V.,ESTC,NYSE,Technology,Software,listed,2018-01-01,,,,,,,,,,,57.3,Weak IPO,Low,expansion_db,NL
+Gujarat Toolroom Ltd,GUJTOOLR,NSE,Industrials,Industrial Equipment,listed,2024-01-01,,,,,,,,,,,57.3,Weak IPO,Low,expansion_db,IN
+CDSL Ltd,CDSL,NSE,Financial,Financial Services,listed,2017-01-01,,,,,,,,,,,57.2,Weak IPO,Low,expansion_db,IN
+Archean Chemical Industries,ARCHEAN,NSE,Basic Materials,Chemicals,listed,2022-01-01,,,,,,,,,,,57.2,Weak IPO,Low,expansion_db,IN
+KNR Constructions Ltd,KNRCON,NSE,Industrials,Infrastructure,listed,2008-01-01,,,,,,,,,,,57.2,Weak IPO,Low,expansion_db,IN
+Fitbit Inc.,FIT,NYSE,Technology,Consumer Electronics,listed,2015-01-01,,,,,,,,,,,57.2,Weak IPO,Low,expansion_db,US
+Newgen Software Technologies,NEWGEN,NSE,Technology,Software,listed,2018-01-01,,,,,,,,,,,57.2,Weak IPO,Low,expansion_db,IN
+Nova Agri Tech Ltd,NOVAAGRI,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,57.2,Weak IPO,Low,expansion_db,IN
+W S Industries India Ltd,WSI,NSE,Industrials,Electrical Equipment,listed,2007-01-01,,,,,,,,,,,57.2,Weak IPO,Low,expansion_db,IN
+Shankara Building Products,SHANKARA,NSE,Industrials,Building Materials,listed,2017-01-01,,,,,,,,,,,57.1,Weak IPO,Low,expansion_db,IN
+GrubHub Inc.,GRUB,NYSE,Technology,Software,listed,2014-01-01,,,,,,,,,,,57.1,Weak IPO,Low,expansion_db,US
+Khaitan India Ltd,KHAITANIND,NSE,Consumer Cyclical,Consumer Electronics,listed,2024-01-01,,,,,,,,,,,57.1,Weak IPO,Low,expansion_db,IN
+Madhusudan Masala Ltd,MADHUSUDAN,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,57.1,Weak IPO,Low,expansion_db,IN
+United Breweries Ltd,UBL,NSE,Consumer Defensive,Beverages,listed,1997-01-01,,,,,,,,,,,57.0,Weak IPO,Low,expansion_db,IN
+Sumitomo Chemical India Ltd,SUMICHEM,NSE,Basic Materials,Chemicals,listed,2020-01-01,,,,,,,,,,,57.0,Weak IPO,Low,expansion_db,IN
+Trade Desk Inc.,TTD,NASDAQ,Technology,Software,listed,2016-01-01,,,,,,,,,,,57.0,Weak IPO,Low,expansion_db,US
+GAIL (India) Ltd,GAIL,NSE,Energy,Oil & Gas,listed,1997-01-01,,,,,,,,,,,56.9,Weak IPO,Low,expansion_db,IN
+Syngene International Ltd,SYNGENE,NSE,Healthcare,Biotechnology,listed,2015-01-01,,,,,,,,,,,56.9,Weak IPO,Low,expansion_db,IN
+Lyft Inc.,LYFT,NASDAQ,Technology,Software,listed,2019-01-01,,,,,,,,,,,56.9,Weak IPO,Low,expansion_db,US
+Sanstar Ltd,SANSTAR,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,56.9,Weak IPO,Low,expansion_db,IN
+Netflix Inc.,NFLX,NASDAQ,Communication,Entertainment,listed,2002-01-01,,,,,,,,,,,56.8,Weak IPO,Low,expansion_db,US
+Aptus Value Housing Finance,APTUS,NSE,Financial,Housing Finance,listed,2021-01-01,,,,,,,,,,,56.8,Weak IPO,Low,expansion_db,IN
+Heidelberg Cement India Ltd,HEIDELBERG,NSE,Basic Materials,Cement,listed,1995-01-01,,,,,,,,,,,56.8,Weak IPO,Low,expansion_db,IN
+VST Industries Ltd,VSTIND,NSE,Consumer Defensive,Tobacco,listed,1995-01-01,,,,,,,,,,,56.8,Weak IPO,Low,expansion_db,IN
+InfoBeans Technologies Ltd,INFOBEANS,NSE,Technology,Software,listed,2021-01-01,,,,,,,,,,,56.8,Weak IPO,Low,expansion_db,IN
+Hexaware Technologies Ltd,HEXAWARE,NSE,Technology,Software,listed,2024-01-01,,,,,,,,,,,56.8,Weak IPO,Low,expansion_db,IN
+Cisco Systems Inc.,CSCO,NASDAQ,Technology,Communication Equipment,listed,1990-01-01,,,,,,,,,,,56.7,Weak IPO,Low,expansion_db,US
+Mindtree Ltd,MINDTREE,NSE,Technology,Software,listed,2007-01-01,,,,,,,,,,,56.7,Weak IPO,Low,expansion_db,IN
+Neuland Laboratories Ltd,NEULANDLAB,NSE,Healthcare,Pharmaceuticals,listed,2007-01-01,,,,,,,,,,,56.7,Weak IPO,Low,expansion_db,IN
+Chimo Agri Products Ltd,CHIMOAGRI,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,56.7,Weak IPO,Low,expansion_db,IN
+ONGC Ltd,ONGC,NSE,Energy,Oil & Gas,listed,1993-01-01,,,,,,,,,,,56.6,Weak IPO,Low,expansion_db,IN
+Lupin Ltd,LUPIN,NSE,Healthcare,Pharmaceuticals,listed,1994-01-01,,,,,,,,,,,56.6,Weak IPO,Low,expansion_db,IN
+NBCC (India) Ltd,NBCC,NSE,Industrials,Construction,listed,2017-01-01,,,,,,,,,,,56.6,Weak IPO,Low,expansion_db,IN
+National Aluminium Co Ltd,NATIONALUM,NSE,Basic Materials,Metals & Mining,listed,1999-01-01,,,,,,,,,,,56.6,Weak IPO,Low,expansion_db,IN
+KEC International Ltd,KEC,NSE,Industrials,Infrastructure,listed,2003-01-01,,,,,,,,,,,56.6,Weak IPO,Low,expansion_db,IN
+JD Health International,6618,HKEX,Healthcare,Healthcare Services,listed,2020-01-01,,,,,,,,,,,56.6,Weak IPO,Low,expansion_db,CN
+Omfurn India Ltd,OMFURN,NSE,Consumer Cyclical,Household Products,listed,2024-01-01,,,,,,,,,,,56.6,Weak IPO,Low,expansion_db,IN
+AstraZeneca PLC,AZN,NASDAQ,Healthcare,Drug Manufacturers,listed,1993-01-01,,,,,,,,,,,56.5,Weak IPO,Low,expansion_db,GB
+Corporation Bank,CORPBANK,NSE,Financial,Banks,listed,1995-01-01,,,,,,,,,,,56.5,Weak IPO,Low,expansion_db,IN
+Zscaler Inc.,ZS,NASDAQ,Technology,Cybersecurity,listed,2018-01-01,,,,,,,,,,,56.5,Weak IPO,Low,expansion_db,US
+BP PLC,BP.,LSE,Energy,Oil & Gas,listed,1970-01-01,,,,,,,,,,,56.5,Weak IPO,Low,expansion_db,GB
+HMA Agro Industries Ltd,HMAAGRO,NSE,Consumer Defensive,Food,listed,2023-01-01,,,,,,,,,,,56.5,Weak IPO,Low,expansion_db,IN
+Nureca Ltd,NURECA,NSE,Healthcare,Medical Devices,listed,2021-01-01,,,,,,,,,,,56.5,Weak IPO,Low,expansion_db,IN
+Elgi Rubber Co Ltd,ELGIRUBCO,NSE,Consumer Cyclical,Auto Parts,listed,2007-01-01,,,,,,,,,,,56.5,Weak IPO,Low,expansion_db,IN
+Hermes International,RMS,EURONEXT,Consumer Cyclical,Luxury Goods,listed,1993-01-01,,,,,,,,,,,56.5,Weak IPO,Low,expansion_db,FR
+HCL Technologies Ltd,HCLTECH,NSE,Technology,Software,listed,1999-01-01,,,,,,,,,,,56.4,Weak IPO,Low,expansion_db,IN
+Adani Green Energy Ltd,ADANIGREEN,NSE,Utilities,Renewable Energy,listed,2018-01-01,,,,,,,,,,,56.3,Weak IPO,Low,expansion_db,IN
+Ircon International Ltd,IRCON,NSE,Industrials,Infrastructure,listed,2018-01-01,,,,,,,,,,,56.3,Weak IPO,Low,expansion_db,IN
+Hindustan Copper Ltd,HINDCOPPER,NSE,Basic Materials,Metals & Mining,listed,2006-01-01,,,,,,,,,,,56.3,Weak IPO,Low,expansion_db,IN
+J.M. Financial Ltd,JMFINANCIL,NSE,Financial,Financial Services,listed,2006-01-01,,,,,,,,,,,56.3,Weak IPO,Low,expansion_db,IN
+Containe Tech Ltd,CONTAINER,NSE,Industrials,Logistics,listed,2024-01-01,,,,,,,,,,,56.3,Weak IPO,Low,expansion_db,IN
+Orbit Exports Ltd,ORBITEXPO,NSE,Consumer Cyclical,Textiles,listed,2007-01-01,,,,,,,,,,,56.3,Weak IPO,Low,expansion_db,IN
+Sheela Foam Ltd,SHEELAFOAM,NSE,Consumer Cyclical,Household Products,listed,2007-01-01,,,,,,,,,,,56.3,Weak IPO,Low,expansion_db,IN
+Macobs Technologies Ltd,MACOBS,NSE,Technology,Software,listed,2024-01-01,,,,,,,,,,,56.2,Weak IPO,Low,expansion_db,IN
+Aurobindo Pharma Ltd,AUROPHARMA,NSE,Healthcare,Pharmaceuticals,listed,1995-01-01,,,,,,,,,,,56.1,Weak IPO,Low,expansion_db,IN
+Welspun Corp Ltd,WELCORP,NSE,Basic Materials,Steel,listed,2003-01-01,,,,,,,,,,,56.1,Weak IPO,Low,expansion_db,IN
+MongoDB Inc.,MDB,NASDAQ,Technology,Software,listed,2017-01-01,,,,,,,,,,,56.1,Weak IPO,Low,expansion_db,US
+Fortescue Metals Group,FMG,ASX,Basic Materials,Metals & Mining,listed,2003-01-01,,,,,,,,,,,56.1,Weak IPO,Low,expansion_db,AU
+Polar Power India Ltd,POLARPOWER,NSE,Utilities,Electric Utilities,listed,2024-01-01,,,,,,,,,,,56.1,Weak IPO,Low,expansion_db,IN
+Meta Platforms Inc.,META,NASDAQ,Technology,Social Media,listed,2012-01-01,,,,,,,,,,,56.0,Weak IPO,Low,expansion_db,US
+NCC Ltd,NCC,NSE,Industrials,Construction,listed,2003-01-01,,,,,,,,,,,56.0,Weak IPO,Low,expansion_db,IN
+Nu Holdings Ltd,NU,NYSE,Financial,Banks,listed,2021-01-01,,,,,,,,,,,56.0,Weak IPO,Low,expansion_db,BR
+BYD Co Ltd,1211,HKEX,Consumer Cyclical,Auto Manufacturers,listed,2002-01-01,,,,,,,,,,,56.0,Weak IPO,Low,expansion_db,CN
+GoPro Inc.,GPRO,NASDAQ,Technology,Consumer Electronics,listed,2014-01-01,,,,,,,,,,,55.9,Weak IPO,Low,expansion_db,US
+Bajel Projects Ltd,BAJEL,NSE,Industrials,Engineering,listed,2024-01-01,,,,,,,,,,,55.9,Weak IPO,Low,expansion_db,IN
+Hindalco Industries Ltd,HINDALCO,NSE,Basic Materials,Metals & Mining,listed,1959-01-01,,,,,,,,,,,55.8,Weak IPO,Low,expansion_db,IN
+Rail Vikas Nigam Ltd,RVNL,NSE,Industrials,Infrastructure,listed,2019-01-01,,,,,,,,,,,55.8,Weak IPO,Low,expansion_db,IN
+Shipping Corp of India Ltd,SCI,NSE,Industrials,Logistics,listed,1995-01-01,,,,,,,,,,,55.8,Weak IPO,Low,expansion_db,IN
+Gujarat State Petronet Ltd,GSPL,NSE,Utilities,Gas Distribution,listed,2005-01-01,,,,,,,,,,,55.7,Weak IPO,Low,expansion_db,IN
+Kirloskar Brothers Ltd,KIRLOSBROS,NSE,Industrials,Industrial Equipment,listed,1998-01-01,,,,,,,,,,,55.7,Weak IPO,Low,expansion_db,IN
+Bank of Nova Scotia,BNS,TSX,Financial,Banks,listed,1996-01-01,,,,,,,,,,,55.7,Weak IPO,Low,expansion_db,CA
+Zendesk Inc.,ZEN,NYSE,Technology,Software,listed,2014-01-01,,,,,,,,,,,55.7,Weak IPO,Low,expansion_db,US
+Phaarmasia Ltd,PHAARMASIA,NSE,Healthcare,Pharmaceuticals,listed,2024-01-01,,,,,,,,,,,55.7,Weak IPO,Low,expansion_db,IN
+Hathway Cable & Datacom,HATHWAY,NSE,Communication,Media,listed,2006-01-01,,,,,,,,,,,55.7,Weak IPO,Low,expansion_db,IN
+Gujarat State Fertilizers,GSFC,NSE,Basic Materials,Fertilizers,listed,1995-01-01,,,,,,,,,,,55.6,Weak IPO,Low,expansion_db,IN
+Okta Inc.,OKTA,NASDAQ,Technology,Software,listed,2017-01-01,,,,,,,,,,,55.6,Weak IPO,Low,expansion_db,US
+Sonata Software Ltd,SONATSOFTW,NSE,Technology,Software,listed,1999-01-01,,,,,,,,,,,55.5,Weak IPO,Low,expansion_db,IN
+Godrej Agrovet Ltd,GODREJAGRO,NSE,Consumer Defensive,Food,listed,2017-01-01,,,,,,,,,,,55.5,Weak IPO,Low,expansion_db,IN
+China Petroleum & Chemical,0386,HKEX,Energy,Oil & Gas,listed,2000-01-01,,,,,,,,,,,55.5,Weak IPO,Low,expansion_db,CN
+Geely Automobile Holdings,0175,HKEX,Consumer Cyclical,Auto Manufacturers,listed,1995-01-01,,,,,,,,,,,55.5,Weak IPO,Low,expansion_db,CN
+Greenway GreenEnergy Ltd,GREENWAY,NSE,Utilities,Renewable Energy,listed,2024-01-01,,,,,,,,,,,55.5,Weak IPO,Low,expansion_db,IN
+Samsara Inc.,IOT,NYSE,Technology,Software,listed,2021-01-01,,,,,,,,,,,55.4,Weak IPO,Low,expansion_db,US
+Suraj Estate Developers,SURAJEST,NSE,Real Estate,Real Estate Development,listed,2023-01-01,,,,,,,,,,,55.4,Weak IPO,Low,expansion_db,IN
+NATCO Pharma Ltd,NATCOPHARM,NSE,Healthcare,Pharmaceuticals,listed,1995-01-01,,,,,,,,,,,55.3,Weak IPO,Low,expansion_db,IN
+Sarveshwar Foods Ltd,SARVFOODS,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,55.3,Weak IPO,Low,expansion_db,IN
+Merck & Co. Inc.,MRK,NYSE,Healthcare,Drug Manufacturers,listed,1946-01-01,,,,,,,,,,,55.2,Weak IPO,Low,expansion_db,US
+BSE Ltd,BSE,NSE,Financial,Financial Services,listed,2017-01-01,,,,,,,,,,,55.2,Weak IPO,Low,expansion_db,IN
+Indian Bank,INDIANB,NSE,Financial,Banks,listed,1995-01-01,,,,,,,,,,,55.2,Weak IPO,Low,expansion_db,IN
+Transurban Group,TCL,ASX,Industrials,Infrastructure,listed,1996-01-01,,,,,,,,,,,55.2,Weak IPO,Low,expansion_db,AU
+PNB Gilts Ltd,PNBGILTS,NSE,Financial,Financial Services,listed,2002-01-01,,,,,,,,,,,55.2,Weak IPO,Low,expansion_db,IN
+J.K. Paper Ltd,JKPAPER,NSE,Basic Materials,Paper,listed,1995-01-01,,,,,,,,,,,55.1,Weak IPO,Low,expansion_db,IN
+CNOOC Ltd,0883,HKEX,Energy,Oil & Gas,listed,2001-01-01,,,,,,,,,,,55.1,Weak IPO,Low,expansion_db,CN
+ITC Ltd,ITC,NSE,Consumer Defensive,Tobacco,listed,1910-01-01,,,,,,,,,,,55.0,Weak IPO,Low,expansion_db,IN
+Apollo Hospitals Ltd,APOLLOHOSP,NSE,Healthcare,Healthcare Services,listed,1995-01-01,,,,,,,,,,,55.0,Weak IPO,Low,expansion_db,IN
+Bharat Electronics Ltd,BEL,NSE,Industrials,Aerospace & Defense,listed,2004-01-01,,,,,,,,,,,55.0,Weak IPO,Low,expansion_db,IN
+PNB Housing Finance Ltd,PNBHOUSING,NSE,Financial,Housing Finance,listed,2017-01-01,,,,,,,,,,,55.0,Weak IPO,Low,expansion_db,IN
+GitLab Inc.,GTLB,NASDAQ,Technology,Software,listed,2021-01-01,,,,,,,,,,,55.0,Weak IPO,Low,expansion_db,US
+Gopal Snacks Ltd,GOPALSNACK,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,55.0,Weak IPO,Low,expansion_db,IN
+Khoobsurat Ltd,KHOOB,NSE,Consumer Cyclical,Apparel,listed,2024-01-01,,,,,,,,,,,55.0,Weak IPO,Low,expansion_db,IN
+Voltrans Engineers Ltd,VOLTRANS,NSE,Industrials,Electrical Equipment,listed,2024-01-01,,,,,,,,,,,55.0,Weak IPO,Low,expansion_db,IN
+Senco Gold Ltd,SENCO,NSE,Consumer Cyclical,Luxury Goods,listed,2023-01-01,,,,,,,,,,,55.0,Weak IPO,Low,expansion_db,IN
+AbbVie Inc.,ABBV,NYSE,Healthcare,Drug Manufacturers,listed,2013-01-01,,,,,,,,,,,54.9,Weak IPO,Low,expansion_db,US
+Just Dial Ltd,JUSTDIAL,NSE,Technology,Internet Services,listed,2013-01-01,,,,,,,,,,,54.9,Weak IPO,Low,expansion_db,IN
+Comed Chemicals Ltd,COMEDCHEM,NSE,Healthcare,Pharmaceuticals,listed,2024-01-01,,,,,,,,,,,54.9,Weak IPO,Low,expansion_db,IN
+Electrosteel Castings Ltd,ELECTCAST,NSE,Basic Materials,Steel,listed,2003-01-01,,,,,,,,,,,54.9,Weak IPO,Low,expansion_db,IN
+Oil India Ltd,OIL,NSE,Energy,Oil & Gas,listed,2009-01-01,,,,,,,,,,,54.8,Weak IPO,Low,expansion_db,IN
+China Mobile Ltd,0941,HKEX,Communication,Telecom,listed,1997-01-01,,,,,,,,,,,54.8,Weak IPO,Low,expansion_db,CN
+Platinum Industries Ltd,PLATINUM,NSE,Basic Materials,Chemicals,listed,2024-01-01,,,,,,,,,,,54.8,Weak IPO,Low,expansion_db,IN
+Superior Industries Ltd,SUPERIOR,NSE,Consumer Cyclical,Auto Parts,listed,2024-01-01,,,,,,,,,,,54.8,Weak IPO,Low,expansion_db,IN
+Nuvoco Vistas Corp Ltd,NUVOCO,NSE,Basic Materials,Cement,listed,2021-01-01,,,,,,,,,,,54.8,Weak IPO,Low,expansion_db,IN
+APL Apollo Tubes Ltd,APLAPOLLO,NSE,Basic Materials,Steel,listed,2007-01-01,,,,,,,,,,,54.7,Weak IPO,Low,expansion_db,IN
+Sterling & Wilson Renewable,SWSOLAR,NSE,Utilities,Renewable Energy,listed,2019-01-01,,,,,,,,,,,54.7,Weak IPO,Low,expansion_db,IN
+Bilibili Inc.,9626,HKEX,Communication,Entertainment,listed,2021-01-01,,,,,,,,,,,54.7,Weak IPO,Low,expansion_db,CN
+Sansera Engineering Ltd,SANSERA,NSE,Consumer Cyclical,Auto Parts,listed,2021-01-01,,,,,,,,,,,54.7,Weak IPO,Low,expansion_db,IN
+Kering SA,KER,EURONEXT,Consumer Cyclical,Luxury Goods,listed,1999-01-01,,,,,,,,,,,54.7,Weak IPO,Low,expansion_db,FR
+Computer Age Mgmt Services,CAMS,NSE,Financial,Financial Services,listed,2020-01-01,,,,,,,,,,,54.6,Weak IPO,Low,expansion_db,IN
+Cellecor Gadgets Ltd,CELLECOR,NSE,Technology,Consumer Electronics,listed,2024-01-01,,,,,,,,,,,54.6,Weak IPO,Low,expansion_db,IN
+Dodla Dairy Ltd,DODLA,NSE,Consumer Defensive,Food,listed,2021-01-01,,,,,,,,,,,54.6,Weak IPO,Low,expansion_db,IN
+Persistent Systems Ltd,PERSISTENT,NSE,Technology,Software,listed,2010-01-01,,,,,,,,,,,54.5,Weak IPO,Low,expansion_db,IN
+J.K. Cement Ltd,JKCEMENT,NSE,Basic Materials,Cement,listed,1995-01-01,,,,,,,,,,,54.5,Weak IPO,Low,expansion_db,IN
+HubSpot Inc.,HUBS,NYSE,Technology,Software,listed,2014-01-01,,,,,,,,,,,54.5,Weak IPO,Low,expansion_db,US
+GPT Healthcare Ltd,GPTHEALTHC,NSE,Healthcare,Healthcare Services,listed,2024-01-01,,,,,,,,,,,54.5,Weak IPO,Low,expansion_db,IN
+Indifra Ltd,INDIFRA,NSE,Industrials,Infrastructure,listed,2024-01-01,,,,,,,,,,,54.5,Weak IPO,Low,expansion_db,IN
+Saianand Commercials Ltd,SAIANAND,NSE,Consumer Cyclical,Trading,listed,2024-01-01,,,,,,,,,,,54.5,Weak IPO,Low,expansion_db,IN
+Happy Forgings Ltd,HAPPYFORGE,NSE,Industrials,Auto Parts,listed,2023-01-01,,,,,,,,,,,54.5,Weak IPO,Low,expansion_db,IN
+Novartis AG,NVS,NYSE,Healthcare,Drug Manufacturers,listed,1996-01-01,,,,,,,,,,,54.4,Weak IPO,Low,expansion_db,CH
+Fortis Healthcare Ltd,FORTIS,NSE,Healthcare,Healthcare Services,listed,2007-01-01,,,,,,,,,,,54.4,Weak IPO,Low,expansion_db,IN
+Samvardhana Motherson Intl,MOTHERSUMI,NSE,Consumer Cyclical,Auto Parts,listed,2003-01-01,,,,,,,,,,,54.4,Weak IPO,Low,expansion_db,IN
+China Construction Bank,0939,HKEX,Financial,Banks,listed,2005-01-01,,,,,,,,,,,54.4,Weak IPO,Low,expansion_db,CN
+L&T Infotech Ltd,LTI,NSE,Technology,Software,listed,2016-01-01,,,,,,,,,,,54.3,Weak IPO,Low,expansion_db,IN
+Industrial & Comm Bank China,1398,HKEX,Financial,Banks,listed,2006-01-01,,,,,,,,,,,54.3,Weak IPO,Low,expansion_db,CN
+Chitradurga Spintex Ltd,CHITRASPIN,NSE,Consumer Cyclical,Textiles,listed,2024-01-01,,,,,,,,,,,54.3,Weak IPO,Low,expansion_db,IN
+Pipavav Defence & Offshore,PIPAVAVDOC,NSE,Industrials,Shipbuilding,listed,2010-01-01,,,,,,,,,,,54.2,Weak IPO,Low,expansion_db,IN
+Chemplast Sanmar Ltd,CHEMPLASTS,NSE,Basic Materials,Chemicals,listed,2021-01-01,,,,,,,,,,,54.2,Weak IPO,Low,expansion_db,IN
+Nexxus Petro Industries,NEXXUS,NSE,Energy,Oil & Gas,listed,2024-01-01,,,,,,,,,,,54.2,Weak IPO,Low,expansion_db,IN
+Salasar Techno Engineering,SALASAR,NSE,Industrials,Engineering,listed,2024-01-01,,,,,,,,,,,54.2,Weak IPO,Low,expansion_db,IN
+Rategain Travel Technologies,RATEGAIN,NSE,Technology,Travel Technology,listed,2021-01-01,,,,,,,,,,,54.2,Weak IPO,Low,expansion_db,IN
+Ami Organics Ltd,AMIORG,NSE,Basic Materials,Chemicals,listed,2021-01-01,,,,,,,,,,,54.1,Weak IPO,Low,expansion_db,IN
+City Union Bank Ltd,CUB,NSE,Financial,Banks,listed,1998-01-01,,,,,,,,,,,54.1,Weak IPO,Low,expansion_db,IN
+CRISIL Ltd,CRISIL,NSE,Financial,Financial Services,listed,2004-01-01,,,,,,,,,,,54.1,Weak IPO,Low,expansion_db,IN
+Libas Consumer Products,LIBAS,NSE,Consumer Cyclical,Apparel,listed,2024-01-01,,,,,,,,,,,54.1,Weak IPO,Low,expansion_db,IN
+Adani Wilmar Ltd,AWL,NSE,Consumer Defensive,Food,listed,2022-01-01,,,,,,,,,,,54.0,Weak IPO,Low,expansion_db,IN
+Intellect Design Arena,INTELLECT,NSE,Technology,Software,listed,2014-01-01,,,,,,,,,,,54.0,Weak IPO,Low,expansion_db,IN
+Ipca Laboratories Ltd,IPCALAB,NSE,Healthcare,Pharmaceuticals,listed,1995-01-01,,,,,,,,,,,54.0,Weak IPO,Low,expansion_db,IN
+CME Group Inc.,CME,NASDAQ,Financial,Financial Services,listed,2002-01-01,,,,,,,,,,,54.0,Weak IPO,Low,expansion_db,US
+Biocon Ltd,BIOCON,NSE,Healthcare,Biotechnology,listed,1998-01-01,,,,,,,,,,,53.9,Weak IPO,Low,expansion_db,IN
+Lemon Tree Hotels Ltd,LEMONTREE,NSE,Consumer Cyclical,Hotels,listed,2018-01-01,,,,,,,,,,,53.9,Weak IPO,Low,expansion_db,IN
+Sagar Diamonds Ltd,SAGARDIA,NSE,Consumer Cyclical,Luxury Goods,listed,2024-01-01,,,,,,,,,,,53.9,Weak IPO,Low,expansion_db,IN
+Hindustan Unilever Ltd,HINDUNILVR,NSE,Consumer Defensive,Household Products,listed,1956-01-01,,,,,,,,,,,53.8,Weak IPO,Low,expansion_db,IN
+Britannia Industries Ltd,BRITANNIA,NSE,Consumer Defensive,Food,listed,1918-01-01,,,,,,,,,,,53.8,Weak IPO,Low,expansion_db,IN
+Adani Power Ltd,ADANIPOWER,NSE,Utilities,Electric Utilities,listed,2009-01-01,,,,,,,,,,,53.8,Weak IPO,Low,expansion_db,IN
+TVS Motor Company Ltd,TVSMOTOR,NSE,Consumer Cyclical,Auto Manufacturers,listed,1994-01-01,,,,,,,,,,,53.8,Weak IPO,Low,expansion_db,IN
+Divi's Laboratories,DIVISLAB,NSE,Healthcare,Pharmaceuticals,listed,1999-01-01,,,,,,,,,,,53.8,Weak IPO,Low,expansion_db,IN
+Oriental Bank of Commerce,ORIENTALBK,NSE,Financial,Banks,listed,1995-01-01,,,,,,,,,,,53.8,Weak IPO,Low,expansion_db,IN
+Carnation Industries Ltd,CARNATION,NSE,Industrials,Industrial Equipment,listed,2024-01-01,,,,,,,,,,,53.8,Weak IPO,Low,expansion_db,IN
+Obscro Meditronics Ltd,OBSCRO,NSE,Healthcare,Medical Devices,listed,2024-01-01,,,,,,,,,,,53.8,Weak IPO,Low,expansion_db,IN
+Cochin Shipyard Ltd,COCHINSHIP,NSE,Industrials,Shipbuilding,listed,2017-01-01,,,,,,,,,,,53.7,Weak IPO,Low,expansion_db,IN
+Sanofi India Ltd,SANOFI,NSE,Healthcare,Pharmaceuticals,listed,1995-01-01,,,,,,,,,,,53.7,Weak IPO,Low,expansion_db,IN
+Venky's India Ltd,VENKYS,NSE,Consumer Defensive,Food,listed,2000-01-01,,,,,,,,,,,53.7,Weak IPO,Low,expansion_db,IN
+Convoy Inc.,CVY,NYSE,Technology,Software,listed,2021-01-01,,,,,,,,,,,53.7,Weak IPO,Low,expansion_db,US
+Cava Group Inc.,CAVA,NYSE,Consumer Cyclical,Restaurants,listed,2023-01-01,,,,,,,,,,,53.7,Weak IPO,Low,expansion_db,US
+Etsy Inc.,ETSY,NASDAQ,Consumer Cyclical,E-Commerce,listed,2015-01-01,,,,,,,,,,,53.7,Weak IPO,Low,expansion_db,US
+Coal India Ltd,COALINDIA,NSE,Energy,Coal,listed,2010-01-01,,,,,,,,,,,53.6,Weak IPO,Low,expansion_db,IN
+Kanchi Karpooram Ltd,KKCL,NSE,Consumer Defensive,Sugar,listed,2007-01-01,,,,,,,,,,,53.6,Weak IPO,Low,expansion_db,IN
+Multi Commodity Exchange,MCX,NSE,Financial,Financial Services,listed,2012-01-01,,,,,,,,,,,53.6,Weak IPO,Low,expansion_db,IN
+Motherson Sumi Wiring India,MSUMI,NSE,Consumer Cyclical,Auto Parts,listed,2003-01-01,,,,,,,,,,,53.5,Weak IPO,Low,expansion_db,IN
+Hindustan Foods Ltd,HINDFOODS,NSE,Consumer Defensive,Food,listed,2007-01-01,,,,,,,,,,,53.5,Weak IPO,Low,expansion_db,IN
+HG Infra Engineering Ltd,HGINFRA,NSE,Industrials,Infrastructure,listed,2018-01-01,,,,,,,,,,,53.5,Weak IPO,Low,expansion_db,IN
+Intercontinental Exchange,ICE,NYSE,Financial,Financial Services,listed,2005-01-01,,,,,,,,,,,53.5,Weak IPO,Low,expansion_db,US
+State Bank of India,SBIN,NSE,Financial,Banks,listed,1955-01-01,,,,,,,,,,,53.3,Weak IPO,Low,expansion_db,IN
+Landmark Cars Ltd,LANDMARK,NSE,Consumer Cyclical,Auto Retail,listed,2023-01-01,,,,,,,,,,,53.3,Weak IPO,Low,expansion_db,IN
+Viviana Power Tech Ltd,VIVIANAPR,NSE,Utilities,Electric Utilities,listed,2024-01-01,,,,,,,,,,,53.3,Weak IPO,Low,expansion_db,IN
+Kirloskar Oil Engines Ltd,KIRLOSENG,NSE,Industrials,Industrial Equipment,listed,1998-01-01,,,,,,,,,,,53.2,Weak IPO,Low,expansion_db,IN
+Gujarat Pipavav Port Ltd,GPPL,NSE,Industrials,Infrastructure,listed,2010-01-01,,,,,,,,,,,53.2,Weak IPO,Low,expansion_db,IN
+Kenvue Inc.,KVUE,NYSE,Consumer Defensive,Personal Care,listed,2023-01-01,,,,,,,,,,,53.2,Weak IPO,Low,expansion_db,US
+Square Inc. (Block),SQ,NYSE,Technology,Fintech,listed,2015-01-01,,,,,,,,,,,53.2,Weak IPO,Low,expansion_db,US
+Mahindra Lifespace Dev Ltd,MAHLIFE,NSE,Real Estate,Real Estate Development,listed,2007-01-01,,,,,,,,,,,53.2,Weak IPO,Low,expansion_db,IN
+SpiceJet Ltd,SPICEJET,NSE,Industrials,Airlines,listed,2005-01-01,,,,,,,,,,,53.1,Weak IPO,Low,expansion_db,IN
+Voltas Ltd,VOLTAS,NSE,Consumer Cyclical,Consumer Electronics,listed,1995-01-01,,,,,,,,,,,53.1,Weak IPO,Low,expansion_db,IN
+Srivari Spices & Foods,SRIVARI,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,53.1,Weak IPO,Low,expansion_db,IN
+Karur Vysya Bank Ltd,KARURVYSYA,NSE,Financial,Banks,listed,1995-01-01,,,,,,,,,,,53.0,Weak IPO,Low,expansion_db,IN
+Alibaba Health Info. Tech.,0241,HKEX,Healthcare,Healthcare Services,listed,2014-01-01,,,,,,,,,,,53.0,Weak IPO,Low,expansion_db,CN
+PagerDuty Inc.,PD,NYSE,Technology,Software,listed,2019-01-01,,,,,,,,,,,53.0,Weak IPO,Low,expansion_db,US
+Nanoch EMerge Ltd,NANOCH,NSE,Technology,Semiconductors,listed,2024-01-01,,,,,,,,,,,53.0,Weak IPO,Low,expansion_db,IN
+Sumuka Agro Industries,SUMUKAAGRO,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,53.0,Weak IPO,Low,expansion_db,IN
+Oil & Natural Gas Corp,ONGC,NSE,Energy,Oil & Gas,listed,1993-01-01,,,,,,,,,,,52.9,Weak IPO,Low,expansion_db,IN
+Royal Bank of Canada,RY,TSX,Financial,Banks,listed,1996-01-01,,,,,,,,,,,52.9,Weak IPO,Low,expansion_db,CA
+Baba Arts Ltd,BABAARTS,NSE,Communication,Entertainment,listed,2007-01-01,,,,,,,,,,,52.9,Weak IPO,Low,expansion_db,IN
+Garuda Construction & Eng,GARUDA,NSE,Industrials,Construction,listed,2024-01-01,,,,,,,,,,,52.9,Weak IPO,Low,expansion_db,IN
+Inducto Steel Ltd,INDUCTO,NSE,Basic Materials,Steel,listed,2024-01-01,,,,,,,,,,,52.9,Weak IPO,Low,expansion_db,IN
+PepsiCo Inc.,PEP,NASDAQ,Consumer Defensive,Beverages,listed,1919-01-01,,,,,,,,,,,52.8,Weak IPO,Low,expansion_db,US
+Power Grid Corp of India,POWERGRID,NSE,Utilities,Electric Utilities,listed,2007-01-01,,,,,,,,,,,52.8,Weak IPO,Low,expansion_db,IN
+Adani Ports & SEZ Ltd,ADANIPORTS,NSE,Industrials,Infrastructure,listed,2007-01-01,,,,,,,,,,,52.8,Weak IPO,Low,expansion_db,IN
+Max Healthcare Institute Ltd,MAXHEALTH,NSE,Healthcare,Healthcare Services,listed,2020-01-01,,,,,,,,,,,52.8,Weak IPO,Low,expansion_db,IN
+Fone4 Communications Ltd,FONE4,NSE,Technology,Telecom,listed,2024-01-01,,,,,,,,,,,52.8,Weak IPO,Low,expansion_db,IN
+Easy Trip Planners Ltd,EASEMYTRIP,NSE,Technology,Travel Technology,listed,2021-01-01,,,,,,,,,,,52.8,Weak IPO,Low,expansion_db,IN
+Jindal Drilling & Inds Ltd,JINDALDRILL,NSE,Energy,Oil & Gas,listed,2007-01-01,,,,,,,,,,,52.8,Weak IPO,Low,expansion_db,IN
+Ambarella Inc.,AMBA,NASDAQ,Technology,Semiconductors,listed,2012-01-01,,,,,,,,,,,52.7,Weak IPO,Low,expansion_db,US
+Asarfi Hospital Ltd,ASARFI,NSE,Healthcare,Healthcare Services,listed,2024-01-01,,,,,,,,,,,52.7,Weak IPO,Low,expansion_db,IN
+Hi-Green Carbon Ltd,HIGREEN,NSE,Basic Materials,Chemicals,listed,2024-01-01,,,,,,,,,,,52.7,Weak IPO,Low,expansion_db,IN
+Vivid Mercantile Ltd,VIVIDMERC,NSE,Consumer Cyclical,Trading,listed,2024-01-01,,,,,,,,,,,52.7,Weak IPO,Low,expansion_db,IN
+CyberTech Systems & Software,CYBERTECH,NSE,Technology,Software,listed,2007-01-01,,,,,,,,,,,52.7,Weak IPO,Low,expansion_db,IN
+BlackRock Inc.,BLK,NYSE,Financial,Asset Management,listed,1999-01-01,,,,,,,,,,,52.7,Weak IPO,Low,expansion_db,US
+Wipro Ltd,WIPRO,NSE,Technology,Software,listed,1945-01-01,,,,,,,,,,,52.6,Weak IPO,Low,expansion_db,IN
+Cummins India Ltd,CUMMINSIND,NSE,Industrials,Industrial Equipment,listed,1996-01-01,,,,,,,,,,,52.6,Weak IPO,Low,expansion_db,IN
+Mazagon Dock Shipbuilders,MAZDOCK,NSE,Industrials,Shipbuilding,listed,2020-01-01,,,,,,,,,,,52.6,Weak IPO,Low,expansion_db,IN
+HOSACA India Ltd,HOSACA,NSE,Financial,Financial Services,listed,2024-01-01,,,,,,,,,,,52.6,Weak IPO,Low,expansion_db,IN
+Adani Enterprises Ltd,ADANIENT,NSE,Energy,Conglomerate,listed,1994-01-01,,,,,,,,,,,52.5,Weak IPO,Low,expansion_db,IN
+Majesco Ltd,MAJESCO,NSE,Technology,Software,listed,2005-01-01,,,,,,,,,,,52.5,Weak IPO,Low,expansion_db,IN
+Goodman Group,GMG,ASX,Real Estate,Real Estate Investment,listed,2005-01-01,,,,,,,,,,,52.5,Weak IPO,Low,expansion_db,AU
+Atmastco Ltd,ATMASTCO,NSE,Industrials,Engineering,listed,2024-01-01,,,,,,,,,,,52.5,Weak IPO,Low,expansion_db,IN
+RMC Switchgears Ltd,RMCSWITCH,NSE,Industrials,Electrical Equipment,listed,2024-01-01,,,,,,,,,,,52.5,Weak IPO,Low,expansion_db,IN
+Oracle Corporation,ORCL,NYSE,Technology,Software,listed,1986-01-01,,,,,,,,,,,52.4,Weak IPO,Low,expansion_db,US
+Nestlé India Ltd,NESTLEIND,NSE,Consumer Defensive,Food,listed,1959-01-01,,,,,,,,,,,52.4,Weak IPO,Low,expansion_db,IN
+Telstra Group Ltd,TLS,ASX,Communication,Telecom,listed,1997-01-01,,,,,,,,,,,52.4,Weak IPO,Low,expansion_db,AU
+Kaushalya Infra Ltd,KAUSHALYA,NSE,Industrials,Infrastructure,listed,2024-01-01,,,,,,,,,,,52.4,Weak IPO,Low,expansion_db,IN
+Lancer Containers Ltd,LANCER,NSE,Industrials,Packaging,listed,2024-01-01,,,,,,,,,,,52.4,Weak IPO,Low,expansion_db,IN
+Home Depot Inc.,HD,NYSE,Consumer Cyclical,Home Improvement,listed,1981-01-01,,,,,,,,,,,52.3,Weak IPO,Low,expansion_db,US
+Bharti Airtel Ltd,BHARTIARTL,NSE,Communication,Telecom,listed,2002-01-01,,,,,,,,,,,52.3,Weak IPO,Low,expansion_db,IN
+Maruti Suzuki India Ltd,MARUTI,NSE,Consumer Cyclical,Auto Manufacturers,listed,2003-01-01,,,,,,,,,,,52.3,Weak IPO,Low,expansion_db,IN
+Twilio Inc.,TWLO,NYSE,Technology,Software,listed,2016-01-01,,,,,,,,,,,52.3,Weak IPO,Low,expansion_db,US
+Sudarshan Chemical Inds,SUDARSCHEM,NSE,Basic Materials,Chemicals,listed,2004-01-01,,,,,,,,,,,52.3,Weak IPO,Low,expansion_db,IN
+Mphasis Ltd,MPHASIS,NSE,Technology,Software,listed,2006-01-01,,,,,,,,,,,52.2,Weak IPO,Low,expansion_db,IN
+Safari Industries India Ltd,SAFARI,NSE,Consumer Cyclical,Household Products,listed,2007-01-01,,,,,,,,,,,52.2,Weak IPO,Low,expansion_db,IN
+Medplus Health Services Ltd,MEDPLUS,NSE,Healthcare,Pharmaceuticals,listed,2021-01-01,,,,,,,,,,,52.2,Weak IPO,Low,expansion_db,IN
+Vinati Organics Ltd,VINATIORGA,NSE,Basic Materials,Chemicals,listed,2007-01-01,,,,,,,,,,,52.1,Weak IPO,Low,expansion_db,IN
+Bright Outdoor Media Ltd,BRIGHT,NSE,Communication,Media,listed,2024-01-01,,,,,,,,,,,52.1,Weak IPO,Low,expansion_db,IN
+Kalyani Cast Tech Ltd,KALYANCAST,NSE,Industrials,Industrial Equipment,listed,2024-01-01,,,,,,,,,,,52.1,Weak IPO,Low,expansion_db,IN
+Credo Brands Marketing Ltd,MUFTI,NSE,Consumer Cyclical,Apparel,listed,2023-01-01,,,,,,,,,,,52.1,Weak IPO,Low,expansion_db,IN
+Godfrey Phillips India Ltd,GODFRYPHLP,NSE,Consumer Defensive,Tobacco,listed,1995-01-01,,,,,,,,,,,52.0,Weak IPO,Low,expansion_db,IN
+M&M Ltd,M&M,NSE,Consumer Cyclical,Auto Manufacturers,listed,1945-01-01,,,,,,,,,,,51.8,Weak IPO,Low,expansion_db,IN
+Anand Rathi Wealth Ltd,ANANDRATHI,NSE,Financial,Wealth Management,listed,2021-01-01,,,,,,,,,,,51.8,Weak IPO,Low,expansion_db,IN
+Karnavati Finvest Ltd,KARNAVATIF,NSE,Financial,Financial Services,listed,2024-01-01,,,,,,,,,,,51.8,Weak IPO,Low,expansion_db,IN
+Inox Wind Energy Ltd,INOXWIND,NSE,Utilities,Renewable Energy,listed,2021-01-01,,,,,,,,,,,51.8,Weak IPO,Low,expansion_db,IN
+Finolex Industries Ltd,FINPIPE,NSE,Industrials,Plumbing,listed,1995-01-01,,,,,,,,,,,51.7,Weak IPO,Low,expansion_db,IN
+Jubilant Pharmova Ltd,JUBLPHARMA,NSE,Healthcare,Pharmaceuticals,listed,2006-01-01,,,,,,,,,,,51.7,Weak IPO,Low,expansion_db,IN
+Birkenstock Holding PLC,BIRK,NYSE,Consumer Cyclical,Footwear,listed,2023-01-01,,,,,,,,,,,51.7,Weak IPO,Low,expansion_db,DE
+Vivaa Tradecom Ltd,VIVAATRAD,NSE,Consumer Cyclical,Trading,listed,2024-01-01,,,,,,,,,,,51.7,Weak IPO,Low,expansion_db,IN
+Compucom Software Ltd,COMPUSOFT,NSE,Technology,Software,listed,2007-01-01,,,,,,,,,,,51.7,Weak IPO,Low,expansion_db,IN
+HAL (Hindustan Aeronautics),HAL,NSE,Industrials,Aerospace & Defense,listed,2018-01-01,,,,,,,,,,,51.6,Weak IPO,Low,expansion_db,IN
+Info Edge India Ltd,NAUKRI,NSE,Technology,Internet Services,listed,2006-01-01,,,,,,,,,,,51.6,Weak IPO,Low,expansion_db,IN
+New Relic Inc.,NEWR,NYSE,Technology,Software,listed,2014-01-01,,,,,,,,,,,51.6,Weak IPO,Low,expansion_db,US
+Associated Alcohols Ltd,ASSOALCOH,NSE,Consumer Defensive,Beverages,listed,2024-01-01,,,,,,,,,,,51.6,Weak IPO,Low,expansion_db,IN
+G R Infraprojects Ltd,GRINFRA,NSE,Industrials,Infrastructure,listed,2021-01-01,,,,,,,,,,,51.5,Weak IPO,Low,expansion_db,IN
+Solara Active Pharma Sci.,SOLARA,NSE,Healthcare,Pharmaceuticals,listed,2018-01-01,,,,,,,,,,,51.5,Weak IPO,Low,expansion_db,IN
+STC India Ltd,STCINDIA,NSE,Industrials,Trading,listed,1995-01-01,,,,,,,,,,,51.5,Weak IPO,Low,expansion_db,IN
+Mahindra & Mahindra Financial,M&MFIN,NSE,Financial,Financial Services,listed,2003-01-01,,,,,,,,,,,51.4,Weak IPO,Low,expansion_db,IN
+Clean Science & Technology,CLEAN,NSE,Basic Materials,Chemicals,listed,2021-01-01,,,,,,,,,,,51.4,Weak IPO,Low,expansion_db,IN
+Navodaya Enterprises Ltd,NAVODAYA,NSE,Consumer Cyclical,Retail,listed,2024-01-01,,,,,,,,,,,51.4,Weak IPO,Low,expansion_db,IN
+Gujarat Ambuja Exports Ltd,GAEL,NSE,Consumer Defensive,Food,listed,2003-01-01,,,,,,,,,,,51.4,Weak IPO,Low,expansion_db,IN
+SBI Life Insurance Co.,SBILIFE,NSE,Financial,Insurance,listed,2017-01-01,,,,,,,,,,,51.3,Weak IPO,Low,expansion_db,IN
+Indian Oil Corporation,IOC,NSE,Energy,Oil & Gas,listed,1996-01-01,,,,,,,,,,,51.3,Weak IPO,Low,expansion_db,IN
+Aether Industries Ltd,AETHER,NSE,Basic Materials,Chemicals,listed,2022-01-01,,,,,,,,,,,51.3,Weak IPO,Low,expansion_db,IN
+Indus Towers Ltd,INDUSTOWER,NSE,Communication,Telecom,listed,2020-01-01,,,,,,,,,,,51.3,Weak IPO,Low,expansion_db,IN
+Globe International Carriers,GICL,NSE,Industrials,Logistics,listed,2024-01-01,,,,,,,,,,,51.3,Weak IPO,Low,expansion_db,IN
+Royal Plus Ltd,ROYALPLUS,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,51.3,Weak IPO,Low,expansion_db,IN
+Moody's Corporation,MCO,NYSE,Financial,Financial Services,listed,1996-01-01,,,,,,,,,,,51.3,Weak IPO,Low,expansion_db,US
+Phoenix Mills Ltd,PHOENIXLTD,NSE,Real Estate,Real Estate Development,listed,2007-01-01,,,,,,,,,,,51.2,Weak IPO,Low,expansion_db,IN
+NTPC Ltd,NTPC,NSE,Utilities,Electric Utilities,listed,2004-01-01,,,,,,,,,,,51.1,Weak IPO,Low,expansion_db,IN
+Divis Laboratories Ltd,DIVISLAB,NSE,Healthcare,Pharmaceuticals,listed,1999-01-01,,,,,,,,,,,51.1,Weak IPO,Low,expansion_db,IN
+AIA Group Ltd,1299,HKEX,Financial,Insurance,listed,2010-01-01,,,,,,,,,,,51.1,Weak IPO,Low,expansion_db,HK
+Fastly Inc.,FSLY,NYSE,Technology,Software,listed,2019-01-01,,,,,,,,,,,51.1,Weak IPO,Low,expansion_db,US
+Titan Company Ltd,TITAN,NSE,Consumer Cyclical,Retail,listed,1998-01-01,,,,,,,,,,,51.0,Weak IPO,Low,expansion_db,IN
+L&T Finance Holdings,LICHSGFIN,NSE,Financial,Financial Services,listed,2004-01-01,,,,,,,,,,,51.0,Weak IPO,Low,expansion_db,IN
+Kajaria Ceramics Ltd,KAJARIACER,NSE,Industrials,Building Materials,listed,2003-01-01,,,,,,,,,,,51.0,Weak IPO,Low,expansion_db,IN
+Route Mobile Ltd,ROUTE,NSE,Technology,Software,listed,2020-01-01,,,,,,,,,,,51.0,Weak IPO,Low,expansion_db,IN
+Sakthi Auto Component Ltd,SAKTHAUTO,NSE,Consumer Cyclical,Auto Parts,listed,2024-01-01,,,,,,,,,,,51.0,Weak IPO,Low,expansion_db,IN
+Linde plc,LIN,NYSE,Basic Materials,Specialty Chemicals,listed,1992-01-01,,,,,,,,,,,50.9,Weak IPO,Low,expansion_db,GB
+AU Small Finance Bank,AUBANK,NSE,Financial,Banks,listed,2017-01-01,,,,,,,,,,,50.9,Weak IPO,Low,expansion_db,IN
+SRF Ltd,SRF,NSE,Basic Materials,Chemicals,listed,2000-01-01,,,,,,,,,,,50.9,Weak IPO,Low,expansion_db,IN
+Chennai Petroleum Corp Ltd,CHENNPETRO,NSE,Energy,Oil & Gas,listed,2003-01-01,,,,,,,,,,,50.9,Weak IPO,Low,expansion_db,IN
+Firstsource Solutions Ltd,FSL,NSE,Technology,Consulting,listed,2007-01-01,,,,,,,,,,,50.9,Weak IPO,Low,expansion_db,IN
+Muthoot Finance Ltd,MUTHOOTFIN,NSE,Financial,Financial Services,listed,2006-01-01,,,,,,,,,,,50.9,Weak IPO,Low,expansion_db,IN
+V-Guard Industries Ltd,VGUARD,NSE,Consumer Cyclical,Consumer Electronics,listed,2007-01-01,,,,,,,,,,,50.9,Weak IPO,Low,expansion_db,IN
+Azure Exim Services Ltd,AZURE,NSE,Industrials,Logistics,listed,2024-01-01,,,,,,,,,,,50.9,Weak IPO,Low,expansion_db,IN
+Virinchi Ltd,VIRINCHI,NSE,Technology,Software,listed,2007-01-01,,,,,,,,,,,50.9,Weak IPO,Low,expansion_db,IN
+GlaxoSmithKline Pharma Ltd,GLAXO,NSE,Healthcare,Pharmaceuticals,listed,1995-01-01,,,,,,,,,,,50.8,Weak IPO,Low,expansion_db,IN
+Varroc Engineering Ltd,VARROC,NSE,Consumer Cyclical,Auto Parts,listed,2018-01-01,,,,,,,,,,,50.8,Weak IPO,Low,expansion_db,IN
+HashiCorp Inc.,HCP,NASDAQ,Technology,Software,listed,2021-01-01,,,,,,,,,,,50.8,Weak IPO,Low,expansion_db,US
+Macquarie Group Ltd,MQG,ASX,Financial,Financial Services,listed,1996-01-01,,,,,,,,,,,50.8,Weak IPO,Low,expansion_db,AU
+Bayer CropScience Ltd,BAYERCROP,NSE,Basic Materials,Fertilizers,listed,1995-01-01,,,,,,,,,,,50.8,Weak IPO,Low,expansion_db,IN
+Marathon Nextgen Realty,MARATHON,NSE,Real Estate,Real Estate Development,listed,2007-01-01,,,,,,,,,,,50.7,Weak IPO,Low,expansion_db,IN
+Ruchi Soya Industries Ltd,RUCHISOYA,NSE,Consumer Defensive,Food,listed,2003-01-01,,,,,,,,,,,50.7,Weak IPO,Low,expansion_db,IN
+Apollo Tyres Ltd,APOLLOTYRE,NSE,Consumer Cyclical,Auto Parts,listed,2003-01-01,,,,,,,,,,,50.7,Weak IPO,Low,expansion_db,IN
+Gujarat Mineral Dev Corp,GMDCLTD,NSE,Basic Materials,Mining,listed,1995-01-01,,,,,,,,,,,50.6,Weak IPO,Low,expansion_db,IN
+DLocal Ltd,DLO,NASDAQ,Technology,Fintech,listed,2021-01-01,,,,,,,,,,,50.6,Weak IPO,Low,expansion_db,UY
+Century Plyboards India Ltd,CENTURYPLY,NSE,Industrials,Building Materials,listed,2003-01-01,,,,,,,,,,,50.5,Weak IPO,Low,expansion_db,IN
+Thermax Ltd,THERMAX,NSE,Industrials,Industrial Equipment,listed,1995-01-01,,,,,,,,,,,50.4,Weak IPO,Low,expansion_db,IN
+Vaibhav Global Ltd,VAIBHAVGBL,NSE,Consumer Cyclical,Retail,listed,2006-01-01,,,,,,,,,,,50.4,Weak IPO,Low,expansion_db,IN
+BP p.l.c.,BP,NYSE,Energy,Oil & Gas,listed,1970-01-01,,,,,,,,,,,50.3,Weak IPO,Low,expansion_db,GB
+Apeejay Surrendra Park Hotels,PARKHOTELS,NSE,Consumer Cyclical,Hotels,listed,2024-01-01,,,,,,,,,,,50.3,Weak IPO,Low,expansion_db,IN
+Naapbooks Ltd,NAAPBOOKS,NSE,Technology,Software,listed,2024-01-01,,,,,,,,,,,50.3,Weak IPO,Low,expansion_db,IN
+Grasim Industries Ltd,GRASIM,NSE,Basic Materials,Cement,listed,1947-01-01,,,,,,,,,,,50.2,Weak IPO,Low,expansion_db,IN
+Orient Electric Ltd,ORIENTELEC,NSE,Consumer Cyclical,Consumer Electronics,listed,2018-01-01,,,,,,,,,,,50.2,Weak IPO,Low,expansion_db,IN
+Ratnamani Metals & Tubes,RATNAMANI,NSE,Basic Materials,Steel,listed,2007-01-01,,,,,,,,,,,50.2,Weak IPO,Low,expansion_db,IN
+Tesco PLC,TSCO,LSE,Consumer Defensive,Discount Stores,listed,1997-01-01,,,,,,,,,,,50.2,Weak IPO,Low,expansion_db,GB
+National Australia Bank,NAB,ASX,Financial,Banks,listed,1991-01-01,,,,,,,,,,,50.2,Weak IPO,Low,expansion_db,AU
+Wesfarmers Ltd,WES,ASX,Consumer Defensive,Discount Stores,listed,1993-01-01,,,,,,,,,,,50.2,Weak IPO,Low,expansion_db,AU
+Torrent Power Ltd,TORNTPOWER,NSE,Utilities,Electric Utilities,listed,1995-01-01,,,,,,,,,,,50.1,Weak IPO,Low,expansion_db,IN
+Rubber Plastic Industries,RUBBERPLA,NSE,Basic Materials,Chemicals,listed,2024-01-01,,,,,,,,,,,50.1,Weak IPO,Low,expansion_db,IN
+JSW Holdings Ltd,JSWHL,NSE,Financial,Financial Services,listed,2006-01-01,,,,,,,,,,,50.0,Weak IPO,Low,expansion_db,IN
+Kalpataru Power Transm Ltd,KALPATPOWR,NSE,Industrials,Infrastructure,listed,2003-01-01,,,,,,,,,,,50.0,Weak IPO,Low,expansion_db,IN
+RPSG Ventures Ltd,RPSGVENT,NSE,Consumer Cyclical,Retail,listed,2021-01-01,,,,,,,,,,,50.0,Weak IPO,Low,expansion_db,IN
+BLS E-Services Ltd,BLSE,NSE,Technology,Software,listed,2024-01-01,,,,,,,,,,,50.0,Weak IPO,Low,expansion_db,IN
+Bombay Super Hybrid Seeds,BSHSL,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,50.0,Weak IPO,Low,expansion_db,IN
+Hemani Industries Ltd,HEMANI,NSE,Basic Materials,Chemicals,listed,2024-01-01,,,,,,,,,,,50.0,Weak IPO,Low,expansion_db,IN
+Vishal Fabrics Ltd,VISHALFAB,NSE,Consumer Cyclical,Textiles,listed,2024-01-01,,,,,,,,,,,50.0,Weak IPO,Low,expansion_db,IN
+Australia & NZ Banking Grp,ANZ,ASX,Financial,Banks,listed,1993-01-01,,,,,,,,,,,49.9,Avoid,Low,expansion_db,AU
+Pfizer Inc.,PFE,NYSE,Healthcare,Pharmaceuticals,listed,1942-01-01,,,,,,,,,,,49.8,Avoid,Low,expansion_db,US
+Jyoti CNC Automation Ltd,JYOTICNC,NSE,Industrials,Industrial Equipment,listed,2024-01-01,,,,,,,,,,,49.8,Avoid,Low,expansion_db,IN
+Macrotech Developers Ltd,LODHA,NSE,Real Estate,Real Estate Development,listed,2021-01-01,,,,,,,,,,,49.7,Avoid,Low,expansion_db,IN
+Glenmark Life Sciences Ltd,GLS,NSE,Healthcare,Pharmaceuticals,listed,2021-01-01,,,,,,,,,,,49.7,Avoid,Low,expansion_db,IN
+Gujarat Narmada Valley Fert.,GNFC,NSE,Basic Materials,Fertilizers,listed,1995-01-01,,,,,,,,,,,49.7,Avoid,Low,expansion_db,IN
+Squarespace Inc.,SQSP,NYSE,Technology,Software,listed,2021-01-01,,,,,,,,,,,49.7,Avoid,Low,expansion_db,US
+Spark & Sparks Electricals,SPARK,NSE,Industrials,Electrical Equipment,listed,2024-01-01,,,,,,,,,,,49.7,Avoid,Low,expansion_db,IN
+Piramal Enterprises Ltd,PEL,NSE,Financial,Financial Services,listed,1995-01-01,,,,,,,,,,,49.5,Avoid,Low,expansion_db,IN
+NHPC Ltd,NHPC,NSE,Utilities,Electric Utilities,listed,2009-01-01,,,,,,,,,,,49.5,Avoid,Low,expansion_db,IN
+Finolex Cables Ltd,FINPIPE,NSE,Industrials,Electrical Equipment,listed,1995-01-01,,,,,,,,,,,49.5,Avoid,Low,expansion_db,IN
+Vodafone Group PLC,VOD,LSE,Communication,Telecom,listed,1999-01-01,,,,,,,,,,,49.5,Avoid,Low,expansion_db,GB
+Dhanuka Agritech Ltd,DHANUKA,NSE,Basic Materials,Fertilizers,listed,2003-01-01,,,,,,,,,,,49.5,Avoid,Low,expansion_db,IN
+GE T&D India Ltd,GET&D,NSE,Industrials,Electrical Equipment,listed,2002-01-01,,,,,,,,,,,49.4,Avoid,Low,expansion_db,IN
+Mishra Dhatu Nigam Ltd,MIDHANI,NSE,Basic Materials,Metals & Mining,listed,2018-01-01,,,,,,,,,,,49.4,Avoid,Low,expansion_db,IN
+Repco Home Finance Ltd,REPCOHOME,NSE,Financial,Housing Finance,listed,2007-01-01,,,,,,,,,,,49.4,Avoid,Low,expansion_db,IN
+Hitachi Energy India Ltd,POWERINDIA,NSE,Industrials,Electrical Equipment,listed,2021-01-01,,,,,,,,,,,49.4,Avoid,Low,expansion_db,IN
+Siemens Healthineers AG,SHL,XETRA,Healthcare,Medical Devices,listed,2017-01-01,,,,,,,,,,,49.4,Avoid,Low,expansion_db,DE
+Deutsche Telekom AG,DTE,XETRA,Communication,Telecom,listed,1996-01-01,,,,,,,,,,,49.4,Avoid,Low,expansion_db,DE
+TotalEnergies SE,TTE,NYSE,Energy,Oil & Gas,listed,1997-01-01,,,,,,,,,,,49.3,Avoid,Low,expansion_db,FR
+Jubilant Ingrevia Ltd,JUBLINGREA,NSE,Basic Materials,Chemicals,listed,2021-01-01,,,,,,,,,,,49.3,Avoid,Low,expansion_db,IN
+S J Logistics India Ltd,SJLOGISTIC,NSE,Industrials,Logistics,listed,2024-01-01,,,,,,,,,,,49.3,Avoid,Low,expansion_db,IN
+Indoco Remedies Ltd,INDOCO,NSE,Healthcare,Pharmaceuticals,listed,2003-01-01,,,,,,,,,,,49.3,Avoid,Low,expansion_db,IN
+CG Power & Industrial Sol.,CGPOWER,NSE,Industrials,Electrical Equipment,listed,2003-01-01,,,,,,,,,,,49.2,Avoid,Low,expansion_db,IN
+Chambal Fertilizers Ltd,CHAMBLFERT,NSE,Basic Materials,Fertilizers,listed,1995-01-01,,,,,,,,,,,49.2,Avoid,Low,expansion_db,IN
+BLS International Services,BLS,NSE,Industrials,Business Services,listed,2015-01-01,,,,,,,,,,,49.2,Avoid,Low,expansion_db,IN
+Vishwaraj Sugar Ind Ltd,VISHWASUG,NSE,Consumer Defensive,Sugar,listed,2024-01-01,,,,,,,,,,,49.2,Avoid,Low,expansion_db,IN
+S&P Global Inc.,SPGI,NYSE,Financial,Financial Services,listed,1929-01-01,,,,,,,,,,,49.2,Avoid,Low,expansion_db,US
+Vilas Transcore Ltd,VILASTRAN,NSE,Industrials,Electrical Equipment,listed,2024-01-01,,,,,,,,,,,49.1,Avoid,Low,expansion_db,IN
+Dr. Reddy's Labs Ltd,DRREDDY,NSE,Healthcare,Pharmaceuticals,listed,1994-01-01,,,,,,,,,,,49.0,Avoid,Low,expansion_db,IN
+UltraTech Cement Ltd,ULTRACEMCO,NSE,Basic Materials,Cement,listed,2004-01-01,,,,,,,,,,,49.0,Avoid,Low,expansion_db,IN
+GMR Airports Ltd,GMRINFRA,NSE,Industrials,Infrastructure,listed,2006-01-01,,,,,,,,,,,49.0,Avoid,Low,expansion_db,IN
+NLC India Ltd,NLCINDIA,NSE,Energy,Coal,listed,2010-01-01,,,,,,,,,,,49.0,Avoid,Low,expansion_db,IN
+Trident Ltd,TRIDENT,NSE,Consumer Cyclical,Textiles,listed,2003-01-01,,,,,,,,,,,49.0,Avoid,Low,expansion_db,IN
+Rishabh Instruments Ltd,RISHABHINS,NSE,Industrials,Electrical Equipment,listed,2023-01-01,,,,,,,,,,,49.0,Avoid,Low,expansion_db,IN
+Exxon Mobil Corporation,XOM,NYSE,Energy,Oil & Gas,listed,1920-01-01,,,,,,,,,,,48.9,Avoid,Low,expansion_db,US
+CESC Ltd,CESC,NSE,Utilities,Electric Utilities,listed,1989-01-01,,,,,,,,,,,48.9,Avoid,Low,expansion_db,IN
+Manappuram Finance Ltd,MANAPPURAM,NSE,Financial,Financial Services,listed,2006-01-01,,,,,,,,,,,48.9,Avoid,Low,expansion_db,IN
+Rishabh Digha Steel,RISHABHDIG,NSE,Basic Materials,Steel,listed,2024-01-01,,,,,,,,,,,48.9,Avoid,Low,expansion_db,IN
+Edelweiss Financial Services,EDELWEISS,NSE,Financial,Financial Services,listed,2007-01-01,,,,,,,,,,,48.8,Avoid,Low,expansion_db,IN
+Gayatri Rubicon Ltd,GAYATRI,NSE,Basic Materials,Chemicals,listed,2024-01-01,,,,,,,,,,,48.8,Avoid,Low,expansion_db,IN
+Jiyo Eco Friendly Agricult,JIYOECO,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,48.8,Avoid,Low,expansion_db,IN
+Sreechem Resins Ltd,SREECHEM,NSE,Basic Materials,Chemicals,listed,2024-01-01,,,,,,,,,,,48.8,Avoid,Low,expansion_db,IN
+Glenmark Pharmaceuticals Ltd,GLENMARK,NSE,Healthcare,Pharmaceuticals,listed,2003-01-01,,,,,,,,,,,48.7,Avoid,Low,expansion_db,IN
+Toast Inc.,TOST,NYSE,Technology,Software,listed,2021-01-01,,,,,,,,,,,48.7,Avoid,Low,expansion_db,US
+Jana Small Finance Bank,JSFB,NSE,Financial,Banks,listed,2024-01-01,,,,,,,,,,,48.7,Avoid,Low,expansion_db,IN
+Broadcom Inc.,AVGO,NASDAQ,Technology,Semiconductors,listed,2009-01-01,,,,,,,,,,,48.6,Avoid,Low,expansion_db,US
+Chevron Corporation,CVX,NYSE,Energy,Oil & Gas,listed,1926-01-01,,,,,,,,,,,48.6,Avoid,Low,expansion_db,US
+CEAT Ltd,CEATLTD,NSE,Consumer Cyclical,Auto Parts,listed,2007-01-01,,,,,,,,,,,48.6,Avoid,Low,expansion_db,IN
+Sky Gold Ltd,SKYGOLD,NSE,Consumer Cyclical,Luxury Goods,listed,2024-01-01,,,,,,,,,,,48.6,Avoid,Low,expansion_db,IN
+Moderna Inc.,MRNA,NASDAQ,Healthcare,Biotechnology,listed,2018-01-01,,,,,,,,,,,48.5,Avoid,Low,expansion_db,US
+Deepak Nitrite Ltd,DEEPAKNTR,NSE,Basic Materials,Chemicals,listed,1995-01-01,,,,,,,,,,,48.5,Avoid,Low,expansion_db,IN
+Escorts Kubota Ltd,ESCORTS,NSE,Industrials,Farm Equipment,listed,1995-01-01,,,,,,,,,,,48.5,Avoid,Low,expansion_db,IN
+JK Tyre & Industries Ltd,JKTYRE,NSE,Consumer Cyclical,Auto Parts,listed,1995-01-01,,,,,,,,,,,48.5,Avoid,Low,expansion_db,IN
+Response Informatics Ltd,RESPONSO,NSE,Technology,Software,listed,2007-01-01,,,,,,,,,,,48.5,Avoid,Low,expansion_db,IN
+High Ground Enterprise Ltd,HIGHGROUND,NSE,Technology,Software,listed,2024-01-01,,,,,,,,,,,48.5,Avoid,Low,expansion_db,IN
+Castrol India Ltd,CASTROLIND,NSE,Energy,Oil & Gas,listed,1995-01-01,,,,,,,,,,,48.4,Avoid,Low,expansion_db,IN
+Kuwer Industries Ltd,KUWER,NSE,Industrials,Packaging,listed,2024-01-01,,,,,,,,,,,48.4,Avoid,Low,expansion_db,IN
+Coforge Ltd,COFORGE,NSE,Technology,Software,listed,2004-01-01,,,,,,,,,,,48.3,Avoid,Low,expansion_db,IN
+Gujarat Fluorochemicals Ltd,GUJFLUORO,NSE,Basic Materials,Chemicals,listed,2015-01-01,,,,,,,,,,,48.3,Avoid,Low,expansion_db,IN
+V-Mart Retail Ltd,VMART,NSE,Consumer Cyclical,Retail,listed,2012-01-01,,,,,,,,,,,48.3,Avoid,Low,expansion_db,IN
+DigitalOcean Holdings Inc.,DOCN,NYSE,Technology,Software,listed,2021-01-01,,,,,,,,,,,48.3,Avoid,Low,expansion_db,US
+Cipla Ltd,CIPLA,NSE,Healthcare,Pharmaceuticals,listed,1945-01-01,,,,,,,,,,,48.2,Avoid,Low,expansion_db,IN
+Century Textiles & Inds Ltd,CENTURYTEX,NSE,Consumer Cyclical,Textiles,listed,1995-01-01,,,,,,,,,,,48.2,Avoid,Low,expansion_db,IN
+BEML Land Assets Ltd,BEMLLAND,NSE,Real Estate,Real Estate Development,listed,2023-01-01,,,,,,,,,,,48.2,Avoid,Low,expansion_db,IN
+Greenply Industries Ltd,GREENPLY,NSE,Industrials,Building Materials,listed,2003-01-01,,,,,,,,,,,48.2,Avoid,Low,expansion_db,IN
+Avenue Supermarts (D-Mart),DMART,NSE,Consumer Defensive,Discount Stores,listed,2017-01-01,,,,,,,,,,,48.1,Avoid,Low,expansion_db,IN
+Indian Overseas Bank,IOB,NSE,Financial,Banks,listed,1995-01-01,,,,,,,,,,,48.1,Avoid,Low,expansion_db,IN
+IndusInd Bank Ltd,INDUSINDBK,NSE,Financial,Banks,listed,1998-01-01,,,,,,,,,,,48.1,Avoid,Low,expansion_db,IN
+Sirca Paint India Ltd,SIRCAPAINT,NSE,Basic Materials,Chemicals,listed,2024-01-01,,,,,,,,,,,48.1,Avoid,Low,expansion_db,IN
+Cochin Malabar Estates,COCHINMAL,NSE,Consumer Defensive,Food,listed,1995-01-01,,,,,,,,,,,48.1,Avoid,Low,expansion_db,IN
+IDFC First Bank Ltd,IDFCFIRSTB,NSE,Financial,Banks,listed,2015-01-01,,,,,,,,,,,48.0,Avoid,Low,expansion_db,IN
+Godrej Industries Ltd,GODREJIND,NSE,Consumer Defensive,Conglomerate,listed,1995-01-01,,,,,,,,,,,48.0,Avoid,Low,expansion_db,IN
+Metropolis Healthcare Ltd,METROPOLIS,NSE,Healthcare,Diagnostics,listed,2019-01-01,,,,,,,,,,,48.0,Avoid,Low,expansion_db,IN
+NMDC Steel Ltd,NMDCSTEEL,NSE,Basic Materials,Steel,listed,2023-01-01,,,,,,,,,,,48.0,Avoid,Low,expansion_db,IN
+Affirm Holdings Inc.,AFRM,NASDAQ,Technology,Fintech,listed,2021-01-01,,,,,,,,,,,48.0,Avoid,Low,expansion_db,US
+Mukesh Babu Financial,MUKESHBABU,NSE,Financial,Financial Services,listed,2024-01-01,,,,,,,,,,,48.0,Avoid,Low,expansion_db,IN
+Riba Textiles Ltd,RIBATEXTIL,NSE,Consumer Cyclical,Textiles,listed,2024-01-01,,,,,,,,,,,48.0,Avoid,Low,expansion_db,IN
+BASF India Ltd,BASF,NSE,Basic Materials,Chemicals,listed,1995-01-01,,,,,,,,,,,48.0,Avoid,Low,expansion_db,IN
+FDC Ltd,FDC,NSE,Healthcare,Pharmaceuticals,listed,1995-01-01,,,,,,,,,,,47.9,Avoid,Low,expansion_db,IN
+ZoomInfo Technologies Inc.,ZI,NASDAQ,Technology,Software,listed,2020-01-01,,,,,,,,,,,47.9,Avoid,Low,expansion_db,US
+Mufin Bikes India Ltd,MUFINBIKE,NSE,Consumer Cyclical,Auto Manufacturers,listed,2024-01-01,,,,,,,,,,,47.9,Avoid,Low,expansion_db,IN
+Vikram Aroma Chemicals,VIKRAMAROM,NSE,Basic Materials,Chemicals,listed,2024-01-01,,,,,,,,,,,47.9,Avoid,Low,expansion_db,IN
+Greaves Cotton Ltd,GREAVESCOT,NSE,Industrials,Industrial Equipment,listed,2003-01-01,,,,,,,,,,,47.9,Avoid,Low,expansion_db,IN
+SJVN Ltd,SJVN,NSE,Utilities,Electric Utilities,listed,2010-01-01,,,,,,,,,,,47.8,Avoid,Low,expansion_db,IN
+Mono Pharmacare Ltd,MONOPHARM,NSE,Healthcare,Pharmaceuticals,listed,2024-01-01,,,,,,,,,,,47.8,Avoid,Low,expansion_db,IN
+Evexia Lifecare Ltd,EVEXIA,NSE,Healthcare,Pharmaceuticals,listed,2024-01-01,,,,,,,,,,,47.7,Avoid,Low,expansion_db,IN
+Arvind & Co Engg Services,ACE,NSE,Industrials,Engineering,listed,2024-01-01,,,,,,,,,,,47.6,Avoid,Low,expansion_db,IN
+Central Bank of India,CENTRALBK,NSE,Financial,Banks,listed,1995-01-01,,,,,,,,,,,47.5,Avoid,Low,expansion_db,IN
+Minda Corp Ltd,MINDACORP,NSE,Consumer Cyclical,Auto Parts,listed,2003-01-01,,,,,,,,,,,47.5,Avoid,Low,expansion_db,IN
+Woolworths Group Ltd,WOW,ASX,Consumer Defensive,Discount Stores,listed,1993-01-01,,,,,,,,,,,47.5,Avoid,Low,expansion_db,AU
+AMETEK Inc.,AME,NYSE,Industrials,Industrial Equipment,listed,1978-01-01,,,,,,,,,,,47.5,Avoid,Low,expansion_db,US
+Roper Technologies Inc.,ROP,NYSE,Technology,Software,listed,1992-01-01,,,,,,,,,,,47.5,Avoid,Low,expansion_db,US
+Larsen & Toubro Ltd,LT,NSE,Industrials,Construction,listed,1950-01-01,,,,,,,,,,,47.4,Avoid,Low,expansion_db,IN
+Yes Bank Ltd,YESBANK,NSE,Financial,Banks,listed,2005-01-01,,,,,,,,,,,47.4,Avoid,Low,expansion_db,IN
+Navin Fluorine International,NAVINFLUOR,NSE,Basic Materials,Chemicals,listed,1994-01-01,,,,,,,,,,,47.4,Avoid,Low,expansion_db,IN
+Cloudflare Inc.,NET,NYSE,Technology,Software,listed,2019-01-01,,,,,,,,,,,47.4,Avoid,Low,expansion_db,US
+Alpex Solar Ltd,ALPEXSOLAR,NSE,Utilities,Renewable Energy,listed,2024-01-01,,,,,,,,,,,47.4,Avoid,Low,expansion_db,IN
+Mutual Benefit & Housing,MUTUALBN,NSE,Financial,Financial Services,listed,2024-01-01,,,,,,,,,,,47.4,Avoid,Low,expansion_db,IN
+Grindwell Norton Ltd,GRINDWELL,NSE,Industrials,Industrial Equipment,listed,1995-01-01,,,,,,,,,,,47.4,Avoid,Low,expansion_db,IN
+KPI Green Energy Ltd,KPIGREEN,NSE,Utilities,Renewable Energy,listed,2022-01-01,,,,,,,,,,,47.3,Avoid,Low,expansion_db,IN
+Foxco Solutions Ltd,FOXCO,NSE,Industrials,Trading,listed,2024-01-01,,,,,,,,,,,47.3,Avoid,Low,expansion_db,IN
+My Mudra FinCorp Ltd,MYMUDRA,NSE,Financial,Financial Services,listed,2024-01-01,,,,,,,,,,,47.3,Avoid,Low,expansion_db,IN
+Ganesh Housing Corp Ltd,GANESHHOUC,NSE,Real Estate,Real Estate Development,listed,2007-01-01,,,,,,,,,,,47.2,Avoid,Low,expansion_db,IN
+UCO Bank,UCOBANK,NSE,Financial,Banks,listed,1995-01-01,,,,,,,,,,,47.2,Avoid,Low,expansion_db,IN
+Esconet Technologies Ltd,ESCONET,NSE,Technology,Software,listed,2024-01-01,,,,,,,,,,,47.2,Avoid,Low,expansion_db,IN
+Axis Bank Ltd,AXISBANK,NSE,Financial,Banks,listed,1998-01-01,,,,,,,,,,,47.1,Avoid,Low,expansion_db,IN
+National Grid PLC,NG.,LSE,Utilities,Electric Utilities,listed,2000-01-01,,,,,,,,,,,47.1,Avoid,Low,expansion_db,GB
+MK Exim India Ltd,MKEXIM,NSE,Industrials,Trading,listed,2024-01-01,,,,,,,,,,,47.1,Avoid,Low,expansion_db,IN
+InterGlobe Aviation (IndiGo),INDIGO,NSE,Industrials,Airlines,listed,2015-01-01,,,,,,,,,,,47.0,Avoid,Low,expansion_db,IN
+Shriram Finance Ltd,SHRIRAMFIN,NSE,Financial,Financial Services,listed,1995-01-01,,,,,,,,,,,47.0,Avoid,Low,expansion_db,IN
+Relaxo Footwears Ltd,RELAXO,NSE,Consumer Cyclical,Footwear,listed,2006-01-01,,,,,,,,,,,47.0,Avoid,Low,expansion_db,IN
+Westpac Banking Corp,WBC,ASX,Financial,Banks,listed,1993-01-01,,,,,,,,,,,47.0,Avoid,Low,expansion_db,AU
+Felix Industries Ltd,FELIX,NSE,Industrials,Waste Management,listed,2024-01-01,,,,,,,,,,,47.0,Avoid,Low,expansion_db,IN
+Resonance Specialties Ltd,RESONANCE,NSE,Basic Materials,Chemicals,listed,2007-01-01,,,,,,,,,,,47.0,Avoid,Low,expansion_db,IN
+Bandhan Bank Ltd,BANDHANBNK,NSE,Financial,Banks,listed,2018-01-01,,,,,,,,,,,46.9,Avoid,Low,expansion_db,IN
+Roblox Corp,RBLX,NYSE,Technology,Software,listed,2021-01-01,,,,,,,,,,,46.9,Avoid,Low,expansion_db,US
+Remitly Global Inc.,RELY,NASDAQ,Technology,Fintech,listed,2021-01-01,,,,,,,,,,,46.9,Avoid,Low,expansion_db,US
+Datadog Inc.,DDOG,NASDAQ,Technology,Software,listed,2019-01-01,,,,,,,,,,,46.9,Avoid,Low,expansion_db,US
+Gravita India Ltd,GRAVITA,NSE,Basic Materials,Recycling,listed,2007-01-01,,,,,,,,,,,46.9,Avoid,Low,expansion_db,IN
+SBI Cards & Payment,SBICARD,NSE,Financial,Financial Services,listed,2020-01-01,,,,,,,,,,,46.8,Avoid,Low,expansion_db,IN
+Cholamandalam Investment,CHOLAHLDNG,NSE,Financial,Financial Services,listed,1998-01-01,,,,,,,,,,,46.8,Avoid,Low,expansion_db,IN
+Suzlon Energy Ltd,SUZLON,NSE,Utilities,Renewable Energy,listed,2005-01-01,,,,,,,,,,,46.8,Avoid,Low,expansion_db,IN
+Duolingo Inc.,DUOL,NASDAQ,Technology,Software,listed,2021-01-01,,,,,,,,,,,46.8,Avoid,Low,expansion_db,US
+Costco Wholesale Corp,COST,NASDAQ,Consumer Defensive,Discount Stores,listed,1985-01-01,,,,,,,,,,,46.7,Avoid,Low,expansion_db,US
+Capacite Infraprojects Ltd,CAPACITE,NSE,Industrials,Infrastructure,listed,2017-01-01,,,,,,,,,,,46.7,Avoid,Low,expansion_db,IN
+Eli Lilly and Company,LLY,NYSE,Healthcare,Pharmaceuticals,listed,1952-01-01,,,,,,,,,,,46.6,Avoid,Low,expansion_db,US
+South West Pinnacle,SOUTHWEST,NSE,Basic Materials,Mining,listed,2024-01-01,,,,,,,,,,,46.6,Avoid,Low,expansion_db,IN
+Jio Financial Services Ltd,JIOFIN,NSE,Financial,Financial Services,listed,2023-01-01,,,,,,,,,,,46.5,Avoid,Low,expansion_db,IN
+Smartlink Holdings Ltd,SMARTLINK,NSE,Technology,Software,listed,2007-01-01,,,,,,,,,,,46.5,Avoid,Low,expansion_db,IN
+Shell plc,SHEL,NYSE,Energy,Oil & Gas,listed,2005-01-01,,,,,,,,,,,46.4,Avoid,Low,expansion_db,GB
+Kotak Mahindra Bank Ltd,KOTAKBANK,NSE,Financial,Banks,listed,2003-01-01,,,,,,,,,,,46.4,Avoid,Low,expansion_db,IN
+Nippon Life India AMC,NAM-INDIA,NSE,Financial,Asset Management,listed,2017-01-01,,,,,,,,,,,46.4,Avoid,Low,expansion_db,IN
+NMDC Ltd,NMDC,NSE,Basic Materials,Metals & Mining,listed,2008-01-01,,,,,,,,,,,46.4,Avoid,Low,expansion_db,IN
+Reckitt Benckiser Group,RKT,LSE,Consumer Defensive,Household Products,listed,1999-01-01,,,,,,,,,,,46.3,Avoid,Low,expansion_db,GB
+Reetech International Cargo,REETECH,NSE,Industrials,Logistics,listed,2024-01-01,,,,,,,,,,,46.2,Avoid,Low,expansion_db,IN
+Vidli Restaurants Ltd,VIDLI,NSE,Consumer Cyclical,Restaurants,listed,2024-01-01,,,,,,,,,,,46.2,Avoid,Low,expansion_db,IN
+Ambuja Cements Ltd,AMBUJACEM,NSE,Basic Materials,Cement,listed,1995-01-01,,,,,,,,,,,46.2,Avoid,Low,expansion_db,IN
+Regeneron Pharmaceuticals Inc.,REGN,NASDAQ,Healthcare,Biotechnology,listed,1991-01-01,,,,,,,,,,,46.2,Avoid,Low,expansion_db,US
+Rolls-Royce Holdings PLC,RR.,LSE,Industrials,Aerospace & Defense,listed,1987-01-01,,,,,,,,,,,46.1,Avoid,Low,expansion_db,GB
+Amwill Health Care Ltd,AMWILL,NSE,Healthcare,Healthcare Services,listed,2024-01-01,,,,,,,,,,,46.1,Avoid,Low,expansion_db,IN
+Spaceage Products Ltd,SPACEAGE,NSE,Industrials,Packaging,listed,2024-01-01,,,,,,,,,,,46.1,Avoid,Low,expansion_db,IN
+Jhaveri Credits Ltd,JHAVERICRD,NSE,Financial,Financial Services,listed,2024-01-01,,,,,,,,,,,46.0,Avoid,Low,expansion_db,IN
+Mishkat Agro Ltd,MISHKAT,NSE,Consumer Defensive,Food,listed,2024-01-01,,,,,,,,,,,46.0,Avoid,Low,expansion_db,IN
+Jindal Steel & Power Ltd,JSPL,NSE,Basic Materials,Steel,listed,2003-01-01,,,,,,,,,,,45.9,Avoid,Low,expansion_db,IN
+Barbeque Nation Hospitality,BARBEQUE,NSE,Consumer Cyclical,Restaurants,listed,2021-01-01,,,,,,,,,,,45.9,Avoid,Low,expansion_db,IN
+Retina Paints & Coatings,RETINA,NSE,Basic Materials,Chemicals,listed,2024-01-01,,,,,,,,,,,45.9,Avoid,Low,expansion_db,IN
+Restaurant Brands Asia,RBA,NSE,Consumer Cyclical,Restaurants,listed,2021-01-01,,,,,,,,,,,45.8,Avoid,Low,expansion_db,IN
+JD Healthcare & Life Sci,JDHEALTH,NSE,Healthcare,Healthcare Services,listed,2024-01-01,,,,,,,,,,,45.7,Avoid,Low,expansion_db,IN
+Can Fin Homes Ltd,CANFINHOME,NSE,Financial,Housing Finance,listed,2007-01-01,,,,,,,,,,,45.7,Avoid,Low,expansion_db,IN
+Allianz SE,ALV,XETRA,Financial,Insurance,listed,2000-01-01,,,,,,,,,,,45.7,Avoid,Low,expansion_db,DE
+Aarti Industries Ltd,AARTIIND,NSE,Basic Materials,Chemicals,listed,1994-01-01,,,,,,,,,,,45.6,Avoid,Low,expansion_db,IN
+JITF Infralogistics Ltd,JITFINFRA,NSE,Industrials,Logistics,listed,2024-01-01,,,,,,,,,,,45.6,Avoid,Low,expansion_db,IN
+Virya Resources Ltd,VIRYARES,NSE,Basic Materials,Mining,listed,2024-01-01,,,,,,,,,,,45.6,Avoid,Low,expansion_db,IN
+Venus Pipes & Tubes Ltd,VENUSPIPES,NSE,Industrials,Steel,listed,2022-01-01,,,,,,,,,,,45.4,Avoid,Low,expansion_db,IN
+Asian Paints Ltd,ASIANPAINT,NSE,Basic Materials,Chemicals,listed,1945-01-01,,,,,,,,,,,45.3,Avoid,Low,expansion_db,IN
+Angel One Ltd,ANGELONE,NSE,Financial,Brokerage,listed,2020-01-01,,,,,,,,,,,45.3,Avoid,Low,expansion_db,IN
+Jagran Prakashan Ltd,JAGRAN,NSE,Communication,Media,listed,2006-01-01,,,,,,,,,,,45.3,Avoid,Low,expansion_db,IN
+Esab India Ltd,ESABINDIA,NSE,Industrials,Industrial Equipment,listed,2003-01-01,,,,,,,,,,,45.3,Avoid,Low,expansion_db,IN
+RELX PLC,REL,LSE,Industrials,Business Services,listed,1994-01-01,,,,,,,,,,,45.2,Avoid,Low,expansion_db,GB
+GoTo Gojek Tokopedia,GOTO,IDX,Technology,Internet Services,listed,2022-01-01,,,,,,,,,,,45.2,Avoid,Low,expansion_db,ID
+CSL Ltd,CSL,ASX,Healthcare,Biotechnology,listed,1994-01-01,,,,,,,,,,,45.2,Avoid,Low,expansion_db,AU
+Tesla Inc.,TSLA,NASDAQ,Consumer Cyclical,Auto Manufacturers,listed,2010-01-01,,,,,,,,,,,45.1,Avoid,Low,expansion_db,US
+JFL Life Sciences Ltd,JFLLIFE,NSE,Healthcare,Pharmaceuticals,listed,2024-01-01,,,,,,,,,,,45.1,Avoid,Low,expansion_db,IN
+Solex Energy Ltd,SOLEX,NSE,Utilities,Renewable Energy,listed,2024-01-01,,,,,,,,,,,45.1,Avoid,Low,expansion_db,IN
+Carborundum Universal Ltd,CARBORUNIV,NSE,Industrials,Industrial Equipment,listed,1995-01-01,,,,,,,,,,,45.0,Avoid,Low,expansion_db,IN
+Gabriel India Ltd,GABRIEL,NSE,Consumer Cyclical,Auto Parts,listed,2006-01-01,,,,,,,,,,,45.0,Avoid,Low,expansion_db,IN
+RBM Infracon Ltd,RBMINFRA,NSE,Real Estate,Real Estate Development,listed,2024-01-01,,,,,,,,,,,45.0,Avoid,Low,expansion_db,IN
+Remus Pharmaceuticals Ltd,REMUSPHARM,NSE,Healthcare,Pharmaceuticals,listed,2024-01-01,,,,,,,,,,,45.0,Avoid,Low,expansion_db,IN
+Silicon Rental Solutions,SILICON,NSE,Technology,Software,listed,2024-01-01,,,,,,,,,,,45.0,Avoid,Low,expansion_db,IN
+India Glycols Ltd,INDIAGLYCO,NSE,Basic Materials,Chemicals,listed,1995-01-01,,,,,,,,,,,45.0,Avoid,Low,expansion_db,IN
+Oracle Financial Services,OFSS,NSE,Technology,Software,listed,2003-01-01,,,,,,,,,,,44.8,Avoid,Low,expansion_db,IN
+Inox Wind Ltd,INOXWIND,NSE,Utilities,Renewable Energy,listed,2015-01-01,,,,,,,,,,,44.8,Avoid,Low,expansion_db,IN
+Sea Ltd,SE,NYSE,Technology,Internet Services,listed,2017-01-01,,,,,,,,,,,44.6,Avoid,Low,expansion_db,SG
+Commonwealth Bank of Aust.,CBA,ASX,Financial,Banks,listed,1991-01-01,,,,,,,,,,,44.6,Avoid,Low,expansion_db,AU
+Bikaji Foods International,BIKAJI,NSE,Consumer Defensive,Food,listed,2022-01-01,,,,,,,,,,,44.6,Avoid,Low,expansion_db,IN
+Jindal Stainless Ltd,JSL,NSE,Basic Materials,Steel,listed,2003-01-01,,,,,,,,,,,44.4,Avoid,Low,expansion_db,IN
+Time Technoplast Ltd,TIMETECHNO,NSE,Basic Materials,Chemicals,listed,2007-01-01,,,,,,,,,,,44.4,Avoid,Low,expansion_db,IN
+BHP Group Ltd,BHP,ASX,Basic Materials,Metals & Mining,listed,2001-01-01,,,,,,,,,,,44.4,Avoid,Low,expansion_db,AU
+Bharti Hexacom Ltd,BHARTIHEXA,NSE,Communication,Telecom,listed,2024-01-01,,,,,,,,,,,44.2,Avoid,Low,expansion_db,IN
+SKP Securities Ltd,SKPSEC,NSE,Financial,Financial Services,listed,2007-01-01,,,,,,,,,,,44.2,Avoid,Low,expansion_db,IN
+Motilal Oswal Financial,MOTILALOFS,NSE,Financial,Financial Services,listed,2006-01-01,,,,,,,,,,,44.1,Avoid,Low,expansion_db,IN
+SMS Lifesciences India Ltd,SMSLIFE,NSE,Healthcare,Pharmaceuticals,listed,2024-01-01,,,,,,,,,,,44.1,Avoid,Low,expansion_db,IN
+Bombay Burmah Trading Corp,BBTC,NSE,Consumer Defensive,Food,listed,1995-01-01,,,,,,,,,,,43.9,Avoid,Low,expansion_db,IN
+REC Ltd,RECLTD,NSE,Financial,Financial Services,listed,2007-01-01,,,,,,,,,,,43.9,Avoid,Low,expansion_db,IN
+PI Industries Ltd,PIIND,NSE,Basic Materials,Fertilizers,listed,1999-01-01,,,,,,,,,,,43.8,Avoid,Low,expansion_db,IN
+Rio Tinto Ltd,RIO,ASX,Basic Materials,Metals & Mining,listed,1962-01-01,,,,,,,,,,,43.8,Avoid,Low,expansion_db,AU
+Vani Commercials Ltd,VANICOMM,NSE,Consumer Cyclical,Trading,listed,2024-01-01,,,,,,,,,,,43.8,Avoid,Low,expansion_db,IN
+Bharat Rasayan Ltd,BHARATRAS,NSE,Basic Materials,Chemicals,listed,1995-01-01,,,,,,,,,,,43.8,Avoid,Low,expansion_db,IN
+Gateway Distripark Ltd,GDL,NSE,Industrials,Logistics,listed,2008-01-01,,,,,,,,,,,43.7,Avoid,Low,expansion_db,IN
+Dynatrace Inc.,DT,NYSE,Technology,Software,listed,2019-01-01,,,,,,,,,,,43.6,Avoid,Low,expansion_db,US
+HSBC Holdings PLC,HSBA,LSE,Financial,Banks,listed,1991-01-01,,,,,,,,,,,43.5,Avoid,Low,expansion_db,GB
+London Stock Exchange Group,LSEG,LSE,Financial,Financial Services,listed,2007-01-01,,,,,,,,,,,43.5,Avoid,Low,expansion_db,GB
+Balaji Speciality Chemicals,BALAMINES,NSE,Basic Materials,Chemicals,listed,2024-01-01,,,,,,,,,,,43.5,Avoid,Low,expansion_db,IN
+CapitaLand Investment Ltd,9CI,SGX,Real Estate,Real Estate Investment,listed,2021-01-01,,,,,,,,,,,43.3,Avoid,Low,expansion_db,SG
+Borosil Renewables Ltd,BOROSIL,NSE,Utilities,Renewable Energy,listed,2021-01-01,,,,,,,,,,,43.1,Avoid,Low,expansion_db,IN
+Transport Corp of India Ltd,TCI,NSE,Industrials,Logistics,listed,2003-01-01,,,,,,,,,,,43.1,Avoid,Low,expansion_db,IN
+Utkarsh Small Finance Bank,UTKARSHBNK,NSE,Financial,Banks,listed,2023-01-01,,,,,,,,,,,43.1,Avoid,Low,expansion_db,IN
+Birla Corp Ltd,BIRLACORPN,NSE,Basic Materials,Cement,listed,1995-01-01,,,,,,,,,,,43.1,Avoid,Low,expansion_db,IN
+RBL Bank Ltd,RBLBANK,NSE,Financial,Banks,listed,2016-01-01,,,,,,,,,,,42.8,Avoid,Low,expansion_db,IN
+Blue Star Ltd,BLUESTARCO,NSE,Consumer Cyclical,Consumer Electronics,listed,2003-01-01,,,,,,,,,,,42.7,Avoid,Low,expansion_db,IN
+Bolt Technology OU,BOLT,NYSE,Technology,Software,listed,2021-01-01,,,,,,,,,,,42.7,Avoid,Low,expansion_db,EE
+Silver Touch Technologies,SILVERTUC,NSE,Technology,Software,listed,2024-01-01,,,,,,,,,,,42.7,Avoid,Low,expansion_db,IN
+Waaree Energies Ltd,WAAREEENER,NSE,Utilities,Renewable Energy,listed,2024-01-01,,,,,,,,,,,42.6,Avoid,Low,expansion_db,IN
+J.S.W. Energy Ltd,JSWENERGY,NSE,Utilities,Electric Utilities,listed,2011-01-01,,,,,,,,,,,42.6,Avoid,Low,expansion_db,IN
+QuantumScape Corp,QS,NYSE,Consumer Cyclical,Auto Parts,listed,2020-01-01,,,,,,,,,,,42.5,Avoid,Low,expansion_db,US
+McDonald's Corporation,MCD,NYSE,Consumer Cyclical,Restaurants,listed,1965-01-01,,,,,,,,,,,42.4,Avoid,Low,expansion_db,US
+Thomas Cook India Ltd,THOMASCOOK,NSE,Consumer Cyclical,Travel Services,listed,2006-01-01,,,,,,,,,,,42.4,Avoid,Low,expansion_db,IN
+Info Edge (India) Ltd,NAUKRI,NSE,Technology,Internet Services,listed,2006-01-01,,,,,,,,,,,42.0,Avoid,Low,expansion_db,IN
+Lloyds Banking Group,LLOY,LSE,Financial,Banks,listed,1997-01-01,,,,,,,,,,,41.8,Avoid,Low,expansion_db,GB
+Teamlease Services Ltd,TEAMLEASE,NSE,Industrials,Staffing,listed,2016-01-01,,,,,,,,,,,41.7,Avoid,Low,expansion_db,IN
+Lucid Group Inc.,LCID,NASDAQ,Consumer Cyclical,Auto Manufacturers,listed,2021-01-01,,,,,,,,,,,41.3,Avoid,Low,expansion_db,US
+Singapore Airlines Ltd,C6L,SGX,Industrials,Airlines,listed,1999-01-01,,,,,,,,,,,41.2,Avoid,Low,expansion_db,SG
+Veerkrupa Jewellers Ltd,VEERKRUPA,NSE,Consumer Cyclical,Luxury Goods,listed,2024-01-01,,,,,,,,,,,41.2,Avoid,Low,expansion_db,IN
+Berkshire Hathaway Inc.,BRK.B,NYSE,Financial,Insurance,listed,1980-01-01,,,,,,,,,,,41.1,Avoid,Low,expansion_db,US
+Premier Energies Ltd,PREMIERENE,NSE,Utilities,Renewable Energy,listed,2024-01-01,,,,,,,,,,,40.8,Avoid,Low,expansion_db,IN
+Urban Enviro Waste Mgmt,URBANENVIRO,NSE,Industrials,Waste Management,listed,2024-01-01,,,,,,,,,,,40.8,Avoid,Low,expansion_db,IN
+Bharat Petroleum Corp Ltd,BPCL,NSE,Energy,Oil & Gas,listed,1995-01-01,,,,,,,,,,,40.1,Avoid,Low,expansion_db,IN
+Dixon Technologies (India),DIXON,NSE,Technology,Consumer Electronics,listed,2017-01-01,,,,,,,,,,,39.7,Avoid,Low,expansion_db,IN
+Max Financial Services,MFSL,NSE,Financial,Insurance,listed,2007-01-01,,,,,,,,,,,39.7,Avoid,Low,expansion_db,IN
+Updater Services Ltd,UDS,NSE,Industrials,Business Services,listed,2023-01-01,,,,,,,,,,,39.2,Avoid,Low,expansion_db,IN
+Blue Dart Express Ltd,BLUEDART,NSE,Industrials,Logistics,listed,2002-01-01,,,,,,,,,,,38.5,Avoid,Low,expansion_db,IN
+Univastu India Ltd,UNIVASTU,NSE,Real Estate,Real Estate Development,listed,2024-01-01,,,,,,,,,,,38.4,Avoid,Low,expansion_db,IN
+Alphabet Inc.,GOOGL,NASDAQ,Technology,Internet Services,listed,2004-01-01,,,,,,,,,,,37.3,Avoid,Low,expansion_db,US

@@ -80,50 +80,39 @@ def load_news_keys() -> dict:
 
 # ═════════════════════════════════════════════════════════════════════
 #  OPENROUTER KEY → MODEL ASSIGNMENTS
-#  (As specified by user — each key gets unique free models)
+#  (Each key gets all 18 free models)
 # ═════════════════════════════════════════════════════════════════════
 
+_ALL_MODELS = [
+    "nex-agi/nex-n2-pro:free",
+    "nvidia/nemotron-3.5-content-safety:free",
+    "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "poolside/laguna-xs.2:free",
+    "poolside/laguna-m.1:free",
+    "google/gemma-4-26b-a4b-it:free",
+    "google/gemma-4-31b-it:free",
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "liquid/lfm-2.5-1.2b-thinking:free",
+    "nvidia/nemotron-3-nano-30b-a3b:free",
+    "nvidia/nemotron-nano-12b-v2-vl:free",
+    "qwen/qwen3-next-80b-a3b-instruct:free",
+    "openai/gpt-oss-120b:free",
+    "qwen/qwen3-coder:free",
+    "meta-llama/llama-3.3-70b-instruct:free",
+    "meta-llama/llama-3.2-3b-instruct:free",
+    "nousresearch/hermes-3-llama-3.1-405b:free",
+]
+
 OPENROUTER_KEY_MODELS: Dict[int, List[str]] = {
-    1: [
-        "nex-agi/nex-n2-pro:free",
-        "nvidia/nemotron-3.5-content-safety:free",
-        "nvidia/nemotron-3-ultra-550b-a55b:free",
-    ],
-    2: [
-        "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-        "poolside/laguna-xs.2:free",
-        "poolside/laguna-m.1:free",
-    ],
-    3: [
-        "google/gemma-4-26b-a4b-it:free",
-        "google/gemma-4-31b-it:free",
-        "nvidia/nemotron-3-super-120b-a12b:free",
-    ],
-    4: [
-        "liquid/lfm-2.5-1.2b-thinking:free",
-        "nvidia/nemotron-3-nano-30b-a3b:free",
-        "nvidia/nemotron-nano-12b-v2-vl:free",
-    ],
-    5: [
-        "qwen/qwen3-next-80b-a3b-instruct:free",
-        "openai/gpt-oss-120b:free",
-        "qwen/qwen3-coder:free",
-    ],
-    6: [
-        "meta-llama/llama-3.3-70b-instruct:free",
-        "meta-llama/llama-3.2-3b-instruct:free",
-        "nousresearch/hermes-3-llama-3.1-405b:free",
-    ],
-    7: [
-        "poolside/laguna-xs.2:free",
-        "nvidia/nemotron-3-nano-12b-v2:free",
-        "liquid/lfm-2.5-1.2b-instruct:free",
-    ],
-    8: [
-        "poolside/laguna-m.1:free",
-        "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-        "google/gemma-4-26b-a4b-it:free",
-    ],
+    1: list(_ALL_MODELS),
+    2: list(_ALL_MODELS),
+    3: list(_ALL_MODELS),
+    4: list(_ALL_MODELS),
+    5: list(_ALL_MODELS),
+    6: list(_ALL_MODELS),
+    7: list(_ALL_MODELS),
+    8: list(_ALL_MODELS),
 }
 
 
