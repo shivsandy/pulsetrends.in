@@ -266,6 +266,64 @@ def scrape_table_page(url: str, label: str, columns: list, page_limit: int = 1, 
     return all_ipos
 
 
+def scrape_upcoming_detail(url: str, name: str) -> dict:
+    """Scrape IPO detail page for price band, lot size, and issue size."""
+    html = fetch_page(url)
+    if not html:
+        return {}
+    soup = BeautifulSoup(html, "html.parser")
+    data = {}
+
+    # Look for "Price Band" in the page — often in a key-value table
+    rows = soup.select("table td, div.flex div")
+    page_text = soup.get_text()
+    
+    # Try to find price band: "₹XXX - ₹XXX"
+    price_match = re.search(r'₹\s*([\d,.]+)\s*-\s*₹\s*([\d,.]+)', page_text)
+    if price_match:
+        try:
+            data["priceBandLow"] = float(price_match.group(1).replace(",", ""))
+            data["priceBandHigh"] = float(price_match.group(2).replace(",", ""))
+        except ValueError:
+            pass
+
+    # Try to find lot size
+    lot_match = re.search(r'(\d+)\s*shares\s*(?:per|/)\s*lot', page_text, re.IGNORECASE)
+    if lot_match:
+        try:
+            data["lotSize"] = int(lot_match.group(1))
+        except ValueError:
+            pass
+    else:
+        lot_match2 = re.search(r'Lot\s*Size[:\s]*(\d+)', page_text, re.IGNORECASE)
+        if lot_match2:
+            try:
+                data["lotSize"] = int(lot_match2.group(1))
+            except ValueError:
+                pass
+
+    # Try to find issue size
+    issue_match = re.search(r'(?:Issue\s*(?:Size|Amount)|Total\s*Issue)[:\s]*₹?\s*([\d,.]+)\s*(Cr|Crore)', page_text, re.IGNORECASE)
+    if issue_match:
+        try:
+            val = float(issue_match.group(1).replace(",", ""))
+            data["issueSize"] = f"₹{val:.0f} Cr"
+        except ValueError:
+            pass
+    
+    # Try "Fresh Issue" / "OFS" total
+    if not data.get("issueSize"):
+        total_match = re.search(r'(?:Total|Issue\s*Size)[:\s]*₹?\s*([\d,.]+)\s*(Cr|Crore)', page_text, re.IGNORECASE)
+        if total_match:
+            try:
+                val = float(total_match.group(1).replace(",", ""))
+                data["issueSize"] = f"₹{val:.0f} Cr"
+            except ValueError:
+                pass
+
+    return data
+
+
 def scrape_upcoming_ipos() -> list:
     """Scrape upcoming IPOs from /ipo/."""
     print("\n[Upcoming] Scraping https://www.screener.in/ipo/ ...")
@@ -277,6 +335,22 @@ def scrape_upcoming_ipos() -> list:
     )
     for ipo in ipos:
         ipo["status"] = "upcoming"
+        # Scrape detail page for price band, lot size, issue size
+        detail_url = ipo.get("source_url", "")
+        if detail_url:
+            print(f"  [Detail] Scraping {ipo['name']}...")
+            detail = scrape_upcoming_detail(detail_url, ipo["name"])
+            if detail.get("priceBandLow"):
+                ipo["priceBandLow"] = detail["priceBandLow"]
+                ipo["priceBandHigh"] = detail["priceBandHigh"]
+                print(f"    Price: ₹{detail['priceBandLow']} - ₹{detail['priceBandHigh']}")
+            if detail.get("lotSize"):
+                ipo["lotSize"] = detail["lotSize"]
+                print(f"    Lot: {detail['lotSize']}")
+            if detail.get("issueSize"):
+                ipo["issueSize"] = detail["issueSize"]
+                print(f"    Issue: {detail['issueSize']}")
+            time.sleep(1.5)
     print(f"[Upcoming] Found {len(ipos)} IPOs")
     return ipos
 
@@ -386,6 +460,16 @@ def map_to_ipo_data_format(upcoming: list, recent: list, below_price: list, righ
 
     for ipo_list, category in [(recent, "recent"), (below_price, "below_price"), (rights, "rights")]:
         for ipo in ipo_list:
+            ipo_price_raw = ipo.get("ipoPrice") or ""
+            ipo_price_num = 0
+            if ipo_price_raw:
+                # Strip ₹ and other chars
+                clean = re.sub(r'[₹,\s]', '', str(ipo_price_raw))
+                try:
+                    ipo_price_num = float(clean)
+                except (ValueError, TypeError):
+                    pass
+
             entry = {
                 "id": f"screener-{category}-{_slugify(ipo['name'])}",
                 "name": ipo["name"],
@@ -400,8 +484,8 @@ def map_to_ipo_data_format(upcoming: list, recent: list, below_price: list, righ
                 "listingDate": ipo.get("listingDate", ""),
                 "description": f"{ipo['name']} - Listed on {ipo.get('listingDate', 'N/A')}",
                 "about": "",
-                "priceBandHigh": 0,
-                "priceBandLow": 0,
+                "priceBandHigh": ipo_price_num,
+                "priceBandLow": ipo_price_num,
                 "lotSize": 0,
                 "issueSize": "",
                 "marketCap": ipo.get("ipoMcap") or ipo.get("marketCap") or 0,
@@ -413,7 +497,7 @@ def map_to_ipo_data_format(upcoming: list, recent: list, below_price: list, righ
                 "source_url": ipo.get("source_url", ""),
                 "source_category": category,
                 "fiscalMetrics": {
-                    "ipoPrice": ipo.get("ipoPrice"),
+                    "ipoPrice": ipo_price_raw,
                     "currentPrice": ipo.get("currentPrice"),
                     "exDate": ipo.get("exDate", ""),
                     "rightsRatio": ipo.get("rightsRatio", ""),
