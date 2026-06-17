@@ -139,6 +139,34 @@ def _slugify_company(name):
     return s[:80]
 
 
+
+def _extract_comp_analysis(comp_entry: dict) -> dict:
+    """Extract detailed analysis fields from comprehensive analysis entry."""
+    if not isinstance(comp_entry, dict):
+        return {}
+    return {
+        "executive_summary": comp_entry.get("executive_summary", ""),
+        "business_overview": comp_entry.get("business_overview", ""),
+        "industry_analysis": comp_entry.get("industry_analysis", ""),
+        "financial_analysis": comp_entry.get("financial_analysis", ""),
+        "balance_sheet_analysis": comp_entry.get("balance_sheet_analysis", ""),
+        "cash_flow_analysis": comp_entry.get("cash_flow_analysis", ""),
+        "ipo_details": comp_entry.get("ipo_details", ""),
+        "valuation_analysis": comp_entry.get("valuation_analysis", ""),
+        "management_quality": comp_entry.get("management_quality", ""),
+        "risk_assessment": comp_entry.get("risk_assessment", ""),
+        "strengths_weaknesses": comp_entry.get("strengths_weaknesses", ""),
+        "market_sentiment": comp_entry.get("market_sentiment", ""),
+        "final_verdict": comp_entry.get("final_verdict", ""),
+        "red_flags": comp_entry.get("red_flags", []),
+        "positive_catalysts": comp_entry.get("positive_catalysts", []),
+        "long_term_rating": comp_entry.get("long_term_rating", ""),
+        "subscription_recommendation": comp_entry.get("subscription_recommendation", ""),
+        "scorecard_categories": comp_entry.get("section_20_scorecard", {}).get("categories", []),
+        "scorecard_total": comp_entry.get("section_20_scorecard", {}).get("total_score", 0),
+        "scorecard_interpretation": comp_entry.get("section_20_scorecard", {}).get("interpretation", ""),
+    }
+
 def generate_ipo_data():
     new_path = os.path.join(DATA_DIR, "ipo_data.json")
     legacy_path = os.path.join(DATA_DIR, "ipos.json")
@@ -227,6 +255,26 @@ def generate_ipo_data():
     lines.append('  aiVerdict: string;')
     lines.append('  aiRating?: string;')
     lines.append('  aiRatingScore?: number;')
+    lines.append('  executiveSummary?: string;')
+    lines.append('  businessOverview?: string;')
+    lines.append('  industryAnalysis?: string;')
+    lines.append('  financialAnalysis?: string;')
+    lines.append('  balanceSheetAnalysis?: string;')
+    lines.append('  cashFlowAnalysis?: string;')
+    lines.append('  ipoDetails?: string;')
+    lines.append('  valuationAnalysis?: string;')
+    lines.append('  managementQuality?: string;')
+    lines.append('  riskAssessment?: string;')
+    lines.append('  strengthsWeaknesses?: string;')
+    lines.append('  marketSentiment?: string;')
+    lines.append('  finalVerdict?: string;')
+    lines.append('  redFlags?: string[];')
+    lines.append('  positiveCatalysts?: string[];')
+    lines.append('  scorecardCategories?: { key: string; label: string; score: number }[];')
+    lines.append('  scorecardTotalScore?: number;')
+    lines.append('  scorecardInterpretation?: string;')
+    lines.append('  longTermRating?: string;')
+    lines.append('  subscriptionRecommendation?: string;')
     lines.append('}')
     lines.append('')
     lines.append('export const ipoStocks: IPOStock[] = [')
@@ -405,6 +453,7 @@ def generate_ipo_data():
         # Try comprehensive analysis scores first, fall back to ipo_analysis.json
         comp_slug = f"{_slugify_company(name)}-{i + 1}"
         comp_entry = comp_analysis.get(comp_slug, {})
+        comp_entry_data = _extract_comp_analysis(comp_entry) if isinstance(comp_entry, dict) else {}
         comp_scores = comp_entry.get('investment_verdict', {}).get('scores', {}) if isinstance(comp_entry, dict) else {}
 
         if comp_scores and isinstance(comp_scores, dict):
@@ -449,6 +498,60 @@ def generate_ipo_data():
                 lines.append(f'    aiRatingScore: {float(ai_rating_score)},')
             except (ValueError, TypeError):
                 pass
+
+        # Write comprehensive analysis detail fields if available
+        if comp_entry_data.get('executive_summary'):
+            lines.append(f'    executiveSummary: "{esc(comp_entry_data["executive_summary"])}",')
+        if comp_entry_data.get('business_overview'):
+            lines.append(f'    businessOverview: "{esc(comp_entry_data["business_overview"])}",')
+        if comp_entry_data.get('industry_analysis'):
+            lines.append(f'    industryAnalysis: "{esc(comp_entry_data["industry_analysis"])}",')
+        if comp_entry_data.get('financial_analysis'):
+            lines.append(f'    financialAnalysis: "{esc(comp_entry_data["financial_analysis"])}",')
+        if comp_entry_data.get('balance_sheet_analysis'):
+            lines.append(f'    balanceSheetAnalysis: "{esc(comp_entry_data["balance_sheet_analysis"])}",')
+        if comp_entry_data.get('cash_flow_analysis'):
+            lines.append(f'    cashFlowAnalysis: "{esc(comp_entry_data["cash_flow_analysis"])}",')
+        if comp_entry_data.get('ipo_details'):
+            lines.append(f'    ipoDetails: "{esc(comp_entry_data["ipo_details"])}",')
+        if comp_entry_data.get('valuation_analysis'):
+            lines.append(f'    valuationAnalysis: "{esc(comp_entry_data["valuation_analysis"])}",')
+        if comp_entry_data.get('management_quality'):
+            lines.append(f'    managementQuality: "{esc(comp_entry_data["management_quality"])}",')
+        if comp_entry_data.get('risk_assessment'):
+            lines.append(f'    riskAssessment: "{esc(comp_entry_data["risk_assessment"])}",')
+        if comp_entry_data.get('strengths_weaknesses'):
+            lines.append(f'    strengthsWeaknesses: "{esc(comp_entry_data["strengths_weaknesses"])}",')
+        if comp_entry_data.get('market_sentiment'):
+            lines.append(f'    marketSentiment: "{esc(comp_entry_data["market_sentiment"])}",')
+        if comp_entry_data.get('final_verdict'):
+            lines.append(f'    finalVerdict: "{esc(comp_entry_data["final_verdict"])}",')
+        rf_list = comp_entry_data.get('red_flags', [])
+        if rf_list:
+            rf_str = ', '.join([f'"{esc(r)}"' for r in rf_list[:10]])
+            lines.append(f'    redFlags: [{rf_str}],')
+        pc_list = comp_entry_data.get('positive_catalysts', [])
+        if pc_list:
+            pc_str = ', '.join([f'"{esc(p)}"' for p in pc_list[:10]])
+            lines.append(f'    positiveCatalysts: [{pc_str}],')
+        if comp_entry_data.get('long_term_rating'):
+            lines.append(f'    longTermRating: "{esc(comp_entry_data["long_term_rating"])}",')
+        if comp_entry_data.get('subscription_recommendation'):
+            lines.append(f'    subscriptionRecommendation: "{esc(comp_entry_data["subscription_recommendation"])}",')
+        if comp_entry_data.get('scorecard_categories'):
+            cats = comp_entry_data['scorecard_categories']
+            cat_lines = []
+            for cat in cats[:6]:
+                if isinstance(cat, dict):
+                    cat_lines.append(f'{{key: "{esc(cat.get("key",""))}", label: "{esc(cat.get("label",""))}", score: {cat.get("score",0)}}}')
+            if cat_lines:
+                cats_str = ', '.join(cat_lines)
+                lines.append(f'    scorecardCategories: [{cats_str}],')
+        if comp_entry_data.get('scorecard_total'):
+            lines.append(f'    scorecardTotalScore: {comp_entry_data["scorecard_total"]},')
+        if comp_entry_data.get('scorecard_interpretation'):
+            lines.append(f'    scorecardInterpretation: "{esc(comp_entry_data["scorecard_interpretation"])}",')
+
         lines.append('  },')
 
         if (i + 1) % 20 == 0:

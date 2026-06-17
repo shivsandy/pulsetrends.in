@@ -58,6 +58,26 @@ export interface IPOStock {
   aiVerdict: string;
   aiRating?: string;
   aiRatingScore?: number;
+  executiveSummary?: string;
+  businessOverview?: string;
+  industryAnalysis?: string;
+  financialAnalysis?: string;
+  balanceSheetAnalysis?: string;
+  cashFlowAnalysis?: string;
+  ipoDetails?: string;
+  valuationAnalysis?: string;
+  managementQuality?: string;
+  riskAssessment?: string;
+  strengthsWeaknesses?: string;
+  marketSentiment?: string;
+  finalVerdict?: string;
+  redFlags?: string[];
+  positiveCatalysts?: string[];
+  scorecardCategories?: { key: string; label: string; score: number }[];
+  scorecardTotalScore?: number;
+  scorecardInterpretation?: string;
+  longTermRating?: string;
+  subscriptionRecommendation?: string;
 }
 
 export const ipoStocks: IPOStock[] = [
