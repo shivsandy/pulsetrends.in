@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { Search, SlidersHorizontal, Newspaper, TrendingUp, TrendingDown, Minus, Brain, Clock, Zap, ListChecks, CalendarDays, ChevronLeft, ChevronRight, Trophy, Film, Monitor, BarChart3, AlertTriangle, Globe, type LucideIcon } from 'lucide-react';
+import { Search, SlidersHorizontal, Newspaper, TrendingUp, TrendingDown, Minus, Brain, Clock, Zap, ListChecks, CalendarDays, ChevronLeft, ChevronRight, type LucideIcon } from 'lucide-react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { newsArticles, type NewsArticle } from '../data/newsData';
 import Badge from '../components/Badge';

@@ -4,7 +4,7 @@ import PageSeo from '../../components/PageSeo';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import { SITE } from '../../seo/config';
 import { faqPageSchema } from '../../seo/schema';
-import { TOPIC_CONFIGS, type TopicConfig } from './topicsConfig';
+import { type TopicConfig } from './topicsConfig';
 
 export default function PillarPage({ config }: { config: TopicConfig }) {
   const path = `/learn/${config.slug}`;
@@ -40,7 +40,7 @@ export default function PillarPage({ config }: { config: TopicConfig }) {
                 },
                 mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE.origin}${path}` },
               },
-              ...(config.faqs.length > 0 ? [faqPageSchema(config.faqs)] : []),
+              ...(config.faqs.length > 0 ? [faqPageSchema(config.faqs.map(f => ({ question: f.q, answer: f.a })))] : []),
             ],
           },
         }}

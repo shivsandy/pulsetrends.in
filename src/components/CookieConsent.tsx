@@ -11,8 +11,6 @@ interface CookiePrefs {
   marketing: boolean;
 }
 
-const GA_MEASUREMENT_ID = 'G-SC8VSW3D32';
-
 function setGAConsent(enabled: boolean) {
   if (typeof window === 'undefined' || !window.gtag) return;
   window.gtag('consent', 'update', {

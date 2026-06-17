@@ -165,8 +165,8 @@ export default function AuthorPage() {
             <p className="text-[13px] text-surface-600">No articles published yet.</p>
           ) : (
             <div className="space-y-3">
-              {authorArticles.map((article, i) => (
-                <AuthorArticleCard key={article.id} article={article} index={i} />
+              {authorArticles.map((article) => (
+                <AuthorArticleCard key={article.id} article={article} />
               ))}
             </div>
           )}
@@ -176,7 +176,7 @@ export default function AuthorPage() {
   );
 }
 
-function AuthorArticleCard({ article, index }: { article: NewsArticle; index: number }) {
+function AuthorArticleCard({ article }: { article: NewsArticle }) {
   const slug = getArticleSlug(article);
   const categoryIcon = article.category === 'crypto' ? <Coins className="w-3.5 h-3.5" /> :
     article.category === 'ipo' ? <TrendingUp className="w-3.5 h-3.5" /> :

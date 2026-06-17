@@ -1,5 +1,4 @@
 import { SITE, canonical } from './config';
-import type { IPOStock } from '../data/ipoData';
 
 export type JsonLd = Record<string, unknown> | Record<string, unknown>[];
 

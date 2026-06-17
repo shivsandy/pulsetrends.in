@@ -18,23 +18,6 @@ interface PerformanceChartProps {
   mode?: 'absolute' | 'return';
 }
 
-function generateSmoothPath(points: { x: number; y: number }[]): string {
-  if (points.length === 0) return '';
-  if (points.length === 1) return `M ${points[0].x},${points[0].y}`;
-  let d = `M ${points[0].x},${points[0].y}`;
-  for (let i = 1; i < points.length - 1; i++) {
-    const p0 = points[i - 1];
-    const p1 = points[i];
-    const p2 = points[i + 1];
-    const cp1x = p1.x - (p2.x - p0.x) * 0.15;
-    const cp1y = p1.y - (p2.y - p0.y) * 0.15;
-    const cp2x = p1.x + (p2.x - p0.x) * 0.15;
-    const cp2y = p1.y + (p2.y - p0.y) * 0.15;
-    d += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${p2.x},${p2.y}`;
-  }
-  return d;
-}
-
 function intersectX(p1: { x: number; y: number }, p2: { x: number; y: number }, baselineY: number): number | null {
   if (p1.y === p2.y) return null;
   if ((p1.y < baselineY && p2.y < baselineY) || (p1.y > baselineY && p2.y > baselineY)) return null;
