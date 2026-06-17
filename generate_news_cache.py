@@ -43,6 +43,11 @@ def archive_articles(articles: list):
 
 
 def is_cache_fresh() -> bool:
+    # In CI (GitHub Actions), the file's mtime reflects checkout time, not actual age.
+    # Always refresh on CI to avoid getting stuck with stale news forever.
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        print("[NewsCache] CI environment detected — forcing refresh")
+        return False
     if not NEWS_CACHE_FILE.exists():
         return False
     try:
