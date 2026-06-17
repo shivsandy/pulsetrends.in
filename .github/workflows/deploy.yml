@@ -54,8 +54,14 @@ jobs:
           UNSPLASH_ACCESS_KEY_3: ${{ secrets.UNSPLASH_ACCESS_KEY_3 }}
         run: python generate_news_cache.py
 
+      - name: Scrape screener.in for new IPOs
+        run: python scripts/scrape_screener_ipo.py
+
       - name: Check IPO availability (auto-close past-date IPOs)
         run: python scripts/check_ipo_availability.py
+
+      - name: Generate 44-section institutional IPO analysis
+        run: python scripts/generate_ipo_analysis_44.py --force
 
       - name: Generate TypeScript data files
         env:
