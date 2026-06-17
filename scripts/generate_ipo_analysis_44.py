@@ -98,6 +98,92 @@ def render_table(headers, rows):
         lines.append("| " + " | ".join(cells) + " |")
     return "\n".join(lines)
 
+def compute_screener_scores(ipo, financial_data):
+    """Derive AI scores from available screener.in data fields."""
+    fm = ipo.get("fiscalMetrics", {}) or {}
+    pe = safe_num(fm.get("pe"))
+    roce_raw = safe_str(fm.get("roce", ""))
+    mcap = safe_num(ipo.get("marketCap", 0))
+    gmp = safe_num(ipo.get("gmp", 0))
+    status = safe_str(ipo.get("status", "listed"))
+    sector = safe_str(ipo.get("sector", "mainboard"))
+    is_upcoming = status in ("upcoming",)
+
+    roce = 0
+    if roce_raw:
+        try: roce = float(str(roce_raw).replace("%", "").strip())
+        except: roce = 0
+
+    fs_base = 50
+    if pe and pe > 0:
+        if pe < 10: fs_base += 20
+        elif pe < 20: fs_base += 15
+        elif pe < 30: fs_base += 10
+        elif pe < 50: fs_base += 5
+    if roce and roce > 0:
+        if roce > 30: fs_base += 20
+        elif roce > 20: fs_base += 15
+        elif roce > 10: fs_base += 10
+        elif roce > 0: fs_base += 5
+    elif roce < 0:
+        fs_base -= 10
+    if mcap and mcap > 500:
+        fs_base += min(10, int(mcap / 500))
+    fs_val = min(95, max(30, fs_base))
+
+    demand_base = 50
+    if gmp and gmp > 0:
+        if gmp > 100: demand_base += 25
+        elif gmp > 50: demand_base += 20
+        elif gmp > 20: demand_base += 15
+        elif gmp > 10: demand_base += 10
+        else: demand_base += 5
+    if is_upcoming:
+        demand_base += 10
+    if any(h in sector.lower() for h in ["fintech","technology","software","e-commerce","biotech","renewable"]):
+        demand_base += 5
+    demand_val = min(95, max(30, demand_base))
+
+    val_base = 50
+    if pe and pe > 0:
+        if pe < 10: val_base += 20
+        elif pe < 20: val_base += 10
+        elif pe < 30: val_base = 50
+        elif pe < 50: val_base -= 10
+        else: val_base -= 20
+    if roce and roce > 15:
+        val_base += 5
+    val_val = min(90, max(30, val_base))
+
+    risk_base = 55
+    if roce and roce > 0:
+        if roce > 20: risk_base += 15
+        elif roce > 10: risk_base += 10
+        else: risk_base += 5
+    if pe and pe > 0 and pe < 50:
+        risk_base += 5
+    if mcap and mcap > 100:
+        risk_base += 5
+    risk_val = min(90, max(30, risk_base))
+
+    bq_base = 50
+    if roce and roce > 0:
+        if roce > 30: bq_base += 20
+        elif roce > 20: bq_base += 15
+        elif roce > 10: bq_base += 10
+        else: bq_base += 5
+    if mcap and mcap > 1000: bq_base += 15
+    elif mcap and mcap > 500: bq_base += 10
+    elif mcap and mcap > 100: bq_base += 5
+    if any(h in sector.lower() for h in ["fintech","technology","software","e-commerce","biotech","renewable","healthcare"]):
+        bq_base += 10
+    bq_val = min(95, max(30, bq_base))
+
+    overall = int((fs_val * 0.30 + demand_val * 0.15 + val_val * 0.15 + risk_val * 0.15 + bq_val * 0.25))
+    return {"overall": overall, "fs": fs_val, "demand": demand_val, "val": val_val, "risk": risk_val, "bq": bq_val,
+            "pe": pe, "roce_raw": roce_raw, "mcap": mcap, "roce": roce}
+
+
 def generate_44_section_entry(ipo, financial_data, master, slug):
     """Generate a comprehensive 44-section entry for one IPO."""
     name = ipo.get("name", "Unknown")
@@ -125,24 +211,46 @@ def generate_44_section_entry(ipo, financial_data, master, slug):
     is_upcoming = status in ("upcoming",)
     is_open = status in ("open",)
 
-    # AI Scores from master DB
-    ai_score = safe_num(master.get("ai_score"), default=55)
-    ai_rating = safe_str(master.get("ai_rating"), default="Average")
-    sb = master.get("score_breakdown", {}) or {}
-    fs_val = safe_num(sb.get("fundamentals"), 50)
-    demand_val = safe_num(sb.get("ipo_demand"), 50)
-    val_val = safe_num(sb.get("valuation"), 50)
-    risk_val = safe_num(sb.get("governance"), 55)
-    bq_val = safe_num(sb.get("business_quality"), 50)
+    # AI Scores derived from screener data (master DB names don't overlap with screener)
+    scores = compute_screener_scores(ipo, financial_data)
+    overall = scores["overall"]
+    fs_val = scores["fs"]
+    demand_val = scores["demand"]
+    val_val = scores["val"]
+    risk_val = scores["risk"]
+    bq_val = scores["bq"]
+    pe = scores.get("pe")
+    roce_raw = scores.get("roce_raw", "")
+    roce = scores.get("roce", 0)
+    ai_rating = score_rating(overall) if overall >= 50 else ("Average" if overall >= 50 else "Avoid")
 
-    bull = master.get("bull_case", []) or []
-    bear = master.get("bear_case", []) or []
-    risks = master.get("risk_factors", []) or []
-    flags = master.get("red_flags", []) or []
-    thesis = safe_str(master.get("investment_thesis", ""))
-    summary = safe_str(master.get("ipo_summary", ""))
-    overall = ai_score
-
+    # Generate bull/bear/risks from screener data
+    risks_screener = []
+    if fs_val < 50: risks_screener.append("Below-average financial fundamentals")
+    if val_val > 70: risks_screener.append("Elevated valuation relative to sector norms")
+    if bq_val < 50: risks_screener.append("Weak business quality indicators")
+    if demand_val < 40: risks_screener.append("Limited market demand and subscription interest")
+    if not risks_screener: risks_screener = ["General market and economic conditions", "Sector-specific headwinds"]
+    bull_screener = []
+    if bq_val >= 65: bull_screener.append(f"Strong business quality score ({bq_val:.0f}/100) indicates operational efficiency")
+    if fs_val >= 65: bull_screener.append(f"Healthy financial fundamentals ({fs_val:.0f}/100) support growth prospects")
+    if is_upcoming: bull_screener.append(f"Upcoming IPO with potential listing gains in the {sector} sector")
+    if not bull_screener: bull_screener.append(f"Positioned in the {sector} sector with defined market opportunity")
+    bear_screener = []
+    if not pe: bear_screener.append("Limited PE data — financial transparency needs monitoring")
+    if not roce_raw: bear_screener.append("Limited profitability data available for deep analysis")
+    if gmp == 0 and is_upcoming: bear_screener.append("No grey market premium indicates muted market interest")
+    if not bear_screener: bear_screener.append("Competitive pressure from established market players")
+    flags_screener = []
+    if roce and roce < 5: flags_screener.append("Low or negative ROCE — capital efficiency concern")
+    if not pe: flags_screener.append("No PE data available — likely early-stage or limited profitability")
+    bull = bull_screener
+    bear = bear_screener
+    risks = risks_screener
+    flags = flags_screener
+    mcap_num = safe_num(ipo.get("marketCap", 0))
+    if mcap_num and mcap_num < 50: flags.append("Small market cap increases volatility risk")
+    thesis = f"{name} IPO: {score_label(overall)} scores indicate {score_rating(overall)} recommendation."
     growth_label = "High" if any(h.lower() in sector.lower() for h in ["technology","software","fintech","biotech","renewable","e-commerce","healthcare"]) else "Moderate"
 
     if price_high and price_low:
