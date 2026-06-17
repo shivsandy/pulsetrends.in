@@ -60,4 +60,5 @@ export interface IPOStock {
   aiRatingScore?: number;
 }
 
-export const ipoStocks: IPOStock[] = [];
+export const ipoStocks: IPOStock[] = [
+];
