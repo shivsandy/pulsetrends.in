@@ -286,6 +286,13 @@ export default function IPODetailPage() {
           content={stock.cashFlowAnalysis}
         />
 
+        {/* RATIO ANALYSIS */}
+        <AnalysisSection
+          title="Key Financial Ratios"
+          icon={<Activity className="w-4 h-4 text-violet-400" />}
+          content={stock.ratioAnalysis}
+        />
+
         {/* IPO DETAILS */}
         <AnalysisSection
           title="IPO Details"

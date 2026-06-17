@@ -162,6 +162,39 @@ export function getMetaForPath(pathname: string): PageMeta {
   if (clean === '/privacy-policy') return ROUTES.privacy;
   if (clean === '/terms') return ROUTES.terms;
   if (clean === '/cookies') return ROUTES.cookies;
+  if (clean === '/learn') {
+    return {
+      path: clean,
+      title: `Learn - IPO, Crypto & Market Guides | ${SITE.name}`,
+      description: `Master investing with ${SITE.name}'s learning hub — crypto basics, IPO guides, blockchain explained, and market intelligence for modern investors.`,
+      ogType: 'website',
+      ogImage: DEFAULT_OG,
+    };
+  }
+  if (clean.startsWith('/learn/')) {
+    const topic = clean.replace('/learn/', '').replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+    return {
+      path: clean,
+      title: topic ? `${topic} Guide | ${SITE.name} Learn` : `Learn | ${SITE.name}`,
+      description: topic
+        ? `Learn about ${topic} — comprehensive guide from ${SITE.name}'s educational hub covering fundamentals, strategies, and market insights.`
+        : `${SITE.name} educational guides on investing, crypto, and markets.`,
+      ogType: 'article',
+      ogImage: DEFAULT_OG,
+    };
+  }
+  if (clean.startsWith('/author/')) {
+    const author = clean.replace('/author/', '').replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+    return {
+      path: clean,
+      title: author ? `${author} — Author | ${SITE.name}` : `Author | ${SITE.name}`,
+      description: author
+        ? `Articles and analysis by ${author} on ${SITE.name} — IPO research, crypto insights, and market intelligence.`
+        : `${SITE.name} author profile and articles.`,
+      ogType: 'profile',
+      ogImage: DEFAULT_OG,
+    };
+  }
   return {
     path: clean,
     title: `Page Not Found | ${SITE.name}`,

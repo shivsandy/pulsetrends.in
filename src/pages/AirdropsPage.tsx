@@ -371,7 +371,7 @@ export default function AirdropsPage() {
           <div className="text-center py-16 border border-surface-300/40 rounded-xl bg-surface-50">
             <h1 className="text-xl font-semibold text-surface-white">Airdrop Not Found</h1>
             <p className="text-[14px] text-surface-600 mt-2">This airdrop is not in our database.</p>
-            <Link to="/airdrops" className="inline-block mt-4 px-4 py-2 bg-brand text-white text-[13px] font-medium rounded-md hover:bg-brand-hover">Browse all airdrops</Link>
+            <Link to="/airdrops" className="inline-block mt-4 px-4 py-2 bg-brand text-white text-[13px] font-medium rounded-md hover:bg-brand-dark">Browse all airdrops</Link>
           </div>
         </>
       );
