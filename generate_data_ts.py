@@ -82,10 +82,17 @@ def esc(s):
         return ""
     if isinstance(s, (int, float)):
         return str(s)
-    if not isinstance(s, str):
-        return str(s)
-    val = json.dumps(s, ensure_ascii=False)[1:-1]
-    # Escape single quotes used in TS strings
+    # Get JSON representation (properly escapes special chars for each type)
+    val = json.dumps(s, ensure_ascii=False)
+    # For strings, strip the outer JSON quotes (they are just delimiters)
+    if isinstance(s, str):
+        val = val[1:-1]
+    else:
+        # For dicts/lists, the JSON output contains structural double quotes
+        # that need escaping for the TypeScript double-quoted template.
+        # Escape backslashes first, then double quotes.
+        val = val.replace("\\", "\\\\").replace('"', '\\"')
+    # Escape single quotes for TypeScript single-quoted templates
     val = val.replace("\\'", "'").replace("'", "\\'")
     return val
 
