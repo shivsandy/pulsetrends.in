@@ -158,8 +158,8 @@ if len(to_remove) == 0:
 # ── Keep articles not in removal set ─────────────────────────────────
 kept_entries = [a for a in article_entries if a["id"] not in remove_ids]
 
-# Safety: keep at least 1 article
-if len(kept_entries) == 0:
+# Safety: keep at least 1 article (bypass when MAX_AGE_DAYS=0 for full wipe)
+if len(kept_entries) == 0 and MAX_AGE_DAYS != 0:
     print("ERROR: Would remove ALL articles. Aborting to keep at least 1.")
     sys.exit(1)
 
