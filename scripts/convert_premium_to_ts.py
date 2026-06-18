@@ -296,7 +296,7 @@ def convert_article(a: dict) -> str:
     lines.append(f'    imageAltText: {js_str(image_alt_text)},')
     lines.append(f'    imageCaption: {js_str(image_caption)},')
     lines.append(f'    publishedAt: {js_str(published_at)},')
-    lines.append("  }")
+    lines.append("  },")
     return "\n".join(lines)
 
 
