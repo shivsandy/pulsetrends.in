@@ -122,14 +122,32 @@ function buildSitemap(routes) {
 function buildNewsSitemap() {
   const articles = extractArticlesFromTs(resolve('src/data/newsData.ts'));
   const now = new Date();
-  const fortyEightHoursAgo = new Date(now.getTime() - 48 * 60 * 60 * 1000);
   const today = now.toISOString().split('T')[0];
-  const recentArticles = articles.filter((a) => {
-    if (!a.publishedAt) return false;
-    const pubDate = new Date(a.publishedAt);
-    return pubDate >= fortyEightHoursAgo;
-  });
-  console.log(`[postbuild] News sitemap: ${recentArticles.length}/${articles.length} articles from last 48 hours`);
+  // Try 48h window first (Google News requirement), fall back to 7 days if empty
+  const windows = [48, 72, 168]; // hours: 48h, 72h, 7 days
+  let recentArticles = [];
+  let usedWindow = 0;
+  for (const hours of windows) {
+    const cutoff = new Date(now.getTime() - hours * 60 * 60 * 1000);
+    recentArticles = articles.filter((a) => {
+      if (!a.publishedAt) return false;
+      const pubDate = new Date(a.publishedAt);
+      return pubDate >= cutoff;
+    });
+    if (recentArticles.length > 0) {
+      usedWindow = hours;
+      break;
+    }
+  }
+  // Absolute fallback: include all articles if all windows empty
+  if (recentArticles.length === 0 && articles.length > 0) {
+    recentArticles = [...articles];
+    usedWindow = -1;
+  }
+  if (usedWindow > 48) {
+    console.warn(`[postbuild] WARNING: news-sitemap includes articles older than 48h (window: ${usedWindow > 0 ? usedWindow + 'h' : 'all'}). Google News requires articles within 48h.`);
+  }
+  console.log(`[postbuild] News sitemap: ${recentArticles.length}/${articles.length} articles (window: ${usedWindow > 0 ? usedWindow + 'h' : usedWindow === -1 ? 'all' : 'none'})`);
   const urls = recentArticles
     .map((a) => {
       const slug = `${slugify(a.headline)}-${a.id}`;
