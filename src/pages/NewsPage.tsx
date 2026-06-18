@@ -262,21 +262,23 @@ export default function NewsPage() {
   const articles = newsArticles;
 
   const filtered = useMemo(() => {
-    return articles.filter((news) => {
-      const q = searchQuery.toLowerCase();
-      const matchesSearch = !q || [
-        news.headline,
-        news.subheadline,
-        news.category,
-        news.primaryKeyword,
-        ...(news.secondaryKeywords || []),
-        ...(news.relatedCoins || []),
-        ...(news.relatedStocks || []),
-      ].join(' ').toLowerCase().includes(q);
-      const matchesCategory = categoryFilter === 'all' || news.category === categoryFilter;
-      const matchesSentiment = sentimentFilter === 'all' || news.sentiment === sentimentFilter;
-      return matchesSearch && matchesCategory && matchesSentiment;
-    });
+    return articles
+      .filter((news) => {
+        const q = searchQuery.toLowerCase();
+        const matchesSearch = !q || [
+          news.headline,
+          news.subheadline,
+          news.category,
+          news.primaryKeyword,
+          ...(news.secondaryKeywords || []),
+          ...(news.relatedCoins || []),
+          ...(news.relatedStocks || []),
+        ].join(' ').toLowerCase().includes(q);
+        const matchesCategory = categoryFilter === 'all' || news.category === categoryFilter;
+        const matchesSentiment = sentimentFilter === 'all' || news.sentiment === sentimentFilter;
+        return matchesSearch && matchesCategory && matchesSentiment;
+      })
+      .sort((a, b) => new Date(b.publishedAt || 0).getTime() - new Date(a.publishedAt || 0).getTime());
   }, [articles, searchQuery, categoryFilter, sentimentFilter]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE));
