@@ -1015,6 +1015,19 @@ Return ONLY valid JSON. No markdown. No code fences. No commentary.
                 article.setdefault("key_takeaways", [])
                 article.setdefault("publishedAt", now_iso())
 
+                # Fetch real, content-relevant images from Unsplash
+                print(f"  → Fetching images for '{article.get('headline', '')[:50]}...'")
+                article_images = fetch_unsplash_images(
+                    article.get("headline", topic_name),
+                    category=article.get("category", category),
+                    count=4,
+                )
+                article["images"] = article_images
+                if article_images:
+                    print(f"    ✓ {len(article_images)} images fetched")
+                else:
+                    print(f"    ⚠ No images fetched (Unsplash keys may be missing)")
+
                 # Normalize fields for spec compliance
                 slug_val = article.get("slug", slugify(article.get("headline", "")))
                 article.setdefault("canonical_url", f"https://pulsetrends.in/news/{slug_val}")
@@ -1054,6 +1067,131 @@ Return ONLY valid JSON. No markdown. No code fences. No commentary.
 
     print(f"  ✗ Failed to generate article for '{topic_name}'")
     return None
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  SECTION 7B — UNSPLASH IMAGE FETCHING
+# ═══════════════════════════════════════════════════════════════════════
+
+UNSPLASH_QUERY_MAP = {
+    "crypto": ["cryptocurrency bitcoin ethereum", "blockchain digital assets defi", "crypto trading exchange", "bitcoin ethereum price chart", "digital finance crypto wallet"],
+    "ipo": ["ipo stock market listing", "initial public offering trading", "wall street trading floor", "stock exchange building", "investment banking finance"],
+    "stocks": ["stock market charts data", "wall street trading screen", "financial charts data analytics", "trading desk monitors"],
+    "trending": ["breaking news live update", "global news event", "world news today"],
+    "technology": ["ai artificial intelligence tech", "robot future technology", "computer code screen"],
+    "sports": ["sports stadium action", "athlete competition", "football cricket match"],
+    "entertainment": ["movie premiere red carpet", "concert music festival", "celebrity event stage"],
+    "economy": ["stock market trading", "global economy finance", "money business growth"],
+    "general": ["world news global", "people city street", "current events today"],
+}
+
+USED_IMAGES_FILE = DATA_DIR / "used_news_images.json"
+
+
+def _load_used_image_ids() -> set:
+    try:
+        if USED_IMAGES_FILE.exists():
+            with open(USED_IMAGES_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, list):
+                return set(data)
+    except Exception:
+        pass
+    return set()
+
+
+def _save_used_image_ids(ids):
+    try:
+        DATA_DIR.mkdir(parents=True, exist_ok=True)
+        with open(USED_IMAGES_FILE, "w", encoding="utf-8") as f:
+            json.dump(sorted(ids), f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"[Unsplash] Save failed: {e}")
+
+
+def _validate_image_url(url):
+    try:
+        resp = requests.head(url, allow_redirects=True, timeout=5)
+        if resp.status_code == 200 and "image" in resp.headers.get("Content-Type", "").lower():
+            return True
+        resp = requests.get(url, stream=True, timeout=5)
+        return resp.status_code == 200 and "image" in resp.headers.get("Content-Type", "").lower()
+    except Exception:
+        return False
+
+
+def fetch_unsplash_images(headline, category="general", count=4):
+    """Fetch unique, content-relevant images from Unsplash for an article."""
+    unsplash_keys = []
+    for i in range(1, 4):
+        val = os.environ.get(f"UNSPLASH_ACCESS_KEY_{i}")
+        if val and val.strip():
+            unsplash_keys.append(val.strip())
+    if not unsplash_keys:
+        return []
+
+    # Determine category for query pool
+    cat = category.lower() if category.lower() in UNSPLASH_QUERY_MAP else "general"
+    base_words = [w for w in re.sub(r'[^a-zA-Z0-9\s]', '', headline).split() if len(w) > 3][:3]
+    query_pool = list(UNSPLASH_QUERY_MAP.get(cat, UNSPLASH_QUERY_MAP["general"]))
+    if base_words:
+        query_pool = [" ".join(base_words)] + query_pool
+    random.shuffle(query_pool)
+
+    used_ids = _load_used_image_ids()
+    results = []
+    seen_photo_ids = set()
+
+    for q in query_pool:
+        if len(results) >= count:
+            break
+        for uk in unsplash_keys:
+            try:
+                resp = requests.get(
+                    "https://api.unsplash.com/search/photos",
+                    params={"query": q, "per_page": 10, "orientation": "landscape", "content_filter": "high"},
+                    headers={"Authorization": f"Client-ID {uk}"},
+                    timeout=10,
+                )
+                if resp.status_code != 200:
+                    continue
+                hits = resp.json().get("results", [])
+                for hit in hits:
+                    photo_id = hit.get("id")
+                    if not photo_id or photo_id in seen_photo_ids or photo_id in used_ids:
+                        continue
+                    url = hit.get("urls", {}).get("regular", "")
+                    if not url or not _validate_image_url(url):
+                        continue
+                    user = hit.get("user", {}) or {}
+                    user_name = user.get("name", "Unsplash")
+                    user_link = user.get("links", {}).get("html", "https://unsplash.com")
+                    alt_desc = (hit.get("alt_description") or headline).strip()
+                    results.append({
+                        "url": url,
+                        "alt": alt_desc[:120],
+                        "title": alt_desc[:80],
+                        "caption": f"{alt_desc[:100]} (via Unsplash)",
+                        "attribution": f"Photo by {user_name} on Unsplash",
+                        "sourceUrl": f"{user_link}?utm_source=pulsetrends&utm_medium=referral",
+                        "photoId": photo_id,
+                        "category": cat,
+                    })
+                    seen_photo_ids.add(photo_id)
+                    if len(results) >= count:
+                        break
+                    break
+            except Exception:
+                continue
+
+    if results:
+        used_ids.update(r["photoId"] for r in results if "photoId" in r)
+        if len(used_ids) > 500:
+            used_ids = set(sorted(used_ids)[-500:])
+        _save_used_image_ids(used_ids)
+        print(f"[Unsplash] Fetched {len(results)} images for '{headline[:50]}...'")
+
+    return results
 
 
 # ═══════════════════════════════════════════════════════════════════════

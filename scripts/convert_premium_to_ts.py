@@ -214,10 +214,29 @@ def convert_article(a: dict) -> str:
     image_alt_text = a.get("imageAltText", a.get("imageSeoTitle", ""))
     image_caption = a.get("imageCaption", "")
 
-    # Build placeholder image entry from the prompt data
-    if image_alt_text:
-        # Construct a search-based Unsplash URL as placeholder
-        search_q = slugify(image_alt_text[:50])
+    # Use real images from fetched JSON data if available
+    real_images = a.get("images", [])
+    if real_images and isinstance(real_images, list) and len(real_images) > 0:
+        img_lines = []
+        for img in real_images[:4]:
+            img_lines.append('      {')
+            img_lines.append(f'        url: {js_str(img.get("url", ""))},')
+            img_lines.append(f'        alt: {js_str(img.get("alt", image_alt_text))},')
+            img_lines.append(f'        attribution: {js_str(img.get("attribution", "Photo via Unsplash"))},')
+            if img.get("title"):
+                img_lines.append(f'        title: {js_str(img.get("title", ""))},')
+            if img.get("caption"):
+                img_lines.append(f'        caption: {js_str(img.get("caption", ""))},')
+            if img.get("category"):
+                img_lines.append(f'        category: {js_str(img.get("category", category))},')
+            if img.get("sourceUrl"):
+                img_lines.append(f'        sourceUrl: {js_str(img.get("sourceUrl", ""))},')
+            if img.get("photoId"):
+                img_lines.append(f'        photoId: {js_str(img.get("photoId", ""))},')
+            img_lines.append('      },')
+        images_ts = "[\n" + "\n".join(img_lines) + "\n    ]"
+    elif image_alt_text:
+        # Fallback: build placeholder image entry from the prompt data
         placeholder_image = (
             f'{{ url: "https://images.unsplash.com/photo-1516245834210-c4c142787335?w=1080",'
             f' alt: {js_str(image_alt_text)},'
