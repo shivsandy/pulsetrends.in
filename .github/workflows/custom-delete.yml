@@ -1,0 +1,70 @@
+name: Custom Delete — Remove Articles by URL
+
+on:
+  workflow_dispatch:
+    inputs:
+      article_urls:
+        description: 'Article URL(s) to delete. Paste one or more URLs (one per line or comma-separated). Example: https://pulsetrends.in/news/some-slug-news-12345-6789'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: custom-delete
+  cancel-in-progress: false
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Delete specified articles
+        run: python scripts/delete_custom_article.py
+        env:
+          DELETE_URLS: ${{ github.event.inputs.article_urls }}
+
+      - name: Commit deleted news data
+        run: |
+          git config user.name "PulseTrends Bot"
+          git config user.email "noreply@example.com"
+          git add src/data/newsData.ts
+          if git diff --cached --quiet; then
+            echo "No changes to commit. Skipping."
+          else
+            git commit -m "Custom delete: remove articles by URL ($(date +%F))"
+            git push
+          fi
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (regenerates sitemap + static pages)
+        run: npm run build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: 'PulseTrends Bot'
+          user_email: 'noreply@example.com'
+          cname: pulsetrends.in
+          enable_jekyll: false
