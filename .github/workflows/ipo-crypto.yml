@@ -1,4 +1,4 @@
-name: IPO & Crypto Analysis
+name: IPO & Crypto — Full Pipeline
 
 on:
   schedule:
@@ -54,10 +54,19 @@ jobs:
           OPENROUTER_API_8: ${{ secrets.OPENROUTER_API_8 }}
         run: python crypto_analyzer.py
 
-      - name: Commit updated data files
+      - name: Scrape screener.in for new IPOs
+        run: python scripts/scrape_screener_ipo.py
+
+      - name: Check IPO availability (auto-close past-date IPOs)
+        run: python scripts/check_ipo_availability.py
+
+      - name: Generate 44-section institutional IPO analysis
+        run: python scripts/generate_ipo_analysis_44.py --force
+
+      - name: Commit IPO & crypto data
         run: |
           git config user.name "PulseTrends Bot"
           git config user.email "noreply@example.com"
           git add data/
-          git diff --cached --quiet || git commit -m "Auto: update crypto & IPO data $(date +%F)"
+          git diff --cached --quiet || git commit -m "IPO & Crypto: auto update $(date +%F)"
           git push

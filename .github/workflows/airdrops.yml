@@ -1,0 +1,42 @@
+name: Airdrops — Scraper
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: airdrops
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests==2.32.3 beautifulsoup4==4.12.3 lxml==5.3.0
+
+      - name: Scrape airdrops.io
+        run: python airdrops_scraper.py
+
+      - name: Commit airdrop data
+        run: |
+          git config user.name "PulseTrends Bot"
+          git config user.email "noreply@example.com"
+          git add data/airdrop_data.json data/airdrops_data.json
+          git diff --cached --quiet || git commit -m "Airdrops: auto update $(date +%F)"
+          git push
