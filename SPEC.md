@@ -134,7 +134,7 @@ Pulsetrends.in/
 ├── ipo_scraper.py               # Legacy (kept for reference)
 ├── build_ipo_database.py        # Master DB builder
 ├── .github/workflows/
-│   ├── ipo-crypto.yml           # Legacy single job
+│   ├── ipo.yml                  # IPO & screener pipeline
 │   └── global-ipo-scanner.yml   # 10-parallel-job pipeline
 └── data/                        # All data files
 ```
