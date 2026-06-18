@@ -80,6 +80,7 @@ for i in range(1, 4):
         UNSPLASH_KEYS.append(val)
 
 USED_IMAGES_FILE = DATA_DIR / "used_news_images.json"
+IMAGE_LOCK = threading.Lock()
 
 
 class ModelHealth:
@@ -504,19 +505,25 @@ def fetch_images(title: str, count: int = 4, category: Optional[str] = None) -> 
     if base_words:
         query_pool = [" ".join(base_words)] + query_pool
 
-    used_ids = load_used_image_ids()
+    with IMAGE_LOCK:
+        used_ids = load_used_image_ids()
     results: List[dict] = []
     seen_photo_ids: set = set()
 
     # Shuffle to get variety across articles in the same run
     random.shuffle(query_pool)
 
-    # Add a random topic suffix to one query for extra variety
-    random_topics = ["finance", "business", "technology", "data", "digital", "economy", "money", "analytics"]
-    if query_pool:
-        rand_topic = random.choice(random_topics)
-        query_pool.append(query_pool[0] + " " + rand_topic)
+    # Build headline-specific queries first for better content relevance
+    headline_priority = []
+    headline_words = [w for w in re.sub(r'[^a-zA-Z0-9\s]', '', title).split() if len(w) > 3][:5]
+    if len(headline_words) >= 2:
+        headline_priority.append(" ".join(headline_words[:4]))
+        if len(headline_words) >= 3:
+            headline_priority.append(" ".join(headline_words[:3]))
+    elif headline_words:
+        headline_priority.append(" ".join(headline_words))
     random.shuffle(query_pool)
+    query_pool = headline_priority + query_pool
 
     for q in query_pool:
         if len(results) >= count:
@@ -565,10 +572,11 @@ def fetch_images(title: str, count: int = 4, category: Optional[str] = None) -> 
             break
 
     if results:
-        used_ids.update(r["photoId"] for r in results if "photoId" in r)
-        if len(used_ids) > 500:
-            used_ids = set(sorted(used_ids)[-500:])
-        save_used_image_ids(used_ids)
+        with IMAGE_LOCK:
+            used_ids.update(r["photoId"] for r in results if "photoId" in r)
+            if len(used_ids) > 10000:
+                used_ids = set(sorted(used_ids)[-10000:])
+            save_used_image_ids(used_ids)
     elif not results and base_words:
         # Last resort: try a broader search with just the first title word
         for uk in UNSPLASH_KEYS:
@@ -611,10 +619,11 @@ def fetch_images(title: str, count: int = 4, category: Optional[str] = None) -> 
             except Exception:
                 continue
         if results:
-            used_ids.update(r["photoId"] for r in results if "photoId" in r)
-            if len(used_ids) > 500:
-                used_ids = set(sorted(used_ids)[-500:])
-            save_used_image_ids(used_ids)
+            with IMAGE_LOCK:
+                used_ids.update(r["photoId"] for r in results if "photoId" in r)
+                if len(used_ids) > 10000:
+                    used_ids = set(sorted(used_ids)[-10000:])
+                save_used_image_ids(used_ids)
 
     return results
 

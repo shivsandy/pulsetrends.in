@@ -589,12 +589,19 @@ def fetch_unsplash_images(headline, category="stocks", count=4):
         return []
     
     cat = category if category in UNSPLASH_QUERY_MAP else "general"
-    base_words = [w for w in re.sub(r'[^a-zA-Z0-9\s]', '', headline).split() if len(w) > 3][:3]
+    base_words = [w for w in re.sub(r'[^a-zA-Z0-9\s]', '', headline).split() if len(w) > 3][:5]
     query_pool = list(UNSPLASH_QUERY_MAP.get(cat, UNSPLASH_QUERY_MAP["general"]))
-    if base_words:
-        query_pool = [" ".join(base_words)] + query_pool
+    # Build headline-specific queries first for better content relevance
+    headline_priority = []
+    if len(base_words) >= 2:
+        headline_priority.append(" ".join(base_words[:4]))
+        if len(base_words) >= 3:
+            headline_priority.append(" ".join(base_words[:3]))
+    elif base_words:
+        headline_priority.append(" ".join(base_words))
     random.shuffle(query_pool)
-    
+    query_pool = headline_priority + query_pool
+
     used_ids = _load_used_image_ids()
     results = []
     seen_photo_ids = set()
@@ -643,8 +650,8 @@ def fetch_unsplash_images(headline, category="stocks", count=4):
     
     if results:
         used_ids.update(r["photoId"] for r in results if "photoId" in r)
-        if len(used_ids) > 500:
-            used_ids = set(sorted(used_ids)[-500:])
+        if len(used_ids) > 10000:
+            used_ids = set(sorted(used_ids)[-10000:])
         _save_used_image_ids(used_ids)
         print(f"[Unsplash] Fetched {len(results)} images for '{headline[:50]}...'")
     
