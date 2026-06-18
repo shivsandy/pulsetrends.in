@@ -80,14 +80,14 @@
     "name": "Horizon Reclaim",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-06-18",
+    "listingDate": "2026-06-19",
     "marketCap": 201.0
   },
   {
     "name": "Susan Electrical",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-06-17",
+    "listingDate": "2026-06-18",
     "marketCap": 258.0
   },
   {
@@ -7084,6 +7084,13 @@
     "marketCap": 102.0
   },
   {
+    "name": "Emiac Technologies",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-04-13",
+    "marketCap": 120.0
+  },
+  {
     "name": "Safety Controls",
     "status": "listed",
     "source_category": "below_price",
@@ -7098,6 +7105,13 @@
     "marketCap": 2195.0
   },
   {
+    "name": "Novus Loyalty",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-03-25",
+    "marketCap": 227.0
+  },
+  {
     "name": "Innovision",
     "status": "listed",
     "source_category": "below_price",
@@ -7110,13 +7124,6 @@
     "source_category": "below_price",
     "listingDate": "2026-03-06",
     "marketCap": 134.0
-  },
-  {
-    "name": "PNGS Reva Diamo.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-03-04",
-    "marketCap": 1224.0
   },
   {
     "name": "Shree Ram Twist.",
@@ -7229,13 +7236,6 @@
     "source_category": "below_price",
     "listingDate": "2026-01-21",
     "marketCap": 160.0
-  },
-  {
-    "name": "Defrail Technologies",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-01-19",
-    "marketCap": 52.0
   },
   {
     "name": "Victory Ele.",
@@ -7376,6 +7376,13 @@
     "source_category": "below_price",
     "listingDate": "2025-12-10",
     "marketCap": 140.0
+  },
+  {
+    "name": "Neochem Bio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-12-09",
+    "marketCap": 168.0
   },
   {
     "name": "Ravelcare",
@@ -8736,6 +8743,13 @@
     "marketCap": 0
   },
   {
+    "name": "Hamps Bio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-12-20",
+    "marketCap": 0
+  },
+  {
     "name": "One Mobikwik",
     "status": "listed",
     "source_category": "below_price",
@@ -9492,10 +9506,24 @@
     "marketCap": 0
   },
   {
+    "name": "TGIF Agribusines",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-05-15",
+    "marketCap": 0
+  },
+  {
     "name": "Finelistings Tec",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-05-14",
+    "marketCap": 0
+  },
+  {
+    "name": "Amkay Products",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-05-08",
     "marketCap": 0
   },
   {
@@ -9954,13 +9982,6 @@
     "marketCap": 0
   },
   {
-    "name": "Gandhar Oil Ref.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-30",
-    "marketCap": 0
-  },
-  {
     "name": "Arrowhead Sepera",
     "status": "listed",
     "source_category": "below_price",
@@ -10227,6 +10248,13 @@
     "marketCap": 0
   },
   {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
     "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
@@ -10259,13 +10287,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-07-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10346,38 +10367,24 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-05",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "HMA Agro Inds.",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-04",
+    "listingDate": "2023-07-07",
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Greenchef Appli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
+    "listingDate": "2023-07-06",
     "marketCap": 0
   },
   {
@@ -10416,38 +10423,24 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-05",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "HMA Agro Inds.",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-04",
+    "listingDate": "2023-07-07",
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Greenchef Appli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
+    "listingDate": "2023-07-06",
     "marketCap": 0
   },
   {
@@ -10486,38 +10479,24 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-05",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "HMA Agro Inds.",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-04",
+    "listingDate": "2023-07-07",
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Greenchef Appli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
+    "listingDate": "2023-07-06",
     "marketCap": 0
   },
   {
@@ -10556,38 +10535,24 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-05",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "HMA Agro Inds.",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-04",
+    "listingDate": "2023-07-07",
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Greenchef Appli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
+    "listingDate": "2023-07-06",
     "marketCap": 0
   },
   {
@@ -10626,38 +10591,24 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-05",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "HMA Agro Inds.",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-04",
+    "listingDate": "2023-07-07",
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Greenchef Appli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
+    "listingDate": "2023-07-06",
     "marketCap": 0
   },
   {
@@ -10696,38 +10647,24 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-05",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "HMA Agro Inds.",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-04",
+    "listingDate": "2023-07-07",
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Greenchef Appli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
+    "listingDate": "2023-07-06",
     "marketCap": 0
   },
   {
@@ -10766,38 +10703,24 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-05",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "HMA Agro Inds.",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-04",
+    "listingDate": "2023-07-07",
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Greenchef Appli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
+    "listingDate": "2023-07-06",
     "marketCap": 0
   },
   {
@@ -10836,38 +10759,24 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-05",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "HMA Agro Inds.",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-04",
+    "listingDate": "2023-07-07",
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Greenchef Appli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
+    "listingDate": "2023-07-06",
     "marketCap": 0
   },
   {
@@ -10906,38 +10815,24 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-05",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "HMA Agro Inds.",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-04",
+    "listingDate": "2023-07-07",
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Greenchef Appli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
+    "listingDate": "2023-07-06",
     "marketCap": 0
   },
   {
@@ -10976,6 +10871,27 @@
     "marketCap": 0
   },
   {
+    "name": "Synoptics Techno",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Pentagon Rubber",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
     "name": "Uravi Defence &",
     "status": "listed",
     "source_category": "below_price",
@@ -11008,6 +10924,531 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-06-22",
+    "marketCap": 0
+  },
+  {
+    "name": "Synoptics Techno",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Pentagon Rubber",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
+    "marketCap": 0
+  },
+  {
+    "name": "Synoptics Techno",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Pentagon Rubber",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
+    "marketCap": 0
+  },
+  {
+    "name": "Synoptics Techno",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Pentagon Rubber",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
+    "marketCap": 0
+  },
+  {
+    "name": "Synoptics Techno",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Pentagon Rubber",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
+    "marketCap": 0
+  },
+  {
+    "name": "Synoptics Techno",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Pentagon Rubber",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
+    "marketCap": 0
+  },
+  {
+    "name": "Synoptics Techno",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Pentagon Rubber",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
+    "marketCap": 0
+  },
+  {
+    "name": "Synoptics Techno",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Pentagon Rubber",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
+    "marketCap": 0
+  },
+  {
+    "name": "Synoptics Techno",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Pentagon Rubber",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
+    "marketCap": 0
+  },
+  {
+    "name": "Synoptics Techno",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Pentagon Rubber",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
+    "marketCap": 0
+  },
+  {
+    "name": "Synoptics Techno",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Pentagon Rubber",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
     "marketCap": 0
   },
   {
