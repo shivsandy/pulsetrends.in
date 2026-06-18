@@ -975,7 +975,7 @@ Return ONLY valid JSON. No markdown. No code fences. No commentary.
   "imageAltText": "SEO alt text for image",
   "imageCaption": "Image caption",
   "imageSeoTitle": "Image SEO title",
-  "canonical_url": "https://pulsetrends.in/news/{slug}",
+  "canonical_url": "https://pulsetrends.in/news/{{slug}}",
   "relatedInternalLinks": ["/news/suggested-article", "/ipo-analysis/suggested-ipo"],
   "publishedAt": "{now_iso()}"
 }}"""
