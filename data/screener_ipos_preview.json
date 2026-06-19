@@ -63,6 +63,20 @@
     "marketCap": 114.0
   },
   {
+    "name": "Jivial Industrie",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-07-01",
+    "marketCap": 92.0
+  },
+  {
+    "name": "Waterways Leisur",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-07-01",
+    "marketCap": 5849.0
+  },
+  {
     "name": "Dhanwel Hybrid",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -70,11 +84,39 @@
     "marketCap": 90.0
   },
   {
+    "name": "CSM Technologies",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-07-02",
+    "marketCap": 583.0
+  },
+  {
     "name": "Leapfrog Engg.",
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-06-24",
     "marketCap": 326.0
+  },
+  {
+    "name": "Liotech Ind.",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-06-24",
+    "marketCap": 125.0
+  },
+  {
+    "name": "Clay Craft India",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-06-24",
+    "marketCap": 418.0
+  },
+  {
+    "name": "Diksha Polymers",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-06-24",
+    "marketCap": 58.0
   },
   {
     "name": "Horizon Reclaim",
@@ -87,14 +129,14 @@
     "name": "Susan Electrical",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-06-18",
+    "listingDate": "yesterday",
     "marketCap": 258.0
   },
   {
     "name": "Utkal Speciality",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-06-17",
     "marketCap": 129.0
   },
   {
@@ -3507,7 +3549,7 @@
     "marketCap": 0
   },
   {
-    "name": "International Ge",
+    "name": "International Gemological Instit",
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2024-12-20",
@@ -6989,7 +7031,7 @@
     "name": "Utkal Speciality",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-06-17",
     "marketCap": 129.0
   },
   {
@@ -7105,13 +7147,6 @@
     "marketCap": 2195.0
   },
   {
-    "name": "Novus Loyalty",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-03-25",
-    "marketCap": 227.0
-  },
-  {
     "name": "Innovision",
     "status": "listed",
     "source_category": "below_price",
@@ -7124,13 +7159,6 @@
     "source_category": "below_price",
     "listingDate": "2026-03-06",
     "marketCap": 134.0
-  },
-  {
-    "name": "PNGS Reva Diamo.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-03-04",
-    "marketCap": 1224.0
   },
   {
     "name": "Shree Ram Twist.",
@@ -7196,6 +7224,13 @@
     "marketCap": 56.0
   },
   {
+    "name": "Brandman Retail",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-02-11",
+    "marketCap": 325.0
+  },
+  {
     "name": "C K K Retail",
     "status": "listed",
     "source_category": "below_price",
@@ -7243,6 +7278,13 @@
     "source_category": "below_price",
     "listingDate": "2026-01-21",
     "marketCap": 160.0
+  },
+  {
+    "name": "Defrail Technologies",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-01-19",
+    "marketCap": 52.0
   },
   {
     "name": "Victory Ele.",
@@ -7357,13 +7399,6 @@
     "marketCap": 366.0
   },
   {
-    "name": "Flywings Simula.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-12-12",
-    "marketCap": 194.0
-  },
-  {
     "name": "Luxury Time",
     "status": "listed",
     "source_category": "below_price",
@@ -7383,13 +7418,6 @@
     "source_category": "below_price",
     "listingDate": "2025-12-10",
     "marketCap": 140.0
-  },
-  {
-    "name": "Neochem Bio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-12-09",
-    "marketCap": 168.0
   },
   {
     "name": "Ravelcare",
@@ -7558,6 +7586,13 @@
     "source_category": "below_price",
     "listingDate": "2025-10-10",
     "marketCap": 280.0
+  },
+  {
+    "name": "Wework India",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-10-10",
+    "marketCap": 8685.0
   },
   {
     "name": "DSM Fresh",
@@ -7994,13 +8029,6 @@
     "marketCap": 1048.0
   },
   {
-    "name": "Bluestone Jewel",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-08-19",
-    "marketCap": 7823.0
-  },
-  {
     "name": "Icodex Publish.",
     "status": "listed",
     "source_category": "below_price",
@@ -8118,13 +8146,6 @@
     "source_category": "below_price",
     "listingDate": "2025-08-05",
     "marketCap": 826.0
-  },
-  {
-    "name": "Repono",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-08-04",
-    "marketCap": 99.0
   },
   {
     "name": "Umiya Mobile",
@@ -8411,6 +8432,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-06-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Nikita Greentech Recycling",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-06-03",
     "marketCap": 0
   },
   {
@@ -8757,14 +8785,7 @@
     "marketCap": 0
   },
   {
-    "name": "International Ge",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-12-20",
-    "marketCap": 0
-  },
-  {
-    "name": "Hamps Bio",
+    "name": "International Gemological Instit",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-12-20",
@@ -9527,13 +9548,6 @@
     "marketCap": 0
   },
   {
-    "name": "TGIF Agribusines",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-05-15",
-    "marketCap": 0
-  },
-  {
     "name": "Finelistings Tec",
     "status": "listed",
     "source_category": "below_price",
@@ -9573,6 +9587,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-04-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Grill Splendour",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-04-23",
     "marketCap": 0
   },
   {
@@ -10108,13 +10129,6 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-25",
-    "marketCap": 0
-  },
-  {
     "name": "Plada Infotech S",
     "status": "listed",
     "source_category": "below_price",
@@ -10133,6 +10147,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-10-11",
+    "marketCap": 0
+  },
+  {
+    "name": "City Crops Agro",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-10",
     "marketCap": 0
   },
   {
@@ -10395,24 +10416,66 @@
     "marketCap": 0
   },
   {
-    "name": "Utkarsh Small F.",
+    "name": "Tridhya Tech",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Ahasolar Technol",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Drone Destinatio",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
     "marketCap": 0
   },
   {
@@ -10479,24 +10542,66 @@
     "marketCap": 0
   },
   {
-    "name": "Utkarsh Small F.",
+    "name": "Tridhya Tech",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Ahasolar Technol",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Drone Destinatio",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
     "marketCap": 0
   },
   {
@@ -10563,24 +10668,66 @@
     "marketCap": 0
   },
   {
-    "name": "Utkarsh Small F.",
+    "name": "Tridhya Tech",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Ahasolar Technol",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Drone Destinatio",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
     "marketCap": 0
   },
   {
@@ -10647,24 +10794,66 @@
     "marketCap": 0
   },
   {
-    "name": "Utkarsh Small F.",
+    "name": "Tridhya Tech",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Ahasolar Technol",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Drone Destinatio",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
     "marketCap": 0
   },
   {
@@ -10731,24 +10920,66 @@
     "marketCap": 0
   },
   {
-    "name": "Utkarsh Small F.",
+    "name": "Tridhya Tech",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Ahasolar Technol",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Drone Destinatio",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
     "marketCap": 0
   },
   {
@@ -10815,24 +11046,66 @@
     "marketCap": 0
   },
   {
-    "name": "Utkarsh Small F.",
+    "name": "Tridhya Tech",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Ahasolar Technol",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Drone Destinatio",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
     "marketCap": 0
   },
   {
@@ -10899,24 +11172,66 @@
     "marketCap": 0
   },
   {
-    "name": "Utkarsh Small F.",
+    "name": "Tridhya Tech",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Ahasolar Technol",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Drone Destinatio",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
     "marketCap": 0
   },
   {
@@ -10983,24 +11298,66 @@
     "marketCap": 0
   },
   {
-    "name": "Utkarsh Small F.",
+    "name": "Tridhya Tech",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Ahasolar Technol",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Drone Destinatio",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
     "marketCap": 0
   },
   {
@@ -11067,24 +11424,66 @@
     "marketCap": 0
   },
   {
-    "name": "Utkarsh Small F.",
+    "name": "Tridhya Tech",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Ahasolar Technol",
+    "name": "Synoptics Techno",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
-    "name": "Drone Destinatio",
+    "name": "Pentagon Rubber",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-21",
+    "listingDate": "2023-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Greenchef Appli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Uravi Defence &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-05",
+    "marketCap": 0
+  },
+  {
+    "name": "HMA Agro Inds.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Aatmaj Health",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Cell Point",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Spectrum Talent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-06-22",
     "marketCap": 0
   },
   {
@@ -11151,27 +11550,6 @@
     "marketCap": 0
   },
   {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
     "name": "Tridhya Tech",
     "status": "listed",
     "source_category": "below_price",
@@ -11235,27 +11613,6 @@
     "marketCap": 0
   },
   {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
     "name": "Tridhya Tech",
     "status": "listed",
     "source_category": "below_price",
@@ -11316,783 +11673,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-06-22",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Tridhya Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Synoptics Techno",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Pentagon Rubber",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Greenchef Appli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
-    "name": "HMA Agro Inds.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Aatmaj Health",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Tridhya Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Synoptics Techno",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Pentagon Rubber",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Greenchef Appli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
-    "name": "HMA Agro Inds.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Aatmaj Health",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Tridhya Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Synoptics Techno",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Pentagon Rubber",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Greenchef Appli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
-    "name": "HMA Agro Inds.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Aatmaj Health",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Tridhya Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Synoptics Techno",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Pentagon Rubber",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Greenchef Appli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
-    "name": "HMA Agro Inds.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Aatmaj Health",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Tridhya Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Synoptics Techno",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Pentagon Rubber",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Greenchef Appli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
-    "name": "HMA Agro Inds.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Aatmaj Health",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Tridhya Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Synoptics Techno",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Pentagon Rubber",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Greenchef Appli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
-    "name": "HMA Agro Inds.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Aatmaj Health",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Tridhya Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Synoptics Techno",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Pentagon Rubber",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Greenchef Appli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
-    "name": "HMA Agro Inds.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Aatmaj Health",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Tridhya Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Synoptics Techno",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Pentagon Rubber",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Greenchef Appli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
-    "name": "HMA Agro Inds.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Aatmaj Health",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Tridhya Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Synoptics Techno",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Pentagon Rubber",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Greenchef Appli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
-    "name": "HMA Agro Inds.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Aatmaj Health",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Spectrum Talent",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-22",
-    "marketCap": 0
-  },
-  {
-    "name": "Oasis Securities",
-    "status": "rights",
-    "source_category": "rights",
-    "listingDate": "",
     "marketCap": 0
   },
   {
