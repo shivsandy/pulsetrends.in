@@ -82,6 +82,19 @@ for i in range(1, 4):
 USED_IMAGES_FILE = DATA_DIR / "used_news_images.json"
 IMAGE_LOCK = threading.Lock()
 
+VISUAL_TYPES = [
+    "wide-angle-scenes",
+    "close-up-views",
+    "editorial-news-layouts",
+    "infographic-style-visuals",
+    "industry-specific-visuals",
+    "conceptual-visuals",
+    "realistic-environments",
+    "product-focused-visuals",
+    "event-focused-visuals",
+    "data-driven-visuals",
+]
+
 
 class ModelHealth:
     def __init__(self):
@@ -320,25 +333,45 @@ def save_cached_news(articles: List[dict]) -> None:
         print(f"[NewsAPI] Cache save failed: {e}")
 
 
-def load_used_image_ids() -> set:
+def load_image_history() -> list:
+    """Load image history with visual type metadata. Backward compatible with old flat ID format."""
     try:
         if USED_IMAGES_FILE.exists():
             with USED_IMAGES_FILE.open("r", encoding="utf-8") as f:
                 data = json.load(f)
             if isinstance(data, list):
-                return set(data)
+                # Backward compat: old format was flat list of IDs
+                if data and isinstance(data[0], str):
+                    return [{"photoId": pid, "visualType": "unknown", "headline": "", "timestamp": "", "category": ""} for pid in data]
+                return data
     except Exception as e:
-        print(f"[NewsAPI] Used-images load failed: {e}")
-    return set()
+        print(f"[NewsAPI] Image history load failed: {e}")
+    return []
 
 
-def save_used_image_ids(ids: set) -> None:
+def save_image_history(history: list) -> None:
     try:
         DATA_DIR.mkdir(parents=True, exist_ok=True)
         with USED_IMAGES_FILE.open("w", encoding="utf-8") as f:
-            json.dump(sorted(ids), f, ensure_ascii=False, indent=2)
+            json.dump(history, f, ensure_ascii=False, indent=2)
     except Exception as e:
-        print(f"[NewsAPI] Used-images save failed: {e}")
+        print(f"[NewsAPI] Image history save failed: {e}")
+
+
+def get_recent_visual_types(count: int = 10) -> str:
+    """Return a summary of recently used visual types for LLM context injection."""
+    history = load_image_history()
+    recent = history[-count:] if len(history) > count else history
+    if not recent:
+        return "No images have been generated yet — freely choose any visual type."
+    type_counts = {}
+    for entry in recent:
+        vt = entry.get("visualType", "unknown")
+        type_counts[vt] = type_counts.get(vt, 0) + 1
+    lines = [f"Last {len(recent)} images by visual type:"]
+    for vt, c in sorted(type_counts.items(), key=lambda x: -x[1]):
+        lines.append(f"  - {vt}: {c} time(s)")
+    return "\n".join(lines)
 
 
 def scrape_article(url: str) -> Optional[dict]:
@@ -494,7 +527,7 @@ def _validate_image_url(url: str, timeout: int = 5) -> bool:
         return False
 
 
-def fetch_images(title: str, count: int = 4, category: Optional[str] = None) -> List[dict]:
+def fetch_images(title: str, count: int = 4, category: Optional[str] = None, visual_type: Optional[str] = None) -> List[dict]:
     random.seed()  # ensure fresh random each call
     if not UNSPLASH_KEYS:
         return []
@@ -506,7 +539,8 @@ def fetch_images(title: str, count: int = 4, category: Optional[str] = None) -> 
         query_pool = [" ".join(base_words)] + query_pool
 
     with IMAGE_LOCK:
-        used_ids = load_used_image_ids()
+        image_history = load_image_history()
+        used_ids = {e["photoId"] for e in image_history if "photoId" in e}
     results: List[dict] = []
     seen_photo_ids: set = set()
 
@@ -573,10 +607,18 @@ def fetch_images(title: str, count: int = 4, category: Optional[str] = None) -> 
 
     if results:
         with IMAGE_LOCK:
-            used_ids.update(r["photoId"] for r in results if "photoId" in r)
-            if len(used_ids) > 10000:
-                used_ids = set(sorted(used_ids)[-10000:])
-            save_used_image_ids(used_ids)
+            now_iso = datetime.now(timezone.utc).isoformat()
+            for r in results:
+                image_history.append({
+                    "photoId": r.get("photoId", ""),
+                    "visualType": visual_type or "unknown",
+                    "headline": title[:120],
+                    "timestamp": now_iso,
+                    "category": category or "",
+                })
+            if len(image_history) > 10000:
+                image_history = image_history[-10000:]
+            save_image_history(image_history)
     elif not results and base_words:
         # Last resort: try a broader search with just the first title word
         for uk in UNSPLASH_KEYS:
@@ -620,10 +662,18 @@ def fetch_images(title: str, count: int = 4, category: Optional[str] = None) -> 
                 continue
         if results:
             with IMAGE_LOCK:
-                used_ids.update(r["photoId"] for r in results if "photoId" in r)
-                if len(used_ids) > 10000:
-                    used_ids = set(sorted(used_ids)[-10000:])
-                save_used_image_ids(used_ids)
+                now_iso = datetime.now(timezone.utc).isoformat()
+                for r in results:
+                    image_history.append({
+                        "photoId": r.get("photoId", ""),
+                        "visualType": visual_type or "unknown",
+                        "headline": title[:120],
+                        "timestamp": now_iso,
+                        "category": category or "",
+                    })
+                if len(image_history) > 10000:
+                    image_history = image_history[-10000:]
+                save_image_history(image_history)
 
     return results
 
@@ -799,10 +849,76 @@ Generate honest quality scores 1-10 for:
 - authorityScore: E-E-A-T strength
 - aiCitationPotential: likelihood of being cited by AI search
 
-=== IMAGE RULES ===
+=== IMAGE UNIQUENESS & DUPLICATE PREVENTION RULES ===
 
-Every article must have:
-- featuredImagePrompt: detailed image generation prompt (high quality, unique, topic-relevant, no stock-photo cliches)
+CRITICAL:
+- Never reuse previously generated images.
+- Every article must receive a unique image.
+- Every image must have a different composition, perspective, layout, and visual concept.
+
+DUPLICATE DETECTION:
+Maintain an image history database containing:
+- Article title
+- Image prompt
+- Generated image metadata
+- Published date
+- Main entities used
+
+Before generating a new image:
+1. Check image history.
+2. Compare against previous images.
+3. If similarity is detected, generate a different concept.
+4. Avoid repeating the same visual style repeatedly.
+
+VARIATION REQUIREMENTS:
+Rotate between these visual types across articles (never repeat the same type consecutively):
+- Wide-angle scenes
+- Close-up views
+- Editorial news layouts
+- Infographic-style visuals
+- Industry-specific visuals
+- Conceptual visuals
+- Realistic environments
+- Product-focused visuals
+- Event-focused visuals
+- Data-driven visuals
+
+ENTITY VARIATION:
+If multiple articles discuss the same topic:
+- BAD: Same image every time.
+- GOOD: Different visual angle, different scene, different focus, different composition, different storytelling approach.
+
+Example for 4 articles on same topic:
+- Article 1: Focus on announcement
+- Article 2: Focus on market reaction
+- Article 3: Focus on user impact
+- Article 4: Focus on future developments
+
+VISUAL DIVERSITY SCORE:
+Calculate:
+- Similarity Score
+- Composition Score
+- Subject Diversity Score
+- Color Diversity Score
+- Layout Diversity Score
+
+If similarity exceeds 30%, regenerate.
+
+GOOGLE DISCOVER OPTIMIZATION:
+Generate images that:
+- Look unique
+- Stand out in feeds
+- Do not resemble previously published content
+- Avoid generic stock-photo appearance
+
+FINAL RULE:
+No image should appear twice on PulseTrends.
+If an image resembles a previously published image, create a new visual concept before publishing.
+Every published article must have its own unique visual identity.
+
+IMAGE FIELDS:
+- visualType: ONE visual type from the VARIATION REQUIREMENTS list that is used LEAST frequently in recent history (see RECENT IMAGE VISUAL TYPES USED context)
+- featuredImagePrompt: Detailed image generation prompt following all uniqueness rules above, aligned with the chosen visualType
 - imageFilename: unique SEO-friendly filename
 - imageAltText: descriptive alt text including primary keyword
 - imageCaption: engaging caption
@@ -880,6 +996,7 @@ Return ONLY valid JSON. No markdown code blocks. No text before or after. Struct
   "geoScore": 9,
   "authorityScore": 8,
   "aiCitationPotential": 9,
+  "visualType": "conceptual-visuals",
   "featuredImagePrompt": "Detailed Unsplash/DALL-E style prompt for unique hero image",
   "imageFilename": "unique-seo-friendly-filename.jpg",
   "imageAltText": "Descriptive alt with primary keyword",
@@ -1248,6 +1365,11 @@ def generate_article(source_items: List[dict]) -> Optional[dict]:
     category_hint = "crypto" if is_crypto else ("ipo" if is_ipo else "stocks")
     market_hint = "India-focused" if is_india else "global"
 
+    # Inject recent visual type usage as context for the LLM
+    visual_type_context = get_recent_visual_types(10)
+
+    source_text = source_text + f"\n\n=== RECENT IMAGE VISUAL TYPES USED ===\n{visual_type_context}\n\nChoose a visual type from the list (VARIATION REQUIREMENTS) that has been used LEAST frequently. Assign it to the 'visualType' field in your output."
+
     user_prompt = _build_user_prompt(source_text, market_hint, category_hint)
     strict_prompt = _build_strict_user_prompt(user_prompt)
 
@@ -1295,8 +1417,13 @@ def generate_article(source_items: List[dict]) -> Optional[dict]:
             "source": "og-image",
         })
 
+    # Extract visualType from LLM result and pass to image fetching
+    chosen_visual_type = result.get("visualType", None)
+    if chosen_visual_type and chosen_visual_type not in VISUAL_TYPES:
+        chosen_visual_type = None  # ignore invalid types
+
     if len(images) < 4:
-        fetched = fetch_images(result.get("headline", title), count=4 - len(images), category=final_category)
+        fetched = fetch_images(result.get("headline", title), count=4 - len(images), category=final_category, visual_type=chosen_visual_type)
         existing_urls = {i["url"] for i in images}
         for img in fetched:
             if img["url"] not in existing_urls:

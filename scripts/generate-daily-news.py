@@ -37,6 +37,19 @@ DATA_DIR = REPO_ROOT / "src" / "data"
 NEWS_DATA_FILE = DATA_DIR / "newsData.ts"
 CACHE_DIR = REPO_ROOT / "data"
 USED_IMAGES_FILE = CACHE_DIR / "used_news_images.json"
+
+VISUAL_TYPES = [
+    "wide-angle-scenes",
+    "close-up-views",
+    "editorial-news-layouts",
+    "infographic-style-visuals",
+    "industry-specific-visuals",
+    "conceptual-visuals",
+    "realistic-environments",
+    "product-focused-visuals",
+    "event-focused-visuals",
+    "data-driven-visuals",
+]
 MAX_RETRIES = 3
 TIMEOUT_SEC = 90
 
@@ -549,24 +562,42 @@ def is_duplicate(keyword: str, existing_keywords: set) -> bool:
 
 # ── Unsplash Image Fetching ───────────────────────────────────────
 
-def _load_used_image_ids():
+def _load_image_history() -> list:
+    """Load image history with visual type metadata. Backward compatible with old flat ID format."""
     try:
         if USED_IMAGES_FILE.exists():
             with open(USED_IMAGES_FILE, "r", encoding="utf-8") as f:
                 data = json.load(f)
             if isinstance(data, list):
-                return set(data)
+                if data and isinstance(data[0], str):
+                    return [{"photoId": pid, "visualType": "unknown", "headline": "", "timestamp": "", "category": ""} for pid in data]
+                return data
     except Exception:
         pass
-    return set()
+    return []
 
-def _save_used_image_ids(ids):
+def _save_image_history(history):
     try:
         CACHE_DIR.mkdir(parents=True, exist_ok=True)
         with open(USED_IMAGES_FILE, "w", encoding="utf-8") as f:
-            json.dump(sorted(ids), f, ensure_ascii=False, indent=2)
+            json.dump(history, f, ensure_ascii=False, indent=2)
     except Exception as e:
         print(f"[Unsplash] Save failed: {e}")
+
+def _get_recent_visual_types(count=10):
+    """Return a summary of recently used visual types for LLM context injection."""
+    history = _load_image_history()
+    recent = history[-count:] if len(history) > count else history
+    if not recent:
+        return "No images have been generated yet — freely choose any visual type."
+    type_counts = {}
+    for entry in recent:
+        vt = entry.get("visualType", "unknown")
+        type_counts[vt] = type_counts.get(vt, 0) + 1
+    lines = [f"Last {len(recent)} images by visual type:"]
+    for vt, c in sorted(type_counts.items(), key=lambda x: -x[1]):
+        lines.append(f"  - {vt}: {c} time(s)")
+    return "\n".join(lines)
 
 def _validate_image_url(url):
     try:
@@ -578,7 +609,7 @@ def _validate_image_url(url):
     except Exception:
         return False
 
-def fetch_unsplash_images(headline, category="stocks", count=4):
+def fetch_unsplash_images(headline, category="stocks", count=4, visual_type=None):
     """Fetch unique images from Unsplash for an article."""
     unsplash_keys = []
     for i in range(1, 4):
@@ -602,7 +633,8 @@ def fetch_unsplash_images(headline, category="stocks", count=4):
     random.shuffle(query_pool)
     query_pool = headline_priority + query_pool
 
-    used_ids = _load_used_image_ids()
+    image_history = _load_image_history()
+    used_ids = {e["photoId"] for e in image_history if "photoId" in e}
     results = []
     seen_photo_ids = set()
     
@@ -649,10 +681,18 @@ def fetch_unsplash_images(headline, category="stocks", count=4):
                 continue
     
     if results:
-        used_ids.update(r["photoId"] for r in results if "photoId" in r)
-        if len(used_ids) > 10000:
-            used_ids = set(sorted(used_ids)[-10000:])
-        _save_used_image_ids(used_ids)
+        now_iso_str = datetime.now(timezone.utc).isoformat()
+        for r in results:
+            image_history.append({
+                "photoId": r.get("photoId", ""),
+                "visualType": visual_type or "unknown",
+                "headline": headline[:120],
+                "timestamp": now_iso_str,
+                "category": cat,
+            })
+        if len(image_history) > 10000:
+            image_history = image_history[-10000:]
+        _save_image_history(image_history)
         print(f"[Unsplash] Fetched {len(results)} images for '{headline[:50]}...'")
     
     return results
@@ -677,6 +717,9 @@ def generate_article_for_trend(trend: dict, category: str, date_str: str) -> Opt
     }
     mapped_category = category_map.get(category, "trending")
     
+    # Inject recent visual type usage as context
+    visual_type_context = _get_recent_visual_types(10)
+
     article_prompt = f"""You are an expert journalist writing for PulseTrends (https://pulsetrends.in). Today is {date_str}.
 
 ## TOPIC
@@ -717,6 +760,25 @@ Write a premium, engaging, click-worthy news article about this trending topic:
 - sentiment: bullish/bearish/neutral based on topic tone
 - impact: low/medium/high
 
+## IMAGE UNIQUENESS & DUPLICATE PREVENTION
+
+CRITICAL: Never reuse visual concepts. Every article must receive a unique image with a different composition, perspective, layout, and visual concept.
+
+VARIATION REQUIREMENTS (choose ONE visual type, prefer least-used in recent history):
+- Wide-angle scenes
+- Close-up views
+- Editorial news layouts
+- Infographic-style visuals
+- Industry-specific visuals
+- Conceptual visuals
+- Realistic environments
+- Product-focused visuals
+- Event-focused visuals
+- Data-driven visuals
+
+RECENT VISUAL TYPES USED:
+{{VISUAL_TYPE_CONTEXT}}
+
 ## OUTPUT FORMAT
 Return ONLY valid JSON. No markdown. No code fences. No commentary.
 
@@ -747,8 +809,11 @@ Return ONLY valid JSON. No markdown. No code fences. No commentary.
   "metaDescription": "Under 160 chars SEO meta description",
   "slug": "url-friendly-slug",
   "focusKeyword": "{keyword}",
+  "visualType": "conceptual-visuals",
   "publishedAt": "{now_iso()}"
 }}"""
+    # Replace visual type context placeholder
+    article_prompt = article_prompt.replace("{VISUAL_TYPE_CONTEXT}", visual_type_context)
     
     for attempt in range(MAX_RETRIES):
         print(f"  → Generating '{keyword}' (attempt {attempt+1})...")
@@ -796,8 +861,13 @@ Return ONLY valid JSON. No markdown. No code fences. No commentary.
                 if "Author: Shiva Sandeep" not in da:
                     article["detailedAnalysis"] = da + AUTHOR_BLOCK
                 
+                # Extract visualType from LLM result and pass to image fetching
+                chosen_visual_type = article.get("visualType", None)
+                if chosen_visual_type and chosen_visual_type not in VISUAL_TYPES:
+                    chosen_visual_type = None  # ignore invalid types
+
                 # Fetch Unsplash images
-                print(f"  → Fetching images for '{article['headline'][:50]}...'")
+                print(f"  → Fetching images for '{article['headline'][:50]}...' (visualType={chosen_visual_type or 'auto'})")
                 img_cat = detect_trend_category(keyword, context)
                 # Use mapped_category for unsplash queries if available
                 if category in ("crypto",) or img_cat == "crypto":
@@ -807,7 +877,8 @@ Return ONLY valid JSON. No markdown. No code fences. No commentary.
                 article_images = fetch_unsplash_images(
                     article.get("headline", keyword),
                     category=img_cat,
-                    count=4
+                    count=4,
+                    visual_type=chosen_visual_type,
                 )
                 article["images"] = article_images
                 print(f"  → {len(article_images)} images attached")

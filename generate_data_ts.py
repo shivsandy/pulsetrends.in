@@ -43,7 +43,7 @@ def load_news_articles_from_artifacts() -> list:
     return all_articles
 
 
-def prune_old_articles(articles: list, max_days: int = 70) -> list:
+def prune_old_articles(articles: list, max_days: int = 30) -> list:
     """Remove articles older than max_days from the list."""
     if not isinstance(articles, list):
         return []
@@ -189,11 +189,73 @@ def generate_ipo_data():
         key = mipo.get("company_name", "").lower().strip()
         if key:
             master_lookup[key] = mipo
+    # Build a normalized index for fuzzy matching
+    def _normalize(name: str) -> str:
+        """Normalize company name for fuzzy matching."""
+        n = name.lower().strip()
+        # Remove common suffixes using word-boundary regex to avoid partial matches
+        n = re.sub(r'\b(limited|ltd|private limited|pvt ltd|pvt\. ltd\.|inc|inc\.|corporation|corp|corp\.|technologies|tech|and|&)\b', ' ', n)
+        # Remove non-alphanumeric chars (keep spaces)
+        n = re.sub(r'[^a-z0-9 ]', '', n)
+        # Collapse multiple spaces
+        n = re.sub(r'\s+', ' ', n).strip()
+        return n
+
+    def _find_master_ipo(screener_name: str, screener_symbol: str) -> dict | None:
+        """Find matching master DB entry using multiple strategies."""
+        if not screener_name:
+            return None
+        orig_name = screener_name.lower().strip()
+        orig_symbol = screener_symbol.lower().strip()
+        
+        # Strategy 1: exact match on name or symbol
+        m = master_lookup.get(orig_name) or master_lookup.get(orig_symbol)
+        if m:
+            return m
+        
+        # Strategy 2: normalized name match
+        norm_name = _normalize(screener_name)
+        norm_symbol = _normalize(screener_symbol)
+        for key, mipo in master_lookup.items():
+            norm_key = _normalize(key)
+            if norm_key == norm_name or norm_key == norm_symbol:
+                return mipo
+        
+        # Strategy 3: substring match (screener name is a substring of master name, or vice versa)
+        for key, mipo in master_lookup.items():
+            norm_key = _normalize(key)
+            # Check if one contains the other (for abbreviated screener names)
+            if norm_name and (norm_name in norm_key or norm_key in norm_name):
+                return mipo
+        
+        # Strategy 4: first word match (for very abbreviated names like "Avience Biomedi." -> "Avience")
+        first_word = norm_name.split()[0] if norm_name.split() else ""
+        if len(first_word) >= 4:
+            for key, mipo in master_lookup.items():
+                norm_key = _normalize(key)
+                if first_word in norm_key or any(first_word in part for part in norm_key.split()):
+                    return mipo
+        
+        return None
+
     print(f"[DataGen] Loaded {len(master_lookup)} master DB entries for score fallback.")
 
     # Load comprehensive analysis JSON (44-section format)
     comp_analysis = load_json(os.path.join(DATA_DIR, "..", "src", "data", "ipoComprehensiveAnalysis.json"))
-    print(f"[DataGen] Loaded {len(comp_analysis)} comprehensive analysis entries (44 sections).")
+    # Build a slug-only lookup: keyed by normalized company slug (without -ID suffix)
+    comp_by_slug = {}
+    for key, val in comp_analysis.items():
+        if isinstance(key, str) and '-' in key:
+            slug_part = key.rsplit('-', 1)[0]  # e.g. "riyaasat-life-5" → "riyaasat-life"
+            comp_by_slug[slug_part] = val
+    # Also build a direct name-to-comp mapping from screener IPOs that match
+    comp_by_screener_slug = {}
+    for ipo in ipos:
+        ipo_name = ipo.get("name") or ipo.get("company_name", "")
+        ipo_slug = _slugify_company(ipo_name)
+        if ipo_slug in comp_by_slug:
+            comp_by_screener_slug[ipo_slug] = comp_by_slug[ipo_slug]
+    print(f"[DataGen] Loaded {len(comp_analysis)} comprehensive analysis entries (44 sections). {len(comp_by_slug)} unique slugs, {len(comp_by_screener_slug)} match screener IPOs.")
 
     print(f"[DataGen] Generating TS data for {len(ipos)} IPOs...")
 
@@ -359,7 +421,7 @@ def generate_ipo_data():
 
         # Fallback: use master database data when no ipo_analysis.json entry exists
         if not ai_analysis_text:
-            mipo = master_lookup.get(name.lower().strip()) or master_lookup.get(symbol.lower().strip())
+            mipo = _find_master_ipo(name, symbol)
             if mipo:
                 summary_text = mipo.get("ipo_summary", "")
                 thesis_text = mipo.get("investment_thesis", "")
@@ -470,14 +532,14 @@ def generate_ipo_data():
             rind = esc(r["indicator"]) if isinstance(r, dict) else '"🟡"'
             lines.append(f'      {{ text: "{rtext}", indicator: "{rind}" }},')
         lines.append('    ],')
-        # Find comprehensive analysis by slug (screener IPOs have consistent indexing)
-        comp_slug = f"{_slugify_company(name)}-{i + 1}"
-        comp_entry = comp_analysis.get(comp_slug, {})
+        # Find comprehensive analysis by slug (screener-matched index)
+        ipo_slug = _slugify_company(name)
+        comp_entry = comp_by_screener_slug.get(ipo_slug, {})
         comp_entry_data = _extract_comp_analysis(comp_entry) if isinstance(comp_entry, dict) else {}
         comp_scores = comp_entry.get('investment_verdict', {}).get('scores', {}) if isinstance(comp_entry, dict) else {}
 
         # Fallback for AI scores: master DB
-        mipo = master_lookup.get(name.lower().strip()) or master_lookup.get(symbol.lower().strip())
+        mipo = _find_master_ipo(name, symbol)
         m_sb = mipo.get("score_breakdown", {}) if mipo else {}
         master_ai_score = int(mipo.get("ai_score", 55)) if mipo else 55
 

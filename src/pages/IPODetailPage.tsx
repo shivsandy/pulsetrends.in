@@ -107,6 +107,13 @@ export default function IPODetailPage() {
     );
   }
 
+  // Check if this IPO has any meaningful analysis content
+  const hasMeaningfulAnalysis = !!(stock.aiAnalysis && stock.aiAnalysis.length > 20) ||
+    !!(stock.executiveSummary && stock.executiveSummary.length > 20) ||
+    !!(stock.financialAnalysis && stock.financialAnalysis.length > 20) ||
+    !!(stock.businessOverview && stock.businessOverview.length > 20) ||
+    !!(stock.aiVerdict && stock.aiVerdict.length > 10);
+
   const path = `/ipo-analysis/${slug}`;
   const url = canonical(path);
   const financialSchema = {
@@ -235,6 +242,27 @@ export default function IPODetailPage() {
             </div>
           )}
         </section>
+
+        {/* ANALYSIS UNAVAILABLE BANNER */}
+        {!hasMeaningfulAnalysis && (
+          <SectionBox title="" className="border-amber-800/40 bg-amber-900/10">
+            <div className="flex items-start gap-3">
+              <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+              <div>
+                <h3 className="text-[14px] font-semibold text-amber-300">AI Analysis Unavailable</h3>
+                <p className="text-[13px] text-amber-200/70 mt-1 leading-relaxed">
+                  Detailed AI-powered analysis for this IPO is not yet available. The analysis pipeline
+                  will automatically generate a comprehensive report in the next update cycle.
+                  Check back soon for financial insights, risk assessment, and investment verdict.
+                </p>
+                <div className="mt-3 flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                  <span className="text-[11px] text-amber-300/60 font-medium">Analysis pending — next pipeline run</span>
+                </div>
+              </div>
+            </div>
+          </SectionBox>
+        )}
 
         {/* COMPANY OVERVIEW */}
         <SectionBox title="Company Overview">
