@@ -242,12 +242,19 @@ def generate_ipo_data():
 
     # Load comprehensive analysis JSON (44-section format)
     comp_analysis = load_json(os.path.join(DATA_DIR, "..", "src", "data", "ipoComprehensiveAnalysis.json"))
-    # Build a slug-only lookup: keyed by normalized company slug (without -ID suffix)
+    # Build a slug-only lookup: keyed by normalized company slug
+    # Handles both "{slug}-{id}" format (e.g. "riyaasat-life-5") and slug-only format (e.g. "waterways-leisur")
     comp_by_slug = {}
     for key, val in comp_analysis.items():
         if isinstance(key, str) and '-' in key:
-            slug_part = key.rsplit('-', 1)[0]  # e.g. "riyaasat-life-5" → "riyaasat-life"
-            comp_by_slug[slug_part] = val
+            last_part = key.rsplit('-', 1)[-1]
+            if last_part.isdigit():
+                # Key is {slug}-{id} format — extract slug part
+                slug_part = key.rsplit('-', 1)[0]
+                comp_by_slug[slug_part] = val
+            else:
+                # Key is slug-only format (e.g. from ai_analysis_hub.py)
+                comp_by_slug[key] = val
     # Also build a direct name-to-comp mapping from screener IPOs that match
     comp_by_screener_slug = {}
     for ipo in ipos:
