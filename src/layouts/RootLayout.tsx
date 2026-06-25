@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
-import Ticker from '../components/Ticker';
 import Footer from '../components/Footer';
 import CookieConsent from '../components/CookieConsent';
 import { initGA, trackPageView, initScrollTracking, initTimeOnPage, resetTrackingForNewPage, setupOutboundLinkTracking } from '../lib/analytics';
@@ -58,7 +57,6 @@ export default function RootLayout() {
         Skip to main content
       </a>
       <Header />
-      {!isHome && <Ticker />}
       <main id="main-content" className="max-w-6xl mx-auto px-4 sm:px-6 py-8 flex-1 w-full">
         <Outlet />
       </main>
