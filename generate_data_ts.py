@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import hashlib
 from datetime import datetime, timezone
 
 import requests
@@ -172,6 +173,129 @@ def _extract_comp_analysis(comp_entry: dict) -> dict:
         "scorecard_categories": comp_entry.get("section_20_scorecard", {}).get("categories", []),
         "scorecard_total": comp_entry.get("section_20_scorecard", {}).get("total_score", 0),
         "scorecard_interpretation": comp_entry.get("section_20_scorecard", {}).get("interpretation", ""),
+    }
+
+def _parse_percent(value):
+    if value is None:
+        return None
+    if isinstance(value, (int, float)):
+        return float(value)
+    text = str(value).strip()
+    if not text:
+        return None
+    m = re.search(r"-?\d+(?:\.\d+)?", text.replace(",", ""))
+    return float(m.group()) if m else None
+
+def _parse_money(value):
+    if value is None:
+        return None
+    if isinstance(value, (int, float)):
+        return float(value)
+    text = str(value).lower().replace(",", "").strip()
+    if not text:
+        return None
+    mult = 1.0
+    if "lakh" in text or "lac" in text:
+        mult = 0.01
+    elif "mn" in text or "million" in text:
+        mult = 0.1
+    elif "bn" in text or "billion" in text:
+        mult = 100.0
+    m = re.search(r"-?\d+(?:\.\d+)?", text)
+    return float(m.group()) * mult if m else None
+
+def _stable_hash_int(text: str) -> int:
+    digest = hashlib.md5((text or "").encode("utf-8")).hexdigest()
+    return int(digest[:8], 16)
+
+def _fallback_scores_from_ipo(ipo: dict, mipo: dict | None = None) -> dict:
+    """Create deterministic, IPO-specific fallback scores when no AI scores exist."""
+    sector = (ipo.get("sector") or ipo.get("industry") or "").lower()
+    status = (ipo.get("status") or "").lower()
+    revenue_growth = _parse_percent(ipo.get("revenueGrowth"))
+    profit_margin = _parse_percent(ipo.get("profitMargin"))
+    roce = _parse_percent(ipo.get("roce"))
+    pe_ratio = _parse_percent(ipo.get("peRatio"))
+    gmp = _parse_percent(ipo.get("gmpPercent") or ipo.get("gmp"))
+    issue_size = _parse_money(ipo.get("issueSize"))
+    market_cap = _parse_money(ipo.get("marketCap"))
+    subscription = _parse_percent(ipo.get("subscriptionStatus") or ipo.get("subscription"))
+
+    fundamentals = 50
+    if revenue_growth is not None:
+        fundamentals += max(-10, min(15, revenue_growth / 4))
+    if profit_margin is not None:
+        fundamentals += max(-8, min(12, profit_margin * 1.5))
+    if roce is not None:
+        fundamentals += max(-6, min(10, roce / 2))
+    if any(k in sector for k in ("tech", "software", "it")):
+        fundamentals += 4
+    if status == "listed":
+        fundamentals += 2
+
+    valuation = 50
+    if pe_ratio is not None and pe_ratio > 0:
+        valuation += 12 if pe_ratio < 20 else 6 if pe_ratio < 35 else -8 if pe_ratio > 60 else -2
+    if issue_size is not None and issue_size > 500:
+        valuation -= 3
+    if market_cap is not None and market_cap > 5000:
+        valuation += 3
+
+    growth = 50
+    if revenue_growth is not None:
+        growth += max(-12, min(15, revenue_growth / 3))
+    if any(k in sector for k in ("technology", "software", "renewable")):
+        growth += 4
+
+    management = 52
+    if status == "listed":
+        management += 3
+    if any(k in sector for k in ("financial", "bank")):
+        management += 4
+    if sector:
+        management += (len(sector) % 5) - 2
+
+    sentiment = 50
+    if gmp is not None:
+        sentiment += max(-10, min(12, gmp / 5))
+    if subscription is not None:
+        sentiment += max(-8, min(10, subscription / 10))
+    if status == "open":
+        sentiment += 3
+    if status == "upcoming":
+        sentiment -= 1
+
+    if mipo and isinstance(mipo, dict):
+        sb = mipo.get("score_breakdown", {}) or {}
+        fundamentals = sb.get("fundamentals", fundamentals)
+        valuation = sb.get("valuation", valuation)
+        growth = sb.get("business_quality", growth)
+        management = sb.get("governance", management)
+        sentiment = sb.get("ipo_demand", sentiment)
+
+    fundamentals = int(max(0, min(100, round(fundamentals))))
+    valuation = int(max(0, min(100, round(valuation))))
+    growth = int(max(0, min(100, round(growth))))
+    management = int(max(0, min(100, round(management))))
+    sentiment = int(max(0, min(100, round(sentiment))))
+
+    weighted = round(
+        fundamentals * 0.30
+        + sentiment * 0.15
+        + valuation * 0.15
+        + management * 0.15
+        + growth * 0.15
+        + sentiment * 0.10
+    )
+    jitter = (_stable_hash_int(f"{ipo.get('id','')}|{ipo.get('name','')}|{ipo.get('ticker','')}") % 5) - 2
+    overall = int(max(0, min(100, weighted + jitter)))
+    return {
+        "overall": overall,
+        "fundamentals": fundamentals,
+        "valuation": valuation,
+        "growth": growth,
+        "management": management,
+        "marketSentiment": sentiment,
     }
 
 def generate_ipo_data():
@@ -545,32 +669,25 @@ def generate_ipo_data():
         comp_entry_data = _extract_comp_analysis(comp_entry) if isinstance(comp_entry, dict) else {}
         comp_scores = comp_entry.get('investment_verdict', {}).get('scores', {}) if isinstance(comp_entry, dict) else {}
 
-        # Fallback for AI scores: master DB
+        # Fallback for AI scores: master DB, then deterministic IPO-specific scoring
         mipo = _find_master_ipo(name, symbol)
-        m_sb = mipo.get("score_breakdown", {}) if mipo else {}
         master_ai_score = int(mipo.get("ai_score", 55)) if mipo else 55
 
         if comp_scores and isinstance(comp_scores, dict):
             overall_val = int(comp_scores.get('overall_score', master_ai_score))
-            fundamentals_val = int(comp_scores.get('fundamentals_score', m_sb.get('fundamentals', 50)))
-            valuation_val = int(comp_scores.get('valuation_score', m_sb.get('valuation', 50)))
-            growth_val = int(comp_scores.get('growth_score', m_sb.get('business_quality', 50)))
-            management_val = int(comp_scores.get('management_score', m_sb.get('governance', 50)))
-            sentiment_val = int(comp_scores.get('market_sentiment_score', m_sb.get('ipo_demand', 50)))
-        elif m_sb:
-            overall_val = master_ai_score
-            fundamentals_val = int(m_sb.get("fundamentals", 50))
-            valuation_val = int(m_sb.get("valuation", 50))
-            growth_val = int(m_sb.get("business_quality", 50))
-            management_val = int(m_sb.get("governance", 50))
-            sentiment_val = int(m_sb.get("ipo_demand", 50))
+            fundamentals_val = int(comp_scores.get('fundamentals_score', mipo.get('score_breakdown', {}).get('fundamentals', 50) if mipo else 50))
+            valuation_val = int(comp_scores.get('valuation_score', mipo.get('score_breakdown', {}).get('valuation', 50) if mipo else 50))
+            growth_val = int(comp_scores.get('growth_score', mipo.get('score_breakdown', {}).get('business_quality', 50) if mipo else 50))
+            management_val = int(comp_scores.get('management_score', mipo.get('score_breakdown', {}).get('governance', 50) if mipo else 50))
+            sentiment_val = int(comp_scores.get('market_sentiment_score', mipo.get('score_breakdown', {}).get('ipo_demand', 50) if mipo else 50))
         else:
-            overall_val = master_ai_score
-            fundamentals_val = 55
-            valuation_val = 50
-            growth_val = 55
-            management_val = 55
-            sentiment_val = 50
+            fallback_scores = _fallback_scores_from_ipo(ipo, mipo)
+            overall_val = fallback_scores["overall"]
+            fundamentals_val = fallback_scores["fundamentals"]
+            valuation_val = fallback_scores["valuation"]
+            growth_val = fallback_scores["growth"]
+            management_val = fallback_scores["management"]
+            sentiment_val = fallback_scores["marketSentiment"]
 
         lines.append('    aiScores: {')
         lines.append(f'      overall: {overall_val},')
