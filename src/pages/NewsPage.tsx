@@ -335,9 +335,11 @@ export default function NewsPage() {
           <div className="flex items-center gap-2 mb-1">
             <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-brand-muted border border-brand-border text-[11px] font-semibold text-brand-light uppercase tracking-wider">News Intelligence</span>
           </div>
-          <h1 className="text-2xl font-bold text-surface-white mt-3 tracking-tight">Crypto, IPO & Stock Market News</h1>
-          <p className="text-[14px] text-surface-700 mt-1.5 max-w-2xl leading-relaxed">
-            Premium market coverage for crypto, IPOs, Indian equities, and global stocks with AI-assisted analysis, source attribution, and investor-focused context.
+          <h1 className="text-2xl font-bold text-surface-white mt-3 tracking-tight">Real-time News Coverage</h1>
+          <p className="text-[14px] text-surface-700 mt-1.5 max-w-3xl leading-relaxed">
+            Real-time coverage of the latest breaking news and trending topics across every major category,
+            including AI, technology, gaming, business, crypto, entertainment, sports, health, science, climate,
+            and world affairs.
           </p>
           <div className="flex items-center gap-5 mt-4">
             <div className="flex items-center gap-1.5">

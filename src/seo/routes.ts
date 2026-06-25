@@ -72,9 +72,9 @@ export const ROUTES: Record<string, PageMeta> = {
   },
   news: {
     path: '/news',
-    title: `Market News - Stock Market & Crypto Updates | ${SITE.name}`,
+    title: `Real-time News Coverage | ${SITE.name}`,
     description:
-      'What\'s moving the markets today? AI-analyzed crypto, IPO, and stock market news with sentiment analysis, impact scoring, and actionable insights.',
+      'Real-time coverage of the latest breaking news and trending topics across every major category, including AI, technology, gaming, business, crypto, entertainment, sports, health, science, climate, and world affairs.',
     ogType: 'website',
     ogImage: DEFAULT_OG,
   },
