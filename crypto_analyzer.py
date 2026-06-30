@@ -16,9 +16,10 @@ IPO_ANALYSIS_FILE = os.path.join(DATA_DIR, "ipo_analysis.json")
 CRYPTO_FILE = os.path.join(DATA_DIR, "crypto_data.json")
 IPO_FILE = os.path.join(DATA_DIR, "ipo_data.json")
 
-# ── All 18 free models assigned to every key ──────────────────────
+# ── OpenRouter allowlist assigned to every key ────────────────────
 _ALL_MODELS = [
-    "nex-agi/nex-n2-pro:free",
+    "cohere/north-mini-code:free",
+    "nvidia/llama-nemotron-rerank-vl-1b-v2:free",
     "nvidia/nemotron-3.5-content-safety:free",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -31,8 +32,11 @@ _ALL_MODELS = [
     "nvidia/nemotron-3-nano-30b-a3b:free",
     "nvidia/nemotron-nano-12b-v2-vl:free",
     "qwen/qwen3-next-80b-a3b-instruct:free",
+    "nvidia/nemotron-nano-9b-v2:free",
     "openai/gpt-oss-120b:free",
+    "openai/gpt-oss-20b:free",
     "qwen/qwen3-coder:free",
+    "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "meta-llama/llama-3.3-70b-instruct:free",
     "meta-llama/llama-3.2-3b-instruct:free",
     "nousresearch/hermes-3-llama-3.1-405b:free",
