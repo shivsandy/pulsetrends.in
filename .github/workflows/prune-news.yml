@@ -6,7 +6,7 @@ on:
       max_age_days:
         description: 'Delete articles older than N days'
         required: false
-        default: '2'
+        default: '30'
       count:
         description: 'Max articles to delete per run'
         required: false

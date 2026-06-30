@@ -52,6 +52,12 @@ jobs:
       - name: Convert premium JSON to TypeScript (newsData.ts)
         run: python scripts/convert_premium_to_ts.py
 
+      - name: Prune news older than 30 days
+        env:
+          MAX_AGE_DAYS: "30"
+          MAX_REMOVE_COUNT: "60"
+        run: python scripts/prune_old_news.py
+
       - name: Commit new articles
         run: |
           git config user.name "PulseTrends Bot"

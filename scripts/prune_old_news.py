@@ -17,7 +17,7 @@ import sys
 from datetime import datetime, timezone, timedelta
 
 # ── Config from environment ──────────────────────────────────────────
-MAX_AGE_DAYS = int(os.environ.get("MAX_AGE_DAYS", "2"))
+MAX_AGE_DAYS = int(os.environ.get("MAX_AGE_DAYS", "30"))
 MAX_REMOVE_COUNT = int(os.environ.get("MAX_REMOVE_COUNT", "60"))
 DRY_RUN = os.environ.get("DRY_RUN", "").lower() in ("1", "true", "yes")
 
