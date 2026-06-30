@@ -9,7 +9,7 @@ the NewsArticle interface expected by the PulseTrends React frontend.
 import json
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -137,6 +137,72 @@ def js_array(arr) -> str:
         return "[]"
     items = [js_str(item) for item in arr]
     return "[" + ", ".join(items) + "]"
+
+
+def parse_iso(value: str):
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except Exception:
+        return None
+
+
+def extract_existing_articles(ts_text: str):
+    """Return existing article blocks from newsData.ts with id/date metadata."""
+    m = re.search(r'export\s+const\s+newsArticles\s*:\s*NewsArticle\[\]\s*=\s*\[', ts_text)
+    if not m:
+        return []
+
+    array_start = m.end()
+    depth = 0
+    array_end = -1
+    for i in range(array_start, len(ts_text)):
+        ch = ts_text[i]
+        if ch == '[':
+            depth += 1
+        elif ch == ']':
+            if depth == 0:
+                array_end = i
+                break
+            depth -= 1
+    if array_end == -1:
+        return []
+
+    articles_text = ts_text[array_start + 1:array_end]
+    blocks = []
+    depth = 0
+    in_string = False
+    escape_next = False
+    block_start = None
+
+    for pos, ch in enumerate(articles_text):
+        if escape_next:
+            escape_next = False
+            continue
+        if ch == '\\' and in_string:
+            escape_next = True
+            continue
+        if ch == '"':
+            in_string = not in_string
+        if not in_string:
+            if ch == '{':
+                depth += 1
+                if depth == 1:
+                    line_start = articles_text.rfind('\n', 0, pos)
+                    block_start = line_start + 1 if line_start >= 0 else 0
+            elif ch == '}':
+                depth -= 1
+                if depth == 0 and block_start is not None:
+                    text = articles_text[block_start:pos + 1].rstrip().rstrip(',')
+                    id_m = re.search(r'\bid:\s*"((?:[^"\\]|\\.)*)"', text)
+                    pub_m = re.search(r'\bpublishedAt:\s*"((?:[^"\\]|\\.)*)"', text)
+                    if id_m:
+                        blocks.append({
+                            "id": id_m.group(1),
+                            "publishedAt": parse_iso(pub_m.group(1)) if pub_m else None,
+                            "text": text,
+                        })
+                    block_start = None
+    return blocks
 
 
 
@@ -314,18 +380,44 @@ def main() -> int:
         print("[ERROR] No articles in premium output")
         return 1
 
+    existing = []
+    if NEWS_DATA_FILE.exists():
+        existing_text = NEWS_DATA_FILE.read_text(encoding="utf-8")
+        existing = extract_existing_articles(existing_text)
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=30)
+    merged = []
+
+    for art in existing:
+        if art["publishedAt"] and art["publishedAt"] >= cutoff:
+            merged.append(art)
+
+    for article in articles:
+        converted = convert_article(article)
+        pub = article.get("publishedAt") or CURRENT_DATE
+        merged.append({
+            "id": article.get("id", ""),
+            "publishedAt": parse_iso(pub) or datetime.now(timezone.utc),
+            "text": converted.rstrip().rstrip(','),
+        })
+
+    deduped = {}
+    for item in merged:
+        key = item["id"]
+        prev = deduped.get(key)
+        if not prev or (item["publishedAt"] and prev["publishedAt"] and item["publishedAt"] > prev["publishedAt"]):
+            deduped[key] = item
+
+    ordered = sorted(deduped.values(), key=lambda x: x["publishedAt"] or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
+
     print(f"Converting {len(articles)} premium articles to TypeScript...")
+    print(f"Merging with {len(existing)} existing article(s), keeping {len(ordered)} within 30 days...")
 
-    # Build the TypeScript content
-    ts_parts = [INTERFACE_DEFS]
-    ts_parts.append("")
-    ts_parts.append("export const newsArticles: NewsArticle[] = [")
-
-    for i, article in enumerate(articles):
+    ts_parts = [INTERFACE_DEFS, "", "export const newsArticles: NewsArticle[] = ["]
+    for i, item in enumerate(ordered):
         if i > 0:
             ts_parts.append("")
-        ts_parts.append(convert_article(article))
-
+        ts_parts.append(item["text"] + ",")
     ts_parts.append("];")
     ts_parts.append("")
 
