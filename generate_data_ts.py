@@ -204,6 +204,30 @@ def _parse_money(value):
     m = re.search(r"-?\d+(?:\.\d+)?", text)
     return float(m.group()) * mult if m else None
 
+def _parse_int(value):
+    if value is None:
+        return None
+    if isinstance(value, int) and not isinstance(value, bool):
+        return value
+    if isinstance(value, float):
+        return int(value)
+    text = str(value).strip().replace(",", "")
+    if not text:
+        return None
+    m = re.search(r"-?\d+", text)
+    return int(m.group()) if m else None
+
+def _parse_date(value):
+    if not value:
+        return None
+    text = str(value).strip()
+    for fmt in ("%Y-%m-%d", "%d-%m-%Y", "%d/%m/%Y", "%d %b %Y", "%d %B %Y"):
+        try:
+            return datetime.strptime(text, fmt)
+        except ValueError:
+            pass
+    return None
+
 def _stable_hash_int(text: str) -> int:
     digest = hashlib.md5((text or "").encode("utf-8")).hexdigest()
     return int(digest[:8], 16)
@@ -220,6 +244,12 @@ def _fallback_scores_from_ipo(ipo: dict, mipo: dict | None = None) -> dict:
     issue_size = _parse_money(ipo.get("issueSize"))
     market_cap = _parse_money(ipo.get("marketCap"))
     subscription = _parse_percent(ipo.get("subscriptionStatus") or ipo.get("subscription"))
+    lot_size = _parse_int(ipo.get("lotSize") or ipo.get("lot"))
+    face_value = _parse_money(ipo.get("faceValue"))
+    days_to_listing = None
+    listing_date = _parse_date(ipo.get("listingDate") or ipo.get("openDate") or ipo.get("closeDate"))
+    if listing_date:
+        days_to_listing = (listing_date - datetime.now()).days
 
     fundamentals = 50
     if revenue_growth is not None:
@@ -264,6 +294,17 @@ def _fallback_scores_from_ipo(ipo: dict, mipo: dict | None = None) -> dict:
         sentiment += 3
     if status == "upcoming":
         sentiment -= 1
+    if days_to_listing is not None:
+        if days_to_listing < 0:
+            sentiment += 2
+        elif days_to_listing < 14:
+            sentiment += 1
+        else:
+            sentiment -= 1
+    if lot_size is not None:
+        sentiment += 1 if lot_size <= 100 else 0
+    if face_value is not None and face_value <= 10:
+        valuation += 1
 
     if mipo and isinstance(mipo, dict):
         sb = mipo.get("score_breakdown", {}) or {}
@@ -285,9 +326,10 @@ def _fallback_scores_from_ipo(ipo: dict, mipo: dict | None = None) -> dict:
         + valuation * 0.15
         + management * 0.15
         + growth * 0.15
-        + sentiment * 0.10
+        + (market_cap / 1000 if market_cap is not None else 50) * 0.10
     )
-    jitter = (_stable_hash_int(f"{ipo.get('id','')}|{ipo.get('name','')}|{ipo.get('ticker','')}") % 5) - 2
+    jitter_seed = f"{ipo.get('id','')}|{ipo.get('name','')}|{ipo.get('ticker','')}|{ipo.get('status','')}|{ipo.get('sector','')}"
+    jitter = (_stable_hash_int(jitter_seed) % 9) - 4
     overall = int(max(0, min(100, weighted + jitter)))
     return {
         "overall": overall,
