@@ -80,6 +80,19 @@ def today_str():
 def today_slug():
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
+VISUAL_TYPES = [
+    "wide-angle-scenes",
+    "close-up-views",
+    "editorial-news-layouts",
+    "infographic-style-visuals",
+    "industry-specific-visuals",
+    "conceptual-visuals",
+    "realistic-environments",
+    "product-focused-visuals",
+    "event-focused-visuals",
+    "data-driven-visuals",
+]
+
 
 # ═══════════════════════════════════════════════════════════════════════
 #  SECTION 1 — RSS & NEWS FEED FETCHING
