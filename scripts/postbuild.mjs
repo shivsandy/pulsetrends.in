@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, copyFileSync, existsSync, readdirSync, mkdirSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, copyFileSync, existsSync, readdirSync, mkdirSync, statSync, unlinkSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 
 const SITE_ORIGIN = 'https://pulsetrends.in';
@@ -123,31 +123,14 @@ function buildNewsSitemap() {
   const articles = extractArticlesFromTs(resolve('src/data/newsData.ts'));
   const now = new Date();
   const today = now.toISOString().split('T')[0];
-  // Try 48h window first (Google News requirement), fall back to 7 days if empty
-  const windows = [48, 72, 168]; // hours: 48h, 72h, 7 days
-  let recentArticles = [];
-  let usedWindow = 0;
-  for (const hours of windows) {
-    const cutoff = new Date(now.getTime() - hours * 60 * 60 * 1000);
-    recentArticles = articles.filter((a) => {
-      if (!a.publishedAt) return false;
-      const pubDate = new Date(a.publishedAt);
-      return pubDate >= cutoff;
-    });
-    if (recentArticles.length > 0) {
-      usedWindow = hours;
-      break;
-    }
-  }
-  // Absolute fallback: include all articles if all windows empty
-  if (recentArticles.length === 0 && articles.length > 0) {
-    recentArticles = [...articles];
-    usedWindow = -1;
-  }
-  if (usedWindow > 48) {
-    console.warn(`[postbuild] WARNING: news-sitemap includes articles older than 48h (window: ${usedWindow > 0 ? usedWindow + 'h' : 'all'}). Google News requires articles within 48h.`);
-  }
-  console.log(`[postbuild] News sitemap: ${recentArticles.length}/${articles.length} articles (window: ${usedWindow > 0 ? usedWindow + 'h' : usedWindow === -1 ? 'all' : 'none'})`);
+  const cutoff = new Date(now.getTime() - 48 * 60 * 60 * 1000);
+  const recentArticles = articles.filter((a) => {
+    if (!a.publishedAt) return false;
+    const pubDate = new Date(a.publishedAt);
+    return pubDate >= cutoff;
+  });
+  console.log(`[postbuild] News sitemap: ${recentArticles.length}/${articles.length} articles (window: 48h)`);
+  if (recentArticles.length === 0) return '';
   const urls = recentArticles
     .map((a) => {
       const slug = `${slugify(a.headline)}-${a.id}`;
@@ -246,8 +229,17 @@ async function main() {
 
   // Generate news-sitemap.xml for Google News
   const newsSitemap = buildNewsSitemap();
-  writeFileSync(resolve(distDir, 'news-sitemap.xml'), newsSitemap, 'utf8');
-  console.log(`[postbuild] Wrote dist/news-sitemap.xml (${allRoutes.filter(r => r.path.startsWith('/news/')).length} news URLs)`);
+  if (newsSitemap) {
+    writeFileSync(resolve(distDir, 'news-sitemap.xml'), newsSitemap, 'utf8');
+    console.log(`[postbuild] Wrote dist/news-sitemap.xml (${allRoutes.filter(r => r.path.startsWith('/news/')).length} news URLs)`);
+  } else {
+    const newsSitemapPath = resolve(distDir, 'news-sitemap.xml');
+    if (existsSync(newsSitemapPath)) {
+      // No compliant articles; remove stale sitemap from prior builds.
+      unlinkSync(newsSitemapPath);
+    }
+    console.log('[postbuild] Skipped dist/news-sitemap.xml (no articles within 48h)');
+  }
 
   // Generate robots.txt
   const robots = buildRobots();
