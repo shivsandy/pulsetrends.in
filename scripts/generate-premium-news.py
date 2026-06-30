@@ -7,7 +7,7 @@ that maximize Google Search, Google Discover, AI Overviews, Featured Snippets,
 GEO SEO visibility, user engagement, organic CTR, and returning visitors.
 
 Pipeline:
-  1. TREND DISCOVERY — Gather trending topics from RSS, Google News, YouTube, Reddit
+  1. TREND DISCOVERY — Gather trending topics from RSS, Google News, YouTube
   2. TREND SCORING — LLM-based scoring across 8 dimensions
   3. TOPIC SELECTION — Pick 10 highest-opportunity topics (no category restrictions)
   4. ARTICLE GENERATION — Full premium articles with SEO/GEO/Discover/EEAT
@@ -21,7 +21,7 @@ Run: python scripts/generate-premium-news.py
 Environment variables (see .env.example):
   LLM: ZEN_API_KEY2, GROQ_API, MISTRAL_API, COHERE_API, GOOGLE_AI_API_KEY_1/2, NVIDIA_API_KEY_1
   Media: UNSPLASH_ACCESS_KEY_1/2/3
-  Social: REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, YOUTUBE_API_KEY
+  Social: YOUTUBE_API_KEY
 """
 
 import json
@@ -244,73 +244,6 @@ def fetch_youtube_trending() -> list[dict]:
 
 
 # ═══════════════════════════════════════════════════════════════════════
-#  SECTION 3 — REDDIT TRENDING FETCHER
-# ═══════════════════════════════════════════════════════════════════════
-
-SUBREDDITS_TO_WATCH = [
-    "wallstreetbets", "cryptocurrency", "CryptoMarkets", "stocks",
-    "investing", "technology", "ArtificialIntelligence", "MachineLearning",
-    "IndiaInvestments", "IndianStockMarket", "IPO",
-    "worldnews", "news", "entertainment", "movies", "gaming",
-    "science", "health", "fitness", "sports", "Cricket",
-    "startups", "SmallBusiness", "finance",
-]
-
-def fetch_reddit_trending() -> list[dict]:
-    """Fetch trending posts from Reddit using PRAW (free tier)."""
-    client_id = os.environ.get("REDDIT_CLIENT_ID", "")
-    client_secret = os.environ.get("REDDIT_CLIENT_SECRET", "")
-    if not client_id or not client_secret:
-        return []
-    items = []
-    try:
-        import praw
-        reddit = praw.Reddit(
-            client_id=client_id,
-            client_secret=client_secret,
-            user_agent="PulseTrends/1.0 (trend discovery bot)",
-        )
-        for sub_name in SUBREDDITS_TO_WATCH:
-            try:
-                subreddit = reddit.subreddit(sub_name)
-                for post in subreddit.hot(limit=5):
-                    title = post.title.strip()
-                    if title and len(title) > 15:
-                        items.append({
-                            "title": title,
-                            "url": post.url,
-                            "summary": (post.selftext or "")[:300],
-                            "source": f"Reddit/r/{sub_name}",
-                            "published": datetime.fromtimestamp(post.created_utc, tz=timezone.utc).isoformat(),
-                            "engagement": f"{post.score} upvotes, {post.num_comments} comments",
-                            "type": "reddit_trending",
-                        })
-                # Also get rising posts for early trends
-                for post in subreddit.rising(limit=3):
-                    title = post.title.strip()
-                    if title and len(title) > 15:
-                        items.append({
-                            "title": title,
-                            "url": post.url,
-                            "summary": (post.selftext or "")[:200],
-                            "source": f"Reddit/r/{sub_name}/rising",
-                            "published": datetime.fromtimestamp(post.created_utc, tz=timezone.utc).isoformat(),
-                            "engagement": f"{post.score} upvotes, {post.num_comments} comments",
-                            "type": "reddit_rising",
-                        })
-            except Exception:
-                continue
-    except ImportError:
-        print("[Reddit] PRAW not installed. Skipping Reddit trends.")
-        print("    Install: pip install praw")
-    except Exception as e:
-        print(f"[Reddit] Error: {e}")
-    print(f"[Reddit] Fetched {len(items)} trending posts")
-    return items
-
-
-# ═══════════════════════════════════════════════════════════════════════
-#  SECTION 4 — LLM API CALLERS (Multi-Provider Fallback)
 # ═══════════════════════════════════════════════════════════════════════
 
 # Provider order per the prompt's MODEL USAGE POLICY:
@@ -550,7 +483,7 @@ def call_llm(prompt, purpose="generation"):
 #  SECTION 5 — TREND DISCOVERY & SCORING
 # ═══════════════════════════════════════════════════════════════════════
 
-def discover_and_score_trends(feed_items: list[dict], yt_items: list[dict], reddit_items: list[dict]) -> list[dict]:
+def discover_and_score_trends(feed_items: list[dict], yt_items: list[dict]) -> list[dict]:
     """
     Use LLM to analyze all trend signals and return EXACTLY 10 scored topics
     ranked by overall opportunity, regardless of category.
@@ -559,9 +492,8 @@ def discover_and_score_trends(feed_items: list[dict], yt_items: list[dict], redd
     random.shuffle(feed_items)
     sample = feed_items[:120]
 
-    # Prepare YouTube and Reddit samples
+    # Prepare YouTube sample
     yt_sample = yt_items[:20]
-    reddit_sample = reddit_items[:30]
 
     # Build the trend source text
     headlines_text = "=== NEWS FEEDS ===\n"
@@ -573,16 +505,12 @@ def discover_and_score_trends(feed_items: list[dict], yt_items: list[dict], redd
         for item in yt_sample:
             headlines_text += f"- {item['title']} ({item['source']}) [{item.get('engagement', '')}]\n"
 
-    if reddit_sample:
-        headlines_text += "\n=== REDDIT TRENDING ===\n"
-        for item in reddit_sample:
-            headlines_text += f"- {item['title']} ({item['source']}) [{item.get('engagement', '')}]\n"
 
     today = today_str()
 
     trend_prompt = f"""You are the Chief Trend Analyst for PulseTrends.in, a financial news platform. Today is {today}.
 
-Below are {len(sample) + len(yt_sample) + len(reddit_sample)} real-time signals from global news feeds, YouTube trending, and Reddit trending discussions.
+Below are {len(sample) + len(yt_sample)} real-time signals from global news feeds and YouTube trending discussions.
 
 ## YOUR MISSION
 Analyze ALL signals and identify the 10 HIGHEST OPPORTUNITY trending topics available RIGHT NOW.
@@ -621,7 +549,7 @@ Return ONLY valid JSON. No markdown fences. No commentary.
 {{
   "generated_at": "{now_iso()}",
   "date": "{today}",
-  "total_signals_analyzed": {len(sample) + len(yt_sample) + len(reddit_sample)},
+  "total_signals_analyzed": {len(sample) + len(yt_sample)},
   "top_trending_topics": [
     {{
       "rank": 1,
@@ -1426,11 +1354,7 @@ def main() -> int:
     print("  → Fetching YouTube trending...")
     yt_items = fetch_youtube_trending()
 
-    # Reddit trending
-    print("  → Fetching Reddit trending...")
-    reddit_items = fetch_reddit_trending()
-
-    total_signals = len(feed_items) + len(yt_items) + len(reddit_items)
+    total_signals = len(feed_items) + len(yt_items)
     print(f"\n  ✓ Total signals collected: {total_signals}")
 
     if total_signals < 20:
@@ -1438,7 +1362,7 @@ def main() -> int:
 
     # ── Step 2: Trend Scoring & Selection ──
     print("\n[Step 2/5] Scoring trends and selecting top 10 opportunities...")
-    top_topics = discover_and_score_trends(feed_items, yt_items, reddit_items)
+    top_topics = discover_and_score_trends(feed_items, yt_items)
 
     if not top_topics:
         print("[!] No topics identified. Cannot generate articles.")

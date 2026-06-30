@@ -45,8 +45,6 @@ jobs:
           UNSPLASH_ACCESS_KEY_2: ${{ secrets.UNSPLASH_ACCESS_KEY_2 }}
           UNSPLASH_ACCESS_KEY_3: ${{ secrets.UNSPLASH_ACCESS_KEY_3 }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
-          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
         run: python scripts/generate-premium-news.py
 
       - name: Convert premium JSON to TypeScript (newsData.ts)
