@@ -1017,7 +1017,8 @@ IMPORTANT RULES
         ipo, slug = item
         name = ipo.get("name") or ipo.get("company_name", "Unknown")
         prompt = build_ipo_prompt(ipo)
-        result = generate_analysis(prompt, system, use_zen=True)
+        # IPO analysis must use OpenRouter key rotation only.
+        result = generate_analysis(prompt, system, use_zen=False)
         with lock:
             done[0] += 1
             if result:
