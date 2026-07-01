@@ -1,87 +1,10 @@
 [
   {
-    "name": "Riyaasat Life",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-01",
-    "marketCap": 114.0
-  },
-  {
-    "name": "Riyaasat Life",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-01",
-    "marketCap": 114.0
-  },
-  {
-    "name": "Shreedhar Spinners",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-01",
-    "marketCap": 114.0
-  },
-  {
-    "name": "Waterways Leisur",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-01",
-    "marketCap": 5849.0
-  },
-  {
-    "name": "Advit Jewels",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-01",
-    "marketCap": 632.0
-  },
-  {
-    "name": "Jivial Industrie",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-01",
-    "marketCap": 92.0
-  },
-  {
-    "name": "Sri Priyanka Geo",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-01",
-    "marketCap": 344.0
-  },
-  {
-    "name": "Dhanwel Hybrid",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-02",
-    "marketCap": 90.0
-  },
-  {
-    "name": "CSM Technologies",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-02",
-    "marketCap": 583.0
-  },
-  {
-    "name": "IC Electricals",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-03",
-    "marketCap": 181.0
-  },
-  {
-    "name": "Crazy Snacks",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-03",
-    "marketCap": 107.0
-  },
-  {
-    "name": "Adon Agro",
+    "name": "Aastha Spintex",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "2026-07-06",
-    "marketCap": 163.0
+    "marketCap": 600.0
   },
   {
     "name": "Twinkle Papers",
@@ -91,11 +14,18 @@
     "marketCap": 105.0
   },
   {
-    "name": "Aastha Spintex",
+    "name": "Twinkle Papers",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "2026-07-06",
-    "marketCap": 600.0
+    "marketCap": 105.0
+  },
+  {
+    "name": "Adon Agro",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-07-06",
+    "marketCap": 161.0
   },
   {
     "name": "Sampark India",
@@ -116,7 +46,112 @@
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "2026-07-07",
-    "marketCap": 0
+    "marketCap": 150.0
+  },
+  {
+    "name": "Seemax Resources",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-07-07",
+    "marketCap": 62.0
+  },
+  {
+    "name": "Vinit Mobile",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-07-07",
+    "marketCap": 97.0
+  },
+  {
+    "name": "Teja Engineering",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-07-07",
+    "marketCap": 141.0
+  },
+  {
+    "name": "Knack Packaging",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-07-08",
+    "marketCap": 2140.0
+  },
+  {
+    "name": "IC Electricals",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-10",
+    "marketCap": 181.0
+  },
+  {
+    "name": "Aastha Spintex",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-06",
+    "marketCap": 600.0
+  },
+  {
+    "name": "Twinkle Papers",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-06",
+    "marketCap": 105.0
+  },
+  {
+    "name": "Twinkle Papers",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-06",
+    "marketCap": 105.0
+  },
+  {
+    "name": "Twinkle Papers",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-06",
+    "marketCap": 105.0
+  },
+  {
+    "name": "Twinkle Papers",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-06",
+    "marketCap": 105.0
+  },
+  {
+    "name": "Adon Agro",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-06",
+    "marketCap": 161.0
+  },
+  {
+    "name": "Crazy Snacks",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-03",
+    "marketCap": 101.0
+  },
+  {
+    "name": "Dhanwel Hybrid",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-02",
+    "marketCap": 90.0
+  },
+  {
+    "name": "CSM Technologies",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-02",
+    "marketCap": 583.0
+  },
+  {
+    "name": "Advit Jewels",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-01",
+    "marketCap": 632.0
   },
   {
     "name": "Riyaasat Life",
@@ -126,11 +161,32 @@
     "marketCap": 114.0
   },
   {
-    "name": "Riyaasat Life",
+    "name": "Shreedhar Spinners",
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-07-01",
     "marketCap": 114.0
+  },
+  {
+    "name": "Jivial Industrie",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-01",
+    "marketCap": 92.0
+  },
+  {
+    "name": "Waterways Leisur",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-01",
+    "marketCap": 5849.0
+  },
+  {
+    "name": "Sri Priyanka Geo",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-01",
+    "marketCap": 344.0
   },
   {
     "name": "Anubhav Plast",
@@ -144,7 +200,7 @@
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-06-29",
-    "marketCap": 4698.0
+    "marketCap": 4476.0
   },
   {
     "name": "Avience Biomedi.",
@@ -438,49 +494,49 @@
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-04-02",
-    "marketCap": 2195.0
+    "marketCap": 0
   },
   {
     "name": "Sai Parenteral's",
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-04-02",
-    "marketCap": 1732.0
+    "marketCap": 0
   },
   {
     "name": "Powerica Ltd",
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-04-02",
-    "marketCap": 4999.0
+    "marketCap": 0
   },
   {
     "name": "Highness Microelectronics",
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-04-02",
-    "marketCap": 62.0
+    "marketCap": 0
   },
   {
     "name": "TIPCO Engineering",
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-04-01",
-    "marketCap": 185.0
+    "marketCap": 0
   },
   {
     "name": "Central Mine Pla",
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-03-30",
-    "marketCap": 12281.0
+    "marketCap": 0
   },
   {
     "name": "Speciality Medi.",
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-03-30",
-    "marketCap": 109.0
+    "marketCap": 0
   },
   {
     "name": "Skyways Air Ser.",
@@ -7021,53 +7077,53 @@
     "marketCap": 0
   },
   {
-    "name": "Veefin Solutions",
+    "name": "Advit Jewels",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "2026-07-01",
+    "marketCap": 632.0
   },
   {
-    "name": "Uravi Defence &",
+    "name": "Riyaasat Life",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "2026-07-01",
+    "marketCap": 114.0
   },
   {
-    "name": "HMA Agro Inds.",
+    "name": "Jivial Industrie",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-07-04",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "2026-07-01",
+    "marketCap": 92.0
   },
   {
-    "name": "Cosmic CRF",
+    "name": "Waterways Leisur",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "2026-07-01",
+    "marketCap": 5849.0
   },
   {
-    "name": "Vilin Bio Med",
+    "name": "Anubhav Plast",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "2026-06-29",
+    "marketCap": 88.0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Turtlemint Fintech",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "2026-06-29",
+    "marketCap": 4476.0
   },
   {
-    "name": "Cell Point",
+    "name": "Leapfrog Engg.",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-06-28",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "2026-06-24",
+    "marketCap": 326.0
   },
   {
     "name": "Liotech Ind.",
@@ -7075,6 +7131,13 @@
     "source_category": "below_price",
     "listingDate": "2026-06-24",
     "marketCap": 125.0
+  },
+  {
+    "name": "Clay Craft India",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-06-24",
+    "marketCap": 418.0
   },
   {
     "name": "Utkal Speciality",
@@ -7133,18 +7196,18 @@
     "marketCap": 102.0
   },
   {
-    "name": "Bio Medica Lab",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-05-29",
-    "marketCap": 175.0
-  },
-  {
     "name": "NFP Sampoorna",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2026-05-25",
     "marketCap": 69.0
+  },
+  {
+    "name": "Goldline Pharmaceutical",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-05-19",
+    "marketCap": 41.0
   },
   {
     "name": "Simca Advertis.",
@@ -7173,13 +7236,6 @@
     "source_category": "below_price",
     "listingDate": "2026-04-24",
     "marketCap": 102.0
-  },
-  {
-    "name": "Safety Controls",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-04-13",
-    "marketCap": 159.0
   },
   {
     "name": "A C J K Exports",
@@ -7266,13 +7322,6 @@
     "marketCap": 56.0
   },
   {
-    "name": "Brandman Retail",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-02-11",
-    "marketCap": 325.0
-  },
-  {
     "name": "C K K Retail",
     "status": "listed",
     "source_category": "below_price",
@@ -7320,6 +7369,13 @@
     "source_category": "below_price",
     "listingDate": "2026-01-21",
     "marketCap": 160.0
+  },
+  {
+    "name": "Defrail Technologies",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-01-19",
+    "marketCap": 52.0
   },
   {
     "name": "Victory Ele.",
@@ -7455,6 +7511,13 @@
     "marketCap": 140.0
   },
   {
+    "name": "Neochem Bio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-12-09",
+    "marketCap": 168.0
+  },
+  {
     "name": "Ravelcare",
     "status": "listed",
     "source_category": "below_price",
@@ -7516,13 +7579,6 @@
     "source_category": "below_price",
     "listingDate": "2025-11-26",
     "marketCap": 1381.0
-  },
-  {
-    "name": "Gallard Steel",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-11-26",
-    "marketCap": 142.0
   },
   {
     "name": "Capillary Tech.",
@@ -7740,13 +7796,6 @@
     "source_category": "below_price",
     "listingDate": "2025-10-03",
     "marketCap": 4253.0
-  },
-  {
-    "name": "Earkart",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-10-03",
-    "marketCap": 186.0
   },
   {
     "name": "Justo Realfin",
@@ -8358,13 +8407,6 @@
     "marketCap": 167.0
   },
   {
-    "name": "HDB FINANC SER",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-07-02",
-    "marketCap": 61253.0
-  },
-  {
     "name": "Supertech EV",
     "status": "listed",
     "source_category": "below_price",
@@ -8376,49 +8418,63 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-01",
-    "marketCap": 424.0
+    "marketCap": 0
   },
   {
     "name": "Shri Hare-Krish.",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-01",
-    "marketCap": 113.0
+    "marketCap": 0
   },
   {
     "name": "Icon Facil.",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-01",
-    "marketCap": 72.0
+    "marketCap": 0
   },
   {
     "name": "Ellen.Indl.Gas",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-01",
-    "marketCap": 5637.0
+    "marketCap": 0
   },
   {
     "name": "Kalpat.",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-01",
-    "marketCap": 8524.0
+    "marketCap": 0
   },
   {
     "name": "Abram Food",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-01",
-    "marketCap": 51.0
+    "marketCap": 0
+  },
+  {
+    "name": "Mayasheel Vent.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-06-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Aakaar Medical",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-06-27",
+    "marketCap": 0
   },
   {
     "name": "Arisinfra Solu.",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-06-25",
-    "marketCap": 1799.0
+    "marketCap": 0
   },
   {
     "name": "Eppeltone Ene.",
@@ -8463,17 +8519,17 @@
     "marketCap": 0
   },
   {
-    "name": "Aegis Vopak Term",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-06-02",
-    "marketCap": 0
-  },
-  {
     "name": "Dar Credit & Cap",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-05-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Virtual Galaxy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-05-19",
     "marketCap": 0
   },
   {
@@ -8814,13 +8870,6 @@
   },
   {
     "name": "International Gemological Instit",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-12-20",
-    "marketCap": 0
-  },
-  {
-    "name": "Hamps Bio",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-12-20",
@@ -9443,13 +9492,6 @@
     "marketCap": 0
   },
   {
-    "name": "Sylvan Plyboard",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-07-01",
-    "marketCap": 0
-  },
-  {
     "name": "Stanley Lifesty.",
     "status": "listed",
     "source_category": "below_price",
@@ -9548,6 +9590,13 @@
     "marketCap": 0
   },
   {
+    "name": "Quest Laborato.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-05-23",
+    "marketCap": 0
+  },
+  {
     "name": "Indian Emuls",
     "status": "listed",
     "source_category": "below_price",
@@ -9580,13 +9629,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-05-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Energy-Mission",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-05-16",
     "marketCap": 0
   },
   {
@@ -9636,6 +9678,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-04-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Ramdevbaba Sol.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-04-23",
     "marketCap": 0
   },
   {
@@ -9752,6 +9801,13 @@
   },
   {
     "name": "Gopal Snacks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-03-14",
+    "marketCap": 0
+  },
+  {
+    "name": "Koura Fine Diamo",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-03-14",
@@ -10024,6 +10080,13 @@
     "marketCap": 0
   },
   {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
     "name": "Presstonic Engi.",
     "status": "listed",
     "source_category": "below_price",
@@ -10126,6 +10189,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
@@ -10423,13 +10493,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -10437,17 +10500,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10479,13 +10591,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -10493,17 +10598,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10535,13 +10689,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -10549,17 +10696,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10591,13 +10787,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -10605,17 +10794,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10647,13 +10885,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -10661,17 +10892,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10703,13 +10983,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -10717,17 +10990,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10759,13 +11081,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -10773,17 +11088,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10815,13 +11179,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -10829,17 +11186,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10871,13 +11277,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -10885,17 +11284,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10927,13 +11375,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -10941,17 +11382,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10983,13 +11473,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -10997,17 +11480,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -11039,13 +11571,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -11053,17 +11578,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -11095,13 +11669,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -11109,17 +11676,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -11151,13 +11767,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -11165,17 +11774,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -11207,13 +11865,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -11221,17 +11872,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -11263,13 +11963,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -11277,17 +11970,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -11319,13 +12061,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -11333,17 +12068,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -11375,13 +12159,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -11389,17 +12166,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -11431,13 +12257,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -11445,17 +12264,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -11487,13 +12355,6 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
@@ -11501,17 +12362,66 @@
     "marketCap": 0
   },
   {
-    "name": "Aatmaj Health",
+    "name": "Crop Life Scienc",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-30",
+    "listingDate": "2023-08-30",
     "marketCap": 0
   },
   {
-    "name": "Cell Point",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-06-28",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -11543,31 +12453,10 @@
     "marketCap": 0
   },
   {
-    "name": "Uravi Defence &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-05",
-    "marketCap": 0
-  },
-  {
     "name": "HMA Agro Inds.",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-07-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Aatmaj Health",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Cell Point",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-06-28",
     "marketCap": 0
   }
 ]
