@@ -385,7 +385,7 @@ def main() -> int:
         existing_text = NEWS_DATA_FILE.read_text(encoding="utf-8")
         existing = extract_existing_articles(existing_text)
 
-    cutoff = datetime.now(timezone.utc) - timedelta(days=30)
+    cutoff = datetime.now(timezone.utc) - timedelta(days=20)
     merged = []
 
     for art in existing:
@@ -411,7 +411,7 @@ def main() -> int:
     ordered = sorted(deduped.values(), key=lambda x: x["publishedAt"] or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
 
     print(f"Converting {len(articles)} premium articles to TypeScript...")
-    print(f"Merging with {len(existing)} existing article(s), keeping {len(ordered)} within 30 days...")
+    print(f"Merging with {len(existing)} existing article(s), keeping {len(ordered)} within 20 days...")
 
     ts_parts = [INTERFACE_DEFS, "", "export const newsArticles: NewsArticle[] = ["]
     for i, item in enumerate(ordered):

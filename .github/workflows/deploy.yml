@@ -55,9 +55,9 @@ jobs:
           SKIP_NEWS_FETCH: "1"
         run: python generate_data_ts.py
 
-      - name: Prune news older than 30 days
+      - name: Prune news older than 20 days
         env:
-          MAX_AGE_DAYS: "30"
+          MAX_AGE_DAYS: "20"
           MAX_REMOVE_COUNT: "60"
         run: python scripts/prune_old_news.py
 
