@@ -1,140 +1,8 @@
 {
-  "last_updated": "2026-07-01T17:07:39.276580+00:00",
+  "last_updated": "2026-07-02T06:53:44.907366+00:00",
   "source": "screener.in",
-  "count": 1780,
+  "count": 1778,
   "ipos": [
-    {
-      "id": "screener-upcoming-aastha-spintex",
-      "name": "Aastha Spintex",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "upcoming",
-      "openDate": "2026-06-29",
-      "closeDate": "2026-07-01",
-      "listingDate": "2026-07-06",
-      "description": "Aastha Spintex - Upcoming IPO",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 600.0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/id/1286028/",
-      "source_category": "upcoming",
-      "fiscalMetrics": {
-        "pe": null,
-        "roce": "27,20,000"
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-upcoming-twinkle-papers",
-      "name": "Twinkle Papers",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "upcoming",
-      "openDate": "2026-06-29",
-      "closeDate": "2026-07-01",
-      "listingDate": "2026-07-06",
-      "description": "Twinkle Papers - Upcoming IPO",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 105.0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/id/1286030/",
-      "source_category": "upcoming",
-      "fiscalMetrics": {
-        "pe": null,
-        "roce": "1,90,000"
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-upcoming-twinkle-papers",
-      "name": "Twinkle Papers",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "upcoming",
-      "openDate": "2026-06-29",
-      "closeDate": "2026-06-30",
-      "listingDate": "2026-07-06",
-      "description": "Twinkle Papers - Upcoming IPO",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 105.0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/id/1286030/",
-      "source_category": "upcoming",
-      "fiscalMetrics": {
-        "pe": null,
-        "roce": "1,90,000"
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-upcoming-adon-agro",
-      "name": "Adon Agro",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "upcoming",
-      "openDate": "2026-06-29",
-      "closeDate": "2026-07-01",
-      "listingDate": "2026-07-06",
-      "description": "Adon Agro - Upcoming IPO",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 161.0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/id/1286033/",
-      "source_category": "upcoming",
-      "fiscalMetrics": {
-        "pe": null,
-        "roce": "64,000"
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
     {
       "id": "screener-upcoming-sampark-india",
       "name": "Sampark India",
@@ -391,6 +259,222 @@
       "currency": "INR",
       "source": "screener.in",
       "source_url": "https://www.screener.in/company/id/1286029/consolidated/",
+      "source_category": "recent",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-recent-sampark-india",
+      "name": "Sampark India",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2026-07-07",
+      "description": "Sampark India - Listed on 2026-07-07",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 103.0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/id/1286035/",
+      "source_category": "recent",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-recent-atharva-poly-plast",
+      "name": "Atharva Poly-Plast",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2026-07-07",
+      "description": "Atharva Poly-Plast - Listed on 2026-07-07",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 101.0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/id/1286034/",
+      "source_category": "recent",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-recent-kratikal-tech",
+      "name": "Kratikal Tech",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2026-07-07",
+      "description": "Kratikal Tech - Listed on 2026-07-07",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 150.0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/id/1286032/consolidated/",
+      "source_category": "recent",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-recent-seemax-resources",
+      "name": "Seemax Resources",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2026-07-07",
+      "description": "Seemax Resources - Listed on 2026-07-07",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 62.0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/id/1286037/",
+      "source_category": "recent",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-recent-vinit-mobile",
+      "name": "Vinit Mobile",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2026-07-07",
+      "description": "Vinit Mobile - Listed on 2026-07-07",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 97.0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/id/1286040/",
+      "source_category": "recent",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-recent-teja-engineering",
+      "name": "Teja Engineering",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2026-07-07",
+      "description": "Teja Engineering - Listed on 2026-07-07",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 141.0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/id/1286039/",
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -704,8 +788,8 @@
       "listingDate": "2026-07-02",
       "description": "CSM Technologies - Listed on 2026-07-02",
       "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
+      "priceBandHigh": 113.0,
+      "priceBandLow": 113.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 583.0,
@@ -714,16 +798,16 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/id/1286023/",
+      "source_url": "https://www.screener.in/company/CSM/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
+        "ipoPrice": "113",
+        "currentPrice": "107.35",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 0,
+      "currentPrice": 107.35,
       "percentChange": 0
     },
     {
@@ -737,11 +821,11 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2026-07-01",
-      "description": "Advit Jewels - Listed on 2026-07-01",
+      "listingDate": "yesterday",
+      "description": "Advit Jewels - Listed on yesterday",
       "about": "",
-      "priceBandHigh": 197.0,
-      "priceBandLow": 197.0,
+      "priceBandHigh": 138.0,
+      "priceBandLow": 138.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 632.0,
@@ -753,13 +837,13 @@
       "source_url": "https://www.screener.in/company/RAMBHAJO/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "197",
-        "currentPrice": "179.46",
+        "ipoPrice": "138",
+        "currentPrice": "178.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 179.46,
+      "currentPrice": 178.0,
       "percentChange": 0
     },
     {
@@ -773,11 +857,11 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2026-07-01",
-      "description": "Riyaasat Life - Listed on 2026-07-01",
+      "listingDate": "yesterday",
+      "description": "Riyaasat Life - Listed on yesterday",
       "about": "",
-      "priceBandHigh": 144.0,
-      "priceBandLow": 144.0,
+      "priceBandHigh": 106.0,
+      "priceBandLow": 106.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 114.0,
@@ -789,13 +873,13 @@
       "source_url": "https://www.screener.in/company/544804/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "144",
-        "currentPrice": "80.60",
+        "ipoPrice": "106",
+        "currentPrice": "76.60",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 80.6,
+      "currentPrice": 76.6,
       "percentChange": 0
     },
     {
@@ -809,11 +893,11 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2026-07-01",
-      "description": "Shreedhar Spinners - Listed on 2026-07-01",
+      "listingDate": "yesterday",
+      "description": "Shreedhar Spinners - Listed on yesterday",
       "about": "",
-      "priceBandHigh": 57.0,
-      "priceBandLow": 57.0,
+      "priceBandHigh": 53.0,
+      "priceBandLow": 53.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 114.0,
@@ -825,13 +909,13 @@
       "source_url": "https://www.screener.in/company/SHREEDHAR/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "57",
-        "currentPrice": "57.10",
+        "ipoPrice": "53",
+        "currentPrice": "59.95",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 57.1,
+      "currentPrice": 59.95,
       "percentChange": 0
     },
     {
@@ -845,11 +929,11 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2026-07-01",
-      "description": "Jivial Industrie - Listed on 2026-07-01",
+      "listingDate": "yesterday",
+      "description": "Jivial Industrie - Listed on yesterday",
       "about": "",
-      "priceBandHigh": 277.0,
-      "priceBandLow": 277.0,
+      "priceBandHigh": 196.0,
+      "priceBandLow": 196.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 92.0,
@@ -861,13 +945,13 @@
       "source_url": "https://www.screener.in/company/544805/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "277",
-        "currentPrice": "161.70",
+        "ipoPrice": "196",
+        "currentPrice": "153.65",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 161.7,
+      "currentPrice": 153.65,
       "percentChange": 0
     },
     {
@@ -881,11 +965,11 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2026-07-01",
-      "description": "Waterways Leisur - Listed on 2026-07-01",
+      "listingDate": "yesterday",
+      "description": "Waterways Leisur - Listed on yesterday",
       "about": "",
-      "priceBandHigh": 898.0,
-      "priceBandLow": 898.0,
+      "priceBandHigh": 808.0,
+      "priceBandLow": 808.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 5849.0,
@@ -897,13 +981,13 @@
       "source_url": "https://www.screener.in/company/CORDELIA/consolidated/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "898",
-        "currentPrice": "668.10",
+        "ipoPrice": "808",
+        "currentPrice": "734.05",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 668.1,
+      "currentPrice": 734.05,
       "percentChange": 0
     },
     {
@@ -917,8 +1001,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2026-07-01",
-      "description": "Sri Priyanka Geo - Listed on 2026-07-01",
+      "listingDate": "yesterday",
+      "description": "Sri Priyanka Geo - Listed on yesterday",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -1006,12 +1090,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "152",
-        "currentPrice": "142.88",
+        "currentPrice": "138.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 142.88,
+      "currentPrice": 138.5,
       "percentChange": 0
     },
     {
@@ -1042,12 +1126,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "208",
-        "currentPrice": "355.85",
+        "currentPrice": "338.10",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 355.85,
+      "currentPrice": 338.1,
       "percentChange": 0
     },
     {
@@ -1078,12 +1162,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "23",
-        "currentPrice": "21.76",
+        "currentPrice": "20.68",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 21.76,
+      "currentPrice": 20.68,
       "percentChange": 0
     },
     {
@@ -1150,12 +1234,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "203",
-        "currentPrice": "184.80",
+        "currentPrice": "194.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 184.8,
+      "currentPrice": 194.0,
       "percentChange": 0
     },
     {
@@ -1186,12 +1270,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "112",
-        "currentPrice": "116.25",
+        "currentPrice": "118.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 116.25,
+      "currentPrice": 118.0,
       "percentChange": 0
     },
     {
@@ -1222,12 +1306,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "103",
-        "currentPrice": "135.15",
+        "currentPrice": "141.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 135.15,
+      "currentPrice": 141.9,
       "percentChange": 0
     },
     {
@@ -1258,12 +1342,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "127",
-        "currentPrice": "243.85",
+        "currentPrice": "256.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 243.85,
+      "currentPrice": 256.0,
       "percentChange": 0
     },
     {
@@ -1294,12 +1378,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "66",
-        "currentPrice": "39.75",
+        "currentPrice": "35.80",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 39.75,
+      "currentPrice": 35.8,
       "percentChange": 0
     },
     {
@@ -1330,12 +1414,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "45",
-        "currentPrice": "60.00",
+        "currentPrice": "72.14",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 60.0,
+      "currentPrice": 72.14,
       "percentChange": 0
     },
     {
@@ -1366,12 +1450,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "116",
-        "currentPrice": "93.40",
+        "currentPrice": "92.40",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 93.4,
+      "currentPrice": 92.4,
       "percentChange": 0
     },
     {
@@ -1402,12 +1486,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "60",
-        "currentPrice": "61.36",
+        "currentPrice": "64.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 61.36,
+      "currentPrice": 64.0,
       "percentChange": 0
     },
     {
@@ -1438,12 +1522,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "166",
-        "currentPrice": "45.89",
+        "currentPrice": "46.33",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 45.89,
+      "currentPrice": 46.33,
       "percentChange": 0
     },
     {
@@ -1474,12 +1558,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "192",
-        "currentPrice": "240.35",
+        "currentPrice": "242.35",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 240.35,
+      "currentPrice": 242.35,
       "percentChange": 0
     },
     {
@@ -1510,12 +1594,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "149",
-        "currentPrice": "410.45",
+        "currentPrice": "394.85",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 410.45,
+      "currentPrice": 394.85,
       "percentChange": 0
     },
     {
@@ -1546,12 +1630,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "128",
-        "currentPrice": "95.05",
+        "currentPrice": "95.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 95.05,
+      "currentPrice": 95.0,
       "percentChange": 0
     },
     {
@@ -1582,12 +1666,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "70",
-        "currentPrice": "27.90",
+        "currentPrice": "29.29",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 27.9,
+      "currentPrice": 29.29,
       "percentChange": 0
     },
     {
@@ -1618,12 +1702,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "63",
-        "currentPrice": "41.70",
+        "currentPrice": "40.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 41.7,
+      "currentPrice": 40.5,
       "percentChange": 0
     },
     {
@@ -1654,12 +1738,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "91",
-        "currentPrice": "79.00",
+        "currentPrice": "79.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 79.0,
+      "currentPrice": 79.5,
       "percentChange": 0
     },
     {
@@ -1762,12 +1846,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "41",
-        "currentPrice": "49.71",
+        "currentPrice": "50.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 49.71,
+      "currentPrice": 50.5,
       "percentChange": 0
     },
     {
@@ -1798,12 +1882,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "343",
-        "currentPrice": "540.15",
+        "currentPrice": "531.30",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 540.15,
+      "currentPrice": 531.3,
       "percentChange": 0
     },
     {
@@ -1834,12 +1918,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "139",
-        "currentPrice": "140.85",
+        "currentPrice": "140.20",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 140.85,
+      "currentPrice": 140.2,
       "percentChange": 0
     },
     {
@@ -1870,12 +1954,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "77",
-        "currentPrice": "155.70",
+        "currentPrice": "157.80",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 155.7,
+      "currentPrice": 157.8,
       "percentChange": 0
     },
     {
@@ -1906,12 +1990,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "63",
-        "currentPrice": "109.90",
+        "currentPrice": "110.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 109.9,
+      "currentPrice": 110.0,
       "percentChange": 0
     },
     {
@@ -1942,12 +2026,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "55",
-        "currentPrice": "22.55",
+        "currentPrice": "22.60",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 22.55,
+      "currentPrice": 22.6,
       "percentChange": 0
     },
     {
@@ -1978,12 +2062,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "50",
-        "currentPrice": "82.10",
+        "currentPrice": "82.30",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 82.1,
+      "currentPrice": 82.3,
       "percentChange": 0
     },
     {
@@ -2050,12 +2134,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "183",
-        "currentPrice": "182.85",
+        "currentPrice": "183.30",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 182.85,
+      "currentPrice": 183.3,
       "percentChange": 0
     },
     {
@@ -2086,12 +2170,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "0",
-        "currentPrice": "103.58",
+        "currentPrice": "103.70",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 103.58,
+      "currentPrice": 103.7,
       "percentChange": 0
     },
     {
@@ -2122,12 +2206,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "158",
-        "currentPrice": "199.60",
+        "currentPrice": "199.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 199.6,
+      "currentPrice": 199.0,
       "percentChange": 0
     },
     {
@@ -2158,12 +2242,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "98",
-        "currentPrice": "88.80",
+        "currentPrice": "88.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 88.8,
+      "currentPrice": 88.0,
       "percentChange": 0
     },
     {
@@ -2194,12 +2278,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "171",
-        "currentPrice": "279.30",
+        "currentPrice": "313.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 279.3,
+      "currentPrice": 313.9,
       "percentChange": 0
     },
     {
@@ -2230,12 +2314,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "135",
-        "currentPrice": "79.85",
+        "currentPrice": "80.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 79.85,
+      "currentPrice": 80.0,
       "percentChange": 0
     },
     {
@@ -2266,12 +2350,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "172",
-        "currentPrice": "183.00",
+        "currentPrice": "196.45",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 183.0,
+      "currentPrice": 196.45,
       "percentChange": 0
     },
     {
@@ -2302,12 +2386,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "0",
-        "currentPrice": "106.43",
+        "currentPrice": "106.31",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 106.43,
+      "currentPrice": 106.31,
       "percentChange": 0
     },
     {
@@ -2338,12 +2422,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "98",
-        "currentPrice": "88.21",
+        "currentPrice": "88.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 88.21,
+      "currentPrice": 88.0,
       "percentChange": 0
     },
     {
@@ -2374,12 +2458,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "175",
-        "currentPrice": "181.84",
+        "currentPrice": "180.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 181.84,
+      "currentPrice": 180.75,
       "percentChange": 0
     },
     {
@@ -2410,12 +2494,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "98",
-        "currentPrice": "98.00",
+        "currentPrice": "97.04",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 98.0,
+      "currentPrice": 97.04,
       "percentChange": 0
     },
     {
@@ -2446,12 +2530,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "80",
-        "currentPrice": "87.40",
+        "currentPrice": "87.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 87.4,
+      "currentPrice": 87.0,
       "percentChange": 0
     },
     {
@@ -2482,12 +2566,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "555",
-        "currentPrice": "1224.75",
+        "currentPrice": "1231.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 1224.75,
+      "currentPrice": 1231.0,
       "percentChange": 0
     },
     {
@@ -36151,8 +36235,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-recent-global-pet-indus",
-      "name": "Global Pet Indus",
+      "id": "screener-below_price-csm-technologies",
+      "name": "CSM Technologies",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -36161,245 +36245,29 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-07-10",
-      "description": "Global Pet Indus - Listed on 2023-07-10",
+      "listingDate": "2026-07-02",
+      "description": "CSM Technologies - Listed on 2026-07-02",
       "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
+      "priceBandHigh": 113.0,
+      "priceBandLow": 113.0,
       "lotSize": 0,
       "issueSize": "",
-      "marketCap": 0,
+      "marketCap": 583.0,
       "gmp": 0,
       "gmpPercent": 0,
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/GLOBALPET/",
-      "source_category": "recent",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-recent-ideaforge-tech",
-      "name": "Ideaforge Tech",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-07-07",
-      "description": "Ideaforge Tech - Listed on 2023-07-07",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/IDEAFORGE/consolidated/",
-      "source_category": "recent",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-recent-pentagon-rubber",
-      "name": "Pentagon Rubber",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-07-07",
-      "description": "Pentagon Rubber - Listed on 2023-07-07",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/PENTAGON/",
-      "source_category": "recent",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-recent-magson-retail",
-      "name": "Magson Retail",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-07-06",
-      "description": "Magson Retail - Listed on 2023-07-06",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/MAGSON/consolidated/",
-      "source_category": "recent",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-recent-greenchef-appli",
-      "name": "Greenchef Appli.",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-07-06",
-      "description": "Greenchef Appli. - Listed on 2023-07-06",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/GREENCHEF/",
-      "source_category": "recent",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-recent-essen-speciality",
-      "name": "Essen Speciality",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-07-06",
-      "description": "Essen Speciality - Listed on 2023-07-06",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/ESFL/",
-      "source_category": "recent",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-advit-jewels",
-      "name": "Advit Jewels",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2026-07-01",
-      "description": "Advit Jewels - Listed on 2026-07-01",
-      "about": "",
-      "priceBandHigh": 197.0,
-      "priceBandLow": 197.0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 632.0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/RAMBHAJO/",
+      "source_url": "https://www.screener.in/company/CSM/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "197",
-        "currentPrice": "179.46",
+        "ipoPrice": "113",
+        "currentPrice": "107.35",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 179.46,
+      "currentPrice": 107.35,
       "percentChange": 0
     },
     {
@@ -36413,11 +36281,11 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2026-07-01",
-      "description": "Riyaasat Life - Listed on 2026-07-01",
+      "listingDate": "yesterday",
+      "description": "Riyaasat Life - Listed on yesterday",
       "about": "",
-      "priceBandHigh": 144.0,
-      "priceBandLow": 144.0,
+      "priceBandHigh": 106.0,
+      "priceBandLow": 106.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 114.0,
@@ -36429,13 +36297,13 @@
       "source_url": "https://www.screener.in/company/544804/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "144",
-        "currentPrice": "80.60",
+        "ipoPrice": "106",
+        "currentPrice": "76.60",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 80.6,
+      "currentPrice": 76.6,
       "percentChange": 0
     },
     {
@@ -36449,11 +36317,11 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2026-07-01",
-      "description": "Jivial Industrie - Listed on 2026-07-01",
+      "listingDate": "yesterday",
+      "description": "Jivial Industrie - Listed on yesterday",
       "about": "",
-      "priceBandHigh": 277.0,
-      "priceBandLow": 277.0,
+      "priceBandHigh": 196.0,
+      "priceBandLow": 196.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 92.0,
@@ -36465,13 +36333,13 @@
       "source_url": "https://www.screener.in/company/544805/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "277",
-        "currentPrice": "161.70",
+        "ipoPrice": "196",
+        "currentPrice": "153.65",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 161.7,
+      "currentPrice": 153.65,
       "percentChange": 0
     },
     {
@@ -36485,11 +36353,11 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2026-07-01",
-      "description": "Waterways Leisur - Listed on 2026-07-01",
+      "listingDate": "yesterday",
+      "description": "Waterways Leisur - Listed on yesterday",
       "about": "",
-      "priceBandHigh": 898.0,
-      "priceBandLow": 898.0,
+      "priceBandHigh": 808.0,
+      "priceBandLow": 808.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 5849.0,
@@ -36501,13 +36369,13 @@
       "source_url": "https://www.screener.in/company/CORDELIA/consolidated/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "898",
-        "currentPrice": "668.10",
+        "ipoPrice": "808",
+        "currentPrice": "734.05",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 668.1,
+      "currentPrice": 734.05,
       "percentChange": 0
     },
     {
@@ -36574,12 +36442,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "152",
-        "currentPrice": "142.88",
+        "currentPrice": "138.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 142.88,
+      "currentPrice": 138.5,
       "percentChange": 0
     },
     {
@@ -36610,12 +36478,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "23",
-        "currentPrice": "21.76",
+        "currentPrice": "20.68",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 21.76,
+      "currentPrice": 20.68,
       "percentChange": 0
     },
     {
@@ -36682,12 +36550,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "203",
-        "currentPrice": "184.80",
+        "currentPrice": "193.85",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 184.8,
+      "currentPrice": 193.85,
       "percentChange": 0
     },
     {
@@ -36718,12 +36586,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "66",
-        "currentPrice": "39.75",
+        "currentPrice": "35.80",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 39.75,
+      "currentPrice": 35.8,
       "percentChange": 0
     },
     {
@@ -36754,12 +36622,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "116",
-        "currentPrice": "93.40",
+        "currentPrice": "92.40",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 93.4,
+      "currentPrice": 92.4,
       "percentChange": 0
     },
     {
@@ -36790,12 +36658,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "166",
-        "currentPrice": "45.89",
+        "currentPrice": "46.33",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 45.89,
+      "currentPrice": 46.33,
       "percentChange": 0
     },
     {
@@ -36826,12 +36694,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "128",
-        "currentPrice": "95.05",
+        "currentPrice": "95.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 95.05,
+      "currentPrice": 95.0,
       "percentChange": 0
     },
     {
@@ -36862,12 +36730,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "70",
-        "currentPrice": "27.90",
+        "currentPrice": "29.29",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 27.9,
+      "currentPrice": 29.29,
       "percentChange": 0
     },
     {
@@ -36898,12 +36766,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "63",
-        "currentPrice": "41.70",
+        "currentPrice": "40.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 41.7,
+      "currentPrice": 40.5,
       "percentChange": 0
     },
     {
@@ -36934,12 +36802,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "91",
-        "currentPrice": "79.00",
+        "currentPrice": "79.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 79.0,
+      "currentPrice": 79.5,
       "percentChange": 0
     },
     {
@@ -37006,12 +36874,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "55",
-        "currentPrice": "22.55",
+        "currentPrice": "22.60",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 22.55,
+      "currentPrice": 22.6,
       "percentChange": 0
     },
     {
@@ -37051,42 +36919,6 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-simca-advertis",
-      "name": "Simca Advertis.",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2026-05-15",
-      "description": "Simca Advertis. - Listed on 2026-05-15",
-      "about": "",
-      "priceBandHigh": 183.0,
-      "priceBandLow": 183.0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 219.0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SIMCA/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "183",
-        "currentPrice": "182.85",
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 182.85,
-      "percentChange": 0
-    },
-    {
       "id": "screener-below_price-value-360-commu",
       "name": "Value 360 Commu.",
       "ticker": "",
@@ -37114,12 +36946,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "98",
-        "currentPrice": "88.80",
+        "currentPrice": "88.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 88.8,
+      "currentPrice": 88.0,
       "percentChange": 0
     },
     {
@@ -37150,12 +36982,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "135",
-        "currentPrice": "79.85",
+        "currentPrice": "80.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 79.85,
+      "currentPrice": 80.0,
       "percentChange": 0
     },
     {
@@ -37186,12 +37018,48 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "98",
-        "currentPrice": "88.21",
+        "currentPrice": "88.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 88.21,
+      "currentPrice": 88.0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-emiac-technologies",
+      "name": "Emiac Technologies",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2026-04-13",
+      "description": "Emiac Technologies - Listed on 2026-04-13",
+      "about": "",
+      "priceBandHigh": 98.0,
+      "priceBandLow": 98.0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 120.0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/544747/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "98",
+        "currentPrice": "97.04",
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 97.04,
       "percentChange": 0
     },
     {
@@ -37222,12 +37090,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "212",
-        "currentPrice": "147.53",
+        "currentPrice": "147.25",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 147.53,
+      "currentPrice": 147.25,
       "percentChange": 0
     },
     {
@@ -37258,12 +37126,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "519",
-        "currentPrice": "282.70",
+        "currentPrice": "284.30",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 282.7,
+      "currentPrice": 284.3,
       "percentChange": 0
     },
     {
@@ -37294,12 +37162,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "72",
-        "currentPrice": "55.45",
+        "currentPrice": "55.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 55.45,
+      "currentPrice": 55.5,
       "percentChange": 0
     },
     {
@@ -37330,12 +37198,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "104",
-        "currentPrice": "39.28",
+        "currentPrice": "40.40",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 39.28,
+      "currentPrice": 40.4,
       "percentChange": 0
     },
     {
@@ -37366,12 +37234,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "127",
-        "currentPrice": "32.39",
+        "currentPrice": "31.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 32.39,
+      "currentPrice": 31.9,
       "percentChange": 0
     },
     {
@@ -37438,12 +37306,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "110",
-        "currentPrice": "47.20",
+        "currentPrice": "45.65",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 47.2,
+      "currentPrice": 45.65,
       "percentChange": 0
     },
     {
@@ -37510,12 +37378,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "117",
-        "currentPrice": "102.00",
+        "currentPrice": "101.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 102.0,
+      "currentPrice": 101.0,
       "percentChange": 0
     },
     {
@@ -37532,8 +37400,8 @@
       "listingDate": "2026-02-16",
       "description": "Fractal Analyt. - Listed on 2026-02-16",
       "about": "",
-      "priceBandHigh": 1008.0,
-      "priceBandLow": 1008.0,
+      "priceBandHigh": 1005.0,
+      "priceBandLow": 1005.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 17287.0,
@@ -37545,13 +37413,13 @@
       "source_url": "https://www.screener.in/company/FRACTAL/consolidated/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "1008",
-        "currentPrice": "875.45",
+        "ipoPrice": "1005",
+        "currentPrice": "903.85",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 875.45,
+      "currentPrice": 903.85,
       "percentChange": 0
     },
     {
@@ -37582,12 +37450,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "108",
-        "currentPrice": "94.45",
+        "currentPrice": "95.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 94.45,
+      "currentPrice": 95.9,
       "percentChange": 0
     },
     {
@@ -37654,12 +37522,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "163",
-        "currentPrice": "135.55",
+        "currentPrice": "126.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 135.55,
+      "currentPrice": 126.75,
       "percentChange": 0
     },
     {
@@ -37762,12 +37630,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "144",
-        "currentPrice": "135.30",
+        "currentPrice": "142.10",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 135.3,
+      "currentPrice": 142.1,
       "percentChange": 0
     },
     {
@@ -37906,12 +37774,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "74",
-        "currentPrice": "73.98",
+        "currentPrice": "71.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 73.98,
+      "currentPrice": 71.5,
       "percentChange": 0
     },
     {
@@ -37978,12 +37846,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "174",
-        "currentPrice": "40.20",
+        "currentPrice": "39.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 40.2,
+      "currentPrice": 39.0,
       "percentChange": 0
     },
     {
@@ -38014,12 +37882,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "81",
-        "currentPrice": "70.20",
+        "currentPrice": "68.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 70.2,
+      "currentPrice": 68.5,
       "percentChange": 0
     },
     {
@@ -38122,12 +37990,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "69",
-        "currentPrice": "62.35",
+        "currentPrice": "64.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 62.35,
+      "currentPrice": 64.0,
       "percentChange": 0
     },
     {
@@ -38158,12 +38026,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "102",
-        "currentPrice": "85.33",
+        "currentPrice": "85.99",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 85.33,
+      "currentPrice": 85.99,
       "percentChange": 0
     },
     {
@@ -38194,12 +38062,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "86",
-        "currentPrice": "24.50",
+        "currentPrice": "25.70",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 24.5,
+      "currentPrice": 25.7,
       "percentChange": 0
     },
     {
@@ -38230,12 +38098,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "93",
-        "currentPrice": "85.75",
+        "currentPrice": "90.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 85.75,
+      "currentPrice": 90.0,
       "percentChange": 0
     },
     {
@@ -38302,12 +38170,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "12",
-        "currentPrice": "3.53",
+        "currentPrice": "3.59",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 3.53,
+      "currentPrice": 3.59,
       "percentChange": 0
     },
     {
@@ -38374,12 +38242,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "100",
-        "currentPrice": "33.82",
+        "currentPrice": "33.85",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 33.82,
+      "currentPrice": 33.85,
       "percentChange": 0
     },
     {
@@ -38396,8 +38264,8 @@
       "listingDate": "2025-12-15",
       "description": "Wakefit Innovati - Listed on 2025-12-15",
       "about": "",
-      "priceBandHigh": 193.0,
-      "priceBandLow": 193.0,
+      "priceBandHigh": 192.0,
+      "priceBandLow": 192.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 6373.0,
@@ -38409,13 +38277,13 @@
       "source_url": "https://www.screener.in/company/WAKEFIT/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "193",
-        "currentPrice": "122.50",
+        "ipoPrice": "192",
+        "currentPrice": "125.70",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 122.5,
+      "currentPrice": 125.7,
       "percentChange": 0
     },
     {
@@ -38446,12 +38314,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "194",
-        "currentPrice": "83.17",
+        "currentPrice": "81.56",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 83.17,
+      "currentPrice": 81.56,
       "percentChange": 0
     },
     {
@@ -38518,12 +38386,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "82",
-        "currentPrice": "68.00",
+        "currentPrice": "67.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 68.0,
+      "currentPrice": 67.5,
       "percentChange": 0
     },
     {
@@ -38590,12 +38458,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "90",
-        "currentPrice": "26.20",
+        "currentPrice": "24.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 26.2,
+      "currentPrice": 24.9,
       "percentChange": 0
     },
     {
@@ -38626,12 +38494,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "98",
-        "currentPrice": "95.00",
+        "currentPrice": "96.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 95.0,
+      "currentPrice": 96.0,
       "percentChange": 0
     },
     {
@@ -38698,12 +38566,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "85",
-        "currentPrice": "68.15",
+        "currentPrice": "67.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 68.15,
+      "currentPrice": 67.5,
       "percentChange": 0
     },
     {
@@ -38770,12 +38638,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "63",
-        "currentPrice": "15.63",
+        "currentPrice": "16.40",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 15.63,
+      "currentPrice": 16.4,
       "percentChange": 0
     },
     {
@@ -38842,12 +38710,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "193",
-        "currentPrice": "36.06",
+        "currentPrice": "34.26",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 36.06,
+      "currentPrice": 34.26,
       "percentChange": 0
     },
     {
@@ -38878,12 +38746,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "38",
-        "currentPrice": "10.75",
+        "currentPrice": "10.98",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 10.75,
+      "currentPrice": 10.98,
       "percentChange": 0
     },
     {
@@ -38914,12 +38782,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "121",
-        "currentPrice": "66.00",
+        "currentPrice": "60.20",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 66.0,
+      "currentPrice": 60.2,
       "percentChange": 0
     },
     {
@@ -38950,12 +38818,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "120",
-        "currentPrice": "75.07",
+        "currentPrice": "76.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 75.07,
+      "currentPrice": 76.75,
       "percentChange": 0
     },
     {
@@ -38972,8 +38840,8 @@
       "listingDate": "2025-11-21",
       "description": "Capillary Tech. - Listed on 2025-11-21",
       "about": "",
-      "priceBandHigh": 575.0,
-      "priceBandLow": 575.0,
+      "priceBandHigh": 576.0,
+      "priceBandLow": 576.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 4576.0,
@@ -38985,13 +38853,13 @@
       "source_url": "https://www.screener.in/company/CAPILLARY/consolidated/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "575",
-        "currentPrice": "506.35",
+        "ipoPrice": "576",
+        "currentPrice": "509.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 506.35,
+      "currentPrice": 509.0,
       "percentChange": 0
     },
     {
@@ -39058,12 +38926,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "220",
-        "currentPrice": "155.81",
+        "currentPrice": "157.55",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 155.81,
+      "currentPrice": 157.55,
       "percentChange": 0
     },
     {
@@ -39130,12 +38998,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "142",
-        "currentPrice": "129.70",
+        "currentPrice": "129.85",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 129.7,
+      "currentPrice": 129.85,
       "percentChange": 0
     },
     {
@@ -39152,8 +39020,8 @@
       "listingDate": "2025-11-07",
       "description": "Studds Accessor. - Listed on 2025-11-07",
       "about": "",
-      "priceBandHigh": 586.0,
-      "priceBandLow": 586.0,
+      "priceBandHigh": 585.0,
+      "priceBandLow": 585.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 2302.0,
@@ -39165,13 +39033,13 @@
       "source_url": "https://www.screener.in/company/STUDDS/consolidated/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "586",
-        "currentPrice": "459.15",
+        "ipoPrice": "585",
+        "currentPrice": "472.20",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 459.15,
+      "currentPrice": 472.2,
       "percentChange": 0
     },
     {
@@ -39202,12 +39070,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "730",
-        "currentPrice": "599.80",
+        "currentPrice": "608.95",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 599.8,
+      "currentPrice": 608.95,
       "percentChange": 0
     },
     {
@@ -39238,12 +39106,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "102",
-        "currentPrice": "24.55",
+        "currentPrice": "24.37",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 24.55,
+      "currentPrice": 24.37,
       "percentChange": 0
     },
     {
@@ -39274,12 +39142,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "102",
-        "currentPrice": "91.05",
+        "currentPrice": "92.25",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 91.05,
+      "currentPrice": 92.25,
       "percentChange": 0
     },
     {
@@ -39310,12 +39178,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "91",
-        "currentPrice": "23.90",
+        "currentPrice": "24.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 23.9,
+      "currentPrice": 24.0,
       "percentChange": 0
     },
     {
@@ -39382,12 +39250,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "266",
-        "currentPrice": "250.59",
+        "currentPrice": "254.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 250.59,
+      "currentPrice": 254.5,
       "percentChange": 0
     },
     {
@@ -39490,12 +39358,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "100",
-        "currentPrice": "82.51",
+        "currentPrice": "81.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 82.51,
+      "currentPrice": 81.9,
       "percentChange": 0
     },
     {
@@ -39526,12 +39394,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "136",
-        "currentPrice": "87.85",
+        "currentPrice": "92.20",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 87.85,
+      "currentPrice": 92.2,
       "percentChange": 0
     },
     {
@@ -39548,8 +39416,8 @@
       "listingDate": "2025-10-08",
       "description": "Om Freight Forwa - Listed on 2025-10-08",
       "about": "",
-      "priceBandHigh": 136.0,
-      "priceBandLow": 136.0,
+      "priceBandHigh": 135.0,
+      "priceBandLow": 135.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 455.0,
@@ -39561,13 +39429,13 @@
       "source_url": "https://www.screener.in/company/OMFREIGHT/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "136",
-        "currentPrice": "111.76",
+        "ipoPrice": "135",
+        "currentPrice": "106.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 111.76,
+      "currentPrice": 106.0,
       "percentChange": 0
     },
     {
@@ -39598,12 +39466,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "54",
-        "currentPrice": "40.25",
+        "currentPrice": "40.01",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 40.25,
+      "currentPrice": 40.01,
       "percentChange": 0
     },
     {
@@ -39706,12 +39574,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "96",
-        "currentPrice": "68.30",
+        "currentPrice": "70.85",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 68.3,
+      "currentPrice": 70.85,
       "percentChange": 0
     },
     {
@@ -39728,8 +39596,8 @@
       "listingDate": "2025-10-07",
       "description": "Glottis - Listed on 2025-10-07",
       "about": "",
-      "priceBandHigh": 128.0,
-      "priceBandLow": 128.0,
+      "priceBandHigh": 129.0,
+      "priceBandLow": 129.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 1192.0,
@@ -39741,13 +39609,13 @@
       "source_url": "https://www.screener.in/company/GLOTTIS/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "128",
-        "currentPrice": "66.04",
+        "ipoPrice": "129",
+        "currentPrice": "67.17",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 66.04,
+      "currentPrice": 67.17,
       "percentChange": 0
     },
     {
@@ -39778,12 +39646,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "191",
-        "currentPrice": "157.53",
+        "currentPrice": "161.70",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 157.53,
+      "currentPrice": 161.7,
       "percentChange": 0
     },
     {
@@ -39814,12 +39682,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "83",
-        "currentPrice": "31.78",
+        "currentPrice": "30.20",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 31.78,
+      "currentPrice": 30.2,
       "percentChange": 0
     },
     {
@@ -39886,12 +39754,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "219",
-        "currentPrice": "208.54",
+        "currentPrice": "212.55",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 208.54,
+      "currentPrice": 212.55,
       "percentChange": 0
     },
     {
@@ -39922,12 +39790,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "81",
-        "currentPrice": "41.15",
+        "currentPrice": "41.10",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 41.15,
+      "currentPrice": 41.1,
       "percentChange": 0
     },
     {
@@ -39958,12 +39826,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "121",
-        "currentPrice": "107.21",
+        "currentPrice": "103.15",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 107.21,
+      "currentPrice": 103.15,
       "percentChange": 0
     },
     {
@@ -39994,12 +39862,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "115",
-        "currentPrice": "55.67",
+        "currentPrice": "53.02",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 55.67,
+      "currentPrice": 53.02,
       "percentChange": 0
     },
     {
@@ -40066,12 +39934,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "496",
-        "currentPrice": "466.85",
+        "currentPrice": "470.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 466.85,
+      "currentPrice": 470.0,
       "percentChange": 0
     },
     {
@@ -40102,12 +39970,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "127",
-        "currentPrice": "83.65",
+        "currentPrice": "87.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 83.65,
+      "currentPrice": 87.0,
       "percentChange": 0
     },
     {
@@ -40138,12 +40006,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "72",
-        "currentPrice": "25.78",
+        "currentPrice": "25.27",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 25.78,
+      "currentPrice": 25.27,
       "percentChange": 0
     },
     {
@@ -40174,12 +40042,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "63",
-        "currentPrice": "53.00",
+        "currentPrice": "50.53",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 53.0,
+      "currentPrice": 50.53,
       "percentChange": 0
     },
     {
@@ -40210,12 +40078,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "195",
-        "currentPrice": "181.45",
+        "currentPrice": "180.60",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 181.45,
+      "currentPrice": 180.6,
       "percentChange": 0
     },
     {
@@ -40246,12 +40114,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "99",
-        "currentPrice": "57.48",
+        "currentPrice": "57.62",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 57.48,
+      "currentPrice": 57.62,
       "percentChange": 0
     },
     {
@@ -40282,12 +40150,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "75",
-        "currentPrice": "37.00",
+        "currentPrice": "38.80",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 37.0,
+      "currentPrice": 38.8,
       "percentChange": 0
     },
     {
@@ -40318,12 +40186,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "191",
-        "currentPrice": "178.90",
+        "currentPrice": "179.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 178.9,
+      "currentPrice": 179.0,
       "percentChange": 0
     },
     {
@@ -40340,8 +40208,8 @@
       "listingDate": "2025-09-30",
       "description": "Solarworld Ene. - Listed on 2025-09-30",
       "about": "",
-      "priceBandHigh": 350.0,
-      "priceBandLow": 350.0,
+      "priceBandHigh": 351.0,
+      "priceBandLow": 351.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 3042.0,
@@ -40353,13 +40221,13 @@
       "source_url": "https://www.screener.in/company/SOLARWORLD/consolidated/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "350",
-        "currentPrice": "187.11",
+        "ipoPrice": "351",
+        "currentPrice": "186.45",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 187.11,
+      "currentPrice": 186.45,
       "percentChange": 0
     },
     {
@@ -40376,8 +40244,8 @@
       "listingDate": "2025-09-30",
       "description": "Jaro Institute - Listed on 2025-09-30",
       "about": "",
-      "priceBandHigh": 883.0,
-      "priceBandLow": 883.0,
+      "priceBandHigh": 885.0,
+      "priceBandLow": 885.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 1972.0,
@@ -40389,13 +40257,13 @@
       "source_url": "https://www.screener.in/company/JARO/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "883",
-        "currentPrice": "502.95",
+        "ipoPrice": "885",
+        "currentPrice": "504.65",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 502.95,
+      "currentPrice": 504.65,
       "percentChange": 0
     },
     {
@@ -40426,12 +40294,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "423",
-        "currentPrice": "327.30",
+        "currentPrice": "324.45",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 327.3,
+      "currentPrice": 324.45,
       "percentChange": 0
     },
     {
@@ -40462,12 +40330,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "104",
-        "currentPrice": "62.20",
+        "currentPrice": "61.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 62.2,
+      "currentPrice": 61.9,
       "percentChange": 0
     },
     {
@@ -40484,8 +40352,8 @@
       "listingDate": "2025-09-29",
       "description": "Ganesh Consumer - Listed on 2025-09-29",
       "about": "",
-      "priceBandHigh": 321.0,
-      "priceBandLow": 321.0,
+      "priceBandHigh": 322.0,
+      "priceBandLow": 322.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 1301.0,
@@ -40497,13 +40365,13 @@
       "source_url": "https://www.screener.in/company/GANESHCP/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "321",
-        "currentPrice": "197.91",
+        "ipoPrice": "322",
+        "currentPrice": "197.85",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 197.91,
+      "currentPrice": 197.85,
       "percentChange": 0
     },
     {
@@ -40570,12 +40438,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "465",
-        "currentPrice": "450.20",
+        "currentPrice": "455.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 450.2,
+      "currentPrice": 455.75,
       "percentChange": 0
     },
     {
@@ -40606,12 +40474,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "153",
-        "currentPrice": "137.90",
+        "currentPrice": "140.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 137.9,
+      "currentPrice": 140.75,
       "percentChange": 0
     },
     {
@@ -40642,12 +40510,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "293",
-        "currentPrice": "274.65",
+        "currentPrice": "279.05",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 274.65,
+      "currentPrice": 279.05,
       "percentChange": 0
     },
     {
@@ -40700,8 +40568,8 @@
       "listingDate": "2025-09-24",
       "description": "VMS TMT - Listed on 2025-09-24",
       "about": "",
-      "priceBandHigh": 100.0,
-      "priceBandLow": 100.0,
+      "priceBandHigh": 99.0,
+      "priceBandLow": 99.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 491.0,
@@ -40713,13 +40581,13 @@
       "source_url": "https://www.screener.in/company/VMSTMT/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "100",
-        "currentPrice": "45.23",
+        "ipoPrice": "99",
+        "currentPrice": "46.86",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 45.23,
+      "currentPrice": 46.86,
       "percentChange": 0
     },
     {
@@ -40750,12 +40618,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "58",
-        "currentPrice": "35.37",
+        "currentPrice": "35.91",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 35.37,
+      "currentPrice": 35.91,
       "percentChange": 0
     },
     {
@@ -40786,12 +40654,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "54",
-        "currentPrice": "19.00",
+        "currentPrice": "18.25",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 19.0,
+      "currentPrice": 18.25,
       "percentChange": 0
     },
     {
@@ -40894,12 +40762,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "111",
-        "currentPrice": "57.52",
+        "currentPrice": "57.53",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 57.52,
+      "currentPrice": 57.53,
       "percentChange": 0
     },
     {
@@ -40930,12 +40798,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "196",
-        "currentPrice": "105.65",
+        "currentPrice": "104.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 105.65,
+      "currentPrice": 104.0,
       "percentChange": 0
     },
     {
@@ -41002,12 +40870,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "84",
-        "currentPrice": "79.00",
+        "currentPrice": "80.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 79.0,
+      "currentPrice": 80.0,
       "percentChange": 0
     },
     {
@@ -41074,12 +40942,48 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "122",
-        "currentPrice": "44.40",
+        "currentPrice": "46.60",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 44.4,
+      "currentPrice": 46.6,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-sugs-lloyd",
+      "name": "Sugs Lloyd",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2025-09-05",
+      "description": "Sugs Lloyd - Listed on 2025-09-05",
+      "about": "",
+      "priceBandHigh": 123.0,
+      "priceBandLow": 123.0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 286.0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/544501/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "123",
+        "currentPrice": "121.70",
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 121.7,
       "percentChange": 0
     },
     {
@@ -41110,12 +41014,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "85",
-        "currentPrice": "57.00",
+        "currentPrice": "55.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 57.0,
+      "currentPrice": 55.0,
       "percentChange": 0
     },
     {
@@ -41146,48 +41050,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "97",
-        "currentPrice": "74.80",
+        "currentPrice": "75.04",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 74.8,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-sattva-eng",
-      "name": "Sattva Eng.",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2025-09-03",
-      "description": "Sattva Eng. - Listed on 2025-09-03",
-      "about": "",
-      "priceBandHigh": 75.0,
-      "priceBandLow": 75.0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 131.0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SATTVAENGG/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "75",
-        "currentPrice": "72.35",
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 72.35,
+      "currentPrice": 75.04,
       "percentChange": 0
     },
     {
@@ -41254,12 +41122,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "72",
-        "currentPrice": "20.90",
+        "currentPrice": "19.86",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 20.9,
+      "currentPrice": 19.86,
       "percentChange": 0
     },
     {
@@ -41290,12 +41158,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "87",
-        "currentPrice": "44.85",
+        "currentPrice": "46.80",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 44.85,
+      "currentPrice": 46.8,
       "percentChange": 0
     },
     {
@@ -41326,12 +41194,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "142",
-        "currentPrice": "126.65",
+        "currentPrice": "127.25",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 126.65,
+      "currentPrice": 127.25,
       "percentChange": 0
     },
     {
@@ -41362,12 +41230,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "125",
-        "currentPrice": "40.30",
+        "currentPrice": "41.55",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 40.3,
+      "currentPrice": 41.55,
       "percentChange": 0
     },
     {
@@ -41384,8 +41252,8 @@
       "listingDate": "2025-08-28",
       "description": "Mangal Electrica - Listed on 2025-08-28",
       "about": "",
-      "priceBandHigh": 559.0,
-      "priceBandLow": 559.0,
+      "priceBandHigh": 561.0,
+      "priceBandLow": 561.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 1550.0,
@@ -41397,13 +41265,13 @@
       "source_url": "https://www.screener.in/company/MEIL/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "559",
-        "currentPrice": "302.00",
+        "ipoPrice": "561",
+        "currentPrice": "303.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 302.0,
+      "currentPrice": 303.0,
       "percentChange": 0
     },
     {
@@ -41434,12 +41302,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "255",
-        "currentPrice": "215.84",
+        "currentPrice": "215.95",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 215.84,
+      "currentPrice": 215.95,
       "percentChange": 0
     },
     {
@@ -41470,12 +41338,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "325",
-        "currentPrice": "191.18",
+        "currentPrice": "189.85",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 191.18,
+      "currentPrice": 189.85,
       "percentChange": 0
     },
     {
@@ -41492,8 +41360,8 @@
       "listingDate": "2025-08-26",
       "description": "Vikram Solar - Listed on 2025-08-26",
       "about": "",
-      "priceBandHigh": 334.0,
-      "priceBandLow": 334.0,
+      "priceBandHigh": 331.0,
+      "priceBandLow": 331.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 12009.0,
@@ -41505,13 +41373,13 @@
       "source_url": "https://www.screener.in/company/VIKRAMSOLR/consolidated/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "334",
-        "currentPrice": "178.69",
+        "ipoPrice": "331",
+        "currentPrice": "190.15",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 178.69,
+      "currentPrice": 190.15,
       "percentChange": 0
     },
     {
@@ -41542,12 +41410,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "107",
-        "currentPrice": "42.02",
+        "currentPrice": "41.12",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 42.02,
+      "currentPrice": 41.12,
       "percentChange": 0
     },
     {
@@ -41614,12 +41482,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "85",
-        "currentPrice": "69.90",
+        "currentPrice": "67.30",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 69.9,
+      "currentPrice": 67.3,
       "percentChange": 0
     },
     {
@@ -41636,8 +41504,8 @@
       "listingDate": "2025-08-20",
       "description": "Regaal Resources - Listed on 2025-08-20",
       "about": "",
-      "priceBandHigh": 100.0,
-      "priceBandLow": 100.0,
+      "priceBandHigh": 102.0,
+      "priceBandLow": 102.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 1048.0,
@@ -41649,13 +41517,13 @@
       "source_url": "https://www.screener.in/company/REGAAL/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "100",
-        "currentPrice": "78.54",
+        "ipoPrice": "102",
+        "currentPrice": "81.88",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 78.54,
+      "currentPrice": 81.88,
       "percentChange": 0
     },
     {
@@ -41722,12 +41590,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "43",
-        "currentPrice": "19.95",
+        "currentPrice": "18.05",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 19.95,
+      "currentPrice": 18.05,
       "percentChange": 0
     },
     {
@@ -41758,12 +41626,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "142",
-        "currentPrice": "102.12",
+        "currentPrice": "100.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 102.12,
+      "currentPrice": 100.0,
       "percentChange": 0
     },
     {
@@ -41794,12 +41662,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "147",
-        "currentPrice": "136.70",
+        "currentPrice": "135.60",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 136.7,
+      "currentPrice": 135.6,
       "percentChange": 0
     },
     {
@@ -41830,12 +41698,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "275",
-        "currentPrice": "239.33",
+        "currentPrice": "252.65",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 239.33,
+      "currentPrice": 252.65,
       "percentChange": 0
     },
     {
@@ -41866,12 +41734,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "70",
-        "currentPrice": "46.31",
+        "currentPrice": "46.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 46.31,
+      "currentPrice": 46.5,
       "percentChange": 0
     },
     {
@@ -41938,12 +41806,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "116",
-        "currentPrice": "78.00",
+        "currentPrice": "75.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 78.0,
+      "currentPrice": 75.0,
       "percentChange": 0
     },
     {
@@ -42010,12 +41878,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "103",
-        "currentPrice": "88.85",
+        "currentPrice": "90.30",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 88.85,
+      "currentPrice": 90.3,
       "percentChange": 0
     },
     {
@@ -42046,12 +41914,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "54",
-        "currentPrice": "42.69",
+        "currentPrice": "42.85",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 42.69,
+      "currentPrice": 42.85,
       "percentChange": 0
     },
     {
@@ -42154,12 +42022,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "54",
-        "currentPrice": "22.00",
+        "currentPrice": "22.25",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 22.0,
+      "currentPrice": 22.25,
       "percentChange": 0
     },
     {
@@ -42176,8 +42044,8 @@
       "listingDate": "2025-08-06",
       "description": "M & B Engineer. - Listed on 2025-08-06",
       "about": "",
-      "priceBandHigh": 386.0,
-      "priceBandLow": 386.0,
+      "priceBandHigh": 385.0,
+      "priceBandLow": 385.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 2200.0,
@@ -42189,13 +42057,13 @@
       "source_url": "https://www.screener.in/company/MBEL/consolidated/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "386",
-        "currentPrice": "319.15",
+        "ipoPrice": "385",
+        "currentPrice": "330.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 319.15,
+      "currentPrice": 330.5,
       "percentChange": 0
     },
     {
@@ -42226,12 +42094,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "180",
-        "currentPrice": "61.00",
+        "currentPrice": "63.45",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 61.0,
+      "currentPrice": 63.45,
       "percentChange": 0
     },
     {
@@ -42248,8 +42116,8 @@
       "listingDate": "2025-08-05",
       "description": "Laxmi India Fin. - Listed on 2025-08-05",
       "about": "",
-      "priceBandHigh": 159.0,
-      "priceBandLow": 159.0,
+      "priceBandHigh": 158.0,
+      "priceBandLow": 158.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 826.0,
@@ -42261,13 +42129,13 @@
       "source_url": "https://www.screener.in/company/LAXMIINDIA/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "159",
-        "currentPrice": "103.34",
+        "ipoPrice": "158",
+        "currentPrice": "108.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 103.34,
+      "currentPrice": 108.5,
       "percentChange": 0
     },
     {
@@ -42298,12 +42166,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "96",
-        "currentPrice": "91.65",
+        "currentPrice": "94.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 91.65,
+      "currentPrice": 94.0,
       "percentChange": 0
     },
     {
@@ -42334,12 +42202,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "66",
-        "currentPrice": "51.00",
+        "currentPrice": "48.55",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 51.0,
+      "currentPrice": 48.55,
       "percentChange": 0
     },
     {
@@ -42406,12 +42274,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "90",
-        "currentPrice": "63.51",
+        "currentPrice": "63.49",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 63.51,
+      "currentPrice": 63.49,
       "percentChange": 0
     },
     {
@@ -42442,12 +42310,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "68",
-        "currentPrice": "27.00",
+        "currentPrice": "28.85",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 27.0,
+      "currentPrice": 28.85,
       "percentChange": 0
     },
     {
@@ -42464,8 +42332,8 @@
       "listingDate": "2025-07-30",
       "description": "Indiqube Spaces - Listed on 2025-07-30",
       "about": "",
-      "priceBandHigh": 234.0,
-      "priceBandLow": 234.0,
+      "priceBandHigh": 235.0,
+      "priceBandLow": 235.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 4977.0,
@@ -42477,13 +42345,13 @@
       "source_url": "https://www.screener.in/company/INDIQUBE/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "234",
-        "currentPrice": "165.91",
+        "ipoPrice": "235",
+        "currentPrice": "169.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 165.91,
+      "currentPrice": 169.75,
       "percentChange": 0
     },
     {
@@ -42514,48 +42382,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "250",
-        "currentPrice": "228.30",
+        "currentPrice": "224.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 228.3,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-swastika-castal",
-      "name": "Swastika Castal",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2025-07-28",
-      "description": "Swastika Castal - Listed on 2025-07-28",
-      "about": "",
-      "priceBandHigh": 65.0,
-      "priceBandLow": 65.0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 53.0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/544452/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "65",
-        "currentPrice": "64.79",
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 64.79,
+      "currentPrice": 224.0,
       "percentChange": 0
     },
     {
@@ -42586,12 +42418,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "286",
-        "currentPrice": "228.75",
+        "currentPrice": "223.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 228.75,
+      "currentPrice": 223.0,
       "percentChange": 0
     },
     {
@@ -42658,12 +42490,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "97",
-        "currentPrice": "70.56",
+        "currentPrice": "69.40",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 70.56,
+      "currentPrice": 69.4,
       "percentChange": 0
     },
     {
@@ -42694,12 +42526,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "248",
-        "currentPrice": "153.00",
+        "currentPrice": "160.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 153.0,
+      "currentPrice": 160.0,
       "percentChange": 0
     },
     {
@@ -42730,12 +42562,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "100",
-        "currentPrice": "59.35",
+        "currentPrice": "58.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 59.35,
+      "currentPrice": 58.9,
       "percentChange": 0
     },
     {
@@ -42766,12 +42598,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "161",
-        "currentPrice": "75.91",
+        "currentPrice": "72.99",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 75.91,
+      "currentPrice": 72.99,
       "percentChange": 0
     },
     {
@@ -42802,12 +42634,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "76",
-        "currentPrice": "40.30",
+        "currentPrice": "38.30",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 40.3,
+      "currentPrice": 38.3,
       "percentChange": 0
     },
     {
@@ -42838,12 +42670,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "245",
-        "currentPrice": "199.14",
+        "currentPrice": "200.05",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 199.14,
+      "currentPrice": 200.05,
       "percentChange": 0
     },
     {
@@ -42874,12 +42706,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "147",
-        "currentPrice": "97.50",
+        "currentPrice": "98.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 97.5,
+      "currentPrice": 98.0,
       "percentChange": 0
     },
     {
@@ -42982,12 +42814,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "140",
-        "currentPrice": "19.90",
+        "currentPrice": "19.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 19.9,
+      "currentPrice": 19.5,
       "percentChange": 0
     },
     {
@@ -43090,12 +42922,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "110",
-        "currentPrice": "17.71",
+        "currentPrice": "17.41",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 17.71,
+      "currentPrice": 17.41,
       "percentChange": 0
     },
     {
@@ -43162,12 +42994,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "111",
-        "currentPrice": "67.82",
+        "currentPrice": "66.98",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 67.82,
+      "currentPrice": 66.98,
       "percentChange": 0
     },
     {
@@ -43184,11 +43016,11 @@
       "listingDate": "2025-07-02",
       "description": "Suntech Infra. - Listed on 2025-07-02",
       "about": "",
-      "priceBandHigh": 86.0,
-      "priceBandLow": 86.0,
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
       "lotSize": 0,
       "issueSize": "",
-      "marketCap": 167.0,
+      "marketCap": 0,
       "gmp": 0,
       "gmpPercent": 0,
       "subscriptionStatus": "",
@@ -43197,13 +43029,13 @@
       "source_url": "https://www.screener.in/company/SUNTECH/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "86",
-        "currentPrice": "34.70",
+        "ipoPrice": "",
+        "currentPrice": null,
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 34.7,
+      "currentPrice": 0,
       "percentChange": 0
     },
     {
@@ -43220,11 +43052,11 @@
       "listingDate": "2025-07-02",
       "description": "Supertech EV - Listed on 2025-07-02",
       "about": "",
-      "priceBandHigh": 92.0,
-      "priceBandLow": 92.0,
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
       "lotSize": 0,
       "issueSize": "",
-      "marketCap": 114.0,
+      "marketCap": 0,
       "gmp": 0,
       "gmpPercent": 0,
       "subscriptionStatus": "",
@@ -43233,13 +43065,13 @@
       "source_url": "https://www.screener.in/company/544428/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "92",
-        "currentPrice": "40.00",
+        "ipoPrice": "",
+        "currentPrice": null,
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 40.0,
+      "currentPrice": 0,
       "percentChange": 0
     },
     {
@@ -43495,42 +43327,6 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-aakaar-medical",
-      "name": "Aakaar Medical",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2025-06-27",
-      "description": "Aakaar Medical - Listed on 2025-06-27",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/AAKAAR/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
       "id": "screener-below_price-arisinfra-solu",
       "name": "Arisinfra Solu.",
       "ticker": "",
@@ -43771,6 +43567,42 @@
       "currency": "INR",
       "source": "screener.in",
       "source_url": "https://www.screener.in/company/NIKITA/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-aegis-vopak-term",
+      "name": "Aegis Vopak Term",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2025-06-02",
+      "description": "Aegis Vopak Term - Listed on 2025-06-02",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/AEGISVOPAK/consolidated/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -51403,6 +51235,42 @@
       "currency": "INR",
       "source": "screener.in",
       "source_url": "https://www.screener.in/company/KLL/consolidated/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-shri-balaji",
+      "name": "Shri Balaji",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2024-01-03",
+      "description": "Shri Balaji - Listed on 2024-01-03",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/544074/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -64048,6 +63916,78 @@
         "rightsPrice": ""
       },
       "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-rights-ganga-forging",
+      "name": "Ganga Forging",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "rights",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "",
+      "description": "Ganga Forging - Listed on N/A",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/GANGAFORGE/",
+      "source_category": "rights",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": "2.36",
+        "exDate": "2026-07-02",
+        "rightsRatio": "3:2",
+        "rightsPrice": "1.63"
+      },
+      "currentPrice": 2.36,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-rights-minolta-finance",
+      "name": "Minolta Finance",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "rights",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "",
+      "description": "Minolta Finance - Listed on N/A",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/532164/",
+      "source_category": "rights",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": "1.52",
+        "exDate": "2026-07-17",
+        "rightsRatio": "4:1",
+        "rightsPrice": "1.20"
+      },
+      "currentPrice": 1.52,
       "percentChange": 0
     }
   ]
