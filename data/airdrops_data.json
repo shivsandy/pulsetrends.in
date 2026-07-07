@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-07-06T12:00:59.451946+00:00",
-  "total": 34,
+  "last_updated": "2026-07-07T10:52:19.175943+00:00",
+  "total": 35,
   "airdrops": [
     {
       "id": "arcus",
       "name": "Arcus",
       "url": "https://airdrops.io/arcus/",
-      "heat": 539,
+      "heat": 536,
       "status": "active",
       "chain": "Robinhood",
       "actions": [
         "Arcus Actions: Sign Up",
         "Join Waitlist and Trade Spot"
       ],
-      "description": "539° Ongoing Arcus Actions: Sign Up, Join Waitlist and Trade Spot CLAIM AIRDROP",
+      "description": "536° Ongoing Arcus Actions: Sign Up, Join Waitlist and Trade Spot CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "have not been published",
       "steps": [
@@ -33,13 +33,13 @@
       "id": "monetrix",
       "name": "Monetrix",
       "url": "https://airdrops.io/monetrix/",
-      "heat": 433,
+      "heat": 439,
       "status": "active",
       "chain": "Hyperliquid",
       "actions": [
         "Monetrix Actions: Mint USDM with USDC"
       ],
-      "description": "433° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP",
+      "description": "439° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Not announced Season 0 rewards three groups: stablecoin holders, yield participants, and liquidity providers",
       "steps": [
@@ -67,14 +67,14 @@
       "id": "solpump",
       "name": "SolPump",
       "url": "https://airdrops.io/solpump/",
-      "heat": 408,
+      "heat": 410,
       "status": "active",
       "chain": "Solana",
       "actions": [
         "SolPump Actions: Participate hourly",
         "grab free SOL"
       ],
-      "description": "408° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP",
+      "description": "410° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Visit the SolPump Platform",
@@ -130,7 +130,7 @@
       "id": "brighter",
       "name": "Brighter",
       "url": "https://airdrops.io/brighter/",
-      "heat": 375,
+      "heat": 372,
       "status": "active",
       "chain": "Ethereum",
       "actions": [
@@ -138,7 +138,7 @@
         "connect X",
         "refer friends"
       ],
-      "description": "375° Ongoing Brighter Actions: Connect wallet, connect X & refer friends CLAIM AIRDROP",
+      "description": "372° Ongoing Brighter Actions: Connect wallet, connect X & refer friends CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date: Not announced (no Brighter token has launched) Points currently accrue from connecting a wallet, linking an X account, and referring others, with referrers earning an ongoing 4% of each referred friend’s base points",
       "about": "What is Brighter? Brighter is a yield engine built on top of Lighter , the zero-knowledge perpetuals exchange on Ethereum. The project is designed to let stablecoin holders and LIT stakers tap into Lighter’s yield share without managing positions manually, under the tagline “Go Brighter, Earn Lighter.” Brighter sits much earlier in its own timeline. No funding round or backer has been publicly disclosed for Brighter itself, and the project is currently in a pre-launch phase built around a points reservation campaign rather than live yield deposits. For now, wallet connections, social follows, and referrals are what earn Brighter Points.",
@@ -155,46 +155,17 @@
       ]
     },
     {
-      "id": "ink",
-      "name": "Ink",
-      "url": "https://airdrops.io/ink-chain/",
-      "heat": 242,
-      "status": "confirmed",
-      "chain": "Own",
-      "actions": [
-        "Ink Actions: Trade on Kraken Pro",
-        "Interact with Dapps"
-      ],
-      "description": "242° Ongoing Confirmed Ink Actions: Trade on Kraken Pro & Interact with Dapps CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "Date : Expected July-September 2026 Latest Update: The Ink Points leaderboard for Kraken Pro users is now live",
-      "steps": [
-        "Deposit cash (2x points)",
-        "Reactivation bonus (3x points)",
-        "Set price alerts (Bonus boost)"
-      ],
-      "about": "What is Ink Chain? Ink is an Ethereum layer 2 blockchain built by Kraken on the OP Stack. Ink was made to be the Superchain’s home for DeFi, and its goal is to make on-chain finance available to the next billion users. The chain is a cheap and fast place to use and deploy DeFi protocols. Ink is a key part of Kraken’s mission to speed up the adoption of cryptocurrencies around the world. It connects users of centralized exchanges with on-chain opportunities. SuperSwap, Velodrome, and the Tydro lending protocol powered by Aave are just a few of the apps that are growing on the chain.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Ink&url=https%3A%2F%2Fairdrops.io%2Fink-chain%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fink-chain%2F&text=Ink",
-        "github": "https://github.com/inkonchain"
-      },
-      "eligibility": "right now",
-      "difficulty": "Medium",
-      "estimated_cost": "-free"
-    },
-    {
       "id": "hypertrade",
       "name": "Hypertrade",
       "url": "https://airdrops.io/hypertrade/",
-      "heat": 198,
+      "heat": 194,
       "status": "active",
       "chain": "Hyperliquid",
       "actions": [
         "Hypertrade Actions: Make swaps",
         "add liquidity"
       ],
-      "description": "198° Ongoing Hypertrade Actions: Make swaps & add liquidity CLAIM AIRDROP",
+      "description": "194° Ongoing Hypertrade Actions: Make swaps & add liquidity CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": ", but the points system is live and accumulating rewards for early users",
       "steps": [
@@ -240,10 +211,38 @@
       "estimated_cost": "to Farm Medium Overview Website: liquidiction"
     },
     {
+      "id": "robinhood",
+      "name": "Robinhood",
+      "url": "https://airdrops.io/robinhood/",
+      "heat": 168,
+      "status": "active",
+      "chain": "Arbitrum",
+      "actions": [
+        "Robinhood Actions: Bridge to mainnet",
+        "Interact with Apps"
+      ],
+      "description": "168° Ongoing Robinhood Actions: Bridge to mainnet & Interact with Apps CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "steps": [
+        "cost little to nothing. Step 3: Trade or Hold Stock Tokens Eligible users outside the US can access Stock Tokens directly in Robinhood Wallet and trade them 24/7. These are tokenized debt instruments tracking US equities and ETFs, not direct share ownership, so check the disclosures before treating them like stock. Step 4: Try Onchain Perpetual Futures Robinhood Chain supports perpetual futures trading through partner venues like Lighter. This is a real",
+        "money activity involving leverage, so size positions carefully. There’s a 11 $LIT incentive pool for perps trading through the Robinhood wallet app. Step 5: Explore Other Ecosystem Apps Use Arcus to trade spot tokens and join the Arcus perps waitlist to become eligible for their future token. Also, explore other ecosystem apps here . Tips for Getting Positioned Early Bridge real assets, not dust : If a retroactive airdrop ever materializes, meaningful onchain activity is more likely to matter than a single token swap. Use the chain the way you’d normally use an L2 you plan to stick with. Take advantage of sponsored gas now : The 90",
+        "day fee sponsorship window is a limited opportunity to test swaps, bridging, and lending without eating transaction costs. It won’t last. Watch the explorer, not rumors : Track your own activity through the Robinhood Chain explorer rather than relying on third",
+        "party trackers claiming to know airdrop criteria that Robinhood hasn’t published."
+      ],
+      "about": "What is Robinhood Chain? Robinhood Chain is a permissionless Layer 2 blockchain built on Arbitrum , designed specifically for financial services and tokenized real-world assets. The platform enables native issuance, access, and transfer of tokenized assets without intermediaries, positioning itself as the infrastructure layer for Robinhood’s onchain financial services. With 100ms block times and secured by Ethereum, the chain provides developers with high-throughput infrastructure to build financial applications. The project is backed by Robinhood Markets, which has raised approximately $5.77 billion across multiple funding rounds from notable investors including Sequoia Capital, Andreessen Horowitz (a16z), Ribbit Capital, Index Ventures, and DST Global. Robinhood Chain’s testnet launched on February 11, 2026, with mainnet deployment anticipated in the coming months. The platform has committed $1 million to the 2026 Arbitrum Open House program to support developer activity on its testn",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Robinhood&url=https%3A%2F%2Fairdrops.io%2Frobinhood%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Frobinhood%2F&text=Robinhood"
+      },
+      "eligibility": "criteria, points system, or distribution mechanism, and there’s no dashboard tracking wallet activity for a future drop",
+      "difficulty": "Medium",
+      "estimated_cost": "little to nothing"
+    },
+    {
       "id": "hyperliquid",
       "name": "Hyperliquid",
       "url": "https://airdrops.io/hyperliquid/",
-      "heat": 168,
+      "heat": 166,
       "status": "confirmed",
       "chain": "Arbitrum",
       "actions": [
@@ -253,7 +252,7 @@
         "Provide LP",
         "Refer Friends"
       ],
-      "description": "168° Ongoing Confirmed Hyperliquid Actions: Trade, Interact with Chain, Stake HYPE, Provide LP & Refer Friends CLAIM AIRDROP",
+      "description": "166° Ongoing Confirmed Hyperliquid Actions: Trade, Interact with Chain, Stake HYPE, Provide LP & Refer Friends CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Create your accountVisit Hyperliquid and connect your wallet — this referral link gives you an instant 4% discount on all trading feesComplete account setup and accept the terms of service",
@@ -344,100 +343,16 @@
       "estimated_cost": "averaging works well for larger positions given price volatility Complete the staking process Go to “Staking” → transfer HYPE from spot balance to staking balance → click “Stake Tokens” Consider delegating to HypurrCollective validator for added benefits: Earn Nansen points alongside staking rewards Access to exclusive ecosystem airdrops Track record of 5 successful airdrops since staking launch What staking pays HYPE token rewards from network inflation USDC rewards from platform trading fees Eligibility for ecosystem project airdrops Governance participation in protocol decisions For higher yield, liquid staking protocols like Kinetiq and LoopedHYPE let you stake HYPE, receive an LST, then deploy that LST into HyperEVM DEX liquidity pools — stacking staking APR, LP APR, and protocol points at the same time"
     },
     {
-      "id": "robinhood",
-      "name": "Robinhood",
-      "url": "https://airdrops.io/robinhood/",
-      "heat": 167,
-      "status": "active",
-      "chain": "Arbitrum",
-      "actions": [
-        "Robinhood Actions: Bridge to mainnet",
-        "Interact with Apps"
-      ],
-      "description": "167° Ongoing Robinhood Actions: Bridge to mainnet & Interact with Apps CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "steps": [
-        "cost little to nothing. Step 3: Trade or Hold Stock Tokens Eligible users outside the US can access Stock Tokens directly in Robinhood Wallet and trade them 24/7. These are tokenized debt instruments tracking US equities and ETFs, not direct share ownership, so check the disclosures before treating them like stock. Step 4: Try Onchain Perpetual Futures Robinhood Chain supports perpetual futures trading through partner venues like Lighter. This is a real",
-        "money activity involving leverage, so size positions carefully. There’s a 11 $LIT incentive pool for perps trading through the Robinhood wallet app. Step 5: Explore Other Ecosystem Apps Use Arcus to trade spot tokens and join the Arcus perps waitlist to become eligible for their future token. Also, explore other ecosystem apps here . Tips for Getting Positioned Early Bridge real assets, not dust : If a retroactive airdrop ever materializes, meaningful onchain activity is more likely to matter than a single token swap. Use the chain the way you’d normally use an L2 you plan to stick with. Take advantage of sponsored gas now : The 90",
-        "day fee sponsorship window is a limited opportunity to test swaps, bridging, and lending without eating transaction costs. It won’t last. Watch the explorer, not rumors : Track your own activity through the Robinhood Chain explorer rather than relying on third",
-        "party trackers claiming to know airdrop criteria that Robinhood hasn’t published."
-      ],
-      "about": "What is Robinhood Chain? Robinhood Chain is a permissionless Layer 2 blockchain built on Arbitrum , designed specifically for financial services and tokenized real-world assets. The platform enables native issuance, access, and transfer of tokenized assets without intermediaries, positioning itself as the infrastructure layer for Robinhood’s onchain financial services. With 100ms block times and secured by Ethereum, the chain provides developers with high-throughput infrastructure to build financial applications. The project is backed by Robinhood Markets, which has raised approximately $5.77 billion across multiple funding rounds from notable investors including Sequoia Capital, Andreessen Horowitz (a16z), Ribbit Capital, Index Ventures, and DST Global. Robinhood Chain’s testnet launched on February 11, 2026, with mainnet deployment anticipated in the coming months. The platform has committed $1 million to the 2026 Arbitrum Open House program to support developer activity on its testn",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Robinhood&url=https%3A%2F%2Fairdrops.io%2Frobinhood%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Frobinhood%2F&text=Robinhood"
-      },
-      "eligibility": "criteria, points system, or distribution mechanism, and there’s no dashboard tracking wallet activity for a future drop",
-      "difficulty": "Medium",
-      "estimated_cost": "little to nothing"
-    },
-    {
-      "id": "flipper",
-      "name": "Flipper",
-      "url": "https://airdrops.io/flipper/",
-      "heat": 147,
-      "status": "confirmed",
-      "chain": "Solana",
-      "actions": [
-        "Flipper Actions: Join Testnet",
-        "Complete Quests and Refer to Earn XP"
-      ],
-      "description": "147° Ongoing Flipper Actions: Join Testnet, Complete Quests and Refer to Earn XP CLAIM AIRDROP 539° Ongoing Arcus Actions: Sign Up, Join Waitlist and Trade Spot CLAIM AIRDROP Ongoing Tori Finance Actions: Deposit, Stake Coins and Refer Users CLAIM AIRDROP 55° Ongoing Confirmed Scout Actions: Upload photos or videos to earn SOL CLAIM AIRDROP Ongoing ArcNova Actions: Complete daily check-ins, downlo",
-      "source": "airdrops.io",
-      "tge_date": ", and the team has stated that testing the product and submitting a wallet through the FLPP Reward Program builds eligibility for future rewards, airdrops, and staking perks",
-      "steps": [
-        "Report a bug for 35 XP",
-        "Suggest a feature for 25 XP",
-        "Join the official Telegram channel for 10 XP"
-      ],
-      "about": "What is Flipper? Flipper is an AI-powered trading aggregator built on Solana that pulls together spot trading, perpetuals, and on-chain DeForex (forex, commodities, and indices) into one interface. Instead of running its own liquidity pools, Flipper routes orders across multiple external providers and uses AI to help traders find better execution and lower slippage.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Flipper&url=https%3A%2F%2Fairdrops.io%2Fflipper%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fflipper%2F&text=Flipper"
-      },
-      "eligibility": "for future rewards, airdrops, and staking perks",
-      "difficulty": "Easy",
-      "estimated_cost": "s nothing beyond a few minutes and some faucet-issued test SOL"
-    },
-    {
-      "id": "collector_crypt",
-      "name": "Collector Crypt",
-      "url": "https://airdrops.io/collector-crypt/",
-      "heat": 137,
-      "status": "confirmed",
-      "chain": "Solana",
-      "actions": [
-        "Collector Crypt Actions: Sign in",
-        "Open Gacha Packs and Refer to Earn"
-      ],
-      "description": "137° Ongoing Confirmed Collector Crypt Actions: Sign in, Open Gacha Packs and Refer to Earn Claim Live CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "ed in August 2025 and powers Gacha purchases and platform rewards",
-      "about": "What is Collector Crypt? Collector Crypt is a Solana-based platform that turns physical, professionally graded trading cards into redeemable NFTs. Most of its inventory is Pokémon, with One Piece and other categories added over time. Each card sent to the platform is authenticated, stored in an insured vault, and minted as a programmable NFT (pNFT) that maps 1:1 to the real item. The project raised about $1.9 million , with backers including GSR and Big Brain Holdings. The $CARDS token launched in August 2025 and powers Gacha purchases and platform rewards.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Collector%20Crypt&url=https%3A%2F%2Fairdrops.io%2Fcollector-crypt%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fcollector-crypt%2F&text=Collector%20Crypt",
-        "discord": "https://discord.gg/jRdv3UxgV2"
-      },
-      "eligibility": "is driven mainly by Gacha activity measured in points",
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Medium Overview Website: gacha",
-      "steps": [
-        "Collector Crypt Actions: Sign in",
-        "Open Gacha Packs and Refer to Earn"
-      ]
-    },
-    {
       "id": "theo_network",
       "name": "Theo Network",
       "url": "https://airdrops.io/theo-network/",
-      "heat": 134,
+      "heat": 139,
       "status": "active",
       "chain": "Ethereum",
       "actions": [
         "Theo Network Actions: Deposit into vaults"
       ],
-      "description": "134° Ongoing Theo Network Actions: Deposit into vaults CLAIM AIRDROP",
+      "description": "139° Ongoing Theo Network Actions: Deposit into vaults CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "event",
       "steps": [
@@ -458,6 +373,34 @@
       },
       "difficulty": "Medium",
       "estimated_cost": "to Farm Medium Overview Website: theo"
+    },
+    {
+      "id": "collector_crypt",
+      "name": "Collector Crypt",
+      "url": "https://airdrops.io/collector-crypt/",
+      "heat": 131,
+      "status": "confirmed",
+      "chain": "Solana",
+      "actions": [
+        "Collector Crypt Actions: Sign in",
+        "Open Gacha Packs and Refer to Earn"
+      ],
+      "description": "131° Ongoing Confirmed Collector Crypt Actions: Sign in, Open Gacha Packs and Refer to Earn Claim Live CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "ed in August 2025 and powers Gacha purchases and platform rewards",
+      "about": "What is Collector Crypt? Collector Crypt is a Solana-based platform that turns physical, professionally graded trading cards into redeemable NFTs. Most of its inventory is Pokémon, with One Piece and other categories added over time. Each card sent to the platform is authenticated, stored in an insured vault, and minted as a programmable NFT (pNFT) that maps 1:1 to the real item. The project raised about $1.9 million , with backers including GSR and Big Brain Holdings. The $CARDS token launched in August 2025 and powers Gacha purchases and platform rewards.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Collector%20Crypt&url=https%3A%2F%2Fairdrops.io%2Fcollector-crypt%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fcollector-crypt%2F&text=Collector%20Crypt",
+        "discord": "https://discord.gg/jRdv3UxgV2"
+      },
+      "eligibility": "is driven mainly by Gacha activity measured in points",
+      "difficulty": "Easy",
+      "estimated_cost": "to Farm Medium Overview Website: gacha",
+      "steps": [
+        "Collector Crypt Actions: Sign in",
+        "Open Gacha Packs and Refer to Earn"
+      ]
     },
     {
       "id": "truenorth",
@@ -489,16 +432,142 @@
       "estimated_cost": "beyond standard Hyperliquid trading fees"
     },
     {
+      "id": "katana",
+      "name": "Katana",
+      "url": "https://airdrops.io/katana-network/",
+      "heat": 120,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [
+        "Katana Actions: Deposit Assets",
+        "Trade Perps"
+      ],
+      "description": "120° Ongoing Confirmed Katana Actions: Deposit Assets & Trade Perps CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "Event",
+      "steps": [
+        "Obtain an invite code from Katana’s official channels or partners",
+        "Visit Katana Perps and connect your wallet",
+        "Trade to accumulate points during weekly 7-day sprints",
+        "Reach $50,000 notional trading volume to unlock referrals and receive 10 invite seats",
+        "Organic Trading – Points awarded for genuine trading activity; wash trading and self-dealing do not count",
+        "Sustained Participation – Consistent weekly activity unlocks additional benefits over sporadic trading",
+        "Referral Activity – Earn points based on referred users’ trading volume, alongside direct USDC referral commissions",
+        "Volume Pool (70%): pro-rata share of qualifying volume across all markets, with a $10,000 minimum trade volume to qualify",
+        "PnL Leaderboard (30%): top 15 wallets by PnL percentage share the pool, with payouts from $100 to $3,000 and a $250 minimum collateral deposit to qualify",
+        "Visit Katana Perps and connect your wallet",
+        "Deposit at least $250 in vbUSDC to qualify for both pools (you can purchase USDC directly from Binance or bridge using Rhino.fi bridge)",
+        "Trade across any available markets before May 12 to accumulate qualifying volume",
+        "KAT is now fully transferable and can be actively staked, allocated, and deployed",
+        "The vKAT system is live — stake KAT to receive vKAT, which unlocks voting power on emissions and the ability to earn fees",
+        "Users who previously earned vKAT can now put that voting power to work immediately",
+        "First swap on Katana",
+        "First deposit",
+        "ETH or WBTC swap",
+        "Weekly activity challenges"
+      ],
+      "about": "What is Katana? Katana is a blockchain made just for DeFi. Its focused application architecture is meant to provide deeper liquidity and higher yields. Katana doesn’t split liquidity across many protocols. Instead, it channels all activity through one lending protocol (Morpho) and one spot DEX (Sushi), with hundreds of apps building on top of them. This focused approach brings in money from several sources, such as Vault Bridge, sequencer fees, and Agora USD revenue. This money then flows back as rewards across Katana’s main apps. The chain uses Agglayer to make it easy for users to join from other chains and ZK proofs to check state transitions, so users can leave without having to wait long. The KAT token makes the ecosystem work. Users who lock KAT will get vKAT (voting KAT), which is what keeps the chain’s economy going by rewarding people who work together with fees. The vKAT system will go live at the same time as the vKAT Armory staking UI.",
+      "social_links": {
+        "twitter": "https://x.com/search?q=%24KAT&src=cashtag_click",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fkatana-network%2F&text=Katana",
+        "discord": "https://discord.gg/katananetwork",
+        "github": "https://github.com/katana-network/katana-docs/"
+      }
+    },
+    {
+      "id": "ondo_perps",
+      "name": "Ondo Perps",
+      "url": "https://airdrops.io/ondo-perps/",
+      "heat": 109,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [
+        "Ondo Perps Actions: Hold ONDO",
+        "join waitlist"
+      ],
+      "description": "109° Ongoing Confirmed Ondo Perps Actions: Hold ONDO & join waitlist CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "Date: N/A (ONDO already live; future distributions unconfirmed) Early Access codes for Ondo Perps are being sent in waves to waitlist members",
+      "steps": [
+        "Ongoing Confirmed Ondo Perps Airdrop Details Ondo Perps has an upcoming points program and is currently distributing USDC rewards to traders every week.",
+        "Rewards are now claimable here .",
+        "How to Farm the Ondo Perps Airdrop Step 1: Join the Ondo Perps Waitlist Visit the Ondo Perps waitlist and submit your email to register for Early Access.",
+        "KYC is required if you win a raffle prize."
+      ],
+      "about": "What is Ondo Perps? Ondo Perps is a perpetual futures trading platform built by the team behind Ondo Finance, offering 24/7 trading on tokenized U.S. equities, ETFs, and commodities. Users can take long or short positions on assets like NVDA, TSLA, AAPL, gold, silver, and oil with up to 20x leverage. The platform launched in early access in 2025 and is available to users outside the United States and other restricted jurisdictions. The platform’s main differentiator is planned support for tokenized securities as collateral. Existing RWA perps venues force traders to post stablecoins, locking up capital twice when they already hold the underlying asset. Ondo Finance previously raised a $4M seed round in 2021; a $20M Series A in 2022 led by Founders Fund and Pantera Capital, with backing from Coinbase Ventures, Tiger Global, and Wintermute and $22M in May 2022.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Ondo%20Perps&url=https%3A%2F%2Fairdrops.io%2Fondo-perps%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fondo-perps%2F&text=Ondo%20Perps"
+      },
+      "eligibility": ". Step 2: Claim past rewards (if eligible) If you participated in any closed campaigns before the April 1, 2026 snapshot, head to the Ondo rewards page",
+      "difficulty": "Medium",
+      "estimated_cost": "to Farm Medium Overview Website: ondoperps"
+    },
+    {
+      "id": "flipper",
+      "name": "Flipper",
+      "url": "https://airdrops.io/flipper/",
+      "heat": 101,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [
+        "Flipper Actions: Join Testnet",
+        "Complete Quests and Refer to Earn XP"
+      ],
+      "description": "101° Ongoing Flipper Actions: Join Testnet, Complete Quests and Refer to Earn XP CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": ", and the team has stated that testing the product and submitting a wallet through the FLPP Reward Program builds eligibility for future rewards, airdrops, and staking perks",
+      "steps": [
+        "Report a bug for 35 XP",
+        "Suggest a feature for 25 XP",
+        "Join the official Telegram channel for 10 XP"
+      ],
+      "about": "What is Flipper? Flipper is an AI-powered trading aggregator built on Solana that pulls together spot trading, perpetuals, and on-chain DeForex (forex, commodities, and indices) into one interface. Instead of running its own liquidity pools, Flipper routes orders across multiple external providers and uses AI to help traders find better execution and lower slippage.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Flipper&url=https%3A%2F%2Fairdrops.io%2Fflipper%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fflipper%2F&text=Flipper"
+      },
+      "eligibility": "for future rewards, airdrops, and staking perks",
+      "difficulty": "Easy",
+      "estimated_cost": "s nothing beyond a few minutes and some faucet-issued test SOL"
+    },
+    {
+      "id": "afx",
+      "name": "AFX",
+      "url": "https://airdrops.io/afx/",
+      "heat": 68,
+      "status": "confirmed",
+      "chain": "Arbitrum",
+      "actions": [
+        "AFX Actions: Trade",
+        "deposit to vaults"
+      ],
+      "description": "68° Ongoing Confirmed AFX Actions: Trade & deposit to vaults CLAIM AIRDROP 101° Ongoing Flipper Actions: Join Testnet, Complete Quests and Refer to Earn XP CLAIM AIRDROP 536° Ongoing Arcus Actions: Sign Up, Join Waitlist and Trade Spot CLAIM AIRDROP Ongoing Tori Finance Actions: Deposit, Stake Coins and Refer Users CLAIM AIRDROP 40° Ongoing Confirmed Scout Actions: Upload photos or videos to earn ",
+      "source": "airdrops.io",
+      "tge_date": ", with roughly 65% of the total token supply reserved for the community",
+      "about": "What is AFX? AFX is a sovereign Layer 1 blockchain built specifically for decentralized perpetuals trading. Instead of deploying a perp DEX on an existing chain, the team built its own execution layer with sub-100ms finality, zero gas fees, and a fully on-chain central limit order book. The result feels closer to a centralized exchange than a typical DeFi protocol, while matching and settlement stay verifiable on-chain. AFX raised no VC or private funding. The team skipped investor rounds entirely in favor of a community-first launch, which has direct consequences for how the future token gets distributed.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=AFX&url=https%3A%2F%2Fairdrops.io%2Fafx%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fafx%2F&text=AFX"
+      },
+      "difficulty": "Medium",
+      "estimated_cost": "nothing beyond the trading you were already doing",
+      "steps": [
+        "AFX Actions: Trade",
+        "deposit to vaults"
+      ]
+    },
+    {
       "id": "grass",
       "name": "Grass",
       "url": "https://airdrops.io/grass/",
-      "heat": 82,
+      "heat": 58,
       "status": "confirmed",
       "chain": "Solana",
       "actions": [
         "Grass Actions: Install Grass extension and keep to earn points 🌱"
       ],
-      "description": "82° Ongoing Confirmed Grass Actions: Install Grass extension and keep active to earn points 🌱 Claim Live CLAIM AIRDROP",
+      "description": "58° Ongoing Confirmed Grass Actions: Install Grass extension and keep active to earn points 🌱 Claim Live CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "t, Gate",
       "steps": [
@@ -560,31 +629,6 @@
       "estimated_cost": "to Farm Free Overview Website: app"
     },
     {
-      "id": "scout",
-      "name": "Scout",
-      "url": "https://airdrops.io/scout/",
-      "heat": 55,
-      "status": "confirmed",
-      "chain": "Solana",
-      "actions": [
-        "Scout Actions: Upload photos or videos to earn SOL"
-      ],
-      "description": "55° Ongoing Confirmed Scout Actions: Upload photos or videos to earn SOL CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "Date : $SCOUT launched on Kickstart on June 8 to 9, 2026",
-      "about": "What is Scout? Scout is a Solana-based marketplace where people upload original photos and videos from their phones, get them reviewed for originality and quality, and receive SOL automatically once a submission is approved. The platform describes itself as a premium data collection marketplace, selling the resulting media to AI labs, robotics teams, and creative studios that need real world visual data instead of synthetic or scraped images.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Scout&url=https%3A%2F%2Fairdrops.io%2Fscout%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fscout%2F&text=Scout"
-      },
-      "eligibility": "to earn",
-      "difficulty": "Easy",
-      "estimated_cost": "s nothing to try",
-      "steps": [
-        "Scout Actions: Upload photos or videos to earn SOL"
-      ]
-    },
-    {
       "id": "xeffy",
       "name": "Xeffy",
       "url": "https://airdrops.io/xeffy/",
@@ -639,16 +683,41 @@
       "estimated_cost": "s and optimize order placement"
     },
     {
+      "id": "scout",
+      "name": "Scout",
+      "url": "https://airdrops.io/scout/",
+      "heat": 40,
+      "status": "confirmed",
+      "chain": "Solana",
+      "actions": [
+        "Scout Actions: Upload photos or videos to earn SOL"
+      ],
+      "description": "40° Ongoing Confirmed Scout Actions: Upload photos or videos to earn SOL CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "Date : $SCOUT launched on Kickstart on June 8 to 9, 2026",
+      "about": "What is Scout? Scout is a Solana-based marketplace where people upload original photos and videos from their phones, get them reviewed for originality and quality, and receive SOL automatically once a submission is approved. The platform describes itself as a premium data collection marketplace, selling the resulting media to AI labs, robotics teams, and creative studios that need real world visual data instead of synthetic or scraped images.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Scout&url=https%3A%2F%2Fairdrops.io%2Fscout%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fscout%2F&text=Scout"
+      },
+      "eligibility": "to earn",
+      "difficulty": "Easy",
+      "estimated_cost": "s nothing to try",
+      "steps": [
+        "Scout Actions: Upload photos or videos to earn SOL"
+      ]
+    },
+    {
       "id": "minotaurus",
       "name": "Minotaurus",
       "url": "https://airdrops.io/minotaurus/",
-      "heat": 28,
+      "heat": 29,
       "status": "active",
       "chain": "BSC",
       "actions": [
         "Minotaurus Actions: Earn tickets to enter $100k giveaway"
       ],
-      "description": "28° Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored",
+      "description": "29° Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored",
       "source": "airdrops.io",
       "steps": [
         "500 USDT spent = 10 extra tickets",
@@ -670,6 +739,31 @@
         "telegram": "https://t.me/minotaurus_chat"
       },
       "eligibility": "Telegram Twitter / X More Airdrops to Farm ArcNova Ongoing BSC View Guide → Binance Ended BSC, Ethereum View Guide → squid Ongoing Arbitrum, Avalanche View Guide → 42 Ongoing BSC View Guide → Nansen Ongoing Arbitrum, Avalanche View Guide → Billions Network Ongoing BSC View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications"
+    },
+    {
+      "id": "shill_sol",
+      "name": "Shill SOL",
+      "url": "https://airdrops.io/shill-sol/",
+      "heat": 21,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [
+        "Shill SOL Actions: Activate membership",
+        "post on X"
+      ],
+      "description": "21° Ongoing Shill SOL Actions: Activate membership & post on X CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "about": "Shill SOL is a membership rewards program initiated by the Solana Foundation that pays you to promote $SOL on X. The concept is refreshingly simple: activate your membership with your X (Twitter) handle, stake SOL, shill SOL on X, and earn rewards based on your contributions and leaderboard standing. The program was previously only available to Key Opinion Leaders, but is not open to everyone.",
+      "social_links": {
+        "twitter": "https://x.com/vibhu/status/2068700918674063864",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fshill-sol%2F&text=Shill%20SOL"
+      },
+      "eligibility": "Twitter / X More Airdrops to Farm Flipper Ongoing Solana View Guide → Scout Ongoing Solana View Guide → Biokript Ongoing Solana View Guide → Collector Crypt Ongoing Solana View Guide → Matchday Ongoing Solana View Guide → squid Ongoing Arbitrum, Avalanche View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications",
+      "estimated_cost": "s to participate",
+      "steps": [
+        "Shill SOL Actions: Activate membership",
+        "post on X"
+      ]
     },
     {
       "id": "tori_finance",
@@ -743,24 +837,6 @@
       "estimated_cost": "s nothing"
     },
     {
-      "id": "shill_sol",
-      "name": "Shill SOL",
-      "url": "https://airdrops.io/shill-sol/",
-      "heat": 0,
-      "status": "active",
-      "chain": "Solana",
-      "actions": [],
-      "description": "Ongoing Shill SOL Actions: Activate membership & post on X CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "about": "Shill SOL is a membership rewards program initiated by the Solana Foundation that pays you to promote $SOL on X. The concept is refreshingly simple: activate your membership with your X (Twitter) handle, stake SOL, shill SOL on X, and earn rewards based on your contributions and leaderboard standing. The program was previously only available to Key Opinion Leaders, but is not open to everyone.",
-      "social_links": {
-        "twitter": "https://x.com/vibhu/status/2068700918674063864",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fshill-sol%2F&text=Shill%20SOL"
-      },
-      "eligibility": "Twitter / X More Airdrops to Farm Flipper Ongoing Solana View Guide → Scout Ongoing Solana View Guide → Biokript Ongoing Solana View Guide → Collector Crypt Ongoing Solana View Guide → Matchday Ongoing Solana View Guide → squid Ongoing Arbitrum, Avalanche View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications",
-      "estimated_cost": "s to participate"
-    },
-    {
       "id": "deploy",
       "name": "Deploy",
       "url": "https://airdrops.io/deploy/",
@@ -781,28 +857,6 @@
       "eligibility": "Email Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications",
       "difficulty": "Easy",
       "estimated_cost": ". What is dUSD and how does it earn yield? dUSD is Deploy’s productive digital dollar that earns from funding-rate spreads across decentralized perpetual markets"
-    },
-    {
-      "id": "matchday",
-      "name": "Matchday",
-      "url": "https://airdrops.io/matchday/",
-      "heat": 0,
-      "status": "active",
-      "chain": "Solana",
-      "actions": [],
-      "description": "Ongoing Matchday Actions: Predict world cup matches CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "steps": [
-        "at signup. Paste your Solana address during registration and predictions are tracked against that address. Will Matchday run competitions beyond the 2026 World Cup? The team has not announced plans beyond the current tournament. Follow @matchdaycoin on X for updates on future competitions or campaigns after the World Cup concludes. Conclusion Matchday gives football fans a direct way to compete during the 2026 World Cup with real USDC on the line. The platform is live now, registration is free, and predictions are open across the group stage and knockout rounds. PREDICT WORLD CUP MATCHES You're interested in more projects that do not have any token yet and could potentially airdrop a governance token to early users in the future? Then check out our list of potential retroactive airdrops to not miss out on the next DeFi airdrop! Requirements Email More Airdrops to Farm Flipper Ongoing Solana View Guide → Scout Ongoing Solana View Guide → Biokript Ongoing Solana View Guide → Collector Crypt Ongoing Solana View Guide → Shill SOL Ongoing Solana View Guide → squid Ongoing Arbitrum, Avalanche View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Difficulty Easy Cost to Farm Free Overview Website: matchdaycoin.com Ticker: MATCH Total Supply: 999998305 MATCH X (Formerly Twitter): Telegram Group: CoinGecko: X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
-      ],
-      "about": "What is Matchday? Matchday is a Solana-based football score prediction platform built around the 2026 World Cup. Users register with a username and Solana wallet, then submit exact score predictions for group stage and knockout matches before kickoff. Points are awarded based on how close each prediction is to the final result, with leaderboard positions determining who wins USDC from the prize pool. The platform keeps participation low friction: no complex wallet connection flow, no gas fees eating into rewards. Prize pools are funded directly by Pump.fun creator fees, which means the pot grows with $MATCH activity rather than relying on a centralized treasury. The $MATCH token is live on Solana and listed on CoinGecko.",
-      "social_links": {
-        "telegram": "https://t.me/MatchDayCoinBot",
-        "twitter": "https://twitter.com/matchdaycoin"
-      },
-      "eligibility": "criteria",
-      "difficulty": "Easy",
-      "estimated_cost": "s nothing"
     },
     {
       "id": "planemo_trading",
@@ -1058,9 +1112,9 @@
       "description": "How to get free crypto airdrops? Cryptocurrency airdrops typically require users to complete simple tasks like following social media accounts, sharing posts, or signing up for newsletters. They might also include interacting with crypto DApps. Check reputable crypto websites for current airdrop opportunities.",
       "source": "airdrops.io",
       "steps": [
-        "Join Testnet, Complete Quests and Refer to Earn XP CLAIM AIRDROP 539° Ongoing Arcus Actions: Sign Up, Join Waitlist and Trade Spot CLAIM AIRDROP Ongoing Tori Finance Actions: Deposit, Stake Coins and Refer Users CLAIM AIRDROP 55° Ongoing Confirmed Scout Actions: Upload photos or videos to earn SOL CLAIM AIRDROP Ongoing ArcNova Actions: Complete daily check",
-        "ins, download the app and complete tasks CLAIM AIRDROP 28° Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored Ongoing Cambrian Network Actions: Submit email and wait for testnet waitlist access CLAIM AIRDROP 125° Ongoing TrueNorth Actions: Sign Up, Set Up Trading Persona and Trade CLAIM AIRDROP 375° Ongoing Brighter Actions: Connect wallet, connect X & refer friends CLAIM AIRDROP 137° Ongoing Confirmed Collector Crypt Actions: Sign in, Open Gacha Packs and Refer to Earn Claim Live CLAIM AIRDROP Ongoing Shill SOL Actions: Activate membership & post on X CLAIM AIRDROP Ongoing Deploy Actions: Deposit USDC, stake and refer users to earn CLAIM AIRDROP Ongoing Matchday Actions: Predict world cup matches CLAIM AIRDROP Ongoing Confirmed Imperial Actions: Connect Telegram, trade perpetuals and refer users CLAIM AIRDROP Ongoing Nodiens Actions: Pre",
-        "register, complete social tasks and refer users CLAIM AIRDROP Ongoing Confirmed Roam Actions: Download the app, explore features and refer users CLAIM AIRDROP Ongoing Confirmed Interstate Actions: Complete social quests, trade and refer users to earn CLAIM AIRDROP Ongoing Confirmed KieDex Actions: Complete social tasks, trade futures and refer to earn KDX CLAIM AIRDROP X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
+        "Trade & deposit to vaults CLAIM AIRDROP 101° Ongoing Flipper Actions: Join Testnet, Complete Quests and Refer to Earn XP CLAIM AIRDROP 536° Ongoing Arcus Actions: Sign Up, Join Waitlist and Trade Spot CLAIM AIRDROP Ongoing Tori Finance Actions: Deposit, Stake Coins and Refer Users CLAIM AIRDROP 40° Ongoing Confirmed Scout Actions: Upload photos or videos to earn SOL CLAIM AIRDROP 29° Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored Ongoing ArcNova Actions: Complete daily check",
+        "ins, download the app and complete tasks CLAIM AIRDROP Ongoing Cambrian Network Actions: Submit email and wait for testnet waitlist access CLAIM AIRDROP 125° Ongoing TrueNorth Actions: Sign Up, Set Up Trading Persona and Trade CLAIM AIRDROP 372° Ongoing Brighter Actions: Connect wallet, connect X & refer friends CLAIM AIRDROP 131° Ongoing Confirmed Collector Crypt Actions: Sign in, Open Gacha Packs and Refer to Earn Claim Live CLAIM AIRDROP 21° Ongoing Shill SOL Actions: Activate membership & post on X CLAIM AIRDROP Ongoing Deploy Actions: Deposit USDC, stake and refer users to earn CLAIM AIRDROP Ongoing Matchday Actions: Predict world cup matches CLAIM AIRDROP Ongoing Confirmed Imperial Actions: Connect Telegram, trade perpetuals and refer users CLAIM AIRDROP Ongoing Nodiens Actions: Pre",
+        "register, complete social tasks and refer users CLAIM AIRDROP Ongoing Confirmed Roam Actions: Download the app, explore features and refer users CLAIM AIRDROP Ongoing Confirmed Interstate Actions: Complete social quests, trade and refer users to earn CLAIM AIRDROP X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
       ],
       "about": "Here you will find the most recent airdrop campaigns. Click on a drop to see more information and to find a step-by-step guide to claiming some free crypto"
     }
