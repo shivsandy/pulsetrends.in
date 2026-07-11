@@ -1,41 +1,8 @@
 {
-  "last_updated": "2026-07-10T07:12:06.106497+00:00",
+  "last_updated": "2026-07-11T05:59:11.223353+00:00",
   "source": "screener.in",
-  "count": 1777,
+  "count": 1732,
   "ipos": [
-    {
-      "id": "screener-upcoming-kusumgar",
-      "name": "Kusumgar",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "upcoming",
-      "openDate": "2026-07-08",
-      "closeDate": "2026-07-10",
-      "listingDate": "2026-07-15",
-      "description": "Kusumgar - Upcoming IPO",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 5049.0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/id/1286043/",
-      "source_category": "upcoming",
-      "fiscalMetrics": {
-        "pe": null,
-        "roce": "32,48,743"
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
     {
       "id": "screener-upcoming-devson-catalyst",
       "name": "Devson Catalyst",
@@ -169,8 +136,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-upcoming-95923",
-      "name": "95923",
+      "id": "screener-upcoming-alpine-texworld",
+      "name": "Alpine Texworld",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -180,7 +147,7 @@
       "openDate": "",
       "closeDate": "",
       "listingDate": "2026-07-21",
-      "description": "95923 - Upcoming IPO",
+      "description": "Alpine Texworld - Upcoming IPO",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -192,18 +159,18 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/id/1286046/",
+      "source_url": "https://www.screener.in/company/id/1286046/consolidated/",
       "source_category": "upcoming",
       "fiscalMetrics": {
-        "pe": null,
-        "roce": "%"
+        "pe": 18.7,
+        "roce": "19%"
       },
       "currentPrice": 0,
       "percentChange": 0
     },
     {
-      "id": "screener-upcoming-13233",
-      "name": "13233",
+      "id": "screener-upcoming-sbi-funds-mgt",
+      "name": "SBI Funds Mgt.",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -213,7 +180,7 @@
       "openDate": "",
       "closeDate": "",
       "listingDate": "2026-07-21",
-      "description": "13233 - Upcoming IPO",
+      "description": "SBI Funds Mgt. - Upcoming IPO",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -228,8 +195,8 @@
       "source_url": "https://www.screener.in/company/id/1286047/",
       "source_category": "upcoming",
       "fiscalMetrics": {
-        "pe": null,
-        "roce": "%"
+        "pe": 42.2,
+        "roce": "57%"
       },
       "currentPrice": 0,
       "percentChange": 0
@@ -281,11 +248,11 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2026-07-10",
-      "description": "IC Electricals - Listed on 2026-07-10",
+      "listingDate": "yesterday",
+      "description": "IC Electricals - Listed on yesterday",
       "about": "",
-      "priceBandHigh": 166.0,
-      "priceBandLow": 166.0,
+      "priceBandHigh": 99.0,
+      "priceBandLow": 99.0,
       "lotSize": 0,
       "issueSize": "",
       "marketCap": 181.0,
@@ -297,7 +264,7 @@
       "source_url": "https://www.screener.in/company/ICELCO/consolidated/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "166",
+        "ipoPrice": "99",
         "currentPrice": "174.30",
         "exDate": "",
         "rightsRatio": "",
@@ -334,12 +301,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "170",
-        "currentPrice": "215.50",
+        "currentPrice": "209.58",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 215.5,
+      "currentPrice": 209.58,
       "percentChange": 0
     },
     {
@@ -370,12 +337,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "84",
-        "currentPrice": "98.70",
+        "currentPrice": "97.76",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 98.7,
+      "currentPrice": 97.76,
       "percentChange": 0
     },
     {
@@ -442,12 +409,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "135",
-        "currentPrice": "174.00",
+        "currentPrice": "179.95",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 174.0,
+      "currentPrice": 179.95,
       "percentChange": 0
     },
     {
@@ -586,12 +553,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "136",
-        "currentPrice": "122.90",
+        "currentPrice": "122.88",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 122.9,
+      "currentPrice": 122.88,
       "percentChange": 0
     },
     {
@@ -658,12 +625,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "70",
-        "currentPrice": "81.34",
+        "currentPrice": "79.30",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 81.34,
+      "currentPrice": 79.3,
       "percentChange": 0
     },
     {
@@ -694,12 +661,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "42",
-        "currentPrice": "48.30",
+        "currentPrice": "48.35",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 48.3,
+      "currentPrice": 48.35,
       "percentChange": 0
     },
     {
@@ -766,12 +733,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "113",
-        "currentPrice": "99.50",
+        "currentPrice": "100.31",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 99.5,
+      "currentPrice": 100.31,
       "percentChange": 0
     },
     {
@@ -802,12 +769,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "138",
-        "currentPrice": "175.50",
+        "currentPrice": "178.98",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 175.5,
+      "currentPrice": 178.98,
       "percentChange": 0
     },
     {
@@ -946,12 +913,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "808",
-        "currentPrice": "868.70",
+        "currentPrice": "862.10",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 868.7,
+      "currentPrice": 862.1,
       "percentChange": 0
     },
     {
@@ -1018,12 +985,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "80",
-        "currentPrice": "51.80",
+        "currentPrice": "51.81",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 51.8,
+      "currentPrice": 51.81,
       "percentChange": 0
     },
     {
@@ -1054,12 +1021,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "152",
-        "currentPrice": "139.15",
+        "currentPrice": "136.78",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 139.15,
+      "currentPrice": 136.78,
       "percentChange": 0
     },
     {
@@ -1090,12 +1057,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "208",
-        "currentPrice": "284.00",
+        "currentPrice": "277.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 284.0,
+      "currentPrice": 277.75,
       "percentChange": 0
     },
     {
@@ -1126,12 +1093,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "23",
-        "currentPrice": "23.15",
+        "currentPrice": "23.12",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 23.15,
+      "currentPrice": 23.12,
       "percentChange": 0
     },
     {
@@ -1198,12 +1165,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "203",
-        "currentPrice": "175.50",
+        "currentPrice": "174.95",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 175.5,
+      "currentPrice": 174.95,
       "percentChange": 0
     },
     {
@@ -1270,12 +1237,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "103",
-        "currentPrice": "140.05",
+        "currentPrice": "139.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 140.05,
+      "currentPrice": 139.5,
       "percentChange": 0
     },
     {
@@ -1306,12 +1273,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "127",
-        "currentPrice": "224.50",
+        "currentPrice": "223.45",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 224.5,
+      "currentPrice": 223.45,
       "percentChange": 0
     },
     {
@@ -1342,12 +1309,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "66",
-        "currentPrice": "24.50",
+        "currentPrice": "23.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 24.5,
+      "currentPrice": 23.75,
       "percentChange": 0
     },
     {
@@ -1378,12 +1345,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "45",
-        "currentPrice": "74.24",
+        "currentPrice": "71.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 74.24,
+      "currentPrice": 71.75,
       "percentChange": 0
     },
     {
@@ -1414,12 +1381,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "116",
-        "currentPrice": "86.50",
+        "currentPrice": "84.60",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 86.5,
+      "currentPrice": 84.6,
       "percentChange": 0
     },
     {
@@ -1450,12 +1417,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "60",
-        "currentPrice": "61.00",
+        "currentPrice": "58.33",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 61.0,
+      "currentPrice": 58.33,
       "percentChange": 0
     },
     {
@@ -1486,12 +1453,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "166",
-        "currentPrice": "43.30",
+        "currentPrice": "42.68",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 43.3,
+      "currentPrice": 42.68,
       "percentChange": 0
     },
     {
@@ -1522,12 +1489,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "192",
-        "currentPrice": "222.65",
+        "currentPrice": "223.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 222.65,
+      "currentPrice": 223.5,
       "percentChange": 0
     },
     {
@@ -1558,12 +1525,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "149",
-        "currentPrice": "410.75",
+        "currentPrice": "406.45",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 410.75,
+      "currentPrice": 406.45,
       "percentChange": 0
     },
     {
@@ -1594,12 +1561,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "128",
-        "currentPrice": "89.95",
+        "currentPrice": "92.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 89.95,
+      "currentPrice": 92.0,
       "percentChange": 0
     },
     {
@@ -1630,12 +1597,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "70",
-        "currentPrice": "33.60",
+        "currentPrice": "34.72",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 33.6,
+      "currentPrice": 34.72,
       "percentChange": 0
     },
     {
@@ -1666,12 +1633,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "63",
-        "currentPrice": "38.00",
+        "currentPrice": "37.25",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 38.0,
+      "currentPrice": 37.25,
       "percentChange": 0
     },
     {
@@ -1738,12 +1705,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "83",
-        "currentPrice": "80.00",
+        "currentPrice": "76.40",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 80.0,
+      "currentPrice": 76.4,
       "percentChange": 0
     },
     {
@@ -1774,12 +1741,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "52",
-        "currentPrice": "34.00",
+        "currentPrice": "34.01",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 34.0,
+      "currentPrice": 34.01,
       "percentChange": 0
     },
     {
@@ -1810,12 +1777,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "41",
-        "currentPrice": "58.50",
+        "currentPrice": "56.49",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 58.5,
+      "currentPrice": 56.49,
       "percentChange": 0
     },
     {
@@ -1846,12 +1813,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "343",
-        "currentPrice": "549.60",
+        "currentPrice": "549.05",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 549.6,
+      "currentPrice": 549.05,
       "percentChange": 0
     },
     {
@@ -1882,12 +1849,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "139",
-        "currentPrice": "130.35",
+        "currentPrice": "130.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 130.35,
+      "currentPrice": 130.0,
       "percentChange": 0
     },
     {
@@ -1918,12 +1885,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "77",
-        "currentPrice": "151.00",
+        "currentPrice": "146.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 151.0,
+      "currentPrice": 146.0,
       "percentChange": 0
     },
     {
@@ -1954,12 +1921,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "63",
-        "currentPrice": "122.95",
+        "currentPrice": "120.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 122.95,
+      "currentPrice": 120.5,
       "percentChange": 0
     },
     {
@@ -1990,12 +1957,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "55",
-        "currentPrice": "23.00",
+        "currentPrice": "22.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 23.0,
+      "currentPrice": 22.75,
       "percentChange": 0
     },
     {
@@ -2062,12 +2029,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "43",
-        "currentPrice": "40.97",
+        "currentPrice": "41.11",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 40.97,
+      "currentPrice": 41.11,
       "percentChange": 0
     },
     {
@@ -2098,12 +2065,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "183",
-        "currentPrice": "188.00",
+        "currentPrice": "190.55",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 188.0,
+      "currentPrice": 190.55,
       "percentChange": 0
     },
     {
@@ -2134,12 +2101,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "0",
-        "currentPrice": "103.45",
+        "currentPrice": "103.47",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 103.45,
+      "currentPrice": 103.47,
       "percentChange": 0
     },
     {
@@ -2170,12 +2137,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "158",
-        "currentPrice": "190.05",
+        "currentPrice": "190.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 190.05,
+      "currentPrice": 190.0,
       "percentChange": 0
     },
     {
@@ -2206,12 +2173,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "98",
-        "currentPrice": "83.60",
+        "currentPrice": "82.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 83.6,
+      "currentPrice": 82.9,
       "percentChange": 0
     },
     {
@@ -2242,12 +2209,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "171",
-        "currentPrice": "310.00",
+        "currentPrice": "320.80",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 310.0,
+      "currentPrice": 320.8,
       "percentChange": 0
     },
     {
@@ -2314,12 +2281,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "172",
-        "currentPrice": "181.50",
+        "currentPrice": "178.65",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 181.5,
+      "currentPrice": 178.65,
       "percentChange": 0
     },
     {
@@ -2350,12 +2317,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "0",
-        "currentPrice": "108.00",
+        "currentPrice": "107.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 108.0,
+      "currentPrice": 107.9,
       "percentChange": 0
     },
     {
@@ -2386,12 +2353,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "98",
-        "currentPrice": "85.00",
+        "currentPrice": "86.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 85.0,
+      "currentPrice": 86.0,
       "percentChange": 0
     },
     {
@@ -2422,12 +2389,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "175",
-        "currentPrice": "176.45",
+        "currentPrice": "176.16",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 176.45,
+      "currentPrice": 176.16,
       "percentChange": 0
     },
     {
@@ -2458,12 +2425,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "98",
-        "currentPrice": "93.01",
+        "currentPrice": "93.54",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 93.01,
+      "currentPrice": 93.54,
       "percentChange": 0
     },
     {
@@ -2494,12 +2461,12 @@
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "80",
-        "currentPrice": "74.25",
+        "currentPrice": "74.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 74.25,
+      "currentPrice": 74.75,
       "percentChange": 0
     },
     {
@@ -36262,12 +36229,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "136",
-        "currentPrice": "122.90",
+        "currentPrice": "122.88",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 122.9,
+      "currentPrice": 122.88,
       "percentChange": 0
     },
     {
@@ -36298,12 +36265,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "113",
-        "currentPrice": "99.10",
+        "currentPrice": "100.31",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 99.1,
+      "currentPrice": 100.31,
       "percentChange": 0
     },
     {
@@ -36406,12 +36373,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "80",
-        "currentPrice": "51.80",
+        "currentPrice": "51.81",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 51.8,
+      "currentPrice": 51.81,
       "percentChange": 0
     },
     {
@@ -36442,12 +36409,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "152",
-        "currentPrice": "139.15",
+        "currentPrice": "136.78",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 139.15,
+      "currentPrice": 136.78,
       "percentChange": 0
     },
     {
@@ -36514,12 +36481,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "203",
-        "currentPrice": "175.50",
+        "currentPrice": "174.95",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 175.5,
+      "currentPrice": 174.95,
       "percentChange": 0
     },
     {
@@ -36586,12 +36553,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "66",
-        "currentPrice": "24.50",
+        "currentPrice": "23.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 24.5,
+      "currentPrice": 23.75,
       "percentChange": 0
     },
     {
@@ -36622,12 +36589,48 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "116",
-        "currentPrice": "86.50",
+        "currentPrice": "84.60",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 86.5,
+      "currentPrice": 84.6,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-vahh-chemicals",
+      "name": "Vahh Chemicals",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2026-06-11",
+      "description": "Vahh Chemicals - Listed on 2026-06-11",
+      "about": "",
+      "priceBandHigh": 60.0,
+      "priceBandLow": 60.0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 50.0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/544778/consolidated/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "60",
+        "currentPrice": "58.33",
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 58.33,
       "percentChange": 0
     },
     {
@@ -36658,12 +36661,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "166",
-        "currentPrice": "43.30",
+        "currentPrice": "42.68",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 43.3,
+      "currentPrice": 42.68,
       "percentChange": 0
     },
     {
@@ -36694,12 +36697,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "128",
-        "currentPrice": "89.95",
+        "currentPrice": "92.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 89.95,
+      "currentPrice": 92.0,
       "percentChange": 0
     },
     {
@@ -36730,12 +36733,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "70",
-        "currentPrice": "33.60",
+        "currentPrice": "34.72",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 33.6,
+      "currentPrice": 34.72,
       "percentChange": 0
     },
     {
@@ -36766,12 +36769,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "63",
-        "currentPrice": "37.75",
+        "currentPrice": "37.25",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 37.75,
+      "currentPrice": 37.25,
       "percentChange": 0
     },
     {
@@ -36838,12 +36841,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "83",
-        "currentPrice": "80.00",
+        "currentPrice": "76.40",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 80.0,
+      "currentPrice": 76.4,
       "percentChange": 0
     },
     {
@@ -36874,12 +36877,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "52",
-        "currentPrice": "34.00",
+        "currentPrice": "34.01",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 34.0,
+      "currentPrice": 34.01,
       "percentChange": 0
     },
     {
@@ -36910,12 +36913,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "139",
-        "currentPrice": "130.35",
+        "currentPrice": "130.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 130.35,
+      "currentPrice": 130.0,
       "percentChange": 0
     },
     {
@@ -36946,12 +36949,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "55",
-        "currentPrice": "23.00",
+        "currentPrice": "22.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 23.0,
+      "currentPrice": 22.75,
       "percentChange": 0
     },
     {
@@ -36982,12 +36985,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "43",
-        "currentPrice": "40.97",
+        "currentPrice": "41.11",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 40.97,
+      "currentPrice": 41.11,
       "percentChange": 0
     },
     {
@@ -37018,12 +37021,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "98",
-        "currentPrice": "83.60",
+        "currentPrice": "82.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 83.6,
+      "currentPrice": 82.9,
       "percentChange": 0
     },
     {
@@ -37090,12 +37093,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "98",
-        "currentPrice": "85.00",
+        "currentPrice": "86.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 85.0,
+      "currentPrice": 86.0,
       "percentChange": 0
     },
     {
@@ -37126,12 +37129,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "98",
-        "currentPrice": "93.01",
+        "currentPrice": "93.54",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 93.01,
+      "currentPrice": 93.54,
       "percentChange": 0
     },
     {
@@ -37162,12 +37165,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "80",
-        "currentPrice": "74.25",
+        "currentPrice": "74.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 74.25,
+      "currentPrice": 74.75,
       "percentChange": 0
     },
     {
@@ -37198,12 +37201,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "212",
-        "currentPrice": "181.15",
+        "currentPrice": "177.11",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 181.15,
+      "currentPrice": 177.11,
       "percentChange": 0
     },
     {
@@ -37234,12 +37237,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "146",
-        "currentPrice": "134.00",
+        "currentPrice": "136.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 134.0,
+      "currentPrice": 136.0,
       "percentChange": 0
     },
     {
@@ -37270,12 +37273,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "519",
-        "currentPrice": "289.75",
+        "currentPrice": "289.30",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 289.75,
+      "currentPrice": 289.3,
       "percentChange": 0
     },
     {
@@ -37306,12 +37309,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "72",
-        "currentPrice": "56.95",
+        "currentPrice": "55.20",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 56.95,
+      "currentPrice": 55.2,
       "percentChange": 0
     },
     {
@@ -37342,12 +37345,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "104",
-        "currentPrice": "40.13",
+        "currentPrice": "39.53",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 40.13,
+      "currentPrice": 39.53,
       "percentChange": 0
     },
     {
@@ -37378,12 +37381,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "127",
-        "currentPrice": "32.90",
+        "currentPrice": "32.77",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 32.9,
+      "currentPrice": 32.77,
       "percentChange": 0
     },
     {
@@ -37450,48 +37453,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "110",
-        "currentPrice": "46.61",
+        "currentPrice": "47.68",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 46.61,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-fractal-industries",
-      "name": "Fractal Industries",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2026-02-24",
-      "description": "Fractal Industries - Listed on 2026-02-24",
-      "about": "",
-      "priceBandHigh": 216.0,
-      "priceBandLow": 216.0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 170.0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/544707/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "216",
-        "currentPrice": "215.00",
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 215.0,
+      "currentPrice": 47.68,
       "percentChange": 0
     },
     {
@@ -37522,12 +37489,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "117",
-        "currentPrice": "89.05",
+        "currentPrice": "88.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 89.05,
+      "currentPrice": 88.75,
       "percentChange": 0
     },
     {
@@ -37558,12 +37525,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "1005",
-        "currentPrice": "841.70",
+        "currentPrice": "847.55",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 841.7,
+      "currentPrice": 847.55,
       "percentChange": 0
     },
     {
@@ -37594,12 +37561,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "108",
-        "currentPrice": "90.60",
+        "currentPrice": "92.20",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 90.6,
+      "currentPrice": 92.2,
       "percentChange": 0
     },
     {
@@ -37954,12 +37921,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "41",
-        "currentPrice": "17.10",
+        "currentPrice": "16.35",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 17.1,
+      "currentPrice": 16.35,
       "percentChange": 0
     },
     {
@@ -37990,12 +37957,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "174",
-        "currentPrice": "38.00",
+        "currentPrice": "38.15",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 38.0,
+      "currentPrice": 38.15,
       "percentChange": 0
     },
     {
@@ -38098,12 +38065,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "130",
-        "currentPrice": "83.00",
+        "currentPrice": "82.35",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 83.0,
+      "currentPrice": 82.35,
       "percentChange": 0
     },
     {
@@ -38170,12 +38137,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "102",
-        "currentPrice": "85.02",
+        "currentPrice": "77.44",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 85.02,
+      "currentPrice": 77.44,
       "percentChange": 0
     },
     {
@@ -38206,12 +38173,48 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "86",
-        "currentPrice": "27.75",
+        "currentPrice": "28.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 27.75,
+      "currentPrice": 28.0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-marc-technocrats",
+      "name": "Marc Technocrats",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2025-12-24",
+      "description": "Marc Technocrats - Listed on 2025-12-24",
+      "about": "",
+      "priceBandHigh": 93.0,
+      "priceBandLow": 93.0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 161.0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/MARC/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "93",
+        "currentPrice": "92.25",
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 92.25,
       "percentChange": 0
     },
     {
@@ -38242,12 +38245,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "126",
-        "currentPrice": "34.15",
+        "currentPrice": "36.97",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 34.15,
+      "currentPrice": 36.97,
       "percentChange": 0
     },
     {
@@ -38314,12 +38317,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "12",
-        "currentPrice": "3.54",
+        "currentPrice": "3.52",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 3.54,
+      "currentPrice": 3.52,
       "percentChange": 0
     },
     {
@@ -38422,12 +38425,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "192",
-        "currentPrice": "129.45",
+        "currentPrice": "129.80",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 129.45,
+      "currentPrice": 129.8,
       "percentChange": 0
     },
     {
@@ -38458,12 +38461,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "194",
-        "currentPrice": "89.86",
+        "currentPrice": "89.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 89.86,
+      "currentPrice": 89.0,
       "percentChange": 0
     },
     {
@@ -38494,12 +38497,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "82",
-        "currentPrice": "64.30",
+        "currentPrice": "64.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 64.3,
+      "currentPrice": 64.5,
       "percentChange": 0
     },
     {
@@ -38602,12 +38605,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "98",
-        "currentPrice": "93.00",
+        "currentPrice": "91.05",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 93.0,
+      "currentPrice": 91.05,
       "percentChange": 0
     },
     {
@@ -38674,12 +38677,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "85",
-        "currentPrice": "70.00",
+        "currentPrice": "69.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 70.0,
+      "currentPrice": 69.0,
       "percentChange": 0
     },
     {
@@ -38710,12 +38713,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "132",
-        "currentPrice": "107.00",
+        "currentPrice": "105.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 107.0,
+      "currentPrice": 105.5,
       "percentChange": 0
     },
     {
@@ -38746,12 +38749,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "63",
-        "currentPrice": "17.33",
+        "currentPrice": "17.32",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 17.33,
+      "currentPrice": 17.32,
       "percentChange": 0
     },
     {
@@ -38818,12 +38821,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "193",
-        "currentPrice": "31.25",
+        "currentPrice": "34.15",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 31.25,
+      "currentPrice": 34.15,
       "percentChange": 0
     },
     {
@@ -38926,12 +38929,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "120",
-        "currentPrice": "79.88",
+        "currentPrice": "79.31",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 79.88,
+      "currentPrice": 79.31,
       "percentChange": 0
     },
     {
@@ -38962,12 +38965,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "576",
-        "currentPrice": "505.00",
+        "currentPrice": "502.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 505.0,
+      "currentPrice": 502.9,
       "percentChange": 0
     },
     {
@@ -39034,12 +39037,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "220",
-        "currentPrice": "145.95",
+        "currentPrice": "145.27",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 145.95,
+      "currentPrice": 145.27,
       "percentChange": 0
     },
     {
@@ -39106,12 +39109,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "142",
-        "currentPrice": "124.80",
+        "currentPrice": "122.85",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 124.8,
+      "currentPrice": 122.85,
       "percentChange": 0
     },
     {
@@ -39142,12 +39145,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "585",
-        "currentPrice": "463.00",
+        "currentPrice": "461.35",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 463.0,
+      "currentPrice": 461.35,
       "percentChange": 0
     },
     {
@@ -39178,12 +39181,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "730",
-        "currentPrice": "597.00",
+        "currentPrice": "593.25",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 597.0,
+      "currentPrice": 593.25,
       "percentChange": 0
     },
     {
@@ -39214,48 +39217,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "102",
-        "currentPrice": "23.25",
+        "currentPrice": "24.99",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 23.25,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-game-changers",
-      "name": "Game Changers",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2025-11-04",
-      "description": "Game Changers - Listed on 2025-11-04",
-      "about": "",
-      "priceBandHigh": 102.0,
-      "priceBandLow": 102.0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 183.0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/544594/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "102",
-        "currentPrice": "101.00",
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 101.0,
+      "currentPrice": 24.99,
       "percentChange": 0
     },
     {
@@ -39358,12 +39325,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "266",
-        "currentPrice": "251.80",
+        "currentPrice": "253.47",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 251.8,
+      "currentPrice": 253.47,
       "percentChange": 0
     },
     {
@@ -39394,12 +39361,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "143",
-        "currentPrice": "29.90",
+        "currentPrice": "28.98",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 29.9,
+      "currentPrice": 28.98,
       "percentChange": 0
     },
     {
@@ -39466,12 +39433,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "100",
-        "currentPrice": "82.60",
+        "currentPrice": "83.12",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 82.6,
+      "currentPrice": 83.12,
       "percentChange": 0
     },
     {
@@ -39502,12 +39469,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "136",
-        "currentPrice": "108.15",
+        "currentPrice": "111.85",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 108.15,
+      "currentPrice": 111.85,
       "percentChange": 0
     },
     {
@@ -39538,12 +39505,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "135",
-        "currentPrice": "93.01",
+        "currentPrice": "95.91",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 93.01,
+      "currentPrice": 95.91,
       "percentChange": 0
     },
     {
@@ -39574,12 +39541,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "54",
-        "currentPrice": "39.00",
+        "currentPrice": "40.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 39.0,
+      "currentPrice": 40.0,
       "percentChange": 0
     },
     {
@@ -39646,12 +39613,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "21",
-        "currentPrice": "8.29",
+        "currentPrice": "7.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 8.29,
+      "currentPrice": 7.9,
       "percentChange": 0
     },
     {
@@ -39682,12 +39649,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "96",
-        "currentPrice": "67.45",
+        "currentPrice": "68.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 67.45,
+      "currentPrice": 68.0,
       "percentChange": 0
     },
     {
@@ -39718,12 +39685,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "129",
-        "currentPrice": "66.30",
+        "currentPrice": "66.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 66.3,
+      "currentPrice": 66.5,
       "percentChange": 0
     },
     {
@@ -39754,12 +39721,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "191",
-        "currentPrice": "160.05",
+        "currentPrice": "160.02",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 160.05,
+      "currentPrice": 160.02,
       "percentChange": 0
     },
     {
@@ -39790,12 +39757,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "83",
-        "currentPrice": "31.75",
+        "currentPrice": "31.78",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 31.75,
+      "currentPrice": 31.78,
       "percentChange": 0
     },
     {
@@ -39862,12 +39829,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "219",
-        "currentPrice": "217.10",
+        "currentPrice": "216.20",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 217.1,
+      "currentPrice": 216.2,
       "percentChange": 0
     },
     {
@@ -39934,12 +39901,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "121",
-        "currentPrice": "94.65",
+        "currentPrice": "97.73",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 94.65,
+      "currentPrice": 97.73,
       "percentChange": 0
     },
     {
@@ -40042,12 +40009,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "496",
-        "currentPrice": "448.10",
+        "currentPrice": "440.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 448.1,
+      "currentPrice": 440.9,
       "percentChange": 0
     },
     {
@@ -40078,12 +40045,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "127",
-        "currentPrice": "87.05",
+        "currentPrice": "83.60",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 87.05,
+      "currentPrice": 83.6,
       "percentChange": 0
     },
     {
@@ -40114,12 +40081,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "72",
-        "currentPrice": "24.77",
+        "currentPrice": "24.28",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 24.77,
+      "currentPrice": 24.28,
       "percentChange": 0
     },
     {
@@ -40150,12 +40117,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "63",
-        "currentPrice": "50.00",
+        "currentPrice": "51.99",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 50.0,
+      "currentPrice": 51.99,
       "percentChange": 0
     },
     {
@@ -40186,12 +40153,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "195",
-        "currentPrice": "172.00",
+        "currentPrice": "171.20",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 172.0,
+      "currentPrice": 171.2,
       "percentChange": 0
     },
     {
@@ -40222,12 +40189,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "99",
-        "currentPrice": "58.83",
+        "currentPrice": "58.82",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 58.83,
+      "currentPrice": 58.82,
       "percentChange": 0
     },
     {
@@ -40294,12 +40261,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "191",
-        "currentPrice": "160.55",
+        "currentPrice": "165.25",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 160.55,
+      "currentPrice": 165.25,
       "percentChange": 0
     },
     {
@@ -40330,12 +40297,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "351",
-        "currentPrice": "210.05",
+        "currentPrice": "209.92",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 210.05,
+      "currentPrice": 209.92,
       "percentChange": 0
     },
     {
@@ -40366,12 +40333,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "885",
-        "currentPrice": "524.35",
+        "currentPrice": "520.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 524.35,
+      "currentPrice": 520.75,
       "percentChange": 0
     },
     {
@@ -40402,12 +40369,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "423",
-        "currentPrice": "358.20",
+        "currentPrice": "359.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 358.2,
+      "currentPrice": 359.5,
       "percentChange": 0
     },
     {
@@ -40438,12 +40405,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "104",
-        "currentPrice": "68.00",
+        "currentPrice": "66.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 68.0,
+      "currentPrice": 66.0,
       "percentChange": 0
     },
     {
@@ -40474,12 +40441,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "322",
-        "currentPrice": "188.55",
+        "currentPrice": "189.85",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 188.55,
+      "currentPrice": 189.85,
       "percentChange": 0
     },
     {
@@ -40546,12 +40513,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "465",
-        "currentPrice": "448.30",
+        "currentPrice": "449.20",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 448.3,
+      "currentPrice": 449.2,
       "percentChange": 0
     },
     {
@@ -40582,12 +40549,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "153",
-        "currentPrice": "142.95",
+        "currentPrice": "143.53",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 142.95,
+      "currentPrice": 143.53,
       "percentChange": 0
     },
     {
@@ -40618,12 +40585,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "120",
-        "currentPrice": "35.00",
+        "currentPrice": "35.40",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 35.0,
+      "currentPrice": 35.4,
       "percentChange": 0
     },
     {
@@ -40654,12 +40621,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "99",
-        "currentPrice": "47.50",
+        "currentPrice": "46.33",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 47.5,
+      "currentPrice": 46.33,
       "percentChange": 0
     },
     {
@@ -40690,12 +40657,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "58",
-        "currentPrice": "35.36",
+        "currentPrice": "35.07",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 35.36,
+      "currentPrice": 35.07,
       "percentChange": 0
     },
     {
@@ -40726,12 +40693,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "54",
-        "currentPrice": "18.50",
+        "currentPrice": "18.80",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 18.5,
+      "currentPrice": 18.8,
       "percentChange": 0
     },
     {
@@ -40762,12 +40729,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "159",
-        "currentPrice": "115.35",
+        "currentPrice": "114.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 115.35,
+      "currentPrice": 114.0,
       "percentChange": 0
     },
     {
@@ -40798,12 +40765,48 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "72",
-        "currentPrice": "31.40",
+        "currentPrice": "31.35",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 31.4,
+      "currentPrice": 31.35,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-nilachal-carbo",
+      "name": "Nilachal Carbo",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2025-09-16",
+      "description": "Nilachal Carbo - Listed on 2025-09-16",
+      "about": "",
+      "priceBandHigh": 85.0,
+      "priceBandLow": 85.0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 212.0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/544510/consolidated/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "85",
+        "currentPrice": "83.10",
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 83.1,
       "percentChange": 0
     },
     {
@@ -40870,12 +40873,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "196",
-        "currentPrice": "97.35",
+        "currentPrice": "100.95",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 97.35,
+      "currentPrice": 100.95,
       "percentChange": 0
     },
     {
@@ -40912,42 +40915,6 @@
         "rightsPrice": ""
       },
       "currentPrice": 43.28,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-optivalue-tek",
-      "name": "Optivalue Tek",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2025-09-10",
-      "description": "Optivalue Tek - Listed on 2025-09-10",
-      "about": "",
-      "priceBandHigh": 84.0,
-      "priceBandLow": 84.0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 197.0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/OPTIVALUE/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "84",
-        "currentPrice": "82.00",
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 82.0,
       "percentChange": 0
     },
     {
@@ -41014,12 +40981,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "122",
-        "currentPrice": "45.20",
+        "currentPrice": "46.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 45.2,
+      "currentPrice": 46.5,
       "percentChange": 0
     },
     {
@@ -41050,12 +41017,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "85",
-        "currentPrice": "54.15",
+        "currentPrice": "55.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 54.15,
+      "currentPrice": 55.0,
       "percentChange": 0
     },
     {
@@ -41086,12 +41053,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "97",
-        "currentPrice": "74.74",
+        "currentPrice": "74.34",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 74.74,
+      "currentPrice": 74.34,
       "percentChange": 0
     },
     {
@@ -41122,12 +41089,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "75",
-        "currentPrice": "74.75",
+        "currentPrice": "74.05",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 74.75,
+      "currentPrice": 74.05,
       "percentChange": 0
     },
     {
@@ -41230,12 +41197,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "87",
-        "currentPrice": "52.50",
+        "currentPrice": "52.85",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 52.5,
+      "currentPrice": 52.85,
       "percentChange": 0
     },
     {
@@ -41266,12 +41233,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "142",
-        "currentPrice": "120.00",
+        "currentPrice": "120.70",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 120.0,
+      "currentPrice": 120.7,
       "percentChange": 0
     },
     {
@@ -41302,12 +41269,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "125",
-        "currentPrice": "42.95",
+        "currentPrice": "42.45",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 42.95,
+      "currentPrice": 42.45,
       "percentChange": 0
     },
     {
@@ -41338,12 +41305,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "561",
-        "currentPrice": "298.00",
+        "currentPrice": "301.10",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 298.0,
+      "currentPrice": 301.1,
       "percentChange": 0
     },
     {
@@ -41374,12 +41341,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "255",
-        "currentPrice": "223.95",
+        "currentPrice": "225.44",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 223.95,
+      "currentPrice": 225.44,
       "percentChange": 0
     },
     {
@@ -41410,12 +41377,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "325",
-        "currentPrice": "205.50",
+        "currentPrice": "206.54",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 205.5,
+      "currentPrice": 206.54,
       "percentChange": 0
     },
     {
@@ -41446,12 +41413,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "331",
-        "currentPrice": "195.35",
+        "currentPrice": "203.35",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 195.35,
+      "currentPrice": 203.35,
       "percentChange": 0
     },
     {
@@ -41482,12 +41449,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "107",
-        "currentPrice": "40.32",
+        "currentPrice": "42.10",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 40.32,
+      "currentPrice": 42.1,
       "percentChange": 0
     },
     {
@@ -41518,12 +41485,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "54",
-        "currentPrice": "8.85",
+        "currentPrice": "8.80",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 8.85,
+      "currentPrice": 8.8,
       "percentChange": 0
     },
     {
@@ -41554,12 +41521,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "85",
-        "currentPrice": "73.20",
+        "currentPrice": "71.55",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 73.2,
+      "currentPrice": 71.55,
       "percentChange": 0
     },
     {
@@ -41590,12 +41557,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "102",
-        "currentPrice": "80.50",
+        "currentPrice": "81.09",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 80.5,
+      "currentPrice": 81.09,
       "percentChange": 0
     },
     {
@@ -41698,12 +41665,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "142",
-        "currentPrice": "90.16",
+        "currentPrice": "93.84",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 90.16,
+      "currentPrice": 93.84,
       "percentChange": 0
     },
     {
@@ -41734,12 +41701,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "147",
-        "currentPrice": "136.80",
+        "currentPrice": "138.22",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 136.8,
+      "currentPrice": 138.22,
       "percentChange": 0
     },
     {
@@ -41770,12 +41737,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "275",
-        "currentPrice": "237.95",
+        "currentPrice": "236.45",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 237.95,
+      "currentPrice": 236.45,
       "percentChange": 0
     },
     {
@@ -41806,12 +41773,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "70",
-        "currentPrice": "46.25",
+        "currentPrice": "45.64",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 46.25,
+      "currentPrice": 45.64,
       "percentChange": 0
     },
     {
@@ -41842,12 +41809,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "66",
-        "currentPrice": "38.25",
+        "currentPrice": "38.75",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 38.25,
+      "currentPrice": 38.75,
       "percentChange": 0
     },
     {
@@ -41950,12 +41917,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "103",
-        "currentPrice": "90.00",
+        "currentPrice": "87.90",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 90.0,
+      "currentPrice": 87.9,
       "percentChange": 0
     },
     {
@@ -41986,12 +41953,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "54",
-        "currentPrice": "42.00",
+        "currentPrice": "41.89",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 42.0,
+      "currentPrice": 41.89,
       "percentChange": 0
     },
     {
@@ -42022,12 +41989,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "72",
-        "currentPrice": "59.49",
+        "currentPrice": "60.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 59.49,
+      "currentPrice": 60.0,
       "percentChange": 0
     },
     {
@@ -42058,12 +42025,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "150",
-        "currentPrice": "145.20",
+        "currentPrice": "145.42",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 145.2,
+      "currentPrice": 145.42,
       "percentChange": 0
     },
     {
@@ -42130,12 +42097,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "385",
-        "currentPrice": "318.55",
+        "currentPrice": "319.60",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 318.55,
+      "currentPrice": 319.6,
       "percentChange": 0
     },
     {
@@ -42166,12 +42133,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "180",
-        "currentPrice": "60.00",
+        "currentPrice": "57.80",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 60.0,
+      "currentPrice": 57.8,
       "percentChange": 0
     },
     {
@@ -42202,12 +42169,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "158",
-        "currentPrice": "111.70",
+        "currentPrice": "110.87",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 111.7,
+      "currentPrice": 110.87,
       "percentChange": 0
     },
     {
@@ -42238,12 +42205,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "96",
-        "currentPrice": "83.26",
+        "currentPrice": "84.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 83.26,
+      "currentPrice": 84.0,
       "percentChange": 0
     },
     {
@@ -42310,12 +42277,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "83",
-        "currentPrice": "72.80",
+        "currentPrice": "71.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 72.8,
+      "currentPrice": 71.0,
       "percentChange": 0
     },
     {
@@ -42346,12 +42313,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "90",
-        "currentPrice": "64.04",
+        "currentPrice": "63.94",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 64.04,
+      "currentPrice": 63.94,
       "percentChange": 0
     },
     {
@@ -42382,12 +42349,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "68",
-        "currentPrice": "27.30",
+        "currentPrice": "26.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 27.3,
+      "currentPrice": 26.5,
       "percentChange": 0
     },
     {
@@ -42418,12 +42385,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "235",
-        "currentPrice": "176.40",
+        "currentPrice": "178.11",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 176.4,
+      "currentPrice": 178.11,
       "percentChange": 0
     },
     {
@@ -42454,12 +42421,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "250",
-        "currentPrice": "227.00",
+        "currentPrice": "226.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 227.0,
+      "currentPrice": 226.0,
       "percentChange": 0
     },
     {
@@ -42490,12 +42457,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "286",
-        "currentPrice": "225.00",
+        "currentPrice": "220.00",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 225.0,
+      "currentPrice": 220.0,
       "percentChange": 0
     },
     {
@@ -42526,12 +42493,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "123",
-        "currentPrice": "76.90",
+        "currentPrice": "76.50",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 76.9,
+      "currentPrice": 76.5,
       "percentChange": 0
     },
     {
@@ -42562,12 +42529,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "97",
-        "currentPrice": "66.00",
+        "currentPrice": "68.49",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 66.0,
+      "currentPrice": 68.49,
       "percentChange": 0
     },
     {
@@ -42598,12 +42565,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "248",
-        "currentPrice": "181.80",
+        "currentPrice": "183.10",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 181.8,
+      "currentPrice": 183.1,
       "percentChange": 0
     },
     {
@@ -42634,12 +42601,12 @@
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "100",
-        "currentPrice": "62.00",
+        "currentPrice": "60.65",
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 62.0,
+      "currentPrice": 60.65,
       "percentChange": 0
     },
     {
@@ -42656,11 +42623,11 @@
       "listingDate": "2025-07-11",
       "description": "Meta Infotech - Listed on 2025-07-11",
       "about": "",
-      "priceBandHigh": 161.0,
-      "priceBandLow": 161.0,
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
       "lotSize": 0,
       "issueSize": "",
-      "marketCap": 304.0,
+      "marketCap": 0,
       "gmp": 0,
       "gmpPercent": 0,
       "subscriptionStatus": "",
@@ -42669,13 +42636,13 @@
       "source_url": "https://www.screener.in/company/544441/",
       "source_category": "below_price",
       "fiscalMetrics": {
-        "ipoPrice": "161",
-        "currentPrice": "83.99",
+        "ipoPrice": "",
+        "currentPrice": null,
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 83.99,
+      "currentPrice": 0,
       "percentChange": 0
     },
     {
@@ -45091,42 +45058,6 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-b-r-goyal-infra",
-      "name": "B.R.Goyal Infra.",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2025-01-14",
-      "description": "B.R.Goyal Infra. - Listed on 2025-01-14",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/544335/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
       "id": "screener-below_price-davin-sons-reta",
       "name": "Davin Sons Reta",
       "ticker": "",
@@ -45547,42 +45478,6 @@
       "currency": "INR",
       "source": "screener.in",
       "source_url": "https://www.screener.in/company/IGIL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-hamps-bio",
-      "name": "Hamps Bio",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2024-12-20",
-      "description": "Hamps Bio - Listed on 2024-12-20",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/544312/consolidated/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -51715,42 +51610,6 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-shree-osfm",
-      "name": "Shree OSFM",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-12-21",
-      "description": "Shree OSFM - Listed on 2023-12-21",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SHREEOSFM/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
       "id": "screener-below_price-presstonic-engi",
       "name": "Presstonic Engi.",
       "ticker": "",
@@ -53803,8 +53662,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -53813,8 +53672,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -53826,7 +53685,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -53839,8 +53698,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
+      "id": "screener-below_price-shelter-pharma",
+      "name": "Shelter Pharma",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -53849,8 +53708,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
+      "listingDate": "2023-08-23",
+      "description": "Shelter Pharma - Listed on 2023-08-23",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -53862,7 +53721,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
+      "source_url": "https://www.screener.in/company/543963/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -53875,8 +53734,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
+      "id": "screener-below_price-tvs-supply",
+      "name": "TVS Supply",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -53885,8 +53744,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
+      "listingDate": "2023-08-23",
+      "description": "TVS Supply - Listed on 2023-08-23",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -53898,7 +53757,331 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/TVSSCS/consolidated/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-yudiz-solutions",
+      "name": "Yudiz Solutions",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2023-08-17",
+      "description": "Yudiz Solutions - Listed on 2023-08-17",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/YUDIZ/consolidated/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-zeal-global-serv",
+      "name": "Zeal Global Serv",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2023-08-09",
+      "description": "Zeal Global Serv - Listed on 2023-08-09",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/ZEAL/consolidated/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-yasons-chemex",
+      "name": "Yasons Chemex",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2023-08-03",
+      "description": "Yasons Chemex - Listed on 2023-08-03",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/YCCL/consolidated/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-service-care-ltd",
+      "name": "Service Care Ltd",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2023-07-26",
+      "description": "Service Care Ltd - Listed on 2023-07-26",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/SERVICE/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-utkarsh-small-f",
+      "name": "Utkarsh Small F.",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2023-07-21",
+      "description": "Utkarsh Small F. - Listed on 2023-07-21",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/UTKARSHBNK/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-ahasolar-technol",
+      "name": "Ahasolar Technol",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2023-07-21",
+      "description": "Ahasolar Technol - Listed on 2023-07-21",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/543941/consolidated/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-drone-destinatio",
+      "name": "Drone Destinatio",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2023-07-21",
+      "description": "Drone Destinatio - Listed on 2023-07-21",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/DRONE/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-tridhya-tech",
+      "name": "Tridhya Tech",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2023-07-13",
+      "description": "Tridhya Tech - Listed on 2023-07-13",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/TRIDHYA/consolidated/",
+      "source_category": "below_price",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": null,
+        "exDate": "",
+        "rightsRatio": "",
+        "rightsPrice": ""
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-below_price-synoptics-techno",
+      "name": "Synoptics Techno",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "listed",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2023-07-13",
+      "description": "Synoptics Techno - Listed on 2023-07-13",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/SYNOPTICS/consolidated/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -54343,8 +54526,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -54353,8 +54536,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -54366,79 +54549,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -54847,8 +54958,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -54857,8 +54968,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -54870,79 +54981,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -55351,8 +55390,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -55361,8 +55400,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -55374,79 +55413,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -55855,8 +55822,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -55865,8 +55832,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -55878,79 +55845,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -56359,8 +56254,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -56369,8 +56264,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -56382,79 +56277,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -56863,8 +56686,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -56873,8 +56696,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -56886,79 +56709,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -57367,8 +57118,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -57377,8 +57128,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -57390,79 +57141,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -57871,8 +57550,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -57881,8 +57560,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -57894,79 +57573,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -58375,8 +57982,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -58385,8 +57992,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -58398,79 +58005,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -58879,8 +58414,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -58889,8 +58424,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -58902,79 +58437,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -59383,8 +58846,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -59393,8 +58856,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -59406,79 +58869,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -59887,8 +59278,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -59897,8 +59288,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -59910,79 +59301,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -60391,8 +59710,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -60401,8 +59720,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -60414,79 +59733,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -60895,8 +60142,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -60905,8 +60152,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -60918,79 +60165,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -61399,8 +60574,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -61409,8 +60584,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -61422,79 +60597,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -61903,8 +61006,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -61913,8 +61016,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -61926,79 +61029,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -62407,8 +61438,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -62417,8 +61448,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -62430,79 +61461,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -62911,8 +61870,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
+      "id": "screener-below_price-pyramid-technopl",
+      "name": "Pyramid Technopl",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -62921,8 +61880,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
+      "listingDate": "2023-08-29",
+      "description": "Pyramid Technopl - Listed on 2023-08-29",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -62934,583 +61893,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-shelter-pharma",
-      "name": "Shelter Pharma",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-23",
-      "description": "Shelter Pharma - Listed on 2023-08-23",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/543963/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-tvs-supply",
-      "name": "TVS Supply",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-23",
-      "description": "TVS Supply - Listed on 2023-08-23",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/TVSSCS/consolidated/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-yudiz-solutions",
-      "name": "Yudiz Solutions",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-17",
-      "description": "Yudiz Solutions - Listed on 2023-08-17",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/YUDIZ/consolidated/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-zeal-global-serv",
-      "name": "Zeal Global Serv",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-09",
-      "description": "Zeal Global Serv - Listed on 2023-08-09",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/ZEAL/consolidated/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-yasons-chemex",
-      "name": "Yasons Chemex",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-03",
-      "description": "Yasons Chemex - Listed on 2023-08-03",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/YCCL/consolidated/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-service-care-ltd",
-      "name": "Service Care Ltd",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-07-26",
-      "description": "Service Care Ltd - Listed on 2023-07-26",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SERVICE/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-utkarsh-small-f",
-      "name": "Utkarsh Small F.",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-07-21",
-      "description": "Utkarsh Small F. - Listed on 2023-07-21",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/UTKARSHBNK/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-ahasolar-technol",
-      "name": "Ahasolar Technol",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-07-21",
-      "description": "Ahasolar Technol - Listed on 2023-07-21",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/543941/consolidated/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-drone-destinatio",
-      "name": "Drone Destinatio",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-07-21",
-      "description": "Drone Destinatio - Listed on 2023-07-21",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/DRONE/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-tridhya-tech",
-      "name": "Tridhya Tech",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-07-13",
-      "description": "Tridhya Tech - Listed on 2023-07-13",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/TRIDHYA/consolidated/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-synoptics-techno",
-      "name": "Synoptics Techno",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-07-13",
-      "description": "Synoptics Techno - Listed on 2023-07-13",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SYNOPTICS/consolidated/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-sahaj-fashions",
-      "name": "Sahaj Fashions",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-06",
-      "description": "Sahaj Fashions - Listed on 2023-09-06",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/SAHAJ/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-vishnu-prakash-r",
-      "name": "Vishnu Prakash R",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-09-05",
-      "description": "Vishnu Prakash R - Listed on 2023-09-05",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/VPRPL/",
-      "source_category": "below_price",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-below_price-crop-life-scienc",
-      "name": "Crop Life Scienc",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-08-30",
-      "description": "Crop Life Scienc - Listed on 2023-08-30",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/CLSL/",
+      "source_url": "https://www.screener.in/company/PYRAMID/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "",

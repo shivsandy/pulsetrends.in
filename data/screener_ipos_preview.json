@@ -1,12 +1,5 @@
 [
   {
-    "name": "Kusumgar",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-15",
-    "marketCap": 5049.0
-  },
-  {
     "name": "Devson Catalyst",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -35,14 +28,14 @@
     "marketCap": 583.0
   },
   {
-    "name": "95923",
+    "name": "Alpine Texworld",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "2026-07-21",
     "marketCap": 402.0
   },
   {
-    "name": "13233",
+    "name": "SBI Funds Mgt.",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "2026-07-21",
@@ -59,7 +52,7 @@
     "name": "IC Electricals",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-07-10",
+    "listingDate": "yesterday",
     "marketCap": 181.0
   },
   {
@@ -7126,6 +7119,13 @@
     "marketCap": 208.0
   },
   {
+    "name": "Vahh Chemicals",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-06-11",
+    "marketCap": 50.0
+  },
+  {
     "name": "UHM Vacation",
     "status": "listed",
     "source_category": "below_price",
@@ -7287,13 +7287,6 @@
     "marketCap": 254.0
   },
   {
-    "name": "Fractal Industries",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-02-24",
-    "marketCap": 170.0
-  },
-  {
     "name": "Marushika Tech.",
     "status": "listed",
     "source_category": "below_price",
@@ -7432,6 +7425,13 @@
     "source_category": "below_price",
     "listingDate": "2025-12-30",
     "marketCap": 115.0
+  },
+  {
+    "name": "Marc Technocrats",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-12-24",
+    "marketCap": 161.0
   },
   {
     "name": "Neptune Logitek",
@@ -7628,13 +7628,6 @@
     "source_category": "below_price",
     "listingDate": "2025-11-06",
     "marketCap": 102.0
-  },
-  {
-    "name": "Game Changers",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-11-04",
-    "marketCap": 183.0
   },
   {
     "name": "Shlokka Dyes",
@@ -7938,6 +7931,13 @@
     "marketCap": 42.0
   },
   {
+    "name": "Nilachal Carbo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-09-16",
+    "marketCap": 212.0
+  },
+  {
     "name": "Vashishtha Lux.",
     "status": "listed",
     "source_category": "below_price",
@@ -7957,13 +7957,6 @@
     "source_category": "below_price",
     "listingDate": "2025-09-12",
     "marketCap": 58.0
-  },
-  {
-    "name": "Optivalue Tek",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-09-10",
-    "marketCap": 197.0
   },
   {
     "name": "Abril Paper",
@@ -8299,7 +8292,7 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-11",
-    "marketCap": 304.0
+    "marketCap": 0
   },
   {
     "name": "Happy Square",
@@ -8771,13 +8764,6 @@
     "marketCap": 0
   },
   {
-    "name": "B.R.Goyal Infra.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-01-14",
-    "marketCap": 0
-  },
-  {
     "name": "Davin Sons Reta",
     "status": "listed",
     "source_category": "below_price",
@@ -8856,13 +8842,6 @@
   },
   {
     "name": "International Gemological Instit",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-12-20",
-    "marketCap": 0
-  },
-  {
-    "name": "Hamps Bio",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-12-20",
@@ -10059,13 +10038,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shree OSFM",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
     "name": "Presstonic Engi.",
     "status": "listed",
     "source_category": "below_price",
@@ -10465,24 +10437,87 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
-    "name": "Vishnu Prakash R",
+    "name": "Shelter Pharma",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-05",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "Crop Life Scienc",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Tridhya Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Synoptics Techno",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-13",
     "marketCap": 0
   },
   {
@@ -10570,24 +10605,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -10668,24 +10689,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -10766,24 +10773,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -10864,24 +10857,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -10962,24 +10941,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -11060,24 +11025,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -11158,24 +11109,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -11256,24 +11193,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -11354,24 +11277,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -11452,24 +11361,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -11550,24 +11445,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -11648,24 +11529,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -11746,24 +11613,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -11844,24 +11697,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -11942,24 +11781,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -12040,24 +11865,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -12138,24 +11949,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -12236,122 +12033,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Pyramid Technopl",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Tridhya Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Synoptics Techno",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Crop Life Scienc",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-30",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
