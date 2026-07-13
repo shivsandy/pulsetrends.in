@@ -42,6 +42,27 @@
     "marketCap": 126727.0
   },
   {
+    "name": "Devson Catalyst",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-16",
+    "marketCap": 163.0
+  },
+  {
+    "name": "Happy Steels",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-16",
+    "marketCap": 94.0
+  },
+  {
+    "name": "Laser Power",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-16",
+    "marketCap": 3204.0
+  },
+  {
     "name": "Kusumgar",
     "status": "listed",
     "source_category": "recent",
@@ -7000,20 +7021,6 @@
     "marketCap": 0
   },
   {
-    "name": "Alphalogic Indu",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-07-14",
-    "marketCap": 0
-  },
-  {
-    "name": "Senco Gold",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-07-14",
-    "marketCap": 0
-  },
-  {
     "name": "Seemax Resources",
     "status": "listed",
     "source_category": "below_price",
@@ -7273,6 +7280,13 @@
     "marketCap": 254.0
   },
   {
+    "name": "Fractal Industries",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-02-24",
+    "marketCap": 170.0
+  },
+  {
     "name": "Marushika Tech.",
     "status": "listed",
     "source_category": "below_price",
@@ -7320,13 +7334,6 @@
     "source_category": "below_price",
     "listingDate": "2026-02-03",
     "marketCap": 67.0
-  },
-  {
-    "name": "Shayona Eng.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-01-30",
-    "marketCap": 56.0
   },
   {
     "name": "Aritas Vinyl",
@@ -7495,6 +7502,13 @@
     "source_category": "below_price",
     "listingDate": "2025-12-09",
     "marketCap": 168.0
+  },
+  {
+    "name": "Helloji Holidays",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-12-09",
+    "marketCap": 40.0
   },
   {
     "name": "Ravelcare",
@@ -7971,13 +7985,6 @@
     "source_category": "below_price",
     "listingDate": "2025-09-03",
     "marketCap": 2502.0
-  },
-  {
-    "name": "Sattva Eng.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-09-03",
-    "marketCap": 131.0
   },
   {
     "name": "NIS Management",
@@ -8744,6 +8751,13 @@
   },
   {
     "name": "Delta Auto.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-01-14",
+    "marketCap": 0
+  },
+  {
+    "name": "B.R.Goyal Infra.",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-01-14",
@@ -9618,13 +9632,6 @@
     "marketCap": 0
   },
   {
-    "name": "Faalcon Concepts",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-04-26",
-    "marketCap": 0
-  },
-  {
     "name": "Ramdevbaba Sol.",
     "status": "listed",
     "source_category": "below_price",
@@ -9752,13 +9759,6 @@
   },
   {
     "name": "Gopal Snacks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-03-14",
-    "marketCap": 0
-  },
-  {
-    "name": "Koura Fine Diamo",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-03-14",
@@ -10049,13 +10049,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Deepak Chemtex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-06",
     "marketCap": 0
   },
   {
@@ -10409,17 +10402,59 @@
     "marketCap": 0
   },
   {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10479,17 +10514,59 @@
     "marketCap": 0
   },
   {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10549,17 +10626,59 @@
     "marketCap": 0
   },
   {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10619,17 +10738,59 @@
     "marketCap": 0
   },
   {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10689,17 +10850,59 @@
     "marketCap": 0
   },
   {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10759,17 +10962,59 @@
     "marketCap": 0
   },
   {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10829,17 +11074,59 @@
     "marketCap": 0
   },
   {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10899,17 +11186,59 @@
     "marketCap": 0
   },
   {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -10969,17 +11298,59 @@
     "marketCap": 0
   },
   {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Service Care Ltd",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Utkarsh Small F.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
     "marketCap": 0
   },
   {
@@ -11039,20 +11410,6 @@
     "marketCap": 0
   },
   {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
     "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
@@ -11106,650 +11463,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
