@@ -1,26 +1,5 @@
 [
   {
-    "name": "Millworks Technologies",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-21",
-    "marketCap": 583.0
-  },
-  {
-    "name": "Alpine Texworld",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-21",
-    "marketCap": 402.0
-  },
-  {
-    "name": "SBI Funds Mgt.",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-21",
-    "marketCap": 126727.0
-  },
-  {
     "name": "Sotefin Bharat",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -35,11 +14,25 @@
     "marketCap": 2822.0
   },
   {
-    "name": "96513",
+    "name": "Gulf Lloyds (India)",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "2026-07-27",
     "marketCap": 67.0
+  },
+  {
+    "name": "Metalic Technoforge",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-07-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree Balaji (Mala)",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-07-29",
+    "marketCap": 69.0
   },
   {
     "name": "Cube Highways",
@@ -73,28 +66,28 @@
     "name": "Devson Catalyst",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-07-16",
+    "listingDate": "yesterday",
     "marketCap": 163.0
   },
   {
     "name": "Happy Steels",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-07-16",
+    "listingDate": "yesterday",
     "marketCap": 94.0
   },
   {
     "name": "Laser Power",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-07-16",
+    "listingDate": "yesterday",
     "marketCap": 3204.0
   },
   {
     "name": "Kusumgar",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-07-15",
     "marketCap": 4399.0
   },
   {
@@ -7091,13 +7084,6 @@
     "marketCap": 92.0
   },
   {
-    "name": "Waterways Leisur",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-07-01",
-    "marketCap": 5849.0
-  },
-  {
     "name": "Anubhav Plast",
     "status": "listed",
     "source_category": "below_price",
@@ -7502,13 +7488,6 @@
     "source_category": "below_price",
     "listingDate": "2025-12-12",
     "marketCap": 366.0
-  },
-  {
-    "name": "Flywings Simula.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-12-12",
-    "marketCap": 194.0
   },
   {
     "name": "Luxury Time",
@@ -8463,13 +8442,6 @@
     "marketCap": 0
   },
   {
-    "name": "Aakaar Medical",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-06-27",
-    "marketCap": 0
-  },
-  {
     "name": "Arisinfra Solu.",
     "status": "listed",
     "source_category": "below_price",
@@ -8579,6 +8551,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-03-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Grand Continent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-03-27",
     "marketCap": 0
   },
   {
@@ -8789,13 +8768,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-01-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Leo Dryfruits",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-01-08",
     "marketCap": 0
   },
   {
@@ -9356,6 +9328,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-08-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Akums Drugs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-08-06",
     "marketCap": 0
   },
   {
@@ -10052,13 +10031,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shree OSFM",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
     "name": "Presstonic Engi.",
     "status": "listed",
     "source_category": "below_price",
@@ -10409,10 +10381,38 @@
     "marketCap": 0
   },
   {
-    "name": "Service Care Ltd",
+    "name": "Utkarsh Small F.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-07-26",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Ahasolar Technol",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Drone Destinatio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-07-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Zeal Global Serv",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
     "marketCap": 0
   },
   {
@@ -10437,27 +10437,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -10469,13 +10448,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -10500,27 +10472,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -10532,13 +10483,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -10563,27 +10507,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -10595,13 +10518,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -10626,27 +10542,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -10658,13 +10553,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -10689,27 +10577,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -10721,13 +10588,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -10752,27 +10612,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -10784,13 +10623,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -10815,27 +10647,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -10847,13 +10658,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -10878,27 +10682,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -10910,13 +10693,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -10941,27 +10717,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -10973,13 +10728,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -11004,27 +10752,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -11036,13 +10763,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -11067,27 +10787,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -11099,13 +10798,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -11130,27 +10822,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -11162,13 +10833,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -11193,27 +10857,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -11225,13 +10868,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -11256,27 +10892,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -11288,13 +10903,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -11319,27 +10927,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -11351,13 +10938,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -11382,27 +10962,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -11414,13 +10973,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -11445,27 +10997,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -11477,13 +11008,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -11508,27 +11032,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -11540,13 +11043,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
@@ -11571,27 +11067,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -11603,76 +11078,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Utkarsh Small F.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Ahasolar Technol",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Drone Destinatio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Service Care Ltd",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-07-26",
     "marketCap": 0
   },
   {
