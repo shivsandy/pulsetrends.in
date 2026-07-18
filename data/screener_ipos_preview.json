@@ -25,7 +25,7 @@
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "2026-07-28",
-    "marketCap": 0
+    "marketCap": 185.0
   },
   {
     "name": "Shree Balaji (Mala)",
@@ -33,6 +33,13 @@
     "source_category": "upcoming",
     "listingDate": "2026-07-29",
     "marketCap": 69.0
+  },
+  {
+    "name": "Xtranet Techno.",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-07-30",
+    "marketCap": 667.0
   },
   {
     "name": "Cube Highways",
@@ -66,22 +73,22 @@
     "name": "Devson Catalyst",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
-    "marketCap": 163.0
+    "listingDate": "2026-07-16",
+    "marketCap": 160.0
   },
   {
     "name": "Happy Steels",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-07-16",
     "marketCap": 94.0
   },
   {
     "name": "Laser Power",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
-    "marketCap": 3204.0
+    "listingDate": "2026-07-16",
+    "marketCap": 3004.0
   },
   {
     "name": "Kusumgar",
@@ -7035,13 +7042,6 @@
     "marketCap": 0
   },
   {
-    "name": "AccelerateBS Ind",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-07-19",
-    "marketCap": 0
-  },
-  {
     "name": "Seemax Resources",
     "status": "listed",
     "source_category": "below_price",
@@ -7441,13 +7441,6 @@
     "marketCap": 115.0
   },
   {
-    "name": "Marc Technocrats",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-12-24",
-    "marketCap": 161.0
-  },
-  {
     "name": "Neptune Logitek",
     "status": "listed",
     "source_category": "below_price",
@@ -7756,6 +7749,13 @@
     "marketCap": 66.0
   },
   {
+    "name": "Suba Hotels",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-10-07",
+    "marketCap": 269.0
+  },
+  {
     "name": "Dhillon Freight",
     "status": "listed",
     "source_category": "below_price",
@@ -7791,13 +7791,6 @@
     "marketCap": 163.0
   },
   {
-    "name": "Gujarat Peanut",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-10-03",
-    "marketCap": 82.0
-  },
-  {
     "name": "TruAlt Bioenergy",
     "status": "listed",
     "source_category": "below_price",
@@ -7817,13 +7810,6 @@
     "source_category": "below_price",
     "listingDate": "2025-10-01",
     "marketCap": 64.0
-  },
-  {
-    "name": "Praruh Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-10-01",
-    "marketCap": 88.0
   },
   {
     "name": "Systematic Inds.",
@@ -8386,6 +8372,13 @@
     "marketCap": 0
   },
   {
+    "name": "HDB FINANC SER",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-07-02",
+    "marketCap": 0
+  },
+  {
     "name": "Supertech EV",
     "status": "listed",
     "source_category": "below_price",
@@ -8768,6 +8761,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-01-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Leo Dryfruits",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-01-08",
     "marketCap": 0
   },
   {
@@ -9653,13 +9653,6 @@
     "marketCap": 0
   },
   {
-    "name": "Grill Splendour",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-04-23",
-    "marketCap": 0
-  },
-  {
     "name": "Teerth Gopicon",
     "status": "listed",
     "source_category": "below_price",
@@ -10308,6 +10301,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
     "marketCap": 0
   },
   {
@@ -11099,13 +11099,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-07-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Minolta Finance",
-    "status": "rights",
-    "source_category": "rights",
-    "listingDate": "",
     "marketCap": 0
   }
 ]
