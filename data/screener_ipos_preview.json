@@ -1,17 +1,17 @@
 [
   {
-    "name": "Gulf Lloyds (India)",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-07-27",
-    "marketCap": 67.0
-  },
-  {
     "name": "Metalic Technoforge",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "2026-07-28",
     "marketCap": 185.0
+  },
+  {
+    "name": "Cube Highways",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-08-03",
+    "marketCap": 0
   },
   {
     "name": "Shree Balaji (Mala)",
@@ -49,11 +49,25 @@
     "marketCap": 302.0
   },
   {
-    "name": "Cube Highways",
+    "name": "Advance Techno.",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "2026-08-03",
     "marketCap": 0
+  },
+  {
+    "name": "Propshop Events",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-08-03",
+    "marketCap": 106.0
+  },
+  {
+    "name": "Metalic Technoforge",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-07-28",
+    "marketCap": 185.0
   },
   {
     "name": "Gulf Lloyds (India)",
@@ -80,21 +94,21 @@
     "name": "Millworks Technologies",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-07-21",
     "marketCap": 583.0
   },
   {
     "name": "Alpine Texworld",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-07-21",
     "marketCap": 402.0
   },
   {
     "name": "SBI Funds Mgt.",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-07-21",
     "marketCap": 116914.0
   },
   {
@@ -543,7 +557,7 @@
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-04-24",
-    "marketCap": 102.0
+    "marketCap": 0
   },
   {
     "name": "Om Power Transmission",
@@ -7052,7 +7066,7 @@
     "name": "Alpine Texworld",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-07-21",
     "marketCap": 402.0
   },
   {
@@ -7250,6 +7264,13 @@
     "source_category": "below_price",
     "listingDate": "2026-04-17",
     "marketCap": 599.0
+  },
+  {
+    "name": "Emiac Technologies",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-04-13",
+    "marketCap": 120.0
   },
   {
     "name": "Safety Controls",
@@ -7670,6 +7691,13 @@
     "source_category": "below_price",
     "listingDate": "2025-10-17",
     "marketCap": 35.0
+  },
+  {
+    "name": "Canara Robeco",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-10-16",
+    "marketCap": 5304.0
   },
   {
     "name": "Mittal Sections",
@@ -8267,18 +8295,11 @@
     "marketCap": 354.0
   },
   {
-    "name": "Savy Infra",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-07-28",
-    "marketCap": 250.0
-  },
-  {
     "name": "Monika Alcobev",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-23",
-    "marketCap": 613.0
+    "marketCap": 0
   },
   {
     "name": "Asston Pharmaceu",
@@ -8362,13 +8383,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Adcounty Media.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-07-04",
     "marketCap": 0
   },
   {
@@ -8876,6 +8890,13 @@
     "marketCap": 0
   },
   {
+    "name": "Hamps Bio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-12-20",
+    "marketCap": 0
+  },
+  {
     "name": "One Mobikwik",
     "status": "listed",
     "source_category": "below_price",
@@ -9094,13 +9115,6 @@
   },
   {
     "name": "S D Retail",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Bikewo Green",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-09-27",
@@ -10353,13 +10367,6 @@
     "marketCap": 0
   },
   {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
     "name": "Shelter Pharma",
     "status": "listed",
     "source_category": "below_price",
@@ -10395,10 +10402,17 @@
     "marketCap": 0
   },
   {
-    "name": "Yudiz Solutions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
     "marketCap": 0
   },
   {
@@ -10416,10 +10430,17 @@
     "marketCap": 0
   },
   {
-    "name": "Yudiz Solutions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
     "marketCap": 0
   },
   {
@@ -10437,10 +10458,17 @@
     "marketCap": 0
   },
   {
-    "name": "Yudiz Solutions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
     "marketCap": 0
   },
   {
@@ -10458,10 +10486,17 @@
     "marketCap": 0
   },
   {
-    "name": "Yudiz Solutions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
     "marketCap": 0
   },
   {
@@ -10479,10 +10514,17 @@
     "marketCap": 0
   },
   {
-    "name": "Yudiz Solutions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
     "marketCap": 0
   },
   {
@@ -10500,10 +10542,17 @@
     "marketCap": 0
   },
   {
-    "name": "Yudiz Solutions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
     "marketCap": 0
   },
   {
@@ -10521,10 +10570,17 @@
     "marketCap": 0
   },
   {
-    "name": "Yudiz Solutions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
     "marketCap": 0
   },
   {
@@ -10542,10 +10598,17 @@
     "marketCap": 0
   },
   {
-    "name": "Yudiz Solutions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
     "marketCap": 0
   },
   {
@@ -10563,10 +10626,17 @@
     "marketCap": 0
   },
   {
-    "name": "Yudiz Solutions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Yasons Chemex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-03",
     "marketCap": 0
   },
   {
@@ -10584,13 +10654,6 @@
     "marketCap": 0
   },
   {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -10602,202 +10665,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Yasons Chemex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
     "marketCap": 0
   },
   {
