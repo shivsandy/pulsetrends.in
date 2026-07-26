@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-25T05:54:56.623709+00:00",
+  "last_updated": "2026-07-26T06:18:36.506644+00:00",
   "source": "screener.in",
   "count": 1718,
   "ipos": [
@@ -126,7 +126,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/id/1286056/",
+      "source_url": "https://www.screener.in/company/id/1286056/consolidated/",
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": null,
@@ -229,7 +229,7 @@
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": 19.4,
-        "roce": "45%"
+        "roce": "44%"
       },
       "currentPrice": 0,
       "percentChange": 0
@@ -268,6 +268,39 @@
       "percentChange": 0
     },
     {
+      "id": "screener-upcoming-95933",
+      "name": "95933",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "upcoming",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "2026-08-05",
+      "description": "95933 - Upcoming IPO",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 200.0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/id/1286069/",
+      "source_category": "upcoming",
+      "fiscalMetrics": {
+        "pe": null,
+        "roce": "%"
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
       "id": "screener-upcoming-dhaval-packaging",
       "name": "Dhaval Packaging",
       "ticker": "",
@@ -301,8 +334,8 @@
       "percentChange": 0
     },
     {
-      "id": "screener-upcoming-95589",
-      "name": "95589",
+      "id": "screener-upcoming-juniper-green",
+      "name": "Juniper Green",
       "ticker": "",
       "exchange": "NSE/BSE",
       "sector": "mainboard",
@@ -312,7 +345,7 @@
       "openDate": "",
       "closeDate": "",
       "listingDate": "2026-08-06",
-      "description": "95589 - Upcoming IPO",
+      "description": "Juniper Green - Upcoming IPO",
       "about": "",
       "priceBandHigh": 0,
       "priceBandLow": 0,
@@ -327,8 +360,8 @@
       "source_url": "https://www.screener.in/company/id/1286068/",
       "source_category": "upcoming",
       "fiscalMetrics": {
-        "pe": null,
-        "roce": "%"
+        "pe": 0.0,
+        "roce": "3%"
       },
       "currentPrice": 0,
       "percentChange": 0
@@ -521,14 +554,14 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "yesterday",
-      "description": "Caliber Mining - Listed on yesterday",
+      "listingDate": "2026-07-24",
+      "description": "Caliber Mining - Listed on 2026-07-24",
       "about": "",
-      "priceBandHigh": 432.0,
-      "priceBandLow": 432.0,
+      "priceBandHigh": 424.0,
+      "priceBandLow": 424.0,
       "lotSize": 0,
       "issueSize": "",
-      "marketCap": 2822.0,
+      "marketCap": 2772.0,
       "gmp": 0,
       "gmpPercent": 0,
       "subscriptionStatus": "",
@@ -537,7 +570,7 @@
       "source_url": "https://www.screener.in/company/CMLL/consolidated/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "432",
+        "ipoPrice": "424",
         "currentPrice": "528.20",
         "exDate": "",
         "rightsRatio": "",
@@ -36319,42 +36352,6 @@
       "currency": "INR",
       "source": "screener.in",
       "source_url": "https://www.screener.in/company/YCCL/consolidated/",
-      "source_category": "recent",
-      "fiscalMetrics": {
-        "ipoPrice": "",
-        "currentPrice": null,
-        "exDate": "",
-        "rightsRatio": "",
-        "rightsPrice": ""
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-recent-netweb-technol",
-      "name": "Netweb Technol.",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "listed",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "2023-07-27",
-      "description": "Netweb Technol. - Listed on 2023-07-27",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/NETWEB/",
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "",
