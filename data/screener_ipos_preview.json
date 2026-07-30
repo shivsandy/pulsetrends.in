@@ -1,19 +1,5 @@
 [
   {
-    "name": "Advance Techno.",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-08-03",
-    "marketCap": 86.0
-  },
-  {
-    "name": "Propshop Events",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-08-03",
-    "marketCap": 106.0
-  },
-  {
     "name": "Poojaa Precision Engg.",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -35,6 +21,13 @@
     "marketCap": 200.0
   },
   {
+    "name": "Dhaval Packaging",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-08-06",
+    "marketCap": 133.0
+  },
+  {
     "name": "Oneindig Technologies",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -47,13 +40,6 @@
     "source_category": "upcoming",
     "listingDate": "2026-08-07",
     "marketCap": 148.0
-  },
-  {
-    "name": "Dhaval Packaging",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-08-06",
-    "marketCap": 133.0
   },
   {
     "name": "Juniper Green",
@@ -75,6 +61,34 @@
     "source_category": "upcoming",
     "listingDate": "2026-08-07",
     "marketCap": 147.0
+  },
+  {
+    "name": "Anawil Wire",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-08-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Aegeus Technolog",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-08-11",
+    "marketCap": 88.0
+  },
+  {
+    "name": "Ardee Industries",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-08-12",
+    "marketCap": 0
+  },
+  {
+    "name": "Poojaa Precision Engg.",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-08-04",
+    "marketCap": 600.0
   },
   {
     "name": "Cube Highways",
@@ -129,14 +143,14 @@
     "name": "Shree Balaji (Mala)",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-07-29",
+    "listingDate": "yesterday",
     "marketCap": 69.0
   },
   {
     "name": "Metalic Technoforge",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-07-28",
     "marketCap": 185.0
   },
   {
@@ -7070,11 +7084,11 @@
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "Xtranet Techno.",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "2026-07-30",
+    "marketCap": 664.0
   },
   {
     "name": "Gulf Lloyds (India)",
@@ -7089,6 +7103,13 @@
     "source_category": "below_price",
     "listingDate": "2026-07-21",
     "marketCap": 402.0
+  },
+  {
+    "name": "SBI Funds Mgt.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-07-21",
+    "marketCap": 116914.0
   },
   {
     "name": "Happy Steels",
@@ -7875,13 +7896,6 @@
     "marketCap": 64.0
   },
   {
-    "name": "Systematic Inds.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-10-01",
-    "marketCap": 435.0
-  },
-  {
     "name": "BMW Ventures",
     "status": "listed",
     "source_category": "below_price",
@@ -8232,6 +8246,13 @@
     "marketCap": 82.0
   },
   {
+    "name": "B. D. Industries",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-08-06",
+    "marketCap": 153.0
+  },
+  {
     "name": "Mehul Colours",
     "status": "listed",
     "source_category": "below_price",
@@ -8299,20 +8320,27 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-30",
-    "marketCap": 98.0
+    "marketCap": 0
   },
   {
     "name": "Indiqube Spaces",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-30",
-    "marketCap": 4977.0
+    "marketCap": 0
   },
   {
     "name": "Monarch Surve.",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-29",
+    "marketCap": 0
+  },
+  {
+    "name": "Savy Infra",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-07-28",
     "marketCap": 0
   },
   {
@@ -8834,13 +8862,6 @@
     "marketCap": 0
   },
   {
-    "name": "Leo Dryfruits",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-01-08",
-    "marketCap": 0
-  },
-  {
     "name": "Indo Farm Equip.",
     "status": "listed",
     "source_category": "below_price",
@@ -8912,13 +8933,6 @@
   },
   {
     "name": "International Gemological Instit",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-12-20",
-    "marketCap": 0
-  },
-  {
-    "name": "Hamps Bio",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-12-20",
@@ -9689,13 +9703,6 @@
   },
   {
     "name": "Amkay Products",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-05-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Storage Tech",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-05-08",
