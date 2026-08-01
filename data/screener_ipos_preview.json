@@ -1,19 +1,5 @@
 [
   {
-    "name": "Manipal Health",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-08-05",
-    "marketCap": 78881.0
-  },
-  {
-    "name": "H. R. Hygiene",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-08-05",
-    "marketCap": 200.0
-  },
-  {
     "name": "Dhaval Packaging",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -77,6 +63,13 @@
     "marketCap": 1776.0
   },
   {
+    "name": "95355",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-08-13",
+    "marketCap": 0
+  },
+  {
     "name": "Manipal Health",
     "status": "listed",
     "source_category": "recent",
@@ -98,13 +91,6 @@
     "marketCap": 600.0
   },
   {
-    "name": "Cube Highways",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2026-08-03",
-    "marketCap": 20430.0
-  },
-  {
     "name": "Advance Techno.",
     "status": "listed",
     "source_category": "recent",
@@ -119,31 +105,38 @@
     "marketCap": 106.0
   },
   {
+    "name": "Cube Highways",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "yesterday",
+    "marketCap": 20430.0
+  },
+  {
     "name": "Silverstorm Parks",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-07-31",
+    "listingDate": "yesterday",
     "marketCap": 302.0
   },
   {
     "name": "Xtranet Techno.",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-07-30",
     "marketCap": 664.0
   },
   {
     "name": "Lohia Corp",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-07-30",
     "marketCap": 4490.0
   },
   {
     "name": "Indo-MIM",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-07-30",
     "marketCap": 27294.0
   },
   {
@@ -7080,8 +7073,15 @@
     "name": "Silverstorm Parks",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2026-07-31",
+    "listingDate": "yesterday",
     "marketCap": 302.0
+  },
+  {
+    "name": "Xtranet Techno.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-07-30",
+    "marketCap": 664.0
   },
   {
     "name": "Gulf Lloyds (India)",
@@ -7509,6 +7509,13 @@
     "source_category": "below_price",
     "listingDate": "2025-12-22",
     "marketCap": 173.0
+  },
+  {
+    "name": "Stanbik Agro",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-12-19",
+    "marketCap": 40.0
   },
   {
     "name": "Shipwaves Online",
@@ -8271,7 +8278,7 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-08-01",
-    "marketCap": 114.0
+    "marketCap": 0
   },
   {
     "name": "Brigade Hotel",
@@ -8390,6 +8397,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Adcounty Media.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-07-04",
     "marketCap": 0
   },
   {
@@ -9891,6 +9905,13 @@
     "marketCap": 0
   },
   {
+    "name": "Entero Healthcar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-02-16",
+    "marketCap": 0
+  },
+  {
     "name": "Capital Small",
     "status": "listed",
     "source_category": "below_price",
@@ -10416,10 +10437,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10437,10 +10493,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10458,10 +10549,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10479,10 +10605,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10500,10 +10661,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10521,10 +10717,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10542,10 +10773,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10563,10 +10829,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10584,10 +10885,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10605,10 +10941,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10626,10 +10997,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10647,10 +11053,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10668,10 +11109,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10689,10 +11165,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10710,10 +11221,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10731,10 +11277,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10752,10 +11333,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10773,10 +11389,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10794,10 +11445,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10815,10 +11501,45 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Shelter Pharma",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
@@ -10836,17 +11557,17 @@
     "marketCap": 0
   },
   {
+    "name": "Shri Techtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-04",
+    "marketCap": 0
+  },
+  {
     "name": "Yasons Chemex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-03",
-    "marketCap": 0
-  },
-  {
-    "name": "S I Cap. & Fin.",
-    "status": "rights",
-    "source_category": "rights",
-    "listingDate": "",
     "marketCap": 0
   }
 ]
