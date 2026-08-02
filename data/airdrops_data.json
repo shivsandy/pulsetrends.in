@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-08-01T09:54:32.678338+00:00",
+  "last_updated": "2026-08-02T09:52:41.960928+00:00",
   "total": 31,
   "airdrops": [
     {
       "id": "arcus",
       "name": "Arcus",
       "url": "https://airdrops.io/arcus/",
-      "heat": 507,
+      "heat": 490,
       "status": "confirmed",
       "chain": "Robinhood",
       "actions": [
         "Arcus Actions: Sign Up",
         "Join Waitlist and Trade Spot"
       ],
-      "description": "507° Ongoing Arcus Actions: Sign Up, Join Waitlist and Trade Spot CLAIM AIRDROP 436° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP 395° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP 381° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP 366° Ongoing Confirmed MoonPay Actions: Sign Up, Add PayBox & Connect X to Claim CLAI",
+      "description": "490° Ongoing Arcus Actions: Sign Up, Join Waitlist and Trade Spot CLAIM AIRDROP 414° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP 396° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP 383° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP 337° Ongoing Confirmed MoonPay Actions: Sign Up, Add PayBox & Connect X to Claim CLAI",
       "source": "airdrops.io",
       "tge_date": "have not been published",
       "steps": [
@@ -32,7 +32,7 @@
       "id": "mint",
       "name": "MINT",
       "url": "https://airdrops.io/mint-2/",
-      "heat": 436,
+      "heat": 414,
       "status": "confirmed",
       "chain": "Base",
       "actions": [
@@ -40,7 +40,7 @@
         "Play Games",
         "Stake MNTD"
       ],
-      "description": "436° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP",
+      "description": "414° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Event is scheduled for September 2026 on Base",
       "about": "What is MINT? MINT is a crypto-first entertainment platform bringing together casino games, sportsbook and prediction markets in one seamless ecosystem where every play gets rewarded. Players earn XP for every eligible play, and that XP currently feeds the Season 1 leaderboard that decides how the first $MNTD airdrop is split. What is $MNTD? $MNTD is the native utility token of the MINT ecosystem, starting on mint.io and expanding to future partner platforms. The Token Generation Event is scheduled for September 2026 on Base. After TGE, holders can stake $MNTD to activate MINT Status, collect compounded staking rewards and get access to benefits like boosted rakeback, weekly lossback, raffles and future airdrops. Staking stays flexible with no forced lockup.",
@@ -61,14 +61,14 @@
       "id": "ondo_perps",
       "name": "Ondo Perps",
       "url": "https://airdrops.io/ondo-perps/",
-      "heat": 395,
+      "heat": 396,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Ondo Perps Actions: Join",
         "start Trading"
       ],
-      "description": "395° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP",
+      "description": "396° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Ongoing Confirmed Ondo Perps Airdrop Details A dedicated Ondo Perps token airdrop is not confirmed.",
@@ -86,13 +86,13 @@
       "id": "monetrix",
       "name": "Monetrix",
       "url": "https://airdrops.io/monetrix/",
-      "heat": 381,
+      "heat": 383,
       "status": "active",
       "chain": "Hyperliquid",
       "actions": [
         "Monetrix Actions: Mint USDM with USDC"
       ],
-      "description": "381° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP",
+      "description": "383° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Not announced Season 0 rewards three groups: stablecoin holders, yield participants, and liquidity providers",
       "steps": [
@@ -114,7 +114,7 @@
       "id": "moonpay",
       "name": "MoonPay",
       "url": "https://airdrops.io/moonpay/",
-      "heat": 366,
+      "heat": 337,
       "status": "confirmed",
       "chain": "Own",
       "actions": [
@@ -122,7 +122,7 @@
         "Add PayBox",
         "Connect X to Claim"
       ],
-      "description": "366° Ongoing Confirmed MoonPay Actions: Sign Up, Add PayBox & Connect X to Claim CLAIM AIRDROP",
+      "description": "337° Ongoing Confirmed MoonPay Actions: Sign Up, Add PayBox & Connect X to Claim CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "It builds the checkout infrastructure that lets people buy, sell, and swap crypto with cards, Apple Pay, PayPal, and bank transfers, and its on and off ramps sit inside hundreds of wallets and apps across more than 160 countries.",
@@ -138,17 +138,41 @@
       "estimated_cost": "s nothing"
     },
     {
+      "id": "axis",
+      "name": "Axis",
+      "url": "https://airdrops.io/axis/",
+      "heat": 325,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [
+        "Axis Actions: Deposit and earn"
+      ],
+      "description": "325° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "steps": [
+        "The Origin Vault, targeting up to $1 billion in deposits, will open in Q1 2026, followed by a public token sale and full protocol launch.",
+        "That points toward a token, but any free distribution is still unconfirmed."
+      ],
+      "about": "What is Axis? Axis is a quantitative yield platform that deploys institutional-grade, market-neutral trading strategies onchain to generate verifiable arbitrage returns. The protocol enables users to stake USDx (a dollar-pegged asset) to receive sUSDx and earn persistent yields across USD, Bitcoin, and gold through a multi-asset yield hub. The platform targets 10-20% APY through delta-neutral strategies that remain resilient across market conditions. Axis raised $5 million in a private funding round led by Galaxy Ventures, with participation from FalconX, OKX Ventures, CMT Digital, and Maven 11. The Origin Vault, targeting up to $1 billion in deposits, will open in Q1 2026, followed by a public token sale and full protocol launch.",
+      "social_links": {
+        "twitter": "https://x.com/AxisFDN/status/1996204874409861319",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Faxis%2F&text=Axis"
+      },
+      "difficulty": "Easy",
+      "estimated_cost": "to Farm Medium Overview Website: axis"
+    },
+    {
       "id": "solpump",
       "name": "SolPump",
       "url": "https://airdrops.io/solpump/",
-      "heat": 343,
+      "heat": 322,
       "status": "active",
       "chain": "Solana",
       "actions": [
         "SolPump Actions: Participate hourly",
         "grab free SOL"
       ],
-      "description": "343° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP",
+      "description": "322° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Visit the official dashboard",
@@ -175,41 +199,17 @@
       "estimated_cost": "to Farm Low Overview Website: solpump"
     },
     {
-      "id": "axis",
-      "name": "Axis",
-      "url": "https://airdrops.io/axis/",
-      "heat": 327,
-      "status": "active",
-      "chain": "Ethereum",
-      "actions": [
-        "Axis Actions: Deposit and earn"
-      ],
-      "description": "327° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "steps": [
-        "The Origin Vault, targeting up to $1 billion in deposits, will open in Q1 2026, followed by a public token sale and full protocol launch.",
-        "That points toward a token, but any free distribution is still unconfirmed."
-      ],
-      "about": "What is Axis? Axis is a quantitative yield platform that deploys institutional-grade, market-neutral trading strategies onchain to generate verifiable arbitrage returns. The protocol enables users to stake USDx (a dollar-pegged asset) to receive sUSDx and earn persistent yields across USD, Bitcoin, and gold through a multi-asset yield hub. The platform targets 10-20% APY through delta-neutral strategies that remain resilient across market conditions. Axis raised $5 million in a private funding round led by Galaxy Ventures, with participation from FalconX, OKX Ventures, CMT Digital, and Maven 11. The Origin Vault, targeting up to $1 billion in deposits, will open in Q1 2026, followed by a public token sale and full protocol launch.",
-      "social_links": {
-        "twitter": "https://x.com/AxisFDN/status/1996204874409861319",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Faxis%2F&text=Axis"
-      },
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Medium Overview Website: axis"
-    },
-    {
       "id": "cambria",
       "name": "Cambria",
       "url": "https://airdrops.io/cambria/",
-      "heat": 291,
+      "heat": 289,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Cambria Actions: Claim free Loot",
         "Play the game"
       ],
-      "description": "291° Ongoing Confirmed Cambria Actions: Claim free Loot, Play the game CLAIM AIRDROP",
+      "description": "289° Ongoing Confirmed Cambria Actions: Claim free Loot, Play the game CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": ". The second is the Genesis Airdrop, a points-based track built on Trinkets and Essence Points earned from gameplay, including points from past Gold Rush and Duel Arena seasons",
       "steps": [
@@ -256,13 +256,13 @@
       "id": "atoma",
       "name": "Atoma",
       "url": "https://airdrops.io/atoma/",
-      "heat": 196,
+      "heat": 219,
       "status": "confirmed",
       "chain": "Arbitrum",
       "actions": [
         "Atoma Actions: Deposit USDC in vaults"
       ],
-      "description": "196° Ongoing Atoma Actions: Deposit USDC in vaults CLAIM AIRDROP 436° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP 22° Ongoing Backyard Finance Actions: Sign Up, Deposit into Vaults, Create Yield Strategy CLAIM AIRDROP 366° Ongoing Confirmed MoonPay Actions: Sign Up, Add PayBox & Connect X to Claim CLAIM AIRDROP 22° Ongoing Enigma Actions: Join the Queue a",
+      "description": "219° Ongoing Atoma Actions: Deposit USDC in vaults CLAIM AIRDROP 414° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP Ongoing Backyard Finance Actions: Sign Up, Deposit into Vaults, Create Yield Strategy CLAIM AIRDROP 337° Ongoing Confirmed MoonPay Actions: Sign Up, Add PayBox & Connect X to Claim CLAIM AIRDROP 21° Ongoing Enigma Actions: Join the Queue and C",
       "source": "airdrops.io",
       "tge_date": "event, expected around Q3 2026",
       "steps": [
@@ -281,14 +281,14 @@
       "id": "polymarket",
       "name": "Polymarket",
       "url": "https://airdrops.io/polymarket/",
-      "heat": 181,
+      "heat": 179,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Polymarket Actions: Deposit",
         "Make predictions"
       ],
-      "description": "181° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP",
+      "description": "179° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "will follow the completion of its U",
       "steps": [
@@ -372,7 +372,7 @@
         "Trade",
         "Supply USDe"
       ],
-      "description": "Ongoing Meridian Actions: Migrate Funds, Trade & Supply USDe CLAIM AIRDROP 178° Ongoing Megapot Actions: Play lottery & refer friends CLAIM AIRDROP 327° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP Ongoing Confirmed Velvet.Capital Actions: Collect Gems CLAIM AIRDROP 28° Ongoing Confirmed GRVT Actions: Claim Now Claim Live CLAIM AIRDROP Ongoing Renaiss Protocol Actions: Connect Accounts, De",
+      "description": "Ongoing Meridian Actions: Migrate Funds, Trade & Supply USDe CLAIM AIRDROP 178° Ongoing Megapot Actions: Play lottery & refer friends CLAIM AIRDROP 325° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP Ongoing Confirmed Velvet.Capital Actions: Collect Gems CLAIM AIRDROP 25° Ongoing Confirmed GRVT Actions: Claim Now Claim Live CLAIM AIRDROP Ongoing Renaiss Protocol Actions: Connect Accounts, De",
       "source": "airdrops.io",
       "tge_date": "date",
       "about": "What is Meridian? Meridian is the new name of Ethereal, the perp DEX incubated within the Ethena ecosystem. The rebrand was announced in late June 2026, and with it the project moved to Robinhood Chain as a day-one launch partner. Meridian now focuses on real-world asset perpetual futures and prediction markets, with everything settled in Ethena’s USDe stablecoin. The prediction market side is already live. Users can deposit USDe and take positions on sports, macro, and geopolitical outcomes.",
@@ -393,16 +393,16 @@
       "id": "ink",
       "name": "Ink",
       "url": "https://airdrops.io/ink-chain/",
-      "heat": 141,
+      "heat": 140,
       "status": "confirmed",
       "chain": "Own",
       "actions": [
         "Ink Actions: Trade on Kraken Pro",
         "Interact with Dapps"
       ],
-      "description": "141° Ongoing Confirmed Ink Actions: Trade on Kraken Pro & Interact with Dapps CLAIM AIRDROP",
+      "description": "140° Ongoing Confirmed Ink Actions: Trade on Kraken Pro & Interact with Dapps CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "The $125,000 Airdrop Is Almost Here JOIN NOW Earn Free SOL Every Hour JOIN NOW Skip to content Menu Home Latest Airdrops Hot Airdrops Potential Airdrops Hyperliquid Airdrops Robinhood Airdrops Base Airdrops Solana Airdrops MegaETH Airdrops Soneium Airdrops Aptos Airdrops TON Airdrops zkSync Airdrops Blast Airdrops Telegram Airdrops Show all Claims Blog Contact AD Ink 141° Loading",
+      "tge_date": "The $125,000 Airdrop Is Almost Here JOIN NOW Earn Free SOL Every Hour JOIN NOW Skip to content Menu Home Latest Airdrops Hot Airdrops Potential Airdrops Hyperliquid Airdrops Robinhood Airdrops Base Airdrops Solana Airdrops MegaETH Airdrops Soneium Airdrops Aptos Airdrops TON Airdrops zkSync Airdrops Blast Airdrops Telegram Airdrops Show all Claims Blog Contact AD Ink 140° Loading",
       "steps": [
         "People who use the perp DEX Nado will also be able to get INK tokens.",
         "Key Parameters: Allocation : Confirmed (exact percentage TBA) Distribution Method : Activity-based and liquidity provision TGE Date : Expected July-September 2026 Latest Update: The Ink Points leaderboard for Kraken Pro users is now live.",
@@ -426,7 +426,7 @@
       "id": "swarmbase",
       "name": "SwarmBase",
       "url": "https://airdrops.io/swarmbase/",
-      "heat": 106,
+      "heat": 109,
       "status": "confirmed",
       "chain": "BSC",
       "actions": [
@@ -434,7 +434,7 @@
         "Complete Daily Check-In",
         "Refer Users"
       ],
-      "description": "106° Ongoing Confirmed SwarmBase Actions: Register, Complete Daily Check-In, Refer Users CLAIM AIRDROP",
+      "description": "109° Ongoing Confirmed SwarmBase Actions: Register, Complete Daily Check-In, Refer Users CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "SwarmScore converts into tokens for eligible wallets at launch",
       "steps": [
@@ -461,7 +461,7 @@
       "id": "hey",
       "name": "Hey",
       "url": "https://airdrops.io/hey/",
-      "heat": 80,
+      "heat": 71,
       "status": "active",
       "chain": "Lens",
       "actions": [
@@ -469,7 +469,7 @@
         "Set Username",
         "Post and Engage"
       ],
-      "description": "80° Ongoing Hey Actions: Sign Up, Set Username, Post and Engage CLAIM AIRDROP",
+      "description": "71° Ongoing Hey Actions: Sign Up, Set Username, Post and Engage CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "details are published, treat this as speculative",
       "steps": [
@@ -487,14 +487,14 @@
       "id": "abstract",
       "name": "Abstract",
       "url": "https://airdrops.io/abstract/",
-      "heat": 31,
+      "heat": 30,
       "status": "active",
       "chain": "Ethereum",
       "actions": [
         "Abstract Actions: Sign up",
         "Interact with Portal to Earn Xps"
       ],
-      "description": "31° Ongoing Abstract Actions: Sign up & Interact with Portal to Earn Xps CLAIM AIRDROP",
+      "description": "30° Ongoing Abstract Actions: Sign up & Interact with Portal to Earn Xps CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "date and no allocation have been published, so farming XP is a bet on precedent rather than a stated promise",
       "steps": [
@@ -512,13 +512,13 @@
       "id": "grvt",
       "name": "GRVT",
       "url": "https://airdrops.io/grvt/",
-      "heat": 28,
+      "heat": 25,
       "status": "confirmed",
       "chain": "BSC",
       "actions": [
         "GRVT Actions: Claim Now"
       ],
-      "description": "28° Ongoing Confirmed GRVT Actions: Claim Now Claim Live CLAIM AIRDROP",
+      "description": "25° Ongoing Confirmed GRVT Actions: Claim Now Claim Live CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "; external BSC or Ethereum wallets can take up to 30 minutes because of network congestion",
       "steps": [
@@ -544,44 +544,16 @@
       "estimated_cost": "to Farm Free Show all expired airdrops Previous Airdrops: GRVT Airdrop October 2023 Total value: n/a GRVT has raised $9"
     },
     {
-      "id": "backyard_finance",
-      "name": "Backyard Finance",
-      "url": "https://airdrops.io/backyard-finance/",
-      "heat": 22,
-      "status": "active",
-      "chain": "Solana",
-      "actions": [
-        "Backyard Finance Actions: Sign Up",
-        "Deposit into Vaults",
-        "Create Yield Strategy"
-      ],
-      "description": "22° Ongoing Backyard Finance Actions: Sign Up, Deposit into Vaults, Create Yield Strategy CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "s",
-      "steps": [
-        "in Season 0, and larger positions earn faster through the deposit size multiplier. Step 6: Create a custom yield strategy Build your own strategy instead of relying on single vaults: Select vaults from partner protocols like Kamino, Jupiter, Manifest Trade, and Perena Set your allocation percentage for each vault Rebalance whenever market conditions or APYs shift Step 7: Hold your positions and climb the badge tiers Keep your deposits in place to build a holding streak, one of the three XP multipliers. Complete BBQ activities as they appear and work your way up from Junior Cook toward Executive Chef. Tips for Maximizing Your Backyard Allocation Prioritize partner vaults. Partner vaults carry their own multiplier, so a deposit there earns more XP than the same amount in a standard vault. Do not break your streak. The holding streak multiplier rewards uninterrupted deposits. Pulling funds out and redepositing resets your progress, so size positions you can leave alone. Stack ecosystem exposure. Depositing through Backyard into Kamino or Jupiter vaults keeps you active in protocols with their own reward programs, so the same capital can work toward multiple campaigns at once. Frequently Asked Questions Is there a confirmed Backyard Finance airdrop? No. Backyard Finance has not announced a token or distribution. Season 0 rewards XP and BBQ badges, which many farmers read as pre",
-        "token groundwork, but any Backyard airdrop remains speculation until the team says otherwise. Do I need money to participate in Season 0? Yes, realistically. XP in Backyard BBQ Season 0 comes from depositing stablecoins into vaults and strategies, and deposit size is one of the three multipliers. There is no meaningful free route to badge progression. How do BBQ badges convert into rewards? Badges carry forward from Season 0 into Season 1. When APY multipliers and incentives launch, your badge tier sets the size of your boost. An Executive Chef badge earns a larger boost than a Junior Cook badge. Conclusion Backyard Finance sits in the same speculative bucket as other tokenless Solana projects: a live product, a points",
-        "style campaign, and no confirmed token. Season 0 favors early depositors who pick partner vaults, keep their streaks intact, and climb the badge tiers before Season 1 opens. Join Season 0 You're interested in more projects that do not have any token yet and could potentially airdrop a governance token to early users in the future? Then check out our list of potential retroactive airdrops to not miss out on the next DeFi airdrop! More Airdrops to Farm AIW3 Ongoing BSC, Solana View Guide → Pacifica Ongoing Solana View Guide → JTX Ongoing Solana View Guide → xStocks Ongoing Solana View Guide → BONK Ended Solana View Guide → SolPump Ongoing Solana View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Difficulty Easy Cost to Farm Medium Overview Website: app.backyard.finance Ticker: BYD Documentation: Visit now X (Formerly Twitter): Telegram Group: X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
-      ],
-      "about": "What is Backyard Finance? Backyard Finance is a yield manager on Solana that combines stablecoin vaults from multiple protocols into one diversified strategy. Instead of juggling separate positions, you pick your vaults, set your allocations, and manage everything from a single dashboard. What sets Backyard apart from preset vault products is control. You choose which vaults go into a strategy, how much capital each one gets, and when to rebalance. The protocol also mints BYD, its own liquid stablecoin, against strategy LP tokens, so deposited capital does not have to sit idle.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Backyard%20Finance&url=https%3A%2F%2Fairdrops.io%2Fbackyard-finance%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fbackyard-finance%2F&text=Backyard%20Finance"
-      },
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Medium Overview Website: app"
-    },
-    {
       "id": "enigma",
       "name": "Enigma",
       "url": "https://airdrops.io/enigma/",
-      "heat": 22,
+      "heat": 21,
       "status": "active",
       "chain": "Own",
       "actions": [
         "Enigma Actions: Join the Queue and Control The Robot"
       ],
-      "description": "22° Ongoing Enigma Actions: Join the Queue and Control The Robot CLAIM AIRDROP",
+      "description": "21° Ongoing Enigma Actions: Join the Queue and Control The Robot CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "es at other companies",
       "steps": [
@@ -597,32 +569,28 @@
       "estimated_cost": "to Farm Free Overview Website: enigma"
     },
     {
-      "id": "aiw3",
-      "name": "AIW3",
-      "url": "https://airdrops.io/aiw3/",
-      "heat": 22,
-      "status": "confirmed",
+      "id": "backyard_finance",
+      "name": "Backyard Finance",
+      "url": "https://airdrops.io/backyard-finance/",
+      "heat": 0,
+      "status": "active",
       "chain": "Solana",
-      "actions": [
-        "AIW3 Actions: Check Eligibility"
-      ],
-      "description": "22° Ongoing Confirmed AIW3 Actions: Check Eligibility Claim Live CLAIM AIRDROP",
+      "actions": [],
+      "description": "Ongoing Backyard Finance Actions: Sign Up, Deposit into Vaults, Create Yield Strategy CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "es on August 3, 2026, with an active points program running ahead of the snapshot",
+      "tge_date": "s",
       "steps": [
-        "Step 3: Check in daily Hit the check-in button every day.",
-        "The prediction tasks reset daily, so they compound fast for consistent users.",
-        "Tips for maximizing your AIW3 allocation Prioritize the daily prediction stack : One prediction, three predictions, and a friend invite pay up to 100 points per day combined, which beats most one-time tasks within a week.",
-        "The eligibility checker opened from July 29, and the AIW3 token generates and becomes claimable on August 3, 2026."
+        "in Season 0, and larger positions earn faster through the deposit size multiplier. Step 6: Create a custom yield strategy Build your own strategy instead of relying on single vaults: Select vaults from partner protocols like Kamino, Jupiter, Manifest Trade, and Perena Set your allocation percentage for each vault Rebalance whenever market conditions or APYs shift Step 7: Hold your positions and climb the badge tiers Keep your deposits in place to build a holding streak, one of the three XP multipliers. Complete BBQ activities as they appear and work your way up from Junior Cook toward Executive Chef. Tips for Maximizing Your Backyard Allocation Prioritize partner vaults. Partner vaults carry their own multiplier, so a deposit there earns more XP than the same amount in a standard vault. Do not break your streak. The holding streak multiplier rewards uninterrupted deposits. Pulling funds out and redepositing resets your progress, so size positions you can leave alone. Stack ecosystem exposure. Depositing through Backyard into Kamino or Jupiter vaults keeps you active in protocols with their own reward programs, so the same capital can work toward multiple campaigns at once. Frequently Asked Questions Is there a confirmed Backyard Finance airdrop? No. Backyard Finance has not announced a token or distribution. Season 0 rewards XP and BBQ badges, which many farmers read as pre",
+        "token groundwork, but any Backyard airdrop remains speculation until the team says otherwise. Do I need money to participate in Season 0? Yes, realistically. XP in Backyard BBQ Season 0 comes from depositing stablecoins into vaults and strategies, and deposit size is one of the three multipliers. There is no meaningful free route to badge progression. How do BBQ badges convert into rewards? Badges carry forward from Season 0 into Season 1. When APY multipliers and incentives launch, your badge tier sets the size of your boost. An Executive Chef badge earns a larger boost than a Junior Cook badge. Conclusion Backyard Finance sits in the same speculative bucket as other tokenless Solana projects: a live product, a points",
+        "style campaign, and no confirmed token. Season 0 favors early depositors who pick partner vaults, keep their streaks intact, and climb the badge tiers before Season 1 opens. Join Season 0 You're interested in more projects that do not have any token yet and could potentially airdrop a governance token to early users in the future? Then check out our list of potential retroactive airdrops to not miss out on the next DeFi airdrop! More Airdrops to Farm AIW3 Ongoing BSC, Solana View Guide → Pacifica Ongoing Solana View Guide → JTX Ongoing Solana View Guide → xStocks Ongoing Solana View Guide → BONK Ended Solana View Guide → SolPump Ongoing Solana View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Difficulty Easy Cost to Farm Medium Overview Website: app.backyard.finance Ticker: BYD Documentation: Visit now X (Formerly Twitter): Telegram Group: X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
       ],
-      "about": "What is AIW3? AIW3 is a Web3 Agent-as-a-Service (AaaS) platform that combines on-chain data analytics with AI-powered trading. Users can build, backtest, and deploy AI trading strategies, manage vaults, and take part in prediction markets, all from one interface. The platform runs on Solana and BNB Chain, and its data layer covers DeFi and DEX market intelligence. Backers include GalaXin Capital, LD Capital, 0G, Panga Capital, Buffalo Capital, and Three-stones Ventures. The project has raised a total of $2 million in funding. The AIW3 token launches on August 3, 2026, with an active points program running ahead of the snapshot.",
+      "about": "What is Backyard Finance? Backyard Finance is a yield manager on Solana that combines stablecoin vaults from multiple protocols into one diversified strategy. Instead of juggling separate positions, you pick your vaults, set your allocations, and manage everything from a single dashboard. What sets Backyard apart from preset vault products is control. You choose which vaults go into a strategy, how much capital each one gets, and when to rebalance. The protocol also mints BYD, its own liquid stablecoin, against strategy LP tokens, so deposited capital does not have to sit idle.",
       "social_links": {
-        "twitter": "https://x.com/AIW3_official/status/2058578692608340022",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Faiw3%2F&text=AIW3"
+        "twitter": "https://x.com/intent/tweet?text=Backyard%20Finance&url=https%3A%2F%2Fairdrops.io%2Fbackyard-finance%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fbackyard-finance%2F&text=Backyard%20Finance"
       },
-      "eligibility": "checker opened July 29, letting you verify whether your address qualifies based on the July 28 snapshot",
       "difficulty": "Easy",
-      "estimated_cost": "nothing"
+      "estimated_cost": "to Farm Medium Overview Website: app"
     },
     {
       "id": "minotaurus",
@@ -674,6 +642,32 @@
       "estimated_cost": "s below the reward value"
     },
     {
+      "id": "aiw3",
+      "name": "AIW3",
+      "url": "https://airdrops.io/aiw3/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "Solana",
+      "actions": [],
+      "description": "Ongoing Confirmed AIW3 Actions: Check Eligibility Claim Live CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "es on August 3, 2026, with an active points program running ahead of the snapshot",
+      "steps": [
+        "Step 3: Check in daily Hit the check-in button every day.",
+        "The prediction tasks reset daily, so they compound fast for consistent users.",
+        "Tips for maximizing your AIW3 allocation Prioritize the daily prediction stack : One prediction, three predictions, and a friend invite pay up to 100 points per day combined, which beats most one-time tasks within a week.",
+        "The eligibility checker opened from July 29, and the AIW3 token generates and becomes claimable on August 3, 2026."
+      ],
+      "about": "What is AIW3? AIW3 is a Web3 Agent-as-a-Service (AaaS) platform that combines on-chain data analytics with AI-powered trading. Users can build, backtest, and deploy AI trading strategies, manage vaults, and take part in prediction markets, all from one interface. The platform runs on Solana and BNB Chain, and its data layer covers DeFi and DEX market intelligence. Backers include GalaXin Capital, LD Capital, 0G, Panga Capital, Buffalo Capital, and Three-stones Ventures. The project has raised a total of $2 million in funding. The AIW3 token launches on August 3, 2026, with an active points program running ahead of the snapshot.",
+      "social_links": {
+        "twitter": "https://x.com/AIW3_official/status/2058578692608340022",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Faiw3%2F&text=AIW3"
+      },
+      "eligibility": "checker opened July 29, letting you verify whether your address qualifies based on the July 28 snapshot",
+      "difficulty": "Easy",
+      "estimated_cost": "nothing"
+    },
+    {
       "id": "plether",
       "name": "Plether",
       "url": "https://airdrops.io/plether/",
@@ -684,7 +678,7 @@
       "description": "Ongoing Confirmed Plether Actions: Join Testnet, Follow on X, Open Your plDXY Position CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
-        "of a percent per day, so leverage that feels reckless on ETH is often what it takes to register a move. Plan around the weekend freeze. FX markets close, new positions are restricted, and carry keeps accruing on anything you leave open into Friday. Frequently Asked Questions When does the Plether testnet competition end? The competition closes on August 2 at 4PM UTC, two weeks after the July 20 start. Traders are ranked by final P&L at that moment, and the top three are paid in USDC on Arbitrum mainnet within a week. Is there a Plether token or airdrop? No. Plether has said there is no token and no airdrop tied to this competition, and the $1,000 USDC prize pool is the only reward. Treat any Plether token offered elsewhere as fake. Do I need real money to enter? No. Registered wallets receive 100,000 mock USDC on Arbitrum Sepolia, and eligible trading actions are gas sponsored while sponsorship lasts, so you can trade plDXY without funding the wallet yourself. Conclusion The setup is simple: 100,000 mock USDC, ten trading days, and $1,000 in real USDC for the three best P&Ls. Clearing +1% with five active days puts you in contention, and registering late costs you trading days you cannot get back. No token sits behind this one, so the reason to trade is the prize pool. Join testnet You're interested in more projects that do not have any token yet and could potentially airdrop a governance token to early users in the future? Then check out our list of potential retroactive airdrops to not miss out on the next DeFi airdrop! Requirements Twitter / X Email More Airdrops to Farm Variational Ongoing Arbitrum View Guide → Extended Ongoing Arbitrum, Ethereum View Guide → Lighter Ongoing Arbitrum, Avalanche View Guide → Hyperliquid Ongoing Own chain, Arbitrum View Guide → Checkpoint Ongoing Arbitrum View Guide → TurboFlow Ongoing Arbitrum View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Difficulty Easy Cost to Farm Free Overview Website: plether.com Documentation: Visit now X (Formerly Twitter): Discord Chat: Github Repository: X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
+        "of a percent per day, so leverage that feels reckless on ETH is often what it takes to register a move. Plan around the weekend freeze. FX markets close, new positions are restricted, and carry keeps accruing on anything you leave open into Friday. Frequently Asked Questions When does the Plether testnet competition end? The competition closes on August 2 at 4PM UTC, two weeks after the July 20 start. Traders are ranked by final P&L at that moment, and the top three are paid in USDC on Arbitrum mainnet within a week. Is there a Plether token or airdrop? No. Plether has said there is no token and no airdrop tied to this competition, and the $1,000 USDC prize pool is the only reward. Treat any Plether token offered elsewhere as fake. Do I need real money to enter? No. Registered wallets receive 100,000 mock USDC on Arbitrum Sepolia, and eligible trading actions are gas sponsored while sponsorship lasts, so you can trade plDXY without funding the wallet yourself. Conclusion The setup is simple: 100,000 mock USDC, ten trading days, and $1,000 in real USDC for the three best P&Ls. Clearing +1% with five active days puts you in contention, and registering late costs you trading days you cannot get back. No token sits behind this one, so the reason to trade is the prize pool. Join testnet You're interested in more projects that do not have any token yet and could potentially airdrop a governance token to early users in the future? Then check out our list of potential retroactive airdrops to not miss out on the next DeFi airdrop! Requirements Twitter / X Email More Airdrops to Farm Atoma Ongoing Arbitrum View Guide → Variational Ongoing Arbitrum View Guide → Extended Ongoing Arbitrum, Ethereum View Guide → Lighter Ongoing Arbitrum, Avalanche View Guide → Hyperliquid Ongoing Own chain, Arbitrum View Guide → Checkpoint Ongoing Arbitrum View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Difficulty Easy Cost to Farm Free Overview Website: plether.com Documentation: Visit now X (Formerly Twitter): Discord Chat: Github Repository: X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
       ],
       "about": "What is Plether? Plether is a perpetuals DEX on Arbitrum built around a single market: the strength of the US dollar against a basket of six major currencies. Traders go long or short that index with USDC margin, and every position is margined and settled in USDC. Plether calls the instrument plDXY, and the testnet competition running now is the first chance to trade it. The mechanics differ from a standard perp DEX. Orders commit before the execution price is revealed, so nobody can trade ahead of you. There is no auto-deleveraging, because maximum payout locks at entry and the protocol rejects any trade its HousePool cannot cover.",
       "social_links": {
@@ -830,11 +824,11 @@
       "description": "How to get free crypto airdrops? Cryptocurrency airdrops typically require users to complete simple tasks like following social media accounts, sharing posts, or signing up for newsletters. They might also include interacting with crypto DApps. Check reputable crypto websites for current airdrop opportunities.",
       "source": "airdrops.io",
       "steps": [
-        "Deposit USDC in vaults CLAIM AIRDROP 436° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP 22° Ongoing Backyard Finance Actions: Sign Up, Deposit into Vaults, Create Yield Strategy CLAIM AIRDROP 366° Ongoing Confirmed MoonPay Actions: Sign Up, Add PayBox & Connect X to Claim CLAIM AIRDROP 22° Ongoing Enigma Actions: Join the Queue and Control The Robot CLAIM AIRDROP Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored 80° Ongoing Hey Actions: Sign Up, Set Username, Post and Engage CLAIM AIRDROP Ongoing Confirmed WheelX Actions: Bridge, Swap, Complete Quests and Refer to Earn CLAIM AIRDROP 343° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP 22° Ongoing Confirmed AIW3 Actions: Check Eligibility Claim Live CLAIM AIRDROP 291° Ongoing Confirmed Cambria Actions: Claim free Loot, Play the game CLAIM AIRDROP Ongoing Confirmed Plether Actions: Join Testnet, Follow on X, Open Your plDXY Position CLAIM AIRDROP 106° Ongoing Confirmed SwarmBase Actions: Register, Complete Daily Check",
-        "In, Refer Users CLAIM AIRDROP Ongoing DBK Chain Actions: Install Rabby Wallet and Mint Genesis NFT CLAIM AIRDROP 176° Ongoing Confirmed Orbinum Actions: Interact with testnet CLAIM AIRDROP Ongoing GMGN Actions: Sign Up, Deposit, Trade and Refer Users CLAIM AIRDROP Ongoing Privacy Pools Actions: Generate Entropy, Complete Contribution and Deposit CLAIM AIRDROP Ongoing Legend Actions: Sign Up, Deposit, Trade and Refer Users CLAIM AIRDROP X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
+        "Deposit USDC in vaults CLAIM AIRDROP 414° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP Ongoing Backyard Finance Actions: Sign Up, Deposit into Vaults, Create Yield Strategy CLAIM AIRDROP 337° Ongoing Confirmed MoonPay Actions: Sign Up, Add PayBox & Connect X to Claim CLAIM AIRDROP 21° Ongoing Enigma Actions: Join the Queue and Control The Robot CLAIM AIRDROP Ongoing Minotaurus Actions: Earn tickets to enter $100k giveaway CLAIM AIRDROP Sponsored 71° Ongoing Hey Actions: Sign Up, Set Username, Post and Engage CLAIM AIRDROP Ongoing Confirmed WheelX Actions: Bridge, Swap, Complete Quests and Refer to Earn CLAIM AIRDROP 322° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP Ongoing Confirmed AIW3 Actions: Check Eligibility Claim Live CLAIM AIRDROP 289° Ongoing Confirmed Cambria Actions: Claim free Loot, Play the game CLAIM AIRDROP Ongoing Confirmed Plether Actions: Join Testnet, Follow on X, Open Your plDXY Position CLAIM AIRDROP 109° Ongoing Confirmed SwarmBase Actions: Register, Complete Daily Check",
+        "In, Refer Users CLAIM AIRDROP Ongoing DBK Chain Actions: Install Rabby Wallet and Mint Genesis NFT CLAIM AIRDROP 177° Ongoing Confirmed Orbinum Actions: Interact with testnet CLAIM AIRDROP Ongoing GMGN Actions: Sign Up, Deposit, Trade and Refer Users CLAIM AIRDROP Ongoing Privacy Pools Actions: Generate Entropy, Complete Contribution and Deposit CLAIM AIRDROP Ongoing Legend Actions: Sign Up, Deposit, Trade and Refer Users CLAIM AIRDROP X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
       ],
       "about": "Here you will find the most recent airdrop campaigns. Click on a drop to see more information and to find a step-by-step guide to claiming some free crypto",
-      "eligibility": "Claim Live CLAIM AIRDROP 291° Ongoing Confirmed Cambria Actions: Claim free Loot, Play the game CLAIM AIRDROP Ongoing Confirmed Plether Actions: Join Testnet, Follow on X, Open Your plDXY Position CLAIM AIRDROP 106° Ongoing Confirmed SwarmBase Actions: Register, Complete Daily Check-In, Refer Users CLAIM AIRDROP Ongoing DBK Chain Actions: Install Rabby Wallet and Mint Genesis NFT CLAIM AIRDROP 176° Ongoing Confirmed Orbinum Actions: Interact with testnet CLAIM AIRDROP Ongoing GMGN Actions: Sign Up, Deposit, Trade and Refer Users CLAIM AIRDROP Ongoing Privacy Pools Actions: Generate Entropy, Complete Contribution and Deposit CLAIM AIRDROP Ongoing Legend Actions: Sign Up, Deposit, Trade and Refer Users CLAIM AIRDROP X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops"
+      "eligibility": "Claim Live CLAIM AIRDROP 289° Ongoing Confirmed Cambria Actions: Claim free Loot, Play the game CLAIM AIRDROP Ongoing Confirmed Plether Actions: Join Testnet, Follow on X, Open Your plDXY Position CLAIM AIRDROP 109° Ongoing Confirmed SwarmBase Actions: Register, Complete Daily Check-In, Refer Users CLAIM AIRDROP Ongoing DBK Chain Actions: Install Rabby Wallet and Mint Genesis NFT CLAIM AIRDROP 177° Ongoing Confirmed Orbinum Actions: Interact with testnet CLAIM AIRDROP Ongoing GMGN Actions: Sign Up, Deposit, Trade and Refer Users CLAIM AIRDROP Ongoing Privacy Pools Actions: Generate Entropy, Complete Contribution and Deposit CLAIM AIRDROP Ongoing Legend Actions: Sign Up, Deposit, Trade and Refer Users CLAIM AIRDROP X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops"
     }
   ]
 }
