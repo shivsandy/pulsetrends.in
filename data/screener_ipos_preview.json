@@ -84,6 +84,34 @@
     "marketCap": 0
   },
   {
+    "name": "Dhaval Packaging",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-08-06",
+    "marketCap": 133.0
+  },
+  {
+    "name": "Juniper Green",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-08-06",
+    "marketCap": 12802.0
+  },
+  {
+    "name": "Oneindig Technologies",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-08-06",
+    "marketCap": 105.0
+  },
+  {
+    "name": "MV Electrosystems",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-08-06",
+    "marketCap": 1160.0
+  },
+  {
     "name": "Manipal Health",
     "status": "listed",
     "source_category": "recent",
@@ -627,7 +655,7 @@
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-05-05",
-    "marketCap": 247.0
+    "marketCap": 0
   },
   {
     "name": "Adisoft Technol.",
@@ -7056,32 +7084,18 @@
     "marketCap": 0
   },
   {
-    "name": "Srivari Spices &",
+    "name": "Advance Techno.",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-08-18",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "2026-08-03",
+    "marketCap": 86.0
   },
   {
-    "name": "Sangani Hospital",
+    "name": "Propshop Events",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "SBFC Finance",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-08-16",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "2026-08-03",
+    "marketCap": 101.0
   },
   {
     "name": "Silverstorm Parks",
@@ -7413,6 +7427,13 @@
     "marketCap": 56.0
   },
   {
+    "name": "Brandman Retail",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-02-11",
+    "marketCap": 325.0
+  },
+  {
     "name": "C K K Retail",
     "status": "listed",
     "source_category": "below_price",
@@ -7705,13 +7726,6 @@
     "source_category": "below_price",
     "listingDate": "2025-11-06",
     "marketCap": 102.0
-  },
-  {
-    "name": "Game Changers",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-11-04",
-    "marketCap": 183.0
   },
   {
     "name": "Shlokka Dyes",
@@ -8320,6 +8334,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-29",
+    "marketCap": 0
+  },
+  {
+    "name": "Savy Infra",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-07-28",
     "marketCap": 0
   },
   {
@@ -9394,13 +9415,6 @@
     "marketCap": 0
   },
   {
-    "name": "Akums Drugs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-08-06",
-    "marketCap": 0
-  },
-  {
     "name": "Bulkcorp Inter.",
     "status": "listed",
     "source_category": "below_price",
@@ -10094,13 +10108,6 @@
     "marketCap": 0
   },
   {
-    "name": "Siyaram Recycli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
     "name": "Benchmark Comp.",
     "status": "listed",
     "source_category": "below_price",
@@ -10451,10 +10458,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10500,10 +10507,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10549,10 +10556,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10598,10 +10605,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10647,10 +10654,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10696,10 +10703,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10745,10 +10752,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10794,10 +10801,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10843,10 +10850,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10892,10 +10899,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10941,10 +10948,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10990,10 +10997,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -11039,10 +11046,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -11088,10 +11095,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -11137,10 +11144,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -11186,10 +11193,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -11235,10 +11242,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -11284,10 +11291,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -11333,10 +11340,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -11382,10 +11389,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shri Techtex",
+    "name": "Mono Pharmacare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-04",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -11428,17 +11435,17 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Shri Techtex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-04",
     "marketCap": 0
   },
   {
     "name": "Genesys Intl.",
+    "status": "rights",
+    "source_category": "rights",
+    "listingDate": "",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanti Gold",
     "status": "rights",
     "source_category": "rights",
     "listingDate": "",
