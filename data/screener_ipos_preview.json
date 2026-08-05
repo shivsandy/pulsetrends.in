@@ -1,19 +1,5 @@
 [
   {
-    "name": "Fusion Klassroom Edutech",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-08-07",
-    "marketCap": 148.0
-  },
-  {
-    "name": "G V Electricals",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "2026-08-07",
-    "marketCap": 147.0
-  },
-  {
     "name": "Anawil Wire",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -26,6 +12,20 @@
     "source_category": "upcoming",
     "listingDate": "2026-08-11",
     "marketCap": 88.0
+  },
+  {
+    "name": "G V Electricals",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-08-07",
+    "marketCap": 147.0
+  },
+  {
+    "name": "G V Electricals",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-08-07",
+    "marketCap": 147.0
   },
   {
     "name": "Ardee Industries",
@@ -53,14 +53,35 @@
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "2026-08-14",
-    "marketCap": 0
+    "marketCap": 407.0
   },
   {
     "name": "Leap India",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "2026-08-14",
+    "marketCap": 9005.0
+  },
+  {
+    "name": "Dhoot Transmission",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-08-17",
+    "marketCap": 19482.0
+  },
+  {
+    "name": "78994",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "2026-08-17",
     "marketCap": 0
+  },
+  {
+    "name": "Anawil Wire",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-08-10",
+    "marketCap": 675.0
   },
   {
     "name": "Fusion Klassroom Edutech",
@@ -68,6 +89,13 @@
     "source_category": "recent",
     "listingDate": "2026-08-07",
     "marketCap": 148.0
+  },
+  {
+    "name": "G V Electricals",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-08-07",
+    "marketCap": 147.0
   },
   {
     "name": "G V Electricals",
@@ -122,21 +150,21 @@
     "name": "Poojaa Precision Engg.",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-08-04",
+    "listingDate": "yesterday",
     "marketCap": 600.0
   },
   {
     "name": "Advance Techno.",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-03",
     "marketCap": 86.0
   },
   {
     "name": "Propshop Events",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-03",
     "marketCap": 101.0
   },
   {
@@ -7049,31 +7077,24 @@
     "marketCap": 0
   },
   {
-    "name": "Pyramid Technopl",
+    "name": "H. R. Hygiene",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "2026-08-05",
+    "marketCap": 200.0
   },
   {
     "name": "Advance Techno.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-03",
     "marketCap": 86.0
   },
   {
     "name": "Propshop Events",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-03",
     "marketCap": 101.0
   },
   {
@@ -7082,13 +7103,6 @@
     "source_category": "below_price",
     "listingDate": "2026-07-31",
     "marketCap": 302.0
-  },
-  {
-    "name": "Xtranet Techno.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-07-30",
-    "marketCap": 664.0
   },
   {
     "name": "Gulf Lloyds (India)",
@@ -7103,13 +7117,6 @@
     "source_category": "below_price",
     "listingDate": "2026-07-21",
     "marketCap": 402.0
-  },
-  {
-    "name": "SBI Funds Mgt.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-07-21",
-    "marketCap": 116914.0
   },
   {
     "name": "Happy Steels",
@@ -7812,13 +7819,6 @@
     "marketCap": 66.0
   },
   {
-    "name": "Suba Hotels",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-10-07",
-    "marketCap": 269.0
-  },
-  {
     "name": "Dhillon Freight",
     "status": "listed",
     "source_category": "below_price",
@@ -8257,14 +8257,14 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-08-05",
-    "marketCap": 265.0
+    "marketCap": 0
   },
   {
     "name": "Laxmi India Fin.",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-08-05",
-    "marketCap": 826.0
+    "marketCap": 0
   },
   {
     "name": "Repono",
@@ -8313,13 +8313,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Savy Infra",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-07-28",
     "marketCap": 0
   },
   {
@@ -8905,13 +8898,6 @@
   },
   {
     "name": "International Gemological Instit",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-12-20",
-    "marketCap": 0
-  },
-  {
-    "name": "Hamps Bio",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-12-20",
@@ -9611,13 +9597,6 @@
     "marketCap": 0
   },
   {
-    "name": "Go Digit General",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-05-23",
-    "marketCap": 0
-  },
-  {
     "name": "Quest Laborato.",
     "status": "listed",
     "source_category": "below_price",
@@ -10283,13 +10262,6 @@
     "marketCap": 0
   },
   {
-    "name": "Arabian Petrol.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-09",
-    "marketCap": 0
-  },
-  {
     "name": "Valiant Laborato",
     "status": "listed",
     "source_category": "below_price",
@@ -10430,38 +10402,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
     "marketCap": 0
   },
   {
@@ -10472,38 +10416,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
     "marketCap": 0
   },
   {
@@ -10514,38 +10430,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
     "marketCap": 0
   },
   {
@@ -10556,38 +10444,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
     "marketCap": 0
   },
   {
@@ -10598,38 +10458,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
     "marketCap": 0
   },
   {
@@ -10640,38 +10472,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
     "marketCap": 0
   },
   {
@@ -10682,38 +10486,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
     "marketCap": 0
   },
   {
@@ -10724,38 +10500,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
     "marketCap": 0
   },
   {
@@ -10766,38 +10514,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
+    "listingDate": "2023-08-09",
     "marketCap": 0
   },
   {
@@ -10808,41 +10528,6 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
@@ -10850,416 +10535,10 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
     "name": "Zeal Global Serv",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
-    "marketCap": 0
-  },
-  {
-    "name": "Zeal Global Serv",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-09",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Yudiz Solutions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-17",
     "marketCap": 0
   },
   {
