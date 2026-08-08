@@ -1,19 +1,5 @@
 [
   {
-    "name": "G V Electricals",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹123–130",
-    "marketCap": 0
-  },
-  {
-    "name": "Ardee Industries",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹50–53",
-    "marketCap": 0
-  },
-  {
     "name": "LAPL Automotive",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -28,6 +14,34 @@
     "marketCap": 0
   },
   {
+    "name": "Leap India",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "₹151–159",
+    "marketCap": 0
+  },
+  {
+    "name": "Dhoot Transmission",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "₹829–871",
+    "marketCap": 0
+  },
+  {
+    "name": "Molbio Diagnosti",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "₹768–807",
+    "marketCap": 0
+  },
+  {
+    "name": "Milky Mist Dairy",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "₹133–140",
+    "marketCap": 0
+  },
+  {
     "name": "Technocraft Ven.",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -35,35 +49,14 @@
     "marketCap": 0
   },
   {
-    "name": "Leap India",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "-",
-    "marketCap": 0
-  },
-  {
-    "name": "Dhoot Transmission",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "-",
-    "marketCap": 0
-  },
-  {
-    "name": "Molbio Diagnosti",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "-",
-    "marketCap": 0
-  },
-  {
-    "name": "Milky Mist Dairy",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "-",
-    "marketCap": 0
-  },
-  {
     "name": "Fascinate Textiles",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "Sham Foam",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "-",
@@ -78,6 +71,13 @@
   },
   {
     "name": "Shiprocket",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "Behari Lal Engg.",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "-",
@@ -115,35 +115,35 @@
     "name": "Fusion Klassroom Edutech",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-08-07",
+    "listingDate": "yesterday",
     "marketCap": 148.0
   },
   {
     "name": "Dhaval Packaging",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-06",
     "marketCap": 133.0
   },
   {
     "name": "Juniper Green",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-06",
     "marketCap": 12802.0
   },
   {
     "name": "Oneindig Technologies",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-06",
     "marketCap": 105.0
   },
   {
     "name": "MV Electrosystems",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-06",
     "marketCap": 1160.0
   },
   {
@@ -7273,6 +7273,13 @@
     "marketCap": 90.0
   },
   {
+    "name": "Yaashvi Jewellers",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-06-02",
+    "marketCap": 146.0
+  },
+  {
     "name": "M R Maniveni",
     "status": "listed",
     "source_category": "below_price",
@@ -7448,6 +7455,13 @@
     "marketCap": 67.0
   },
   {
+    "name": "Shayona Eng.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-01-30",
+    "marketCap": 56.0
+  },
+  {
     "name": "Aritas Vinyl",
     "status": "listed",
     "source_category": "below_price",
@@ -7488,6 +7502,13 @@
     "source_category": "below_price",
     "listingDate": "2026-01-14",
     "marketCap": 395.0
+  },
+  {
+    "name": "Gabion Technol.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-01-13",
+    "marketCap": 110.0
   },
   {
     "name": "Modern Diagnost.",
@@ -8509,13 +8530,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-06-25",
-    "marketCap": 0
-  },
-  {
-    "name": "Eppeltone Ene.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-06-24",
     "marketCap": 0
   },
   {
@@ -9604,13 +9618,6 @@
     "marketCap": 0
   },
   {
-    "name": "Go Digit General",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-05-23",
-    "marketCap": 0
-  },
-  {
     "name": "Quest Laborato.",
     "status": "listed",
     "source_category": "below_price",
@@ -9692,6 +9699,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-05-08",
+    "marketCap": 0
+  },
+  {
+    "name": "JNK",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-04-30",
     "marketCap": 0
   },
   {
@@ -10080,6 +10094,13 @@
     "marketCap": 0
   },
   {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
     "name": "Benchmark Comp.",
     "status": "listed",
     "source_category": "below_price",
@@ -10238,13 +10259,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Arvind Port &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-25",
     "marketCap": 0
   },
   {
@@ -10409,150 +10423,283 @@
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "Yudiz Solutions",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-17",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "Yudiz Solutions",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-17",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "Yudiz Solutions",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-17",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "Yudiz Solutions",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-17",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "Yudiz Solutions",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-17",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "Yudiz Solutions",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-17",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "Yudiz Solutions",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-17",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "Yudiz Solutions",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-17",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "Yudiz Solutions",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-17",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "Yudiz Solutions",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-17",
     "marketCap": 0
   },
   {
-    "name": "Zeal Global Serv",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-09",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
+    "marketCap": 0
+  },
+  {
+    "name": "TVS Supply",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Yudiz Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-17",
     "marketCap": 0
   },
   {
