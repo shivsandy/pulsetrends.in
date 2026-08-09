@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-08T04:16:14.255673+00:00",
+  "last_updated": "2026-08-09T04:24:23.047405+00:00",
   "source": "screener.in",
-  "count": 1530,
+  "count": 1531,
   "ipos": [
     {
       "id": "screener-upcoming-lapl-automotive",
@@ -28,6 +28,39 @@
       "currency": "INR",
       "source": "screener.in",
       "source_url": "https://www.screener.in/company/id/1286081/",
+      "source_category": "upcoming",
+      "fiscalMetrics": {
+        "pe": null,
+        "roce": "Institutional"
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-upcoming-technocraft-ven",
+      "name": "Technocraft Ven.",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "upcoming",
+      "openDate": "2026-08-07",
+      "closeDate": "2026-08-11",
+      "listingDate": "₹200–212",
+      "description": "Technocraft Ven. - Upcoming IPO",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/id/1286084/consolidated/",
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": null,
@@ -192,44 +225,11 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/id/1286094/",
+      "source_url": "https://www.screener.in/company/id/1286094/consolidated/",
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": null,
-        "roce": "249.2"
-      },
-      "currentPrice": 0,
-      "percentChange": 0
-    },
-    {
-      "id": "screener-upcoming-technocraft-ven",
-      "name": "Technocraft Ven.",
-      "ticker": "",
-      "exchange": "NSE/BSE",
-      "sector": "mainboard",
-      "industry": "",
-      "country": "IN",
-      "status": "upcoming",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "-",
-      "description": "Technocraft Ven. - Upcoming IPO",
-      "about": "",
-      "priceBandHigh": 0,
-      "priceBandLow": 0,
-      "lotSize": 0,
-      "issueSize": "",
-      "marketCap": 0,
-      "gmp": 0,
-      "gmpPercent": 0,
-      "subscriptionStatus": "",
-      "currency": "INR",
-      "source": "screener.in",
-      "source_url": "https://www.screener.in/company/id/1286084/consolidated/",
-      "source_category": "upcoming",
-      "fiscalMetrics": {
-        "pe": null,
-        "roce": "20.6"
+        "roce": "85.8"
       },
       "currentPrice": 0,
       "percentChange": 0
@@ -243,9 +243,9 @@
       "industry": "",
       "country": "IN",
       "status": "upcoming",
-      "openDate": "",
-      "closeDate": "",
-      "listingDate": "-",
+      "openDate": "2026-08-11",
+      "closeDate": "2026-08-13",
+      "listingDate": "₹148–156",
       "description": "Fascinate Textiles - Upcoming IPO",
       "about": "",
       "priceBandHigh": 0,
@@ -295,7 +295,7 @@
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": null,
-        "roce": "41.8"
+        "roce": "17.3"
       },
       "currentPrice": 0,
       "percentChange": 0
@@ -394,7 +394,40 @@
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": null,
-        "roce": "0.0"
+        "roce": "26.9"
+      },
+      "currentPrice": 0,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-upcoming-q-t-foods",
+      "name": "Q&T Foods",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "upcoming",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "-",
+      "description": "Q&T Foods - Upcoming IPO",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/id/1286104/",
+      "source_category": "upcoming",
+      "fiscalMetrics": {
+        "pe": null,
+        "roce": "15.7"
       },
       "currentPrice": 0,
       "percentChange": 0
@@ -554,8 +587,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "yesterday",
-      "description": "Fusion Klassroom Edutech - Listed on yesterday",
+      "listingDate": "2026-08-07",
+      "description": "Fusion Klassroom Edutech - Listed on 2026-08-07",
       "about": "",
       "priceBandHigh": 159.0,
       "priceBandLow": 159.0,
@@ -3437,11 +3470,11 @@
       "listingDate": "2026-05-11",
       "description": "Value 360 Commu. - Listed on 2026-05-11",
       "about": "",
-      "priceBandHigh": 98.0,
-      "priceBandLow": 98.0,
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
       "lotSize": 0,
       "issueSize": "",
-      "marketCap": 158.0,
+      "marketCap": 0,
       "gmp": 0,
       "gmpPercent": 0,
       "subscriptionStatus": "",
@@ -3450,13 +3483,13 @@
       "source_url": "https://www.screener.in/company/VALUE360/consolidated/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "98",
-        "currentPrice": "75.00",
+        "ipoPrice": "",
+        "currentPrice": null,
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 75.0,
+      "currentPrice": 0,
       "percentChange": 0
     },
     {
