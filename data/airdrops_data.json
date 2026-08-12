@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-08-11T08:49:37.055847+00:00",
+  "last_updated": "2026-08-12T09:07:55.726414+00:00",
   "total": 35,
   "airdrops": [
     {
       "id": "arcus",
       "name": "Arcus",
       "url": "https://airdrops.io/arcus/",
-      "heat": 500,
+      "heat": 452,
       "status": "confirmed",
       "chain": "Robinhood",
       "actions": [
         "Arcus Actions: Sign Up",
         "Join Waitlist and Trade Spot"
       ],
-      "description": "500° Ongoing Arcus Actions: Sign Up, Join Waitlist and Trade Spot CLAIM AIRDROP 411° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP 393° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP 388° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP 329° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP 309° Ongoing SolPump Action",
+      "description": "452° Ongoing Arcus Actions: Sign Up, Join Waitlist and Trade Spot CLAIM AIRDROP 446° Ongoing Confirmed Sweep Finance Actions: Complete Tasks, Stack XP, and Compete for SWEEP Rewards CLAIM AIRDROP 403° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP 388° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP 384° Ongoing Monetrix Actions: Min",
       "source": "airdrops.io",
       "tge_date": "have not been published",
       "steps": [
@@ -29,10 +29,38 @@
       "estimated_cost": "way to build activity on the platform"
     },
     {
+      "id": "sweep_finance",
+      "name": "Sweep Finance",
+      "url": "https://airdrops.io/sweep-finance/",
+      "heat": 446,
+      "status": "confirmed",
+      "chain": "BSC",
+      "actions": [
+        "Sweep Finance Actions: Complete Tasks",
+        "Stack XP",
+        "and Compete for SWEEP Rewards"
+      ],
+      "description": "446° Ongoing Confirmed Sweep Finance Actions: Complete Tasks, Stack XP, and Compete for SWEEP Rewards CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "date have not been announced; both arrive after the campaign ends",
+      "steps": [
+        "carries a 5% fee: half funds a permanent SWEEP burn, the other half is paid out to eligible users in USDT. Supply is fixed at 999,666,333 SWEEP and cannot be increased. Sweep is running a three",
+        "phase fairlaunch. Phase 1 sold out at $0.01 per token and raised $200,000, while Phase 2 has now concluded. Phase 3 will begin soon, with further details to be announced. Ongoing Confirmed Sweep Airdrop Details The Sweep airdrop is a confirmed campaign with 27% of the total supply, roughly 270 million SWEEP, reserved for participants. You collect XP by completing activities across the ecosystem, and your final allocation depends on the XP you hold when the campaign closes. The XP to SWEEP conversion rate and the TGE date have not been announced; both arrive after the campaign ends. Key Parameters: Airdrop Allocation : 27% of total supply (about 270 million SWEEP) Distribution Method : XP based, with the conversion rate set after the campaign ends TGE Date : Not announced Vesting Schedule : 3 month cliff, then 9 months of linear release XP comes from social tasks, account verification, referrals, Sweepbird sessions, and eligible purchases. Some tasks pay once, others repeat throughout the campaign. Leaderboard placement adds bonus XP, and the overall Top 1,000 finishers receive extra SWEEP beyond their standard allocation."
+      ],
+      "about": "What is Sweep? Sweep is a Web3 gaming ecosystem built around the SWEEP token. The lineup covers a prediction market and quick-session games such as Crash, Flip, Tower, and the arcade title Sweepbird, along with a sports section, a crypto payment product called SweePay, and a tokenization arm. The economics are simple. Every platform transaction carries a 5% fee: half funds a permanent SWEEP burn, the other half is paid out to eligible users in USDT. Supply is fixed at 999,666,333 SWEEP and cannot be increased. Sweep is running a three-phase fairlaunch. Phase 1 sold out at $0.01 per token and raised $200,000, while Phase 2 has now concluded. Phase 3 will begin soon, with further details to be announced.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Sweep%20Finance&url=https%3A%2F%2Fairdrops.io%2Fsweep-finance%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fsweep-finance%2F&text=Sweep%20Finance"
+      },
+      "eligibility": "details",
+      "difficulty": "Easy",
+      "estimated_cost": "to Farm Free Overview Website: sweep"
+    },
+    {
       "id": "mint",
       "name": "MINT",
       "url": "https://airdrops.io/mint-2/",
-      "heat": 411,
+      "heat": 403,
       "status": "confirmed",
       "chain": "Base",
       "actions": [
@@ -40,7 +68,7 @@
         "Play Games",
         "Stake MNTD"
       ],
-      "description": "411° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP",
+      "description": "403° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Event is scheduled for September 2026 on Base",
       "about": "What is MINT? MINT is a crypto-first entertainment platform bringing together casino games, sportsbook and prediction markets in one seamless ecosystem where every play gets rewarded. Players earn XP for every eligible play, and that XP currently feeds the Season 1 leaderboard that decides how the first $MNTD airdrop is split. What is $MNTD? $MNTD is the native utility token of the MINT ecosystem, starting on mint.io and expanding to future partner platforms. The Token Generation Event is scheduled for September 2026 on Base. After TGE, holders can stake $MNTD to activate MINT Status, collect compounded staking rewards and get access to benefits like boosted rakeback, weekly lossback, raffles and future airdrops. Staking stays flexible with no forced lockup.",
@@ -61,14 +89,14 @@
       "id": "ondo_perps",
       "name": "Ondo Perps",
       "url": "https://airdrops.io/ondo-perps/",
-      "heat": 393,
+      "heat": 388,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Ondo Perps Actions: Join",
         "start Trading"
       ],
-      "description": "393° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP",
+      "description": "388° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Ongoing Confirmed Ondo Perps Airdrop Details A dedicated Ondo Perps token airdrop is not confirmed.",
@@ -83,47 +111,41 @@
       "estimated_cost": "s nothing"
     },
     {
-      "id": "superposition",
-      "name": "Superposition",
-      "url": "https://airdrops.io/superposition/",
-      "heat": 393,
+      "id": "shift",
+      "name": "SHIFT",
+      "url": "https://airdrops.io/shift/",
+      "heat": 388,
       "status": "confirmed",
-      "chain": "Arbitrum",
+      "chain": "Solana",
       "actions": [
-        "Superposition Actions: Withdraw Funds ASAP"
+        "SHIFT Actions: Check Airdrop Points"
       ],
-      "description": "Ongoing Superposition Actions: Withdraw Funds ASAP CLAIM AIRDROP 393° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP Ongoing Confirmed edgeX Actions: Join the Trade to Earn Campaign CLAIM AIRDROP 329° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP 90° Ongoing xStocks Actions: Provide liqudity and refer to earn CLAIM AIRDROP Ongoing Lighter Actions: Join & Trade on t",
+      "description": "Ongoing Confirmed SHIFT Actions: Check Airdrop Points CLAIM AIRDROP Ongoing Lighter Actions: Join & Trade on the Platform CLAIM AIRDROP Ongoing Superposition Actions: Withdraw Funds ASAP CLAIM AIRDROP 388° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP Ongoing Confirmed edgeX Actions: Join the Trade to Earn Campaign CLAIM AIRDROP 331° Ongoing Axis Actions: Deposit and ear",
       "source": "airdrops.io",
+      "tge_date": "date, a conversion rate, or the share of the 1 billion $SHFT supply going to the airdrop, so treat any allocation figure circulating elsewhere as guesswork",
       "steps": [
-        "Correct prediction: Receive $3",
-        "Incorrect prediction: Receive $0.90 refund",
-        "Visit the prediction market",
-        "Connect your wallet",
-        "Place your $1 bet on the hourly BTC price prediction",
-        "Track your points accumulation on the platform",
-        "Added Google hourly market",
-        "Added daily markets for BTC and Nasdaq-100 (QQQ)",
-        "9Lives is also available on the Base app"
+        "take time to register. SHIFT Season 1 Finale XP Booster (Ended) The SHIFT Season 1 Finale XP Booster is live through July 31, 23:59 UTC, multiplying all trading XP earned before the season closes. Boosted XP counts toward leaderboard position for the rest of Season 1. 2× Trading XP: now through July 28 3× Trading XP: final 72 hours, July 29–31 Trade to Earn Boosted XP Every trade placed through the SHIFT airdrop portal earns multiplied XP during the booster window. Trade before the July 31 deadline to improve your leaderboard position before Season 1 ends. Frequently Asked Questions Can I still earn SP in the SHIFT airdrop? No. Season 1 has closed and balances are final. Trading Series tokens on SHIFT still works as a product, but activity today does not add to a Season 1 total or guarantee a place in any future season. When is the SHIFT TGE and claim? SHIFT has not announced a TGE date or a claim window for $SHFT. The team has said SP converts to tokens at generation, so the checker balance is the figure that carries forward when distribution opens. Where do I check my SHIFT points? Connect your Solana wallet to the airdrop checker on the SHIFT portal. It returns the final Season 1 SP balance for that address, with badge rarity and hold duration already applied to the total. What if my SHIFT points balance shows zero? Check whether you connected the wallet that actually held Series tokens and completed quests. SP tracks per address, so a different wallet returns nothing. If the correct wallet still reads zero, raise it in SHIFT’s Discord before claims open. Do I need to do anything to keep my points? No action keeps a balance alive. Retain access to the qualifying wallet and keep a little SOL there for fees, since claims are normally signed from the address that earned the allocation. Will there be a SHIFT Season 2? SHIFT structured the program in seasons and listed Equities Score and Certificates as upcoming features, which points to more rounds. No Season 2 dates, rules, or scoring weights have been confirmed. Conclusion Season 1 is settled. The useful work now is confirming what each of your wallets finished with, keeping those addresses intact, and waiting for SHIFT to publish TGE and claim mechanics. Neither the conversion rate nor the airdrop’s share of supply has been announced. Check Points Allocation Requirements Twitter / X More Airdrops to Farm VOICE Ongoing Solana View Guide → SolPump Ongoing Solana View Guide → Pascal Ongoing Solana View Guide → Backyard Finance Ongoing Solana View Guide → AIW3 Ongoing BSC, Solana View Guide → Pacifica Ongoing Solana View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Funding $400K Difficulty Medium Cost to Farm Medium Overview Website: shiftrwa.xyz Ticker: SHFT X (Formerly Twitter): Telegram Group: Telegram Channel: Discord Chat: Blog: X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator for crypto airdrops. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
       ],
-      "about": "What is Superposition? Superposition is a Layer-3 Chain built on top of the Arbitrum stack, engineered to facilitate native liquidity and utility mechanisms for decentralized applications. It is a DeFi native Layer-3 that focuses on novel incentives and order-flow for growth and value capture.",
+      "about": "What is SHIFT? SHIFT is a real-world asset protocol that issues leveraged and inverse tokenized stocks, ETFs, and ETNs as SPL tokens on Solana . The platform offers 2x and 3x long and short exposure to traditional equity markets through composable on-chain tokens, with mirror products planned for BNB Chain. Every position is 1:1 backed by real assets custodied at tier-1 banks, and reserves are verified through Chainlink Proof of Reserve. The pitch is leveraged equity exposure without liquidation risk. Token NAV represents the worst-case loss, so positions cannot be force-closed against the holder. SHIFT tokens are permissionless and self-custodial. They trade 24/7 on DEXs like Jupiter and Orca and work as DeFi collateral. SHIFT raised roughly $400,000 in pre-seed funding led by SNZ Holdings, with Chainlink participating as a strategic backer alongside its PoR integration.",
       "social_links": {
-        "twitter": "https://x.com/9livesso",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fsuperposition%2F&text=Superposition"
+        "twitter": "https://x.com/intent/tweet?text=SHIFT&url=https%3A%2F%2Fairdrops.io%2Fshift%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fshift%2F&text=SHIFT"
       },
-      "eligibility": ". How to Participate Visit the prediction market Connect your wallet Place your $1 bet on the hourly BTC price prediction Track your points accumulation on the platform New Updates: Added Google hourly market Added daily markets for BTC and Nasdaq-100 (QQQ) 9Lives is also available on the Base app 9Lives Introduces Points System 9Lives has launched a points system rewarding platform activity",
-      "estimated_cost": "to Farm Free Overview Website: superposition"
+      "eligibility": "is based entirely on your wallet’s on-chain activity during the season, so connecting the right wallet is all it takes to see your allocation",
+      "difficulty": "Medium",
+      "estimated_cost": "to Farm Medium Overview Website: shiftrwa"
     },
     {
       "id": "monetrix",
       "name": "Monetrix",
       "url": "https://airdrops.io/monetrix/",
-      "heat": 388,
+      "heat": 384,
       "status": "active",
       "chain": "Hyperliquid",
       "actions": [
         "Monetrix Actions: Mint USDM with USDC"
       ],
-      "description": "388° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP",
+      "description": "384° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Not announced Season 0 rewards three groups: stablecoin holders, yield participants, and liquidity providers",
       "steps": [
@@ -145,13 +167,13 @@
       "id": "axis",
       "name": "Axis",
       "url": "https://airdrops.io/axis/",
-      "heat": 329,
+      "heat": 331,
       "status": "active",
       "chain": "Ethereum",
       "actions": [
         "Axis Actions: Deposit and earn"
       ],
-      "description": "329° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP",
+      "description": "331° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "The Origin Vault, targeting up to $1 billion in deposits, will open in Q1 2026, followed by a public token sale and full protocol launch.",
@@ -169,14 +191,14 @@
       "id": "solpump",
       "name": "SolPump",
       "url": "https://airdrops.io/solpump/",
-      "heat": 309,
+      "heat": 307,
       "status": "active",
       "chain": "Solana",
       "actions": [
         "SolPump Actions: Participate hourly",
         "grab free SOL"
       ],
-      "description": "309° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP",
+      "description": "307° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Visit the official dashboard",
@@ -257,16 +279,45 @@
       "estimated_cost": "to Farm Medium Overview Website: ht"
     },
     {
+      "id": "push_chain",
+      "name": "Push Chain",
+      "url": "https://airdrops.io/push-chain/",
+      "heat": 188,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [
+        "Push Chain Actions: Sign Up",
+        "Complete Social Tasks",
+        "Quests and Refer Users"
+      ],
+      "description": "188° Ongoing Confirmed Push Chain Actions: Sign Up, Complete Social Tasks, Quests and Refer Users CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "and roll out across multiple seasons rather than in a single drop",
+      "steps": [
+        "on its side. $PC is the native token that will power the chain at mainnet. Push Chain currently runs on testnet, with mainnet as the next milestone. Ongoing Confirmed Push Chain Airdrop Details The $PC airdrop is confirmed. The official tokenomics proposal reserves 10% of the 10 billion total supply for airdrops. It covers past and present Push Protocol users along with new Push Chain participants, creators, and developers. Distributions begin at TGE and roll out across multiple seasons rather than in a single drop. Key Parameters: Airdrop Allocation : 10% of total supply Distribution Method : Points",
+        "based, retroactive and ongoing across multiple seasons TGE Date : Not yet announced Season 3 of the points program is live and open to everyone. Leveling up unlocks Rare Passes, the collectibles at the center of the season’s endgame."
+      ],
+      "about": "What is Push Chain? Push Chain is a shared-state Layer 1 blockchain built as a universal execution layer. Developers deploy an app once and reach users on any other chain, EVM or not, because the network handles wallet and fee abstraction on its side. $PC is the native token that will power the chain at mainnet. Push Chain currently runs on testnet, with mainnet as the next milestone.",
+      "social_links": {
+        "twitter": "https://x.com/PushChain",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fpush-chain%2F&text=Push%20Chain",
+        "github": "https://github.com/pushchain/"
+      },
+      "eligibility": "Twitter / X Email Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications",
+      "difficulty": "Easy",
+      "estimated_cost": "nothing beyond your time"
+    },
+    {
       "id": "orbinum",
       "name": "Orbinum",
       "url": "https://airdrops.io/orbinum/",
-      "heat": 188,
+      "heat": 187,
       "status": "confirmed",
       "chain": "Own",
       "actions": [
         "Orbinum Actions: Interact with testnet"
       ],
-      "description": "188° Ongoing Confirmed Orbinum Actions: Interact with testnet CLAIM AIRDROP",
+      "description": "187° Ongoing Confirmed Orbinum Actions: Interact with testnet CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "event are planned for Q4 2026, sometime between October and December",
       "steps": [
@@ -290,14 +341,14 @@
       "id": "polymarket",
       "name": "Polymarket",
       "url": "https://airdrops.io/polymarket/",
-      "heat": 180,
+      "heat": 178,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Polymarket Actions: Deposit",
         "Make predictions"
       ],
-      "description": "180° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP",
+      "description": "178° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "will follow the completion of its U",
       "steps": [
@@ -313,35 +364,6 @@
       "eligibility": "criteria, allocation details, or distribution date have been disclosed",
       "difficulty": "Hard",
       "estimated_cost": ") divided by entry cost times 100, so a $10 combo can outrank a $10,000 one"
-    },
-    {
-      "id": "push_chain",
-      "name": "Push Chain",
-      "url": "https://airdrops.io/push-chain/",
-      "heat": 178,
-      "status": "confirmed",
-      "chain": "",
-      "actions": [
-        "Push Chain Actions: Sign Up",
-        "Complete Social Tasks",
-        "Quests and Refer Users"
-      ],
-      "description": "178° Ongoing Confirmed Push Chain Actions: Sign Up, Complete Social Tasks, Quests and Refer Users CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "and roll out across multiple seasons rather than in a single drop",
-      "steps": [
-        "on its side. $PC is the native token that will power the chain at mainnet. Push Chain currently runs on testnet, with mainnet as the next milestone. Ongoing Confirmed Push Chain Airdrop Details The $PC airdrop is confirmed. The official tokenomics proposal reserves 10% of the 10 billion total supply for airdrops. It covers past and present Push Protocol users along with new Push Chain participants, creators, and developers. Distributions begin at TGE and roll out across multiple seasons rather than in a single drop. Key Parameters: Airdrop Allocation : 10% of total supply Distribution Method : Points",
-        "based, retroactive and ongoing across multiple seasons TGE Date : Not yet announced Season 3 of the points program is live and open to everyone. Leveling up unlocks Rare Passes, the collectibles at the center of the season’s endgame."
-      ],
-      "about": "What is Push Chain? Push Chain is a shared-state Layer 1 blockchain built as a universal execution layer. Developers deploy an app once and reach users on any other chain, EVM or not, because the network handles wallet and fee abstraction on its side. $PC is the native token that will power the chain at mainnet. Push Chain currently runs on testnet, with mainnet as the next milestone.",
-      "social_links": {
-        "twitter": "https://x.com/PushChain",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fpush-chain%2F&text=Push%20Chain",
-        "github": "https://github.com/pushchain/"
-      },
-      "eligibility": "Twitter / X Email Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications",
-      "difficulty": "Easy",
-      "estimated_cost": "nothing beyond your time"
     },
     {
       "id": "megapot",
@@ -422,47 +444,82 @@
       ]
     },
     {
-      "id": "axis_robotics",
-      "name": "Axis Robotics",
-      "url": "https://airdrops.io/axis-robotics/",
-      "heat": 35,
-      "status": "active",
+      "id": "yakkamon",
+      "name": "Yakkamon",
+      "url": "https://airdrops.io/yakkamon/",
+      "heat": 56,
+      "status": "confirmed",
+      "chain": "Ronin",
+      "actions": [
+        "Yakkamon Actions: Connect Discord and X",
+        "Refer Friends",
+        "Mint NFT"
+      ],
+      "description": "56° Ongoing Confirmed Yakkamon Actions: Connect Discord and X, Refer Friends, Mint NFT CLAIM AIRDROP 446° Ongoing Confirmed Sweep Finance Actions: Complete Tasks, Stack XP, and Compete for SWEEP Rewards CLAIM AIRDROP Ongoing VOICE Actions: Sign Up, Complete Core Tasks and Join Partner Clusters CLAIM AIRDROP Ongoing Savior Of Health Actions: Complete Daily Check-In, Survey Tasks and Refer Users CLA",
+      "source": "airdrops.io",
+      "tge_date": "Date : No new token; NFT rewards land at early access launch in Q4 2026 Three separate rewards stack",
+      "steps": [
+        "Step 5: Refer Friends Each verified friend who joins earns you +30 points.",
+        "The separate free mint of 10,000 Monster NFTs opens earlier, on October 1, 2026, for verified pre-registered trainers."
+      ],
+      "about": "What is Yakkamon? Yakkamon is a creature collector and idle farming game on Ronin from Thought Farm, the studio behind Sunflower Land. There is no new token: the game runs on $FLOWER, the same token used across the studio’s titles. Players catch wild monsters and put them to work farming and gathering resources, with production continuing while they are offline. The active side covers hunting rarer creatures, crafting gear, and arena battles, and new monsters enter the wild every 3 months.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Yakkamon&url=https%3A%2F%2Fairdrops.io%2Fyakkamon%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fyakkamon%2F&text=Yakkamon"
+      },
+      "eligibility": "Twitter / X Email Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications",
+      "difficulty": "Easy",
+      "estimated_cost": "s nothing beyond a small gas fee, is limited to one mint per trainer, and minting adds points to your leaderboard total"
+    },
+    {
+      "id": "limitless_prediction_markets",
+      "name": "Limitless Prediction Markets",
+      "url": "https://airdrops.io/limitless-prediction-markets/",
+      "heat": 23,
+      "status": "confirmed",
       "chain": "Base",
       "actions": [
-        "Axis Robotics Actions: Complete Pre-Training Tasks",
-        "Sign Your Submissions",
-        "Refer to Earn"
+        "Limitless Prediction Markets Actions: Deposit funds",
+        "Trade on Prediction Markets"
       ],
-      "description": "35° Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP",
+      "description": "23° Ongoing Confirmed Limitless Prediction Markets Actions: Deposit funds & Trade on Prediction Markets Claim Live CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
-        "of a cent, and gasless campaigns often cover even that. How are Axis Points calculated? Five factors: volume of valid signed tasks, difficulty tier, per",
-        "submission quality score, diversity across scenarios and skills, and the real output of direct invitees. Scoring is fully algorithmic, combining replay checks, rule",
-        "based success checks, and a vision",
-        "language model review. Conclusion Axis Robotics is one of the few free farms where the work itself is the product: every signed trajectory trains real robot policies while adding to your Axis Points total. Setup takes minutes, the tasks need nothing but a browser, and the retroactive grant showed the team will credit early activity. Join now You're interested in more projects that do not have any token yet and could potentially airdrop a governance token to early users in the future? Then check out our list of potential retroactive airdrops to not miss out on the next DeFi airdrop! Requirements Email More Airdrops to Farm Pond Ongoing Base View Guide → AlloX Ongoing Base, BSC View Guide → MINT Ongoing Base View Guide → WheelX Ongoing Base View Guide → Lighter Ongoing Arbitrum, Avalanche View Guide → Kaito AI Ongoing Base View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Funding $12M Difficulty Easy Cost to Farm Free Overview Website: axisrobotics.ai Whitepaper: View Whitepaper Documentation: Visit now X (Formerly Twitter): Discord Chat: Blog: Github Repository: X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator for crypto airdrops. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
+        "Visit the competition waitlist page",
+        "Select your team",
+        "Join the waitlist",
+        "Begin trading once the competition starts",
+        "Week 1: September 15-22",
+        "Week 2: September 22-29",
+        "1st Place: 3,000 USDC + Champion NFT",
+        "2nd Place: 1,500 USDC",
+        "3rd Place: 500 USDC",
+        "1st Place: 3,000 USDC + Champion NFT",
+        "2nd Place: 1,500 USDC",
+        "3rd Place: 500 USDC",
+        "1st Place Team: 2x Points",
+        "2nd Place Team: 1.5x Points",
+        "3rd Place Team: 1.25x Points"
       ],
-      "about": "What is Axis Robotics? Axis Robotics is a crowdsourced data platform for physical AI, live on Base . Instead of collecting robot training data with expensive hardware, it lets anyone teleoperate a simulated robot arm in the browser. Each session is recorded as a trajectory, scored by an automated pipeline, and logged on-chain for provenance before it goes into training robot models. The project raised a $12M seed round in July 2026, led by Hack VC with Nomad Capital, Pi Network Ventures, and 10K Ventures.",
+      "about": "What is Limitless? Limitless is a prediction market platform built on Base that focuses on high-speed trading and diverse market coverage. The platform allows users to trade on various markets including cryptocurrency, stocks, commodities, indexes, sports, weather, and pop culture events. With over $100 million in total betting volume, Limitless has established itself as a significant player in the decentralized prediction market space. The platform has secured $18 million in funding from notable investors including Coinbase Ventures and Paper Ventures, demonstrating institutional confidence in its approach to prediction markets. Limitless differentiates itself through same-day trading capabilities and a wide range of markets that extend beyond traditional crypto assets.",
       "social_links": {
-        "twitter": "https://x.com/axisrobotics/status/2081711331791827387",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Faxis-robotics%2F&text=Axis%20Robotics",
-        "github": "https://github.com/AxisAIOrg"
+        "twitter": "https://x.com/ShevY_xx",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Flimitless-prediction-markets%2F&text=Limitless%20Prediction%20Markets",
+        "discord": "https://discord.gg/UQtv7h5ZFE"
       },
-      "eligibility": ", allocation, and timing to be published before any claim event",
-      "difficulty": "Easy",
-      "estimated_cost": "s a tiny fraction of a cent, and gasless campaigns often cover even that"
+      "eligibility": "and claim your allocation",
+      "difficulty": "Medium",
+      "estimated_cost": "to Farm High Overview Website: limitless"
     },
     {
       "id": "voice",
       "name": "VOICE",
       "url": "https://airdrops.io/voice/",
-      "heat": 32,
-      "status": "confirmed",
+      "heat": 0,
+      "status": "active",
       "chain": "Solana",
-      "actions": [
-        "VOICE Actions: Sign Up",
-        "Complete Core Tasks and Join Partner Clusters"
-      ],
-      "description": "32° Ongoing VOICE Actions: Sign Up, Complete Core Tasks and Join Partner Clusters CLAIM AIRDROP Ongoing Savior Of Health Actions: Complete Daily Check-In, Survey Tasks and Refer Users CLAIM AIRDROP Ongoing Confirmed Wager Predict Actions: Claim Testnet USDC, Trade Across Markets and Refer CLAIM AIRDROP 35° Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to",
+      "actions": [],
+      "description": "Ongoing VOICE Actions: Sign Up, Complete Core Tasks and Join Partner Clusters CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "date or distribution details have been published",
       "about": "What is VOICE? VOICE is an OpinionFi platform on Solana that turns opinions into on-chain assets. Users create polls, vote on debates and hot takes, and earn rewards for participating, whichever side they pick. The main platform has not launched yet. What is live is Social Camp, a pre-launch engagement hub where users complete quests, vote in polls and build up a score called CLOUT ahead of the full release.",
@@ -473,11 +530,7 @@
       },
       "eligibility": "Twitter / X Email More Airdrops to Farm SolPump Ongoing Solana View Guide → Pascal Ongoing Solana View Guide → Backyard Finance Ongoing Solana View Guide → AIW3 Ongoing BSC, Solana View Guide → Pacifica Ongoing Solana View Guide → JTX Ongoing Solana View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications",
       "difficulty": "Easy",
-      "estimated_cost": "s nothing",
-      "steps": [
-        "VOICE Actions: Sign Up",
-        "Complete Core Tasks and Join Partner Clusters"
-      ]
+      "estimated_cost": "s nothing"
     },
     {
       "id": "savior_of_health",
@@ -529,6 +582,32 @@
       },
       "difficulty": "Easy",
       "estimated_cost": "to Farm Free Overview Website: wagerpredict"
+    },
+    {
+      "id": "axis_robotics",
+      "name": "Axis Robotics",
+      "url": "https://airdrops.io/axis-robotics/",
+      "heat": 0,
+      "status": "active",
+      "chain": "Base",
+      "actions": [],
+      "description": "Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "steps": [
+        "of a cent, and gasless campaigns often cover even that. How are Axis Points calculated? Five factors: volume of valid signed tasks, difficulty tier, per",
+        "submission quality score, diversity across scenarios and skills, and the real output of direct invitees. Scoring is fully algorithmic, combining replay checks, rule",
+        "based success checks, and a vision",
+        "language model review. Conclusion Axis Robotics is one of the few free farms where the work itself is the product: every signed trajectory trains real robot policies while adding to your Axis Points total. Setup takes minutes, the tasks need nothing but a browser, and the retroactive grant showed the team will credit early activity. Join now You're interested in more projects that do not have any token yet and could potentially airdrop a governance token to early users in the future? Then check out our list of potential retroactive airdrops to not miss out on the next DeFi airdrop! Requirements Email More Airdrops to Farm Pond Ongoing Base View Guide → AlloX Ongoing Base, BSC View Guide → MINT Ongoing Base View Guide → WheelX Ongoing Base View Guide → Lighter Ongoing Arbitrum, Avalanche View Guide → Kaito AI Ongoing Base View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Funding $12M Difficulty Easy Cost to Farm Free Overview Website: axisrobotics.ai Whitepaper: View Whitepaper Documentation: Visit now X (Formerly Twitter): Discord Chat: Blog: Github Repository: X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator for crypto airdrops. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
+      ],
+      "about": "What is Axis Robotics? Axis Robotics is a crowdsourced data platform for physical AI, live on Base . Instead of collecting robot training data with expensive hardware, it lets anyone teleoperate a simulated robot arm in the browser. Each session is recorded as a trajectory, scored by an automated pipeline, and logged on-chain for provenance before it goes into training robot models. The project raised a $12M seed round in July 2026, led by Hack VC with Nomad Capital, Pi Network Ventures, and 10K Ventures.",
+      "social_links": {
+        "twitter": "https://x.com/axisrobotics/status/2081711331791827387",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Faxis-robotics%2F&text=Axis%20Robotics",
+        "github": "https://github.com/AxisAIOrg"
+      },
+      "eligibility": ", allocation, and timing to be published before any claim event",
+      "difficulty": "Easy",
+      "estimated_cost": "s a tiny fraction of a cent, and gasless campaigns often cover even that"
     },
     {
       "id": "pond",
@@ -680,63 +759,6 @@
       "estimated_cost": "to Farm Low Overview Website: perpl"
     },
     {
-      "id": "midas_markets",
-      "name": "Midas Markets",
-      "url": "https://airdrops.io/midas-markets/",
-      "heat": 0,
-      "status": "active",
-      "chain": "Hyperliquid",
-      "actions": [],
-      "description": "Ongoing Midas Markets Actions: Sign Up, Trade and Refer Friends to Earn CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "about": "What is Midas Markets? Midas Markets is a multi-asset trading platform that lets users trade stocks, crypto, commodities like gold and oil, and other assets from a single account. The app pairs trading with AI-synthesized market news, real-time intel, and directional trade ideas delivered through a feed called The Wire, built for traders who want to act on news rather than catch up on it later.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Midas%20Markets&url=https%3A%2F%2Fairdrops.io%2Fmidas-markets%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fmidas-markets%2F&text=Midas%20Markets"
-      },
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Medium Overview Website: app"
-    },
-    {
-      "id": "pascal",
-      "name": "Pascal",
-      "url": "https://airdrops.io/pascal/",
-      "heat": 0,
-      "status": "active",
-      "chain": "Solana",
-      "actions": [],
-      "description": "Ongoing Pascal Actions: Deposit, Trade Prediction Markets and Refer to Earn CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "es, the same pattern behind most potential retroactive airdrops, so building account history during the beta is the main way to position yourself",
-      "about": "What is Pascal? Pascal is a prediction markets platform on Solana built for traders rather than casual bettors. Users trade contracts on sports, politics, crypto, economics, and other real-world events, with a noncustodial exchange design that keeps funds in the user’s own wallet. Pascal has raised $15 million in total, including a $9 million Series A led by Union Square Ventures in July 2026 and a $6 million seed round backed by Wintermute Ventures and DBA. The platform opened its beta in mid-2026 with live mainnet trading in USDC on Solana.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Pascal&url=https%3A%2F%2Fairdrops.io%2Fpascal%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fpascal%2F&text=Pascal"
-      },
-      "eligibility": "signal in retroactive distributions",
-      "difficulty": "Easy",
-      "estimated_cost": "s little beyond normal trading risk and builds the kind of account history retroactive programs reward"
-    },
-    {
-      "id": "edgex",
-      "name": "edgeX",
-      "url": "https://airdrops.io/edgex/",
-      "heat": 0,
-      "status": "confirmed",
-      "chain": "Multi",
-      "actions": [],
-      "description": "Ongoing Confirmed edgeX Actions: Join the Trade to Earn Campaign CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "event took place on March 31, 2026, and it now trades on major exchanges, with a total supply of 1 billion",
-      "about": "What is edgeX? edgeX is a high-performance perpetual DEX for crypto, commodities, and tokenized equities, with spot markets alongside its perpetuals. It runs on its own EDGE Chain and settles trades in USDC, using an orderbook model built for the speed and low latency traders expect from a centralized venue. The platform has handled more than $800 billion in cumulative volume and serves over 300,000 users, placing it among the larger perp DEXes alongside Hyperliquid . edgeX is incubated by Amber Group and backed by Circle Ventures, the venture arm behind USDC. That brings native USDC integration with 1:1 dollar redemption, so balances stay dollar-denominated. The platform has since moved from its V1 perpetuals app to V2, a faster build on the EDGE Chain with self-custody through Privy. The $EDGE token is already live. Its token generation event took place on March 31, 2026, and it now trades on major exchanges, with a total supply of 1 billion. That matters here because the campaign pa",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=edgeX&url=https%3A%2F%2Fairdrops.io%2Fedgex%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fedgex%2F&text=edgeX"
-      },
-      "difficulty": "Easy",
-      "estimated_cost": "per unit of volume while still building toward box thresholds"
-    },
-    {
       "id": "lighter",
       "name": "Lighter",
       "url": "https://airdrops.io/lighter/",
@@ -763,41 +785,52 @@
       "estimated_cost": "to Farm High Overview Website: lighter"
     },
     {
-      "id": "limitless_prediction_markets",
-      "name": "Limitless Prediction Markets",
-      "url": "https://airdrops.io/limitless-prediction-markets/",
+      "id": "superposition",
+      "name": "Superposition",
+      "url": "https://airdrops.io/superposition/",
       "heat": 0,
-      "status": "confirmed",
-      "chain": "Base",
+      "status": "active",
+      "chain": "Arbitrum",
       "actions": [],
-      "description": "Ongoing Confirmed Limitless Prediction Markets Actions: Deposit funds & Trade on Prediction Markets Claim Live CLAIM AIRDROP",
+      "description": "Ongoing Superposition Actions: Withdraw Funds ASAP CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
-        "Visit the competition waitlist page",
-        "Select your team",
-        "Join the waitlist",
-        "Begin trading once the competition starts",
-        "Week 1: September 15-22",
-        "Week 2: September 22-29",
-        "1st Place: 3,000 USDC + Champion NFT",
-        "2nd Place: 1,500 USDC",
-        "3rd Place: 500 USDC",
-        "1st Place: 3,000 USDC + Champion NFT",
-        "2nd Place: 1,500 USDC",
-        "3rd Place: 500 USDC",
-        "1st Place Team: 2x Points",
-        "2nd Place Team: 1.5x Points",
-        "3rd Place Team: 1.25x Points"
+        "Correct prediction: Receive $3",
+        "Incorrect prediction: Receive $0.90 refund",
+        "Visit the prediction market",
+        "Connect your wallet",
+        "Place your $1 bet on the hourly BTC price prediction",
+        "Track your points accumulation on the platform",
+        "Added Google hourly market",
+        "Added daily markets for BTC and Nasdaq-100 (QQQ)",
+        "9Lives is also available on the Base app"
       ],
-      "about": "What is Limitless? Limitless is a prediction market platform built on Base that focuses on high-speed trading and diverse market coverage. The platform allows users to trade on various markets including cryptocurrency, stocks, commodities, indexes, sports, weather, and pop culture events. With over $100 million in total betting volume, Limitless has established itself as a significant player in the decentralized prediction market space. The platform has secured $18 million in funding from notable investors including Coinbase Ventures and Paper Ventures, demonstrating institutional confidence in its approach to prediction markets. Limitless differentiates itself through same-day trading capabilities and a wide range of markets that extend beyond traditional crypto assets.",
+      "about": "What is Superposition? Superposition is a Layer-3 Chain built on top of the Arbitrum stack, engineered to facilitate native liquidity and utility mechanisms for decentralized applications. It is a DeFi native Layer-3 that focuses on novel incentives and order-flow for growth and value capture.",
       "social_links": {
-        "twitter": "https://x.com/ShevY_xx",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Flimitless-prediction-markets%2F&text=Limitless%20Prediction%20Markets",
-        "discord": "https://discord.gg/UQtv7h5ZFE"
+        "twitter": "https://x.com/9livesso",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fsuperposition%2F&text=Superposition"
       },
-      "eligibility": "and claim your allocation",
-      "difficulty": "Medium",
-      "estimated_cost": "to Farm High Overview Website: limitless"
+      "eligibility": ". How to Participate Visit the prediction market Connect your wallet Place your $1 bet on the hourly BTC price prediction Track your points accumulation on the platform New Updates: Added Google hourly market Added daily markets for BTC and Nasdaq-100 (QQQ) 9Lives is also available on the Base app 9Lives Introduces Points System 9Lives has launched a points system rewarding platform activity",
+      "estimated_cost": "to Farm Free Overview Website: superposition"
+    },
+    {
+      "id": "edgex",
+      "name": "edgeX",
+      "url": "https://airdrops.io/edgex/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "Multi",
+      "actions": [],
+      "description": "Ongoing Confirmed edgeX Actions: Join the Trade to Earn Campaign CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "event took place on March 31, 2026, and it now trades on major exchanges, with a total supply of 1 billion",
+      "about": "What is edgeX? edgeX is a high-performance perpetual DEX for crypto, commodities, and tokenized equities, with spot markets alongside its perpetuals. It runs on its own EDGE Chain and settles trades in USDC, using an orderbook model built for the speed and low latency traders expect from a centralized venue. The platform has handled more than $800 billion in cumulative volume and serves over 300,000 users, placing it among the larger perp DEXes alongside Hyperliquid . edgeX is incubated by Amber Group and backed by Circle Ventures, the venture arm behind USDC. That brings native USDC integration with 1:1 dollar redemption, so balances stay dollar-denominated. The platform has since moved from its V1 perpetuals app to V2, a faster build on the EDGE Chain with self-custody through Privy. The $EDGE token is already live. Its token generation event took place on March 31, 2026, and it now trades on major exchanges, with a total supply of 1 billion. That matters here because the campaign pa",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=edgeX&url=https%3A%2F%2Fairdrops.io%2Fedgex%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fedgex%2F&text=edgeX"
+      },
+      "difficulty": "Easy",
+      "estimated_cost": "per unit of volume while still building toward box thresholds"
     },
     {
       "id": "meridian",
@@ -872,7 +905,7 @@
         "twitter": "https://x.com/intent/tweet?text=GRVT&url=https%3A%2F%2Fairdrops.io%2Fgrvt%2F",
         "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fgrvt%2F&text=GRVT"
       },
-      "eligibility": "Email More Airdrops to Farm Wager Predict Ongoing BSC View Guide → AlloX Ongoing Base, BSC View Guide → Stakr Finance Ongoing BSC View Guide → Velvet",
+      "eligibility": "Email More Airdrops to Farm Sweep Finance Ongoing BSC View Guide → Wager Predict Ongoing BSC View Guide → AlloX Ongoing Base, BSC View Guide → Stakr Finance Ongoing BSC View Guide → Velvet",
       "estimated_cost": "to Farm Free Show all expired airdrops Previous Airdrops: GRVT Airdrop October 2023 Total value: n/a GRVT has raised $9"
     },
     {
@@ -892,39 +925,6 @@
       },
       "eligibility": "for future engagement campaigns where rewards are distributed based on Twitter activity tracking",
       "estimated_cost": "to Farm Low Overview Website: renaiss"
-    },
-    {
-      "id": "raiku",
-      "name": "Raiku",
-      "url": "https://airdrops.io/raiku/",
-      "heat": 0,
-      "status": "active",
-      "chain": "Solana",
-      "actions": [],
-      "description": "Ongoing Raiku Actions: Farm Discord Roles CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "es",
-      "steps": [
-        "to get started with Raiku’s community program: Visit the official Raiku Discord Select Your Language Upon joining, you’ll be prompted to select a language Choose your preferred language to continue Complete the Application Form Fill out the application to gain full access to the server Provide your X handle Explain why you want to join the Raiku community Share a fun fact about yourself Be genuine in your responses – the team reviews each application Wait for Approval The Raiku team typically responds within 24",
-        "48 hours Check your Discord notifications for approval Start Farming Roles Once approved, begin participating in server activities Engage in discussions, complete tasks, and stay active Your goal is to progress from Novice to higher tiers Latest Update: Raiku IQ Quiz and PFP NFT Mint Raiku opened the Raiku IQ challenge, a seven",
-        "question beginner",
-        "friendly quiz that mints a Raiku",
-        "green PFP NFT on Solana for every finisher. A perfect 7/7 score unlocks the Raiku Shades version instead. Each verified X account can mint one NFT. Mint Your Raiku PFP Connect your verified X account and complete the quiz at the Raiku IQ challenge . Post your result to X, then paste the post URL back into the quiz to verify it. Connect a Solana wallet and approve the single mint transaction Understanding the Raiku Role System The Raiku Discord uses a hierarchical role system to recognize community contributions: Novice : The entry",
-        "level role assigned after you pass basic verification checks. This is where all new members start. Supercell : Awarded to recognized supporters who demonstrate consistent engagement and positive contributions to the community. Raiku OG : Reserved for long",
-        "term passionate contributors who have been active over an extended period and shown dedication to the project. Ascendant : A distinguished role earned by proving yourself through significant contributions, quality engagement, or special achievements within the community. Mod : Official server moderators who help manage the community and enforce guidelines. This is typically an appointed position rather than one you can directly farm. Raiku Team : Core team members and project staff. This is not accessible to regular community members. Frequently Asked Questions Is the Raiku airdrop confirmed? Raiku has not officially announced an airdrop or token distribution. The current Discord program focuses on building an early community. However, early and active community members are often rewarded when projects launch tokens. How long does it take to advance roles? The timeline varies based on your activity level and the specific requirements for each role, which haven’t been publicly disclosed in detail. Expect the process to take weeks or months for higher tiers. Do I need to verify my Twitter account? You need to provide your Twitter handle in the application, but specific verification requirements haven’t been publicly detailed. Having an established Twitter account likely helps your application. Conclusion Raiku represents a significant development in Solana infrastructure, backed by top",
-        "tier investors and addressing real challenges in blockchain operations. While the project is still in its early stages with testnet launches planned for 2025",
-        "2026, joining the Discord community now positions you as an early supporter. The role",
-        "farming system provides a clear pathway for community engagement, though it requires genuine participation and patience. Focus on quality engagement rather than just farming activities. If you’re genuinely interested in Solana infrastructure and enterprise blockchain solutions, participating in the Raiku community offers an opportunity to learn and contribute while potentially benefiting from future token distributions. Join Discord You're interested in more projects that do not have any token yet and could potentially airdrop a governance token to early users in the future? Then check out our list of potential retroactive airdrops to not miss out on the next DeFi airdrop! Requirements Twitter / X More Airdrops to Farm VOICE Ongoing Solana View Guide → SolPump Ongoing Solana View Guide → Pascal Ongoing Solana View Guide → Backyard Finance Ongoing Solana View Guide → AIW3 Ongoing BSC, Solana View Guide → Pacifica Ongoing Solana View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Funding $13.5M Difficulty Medium Cost to Farm Low Overview Website: raiku.com Documentation: Visit now X (Formerly Twitter): Discord Chat: Blog: X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator for crypto airdrops. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
-      ],
-      "about": "What is Raiku? Raiku is a Solana infrastructure platform designed to bring enterprise-grade certainty to blockchain operations. The project addresses one of the most persistent challenges in blockchain technology: the unpredictability of blockspace. By establishing a fair and efficient market for blockspace, Raiku transforms it from an unpredictable commodity into a guaranteed, programmable resource that businesses can rely on. The platform serves multiple stakeholders in the Solana ecosystem. Developers can build applications without worrying about infrastructure failures, while traders gain consistent and fully predictable execution. Institutions benefit from the ability to operate with certainty at scale, and validators can scale their revenue through plugins. This comprehensive approach positions Raiku as critical infrastructure for enterprises looking to build and operate on Solana efficiently. Raiku has secured $13.5 million in funding led by Pantera Capital, with participation f",
-      "social_links": {
-        "discord": "https://discord.gg/raikucom",
-        "twitter": "https://x.com/intent/tweet?text=Raiku&url=https%3A%2F%2Fairdrops.io%2Fraiku%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fraiku%2F&text=Raiku"
-      },
-      "eligibility": "for each role, which haven’t been publicly disclosed in detail",
-      "difficulty": "Medium",
-      "estimated_cost": "to Farm Low Overview Website: raiku"
     }
   ]
 }
