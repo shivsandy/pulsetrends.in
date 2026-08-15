@@ -1,33 +1,5 @@
 [
   {
-    "name": "Pramodini Medicare",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹110–118",
-    "marketCap": 0
-  },
-  {
-    "name": "Shiprocket",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹92–97",
-    "marketCap": 0
-  },
-  {
-    "name": "Behari Lal Engg.",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹271–285",
-    "marketCap": 0
-  },
-  {
-    "name": "Q&T Foods",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "-",
-    "marketCap": 0
-  },
-  {
     "name": "Credent Connect N Care",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -84,6 +56,41 @@
     "marketCap": 0
   },
   {
+    "name": "Mopshop Distribution",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "Gaja Alternative Asset",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "Skyways Air Ser.",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "Dhanwel Hybrid",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-08-26",
+    "marketCap": 90.0
+  },
+  {
+    "name": "Fascinate Textiles",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-08-24",
+    "marketCap": 208.0
+  },
+  {
     "name": "Pramodini Medicare",
     "status": "listed",
     "source_category": "recent",
@@ -119,13 +126,6 @@
     "marketCap": 10903.0
   },
   {
-    "name": "Fascinate Textiles",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2026-08-18",
-    "marketCap": 215.0
-  },
-  {
     "name": "Sham Foam",
     "status": "listed",
     "source_category": "recent",
@@ -150,28 +150,28 @@
     "name": "Technocraft Ven.",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-08-14",
+    "listingDate": "yesterday",
     "marketCap": 890.0
   },
   {
     "name": "Optimystix Entertainment",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-08-14",
+    "listingDate": "yesterday",
     "marketCap": 407.0
   },
   {
     "name": "Leap India",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-08-14",
+    "listingDate": "yesterday",
     "marketCap": 9005.0
   },
   {
     "name": "LAPL Automotive",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-13",
     "marketCap": 118.0
   },
   {
@@ -474,13 +474,6 @@
     "source_category": "recent",
     "listingDate": "2026-07-03",
     "marketCap": 101.0
-  },
-  {
-    "name": "Dhanwel Hybrid",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2026-07-02",
-    "marketCap": 90.0
   },
   {
     "name": "CSM Technologies",
@@ -886,13 +879,6 @@
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-03-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Skyways Air Ser.",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2026-03-25",
     "marketCap": 0
   },
   {
@@ -3871,7 +3857,7 @@
     "marketCap": 0
   },
   {
-    "name": "Fabtech Techn.",
+    "name": "Fabtech Cleanrooms",
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2025-01-10",
@@ -7084,17 +7070,17 @@
     "marketCap": 0
   },
   {
-    "name": "Optimystix Entertainment",
+    "name": "Saroja Pharma In",
     "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-08-14",
-    "marketCap": 407.0
+    "source_category": "recent",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
   },
   {
     "name": "Leap India",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2026-08-14",
+    "listingDate": "yesterday",
     "marketCap": 9005.0
   },
   {
@@ -7334,13 +7320,6 @@
     "source_category": "below_price",
     "listingDate": "2026-05-05",
     "marketCap": 247.0
-  },
-  {
-    "name": "Adisoft Technol.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-04-30",
-    "marketCap": 281.0
   },
   {
     "name": "Mehul Telecom",
@@ -7742,6 +7721,13 @@
     "marketCap": 65.0
   },
   {
+    "name": "Finbud Financial",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-11-13",
+    "marketCap": 270.0
+  },
+  {
     "name": "Studds Accessor.",
     "status": "listed",
     "source_category": "below_price",
@@ -8106,6 +8092,13 @@
     "marketCap": 2502.0
   },
   {
+    "name": "Sattva Eng.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-09-03",
+    "marketCap": 131.0
+  },
+  {
     "name": "NIS Management",
     "status": "listed",
     "source_category": "below_price",
@@ -8260,13 +8253,6 @@
     "marketCap": 0
   },
   {
-    "name": "Bhadora Indust.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-08-11",
-    "marketCap": 0
-  },
-  {
     "name": "Essex Marine",
     "status": "listed",
     "source_category": "below_price",
@@ -8278,6 +8264,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-08-07",
+    "marketCap": 0
+  },
+  {
+    "name": "B. D. Industries",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-08-06",
     "marketCap": 0
   },
   {
