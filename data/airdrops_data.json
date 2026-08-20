@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-08-19T08:31:59.591409+00:00",
-  "total": 39,
+  "last_updated": "2026-08-20T08:32:29.926819+00:00",
+  "total": 37,
   "airdrops": [
     {
       "id": "solpump",
       "name": "SolPump",
       "url": "https://airdrops.io/solpump/",
-      "heat": 477,
+      "heat": 473,
       "status": "confirmed",
       "chain": "Solana",
       "actions": [
         "SolPump Actions: Participate hourly",
         "grab free SOL"
       ],
-      "description": "477° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP 402° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP 381° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP 374° Ongoing Confirmed Nowa Actions: Complete Social Tasks, Trade, Stake & Refer to Earn CLAIM AIRDROP 326° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP 296° Ongoing Confi",
+      "description": "473° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP 402° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP 384° Ongoing Confirmed Nowa Actions: Complete Social Tasks, Trade, Stake & Refer to Earn CLAIM AIRDROP 380° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP 326° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP 292° Ongoing Confi",
       "source": "airdrops.io",
       "steps": [
         "Visit the official dashboard",
@@ -65,16 +65,44 @@
       "estimated_cost": "s nothing"
     },
     {
+      "id": "nowa",
+      "name": "Nowa",
+      "url": "https://airdrops.io/nowa/",
+      "heat": 384,
+      "status": "confirmed",
+      "chain": "Own",
+      "actions": [
+        "Nowa Actions: Complete Social Tasks",
+        "Trade",
+        "Stake",
+        "Refer to Earn"
+      ],
+      "description": "384° Ongoing Confirmed Nowa Actions: Complete Social Tasks, Trade, Stake & Refer to Earn CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "allocation on a straight 1:1 basis",
+      "steps": [
+        "Jump to steps Nowa Airdrop Details Nowa Farming is the opening phase of Nowa’s Community Development Program, which runs across Devnet (live now), Testnet, and Mainnet. Participants earn NOWA tokens directly rather than points, and farmed NOWA converts to TGE allocation on a straight 1:1 basis. Key Parameters: Airdrop Allocation : 500,000 NOWA per day during the Devnet phase, plus a 10,000 USDT leaderboard pool Distribution Method : Direct NOWA accrual, converting 1:1 to TGE allocation TGE Date : Not announced Rewards arrive from two directions. The daily NOWA pool splits across five activity buckets: spot trading, BNPL trading, Vault staking, Earn staking, and referrals. Your share of a bucket is proportional to your activity against everyone else’s in it that day, so a quiet bucket pays more per unit of effort than a crowded one. The second source is the leaderboards, which pay USDT to top ranks and NOWA further down."
+      ],
+      "about": "Nowa Airdrop Details Nowa Farming is the opening phase of Nowa’s Community Development Program, which runs across Devnet (live now), Testnet, and Mainnet. Participants earn NOWA tokens directly rather than points, and farmed NOWA converts to TGE allocation on a straight 1:1 basis. Key Parameters: Airdrop Allocation : 500,000 NOWA per day during the Devnet phase, plus a 10,000 USDT leaderboard pool Distribution Method : Direct NOWA accrual, converting 1:1 to TGE allocation TGE Date : Not announced Rewards arrive from two directions. The daily NOWA pool splits across five activity buckets: spot trading, BNPL trading, Vault staking, Earn staking, and referrals. Your share of a bucket is proportional to your activity against everyone else’s in it that day, so a quiet bucket pays more per unit of effort than a crowded one. The second source is the leaderboards, which pay USDT to top ranks and NOWA further down.",
+      "social_links": {
+        "twitter": "https://x.com/NowaFinance",
+        "telegram": "https://t.me/NowaFinance"
+      },
+      "eligibility": "Telegram Twitter / X What is Nowa? Nowa is an onchain financing protocol built around Buy Now, Pay Later crypto trading",
+      "difficulty": "Easy",
+      "estimated_cost": "s time rather than capital"
+    },
+    {
       "id": "monetrix",
       "name": "Monetrix",
       "url": "https://airdrops.io/monetrix/",
-      "heat": 381,
+      "heat": 380,
       "status": "active",
       "chain": "Hyperliquid",
       "actions": [
         "Monetrix Actions: Mint USDM with USDC"
       ],
-      "description": "381° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP",
+      "description": "380° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Not announced Season 0 rewards three groups: stablecoin holders, yield participants, and liquidity providers",
       "steps": [
@@ -93,34 +121,6 @@
       "eligibility": "Telegram Twitter / X What is Monetrix? Monetrix is a yield-bearing stablecoin protocol built natively on HyperEVM",
       "difficulty": "Medium",
       "estimated_cost": "to Farm High AD Overview Website: monetrix"
-    },
-    {
-      "id": "nowa",
-      "name": "Nowa",
-      "url": "https://airdrops.io/nowa/",
-      "heat": 374,
-      "status": "confirmed",
-      "chain": "Own",
-      "actions": [
-        "Nowa Actions: Complete Social Tasks",
-        "Trade",
-        "Stake",
-        "Refer to Earn"
-      ],
-      "description": "374° Ongoing Confirmed Nowa Actions: Complete Social Tasks, Trade, Stake & Refer to Earn CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "allocation on a straight 1:1 basis",
-      "steps": [
-        "Jump to steps Nowa Airdrop Details Nowa Farming is the opening phase of Nowa’s Community Development Program, which runs across Devnet (live now), Testnet, and Mainnet. Participants earn NOWA tokens directly rather than points, and farmed NOWA converts to TGE allocation on a straight 1:1 basis. Key Parameters: Airdrop Allocation : 500,000 NOWA per day during the Devnet phase, plus a 10,000 USDT leaderboard pool Distribution Method : Direct NOWA accrual, converting 1:1 to TGE allocation TGE Date : Not announced Rewards arrive from two directions. The daily NOWA pool splits across five activity buckets: spot trading, BNPL trading, Vault staking, Earn staking, and referrals. Your share of a bucket is proportional to your activity against everyone else’s in it that day, so a quiet bucket pays more per unit of effort than a crowded one. The second source is the leaderboards, which pay USDT to top ranks and NOWA further down."
-      ],
-      "about": "Nowa Airdrop Details Nowa Farming is the opening phase of Nowa’s Community Development Program, which runs across Devnet (live now), Testnet, and Mainnet. Participants earn NOWA tokens directly rather than points, and farmed NOWA converts to TGE allocation on a straight 1:1 basis. Key Parameters: Airdrop Allocation : 500,000 NOWA per day during the Devnet phase, plus a 10,000 USDT leaderboard pool Distribution Method : Direct NOWA accrual, converting 1:1 to TGE allocation TGE Date : Not announced Rewards arrive from two directions. The daily NOWA pool splits across five activity buckets: spot trading, BNPL trading, Vault staking, Earn staking, and referrals. Your share of a bucket is proportional to your activity against everyone else’s in it that day, so a quiet bucket pays more per unit of effort than a crowded one. The second source is the leaderboards, which pay USDT to top ranks and NOWA further down.",
-      "social_links": {
-        "twitter": "https://x.com/NowaFinance",
-        "telegram": "https://t.me/NowaFinance"
-      },
-      "eligibility": "Telegram Twitter / X What is Nowa? Nowa is an onchain financing protocol built around Buy Now, Pay Later crypto trading",
-      "difficulty": "Easy",
-      "estimated_cost": "s time rather than capital"
     },
     {
       "id": "axis",
@@ -150,14 +150,14 @@
       "id": "cambria",
       "name": "Cambria",
       "url": "https://airdrops.io/cambria/",
-      "heat": 296,
+      "heat": 292,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Cambria Actions: Claim free Loot",
         "Play the game"
       ],
-      "description": "296° Ongoing Confirmed Cambria Actions: Claim free Loot, Play the game CLAIM AIRDROP",
+      "description": "292° Ongoing Confirmed Cambria Actions: Claim free Loot, Play the game CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": ". The second is the Genesis Airdrop, a points-based track built on Trinkets and Essence Points earned from gameplay, including points from past Gold Rush and Duel Arena seasons",
       "steps": [
@@ -203,13 +203,13 @@
       "id": "orbinum",
       "name": "Orbinum",
       "url": "https://airdrops.io/orbinum/",
-      "heat": 188,
+      "heat": 187,
       "status": "confirmed",
       "chain": "Own",
       "actions": [
         "Orbinum Actions: Interact with testnet"
       ],
-      "description": "188° Ongoing Confirmed Orbinum Actions: Interact with testnet CLAIM AIRDROP",
+      "description": "187° Ongoing Confirmed Orbinum Actions: Interact with testnet CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Q4 2026 (October to December) Credits are locked in by a snapshot taken exactly 14 days before mainnet launch, and the full allocation unlocks at distribution with no vesting",
       "steps": [
@@ -225,46 +225,17 @@
       "estimated_cost": "s you both credits and streak progress"
     },
     {
-      "id": "push_chain",
-      "name": "Push Chain",
-      "url": "https://airdrops.io/push-chain/",
-      "heat": 184,
-      "status": "confirmed",
-      "chain": "",
-      "actions": [
-        "Push Chain Actions: Sign Up",
-        "Complete Social Tasks",
-        "Quests and Refer Users"
-      ],
-      "description": "184° Ongoing Confirmed Push Chain Actions: Sign Up, Complete Social Tasks, Quests and Refer Users CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "and roll out across multiple seasons rather than in a single drop",
-      "steps": [
-        "Jump to steps Push Chain Airdrop Details The $PC airdrop is confirmed. The official tokenomics proposal reserves 10% of the 10 billion total supply for airdrops. It covers past and present Push Protocol users along with new Push Chain participants, creators, and developers. Distributions begin at TGE and roll out across multiple seasons rather than in a single drop. Key Parameters: Airdrop Allocation : 10% of total supply Distribution Method : Points",
-        "based, retroactive and ongoing across multiple seasons TGE Date : Not yet announced Season 3 of the points program is live and open to everyone. Leveling up unlocks Rare Passes, the collectibles at the center of the season’s endgame."
-      ],
-      "about": "Push Chain Airdrop Details The $PC airdrop is confirmed. The official tokenomics proposal reserves 10% of the 10 billion total supply for airdrops. It covers past and present Push Protocol users along with new Push Chain participants, creators, and developers. Distributions begin at TGE and roll out across multiple seasons rather than in a single drop. Key Parameters: Airdrop Allocation : 10% of total supply Distribution Method : Points-based, retroactive and ongoing across multiple seasons TGE Date : Not yet announced Season 3 of the points program is live and open to everyone. Leveling up unlocks Rare Passes, the collectibles at the center of the season’s endgame.",
-      "social_links": {
-        "twitter": "https://x.com/PushChain",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fpush-chain%2F&text=Push%20Chain",
-        "github": "https://github.com/pushchain/"
-      },
-      "eligibility": "Twitter / X Email What is Push Chain? Push Chain is a shared-state Layer 1 blockchain built as a universal execution layer",
-      "difficulty": "Easy",
-      "estimated_cost": "nothing beyond your time"
-    },
-    {
       "id": "polymarket",
       "name": "Polymarket",
       "url": "https://airdrops.io/polymarket/",
-      "heat": 178,
+      "heat": 182,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Polymarket Actions: Deposit",
         "Make predictions"
       ],
-      "description": "178° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP",
+      "description": "182° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "will follow the completion of its U",
       "steps": [
@@ -310,6 +281,31 @@
       "estimated_cost": "? Each ticket costs $1, payable in USDC, USDT, or DAI on Base"
     },
     {
+      "id": "tradoor0",
+      "name": "Tradoor0",
+      "url": "https://airdrops.io/tradoor0/",
+      "heat": 178,
+      "status": "active",
+      "chain": "Hyperliquid",
+      "actions": [
+        "Tradoor0 Actions: Use market making bot"
+      ],
+      "description": "178° Ongoing Tradoor0 Actions: Use market making bot CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": ", so early users are farming it as a potential retroactive play alongside other Hyperliquid ecosystem airdrops",
+      "steps": [
+        "Jump to steps Tradoor0 Airdrop Details Tradoor0 has no token, and no airdrop has been announced. What it does have is a live points program, and points programs of this kind often precede a token launch, so early users are farming it as a potential retroactive play alongside other Hyperliquid ecosystem airdrops . Season 1 of the Tradoor Points program started on June 2, 2026. Every Sunday, the platform takes an activity snapshot and distributes 10,000 points to active users. Points track three things: maker volume traded through the bot, consistency of activity over time, and referrals, which earn you a share of points from your referees’ activity. The exact formula is private, and the criteria may change as the program evolves."
+      ],
+      "about": "Tradoor0 Airdrop Details Tradoor0 has no token, and no airdrop has been announced. What it does have is a live points program, and points programs of this kind often precede a token launch, so early users are farming it as a potential retroactive play alongside other Hyperliquid ecosystem airdrops . Season 1 of the Tradoor Points program started on June 2, 2026. Every Sunday, the platform takes an activity snapshot and distributes 10,000 points to active users. Points track three things: maker volume traded through the bot, consistency of activity over time, and referrals, which earn you a share of points from your referees’ activity. The exact formula is private, and the criteria may change as the program evolves.",
+      "social_links": {
+        "discord": "https://discord.gg/34GmhnhjYF",
+        "twitter": "https://x.com/intent/tweet?text=Tradoor0&url=https%3A%2F%2Fairdrops.io%2Ftradoor0%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Ftradoor0%2F&text=Tradoor0"
+      },
+      "difficulty": "Medium",
+      "estimated_cost": "to Farm Medium AD Overview Website: tradoor0"
+    },
+    {
       "id": "liquidiction",
       "name": "Liquidiction",
       "url": "https://airdrops.io/liquidiction/",
@@ -338,42 +334,17 @@
       "estimated_cost": "to Farm Medium AD Overview Website: liquidiction"
     },
     {
-      "id": "tradoor0",
-      "name": "Tradoor0",
-      "url": "https://airdrops.io/tradoor0/",
-      "heat": 173,
-      "status": "active",
-      "chain": "Hyperliquid",
-      "actions": [
-        "Tradoor0 Actions: Use market making bot"
-      ],
-      "description": "173° Ongoing Tradoor0 Actions: Use market making bot CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": ", so early users are farming it as a potential retroactive play alongside other Hyperliquid ecosystem airdrops",
-      "steps": [
-        "Jump to steps Tradoor0 Airdrop Details Tradoor0 has no token, and no airdrop has been announced. What it does have is a live points program, and points programs of this kind often precede a token launch, so early users are farming it as a potential retroactive play alongside other Hyperliquid ecosystem airdrops . Season 1 of the Tradoor Points program started on June 2, 2026. Every Sunday, the platform takes an activity snapshot and distributes 10,000 points to active users. Points track three things: maker volume traded through the bot, consistency of activity over time, and referrals, which earn you a share of points from your referees’ activity. The exact formula is private, and the criteria may change as the program evolves."
-      ],
-      "about": "Tradoor0 Airdrop Details Tradoor0 has no token, and no airdrop has been announced. What it does have is a live points program, and points programs of this kind often precede a token launch, so early users are farming it as a potential retroactive play alongside other Hyperliquid ecosystem airdrops . Season 1 of the Tradoor Points program started on June 2, 2026. Every Sunday, the platform takes an activity snapshot and distributes 10,000 points to active users. Points track three things: maker volume traded through the bot, consistency of activity over time, and referrals, which earn you a share of points from your referees’ activity. The exact formula is private, and the criteria may change as the program evolves.",
-      "social_links": {
-        "discord": "https://discord.gg/34GmhnhjYF",
-        "twitter": "https://x.com/intent/tweet?text=Tradoor0&url=https%3A%2F%2Fairdrops.io%2Ftradoor0%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Ftradoor0%2F&text=Tradoor0"
-      },
-      "difficulty": "Medium",
-      "estimated_cost": "to Farm Medium AD Overview Website: tradoor0"
-    },
-    {
       "id": "truenorth",
       "name": "TrueNorth",
       "url": "https://airdrops.io/truenorth/",
-      "heat": 173,
+      "heat": 175,
       "status": "active",
       "chain": "Hyperliquid",
       "actions": [
         "TrueNorth Actions: Sign Up",
         "Set Up Trading Persona and Trade"
       ],
-      "description": "173° Ongoing TrueNorth Actions: Sign Up, Set Up Trading Persona and Trade CLAIM AIRDROP",
+      "description": "175° Ongoing TrueNorth Actions: Sign Up, Set Up Trading Persona and Trade CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "date or broader airdrop criteria have been announced",
       "steps": [
@@ -391,44 +362,47 @@
       "estimated_cost": "beyond standard Hyperliquid trading fees"
     },
     {
-      "id": "yakkamon",
-      "name": "Yakkamon",
-      "url": "https://airdrops.io/yakkamon/",
-      "heat": 66,
+      "id": "startale",
+      "name": "Startale",
+      "url": "https://airdrops.io/startale/",
+      "heat": 68,
       "status": "confirmed",
-      "chain": "Ronin",
+      "chain": "Soneium",
       "actions": [
-        "Yakkamon Actions: Connect Discord and X",
-        "Refer Friends",
-        "Mint NFT"
+        "Startale Actions: Fund Your Wallet",
+        "Check in Daily",
+        "Complete Missions"
       ],
-      "description": "66° Ongoing Confirmed Yakkamon Actions: Connect Discord and X, Refer Friends, Mint NFT CLAIM AIRDROP",
+      "description": "68° Ongoing Startale Actions: Fund Your Wallet, Check in Daily, Complete Missions CLAIM AIRDROP 40° Ongoing Sight Actions: Submit Email and Join Waitlist CLAIM AIRDROP 34° Ongoing Nava AI Actions: Submit Email & Wait For Testnet Waitlist Access CLAIM AIRDROP Ongoing BitRobot Actions: Sign Up, Join Discord, Complete Missions CLAIM AIRDROP 384° Ongoing Confirmed Nowa Actions: Complete Social Tasks, ",
       "source": "airdrops.io",
-      "tge_date": "Date : No new token; NFT rewards land at early access launch in Q4 2026 Three separate rewards stack",
+      "tge_date": "date or an allocation, so a Startale airdrop remains speculative",
       "steps": [
-        "Step 5: Refer Friends Each verified friend who joins earns you +30 points.",
-        "The separate free mint of 10,000 Monster NFTs opens earlier, on October 1, 2026, for verified pre-registered trainers."
+        "Jump to steps Startale Airdrop Details Startale has not announced a token, a TGE date or an allocation, so a Startale airdrop remains speculative. The company does state that STAR Points determine eligibility for future airdrops, exclusive rewards and other Startale App benefits. The points are in",
+        "app points that cannot be redeemed or exchanged with Startale for money. Points accrue through several channels at once. Daily GM check",
+        "ins pay 10 points per 10 check",
+        "ins, monthly mission campaigns are worth 100 to 150 points and reset each month, and liquidity earns 0.0025 points per dollar per day with a $10 minimum. Mini App campaigns carry their own point pools, and referrals pay 10% of what invited users earn, capped at 200 points monthly. Latest Update: Summer Fiesta, a run of Mini App campaigns worth up to 170 STAR Points each, started on August 13, 2026 and continues through September."
       ],
-      "about": "Yakkamon Airdrop Details The Yakkamon airdrop is confirmed and NFT focused. The top 5,000 trainers on the Season 0 points leaderboard receive Monster NFTs when early access launches: ranks 1 to 1,000 get Legendary Monster NFTs and ranks 1,001 to 5,000 get Rare Monster NFTs. Distribution is automatic and based purely on points, never on sign-up order. The same leaderboard decides early access, with the top 100,000 trainers entering in waves. Key Parameters: Airdrop Allocation : 5,000 Monster NFTs (1,000 Legendary, 4,000 Rare), plus a separate free mint of 10,000 Monster NFTs Distribution Method : Season 0 points leaderboard; airdropped automatically at early access launch TGE Date : No new token; NFT rewards land at early access launch in Q4 2026 Three separate rewards stack. Every sign-up gets a Monster Egg, an in-game item whose tier depends on how early you register. The Trainer Point airdrop covers the 5,000 leaderboard NFTs. On October 1, 2026, every verified pre-registered trainer",
+      "about": "Startale Airdrop Details Startale has not announced a token, a TGE date or an allocation, so a Startale airdrop remains speculative. The company does state that STAR Points determine eligibility for future airdrops, exclusive rewards and other Startale App benefits. The points are in-app points that cannot be redeemed or exchanged with Startale for money. Points accrue through several channels at once. Daily GM check-ins pay 10 points per 10 check-ins, monthly mission campaigns are worth 100 to 150 points and reset each month, and liquidity earns 0.0025 points per dollar per day with a $10 minimum. Mini App campaigns carry their own point pools, and referrals pay 10% of what invited users earn, capped at 200 points monthly. Latest Update: Summer Fiesta, a run of Mini App campaigns worth up to 170 STAR Points each, started on August 13, 2026 and continues through September.",
       "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Yakkamon&url=https%3A%2F%2Fairdrops.io%2Fyakkamon%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fyakkamon%2F&text=Yakkamon"
+        "twitter": "https://x.com/intent/tweet?text=Startale&url=https%3A%2F%2Fairdrops.io%2Fstartale%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fstartale%2F&text=Startale",
+        "github": "https://github.com/Startalegroup"
       },
-      "eligibility": "Twitter / X Email What is Yakkamon? Yakkamon is a creature collector and idle farming game on Ronin from Thought Farm, the studio behind Sunflower Land",
+      "eligibility": "for future airdrops, exclusive rewards and other Startale App benefits",
       "difficulty": "Easy",
-      "estimated_cost": "s nothing beyond a small gas fee, is limited to one mint per trainer, and minting adds points to your leaderboard total"
+      "estimated_cost": "nothing beyond gas"
     },
     {
       "id": "sight",
       "name": "Sight",
       "url": "https://airdrops.io/sight/",
-      "heat": 36,
-      "status": "confirmed",
+      "heat": 40,
+      "status": "active",
       "chain": "Robinhood",
       "actions": [
         "Sight Actions: Submit Email and Join Waitlist"
       ],
-      "description": "36° Ongoing Sight Actions: Submit Email and Join Waitlist CLAIM AIRDROP Ongoing Nava AI Actions: Submit Email & Wait For Testnet Waitlist Access CLAIM AIRDROP Ongoing BitRobot Actions: Sign Up, Join Discord, Complete Missions CLAIM AIRDROP 374° Ongoing Confirmed Nowa Actions: Complete Social Tasks, Trade, Stake & Refer to Earn CLAIM AIRDROP 66° Ongoing Confirmed Yakkamon Actions: Connect Discord a",
+      "description": "40° Ongoing Sight Actions: Submit Email and Join Waitlist CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "event",
       "steps": [
@@ -446,11 +420,14 @@
       "id": "nava_ai",
       "name": "Nava AI",
       "url": "https://airdrops.io/nava-ai/",
-      "heat": 0,
+      "heat": 34,
       "status": "active",
       "chain": "Own",
-      "actions": [],
-      "description": "Ongoing Nava AI Actions: Submit Email & Wait For Testnet Waitlist Access CLAIM AIRDROP",
+      "actions": [
+        "Nava AI Actions: Submit Email",
+        "Wait For Testnet Waitlist Access"
+      ],
+      "description": "34° Ongoing Nava AI Actions: Submit Email & Wait For Testnet Waitlist Access CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Jump to steps Nava AI Airdrop Details Nava AI has not confirmed a token, airdrop, or points program. They haven’t published any reward structure, and there is no snapshot or eligibility criteria to track. The only defined action right now is joining the private testnet waitlist. Nava has not said whether early waitlist members will get preferential access to a future token, points system, or referral program, so treat any activity here as low",
@@ -463,6 +440,100 @@
       },
       "eligibility": "criteria to track",
       "estimated_cost": "positioning rather than a guaranteed path to rewards"
+    },
+    {
+      "id": "yakkamon",
+      "name": "Yakkamon",
+      "url": "https://airdrops.io/yakkamon/",
+      "heat": 32,
+      "status": "confirmed",
+      "chain": "Ronin",
+      "actions": [
+        "Yakkamon Actions: Connect Discord and X",
+        "Refer Friends",
+        "Mint NFT"
+      ],
+      "description": "32° Ongoing Confirmed Yakkamon Actions: Connect Discord and X, Refer Friends, Mint NFT CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "Date : No new token; NFT rewards land at early access launch in Q4 2026 Three separate rewards stack",
+      "steps": [
+        "Step 5: Refer Friends Each verified friend who joins earns you +30 points.",
+        "The separate free mint of 10,000 Monster NFTs opens earlier, on October 1, 2026, for verified pre-registered trainers."
+      ],
+      "about": "Yakkamon Airdrop Details The Yakkamon airdrop is confirmed and NFT focused. The top 5,000 trainers on the Season 0 points leaderboard receive Monster NFTs when early access launches: ranks 1 to 1,000 get Legendary Monster NFTs and ranks 1,001 to 5,000 get Rare Monster NFTs. Distribution is automatic and based purely on points, never on sign-up order. The same leaderboard decides early access, with the top 100,000 trainers entering in waves. Key Parameters: Airdrop Allocation : 5,000 Monster NFTs (1,000 Legendary, 4,000 Rare), plus a separate free mint of 10,000 Monster NFTs Distribution Method : Season 0 points leaderboard; airdropped automatically at early access launch TGE Date : No new token; NFT rewards land at early access launch in Q4 2026 Three separate rewards stack. Every sign-up gets a Monster Egg, an in-game item whose tier depends on how early you register. The Trainer Point airdrop covers the 5,000 leaderboard NFTs. On October 1, 2026, every verified pre-registered trainer",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Yakkamon&url=https%3A%2F%2Fairdrops.io%2Fyakkamon%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fyakkamon%2F&text=Yakkamon"
+      },
+      "eligibility": "Twitter / X Email What is Yakkamon? Yakkamon is a creature collector and idle farming game on Ronin from Thought Farm, the studio behind Sunflower Land",
+      "difficulty": "Easy",
+      "estimated_cost": "s nothing beyond a small gas fee, is limited to one mint per trainer, and minting adds points to your leaderboard total"
+    },
+    {
+      "id": "linera",
+      "name": "Linera",
+      "url": "https://airdrops.io/linera/",
+      "heat": 23,
+      "status": "confirmed",
+      "chain": "Own",
+      "actions": [
+        "Linera Actions: Interact with testnet"
+      ],
+      "description": "Ongoing Linera Actions: Interact with testnet CLAIM AIRDROP Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP Ongoing Meridian Actions: Migrate Funds, Trade & Supply USDe CLAIM AIRDROP Ongoing Cashmere Actions: Make Trades & Collect Points CLAIM AIRDROP Ongoing GenLayer Actions: Earn points by completing missions CLAIM AIRDROP Ongoing C",
+      "source": "airdrops.io",
+      "tge_date": ". Linera’s X account has also referred to points converting into $LNRA tokens after mainnet, with any conversion left at the team’s discretion",
+      "steps": [
+        "Jump to steps Linera airdrop details Linera has not confirmed a token or an airdrop, so treat this as a speculative farm. What exists today is a live incentive program on the Markets testnet called Portal Points, which the team has said will feed into mainnet incentives as the network moves toward TGE. Linera’s X account has also referred to points converting into $LNRA tokens after mainnet, with any conversion left at the team’s discretion. Latest Update: Badge Earners will have access to a dedicated commitment pool in their $LNRA sale. Full details will be provided in the upcoming sale article."
+      ],
+      "about": "Linera airdrop details Linera has not confirmed a token or an airdrop, so treat this as a speculative farm. What exists today is a live incentive program on the Markets testnet called Portal Points, which the team has said will feed into mainnet incentives as the network moves toward TGE. Linera’s X account has also referred to points converting into $LNRA tokens after mainnet, with any conversion left at the team’s discretion. Latest Update: Badge Earners will have access to a dedicated commitment pool in their $LNRA sale. Full details will be provided in the upcoming sale article.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Linera&url=https%3A%2F%2Fairdrops.io%2Flinera%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Flinera%2F&text=Linera",
+        "github": "https://github.com/linera-io/linera-protocol"
+      },
+      "eligibility": "Twitter / X Email What is Linera? Linera is a Layer-1 blockchain protocol designed to deliver Web2-like scalability and low-latency performance to Web3 applications",
+      "difficulty": "Medium",
+      "estimated_cost": "no gas, so there is nothing to buy and no wallet to fund"
+    },
+    {
+      "id": "limitless_prediction_markets",
+      "name": "Limitless Prediction Markets",
+      "url": "https://airdrops.io/limitless-prediction-markets/",
+      "heat": 23,
+      "status": "confirmed",
+      "chain": "Base",
+      "actions": [
+        "Limitless Prediction Markets Actions: Deposit funds",
+        "Trade on Prediction Markets"
+      ],
+      "description": "23° Ongoing Confirmed Limitless Prediction Markets Actions: Deposit funds & Trade on Prediction Markets Claim Live CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "steps": [
+        "Visit the competition waitlist page",
+        "Select your team",
+        "Join the waitlist",
+        "Begin trading once the competition starts",
+        "Week 1: September 15-22",
+        "Week 2: September 22-29",
+        "1st Place: 3,000 USDC + Champion NFT",
+        "2nd Place: 1,500 USDC",
+        "3rd Place: 500 USDC",
+        "1st Place: 3,000 USDC + Champion NFT",
+        "2nd Place: 1,500 USDC",
+        "3rd Place: 500 USDC",
+        "1st Place Team: 2x Points",
+        "2nd Place Team: 1.5x Points",
+        "3rd Place Team: 1.25x Points"
+      ],
+      "about": "Limitless Airdrop Details Limitless has opened its Season 3 airdrop claim, with 3% of the total $LMTS supply set aside to reward traders on the platform. Eligible users can connect their wallet at the claim portal to check their allocation and claim their tokens. Season 4 of the Limitless Points Program runs from May 25 to October 26. This season brings an upgraded points system and a new way for users to earn points through trading and contributing on Limitless, with rewards directed toward active traders and contributors rather than passive participation. Latest Update: Limitless is recruiting new community ambassadors, with selected participants receiving exclusive rewards, an increased revenue share, and direct access to the core team. Ambassadors help shape the product and act as public representatives of the Limitless community. Applications run through X direct messages rather than a form, so send a DM to @ShevY_xx stating your interest in the role.",
+      "social_links": {
+        "twitter": "https://x.com/ShevY_xx",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Flimitless-prediction-markets%2F&text=Limitless%20Prediction%20Markets",
+        "discord": "https://discord.gg/UQtv7h5ZFE"
+      },
+      "eligibility": "and claim your allocation",
+      "difficulty": "Medium",
+      "estimated_cost": "to Farm High AD Overview Website: limitless"
     },
     {
       "id": "bitrobot",
@@ -592,15 +663,14 @@
       "actions": [],
       "description": "Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP",
       "source": "airdrops.io",
+      "tge_date": "with a two-month claim window",
       "steps": [
-        "Jump to steps Axis Robotics Airdrop Details Axis has not confirmed a token or an airdrop. The official docs say Points will be one input in a planned Community Contributor Airdrop, with eligibility, allocation, and timing to be published before any claim event. Points themselves carry no claim right. Treat this like other potential retroactive airdrops : a live points program worth farming, with the token part still open. The Point System went live in early August 2026. Five factors set your total: how many valid tasks you complete, their difficulty tier, the quality score of each submission, how widely your tasks spread across scenarios and skills, and the output of contributors you invite. Contributions signed before the late July 2026 snapshot were credited in a one",
-        "time retroactive grant. Since then, Points settle in two",
-        "week Epochs: each closes Friday at 00:00 UTC and Points land the following Monday at 12:00 UTC. Totals accumulate with no resets or expiry, and only submissions signed on",
-        "chain count."
+        "Five factors set your total: how many valid tasks you complete, their difficulty tier, the quality score of each submission, how widely your tasks spread across scenarios and skills, and the output of contributors you invite.",
+        "The prize pool is 0."
       ],
       "about": "Axis Robotics Airdrop Details Axis has not confirmed a token or an airdrop. The official docs say Points will be one input in a planned Community Contributor Airdrop, with eligibility, allocation, and timing to be published before any claim event. Points themselves carry no claim right. Treat this like other potential retroactive airdrops : a live points program worth farming, with the token part still open. The Point System went live in early August 2026. Five factors set your total: how many valid tasks you complete, their difficulty tier, the quality score of each submission, how widely your tasks spread across scenarios and skills, and the output of contributors you invite. Contributions signed before the late July 2026 snapshot were credited in a one-time retroactive grant. Since then, Points settle in two-week Epochs: each closes Friday at 00:00 UTC and Points land the following Monday at 12:00 UTC. Totals accumulate with no resets or expiry, and only submissions signed on-chain ",
       "social_links": {
-        "twitter": "https://x.com/axisrobotics/status/2081711331791827387",
+        "twitter": "https://x.com/KaitoAI",
         "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Faxis-robotics%2F&text=Axis%20Robotics",
         "github": "https://github.com/AxisAIOrg"
       },
@@ -662,39 +732,37 @@
       "estimated_cost": "to Farm Free AD Overview Website: drake"
     },
     {
-      "id": "allox",
-      "name": "AlloX",
-      "url": "https://airdrops.io/allox/",
+      "id": "meridian",
+      "name": "Meridian",
+      "url": "https://airdrops.io/meridian/",
       "heat": 0,
-      "status": "confirmed",
-      "chain": "Base",
+      "status": "active",
+      "chain": "Robinhood",
       "actions": [],
-      "description": "Ongoing Confirmed AlloX Actions: Create AI Portfolio, Claim Bonus & Complete Tasks to Earn CLAIM AIRDROP",
+      "description": "Ongoing Meridian Actions: Migrate Funds, Trade & Supply USDe CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "event planned for Q3 2026, and the platform runs two parallel reward currencies: points for everyday activity and Gems for volume based campaigns",
+      "tge_date": "date",
       "steps": [
-        "Rewards credit instantly, with no caps or time limits.",
-        "Do I need money to farm the AlloX airdrop?",
-        "Hunting the next big Base airdrop?"
+        "Jump to steps Meridian Airdrop Details Ethereal Points earned through past deposits and trading carry over and will display in the Meridian app, and new Meridian Points are being emitted for current activity. On top of points, Meridian runs recurring combo competitions on its prediction markets. Competition #2 offers 5,000 USDe plus 150,000 PONS to the traders with the highest multipliers on combos of two or more legs. The MLP (Meridian Liquidity Provider) vault is also open, paying USDe rewards, 30x Ethena rewards, and a share of Meridian Points on deposits, currently capped at around $1 million."
       ],
-      "about": "AlloX Airdrop Details AlloX has not confirmed an airdrop, but its reward system points clearly at one. The $ALLOX token is unlaunched, with a token generation event planned for Q3 2026, and the platform runs two parallel reward currencies: points for everyday activity and Gems for volume based campaigns. AlloX has stated that 1 Gem will equal $5 in $ALLOX at launch, and over $1 million in rewards is spread across ongoing campaigns. Key Parameters: Airdrop Allocation : TBA Distribution Method : Points and Gems earned through platform activity and volume campaigns TGE Date : Expected Q3 2026 Points come from the welcome bonus (5,000), portfolio creation (250 each), daily logins (500), and social tasks (500). Gems come from campaigns like Prove Your Portfolio, which recently doubled its pool to $100,000 in Gems after passing 40,000 participants, and the Volume League with $500,000 in rewards. Gem earn rates are tiered by lifetime on-chain volume, so higher tiers earn more Gems per $1,000 ",
+      "about": "Meridian Airdrop Details Ethereal Points earned through past deposits and trading carry over and will display in the Meridian app, and new Meridian Points are being emitted for current activity. On top of points, Meridian runs recurring combo competitions on its prediction markets. Competition #2 offers 5,000 USDe plus 150,000 PONS to the traders with the highest multipliers on combos of two or more legs. The MLP (Meridian Liquidity Provider) vault is also open, paying USDe rewards, 30x Ethena rewards, and a share of Meridian Points on deposits, currently capped at around $1 million.",
       "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=AlloX&url=https%3A%2F%2Fairdrops.io%2Fallox%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fallox%2F&text=AlloX",
-        "github": "https://github.com/AlloX-ai"
+        "twitter": "https://x.com/intent/tweet?text=Meridian&url=https%3A%2F%2Fairdrops.io%2Fmeridian%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fmeridian%2F&text=Meridian"
       },
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Low AD Overview Website: allox"
+      "eligibility": ". Step 5: Enter the active Combo Competition Check the current competition page and track your multiplier",
+      "difficulty": "Medium",
+      "estimated_cost": "to Farm High AD Overview Website: meridian"
     },
     {
       "id": "cashmere",
       "name": "Cashmere",
       "url": "https://airdrops.io/cashmere/",
       "heat": 0,
-      "status": "confirmed",
+      "status": "active",
       "chain": "Ethereum",
       "actions": [],
-      "description": "Ongoing Cashmere Actions: Make Trades & Collect Points CLAIM AIRDROP Ongoing GenLayer Actions: Earn points by completing missions CLAIM AIRDROP Ongoing Confirmed edgeX Actions: Join the Trade to Earn Campaign CLAIM AIRDROP Ongoing LitVM Actions: Farm Free Testnet CLAIM AIRDROP Ongoing Fireplace Actions: Trade prediction markets CLAIM AIRDROP Ongoing Confirmed SHIFT Actions: Check Airdrop Points CL",
+      "description": "Ongoing Cashmere Actions: Make Trades & Collect Points CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Jump to steps Cashmere Airdrop Details Cashmere has not launched the CSM token or confirmed an airdrop, so treat this as a speculative airdrop you farm rather than a scheduled payout. The main vehicle is GOAT Points, earned through swaps, referrals, and Guild tasks and tallied across seasons. Season 1’s claim phase drew roughly 74,000 wallets, and the program has carried into later seasons since."
@@ -856,66 +924,6 @@
       "estimated_cost": "to Farm Free AD Overview Website: superposition"
     },
     {
-      "id": "limitless_prediction_markets",
-      "name": "Limitless Prediction Markets",
-      "url": "https://airdrops.io/limitless-prediction-markets/",
-      "heat": 0,
-      "status": "confirmed",
-      "chain": "Base",
-      "actions": [],
-      "description": "Ongoing Confirmed Limitless Prediction Markets Actions: Deposit funds & Trade on Prediction Markets Claim Live CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "steps": [
-        "Visit the competition waitlist page",
-        "Select your team",
-        "Join the waitlist",
-        "Begin trading once the competition starts",
-        "Week 1: September 15-22",
-        "Week 2: September 22-29",
-        "1st Place: 3,000 USDC + Champion NFT",
-        "2nd Place: 1,500 USDC",
-        "3rd Place: 500 USDC",
-        "1st Place: 3,000 USDC + Champion NFT",
-        "2nd Place: 1,500 USDC",
-        "3rd Place: 500 USDC",
-        "1st Place Team: 2x Points",
-        "2nd Place Team: 1.5x Points",
-        "3rd Place Team: 1.25x Points"
-      ],
-      "about": "Limitless Airdrop Details Limitless has opened its Season 3 airdrop claim, with 3% of the total $LMTS supply set aside to reward traders on the platform. Eligible users can connect their wallet at the claim portal to check their allocation and claim their tokens. Season 4 of the Limitless Points Program runs from May 25 to October 26. This season brings an upgraded points system and a new way for users to earn points through trading and contributing on Limitless, with rewards directed toward active traders and contributors rather than passive participation. Latest Update: Limitless is recruiting new community ambassadors, with selected participants receiving exclusive rewards, an increased revenue share, and direct access to the core team. Ambassadors help shape the product and act as public representatives of the Limitless community. Applications run through X direct messages rather than a form, so send a DM to @ShevY_xx stating your interest in the role.",
-      "social_links": {
-        "twitter": "https://x.com/ShevY_xx",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Flimitless-prediction-markets%2F&text=Limitless%20Prediction%20Markets",
-        "discord": "https://discord.gg/UQtv7h5ZFE"
-      },
-      "eligibility": "and claim your allocation",
-      "difficulty": "Medium",
-      "estimated_cost": "to Farm High AD Overview Website: limitless"
-    },
-    {
-      "id": "meridian",
-      "name": "Meridian",
-      "url": "https://airdrops.io/meridian/",
-      "heat": 0,
-      "status": "active",
-      "chain": "Robinhood",
-      "actions": [],
-      "description": "Ongoing Meridian Actions: Migrate Funds, Trade & Supply USDe CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "date",
-      "steps": [
-        "Jump to steps Meridian Airdrop Details Ethereal Points earned through past deposits and trading carry over and will display in the Meridian app, and new Meridian Points are being emitted for current activity. On top of points, Meridian runs recurring combo competitions on its prediction markets. Competition #2 offers 5,000 USDe plus 150,000 PONS to the traders with the highest multipliers on combos of two or more legs. The MLP (Meridian Liquidity Provider) vault is also open, paying USDe rewards, 30x Ethena rewards, and a share of Meridian Points on deposits, currently capped at around $1 million. Latest Update: The migration of funds from Ethereal to Meridian is now live, and users with balances on the old app can move them over with one click."
-      ],
-      "about": "Meridian Airdrop Details Ethereal Points earned through past deposits and trading carry over and will display in the Meridian app, and new Meridian Points are being emitted for current activity. On top of points, Meridian runs recurring combo competitions on its prediction markets. Competition #2 offers 5,000 USDe plus 150,000 PONS to the traders with the highest multipliers on combos of two or more legs. The MLP (Meridian Liquidity Provider) vault is also open, paying USDe rewards, 30x Ethena rewards, and a share of Meridian Points on deposits, currently capped at around $1 million. Latest Update: The migration of funds from Ethereal to Meridian is now live, and users with balances on the old app can move them over with one click.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Meridian&url=https%3A%2F%2Fairdrops.io%2Fmeridian%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fmeridian%2F&text=Meridian"
-      },
-      "eligibility": ". Step 5: Enter the active Combo Competition Check the current competition page and track your multiplier",
-      "difficulty": "Medium",
-      "estimated_cost": "to Farm High AD Overview Website: meridian"
-    },
-    {
       "id": "velvet_capital",
       "name": "Velvet.Capital",
       "url": "https://airdrops.io/velvet-capital/",
@@ -970,59 +978,6 @@
       },
       "eligibility": "Email What is GRVT? GRVT is building the world’s first regulated hybrid exchange, set to redefine the future of finance through a secure, compliant, and user-friendly platform",
       "estimated_cost": "to Farm Free Show all expired airdrops Previous Airdrops: GRVT Airdrop October 2023 Total value: n/a GRVT has raised $9"
-    },
-    {
-      "id": "renaiss_protocol",
-      "name": "Renaiss Protocol",
-      "url": "https://airdrops.io/renaiss-protocol/",
-      "heat": 0,
-      "status": "active",
-      "chain": "BSC",
-      "actions": [],
-      "description": "Ongoing Renaiss Protocol Actions: Connect Accounts, Deposits, Trading, Referrals CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "steps": [
-        "Jump to steps Renaiss Protocol Airdrop Details Renaiss Protocol has not confirmed a token airdrop. However, the platform runs an active points and SBT reward system where users earn badges for connecting accounts, making deposits, trading, and referring friends. During the alpha phase, the team distributed physical cards and NFTs worth $5,000",
-        "$15,000 to top participants. The current open beta tracks user activities through SBTs that are permanently recorded on",
-        "chain. Early adopters can accumulate points through the Superliquid Event and other campaigns, with referral performance displayed on user profiles. Latest Update: Renaiss has opened a closed alpha for its Renaiss Index product. Apply through the early access form to be considered for the alpha and receive Renaiss Index Pioneer status, which is set to count toward future rewards."
-      ],
-      "about": "Renaiss Protocol Airdrop Details Renaiss Protocol has not confirmed a token airdrop. However, the platform runs an active points and SBT reward system where users earn badges for connecting accounts, making deposits, trading, and referring friends. During the alpha phase, the team distributed physical cards and NFTs worth $5,000-$15,000 to top participants. The current open beta tracks user activities through SBTs that are permanently recorded on-chain. Early adopters can accumulate points through the Superliquid Event and other campaigns, with referral performance displayed on user profiles. Latest Update: Renaiss has opened a closed alpha for its Renaiss Index product. Apply through the early access form to be considered for the alpha and receive Renaiss Index Pioneer status, which is set to count toward future rewards.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Renaiss%20Protocol&url=https%3A%2F%2Fairdrops.io%2Frenaiss-protocol%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Frenaiss-protocol%2F&text=Renaiss%20Protocol"
-      },
-      "eligibility": "for future engagement campaigns where rewards are distributed based on Twitter activity tracking",
-      "estimated_cost": "to Farm Low AD Overview Website: renaiss"
-    },
-    {
-      "id": "raiku",
-      "name": "Raiku",
-      "url": "https://airdrops.io/raiku/",
-      "heat": 0,
-      "status": "active",
-      "chain": "Solana",
-      "actions": [],
-      "description": "Ongoing Raiku Actions: Farm Discord Roles CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "es",
-      "steps": [
-        "Jump to steps Raiku Airdrop Details While Raiku has not officially confirmed an airdrop, the project has launched a Discord",
-        "based early community program where users can farm roles by participating in server activities. Early community members who actively engage and earn higher",
-        "tier roles may be positioned favorably if the project decides to distribute tokens in the future. This type of community building is common among well",
-        "funded crypto projects ahead of token launches. The role",
-        "farming system includes six tiers: Novice (entry",
-        "level), Supercell (recognized supporters), Raiku OG (long",
-        "term contributors), Ascendant (proven members), Mod (official moderators), and Raiku Team (core members). Active participation and consistent engagement appear to be key factors in advancing through these tiers."
-      ],
-      "about": "Raiku Airdrop Details While Raiku has not officially confirmed an airdrop, the project has launched a Discord-based early community program where users can farm roles by participating in server activities. Early community members who actively engage and earn higher-tier roles may be positioned favorably if the project decides to distribute tokens in the future. This type of community building is common among well-funded crypto projects ahead of token launches. The role-farming system includes six tiers: Novice (entry-level), Supercell (recognized supporters), Raiku OG (long-term contributors), Ascendant (proven members), Mod (official moderators), and Raiku Team (core members). Active participation and consistent engagement appear to be key factors in advancing through these tiers.",
-      "social_links": {
-        "discord": "https://discord.gg/raikucom",
-        "twitter": "https://x.com/intent/tweet?text=Raiku&url=https%3A%2F%2Fairdrops.io%2Fraiku%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fraiku%2F&text=Raiku"
-      },
-      "eligibility": "for each role, which haven’t been publicly disclosed in detail",
-      "difficulty": "Medium",
-      "estimated_cost": "to Farm Low AD Overview Website: raiku"
     }
   ]
 }
