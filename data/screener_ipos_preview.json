@@ -1,19 +1,5 @@
 [
   {
-    "name": "Shankesh Jewellers",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹88–93",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunshine Picture",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹342–360",
-    "marketCap": 0
-  },
-  {
     "name": "Mopshop Distribution",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -35,6 +21,13 @@
     "marketCap": 0
   },
   {
+    "name": "Augmont Enterpri",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "₹750–788",
+    "marketCap": 0
+  },
+  {
     "name": "Skyways Air Ser.",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -42,28 +35,28 @@
     "marketCap": 0
   },
   {
-    "name": "Augmont Enterpri",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "-",
-    "marketCap": 0
-  },
-  {
     "name": "ABH Healthcare",
     "status": "upcoming",
     "source_category": "upcoming",
-    "listingDate": "-",
-    "marketCap": 0
-  },
-  {
-    "name": "Madhur Knit",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "-",
+    "listingDate": "₹96–102",
     "marketCap": 0
   },
   {
     "name": "Symbiotec Pharma",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "₹938–988",
+    "marketCap": 0
+  },
+  {
+    "name": "Sumax Engineering",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "₹95–101",
+    "marketCap": 0
+  },
+  {
+    "name": "Madhur Knit",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "-",
@@ -77,7 +70,7 @@
     "marketCap": 0
   },
   {
-    "name": "Sumax Engineering",
+    "name": "Annu Projects",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "-",
@@ -96,6 +89,20 @@
     "source_category": "recent",
     "listingDate": "2026-08-26",
     "marketCap": 90.0
+  },
+  {
+    "name": "Mopshop Distribution",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-08-26",
+    "marketCap": 99.0
+  },
+  {
+    "name": "Gaja Alternative Asset",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-08-26",
+    "marketCap": 2356.0
   },
   {
     "name": "Shankesh Jewellers",
@@ -157,35 +164,35 @@
     "name": "Credent Connect N Care",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-08-20",
+    "listingDate": "yesterday",
     "marketCap": 355.0
   },
   {
     "name": "Pramodini Medicare",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-19",
     "marketCap": 260.0
   },
   {
     "name": "Shiprocket",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-19",
     "marketCap": 7789.0
   },
   {
     "name": "Behari Lal Engg.",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-19",
     "marketCap": 1414.0
   },
   {
     "name": "Q&T Foods",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-19",
     "marketCap": 81.0
   },
   {
@@ -7077,24 +7084,10 @@
     "marketCap": 0
   },
   {
-    "name": "Zaggle Prepaid",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-09-22",
-    "marketCap": 0
-  },
-  {
-    "name": "Samhi Hotels",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-09-22",
-    "marketCap": 0
-  },
-  {
     "name": "Q&T Foods",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-19",
     "marketCap": 81.0
   },
   {
@@ -7616,6 +7609,13 @@
     "marketCap": 366.0
   },
   {
+    "name": "Flywings Simula.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-12-12",
+    "marketCap": 194.0
+  },
+  {
     "name": "Luxury Time",
     "status": "listed",
     "source_category": "below_price",
@@ -7635,13 +7635,6 @@
     "source_category": "below_price",
     "listingDate": "2025-12-10",
     "marketCap": 140.0
-  },
-  {
-    "name": "Neochem Bio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-12-09",
-    "marketCap": 168.0
   },
   {
     "name": "Helloji Holidays",
@@ -7840,6 +7833,13 @@
     "marketCap": 115.0
   },
   {
+    "name": "Sheel Bio.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-10-08",
+    "marketCap": 128.0
+  },
+  {
     "name": "Munish Forge",
     "status": "listed",
     "source_category": "below_price",
@@ -7866,6 +7866,13 @@
     "source_category": "below_price",
     "listingDate": "2025-10-07",
     "marketCap": 66.0
+  },
+  {
+    "name": "Suba Hotels",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-10-07",
+    "marketCap": 269.0
   },
   {
     "name": "Dhillon Freight",
@@ -8111,13 +8118,6 @@
     "source_category": "below_price",
     "listingDate": "2025-09-03",
     "marketCap": 2502.0
-  },
-  {
-    "name": "Sattva Eng.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-09-03",
-    "marketCap": 131.0
   },
   {
     "name": "NIS Management",
@@ -8820,6 +8820,13 @@
     "marketCap": 0
   },
   {
+    "name": "Denta Water",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-01-29",
+    "marketCap": 0
+  },
+  {
     "name": "Rexpro Enter.",
     "status": "listed",
     "source_category": "below_price",
@@ -9027,13 +9034,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-12-04",
-    "marketCap": 0
-  },
-  {
-    "name": "C2C Advanced",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-12-03",
     "marketCap": 0
   },
   {
@@ -10178,13 +10178,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shree OSFM",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
     "name": "Presstonic Engi.",
     "status": "listed",
     "source_category": "below_price",
@@ -10213,6 +10206,13 @@
     "marketCap": 0
   },
   {
+    "name": "Deepak Chemtex",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-06",
+    "marketCap": 0
+  },
+  {
     "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
@@ -10231,13 +10231,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
     "marketCap": 0
   },
   {
@@ -10479,10 +10472,73 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Visdem Technosys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Pyramid Technopl",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -10556,10 +10612,73 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Visdem Technosys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Pyramid Technopl",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -10633,10 +10752,73 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Visdem Technosys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Pyramid Technopl",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -10710,10 +10892,73 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Visdem Technosys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Pyramid Technopl",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -10787,10 +11032,73 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Visdem Technosys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Pyramid Technopl",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -10864,10 +11172,73 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Visdem Technosys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Pyramid Technopl",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -10941,10 +11312,73 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Visdem Technosys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahaj Fashions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishnu Prakash R",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Pyramid Technopl",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-08-29",
     "marketCap": 0
   },
   {
@@ -11018,13 +11452,6 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
     "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
@@ -11095,17 +11522,24 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "TVS Supply",
+    "name": "Yatra Online",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-23",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
     "marketCap": 0
   },
   {
@@ -11165,17 +11599,24 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "TVS Supply",
+    "name": "Yatra Online",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-23",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
     "marketCap": 0
   },
   {
@@ -11235,17 +11676,24 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "TVS Supply",
+    "name": "Yatra Online",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-23",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
     "marketCap": 0
   },
   {
@@ -11305,17 +11753,24 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "TVS Supply",
+    "name": "Yatra Online",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-23",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
     "marketCap": 0
   },
   {
@@ -11375,17 +11830,24 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
+    "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
     "marketCap": 0
   },
   {
-    "name": "TVS Supply",
+    "name": "Yatra Online",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-08-23",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
     "marketCap": 0
   },
   {
@@ -11445,514 +11907,10 @@
     "marketCap": 0
   },
   {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
     "name": "TVS Supply",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vishnu Prakash R",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Pyramid Technopl",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Shelter Pharma",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "TVS Supply",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-08-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Viceroy Hotels",
-    "status": "rights",
-    "source_category": "rights",
-    "listingDate": "",
     "marketCap": 0
   },
   {
@@ -11971,6 +11929,27 @@
   },
   {
     "name": "Manoj Jewellers",
+    "status": "rights",
+    "source_category": "rights",
+    "listingDate": "",
+    "marketCap": 0
+  },
+  {
+    "name": "Ducon Tech",
+    "status": "rights",
+    "source_category": "rights",
+    "listingDate": "",
+    "marketCap": 0
+  },
+  {
+    "name": "Quint Digital",
+    "status": "rights",
+    "source_category": "rights",
+    "listingDate": "",
+    "marketCap": 0
+  },
+  {
+    "name": "Esaar (India)",
     "status": "rights",
     "source_category": "rights",
     "listingDate": "",
