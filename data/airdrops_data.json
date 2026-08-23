@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-08-22T08:23:39.130748+00:00",
-  "total": 37,
+  "last_updated": "2026-08-23T08:24:05.139320+00:00",
+  "total": 38,
   "airdrops": [
     {
       "id": "solpump",
       "name": "SolPump",
       "url": "https://airdrops.io/solpump/",
-      "heat": 457,
+      "heat": 482,
       "status": "confirmed",
       "chain": "Solana",
       "actions": [
         "SolPump Actions: Participate hourly",
         "grab free SOL"
       ],
-      "description": "457° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP 402° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP 377° Ongoing Confirmed Nowa Actions: Complete Social Tasks, Trade, Stake & Refer to Earn CLAIM AIRDROP 377° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP 326° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP 284° Ongoing Confi",
+      "description": "482° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP 398° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP 377° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP 321° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP 284° Ongoing Confirmed Cambria Actions: Claim free Loot, Play the game CLAIM AIRDROP 279° Ongoing Hypertrade Actions: Mak",
       "source": "airdrops.io",
       "steps": [
         "Visit the official dashboard",
@@ -43,14 +43,14 @@
       "id": "ondo_perps",
       "name": "Ondo Perps",
       "url": "https://airdrops.io/ondo-perps/",
-      "heat": 402,
+      "heat": 398,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Ondo Perps Actions: Join",
         "start Trading"
       ],
-      "description": "402° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP",
+      "description": "398° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "No token airdrop has been announced, but Ondo’s history with points-based incentives makes regular use worth a look for active perps traders.",
@@ -63,34 +63,6 @@
       },
       "difficulty": "Medium",
       "estimated_cost": "s nothing"
-    },
-    {
-      "id": "nowa",
-      "name": "Nowa",
-      "url": "https://airdrops.io/nowa/",
-      "heat": 377,
-      "status": "confirmed",
-      "chain": "Own",
-      "actions": [
-        "Nowa Actions: Complete Social Tasks",
-        "Trade",
-        "Stake",
-        "Refer to Earn"
-      ],
-      "description": "377° Ongoing Confirmed Nowa Actions: Complete Social Tasks, Trade, Stake & Refer to Earn CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "allocation on a straight 1:1 basis",
-      "steps": [
-        "Jump to steps Nowa Airdrop Details Nowa Farming is the opening phase of Nowa’s Community Development Program, which runs across Devnet (live now), Testnet, and Mainnet. Participants earn NOWA tokens directly rather than points, and farmed NOWA converts to TGE allocation on a straight 1:1 basis. Key Parameters: Airdrop Allocation : 500,000 NOWA per day during the Devnet phase, plus a 10,000 USDT leaderboard pool Distribution Method : Direct NOWA accrual, converting 1:1 to TGE allocation TGE Date : Not announced Rewards arrive from two directions. The daily NOWA pool splits across five activity buckets: spot trading, BNPL trading, Vault staking, Earn staking, and referrals. Your share of a bucket is proportional to your activity against everyone else’s in it that day, so a quiet bucket pays more per unit of effort than a crowded one. The second source is the leaderboards, which pay USDT to top ranks and NOWA further down."
-      ],
-      "about": "Nowa Airdrop Details Nowa Farming is the opening phase of Nowa’s Community Development Program, which runs across Devnet (live now), Testnet, and Mainnet. Participants earn NOWA tokens directly rather than points, and farmed NOWA converts to TGE allocation on a straight 1:1 basis. Key Parameters: Airdrop Allocation : 500,000 NOWA per day during the Devnet phase, plus a 10,000 USDT leaderboard pool Distribution Method : Direct NOWA accrual, converting 1:1 to TGE allocation TGE Date : Not announced Rewards arrive from two directions. The daily NOWA pool splits across five activity buckets: spot trading, BNPL trading, Vault staking, Earn staking, and referrals. Your share of a bucket is proportional to your activity against everyone else’s in it that day, so a quiet bucket pays more per unit of effort than a crowded one. The second source is the leaderboards, which pay USDT to top ranks and NOWA further down.",
-      "social_links": {
-        "twitter": "https://x.com/NowaFinance",
-        "telegram": "https://t.me/NowaFinance"
-      },
-      "eligibility": "Telegram Twitter / X What is Nowa? Nowa is an onchain financing protocol built around Buy Now, Pay Later crypto trading",
-      "difficulty": "Easy",
-      "estimated_cost": "s time rather than capital"
     },
     {
       "id": "monetrix",
@@ -126,13 +98,13 @@
       "id": "axis",
       "name": "Axis",
       "url": "https://airdrops.io/axis/",
-      "heat": 326,
+      "heat": 321,
       "status": "active",
       "chain": "Ethereum",
       "actions": [
         "Axis Actions: Deposit and earn"
       ],
-      "description": "326° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP",
+      "description": "321° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "That points toward a token, but any free distribution is still unconfirmed.",
@@ -177,14 +149,14 @@
       "id": "hypertrade",
       "name": "Hypertrade",
       "url": "https://airdrops.io/hypertrade/",
-      "heat": 275,
+      "heat": 279,
       "status": "active",
       "chain": "Hyperliquid",
       "actions": [
         "Hypertrade Actions: Make swaps",
         "add liquidity"
       ],
-      "description": "275° Ongoing Hypertrade Actions: Make swaps & add liquidity CLAIM AIRDROP",
+      "description": "279° Ongoing Hypertrade Actions: Make swaps & add liquidity CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": ", but the points system is live and accumulating rewards for early users",
       "steps": [
@@ -203,14 +175,14 @@
       "id": "polymarket",
       "name": "Polymarket",
       "url": "https://airdrops.io/polymarket/",
-      "heat": 186,
+      "heat": 189,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Polymarket Actions: Deposit",
         "Make predictions"
       ],
-      "description": "186° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP",
+      "description": "189° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "will follow the completion of its U",
       "steps": [
@@ -226,31 +198,6 @@
       "eligibility": "criteria, allocation details, or distribution date have been disclosed",
       "difficulty": "Hard",
       "estimated_cost": ") divided by entry cost times 100, so a $10 combo can outrank a $10,000 one"
-    },
-    {
-      "id": "orbinum",
-      "name": "Orbinum",
-      "url": "https://airdrops.io/orbinum/",
-      "heat": 180,
-      "status": "confirmed",
-      "chain": "Own",
-      "actions": [
-        "Orbinum Actions: Interact with testnet"
-      ],
-      "description": "180° Ongoing Confirmed Orbinum Actions: Interact with testnet CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "Date : Q4 2026 (October to December) Credits are locked in by a snapshot taken exactly 14 days before mainnet launch, and the full allocation unlocks at distribution with no vesting",
-      "steps": [
-        "Jump to steps Orbinum Network Airdrop Details Orbinum has confirmed its airdrop. Season 1, called the Genesis Community, started on March 13, 2026, and rewards users with ORB Credits for quests, weekly streaks, referrals, and testnet activity like shielding, private transfers, unshielding, and selective disclosure. Key Parameters: Airdrop Allocation : 20,000,000 ORB (2% of total supply) Distribution Method : ORB Credits convert proportionally into a share of the allocation pool TGE Date : Q4 2026 (October to December) Credits are locked in by a snapshot taken exactly 14 days before mainnet launch, and the full allocation unlocks at distribution with no vesting. Whatever share you’ve earned by the snapshot date is what converts to ORB at TGE, in full."
-      ],
-      "about": "Orbinum Network Airdrop Details Orbinum has confirmed its airdrop. Season 1, called the Genesis Community, started on March 13, 2026, and rewards users with ORB Credits for quests, weekly streaks, referrals, and testnet activity like shielding, private transfers, unshielding, and selective disclosure. Key Parameters: Airdrop Allocation : 20,000,000 ORB (2% of total supply) Distribution Method : ORB Credits convert proportionally into a share of the allocation pool TGE Date : Q4 2026 (October to December) Credits are locked in by a snapshot taken exactly 14 days before mainnet launch, and the full allocation unlocks at distribution with no vesting. Whatever share you’ve earned by the snapshot date is what converts to ORB at TGE, in full.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Orbinum&url=https%3A%2F%2Fairdrops.io%2Forbinum%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Forbinum%2F&text=Orbinum",
-        "github": "https://github.com/orbinum"
-      },
-      "eligibility": "Telegram Twitter / X What is Orbinum Network? Orbinum Network is a privacy-focused Layer 1 blockchain built on Substrate with EVM compatibility through Frontier",
-      "estimated_cost": "s you both credits and streak progress"
     },
     {
       "id": "megapot",
@@ -309,6 +256,31 @@
       "estimated_cost": "beyond standard Hyperliquid trading fees"
     },
     {
+      "id": "orbinum",
+      "name": "Orbinum",
+      "url": "https://airdrops.io/orbinum/",
+      "heat": 176,
+      "status": "confirmed",
+      "chain": "Own",
+      "actions": [
+        "Orbinum Actions: Interact with testnet"
+      ],
+      "description": "176° Ongoing Confirmed Orbinum Actions: Interact with testnet CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "Date : Q4 2026 (October to December) Credits are locked in by a snapshot taken exactly 14 days before mainnet launch, and the full allocation unlocks at distribution with no vesting",
+      "steps": [
+        "Jump to steps Orbinum Network Airdrop Details Orbinum has confirmed its airdrop. Season 1, called the Genesis Community, started on March 13, 2026, and rewards users with ORB Credits for quests, weekly streaks, referrals, and testnet activity like shielding, private transfers, unshielding, and selective disclosure. Key Parameters: Airdrop Allocation : 20,000,000 ORB (2% of total supply) Distribution Method : ORB Credits convert proportionally into a share of the allocation pool TGE Date : Q4 2026 (October to December) Credits are locked in by a snapshot taken exactly 14 days before mainnet launch, and the full allocation unlocks at distribution with no vesting. Whatever share you’ve earned by the snapshot date is what converts to ORB at TGE, in full."
+      ],
+      "about": "Orbinum Network Airdrop Details Orbinum has confirmed its airdrop. Season 1, called the Genesis Community, started on March 13, 2026, and rewards users with ORB Credits for quests, weekly streaks, referrals, and testnet activity like shielding, private transfers, unshielding, and selective disclosure. Key Parameters: Airdrop Allocation : 20,000,000 ORB (2% of total supply) Distribution Method : ORB Credits convert proportionally into a share of the allocation pool TGE Date : Q4 2026 (October to December) Credits are locked in by a snapshot taken exactly 14 days before mainnet launch, and the full allocation unlocks at distribution with no vesting. Whatever share you’ve earned by the snapshot date is what converts to ORB at TGE, in full.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Orbinum&url=https%3A%2F%2Fairdrops.io%2Forbinum%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Forbinum%2F&text=Orbinum",
+        "github": "https://github.com/orbinum"
+      },
+      "eligibility": "Telegram Twitter / X What is Orbinum Network? Orbinum Network is a privacy-focused Layer 1 blockchain built on Substrate with EVM compatibility through Frontier",
+      "estimated_cost": "s you both credits and streak progress"
+    },
+    {
       "id": "liquidiction",
       "name": "Liquidiction",
       "url": "https://airdrops.io/liquidiction/",
@@ -362,10 +334,35 @@
       "estimated_cost": "to Farm Medium AD Overview Website: tradoor0"
     },
     {
+      "id": "atoma",
+      "name": "Atoma",
+      "url": "https://airdrops.io/atoma/",
+      "heat": 168,
+      "status": "active",
+      "chain": "Arbitrum",
+      "actions": [
+        "Atoma Actions: Deposit USDC in vaults"
+      ],
+      "description": "168° Ongoing Atoma Actions: Deposit USDC in vaults CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "event, expected around Q3 2026",
+      "steps": [
+        "Extended runs its own points program, with a token anticipated but not yet dated.",
+        "There is no Atoma token, so the upside is the underlying venue points and real yield rather than an Atoma airdrop."
+      ],
+      "about": "Atoma Airdrop Details Atoma has no native token and has not announced an airdrop of its own, so that part is speculative, although points are coming soon as indicated on the project’s user interface. The reason the vault shows up on airdrop radars is what it farms underneath: by holding USDC in Atoma, you collect points from Nado and Extended without trading yourself. Points are distributed weekly and are time-weighted, so both the size of your deposit and how long you hold it decide your share. You keep every point you earn even after you withdraw. On the Nado side, points convert to INK at the Ink network token generation event, expected around Q3 2026. Extended runs its own points program, with a token anticipated but not yet dated. So the real airdrop exposure is INK plus a potential Extended distribution, earned passively through the vault rather than from any Atoma token. Deposit caps apply to each round, so space can be limited when a new round opens.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Atoma&url=https%3A%2F%2Fairdrops.io%2Fatoma%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fatoma%2F&text=Atoma"
+      },
+      "difficulty": "Medium",
+      "estimated_cost": "s"
+    },
+    {
       "id": "fortune_foes",
       "name": "Fortune Foes",
       "url": "https://airdrops.io/fortune-foes/",
-      "heat": 64,
+      "heat": 70,
       "status": "confirmed",
       "chain": "Robinhood",
       "actions": [
@@ -373,7 +370,7 @@
         "Discord",
         "Join Tournaments and Refer Users"
       ],
-      "description": "64° Ongoing Fortune Foes Actions: Connect X, Discord, Join Tournaments and Refer Users CLAIM AIRDROP 47° Ongoing Startale Actions: Fund Your Wallet, Check in Daily, Complete Missions CLAIM AIRDROP Ongoing Retium Actions: Join Discord & Telegram, Complete Quiz and Reach Cadet Role CLAIM AIRDROP Ongoing Confirmed HertzFlow Actions: Fund Your Wallet, Hold the Deposit, Trade Perps Once it Opens CLAIM ",
+      "description": "70° Ongoing Fortune Foes Actions: Connect X, Discord, Join Tournaments and Refer Users CLAIM AIRDROP 45° Ongoing Startale Actions: Fund Your Wallet, Check in Daily, Complete Missions CLAIM AIRDROP Ongoing Retium Actions: Join Discord & Telegram, Complete Quiz and Reach Cadet Role CLAIM AIRDROP 24° Ongoing Confirmed HertzFlow Actions: Fund Your Wallet, Hold the Deposit, Trade Perps Once it Opens CL",
       "source": "airdrops.io",
       "tge_date": ", so treat any token distribution as speculative, like the other pre-token projects",
       "steps": [
@@ -393,7 +390,7 @@
       "id": "startale",
       "name": "Startale",
       "url": "https://airdrops.io/startale/",
-      "heat": 47,
+      "heat": 45,
       "status": "active",
       "chain": "Soneium",
       "actions": [
@@ -401,7 +398,7 @@
         "Check in Daily",
         "Complete Missions"
       ],
-      "description": "47° Ongoing Startale Actions: Fund Your Wallet, Check in Daily, Complete Missions CLAIM AIRDROP",
+      "description": "45° Ongoing Startale Actions: Fund Your Wallet, Check in Daily, Complete Missions CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "date or an allocation, so a Startale airdrop remains speculative",
       "steps": [
@@ -424,13 +421,13 @@
       "id": "sight",
       "name": "Sight",
       "url": "https://airdrops.io/sight/",
-      "heat": 37,
+      "heat": 35,
       "status": "active",
       "chain": "Robinhood",
       "actions": [
         "Sight Actions: Submit Email and Join Waitlist"
       ],
-      "description": "37° Ongoing Sight Actions: Submit Email and Join Waitlist CLAIM AIRDROP",
+      "description": "35° Ongoing Sight Actions: Submit Email and Join Waitlist CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "event",
       "steps": [
@@ -448,13 +445,13 @@
       "id": "rialo",
       "name": "Rialo",
       "url": "https://airdrops.io/rialo/",
-      "heat": 37,
+      "heat": 35,
       "status": "confirmed",
       "chain": "Own",
       "actions": [
         "Rialo Actions: Join testnet"
       ],
-      "description": "Ongoing Rialo Actions: Join testnet CLAIM AIRDROP Ended Optimism Actions: No Further Actions as of now CLAIM AIRDROP 37° Ongoing Sight Actions: Submit Email and Join Waitlist CLAIM AIRDROP Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP Ongoing GTE Actions: Check the wallet for Refund CLAIM AIRDROP Ongoing Linera Actions: Interact wit",
+      "description": "Ongoing Rialo Actions: Join testnet CLAIM AIRDROP Ended Optimism Actions: No Further Actions as of now CLAIM AIRDROP 35° Ongoing Sight Actions: Submit Email and Join Waitlist CLAIM AIRDROP Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP Ongoing GTE Actions: Check the wallet for Refund CLAIM AIRDROP Ongoing Linera Actions: Interact wit",
       "source": "airdrops.io",
       "steps": [
         "Jump to steps Rialo Airdrop Details Rialo has not confirmed a token, an airdrop, or a points program, so treat this page as a way to position early rather than a guaranteed reward. What the team has shipped is a public devnet playground, a faucet, and a Discord role system that tracks who shows up. Those are the records an L1 usually looks back at if it decides to reward early users, and the pool is still small next to bigger testnet campaigns."
@@ -466,6 +463,90 @@
       },
       "eligibility": ", if it ever arrives, would be rebuilt from devnet transaction history and Discord contributions rather than from points you can watch tick up",
       "estimated_cost": "money? No"
+    },
+    {
+      "id": "hertzflow",
+      "name": "HertzFlow",
+      "url": "https://airdrops.io/hertzflow/",
+      "heat": 24,
+      "status": "confirmed",
+      "chain": "BSC",
+      "actions": [
+        "HertzFlow Actions: Fund Your Wallet",
+        "Hold the Deposit",
+        "Trade Perps Once it Opens"
+      ],
+      "description": "24° Ongoing Confirmed HertzFlow Actions: Fund Your Wallet, Hold the Deposit, Trade Perps Once it Opens CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "event and an airdrop",
+      "steps": [
+        "Jump to steps HertzFlow Airdrop Details HertzFlow has confirmed both a token generation event and an airdrop. Official documentation describes Merits, the protocol’s reward points, as your weight in that airdrop: at TGE they convert into an allocation and reset to zero. Season 1 runs entirely through the Genesis Vault, a capped pre",
+        "deposit event where every Merit comes from supplying liquidity. Neither the allocation size nor a TGE date has been published. Season 1 Genesis Vault parameters: Deposit assets: USD1 or U on BNB Chain Minimum deposit: $10, measured after any deposit fee Phase 1 caps: 4.44M USD1 and 8.88M U, first come first served Boost: 10x Merits on any single deposit held 90 continuous days Merits are issued in periods. Each period a fixed pool is split among depositors by their share of the vault, so your live estimate moves as others deposit and withdraw, settling only when the period closes. Merits are credited automatically and require no claim step. Mainnet launched in August 2026 and the Genesis Vault pre",
+        "deposit opened the same week."
+      ],
+      "about": "HertzFlow Airdrop Details HertzFlow has confirmed both a token generation event and an airdrop. Official documentation describes Merits, the protocol’s reward points, as your weight in that airdrop: at TGE they convert into an allocation and reset to zero. Season 1 runs entirely through the Genesis Vault, a capped pre-deposit event where every Merit comes from supplying liquidity. Neither the allocation size nor a TGE date has been published. Season 1 Genesis Vault parameters: Deposit assets: USD1 or U on BNB Chain Minimum deposit: $10, measured after any deposit fee Phase 1 caps: 4.44M USD1 and 8.88M U, first come first served Boost: 10x Merits on any single deposit held 90 continuous days Merits are issued in periods. Each period a fixed pool is split among depositors by their share of the vault, so your live estimate moves as others deposit and withdraw, settling only when the period closes. Merits are credited automatically and require no claim step. Mainnet launched in August 2026",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=HertzFlow&url=https%3A%2F%2Fairdrops.io%2Fhertzflow%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fhertzflow%2F&text=HertzFlow",
+        "github": "https://github.com/HertzFlow"
+      },
+      "eligibility": ", so there is little reason to skip",
+      "difficulty": "Easy",
+      "estimated_cost": "s nothing and registers you for later campaigns"
+    },
+    {
+      "id": "bitrobot",
+      "name": "BitRobot",
+      "url": "https://airdrops.io/bitrobot/",
+      "heat": 24,
+      "status": "active",
+      "chain": "Solana",
+      "actions": [
+        "BitRobot Actions: Sign Up",
+        "Join Discord",
+        "Complete Missions"
+      ],
+      "description": "24° Ongoing BitRobot Actions: Sign Up, Join Discord, Complete Missions CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "steps": [
+        "Jump to steps BitRobot Airdrop Details No BitRobot token or airdrop has been confirmed. The project runs on Bolts, a unified points system tracking contribution across every subnet. Subnet",
+        "specific points convert to Bolts on each subnet’s own schedule, and older, pre",
+        "Bolts balances carry over through a legacy conversion. BitRobot opened its Lab app and rolled out the unified Bolts system on August 12, 2026, giving contributors a single dashboard to track points earned across subnets. Referrals add 10% on top: when someone you refer converts their subnet points to Bolts, you receive a 10% bonus, capped at one level, and only when the referral has done genuine subnet work."
+      ],
+      "about": "BitRobot Airdrop Details No BitRobot token or airdrop has been confirmed. The project runs on Bolts, a unified points system tracking contribution across every subnet. Subnet-specific points convert to Bolts on each subnet’s own schedule, and older, pre-Bolts balances carry over through a legacy conversion. BitRobot opened its Lab app and rolled out the unified Bolts system on August 12, 2026, giving contributors a single dashboard to track points earned across subnets. Referrals add 10% on top: when someone you refer converts their subnet points to Bolts, you receive a 10% bonus, capped at one level, and only when the referral has done genuine subnet work.",
+      "social_links": {
+        "twitter": "https://x.com/frodobots/status/1890154013909479729",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fbitrobot%2F&text=BitRobot"
+      },
+      "estimated_cost": "to Farm Free AD Overview Website: bitrobot"
+    },
+    {
+      "id": "yakkamon",
+      "name": "Yakkamon",
+      "url": "https://airdrops.io/yakkamon/",
+      "heat": 22,
+      "status": "confirmed",
+      "chain": "Ronin",
+      "actions": [
+        "Yakkamon Actions: Connect Discord and X",
+        "Refer Friends",
+        "Mint NFT"
+      ],
+      "description": "22° Ongoing Confirmed Yakkamon Actions: Connect Discord and X, Refer Friends, Mint NFT CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "Date : No new token; NFT rewards land at early access launch in Q4 2026 Three separate rewards stack",
+      "steps": [
+        "Step 5: Refer Friends Each verified friend who joins earns you +30 points.",
+        "The separate free mint of 10,000 Monster NFTs opens earlier, on October 1, 2026, for verified pre-registered trainers."
+      ],
+      "about": "Yakkamon Airdrop Details The Yakkamon airdrop is confirmed and NFT focused. The top 5,000 trainers on the Season 0 points leaderboard receive Monster NFTs when early access launches: ranks 1 to 1,000 get Legendary Monster NFTs and ranks 1,001 to 5,000 get Rare Monster NFTs. Distribution is automatic and based purely on points, never on sign-up order. The same leaderboard decides early access, with the top 100,000 trainers entering in waves. Key Parameters: Airdrop Allocation : 5,000 Monster NFTs (1,000 Legendary, 4,000 Rare), plus a separate free mint of 10,000 Monster NFTs Distribution Method : Season 0 points leaderboard; airdropped automatically at early access launch TGE Date : No new token; NFT rewards land at early access launch in Q4 2026 Three separate rewards stack. Every sign-up gets a Monster Egg, an in-game item whose tier depends on how early you register. The Trainer Point airdrop covers the 5,000 leaderboard NFTs. On October 1, 2026, every verified pre-registered trainer",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Yakkamon&url=https%3A%2F%2Fairdrops.io%2Fyakkamon%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fyakkamon%2F&text=Yakkamon"
+      },
+      "eligibility": "Twitter / X Email What is Yakkamon? Yakkamon is a creature collector and idle farming game on Ronin from Thought Farm, the studio behind Sunflower Land",
+      "difficulty": "Easy",
+      "estimated_cost": "s nothing beyond a small gas fee, is limited to one mint per trainer, and minting adds points to your leaderboard total"
     },
     {
       "id": "retium",
@@ -492,32 +573,6 @@
       "estimated_cost": "s nothing"
     },
     {
-      "id": "hertzflow",
-      "name": "HertzFlow",
-      "url": "https://airdrops.io/hertzflow/",
-      "heat": 0,
-      "status": "confirmed",
-      "chain": "BSC",
-      "actions": [],
-      "description": "Ongoing Confirmed HertzFlow Actions: Fund Your Wallet, Hold the Deposit, Trade Perps Once it Opens CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "event and an airdrop",
-      "steps": [
-        "Jump to steps HertzFlow Airdrop Details HertzFlow has confirmed both a token generation event and an airdrop. Official documentation describes Merits, the protocol’s reward points, as your weight in that airdrop: at TGE they convert into an allocation and reset to zero. Season 1 runs entirely through the Genesis Vault, a capped pre",
-        "deposit event where every Merit comes from supplying liquidity. Neither the allocation size nor a TGE date has been published. Season 1 Genesis Vault parameters: Deposit assets: USD1 or U on BNB Chain Minimum deposit: $10, measured after any deposit fee Phase 1 caps: 4.44M USD1 and 8.88M U, first come first served Boost: 10x Merits on any single deposit held 90 continuous days Merits are issued in periods. Each period a fixed pool is split among depositors by their share of the vault, so your live estimate moves as others deposit and withdraw, settling only when the period closes. Merits are credited automatically and require no claim step. Mainnet launched in August 2026 and the Genesis Vault pre",
-        "deposit opened the same week."
-      ],
-      "about": "HertzFlow Airdrop Details HertzFlow has confirmed both a token generation event and an airdrop. Official documentation describes Merits, the protocol’s reward points, as your weight in that airdrop: at TGE they convert into an allocation and reset to zero. Season 1 runs entirely through the Genesis Vault, a capped pre-deposit event where every Merit comes from supplying liquidity. Neither the allocation size nor a TGE date has been published. Season 1 Genesis Vault parameters: Deposit assets: USD1 or U on BNB Chain Minimum deposit: $10, measured after any deposit fee Phase 1 caps: 4.44M USD1 and 8.88M U, first come first served Boost: 10x Merits on any single deposit held 90 continuous days Merits are issued in periods. Each period a fixed pool is split among depositors by their share of the vault, so your live estimate moves as others deposit and withdraw, settling only when the period closes. Merits are credited automatically and require no claim step. Mainnet launched in August 2026",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=HertzFlow&url=https%3A%2F%2Fairdrops.io%2Fhertzflow%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fhertzflow%2F&text=HertzFlow",
-        "github": "https://github.com/HertzFlow"
-      },
-      "eligibility": ", so there is little reason to skip",
-      "difficulty": "Easy",
-      "estimated_cost": "s nothing and registers you for later campaigns"
-    },
-    {
       "id": "nava_ai",
       "name": "Nava AI",
       "url": "https://airdrops.io/nava-ai/",
@@ -540,50 +595,27 @@
       "estimated_cost": "positioning rather than a guaranteed path to rewards"
     },
     {
-      "id": "bitrobot",
-      "name": "BitRobot",
-      "url": "https://airdrops.io/bitrobot/",
-      "heat": 0,
-      "status": "active",
-      "chain": "Solana",
-      "actions": [],
-      "description": "Ongoing BitRobot Actions: Sign Up, Join Discord, Complete Missions CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "steps": [
-        "Jump to steps BitRobot Airdrop Details No BitRobot token or airdrop has been confirmed. The project runs on Bolts, a unified points system tracking contribution across every subnet. Subnet",
-        "specific points convert to Bolts on each subnet’s own schedule, and older, pre",
-        "Bolts balances carry over through a legacy conversion. BitRobot opened its Lab app and rolled out the unified Bolts system on August 12, 2026, giving contributors a single dashboard to track points earned across subnets. Referrals add 10% on top: when someone you refer converts their subnet points to Bolts, you receive a 10% bonus, capped at one level, and only when the referral has done genuine subnet work."
-      ],
-      "about": "BitRobot Airdrop Details No BitRobot token or airdrop has been confirmed. The project runs on Bolts, a unified points system tracking contribution across every subnet. Subnet-specific points convert to Bolts on each subnet’s own schedule, and older, pre-Bolts balances carry over through a legacy conversion. BitRobot opened its Lab app and rolled out the unified Bolts system on August 12, 2026, giving contributors a single dashboard to track points earned across subnets. Referrals add 10% on top: when someone you refer converts their subnet points to Bolts, you receive a 10% bonus, capped at one level, and only when the referral has done genuine subnet work.",
-      "social_links": {
-        "twitter": "https://x.com/frodobots/status/1890154013909479729",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fbitrobot%2F&text=BitRobot"
-      },
-      "estimated_cost": "to Farm Free AD Overview Website: bitrobot"
-    },
-    {
-      "id": "yakkamon",
-      "name": "Yakkamon",
-      "url": "https://airdrops.io/yakkamon/",
+      "id": "nowa",
+      "name": "Nowa",
+      "url": "https://airdrops.io/nowa/",
       "heat": 0,
       "status": "confirmed",
-      "chain": "Ronin",
+      "chain": "Own",
       "actions": [],
-      "description": "Ongoing Confirmed Yakkamon Actions: Connect Discord and X, Refer Friends, Mint NFT CLAIM AIRDROP",
+      "description": "Ongoing Confirmed Nowa Actions: Complete Social Tasks, Trade, Stake & Refer to Earn CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "Date : No new token; NFT rewards land at early access launch in Q4 2026 Three separate rewards stack",
+      "tge_date": "allocation on a straight 1:1 basis",
       "steps": [
-        "Step 5: Refer Friends Each verified friend who joins earns you +30 points.",
-        "The separate free mint of 10,000 Monster NFTs opens earlier, on October 1, 2026, for verified pre-registered trainers."
+        "Jump to steps Nowa Airdrop Details Nowa Farming is the opening phase of Nowa’s Community Development Program, which runs across Devnet (live now), Testnet, and Mainnet. Participants earn NOWA tokens directly rather than points, and farmed NOWA converts to TGE allocation on a straight 1:1 basis. Key Parameters: Airdrop Allocation : 500,000 NOWA per day during the Devnet phase, plus a 10,000 USDT leaderboard pool Distribution Method : Direct NOWA accrual, converting 1:1 to TGE allocation TGE Date : Not announced Rewards arrive from two directions. The daily NOWA pool splits across five activity buckets: spot trading, BNPL trading, Vault staking, Earn staking, and referrals. Your share of a bucket is proportional to your activity against everyone else’s in it that day, so a quiet bucket pays more per unit of effort than a crowded one. The second source is the leaderboards, which pay USDT to top ranks and NOWA further down."
       ],
-      "about": "Yakkamon Airdrop Details The Yakkamon airdrop is confirmed and NFT focused. The top 5,000 trainers on the Season 0 points leaderboard receive Monster NFTs when early access launches: ranks 1 to 1,000 get Legendary Monster NFTs and ranks 1,001 to 5,000 get Rare Monster NFTs. Distribution is automatic and based purely on points, never on sign-up order. The same leaderboard decides early access, with the top 100,000 trainers entering in waves. Key Parameters: Airdrop Allocation : 5,000 Monster NFTs (1,000 Legendary, 4,000 Rare), plus a separate free mint of 10,000 Monster NFTs Distribution Method : Season 0 points leaderboard; airdropped automatically at early access launch TGE Date : No new token; NFT rewards land at early access launch in Q4 2026 Three separate rewards stack. Every sign-up gets a Monster Egg, an in-game item whose tier depends on how early you register. The Trainer Point airdrop covers the 5,000 leaderboard NFTs. On October 1, 2026, every verified pre-registered trainer",
+      "about": "Nowa Airdrop Details Nowa Farming is the opening phase of Nowa’s Community Development Program, which runs across Devnet (live now), Testnet, and Mainnet. Participants earn NOWA tokens directly rather than points, and farmed NOWA converts to TGE allocation on a straight 1:1 basis. Key Parameters: Airdrop Allocation : 500,000 NOWA per day during the Devnet phase, plus a 10,000 USDT leaderboard pool Distribution Method : Direct NOWA accrual, converting 1:1 to TGE allocation TGE Date : Not announced Rewards arrive from two directions. The daily NOWA pool splits across five activity buckets: spot trading, BNPL trading, Vault staking, Earn staking, and referrals. Your share of a bucket is proportional to your activity against everyone else’s in it that day, so a quiet bucket pays more per unit of effort than a crowded one. The second source is the leaderboards, which pay USDT to top ranks and NOWA further down.",
       "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Yakkamon&url=https%3A%2F%2Fairdrops.io%2Fyakkamon%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fyakkamon%2F&text=Yakkamon"
+        "twitter": "https://x.com/NowaFinance",
+        "telegram": "https://t.me/NowaFinance"
       },
-      "eligibility": "Twitter / X Email What is Yakkamon? Yakkamon is a creature collector and idle farming game on Ronin from Thought Farm, the studio behind Sunflower Land",
+      "eligibility": "Telegram Twitter / X What is Nowa? Nowa is an onchain financing protocol built around Buy Now, Pay Later crypto trading",
       "difficulty": "Easy",
-      "estimated_cost": "s nothing beyond a small gas fee, is limited to one mint per trainer, and minting adds points to your leaderboard total"
+      "estimated_cost": "s time rather than capital"
     },
     {
       "id": "sweep_finance",
