@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-22T03:49:13.817746+00:00",
+  "last_updated": "2026-08-23T03:56:54.561087+00:00",
   "source": "screener.in",
-  "count": 1681,
+  "count": 1683,
   "ipos": [
     {
       "id": "screener-upcoming-tempsens-instruments",
@@ -130,7 +130,7 @@
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": null,
-        "roce": "70.2"
+        "roce": "20.3"
       },
       "currentPrice": 0,
       "percentChange": 0
@@ -163,7 +163,7 @@
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": null,
-        "roce": "17.2"
+        "roce": "15.4"
       },
       "currentPrice": 0,
       "percentChange": 0
@@ -229,7 +229,7 @@
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": null,
-        "roce": "32.8"
+        "roce": "25.7"
       },
       "currentPrice": 0,
       "percentChange": 0
@@ -262,7 +262,7 @@
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": null,
-        "roce": "16.0"
+        "roce": "16.8"
       },
       "currentPrice": 0,
       "percentChange": 0
@@ -328,7 +328,7 @@
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": null,
-        "roce": "0.0"
+        "roce": "22.5"
       },
       "currentPrice": 0,
       "percentChange": 0
@@ -361,7 +361,7 @@
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": null,
-        "roce": "20.0"
+        "roce": "21.6"
       },
       "currentPrice": 0,
       "percentChange": 0
@@ -698,8 +698,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "yesterday",
-      "description": "ENS Enterprises - Listed on yesterday",
+      "listingDate": "2026-08-21",
+      "description": "ENS Enterprises - Listed on 2026-08-21",
       "about": "",
       "priceBandHigh": 92.0,
       "priceBandLow": 92.0,
@@ -734,8 +734,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "yesterday",
-      "description": "Technocrats Plasma - Listed on yesterday",
+      "listingDate": "2026-08-21",
+      "description": "Technocrats Plasma - Listed on 2026-08-21",
       "about": "",
       "priceBandHigh": 132.0,
       "priceBandLow": 132.0,
@@ -770,8 +770,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "yesterday",
-      "description": "Skytech Infinite Platform - Listed on yesterday",
+      "listingDate": "2026-08-21",
+      "description": "Skytech Infinite Platform - Listed on 2026-08-21",
       "about": "",
       "priceBandHigh": 77.0,
       "priceBandLow": 77.0,
@@ -4049,11 +4049,11 @@
       "listingDate": "2026-05-25",
       "description": "NFP Sampoorna - Listed on 2026-05-25",
       "about": "",
-      "priceBandHigh": 55.0,
-      "priceBandLow": 55.0,
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
       "lotSize": 0,
       "issueSize": "",
-      "marketCap": 69.0,
+      "marketCap": 0,
       "gmp": 0,
       "gmpPercent": 0,
       "subscriptionStatus": "",
@@ -4062,13 +4062,13 @@
       "source_url": "https://www.screener.in/company/NFPSAMPOOR/consolidated/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "55",
-        "currentPrice": "22.60",
+        "ipoPrice": "",
+        "currentPrice": null,
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 22.6,
+      "currentPrice": 0,
       "percentChange": 0
     },
     {
@@ -36410,8 +36410,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "yesterday",
-      "description": "Skytech Infinite Platform - Listed on yesterday",
+      "listingDate": "2026-08-21",
+      "description": "Skytech Infinite Platform - Listed on 2026-08-21",
       "about": "",
       "priceBandHigh": 77.0,
       "priceBandLow": 77.0,
@@ -60481,6 +60481,78 @@
         "rightsPrice": "264.00"
       },
       "currentPrice": 267.04,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-rights-ncl-res-finl",
+      "name": "NCL Res. & Finl.",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "rights",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "",
+      "description": "NCL Res. & Finl. - Listed on N/A",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/530557/",
+      "source_category": "rights",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": "0.77",
+        "exDate": "2026-08-27",
+        "rightsRatio": "7:15",
+        "rightsPrice": "1.00"
+      },
+      "currentPrice": 0.77,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-rights-jaykay-enter",
+      "name": "Jaykay Enter.",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "rights",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "",
+      "description": "Jaykay Enter. - Listed on N/A",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/JAYKAY/consolidated/",
+      "source_category": "rights",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": "154.96",
+        "exDate": "2026-08-28",
+        "rightsRatio": "3:19",
+        "rightsPrice": "75.00"
+      },
+      "currentPrice": 154.96,
       "percentChange": 0
     }
   ]
