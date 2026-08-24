@@ -84,6 +84,13 @@
     "marketCap": 0
   },
   {
+    "name": "Tempsens Instruments",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-08-28",
+    "marketCap": 3070.0
+  },
+  {
     "name": "Dhanwel Hybrid",
     "status": "listed",
     "source_category": "recent",
@@ -788,7 +795,7 @@
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-05-26",
-    "marketCap": 189.0
+    "marketCap": 0
   },
   {
     "name": "NFP Sampoorna",
@@ -7077,18 +7084,18 @@
     "marketCap": 0
   },
   {
-    "name": "Chavda Infra Ltd",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-09-25",
-    "marketCap": 0
-  },
-  {
     "name": "Skytech Infinite Platform",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2026-08-21",
     "marketCap": 76.0
+  },
+  {
+    "name": "Pramodini Medicare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-08-19",
+    "marketCap": 260.0
   },
   {
     "name": "Q&T Foods",
@@ -8027,13 +8034,6 @@
     "source_category": "below_price",
     "listingDate": "2025-09-26",
     "marketCap": 3103.0
-  },
-  {
-    "name": "Ivalue Infosolut",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-09-25",
-    "marketCap": 1601.0
   },
   {
     "name": "Sampat Aluminium",
