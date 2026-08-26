@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-08-25T08:36:49.511122+00:00",
+  "last_updated": "2026-08-26T08:37:49.941737+00:00",
   "total": 37,
   "airdrops": [
     {
       "id": "solpump",
       "name": "SolPump",
       "url": "https://airdrops.io/solpump/",
-      "heat": 424,
+      "heat": 444,
       "status": "confirmed",
       "chain": "Solana",
       "actions": [
         "SolPump Actions: Participate hourly",
         "grab free SOL"
       ],
-      "description": "424° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP 409° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP 398° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP 384° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP 324° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP 276° Ongoing Hypertrade Actio",
+      "description": "444° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP 417° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP 397° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP 392° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP 324° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP 280° Ongoing Hypertrade Actio",
       "source": "airdrops.io",
       "steps": [
         "Visit the official dashboard",
@@ -40,37 +40,10 @@
       "estimated_cost": "to Farm Low AD Overview Website: solpump"
     },
     {
-      "id": "dow_protocol",
-      "name": "Dow Protocol",
-      "url": "https://airdrops.io/dow-protocol/",
-      "heat": 409,
-      "status": "confirmed",
-      "chain": "BSC",
-      "actions": [
-        "Dow Protocol Actions: Connect X",
-        "Publish a Post",
-        "Refer Friends"
-      ],
-      "description": "Ongoing Dow Protocol Actions: Connect X, Publish a Post, Refer Friends CLAIM AIRDROP Ongoing Confirmed TBook Actions: Mint WISE Score, Complete Campaigns & Deposit to Earn CLAIM AIRDROP Ongoing Confirmed Omega Actions: Claim pOmega, Trade and Predict CLAIM AIRDROP 409° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP 43° Ongoing Fortune Foes Actions: Connect X",
-      "source": "airdrops.io",
-      "tge_date": "date",
-      "steps": [
-        "Jump to steps Dow Protocol Airdrop Details Dow Protocol has not confirmed a token or an airdrop. What exists is a live Dow XP program tracking contribution through social quests, referrals and vault activity, with the team saying only that future plans are still to be announced. Any distribution is speculative. The dashboard splits earnings into Task XP and Referral XP. Social quests pay flat amounts, and the referral tier stays locked until your first Dow post passes review. Vault deposits are the other lever, though Dow has not published how deposit size or lock duration weights into XP."
-      ],
-      "about": "Dow Protocol Airdrop Details Dow Protocol has not confirmed a token or an airdrop. What exists is a live Dow XP program tracking contribution through social quests, referrals and vault activity, with the team saying only that future plans are still to be announced. Any distribution is speculative. The dashboard splits earnings into Task XP and Referral XP. Social quests pay flat amounts, and the referral tier stays locked until your first Dow post passes review. Vault deposits are the other lever, though Dow has not published how deposit size or lock duration weights into XP.",
-      "social_links": {
-        "twitter": "https://x.com/DowProtocol/status/2088000136500916329",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fdow-protocol%2F&text=Dow%20Protocol"
-      },
-      "eligibility": "Telegram Twitter / X What is Dow Protocol? Dow Protocol is an e-commerce financing RWA platform that moves working capital lending for cross-border merchants on-chain",
-      "difficulty": "Easy",
-      "estimated_cost": "s nothing and keeps the Volo vault open as an option"
-    },
-    {
       "id": "mint",
       "name": "MINT",
       "url": "https://airdrops.io/mint-io/",
-      "heat": 409,
+      "heat": 417,
       "status": "confirmed",
       "chain": "Base",
       "actions": [
@@ -78,7 +51,7 @@
         "Play Games",
         "Stake MNTD"
       ],
-      "description": "409° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP",
+      "description": "417° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Q4 2026 To qualify, you need a MINT account and at least $50 wagered cumulatively across eligible casino games or sportsbook markets",
       "steps": [
@@ -97,14 +70,14 @@
       "id": "ondo_perps",
       "name": "Ondo Perps",
       "url": "https://airdrops.io/ondo-perps/",
-      "heat": 398,
+      "heat": 397,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Ondo Perps Actions: Join",
         "start Trading"
       ],
-      "description": "398° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP",
+      "description": "397° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "No token airdrop has been announced, but Ondo’s history with points-based incentives makes regular use worth a look for active perps traders.",
@@ -122,13 +95,13 @@
       "id": "monetrix",
       "name": "Monetrix",
       "url": "https://airdrops.io/monetrix/",
-      "heat": 384,
+      "heat": 392,
       "status": "active",
       "chain": "Hyperliquid",
       "actions": [
         "Monetrix Actions: Mint USDM with USDC"
       ],
-      "description": "384° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP",
+      "description": "392° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Not announced Season 0 rewards three groups: stablecoin holders, yield participants, and liquidity providers",
       "steps": [
@@ -176,14 +149,14 @@
       "id": "hypertrade",
       "name": "Hypertrade",
       "url": "https://airdrops.io/hypertrade/",
-      "heat": 276,
+      "heat": 280,
       "status": "active",
       "chain": "Hyperliquid",
       "actions": [
         "Hypertrade Actions: Make swaps",
         "add liquidity"
       ],
-      "description": "276° Ongoing Hypertrade Actions: Make swaps & add liquidity CLAIM AIRDROP",
+      "description": "280° Ongoing Hypertrade Actions: Make swaps & add liquidity CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": ", but the points system is live and accumulating rewards for early users",
       "steps": [
@@ -230,13 +203,13 @@
       "id": "orbinum",
       "name": "Orbinum",
       "url": "https://airdrops.io/orbinum/",
-      "heat": 183,
+      "heat": 186,
       "status": "confirmed",
       "chain": "Own",
       "actions": [
         "Orbinum Actions: Interact with testnet"
       ],
-      "description": "183° Ongoing Confirmed Orbinum Actions: Interact with testnet CLAIM AIRDROP",
+      "description": "186° Ongoing Confirmed Orbinum Actions: Interact with testnet CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Q4 2026 (October to December) Credits are locked in by a snapshot taken exactly 14 days before mainnet launch, and the full allocation unlocks at distribution with no vesting",
       "steps": [
@@ -386,10 +359,63 @@
       "estimated_cost": "s"
     },
     {
+      "id": "flop_labs",
+      "name": "Flop Labs",
+      "url": "https://airdrops.io/flop-labs/",
+      "heat": 76,
+      "status": "confirmed",
+      "chain": "Own",
+      "actions": [
+        "Flop Labs Actions: Follow on X",
+        "Apply For a Network Role",
+        "Wait for Testnet"
+      ],
+      "description": "Ongoing Confirmed Flop Labs Actions: Follow on X, Apply For a Network Role, Wait for Testnet CLAIM AIRDROP 76° Ongoing Dow Protocol Actions: Connect X, Publish a Post, Refer Friends CLAIM AIRDROP 32° Ongoing Confirmed TBook Actions: Mint WISE Score, Complete Campaigns & Deposit to Earn CLAIM AIRDROP 22° Ongoing Confirmed Omega Actions: Claim pOmega, Trade and Predict CLAIM AIRDROP 417° Ongoing Con",
+      "source": "airdrops.io",
+      "tge_date": "Date : Airdrop targeted for Q4 2026, genesis block targeted for Q1 2027 The testnet is the center of it, and it is not live",
+      "steps": [
+        "Jump to steps Flop Airdrop Details The airdrop is confirmed. Hayes has stated a large $FLOP distribution is planned for Q4 2026, ahead of the genesis block in Q1 2027, though eligibility rules and snapshot dates are unpublished. His 19 August essay put roughly 20% of supply with testnet participants, released across ten years. Key Parameters: Airdrop Allocation : Roughly 20% of total supply to testnet participants, distributed over ten years Distribution Method : Testnet participation, mining, validating and community contribution TGE Date : Airdrop targeted for Q4 2026, genesis block targeted for Q1 2027 The testnet is the center of it, and it is not live. Hayes has said it opens sometime in Q4, putting testnet and airdrop in the same quarter. Today the only stated requirement is following Flop on X, and the only concrete actions are three application forms. Creators are the one cohort with a described payout, earning $FLOP from the network activity their audience generates."
+      ],
+      "about": "Flop Airdrop Details The airdrop is confirmed. Hayes has stated a large $FLOP distribution is planned for Q4 2026, ahead of the genesis block in Q1 2027, though eligibility rules and snapshot dates are unpublished. His 19 August essay put roughly 20% of supply with testnet participants, released across ten years. Key Parameters: Airdrop Allocation : Roughly 20% of total supply to testnet participants, distributed over ten years Distribution Method : Testnet participation, mining, validating and community contribution TGE Date : Airdrop targeted for Q4 2026, genesis block targeted for Q1 2027 The testnet is the center of it, and it is not live. Hayes has said it opens sometime in Q4, putting testnet and airdrop in the same quarter. Today the only stated requirement is following Flop on X, and the only concrete actions are three application forms. Creators are the one cohort with a described payout, earning $FLOP from the network activity their audience generates.",
+      "social_links": {
+        "twitter": "https://x.com/flop_labs",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fflop-labs%2F&text=Flop%20Labs"
+      },
+      "eligibility": "rules and snapshot dates are unpublished",
+      "estimated_cost": "s nothing, and there is no presale or deposit"
+    },
+    {
+      "id": "dow_protocol",
+      "name": "Dow Protocol",
+      "url": "https://airdrops.io/dow-protocol/",
+      "heat": 76,
+      "status": "active",
+      "chain": "BSC",
+      "actions": [
+        "Dow Protocol Actions: Connect X",
+        "Publish a Post",
+        "Refer Friends"
+      ],
+      "description": "76° Ongoing Dow Protocol Actions: Connect X, Publish a Post, Refer Friends CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "date",
+      "steps": [
+        "Jump to steps Dow Protocol Airdrop Details Dow Protocol has not confirmed a token or an airdrop. What exists is a live Dow XP program tracking contribution through social quests, referrals and vault activity, with the team saying only that future plans are still to be announced. Any distribution is speculative. The dashboard splits earnings into Task XP and Referral XP. Social quests pay flat amounts, and the referral tier stays locked until your first Dow post passes review. Vault deposits are the other lever, though Dow has not published how deposit size or lock duration weights into XP."
+      ],
+      "about": "Dow Protocol Airdrop Details Dow Protocol has not confirmed a token or an airdrop. What exists is a live Dow XP program tracking contribution through social quests, referrals and vault activity, with the team saying only that future plans are still to be announced. Any distribution is speculative. The dashboard splits earnings into Task XP and Referral XP. Social quests pay flat amounts, and the referral tier stays locked until your first Dow post passes review. Vault deposits are the other lever, though Dow has not published how deposit size or lock duration weights into XP.",
+      "social_links": {
+        "twitter": "https://x.com/DowProtocol/status/2088000136500916329",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fdow-protocol%2F&text=Dow%20Protocol"
+      },
+      "eligibility": "Telegram Twitter / X What is Dow Protocol? Dow Protocol is an e-commerce financing RWA platform that moves working capital lending for cross-border merchants on-chain",
+      "difficulty": "Easy",
+      "estimated_cost": "s nothing and keeps the Volo vault open as an option"
+    },
+    {
       "id": "fortune_foes",
       "name": "Fortune Foes",
       "url": "https://airdrops.io/fortune-foes/",
-      "heat": 43,
+      "heat": 44,
       "status": "active",
       "chain": "Robinhood",
       "actions": [
@@ -397,7 +423,7 @@
         "Discord",
         "Join Tournaments and Refer Users"
       ],
-      "description": "43° Ongoing Fortune Foes Actions: Connect X, Discord, Join Tournaments and Refer Users CLAIM AIRDROP",
+      "description": "44° Ongoing Fortune Foes Actions: Connect X, Discord, Join Tournaments and Refer Users CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": ", so treat any token distribution as speculative, like the other pre-token projects",
       "steps": [
@@ -414,61 +440,18 @@
       "estimated_cost": "nothing"
     },
     {
-      "id": "sight",
-      "name": "Sight",
-      "url": "https://airdrops.io/sight/",
-      "heat": 23,
-      "status": "active",
-      "chain": "Robinhood",
-      "actions": [
-        "Sight Actions: Submit Email and Join Waitlist"
-      ],
-      "description": "23° Ongoing Sight Actions: Submit Email and Join Waitlist CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "event",
-      "steps": [
-        "Jump to steps Sight Airdrop Details Sight has not confirmed a token, a ticker, or an airdrop. There is no points program, no eligibility dashboard, and no published distribution mechanism, so any allocation to early users is speculative. What the project has done is issue a free Genesis NFT to its first followers, which is the cleanest record a team at this stage has of who showed up early. The Genesis claims closed around August 11, 2026, and claimants were told to watch their wallets over the following days. Invitation codes for community sharing were floated as a next step but have not been distributed, leaving the waitlist as the only open route in. Latest Update: Sight has opened a new quest set on Sight Quest that awards NFT waitlist access. Sign in with X, then complete the quests in order: submit your wallet address for whitelist consideration, follow @sight_hood and @booj1e, like, repost, and comment on the campaign post, and publish an original post about Sight on X."
-      ],
-      "about": "Sight Airdrop Details Sight has not confirmed a token, a ticker, or an airdrop. There is no points program, no eligibility dashboard, and no published distribution mechanism, so any allocation to early users is speculative. What the project has done is issue a free Genesis NFT to its first followers, which is the cleanest record a team at this stage has of who showed up early. The Genesis claims closed around August 11, 2026, and claimants were told to watch their wallets over the following days. Invitation codes for community sharing were floated as a next step but have not been distributed, leaving the waitlist as the only open route in. Latest Update: Sight has opened a new quest set on Sight Quest that awards NFT waitlist access. Sign in with X, then complete the quests in order: submit your wallet address for whitelist consideration, follow @sight_hood and @booj1e, like, repost, and comment on the campaign post, and publish an original post about Sight on X.",
-      "social_links": {
-        "twitter": "https://x.com/sight_hood",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fsight%2F&text=Sight"
-      },
-      "eligibility": "dashboard, and no published distribution mechanism, so any allocation to early users is speculative",
-      "estimated_cost": "s nothing, and the Genesis NFT was a free mint with no purchase requirement"
-    },
-    {
-      "id": "rialo",
-      "name": "Rialo",
-      "url": "https://airdrops.io/rialo/",
-      "heat": 23,
-      "status": "confirmed",
-      "chain": "Own",
-      "actions": [
-        "Rialo Actions: Join testnet"
-      ],
-      "description": "Ongoing Rialo Actions: Join testnet CLAIM AIRDROP Ended Optimism Actions: No Further Actions as of now CLAIM AIRDROP 23° Ongoing Sight Actions: Submit Email and Join Waitlist CLAIM AIRDROP Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP Ongoing GTE Actions: Check the wallet for Refund CLAIM AIRDROP Ongoing Linera Actions: Interact wit",
-      "source": "airdrops.io",
-      "steps": [
-        "Jump to steps Rialo Airdrop Details Rialo has not confirmed a token, an airdrop, or a points program, so treat this page as a way to position early rather than a guaranteed reward. What the team has shipped is a public devnet playground, a faucet, and a Discord role system that tracks who shows up. Those are the records an L1 usually looks back at if it decides to reward early users, and the pool is still small next to bigger testnet campaigns."
-      ],
-      "about": "Rialo has not confirmed a token, an airdrop, or a points program, so treat this page as a way to position early rather than a guaranteed reward. What the team has shipped is a public devnet playground, a faucet, and a Discord role system that tracks who shows up. Those are the records an L1 usually looks back at if it decides to reward early users, and the pool is still small next to bigger testnet campaigns.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Rialo&url=https%3A%2F%2Fairdrops.io%2Frialo%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Frialo%2F&text=Rialo"
-      },
-      "eligibility": ", if it ever arrives, would be rebuilt from devnet transaction history and Discord contributions rather than from points you can watch tick up",
-      "estimated_cost": "money? No"
-    },
-    {
       "id": "tbook",
       "name": "TBook",
       "url": "https://airdrops.io/tbook/",
-      "heat": 0,
+      "heat": 32,
       "status": "confirmed",
       "chain": "Sui",
-      "actions": [],
-      "description": "Ongoing Confirmed TBook Actions: Mint WISE Score, Complete Campaigns & Deposit to Earn CLAIM AIRDROP",
+      "actions": [
+        "TBook Actions: Mint WISE Score",
+        "Complete Campaigns",
+        "Deposit to Earn"
+      ],
+      "description": "32° Ongoing Confirmed TBook Actions: Mint WISE Score, Complete Campaigns & Deposit to Earn CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Targeted for Q1 2026 in official documentation; not yet completed Vesting Schedule : Released in multiple phases, with the schedule set by community governance vote The named buckets are high-WISE-score users, early RWA investors, SBT holders, contributing KOLs, and Bookies NFT holders, who get a dedicated slice as very early supporters",
       "steps": [
@@ -490,11 +473,14 @@
       "id": "omega",
       "name": "Omega",
       "url": "https://airdrops.io/omega/",
-      "heat": 0,
+      "heat": 22,
       "status": "confirmed",
       "chain": "Aptos",
-      "actions": [],
-      "description": "Ongoing Confirmed Omega Actions: Claim pOmega, Trade and Predict CLAIM AIRDROP",
+      "actions": [
+        "Omega Actions: Claim pOmega",
+        "Trade and Predict"
+      ],
+      "description": "22° Ongoing Confirmed Omega Actions: Claim pOmega, Trade and Predict CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "date for a main token",
       "steps": [
@@ -587,6 +573,28 @@
       "estimated_cost": "s nothing and registers you for later campaigns"
     },
     {
+      "id": "sight",
+      "name": "Sight",
+      "url": "https://airdrops.io/sight/",
+      "heat": 0,
+      "status": "active",
+      "chain": "Robinhood",
+      "actions": [],
+      "description": "Ongoing Sight Actions: Submit Email and Join Waitlist CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "event",
+      "steps": [
+        "Jump to steps Sight Airdrop Details Sight has not confirmed a token, a ticker, or an airdrop. There is no points program, no eligibility dashboard, and no published distribution mechanism, so any allocation to early users is speculative. What the project has done is issue a free Genesis NFT to its first followers, which is the cleanest record a team at this stage has of who showed up early. The Genesis claims closed around August 11, 2026, and claimants were told to watch their wallets over the following days. Invitation codes for community sharing were floated as a next step but have not been distributed, leaving the waitlist as the only open route in. Latest Update: Sight has opened a new quest set on Sight Quest that awards NFT waitlist access. Sign in with X, then complete the quests in order: submit your wallet address for whitelist consideration, follow @sight_hood and @booj1e, like, repost, and comment on the campaign post, and publish an original post about Sight on X."
+      ],
+      "about": "Sight Airdrop Details Sight has not confirmed a token, a ticker, or an airdrop. There is no points program, no eligibility dashboard, and no published distribution mechanism, so any allocation to early users is speculative. What the project has done is issue a free Genesis NFT to its first followers, which is the cleanest record a team at this stage has of who showed up early. The Genesis claims closed around August 11, 2026, and claimants were told to watch their wallets over the following days. Invitation codes for community sharing were floated as a next step but have not been distributed, leaving the waitlist as the only open route in. Latest Update: Sight has opened a new quest set on Sight Quest that awards NFT waitlist access. Sign in with X, then complete the quests in order: submit your wallet address for whitelist consideration, follow @sight_hood and @booj1e, like, repost, and comment on the campaign post, and publish an original post about Sight on X.",
+      "social_links": {
+        "twitter": "https://x.com/sight_hood",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fsight%2F&text=Sight"
+      },
+      "eligibility": "dashboard, and no published distribution mechanism, so any allocation to early users is speculative",
+      "estimated_cost": "s nothing, and the Genesis NFT was a free mint with no purchase requirement"
+    },
+    {
       "id": "nava_ai",
       "name": "Nava AI",
       "url": "https://airdrops.io/nava-ai/",
@@ -654,28 +662,25 @@
       "estimated_cost": "s time rather than capital"
     },
     {
-      "id": "yakkamon",
-      "name": "Yakkamon",
-      "url": "https://airdrops.io/yakkamon/",
+      "id": "rialo",
+      "name": "Rialo",
+      "url": "https://airdrops.io/rialo/",
       "heat": 0,
       "status": "confirmed",
-      "chain": "Ronin",
+      "chain": "Own",
       "actions": [],
-      "description": "Ongoing Confirmed Yakkamon Actions: Connect Discord and X, Refer Friends, Mint NFT CLAIM AIRDROP",
+      "description": "Ongoing Rialo Actions: Join testnet CLAIM AIRDROP Ended Optimism Actions: No Further Actions as of now CLAIM AIRDROP Ongoing Sight Actions: Submit Email and Join Waitlist CLAIM AIRDROP Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP Ongoing GTE Actions: Check the wallet for Refund CLAIM AIRDROP Ongoing Linera Actions: Interact with te",
       "source": "airdrops.io",
-      "tge_date": "Date : No new token; NFT rewards land at early access launch in Q4 2026 Three separate rewards stack",
       "steps": [
-        "Step 5: Refer Friends Each verified friend who joins earns you +30 points.",
-        "The separate free mint of 10,000 Monster NFTs opens earlier, on October 1, 2026, for verified pre-registered trainers."
+        "Jump to steps Rialo Airdrop Details Rialo has not confirmed a token, an airdrop, or a points program, so treat this page as a way to position early rather than a guaranteed reward. What the team has shipped is a public devnet playground, a faucet, and a Discord role system that tracks who shows up. Those are the records an L1 usually looks back at if it decides to reward early users, and the pool is still small next to bigger testnet campaigns."
       ],
-      "about": "Yakkamon Airdrop Details The Yakkamon airdrop is confirmed and NFT focused. The top 5,000 trainers on the Season 0 points leaderboard receive Monster NFTs when early access launches: ranks 1 to 1,000 get Legendary Monster NFTs and ranks 1,001 to 5,000 get Rare Monster NFTs. Distribution is automatic and based purely on points, never on sign-up order. The same leaderboard decides early access, with the top 100,000 trainers entering in waves. Key Parameters: Airdrop Allocation : 5,000 Monster NFTs (1,000 Legendary, 4,000 Rare), plus a separate free mint of 10,000 Monster NFTs Distribution Method : Season 0 points leaderboard; airdropped automatically at early access launch TGE Date : No new token; NFT rewards land at early access launch in Q4 2026 Three separate rewards stack. Every sign-up gets a Monster Egg, an in-game item whose tier depends on how early you register. The Trainer Point airdrop covers the 5,000 leaderboard NFTs. On October 1, 2026, every verified pre-registered trainer",
+      "about": "Rialo has not confirmed a token, an airdrop, or a points program, so treat this page as a way to position early rather than a guaranteed reward. What the team has shipped is a public devnet playground, a faucet, and a Discord role system that tracks who shows up. Those are the records an L1 usually looks back at if it decides to reward early users, and the pool is still small next to bigger testnet campaigns.",
       "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Yakkamon&url=https%3A%2F%2Fairdrops.io%2Fyakkamon%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fyakkamon%2F&text=Yakkamon"
+        "twitter": "https://x.com/intent/tweet?text=Rialo&url=https%3A%2F%2Fairdrops.io%2Frialo%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Frialo%2F&text=Rialo"
       },
-      "eligibility": "Twitter / X Email What is Yakkamon? Yakkamon is a creature collector and idle farming game on Ronin from Thought Farm, the studio behind Sunflower Land",
-      "difficulty": "Easy",
-      "estimated_cost": "s nothing beyond a small gas fee, is limited to one mint per trainer, and minting adds points to your leaderboard total"
+      "eligibility": ", if it ever arrives, would be rebuilt from devnet transaction history and Discord contributions rather than from points you can watch tick up",
+      "estimated_cost": "money? No"
     },
     {
       "id": "optimism",
