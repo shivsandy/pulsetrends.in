@@ -1,19 +1,74 @@
 {
-  "last_updated": "2026-08-26T08:37:49.941737+00:00",
-  "total": 37,
+  "last_updated": "2026-08-27T18:46:43.980705+00:00",
+  "total": 38,
   "airdrops": [
+    {
+      "id": "ondo_perps",
+      "name": "Ondo Perps",
+      "url": "https://airdrops.io/ondo-perps/",
+      "heat": 409,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [
+        "Ondo Perps Actions: Join",
+        "start Trading"
+      ],
+      "description": "409° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP 390° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP 382° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP 374° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP 327° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP 280° Ongoing Hypertrade Actio",
+      "source": "airdrops.io",
+      "steps": [
+        "No token airdrop has been announced, but Ondo’s history with points-based incentives makes regular use worth a look for active perps traders.",
+        "Which projects could airdrop next?"
+      ],
+      "about": "Ondo Perps Airdrop Details A dedicated Ondo Perps token airdrop is not confirmed. What runs today is a weekly USDC rewards program for traders plus the broader Ondo Points program from the Ondo Foundation, which has preceded token distributions across the ecosystem before. With ONDO already trading and 52.1% of supply set aside for Ecosystem Growth, active use of Ondo products is a speculative play on future reward windows. Ondo Perps rewards traders in a few ways. A referral program pays you for bringing in other active traders, and weekly USDC pools are split based on trading activity. The launch week put $150,000 in USDC rewards up for grabs, and a dedicated Ondo Points program for perps traders is coming soon. The email waitlist has closed, so access no longer depends on an invite code, and you can connect a wallet on the app and start trading straight away. Latest Update: Ondo Perps has credited $100 USDC to a limited group of accounts rather than all users, with the credit going ",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Ondo%20Perps&url=https%3A%2F%2Fairdrops.io%2Fondo-perps%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fondo-perps%2F&text=Ondo%20Perps"
+      },
+      "difficulty": "Medium",
+      "estimated_cost": "s nothing"
+    },
+    {
+      "id": "monetrix",
+      "name": "Monetrix",
+      "url": "https://airdrops.io/monetrix/",
+      "heat": 390,
+      "status": "active",
+      "chain": "Hyperliquid",
+      "actions": [
+        "Monetrix Actions: Mint USDM with USDC"
+      ],
+      "description": "390° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "Date : Not announced Season 0 rewards three groups: stablecoin holders, yield participants, and liquidity providers",
+      "steps": [
+        "Jump to steps Monetrix Airdrop Details Monetrix has not confirmed a governance token or an airdrop. The team launched a Season 0 points program alongside mainnet, and points programs like this often precede a token distribution, but no Monetrix airdrop, points",
+        "token conversion, or retroactive reward has been officially announced. Treat Season 0 as speculative positioning rather than a guaranteed payout. Key Parameters: Airdrop Allocation : Not announced Distribution Method : Season 0 points (updated weekly in",
+        "app) TGE Date : Not announced Season 0 rewards three groups: stablecoin holders, yield participants, and liquidity providers. Points carry activity multipliers, so what you do with your USDM matters more than the raw amount. Holding USDM earns 2x, staking into sUSDM earns 5x, providing USDC/USDM liquidity on Hybra earns 10x, and providing HYPE/USDM liquidity earns 15x. Points update weekly inside the app. Latest Update: Hybra Finance has opened sUSDM/USDM pools on Hyperliquid, with bribes already live for the pair and LPs earning 10x points. Head to Hybra Finance , connect your wallet on HyperEVM, deposit sUSDM and USDM into the pool, then Yieldmaxx your position to stack points before emissions begin next epoch. YieldMaxxing is live on Merkl, a two",
+        "week run with roughly 14 days left. Hold staked USDM (sUSDM) on HyperEVM to earn mP",
+        "Index points at a target APR of 10% or more. Acquire sUSDM and hold it through the Merkl campaign for the full two",
+        "week window. Rewards accrue automatically while you hold, and the campaign page links a “Get them now” option if you do not have sUSDM yet."
+      ],
+      "about": "Monetrix Airdrop Details Monetrix has not confirmed a governance token or an airdrop. The team launched a Season 0 points program alongside mainnet, and points programs like this often precede a token distribution, but no Monetrix airdrop, points-to-token conversion, or retroactive reward has been officially announced. Treat Season 0 as speculative positioning rather than a guaranteed payout. Key Parameters: Airdrop Allocation : Not announced Distribution Method : Season 0 points (updated weekly in-app) TGE Date : Not announced Season 0 rewards three groups: stablecoin holders, yield participants, and liquidity providers. Points carry activity multipliers, so what you do with your USDM matters more than the raw amount. Holding USDM earns 2x, staking into sUSDM earns 5x, providing USDC/USDM liquidity on Hybra earns 10x, and providing HYPE/USDM liquidity earns 15x. Points update weekly inside the app. Latest Update: Hybra Finance has opened sUSDM/USDM pools on Hyperliquid, with bribes al",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Monetrix&url=https%3A%2F%2Fairdrops.io%2Fmonetrix%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fmonetrix%2F&text=Monetrix"
+      },
+      "eligibility": "Telegram Twitter / X What is Monetrix? Monetrix is a yield-bearing stablecoin protocol built natively on HyperEVM",
+      "difficulty": "Medium",
+      "estimated_cost": "to Farm High AD Overview Website: monetrix"
+    },
     {
       "id": "solpump",
       "name": "SolPump",
       "url": "https://airdrops.io/solpump/",
-      "heat": 444,
-      "status": "confirmed",
+      "heat": 382,
+      "status": "active",
       "chain": "Solana",
       "actions": [
         "SolPump Actions: Participate hourly",
         "grab free SOL"
       ],
-      "description": "444° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP 417° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP 397° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP 392° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP 324° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP 280° Ongoing Hypertrade Actio",
+      "description": "382° Ongoing SolPump Actions: Participate hourly, grab free SOL CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Visit the official dashboard",
@@ -43,7 +98,7 @@
       "id": "mint",
       "name": "MINT",
       "url": "https://airdrops.io/mint-io/",
-      "heat": 417,
+      "heat": 374,
       "status": "confirmed",
       "chain": "Base",
       "actions": [
@@ -51,7 +106,7 @@
         "Play Games",
         "Stake MNTD"
       ],
-      "description": "417° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP",
+      "description": "374° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Q4 2026 To qualify, you need a MINT account and at least $50 wagered cumulatively across eligible casino games or sportsbook markets",
       "steps": [
@@ -67,71 +122,16 @@
       "estimated_cost": "to Farm Low AD Overview Website: mint"
     },
     {
-      "id": "ondo_perps",
-      "name": "Ondo Perps",
-      "url": "https://airdrops.io/ondo-perps/",
-      "heat": 397,
-      "status": "confirmed",
-      "chain": "Ethereum",
-      "actions": [
-        "Ondo Perps Actions: Join",
-        "start Trading"
-      ],
-      "description": "397° Ongoing Confirmed Ondo Perps Actions: Join & start Trading CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "steps": [
-        "No token airdrop has been announced, but Ondo’s history with points-based incentives makes regular use worth a look for active perps traders.",
-        "Which projects could airdrop next?"
-      ],
-      "about": "Ondo Perps Airdrop Details A dedicated Ondo Perps token airdrop is not confirmed. What runs today is a weekly USDC rewards program for traders plus the broader Ondo Points program from the Ondo Foundation, which has preceded token distributions across the ecosystem before. With ONDO already trading and 52.1% of supply set aside for Ecosystem Growth, active use of Ondo products is a speculative play on future reward windows. Ondo Perps rewards traders in a few ways. A referral program pays you for bringing in other active traders, and weekly USDC pools are split based on trading activity. The launch week put $150,000 in USDC rewards up for grabs, and a dedicated Ondo Points program for perps traders is coming soon. The email waitlist has closed, so access no longer depends on an invite code, and you can connect a wallet on the app and start trading straight away. Latest Update: Ondo Perps has credited $100 USDC to a limited group of accounts rather than all users, with the credit going ",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Ondo%20Perps&url=https%3A%2F%2Fairdrops.io%2Fondo-perps%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fondo-perps%2F&text=Ondo%20Perps"
-      },
-      "difficulty": "Medium",
-      "estimated_cost": "s nothing"
-    },
-    {
-      "id": "monetrix",
-      "name": "Monetrix",
-      "url": "https://airdrops.io/monetrix/",
-      "heat": 392,
-      "status": "active",
-      "chain": "Hyperliquid",
-      "actions": [
-        "Monetrix Actions: Mint USDM with USDC"
-      ],
-      "description": "392° Ongoing Monetrix Actions: Mint USDM with USDC CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "Date : Not announced Season 0 rewards three groups: stablecoin holders, yield participants, and liquidity providers",
-      "steps": [
-        "Jump to steps Monetrix Airdrop Details Monetrix has not confirmed a governance token or an airdrop. The team launched a Season 0 points program alongside mainnet, and points programs like this often precede a token distribution, but no Monetrix airdrop, points",
-        "token conversion, or retroactive reward has been officially announced. Treat Season 0 as speculative positioning rather than a guaranteed payout. Key Parameters: Airdrop Allocation : Not announced Distribution Method : Season 0 points (updated weekly in",
-        "app) TGE Date : Not announced Season 0 rewards three groups: stablecoin holders, yield participants, and liquidity providers. Points carry activity multipliers, so what you do with your USDM matters more than the raw amount. Holding USDM earns 2x, staking into sUSDM earns 5x, providing USDC/USDM liquidity on Hybra earns 10x, and providing HYPE/USDM liquidity earns 15x. Points update weekly inside the app. Latest Update: Hybra Finance has opened sUSDM/USDM pools on Hyperliquid, with bribes already live for the pair and LPs earning 10x points. Head to Hybra Finance , connect your wallet on HyperEVM, deposit sUSDM and USDM into the pool, then Yieldmaxx your position to stack points before emissions begin next epoch. YieldMaxxing is live on Merkl, a two",
-        "week run with roughly 14 days left. Hold staked USDM (sUSDM) on HyperEVM to earn mP",
-        "Index points at a target APR of 10% or more. Acquire sUSDM and hold it through the Merkl campaign for the full two",
-        "week window. Rewards accrue automatically while you hold, and the campaign page links a “Get them now” option if you do not have sUSDM yet."
-      ],
-      "about": "Monetrix Airdrop Details Monetrix has not confirmed a governance token or an airdrop. The team launched a Season 0 points program alongside mainnet, and points programs like this often precede a token distribution, but no Monetrix airdrop, points-to-token conversion, or retroactive reward has been officially announced. Treat Season 0 as speculative positioning rather than a guaranteed payout. Key Parameters: Airdrop Allocation : Not announced Distribution Method : Season 0 points (updated weekly in-app) TGE Date : Not announced Season 0 rewards three groups: stablecoin holders, yield participants, and liquidity providers. Points carry activity multipliers, so what you do with your USDM matters more than the raw amount. Holding USDM earns 2x, staking into sUSDM earns 5x, providing USDC/USDM liquidity on Hybra earns 10x, and providing HYPE/USDM liquidity earns 15x. Points update weekly inside the app. Latest Update: Hybra Finance has opened sUSDM/USDM pools on Hyperliquid, with bribes al",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Monetrix&url=https%3A%2F%2Fairdrops.io%2Fmonetrix%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fmonetrix%2F&text=Monetrix"
-      },
-      "eligibility": "Telegram Twitter / X What is Monetrix? Monetrix is a yield-bearing stablecoin protocol built natively on HyperEVM",
-      "difficulty": "Medium",
-      "estimated_cost": "to Farm High AD Overview Website: monetrix"
-    },
-    {
       "id": "axis",
       "name": "Axis",
       "url": "https://airdrops.io/axis/",
-      "heat": 324,
+      "heat": 327,
       "status": "active",
       "chain": "Ethereum",
       "actions": [
         "Axis Actions: Deposit and earn"
       ],
-      "description": "324° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP",
+      "description": "327° Ongoing Axis Actions: Deposit and earn CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "That points toward a token, but any free distribution is still unconfirmed.",
@@ -175,14 +175,14 @@
       "id": "polymarket",
       "name": "Polymarket",
       "url": "https://airdrops.io/polymarket/",
-      "heat": 194,
+      "heat": 186,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Polymarket Actions: Deposit",
         "Make predictions"
       ],
-      "description": "194° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP",
+      "description": "186° Ongoing Confirmed Polymarket Actions: Deposit & Make predictions CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "will follow the completion of its U",
       "steps": [
@@ -200,42 +200,17 @@
       "estimated_cost": ") divided by entry cost times 100, so a $10 combo can outrank a $10,000 one"
     },
     {
-      "id": "orbinum",
-      "name": "Orbinum",
-      "url": "https://airdrops.io/orbinum/",
-      "heat": 186,
-      "status": "confirmed",
-      "chain": "Own",
-      "actions": [
-        "Orbinum Actions: Interact with testnet"
-      ],
-      "description": "186° Ongoing Confirmed Orbinum Actions: Interact with testnet CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "Date : Q4 2026 (October to December) Credits are locked in by a snapshot taken exactly 14 days before mainnet launch, and the full allocation unlocks at distribution with no vesting",
-      "steps": [
-        "Jump to steps Orbinum Network Airdrop Details Orbinum has confirmed its airdrop. Season 1, called the Genesis Community, started on March 13, 2026, and rewards users with ORB Credits for quests, weekly streaks, referrals, and testnet activity like shielding, private transfers, unshielding, and selective disclosure. Key Parameters: Airdrop Allocation : 20,000,000 ORB (2% of total supply) Distribution Method : ORB Credits convert proportionally into a share of the allocation pool TGE Date : Q4 2026 (October to December) Credits are locked in by a snapshot taken exactly 14 days before mainnet launch, and the full allocation unlocks at distribution with no vesting. Whatever share you’ve earned by the snapshot date is what converts to ORB at TGE, in full."
-      ],
-      "about": "Orbinum Network Airdrop Details Orbinum has confirmed its airdrop. Season 1, called the Genesis Community, started on March 13, 2026, and rewards users with ORB Credits for quests, weekly streaks, referrals, and testnet activity like shielding, private transfers, unshielding, and selective disclosure. Key Parameters: Airdrop Allocation : 20,000,000 ORB (2% of total supply) Distribution Method : ORB Credits convert proportionally into a share of the allocation pool TGE Date : Q4 2026 (October to December) Credits are locked in by a snapshot taken exactly 14 days before mainnet launch, and the full allocation unlocks at distribution with no vesting. Whatever share you’ve earned by the snapshot date is what converts to ORB at TGE, in full.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Orbinum&url=https%3A%2F%2Fairdrops.io%2Forbinum%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Forbinum%2F&text=Orbinum",
-        "github": "https://github.com/orbinum"
-      },
-      "eligibility": "Telegram Twitter / X What is Orbinum Network? Orbinum Network is a privacy-focused Layer 1 blockchain built on Substrate with EVM compatibility through Frontier",
-      "estimated_cost": "s you both credits and streak progress"
-    },
-    {
       "id": "megapot",
       "name": "Megapot",
       "url": "https://airdrops.io/megapot/",
-      "heat": 178,
+      "heat": 182,
       "status": "active",
       "chain": "Base",
       "actions": [
         "Megapot Actions: Play lottery",
         "refer friends"
       ],
-      "description": "178° Ongoing Megapot Actions: Play lottery & refer friends CLAIM AIRDROP",
+      "description": "182° Ongoing Megapot Actions: Play lottery & refer friends CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "The Summer Backer Bonus requires a continuous position from June 25 to qualify for the full top-up.",
@@ -251,6 +226,37 @@
       "eligibility": "is subject to Kaito’s approval",
       "difficulty": "Easy",
       "estimated_cost": "? Each ticket costs $1, payable in USDC, USDT, or DAI on Base"
+    },
+    {
+      "id": "hyperliquid",
+      "name": "Hyperliquid",
+      "url": "https://airdrops.io/hyperliquid/",
+      "heat": 179,
+      "status": "confirmed",
+      "chain": "Arbitrum",
+      "actions": [
+        "Hyperliquid Actions: Trade",
+        "Interact with Chain",
+        "Stake HYPE",
+        "Provide LP",
+        "Refer Friends"
+      ],
+      "description": "179° Ongoing Confirmed Hyperliquid Actions: Trade, Interact with Chain, Stake HYPE, Provide LP & Refer Friends CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "steps": [
+        "Jump to steps Hyperliquid Season 2: What We Know No official Season 2 date has been announced as of now. That’s by design — Hyperliquid has never telegraphed snapshot timing in advance. The Genesis Event was similarly quiet until it wasn’t. What we do know: 38.888% of total HYPE supply is reserved for future emissions, 428 million tokens remain untouched in the community rewards wallet, and the platform has consistently distributed rewards through trading incentives, staking, and ecosystem engagement since launch. HyperEVM launched February 18, 2025 and remains relatively low",
+        "competition. Most participants are still farming the main DEX. The HyperEVM layer is where early adopters have the clearest edge right now. Latest update: Hyperliquid traders who have reached $1 billion in all",
+        "time volume can now confirm VIP status, which comes with future merch and a more direct line to the team. Open the portfolio page, click the Confirm VIP button, and sign the message with your connected wallet. Then open a ticket in the Hyperliquid Discord server or via Telegram and paste the message shown in the UI."
+      ],
+      "about": "Hyperliquid Season 2: What We Know No official Season 2 date has been announced as of now. That’s by design — Hyperliquid has never telegraphed snapshot timing in advance. The Genesis Event was similarly quiet until it wasn’t. What we do know: 38.888% of total HYPE supply is reserved for future emissions, 428 million tokens remain untouched in the community rewards wallet, and the platform has consistently distributed rewards through trading incentives, staking, and ecosystem engagement since launch. HyperEVM launched February 18, 2025 and remains relatively low-competition. Most participants are still farming the main DEX. The HyperEVM layer is where early adopters have the clearest edge right now. Latest update: Hyperliquid traders who have reached $1 billion in all-time volume can now confirm VIP status, which comes with future merch and a more direct line to the team. Open the portfolio page, click the Confirm VIP button, and sign the message with your connected wallet. Then open a",
+      "social_links": {
+        "twitter": "https://x.com/hypurr_co/status/1873677850752233913",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fhyperliquid%2F&text=Hyperliquid",
+        "github": "https://github.com/hyperliquid-dex"
+      },
+      "eligibility": "for ecosystem project airdrops Governance participation in protocol decisions For higher yield, liquid staking protocols like Kinetiq and LoopedHYPE let you stake HYPE, receive an LST, then deploy that LST into HyperEVM DEX liquidity pools — stacking staking APR, LP APR, and protocol points at the same time",
+      "difficulty": "Hard",
+      "estimated_cost": "averaging works well for larger positions given price volatility Complete the staking process Go to “Staking” → transfer HYPE from spot balance to staking balance → click “Stake Tokens” Consider delegating to HypurrCollective validator for added benefits: Earn Nansen points alongside staking rewards Access to exclusive ecosystem airdrops Track record of 5 successful airdrops since staking launch What staking pays HYPE token rewards from network inflation USDC rewards from platform trading fees Eligibility for ecosystem project airdrops Governance participation in protocol decisions For higher yield, liquid staking protocols like Kinetiq and LoopedHYPE let you stake HYPE, receive an LST, then deploy that LST into HyperEVM DEX liquidity pools — stacking staking APR, LP APR, and protocol points at the same time"
     },
     {
       "id": "truenorth",
@@ -334,6 +340,47 @@
       "estimated_cost": "to Farm Medium AD Overview Website: tradoor0"
     },
     {
+      "id": "kinetiq",
+      "name": "Kinetiq",
+      "url": "https://airdrops.io/kinetiq/",
+      "heat": 170,
+      "status": "confirmed",
+      "chain": "Hyperliquid",
+      "actions": [
+        "Kinetiq Actions: Stake HYPE",
+        "stake KNTQ",
+        "trade perps"
+      ],
+      "description": "170° Ongoing Confirmed Kinetiq Actions: Stake HYPE, stake KNTQ & trade perps CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "steps": [
+        "Program Start: November 13th, 2025",
+        "Program End: September 29th, 2026",
+        "Snapshots: Taken every Tuesday",
+        "Distributions: Occurs every Thursday",
+        "Weekly Allocation: 800,000 kPoints",
+        "Visit the kPoints dashboard to check your current balance and track distributions",
+        "Stake HYPE or other eligible tokens through the staking portal to earn rewards while maintaining liquidityTo get HYPE tokens, go to Hyperliquid and deposit USDC via ArbitrumTransfer USDC from your Perps account to your Spot accountBuy HYPE and then click on ‘Transfer to EVM’Visit the staking portal and stake HYPE for kHYPENavigate to the “Earn” section and deposit your kHYPE tokens to receive vkHYPE (optional)Holding ckHYPE farms multiple airdrops including Felix, HyperLend, and Veda",
+        "To get HYPE tokens, go to Hyperliquid and deposit USDC via Arbitrum",
+        "Transfer USDC from your Perps account to your Spot account",
+        "Buy HYPE and then click on ‘Transfer to EVM’",
+        "Visit the staking portal and stake HYPE for kHYPE",
+        "Navigate to the “Earn” section and deposit your kHYPE tokens to receive vkHYPE (optional)",
+        "Holding ckHYPE farms multiple airdrops including Felix, HyperLend, and Veda",
+        "Trade perps and refer friends using Markets",
+        "Kinetiq is now live on Pendle, so kHYPE and vkHYPE positions on the platform accrue kPoints. You can earn by providing liquidity or minting PT or YT in either pool",
+        "Stake KNTQ for benefits such as increased referral shares, trading discounts, and kmHYPE minting rights",
+        "Continue contributing to the Kinetiq and Markets ecosystems to accumulate more kPoints before each Tuesday snapshot"
+      ],
+      "about": "Kinetiq Airdrop Details The Kinetiq points-based system called kPoints is ongoing and the second season started on November 13th, 2025. Users currently earn kPoints by staking HYPE tokens through the Kinetiq protocol to receive kHYPE liquid staking tokens, swapping into vkHYPE and/or by trading perps on Kinetiq’s HIP-3 exchange Markets. A total of 800,000 kPoints are distributed weekly every Thursday, with snapshots taken every Tuesday. The final snapshot will be on September 29th, 2026 with final distribution on October 1st, 2026. Kinetiq already distributed 25% of the total KNTQ supply directly to the Hyperliquid accounts, with 24% going to kPoints holders and 1% to Hypurr holders. A further 30% of the supply is allocated to ‘protocol growth and rewards’, which is likely to be distributed to kPoints holders in October 2026. Kinetiq has launched $200,000 in trader incentives to support its new iOS mobile app, which features free USDH to USDC swaps, weekly PnL and XP competitions, and ",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Kinetiq&url=https%3A%2F%2Fairdrops.io%2Fkinetiq%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fkinetiq%2F&text=Kinetiq",
+        "github": "https://github.com/kinetiq-research"
+      },
+      "eligibility": "details and program duration will be announced in the coming weeks"
+    },
+    {
       "id": "atoma",
       "name": "Atoma",
       "url": "https://airdrops.io/atoma/",
@@ -362,7 +409,7 @@
       "id": "flop_labs",
       "name": "Flop Labs",
       "url": "https://airdrops.io/flop-labs/",
-      "heat": 76,
+      "heat": 137,
       "status": "confirmed",
       "chain": "Own",
       "actions": [
@@ -370,7 +417,7 @@
         "Apply For a Network Role",
         "Wait for Testnet"
       ],
-      "description": "Ongoing Confirmed Flop Labs Actions: Follow on X, Apply For a Network Role, Wait for Testnet CLAIM AIRDROP 76° Ongoing Dow Protocol Actions: Connect X, Publish a Post, Refer Friends CLAIM AIRDROP 32° Ongoing Confirmed TBook Actions: Mint WISE Score, Complete Campaigns & Deposit to Earn CLAIM AIRDROP 22° Ongoing Confirmed Omega Actions: Claim pOmega, Trade and Predict CLAIM AIRDROP 417° Ongoing Con",
+      "description": "137° Ongoing Confirmed Flop Labs Actions: Follow on X, Apply For a Network Role, Wait for Testnet CLAIM AIRDROP 50° Ongoing Dow Protocol Actions: Connect X, Publish a Post, Refer Friends CLAIM AIRDROP 28° Ongoing Confirmed TBook Actions: Mint WISE Score, Complete Campaigns & Deposit to Earn CLAIM AIRDROP Ongoing Confirmed Omega Actions: Claim pOmega, Trade and Predict CLAIM AIRDROP 374° Ongoing Co",
       "source": "airdrops.io",
       "tge_date": "Date : Airdrop targeted for Q4 2026, genesis block targeted for Q1 2027 The testnet is the center of it, and it is not live",
       "steps": [
@@ -388,7 +435,7 @@
       "id": "dow_protocol",
       "name": "Dow Protocol",
       "url": "https://airdrops.io/dow-protocol/",
-      "heat": 76,
+      "heat": 50,
       "status": "active",
       "chain": "BSC",
       "actions": [
@@ -396,7 +443,7 @@
         "Publish a Post",
         "Refer Friends"
       ],
-      "description": "76° Ongoing Dow Protocol Actions: Connect X, Publish a Post, Refer Friends CLAIM AIRDROP",
+      "description": "50° Ongoing Dow Protocol Actions: Connect X, Publish a Post, Refer Friends CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "date",
       "steps": [
@@ -412,38 +459,10 @@
       "estimated_cost": "s nothing and keeps the Volo vault open as an option"
     },
     {
-      "id": "fortune_foes",
-      "name": "Fortune Foes",
-      "url": "https://airdrops.io/fortune-foes/",
-      "heat": 44,
-      "status": "active",
-      "chain": "Robinhood",
-      "actions": [
-        "Fortune Foes Actions: Connect X",
-        "Discord",
-        "Join Tournaments and Refer Users"
-      ],
-      "description": "44° Ongoing Fortune Foes Actions: Connect X, Discord, Join Tournaments and Refer Users CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": ", so treat any token distribution as speculative, like the other pre-token projects",
-      "steps": [
-        "Jump to steps Fortune Foes Airdrop Details Fortune Foes has not announced a token, a ticker, or a TGE, so treat any token distribution as speculative, like the other pre",
-        "token projects. What exists today is a points program: Fortune Points set your allowlist tier, and your tier decides your mint discount when the collection opens. Points come from profile completion, referrals, wallet history, and tournament placement. Five tiers are live on the dashboard: Allowlist Tiers: Iron: 0 to 1,999 points Bronze: 2,000 to 5,999 points Silver: 6,000 to 11,999 points Gold: 12,000 to 24,999 points Diamond: 25,000 points and above Referrals also pay a 10% revenue share on top of the points they generate, which is unusual for a pre",
-        "mint allowlist and rewards early link sharing."
-      ],
-      "about": "Fortune Foes Airdrop Details Fortune Foes has not announced a token, a ticker, or a TGE, so treat any token distribution as speculative, like the other pre-token projects. What exists today is a points program: Fortune Points set your allowlist tier, and your tier decides your mint discount when the collection opens. Points come from profile completion, referrals, wallet history, and tournament placement. Five tiers are live on the dashboard: Allowlist Tiers: Iron: 0 to 1,999 points Bronze: 2,000 to 5,999 points Silver: 6,000 to 11,999 points Gold: 12,000 to 24,999 points Diamond: 25,000 points and above Referrals also pay a 10% revenue share on top of the points they generate, which is unusual for a pre-mint allowlist and rewards early link sharing.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Fortune%20Foes&url=https%3A%2F%2Fairdrops.io%2Ffortune-foes%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Ffortune-foes%2F&text=Fortune%20Foes"
-      },
-      "eligibility": "Twitter / X What is Fortune Foes? Fortune Foes is a GameFi project built around two opposing NFT kingdoms, Bears and Bulls, that fight in high-stakes games tied to live crypto market movements",
-      "estimated_cost": "nothing"
-    },
-    {
       "id": "tbook",
       "name": "TBook",
       "url": "https://airdrops.io/tbook/",
-      "heat": 32,
+      "heat": 28,
       "status": "confirmed",
       "chain": "Sui",
       "actions": [
@@ -451,7 +470,7 @@
         "Complete Campaigns",
         "Deposit to Earn"
       ],
-      "description": "32° Ongoing Confirmed TBook Actions: Mint WISE Score, Complete Campaigns & Deposit to Earn CLAIM AIRDROP",
+      "description": "28° Ongoing Confirmed TBook Actions: Mint WISE Score, Complete Campaigns & Deposit to Earn CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Targeted for Q1 2026 in official documentation; not yet completed Vesting Schedule : Released in multiple phases, with the schedule set by community governance vote The named buckets are high-WISE-score users, early RWA investors, SBT holders, contributing KOLs, and Bookies NFT holders, who get a dedicated slice as very early supporters",
       "steps": [
@@ -473,14 +492,11 @@
       "id": "omega",
       "name": "Omega",
       "url": "https://airdrops.io/omega/",
-      "heat": 22,
+      "heat": 0,
       "status": "confirmed",
       "chain": "Aptos",
-      "actions": [
-        "Omega Actions: Claim pOmega",
-        "Trade and Predict"
-      ],
-      "description": "22° Ongoing Confirmed Omega Actions: Claim pOmega, Trade and Predict CLAIM AIRDROP",
+      "actions": [],
+      "description": "Ongoing Confirmed Omega Actions: Claim pOmega, Trade and Predict CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "date for a main token",
       "steps": [
@@ -496,6 +512,30 @@
       "estimated_cost": "s a $0"
     },
     {
+      "id": "fortune_foes",
+      "name": "Fortune Foes",
+      "url": "https://airdrops.io/fortune-foes/",
+      "heat": 0,
+      "status": "active",
+      "chain": "Robinhood",
+      "actions": [],
+      "description": "Ongoing Fortune Foes Actions: Connect X, Discord, Join Tournaments and Refer Users CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": ", so treat any token distribution as speculative, like the other pre-token projects",
+      "steps": [
+        "Jump to steps Fortune Foes Airdrop Details Fortune Foes has not announced a token, a ticker, or a TGE, so treat any token distribution as speculative, like the other pre",
+        "token projects. What exists today is a points program: Fortune Points set your allowlist tier, and your tier decides your mint discount when the collection opens. Points come from profile completion, referrals, wallet history, and tournament placement. Five tiers are live on the dashboard: Allowlist Tiers: Iron: 0 to 1,999 points Bronze: 2,000 to 5,999 points Silver: 6,000 to 11,999 points Gold: 12,000 to 24,999 points Diamond: 25,000 points and above Referrals also pay a 10% revenue share on top of the points they generate, which is unusual for a pre",
+        "mint allowlist and rewards early link sharing."
+      ],
+      "about": "Fortune Foes Airdrop Details Fortune Foes has not announced a token, a ticker, or a TGE, so treat any token distribution as speculative, like the other pre-token projects. What exists today is a points program: Fortune Points set your allowlist tier, and your tier decides your mint discount when the collection opens. Points come from profile completion, referrals, wallet history, and tournament placement. Five tiers are live on the dashboard: Allowlist Tiers: Iron: 0 to 1,999 points Bronze: 2,000 to 5,999 points Silver: 6,000 to 11,999 points Gold: 12,000 to 24,999 points Diamond: 25,000 points and above Referrals also pay a 10% revenue share on top of the points they generate, which is unusual for a pre-mint allowlist and rewards early link sharing.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Fortune%20Foes&url=https%3A%2F%2Fairdrops.io%2Ffortune-foes%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Ffortune-foes%2F&text=Fortune%20Foes"
+      },
+      "eligibility": "Twitter / X What is Fortune Foes? Fortune Foes is a GameFi project built around two opposing NFT kingdoms, Bears and Bulls, that fight in high-stakes games tied to live crypto market movements",
+      "estimated_cost": "nothing"
+    },
+    {
       "id": "startale",
       "name": "Startale",
       "url": "https://airdrops.io/startale/",
@@ -507,10 +547,8 @@
       "source": "airdrops.io",
       "tge_date": "date or an allocation, so a Startale airdrop remains speculative",
       "steps": [
-        "Jump to steps Startale Airdrop Details Startale has not announced a token, a TGE date or an allocation, so a Startale airdrop remains speculative. The company does state that STAR Points determine eligibility for future airdrops, exclusive rewards and other Startale App benefits. The points are in",
-        "app points that cannot be redeemed or exchanged with Startale for money. Points accrue through several channels at once. Daily GM check",
-        "ins pay 10 points per 10 check",
-        "ins, monthly mission campaigns are worth 100 to 150 points and reset each month, and liquidity earns 0.0025 points per dollar per day with a $10 minimum. Mini App campaigns carry their own point pools, and referrals pay 10% of what invited users earn, capped at 200 points monthly. Latest Update: Summer Fiesta, a run of Mini App campaigns worth up to 170 STAR Points each, started on August 13, 2026 and continues through September."
+        "Step 8: Invite Friends With Your Referral Link Share your referral link from the invite section.",
+        "Complete the Friends Quest Encrypt 10 USDSC in the Startale app Send any amount to a friend via a private transaction Both actions must be completed before the deadline to earn the full point reward."
       ],
       "about": "Startale Airdrop Details Startale has not announced a token, a TGE date or an allocation, so a Startale airdrop remains speculative. The company does state that STAR Points determine eligibility for future airdrops, exclusive rewards and other Startale App benefits. The points are in-app points that cannot be redeemed or exchanged with Startale for money. Points accrue through several channels at once. Daily GM check-ins pay 10 points per 10 check-ins, monthly mission campaigns are worth 100 to 150 points and reset each month, and liquidity earns 0.0025 points per dollar per day with a $10 minimum. Mini App campaigns carry their own point pools, and referrals pay 10% of what invited users earn, capped at 200 points monthly. Latest Update: Summer Fiesta, a run of Mini App campaigns worth up to 170 STAR Points each, started on August 13, 2026 and continues through September.",
       "social_links": {
@@ -662,14 +700,61 @@
       "estimated_cost": "s time rather than capital"
     },
     {
+      "id": "gte",
+      "name": "GTE",
+      "url": "https://airdrops.io/gte/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "MegaETH",
+      "actions": [],
+      "description": "Ongoing GTE Actions: Check the wallet for Refund CLAIM AIRDROP Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP Ongoing Rialo Actions: Join testnet CLAIM AIRDROP Ended Optimism Actions: No Further Actions as of now CLAIM AIRDROP Ongoing Sight Actions: Submit Email and Join Waitlist CLAIM AIRDROP Ongoing Linera Actions: Interact with te",
+      "source": "airdrops.io",
+      "tge_date": "er with bonding curve functionality to bootstrap liquidity into its AMM system, along with a dedicated launchpad for larger protocols looking to conduct their token generation events (TGEs)",
+      "steps": [
+        "Jump to steps"
+      ],
+      "about": "GTE is a decentralized trading venue built on MegaETH , designed to provide a complete trading ecosystem. The platform integrates multiple trading components including a crankless onchain central limit order book (CLOB) for high-quality liquidity, a traditional automated market maker (AMM) for passive liquidity provision, and a best-price aggregator that scans the entire MegaETH ecosystem to ensure users get optimal trading rates.",
+      "social_links": {
+        "twitter": "https://x.com/printr/status/2089378985507746006",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fgte%2F&text=GTE",
+        "github": "https://github.com/Liquid-Labs-Inc"
+      },
+      "estimated_cost": "anything? No"
+    },
+    {
+      "id": "axis_robotics",
+      "name": "Axis Robotics",
+      "url": "https://airdrops.io/axis-robotics/",
+      "heat": 0,
+      "status": "active",
+      "chain": "Base",
+      "actions": [],
+      "description": "Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "with a two-month claim window",
+      "steps": [
+        "Five factors set your total: how many valid tasks you complete, their difficulty tier, the quality score of each submission, how widely your tasks spread across scenarios and skills, and the output of contributors you invite.",
+        "The prize pool is 0."
+      ],
+      "about": "Axis Robotics Airdrop Details Axis has not confirmed a token or an airdrop. The official docs say Points will be one input in a planned Community Contributor Airdrop, with eligibility, allocation, and timing to be published before any claim event. Points themselves carry no claim right. Treat this like other potential retroactive airdrops : a live points program worth farming, with the token part still open. The Point System went live in early August 2026. Five factors set your total: how many valid tasks you complete, their difficulty tier, the quality score of each submission, how widely your tasks spread across scenarios and skills, and the output of contributors you invite. Contributions signed before the late July 2026 snapshot were credited in a one-time retroactive grant. Since then, Points settle in two-week Epochs: each closes Friday at 00:00 UTC and Points land the following Monday at 12:00 UTC. Totals accumulate with no resets or expiry, and only submissions signed on-chain ",
+      "social_links": {
+        "twitter": "https://x.com/KaitoAI",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Faxis-robotics%2F&text=Axis%20Robotics",
+        "github": "https://github.com/AxisAIOrg"
+      },
+      "eligibility": ", allocation, and timing to be published before any claim event",
+      "difficulty": "Easy",
+      "estimated_cost": "s a tiny fraction of a cent, and gasless campaigns often cover even that"
+    },
+    {
       "id": "rialo",
       "name": "Rialo",
       "url": "https://airdrops.io/rialo/",
       "heat": 0,
-      "status": "confirmed",
+      "status": "active",
       "chain": "Own",
       "actions": [],
-      "description": "Ongoing Rialo Actions: Join testnet CLAIM AIRDROP Ended Optimism Actions: No Further Actions as of now CLAIM AIRDROP Ongoing Sight Actions: Submit Email and Join Waitlist CLAIM AIRDROP Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP Ongoing GTE Actions: Check the wallet for Refund CLAIM AIRDROP Ongoing Linera Actions: Interact with te",
+      "description": "Ongoing Rialo Actions: Join testnet CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Jump to steps Rialo Airdrop Details Rialo has not confirmed a token, an airdrop, or a points program, so treat this page as a way to position early rather than a guaranteed reward. What the team has shipped is a public devnet playground, a faucet, and a Discord role system that tracks who shows up. Those are the records an L1 usually looks back at if it decides to reward early users, and the pool is still small next to bigger testnet campaigns."
@@ -703,55 +788,6 @@
         "github": "https://github.com/ethereum-optimism/optimism"
       },
       "estimated_cost": "to Farm Free AD Overview Website: optimism"
-    },
-    {
-      "id": "axis_robotics",
-      "name": "Axis Robotics",
-      "url": "https://airdrops.io/axis-robotics/",
-      "heat": 0,
-      "status": "active",
-      "chain": "Base",
-      "actions": [],
-      "description": "Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "with a two-month claim window",
-      "steps": [
-        "Five factors set your total: how many valid tasks you complete, their difficulty tier, the quality score of each submission, how widely your tasks spread across scenarios and skills, and the output of contributors you invite.",
-        "The prize pool is 0."
-      ],
-      "about": "Axis Robotics Airdrop Details Axis has not confirmed a token or an airdrop. The official docs say Points will be one input in a planned Community Contributor Airdrop, with eligibility, allocation, and timing to be published before any claim event. Points themselves carry no claim right. Treat this like other potential retroactive airdrops : a live points program worth farming, with the token part still open. The Point System went live in early August 2026. Five factors set your total: how many valid tasks you complete, their difficulty tier, the quality score of each submission, how widely your tasks spread across scenarios and skills, and the output of contributors you invite. Contributions signed before the late July 2026 snapshot were credited in a one-time retroactive grant. Since then, Points settle in two-week Epochs: each closes Friday at 00:00 UTC and Points land the following Monday at 12:00 UTC. Totals accumulate with no resets or expiry, and only submissions signed on-chain ",
-      "social_links": {
-        "twitter": "https://x.com/KaitoAI",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Faxis-robotics%2F&text=Axis%20Robotics",
-        "github": "https://github.com/AxisAIOrg"
-      },
-      "eligibility": ", allocation, and timing to be published before any claim event",
-      "difficulty": "Easy",
-      "estimated_cost": "s a tiny fraction of a cent, and gasless campaigns often cover even that"
-    },
-    {
-      "id": "gte",
-      "name": "GTE",
-      "url": "https://airdrops.io/gte/",
-      "heat": 0,
-      "status": "active",
-      "chain": "MegaETH",
-      "actions": [],
-      "description": "Ongoing GTE Actions: Check the wallet for Refund CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "and Airdrop Printr is winding down and all operations cease on August 31, 2026, with the planned Token Generation Event and airdrop both cancelled after the team failed to secure the capital and distribution backing needed to continue",
-      "steps": [
-        "Jump to steps Latest Update: Printr Wind",
-        "Down Cancels TGE and Airdrop Printr is winding down and all operations cease on August 31, 2026, with the planned Token Generation Event and airdrop both cancelled after the team failed to secure the capital and distribution backing needed to continue. Staked positions and earned staking fees across all supported chains were automatically unstaked and returned to their original deposit wallets from August 18, 2026, after which staking was paused. Check the wallet you staked from, and if nothing arrived after August 20, 2026, contact the team on Printr’s official Discord before August 31. The app interface goes offline after that date and no new tokens can be launched, though tokens already deployed through Printr remain independent on",
-        "chain assets on their respective chains. With no distribution happening, treat any Printr claim page or airdrop link circulating now as a phishing attempt."
-      ],
-      "about": "Latest Update: Printr Wind-Down Cancels TGE and Airdrop Printr is winding down and all operations cease on August 31, 2026, with the planned Token Generation Event and airdrop both cancelled after the team failed to secure the capital and distribution backing needed to continue. Staked positions and earned staking fees across all supported chains were automatically unstaked and returned to their original deposit wallets from August 18, 2026, after which staking was paused. Check the wallet you staked from, and if nothing arrived after August 20, 2026, contact the team on Printr’s official Discord before August 31. The app interface goes offline after that date and no new tokens can be launched, though tokens already deployed through Printr remain independent on-chain assets on their respective chains. With no distribution happening, treat any Printr claim page or airdrop link circulating now as a phishing attempt.",
-      "social_links": {
-        "twitter": "https://x.com/printr/status/2089378985507746006",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fgte%2F&text=GTE",
-        "github": "https://github.com/Liquid-Labs-Inc"
-      },
-      "estimated_cost": "anything? No"
     },
     {
       "id": "linera",
