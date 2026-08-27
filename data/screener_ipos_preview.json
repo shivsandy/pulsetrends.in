@@ -1,12 +1,5 @@
 [
   {
-    "name": "Skyways Air Ser.",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹131–138",
-    "marketCap": 0
-  },
-  {
     "name": "ABH Healthcare",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -18,6 +11,13 @@
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "₹95–100",
+    "marketCap": 0
+  },
+  {
+    "name": "Skyways Air Ser.",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "₹131–138",
     "marketCap": 0
   },
   {
@@ -49,13 +49,6 @@
     "marketCap": 0
   },
   {
-    "name": "Kwick Forensic",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹85–90",
-    "marketCap": 0
-  },
-  {
     "name": "Lumino Inds",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -63,10 +56,31 @@
     "marketCap": 0
   },
   {
+    "name": "Kwick Forensic",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "₹85–90",
+    "marketCap": 0
+  },
+  {
     "name": "Priority Jewels",
     "status": "upcoming",
     "source_category": "upcoming",
-    "listingDate": "-",
+    "listingDate": "₹190–200",
+    "marketCap": 0
+  },
+  {
+    "name": "Complete Sports and Management",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "₹128–135",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanti Inorgan.",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "₹79–83",
     "marketCap": 0
   },
   {
@@ -77,14 +91,7 @@
     "marketCap": 0
   },
   {
-    "name": "Complete Sports and Management",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "-",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanti Inorgan.",
+    "name": "ESDS Software",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "-",
@@ -98,11 +105,60 @@
     "marketCap": 0
   },
   {
+    "name": "Purple Style",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "Ashutosh Fibre",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
     "name": "Rays of Belief",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "-",
     "marketCap": 0
+  },
+  {
+    "name": "Skyways Air Ser.",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-01",
+    "marketCap": 2190.0
+  },
+  {
+    "name": "ABH Healthcare",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-01",
+    "marketCap": 117.0
+  },
+  {
+    "name": "Madhur Knit",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-01",
+    "marketCap": 190.0
+  },
+  {
+    "name": "Symbiotec Pharma",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-01",
+    "marketCap": 7955.0
+  },
+  {
+    "name": "Hy-Tech Engineer",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-01",
+    "marketCap": 578.0
   },
   {
     "name": "Augmont Enterpri",
@@ -122,35 +178,35 @@
     "name": "Dhanwel Hybrid",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-08-26",
+    "listingDate": "yesterday",
     "marketCap": 90.0
   },
   {
     "name": "Mopshop Distribution",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-08-26",
+    "listingDate": "yesterday",
     "marketCap": 99.0
   },
   {
     "name": "Gaja Alternative Asset",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-08-26",
+    "listingDate": "yesterday",
     "marketCap": 2356.0
   },
   {
     "name": "Shankesh Jewellers",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-25",
     "marketCap": 1460.0
   },
   {
     "name": "Sunshine Picture",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-25",
     "marketCap": 1231.0
   },
   {
@@ -795,21 +851,21 @@
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-05-29",
-    "marketCap": 55.0
+    "marketCap": 0
   },
   {
     "name": "Q-Line Biotech",
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-05-29",
-    "marketCap": 800.0
+    "marketCap": 0
   },
   {
     "name": "Bio Medica Lab",
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-05-29",
-    "marketCap": 175.0
+    "marketCap": 0
   },
   {
     "name": "Vegorama Punjabi",
@@ -7070,52 +7126,38 @@
     "marketCap": 0
   },
   {
-    "name": "Sai Silks",
+    "name": "Dhanwel Hybrid",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "yesterday",
+    "marketCap": 90.0
   },
   {
-    "name": "Techknowgreen",
+    "name": "Mopshop Distribution",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "yesterday",
+    "marketCap": 99.0
   },
   {
-    "name": "Kody Technolab",
+    "name": "Gaja Alternative Asset",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Madhusudan Masa",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "yesterday",
+    "marketCap": 2356.0
   },
   {
     "name": "Shankesh Jewellers",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-25",
     "marketCap": 1460.0
   },
   {
     "name": "Sunshine Picture",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-08-25",
     "marketCap": 1231.0
   },
   {
@@ -7138,6 +7180,13 @@
     "source_category": "below_price",
     "listingDate": "2026-08-21",
     "marketCap": 76.0
+  },
+  {
+    "name": "Pramodini Medicare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-08-19",
+    "marketCap": 260.0
   },
   {
     "name": "Q&T Foods",
@@ -7264,13 +7313,6 @@
     "source_category": "below_price",
     "listingDate": "2026-06-29",
     "marketCap": 88.0
-  },
-  {
-    "name": "Turtlemint Fintech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-06-29",
-    "marketCap": 4476.0
   },
   {
     "name": "Leapfrog Engg.",
@@ -7504,6 +7546,13 @@
     "marketCap": 325.0
   },
   {
+    "name": "C K K Retail",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-02-06",
+    "marketCap": 316.0
+  },
+  {
     "name": "Kanishk Alumin.",
     "status": "listed",
     "source_category": "below_price",
@@ -7565,13 +7614,6 @@
     "source_category": "below_price",
     "listingDate": "2026-01-14",
     "marketCap": 395.0
-  },
-  {
-    "name": "Gabion Technol.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-01-13",
-    "marketCap": 110.0
   },
   {
     "name": "Modern Diagnost.",
@@ -7677,13 +7719,6 @@
     "source_category": "below_price",
     "listingDate": "2025-12-10",
     "marketCap": 140.0
-  },
-  {
-    "name": "Neochem Bio",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-12-09",
-    "marketCap": 168.0
   },
   {
     "name": "Helloji Holidays",
@@ -8169,6 +8204,13 @@
     "marketCap": 2502.0
   },
   {
+    "name": "Sattva Eng.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-09-03",
+    "marketCap": 131.0
+  },
+  {
     "name": "NIS Management",
     "status": "listed",
     "source_category": "below_price",
@@ -8505,13 +8547,6 @@
     "marketCap": 0
   },
   {
-    "name": "Adcounty Media.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-07-04",
-    "marketCap": 0
-  },
-  {
     "name": "Pro FX",
     "status": "listed",
     "source_category": "below_price",
@@ -8695,6 +8730,13 @@
   },
   {
     "name": "Infonative Solu.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-04-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Spinaroo Comm.",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-04-08",
@@ -9261,6 +9303,13 @@
     "marketCap": 0
   },
   {
+    "name": "Arkade",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-09-24",
+    "marketCap": 0
+  },
+  {
     "name": "Deccan Transcon",
     "status": "listed",
     "source_category": "below_price",
@@ -9583,13 +9632,6 @@
     "marketCap": 0
   },
   {
-    "name": "Sylvan Plyboard",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-07-01",
-    "marketCap": 0
-  },
-  {
     "name": "Stanley Lifesty.",
     "status": "listed",
     "source_category": "below_price",
@@ -9755,13 +9797,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-05-14",
-    "marketCap": 0
-  },
-  {
-    "name": "Amkay Products",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-05-08",
     "marketCap": 0
   },
   {
@@ -10220,13 +10255,6 @@
     "marketCap": 0
   },
   {
-    "name": "Deepak Chemtex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-06",
-    "marketCap": 0
-  },
-  {
     "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
@@ -10343,13 +10371,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Arvind Port &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-25",
     "marketCap": 0
   },
   {
