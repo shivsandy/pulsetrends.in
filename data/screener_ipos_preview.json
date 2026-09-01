@@ -1,19 +1,5 @@
 [
   {
-    "name": "Kwick Forensic",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹85–90",
-    "marketCap": 0
-  },
-  {
-    "name": "Lumino Inds",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹78–82",
-    "marketCap": 0
-  },
-  {
     "name": "Priority Jewels",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -98,6 +84,34 @@
     "marketCap": 0
   },
   {
+    "name": "Priority Jewels",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-04",
+    "marketCap": 360.0
+  },
+  {
+    "name": "Paluck Technol.",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-04",
+    "marketCap": 100.0
+  },
+  {
+    "name": "Complete Sports and Management",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-04",
+    "marketCap": 278.0
+  },
+  {
+    "name": "ESDS Software",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-04",
+    "marketCap": 5028.0
+  },
+  {
     "name": "Kwick Forensic",
     "status": "listed",
     "source_category": "recent",
@@ -164,7 +178,7 @@
     "name": "Augmont Enterpri",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-08-31",
+    "listingDate": "yesterday",
     "marketCap": 7200.0
   },
   {
@@ -823,7 +837,7 @@
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-06-03",
-    "marketCap": 65.0
+    "marketCap": 0
   },
   {
     "name": "Harikanta Overseas",
@@ -7070,39 +7084,18 @@
     "marketCap": 0
   },
   {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "JSW Infrast",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Saakshi Medtech",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Master Component",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-09-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Augmont Enterpri",
+    "name": "ABH Healthcare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2026-08-31",
-    "marketCap": 7200.0
+    "listingDate": "2026-09-01",
+    "marketCap": 117.0
+  },
+  {
+    "name": "Madhur Knit",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-09-01",
+    "marketCap": 190.0
   },
   {
     "name": "Dhanwel Hybrid",
@@ -7119,11 +7112,11 @@
     "marketCap": 99.0
   },
   {
-    "name": "Gaja Alternative Asset",
+    "name": "Shankesh Jewellers",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2026-08-26",
-    "marketCap": 2256.0
+    "listingDate": "2026-08-25",
+    "marketCap": 1367.0
   },
   {
     "name": "Fascinate Textiles",
@@ -7175,6 +7168,13 @@
     "marketCap": 407.0
   },
   {
+    "name": "Leap India",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-08-14",
+    "marketCap": 7005.0
+  },
+  {
     "name": "G V Electricals",
     "status": "listed",
     "source_category": "below_price",
@@ -7194,6 +7194,13 @@
     "source_category": "below_price",
     "listingDate": "2026-08-03",
     "marketCap": 86.0
+  },
+  {
+    "name": "Propshop Events",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-08-03",
+    "marketCap": 101.0
   },
   {
     "name": "Silverstorm Parks",
@@ -7222,6 +7229,13 @@
     "source_category": "below_price",
     "listingDate": "2026-07-21",
     "marketCap": 402.0
+  },
+  {
+    "name": "SBI Funds Mgt.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-07-21",
+    "marketCap": 116914.0
   },
   {
     "name": "Seemax Resources",
@@ -7355,6 +7369,13 @@
     "source_category": "below_price",
     "listingDate": "2026-06-02",
     "marketCap": 90.0
+  },
+  {
+    "name": "Yaashvi Jewellers",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-06-02",
+    "marketCap": 146.0
   },
   {
     "name": "M R Maniveni",
@@ -7497,11 +7518,11 @@
     "marketCap": 56.0
   },
   {
-    "name": "Brandman Retail",
+    "name": "C K K Retail",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2026-02-11",
-    "marketCap": 325.0
+    "listingDate": "2026-02-06",
+    "marketCap": 316.0
   },
   {
     "name": "Kanishk Alumin.",
@@ -8166,14 +8187,14 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-09-01",
-    "marketCap": 156.0
+    "marketCap": 0
   },
   {
     "name": "Shivashrit Foods",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-09-01",
-    "marketCap": 259.0
+    "marketCap": 0
   },
   {
     "name": "ARC Insulation",
@@ -8393,17 +8414,17 @@
     "marketCap": 0
   },
   {
-    "name": "Monarch Surve.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-07-29",
-    "marketCap": 0
-  },
-  {
     "name": "Monika Alcobev",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-23",
+    "marketCap": 0
+  },
+  {
+    "name": "Asston Pharmaceu",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-07-16",
     "marketCap": 0
   },
   {
@@ -8982,13 +9003,6 @@
   },
   {
     "name": "International Gemological Instit",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-12-20",
-    "marketCap": 0
-  },
-  {
-    "name": "Hamps Bio",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-12-20",
@@ -9779,6 +9793,13 @@
     "marketCap": 0
   },
   {
+    "name": "Faalcon Concepts",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-04-26",
+    "marketCap": 0
+  },
+  {
     "name": "Grill Splendour",
     "status": "listed",
     "source_category": "below_price",
@@ -10220,13 +10241,6 @@
     "marketCap": 0
   },
   {
-    "name": "Deepak Chemtex",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-06",
-    "marketCap": 0
-  },
-  {
     "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
@@ -10430,13 +10444,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -10476,6 +10483,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -10486,13 +10521,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -10532,6 +10560,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -10542,13 +10598,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -10588,6 +10637,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -10598,13 +10675,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -10644,6 +10714,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -10654,13 +10752,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -10700,6 +10791,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -10710,13 +10829,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -10756,6 +10868,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -10766,13 +10906,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -10812,6 +10945,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -10822,13 +10983,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -10868,6 +11022,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -10878,13 +11060,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -10924,6 +11099,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -10934,13 +11137,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -10980,6 +11176,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -10990,13 +11214,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -11036,6 +11253,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -11046,13 +11291,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -11092,6 +11330,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -11102,13 +11368,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -11148,6 +11407,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -11158,13 +11445,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -11204,6 +11484,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -11214,13 +11522,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -11260,6 +11561,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -11270,13 +11599,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -11316,6 +11638,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -11326,13 +11676,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -11372,6 +11715,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -11382,13 +11753,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -11428,6 +11792,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -11438,13 +11830,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -11484,6 +11869,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -11494,13 +11907,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -11540,6 +11946,34 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
     "marketCap": 0
   },
   {
@@ -11550,13 +11984,6 @@
     "marketCap": 0
   },
   {
-    "name": "Visdem Technosys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-26",
-    "marketCap": 0
-  },
-  {
     "name": "Jiwanram Sheo",
     "status": "listed",
     "source_category": "below_price",
@@ -11596,13 +12023,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Manas Polymers",
-    "status": "rights",
-    "source_category": "rights",
-    "listingDate": "",
     "marketCap": 0
   }
 ]
