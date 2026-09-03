@@ -1,33 +1,5 @@
 [
   {
-    "name": "Shanti Inorgan.",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹79–83",
-    "marketCap": 0
-  },
-  {
-    "name": "Phychem Technologies",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹51–54",
-    "marketCap": 0
-  },
-  {
-    "name": "Purple Style",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹546–575",
-    "marketCap": 0
-  },
-  {
-    "name": "Ashutosh Fibre",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹87–92",
-    "marketCap": 0
-  },
-  {
     "name": "Rays of Belief",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -63,11 +35,60 @@
     "marketCap": 0
   },
   {
+    "name": "Pranav Construc.",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "94285",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "27214",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
     "name": "Veegaland Developers",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "-",
     "marketCap": 0
+  },
+  {
+    "name": "Rays of Belief",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-08",
+    "marketCap": 500.0
+  },
+  {
+    "name": "Farm Peace",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-08",
+    "marketCap": 121.0
+  },
+  {
+    "name": "Deepa Jewellers",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-08",
+    "marketCap": 1911.0
+  },
+  {
+    "name": "Fly-Hi Maritime",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-08",
+    "marketCap": 145.0
   },
   {
     "name": "Shanti Inorgan.",
@@ -143,49 +164,49 @@
     "name": "Sumax Engineering",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-09-02",
-    "marketCap": 202.0
+    "listingDate": "yesterday",
+    "marketCap": 192.0
   },
   {
     "name": "Annu Projects",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-09-02",
+    "listingDate": "yesterday",
     "marketCap": 648.0
   },
   {
     "name": "Skyways Air Ser.",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-09-01",
     "marketCap": 2006.0
   },
   {
     "name": "ABH Healthcare",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-09-01",
     "marketCap": 117.0
   },
   {
     "name": "Madhur Knit",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-09-01",
     "marketCap": 190.0
   },
   {
     "name": "Symbiotec Pharma",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-09-01",
     "marketCap": 6348.0
   },
   {
     "name": "Hy-Tech Engineer",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-09-01",
     "marketCap": 503.0
   },
   {
@@ -844,7 +865,7 @@
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-06-05",
-    "marketCap": 91.0
+    "marketCap": 0
   },
   {
     "name": "Rajnandini Fashion",
@@ -7042,52 +7063,31 @@
     "marketCap": 0
   },
   {
-    "name": "Organic Recyclin",
+    "name": "Annu Projects",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-10-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Valiant Laborato",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-10-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Vinyas Innovativ",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-10-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "yesterday",
+    "marketCap": 648.0
   },
   {
     "name": "Skyways Air Ser.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-09-01",
     "marketCap": 2006.0
   },
   {
     "name": "ABH Healthcare",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-09-01",
     "marketCap": 117.0
   },
   {
     "name": "Madhur Knit",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-09-01",
     "marketCap": 190.0
   },
   {
@@ -7103,6 +7103,13 @@
     "source_category": "below_price",
     "listingDate": "2026-08-26",
     "marketCap": 99.0
+  },
+  {
+    "name": "Gaja Alternative Asset",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-08-26",
+    "marketCap": 2256.0
   },
   {
     "name": "Fascinate Textiles",
@@ -7756,13 +7763,6 @@
     "marketCap": 25377.0
   },
   {
-    "name": "Shining Tools",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-11-14",
-    "marketCap": 65.0
-  },
-  {
     "name": "Finbud Financial",
     "status": "listed",
     "source_category": "below_price",
@@ -7873,13 +7873,6 @@
     "source_category": "below_price",
     "listingDate": "2025-10-08",
     "marketCap": 115.0
-  },
-  {
-    "name": "Sheel Bio.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-10-08",
-    "marketCap": 128.0
   },
   {
     "name": "Munish Forge",
@@ -8159,14 +8152,14 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-09-03",
-    "marketCap": 2502.0
+    "marketCap": 0
   },
   {
     "name": "Sattva Eng.",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-09-03",
-    "marketCap": 131.0
+    "marketCap": 0
   },
   {
     "name": "NIS Management",
@@ -9513,6 +9506,13 @@
     "marketCap": 0
   },
   {
+    "name": "Kizi Apparels",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-08-06",
+    "marketCap": 0
+  },
+  {
     "name": "Bulkcorp Inter.",
     "status": "listed",
     "source_category": "below_price",
@@ -9965,13 +9965,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-03-12",
-    "marketCap": 0
-  },
-  {
-    "name": "Mukka Proteins",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-03-07",
     "marketCap": 0
   },
   {
@@ -13041,7 +13034,7 @@
     "marketCap": 0
   },
   {
-    "name": "Anondita Medi.",
+    "name": "Salem Erode Inv.",
     "status": "rights",
     "source_category": "rights",
     "listingDate": "",
