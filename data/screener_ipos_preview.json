@@ -56,6 +56,55 @@
     "marketCap": 0
   },
   {
+    "name": "Manipal Payment",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "LCC Projects",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "Rentomojo",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "Karamtara Engg.",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "97103",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "96065",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "Vinod Texworld",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
     "name": "Veegaland Developers",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -122,42 +171,42 @@
     "name": "Priority Jewels",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-09-04",
+    "listingDate": "yesterday",
     "marketCap": 360.0
   },
   {
     "name": "Paluck Technol.",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-09-04",
+    "listingDate": "yesterday",
     "marketCap": 100.0
   },
   {
     "name": "Complete Sports and Management",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-09-04",
+    "listingDate": "yesterday",
     "marketCap": 278.0
   },
   {
     "name": "ESDS Software",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-09-04",
+    "listingDate": "yesterday",
     "marketCap": 5028.0
   },
   {
     "name": "Kwick Forensic",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-09-03",
     "marketCap": 193.0
   },
   {
     "name": "Lumino Inds",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-09-03",
     "marketCap": 2497.0
   },
   {
@@ -7651,6 +7700,13 @@
     "marketCap": 366.0
   },
   {
+    "name": "Flywings Simula.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-12-12",
+    "marketCap": 194.0
+  },
+  {
     "name": "Luxury Time",
     "status": "listed",
     "source_category": "below_price",
@@ -7866,6 +7922,13 @@
     "source_category": "below_price",
     "listingDate": "2025-10-08",
     "marketCap": 115.0
+  },
+  {
+    "name": "Sheel Bio.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-10-08",
+    "marketCap": 128.0
   },
   {
     "name": "Munish Forge",
@@ -8117,14 +8180,14 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-09-05",
-    "marketCap": 49.0
+    "marketCap": 0
   },
   {
     "name": "Snehaa Organics",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-09-05",
-    "marketCap": 124.0
+    "marketCap": 0
   },
   {
     "name": "Oval Projects",
@@ -8890,13 +8953,6 @@
     "marketCap": 0
   },
   {
-    "name": "Barflex Polyfilm",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-01-20",
-    "marketCap": 0
-  },
-  {
     "name": "Laxmi Dental",
     "status": "listed",
     "source_category": "below_price",
@@ -8950,6 +9006,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-12-30",
+    "marketCap": 0
+  },
+  {
+    "name": "Transrail Light",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-12-27",
     "marketCap": 0
   },
   {
@@ -9055,13 +9118,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-12-04",
-    "marketCap": 0
-  },
-  {
-    "name": "C2C Advanced",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-12-03",
     "marketCap": 0
   },
   {
@@ -10122,13 +10178,6 @@
     "marketCap": 0
   },
   {
-    "name": "HRH Next",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-01-03",
-    "marketCap": 0
-  },
-  {
     "name": "Aik Pipes & Poly",
     "status": "listed",
     "source_category": "below_price",
@@ -10479,10 +10528,94 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Valiant Laborato",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
+    "listingDate": "2023-10-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10577,10 +10710,94 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Valiant Laborato",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
+    "listingDate": "2023-10-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10675,10 +10892,94 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Valiant Laborato",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
+    "listingDate": "2023-10-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10773,10 +11074,94 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Valiant Laborato",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
+    "listingDate": "2023-10-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10871,10 +11256,94 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Valiant Laborato",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
+    "listingDate": "2023-10-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -10969,10 +11438,94 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Valiant Laborato",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
+    "listingDate": "2023-10-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -11067,10 +11620,94 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Valiant Laborato",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
+    "listingDate": "2023-10-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -11165,10 +11802,94 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Valiant Laborato",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
+    "listingDate": "2023-10-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -11263,10 +11984,94 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
+    "name": "Valiant Laborato",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-09-06",
+    "listingDate": "2023-10-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Kahan Packaging",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Saroja Pharma In",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Mono Pharmacare",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-07",
     "marketCap": 0
   },
   {
@@ -11361,13 +12166,6 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
     "name": "Valiant Laborato",
     "status": "listed",
     "source_category": "below_price",
@@ -11459,13 +12257,6 @@
     "marketCap": 0
   },
   {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
     "name": "Valiant Laborato",
     "status": "listed",
     "source_category": "below_price",
@@ -11554,895 +12345,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Valiant Laborato",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Valiant Laborato",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Valiant Laborato",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Valiant Laborato",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Valiant Laborato",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Valiant Laborato",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Valiant Laborato",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Valiant Laborato",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Valiant Laborato",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Kahan Packaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Saroja Pharma In",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Mono Pharmacare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahaj Fashions",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-06",
     "marketCap": 0
   }
 ]
