@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05T11:34:31.484821+00:00",
+  "last_updated": "2026-09-06T11:54:35.995411+00:00",
   "total": 36,
   "airdrops": [
     {
@@ -127,7 +127,7 @@
       "url": "https://airdrops.io/risex/",
       "heat": 200,
       "status": "active",
-      "chain": "200°",
+      "chain": "Own",
       "actions": [
         "RISEx Actions: Sign Up",
         "Enable Trading",
@@ -136,12 +136,19 @@
       ],
       "description": "200° Ongoing RISEx Actions: Sign Up, Enable Trading, Trade & Refer CLAIM AIRDROP",
       "source": "airdrops.io",
+      "tge_date": "Date : Not yet announced Season 1: Ignite went live on July 20, 2026, with the first weekly drop on July 28",
       "steps": [
-        "RISEx Actions: Sign Up",
-        "Enable Trading",
-        "Trade",
-        "Refer"
-      ]
+        "Jump to steps RISEx Airdrop Details RISEx has not announced a token or a confirmed airdrop, so farming here is speculative. That said, the team openly describes the points program as a step toward future token distribution, which puts RISE Points on firmer ground than most tokenless campaigns. Key Parameters: Airdrop Allocation : 100% of RISE Points go to RISEx users (traders, LPs, and builder code integrators) Distribution Method : Weekly points distributions of 200,000 points, settled every Tuesday TGE Date : Not yet announced Season 1: Ignite went live on July 20, 2026, with the first weekly drop on July 28. Each week, the 200,000 point pool is split based on your share of qualifying activity: maker and taker volume, fees paid, slippage, open interest, and how long you hold positions. The exact weightings change every week and are not published, which makes the program hard to game with wash trading."
+      ],
+      "about": "RISEx Airdrop Details RISEx has not announced a token or a confirmed airdrop, so farming here is speculative. That said, the team openly describes the points program as a step toward future token distribution, which puts RISE Points on firmer ground than most tokenless campaigns. Key Parameters: Airdrop Allocation : 100% of RISE Points go to RISEx users (traders, LPs, and builder code integrators) Distribution Method : Weekly points distributions of 200,000 points, settled every Tuesday TGE Date : Not yet announced Season 1: Ignite went live on July 20, 2026, with the first weekly drop on July 28. Each week, the 200,000 point pool is split based on your share of qualifying activity: maker and taker volume, fees paid, slippage, open interest, and how long you hold positions. The exact weightings change every week and are not published, which makes the program hard to game with wash trading.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=RISEx&url=https%3A%2F%2Fairdrops.io%2Frisex%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Frisex%2F&text=RISEx",
+        "discord": "https://discord.gg/Erc2agMD6h"
+      },
+      "eligibility": "Email What is RISEx? RISEx is a fully onchain spot and perpetuals exchange built on RISE Chain",
+      "difficulty": "Easy",
+      "estimated_cost": "to Farm Medium AD Overview Website: rise"
     },
     {
       "id": "axis_robotics",
@@ -149,7 +156,7 @@
       "url": "https://airdrops.io/axis-robotics/",
       "heat": 197,
       "status": "active",
-      "chain": "197°",
+      "chain": "Base",
       "actions": [
         "Axis Robotics Actions: Complete Pre-Training Tasks",
         "Sign Your Submissions",
@@ -157,11 +164,20 @@
       ],
       "description": "197° Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP",
       "source": "airdrops.io",
+      "tge_date": "with a two-month claim window",
       "steps": [
-        "Axis Robotics Actions: Complete Pre-Training Tasks",
-        "Sign Your Submissions",
-        "Refer to Earn"
-      ]
+        "Five factors set your total: how many valid tasks you complete, their difficulty tier, the quality score of each submission, how widely your tasks spread across scenarios and skills, and the output of contributors you invite.",
+        "The prize pool is 0."
+      ],
+      "about": "Axis Robotics Airdrop Details Axis has not confirmed a token or an airdrop. The official docs say Points will be one input in a planned Community Contributor Airdrop, with eligibility, allocation, and timing to be published before any claim event. Points themselves carry no claim right. Treat this like other potential retroactive airdrops : a live points program worth farming, with the token part still open. The Point System went live in early August 2026. Five factors set your total: how many valid tasks you complete, their difficulty tier, the quality score of each submission, how widely your tasks spread across scenarios and skills, and the output of contributors you invite. Contributions signed before the late July 2026 snapshot were credited in a one-time retroactive grant. Since then, Points settle in two-week Epochs: each closes Friday at 00:00 UTC and Points land the following Monday at 12:00 UTC. Totals accumulate with no resets or expiry, and only submissions signed on-chain ",
+      "social_links": {
+        "twitter": "https://x.com/KaitoAI",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Faxis-robotics%2F&text=Axis%20Robotics",
+        "github": "https://github.com/AxisAIOrg"
+      },
+      "eligibility": ", allocation, and timing to be published before any claim event",
+      "difficulty": "Easy",
+      "estimated_cost": "s a tiny fraction of a cent, and gasless campaigns often cover even that"
     },
     {
       "id": "nowa",
@@ -169,7 +185,7 @@
       "url": "https://airdrops.io/nowa/",
       "heat": 180,
       "status": "confirmed",
-      "chain": "180°",
+      "chain": "Own",
       "actions": [
         "Nowa Actions: Complete Social Tasks",
         "Trade",
@@ -178,12 +194,18 @@
       ],
       "description": "180° Ongoing Confirmed Nowa Actions: Complete Social Tasks, Trade, Stake & Refer to Earn CLAIM AIRDROP",
       "source": "airdrops.io",
+      "tge_date": "allocation on a straight 1:1 basis",
       "steps": [
-        "Nowa Actions: Complete Social Tasks",
-        "Trade",
-        "Stake",
-        "Refer to Earn"
-      ]
+        "Jump to steps Nowa Airdrop Details Nowa Farming is the opening phase of Nowa’s Community Development Program, which runs across Devnet (live now), Testnet, and Mainnet. Participants earn NOWA tokens directly rather than points, and farmed NOWA converts to TGE allocation on a straight 1:1 basis. Key Parameters: Airdrop Allocation : 500,000 NOWA per day during the Devnet phase, plus a 10,000 USDT leaderboard pool Distribution Method : Direct NOWA accrual, converting 1:1 to TGE allocation TGE Date : Not announced Rewards arrive from two directions. The daily NOWA pool splits across five activity buckets: spot trading, BNPL trading, Vault staking, Earn staking, and referrals. Your share of a bucket is proportional to your activity against everyone else’s in it that day, so a quiet bucket pays more per unit of effort than a crowded one. The second source is the leaderboards, which pay USDT to top ranks and NOWA further down."
+      ],
+      "about": "Nowa Airdrop Details Nowa Farming is the opening phase of Nowa’s Community Development Program, which runs across Devnet (live now), Testnet, and Mainnet. Participants earn NOWA tokens directly rather than points, and farmed NOWA converts to TGE allocation on a straight 1:1 basis. Key Parameters: Airdrop Allocation : 500,000 NOWA per day during the Devnet phase, plus a 10,000 USDT leaderboard pool Distribution Method : Direct NOWA accrual, converting 1:1 to TGE allocation TGE Date : Not announced Rewards arrive from two directions. The daily NOWA pool splits across five activity buckets: spot trading, BNPL trading, Vault staking, Earn staking, and referrals. Your share of a bucket is proportional to your activity against everyone else’s in it that day, so a quiet bucket pays more per unit of effort than a crowded one. The second source is the leaderboards, which pay USDT to top ranks and NOWA further down.",
+      "social_links": {
+        "twitter": "https://x.com/NowaFinance",
+        "telegram": "https://t.me/NowaFinance"
+      },
+      "eligibility": "Telegram Twitter / X What is Nowa? Nowa is an onchain financing protocol built around Buy Now, Pay Later crypto trading",
+      "difficulty": "Easy",
+      "estimated_cost": "s time rather than capital"
     },
     {
       "id": "osero",
@@ -735,10 +757,24 @@
       "url": "https://airdrops.io/neosoul/",
       "heat": 0,
       "status": "active",
-      "chain": "Ongoing",
+      "chain": "BSC",
       "actions": [],
       "description": "Ongoing NeoSoul Actions: Complete Daily Tasks, Train AI Agent, Invite Friends CLAIM AIRDROP",
-      "source": "airdrops.io"
+      "source": "airdrops.io",
+      "tge_date": "date, so this is a speculative farm based on the chance that early activity earns a retroactive reward",
+      "steps": [
+        "Jump to steps NeoSoul Airdrop Details NeoSoul has not confirmed a token, ticker, or TGE date, so this is a speculative farm based on the chance that early activity earns a retroactive reward."
+      ],
+      "about": "NeoSoul Airdrop Details NeoSoul has not confirmed a token, ticker, or TGE date, so this is a speculative farm based on the chance that early activity earns a retroactive reward. What is live now is a points (PTS) system that tracks your contribution across the platform. Key Parameters: Airdrop Allocation : Not announced Distribution Method : Points (PTS) via EvoEvo activity, quests, and referrals TGE Date : Not announced PTS accrue from creating an agent, making predictions, reviewing outcomes, adding to your agent’s memory, and on-chain interactions. The Questboard adds one-time onboarding and repeatable daily tasks, while referrals and Early Bird rewards stack on top.",
+      "social_links": {
+        "twitter": "https://x.com/NeoSoulAI/status/2090338023607345465",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fneosoul%2F&text=NeoSoul",
+        "discord": "https://discord.gg/neosoul",
+        "github": "https://github.com/NeoSoul-AI"
+      },
+      "eligibility": "Telegram Twitter / X What is NeoSoul? NeoSoul builds trust and market infrastructure for the AI agent economy, letting autonomous agents learn from real outcomes and build a verifiable reputation they can put to work",
+      "difficulty": "Easy",
+      "estimated_cost": "nothing"
     },
     {
       "id": "omega",
@@ -837,7 +873,7 @@
         "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fbase%2F&text=Base",
         "github": "https://github.com/base-org"
       },
-      "eligibility": "2026 The $125,000 Airdrop Is Almost Here JOIN NOW Earn Free SOL Every Hour JOIN NOW Skip to content Menu Home Latest Airdrops Hot Airdrops Potential Airdrops Hyperliquid Airdrops Robinhood Airdrops Base Airdrops Solana Airdrops MegaETH Airdrops Soneium Airdrops Aptos Airdrops TON Airdrops zkSync Airdrops Blast Airdrops Show all Claims Blog Contact Claim live AIW3 Updated DAC DAC Buzzdrop Live Confirmed Beldex Claim live Collector Crypt Updated Glider Redeem Points by Sept 6 New DualMint Claim live DeepBook Updated Sight Genesis NFT Mint on Sep 2 New C8ntinuum Claim live Canopy Updated Rialo Retroactive Points are now Claimable New Amadeus Protocol Claim live Satsuma Updated Outcome $1M Rewards Campaign is Live New NeoSoul Claim live AIW3 Updated DAC DAC Buzzdrop Live Confirmed Beldex Claim live Collector Crypt Updated Glider Redeem Points by Sept 6 New DualMint Claim live DeepBook Updated Sight Genesis NFT Mint on Sep 2 New C8ntinuum Claim live Canopy Updated Rialo Retroactive Points are now Claimable New Amadeus Protocol Claim live Satsuma Updated Outcome $1M Rewards Campaign is Live New NeoSoul Base 22° Loading",
+      "eligibility": "2026 The $125,000 Airdrop Is Almost Here JOIN NOW Earn Free SOL Every Hour JOIN NOW Skip to content Menu Home Latest Airdrops Hot Airdrops Potential Airdrops Hyperliquid Airdrops Robinhood Airdrops Base Airdrops Solana Airdrops MegaETH Airdrops Soneium Airdrops Aptos Airdrops TON Airdrops zkSync Airdrops Blast Airdrops Show all Claims Blog Contact Claim live AIW3 Updated Axis Axis Coordinates S1 is Live New Reels Claim live Collector Crypt Updated Drake $100,000 Rewards Campaign on September 7 New Entropy Claim live DeepBook Updated DAC DAC Buzzdrop Live Confirmed Beldex Claim live Canopy Updated Sight Genesis NFT Mint on Sep 2 New DualMint Claim live Satsuma Updated Rialo Retroactive Points are now Claimable New C8ntinuum Claim live AIW3 Updated Axis Axis Coordinates S1 is Live New Reels Claim live Collector Crypt Updated Drake $100,000 Rewards Campaign on September 7 New Entropy Claim live DeepBook Updated DAC DAC Buzzdrop Live Confirmed Beldex Claim live Canopy Updated Sight Genesis NFT Mint on Sep 2 New DualMint Claim live Satsuma Updated Rialo Retroactive Points are now Claimable New C8ntinuum Base 15° Loading",
       "difficulty": "Hard",
       "estimated_cost": "NFTs, then list or sell at least one to record both sides Step 6: Low-Cost On-Chain Interactions That Count Free and cheap apps add transaction count and recency without much capital"
     },
