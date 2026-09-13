@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-12T07:51:09.546652+00:00",
+  "last_updated": "2026-09-13T08:12:45.084439+00:00",
   "source": "screener.in",
   "count": 1810,
   "ipos": [
@@ -93,7 +93,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/id/1286163/consolidated/",
+      "source_url": "https://www.screener.in/company/id/1286163/",
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": null,
@@ -559,7 +559,7 @@
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": null,
-        "roce": null
+        "roce": "14.0"
       },
       "currentPrice": 0,
       "percentChange": 0
@@ -1145,8 +1145,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "yesterday",
-      "description": "Qualiance International - Listed on yesterday",
+      "listingDate": "2026-09-11",
+      "description": "Qualiance International - Listed on 2026-09-11",
       "about": "",
       "priceBandHigh": 127.0,
       "priceBandLow": 127.0,
