@@ -1,47 +1,5 @@
 [
   {
-    "name": "Panchatv Bharat",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "-",
-    "marketCap": 0
-  },
-  {
-    "name": "Maharaja & Speedex India",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹177–186",
-    "marketCap": 0
-  },
-  {
-    "name": "Raksan Transformers",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹258–273",
-    "marketCap": 0
-  },
-  {
-    "name": "Om Galaxy",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹85–90",
-    "marketCap": 0
-  },
-  {
-    "name": "Veegaland Developers",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹130–140",
-    "marketCap": 0
-  },
-  {
-    "name": "Century Business",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹70–74",
-    "marketCap": 0
-  },
-  {
     "name": "Manika Plastech",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -56,10 +14,10 @@
     "marketCap": 0
   },
   {
-    "name": "Quanto Agroworld",
+    "name": "Century Business",
     "status": "upcoming",
     "source_category": "upcoming",
-    "listingDate": "-",
+    "listingDate": "₹70–74",
     "marketCap": 0
   },
   {
@@ -70,10 +28,10 @@
     "marketCap": 0
   },
   {
-    "name": "Hero Motors",
+    "name": "Quanto Agroworld",
     "status": "upcoming",
     "source_category": "upcoming",
-    "listingDate": "₹79–84",
+    "listingDate": "-",
     "marketCap": 0
   },
   {
@@ -81,6 +39,13 @@
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "₹403–424",
+    "marketCap": 0
+  },
+  {
+    "name": "Hero Motors",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "₹79–84",
     "marketCap": 0
   },
   {
@@ -133,11 +98,53 @@
     "marketCap": 0
   },
   {
-    "name": "94335",
+    "name": "FX Multitech",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "-",
     "marketCap": 0
+  },
+  {
+    "name": "Robokidz Eduventures",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "S.K. Offset",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "A-One Steels",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "Century Business",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-21",
+    "marketCap": 65.0
+  },
+  {
+    "name": "Manika Plastech",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-21",
+    "marketCap": 501.0
+  },
+  {
+    "name": "Injecto Polymers",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-09-21",
+    "marketCap": 208.0
   },
   {
     "name": "Veegaland Developers",
@@ -255,14 +262,14 @@
     "name": "Pranav Construc.",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-09-15",
+    "listingDate": "yesterday",
     "marketCap": 1397.0
   },
   {
     "name": "Apana Logistics",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-09-15",
+    "listingDate": "yesterday",
     "marketCap": 105.0
   },
   {
@@ -1012,7 +1019,7 @@
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-06-18",
-    "marketCap": 258.0
+    "marketCap": 0
   },
   {
     "name": "Utkal Speciality",
@@ -7119,32 +7126,18 @@
     "marketCap": 0
   },
   {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Blue Jet Health",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-11-01",
-    "marketCap": 0
-  },
-  {
-    "name": "On Door Concepts",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2023-11-01",
-    "marketCap": 0
-  },
-  {
     "name": "Pranav Construc.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2026-09-15",
+    "listingDate": "yesterday",
     "marketCap": 1397.0
+  },
+  {
+    "name": "Apana Logistics",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "yesterday",
+    "marketCap": 105.0
   },
   {
     "name": "Rays of Belief",
@@ -7238,6 +7231,13 @@
     "marketCap": 2256.0
   },
   {
+    "name": "Shankesh Jewellers",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-08-25",
+    "marketCap": 1367.0
+  },
+  {
     "name": "Fascinate Textiles",
     "status": "listed",
     "source_category": "below_price",
@@ -7257,13 +7257,6 @@
     "source_category": "below_price",
     "listingDate": "2026-08-21",
     "marketCap": 76.0
-  },
-  {
-    "name": "Pramodini Medicare",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-08-19",
-    "marketCap": 260.0
   },
   {
     "name": "Q&T Foods",
@@ -7896,13 +7889,6 @@
     "marketCap": 25377.0
   },
   {
-    "name": "Shining Tools",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-11-14",
-    "marketCap": 65.0
-  },
-  {
     "name": "Finbud Financial",
     "status": "listed",
     "source_category": "below_price",
@@ -8022,6 +8008,13 @@
     "marketCap": 128.0
   },
   {
+    "name": "Munish Forge",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-10-08",
+    "marketCap": 231.0
+  },
+  {
     "name": "Glottis",
     "status": "listed",
     "source_category": "below_price",
@@ -8097,6 +8090,13 @@
     "source_category": "below_price",
     "listingDate": "2025-10-03",
     "marketCap": 4253.0
+  },
+  {
+    "name": "Earkart",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-10-03",
+    "marketCap": 186.0
   },
   {
     "name": "Justo Realfin",
@@ -8236,14 +8236,14 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-09-16",
-    "marketCap": 225.0
+    "marketCap": 0
   },
   {
     "name": "Krupalu Metals",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-09-16",
-    "marketCap": 42.0
+    "marketCap": 0
   },
   {
     "name": "Vashishtha Lux.",
@@ -8792,7 +8792,21 @@
     "marketCap": 0
   },
   {
+    "name": "Virtual Galaxy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-05-19",
+    "marketCap": 0
+  },
+  {
     "name": "Srigee DLM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-05-12",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Jewellers",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-05-12",
@@ -9933,6 +9947,13 @@
     "marketCap": 0
   },
   {
+    "name": "JNK",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-04-30",
+    "marketCap": 0
+  },
+  {
     "name": "Varyaa Creations",
     "status": "listed",
     "source_category": "below_price",
@@ -10228,13 +10249,6 @@
   },
   {
     "name": "Medi Assist Ser.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-01-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Maxposure",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-01-23",
@@ -10584,241 +10598,31 @@
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Plada Infotech S",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Canarys Automa.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-11",
-    "marketCap": 0
-  },
-  {
-    "name": "Kontor Space",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Cello World",
+    "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Plada Infotech S",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Canarys Automa.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-11",
-    "marketCap": 0
-  },
-  {
-    "name": "Kontor Space",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
     "marketCap": 0
   },
   {
@@ -10941,241 +10745,31 @@
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Plada Infotech S",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Canarys Automa.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-11",
-    "marketCap": 0
-  },
-  {
-    "name": "Kontor Space",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Cello World",
+    "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Plada Infotech S",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Canarys Automa.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-11",
-    "marketCap": 0
-  },
-  {
-    "name": "Kontor Space",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
     "marketCap": 0
   },
   {
@@ -11298,241 +10892,31 @@
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Plada Infotech S",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Canarys Automa.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-11",
-    "marketCap": 0
-  },
-  {
-    "name": "Kontor Space",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Cello World",
+    "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Plada Infotech S",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Canarys Automa.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-11",
-    "marketCap": 0
-  },
-  {
-    "name": "Kontor Space",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
     "marketCap": 0
   },
   {
@@ -11655,241 +11039,31 @@
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Plada Infotech S",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Canarys Automa.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-11",
-    "marketCap": 0
-  },
-  {
-    "name": "Kontor Space",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Cello World",
+    "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Plada Infotech S",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Canarys Automa.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-11",
-    "marketCap": 0
-  },
-  {
-    "name": "Kontor Space",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
     "marketCap": 0
   },
   {
@@ -12012,241 +11186,31 @@
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Plada Infotech S",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Canarys Automa.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-11",
-    "marketCap": 0
-  },
-  {
-    "name": "Kontor Space",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Cello World",
+    "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Plada Infotech S",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Canarys Automa.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-11",
-    "marketCap": 0
-  },
-  {
-    "name": "Kontor Space",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
     "marketCap": 0
   },
   {
@@ -12369,241 +11333,31 @@
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Plada Infotech S",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Canarys Automa.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-11",
-    "marketCap": 0
-  },
-  {
-    "name": "Kontor Space",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
-    "marketCap": 0
-  },
-  {
-    "name": "Cello World",
+    "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Plada Infotech S",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Canarys Automa.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-11",
-    "marketCap": 0
-  },
-  {
-    "name": "Kontor Space",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Inspire Films",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Newjaisa Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Updater Services",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Mangalam Alloys",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Digikore Studios",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-04",
-    "marketCap": 0
-  },
-  {
-    "name": "Manoj Vaibhav",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Yatra Online",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sai Silks",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Jiwanram Sheo",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-09-18",
     "marketCap": 0
   },
   {
@@ -12726,6 +11480,34 @@
     "marketCap": 0
   },
   {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
     "name": "Cello World",
     "status": "listed",
     "source_category": "below_price",
@@ -12845,6 +11627,34 @@
     "marketCap": 0
   },
   {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
     "name": "Cello World",
     "status": "listed",
     "source_category": "below_price",
@@ -12964,10 +11774,1767 @@
     "marketCap": 0
   },
   {
-    "name": "Century Extrus.",
-    "status": "rights",
-    "source_category": "rights",
-    "listingDate": "",
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Plada Infotech S",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Canarys Automa.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-11",
+    "marketCap": 0
+  },
+  {
+    "name": "Kontor Space",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Plada Infotech S",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Canarys Automa.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-11",
+    "marketCap": 0
+  },
+  {
+    "name": "Kontor Space",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Plada Infotech S",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Canarys Automa.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-11",
+    "marketCap": 0
+  },
+  {
+    "name": "Kontor Space",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Plada Infotech S",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Canarys Automa.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-11",
+    "marketCap": 0
+  },
+  {
+    "name": "Kontor Space",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Plada Infotech S",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Canarys Automa.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-11",
+    "marketCap": 0
+  },
+  {
+    "name": "Kontor Space",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Plada Infotech S",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Canarys Automa.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-11",
+    "marketCap": 0
+  },
+  {
+    "name": "Kontor Space",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Plada Infotech S",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Canarys Automa.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-11",
+    "marketCap": 0
+  },
+  {
+    "name": "Kontor Space",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Plada Infotech S",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Canarys Automa.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-11",
+    "marketCap": 0
+  },
+  {
+    "name": "Kontor Space",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Plada Infotech S",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Canarys Automa.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-11",
+    "marketCap": 0
+  },
+  {
+    "name": "Kontor Space",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Plada Infotech S",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Canarys Automa.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-11",
+    "marketCap": 0
+  },
+  {
+    "name": "Kontor Space",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Plada Infotech S",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Canarys Automa.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-11",
+    "marketCap": 0
+  },
+  {
+    "name": "Kontor Space",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "KK Shah Hospital",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Plada Infotech S",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Canarys Automa.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-11",
+    "marketCap": 0
+  },
+  {
+    "name": "Kontor Space",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Inspire Films",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Newjaisa Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Updater Services",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Mangalam Alloys",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Digikore Studios",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-04",
+    "marketCap": 0
+  },
+  {
+    "name": "Manoj Vaibhav",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Yatra Online",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sai Silks",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-27",
+    "marketCap": 0
+  },
+  {
+    "name": "Jiwanram Sheo",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-09-18",
     "marketCap": 0
   }
 ]
