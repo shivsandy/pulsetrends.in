@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-10-03T12:59:51.156924+00:00",
-  "total": 39,
+  "last_updated": "2026-10-04T13:38:31.652230+00:00",
+  "total": 36,
   "airdrops": [
     {
       "id": "axis_robotics",
       "name": "Axis Robotics",
       "url": "https://airdrops.io/axis-robotics/",
-      "heat": 240,
+      "heat": 254,
       "status": "confirmed",
       "chain": "Base",
       "actions": [
@@ -14,7 +14,7 @@
         "Sign Your Submissions",
         "Refer to Earn"
       ],
-      "description": "240° Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP 209° Ongoing RISEx Actions: Sign Up, Enable Trading, Trade & Refer CLAIM AIRDROP 198° Ongoing Reels Actions: Create Account, Play Across the Casino, Sportsbook, Refer Users CLAIM AIRDROP 197° Ongoing Dow Protocol Actions: Connect X, Publish a Post, Refer Friends CLAIM AIRDROP 192° O",
+      "description": "254° Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP 219° Ongoing RISEx Actions: Sign Up, Enable Trading, Trade & Refer CLAIM AIRDROP 197° Ongoing Reels Actions: Create Account, Play Across the Casino, Sportsbook, Refer Users CLAIM AIRDROP 197° Ongoing Confirmed VOICE Actions: Sign Up, Complete Core Tasks and Mint VOICY Pass CLAIM AIR",
       "source": "airdrops.io",
       "tge_date": "with a two-month claim window",
       "steps": [
@@ -37,7 +37,7 @@
       "id": "risex",
       "name": "RISEx",
       "url": "https://airdrops.io/risex/",
-      "heat": 209,
+      "heat": 219,
       "status": "active",
       "chain": "Own",
       "actions": [
@@ -46,7 +46,7 @@
         "Trade",
         "Refer"
       ],
-      "description": "209° Ongoing RISEx Actions: Sign Up, Enable Trading, Trade & Refer CLAIM AIRDROP",
+      "description": "219° Ongoing RISEx Actions: Sign Up, Enable Trading, Trade & Refer CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Not yet announced Season 1: Ignite went live on July 20, 2026, with the first weekly drop on July 28",
       "steps": [
@@ -67,7 +67,7 @@
       "id": "reels",
       "name": "Reels",
       "url": "https://airdrops.io/reels/",
-      "heat": 198,
+      "heat": 197,
       "status": "active",
       "chain": "Own",
       "actions": [
@@ -76,7 +76,7 @@
         "Sportsbook",
         "Refer Users"
       ],
-      "description": "198° Ongoing Reels Actions: Create Account, Play Across the Casino, Sportsbook, Refer Users CLAIM AIRDROP",
+      "description": "197° Ongoing Reels Actions: Create Account, Play Across the Casino, Sportsbook, Refer Users CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "Jump to steps Updated 4 Sep 2026",
@@ -92,45 +92,17 @@
       "estimated_cost": "s nothing, and sign-up takes under a minute using email, X, Google, or Telegram"
     },
     {
-      "id": "dow_protocol",
-      "name": "Dow Protocol",
-      "url": "https://airdrops.io/dow-protocol/",
-      "heat": 197,
-      "status": "active",
-      "chain": "BSC",
-      "actions": [
-        "Dow Protocol Actions: Connect X",
-        "Publish a Post",
-        "Refer Friends"
-      ],
-      "description": "197° Ongoing Dow Protocol Actions: Connect X, Publish a Post, Refer Friends CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "date",
-      "steps": [
-        "Jump to steps Updated 7 Sep 2026",
-        "7 steps Dow Protocol Airdrop Details Dow Protocol has not confirmed a token or an airdrop. What exists is a live Dow XP program tracking contribution through social quests, referrals and vault activity, with the team saying only that future plans are still to be announced. Any distribution is speculative. The dashboard splits earnings into Task XP and Referral XP. Social quests pay flat amounts, and the referral tier stays locked until your first Dow post passes review. Vault deposits are the other lever, though Dow has not published how deposit size or lock duration weights into XP."
-      ],
-      "about": "Dow Protocol Airdrop Details Dow Protocol has not confirmed a token or an airdrop. What exists is a live Dow XP program tracking contribution through social quests, referrals and vault activity, with the team saying only that future plans are still to be announced. Any distribution is speculative. The dashboard splits earnings into Task XP and Referral XP. Social quests pay flat amounts, and the referral tier stays locked until your first Dow post passes review. Vault deposits are the other lever, though Dow has not published how deposit size or lock duration weights into XP.",
-      "social_links": {
-        "twitter": "https://x.com/DowProtocol/status/2088000136500916329",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fdow-protocol%2F&text=Dow%20Protocol"
-      },
-      "eligibility": "Telegram Twitter / X What is Dow Protocol? Dow Protocol is an e-commerce financing RWA platform that moves working capital lending for cross-border merchants on-chain",
-      "difficulty": "Easy",
-      "estimated_cost": "s nothing and keeps the Volo vault open as an option"
-    },
-    {
       "id": "voice",
       "name": "VOICE",
       "url": "https://airdrops.io/voice/",
-      "heat": 192,
+      "heat": 197,
       "status": "confirmed",
       "chain": "Solana",
       "actions": [
         "VOICE Actions: Sign Up",
         "Complete Core Tasks and Mint VOICY Pass"
       ],
-      "description": "192° Ongoing Confirmed VOICE Actions: Sign Up, Complete Core Tasks and Mint VOICY Pass CLAIM AIRDROP",
+      "description": "197° Ongoing Confirmed VOICE Actions: Sign Up, Complete Core Tasks and Mint VOICY Pass CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "event are confirmed, with the TGE targeted for Q4 2026",
       "steps": [
@@ -148,10 +120,38 @@
       "estimated_cost": "nothing"
     },
     {
+      "id": "dow_protocol",
+      "name": "Dow Protocol",
+      "url": "https://airdrops.io/dow-protocol/",
+      "heat": 192,
+      "status": "active",
+      "chain": "BSC",
+      "actions": [
+        "Dow Protocol Actions: Connect X",
+        "Publish a Post",
+        "Refer Friends"
+      ],
+      "description": "192° Ongoing Dow Protocol Actions: Connect X, Publish a Post, Refer Friends CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "date",
+      "steps": [
+        "Jump to steps Updated 7 Sep 2026",
+        "7 steps Dow Protocol Airdrop Details Dow Protocol has not confirmed a token or an airdrop. What exists is a live Dow XP program tracking contribution through social quests, referrals and vault activity, with the team saying only that future plans are still to be announced. Any distribution is speculative. The dashboard splits earnings into Task XP and Referral XP. Social quests pay flat amounts, and the referral tier stays locked until your first Dow post passes review. Vault deposits are the other lever, though Dow has not published how deposit size or lock duration weights into XP."
+      ],
+      "about": "Dow Protocol Airdrop Details Dow Protocol has not confirmed a token or an airdrop. What exists is a live Dow XP program tracking contribution through social quests, referrals and vault activity, with the team saying only that future plans are still to be announced. Any distribution is speculative. The dashboard splits earnings into Task XP and Referral XP. Social quests pay flat amounts, and the referral tier stays locked until your first Dow post passes review. Vault deposits are the other lever, though Dow has not published how deposit size or lock duration weights into XP.",
+      "social_links": {
+        "twitter": "https://x.com/DowProtocol/status/2088000136500916329",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fdow-protocol%2F&text=Dow%20Protocol"
+      },
+      "eligibility": "Telegram Twitter / X What is Dow Protocol? Dow Protocol is an e-commerce financing RWA platform that moves working capital lending for cross-border merchants on-chain",
+      "difficulty": "Easy",
+      "estimated_cost": "s nothing and keeps the Volo vault open as an option"
+    },
+    {
       "id": "mint",
       "name": "MINT",
       "url": "https://airdrops.io/mint-io/",
-      "heat": 185,
+      "heat": 187,
       "status": "confirmed",
       "chain": "Robinhood",
       "actions": [
@@ -159,7 +159,7 @@
         "Play Games",
         "Stake MNTD"
       ],
-      "description": "185° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP",
+      "description": "187° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Q4 2026 To qualify, you need a MINT account and at least $50 wagered cumulatively across eligible casino games or sportsbook markets",
       "steps": [
@@ -179,13 +179,13 @@
       "id": "reya_network",
       "name": "Reya Network",
       "url": "https://airdrops.io/reya-network/",
-      "heat": 185,
+      "heat": 187,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "Reya Network Actions: Collect RCP points"
       ],
-      "description": "Ongoing Confirmed Reya Network Actions: Collect RCP points CLAIM AIRDROP Ongoing Confirmed Wager Predict Actions: Request Mainnet Access CLAIM AIRDROP Ongoing Confirmed Quip Network Actions: Sign up & Complete tasks to earn points CLAIM AIRDROP 185° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP 21° Ongoing Drift Protocol Actions: Connect wallet & Claim DFX ",
+      "description": "Ongoing Confirmed Reya Network Actions: Collect RCP points CLAIM AIRDROP Ongoing Confirmed Wager Predict Actions: Request Mainnet Access CLAIM AIRDROP Ongoing Confirmed Quip Network Actions: Sign up & Complete tasks to earn points CLAIM AIRDROP 187° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP 31° Ongoing Drift Protocol Actions: Connect wallet & Claim DFX ",
       "source": "airdrops.io",
       "tge_date": ". Reya has not published a TGE date or the size of the first round",
       "steps": [
@@ -200,6 +200,35 @@
       },
       "difficulty": "Easy",
       "estimated_cost": "to Farm Medium Overview Website: reya"
+    },
+    {
+      "id": "nowa",
+      "name": "Nowa",
+      "url": "https://airdrops.io/nowa/",
+      "heat": 174,
+      "status": "confirmed",
+      "chain": "Own",
+      "actions": [
+        "Nowa Actions: Complete Social Tasks",
+        "Trade",
+        "Stake",
+        "Refer to Earn"
+      ],
+      "description": "174° Ongoing Confirmed Nowa Actions: Complete Social Tasks, Trade, Stake & Refer to Earn CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "allocation on a straight 1:1 basis",
+      "steps": [
+        "Jump to steps Updated 18 Aug 2026",
+        "8 steps Nowa Airdrop Details Nowa Farming is the opening phase of Nowa’s Community Development Program, which runs across Devnet (live now), Testnet, and Mainnet. Participants earn NOWA tokens directly rather than points, and farmed NOWA converts to TGE allocation on a straight 1:1 basis. Key Parameters: Airdrop Allocation : 500,000 NOWA per day during the Devnet phase, plus a 10,000 USDT leaderboard pool Distribution Method : Direct NOWA accrual, converting 1:1 to TGE allocation TGE Date : Not announced Rewards arrive from two directions. The daily NOWA pool splits across five activity buckets: spot trading, BNPL trading, Vault staking, Earn staking, and referrals. Your share of a bucket is proportional to your activity against everyone else’s in it that day, so a quiet bucket pays more per unit of effort than a crowded one. The second source is the leaderboards, which pay USDT to top ranks and NOWA further down."
+      ],
+      "about": "Nowa Airdrop Details Nowa Farming is the opening phase of Nowa’s Community Development Program, which runs across Devnet (live now), Testnet, and Mainnet. Participants earn NOWA tokens directly rather than points, and farmed NOWA converts to TGE allocation on a straight 1:1 basis. Key Parameters: Airdrop Allocation : 500,000 NOWA per day during the Devnet phase, plus a 10,000 USDT leaderboard pool Distribution Method : Direct NOWA accrual, converting 1:1 to TGE allocation TGE Date : Not announced Rewards arrive from two directions. The daily NOWA pool splits across five activity buckets: spot trading, BNPL trading, Vault staking, Earn staking, and referrals. Your share of a bucket is proportional to your activity against everyone else’s in it that day, so a quiet bucket pays more per unit of effort than a crowded one. The second source is the leaderboards, which pay USDT to top ranks and NOWA further down.",
+      "social_links": {
+        "twitter": "https://x.com/NowaFinance",
+        "telegram": "https://t.me/NowaFinance"
+      },
+      "eligibility": "Telegram Twitter / X What is Nowa? Nowa is an onchain financing protocol built around Buy Now, Pay Later crypto trading",
+      "difficulty": "Easy",
+      "estimated_cost": "s time rather than capital"
     },
     {
       "id": "osero",
@@ -226,39 +255,10 @@
       "estimated_cost": "to Farm Free Overview Website: osero"
     },
     {
-      "id": "nowa",
-      "name": "Nowa",
-      "url": "https://airdrops.io/nowa/",
-      "heat": 173,
-      "status": "confirmed",
-      "chain": "Own",
-      "actions": [
-        "Nowa Actions: Complete Social Tasks",
-        "Trade",
-        "Stake",
-        "Refer to Earn"
-      ],
-      "description": "173° Ongoing Confirmed Nowa Actions: Complete Social Tasks, Trade, Stake & Refer to Earn CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "allocation on a straight 1:1 basis",
-      "steps": [
-        "Jump to steps Updated 18 Aug 2026",
-        "8 steps Nowa Airdrop Details Nowa Farming is the opening phase of Nowa’s Community Development Program, which runs across Devnet (live now), Testnet, and Mainnet. Participants earn NOWA tokens directly rather than points, and farmed NOWA converts to TGE allocation on a straight 1:1 basis. Key Parameters: Airdrop Allocation : 500,000 NOWA per day during the Devnet phase, plus a 10,000 USDT leaderboard pool Distribution Method : Direct NOWA accrual, converting 1:1 to TGE allocation TGE Date : Not announced Rewards arrive from two directions. The daily NOWA pool splits across five activity buckets: spot trading, BNPL trading, Vault staking, Earn staking, and referrals. Your share of a bucket is proportional to your activity against everyone else’s in it that day, so a quiet bucket pays more per unit of effort than a crowded one. The second source is the leaderboards, which pay USDT to top ranks and NOWA further down."
-      ],
-      "about": "Nowa Airdrop Details Nowa Farming is the opening phase of Nowa’s Community Development Program, which runs across Devnet (live now), Testnet, and Mainnet. Participants earn NOWA tokens directly rather than points, and farmed NOWA converts to TGE allocation on a straight 1:1 basis. Key Parameters: Airdrop Allocation : 500,000 NOWA per day during the Devnet phase, plus a 10,000 USDT leaderboard pool Distribution Method : Direct NOWA accrual, converting 1:1 to TGE allocation TGE Date : Not announced Rewards arrive from two directions. The daily NOWA pool splits across five activity buckets: spot trading, BNPL trading, Vault staking, Earn staking, and referrals. Your share of a bucket is proportional to your activity against everyone else’s in it that day, so a quiet bucket pays more per unit of effort than a crowded one. The second source is the leaderboards, which pay USDT to top ranks and NOWA further down.",
-      "social_links": {
-        "twitter": "https://x.com/NowaFinance",
-        "telegram": "https://t.me/NowaFinance"
-      },
-      "eligibility": "Telegram Twitter / X What is Nowa? Nowa is an onchain financing protocol built around Buy Now, Pay Later crypto trading",
-      "difficulty": "Easy",
-      "estimated_cost": "s time rather than capital"
-    },
-    {
       "id": "push_chain",
       "name": "Push Chain",
       "url": "https://airdrops.io/push-chain/",
-      "heat": 168,
+      "heat": 172,
       "status": "confirmed",
       "chain": "",
       "actions": [
@@ -266,7 +266,7 @@
         "Complete Social Tasks",
         "Quests and Refer Users"
       ],
-      "description": "168° Ongoing Confirmed Push Chain Actions: Sign Up, Complete Social Tasks, Quests and Refer Users CLAIM AIRDROP",
+      "description": "172° Ongoing Confirmed Push Chain Actions: Sign Up, Complete Social Tasks, Quests and Refer Users CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "and continue across several seasons",
       "steps": [
@@ -287,14 +287,14 @@
       "id": "bulk",
       "name": "BULK",
       "url": "https://airdrops.io/bulk/",
-      "heat": 164,
+      "heat": 170,
       "status": "confirmed",
       "chain": "Solana",
       "actions": [
         "BULK Actions: Sign up",
         "Deposit USDC"
       ],
-      "description": "164° Ongoing Confirmed BULK Actions: Sign up & Deposit USDC CLAIM AIRDROP",
+      "description": "170° Ongoing Confirmed BULK Actions: Sign up & Deposit USDC CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "window usually carries more weight than one strong burst",
       "steps": [
@@ -315,32 +315,6 @@
       "eligibility": "criteria, a snapshot date, or a points-to-token formula",
       "difficulty": "Easy",
       "estimated_cost": "to Farm Medium Overview Website: early"
-    },
-    {
-      "id": "titan_exchange",
-      "name": "Titan Exchange",
-      "url": "https://airdrops.io/titan-exchange/",
-      "heat": 162,
-      "status": "confirmed",
-      "chain": "TON",
-      "actions": [
-        "Titan Exchange Actions: Join Waitlist",
-        "Claim Testnet Tokens",
-        "Trade"
-      ],
-      "description": "162° Ongoing Titan Exchange Actions: Join Waitlist, Claim Testnet Tokens, Trade CLAIM AIRDROP 64° Ongoing Confirmed TastyCo Actions: Sign in, Complete Quests and Refer Users CLAIM AIRDROP Ongoing Raycash Actions: Join Waitlist, Follow on X, Refer Users CLAIM AIRDROP Ongoing Confirmed Synthra Actions: Sign Up, Provide Liquidity, Invite Friends CLAIM AIRDROP Ongoing MindGames Actions: Claim Seat, Co",
-      "source": "airdrops.io",
-      "steps": [
-        "Jump to steps Updated 2 Oct 2026",
-        "6 steps Titan Exchange Airdrop Details The Titan Exchange airdrop is speculative. The team has not announced a token, a points system, or any reward for testnet users. What exists today is a waitlist with tiered status cards and a public testnet, and Titan says testnet users get early priority at mainnet. The waitlist has five tiers: Bronze, Metal, Gold, Platinum, and Diamond. Everyone starts at Bronze and moves up by referring other users. Joining takes a wallet signature and nothing else, and the testnet runs on test USDC, so the whole campaign is free."
-      ],
-      "about": "Titan Exchange Airdrop Details The Titan Exchange airdrop is speculative. The team has not announced a token, a points system, or any reward for testnet users. What exists today is a waitlist with tiered status cards and a public testnet, and Titan says testnet users get early priority at mainnet. The waitlist has five tiers: Bronze, Metal, Gold, Platinum, and Diamond. Everyone starts at Bronze and moves up by referring other users. Joining takes a wallet signature and nothing else, and the testnet runs on test USDC, so the whole campaign is free.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Titan%20Exchange&url=https%3A%2F%2Fairdrops.io%2Ftitan-exchange%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Ftitan-exchange%2F&text=Titan%20Exchange"
-      },
-      "difficulty": "Easy",
-      "estimated_cost": "nothing"
     },
     {
       "id": "sweep_finance",
@@ -371,36 +345,36 @@
       "estimated_cost": "to Farm Free Overview Website: sweep"
     },
     {
-      "id": "dualmint",
-      "name": "DualMint",
-      "url": "https://airdrops.io/dualmint/",
-      "heat": 151,
-      "status": "active",
-      "chain": "Arbitrum",
+      "id": "titan_exchange",
+      "name": "Titan Exchange",
+      "url": "https://airdrops.io/titan-exchange/",
+      "heat": 161,
+      "status": "confirmed",
+      "chain": "TON",
       "actions": [
-        "DualMint Actions: Sign Up",
-        "Reserve your Queue and Invite Friends"
+        "Titan Exchange Actions: Join Waitlist",
+        "Claim Testnet Tokens",
+        "Trade"
       ],
-      "description": "151° Ongoing DualMint Actions: Sign Up, Reserve your Queue and Invite Friends CLAIM AIRDROP",
+      "description": "161° Ongoing Titan Exchange Actions: Join Waitlist, Claim Testnet Tokens, Trade CLAIM AIRDROP 74° Ongoing Confirmed TastyCo Actions: Sign in, Complete Quests and Refer Users CLAIM AIRDROP Ongoing Raycash Actions: Join Waitlist, Follow on X, Refer Users CLAIM AIRDROP Ongoing Confirmed Synthra Actions: Sign Up, Provide Liquidity, Invite Friends CLAIM AIRDROP Ongoing MindGames Actions: Claim Seat, Co",
       "source": "airdrops.io",
       "steps": [
-        "Jump to steps Updated 2 Sep 2026",
-        "7 steps DualMint Airdrop Details DualMint has announced UPTIME, a free points campaign whose dashboard states that claims at the close of Epoch 1 are made through a connected X account. Epoch 0 has closed and its balances are locked. Epoch 1 is running now, with a public points balance, queue position, machine uptime view and leaderboard. Registration takes an email address and nothing else, one entry per address, and existing accounts keep their points. Referral rewards settle only after the referred account joins and links X, so those points sit pending until X connection opens."
+        "Jump to steps Updated 2 Oct 2026",
+        "6 steps Titan Exchange Airdrop Details The Titan Exchange airdrop is speculative. The team has not announced a token, a points system, or any reward for testnet users. What exists today is a waitlist with tiered status cards and a public testnet, and Titan says testnet users get early priority at mainnet. The waitlist has five tiers: Bronze, Metal, Gold, Platinum, and Diamond. Everyone starts at Bronze and moves up by referring other users. Joining takes a wallet signature and nothing else, and the testnet runs on test USDC, so the whole campaign is free."
       ],
-      "about": "DualMint Airdrop Details DualMint has announced UPTIME, a free points campaign whose dashboard states that claims at the close of Epoch 1 are made through a connected X account. Epoch 0 has closed and its balances are locked. Epoch 1 is running now, with a public points balance, queue position, machine uptime view and leaderboard. Registration takes an email address and nothing else, one entry per address, and existing accounts keep their points. Referral rewards settle only after the referred account joins and links X, so those points sit pending until X connection opens.",
+      "about": "Titan Exchange Airdrop Details The Titan Exchange airdrop is speculative. The team has not announced a token, a points system, or any reward for testnet users. What exists today is a waitlist with tiered status cards and a public testnet, and Titan says testnet users get early priority at mainnet. The waitlist has five tiers: Bronze, Metal, Gold, Platinum, and Diamond. Everyone starts at Bronze and moves up by referring other users. Joining takes a wallet signature and nothing else, and the testnet runs on test USDC, so the whole campaign is free.",
       "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=DualMint&url=https%3A%2F%2Fairdrops.io%2Fdualmint%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fdualmint%2F&text=DualMint"
+        "twitter": "https://x.com/intent/tweet?text=Titan%20Exchange&url=https%3A%2F%2Fairdrops.io%2Ftitan-exchange%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Ftitan-exchange%2F&text=Titan%20Exchange"
       },
-      "eligibility": "Twitter / X Email What is DualMint? DualMint finances physical, revenue-generating machines and routes their operating income to holders as USDC",
       "difficulty": "Easy",
-      "estimated_cost": "anything? No"
+      "estimated_cost": "nothing"
     },
     {
       "id": "amadeus_protocol",
       "name": "Amadeus Protocol",
       "url": "https://airdrops.io/amadeus-protocol/",
-      "heat": 149,
+      "heat": 151,
       "status": "active",
       "chain": "Own",
       "actions": [
@@ -408,7 +382,7 @@
         "Complete Check-In",
         "Finish Social Tasks"
       ],
-      "description": "149° Ongoing Amadeus Protocol Actions: Create Wallet, Complete Check-In, Finish Social Tasks CLAIM AIRDROP",
+      "description": "151° Ongoing Amadeus Protocol Actions: Create Wallet, Complete Check-In, Finish Social Tasks CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date: Not confirmed Season 01 rewards both one-off and repeatable activity",
       "steps": [
@@ -426,17 +400,46 @@
       "estimated_cost": "to Farm Free Overview Website: ama"
     },
     {
+      "id": "tastyco",
+      "name": "TastyCo",
+      "url": "https://airdrops.io/tastyco/",
+      "heat": 74,
+      "status": "confirmed",
+      "chain": "BSC",
+      "actions": [
+        "TastyCo Actions: Sign in",
+        "Complete Quests and Refer Users"
+      ],
+      "description": "74° Ongoing Confirmed TastyCo Actions: Sign in, Complete Quests and Refer Users CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "points system",
+      "steps": [
+        "Jump to steps Updated 29 Sep 2026",
+        "8 steps TastyCo Airdrop Details TastyCo has confirmed a $100,000 $TASTY airdrop campaign, run through a pre",
+        "TGE points system. The tokenomics reserve 5% of supply for airdrops and another 15% for community quests and rewards paid out over 36 months. Key Parameters: Airdrop Allocation : $100,000 in $TASTY (current campaign), drawn from a 5% airdrop reserve Distribution Method : Pre",
+        "TGE points TGE Date : Q4 2026 (targeted) Vesting Schedule : 20% unlocked at TGE, remainder vested over 6 months Points come from two sources. The TastyCo quest platform counts for 70% of the allocation, and campaigns on Galxe, Zealy and TaskOn make up the other 30%. You need a registered TastyCo profile to qualify at all. Points keep accruing until TGE, but the conversion rate to $TASTY has not been announced. A larger community rewards pool and new seasons are planned."
+      ],
+      "about": "TastyCo Airdrop Details TastyCo has confirmed a $100,000 $TASTY airdrop campaign, run through a pre-TGE points system. The tokenomics reserve 5% of supply for airdrops and another 15% for community quests and rewards paid out over 36 months. Key Parameters: Airdrop Allocation : $100,000 in $TASTY (current campaign), drawn from a 5% airdrop reserve Distribution Method : Pre-TGE points TGE Date : Q4 2026 (targeted) Vesting Schedule : 20% unlocked at TGE, remainder vested over 6 months Points come from two sources. The TastyCo quest platform counts for 70% of the allocation, and campaigns on Galxe, Zealy and TaskOn make up the other 30%. You need a registered TastyCo profile to qualify at all. Points keep accruing until TGE, but the conversion rate to $TASTY has not been announced. A larger community rewards pool and new seasons are planned.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=TastyCo&url=https%3A%2F%2Fairdrops.io%2Ftastyco%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Ftastyco%2F&text=TastyCo",
+        "discord": "https://discord.gg/mUMe36t7a"
+      },
+      "eligibility": "for the airdrop",
+      "estimated_cost": "you the 300-point reward"
+    },
+    {
       "id": "czr",
       "name": "CZR",
       "url": "https://airdrops.io/czr/",
-      "heat": 69,
+      "heat": 45,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "CZR Actions: Connect wallet",
         "Claim Tokens"
       ],
-      "description": "69° Ongoing Confirmed CZR Actions: Connect wallet & Claim Tokens Claim Live CLAIM AIRDROP",
+      "description": "45° Ongoing Confirmed CZR Actions: Connect wallet & Claim Tokens Claim Live CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": ". Eligible users can claim on the official CZR claim page at airdrop",
       "steps": [
@@ -457,46 +460,17 @@
       "estimated_cost": "to Farm Free Overview Website: czrex"
     },
     {
-      "id": "tastyco",
-      "name": "TastyCo",
-      "url": "https://airdrops.io/tastyco/",
-      "heat": 64,
-      "status": "confirmed",
-      "chain": "BSC",
-      "actions": [
-        "TastyCo Actions: Sign in",
-        "Complete Quests and Refer Users"
-      ],
-      "description": "64° Ongoing Confirmed TastyCo Actions: Sign in, Complete Quests and Refer Users CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "points system",
-      "steps": [
-        "Jump to steps Updated 29 Sep 2026",
-        "8 steps TastyCo Airdrop Details TastyCo has confirmed a $100,000 $TASTY airdrop campaign, run through a pre",
-        "TGE points system. The tokenomics reserve 5% of supply for airdrops and another 15% for community quests and rewards paid out over 36 months. Key Parameters: Airdrop Allocation : $100,000 in $TASTY (current campaign), drawn from a 5% airdrop reserve Distribution Method : Pre",
-        "TGE points TGE Date : Q4 2026 (targeted) Vesting Schedule : 20% unlocked at TGE, remainder vested over 6 months Points come from two sources. The TastyCo quest platform counts for 70% of the allocation, and campaigns on Galxe, Zealy and TaskOn make up the other 30%. You need a registered TastyCo profile to qualify at all. Points keep accruing until TGE, but the conversion rate to $TASTY has not been announced. A larger community rewards pool and new seasons are planned."
-      ],
-      "about": "TastyCo Airdrop Details TastyCo has confirmed a $100,000 $TASTY airdrop campaign, run through a pre-TGE points system. The tokenomics reserve 5% of supply for airdrops and another 15% for community quests and rewards paid out over 36 months. Key Parameters: Airdrop Allocation : $100,000 in $TASTY (current campaign), drawn from a 5% airdrop reserve Distribution Method : Pre-TGE points TGE Date : Q4 2026 (targeted) Vesting Schedule : 20% unlocked at TGE, remainder vested over 6 months Points come from two sources. The TastyCo quest platform counts for 70% of the allocation, and campaigns on Galxe, Zealy and TaskOn make up the other 30%. You need a registered TastyCo profile to qualify at all. Points keep accruing until TGE, but the conversion rate to $TASTY has not been announced. A larger community rewards pool and new seasons are planned.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=TastyCo&url=https%3A%2F%2Fairdrops.io%2Ftastyco%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Ftastyco%2F&text=TastyCo",
-        "discord": "https://discord.gg/mUMe36t7a"
-      },
-      "eligibility": "for the airdrop",
-      "estimated_cost": "you the 300-point reward"
-    },
-    {
       "id": "drift_protocol",
       "name": "Drift Protocol",
       "url": "https://airdrops.io/drift-protocol/",
-      "heat": 21,
+      "heat": 31,
       "status": "active",
       "chain": "Solana",
       "actions": [
         "Drift Protocol Actions: Connect wallet",
         "Claim DFX"
       ],
-      "description": "21° Ongoing Drift Protocol Actions: Connect wallet & Claim DFX Claim Live CLAIM AIRDROP",
+      "description": "31° Ongoing Drift Protocol Actions: Connect wallet & Claim DFX Claim Live CLAIM AIRDROP",
       "source": "airdrops.io",
       "steps": [
         "How to Claim DFX Recovery Tokens Step 1: Open the Wallet That Held Your Drift Account Use the wallet that controlled your Drift account on April 1, 2026.",
@@ -977,55 +951,6 @@
       "eligibility": "Telegram Twitter / X Facebook Email What is Ouinex? Ouinex is a multi-asset trading platform that combines cryptocurrency and traditional financial instruments under a single interface",
       "difficulty": "Easy",
       "estimated_cost": "to Farm Low Overview Website: ouinex"
-    },
-    {
-      "id": "cambria",
-      "name": "Cambria",
-      "url": "https://airdrops.io/cambria/",
-      "heat": 0,
-      "status": "confirmed",
-      "chain": "Ethereum",
-      "actions": [],
-      "description": "Ongoing Confirmed Cambria Actions: Claim free Loot, Play the game CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": ". The second is the Genesis Airdrop, a points-based track built on Trinkets and Essence Points earned from gameplay, including points from past Gold Rush and Duel Arena seasons",
-      "steps": [
-        "Eligible users who don’t opt in by then may lose access to their allocation.",
-        "SIGN UP & CLAIM LOOTDROP What is Cambria?"
-      ],
-      "about": "Cambria Airdrop Details Cambria has extended the deadline for historical users to accept the Genesis Event Opt-In Agreement to October 8, 2026. Eligible users who don’t opt in by then may lose access to their allocation. Cambria has two confirmed reward tracks tied to $RSGP. The first is Loot Chests, which scores wallets on a Degen Score ( Solana trading, Polymarket positions, and perps activity over the past year) and a Chad Score (token holdings). Chests are claimable now through the lobby, and eligible allocations are also sent automatically to linked wallets at TGE. The second is the Genesis Airdrop, a points-based track built on Trinkets and Essence Points earned from gameplay, including points from past Gold Rush and Duel Arena seasons.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Cambria&url=https%3A%2F%2Fairdrops.io%2Fcambria%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fcambria%2F&text=Cambria"
-      },
-      "eligibility": "Once your wallets are linked, head to the claims dashboard to see your Degen Score and Chad Score, along with any Loot Chests you’ve already qualified for",
-      "difficulty": "Easy",
-      "estimated_cost": "s"
-    },
-    {
-      "id": "orbinum",
-      "name": "Orbinum",
-      "url": "https://airdrops.io/orbinum/",
-      "heat": 0,
-      "status": "confirmed",
-      "chain": "Own",
-      "actions": [],
-      "description": "Ongoing Confirmed Orbinum Actions: Interact with testnet CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "Date : Q4 2026 (October to December) Credits are locked in by a snapshot taken exactly 14 days before mainnet launch, and the full allocation unlocks at distribution with no vesting",
-      "steps": [
-        "Jump to steps Updated 29 Sep 2026",
-        "9 steps Orbinum Network Airdrop Details Orbinum has confirmed its airdrop. Season 1, called the Genesis Community, started on March 13, 2026, and rewards users with ORB Credits for quests, weekly streaks, referrals, and testnet activity like shielding, private transfers, unshielding, and selective disclosure. Key Parameters: Airdrop Allocation : 20,000,000 ORB (2% of total supply) Distribution Method : ORB Credits convert proportionally into a share of the allocation pool TGE Date : Q4 2026 (October to December) Credits are locked in by a snapshot taken exactly 14 days before mainnet launch, and the full allocation unlocks at distribution with no vesting. Whatever share you’ve earned by the snapshot date is what converts to ORB at TGE, in full. Latest Update: Orbinum now awards +5 ORB for every on",
-        "chain quest completed. Connect a Talisman or SubWallet wallet to Orbinum to take part. Existing wallets work as they are, so there is nothing new to install or configure."
-      ],
-      "about": "Orbinum Network Airdrop Details Orbinum has confirmed its airdrop. Season 1, called the Genesis Community, started on March 13, 2026, and rewards users with ORB Credits for quests, weekly streaks, referrals, and testnet activity like shielding, private transfers, unshielding, and selective disclosure. Key Parameters: Airdrop Allocation : 20,000,000 ORB (2% of total supply) Distribution Method : ORB Credits convert proportionally into a share of the allocation pool TGE Date : Q4 2026 (October to December) Credits are locked in by a snapshot taken exactly 14 days before mainnet launch, and the full allocation unlocks at distribution with no vesting. Whatever share you’ve earned by the snapshot date is what converts to ORB at TGE, in full. Latest Update: Orbinum now awards +5 ORB for every on-chain quest completed. Connect a Talisman or SubWallet wallet to Orbinum to take part. Existing wallets work as they are, so there is nothing new to install or configure.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Orbinum&url=https%3A%2F%2Fairdrops.io%2Forbinum%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Forbinum%2F&text=Orbinum",
-        "github": "https://github.com/orbinum"
-      },
-      "eligibility": "Telegram Twitter / X What is Orbinum Network? Orbinum Network is a privacy-focused Layer 1 blockchain built on Substrate with EVM compatibility through Frontier",
-      "estimated_cost": "s you both credits and streak progress"
     }
   ]
 }
