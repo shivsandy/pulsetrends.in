@@ -1,20 +1,111 @@
 {
-  "last_updated": "2026-10-06T14:41:48.011234+00:00",
-  "total": 38,
+  "last_updated": "2026-10-07T15:01:44.424911+00:00",
+  "total": 46,
   "airdrops": [
+    {
+      "id": "arcus",
+      "name": "Arcus",
+      "url": "https://airdrops.io/arcus/",
+      "heat": 226,
+      "status": "confirmed",
+      "chain": "Robinhood",
+      "actions": [
+        "Arcus Actions: Sign Up",
+        "Trade",
+        "Collect Points"
+      ],
+      "description": "226° Ongoing Arcus Actions: Sign Up, Trade & Collect Points CLAIM AIRDROP 225° Ongoing Confirmed Ink Actions: Trade on Kraken Pro & Interact with Dapps CLAIM AIRDROP 224° Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP 222° Ongoing RISEx Actions: Sign Up, Enable Trading, Trade & Refer CLAIM AIRDROP 216° Ongoing Confirmed MINT Actions:",
+      "source": "airdrops.io",
+      "tge_date": "have not been announced",
+      "steps": [
+        "Perps access switched from manual whitelisting to invite codes on the same day.",
+        "Retained Deposits : Collateral you keep on Arcus over time.",
+        "New users can still earn Arcus Points in Season 1, which pays out weekly and is open to anyone who can access the exchange."
+      ],
+      "about": "Arcus Airdrop Details dYdX Labs has confirmed that Arcus will launch its own token, separate from DYDX, with an allocation reserved for people who traded, staked, or validated on dYdX. Arcus Points are the main way to farm it now, although the team has not said how points will convert to tokens. Season 0 covered private beta activity from July 1 to September 30 and has already been distributed to those traders. Their Season 0 totals stay hidden until near the end of the program. Season 1 points drop every Wednesday at 3PM EST and reward trading, market making, retained deposits, and referrals. Arcus weighs how you trade as well as how much, and stock token trades or trades outside US market hours currently earn a boost. Latest Update: Arcus Points launched on October 1, 2026, and the program will end no later than the end of H1 2027. Perps access switched from manual whitelisting to invite codes on the same day. Season 1 distributes a fixed 250,000 points per week, and that amount stay",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Arcus&url=https%3A%2F%2Fairdrops.io%2Farcus%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Farcus%2F&text=Arcus"
+      },
+      "eligibility": "Telegram Twitter / X Email What is Arcus? Arcus is a decentralized exchange built by the dYdX Labs team in partnership with Robinhood Crypto",
+      "difficulty": "Easy",
+      "estimated_cost": "to Farm Medium Overview Website: arcus"
+    },
+    {
+      "id": "ink",
+      "name": "Ink",
+      "url": "https://airdrops.io/ink-chain/",
+      "heat": 225,
+      "status": "confirmed",
+      "chain": "Own",
+      "actions": [
+        "Ink Actions: Trade on Kraken Pro",
+        "Interact with Dapps"
+      ],
+      "description": "225° Ongoing Confirmed Ink Actions: Trade on Kraken Pro & Interact with Dapps CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "Skip to content Menu Home Latest Airdrops Hot Airdrops Potential Airdrops Hyperliquid Airdrops Robinhood Airdrops Base Airdrops Solana Airdrops MegaETH Airdrops Soneium Airdrops Aptos Airdrops TON Airdrops zkSync Airdrops Blast Airdrops Show all Claims Blog Contact Claim live Collector Crypt Updated Retium Retium Money is Live Ends ACI Oct 10 New Titan Exchange Claim live DeepBook Updated TrueNorth Trading Competition is Live Confirmed TastyCo Claim live Concrete Updated MindGames NFT Collection is Coming New Raycash Claim live Canopy Updated Cambria Mint Whitelist is Open New RWAPerp Claim live Satsuma Updated Vibe Vibe Guild Registration is live Claim live Collector Crypt Updated Retium Retium Money is Live Ends ACI Oct 10 New Titan Exchange Claim live DeepBook Updated TrueNorth Trading Competition is Live Confirmed TastyCo Claim live Concrete Updated MindGames NFT Collection is Coming New Raycash Claim live Canopy Updated Cambria Mint Whitelist is Open New RWAPerp Claim live Satsuma Updated Vibe Vibe Guild Registration is live Ink 225° Loading",
+      "steps": [
+        "People who use the perp DEX Nado will also be able to get INK tokens.",
+        "Key Parameters: Allocation : Confirmed (exact percentage TBA) Distribution Method : Activity-based and liquidity provision TGE Date : Expected July-September 2026 Latest Update: Nado has added an ink_airdrop endpoint to its API docs that returns an address’s INK allocation.",
+        "Boosts are limited-time ways to earn extra points, Deposit cash (2x points) Reactivation bonus (3x points) Set price alerts (Bonus boost) Step 3: Set up Kraken Wallet and move funds to Ink Download Kraken Wallet and switch to the Ink network.",
+        "The collection is limited to the InkScore community and will launch on Ink .",
+        "How points convert to tokens, and whether dApp activity also earns points, has not been announced.",
+        "Whether onchain dApp activity earns points has not been confirmed by the Ink team.",
+        "That’s a concrete starting point."
+      ],
+      "about": "Ink Airdrop Details Ink Chain has confirmed that there will be an airdrop of INK tokens. PonziTrader, an advisor to Ink Chain and Nado, said in an interview that the airdrop should happen sometime between July and September 2026. People who use the perp DEX Nado will also be able to get INK tokens. Ink has also said that liquidity providers on Tydro, its lending protocol, will get INK through a special airdrop. Also, Kraken Pro activity is confirmed to count toward Ink points, the first points dropped on April 13, 2026. Key Parameters: Allocation : Confirmed (exact percentage TBA) Distribution Method : Activity-based and liquidity provision TGE Date : Expected July-September 2026 Latest Update: Nado has added an ink_airdrop endpoint to its API docs that returns an address’s INK allocation. The Nado SDK also includes a Foundation Rewards airdrop contract with Merkle-proof claims and a week parameter, which points to possible weekly unlocks. Separately, Ink teased an “Ink weather update”",
+      "social_links": {
+        "twitter": "https://x.com/inkonchain",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fink-chain%2F&text=Ink",
+        "github": "https://github.com/inkonchain"
+      },
+      "eligibility": "criteria or allocation details have been announced",
+      "difficulty": "Medium",
+      "estimated_cost": "-free"
+    },
+    {
+      "id": "imperial",
+      "name": "Imperial",
+      "url": "https://airdrops.io/imperial/",
+      "heat": 225,
+      "status": "confirmed",
+      "chain": "Solana",
+      "actions": [
+        "Imperial Actions: Connect Telegram",
+        "trade perpetuals and refer users"
+      ],
+      "description": "Ongoing Confirmed Imperial Actions: Connect Telegram, trade perpetuals and refer users CLAIM AIRDROP Ongoing Abstract Actions: Withdraw Funds ASAP CLAIM AIRDROP 225° Ongoing Confirmed Ink Actions: Trade on Kraken Pro & Interact with Dapps CLAIM AIRDROP Ongoing QFEX Actions: Sign up & Make Trades CLAIM AIRDROP Ongoing Retium Actions: Join Discord & Telegram, Complete Quiz and Reach Cadet Role CLAIM",
+      "source": "airdrops.io",
+      "tge_date": ". Season 1 of the Imperial Points program launched on May 20, and the team has signaled that points carry forward into future seasons, making early activity worth tracking",
+      "steps": [
+        "Jump to steps Updated 7 Oct 2026",
+        "7 steps Imperial Airdrop Details No token has been announced, and Imperial has not confirmed a TGE. Season 1 of the Imperial Points program launched on May 20, and the team has signaled that points carry forward into future seasons, making early activity worth tracking. Each week, 20,000 points are distributed pro",
+        "rata across active traders based on volume, fees generated, streaks, and multipliers. Multipliers stack additively, so stacking several small bonuses adds up faster than chasing one big one. Points live on",
+        "chain, which is an unusual design choice for a points program at this stage. Latest Update: Imperial has raised $1.5 million in a seed round led by Foundation Capital."
+      ],
+      "about": "Imperial Airdrop Details No token has been announced, and Imperial has not confirmed a TGE. Season 1 of the Imperial Points program launched on May 20, and the team has signaled that points carry forward into future seasons, making early activity worth tracking. Each week, 20,000 points are distributed pro-rata across active traders based on volume, fees generated, streaks, and multipliers. Multipliers stack additively, so stacking several small bonuses adds up faster than chasing one big one. Points live on-chain, which is an unusual design choice for a points program at this stage. Latest Update: Imperial has raised $1.5 million in a seed round led by Foundation Capital.",
+      "social_links": {
+        "twitter": "https://x.com/FoundationCap",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fimperial%2F&text=Imperial"
+      },
+      "eligibility": "Telegram What is Imperial? Imperial is a perpetuals router on Solana that lets traders access crypto, stocks, forex, and commodity markets from a single, non-custodial interface",
+      "difficulty": "Easy",
+      "estimated_cost": "to Farm Low Overview Website: imperial"
+    },
     {
       "id": "axis_robotics",
       "name": "Axis Robotics",
       "url": "https://airdrops.io/axis-robotics/",
-      "heat": 254,
-      "status": "confirmed",
+      "heat": 224,
+      "status": "active",
       "chain": "Base",
       "actions": [
         "Axis Robotics Actions: Complete Pre-Training Tasks",
         "Sign Your Submissions",
         "Refer to Earn"
       ],
-      "description": "254° Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP 211° Ongoing RISEx Actions: Sign Up, Enable Trading, Trade & Refer CLAIM AIRDROP 202° Ongoing Reels Actions: Create Account, Play Across the Casino, Sportsbook, Refer Users CLAIM AIRDROP 201° Ongoing Confirmed VOICE Actions: Sign Up, Complete Core Tasks and Mint VOICY Pass CLAIM AIR",
+      "description": "224° Ongoing Axis Robotics Actions: Complete Pre-Training Tasks, Sign Your Submissions & Refer to Earn CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "expected around October 13-14 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live Claim live Collector Crypt Updated Vibe Vibe Guild Registration is live Ends ACI Oct 10 New Titan Exchange Claim live DeepBook Updated Arcus Points launched on October 1 Confirmed TastyCo Claim live Concrete Updated Cambria TGE expected around October 13-14 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live Axis Robotics 244° Loading",
       "steps": [
@@ -37,7 +128,7 @@
       "id": "risex",
       "name": "RISEx",
       "url": "https://airdrops.io/risex/",
-      "heat": 211,
+      "heat": 222,
       "status": "active",
       "chain": "Own",
       "actions": [
@@ -46,9 +137,9 @@
         "Trade",
         "Refer"
       ],
-      "description": "211° Ongoing RISEx Actions: Sign Up, Enable Trading, Trade & Refer CLAIM AIRDROP",
+      "description": "222° Ongoing RISEx Actions: Sign Up, Enable Trading, Trade & Refer CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 Confirmed TastyCo Claim live DeepBook Updated Canborsa Ambassador Program Application is Live New Raycash Claim live Concrete Updated Wager Predict Mainnet Beta is Live New RWAPerp Claim live Canopy Updated MINT Mint a Bear Whitelist is Live Claim live CZR Updated Arcus Points launched on October 1 Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Cambria TGE expected around October 13-14 Confirmed TastyCo Claim live DeepBook Updated Canborsa Ambassador Program Application is Live New Raycash Claim live Concrete Updated Wager Predict Mainnet Beta is Live New RWAPerp Claim live Canopy Updated MINT Mint a Bear Whitelist is Live RISEx 210° Loading",
+      "tge_date": "Date : Not yet announced Season 1: Ignite went live on July 20, 2026, with the first weekly drop on July 28",
       "steps": [
         "Jump to steps Updated 17 Aug 2026",
         "7 steps RISEx Airdrop Details RISEx has not announced a token or a confirmed airdrop, so farming here is speculative. That said, the team openly describes the points program as a step toward future token distribution, which puts RISE Points on firmer ground than most tokenless campaigns. Key Parameters: Airdrop Allocation : 100% of RISE Points go to RISEx users (traders, LPs, and builder code integrators) Distribution Method : Weekly points distributions of 200,000 points, settled every Tuesday TGE Date : Not yet announced Season 1: Ignite went live on July 20, 2026, with the first weekly drop on July 28. Each week, the 200,000 point pool is split based on your share of qualifying activity: maker and taker volume, fees paid, slippage, open interest, and how long you hold positions. The exact weightings change every week and are not published, which makes the program hard to game with wash trading."
@@ -64,10 +155,67 @@
       "estimated_cost": "to Farm Medium Overview Website: rise"
     },
     {
+      "id": "mint",
+      "name": "MINT",
+      "url": "https://airdrops.io/mint-io/",
+      "heat": 216,
+      "status": "confirmed",
+      "chain": "Robinhood",
+      "actions": [
+        "MINT Actions: Fund Your Wallet",
+        "Play Games",
+        "Stake MNTD"
+      ],
+      "description": "216° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "Date : Q4 2026 To qualify, you need a MINT account and at least $50 wagered cumulatively across eligible casino games or sportsbook markets",
+      "steps": [
+        "Jump to steps Updated 7 Oct 2026",
+        "9 steps $MNTD Airdrop Details The Season 1 airdrop is confirmed and distributes $125,000 worth of $MNTD to eligible players based on verified platform activity. Casino and sportsbook play earns XP, and your final leaderboard position at the snapshot decides your share. Key Parameters: Airdrop Allocation : $125,000 worth of $MNTD Distribution Method : Season 1 XP leaderboard, snapshot based TGE Date : Q4 2026 To qualify, you need a MINT account and at least $50 wagered cumulatively across eligible casino games or sportsbook markets. The snapshot takes place shortly before the TGE, so XP earned until then still counts. Eligibility depends on the campaign terms and the compliance requirements that apply in your region."
+      ],
+      "about": "$MNTD Airdrop Details The Season 1 airdrop is confirmed and distributes $125,000 worth of $MNTD to eligible players based on verified platform activity. Casino and sportsbook play earns XP, and your final leaderboard position at the snapshot decides your share. Key Parameters: Airdrop Allocation : $125,000 worth of $MNTD Distribution Method : Season 1 XP leaderboard, snapshot based TGE Date : Q4 2026 To qualify, you need a MINT account and at least $50 wagered cumulatively across eligible casino games or sportsbook markets. The snapshot takes place shortly before the TGE, so XP earned until then still counts. Eligibility depends on the campaign terms and the compliance requirements that apply in your region.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=MINT&url=https%3A%2F%2Fairdrops.io%2Fmint-io%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fmint-io%2F&text=MINT"
+      },
+      "eligibility": "depends on the campaign terms and the compliance requirements that apply in your region",
+      "difficulty": "Easy",
+      "estimated_cost": "to Farm Low Overview Website: mint"
+    },
+    {
+      "id": "amadeus_protocol",
+      "name": "Amadeus Protocol",
+      "url": "https://airdrops.io/amadeus-protocol/",
+      "heat": 205,
+      "status": "active",
+      "chain": "Own",
+      "actions": [
+        "Amadeus Protocol Actions: Create Wallet",
+        "Complete Check-In",
+        "Finish Social Tasks"
+      ],
+      "description": "205° Ongoing Amadeus Protocol Actions: Create Wallet, Complete Check-In, Finish Social Tasks CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "expected around October 13-14 Confirmed TastyCo Claim live DeepBook Updated Canborsa Ambassador Program Application is Live New Raycash Claim live Concrete Updated Wager Predict Mainnet Beta is Live New RWAPerp Claim live Canopy Updated MINT Mint a Bear Whitelist is Live Claim live CZR Updated Arcus Points launched on October 1 Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Cambria TGE expected around October 13-14 Confirmed TastyCo Claim live DeepBook Updated Canborsa Ambassador Program Application is Live New Raycash Claim live Concrete Updated Wager Predict Mainnet Beta is Live New RWAPerp Claim live Canopy Updated MINT Mint a Bear Whitelist is Live Amadeus Protocol 155° Loading",
+      "steps": [
+        "Points are minted on the Amadeus chain as you complete quests, and secondary coverage has linked them to a possible future $AMA distribution, though the team has not committed to a conversion.",
+        "Any token distribution tied to points remains speculative for now."
+      ],
+      "about": "Amadeus Protocol Airdrop Details Amadeus has not confirmed a token airdrop. What exists today is PRIME Points, an active rewards program tied to AMA Hub Season 01. Points are minted on the Amadeus chain as you complete quests, and secondary coverage has linked them to a possible future $AMA distribution, though the team has not committed to a conversion. Treat any allocation as speculative for now. Key Parameters: Airdrop Allocation: Not announced Distribution Method: PRIME Points earned from AMA Hub Season 01 quests, auto-verified on-chain TGE Date: Not confirmed Season 01 rewards both one-off and repeatable activity. You earn points for setting up and linking your wallets, checking in daily, building and running agents, and completing social quests. Repeatable quests refresh every day, and referrals pay 20% of what your invitees earn. Latest Update: Amadeus has opened a set of contribution-based quests on AMA Hub, gated behind a rank system that starts at First Chair. Access requires",
+      "social_links": {
+        "twitter": "https://x.com/ama_protocol/status/2097724890254344418",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Famadeus-protocol%2F&text=Amadeus%20Protocol",
+        "github": "https://github.com/amadeusprotocol"
+      },
+      "eligibility": "Twitter / X What is Amadeus Protocol? Amadeus Protocol is a confidential Layer-1 blockchain built for agentic finance, where AI agents trade, settle, and coordinate on-chain",
+      "difficulty": "Easy",
+      "estimated_cost": "to Farm Free Overview Website: ama"
+    },
+    {
       "id": "reels",
       "name": "Reels",
       "url": "https://airdrops.io/reels/",
-      "heat": 202,
+      "heat": 205,
       "status": "active",
       "chain": "Own",
       "actions": [
@@ -76,9 +224,8 @@
         "Sportsbook",
         "Refer Users"
       ],
-      "description": "202° Ongoing Reels Actions: Create Account, Play Across the Casino, Sportsbook, Refer Users CLAIM AIRDROP",
+      "description": "205° Ongoing Reels Actions: Create Account, Play Across the Casino, Sportsbook, Refer Users CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 New Raycash Claim live Concrete Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Canopy Updated Wager Predict Mainnet Beta is Live Claim live CZR Updated Vibe Vibe Guild Registration is live Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Arcus Points launched on October 1 Confirmed TastyCo Claim live DeepBook Updated Cambria TGE expected around October 13-14 New Raycash Claim live Concrete Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Canopy Updated Wager Predict Mainnet Beta is Live Reels 198° Loading",
       "steps": [
         "Jump to steps Updated 4 Sep 2026",
         "4 steps Reels Bonus Details Reels runs a welcome offer for new players: a 275% match up to 2,000 USDT plus 50 free spins. The bonus is credited automatically once a qualifying deposit is made with the promo code applied before checkout. A separate welcome package of up to $5,000 is listed for VIP players, though Reels does not publish the criteria for VIP status. Bonus Details: Welcome Offer : 275% match up to 2,000 USDT + 50 free spins Bonus Code : AIRDROPS Minimum Qualifying Deposit : 20 USD Wagering Requirement : 10x to 30x the bonus amount Withdrawal Processing : Crypto withdrawals process about 1 week after activation Full wagering conditions are listed on the Reels promotions page and should be checked before depositing, since terms on bonus offers change often."
@@ -93,17 +240,80 @@
       "estimated_cost": "s nothing, and sign-up takes under a minute using email, X, Google, or Telegram"
     },
     {
+      "id": "bulk",
+      "name": "BULK",
+      "url": "https://airdrops.io/bulk/",
+      "heat": 203,
+      "status": "confirmed",
+      "chain": "Solana",
+      "actions": [
+        "BULK Actions: Sign up",
+        "Deposit USDC"
+      ],
+      "description": "203° Ongoing Confirmed BULK Actions: Sign up & Deposit USDC CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "window usually carries more weight than one strong burst",
+      "steps": [
+        "Jump to steps Updated 9 Sep 2026",
+        "3 steps BULK Airdrop Details BULK has announced BULK token and airdrop. The team has not published eligibility criteria, a snapshot date, or a points",
+        "token formula. Trading volume, staking activity, and competition participation are the type of behaviors that perp DEX teams typically reward retroactively. Co",
+        "founder of Bulk has confirmed on X that 30% of the token supply will be allocated to users through the airdrop. Latest Update: BULK Mainnet Is Live BULK launched its mainnet on September 5, 2026, which closes the Season 1 pre",
+        "deposit campaign. Access is invite",
+        "only: entry requires an access code from an existing user, or a wallet that took part in the pre",
+        "deposit campaign. USDC held through to launch is already available as trading margin, and SOL staking through BULK is now paying 5.1% APY. The community allocation remains 30% of supply."
+      ],
+      "about": "BULK Airdrop Details BULK has announced BULK token and airdrop. The team has not published eligibility criteria, a snapshot date, or a points-to-token formula. Trading volume, staking activity, and competition participation are the type of behaviors that perp DEX teams typically reward retroactively. Co-founder of Bulk has confirmed on X that 30% of the token supply will be allocated to users through the airdrop.",
+      "social_links": {
+        "twitter": "https://x.com/kdotcrypto/status/2057770145561694238",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fbulk%2F&text=BULK",
+        "github": "https://github.com/bulk-trade"
+      },
+      "eligibility": "criteria, a snapshot date, or a points-to-token formula",
+      "difficulty": "Easy",
+      "estimated_cost": "to Farm Medium Overview Website: early"
+    },
+    {
+      "id": "variational",
+      "name": "Variational",
+      "url": "https://airdrops.io/variational/",
+      "heat": 196,
+      "status": "confirmed",
+      "chain": "Arbitrum",
+      "actions": [
+        "Variational Actions: Trade perps",
+        "refer friends"
+      ],
+      "description": "196° Ongoing Confirmed Variational Actions: Trade perps & refer friends CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "Set for Q4 2026 and Tokenomics Revealed $VAR’s TGE is now scheduled for Q4 2026, later than the previously expected Q3 window, with the team attributing the delay to major strategic partnerships",
+      "steps": [
+        "Users who trade on the Omni platform and accumulate trading volume are positioning themselves to receive points, which are likely to convert into tokens when the airdrop is distributed.",
+        "Swaps route through Variational’s broker-like model into TradFi liquidity and carry flat funding instead of the variable funding rates on perps.",
+        "Late joiners earn at the standard rate without that structural advantage."
+      ],
+      "about": "Variational Airdrop Details Variational has confirmed a community allocation of 50% of the VAR token supply and launched a points program on December 17, 2025. Users who trade on the Omni platform and accumulate trading volume are positioning themselves to receive points, which are likely to convert into tokens when the airdrop is distributed. The protocol tracks cumulative trading volume and referrals as key metrics for eligibility. Variational is awarding double points on swap volume to encourage adoption of the instrument, which went live on September 1, 2026. Swaps route through Variational’s broker-like model into TradFi liquidity and carry flat funding instead of the variable funding rates on perps. XAU, US100, and US500 markets are open with zero fees and up to 10x leverage.",
+      "social_links": {
+        "discord": "https://discord.gg/variational",
+        "twitter": "https://x.com/intent/tweet?text=Variational&url=https%3A%2F%2Fairdrops.io%2Fvariational%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fvariational%2F&text=Variational",
+        "github": "https://github.com/variational-research"
+      },
+      "eligibility": ". Variational is awarding double points on swap volume to encourage adoption of the instrument, which went live on September 1, 2026",
+      "difficulty": "Medium",
+      "estimated_cost": "to Farm Medium Overview Website: variational"
+    },
+    {
       "id": "voice",
       "name": "VOICE",
       "url": "https://airdrops.io/voice/",
-      "heat": 201,
+      "heat": 196,
       "status": "confirmed",
       "chain": "Solana",
       "actions": [
         "VOICE Actions: Sign Up",
         "Complete Core Tasks and Mint VOICY Pass"
       ],
-      "description": "201° Ongoing Confirmed VOICE Actions: Sign Up, Complete Core Tasks and Mint VOICY Pass CLAIM AIRDROP",
+      "description": "196° Ongoing Confirmed VOICE Actions: Sign Up, Complete Core Tasks and Mint VOICY Pass CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "event are confirmed, with the TGE targeted for Q4 2026",
       "steps": [
@@ -121,10 +331,66 @@
       "estimated_cost": "nothing"
     },
     {
+      "id": "extended",
+      "name": "Extended",
+      "url": "https://airdrops.io/extended/",
+      "heat": 193,
+      "status": "confirmed",
+      "chain": "Ethereum",
+      "actions": [
+        "Extended Actions: Deposit",
+        "Trade",
+        "refer friends to Earn Points"
+      ],
+      "description": "193° Ongoing Confirmed Extended Actions: Deposit, Trade & refer friends to Earn Points CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "Skip to content Menu Home Latest Airdrops Hot Airdrops Potential Airdrops Hyperliquid Airdrops Robinhood Airdrops Base Airdrops Solana Airdrops MegaETH Airdrops Soneium Airdrops Aptos Airdrops TON Airdrops zkSync Airdrops Blast Airdrops Show all Claims Blog Contact Claim live Collector Crypt Updated Cambria Mint Whitelist is Open Ends ACI Oct 10 New Titan Exchange Claim live DeepBook Updated Vibe Vibe Guild Registration is live Confirmed TastyCo Claim live Concrete Updated Arcus Points launched on October 1 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live Claim live Collector Crypt Updated Cambria Mint Whitelist is Open Ends ACI Oct 10 New Titan Exchange Claim live DeepBook Updated Vibe Vibe Guild Registration is live Confirmed TastyCo Claim live Concrete Updated Arcus Points launched on October 1 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live Extended 0° Loading",
+      "steps": [
+        "The weekly ceiling has since dropped to 600,000 as the program closes in on its 70 million cap.",
+        "Distributions run every Tuesday at 00:00 UTC, and hitting the maximum in a given week is not guaranteed."
+      ],
+      "about": "Extended Airdrop Details Extended has said around 30% of the future EXT supply is set aside for its early community, meaning the users holding points from the ongoing program. The conversion rate, final eligibility rules and claim process are unpublished, and the official documentation describes points as program units with no guaranteed entitlement to tokens. Season 1 started on April 29, 2025 with up to 1.2 million points paid out every Tuesday at 00:00 UTC, following 4.3 million Early Participation points in February and April 2025. The weekly ceiling has since dropped to 600,000 as the program closes in on its 70 million cap. Extended also removes points linked to wash trading, self-referrals and multi-account abuse, so what counts is the total left after slashing. Extended’s docs listed 68,734,321 points distributed as of September 29, 2026, leaving under 1.3 million before the program reaches its 70 million cap.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Extended&url=https%3A%2F%2Fairdrops.io%2Fextended%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fextended%2F&text=Extended"
+      },
+      "eligibility": "rules and claim process are unpublished, and the official documentation describes points as program units with no guaranteed entitlement to tokens",
+      "difficulty": "Medium",
+      "estimated_cost": "-efficiency, addressing common pain points in DeFi trading"
+    },
+    {
+      "id": "nado",
+      "name": "Nado",
+      "url": "https://airdrops.io/nado/",
+      "heat": 192,
+      "status": "confirmed",
+      "chain": "Ink",
+      "actions": [
+        "Nado Actions: Deposit",
+        "Trade perps"
+      ],
+      "description": "192° Ongoing Confirmed Nado Actions: Deposit & Trade perps Claim Live CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "event, which is expected around the third quarter of 2026",
+      "steps": [
+        "The exact conversion rate and distribution date have not been finalized and will be published before TGE.",
+        "If you joined early, that activity still counts toward your total.",
+        "Conclusion Nado gives traders a path to INK tokens through orderbook trading, NLP vault deposits, and referrals on Kraken’s Ink network."
+      ],
+      "about": "Nado Airdrop Details Nado now supports xStocks for spot trading and as collateral. AAPLx, METAx, GOOGLx, TSLAx, and NVDAx are live on the platform and can be traded or used to back positions. Latest Update: Last week’s full $100,000 trader reward pool is now claimable from the Rewards page in the Nado app , and a new weekly round has begun. Nado also added usernames, opening a 48-hour window to create one and enter a Templars of the Storm NFT draw, open to accounts older than 7 days with at least $200,000 in trading volume over the past 30 days. Restricted persons are excluded; Nado’s terms of use apply.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Nado&url=https%3A%2F%2Fairdrops.io%2Fnado%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fnado%2F&text=Nado"
+      },
+      "eligibility": ", so consistent weekly activity matters more than a single large session",
+      "difficulty": "Medium",
+      "estimated_cost": "to Farm Medium Overview Website: app"
+    },
+    {
       "id": "dow_protocol",
       "name": "Dow Protocol",
       "url": "https://airdrops.io/dow-protocol/",
-      "heat": 189,
+      "heat": 192,
       "status": "active",
       "chain": "BSC",
       "actions": [
@@ -132,9 +398,9 @@
         "Publish a Post",
         "Refer Friends"
       ],
-      "description": "189° Ongoing Dow Protocol Actions: Connect X, Publish a Post, Refer Friends CLAIM AIRDROP",
+      "description": "192° Ongoing Dow Protocol Actions: Connect X, Publish a Post, Refer Friends CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 Confirmed TastyCo Claim live DeepBook Updated Canborsa Ambassador Program Application is Live New Raycash Claim live Concrete Updated Wager Predict Mainnet Beta is Live New RWAPerp Claim live Canopy Updated MINT Mint a Bear Whitelist is Live Claim live CZR Updated Arcus Points launched on October 1 Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Cambria TGE expected around October 13-14 Confirmed TastyCo Claim live DeepBook Updated Canborsa Ambassador Program Application is Live New Raycash Claim live Concrete Updated Wager Predict Mainnet Beta is Live New RWAPerp Claim live Canopy Updated MINT Mint a Bear Whitelist is Live Dow Protocol 190° Loading",
+      "tge_date": "date",
       "steps": [
         "Jump to steps Updated 7 Sep 2026",
         "7 steps Dow Protocol Airdrop Details Dow Protocol has not confirmed a token or an airdrop. What exists is a live Dow XP program tracking contribution through social quests, referrals and vault activity, with the team saying only that future plans are still to be announced. Any distribution is speculative. The dashboard splits earnings into Task XP and Referral XP. Social quests pay flat amounts, and the referral tier stays locked until your first Dow post passes review. Vault deposits are the other lever, though Dow has not published how deposit size or lock duration weights into XP."
@@ -149,64 +415,65 @@
       "estimated_cost": "s nothing and keeps the Volo vault open as an option"
     },
     {
-      "id": "mint",
-      "name": "MINT",
-      "url": "https://airdrops.io/mint-io/",
-      "heat": 185,
-      "status": "confirmed",
-      "chain": "Robinhood",
+      "id": "jumper_exchange",
+      "name": "Jumper Exchange",
+      "url": "https://airdrops.io/jumper-exchange/",
+      "heat": 183,
+      "status": "active",
+      "chain": "Ethereum",
       "actions": [
-        "MINT Actions: Fund Your Wallet",
-        "Play Games",
-        "Stake MNTD"
+        "Jumper Exchange Actions: Make Swaps to Collect XPs"
       ],
-      "description": "185° Ongoing Confirmed MINT Actions: Fund Your Wallet, Play Games, Stake MNTD CLAIM AIRDROP",
+      "description": "183° Ongoing Jumper Exchange Actions: Make Swaps to Collect XPs CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live Claim live Collector Crypt Updated Vibe Vibe Guild Registration is live Ends ACI Oct 10 New Titan Exchange Claim live DeepBook Updated Arcus Points launched on October 1 Confirmed TastyCo Claim live Concrete Updated Cambria TGE expected around October 13-14 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live MINT 186° Loading",
+      "tge_date": "or TGE date",
       "steps": [
-        "Jump to steps Updated 2 Oct 2026",
-        "9 steps $MNTD Airdrop Details The Season 1 airdrop is confirmed and distributes $125,000 worth of $MNTD to eligible players based on verified platform activity. Casino and sportsbook play earns XP, and your final leaderboard position at the snapshot decides your share. Key Parameters: Airdrop Allocation : $125,000 worth of $MNTD Distribution Method : Season 1 XP leaderboard, snapshot based TGE Date : Q4 2026 To qualify, you need a MINT account and at least $50 wagered cumulatively across eligible casino games or sportsbook markets. The snapshot takes place shortly before the TGE, so XP earned until then still counts. Eligibility depends on the campaign terms and the compliance requirements that apply in your region."
+        "Jump to steps Updated 6 Oct 2026",
+        "7 steps Jumper Exchange Airdrop Details LI.FI does not have its own token yet, making this a speculative airdrop. Jumper Exchange has started an XP campaign that gives users rewards for making swaps and bridging transactions. If LI.FI or Jumper launches a token in the future, early participants who earn XP may get a share of the tokens. Key Parameters: Earning Method : XP points via swaps and bridges XP Updates : First week of each month Eligibility : All users who earn XP through platform activity Jumper has also integrated with Hyperliquid , allowing users to bridge any token into the Hyperliquid ecosystem. Using this integration may qualify you for airdrops from both Jumper and Hyperliquid, creating a dual farming opportunity. Latest Update: Jumper has expanded Jumper Perps access to the top 2,500 XP holders, adding the next 1,500 wallets on the XP leaderboard. If you rank inside the top 2,500, you can start trading perps now. Users outside that range can join the Jumper Perps waitlist and keep earning XP to move up the leaderboard for future access rounds."
       ],
-      "about": "$MNTD Airdrop Details The Season 1 airdrop is confirmed and distributes $125,000 worth of $MNTD to eligible players based on verified platform activity. Casino and sportsbook play earns XP, and your final leaderboard position at the snapshot decides your share. Key Parameters: Airdrop Allocation : $125,000 worth of $MNTD Distribution Method : Season 1 XP leaderboard, snapshot based TGE Date : Q4 2026 To qualify, you need a MINT account and at least $50 wagered cumulatively across eligible casino games or sportsbook markets. The snapshot takes place shortly before the TGE, so XP earned until then still counts. Eligibility depends on the campaign terms and the compliance requirements that apply in your region.",
+      "about": "Jumper Exchange Airdrop Details LI.FI does not have its own token yet, making this a speculative airdrop. Jumper Exchange has started an XP campaign that gives users rewards for making swaps and bridging transactions. If LI.FI or Jumper launches a token in the future, early participants who earn XP may get a share of the tokens. Key Parameters: Earning Method : XP points via swaps and bridges XP Updates : First week of each month Eligibility : All users who earn XP through platform activity Jumper has also integrated with Hyperliquid , allowing users to bridge any token into the Hyperliquid ecosystem. Using this integration may qualify you for airdrops from both Jumper and Hyperliquid, creating a dual farming opportunity. Latest Update: Jumper has expanded Jumper Perps access to the top 2,500 XP holders, adding the next 1,500 wallets on the XP leaderboard. If you rank inside the top 2,500, you can start trading perps now. Users outside that range can join the Jumper Perps waitlist and ",
       "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=MINT&url=https%3A%2F%2Fairdrops.io%2Fmint-io%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fmint-io%2F&text=MINT"
+        "twitter": "https://x.com/intent/tweet?text=Jumper%20Exchange&url=https%3A%2F%2Fairdrops.io%2Fjumper-exchange%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fjumper-exchange%2F&text=Jumper%20Exchange",
+        "discord": "https://discord.gg/lifi",
+        "github": "https://github.com/lifinance/"
       },
-      "eligibility": "depends on the campaign terms and the compliance requirements that apply in your region",
+      "eligibility": "All users who earn XP through platform activity Jumper has also integrated with Hyperliquid , allowing users to bridge any token into the Hyperliquid ecosystem",
       "difficulty": "Easy",
-      "estimated_cost": "to Farm Low Overview Website: mint"
+      "estimated_cost": "to Farm Medium Overview Website: li"
     },
     {
-      "id": "meteora",
-      "name": "Meteora",
-      "url": "https://airdrops.io/meteora/",
-      "heat": 185,
+      "id": "cambria",
+      "name": "Cambria",
+      "url": "https://airdrops.io/cambria/",
+      "heat": 181,
       "status": "confirmed",
-      "chain": "Solana",
+      "chain": "Ethereum",
       "actions": [
-        "Meteora Actions: Claim Pending MET"
+        "Cambria Actions: Claim free Loot",
+        "Play the game"
       ],
-      "description": "Ongoing Confirmed Meteora Actions: Claim Pending MET Claim Live CLAIM AIRDROP Ongoing Confirmed Cambria Actions: Claim free Loot, Play the game CLAIM AIRDROP Ongoing Confirmed Vibe Vibe Actions: Join Testnet, Create, Buy & Sell Tokens CLAIM AIRDROP Ongoing Confirmed Reya Network Actions: Collect RCP points CLAIM AIRDROP Ongoing Arcus Actions: Sign Up, Trade & Collect Points CLAIM AIRDROP Ongoing C",
+      "description": "181° Ongoing Confirmed Cambria Actions: Claim free Loot, Play the game CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": ", and its claim closed on April 23, 2026",
+      "tge_date": ". The second is the Genesis Airdrop, a points-based track built on Trinkets and Essence Points earned from gameplay, including points from past Gold Rush and Duel Arena seasons",
       "steps": [
-        "DLMM limit orders",
-        "DAMM v2 pools",
-        "Pools blacklisted by Meteora, for example for wash trading"
+        "Eligible users who don’t opt in by then may lose access to their allocation.",
+        "SIGN UP & CLAIM LOOTDROP What is Cambria?"
       ],
-      "about": "Meteora Airdrop Details The Meteora airdrop is confirmed and has been paid in two seasons under the LP Stimulus Plan. Season 1 distributed 15% of the MET supply at TGE, and its claim closed on April 23, 2026. Season 2 covered July 1, 2025 to June 30, 2026 and is claimable now. Key Parameters: Airdrop Allocation : 20 million MET for Season 2 (about 2% of supply), after 15% for Season 1 Distribution Method : Pro-rata by points from fees earned on eligible DLMM and DAMM v2 pools TGE Date : October 23, 2025 Claim Window : July 21 to October 21, 2026 Minimum to Qualify : 100,000 points and an allocation of at least 10 MET Season 2 points came only from fees: 1,000 points per $1 on standard pools, 200 on launch pools, and 2,000 for DAMM v2 fees earned during its beta from April 10 to June 30, 2025. Pools had to be quoted in SOL, USDC, USDT, USD1 or JupUSD. Meteora treats all allocations as final. Rewards have since moved to the Referral Staking Program, which pays USDC from protocol fees to ",
+      "about": "Cambria Airdrop Details Cambria has extended the deadline for historical users to accept the Genesis Event Opt-In Agreement to October 8, 2026. Eligible users who don’t opt in by then may lose access to their allocation. Cambria has two confirmed reward tracks tied to $RSGP. The first is Loot Chests, which scores wallets on a Degen Score ( Solana trading, Polymarket positions, and perps activity over the past year) and a Chad Score (token holdings). Chests are claimable now through the lobby, and eligible allocations are also sent automatically to linked wallets at TGE. The second is the Genesis Airdrop, a points-based track built on Trinkets and Essence Points earned from gameplay, including points from past Gold Rush and Duel Arena seasons. Latest Update: Cambria’s Token Generation Event (TGE) is expected around October 13-14, 2026, according to the team’s recent AMA. Tokens will be fully unlocked at launch, with no lockup or vesting period. The date has not been finalized, so the ti",
       "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Meteora&url=https%3A%2F%2Fairdrops.io%2Fmeteora%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fmeteora%2F&text=Meteora",
-        "discord": "https://discord.gg/meteora"
+        "twitter": "https://x.com/intent/tweet?text=Cambria&url=https%3A%2F%2Fairdrops.io%2Fcambria%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fcambria%2F&text=Cambria"
       },
-      "estimated_cost": "s only a Solana network fee"
+      "eligibility": "Once your wallets are linked, head to the claims dashboard to see your Degen Score and Chad Score, along with any Loot Chests you’ve already qualified for",
+      "difficulty": "Easy",
+      "estimated_cost": "s"
     },
     {
       "id": "nowa",
       "name": "Nowa",
       "url": "https://airdrops.io/nowa/",
-      "heat": 183,
+      "heat": 181,
       "status": "confirmed",
       "chain": "Own",
       "actions": [
@@ -215,7 +482,7 @@
         "Stake",
         "Refer to Earn"
       ],
-      "description": "183° Ongoing Confirmed Nowa Actions: Complete Social Tasks, Trade, Stake & Refer to Earn CLAIM AIRDROP",
+      "description": "181° Ongoing Confirmed Nowa Actions: Complete Social Tasks, Trade, Stake & Refer to Earn CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "allocation on a straight 1:1 basis",
       "steps": [
@@ -232,18 +499,44 @@
       "estimated_cost": "s time rather than capital"
     },
     {
+      "id": "arc",
+      "name": "Arc",
+      "url": "https://airdrops.io/arc/",
+      "heat": 180,
+      "status": "active",
+      "chain": "Own",
+      "actions": [
+        "Arc Actions: Join Mainnet Activities"
+      ],
+      "description": "180° Ongoing Arc Actions: Join Mainnet Activities CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": ". How to Participate in the Arc Airdrop Step 1: Join Arc House Register on Arc House with your email or LinkedIn account and complete your profile",
+      "steps": [
+        "Gas stays in USDC either way.",
+        "Do I Need Money to Farm the Arc Airdrop?"
+      ],
+      "about": "Arc Network Airdrop Details Circle has not announced an Arc airdrop. The whitepaper assigns 60% of the 10 billion supply to the ecosystem, a bucket that covers token sales, developer grants, network growth programs and other participation mechanisms. Circle keeps 25%, and the remaining 15% goes to a long-term reserve. No eligibility rules, snapshot or claim date exist yet. ARC is designed to secure the network once Arc moves from Proof of Authority toward Proof of Stake, which Circle is exploring for 2027. Gas stays in USDC either way. Two records are visible today and would be the obvious inputs for any community distribution: onchain activity on Arc mainnet and your Arc House points from the Architects Program. Latest Update: Circle completed the genesis mint of all 10 billion ARC in the week of the mainnet launch but stated that the mint is not a commitment to a public token launch.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Arc&url=https%3A%2F%2Fairdrops.io%2Farc%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Farc%2F&text=Arc"
+      },
+      "eligibility": "rules, snapshot or claim date exist yet",
+      "difficulty": "Easy",
+      "estimated_cost": "s stay predictable in dollar terms"
+    },
+    {
       "id": "osero",
       "name": "Osero",
       "url": "https://airdrops.io/osero/",
-      "heat": 172,
+      "heat": 179,
       "status": "confirmed",
       "chain": "Sky",
       "actions": [
         "Osero Actions: Submit Details and Request Access to Private Beta"
       ],
-      "description": "172° Ongoing Confirmed Osero Actions: Submit Details and Request Access to Private Beta CLAIM AIRDROP",
+      "description": "179° Ongoing Confirmed Osero Actions: Submit Details and Request Access to Private Beta CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 New Raycash Claim live Concrete Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Canopy Updated Wager Predict Mainnet Beta is Live Claim live CZR Updated Vibe Vibe Guild Registration is live Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Arcus Points launched on October 1 Confirmed TastyCo Claim live DeepBook Updated Cambria TGE expected around October 13-14 New Raycash Claim live Concrete Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Canopy Updated Wager Predict Mainnet Beta is Live Osero 175° Loading",
+      "tge_date": ". If Osero announces one, existing beta users usually get a head start",
       "steps": [
         "Jump to steps Updated 24 Jul 2026",
         "3 steps Osero Airdrop Details Osero has not announced a token, a ticker, or an airdrop, so this is a potential retroactive opportunity where the team has also announced that early users will benefit. The team is currently onboarding early users through two channels: a private beta whitelist for the Osero App, which the team has called a “savings account with benefits for early users,” and live Osero Earn integrations such as the sUSDS vault on Jumper, paying around 3.6% APY."
@@ -254,6 +547,32 @@
         "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fosero%2F&text=Osero"
       },
       "estimated_cost": "to Farm Free Overview Website: osero"
+    },
+    {
+      "id": "titan_exchange",
+      "name": "Titan Exchange",
+      "url": "https://airdrops.io/titan-exchange/",
+      "heat": 172,
+      "status": "confirmed",
+      "chain": "TON",
+      "actions": [
+        "Titan Exchange Actions: Join Waitlist",
+        "Claim Testnet Tokens",
+        "Trade"
+      ],
+      "description": "172° Ongoing Titan Exchange Actions: Join Waitlist, Claim Testnet Tokens, Trade CLAIM AIRDROP Ongoing Confirmed TastyCo Actions: Sign in, Complete Quests and Refer Users CLAIM AIRDROP Ongoing Raycash Actions: Join Waitlist, Follow on X, Refer Users CLAIM AIRDROP Ongoing RWAPerp Actions: Join Waitlist, Complete Social Tasks, Refer Users CLAIM AIRDROP Ongoing Confirmed Synthra Actions: Sign Up, Prov",
+      "source": "airdrops.io",
+      "steps": [
+        "Jump to steps Updated 2 Oct 2026",
+        "6 steps Titan Exchange Airdrop Details The Titan Exchange airdrop is speculative. The team has not announced a token, a points system, or any reward for testnet users. What exists today is a waitlist with tiered status cards and a public testnet, and Titan says testnet users get early priority at mainnet. The waitlist has five tiers: Bronze, Metal, Gold, Platinum, and Diamond. Everyone starts at Bronze and moves up by referring other users. Joining takes a wallet signature and nothing else, and the testnet runs on test USDC, so the whole campaign is free."
+      ],
+      "about": "Titan Exchange Airdrop Details The Titan Exchange airdrop is speculative. The team has not announced a token, a points system, or any reward for testnet users. What exists today is a waitlist with tiered status cards and a public testnet, and Titan says testnet users get early priority at mainnet. The waitlist has five tiers: Bronze, Metal, Gold, Platinum, and Diamond. Everyone starts at Bronze and moves up by referring other users. Joining takes a wallet signature and nothing else, and the testnet runs on test USDC, so the whole campaign is free.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=Titan%20Exchange&url=https%3A%2F%2Fairdrops.io%2Ftitan-exchange%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Ftitan-exchange%2F&text=Titan%20Exchange"
+      },
+      "difficulty": "Easy",
+      "estimated_cost": "nothing"
     },
     {
       "id": "push_chain",
@@ -269,7 +588,7 @@
       ],
       "description": "170° Ongoing Confirmed Push Chain Actions: Sign Up, Complete Social Tasks, Quests and Refer Users CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live Claim live Collector Crypt Updated Vibe Vibe Guild Registration is live Ends ACI Oct 10 New Titan Exchange Claim live DeepBook Updated Arcus Points launched on October 1 Confirmed TastyCo Claim live Concrete Updated Cambria TGE expected around October 13-14 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live Push Chain 170° Loading",
+      "tge_date": "and continue across several seasons",
       "steps": [
         "Jump to steps Updated 30 Sep 2026",
         "9 steps Push Chain Airdrop Details The $PC airdrop is confirmed in the official tokenomics, which puts it among the confirmed airdrops we track. 10% of the supply goes to past and present Push Protocol users, plus new Push Chain users, creators, developers and ecosystem partners. Distributions start at TGE and continue across several seasons. No TGE date has been announced. Season 3 is the current phase and is open to everyone, with no invite codes or waitlist. Rewards come from onchain testnet activity: you complete quests on apps that rotate into the portal, earn XP and level up. Each level pays out points, buffs and Rare Passes, which feed into the TGE reward draw."
@@ -313,72 +632,10 @@
       "estimated_cost": "to Farm Free Overview Website: sweep"
     },
     {
-      "id": "bulk",
-      "name": "BULK",
-      "url": "https://airdrops.io/bulk/",
-      "heat": 167,
-      "status": "confirmed",
-      "chain": "Solana",
-      "actions": [
-        "BULK Actions: Sign up",
-        "Deposit USDC"
-      ],
-      "description": "167° Ongoing Confirmed BULK Actions: Sign up & Deposit USDC CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 Confirmed TastyCo Claim live DeepBook Updated Canborsa Ambassador Program Application is Live New Raycash Claim live Concrete Updated Wager Predict Mainnet Beta is Live New RWAPerp Claim live Canopy Updated MINT Mint a Bear Whitelist is Live Claim live CZR Updated Arcus Points launched on October 1 Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Cambria TGE expected around October 13-14 Confirmed TastyCo Claim live DeepBook Updated Canborsa Ambassador Program Application is Live New Raycash Claim live Concrete Updated Wager Predict Mainnet Beta is Live New RWAPerp Claim live Canopy Updated MINT Mint a Bear Whitelist is Live BULK 167° Loading",
-      "steps": [
-        "Jump to steps Updated 9 Sep 2026",
-        "3 steps BULK Airdrop Details BULK has announced BULK token and airdrop. The team has not published eligibility criteria, a snapshot date, or a points",
-        "token formula. Trading volume, staking activity, and competition participation are the type of behaviors that perp DEX teams typically reward retroactively. Co",
-        "founder of Bulk has confirmed on X that 30% of the token supply will be allocated to users through the airdrop. Latest Update: BULK Mainnet Is Live BULK launched its mainnet on September 5, 2026, which closes the Season 1 pre",
-        "deposit campaign. Access is invite",
-        "only: entry requires an access code from an existing user, or a wallet that took part in the pre",
-        "deposit campaign. USDC held through to launch is already available as trading margin, and SOL staking through BULK is now paying 5.1% APY. The community allocation remains 30% of supply."
-      ],
-      "about": "BULK Airdrop Details BULK has announced BULK token and airdrop. The team has not published eligibility criteria, a snapshot date, or a points-to-token formula. Trading volume, staking activity, and competition participation are the type of behaviors that perp DEX teams typically reward retroactively. Co-founder of Bulk has confirmed on X that 30% of the token supply will be allocated to users through the airdrop.",
-      "social_links": {
-        "twitter": "https://x.com/kdotcrypto/status/2057770145561694238",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fbulk%2F&text=BULK",
-        "github": "https://github.com/bulk-trade"
-      },
-      "eligibility": "criteria, a snapshot date, or a points-to-token formula",
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Medium Overview Website: early"
-    },
-    {
-      "id": "amadeus_protocol",
-      "name": "Amadeus Protocol",
-      "url": "https://airdrops.io/amadeus-protocol/",
-      "heat": 153,
-      "status": "active",
-      "chain": "Own",
-      "actions": [
-        "Amadeus Protocol Actions: Create Wallet",
-        "Complete Check-In",
-        "Finish Social Tasks"
-      ],
-      "description": "153° Ongoing Amadeus Protocol Actions: Create Wallet, Complete Check-In, Finish Social Tasks CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 Confirmed TastyCo Claim live DeepBook Updated Canborsa Ambassador Program Application is Live New Raycash Claim live Concrete Updated Wager Predict Mainnet Beta is Live New RWAPerp Claim live Canopy Updated MINT Mint a Bear Whitelist is Live Claim live CZR Updated Arcus Points launched on October 1 Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Cambria TGE expected around October 13-14 Confirmed TastyCo Claim live DeepBook Updated Canborsa Ambassador Program Application is Live New Raycash Claim live Concrete Updated Wager Predict Mainnet Beta is Live New RWAPerp Claim live Canopy Updated MINT Mint a Bear Whitelist is Live Amadeus Protocol 155° Loading",
-      "steps": [
-        "Points are minted on the Amadeus chain as you complete quests, and secondary coverage has linked them to a possible future $AMA distribution, though the team has not committed to a conversion.",
-        "Any token distribution tied to points remains speculative for now."
-      ],
-      "about": "Amadeus Protocol Airdrop Details Amadeus has not confirmed a token airdrop. What exists today is PRIME Points, an active rewards program tied to AMA Hub Season 01. Points are minted on the Amadeus chain as you complete quests, and secondary coverage has linked them to a possible future $AMA distribution, though the team has not committed to a conversion. Treat any allocation as speculative for now. Key Parameters: Airdrop Allocation: Not announced Distribution Method: PRIME Points earned from AMA Hub Season 01 quests, auto-verified on-chain TGE Date: Not confirmed Season 01 rewards both one-off and repeatable activity. You earn points for setting up and linking your wallets, checking in daily, building and running agents, and completing social quests. Repeatable quests refresh every day, and referrals pay 20% of what your invitees earn. Latest Update: Amadeus has opened a set of contribution-based quests on AMA Hub, gated behind a rank system that starts at First Chair. Access requires",
-      "social_links": {
-        "twitter": "https://x.com/ama_protocol/status/2097724890254344418",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Famadeus-protocol%2F&text=Amadeus%20Protocol",
-        "github": "https://github.com/amadeusprotocol"
-      },
-      "eligibility": "Twitter / X What is Amadeus Protocol? Amadeus Protocol is a confidential Layer-1 blockchain built for agentic finance, where AI agents trade, settle, and coordinate on-chain",
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Free Overview Website: ama"
-    },
-    {
       "id": "tbook",
       "name": "TBook",
       "url": "https://airdrops.io/tbook/",
-      "heat": 150,
+      "heat": 148,
       "status": "confirmed",
       "chain": "Sui",
       "actions": [
@@ -386,7 +643,7 @@
         "Complete Campaigns",
         "Deposit to Earn"
       ],
-      "description": "150° Ongoing Confirmed TBook Actions: Mint WISE Score, Complete Campaigns & Deposit to Earn CLAIM AIRDROP",
+      "description": "148° Ongoing Confirmed TBook Actions: Mint WISE Score, Complete Campaigns & Deposit to Earn CLAIM AIRDROP",
       "source": "airdrops.io",
       "tge_date": "Date : Targeted for Q1 2026 in official documentation; not yet completed Vesting Schedule : Released in multiple phases, with the schedule set by community governance vote The named buckets are high-WISE-score users, early RWA investors, SBT holders, contributing KOLs, and Bookies NFT holders, who get a dedicated slice as very early supporters",
       "steps": [
@@ -406,73 +663,72 @@
       "estimated_cost": "s nothing but linking socials"
     },
     {
-      "id": "titan_exchange",
-      "name": "Titan Exchange",
-      "url": "https://airdrops.io/titan-exchange/",
-      "heat": 113,
-      "status": "confirmed",
-      "chain": "TON",
+      "id": "pharos",
+      "name": "Pharos",
+      "url": "https://airdrops.io/pharos/",
+      "heat": 42,
+      "status": "active",
+      "chain": "Own",
       "actions": [
-        "Titan Exchange Actions: Join Waitlist",
-        "Claim Testnet Tokens",
-        "Trade"
+        "Pharos Actions: Connect Wallet"
       ],
-      "description": "113° Ongoing Titan Exchange Actions: Join Waitlist, Claim Testnet Tokens, Trade CLAIM AIRDROP Ongoing Confirmed TastyCo Actions: Sign in, Complete Quests and Refer Users CLAIM AIRDROP Ongoing Raycash Actions: Join Waitlist, Follow on X, Refer Users CLAIM AIRDROP Ongoing RWAPerp Actions: Join Waitlist, Complete Social Tasks, Refer Users CLAIM AIRDROP Ongoing Confirmed Synthra Actions: Sign Up, Prov",
+      "description": "42° Ongoing Pharos Actions: Connect Wallet & Claim Airdrop Claim Live CLAIM AIRDROP",
       "source": "airdrops.io",
+      "tge_date": "airdrop 5% — reserved for future airdrops and community rewards Latest Update: Pharos Launches Developer Arena With 5,000 PROS Prize Pool Pharos has opened the Arena, a developer competition with 28 challenges covering agent workflows, onchain tools, payment agents and other categories",
       "steps": [
-        "Jump to steps Updated 2 Oct 2026",
-        "6 steps Titan Exchange Airdrop Details The Titan Exchange airdrop is speculative. The team has not announced a token, a points system, or any reward for testnet users. What exists today is a waitlist with tiered status cards and a public testnet, and Titan says testnet users get early priority at mainnet. The waitlist has five tiers: Bronze, Metal, Gold, Platinum, and Diamond. Everyone starts at Bronze and moves up by referring other users. Joining takes a wallet signature and nothing else, and the testnet runs on test USDC, so the whole campaign is free."
+        "Jump to steps Updated 6 Oct 2026",
+        "7 steps Pharos Airdrop Details The Pharos $PROS airdrop claim is now live! Eligible participants have 180 days, from April 28 to October 25, 2026, to claim their allocations before unclaimed amounts are returned to the Pharos Foundation and the claim portal closes. Eligibility includes Testnet Participants, “Stake Before the Stake” Contributors, Pharos Discord Role Holders, and OKX Wallet Campaign Users. If participants qualify under multiple categories, their claims will be automatically consolidated into a single submission. Pharos ($PROS) Airdrop Claim Now Live The Pharos $PROS airdrop claim is now live, with eligible participants having 180 days from April 28 until October 25, 2026 to claim before unclaimed allocations return to the Pharos Foundation and the claim portal closes. Eligibility covers Testnet Participants, “Stake Before the Stake” Contributors, Pharos Discord Role Holders, and OKX Wallet Campaign Users, with multi",
+        "category qualifiers automatically consolidated into a single claim. Follow these steps to claim your $PROS tokens: Visit the Pharos claim portal Connect your eligible wallet from one of the qualifying categories Verify your consolidated allocation across all qualifying categories Confirm the claim transaction to receive your $PROS tokens Complete the claim before October 25, 2026, as any unclaimed tokens after the deadline will be returned to the Pharos Foundation and the claim website will be permanently closed. Allocation Breakdown The community airdrop accounts for 6% of the total $PROS supply, split as follows: 1% — allocated to this TGE airdrop 5% — reserved for future airdrops and community rewards Latest Update: Pharos Launches Developer Arena With 5,000 PROS Prize Pool Pharos has opened the Arena, a developer competition with 28 challenges covering agent workflows, onchain tools, payment agents and other categories. Participants build with Pharos AI, earn points for completed challenges and move up a ranking, with 5,000 PROS shared among competitors. No deadline has been announced. To take part, submit the Arena application form . The campaign is aimed at developers, so the challenges require building rather than completing social or onchain tasks. Pharos Airdrop Registration Now Open (Ended) Pharos has opened $PROS airdrop registration, which closes April 25 at 12:00 UTC. Eligibility covers testnet participants, “Stake Before the Stake” contributors, Pharos Discord role holders, and OKX Wallet campaign users, with multi",
+        "category qualifications consolidated into a single claim. Follow these steps to secure your allocation: Visit the claim portal and connect your eligible wallet before April 25 at 12:00 UTC Review your consolidated allocation across any qualifying categories Select a claim strategy: Instant Claim, 30 Days (1.05x $PROS), 60 Days (1.12x $PROS), or 90 Days (1.20x $PROS) Return to the portal starting April 28 at 11:00 UTC to claim your tokens based on the chosen strategy If no strategy is selected before the registration window closes, the allocation defaults to Instant Claim. The claim window runs 180 days through October 25 at 11:00 UTC, after which any unclaimed tokens return to the Pharos Foundation and the airdrop site closes."
       ],
-      "about": "Titan Exchange Airdrop Details The Titan Exchange airdrop is speculative. The team has not announced a token, a points system, or any reward for testnet users. What exists today is a waitlist with tiered status cards and a public testnet, and Titan says testnet users get early priority at mainnet. The waitlist has five tiers: Bronze, Metal, Gold, Platinum, and Diamond. Everyone starts at Bronze and moves up by referring other users. Joining takes a wallet signature and nothing else, and the testnet runs on test USDC, so the whole campaign is free.",
+      "about": "Pharos Airdrop Details The Pharos $PROS airdrop claim is now live! Eligible participants have 180 days, from April 28 to October 25, 2026, to claim their allocations before unclaimed amounts are returned to the Pharos Foundation and the claim portal closes. Eligibility includes Testnet Participants, “Stake Before the Stake” Contributors, Pharos Discord Role Holders, and OKX Wallet Campaign Users. If participants qualify under multiple categories, their claims will be automatically consolidated into a single submission.",
       "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Titan%20Exchange&url=https%3A%2F%2Fairdrops.io%2Ftitan-exchange%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Ftitan-exchange%2F&text=Titan%20Exchange"
+        "twitter": "https://x.com/pharos_network/status/1854948443418247582",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fpharos%2F&text=Pharos"
       },
-      "difficulty": "Easy",
-      "estimated_cost": "nothing"
+      "eligibility": "includes Testnet Participants, “Stake Before the Stake” Contributors, Pharos Discord Role Holders, and OKX Wallet Campaign Users",
+      "estimated_cost": "to Farm Low Overview Website: pharosnetwork"
     },
     {
-      "id": "drift_protocol",
-      "name": "Drift Protocol",
-      "url": "https://airdrops.io/drift-protocol/",
-      "heat": 40,
-      "status": "active",
+      "id": "meteora",
+      "name": "Meteora",
+      "url": "https://airdrops.io/meteora/",
+      "heat": 24,
+      "status": "confirmed",
       "chain": "Solana",
       "actions": [
-        "Drift Protocol Actions: Connect wallet",
-        "Claim DFX"
+        "Meteora Actions: Claim Pending MET"
       ],
-      "description": "40° Ongoing Drift Protocol Actions: Connect wallet & Claim DFX Claim Live CLAIM AIRDROP",
+      "description": "24° Ongoing Confirmed Meteora Actions: Claim Pending MET Claim Live CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live Claim live Collector Crypt Updated Vibe Vibe Guild Registration is live Ends ACI Oct 10 New Titan Exchange Claim live DeepBook Updated Arcus Points launched on October 1 Confirmed TastyCo Claim live Concrete Updated Cambria TGE expected around October 13-14 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live Drift Protocol 41° Loading",
+      "tge_date": ", and its claim closed on April 23, 2026",
       "steps": [
-        "How to Claim DFX Recovery Tokens Step 1: Open the Wallet That Held Your Drift Account Use the wallet that controlled your Drift account on April 1, 2026.",
-        "Unclaimed DFX is burned when the window closes, and its share of the pool passes to other holders.",
-        "The active claim now is DFX, a recovery token for wallets that lost funds in the April 2026 exploit.",
-        "Any DFX still unclaimed at that point is permanently burned."
+        "DLMM limit orders",
+        "DAMM v2 pools",
+        "Pools blacklisted by Meteora, for example for wash trading"
       ],
-      "about": "Drift Protocol Airdrop Details The original DRIFT airdrop has ended. The live distribution is the DFX recovery token, claimable by wallets that lost funds in the April 1 exploit. Allocations are already fixed in the loss snapshot, so there is nothing left to farm. Key Parameters: Airdrop Allocation : 1 DFX per 1 USDT of verified loss Distribution Method : Merkle-proof claim against the April 1, 2026 loss snapshot Claim Window : Open until 00:00 UTC on January 1, 2028 DFX is a standard SPL token. Holders can redeem it for USDT from the Recovery Pool, trade it on Raydium, or hold it. Each token redeems for the pool balance divided by outstanding supply. The pool held about 3.1M USDT at launch, which works out to roughly 0.0104 USDT per DFX. A daily deposit from Velocity’s revenue at 00:00 UTC raises that rate, and deposits continue until the pool has received the full amount of verified losses. Latest Update: DFX claims and redemptions opened on October 1, 2026.",
+      "about": "Meteora Airdrop Details The Meteora airdrop is confirmed and has been paid in two seasons under the LP Stimulus Plan. Season 1 distributed 15% of the MET supply at TGE, and its claim closed on April 23, 2026. Season 2 covered July 1, 2025 to June 30, 2026 and is claimable now. Key Parameters: Airdrop Allocation : 20 million MET for Season 2 (about 2% of supply), after 15% for Season 1 Distribution Method : Pro-rata by points from fees earned on eligible DLMM and DAMM v2 pools TGE Date : October 23, 2025 Claim Window : July 21 to October 21, 2026 Minimum to Qualify : 100,000 points and an allocation of at least 10 MET Season 2 points came only from fees: 1,000 points per $1 on standard pools, 200 on launch pools, and 2,000 for DAMM v2 fees earned during its beta from April 10 to June 30, 2025. Pools had to be quoted in SOL, USDC, USDT, USD1 or JupUSD. Meteora treats all allocations as final. Rewards have since moved to the Referral Staking Program, which pays USDC from protocol fees to ",
       "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Drift%20Protocol&url=https%3A%2F%2Fairdrops.io%2Fdrift-protocol%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fdrift-protocol%2F&text=Drift%20Protocol",
-        "github": "https://github.com/drift-labs"
+        "twitter": "https://x.com/intent/tweet?text=Meteora&url=https%3A%2F%2Fairdrops.io%2Fmeteora%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fmeteora%2F&text=Meteora",
+        "discord": "https://discord.gg/meteora"
       },
-      "estimated_cost": "to Farm Free Overview Website: drift"
+      "estimated_cost": "s only a Solana network fee"
     },
     {
       "id": "czr",
       "name": "CZR",
       "url": "https://airdrops.io/czr/",
-      "heat": 33,
+      "heat": 23,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [
         "CZR Actions: Connect wallet",
         "Claim Tokens"
       ],
-      "description": "33° Ongoing Confirmed CZR Actions: Connect wallet & Claim Tokens CLAIM AIRDROP",
+      "description": "23° Ongoing Confirmed CZR Actions: Connect wallet & Claim Tokens CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live Claim live Collector Crypt Updated Vibe Vibe Guild Registration is live Ends ACI Oct 10 New Titan Exchange Claim live DeepBook Updated Arcus Points launched on October 1 Confirmed TastyCo Claim live Concrete Updated Cambria TGE expected around October 13-14 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live CZR 44° Loading",
+      "tge_date": ". Eligible users can claim on the official CZR claim page at airdrop",
       "steps": [
         "How to Claim the CZR Airdrop Step 1: Open the Official CZR Claim Page Go to the CZR claim page on the airdrop.",
         "Step 6: Wait for the October 11 Unlock Airdropped CZR stays locked for 10 days after the October 1 launch.",
@@ -500,7 +756,7 @@
       "actions": [],
       "description": "Ongoing Confirmed TastyCo Actions: Sign in, Complete Quests and Refer Users CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Canborsa Ambassador Program Application is Live Confirmed TastyCo Claim live DeepBook Updated Wager Predict Mainnet Beta is Live New Raycash Claim live Concrete Updated MINT Mint a Bear Whitelist is Live New RWAPerp Claim live Canopy Updated Kash Mainnet XP Campaign is Live Claim live CZR Updated Cambria TGE expected around October 13-14 Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Canborsa Ambassador Program Application is Live Confirmed TastyCo Claim live DeepBook Updated Wager Predict Mainnet Beta is Live New Raycash Claim live Concrete Updated MINT Mint a Bear Whitelist is Live New RWAPerp Claim live Canopy Updated Kash Mainnet XP Campaign is Live TastyCo 27° Loading",
+      "tge_date": "points system",
       "steps": [
         "Jump to steps Updated 29 Sep 2026",
         "8 steps TastyCo Airdrop Details TastyCo has confirmed a $100,000 $TASTY airdrop campaign, run through a pre",
@@ -574,7 +830,7 @@
       "actions": [],
       "description": "Ongoing Confirmed Synthra Actions: Sign Up, Provide Liquidity, Invite Friends CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live Claim live Collector Crypt Updated Vibe Vibe Guild Registration is live Ends ACI Oct 10 New Titan Exchange Claim live DeepBook Updated Arcus Points launched on October 1 Confirmed TastyCo Claim live Concrete Updated Cambria TGE expected around October 13-14 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live Synthra 12° Loading",
+      "tge_date": "Date : September 17, 2026 Points are share-based, so nothing pays a fixed amount per action",
       "steps": [
         "Jump to steps Updated 24 Sep 2026",
         "6 steps Synthra Airdrop Details Synthra has confirmed a community airdrop of $SYN for top participants, ranked by combined mainnet Synthra Points, testnet points and Synthra OG status. The team plans to distribute tokens in the days after the $SYN launch but has not published the allocation size or an exact claim date. Key Parameters: Airdrop Allocation : Not announced Distribution Method : Synthra Points (mainnet and testnet) plus OG status Daily Points Pool : 10,000,000 points TGE Date : September 17, 2026 Points are share",
@@ -601,15 +857,14 @@
       "actions": [],
       "description": "Ongoing MindGames Actions: Claim Seat, Complete Social Tasks, Refer Users CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Canborsa Ambassador Program Application is Live Confirmed TastyCo Claim live DeepBook Updated Wager Predict Mainnet Beta is Live New Raycash Claim live Concrete Updated MINT Mint a Bear Whitelist is Live New RWAPerp Claim live Canopy Updated Kash Mainnet XP Campaign is Live Claim live CZR Updated Cambria TGE expected around October 13-14 Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Canborsa Ambassador Program Application is Live Confirmed TastyCo Claim live DeepBook Updated Wager Predict Mainnet Beta is Live New Raycash Claim live Concrete Updated MINT Mint a Bear Whitelist is Live New RWAPerp Claim live Canopy Updated Kash Mainnet XP Campaign is Live MindGames 5° Loading",
       "steps": [
-        "Jump to steps Updated 24 Sep 2026",
+        "Jump to steps Updated 6 Oct 2026",
         "7 steps MindGames Airdrop Details MindGames has not announced a token or a token airdrop. The live reward is a spot on a 600",
         "place NFT allowlist, earned through a pre",
         "season points leaderboard. Points have no monetary value and cannot be transferred. Key Parameters: Allocation : 600 NFT allowlist places (300 Contributor, 200 Robinhood Holder, 100 Minds Creation Challenge) Distribution Method : Points leaderboard with a ranked cut",
-        "off Mint Date : TBA Points come from connecting a wallet, linking a Mind, weekly tasks, social engagement and activated referrals, which pay the most at 250 each. Wallets holding an eligible Robinhood NFT earn a 1.5x multiplier on contributor points and compete for the 200 holder places."
+        "off Mint Date : TBA Points come from connecting a wallet, linking a Mind, weekly tasks, social engagement and activated referrals, which pay the most at 250 each. Wallets holding an eligible Robinhood NFT earn a 1.5x multiplier on contributor points and compete for the 200 holder places. Latest Update: The Mind NFT collection has been announced with a total supply of 3,333 NFTs priced at 0.0125 ETH each. No mint date has been shared yet. Visit minds.games to prepare ahead of the mint."
       ],
-      "about": "MindGames Airdrop Details MindGames has not announced a token or a token airdrop. The live reward is a spot on a 600-place NFT allowlist, earned through a pre-season points leaderboard. Points have no monetary value and cannot be transferred. Key Parameters: Allocation : 600 NFT allowlist places (300 Contributor, 200 Robinhood Holder, 100 Minds Creation Challenge) Distribution Method : Points leaderboard with a ranked cut-off Mint Date : TBA Points come from connecting a wallet, linking a Mind, weekly tasks, social engagement and activated referrals, which pay the most at 250 each. Wallets holding an eligible Robinhood NFT earn a 1.5x multiplier on contributor points and compete for the 200 holder places.",
+      "about": "MindGames Airdrop Details MindGames has not announced a token or a token airdrop. The live reward is a spot on a 600-place NFT allowlist, earned through a pre-season points leaderboard. Points have no monetary value and cannot be transferred. Key Parameters: Allocation : 600 NFT allowlist places (300 Contributor, 200 Robinhood Holder, 100 Minds Creation Challenge) Distribution Method : Points leaderboard with a ranked cut-off Mint Date : TBA Points come from connecting a wallet, linking a Mind, weekly tasks, social engagement and activated referrals, which pay the most at 250 each. Wallets holding an eligible Robinhood NFT earn a 1.5x multiplier on contributor points and compete for the 200 holder places. Latest Update: The Mind NFT collection has been announced with a total supply of 3,333 NFTs priced at 0.0125 ETH each. No mint date has been shared yet. Visit minds.games to prepare ahead of the mint.",
       "social_links": {
         "twitter": "https://x.com/intent/tweet?text=MindGames&url=https%3A%2F%2Fairdrops.io%2Fmindgames%2F",
         "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fmindgames%2F&text=MindGames"
@@ -763,28 +1018,176 @@
       "estimated_cost": "to Farm Medium Overview Website: fables"
     },
     {
-      "id": "cambria",
-      "name": "Cambria",
-      "url": "https://airdrops.io/cambria/",
+      "id": "abstract",
+      "name": "Abstract",
+      "url": "https://airdrops.io/abstract/",
+      "heat": 0,
+      "status": "active",
+      "chain": "Ethereum",
+      "actions": [],
+      "description": "Ongoing Abstract Actions: Withdraw Funds ASAP CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "date or confirmed that an airdrop will happen",
+      "steps": [
+        "Funds not bridged off by then become inaccessible.",
+        "Funds not bridged off by then become inaccessible."
+      ],
+      "about": "Abstract Airdrop Details Abstract is winding down, and the chain shuts down on December 15, 2026. Funds not bridged off by then become inaccessible. Igloo Inc. announced the decision on October 6, citing stalled growth, thin liquidity, a restricted DeFi ecosystem and limited institutional adoption. Igloo has decided against launching an Abstract token and is moving its resources to Pudgy Penguins and PENGU. Move everything of value off the chain before the deadline, including balances in your Abstract Global Wallet, through the Migration Hub , which is the main route, or the Native Bridge , where withdrawals take about three hours.",
+      "social_links": {
+        "twitter": "https://x.com/AbstractChain/status/2107554632675340420",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fabstract%2F&text=Abstract"
+      },
+      "difficulty": "Medium",
+      "estimated_cost": "ing a fraction of a cent, and a 30-day streak unlocks a permanent multiplier on your XP"
+    },
+    {
+      "id": "qfex",
+      "name": "QFEX",
+      "url": "https://airdrops.io/qfex/",
+      "heat": 0,
+      "status": "active",
+      "chain": "Own",
+      "actions": [],
+      "description": "Ongoing QFEX Actions: Sign up & Make Trades CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "date",
+      "steps": [
+        "Jump to steps Updated 7 Oct 2026",
+        "7 steps QFEX Waitlist Details The QFEX airdrop is speculative. The team has not announced a token, a points program or a snapshot. The exchange itself is open to anyone outside the restricted countries, with no waitlist and no invitation code needed. The closest thing to a token signal is a September 2026 essay on exchange tokens by CEO Annanay Kapila. It argues that exchanges should airdrop unvested tokens to their earliest users, without saying QFEX will launch one. With no points dashboard, the only record is the one QFEX keeps for every account: volume, fees paid, deposits and referrals. Farmers treat it like other real",
+        "world asset perp venues such as RWAPerp and Ondo Perps , where the bet is to trade early and keep the account active. Latest Update: Loss Refunds are back and now open to all users: 20% of eligible losing traders get 100% of their realized losses refunded, up to $2,000."
+      ],
+      "about": "QFEX Waitlist Details The QFEX airdrop is speculative. The team has not announced a token, a points program or a snapshot. The exchange itself is open to anyone outside the restricted countries, with no waitlist and no invitation code needed. The closest thing to a token signal is a September 2026 essay on exchange tokens by CEO Annanay Kapila. It argues that exchanges should airdrop unvested tokens to their earliest users, without saying QFEX will launch one. With no points dashboard, the only record is the one QFEX keeps for every account: volume, fees paid, deposits and referrals. Farmers treat it like other real-world asset perp venues such as RWAPerp and Ondo Perps , where the bet is to trade early and keep the account active. Latest Update: Loss Refunds are back and now open to all users: 20% of eligible losing traders get 100% of their realized losses refunded, up to $2,000.",
+      "social_links": {
+        "twitter": "https://x.com/intent/tweet?text=QFEX&url=https%3A%2F%2Fairdrops.io%2Fqfex%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fqfex%2F&text=QFEX",
+        "github": "https://github.com/QFEX-org"
+      },
+      "eligibility": "rules and campaign dates before trading for it",
+      "difficulty": "Easy",
+      "estimated_cost": "to Farm Medium Overview Website: qfex"
+    },
+    {
+      "id": "retium",
+      "name": "Retium",
+      "url": "https://airdrops.io/retium/",
+      "heat": 0,
+      "status": "active",
+      "chain": "Own",
+      "actions": [],
+      "description": "Ongoing Retium Actions: Join Discord & Telegram, Complete Quiz and Reach Cadet Role CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "date or tester reward has been announced, though the team has said members who test actively and file useful reports may receive a Beta Tester role in Discord",
+      "steps": [
+        "Latest Update: The testnet was reset and relaunched with Retium Money, the RTD stablecoin, and a test USD faucet that replaces the old RTM faucet.",
+        "The mainnet release sits in the following phase, together with a final security audit and AFSL licence approval.",
+        "Join now Requirements Telegram Twitter / X What is Retium?",
+        "Which projects could airdrop next?"
+      ],
+      "about": "Retium Airdrop Details Retium has not confirmed an airdrop, and its published tokenomics leave little room for a classic one. The team states that no RTM is allocated to any group. RTM enters circulation only through the Safehouse, an on-chain reserve that swaps Retium’s stablecoin for RTM one to one on the same terms for every user. No TGE date or tester reward has been announced, though the team has said members who test actively and file useful reports may receive a Beta Tester role in Discord. What’s open today is a free public testnet. It has grown in stages: wallet, NFT Launchpad, Chrome extension, Explorer Beta, the Whisk DEX, and now Retium Money with the RTD stablecoin and the RTM Safehouse. Hosted validator nodes are already open ahead of the Validator Testnet planned for March 2027. Latest Update: The testnet was reset and relaunched with Retium Money, the RTD stablecoin, and a test USD faucet that replaces the old RTM faucet.",
+      "social_links": {
+        "telegram": "https://t.me/RetiumBlockchain",
+        "twitter": "https://x.com/RetiumChain"
+      },
+      "eligibility": "Telegram Twitter / X What is Retium? Retium is a Layer-1 blockchain built from scratch on prime-number logic rather than forked from an existing codebase",
+      "difficulty": "Easy",
+      "estimated_cost": "nothing, and testnet coins cannot be bought, sold, or moved to mainnet"
+    },
+    {
+      "id": "dac",
+      "name": "DAC",
+      "url": "https://airdrops.io/dac/",
+      "heat": 0,
+      "status": "confirmed",
+      "chain": "",
+      "actions": [],
+      "description": "Ongoing Confirmed DAC Actions: Join Interstellar & Collect QE CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "event happens",
+      "steps": [
+        "Allocation is calculated from Buzz Points earned through posting, referrals, and campaign tasks, and only registered wallets are counted when the leaderboard freezes at snapshot.",
+        "Inception is where farmers earned QE: faucet DACC, daily Quantum Crates, missions and burning or staking DACC in the QE Pool, with badges adding multipliers."
+      ],
+      "about": "DAC Quantum Chain Airdrop Details A DAC token airdrop has not been officially confirmed by DAC Labs. That said, the project ran a QE points program on its L1 testnet with leaderboards, badges, and multipliers — the same mechanics most L1s use ahead of a retroactive token distribution. Early participants who farmed QE, completed missions, and rank on the leaderboard are positioning for a potential reward once the token generation event happens. Key Parameters: Allocation: TBA Distribution Method: Points-based (QE) with leaderboard tiers and badge multipliers TGE Date: TBA The DAC team has published the official whitepaper outlining the complete 1 billion $DACT token allocation, confirming a Grant/Community Airdrop allocation of 5% of total supply. The full breakdown includes 20% for Institutional Investors, 20% for Reserve, 15% for Team, 13.5% for Enterprise Incentives, 10% for Liquidity, 8% for Private Investors, 7.5% for Marketing, 5% for Grant/Community Airdrop, and 1% for Public sal",
+      "social_links": {
+        "discord": "https://discord.gg/gb9PjJzzK3",
+        "twitter": "https://x.com/dac_chain",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fdac%2F&text=DAC",
+        "github": "https://github.com/dacblockchain"
+      },
+      "eligibility": "Twitter / X What is DAC Quantum Chain? DAC (Quantum Chain) is a Layer 1 blockchain that was built from the ground up with post-quantum cryptography",
+      "estimated_cost": "farming opportunity with a points program, daily rewards, and badge multipliers pointing toward a potential retroactive airdrop"
+    },
+    {
+      "id": "truenorth",
+      "name": "TrueNorth",
+      "url": "https://airdrops.io/truenorth/",
+      "heat": 0,
+      "status": "active",
+      "chain": "Hyperliquid",
+      "actions": [],
+      "description": "Ongoing TrueNorth Actions: Sign Up, Set Up Trading Persona and Trade CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": "date or broader airdrop criteria have been announced",
+      "steps": [
+        "Jump to steps Updated 6 Oct 2026",
+        "6 steps TrueNorth Airdrop Details TrueNorth has not confirmed a token or airdrop. There is no published tokenomics, distribution date, or eligibility list. What does exist is TruthSayer Rewards, a Discord",
+        "based program that pays USDC for trading volume, referrals, and community activity, with payouts that are not scheduled in advance. Key Parameters: Reward Program : TruthSayer Rewards (Discord) Distribution Method : Surprise USDC payouts for volume, referrals, and community activity Entry Requirement : One",
+        "use referral code, obtained in Discord Eligible Activities : Trading volume, referrals, community engagement While no token has been confirmed, Discord discussions suggest possible rewards for early users."
+      ],
+      "about": "TrueNorth Airdrop Details TrueNorth has not confirmed a token or airdrop. There is no published tokenomics, distribution date, or eligibility list. What does exist is TruthSayer Rewards, a Discord-based program that pays USDC for trading volume, referrals, and community activity, with payouts that are not scheduled in advance. Key Parameters: Reward Program : TruthSayer Rewards (Discord) Distribution Method : Surprise USDC payouts for volume, referrals, and community activity Entry Requirement : One-time-use referral code, obtained in Discord Eligible Activities : Trading volume, referrals, community engagement While no token has been confirmed, Discord discussions suggest possible rewards for early users.",
+      "social_links": {
+        "twitter": "https://x.com/get_truenorth/status/1996580343055634493",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Ftruenorth%2F&text=TrueNorth"
+      },
+      "eligibility": "list",
+      "difficulty": "Easy",
+      "estimated_cost": "beyond standard Hyperliquid trading fees"
+    },
+    {
+      "id": "hibachi",
+      "name": "Hibachi",
+      "url": "https://airdrops.io/hibachi/",
+      "heat": 0,
+      "status": "active",
+      "chain": "Arbitrum",
+      "actions": [],
+      "description": "Ongoing Hibachi Actions: Trade & refer friends CLAIM AIRDROP",
+      "source": "airdrops.io",
+      "tge_date": ". The Arc whitepaper points to a summer mainnet launch, so Hibachi is expected to go live on Arc within the coming weeks",
+      "steps": [
+        "The program distributes points every Monday at 00:00 UTC based on trading activity, successful referrals, and completion of trading quests that offer multipliers.",
+        "The project is backed by: Dragonfly Capital, Electric Capital, and Echo, signaling strong confidence in its potential to reshape exchange architecture."
+      ],
+      "about": "Hibachi Airdrop Details Hibachi launched a points program in March 2025. The program distributes points every Monday at 00:00 UTC based on trading activity, successful referrals, and completion of trading quests that offer multipliers. The points program is designed to reward not just high-volume traders but a wider range of users through various mechanisms. This includes trading quests that can boost point earnings by up to 60 and a referral system that allows users to earn 50% of their referral for a limited time (usually 25%) tier trading fees while accumulating additional points. Latest Update: Hibachi has cut its regular weekly activity allocation from 1M to 500K points for the next two weeks. Total emissions are unchanged: the other 500K per week goes to The Hibachi Open, a two-week competition with a 1M point pool plus up to $20K in cash. Regular trading still earns from the weekly 500K pool, and trading on EUR and BTC markets earns a 1.5x points boost this week.",
+      "social_links": {
+        "twitter": "https://x.com/hibachi_xyz",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fhibachi%2F&text=Hibachi"
+      },
+      "difficulty": "Easy",
+      "estimated_cost": "s and assets"
+    },
+    {
+      "id": "aster",
+      "name": "Aster",
+      "url": "https://airdrops.io/aster/",
       "heat": 0,
       "status": "confirmed",
       "chain": "Ethereum",
       "actions": [],
-      "description": "Ongoing Confirmed Cambria Actions: Claim free Loot, Play the game CLAIM AIRDROP",
+      "description": "Ongoing Confirmed Aster Actions: Trade & Collect Points CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": ". The second is the Genesis Airdrop, a points-based track built on Trinkets and Essence Points earned from gameplay, including points from past Gold Rush and Duel Arena seasons",
       "steps": [
-        "Eligible users who don’t opt in by then may lose access to their allocation.",
-        "SIGN UP & CLAIM LOOTDROP What is Cambria?"
+        "Latest Update: Epoch 6 started on October 5, and a Blackboard x Aster trading competition with up to $100,000 in prizes runs from October 10 to November 10.",
+        "With Epoch 5 underway, the main levers are holding USD1 collateral, keeping OI in proportion to volume, and staying in Single-Asset Mode for the 2x WLFI boost."
       ],
-      "about": "Cambria Airdrop Details Cambria has extended the deadline for historical users to accept the Genesis Event Opt-In Agreement to October 8, 2026. Eligible users who don’t opt in by then may lose access to their allocation. Cambria has two confirmed reward tracks tied to $RSGP. The first is Loot Chests, which scores wallets on a Degen Score ( Solana trading, Polymarket positions, and perps activity over the past year) and a Chad Score (token holdings). Chests are claimable now through the lobby, and eligible allocations are also sent automatically to linked wallets at TGE. The second is the Genesis Airdrop, a points-based track built on Trinkets and Essence Points earned from gameplay, including points from past Gold Rush and Duel Arena seasons. Latest Update: Cambria’s Token Generation Event (TGE) is expected around October 13-14, 2026, according to the team’s recent AMA. Tokens will be fully unlocked at launch, with no lockup or vesting period. The date has not been finalized, so the ti",
+      "about": "Aster DEX Airdrop Details The Aster airdrop program is confirmed and has already paid out ASTER across six stages. The current campaign is USD1 RWA Boost: Phase 1, run with World Liberty Financial. It rewards trading and holding positions on USD1-denominated RWA perpetuals with WLFI and USD1 instead of ASTER. Key Parameters: Airdrop Allocation : 125,000,000 WLFI and 6,250,000 USD1 Distribution Method : Weekly epochs, paid by share of Trading Points and OI Points Campaign Period : August 31 to December 31, 2026 (18 epochs) The two pools are calculated independently. Trading Points come from eligible taker volume and share the USD1 pool. OI Points come from the size and duration of your open positions and share the WLFI pool. Each epoch receives an equal slice, roughly 6.94M WLFI and 347K USD1. Stage 6 (Aster Convergence) participants who chose the 100% vesting option can claim their ASTER between October 28 and November 28, 2026. Latest Update: Epoch 6 started on October 5, and a Blackb",
       "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Cambria&url=https%3A%2F%2Fairdrops.io%2Fcambria%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fcambria%2F&text=Cambria"
+        "twitter": "https://x.com/intent/tweet?text=Aster&url=https%3A%2F%2Fairdrops.io%2Faster%2F",
+        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Faster%2F&text=Aster"
       },
-      "eligibility": "Once your wallets are linked, head to the claims dashboard to see your Degen Score and Chad Score, along with any Loot Chests you’ve already qualified for",
-      "difficulty": "Easy",
-      "estimated_cost": "s"
+      "eligibility": "with snapshots every 5 minutes",
+      "difficulty": "Medium",
+      "estimated_cost": "to Farm Medium Overview Website: asterdex"
     },
     {
       "id": "reya_network",
@@ -796,7 +1199,7 @@
       "actions": [],
       "description": "Ongoing Confirmed Reya Network Actions: Collect RCP points CLAIM AIRDROP",
       "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 Confirmed TastyCo Claim live DeepBook Updated Canborsa Ambassador Program Application is Live New Raycash Claim live Concrete Updated Wager Predict Mainnet Beta is Live New RWAPerp Claim live Canopy Updated MINT Mint a Bear Whitelist is Live Claim live CZR Updated Arcus Points launched on October 1 Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Cambria TGE expected around October 13-14 Confirmed TastyCo Claim live DeepBook Updated Canborsa Ambassador Program Application is Live New Raycash Claim live Concrete Updated Wager Predict Mainnet Beta is Live New RWAPerp Claim live Canopy Updated MINT Mint a Bear Whitelist is Live Reya Network 5° Loading",
+      "tge_date": ". Reya has not published a TGE date or the size of the first round",
       "steps": [
         "Jump to steps Updated 5 Oct 2026",
         "6 steps Reya Network Airdrop Details The REYA airdrop is confirmed. Reya’s tokenomics reserve 45% of supply for the community, and distribution starts with an airdrop to users at TGE. Reya has not published a TGE date or the size of the first round. RCP has a fixed weekly supply split across three tracks: trading, staking and Signal. Trading gets the largest share and is scored mostly on volume and open interest. Staking points go to srUSD holders, and Signal points are awarded at the team’s discretion for content, tools or bringing in new traders. Latest Update: Reya v2 launched on September 28, 2026 alongside Season 2, which distributes 3% of the total REYA supply. For the first few weeks, access is limited to whitelisted Season 1 traders and market makers. Reya is opening v2 to more users in phases as trading conditions on the new orderbook ramp up."
@@ -809,31 +1212,6 @@
       },
       "difficulty": "Easy",
       "estimated_cost": "to Farm Medium Overview Website: reya"
-    },
-    {
-      "id": "arcus",
-      "name": "Arcus",
-      "url": "https://airdrops.io/arcus/",
-      "heat": 0,
-      "status": "active",
-      "chain": "Robinhood",
-      "actions": [],
-      "description": "Ongoing Arcus Actions: Sign Up, Trade & Collect Points CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 Confirmed TastyCo Claim live DeepBook Updated Canborsa Ambassador Program Application is Live New Raycash Claim live Concrete Updated Wager Predict Mainnet Beta is Live New RWAPerp Claim live Canopy Updated MINT Mint a Bear Whitelist is Live Claim live CZR Updated Arcus Points launched on October 1 Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Cambria TGE expected around October 13-14 Confirmed TastyCo Claim live DeepBook Updated Canborsa Ambassador Program Application is Live New Raycash Claim live Concrete Updated Wager Predict Mainnet Beta is Live New RWAPerp Claim live Canopy Updated MINT Mint a Bear Whitelist is Live Arcus -1° Loading",
-      "steps": [
-        "Perps access switched from manual whitelisting to invite codes on the same day.",
-        "Retained Deposits : Collateral you keep on Arcus over time.",
-        "New users can still earn Arcus Points in Season 1, which pays out weekly and is open to anyone who can access the exchange."
-      ],
-      "about": "Arcus Airdrop Details dYdX Labs has confirmed that Arcus will launch its own token, separate from DYDX, with an allocation reserved for people who traded, staked, or validated on dYdX. Arcus Points are the main way to farm it now, although the team has not said how points will convert to tokens. Season 0 covered private beta activity from July 1 to September 30 and has already been distributed to those traders. Their Season 0 totals stay hidden until near the end of the program. Season 1 points drop every Wednesday at 3PM EST and reward trading, market making, retained deposits, and referrals. Arcus weighs how you trade as well as how much, and stock token trades or trades outside US market hours currently earn a boost. Latest Update: Arcus Points launched on October 1, 2026, and the program will end no later than the end of H1 2027. Perps access switched from manual whitelisting to invite codes on the same day. Season 1 distributes a fixed 250,000 points per week, and that amount stay",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Arcus&url=https%3A%2F%2Fairdrops.io%2Farcus%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Farcus%2F&text=Arcus"
-      },
-      "eligibility": "Telegram Twitter / X Email What is Arcus? Arcus is a decentralized exchange built by the dYdX Labs team in partnership with Robinhood Crypto",
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Medium Overview Website: arcus"
     },
     {
       "id": "cashmere",
@@ -860,156 +1238,6 @@
       },
       "difficulty": "Easy",
       "estimated_cost": "s an ETH entry fee that started at 0"
-    },
-    {
-      "id": "sleepagotchi",
-      "name": "Sleepagotchi",
-      "url": "https://airdrops.io/sleepagotchi/",
-      "heat": 0,
-      "status": "confirmed",
-      "chain": "Soneium",
-      "actions": [],
-      "description": "Ongoing Confirmed Sleepagotchi Actions: Play the game, Complete Quests & Invite friends CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Canborsa Ambassador Program Application is Live Confirmed TastyCo Claim live DeepBook Updated Wager Predict Mainnet Beta is Live New Raycash Claim live Concrete Updated MINT Mint a Bear Whitelist is Live New RWAPerp Claim live Canopy Updated Kash Mainnet XP Campaign is Live Claim live CZR Updated Cambria TGE expected around October 13-14 Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Canborsa Ambassador Program Application is Live Confirmed TastyCo Claim live DeepBook Updated Wager Predict Mainnet Beta is Live New Raycash Claim live Concrete Updated MINT Mint a Bear Whitelist is Live New RWAPerp Claim live Canopy Updated Kash Mainnet XP Campaign is Live Sleepagotchi 0° Loading",
-      "steps": [
-        "Jump to steps Updated 5 Oct 2026",
-        "7 steps Sleepagotchi Airdrop Details The Sleepagotchi airdrop is confirmed. The team is running a points",
-        "based campaign that will convert engagement into $SHEEP tokens at the Token Generation Event. In May 2026, Sleepagotchi launched a Loyalty Program at hub.sleepagotchi.com and described it as the start of the countdown to TGE, though no exact date has been announced. Latest Update: Sleepagotchi has extended Nucleus Season 3 to October 12, 2026, with a $100,000 prize pool shared among the top 300 participants. The $CHI Token Generation Event (TGE) is expected after the season ends, so the extra days give players more time to climb the leaderboard before rankings are finalized."
-      ],
-      "about": "Sleepagotchi Airdrop Details The Sleepagotchi airdrop is confirmed. The team is running a points-based campaign that will convert engagement into $SHEEP tokens at the Token Generation Event. In May 2026, Sleepagotchi launched a Loyalty Program at hub.sleepagotchi.com and described it as the start of the countdown to TGE, though no exact date has been announced. Latest Update: Sleepagotchi has extended Nucleus Season 3 to October 12, 2026, with a $100,000 prize pool shared among the top 300 participants. The $CHI Token Generation Event (TGE) is expected after the season ends, so the extra days give players more time to climb the leaderboard before rankings are finalized.",
-      "social_links": {
-        "telegram": "https://t.me/sleepagotchiLITE_bot/game?startapp=72633a343634323433323736",
-        "discord": "https://discord.gg/sleepagotchi",
-        "twitter": "https://x.com/sleepagotchi"
-      },
-      "eligibility": ". What blockchain is Sleepagotchi built on? Sleepagotchi runs on Soneium, Sony’s Layer 2 network, and reaches users through the LINE Mini App platform alongside its Telegram presence",
-      "estimated_cost": "to Farm Free Overview Website: sleepagotchi"
-    },
-    {
-      "id": "canborsa",
-      "name": "Canborsa",
-      "url": "https://airdrops.io/canborsa/",
-      "heat": 0,
-      "status": "active",
-      "chain": "TON",
-      "actions": [],
-      "description": "Ongoing Canborsa Actions: Complete social quests and refer users CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "date or reward distribution timeline has been announced",
-      "steps": [
-        "Jump to steps Updated 5 Oct 2026",
-        "5 steps Canborsa Airdrop Details Canborsa has confirmed that future rewards will be tied to the points program currently live on the platform. Early users who accumulate points through social quests, trading activity, partner tasks, and referrals will qualify when rewards are distributed. The points program covers four quest categories: Social, Trading, Partner, and Referral, each with different point values. The referral system runs three levels deep: 10% from direct referrals, 3% from second",
-        "level, and 1% from third",
-        "level invites, plus 200 points per activation. Latest Update: Canborsa now accepts Canton Coin (CC) as collateral for perpetual trading, and each day one randomly selected trader with at least $1,000 in trading volume wins 250 CC. Applications are also open for the next season of the Ambassador Program through the ambassador page , where ambassadors share a $4,500 monthly base pool with a further $4,000 tied to referral volume milestones."
-      ],
-      "about": "Canborsa Airdrop Details Canborsa has confirmed that future rewards will be tied to the points program currently live on the platform. Early users who accumulate points through social quests, trading activity, partner tasks, and referrals will qualify when rewards are distributed. The points program covers four quest categories: Social, Trading, Partner, and Referral, each with different point values. The referral system runs three levels deep: 10% from direct referrals, 3% from second-level, and 1% from third-level invites, plus 200 points per activation. Latest Update: Canborsa now accepts Canton Coin (CC) as collateral for perpetual trading, and each day one randomly selected trader with at least $1,000 in trading volume wins 250 CC. Applications are also open for the next season of the Ambassador Program through the ambassador page , where ambassadors share a $4,500 monthly base pool with a further $4,000 tied to referral volume milestones.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Canborsa&url=https%3A%2F%2Fairdrops.io%2Fcanborsa%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fcanborsa%2F&text=Canborsa"
-      },
-      "eligibility": ". Join points program Requirements Twitter / X Email What is Canborsa? Canborsa is the first perpetual DEX for real-world assets (RWA) built on Canton Network",
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Free Overview Website: canborsa"
-    },
-    {
-      "id": "blast",
-      "name": "Blast",
-      "url": "https://airdrops.io/blast/",
-      "heat": 0,
-      "status": "active",
-      "chain": "Blast",
-      "actions": [],
-      "description": "Ongoing Blast Actions: Withdraw Funds ASAP CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live Claim live Collector Crypt Updated Vibe Vibe Guild Registration is live Ends ACI Oct 10 New Titan Exchange Claim live DeepBook Updated Arcus Points launched on October 1 Confirmed TastyCo Claim live Concrete Updated Cambria TGE expected around October 13-14 New Raycash Claim live Canopy Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Satsuma Updated Wager Predict Mainnet Beta is Live Blast 4° Loading",
-      "steps": [
-        "Jump to steps Updated 5 Oct 2026",
-        "1 step Blast Is Shutting Down Blast is shutting down, and users have until October 26, 2026 to withdraw their assets to Ethereum mainnet through the normal Blast interface, including any balances held in the Blast PWA. The team says the cost of running the L2 exceeds its revenue and it sees no path to making the chain sustainable. The withdrawal delay is being reduced to 24 hours, but Blast will first withdraw its Lido assets, which is expected to take about one week, and withdrawals are unavailable until that finishes. After October 26, assets remain withdrawable only by interacting directly with the Blast bridge contracts on Ethereum L1, and Blast will publish instructions before that date. Latest Update: Blast Shutdown and Asset Withdrawals Blast is shutting down, and users have until October 26, 2026 to withdraw their assets to Ethereum mainnet through the normal Blast interface . The team says the cost of running the L2 exceeds its revenue and it sees no path to making the chain sustainable. Withdraw Your Assets to Ethereum Mainnet Move all funds off Blast, including any balances held in the Blast PWA. The withdrawal delay is being reduced to 24 hours. Withdrawal pause: Blast will first withdraw its Lido assets, which is expected to take about one week. Withdrawals are unavailable during that period and resume afterward with the 24",
-        "hour delay. After October 26: Assets remain withdrawable, but only by interacting directly with the Blast bridge contracts on Ethereum L1. Blast will publish instructions before that date. Announcement Blast is an L2 with native yield for ETH and stablecoins. Blast yield comes from ETH staking and RWA protocols. The yield from these decentralized protocols is passed back to Blast users automatically. The default interest rate on other L2s is 0%. On Blast, it’s 4% for ETH and 5% for stablecoins. Yield makes it possible to create new revenue streams and provide novel rewards for end",
-        "users. Users transact in ETH. Dapps are built around ETH. Blast was designed from the ground up so that ETH itself is natively rebasing on the L2. More Airdrops to Farm Jumper Exchange Ongoing Arbitrum, Avalanche View Guide → squid Ongoing Arbitrum, Avalanche View Guide → Nansen Ongoing Arbitrum, Avalanche View Guide → Relay Ongoing Arbitrum, Avalanche View Guide → Fantasy Top Ended Blast, Ethereum View Guide → Super Sushi Samurai Ended Blast, Hyperliquid View Guide → Share Copy link X Telegram Report an issue Report an Issue Help us keep listings accurate Airdrop is expired Links are broken Other issue Please note that these are only notifications. We can't reply. If you have any question you would like to receive an answer please send us an email to [email protected] . Funding $20M Difficulty Beginner Cost to Farm Free Overview Website: blast.io Ticker: BLAST X (Formerly Twitter): Discord Chat: CoinMarketCap: Exchanges: KuCoin , Bitfinex , Gate.io X Follow us to never miss any airdrop again! Airdrop Newsletter Email Airdrops.io is a free aggregator for crypto airdrops. We don't run the listed airdrops. Read our safety guide before connecting any wallet. Explore Home Latest Airdrops Hot Airdrops Retroactive DeFi Airdrops Confirmed Airdrops Blog FAQ Calendar Airdrop Alert Contact us / Submit Airdrop Donate ETH 0xE718325723E43430DcdE5167bbD65fa8fFFFA769 BTC 3LoM7rYkDhFepPKukiDLiMbHguNbCSwyap Newsletter Email © 2026 airdrops.io Telegram Twitter Facebook Stay safe"
-      ],
-      "about": "Blast is shutting down, and users have until October 26, 2026 to withdraw their assets to Ethereum mainnet through the normal Blast interface, including any balances held in the Blast PWA. The team says the cost of running the L2 exceeds its revenue and it sees no path to making the chain sustainable. The withdrawal delay is being reduced to 24 hours, but Blast will first withdraw its Lido assets, which is expected to take about one week, and withdrawals are unavailable until that finishes. After October 26, assets remain withdrawable only by interacting directly with the Blast bridge contracts on Ethereum L1, and Blast will publish instructions before that date.",
-      "social_links": {
-        "twitter": "https://x.com/blast/status/2106032805280891073",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fblast%2F&text=Blast",
-        "discord": "https://discord.gg/blast-l2"
-      },
-      "estimated_cost": "of running the L2 exceeds its revenue and it sees no path to making the chain sustainable"
-    },
-    {
-      "id": "wager_predict",
-      "name": "Wager Predict",
-      "url": "https://airdrops.io/wager-predict/",
-      "heat": 0,
-      "status": "confirmed",
-      "chain": "BSC",
-      "actions": [],
-      "description": "Ongoing Confirmed Wager Predict Actions: Request Mainnet Access CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": ". How to Participate in the Wager Predict Airdrop Step 1: Request Mainnet Beta Access Visit the Wager Predict beta page and connect your wallet to request a spot",
-      "steps": [
-        "Jump to steps Updated 2 Oct 2026",
-        "5 steps Wager Predict Airdrop Details The airdrop is confirmed in the official tokenomics: 10% of the 30 billion $WP supply goes to retroactive airdrops and community campaigns. The team has not said how testnet points convert or whether mainnet beta activity counts toward the snapshot, and it states that final distribution terms will be confirmed closer to TGE."
-      ],
-      "about": "Wager Predict Airdrop Details The airdrop is confirmed in the official tokenomics: 10% of the 30 billion $WP supply goes to retroactive airdrops and community campaigns. The team has not said how testnet points convert or whether mainnet beta activity counts toward the snapshot, and it states that final distribution terms will be confirmed closer to TGE.",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Wager%20Predict&url=https%3A%2F%2Fairdrops.io%2Fwager-predict%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fwager-predict%2F&text=Wager%20Predict"
-      },
-      "difficulty": "Easy",
-      "estimated_cost": "to Farm Medium Overview Website: wagerpredict"
-    },
-    {
-      "id": "quip_network",
-      "name": "Quip Network",
-      "url": "https://airdrops.io/quip-network/",
-      "heat": 0,
-      "status": "confirmed",
-      "chain": "Ongoing",
-      "actions": [],
-      "description": "Ongoing Confirmed Quip Network Actions: Sign up & Complete tasks to earn points CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": ", which has not been announced yet",
-      "steps": [
-        "Jump to steps Updated 2 Oct 2026",
-        "13 steps Quip Network Airdrop Details The $QUIP airdrop is confirmed. Users earn Quip Points through social tasks, GitHub interactions, daily check",
-        "ins, and referrals. Points determine eligibility and allocation at TGE, which has not been announced yet. Key Parameters: Token : $QUIP (unlaunched) Distribution Method : Points",
-        "based TGE Date : TBA (mainnet expected Q2 2026) Referral Bonus : 10% of referred users’ points; referred users receive 50 bonus points Points accumulate across social tasks, GitHub activity, and daily logins. Referrals are capped at 3 per day. Latest Update: The QuipSwap order book is now live, and real swaps earn Quip points alongside paper swaps. Connect your wallet on QuipSwap , place a swap through the order book, and track your balance on the Quip points page ."
-      ],
-      "about": "Quip Network Airdrop Details The $QUIP airdrop is confirmed. Users earn Quip Points through social tasks, GitHub interactions, daily check-ins, and referrals. Points determine eligibility and allocation at TGE, which has not been announced yet. Key Parameters: Token : $QUIP (unlaunched) Distribution Method : Points-based TGE Date : TBA (mainnet expected Q2 2026) Referral Bonus : 10% of referred users’ points; referred users receive 50 bonus points Points accumulate across social tasks, GitHub activity, and daily logins. Referrals are capped at 3 per day. Latest Update: The QuipSwap order book is now live, and real swaps earn Quip points alongside paper swaps. Connect your wallet on QuipSwap , place a swap through the order book, and track your balance on the Quip points page .",
-      "social_links": {
-        "github": "https://github.com/quipnetwork",
-        "twitter": "https://x.com/intent/tweet?text=Quip%20Network&url=https%3A%2F%2Fairdrops.io%2Fquip-network%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fquip-network%2F&text=Quip%20Network",
-        "discord": "https://discord.gg/quipnetwork"
-      },
-      "eligibility": "and allocation at TGE, which has not been announced yet",
-      "difficulty": "Easy",
-      "estimated_cost": "s nothing"
-    },
-    {
-      "id": "kinetiq",
-      "name": "Kinetiq",
-      "url": "https://airdrops.io/kinetiq/",
-      "heat": 0,
-      "status": "confirmed",
-      "chain": "Hyperliquid",
-      "actions": [],
-      "description": "Ongoing Confirmed Kinetiq Actions: Stake HYPE, stake KNTQ & trade perps Claim Live CLAIM AIRDROP",
-      "source": "airdrops.io",
-      "tge_date": "expected around October 13-14 New Raycash Claim live Concrete Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Canopy Updated Wager Predict Mainnet Beta is Live Claim live CZR Updated Vibe Vibe Guild Registration is live Ends ACI Oct 10 New Titan Exchange Claim live Collector Crypt Updated Arcus Points launched on October 1 Confirmed TastyCo Claim live DeepBook Updated Cambria TGE expected around October 13-14 New Raycash Claim live Concrete Updated Canborsa Ambassador Program Application is Live New RWAPerp Claim live Canopy Updated Wager Predict Mainnet Beta is Live Kinetiq 4° Loading",
-      "steps": [
-        "Wallets that did not earn kPoints during the program have no KNTQ allocation in this claim.",
-        "Check your kPoints balance, compare the fixed price with the current KNTQ market price, and claim through the official page before the window closes."
-      ],
-      "about": "Kinetiq Airdrop Details The second kPoints program ran from November 13, 2025 to September 29, 2026, distributing 800,000 kPoints every week. The final distribution landed on October 1, 2026, bringing the total to 36,800,000 kPoints. Those points now give holders the right to buy KNTQ at a fixed price rather than receive it for free. Key Parameters: Airdrop Allocation : 50,000,000 KNTQ (5% of total supply) for kPoints holders Distribution Method : Fixed-price claim at $0.26 per KNTQ, sized by your kPoints balance Claim Window : 10 days from October 1, 2026 TGE Date : November 2025 (KNTQ is already trading) At 50M KNTQ for 36.8M kPoints, each kPoint works out to roughly 1.36 KNTQ, or about $0.35 in purchase cost. Any KNTQ left unclaimed after the 10 days goes back to the Kinetiq Foundation for ecosystem and growth spending. Because $0.26 is a fixed price, the claim only makes sense if KNTQ trades above that level on the open market, so check the live price before you pay. Latest Update:",
-      "social_links": {
-        "twitter": "https://x.com/intent/tweet?text=Kinetiq&url=https%3A%2F%2Fairdrops.io%2Fkinetiq%2F",
-        "telegram": "https://t.me/share/url?url=https%3A%2F%2Fairdrops.io%2Fkinetiq%2F&text=Kinetiq",
-        "github": "https://github.com/kinetiq-research"
-      },
-      "estimated_cost": ". Any KNTQ left unclaimed after the 10 days goes back to the Kinetiq Foundation for ecosystem and growth spending"
     }
   ]
 }
