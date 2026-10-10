@@ -21,6 +21,13 @@
     "marketCap": 0
   },
   {
+    "name": "95471",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
     "name": "R.K. Fashion Accessories",
     "status": "listed",
     "source_category": "recent",
@@ -31,84 +38,84 @@
     "name": "Paramount Syntex",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-10-09",
+    "listingDate": "yesterday",
     "marketCap": 234.0
   },
   {
     "name": "TNA Solutions",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-10-09",
+    "listingDate": "yesterday",
     "marketCap": 143.0
   },
   {
     "name": "Acme India",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-10-09",
+    "listingDate": "yesterday",
     "marketCap": 460.0
   },
   {
     "name": "Omara Ventures",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-08",
     "marketCap": 136.0
   },
   {
     "name": "EverestIMS Tech.",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-08",
     "marketCap": 184.0
   },
   {
     "name": "Shree TNB Polymers",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-08",
     "marketCap": 113.0
   },
   {
     "name": "Dove Soft",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-08",
     "marketCap": 268.0
   },
   {
     "name": "SJP Ultrasonics",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-08",
     "marketCap": 87.0
   },
   {
     "name": "Sollfege Smart Electronics",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-08",
     "marketCap": 55.0
   },
   {
     "name": "Nityas Gems & Jewellery",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-08",
     "marketCap": 432.0
   },
   {
     "name": "Eventions",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-08",
     "marketCap": 144.0
   },
   {
     "name": "Vishal Nirmiti",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-08",
     "marketCap": 581.0
   },
   {
@@ -7021,31 +7028,45 @@
     "marketCap": 0
   },
   {
-    "name": "Shree TNB Polymers",
+    "name": "Paramount Syntex",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "yesterday",
+    "marketCap": 234.0
+  },
+  {
+    "name": "TNA Solutions",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "yesterday",
+    "marketCap": 143.0
+  },
+  {
+    "name": "Shree TNB Polymers",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-10-08",
     "marketCap": 113.0
   },
   {
     "name": "Dove Soft",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-08",
     "marketCap": 268.0
   },
   {
     "name": "Eventions",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-08",
     "marketCap": 144.0
   },
   {
     "name": "Vishal Nirmiti",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-08",
     "marketCap": 581.0
   },
   {
@@ -7124,13 +7145,6 @@
     "source_category": "below_price",
     "listingDate": "2026-10-05",
     "marketCap": 1741.0
-  },
-  {
-    "name": "A-One Steels",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-10-01",
-    "marketCap": 3128.0
   },
   {
     "name": "Peshwa Wheat",
@@ -7257,6 +7271,13 @@
     "source_category": "below_price",
     "listingDate": "2026-09-18",
     "marketCap": 82.0
+  },
+  {
+    "name": "Om Galaxy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-09-18",
+    "marketCap": 305.0
   },
   {
     "name": "LCC Projects",
@@ -8110,7 +8131,7 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-10-10",
-    "marketCap": 280.0
+    "marketCap": 0
   },
   {
     "name": "DSM Fresh",
@@ -10682,10 +10703,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -10850,10 +10878,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -11018,10 +11053,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -11186,10 +11228,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -11354,10 +11403,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -11522,10 +11578,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -11690,10 +11753,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -11858,10 +11928,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -12026,10 +12103,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -12194,10 +12278,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -12362,10 +12453,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -12530,10 +12628,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -12698,10 +12803,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -12866,10 +12978,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -13034,10 +13153,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -13202,10 +13328,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -13370,10 +13503,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -13538,10 +13678,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -13706,10 +13853,17 @@
     "marketCap": 0
   },
   {
-    "name": "Canarys Automa.",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-11",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
@@ -13871,17 +14025,17 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-10-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Canarys Automa.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-11",
     "marketCap": 0
   },
   {
     "name": "Ola Electric",
+    "status": "rights",
+    "source_category": "rights",
+    "listingDate": "",
+    "marketCap": 0
+  },
+  {
+    "name": "Cont. Controls",
     "status": "rights",
     "source_category": "rights",
     "listingDate": "",
