@@ -49,6 +49,41 @@
     "marketCap": 0
   },
   {
+    "name": "Tonbo Imaging",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-10-23",
+    "marketCap": 4010.0
+  },
+  {
+    "name": "Sahajanand Medi",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-10-23",
+    "marketCap": 3497.0
+  },
+  {
+    "name": "Zetwerk Manufacturing",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-10-23",
+    "marketCap": 25582.0
+  },
+  {
+    "name": "Shellz India",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-10-23",
+    "marketCap": 216.0
+  },
+  {
+    "name": "Bonfiglioli Tran",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-10-23",
+    "marketCap": 11017.0
+  },
+  {
     "name": "Ravita Engineering",
     "status": "listed",
     "source_category": "recent",
@@ -1159,21 +1194,21 @@
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-07-21",
-    "marketCap": 583.0
+    "marketCap": 0
   },
   {
     "name": "Alpine Texworld",
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-07-21",
-    "marketCap": 402.0
+    "marketCap": 0
   },
   {
     "name": "SBI Funds Mgt.",
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-07-21",
-    "marketCap": 116914.0
+    "marketCap": 0
   },
   {
     "name": "Devson Catalyst",
@@ -7014,39 +7049,11 @@
     "marketCap": 0
   },
   {
-    "name": "Qualitek Labs",
+    "name": "R.K. Fashion Accessories",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2024-01-29",
-    "marketCap": 0
-  },
-  {
-    "name": "Medi Assist Ser.",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2024-01-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Maxposure",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2024-01-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Shree Marutinand",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2024-01-19",
-    "marketCap": 0
-  },
-  {
-    "name": "New Swan",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2024-01-18",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "2026-10-12",
+    "marketCap": 127.0
   },
   {
     "name": "Paramount Syntex",
@@ -7175,13 +7182,6 @@
     "marketCap": 1741.0
   },
   {
-    "name": "A-One Steels",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-10-01",
-    "marketCap": 3128.0
-  },
-  {
     "name": "Peshwa Wheat",
     "status": "listed",
     "source_category": "below_price",
@@ -7231,11 +7231,25 @@
     "marketCap": 3345.0
   },
   {
+    "name": "Vivekanand Cots.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-09-28",
+    "marketCap": 82.0
+  },
+  {
     "name": "Axiom Gas Engi.",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2026-09-25",
     "marketCap": 191.0
+  },
+  {
+    "name": "Sonaselection India",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-09-24",
+    "marketCap": 563.0
   },
   {
     "name": "Kheria Autocomp",
@@ -7390,6 +7404,13 @@
     "source_category": "below_price",
     "listingDate": "2026-09-04",
     "marketCap": 100.0
+  },
+  {
+    "name": "Sumax Engineering",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-09-02",
+    "marketCap": 192.0
   },
   {
     "name": "Annu Projects",
@@ -7812,6 +7833,13 @@
     "marketCap": 170.0
   },
   {
+    "name": "Marushika Tech.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-02-19",
+    "marketCap": 100.0
+  },
+  {
     "name": "Fractal Analyt.",
     "status": "listed",
     "source_category": "below_price",
@@ -8099,13 +8127,6 @@
     "marketCap": 183.0
   },
   {
-    "name": "Midwest",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-10-24",
-    "marketCap": 3851.0
-  },
-  {
     "name": "Shlokka Dyes",
     "status": "listed",
     "source_category": "below_price",
@@ -8250,6 +8271,20 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-10-06",
+    "marketCap": 0
+  },
+  {
+    "name": "M P K Steels",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-10-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Jinkushal Indus.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-10-03",
     "marketCap": 0
   },
   {
@@ -8425,6 +8460,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-09-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Vigor Plast",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-09-12",
     "marketCap": 0
   },
   {
@@ -8715,17 +8757,17 @@
     "marketCap": 0
   },
   {
+    "name": "Monarch Surve.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-07-29",
+    "marketCap": 0
+  },
+  {
     "name": "Monika Alcobev",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Chemkart India",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-07-14",
     "marketCap": 0
   },
   {
@@ -8789,6 +8831,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Adcounty Media.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-07-04",
     "marketCap": 0
   },
   {
@@ -9013,6 +9062,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-03-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Grand Continent",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-03-27",
     "marketCap": 0
   },
   {
@@ -9695,6 +9751,13 @@
     "marketCap": 0
   },
   {
+    "name": "Vdeal System",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-09-03",
+    "marketCap": 0
+  },
+  {
     "name": "Jay Bee Laminati",
     "status": "listed",
     "source_category": "below_price",
@@ -10098,6 +10161,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-05-08",
+    "marketCap": 0
+  },
+  {
+    "name": "JNK",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-04-30",
     "marketCap": 0
   },
   {
@@ -10654,108 +10724,73 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Suraj Estate",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Siyaram Recycli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Benchmark Comp.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Shree OSFM",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "ESAF Small Fin",
+    "name": "Graphisads",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-13",
     "marketCap": 0
   },
   {
-    "name": "Micropro Softwar",
+    "name": "Marinetrans Indi",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Mish Designs",
+    "name": "Net Avenue",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Vrundavan Planta",
+    "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
+    "listingDate": "2023-12-05",
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Flair Writing",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Arvind Port &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
@@ -10864,108 +10899,73 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Suraj Estate",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Siyaram Recycli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Benchmark Comp.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Shree OSFM",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "ESAF Small Fin",
+    "name": "Graphisads",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-13",
     "marketCap": 0
   },
   {
-    "name": "Micropro Softwar",
+    "name": "Marinetrans Indi",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Mish Designs",
+    "name": "Net Avenue",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Vrundavan Planta",
+    "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
+    "listingDate": "2023-12-05",
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Flair Writing",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Arvind Port &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
@@ -11074,108 +11074,73 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Suraj Estate",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Siyaram Recycli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Benchmark Comp.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Shree OSFM",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "ESAF Small Fin",
+    "name": "Graphisads",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-13",
     "marketCap": 0
   },
   {
-    "name": "Micropro Softwar",
+    "name": "Marinetrans Indi",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Mish Designs",
+    "name": "Net Avenue",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Vrundavan Planta",
+    "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
+    "listingDate": "2023-12-05",
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Flair Writing",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Arvind Port &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
@@ -11284,108 +11249,73 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Suraj Estate",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Siyaram Recycli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Benchmark Comp.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Shree OSFM",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "ESAF Small Fin",
+    "name": "Graphisads",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-13",
     "marketCap": 0
   },
   {
-    "name": "Micropro Softwar",
+    "name": "Marinetrans Indi",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Mish Designs",
+    "name": "Net Avenue",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Vrundavan Planta",
+    "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
+    "listingDate": "2023-12-05",
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Flair Writing",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Arvind Port &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
@@ -11494,108 +11424,73 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Suraj Estate",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Siyaram Recycli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Benchmark Comp.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Shree OSFM",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "ESAF Small Fin",
+    "name": "Graphisads",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-13",
     "marketCap": 0
   },
   {
-    "name": "Micropro Softwar",
+    "name": "Marinetrans Indi",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Mish Designs",
+    "name": "Net Avenue",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Vrundavan Planta",
+    "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
+    "listingDate": "2023-12-05",
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Flair Writing",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Arvind Port &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
@@ -11704,108 +11599,73 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Suraj Estate",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Siyaram Recycli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Benchmark Comp.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Shree OSFM",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "ESAF Small Fin",
+    "name": "Graphisads",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-13",
     "marketCap": 0
   },
   {
-    "name": "Micropro Softwar",
+    "name": "Marinetrans Indi",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Mish Designs",
+    "name": "Net Avenue",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Vrundavan Planta",
+    "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
+    "listingDate": "2023-12-05",
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Flair Writing",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Arvind Port &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
@@ -11914,108 +11774,73 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Suraj Estate",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Siyaram Recycli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Benchmark Comp.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Shree OSFM",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "ESAF Small Fin",
+    "name": "Graphisads",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-13",
     "marketCap": 0
   },
   {
-    "name": "Micropro Softwar",
+    "name": "Marinetrans Indi",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Mish Designs",
+    "name": "Net Avenue",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Vrundavan Planta",
+    "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
+    "listingDate": "2023-12-05",
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Flair Writing",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Arvind Port &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
@@ -12124,108 +11949,73 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Suraj Estate",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Siyaram Recycli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Benchmark Comp.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Shree OSFM",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "ESAF Small Fin",
+    "name": "Graphisads",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-13",
     "marketCap": 0
   },
   {
-    "name": "Micropro Softwar",
+    "name": "Marinetrans Indi",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Mish Designs",
+    "name": "Net Avenue",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Vrundavan Planta",
+    "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
+    "listingDate": "2023-12-05",
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Flair Writing",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Arvind Port &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
@@ -12334,108 +12124,73 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Suraj Estate",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-26",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Siyaram Recycli.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Benchmark Comp.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Shree OSFM",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
+    "listingDate": "2023-12-21",
     "marketCap": 0
   },
   {
-    "name": "ESAF Small Fin",
+    "name": "Graphisads",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-13",
     "marketCap": 0
   },
   {
-    "name": "Micropro Softwar",
+    "name": "Marinetrans Indi",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-10",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Mish Designs",
+    "name": "Net Avenue",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Vrundavan Planta",
+    "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
+    "listingDate": "2023-12-05",
     "marketCap": 0
   },
   {
-    "name": "Cello World",
+    "name": "Flair Writing",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "IRM Energy",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Arvind Port &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
@@ -12541,6 +12296,1651 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-10-25",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahara Maritime",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
+    "marketCap": 0
+  },
+  {
+    "name": "Baba Food",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Protean eGov",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-13",
+    "marketCap": 0
+  },
+  {
+    "name": "ESAF Small Fin",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Arvind Port &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-25",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahara Maritime",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
+    "marketCap": 0
+  },
+  {
+    "name": "Baba Food",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Protean eGov",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-13",
+    "marketCap": 0
+  },
+  {
+    "name": "ESAF Small Fin",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Arvind Port &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-25",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahara Maritime",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
+    "marketCap": 0
+  },
+  {
+    "name": "Baba Food",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Protean eGov",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-13",
+    "marketCap": 0
+  },
+  {
+    "name": "ESAF Small Fin",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Arvind Port &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-25",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahara Maritime",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
+    "marketCap": 0
+  },
+  {
+    "name": "Baba Food",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Protean eGov",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-13",
+    "marketCap": 0
+  },
+  {
+    "name": "ESAF Small Fin",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Arvind Port &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-25",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahara Maritime",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
+    "marketCap": 0
+  },
+  {
+    "name": "Baba Food",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Protean eGov",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-13",
+    "marketCap": 0
+  },
+  {
+    "name": "ESAF Small Fin",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Arvind Port &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-25",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahara Maritime",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
+    "marketCap": 0
+  },
+  {
+    "name": "Baba Food",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Protean eGov",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-13",
+    "marketCap": 0
+  },
+  {
+    "name": "ESAF Small Fin",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Arvind Port &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-25",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahara Maritime",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
+    "marketCap": 0
+  },
+  {
+    "name": "Baba Food",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Protean eGov",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-13",
+    "marketCap": 0
+  },
+  {
+    "name": "ESAF Small Fin",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Arvind Port &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-25",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahara Maritime",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
+    "marketCap": 0
+  },
+  {
+    "name": "Baba Food",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Protean eGov",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-13",
+    "marketCap": 0
+  },
+  {
+    "name": "ESAF Small Fin",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Arvind Port &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-25",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahara Maritime",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
+    "marketCap": 0
+  },
+  {
+    "name": "Baba Food",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-15",
+    "marketCap": 0
+  },
+  {
+    "name": "Protean eGov",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-13",
+    "marketCap": 0
+  },
+  {
+    "name": "ESAF Small Fin",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Micropro Softwar",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-10",
+    "marketCap": 0
+  },
+  {
+    "name": "Mish Designs",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-07",
+    "marketCap": 0
+  },
+  {
+    "name": "Vrundavan Planta",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Cello World",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-06",
+    "marketCap": 0
+  },
+  {
+    "name": "Paragon Fine",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Shanthala FMCG",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Rajgor Castor",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-31",
+    "marketCap": 0
+  },
+  {
+    "name": "IRM Energy",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Arvind Port &",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-10-25",
+    "marketCap": 0
+  },
+  {
+    "name": "Sahara Maritime",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
