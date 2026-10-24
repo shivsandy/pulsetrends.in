@@ -1,19 +1,5 @@
 [
   {
-    "name": "Jio Platforms",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹1065–1119",
-    "marketCap": 0
-  },
-  {
-    "name": "Paras Healthcare",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹660–693",
-    "marketCap": 0
-  },
-  {
     "name": "Core4 Engineers",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -49,7 +35,14 @@
     "marketCap": 0
   },
   {
-    "name": "97556",
+    "name": "Carver Roboweld",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
+    "name": "M. K. Sons Fine",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "-",
@@ -80,49 +73,49 @@
     "name": "Tonbo Imaging",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-10-23",
+    "listingDate": "yesterday",
     "marketCap": 4010.0
   },
   {
     "name": "Sahajanand Medi",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-10-23",
+    "listingDate": "yesterday",
     "marketCap": 3497.0
   },
   {
     "name": "Zetwerk Manufacturing",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-10-23",
+    "listingDate": "yesterday",
     "marketCap": 25582.0
   },
   {
     "name": "Shellz India",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-10-23",
+    "listingDate": "yesterday",
     "marketCap": 216.0
   },
   {
     "name": "Bonfiglioli Tran",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-10-23",
+    "listingDate": "yesterday",
     "marketCap": 11017.0
   },
   {
     "name": "Ravita Engineering",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-22",
     "marketCap": 422.0
   },
   {
     "name": "Fusion CX Ltd",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-22",
     "marketCap": 4172.0
   },
   {
@@ -7063,31 +7056,31 @@
     "marketCap": 0
   },
   {
-    "name": "Tonbo Imaging",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-10-23",
-    "marketCap": 4010.0
-  },
-  {
     "name": "Zetwerk Manufacturing",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2026-10-23",
+    "listingDate": "yesterday",
     "marketCap": 25582.0
   },
   {
     "name": "Shellz India",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2026-10-23",
+    "listingDate": "yesterday",
     "marketCap": 216.0
+  },
+  {
+    "name": "Bonfiglioli Tran",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "yesterday",
+    "marketCap": 11017.0
   },
   {
     "name": "Fusion CX Ltd",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-10-22",
     "marketCap": 4172.0
   },
   {
@@ -7138,13 +7131,6 @@
     "source_category": "below_price",
     "listingDate": "2026-10-08",
     "marketCap": 136.0
-  },
-  {
-    "name": "Shree TNB Polymers",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-10-08",
-    "marketCap": 113.0
   },
   {
     "name": "Dove Soft",
@@ -7609,13 +7595,6 @@
     "marketCap": 1671.0
   },
   {
-    "name": "Fusion Klassroom Edutech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-08-07",
-    "marketCap": 148.0
-  },
-  {
     "name": "H. R. Hygiene",
     "status": "listed",
     "source_category": "below_price",
@@ -7635,13 +7614,6 @@
     "source_category": "below_price",
     "listingDate": "2026-08-03",
     "marketCap": 101.0
-  },
-  {
-    "name": "Cube Highways",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-07-31",
-    "marketCap": 20430.0
   },
   {
     "name": "Silverstorm Parks",
@@ -7833,6 +7805,13 @@
     "marketCap": 90.0
   },
   {
+    "name": "Yaashvi Jewellers",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-06-02",
+    "marketCap": 146.0
+  },
+  {
     "name": "M R Maniveni",
     "status": "listed",
     "source_category": "below_price",
@@ -7952,13 +7931,6 @@
     "marketCap": 170.0
   },
   {
-    "name": "Marushika Tech.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-02-19",
-    "marketCap": 100.0
-  },
-  {
     "name": "Fractal Analyt.",
     "status": "listed",
     "source_category": "below_price",
@@ -8057,6 +8029,13 @@
     "marketCap": 178.0
   },
   {
+    "name": "Dhara Rail Pro.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-12-31",
+    "marketCap": 190.0
+  },
+  {
     "name": "Shyam Dhani Ind.",
     "status": "listed",
     "source_category": "below_price",
@@ -8083,6 +8062,13 @@
     "source_category": "below_price",
     "listingDate": "2025-12-22",
     "marketCap": 173.0
+  },
+  {
+    "name": "Exim Routes",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-12-19",
+    "marketCap": 165.0
   },
   {
     "name": "Stanbik Agro",
@@ -8932,13 +8918,6 @@
     "marketCap": 0
   },
   {
-    "name": "Savy Infra",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-07-28",
-    "marketCap": 0
-  },
-  {
     "name": "Monika Alcobev",
     "status": "listed",
     "source_category": "below_price",
@@ -9499,6 +9478,13 @@
     "marketCap": 0
   },
   {
+    "name": "Transrail Light",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-12-27",
+    "marketCap": 0
+  },
+  {
     "name": "Newmalayalam St.",
     "status": "listed",
     "source_category": "below_price",
@@ -9982,6 +9968,13 @@
     "marketCap": 0
   },
   {
+    "name": "Vdeal System",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-09-03",
+    "marketCap": 0
+  },
+  {
     "name": "Jay Bee Laminati",
     "status": "listed",
     "source_category": "below_price",
@@ -10332,6 +10325,13 @@
     "marketCap": 0
   },
   {
+    "name": "Go Digit General",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-05-23",
+    "marketCap": 0
+  },
+  {
     "name": "Quest Laborato.",
     "status": "listed",
     "source_category": "below_price",
@@ -10385,6 +10385,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-05-14",
+    "marketCap": 0
+  },
+  {
+    "name": "Amkay Products",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-05-08",
     "marketCap": 0
   },
   {
@@ -10990,10 +10997,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -11074,10 +11088,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -11158,10 +11179,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -11242,10 +11270,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -11326,10 +11361,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -11410,10 +11452,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -11494,10 +11543,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -11578,10 +11634,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -11662,10 +11725,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -11746,10 +11816,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -11830,10 +11907,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -11914,10 +11998,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -11998,10 +12089,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -12082,10 +12180,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -12166,10 +12271,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -12250,10 +12362,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -12334,10 +12453,17 @@
     "marketCap": 0
   },
   {
-    "name": "Arvind Port &",
+    "name": "Sunrest Lifescie",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-10-25",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "ROX Hi-Tech",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-16",
     "marketCap": 0
   },
   {
@@ -12415,17 +12541,17 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-10-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Arvind Port &",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-25",
     "marketCap": 0
   },
   {
     "name": "Magnus Steel",
+    "status": "rights",
+    "source_category": "rights",
+    "listingDate": "",
+    "marketCap": 0
+  },
+  {
+    "name": "Indian Emuls",
     "status": "rights",
     "source_category": "rights",
     "listingDate": "",
