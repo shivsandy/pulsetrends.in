@@ -35,17 +35,17 @@
     "marketCap": 0
   },
   {
+    "name": "Carver Roboweld",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "₹76–80",
+    "marketCap": 0
+  },
+  {
     "name": "M. K. Sons Fine",
     "status": "upcoming",
     "source_category": "upcoming",
     "listingDate": "₹153–162",
-    "marketCap": 0
-  },
-  {
-    "name": "Carver Roboweld",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "-",
     "marketCap": 0
   },
   {
@@ -59,7 +59,7 @@
     "name": "Bombay Coated",
     "status": "upcoming",
     "source_category": "upcoming",
-    "listingDate": "-",
+    "listingDate": "₹78–82",
     "marketCap": 0
   },
   {
@@ -68,6 +68,13 @@
     "source_category": "upcoming",
     "listingDate": "-",
     "marketCap": 0
+  },
+  {
+    "name": "Core4 Engineers",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-10-30",
+    "marketCap": 192.0
   },
   {
     "name": "Jio Platforms",
@@ -102,7 +109,7 @@
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-10-23",
-    "marketCap": 25582.0
+    "marketCap": 25583.0
   },
   {
     "name": "Shellz India",
@@ -1194,7 +1201,7 @@
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-07-29",
-    "marketCap": 69.0
+    "marketCap": 0
   },
   {
     "name": "Metalic Technoforge",
@@ -7063,25 +7070,18 @@
     "marketCap": 0
   },
   {
-    "name": "Epack Durable",
-    "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2024-01-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Zetwerk Manufacturing",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-10-23",
-    "marketCap": 25582.0
-  },
-  {
     "name": "Shellz India",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2026-10-23",
     "marketCap": 216.0
+  },
+  {
+    "name": "Ravita Engineering",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-10-22",
+    "marketCap": 422.0
   },
   {
     "name": "Fusion CX Ltd",
@@ -7138,6 +7138,13 @@
     "source_category": "below_price",
     "listingDate": "2026-10-08",
     "marketCap": 268.0
+  },
+  {
+    "name": "Sollfege Smart Electronics",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-10-08",
+    "marketCap": 55.0
   },
   {
     "name": "Nityas Gems & Jewellery",
@@ -7320,6 +7327,13 @@
     "source_category": "below_price",
     "listingDate": "2026-09-24",
     "marketCap": 441788.0
+  },
+  {
+    "name": "Quanto Agroworld",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-09-22",
+    "marketCap": 117.0
   },
   {
     "name": "Vama Wovenfab",
@@ -7924,6 +7938,13 @@
     "marketCap": 170.0
   },
   {
+    "name": "Marushika Tech.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-02-19",
+    "marketCap": 100.0
+  },
+  {
     "name": "Fractal Analyt.",
     "status": "listed",
     "source_category": "below_price",
@@ -8099,13 +8120,6 @@
     "marketCap": 6373.0
   },
   {
-    "name": "K. V. Toys India",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-12-15",
-    "marketCap": 150.0
-  },
-  {
     "name": "Methodhub Software",
     "status": "listed",
     "source_category": "below_price",
@@ -8197,20 +8211,6 @@
     "marketCap": 1381.0
   },
   {
-    "name": "Gallard Steel",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-11-26",
-    "marketCap": 142.0
-  },
-  {
-    "name": "Capillary Tech.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-11-21",
-    "marketCap": 4576.0
-  },
-  {
     "name": "Pine Labs",
     "status": "listed",
     "source_category": "below_price",
@@ -8296,13 +8296,6 @@
   },
   {
     "name": "NSB BPO",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-10-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Wework India",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-10-10",
@@ -8610,13 +8603,6 @@
     "marketCap": 0
   },
   {
-    "name": "Sharvaya Metals",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-09-12",
-    "marketCap": 0
-  },
-  {
     "name": "Vigor Plast",
     "status": "listed",
     "source_category": "below_price",
@@ -8806,13 +8792,6 @@
     "marketCap": 0
   },
   {
-    "name": "Aaradhya Dis.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-08-11",
-    "marketCap": 0
-  },
-  {
     "name": "BLT Logi.",
     "status": "listed",
     "source_category": "below_price",
@@ -8918,24 +8897,10 @@
     "marketCap": 0
   },
   {
-    "name": "Monarch Surve.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-07-29",
-    "marketCap": 0
-  },
-  {
     "name": "Monika Alcobev",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-23",
-    "marketCap": 0
-  },
-  {
-    "name": "Chemkart India",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-07-14",
     "marketCap": 0
   },
   {
@@ -9167,6 +9132,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-06-03",
+    "marketCap": 0
+  },
+  {
+    "name": "Aegis Vopak Term",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-06-02",
     "marketCap": 0
   },
   {
@@ -9422,13 +9394,6 @@
     "marketCap": 0
   },
   {
-    "name": "Kabra Jewels",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-01-22",
-    "marketCap": 0
-  },
-  {
     "name": "Rikhav Securitie",
     "status": "listed",
     "source_category": "below_price",
@@ -9542,13 +9507,6 @@
   },
   {
     "name": "International Gemological Instit",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-12-20",
-    "marketCap": 0
-  },
-  {
-    "name": "Hamps Bio",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-12-20",
@@ -10084,13 +10042,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-08-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Akums Drugs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-08-06",
     "marketCap": 0
   },
   {
@@ -10878,13 +10829,6 @@
     "marketCap": 0
   },
   {
-    "name": "Presstonic Engi.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-18",
-    "marketCap": 0
-  },
-  {
     "name": "Graphisads",
     "status": "listed",
     "source_category": "below_price",
@@ -11011,59 +10955,38 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Cello World",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Paragon Fine",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-11-03",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Shanthala FMCG",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-11-03",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Rajgor Castor",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-10-31",
     "marketCap": 0
   },
   {
@@ -11102,59 +11025,38 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Cello World",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Paragon Fine",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-11-03",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Shanthala FMCG",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-11-03",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Rajgor Castor",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-10-31",
     "marketCap": 0
   },
   {
@@ -11193,59 +11095,38 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Cello World",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Paragon Fine",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-11-03",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Shanthala FMCG",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-11-03",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Rajgor Castor",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-10-31",
     "marketCap": 0
   },
   {
@@ -11284,59 +11165,38 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Cello World",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Paragon Fine",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-11-03",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Shanthala FMCG",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-11-03",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Rajgor Castor",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-10-31",
     "marketCap": 0
   },
   {
@@ -11375,59 +11235,38 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Cello World",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Paragon Fine",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-11-03",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Shanthala FMCG",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-11-03",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Rajgor Castor",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-10-31",
     "marketCap": 0
   },
   {
@@ -11466,59 +11305,38 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Cello World",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Paragon Fine",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-11-03",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Shanthala FMCG",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-11-03",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Rajgor Castor",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-10-31",
     "marketCap": 0
   },
   {
@@ -11557,59 +11375,38 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Cello World",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-11-06",
     "marketCap": 0
   },
   {
-    "name": "ROX Hi-Tech",
+    "name": "Paragon Fine",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-16",
+    "listingDate": "2023-11-03",
     "marketCap": 0
   },
   {
-    "name": "Baba Food",
+    "name": "Shanthala FMCG",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-15",
+    "listingDate": "2023-11-03",
     "marketCap": 0
   },
   {
-    "name": "Protean eGov",
+    "name": "Rajgor Castor",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
+    "listingDate": "2023-10-31",
     "marketCap": 0
   },
   {
@@ -11648,62 +11445,6 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
-    "marketCap": 0
-  },
-  {
-    "name": "ROX Hi-Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-16",
-    "marketCap": 0
-  },
-  {
-    "name": "Baba Food",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Protean eGov",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
-    "marketCap": 0
-  },
-  {
     "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
@@ -11739,62 +11480,6 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
-    "marketCap": 0
-  },
-  {
-    "name": "ROX Hi-Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-16",
-    "marketCap": 0
-  },
-  {
-    "name": "Baba Food",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Protean eGov",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
-    "marketCap": 0
-  },
-  {
     "name": "Vrundavan Planta",
     "status": "listed",
     "source_category": "below_price",
@@ -11827,699 +11512,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
-    "marketCap": 0
-  },
-  {
-    "name": "ROX Hi-Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-16",
-    "marketCap": 0
-  },
-  {
-    "name": "Baba Food",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Protean eGov",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Vrundavan Planta",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Cello World",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
-    "marketCap": 0
-  },
-  {
-    "name": "ROX Hi-Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-16",
-    "marketCap": 0
-  },
-  {
-    "name": "Baba Food",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Protean eGov",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Vrundavan Planta",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Cello World",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
-    "marketCap": 0
-  },
-  {
-    "name": "ROX Hi-Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-16",
-    "marketCap": 0
-  },
-  {
-    "name": "Baba Food",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Protean eGov",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Vrundavan Planta",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Cello World",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
-    "marketCap": 0
-  },
-  {
-    "name": "ROX Hi-Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-16",
-    "marketCap": 0
-  },
-  {
-    "name": "Baba Food",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Protean eGov",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Vrundavan Planta",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Cello World",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
-    "marketCap": 0
-  },
-  {
-    "name": "ROX Hi-Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-16",
-    "marketCap": 0
-  },
-  {
-    "name": "Baba Food",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Protean eGov",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Vrundavan Planta",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Cello World",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
-    "marketCap": 0
-  },
-  {
-    "name": "ROX Hi-Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-16",
-    "marketCap": 0
-  },
-  {
-    "name": "Baba Food",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Protean eGov",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Vrundavan Planta",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Cello World",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
-    "marketCap": 0
-  },
-  {
-    "name": "ROX Hi-Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-16",
-    "marketCap": 0
-  },
-  {
-    "name": "Baba Food",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Protean eGov",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
-    "marketCap": 0
-  },
-  {
-    "name": "Vrundavan Planta",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Cello World",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-06",
-    "marketCap": 0
-  },
-  {
-    "name": "Paragon Fine",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Shanthala FMCG",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-03",
-    "marketCap": 0
-  },
-  {
-    "name": "Rajgor Castor",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-10-31",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
-    "marketCap": 0
-  },
-  {
-    "name": "ROX Hi-Tech",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-16",
-    "marketCap": 0
-  },
-  {
-    "name": "Baba Food",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-15",
-    "marketCap": 0
-  },
-  {
-    "name": "Protean eGov",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-13",
-    "marketCap": 0
-  },
-  {
-    "name": "ESAF Small Fin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Micropro Softwar",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-10",
-    "marketCap": 0
-  },
-  {
-    "name": "Mish Designs",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-07",
     "marketCap": 0
   },
   {
