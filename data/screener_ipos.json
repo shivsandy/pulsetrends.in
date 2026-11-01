@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-31T09:29:42.772764+00:00",
+  "last_updated": "2026-11-01T10:18:46.570462+00:00",
   "source": "screener.in",
-  "count": 1703,
+  "count": 1704,
   "ipos": [
     {
       "id": "screener-upcoming-bombay-coated",
@@ -497,8 +497,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "yesterday",
-      "description": "Core4 Engineers - Listed on yesterday",
+      "listingDate": "2026-10-30",
+      "description": "Core4 Engineers - Listed on 2026-10-30",
       "about": "",
       "priceBandHigh": 93.0,
       "priceBandLow": 93.0,
@@ -3822,7 +3822,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/PRANAV/consolidated/",
+      "source_url": "https://www.screener.in/company/PRANAV/",
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "124",
@@ -6044,11 +6044,11 @@
       "listingDate": "2026-08-03",
       "description": "Advance Techno. - Listed on 2026-08-03",
       "about": "",
-      "priceBandHigh": 95.0,
-      "priceBandLow": 95.0,
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
       "lotSize": 0,
       "issueSize": "",
-      "marketCap": 86.0,
+      "marketCap": 0,
       "gmp": 0,
       "gmpPercent": 0,
       "subscriptionStatus": "",
@@ -6057,13 +6057,13 @@
       "source_url": "https://www.screener.in/company/544843/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "95",
-        "currentPrice": "72.81",
+        "ipoPrice": "",
+        "currentPrice": null,
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 72.81,
+      "currentPrice": 0,
       "percentChange": 0
     },
     {
@@ -6080,11 +6080,11 @@
       "listingDate": "2026-08-03",
       "description": "Propshop Events - Listed on 2026-08-03",
       "about": "",
-      "priceBandHigh": 69.0,
-      "priceBandLow": 69.0,
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
       "lotSize": 0,
       "issueSize": "",
-      "marketCap": 101.0,
+      "marketCap": 0,
       "gmp": 0,
       "gmpPercent": 0,
       "subscriptionStatus": "",
@@ -6093,13 +6093,13 @@
       "source_url": "https://www.screener.in/company/PROPSHOP/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "69",
-        "currentPrice": "66.50",
+        "ipoPrice": "",
+        "currentPrice": null,
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 66.5,
+      "currentPrice": 0,
       "percentChange": 0
     },
     {
@@ -27870,7 +27870,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/BIKEWO/consolidated/",
+      "source_url": "https://www.screener.in/company/BIKEWO/",
       "source_category": "recent",
       "fiscalMetrics": {
         "ipoPrice": "",
@@ -36245,8 +36245,8 @@
       "status": "listed",
       "openDate": "",
       "closeDate": "",
-      "listingDate": "yesterday",
-      "description": "Core4 Engineers - Listed on yesterday",
+      "listingDate": "2026-10-30",
+      "description": "Core4 Engineers - Listed on 2026-10-30",
       "about": "",
       "priceBandHigh": 93.0,
       "priceBandLow": 93.0,
@@ -38130,7 +38130,7 @@
       "subscriptionStatus": "",
       "currency": "INR",
       "source": "screener.in",
-      "source_url": "https://www.screener.in/company/PRANAV/consolidated/",
+      "source_url": "https://www.screener.in/company/PRANAV/",
       "source_category": "below_price",
       "fiscalMetrics": {
         "ipoPrice": "124",
@@ -61288,6 +61288,42 @@
         "rightsPrice": "1.50"
       },
       "currentPrice": 2.04,
+      "percentChange": 0
+    },
+    {
+      "id": "screener-rights-kanel-indust",
+      "name": "Kanel Indust.",
+      "ticker": "",
+      "exchange": "NSE/BSE",
+      "sector": "mainboard",
+      "industry": "",
+      "country": "IN",
+      "status": "rights",
+      "openDate": "",
+      "closeDate": "",
+      "listingDate": "",
+      "description": "Kanel Indust. - Listed on N/A",
+      "about": "",
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
+      "lotSize": 0,
+      "issueSize": "",
+      "marketCap": 0,
+      "gmp": 0,
+      "gmpPercent": 0,
+      "subscriptionStatus": "",
+      "currency": "INR",
+      "source": "screener.in",
+      "source_url": "https://www.screener.in/company/KANELOIL/",
+      "source_category": "rights",
+      "fiscalMetrics": {
+        "ipoPrice": "",
+        "currentPrice": "67.45",
+        "exDate": "2026-11-13",
+        "rightsRatio": "54:10",
+        "rightsPrice": "39.95"
+      },
+      "currentPrice": 67.45,
       "percentChange": 0
     }
   ]
