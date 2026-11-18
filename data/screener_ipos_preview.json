@@ -1026,7 +1026,7 @@
     "status": "listed",
     "source_category": "recent",
     "listingDate": "2026-08-20",
-    "marketCap": 344.0
+    "marketCap": 0
   },
   {
     "name": "Pramodini Medicare",
@@ -7049,11 +7049,11 @@
     "marketCap": 192.0
   },
   {
-    "name": "Shellz India",
+    "name": "Fusion CX Ltd",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2026-10-23",
-    "marketCap": 216.0
+    "listingDate": "2026-10-22",
+    "marketCap": 4172.0
   },
   {
     "name": "R.K. Fashion Accessories",
@@ -7334,13 +7334,6 @@
     "source_category": "below_price",
     "listingDate": "2026-09-18",
     "marketCap": 305.0
-  },
-  {
-    "name": "Amtech Esters",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-09-17",
-    "marketCap": 66.0
   },
   {
     "name": "A R C I",
@@ -7952,6 +7945,13 @@
     "marketCap": 160.0
   },
   {
+    "name": "Defrail Technologies",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-01-19",
+    "marketCap": 52.0
+  },
+  {
     "name": "Victory Ele.",
     "status": "listed",
     "source_category": "below_price",
@@ -7978,13 +7978,6 @@
     "source_category": "below_price",
     "listingDate": "2025-12-31",
     "marketCap": 178.0
-  },
-  {
-    "name": "Dhara Rail Pro.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-12-31",
-    "marketCap": 190.0
   },
   {
     "name": "Shyam Dhani Ind.",
@@ -8338,6 +8331,13 @@
   },
   {
     "name": "Pace Digitek",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-10-06",
+    "marketCap": 0
+  },
+  {
+    "name": "KVS Castings",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-10-06",
@@ -8778,6 +8778,13 @@
     "marketCap": 0
   },
   {
+    "name": "N S D L",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-08-06",
+    "marketCap": 0
+  },
+  {
     "name": "M & B Engineer.",
     "status": "listed",
     "source_category": "below_price",
@@ -8873,6 +8880,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-07-09",
+    "marketCap": 0
+  },
+  {
+    "name": "Pushpa Jewellers",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2025-07-07",
     "marketCap": 0
   },
   {
@@ -9387,6 +9401,13 @@
     "marketCap": 0
   },
   {
+    "name": "Transrail Light",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-12-27",
+    "marketCap": 0
+  },
+  {
     "name": "Newmalayalam St.",
     "status": "listed",
     "source_category": "below_price",
@@ -9419,6 +9440,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-12-24",
+    "marketCap": 0
+  },
+  {
+    "name": "Hamps Bio",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-12-20",
     "marketCap": 0
   },
   {
@@ -9839,6 +9867,13 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2024-08-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Brace Port",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2024-08-26",
     "marketCap": 0
   },
   {
@@ -10710,45 +10745,38 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Graphisads",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-13",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Marinetrans Indi",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Net Avenue",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-05",
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Flair Writing",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
@@ -10766,45 +10794,38 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Graphisads",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-13",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Marinetrans Indi",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Net Avenue",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-05",
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Flair Writing",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
@@ -10822,45 +10843,38 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Graphisads",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-13",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Marinetrans Indi",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Net Avenue",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-05",
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Flair Writing",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
@@ -10878,45 +10892,38 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Graphisads",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-13",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Marinetrans Indi",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Net Avenue",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
+    "listingDate": "2023-12-08",
     "marketCap": 0
   },
   {
-    "name": "Sunrest Lifescie",
+    "name": "Swashthik Plas.",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-05",
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
+    "name": "Flair Writing",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Sunrest Lifescie",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-20",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
@@ -10934,6 +10941,41 @@
     "marketCap": 0
   },
   {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
     "name": "Arrowhead Sepera",
     "status": "listed",
     "source_category": "below_price",
@@ -10945,6 +10987,629 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Arrowhead Sepera",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-28",
+    "marketCap": 0
+  },
+  {
+    "name": "Sunrest Lifescie",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-20",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
     "marketCap": 0
   },
   {
@@ -10970,6 +11635,27 @@
   },
   {
     "name": "Praxis Home",
+    "status": "rights",
+    "source_category": "rights",
+    "listingDate": "",
+    "marketCap": 0
+  },
+  {
+    "name": "Geetanjali Cred.",
+    "status": "rights",
+    "source_category": "rights",
+    "listingDate": "",
+    "marketCap": 0
+  },
+  {
+    "name": "SML Mahindra",
+    "status": "rights",
+    "source_category": "rights",
+    "listingDate": "",
+    "marketCap": 0
+  },
+  {
+    "name": "Om Metallogic",
     "status": "rights",
     "source_category": "rights",
     "listingDate": "",
