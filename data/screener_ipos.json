@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-21T10:51:14.091663+00:00",
+  "last_updated": "2026-11-22T10:59:27.595022+00:00",
   "source": "screener.in",
   "count": 1628,
   "ipos": [
@@ -97,7 +97,7 @@
       "source_category": "upcoming",
       "fiscalMetrics": {
         "pe": null,
-        "roce": null
+        "roce": "23.1"
       },
       "currentPrice": 0,
       "percentChange": 0
@@ -5117,11 +5117,11 @@
       "listingDate": "2026-08-24",
       "description": "Fascinate Textiles - Listed on 2026-08-24",
       "about": "",
-      "priceBandHigh": 151.0,
-      "priceBandLow": 151.0,
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
       "lotSize": 0,
       "issueSize": "",
-      "marketCap": 208.0,
+      "marketCap": 0,
       "gmp": 0,
       "gmpPercent": 0,
       "subscriptionStatus": "",
@@ -5130,13 +5130,13 @@
       "source_url": "https://www.screener.in/company/FASCINATE/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "151",
-        "currentPrice": "143.00",
+        "ipoPrice": "",
+        "currentPrice": null,
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 143.0,
+      "currentPrice": 0,
       "percentChange": 0
     },
     {
@@ -5153,11 +5153,11 @@
       "listingDate": "2026-08-24",
       "description": "Lalithaa Jewel - Listed on 2026-08-24",
       "about": "",
-      "priceBandHigh": 201.0,
-      "priceBandLow": 201.0,
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
       "lotSize": 0,
       "issueSize": "",
-      "marketCap": 11250.0,
+      "marketCap": 0,
       "gmp": 0,
       "gmpPercent": 0,
       "subscriptionStatus": "",
@@ -5166,13 +5166,13 @@
       "source_url": "https://www.screener.in/company/LALITHAA/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "201",
-        "currentPrice": "316.65",
+        "ipoPrice": "",
+        "currentPrice": null,
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 316.65,
+      "currentPrice": 0,
       "percentChange": 0
     },
     {
@@ -5189,11 +5189,11 @@
       "listingDate": "2026-08-24",
       "description": "Horizon Industrial - Listed on 2026-08-24",
       "about": "",
-      "priceBandHigh": 60.0,
-      "priceBandLow": 60.0,
+      "priceBandHigh": 0,
+      "priceBandLow": 0,
       "lotSize": 0,
       "issueSize": "",
-      "marketCap": 17298.0,
+      "marketCap": 0,
       "gmp": 0,
       "gmpPercent": 0,
       "subscriptionStatus": "",
@@ -5202,13 +5202,13 @@
       "source_url": "https://www.screener.in/company/HORIZONIND/consolidated/",
       "source_category": "recent",
       "fiscalMetrics": {
-        "ipoPrice": "60",
-        "currentPrice": "48.89",
+        "ipoPrice": "",
+        "currentPrice": null,
         "exDate": "",
         "rightsRatio": "",
         "rightsPrice": ""
       },
-      "currentPrice": 48.89,
+      "currentPrice": 0,
       "percentChange": 0
     },
     {
