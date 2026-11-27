@@ -31,7 +31,7 @@
     "name": "Matangi Rubber",
     "status": "upcoming",
     "source_category": "upcoming",
-    "listingDate": "rs. 163 to rs. 172 per equity shares",
+    "listingDate": "₹163–172",
     "marketCap": 0
   },
   {
@@ -40,6 +40,13 @@
     "source_category": "upcoming",
     "listingDate": "₹60–65",
     "marketCap": 0
+  },
+  {
+    "name": "Shree Siddhivinayak Greentech",
+    "status": "listed",
+    "source_category": "recent",
+    "listingDate": "2026-12-02",
+    "marketCap": 268.0
   },
   {
     "name": "Watrana Rentals",
@@ -59,7 +66,7 @@
     "name": "Crystal Crop",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-11-26",
+    "listingDate": "yesterday",
     "marketCap": 4438.0
   },
   {
@@ -7035,17 +7042,17 @@
     "marketCap": 0
   },
   {
-    "name": "Alpex Solar",
+    "name": "Mahanadi Coalfld",
     "status": "listed",
-    "source_category": "recent",
-    "listingDate": "2024-02-15",
-    "marketCap": 0
+    "source_category": "below_price",
+    "listingDate": "2026-11-27",
+    "marketCap": 90010.0
   },
   {
     "name": "Crystal Crop",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2026-11-26",
+    "listingDate": "yesterday",
     "marketCap": 4438.0
   },
   {
@@ -7061,6 +7068,13 @@
     "source_category": "below_price",
     "listingDate": "2026-11-09",
     "marketCap": 189.0
+  },
+  {
+    "name": "Bombay Coated",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-11-05",
+    "marketCap": 515.0
   },
   {
     "name": "M. K. Sons Fine",
@@ -7082,6 +7096,13 @@
     "source_category": "below_price",
     "listingDate": "2026-10-30",
     "marketCap": 192.0
+  },
+  {
+    "name": "Shellz India",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2026-10-23",
+    "marketCap": 216.0
   },
   {
     "name": "Ravita Engineering",
@@ -7355,13 +7376,6 @@
     "source_category": "below_price",
     "listingDate": "2026-09-21",
     "marketCap": 208.0
-  },
-  {
-    "name": "Veegaland Developers",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-09-18",
-    "marketCap": 682.0
   },
   {
     "name": "Panchatv Bharat",
@@ -7833,13 +7847,6 @@
     "marketCap": 41.0
   },
   {
-    "name": "Value 360 Commu.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2026-05-11",
-    "marketCap": 158.0
-  },
-  {
     "name": "Amba Auto Sales",
     "status": "listed",
     "source_category": "below_price",
@@ -8253,13 +8260,6 @@
     "marketCap": 0
   },
   {
-    "name": "Jayesh Logistics",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-11-03",
-    "marketCap": 0
-  },
-  {
     "name": "Midwest",
     "status": "listed",
     "source_category": "below_price",
@@ -8394,13 +8394,6 @@
   },
   {
     "name": "Pace Digitek",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2025-10-06",
-    "marketCap": 0
-  },
-  {
-    "name": "KVS Castings",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2025-10-06",
@@ -9723,13 +9716,6 @@
     "marketCap": 0
   },
   {
-    "name": "Forge Auto",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2024-10-04",
-    "marketCap": 0
-  },
-  {
     "name": "Nexxus Petro",
     "status": "listed",
     "source_category": "below_price",
@@ -10808,24 +10794,80 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Fedbank Financi.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-30",
     "marketCap": 0
   },
   {
@@ -10906,24 +10948,80 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Fedbank Financi.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-30",
     "marketCap": 0
   },
   {
@@ -11004,24 +11102,80 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Fedbank Financi.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-30",
     "marketCap": 0
   },
   {
@@ -11102,24 +11256,80 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Fedbank Financi.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-30",
     "marketCap": 0
   },
   {
@@ -11200,24 +11410,80 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Fedbank Financi.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-30",
     "marketCap": 0
   },
   {
@@ -11298,24 +11564,80 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Fedbank Financi.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-30",
     "marketCap": 0
   },
   {
@@ -11396,24 +11718,80 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Fedbank Financi.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-30",
     "marketCap": 0
   },
   {
@@ -11494,24 +11872,80 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
+    "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Suraj Estate",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-26",
+    "marketCap": 0
+  },
+  {
+    "name": "Siyaram Recycli.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Benchmark Comp.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Shree OSFM",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-21",
+    "marketCap": 0
+  },
+  {
+    "name": "Graphisads",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-13",
+    "marketCap": 0
+  },
+  {
+    "name": "Marinetrans Indi",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Net Avenue",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-08",
+    "marketCap": 0
+  },
+  {
+    "name": "Swashthik Plas.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-05",
+    "marketCap": 0
+  },
+  {
+    "name": "Flair Writing",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-12-01",
+    "marketCap": 0
+  },
+  {
+    "name": "Fedbank Financi.",
+    "status": "listed",
+    "source_category": "below_price",
+    "listingDate": "2023-11-30",
     "marketCap": 0
   },
   {
@@ -11592,27 +12026,6 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
     "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
@@ -11690,27 +12103,6 @@
     "marketCap": 0
   },
   {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
     "name": "Sahara Maritime",
     "status": "listed",
     "source_category": "below_price",
@@ -11785,797 +12177,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahara Maritime",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Suraj Estate",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Siyaram Recycli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Benchmark Comp.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Shree OSFM",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Graphisads",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Marinetrans Indi",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Net Avenue",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Swashthik Plas.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Flair Writing",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-01",
-    "marketCap": 0
-  },
-  {
-    "name": "Fedbank Financi.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahara Maritime",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Suraj Estate",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Siyaram Recycli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Benchmark Comp.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Shree OSFM",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Graphisads",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Marinetrans Indi",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Net Avenue",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Swashthik Plas.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Flair Writing",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-01",
-    "marketCap": 0
-  },
-  {
-    "name": "Fedbank Financi.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahara Maritime",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Suraj Estate",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Siyaram Recycli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Benchmark Comp.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Shree OSFM",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Graphisads",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Marinetrans Indi",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Net Avenue",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Swashthik Plas.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Flair Writing",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-01",
-    "marketCap": 0
-  },
-  {
-    "name": "Fedbank Financi.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahara Maritime",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Suraj Estate",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Siyaram Recycli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Benchmark Comp.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Shree OSFM",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Graphisads",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Marinetrans Indi",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Net Avenue",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Swashthik Plas.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Flair Writing",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-01",
-    "marketCap": 0
-  },
-  {
-    "name": "Fedbank Financi.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahara Maritime",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Suraj Estate",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Siyaram Recycli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Benchmark Comp.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Shree OSFM",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Graphisads",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Marinetrans Indi",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Net Avenue",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Swashthik Plas.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Flair Writing",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-01",
-    "marketCap": 0
-  },
-  {
-    "name": "Fedbank Financi.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahara Maritime",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Suraj Estate",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Siyaram Recycli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Benchmark Comp.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Shree OSFM",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Graphisads",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Marinetrans Indi",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Net Avenue",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Swashthik Plas.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Flair Writing",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-01",
-    "marketCap": 0
-  },
-  {
-    "name": "Fedbank Financi.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahara Maritime",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Suraj Estate",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Siyaram Recycli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Benchmark Comp.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Shree OSFM",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Graphisads",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Marinetrans Indi",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Net Avenue",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Swashthik Plas.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Flair Writing",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-01",
-    "marketCap": 0
-  },
-  {
-    "name": "Fedbank Financi.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
-    "marketCap": 0
-  },
-  {
-    "name": "Electro Force",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-27",
-    "marketCap": 0
-  },
-  {
-    "name": "Muthoot Microfin",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Sahara Maritime",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Suraj Estate",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-26",
-    "marketCap": 0
-  },
-  {
-    "name": "Siyaram Recycli.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Benchmark Comp.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Shree OSFM",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-21",
-    "marketCap": 0
-  },
-  {
-    "name": "Graphisads",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-13",
-    "marketCap": 0
-  },
-  {
-    "name": "Marinetrans Indi",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Net Avenue",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-08",
-    "marketCap": 0
-  },
-  {
-    "name": "Swashthik Plas.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-05",
-    "marketCap": 0
-  },
-  {
-    "name": "Flair Writing",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-12-01",
-    "marketCap": 0
-  },
-  {
-    "name": "Fedbank Financi.",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-30",
-    "marketCap": 0
-  },
-  {
-    "name": "Arrowhead Sepera",
-    "status": "listed",
-    "source_category": "below_price",
-    "listingDate": "2023-11-28",
     "marketCap": 0
   },
   {
