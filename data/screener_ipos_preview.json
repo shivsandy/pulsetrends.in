@@ -1,12 +1,5 @@
 [
   {
-    "name": "Shree Siddhivinayak Greentech",
-    "status": "upcoming",
-    "source_category": "upcoming",
-    "listingDate": "₹130–142",
-    "marketCap": 0
-  },
-  {
     "name": "Foodlink F&B",
     "status": "upcoming",
     "source_category": "upcoming",
@@ -42,6 +35,20 @@
     "marketCap": 0
   },
   {
+    "name": "Swara Baby Produts",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "₹105–111",
+    "marketCap": 0
+  },
+  {
+    "name": "Vishwas Refoils & Consumer",
+    "status": "upcoming",
+    "source_category": "upcoming",
+    "listingDate": "-",
+    "marketCap": 0
+  },
+  {
     "name": "Shree Siddhivinayak Greentech",
     "status": "listed",
     "source_category": "recent",
@@ -52,21 +59,21 @@
     "name": "Watrana Rentals",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-11-27",
+    "listingDate": "yesterday",
     "marketCap": 400.0
   },
   {
     "name": "Mahanadi Coalfld",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "2026-11-27",
+    "listingDate": "yesterday",
     "marketCap": 90010.0
   },
   {
     "name": "Crystal Crop",
     "status": "listed",
     "source_category": "recent",
-    "listingDate": "yesterday",
+    "listingDate": "2026-11-26",
     "marketCap": 4438.0
   },
   {
@@ -7045,14 +7052,14 @@
     "name": "Mahanadi Coalfld",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "2026-11-27",
+    "listingDate": "yesterday",
     "marketCap": 90010.0
   },
   {
     "name": "Crystal Crop",
     "status": "listed",
     "source_category": "below_price",
-    "listingDate": "yesterday",
+    "listingDate": "2026-11-26",
     "marketCap": 4438.0
   },
   {
@@ -12177,13 +12184,6 @@
     "status": "listed",
     "source_category": "below_price",
     "listingDate": "2023-11-30",
-    "marketCap": 0
-  },
-  {
-    "name": "JTL Defence",
-    "status": "rights",
-    "source_category": "rights",
-    "listingDate": "",
     "marketCap": 0
   }
 ]
